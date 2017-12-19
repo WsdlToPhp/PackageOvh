@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,7 +49,7 @@ class DomainResellerDel extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DomainResellerDel
+     * @return \Ovh\StructType\DomainResellerDel
      */
     public function setSession($session = null)
     {
@@ -71,7 +71,7 @@ class DomainResellerDel extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\DomainResellerDel
+     * @return \Ovh\StructType\DomainResellerDel
      */
     public function setDomain($domain = null)
     {
@@ -88,7 +88,7 @@ class DomainResellerDel extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DomainResellerDel
+     * @return \Ovh\StructType\DomainResellerDel
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DomainCheckResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfDomainCheckStructType
+     * @var \Ovh\ArrayType\MyArrayOfDomainCheckStructType
      */
     public $return;
     /**
      * Constructor method for domainCheckResponse
      * @uses DomainCheckResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfDomainCheckStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfDomainCheckStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfDomainCheckStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfDomainCheckStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfDomainCheckStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDomainCheckStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DomainCheckResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfDomainCheckStructType $return
-     * @return \PayPal\StructType\DomainCheckResponse
+     * @param \Ovh\ArrayType\MyArrayOfDomainCheckStructType $return
+     * @return \Ovh\StructType\DomainCheckResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfDomainCheckStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfDomainCheckStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DomainCheckResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DomainCheckResponse
+     * @return \Ovh\StructType\DomainCheckResponse
      */
     public static function __set_state(array $array)
     {

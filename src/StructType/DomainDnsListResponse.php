@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DomainDnsListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfNsStructType
+     * @var \Ovh\ArrayType\MyArrayOfNsStructType
      */
     public $return;
     /**
      * Constructor method for domainDnsListResponse
      * @uses DomainDnsListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfNsStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfNsStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfNsStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfNsStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfNsStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfNsStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DomainDnsListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfNsStructType $return
-     * @return \PayPal\StructType\DomainDnsListResponse
+     * @param \Ovh\ArrayType\MyArrayOfNsStructType $return
+     * @return \Ovh\StructType\DomainDnsListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfNsStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfNsStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DomainDnsListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DomainDnsListResponse
+     * @return \Ovh\StructType\DomainDnsListResponse
      */
     public static function __set_state(array $array)
     {

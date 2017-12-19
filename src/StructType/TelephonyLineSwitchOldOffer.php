@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,14 +22,14 @@ class TelephonyLineSwitchOldOffer extends AbstractStructBase
      * The numbers
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $numbers;
     /**
      * The offers
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $offers;
     /**
@@ -46,11 +46,11 @@ class TelephonyLineSwitchOldOffer extends AbstractStructBase
      * @uses TelephonyLineSwitchOldOffer::setOffers()
      * @uses TelephonyLineSwitchOldOffer::setBillingAccount()
      * @param string $session
-     * @param \PayPal\ArrayType\MyArrayOfStringType $numbers
-     * @param \PayPal\ArrayType\MyArrayOfStringType $offers
+     * @param \Ovh\ArrayType\MyArrayOfStringType $numbers
+     * @param \Ovh\ArrayType\MyArrayOfStringType $offers
      * @param string $billingAccount
      */
-    public function __construct($session = null, \PayPal\ArrayType\MyArrayOfStringType $numbers = null, \PayPal\ArrayType\MyArrayOfStringType $offers = null, $billingAccount = null)
+    public function __construct($session = null, \Ovh\ArrayType\MyArrayOfStringType $numbers = null, \Ovh\ArrayType\MyArrayOfStringType $offers = null, $billingAccount = null)
     {
         $this
             ->setSession($session)
@@ -69,7 +69,7 @@ class TelephonyLineSwitchOldOffer extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyLineSwitchOldOffer
+     * @return \Ovh\StructType\TelephonyLineSwitchOldOffer
      */
     public function setSession($session = null)
     {
@@ -82,7 +82,7 @@ class TelephonyLineSwitchOldOffer extends AbstractStructBase
     }
     /**
      * Get numbers value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getNumbers()
     {
@@ -90,17 +90,17 @@ class TelephonyLineSwitchOldOffer extends AbstractStructBase
     }
     /**
      * Set numbers value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $numbers
-     * @return \PayPal\StructType\TelephonyLineSwitchOldOffer
+     * @param \Ovh\ArrayType\MyArrayOfStringType $numbers
+     * @return \Ovh\StructType\TelephonyLineSwitchOldOffer
      */
-    public function setNumbers(\PayPal\ArrayType\MyArrayOfStringType $numbers = null)
+    public function setNumbers(\Ovh\ArrayType\MyArrayOfStringType $numbers = null)
     {
         $this->numbers = $numbers;
         return $this;
     }
     /**
      * Get offers value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getOffers()
     {
@@ -108,10 +108,10 @@ class TelephonyLineSwitchOldOffer extends AbstractStructBase
     }
     /**
      * Set offers value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $offers
-     * @return \PayPal\StructType\TelephonyLineSwitchOldOffer
+     * @param \Ovh\ArrayType\MyArrayOfStringType $offers
+     * @return \Ovh\StructType\TelephonyLineSwitchOldOffer
      */
-    public function setOffers(\PayPal\ArrayType\MyArrayOfStringType $offers = null)
+    public function setOffers(\Ovh\ArrayType\MyArrayOfStringType $offers = null)
     {
         $this->offers = $offers;
         return $this;
@@ -127,7 +127,7 @@ class TelephonyLineSwitchOldOffer extends AbstractStructBase
     /**
      * Set billingAccount value
      * @param string $billingAccount
-     * @return \PayPal\StructType\TelephonyLineSwitchOldOffer
+     * @return \Ovh\StructType\TelephonyLineSwitchOldOffer
      */
     public function setBillingAccount($billingAccount = null)
     {
@@ -144,7 +144,7 @@ class TelephonyLineSwitchOldOffer extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyLineSwitchOldOffer
+     * @return \Ovh\StructType\TelephonyLineSwitchOldOffer
      */
     public static function __set_state(array $array)
     {

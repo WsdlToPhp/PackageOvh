@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class TelephonyVoicemailMailboxDownload extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxDownload
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxDownload
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class TelephonyVoicemailMailboxDownload extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxDownload
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxDownload
      */
     public function setNumber($number = null)
     {
@@ -133,7 +133,7 @@ class TelephonyVoicemailMailboxDownload extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxDownload
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxDownload
      */
     public function setCountry($country = null)
     {
@@ -155,7 +155,7 @@ class TelephonyVoicemailMailboxDownload extends AbstractStructBase
     /**
      * Set id value
      * @param string $id
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxDownload
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxDownload
      */
     public function setId($id = null)
     {
@@ -177,7 +177,7 @@ class TelephonyVoicemailMailboxDownload extends AbstractStructBase
     /**
      * Set format value
      * @param string $format
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxDownload
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxDownload
      */
     public function setFormat($format = null)
     {
@@ -199,7 +199,7 @@ class TelephonyVoicemailMailboxDownload extends AbstractStructBase
     /**
      * Set folder value
      * @param string $folder
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxDownload
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxDownload
      */
     public function setFolder($folder = null)
     {
@@ -216,7 +216,7 @@ class TelephonyVoicemailMailboxDownload extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxDownload
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxDownload
      */
     public static function __set_state(array $array)
     {

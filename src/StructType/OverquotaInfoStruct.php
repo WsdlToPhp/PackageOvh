@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class OverquotaInfoStruct extends AbstractStructBase
     /**
      * Set month value
      * @param string $month
-     * @return \PayPal\StructType\OverquotaInfoStruct
+     * @return \Ovh\StructType\OverquotaInfoStruct
      */
     public function setMonth($month = null)
     {
@@ -75,7 +75,7 @@ class OverquotaInfoStruct extends AbstractStructBase
     /**
      * Set traffic value
      * @param int $traffic
-     * @return \PayPal\StructType\OverquotaInfoStruct
+     * @return \Ovh\StructType\OverquotaInfoStruct
      */
     public function setTraffic($traffic = null)
     {
@@ -97,7 +97,7 @@ class OverquotaInfoStruct extends AbstractStructBase
     /**
      * Set hits value
      * @param int $hits
-     * @return \PayPal\StructType\OverquotaInfoStruct
+     * @return \Ovh\StructType\OverquotaInfoStruct
      */
     public function setHits($hits = null)
     {
@@ -114,7 +114,7 @@ class OverquotaInfoStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\OverquotaInfoStruct
+     * @return \Ovh\StructType\OverquotaInfoStruct
      */
     public static function __set_state(array $array)
     {

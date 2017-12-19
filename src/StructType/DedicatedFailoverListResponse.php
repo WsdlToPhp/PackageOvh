@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedFailoverListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedFailoverStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedFailoverStructType
      */
     public $return;
     /**
      * Constructor method for dedicatedFailoverListResponse
      * @uses DedicatedFailoverListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedFailoverStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedFailoverStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfDedicatedFailoverStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfDedicatedFailoverStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedFailoverStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedFailoverStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedFailoverListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedFailoverStructType $return
-     * @return \PayPal\StructType\DedicatedFailoverListResponse
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedFailoverStructType $return
+     * @return \Ovh\StructType\DedicatedFailoverListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfDedicatedFailoverStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfDedicatedFailoverStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedFailoverListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedFailoverListResponse
+     * @return \Ovh\StructType\DedicatedFailoverListResponse
      */
     public static function __set_state(array $array)
     {

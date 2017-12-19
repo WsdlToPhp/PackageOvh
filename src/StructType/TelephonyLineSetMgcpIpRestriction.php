@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,7 +36,7 @@ class TelephonyLineSetMgcpIpRestriction extends AbstractStructBase
      * The ips
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $ips;
     /**
@@ -48,9 +48,9 @@ class TelephonyLineSetMgcpIpRestriction extends AbstractStructBase
      * @param string $session
      * @param string $number
      * @param string $country
-     * @param \PayPal\ArrayType\MyArrayOfStringType $ips
+     * @param \Ovh\ArrayType\MyArrayOfStringType $ips
      */
-    public function __construct($session = null, $number = null, $country = null, \PayPal\ArrayType\MyArrayOfStringType $ips = null)
+    public function __construct($session = null, $number = null, $country = null, \Ovh\ArrayType\MyArrayOfStringType $ips = null)
     {
         $this
             ->setSession($session)
@@ -69,7 +69,7 @@ class TelephonyLineSetMgcpIpRestriction extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyLineSetMgcpIpRestriction
+     * @return \Ovh\StructType\TelephonyLineSetMgcpIpRestriction
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class TelephonyLineSetMgcpIpRestriction extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyLineSetMgcpIpRestriction
+     * @return \Ovh\StructType\TelephonyLineSetMgcpIpRestriction
      */
     public function setNumber($number = null)
     {
@@ -113,7 +113,7 @@ class TelephonyLineSetMgcpIpRestriction extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyLineSetMgcpIpRestriction
+     * @return \Ovh\StructType\TelephonyLineSetMgcpIpRestriction
      */
     public function setCountry($country = null)
     {
@@ -126,7 +126,7 @@ class TelephonyLineSetMgcpIpRestriction extends AbstractStructBase
     }
     /**
      * Get ips value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getIps()
     {
@@ -134,10 +134,10 @@ class TelephonyLineSetMgcpIpRestriction extends AbstractStructBase
     }
     /**
      * Set ips value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $ips
-     * @return \PayPal\StructType\TelephonyLineSetMgcpIpRestriction
+     * @param \Ovh\ArrayType\MyArrayOfStringType $ips
+     * @return \Ovh\StructType\TelephonyLineSetMgcpIpRestriction
      */
-    public function setIps(\PayPal\ArrayType\MyArrayOfStringType $ips = null)
+    public function setIps(\Ovh\ArrayType\MyArrayOfStringType $ips = null)
     {
         $this->ips = $ips;
         return $this;
@@ -148,7 +148,7 @@ class TelephonyLineSetMgcpIpRestriction extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyLineSetMgcpIpRestriction
+     * @return \Ovh\StructType\TelephonyLineSetMgcpIpRestriction
      */
     public static function __set_state(array $array)
     {

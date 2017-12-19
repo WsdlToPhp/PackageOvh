@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -77,7 +77,7 @@ class AnonymousFtpInfoReturn extends AbstractStructBase
     /**
      * Set login value
      * @param string $login
-     * @return \PayPal\StructType\AnonymousFtpInfoReturn
+     * @return \Ovh\StructType\AnonymousFtpInfoReturn
      */
     public function setLogin($login = null)
     {
@@ -99,7 +99,7 @@ class AnonymousFtpInfoReturn extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \PayPal\StructType\AnonymousFtpInfoReturn
+     * @return \Ovh\StructType\AnonymousFtpInfoReturn
      */
     public function setUrl($url = null)
     {
@@ -121,7 +121,7 @@ class AnonymousFtpInfoReturn extends AbstractStructBase
     /**
      * Set max value
      * @param int $max
-     * @return \PayPal\StructType\AnonymousFtpInfoReturn
+     * @return \Ovh\StructType\AnonymousFtpInfoReturn
      */
     public function setMax($max = null)
     {
@@ -143,7 +143,7 @@ class AnonymousFtpInfoReturn extends AbstractStructBase
     /**
      * Set quota value
      * @param int $quota
-     * @return \PayPal\StructType\AnonymousFtpInfoReturn
+     * @return \Ovh\StructType\AnonymousFtpInfoReturn
      */
     public function setQuota($quota = null)
     {
@@ -165,7 +165,7 @@ class AnonymousFtpInfoReturn extends AbstractStructBase
     /**
      * Set active value
      * @param bool $active
-     * @return \PayPal\StructType\AnonymousFtpInfoReturn
+     * @return \Ovh\StructType\AnonymousFtpInfoReturn
      */
     public function setActive($active = null)
     {
@@ -187,7 +187,7 @@ class AnonymousFtpInfoReturn extends AbstractStructBase
     /**
      * Set todo value
      * @param bool $todo
-     * @return \PayPal\StructType\AnonymousFtpInfoReturn
+     * @return \Ovh\StructType\AnonymousFtpInfoReturn
      */
     public function setTodo($todo = null)
     {
@@ -204,7 +204,7 @@ class AnonymousFtpInfoReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\AnonymousFtpInfoReturn
+     * @return \Ovh\StructType\AnonymousFtpInfoReturn
      */
     public static function __set_state(array $array)
     {

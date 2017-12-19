@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class TelephonyBillDetailsCSV extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyBillDetailsCSV
+     * @return \Ovh\StructType\TelephonyBillDetailsCSV
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class TelephonyBillDetailsCSV extends AbstractStructBase
     /**
      * Set billingAccount value
      * @param string $billingAccount
-     * @return \PayPal\StructType\TelephonyBillDetailsCSV
+     * @return \Ovh\StructType\TelephonyBillDetailsCSV
      */
     public function setBillingAccount($billingAccount = null)
     {
@@ -113,7 +113,7 @@ class TelephonyBillDetailsCSV extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\TelephonyBillDetailsCSV
+     * @return \Ovh\StructType\TelephonyBillDetailsCSV
      */
     public function setDate($date = null)
     {
@@ -135,7 +135,7 @@ class TelephonyBillDetailsCSV extends AbstractStructBase
     /**
      * Set received value
      * @param bool $received
-     * @return \PayPal\StructType\TelephonyBillDetailsCSV
+     * @return \Ovh\StructType\TelephonyBillDetailsCSV
      */
     public function setReceived($received = null)
     {
@@ -152,7 +152,7 @@ class TelephonyBillDetailsCSV extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyBillDetailsCSV
+     * @return \Ovh\StructType\TelephonyBillDetailsCSV
      */
     public static function __set_state(array $array)
     {

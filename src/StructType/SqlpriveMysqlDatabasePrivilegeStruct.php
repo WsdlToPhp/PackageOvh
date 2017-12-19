@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class SqlpriveMysqlDatabasePrivilegeStruct extends AbstractStructBase
     public $databaseName;
     /**
      * The databaseUsers
-     * @var \PayPal\ArrayType\MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType
+     * @var \Ovh\ArrayType\MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType
      */
     public $databaseUsers;
     /**
@@ -26,9 +26,9 @@ class SqlpriveMysqlDatabasePrivilegeStruct extends AbstractStructBase
      * @uses SqlpriveMysqlDatabasePrivilegeStruct::setDatabaseName()
      * @uses SqlpriveMysqlDatabasePrivilegeStruct::setDatabaseUsers()
      * @param string $databaseName
-     * @param \PayPal\ArrayType\MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType $databaseUsers
+     * @param \Ovh\ArrayType\MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType $databaseUsers
      */
-    public function __construct($databaseName = null, \PayPal\ArrayType\MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType $databaseUsers = null)
+    public function __construct($databaseName = null, \Ovh\ArrayType\MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType $databaseUsers = null)
     {
         $this
             ->setDatabaseName($databaseName)
@@ -45,7 +45,7 @@ class SqlpriveMysqlDatabasePrivilegeStruct extends AbstractStructBase
     /**
      * Set databaseName value
      * @param string $databaseName
-     * @return \PayPal\StructType\SqlpriveMysqlDatabasePrivilegeStruct
+     * @return \Ovh\StructType\SqlpriveMysqlDatabasePrivilegeStruct
      */
     public function setDatabaseName($databaseName = null)
     {
@@ -58,7 +58,7 @@ class SqlpriveMysqlDatabasePrivilegeStruct extends AbstractStructBase
     }
     /**
      * Get databaseUsers value
-     * @return \PayPal\ArrayType\MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType|null
      */
     public function getDatabaseUsers()
     {
@@ -66,10 +66,10 @@ class SqlpriveMysqlDatabasePrivilegeStruct extends AbstractStructBase
     }
     /**
      * Set databaseUsers value
-     * @param \PayPal\ArrayType\MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType $databaseUsers
-     * @return \PayPal\StructType\SqlpriveMysqlDatabasePrivilegeStruct
+     * @param \Ovh\ArrayType\MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType $databaseUsers
+     * @return \Ovh\StructType\SqlpriveMysqlDatabasePrivilegeStruct
      */
-    public function setDatabaseUsers(\PayPal\ArrayType\MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType $databaseUsers = null)
+    public function setDatabaseUsers(\Ovh\ArrayType\MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType $databaseUsers = null)
     {
         $this->databaseUsers = $databaseUsers;
         return $this;
@@ -80,7 +80,7 @@ class SqlpriveMysqlDatabasePrivilegeStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SqlpriveMysqlDatabasePrivilegeStruct
+     * @return \Ovh\StructType\SqlpriveMysqlDatabasePrivilegeStruct
      */
     public static function __set_state(array $array)
     {

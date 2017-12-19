@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Logout extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\Logout $parameters
-     * @return \PayPal\StructType\LogoutResponse|bool
+     * @param \Ovh\StructType\Logout $parameters
+     * @return \Ovh\StructType\LogoutResponse|bool
      */
-    public function logout(\PayPal\StructType\Logout $parameters)
+    public function logout(\Ovh\StructType\Logout $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->logout($parameters));
@@ -33,7 +33,7 @@ class Logout extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\LogoutResponse
+     * @return \Ovh\StructType\LogoutResponse
      */
     public function getResult()
     {

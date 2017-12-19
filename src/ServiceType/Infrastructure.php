@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Infrastructure extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\InfrastructureReverseModify $parameters
-     * @return \PayPal\StructType\InfrastructureReverseModifyResponse|bool
+     * @param \Ovh\StructType\InfrastructureReverseModify $parameters
+     * @return \Ovh\StructType\InfrastructureReverseModifyResponse|bool
      */
-    public function infrastructureReverseModify(\PayPal\StructType\InfrastructureReverseModify $parameters)
+    public function infrastructureReverseModify(\Ovh\StructType\InfrastructureReverseModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->infrastructureReverseModify($parameters));
@@ -36,10 +36,10 @@ class Infrastructure extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\InfrastructureIpListGet $parameters
-     * @return \PayPal\StructType\InfrastructureIpListGetResponse|bool
+     * @param \Ovh\StructType\InfrastructureIpListGet $parameters
+     * @return \Ovh\StructType\InfrastructureIpListGetResponse|bool
      */
-    public function infrastructureIpListGet(\PayPal\StructType\InfrastructureIpListGet $parameters)
+    public function infrastructureIpListGet(\Ovh\StructType\InfrastructureIpListGet $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->infrastructureIpListGet($parameters));
@@ -52,7 +52,7 @@ class Infrastructure extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\InfrastructureIpListGetResponse|\PayPal\StructType\InfrastructureReverseModifyResponse
+     * @return \Ovh\StructType\InfrastructureIpListGetResponse|\Ovh\StructType\InfrastructureReverseModifyResponse
      */
     public function getResult()
     {

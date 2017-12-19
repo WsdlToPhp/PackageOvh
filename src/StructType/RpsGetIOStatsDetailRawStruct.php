@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,7 +37,7 @@ class RpsGetIOStatsDetailRawStruct extends AbstractStructBase
     /**
      * Set raw value
      * @param string $raw
-     * @return \PayPal\StructType\RpsGetIOStatsDetailRawStruct
+     * @return \Ovh\StructType\RpsGetIOStatsDetailRawStruct
      */
     public function setRaw($raw = null)
     {
@@ -54,7 +54,7 @@ class RpsGetIOStatsDetailRawStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RpsGetIOStatsDetailRawStruct
+     * @return \Ovh\StructType\RpsGetIOStatsDetailRawStruct
      */
     public static function __set_state(array $array)
     {

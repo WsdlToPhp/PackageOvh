@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class ServiceGroupGetAllInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfServiceGroupStructType
+     * @var \Ovh\ArrayType\MyArrayOfServiceGroupStructType
      */
     public $return;
     /**
      * Constructor method for serviceGroupGetAllInfoResponse
      * @uses ServiceGroupGetAllInfoResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfServiceGroupStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfServiceGroupStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfServiceGroupStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfServiceGroupStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfServiceGroupStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfServiceGroupStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class ServiceGroupGetAllInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfServiceGroupStructType $return
-     * @return \PayPal\StructType\ServiceGroupGetAllInfoResponse
+     * @param \Ovh\ArrayType\MyArrayOfServiceGroupStructType $return
+     * @return \Ovh\StructType\ServiceGroupGetAllInfoResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfServiceGroupStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfServiceGroupStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class ServiceGroupGetAllInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ServiceGroupGetAllInfoResponse
+     * @return \Ovh\StructType\ServiceGroupGetAllInfoResponse
      */
     public static function __set_state(array $array)
     {

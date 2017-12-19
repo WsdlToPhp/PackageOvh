@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TicketListIncidentsResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTicketStructType
+     * @var \Ovh\ArrayType\MyArrayOfTicketStructType
      */
     public $return;
     /**
      * Constructor method for ticketListIncidentsResponse
      * @uses TicketListIncidentsResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTicketStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTicketStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTicketStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTicketStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTicketStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTicketStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TicketListIncidentsResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTicketStructType $return
-     * @return \PayPal\StructType\TicketListIncidentsResponse
+     * @param \Ovh\ArrayType\MyArrayOfTicketStructType $return
+     * @return \Ovh\StructType\TicketListIncidentsResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTicketStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTicketStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TicketListIncidentsResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TicketListIncidentsResponse
+     * @return \Ovh\StructType\TicketListIncidentsResponse
      */
     public static function __set_state(array $array)
     {

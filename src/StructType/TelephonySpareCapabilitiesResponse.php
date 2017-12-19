@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonySpareCapabilitiesResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonySpareFamilyStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonySpareFamilyStructType
      */
     public $return;
     /**
      * Constructor method for telephonySpareCapabilitiesResponse
      * @uses TelephonySpareCapabilitiesResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonySpareFamilyStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonySpareFamilyStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonySpareFamilyStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonySpareFamilyStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonySpareFamilyStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonySpareFamilyStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonySpareCapabilitiesResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonySpareFamilyStructType $return
-     * @return \PayPal\StructType\TelephonySpareCapabilitiesResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonySpareFamilyStructType $return
+     * @return \Ovh\StructType\TelephonySpareCapabilitiesResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonySpareFamilyStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonySpareFamilyStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonySpareCapabilitiesResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySpareCapabilitiesResponse
+     * @return \Ovh\StructType\TelephonySpareCapabilitiesResponse
      */
     public static function __set_state(array $array)
     {

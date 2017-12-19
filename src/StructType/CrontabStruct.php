@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class CrontabStruct extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\CrontabStruct
+     * @return \Ovh\StructType\CrontabStruct
      */
     public function setId($id = null)
     {
@@ -91,7 +91,7 @@ class CrontabStruct extends AbstractStructBase
     /**
      * Set path value
      * @param string $path
-     * @return \PayPal\StructType\CrontabStruct
+     * @return \Ovh\StructType\CrontabStruct
      */
     public function setPath($path = null)
     {
@@ -113,7 +113,7 @@ class CrontabStruct extends AbstractStructBase
     /**
      * Set desc value
      * @param string $desc
-     * @return \PayPal\StructType\CrontabStruct
+     * @return \Ovh\StructType\CrontabStruct
      */
     public function setDesc($desc = null)
     {
@@ -135,7 +135,7 @@ class CrontabStruct extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\CrontabStruct
+     * @return \Ovh\StructType\CrontabStruct
      */
     public function setEmail($email = null)
     {
@@ -157,7 +157,7 @@ class CrontabStruct extends AbstractStructBase
     /**
      * Set enabled value
      * @param bool $enabled
-     * @return \PayPal\StructType\CrontabStruct
+     * @return \Ovh\StructType\CrontabStruct
      */
     public function setEnabled($enabled = null)
     {
@@ -174,7 +174,7 @@ class CrontabStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\CrontabStruct
+     * @return \Ovh\StructType\CrontabStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -58,12 +58,12 @@ class MailingListFullInfoReturn extends AbstractStructBase
     public $lang;
     /**
      * The moderators
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $moderators;
     /**
      * The subscribers
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $subscribers;
     /**
@@ -88,10 +88,10 @@ class MailingListFullInfoReturn extends AbstractStructBase
      * @param bool $subscription_moderation
      * @param string $replyto
      * @param string $lang
-     * @param \PayPal\ArrayType\MyArrayOfStringType $moderators
-     * @param \PayPal\ArrayType\MyArrayOfStringType $subscribers
+     * @param \Ovh\ArrayType\MyArrayOfStringType $moderators
+     * @param \Ovh\ArrayType\MyArrayOfStringType $subscribers
      */
-    public function __construct($domain = null, $ml = null, $owner = null, $nbSubscribers = null, $message_moderation = null, $users_post_only = null, $subscription_moderation = null, $replyto = null, $lang = null, \PayPal\ArrayType\MyArrayOfStringType $moderators = null, \PayPal\ArrayType\MyArrayOfStringType $subscribers = null)
+    public function __construct($domain = null, $ml = null, $owner = null, $nbSubscribers = null, $message_moderation = null, $users_post_only = null, $subscription_moderation = null, $replyto = null, $lang = null, \Ovh\ArrayType\MyArrayOfStringType $moderators = null, \Ovh\ArrayType\MyArrayOfStringType $subscribers = null)
     {
         $this
             ->setDomain($domain)
@@ -117,7 +117,7 @@ class MailingListFullInfoReturn extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\MailingListFullInfoReturn
+     * @return \Ovh\StructType\MailingListFullInfoReturn
      */
     public function setDomain($domain = null)
     {
@@ -139,7 +139,7 @@ class MailingListFullInfoReturn extends AbstractStructBase
     /**
      * Set ml value
      * @param string $ml
-     * @return \PayPal\StructType\MailingListFullInfoReturn
+     * @return \Ovh\StructType\MailingListFullInfoReturn
      */
     public function setMl($ml = null)
     {
@@ -161,7 +161,7 @@ class MailingListFullInfoReturn extends AbstractStructBase
     /**
      * Set owner value
      * @param string $owner
-     * @return \PayPal\StructType\MailingListFullInfoReturn
+     * @return \Ovh\StructType\MailingListFullInfoReturn
      */
     public function setOwner($owner = null)
     {
@@ -183,7 +183,7 @@ class MailingListFullInfoReturn extends AbstractStructBase
     /**
      * Set nbSubscribers value
      * @param int $nbSubscribers
-     * @return \PayPal\StructType\MailingListFullInfoReturn
+     * @return \Ovh\StructType\MailingListFullInfoReturn
      */
     public function setNbSubscribers($nbSubscribers = null)
     {
@@ -205,7 +205,7 @@ class MailingListFullInfoReturn extends AbstractStructBase
     /**
      * Set message_moderation value
      * @param bool $message_moderation
-     * @return \PayPal\StructType\MailingListFullInfoReturn
+     * @return \Ovh\StructType\MailingListFullInfoReturn
      */
     public function setMessage_moderation($message_moderation = null)
     {
@@ -227,7 +227,7 @@ class MailingListFullInfoReturn extends AbstractStructBase
     /**
      * Set users_post_only value
      * @param bool $users_post_only
-     * @return \PayPal\StructType\MailingListFullInfoReturn
+     * @return \Ovh\StructType\MailingListFullInfoReturn
      */
     public function setUsers_post_only($users_post_only = null)
     {
@@ -249,7 +249,7 @@ class MailingListFullInfoReturn extends AbstractStructBase
     /**
      * Set subscription_moderation value
      * @param bool $subscription_moderation
-     * @return \PayPal\StructType\MailingListFullInfoReturn
+     * @return \Ovh\StructType\MailingListFullInfoReturn
      */
     public function setSubscription_moderation($subscription_moderation = null)
     {
@@ -271,7 +271,7 @@ class MailingListFullInfoReturn extends AbstractStructBase
     /**
      * Set replyto value
      * @param string $replyto
-     * @return \PayPal\StructType\MailingListFullInfoReturn
+     * @return \Ovh\StructType\MailingListFullInfoReturn
      */
     public function setReplyto($replyto = null)
     {
@@ -293,7 +293,7 @@ class MailingListFullInfoReturn extends AbstractStructBase
     /**
      * Set lang value
      * @param string $lang
-     * @return \PayPal\StructType\MailingListFullInfoReturn
+     * @return \Ovh\StructType\MailingListFullInfoReturn
      */
     public function setLang($lang = null)
     {
@@ -306,7 +306,7 @@ class MailingListFullInfoReturn extends AbstractStructBase
     }
     /**
      * Get moderators value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getModerators()
     {
@@ -314,17 +314,17 @@ class MailingListFullInfoReturn extends AbstractStructBase
     }
     /**
      * Set moderators value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $moderators
-     * @return \PayPal\StructType\MailingListFullInfoReturn
+     * @param \Ovh\ArrayType\MyArrayOfStringType $moderators
+     * @return \Ovh\StructType\MailingListFullInfoReturn
      */
-    public function setModerators(\PayPal\ArrayType\MyArrayOfStringType $moderators = null)
+    public function setModerators(\Ovh\ArrayType\MyArrayOfStringType $moderators = null)
     {
         $this->moderators = $moderators;
         return $this;
     }
     /**
      * Get subscribers value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getSubscribers()
     {
@@ -332,10 +332,10 @@ class MailingListFullInfoReturn extends AbstractStructBase
     }
     /**
      * Set subscribers value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $subscribers
-     * @return \PayPal\StructType\MailingListFullInfoReturn
+     * @param \Ovh\ArrayType\MyArrayOfStringType $subscribers
+     * @return \Ovh\StructType\MailingListFullInfoReturn
      */
-    public function setSubscribers(\PayPal\ArrayType\MyArrayOfStringType $subscribers = null)
+    public function setSubscribers(\Ovh\ArrayType\MyArrayOfStringType $subscribers = null)
     {
         $this->subscribers = $subscribers;
         return $this;
@@ -346,7 +346,7 @@ class MailingListFullInfoReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\MailingListFullInfoReturn
+     * @return \Ovh\StructType\MailingListFullInfoReturn
      */
     public static function __set_state(array $array)
     {

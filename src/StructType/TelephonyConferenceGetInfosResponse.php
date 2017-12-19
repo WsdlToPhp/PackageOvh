@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyConferenceGetInfosResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyConferenceGetInfosReturn
+     * @var \Ovh\StructType\TelephonyConferenceGetInfosReturn
      */
     public $return;
     /**
      * Constructor method for telephonyConferenceGetInfosResponse
      * @uses TelephonyConferenceGetInfosResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyConferenceGetInfosReturn $return
+     * @param \Ovh\StructType\TelephonyConferenceGetInfosReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonyConferenceGetInfosReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonyConferenceGetInfosReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyConferenceGetInfosReturn|null
+     * @return \Ovh\StructType\TelephonyConferenceGetInfosReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyConferenceGetInfosResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyConferenceGetInfosReturn $return
-     * @return \PayPal\StructType\TelephonyConferenceGetInfosResponse
+     * @param \Ovh\StructType\TelephonyConferenceGetInfosReturn $return
+     * @return \Ovh\StructType\TelephonyConferenceGetInfosResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyConferenceGetInfosReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyConferenceGetInfosReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyConferenceGetInfosResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyConferenceGetInfosResponse
+     * @return \Ovh\StructType\TelephonyConferenceGetInfosResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonySpareServiceInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonySpareServiceInfoStruct
+     * @var \Ovh\StructType\TelephonySpareServiceInfoStruct
      */
     public $return;
     /**
      * Constructor method for telephonySpareServiceInfoResponse
      * @uses TelephonySpareServiceInfoResponse::setReturn()
-     * @param \PayPal\StructType\TelephonySpareServiceInfoStruct $return
+     * @param \Ovh\StructType\TelephonySpareServiceInfoStruct $return
      */
-    public function __construct(\PayPal\StructType\TelephonySpareServiceInfoStruct $return = null)
+    public function __construct(\Ovh\StructType\TelephonySpareServiceInfoStruct $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonySpareServiceInfoStruct|null
+     * @return \Ovh\StructType\TelephonySpareServiceInfoStruct|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonySpareServiceInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonySpareServiceInfoStruct $return
-     * @return \PayPal\StructType\TelephonySpareServiceInfoResponse
+     * @param \Ovh\StructType\TelephonySpareServiceInfoStruct $return
+     * @return \Ovh\StructType\TelephonySpareServiceInfoResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonySpareServiceInfoStruct $return = null)
+    public function setReturn(\Ovh\StructType\TelephonySpareServiceInfoStruct $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonySpareServiceInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySpareServiceInfoResponse
+     * @return \Ovh\StructType\TelephonySpareServiceInfoResponse
      */
     public static function __set_state(array $array)
     {

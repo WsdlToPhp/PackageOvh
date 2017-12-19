@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonySecurityDepositCreditResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonySecurityDepositCreditReturn
+     * @var \Ovh\StructType\TelephonySecurityDepositCreditReturn
      */
     public $return;
     /**
      * Constructor method for telephonySecurityDepositCreditResponse
      * @uses TelephonySecurityDepositCreditResponse::setReturn()
-     * @param \PayPal\StructType\TelephonySecurityDepositCreditReturn $return
+     * @param \Ovh\StructType\TelephonySecurityDepositCreditReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonySecurityDepositCreditReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonySecurityDepositCreditReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonySecurityDepositCreditReturn|null
+     * @return \Ovh\StructType\TelephonySecurityDepositCreditReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonySecurityDepositCreditResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonySecurityDepositCreditReturn $return
-     * @return \PayPal\StructType\TelephonySecurityDepositCreditResponse
+     * @param \Ovh\StructType\TelephonySecurityDepositCreditReturn $return
+     * @return \Ovh\StructType\TelephonySecurityDepositCreditResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonySecurityDepositCreditReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonySecurityDepositCreditReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonySecurityDepositCreditResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySecurityDepositCreditResponse
+     * @return \Ovh\StructType\TelephonySecurityDepositCreditResponse
      */
     public static function __set_state(array $array)
     {

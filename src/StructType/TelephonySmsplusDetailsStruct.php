@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -88,7 +88,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     public $cgiActivation;
     /**
      * The options
-     * @var \PayPal\StructType\TelephonySmsplusOptionsStruct
+     * @var \Ovh\StructType\TelephonySmsplusOptionsStruct
      */
     public $options;
     /**
@@ -130,10 +130,10 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
      * @param string $cgiUrl
      * @param string $text
      * @param bool $cgiActivation
-     * @param \PayPal\StructType\TelephonySmsplusOptionsStruct $options
+     * @param \Ovh\StructType\TelephonySmsplusOptionsStruct $options
      * @param string $description
      */
-    public function __construct($shortCodeCategory = null, $shortCode = null, $keyword = null, $domain = null, $publicType = null, $price = null, $priceReversed = null, $rates = null, $level = null, $company = null, $applicationDescription = null, $applicationType = null, $cgiUrl = null, $text = null, $cgiActivation = null, \PayPal\StructType\TelephonySmsplusOptionsStruct $options = null, $description = null)
+    public function __construct($shortCodeCategory = null, $shortCode = null, $keyword = null, $domain = null, $publicType = null, $price = null, $priceReversed = null, $rates = null, $level = null, $company = null, $applicationDescription = null, $applicationType = null, $cgiUrl = null, $text = null, $cgiActivation = null, \Ovh\StructType\TelephonySmsplusOptionsStruct $options = null, $description = null)
     {
         $this
             ->setShortCodeCategory($shortCodeCategory)
@@ -165,7 +165,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     /**
      * Set shortCodeCategory value
      * @param string $shortCodeCategory
-     * @return \PayPal\StructType\TelephonySmsplusDetailsStruct
+     * @return \Ovh\StructType\TelephonySmsplusDetailsStruct
      */
     public function setShortCodeCategory($shortCodeCategory = null)
     {
@@ -187,7 +187,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     /**
      * Set shortCode value
      * @param string $shortCode
-     * @return \PayPal\StructType\TelephonySmsplusDetailsStruct
+     * @return \Ovh\StructType\TelephonySmsplusDetailsStruct
      */
     public function setShortCode($shortCode = null)
     {
@@ -209,7 +209,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     /**
      * Set keyword value
      * @param string $keyword
-     * @return \PayPal\StructType\TelephonySmsplusDetailsStruct
+     * @return \Ovh\StructType\TelephonySmsplusDetailsStruct
      */
     public function setKeyword($keyword = null)
     {
@@ -231,7 +231,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\TelephonySmsplusDetailsStruct
+     * @return \Ovh\StructType\TelephonySmsplusDetailsStruct
      */
     public function setDomain($domain = null)
     {
@@ -253,7 +253,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     /**
      * Set publicType value
      * @param string $publicType
-     * @return \PayPal\StructType\TelephonySmsplusDetailsStruct
+     * @return \Ovh\StructType\TelephonySmsplusDetailsStruct
      */
     public function setPublicType($publicType = null)
     {
@@ -275,7 +275,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \PayPal\StructType\TelephonySmsplusDetailsStruct
+     * @return \Ovh\StructType\TelephonySmsplusDetailsStruct
      */
     public function setPrice($price = null)
     {
@@ -293,7 +293,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     /**
      * Set priceReversed value
      * @param float $priceReversed
-     * @return \PayPal\StructType\TelephonySmsplusDetailsStruct
+     * @return \Ovh\StructType\TelephonySmsplusDetailsStruct
      */
     public function setPriceReversed($priceReversed = null)
     {
@@ -311,7 +311,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     /**
      * Set rates value
      * @param string $rates
-     * @return \PayPal\StructType\TelephonySmsplusDetailsStruct
+     * @return \Ovh\StructType\TelephonySmsplusDetailsStruct
      */
     public function setRates($rates = null)
     {
@@ -333,7 +333,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     /**
      * Set level value
      * @param string $level
-     * @return \PayPal\StructType\TelephonySmsplusDetailsStruct
+     * @return \Ovh\StructType\TelephonySmsplusDetailsStruct
      */
     public function setLevel($level = null)
     {
@@ -355,7 +355,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     /**
      * Set company value
      * @param string $company
-     * @return \PayPal\StructType\TelephonySmsplusDetailsStruct
+     * @return \Ovh\StructType\TelephonySmsplusDetailsStruct
      */
     public function setCompany($company = null)
     {
@@ -377,7 +377,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     /**
      * Set applicationDescription value
      * @param string $applicationDescription
-     * @return \PayPal\StructType\TelephonySmsplusDetailsStruct
+     * @return \Ovh\StructType\TelephonySmsplusDetailsStruct
      */
     public function setApplicationDescription($applicationDescription = null)
     {
@@ -399,7 +399,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     /**
      * Set applicationType value
      * @param string $applicationType
-     * @return \PayPal\StructType\TelephonySmsplusDetailsStruct
+     * @return \Ovh\StructType\TelephonySmsplusDetailsStruct
      */
     public function setApplicationType($applicationType = null)
     {
@@ -421,7 +421,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     /**
      * Set cgiUrl value
      * @param string $cgiUrl
-     * @return \PayPal\StructType\TelephonySmsplusDetailsStruct
+     * @return \Ovh\StructType\TelephonySmsplusDetailsStruct
      */
     public function setCgiUrl($cgiUrl = null)
     {
@@ -443,7 +443,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \PayPal\StructType\TelephonySmsplusDetailsStruct
+     * @return \Ovh\StructType\TelephonySmsplusDetailsStruct
      */
     public function setText($text = null)
     {
@@ -465,7 +465,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     /**
      * Set cgiActivation value
      * @param bool $cgiActivation
-     * @return \PayPal\StructType\TelephonySmsplusDetailsStruct
+     * @return \Ovh\StructType\TelephonySmsplusDetailsStruct
      */
     public function setCgiActivation($cgiActivation = null)
     {
@@ -478,7 +478,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     }
     /**
      * Get options value
-     * @return \PayPal\StructType\TelephonySmsplusOptionsStruct|null
+     * @return \Ovh\StructType\TelephonySmsplusOptionsStruct|null
      */
     public function getOptions()
     {
@@ -486,10 +486,10 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     }
     /**
      * Set options value
-     * @param \PayPal\StructType\TelephonySmsplusOptionsStruct $options
-     * @return \PayPal\StructType\TelephonySmsplusDetailsStruct
+     * @param \Ovh\StructType\TelephonySmsplusOptionsStruct $options
+     * @return \Ovh\StructType\TelephonySmsplusDetailsStruct
      */
-    public function setOptions(\PayPal\StructType\TelephonySmsplusOptionsStruct $options = null)
+    public function setOptions(\Ovh\StructType\TelephonySmsplusOptionsStruct $options = null)
     {
         $this->options = $options;
         return $this;
@@ -505,7 +505,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \PayPal\StructType\TelephonySmsplusDetailsStruct
+     * @return \Ovh\StructType\TelephonySmsplusDetailsStruct
      */
     public function setDescription($description = null)
     {
@@ -522,7 +522,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsplusDetailsStruct
+     * @return \Ovh\StructType\TelephonySmsplusDetailsStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -129,7 +129,7 @@ class TelephonyPhonebookOnSmsContactAdd extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactAdd
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactAdd
      */
     public function setSession($session = null)
     {
@@ -151,7 +151,7 @@ class TelephonyPhonebookOnSmsContactAdd extends AbstractStructBase
     /**
      * Set smsAccount value
      * @param string $smsAccount
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactAdd
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactAdd
      */
     public function setSmsAccount($smsAccount = null)
     {
@@ -173,7 +173,7 @@ class TelephonyPhonebookOnSmsContactAdd extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactAdd
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactAdd
      */
     public function setId($id = null)
     {
@@ -195,7 +195,7 @@ class TelephonyPhonebookOnSmsContactAdd extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactAdd
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactAdd
      */
     public function setName($name = null)
     {
@@ -217,7 +217,7 @@ class TelephonyPhonebookOnSmsContactAdd extends AbstractStructBase
     /**
      * Set surname value
      * @param string $surname
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactAdd
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactAdd
      */
     public function setSurname($surname = null)
     {
@@ -239,7 +239,7 @@ class TelephonyPhonebookOnSmsContactAdd extends AbstractStructBase
     /**
      * Set workPhone value
      * @param string $workPhone
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactAdd
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactAdd
      */
     public function setWorkPhone($workPhone = null)
     {
@@ -261,7 +261,7 @@ class TelephonyPhonebookOnSmsContactAdd extends AbstractStructBase
     /**
      * Set workMobile value
      * @param string $workMobile
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactAdd
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactAdd
      */
     public function setWorkMobile($workMobile = null)
     {
@@ -283,7 +283,7 @@ class TelephonyPhonebookOnSmsContactAdd extends AbstractStructBase
     /**
      * Set homePhone value
      * @param string $homePhone
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactAdd
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactAdd
      */
     public function setHomePhone($homePhone = null)
     {
@@ -305,7 +305,7 @@ class TelephonyPhonebookOnSmsContactAdd extends AbstractStructBase
     /**
      * Set homeMobile value
      * @param string $homeMobile
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactAdd
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactAdd
      */
     public function setHomeMobile($homeMobile = null)
     {
@@ -327,7 +327,7 @@ class TelephonyPhonebookOnSmsContactAdd extends AbstractStructBase
     /**
      * Set groupName value
      * @param string $groupName
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactAdd
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactAdd
      */
     public function setGroupName($groupName = null)
     {
@@ -344,7 +344,7 @@ class TelephonyPhonebookOnSmsContactAdd extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactAdd
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactAdd
      */
     public static function __set_state(array $array)
     {

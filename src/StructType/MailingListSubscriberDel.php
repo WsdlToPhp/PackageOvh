@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class MailingListSubscriberDel extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\MailingListSubscriberDel
+     * @return \Ovh\StructType\MailingListSubscriberDel
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class MailingListSubscriberDel extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\MailingListSubscriberDel
+     * @return \Ovh\StructType\MailingListSubscriberDel
      */
     public function setDomain($domain = null)
     {
@@ -113,7 +113,7 @@ class MailingListSubscriberDel extends AbstractStructBase
     /**
      * Set ml value
      * @param string $ml
-     * @return \PayPal\StructType\MailingListSubscriberDel
+     * @return \Ovh\StructType\MailingListSubscriberDel
      */
     public function setMl($ml = null)
     {
@@ -135,7 +135,7 @@ class MailingListSubscriberDel extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\MailingListSubscriberDel
+     * @return \Ovh\StructType\MailingListSubscriberDel
      */
     public function setEmail($email = null)
     {
@@ -152,7 +152,7 @@ class MailingListSubscriberDel extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\MailingListSubscriberDel
+     * @return \Ovh\StructType\MailingListSubscriberDel
      */
     public static function __set_state(array $array)
     {

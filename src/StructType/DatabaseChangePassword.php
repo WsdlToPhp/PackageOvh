@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class DatabaseChangePassword extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DatabaseChangePassword
+     * @return \Ovh\StructType\DatabaseChangePassword
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class DatabaseChangePassword extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\DatabaseChangePassword
+     * @return \Ovh\StructType\DatabaseChangePassword
      */
     public function setDomain($domain = null)
     {
@@ -113,7 +113,7 @@ class DatabaseChangePassword extends AbstractStructBase
     /**
      * Set db value
      * @param string $db
-     * @return \PayPal\StructType\DatabaseChangePassword
+     * @return \Ovh\StructType\DatabaseChangePassword
      */
     public function setDb($db = null)
     {
@@ -135,7 +135,7 @@ class DatabaseChangePassword extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \PayPal\StructType\DatabaseChangePassword
+     * @return \Ovh\StructType\DatabaseChangePassword
      */
     public function setPassword($password = null)
     {
@@ -152,7 +152,7 @@ class DatabaseChangePassword extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DatabaseChangePassword
+     * @return \Ovh\StructType\DatabaseChangePassword
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class TelephonyLineLogsOnGroup extends AbstractStructBase
     /**
      * Set group value
      * @param string $group
-     * @return \PayPal\StructType\TelephonyLineLogsOnGroup
+     * @return \Ovh\StructType\TelephonyLineLogsOnGroup
      */
     public function setGroup($group = null)
     {
@@ -81,7 +81,7 @@ class TelephonyLineLogsOnGroup extends AbstractStructBase
     /**
      * Set pagingStart value
      * @param int $pagingStart
-     * @return \PayPal\StructType\TelephonyLineLogsOnGroup
+     * @return \Ovh\StructType\TelephonyLineLogsOnGroup
      */
     public function setPagingStart($pagingStart = null)
     {
@@ -103,7 +103,7 @@ class TelephonyLineLogsOnGroup extends AbstractStructBase
     /**
      * Set pagingLimit value
      * @param int $pagingLimit
-     * @return \PayPal\StructType\TelephonyLineLogsOnGroup
+     * @return \Ovh\StructType\TelephonyLineLogsOnGroup
      */
     public function setPagingLimit($pagingLimit = null)
     {
@@ -120,7 +120,7 @@ class TelephonyLineLogsOnGroup extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyLineLogsOnGroup
+     * @return \Ovh\StructType\TelephonyLineLogsOnGroup
      */
     public static function __set_state(array $array)
     {

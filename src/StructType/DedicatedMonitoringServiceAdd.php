@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -119,7 +119,7 @@ class DedicatedMonitoringServiceAdd extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAdd
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAdd
      */
     public function setSession($session = null)
     {
@@ -141,7 +141,7 @@ class DedicatedMonitoringServiceAdd extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAdd
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAdd
      */
     public function setHostname($hostname = null)
     {
@@ -163,7 +163,7 @@ class DedicatedMonitoringServiceAdd extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAdd
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAdd
      */
     public function setIp($ip = null)
     {
@@ -185,7 +185,7 @@ class DedicatedMonitoringServiceAdd extends AbstractStructBase
     /**
      * Set port value
      * @param int $port
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAdd
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAdd
      */
     public function setPort($port = null)
     {
@@ -207,7 +207,7 @@ class DedicatedMonitoringServiceAdd extends AbstractStructBase
     /**
      * Set protocol value
      * @param string $protocol
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAdd
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAdd
      */
     public function setProtocol($protocol = null)
     {
@@ -229,7 +229,7 @@ class DedicatedMonitoringServiceAdd extends AbstractStructBase
     /**
      * Set period value
      * @param string $period
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAdd
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAdd
      */
     public function setPeriod($period = null)
     {
@@ -251,7 +251,7 @@ class DedicatedMonitoringServiceAdd extends AbstractStructBase
     /**
      * Set string value
      * @param string $string
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAdd
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAdd
      */
     public function setString($string = null)
     {
@@ -273,7 +273,7 @@ class DedicatedMonitoringServiceAdd extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAdd
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAdd
      */
     public function setUrl($url = null)
     {
@@ -295,7 +295,7 @@ class DedicatedMonitoringServiceAdd extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAdd
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAdd
      */
     public function setEmail($email = null)
     {
@@ -312,7 +312,7 @@ class DedicatedMonitoringServiceAdd extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAdd
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAdd
      */
     public static function __set_state(array $array)
     {

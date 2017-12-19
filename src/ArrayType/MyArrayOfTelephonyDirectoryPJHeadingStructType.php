@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfTelephonyDirectoryPJHeadingStructType extends AbstractStructArray
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TelephonyDirectoryPJHeadingStruct[]
+     * @var \Ovh\StructType\TelephonyDirectoryPJHeadingStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTelephonyDirectoryPJHeadingStructType
      * @uses MyArrayOfTelephonyDirectoryPJHeadingStructType::setItem()
-     * @param \PayPal\StructType\TelephonyDirectoryPJHeadingStruct[] $item
+     * @param \Ovh\StructType\TelephonyDirectoryPJHeadingStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfTelephonyDirectoryPJHeadingStructType extends AbstractStructArray
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TelephonyDirectoryPJHeadingStruct[]|null
+     * @return \Ovh\StructType\TelephonyDirectoryPJHeadingStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfTelephonyDirectoryPJHeadingStructType extends AbstractStructArray
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyDirectoryPJHeadingStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyDirectoryPJHeadingStructType
+     * @param \Ovh\StructType\TelephonyDirectoryPJHeadingStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyDirectoryPJHeadingStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTelephonyDirectoryPJHeadingStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTelephonyDirectoryPJHeadingStructTypeItemItem instanceof \PayPal\StructType\TelephonyDirectoryPJHeadingStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyDirectoryPJHeadingStruct, "%s" given', is_object($myArrayOfTelephonyDirectoryPJHeadingStructTypeItemItem) ? get_class($myArrayOfTelephonyDirectoryPJHeadingStructTypeItemItem) : gettype($myArrayOfTelephonyDirectoryPJHeadingStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTelephonyDirectoryPJHeadingStructTypeItemItem instanceof \Ovh\StructType\TelephonyDirectoryPJHeadingStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyDirectoryPJHeadingStruct, "%s" given', is_object($myArrayOfTelephonyDirectoryPJHeadingStructTypeItemItem) ? get_class($myArrayOfTelephonyDirectoryPJHeadingStructTypeItemItem) : gettype($myArrayOfTelephonyDirectoryPJHeadingStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfTelephonyDirectoryPJHeadingStructType extends AbstractStructArray
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyDirectoryPJHeadingStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyDirectoryPJHeadingStructType
+     * @param \Ovh\StructType\TelephonyDirectoryPJHeadingStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyDirectoryPJHeadingStructType
      */
-    public function addToItem(\PayPal\StructType\TelephonyDirectoryPJHeadingStruct $item)
+    public function addToItem(\Ovh\StructType\TelephonyDirectoryPJHeadingStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TelephonyDirectoryPJHeadingStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyDirectoryPJHeadingStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TelephonyDirectoryPJHeadingStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyDirectoryPJHeadingStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfTelephonyDirectoryPJHeadingStructType extends AbstractStructArray
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonyDirectoryPJHeadingStruct|null
+     * @return \Ovh\StructType\TelephonyDirectoryPJHeadingStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfTelephonyDirectoryPJHeadingStructType extends AbstractStructArray
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonyDirectoryPJHeadingStruct|null
+     * @return \Ovh\StructType\TelephonyDirectoryPJHeadingStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfTelephonyDirectoryPJHeadingStructType extends AbstractStructArray
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonyDirectoryPJHeadingStruct|null
+     * @return \Ovh\StructType\TelephonyDirectoryPJHeadingStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfTelephonyDirectoryPJHeadingStructType extends AbstractStructArray
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonyDirectoryPJHeadingStruct|null
+     * @return \Ovh\StructType\TelephonyDirectoryPJHeadingStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfTelephonyDirectoryPJHeadingStructType extends AbstractStructArray
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonyDirectoryPJHeadingStruct|null
+     * @return \Ovh\StructType\TelephonyDirectoryPJHeadingStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfTelephonyDirectoryPJHeadingStructType extends AbstractStructArray
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyDirectoryPJHeadingStructType
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyDirectoryPJHeadingStructType
      */
     public static function __set_state(array $array)
     {

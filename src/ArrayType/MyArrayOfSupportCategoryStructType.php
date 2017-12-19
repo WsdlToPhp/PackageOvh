@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfSupportCategoryStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\SupportCategoryStruct[]
+     * @var \Ovh\StructType\SupportCategoryStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfSupportCategoryStructType
      * @uses MyArrayOfSupportCategoryStructType::setItem()
-     * @param \PayPal\StructType\SupportCategoryStruct[] $item
+     * @param \Ovh\StructType\SupportCategoryStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfSupportCategoryStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\SupportCategoryStruct[]|null
+     * @return \Ovh\StructType\SupportCategoryStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfSupportCategoryStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\SupportCategoryStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfSupportCategoryStructType
+     * @param \Ovh\StructType\SupportCategoryStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfSupportCategoryStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfSupportCategoryStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfSupportCategoryStructTypeItemItem instanceof \PayPal\StructType\SupportCategoryStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\SupportCategoryStruct, "%s" given', is_object($myArrayOfSupportCategoryStructTypeItemItem) ? get_class($myArrayOfSupportCategoryStructTypeItemItem) : gettype($myArrayOfSupportCategoryStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfSupportCategoryStructTypeItemItem instanceof \Ovh\StructType\SupportCategoryStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\SupportCategoryStruct, "%s" given', is_object($myArrayOfSupportCategoryStructTypeItemItem) ? get_class($myArrayOfSupportCategoryStructTypeItemItem) : gettype($myArrayOfSupportCategoryStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfSupportCategoryStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\SupportCategoryStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfSupportCategoryStructType
+     * @param \Ovh\StructType\SupportCategoryStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfSupportCategoryStructType
      */
-    public function addToItem(\PayPal\StructType\SupportCategoryStruct $item)
+    public function addToItem(\Ovh\StructType\SupportCategoryStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\SupportCategoryStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\SupportCategoryStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\SupportCategoryStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\SupportCategoryStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfSupportCategoryStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\SupportCategoryStruct|null
+     * @return \Ovh\StructType\SupportCategoryStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfSupportCategoryStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\SupportCategoryStruct|null
+     * @return \Ovh\StructType\SupportCategoryStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfSupportCategoryStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\SupportCategoryStruct|null
+     * @return \Ovh\StructType\SupportCategoryStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfSupportCategoryStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\SupportCategoryStruct|null
+     * @return \Ovh\StructType\SupportCategoryStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfSupportCategoryStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\SupportCategoryStruct|null
+     * @return \Ovh\StructType\SupportCategoryStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfSupportCategoryStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfSupportCategoryStructType
+     * @return \Ovh\ArrayType\MyArrayOfSupportCategoryStructType
      */
     public static function __set_state(array $array)
     {

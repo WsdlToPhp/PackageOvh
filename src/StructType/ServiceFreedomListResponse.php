@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class ServiceFreedomListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfFreedomStructType
+     * @var \Ovh\ArrayType\MyArrayOfFreedomStructType
      */
     public $return;
     /**
      * Constructor method for serviceFreedomListResponse
      * @uses ServiceFreedomListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfFreedomStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfFreedomStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfFreedomStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfFreedomStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfFreedomStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfFreedomStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class ServiceFreedomListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfFreedomStructType $return
-     * @return \PayPal\StructType\ServiceFreedomListResponse
+     * @param \Ovh\ArrayType\MyArrayOfFreedomStructType $return
+     * @return \Ovh\StructType\ServiceFreedomListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfFreedomStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfFreedomStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class ServiceFreedomListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ServiceFreedomListResponse
+     * @return \Ovh\StructType\ServiceFreedomListResponse
      */
     public static function __set_state(array $array)
     {

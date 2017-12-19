@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfTelephonyPhonebookGroupStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TelephonyPhonebookGroupStruct[]
+     * @var \Ovh\StructType\TelephonyPhonebookGroupStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTelephonyPhonebookGroupStructType
      * @uses MyArrayOfTelephonyPhonebookGroupStructType::setItem()
-     * @param \PayPal\StructType\TelephonyPhonebookGroupStruct[] $item
+     * @param \Ovh\StructType\TelephonyPhonebookGroupStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfTelephonyPhonebookGroupStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TelephonyPhonebookGroupStruct[]|null
+     * @return \Ovh\StructType\TelephonyPhonebookGroupStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfTelephonyPhonebookGroupStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyPhonebookGroupStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType
+     * @param \Ovh\StructType\TelephonyPhonebookGroupStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTelephonyPhonebookGroupStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTelephonyPhonebookGroupStructTypeItemItem instanceof \PayPal\StructType\TelephonyPhonebookGroupStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyPhonebookGroupStruct, "%s" given', is_object($myArrayOfTelephonyPhonebookGroupStructTypeItemItem) ? get_class($myArrayOfTelephonyPhonebookGroupStructTypeItemItem) : gettype($myArrayOfTelephonyPhonebookGroupStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTelephonyPhonebookGroupStructTypeItemItem instanceof \Ovh\StructType\TelephonyPhonebookGroupStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyPhonebookGroupStruct, "%s" given', is_object($myArrayOfTelephonyPhonebookGroupStructTypeItemItem) ? get_class($myArrayOfTelephonyPhonebookGroupStructTypeItemItem) : gettype($myArrayOfTelephonyPhonebookGroupStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfTelephonyPhonebookGroupStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyPhonebookGroupStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType
+     * @param \Ovh\StructType\TelephonyPhonebookGroupStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType
      */
-    public function addToItem(\PayPal\StructType\TelephonyPhonebookGroupStruct $item)
+    public function addToItem(\Ovh\StructType\TelephonyPhonebookGroupStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TelephonyPhonebookGroupStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyPhonebookGroupStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TelephonyPhonebookGroupStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyPhonebookGroupStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfTelephonyPhonebookGroupStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonyPhonebookGroupStruct|null
+     * @return \Ovh\StructType\TelephonyPhonebookGroupStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfTelephonyPhonebookGroupStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonyPhonebookGroupStruct|null
+     * @return \Ovh\StructType\TelephonyPhonebookGroupStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfTelephonyPhonebookGroupStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonyPhonebookGroupStruct|null
+     * @return \Ovh\StructType\TelephonyPhonebookGroupStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfTelephonyPhonebookGroupStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonyPhonebookGroupStruct|null
+     * @return \Ovh\StructType\TelephonyPhonebookGroupStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfTelephonyPhonebookGroupStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonyPhonebookGroupStruct|null
+     * @return \Ovh\StructType\TelephonyPhonebookGroupStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfTelephonyPhonebookGroupStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType
      */
     public static function __set_state(array $array)
     {

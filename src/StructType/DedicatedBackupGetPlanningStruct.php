@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class DedicatedBackupGetPlanningStruct extends AbstractStructBase
     public $day;
     /**
      * The planning
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $planning;
     /**
@@ -26,9 +26,9 @@ class DedicatedBackupGetPlanningStruct extends AbstractStructBase
      * @uses DedicatedBackupGetPlanningStruct::setDay()
      * @uses DedicatedBackupGetPlanningStruct::setPlanning()
      * @param string $day
-     * @param \PayPal\ArrayType\MyArrayOfStringType $planning
+     * @param \Ovh\ArrayType\MyArrayOfStringType $planning
      */
-    public function __construct($day = null, \PayPal\ArrayType\MyArrayOfStringType $planning = null)
+    public function __construct($day = null, \Ovh\ArrayType\MyArrayOfStringType $planning = null)
     {
         $this
             ->setDay($day)
@@ -45,7 +45,7 @@ class DedicatedBackupGetPlanningStruct extends AbstractStructBase
     /**
      * Set day value
      * @param string $day
-     * @return \PayPal\StructType\DedicatedBackupGetPlanningStruct
+     * @return \Ovh\StructType\DedicatedBackupGetPlanningStruct
      */
     public function setDay($day = null)
     {
@@ -58,7 +58,7 @@ class DedicatedBackupGetPlanningStruct extends AbstractStructBase
     }
     /**
      * Get planning value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getPlanning()
     {
@@ -66,10 +66,10 @@ class DedicatedBackupGetPlanningStruct extends AbstractStructBase
     }
     /**
      * Set planning value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $planning
-     * @return \PayPal\StructType\DedicatedBackupGetPlanningStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $planning
+     * @return \Ovh\StructType\DedicatedBackupGetPlanningStruct
      */
-    public function setPlanning(\PayPal\ArrayType\MyArrayOfStringType $planning = null)
+    public function setPlanning(\Ovh\ArrayType\MyArrayOfStringType $planning = null)
     {
         $this->planning = $planning;
         return $this;
@@ -80,7 +80,7 @@ class DedicatedBackupGetPlanningStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedBackupGetPlanningStruct
+     * @return \Ovh\StructType\DedicatedBackupGetPlanningStruct
      */
     public static function __set_state(array $array)
     {

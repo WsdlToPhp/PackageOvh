@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -29,7 +29,7 @@ class TelephonyBillingAccountSummaryBillingAccountStruct extends AbstractStructB
     public $betaGammaOffer;
     /**
      * The mobile
-     * @var \PayPal\StructType\TelephonyCallsSummaryStruct
+     * @var \Ovh\StructType\TelephonyCallsSummaryStruct
      */
     public $mobile;
     /**
@@ -41,9 +41,9 @@ class TelephonyBillingAccountSummaryBillingAccountStruct extends AbstractStructB
      * @param string $name
      * @param string $description
      * @param bool $betaGammaOffer
-     * @param \PayPal\StructType\TelephonyCallsSummaryStruct $mobile
+     * @param \Ovh\StructType\TelephonyCallsSummaryStruct $mobile
      */
-    public function __construct($name = null, $description = null, $betaGammaOffer = null, \PayPal\StructType\TelephonyCallsSummaryStruct $mobile = null)
+    public function __construct($name = null, $description = null, $betaGammaOffer = null, \Ovh\StructType\TelephonyCallsSummaryStruct $mobile = null)
     {
         $this
             ->setName($name)
@@ -62,7 +62,7 @@ class TelephonyBillingAccountSummaryBillingAccountStruct extends AbstractStructB
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\TelephonyBillingAccountSummaryBillingAccountStruct
+     * @return \Ovh\StructType\TelephonyBillingAccountSummaryBillingAccountStruct
      */
     public function setName($name = null)
     {
@@ -84,7 +84,7 @@ class TelephonyBillingAccountSummaryBillingAccountStruct extends AbstractStructB
     /**
      * Set description value
      * @param string $description
-     * @return \PayPal\StructType\TelephonyBillingAccountSummaryBillingAccountStruct
+     * @return \Ovh\StructType\TelephonyBillingAccountSummaryBillingAccountStruct
      */
     public function setDescription($description = null)
     {
@@ -106,7 +106,7 @@ class TelephonyBillingAccountSummaryBillingAccountStruct extends AbstractStructB
     /**
      * Set betaGammaOffer value
      * @param bool $betaGammaOffer
-     * @return \PayPal\StructType\TelephonyBillingAccountSummaryBillingAccountStruct
+     * @return \Ovh\StructType\TelephonyBillingAccountSummaryBillingAccountStruct
      */
     public function setBetaGammaOffer($betaGammaOffer = null)
     {
@@ -119,7 +119,7 @@ class TelephonyBillingAccountSummaryBillingAccountStruct extends AbstractStructB
     }
     /**
      * Get mobile value
-     * @return \PayPal\StructType\TelephonyCallsSummaryStruct|null
+     * @return \Ovh\StructType\TelephonyCallsSummaryStruct|null
      */
     public function getMobile()
     {
@@ -127,10 +127,10 @@ class TelephonyBillingAccountSummaryBillingAccountStruct extends AbstractStructB
     }
     /**
      * Set mobile value
-     * @param \PayPal\StructType\TelephonyCallsSummaryStruct $mobile
-     * @return \PayPal\StructType\TelephonyBillingAccountSummaryBillingAccountStruct
+     * @param \Ovh\StructType\TelephonyCallsSummaryStruct $mobile
+     * @return \Ovh\StructType\TelephonyBillingAccountSummaryBillingAccountStruct
      */
-    public function setMobile(\PayPal\StructType\TelephonyCallsSummaryStruct $mobile = null)
+    public function setMobile(\Ovh\StructType\TelephonyCallsSummaryStruct $mobile = null)
     {
         $this->mobile = $mobile;
         return $this;
@@ -141,7 +141,7 @@ class TelephonyBillingAccountSummaryBillingAccountStruct extends AbstractStructB
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyBillingAccountSummaryBillingAccountStruct
+     * @return \Ovh\StructType\TelephonyBillingAccountSummaryBillingAccountStruct
      */
     public static function __set_state(array $array)
     {

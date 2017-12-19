@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -93,7 +93,7 @@ class TelephonyConferenceParticipantStruct extends AbstractStructBase
     /**
      * Set callerid value
      * @param string $callerid
-     * @return \PayPal\StructType\TelephonyConferenceParticipantStruct
+     * @return \Ovh\StructType\TelephonyConferenceParticipantStruct
      */
     public function setCallerid($callerid = null)
     {
@@ -115,7 +115,7 @@ class TelephonyConferenceParticipantStruct extends AbstractStructBase
     /**
      * Set callername value
      * @param string $callername
-     * @return \PayPal\StructType\TelephonyConferenceParticipantStruct
+     * @return \Ovh\StructType\TelephonyConferenceParticipantStruct
      */
     public function setCallername($callername = null)
     {
@@ -137,7 +137,7 @@ class TelephonyConferenceParticipantStruct extends AbstractStructBase
     /**
      * Set talking value
      * @param bool $talking
-     * @return \PayPal\StructType\TelephonyConferenceParticipantStruct
+     * @return \Ovh\StructType\TelephonyConferenceParticipantStruct
      */
     public function setTalking($talking = null)
     {
@@ -159,7 +159,7 @@ class TelephonyConferenceParticipantStruct extends AbstractStructBase
     /**
      * Set deaf value
      * @param bool $deaf
-     * @return \PayPal\StructType\TelephonyConferenceParticipantStruct
+     * @return \Ovh\StructType\TelephonyConferenceParticipantStruct
      */
     public function setDeaf($deaf = null)
     {
@@ -181,7 +181,7 @@ class TelephonyConferenceParticipantStruct extends AbstractStructBase
     /**
      * Set muted value
      * @param bool $muted
-     * @return \PayPal\StructType\TelephonyConferenceParticipantStruct
+     * @return \Ovh\StructType\TelephonyConferenceParticipantStruct
      */
     public function setMuted($muted = null)
     {
@@ -203,7 +203,7 @@ class TelephonyConferenceParticipantStruct extends AbstractStructBase
     /**
      * Set joinsince value
      * @param int $joinsince
-     * @return \PayPal\StructType\TelephonyConferenceParticipantStruct
+     * @return \Ovh\StructType\TelephonyConferenceParticipantStruct
      */
     public function setJoinsince($joinsince = null)
     {
@@ -225,7 +225,7 @@ class TelephonyConferenceParticipantStruct extends AbstractStructBase
     /**
      * Set memberid value
      * @param int $memberid
-     * @return \PayPal\StructType\TelephonyConferenceParticipantStruct
+     * @return \Ovh\StructType\TelephonyConferenceParticipantStruct
      */
     public function setMemberid($memberid = null)
     {
@@ -247,7 +247,7 @@ class TelephonyConferenceParticipantStruct extends AbstractStructBase
     /**
      * Set energy value
      * @param int $energy
-     * @return \PayPal\StructType\TelephonyConferenceParticipantStruct
+     * @return \Ovh\StructType\TelephonyConferenceParticipantStruct
      */
     public function setEnergy($energy = null)
     {
@@ -264,7 +264,7 @@ class TelephonyConferenceParticipantStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyConferenceParticipantStruct
+     * @return \Ovh\StructType\TelephonyConferenceParticipantStruct
      */
     public static function __set_state(array $array)
     {

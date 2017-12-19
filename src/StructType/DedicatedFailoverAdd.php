@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class DedicatedFailoverAdd extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedFailoverAdd
+     * @return \Ovh\StructType\DedicatedFailoverAdd
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class DedicatedFailoverAdd extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedFailoverAdd
+     * @return \Ovh\StructType\DedicatedFailoverAdd
      */
     public function setHostname($hostname = null)
     {
@@ -133,7 +133,7 @@ class DedicatedFailoverAdd extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \PayPal\StructType\DedicatedFailoverAdd
+     * @return \Ovh\StructType\DedicatedFailoverAdd
      */
     public function setComment($comment = null)
     {
@@ -155,7 +155,7 @@ class DedicatedFailoverAdd extends AbstractStructBase
     /**
      * Set wantedIp value
      * @param string $wantedIp
-     * @return \PayPal\StructType\DedicatedFailoverAdd
+     * @return \Ovh\StructType\DedicatedFailoverAdd
      */
     public function setWantedIp($wantedIp = null)
     {
@@ -177,7 +177,7 @@ class DedicatedFailoverAdd extends AbstractStructBase
     /**
      * Set routedTo value
      * @param string $routedTo
-     * @return \PayPal\StructType\DedicatedFailoverAdd
+     * @return \Ovh\StructType\DedicatedFailoverAdd
      */
     public function setRoutedTo($routedTo = null)
     {
@@ -199,7 +199,7 @@ class DedicatedFailoverAdd extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\DedicatedFailoverAdd
+     * @return \Ovh\StructType\DedicatedFailoverAdd
      */
     public function setCountry($country = null)
     {
@@ -216,7 +216,7 @@ class DedicatedFailoverAdd extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedFailoverAdd
+     * @return \Ovh\StructType\DedicatedFailoverAdd
      */
     public static function __set_state(array $array)
     {

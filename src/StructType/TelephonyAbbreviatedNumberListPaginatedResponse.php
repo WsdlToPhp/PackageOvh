@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyAbbreviatedNumberListPaginatedResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyAbbreviatedNumberListPaginatedReturn
+     * @var \Ovh\StructType\TelephonyAbbreviatedNumberListPaginatedReturn
      */
     public $return;
     /**
      * Constructor method for telephonyAbbreviatedNumberListPaginatedResponse
      * @uses TelephonyAbbreviatedNumberListPaginatedResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyAbbreviatedNumberListPaginatedReturn $return
+     * @param \Ovh\StructType\TelephonyAbbreviatedNumberListPaginatedReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonyAbbreviatedNumberListPaginatedReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonyAbbreviatedNumberListPaginatedReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberListPaginatedReturn|null
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberListPaginatedReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyAbbreviatedNumberListPaginatedResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyAbbreviatedNumberListPaginatedReturn $return
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberListPaginatedResponse
+     * @param \Ovh\StructType\TelephonyAbbreviatedNumberListPaginatedReturn $return
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberListPaginatedResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyAbbreviatedNumberListPaginatedReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyAbbreviatedNumberListPaginatedReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyAbbreviatedNumberListPaginatedResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberListPaginatedResponse
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberListPaginatedResponse
      */
     public static function __set_state(array $array)
     {

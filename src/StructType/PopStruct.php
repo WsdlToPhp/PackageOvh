@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class PopStruct extends AbstractStructBase
     /**
      * Set nic value
      * @param string $nic
-     * @return \PayPal\StructType\PopStruct
+     * @return \Ovh\StructType\PopStruct
      */
     public function setNic($nic = null)
     {
@@ -91,7 +91,7 @@ class PopStruct extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\PopStruct
+     * @return \Ovh\StructType\PopStruct
      */
     public function setDomain($domain = null)
     {
@@ -113,7 +113,7 @@ class PopStruct extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\PopStruct
+     * @return \Ovh\StructType\PopStruct
      */
     public function setName($name = null)
     {
@@ -135,7 +135,7 @@ class PopStruct extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \PayPal\StructType\PopStruct
+     * @return \Ovh\StructType\PopStruct
      */
     public function setDescription($description = null)
     {
@@ -157,7 +157,7 @@ class PopStruct extends AbstractStructBase
     /**
      * Set size value
      * @param string $size
-     * @return \PayPal\StructType\PopStruct
+     * @return \Ovh\StructType\PopStruct
      */
     public function setSize($size = null)
     {
@@ -174,7 +174,7 @@ class PopStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\PopStruct
+     * @return \Ovh\StructType\PopStruct
      */
     public static function __set_state(array $array)
     {

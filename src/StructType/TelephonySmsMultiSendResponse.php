@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonySmsMultiSendResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfIntType
+     * @var \Ovh\ArrayType\MyArrayOfIntType
      */
     public $return;
     /**
      * Constructor method for telephonySmsMultiSendResponse
      * @uses TelephonySmsMultiSendResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfIntType $return
+     * @param \Ovh\ArrayType\MyArrayOfIntType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfIntType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfIntType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfIntType|null
+     * @return \Ovh\ArrayType\MyArrayOfIntType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonySmsMultiSendResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfIntType $return
-     * @return \PayPal\StructType\TelephonySmsMultiSendResponse
+     * @param \Ovh\ArrayType\MyArrayOfIntType $return
+     * @return \Ovh\StructType\TelephonySmsMultiSendResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfIntType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfIntType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonySmsMultiSendResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsMultiSendResponse
+     * @return \Ovh\StructType\TelephonySmsMultiSendResponse
      */
     public static function __set_state(array $array)
     {

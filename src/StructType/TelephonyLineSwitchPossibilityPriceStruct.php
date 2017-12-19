@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class TelephonyLineSwitchPossibilityPriceStruct extends AbstractStructBase
     /**
      * Set offer value
      * @param string $offer
-     * @return \PayPal\StructType\TelephonyLineSwitchPossibilityPriceStruct
+     * @return \Ovh\StructType\TelephonyLineSwitchPossibilityPriceStruct
      */
     public function setOffer($offer = null)
     {
@@ -67,7 +67,7 @@ class TelephonyLineSwitchPossibilityPriceStruct extends AbstractStructBase
     /**
      * Set price value
      * @param string $price
-     * @return \PayPal\StructType\TelephonyLineSwitchPossibilityPriceStruct
+     * @return \Ovh\StructType\TelephonyLineSwitchPossibilityPriceStruct
      */
     public function setPrice($price = null)
     {
@@ -84,7 +84,7 @@ class TelephonyLineSwitchPossibilityPriceStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyLineSwitchPossibilityPriceStruct
+     * @return \Ovh\StructType\TelephonyLineSwitchPossibilityPriceStruct
      */
     public static function __set_state(array $array)
     {

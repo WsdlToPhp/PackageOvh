@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class MultiFtpAdd extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\MultiFtpAdd
+     * @return \Ovh\StructType\MultiFtpAdd
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class MultiFtpAdd extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\MultiFtpAdd
+     * @return \Ovh\StructType\MultiFtpAdd
      */
     public function setDomain($domain = null)
     {
@@ -123,7 +123,7 @@ class MultiFtpAdd extends AbstractStructBase
     /**
      * Set subdir value
      * @param string $subdir
-     * @return \PayPal\StructType\MultiFtpAdd
+     * @return \Ovh\StructType\MultiFtpAdd
      */
     public function setSubdir($subdir = null)
     {
@@ -145,7 +145,7 @@ class MultiFtpAdd extends AbstractStructBase
     /**
      * Set loginsuffix value
      * @param string $loginsuffix
-     * @return \PayPal\StructType\MultiFtpAdd
+     * @return \Ovh\StructType\MultiFtpAdd
      */
     public function setLoginsuffix($loginsuffix = null)
     {
@@ -167,7 +167,7 @@ class MultiFtpAdd extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \PayPal\StructType\MultiFtpAdd
+     * @return \Ovh\StructType\MultiFtpAdd
      */
     public function setPassword($password = null)
     {
@@ -184,7 +184,7 @@ class MultiFtpAdd extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\MultiFtpAdd
+     * @return \Ovh\StructType\MultiFtpAdd
      */
     public static function __set_state(array $array)
     {

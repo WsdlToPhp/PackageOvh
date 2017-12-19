@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -85,7 +85,7 @@ class TelephonyDirectoryInfoGetSiretReturn extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\TelephonyDirectoryInfoGetSiretReturn
+     * @return \Ovh\StructType\TelephonyDirectoryInfoGetSiretReturn
      */
     public function setName($name = null)
     {
@@ -107,7 +107,7 @@ class TelephonyDirectoryInfoGetSiretReturn extends AbstractStructBase
     /**
      * Set siret value
      * @param int $siret
-     * @return \PayPal\StructType\TelephonyDirectoryInfoGetSiretReturn
+     * @return \Ovh\StructType\TelephonyDirectoryInfoGetSiretReturn
      */
     public function setSiret($siret = null)
     {
@@ -129,7 +129,7 @@ class TelephonyDirectoryInfoGetSiretReturn extends AbstractStructBase
     /**
      * Set siren value
      * @param int $siren
-     * @return \PayPal\StructType\TelephonyDirectoryInfoGetSiretReturn
+     * @return \Ovh\StructType\TelephonyDirectoryInfoGetSiretReturn
      */
     public function setSiren($siren = null)
     {
@@ -151,7 +151,7 @@ class TelephonyDirectoryInfoGetSiretReturn extends AbstractStructBase
     /**
      * Set ape value
      * @param string $ape
-     * @return \PayPal\StructType\TelephonyDirectoryInfoGetSiretReturn
+     * @return \Ovh\StructType\TelephonyDirectoryInfoGetSiretReturn
      */
     public function setApe($ape = null)
     {
@@ -173,7 +173,7 @@ class TelephonyDirectoryInfoGetSiretReturn extends AbstractStructBase
     /**
      * Set address value
      * @param string $address
-     * @return \PayPal\StructType\TelephonyDirectoryInfoGetSiretReturn
+     * @return \Ovh\StructType\TelephonyDirectoryInfoGetSiretReturn
      */
     public function setAddress($address = null)
     {
@@ -195,7 +195,7 @@ class TelephonyDirectoryInfoGetSiretReturn extends AbstractStructBase
     /**
      * Set juridicCategory value
      * @param string $juridicCategory
-     * @return \PayPal\StructType\TelephonyDirectoryInfoGetSiretReturn
+     * @return \Ovh\StructType\TelephonyDirectoryInfoGetSiretReturn
      */
     public function setJuridicCategory($juridicCategory = null)
     {
@@ -217,7 +217,7 @@ class TelephonyDirectoryInfoGetSiretReturn extends AbstractStructBase
     /**
      * Set brand value
      * @param string $brand
-     * @return \PayPal\StructType\TelephonyDirectoryInfoGetSiretReturn
+     * @return \Ovh\StructType\TelephonyDirectoryInfoGetSiretReturn
      */
     public function setBrand($brand = null)
     {
@@ -234,7 +234,7 @@ class TelephonyDirectoryInfoGetSiretReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyDirectoryInfoGetSiretReturn
+     * @return \Ovh\StructType\TelephonyDirectoryInfoGetSiretReturn
      */
     public static function __set_state(array $array)
     {

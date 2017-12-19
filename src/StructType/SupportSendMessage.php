@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class SupportSendMessage extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\SupportSendMessage
+     * @return \Ovh\StructType\SupportSendMessage
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class SupportSendMessage extends AbstractStructBase
     /**
      * Set messagePrevious value
      * @param int $messagePrevious
-     * @return \PayPal\StructType\SupportSendMessage
+     * @return \Ovh\StructType\SupportSendMessage
      */
     public function setMessagePrevious($messagePrevious = null)
     {
@@ -133,7 +133,7 @@ class SupportSendMessage extends AbstractStructBase
     /**
      * Set category value
      * @param int $category
-     * @return \PayPal\StructType\SupportSendMessage
+     * @return \Ovh\StructType\SupportSendMessage
      */
     public function setCategory($category = null)
     {
@@ -155,7 +155,7 @@ class SupportSendMessage extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\SupportSendMessage
+     * @return \Ovh\StructType\SupportSendMessage
      */
     public function setDomain($domain = null)
     {
@@ -177,7 +177,7 @@ class SupportSendMessage extends AbstractStructBase
     /**
      * Set subject value
      * @param string $subject
-     * @return \PayPal\StructType\SupportSendMessage
+     * @return \Ovh\StructType\SupportSendMessage
      */
     public function setSubject($subject = null)
     {
@@ -199,7 +199,7 @@ class SupportSendMessage extends AbstractStructBase
     /**
      * Set body value
      * @param string $body
-     * @return \PayPal\StructType\SupportSendMessage
+     * @return \Ovh\StructType\SupportSendMessage
      */
     public function setBody($body = null)
     {
@@ -216,7 +216,7 @@ class SupportSendMessage extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SupportSendMessage
+     * @return \Ovh\StructType\SupportSendMessage
      */
     public static function __set_state(array $array)
     {

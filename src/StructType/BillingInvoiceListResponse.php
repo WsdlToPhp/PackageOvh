@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class BillingInvoiceListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfBillingInvoiceStructType
+     * @var \Ovh\ArrayType\MyArrayOfBillingInvoiceStructType
      */
     public $return;
     /**
      * Constructor method for billingInvoiceListResponse
      * @uses BillingInvoiceListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfBillingInvoiceStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfBillingInvoiceStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfBillingInvoiceStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfBillingInvoiceStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfBillingInvoiceStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfBillingInvoiceStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class BillingInvoiceListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfBillingInvoiceStructType $return
-     * @return \PayPal\StructType\BillingInvoiceListResponse
+     * @param \Ovh\ArrayType\MyArrayOfBillingInvoiceStructType $return
+     * @return \Ovh\StructType\BillingInvoiceListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfBillingInvoiceStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfBillingInvoiceStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class BillingInvoiceListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\BillingInvoiceListResponse
+     * @return \Ovh\StructType\BillingInvoiceListResponse
      */
     public static function __set_state(array $array)
     {

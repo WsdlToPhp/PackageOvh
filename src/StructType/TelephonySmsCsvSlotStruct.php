@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class TelephonySmsCsvSlotStruct extends AbstractStructBase
     /**
      * Set id value
      * @param string $id
-     * @return \PayPal\StructType\TelephonySmsCsvSlotStruct
+     * @return \Ovh\StructType\TelephonySmsCsvSlotStruct
      */
     public function setId($id = null)
     {
@@ -83,7 +83,7 @@ class TelephonySmsCsvSlotStruct extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\TelephonySmsCsvSlotStruct
+     * @return \Ovh\StructType\TelephonySmsCsvSlotStruct
      */
     public function setName($name = null)
     {
@@ -105,7 +105,7 @@ class TelephonySmsCsvSlotStruct extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\TelephonySmsCsvSlotStruct
+     * @return \Ovh\StructType\TelephonySmsCsvSlotStruct
      */
     public function setDate($date = null)
     {
@@ -127,7 +127,7 @@ class TelephonySmsCsvSlotStruct extends AbstractStructBase
     /**
      * Set records value
      * @param string $records
-     * @return \PayPal\StructType\TelephonySmsCsvSlotStruct
+     * @return \Ovh\StructType\TelephonySmsCsvSlotStruct
      */
     public function setRecords($records = null)
     {
@@ -144,7 +144,7 @@ class TelephonySmsCsvSlotStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsCsvSlotStruct
+     * @return \Ovh\StructType\TelephonySmsCsvSlotStruct
      */
     public static function __set_state(array $array)
     {

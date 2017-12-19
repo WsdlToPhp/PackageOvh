@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,7 +49,7 @@ class TicketClose extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TicketClose
+     * @return \Ovh\StructType\TicketClose
      */
     public function setSession($session = null)
     {
@@ -71,7 +71,7 @@ class TicketClose extends AbstractStructBase
     /**
      * Set ticketId value
      * @param int $ticketId
-     * @return \PayPal\StructType\TicketClose
+     * @return \Ovh\StructType\TicketClose
      */
     public function setTicketId($ticketId = null)
     {
@@ -88,7 +88,7 @@ class TicketClose extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TicketClose
+     * @return \Ovh\StructType\TicketClose
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -129,7 +129,7 @@ class DedicatedMonitoringServiceAddSMS extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAddSMS
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAddSMS
      */
     public function setSession($session = null)
     {
@@ -151,7 +151,7 @@ class DedicatedMonitoringServiceAddSMS extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAddSMS
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAddSMS
      */
     public function setHostname($hostname = null)
     {
@@ -173,7 +173,7 @@ class DedicatedMonitoringServiceAddSMS extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAddSMS
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAddSMS
      */
     public function setIp($ip = null)
     {
@@ -195,7 +195,7 @@ class DedicatedMonitoringServiceAddSMS extends AbstractStructBase
     /**
      * Set port value
      * @param int $port
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAddSMS
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAddSMS
      */
     public function setPort($port = null)
     {
@@ -217,7 +217,7 @@ class DedicatedMonitoringServiceAddSMS extends AbstractStructBase
     /**
      * Set protocol value
      * @param string $protocol
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAddSMS
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAddSMS
      */
     public function setProtocol($protocol = null)
     {
@@ -239,7 +239,7 @@ class DedicatedMonitoringServiceAddSMS extends AbstractStructBase
     /**
      * Set period value
      * @param string $period
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAddSMS
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAddSMS
      */
     public function setPeriod($period = null)
     {
@@ -261,7 +261,7 @@ class DedicatedMonitoringServiceAddSMS extends AbstractStructBase
     /**
      * Set string value
      * @param string $string
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAddSMS
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAddSMS
      */
     public function setString($string = null)
     {
@@ -283,7 +283,7 @@ class DedicatedMonitoringServiceAddSMS extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAddSMS
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAddSMS
      */
     public function setUrl($url = null)
     {
@@ -305,7 +305,7 @@ class DedicatedMonitoringServiceAddSMS extends AbstractStructBase
     /**
      * Set smsAccount value
      * @param string $smsAccount
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAddSMS
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAddSMS
      */
     public function setSmsAccount($smsAccount = null)
     {
@@ -327,7 +327,7 @@ class DedicatedMonitoringServiceAddSMS extends AbstractStructBase
     /**
      * Set phoneNumberTo value
      * @param string $phoneNumberTo
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAddSMS
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAddSMS
      */
     public function setPhoneNumberTo($phoneNumberTo = null)
     {
@@ -344,7 +344,7 @@ class DedicatedMonitoringServiceAddSMS extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAddSMS
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAddSMS
      */
     public static function __set_state(array $array)
     {

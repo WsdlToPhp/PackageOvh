@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class DedicatedBackupFtpPassword extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedBackupFtpPassword
+     * @return \Ovh\StructType\DedicatedBackupFtpPassword
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class DedicatedBackupFtpPassword extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedBackupFtpPassword
+     * @return \Ovh\StructType\DedicatedBackupFtpPassword
      */
     public function setHostname($hostname = null)
     {
@@ -113,7 +113,7 @@ class DedicatedBackupFtpPassword extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\DedicatedBackupFtpPassword
+     * @return \Ovh\StructType\DedicatedBackupFtpPassword
      */
     public function setEmail($email = null)
     {
@@ -135,7 +135,7 @@ class DedicatedBackupFtpPassword extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \PayPal\StructType\DedicatedBackupFtpPassword
+     * @return \Ovh\StructType\DedicatedBackupFtpPassword
      */
     public function setLanguage($language = null)
     {
@@ -152,7 +152,7 @@ class DedicatedBackupFtpPassword extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedBackupFtpPassword
+     * @return \Ovh\StructType\DedicatedBackupFtpPassword
      */
     public static function __set_state(array $array)
     {

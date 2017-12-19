@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Automated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\AutomatedMailGetVolumeHistory $parameters
-     * @return \PayPal\StructType\AutomatedMailGetVolumeHistoryResponse|bool
+     * @param \Ovh\StructType\AutomatedMailGetVolumeHistory $parameters
+     * @return \Ovh\StructType\AutomatedMailGetVolumeHistoryResponse|bool
      */
-    public function automatedMailGetVolumeHistory(\PayPal\StructType\AutomatedMailGetVolumeHistory $parameters)
+    public function automatedMailGetVolumeHistory(\Ovh\StructType\AutomatedMailGetVolumeHistory $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->automatedMailGetVolumeHistory($parameters));
@@ -36,10 +36,10 @@ class Automated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\AutomatedMailGetTodo $parameters
-     * @return \PayPal\StructType\AutomatedMailGetTodoResponse|bool
+     * @param \Ovh\StructType\AutomatedMailGetTodo $parameters
+     * @return \Ovh\StructType\AutomatedMailGetTodoResponse|bool
      */
-    public function automatedMailGetTodo(\PayPal\StructType\AutomatedMailGetTodo $parameters)
+    public function automatedMailGetTodo(\Ovh\StructType\AutomatedMailGetTodo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->automatedMailGetTodo($parameters));
@@ -55,10 +55,10 @@ class Automated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\AutomatedMailGetErrors $parameters
-     * @return \PayPal\StructType\AutomatedMailGetErrorsResponse|bool
+     * @param \Ovh\StructType\AutomatedMailGetErrors $parameters
+     * @return \Ovh\StructType\AutomatedMailGetErrorsResponse|bool
      */
-    public function automatedMailGetErrors(\PayPal\StructType\AutomatedMailGetErrors $parameters)
+    public function automatedMailGetErrors(\Ovh\StructType\AutomatedMailGetErrors $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->automatedMailGetErrors($parameters));
@@ -74,10 +74,10 @@ class Automated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\AutomatedMailGetState $parameters
-     * @return \PayPal\StructType\AutomatedMailGetStateResponse|bool
+     * @param \Ovh\StructType\AutomatedMailGetState $parameters
+     * @return \Ovh\StructType\AutomatedMailGetStateResponse|bool
      */
-    public function automatedMailGetState(\PayPal\StructType\AutomatedMailGetState $parameters)
+    public function automatedMailGetState(\Ovh\StructType\AutomatedMailGetState $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->automatedMailGetState($parameters));
@@ -93,10 +93,10 @@ class Automated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\AutomatedMailUnlock $parameters
-     * @return \PayPal\StructType\AutomatedMailUnlockResponse|bool
+     * @param \Ovh\StructType\AutomatedMailUnlock $parameters
+     * @return \Ovh\StructType\AutomatedMailUnlockResponse|bool
      */
-    public function automatedMailUnlock(\PayPal\StructType\AutomatedMailUnlock $parameters)
+    public function automatedMailUnlock(\Ovh\StructType\AutomatedMailUnlock $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->automatedMailUnlock($parameters));
@@ -112,10 +112,10 @@ class Automated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\AutomatedMailLock $parameters
-     * @return \PayPal\StructType\AutomatedMailLockResponse|bool
+     * @param \Ovh\StructType\AutomatedMailLock $parameters
+     * @return \Ovh\StructType\AutomatedMailLockResponse|bool
      */
-    public function automatedMailLock(\PayPal\StructType\AutomatedMailLock $parameters)
+    public function automatedMailLock(\Ovh\StructType\AutomatedMailLock $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->automatedMailLock($parameters));
@@ -131,10 +131,10 @@ class Automated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\AutomatedMailReturnSet $parameters
-     * @return \PayPal\StructType\AutomatedMailReturnSetResponse|bool
+     * @param \Ovh\StructType\AutomatedMailReturnSet $parameters
+     * @return \Ovh\StructType\AutomatedMailReturnSetResponse|bool
      */
-    public function automatedMailReturnSet(\PayPal\StructType\AutomatedMailReturnSet $parameters)
+    public function automatedMailReturnSet(\Ovh\StructType\AutomatedMailReturnSet $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->automatedMailReturnSet($parameters));
@@ -150,10 +150,10 @@ class Automated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\AutomatedMailFlush $parameters
-     * @return \PayPal\StructType\AutomatedMailFlushResponse|bool
+     * @param \Ovh\StructType\AutomatedMailFlush $parameters
+     * @return \Ovh\StructType\AutomatedMailFlushResponse|bool
      */
-    public function automatedMailFlush(\PayPal\StructType\AutomatedMailFlush $parameters)
+    public function automatedMailFlush(\Ovh\StructType\AutomatedMailFlush $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->automatedMailFlush($parameters));
@@ -166,7 +166,7 @@ class Automated extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\AutomatedMailFlushResponse|\PayPal\StructType\AutomatedMailGetErrorsResponse|\PayPal\StructType\AutomatedMailGetStateResponse|\PayPal\StructType\AutomatedMailGetTodoResponse|\PayPal\StructType\AutomatedMailGetVolumeHistoryResponse|\PayPal\StructType\AutomatedMailLockResponse|\PayPal\StructType\AutomatedMailReturnSetResponse|\PayPal\StructType\AutomatedMailUnlockResponse
+     * @return \Ovh\StructType\AutomatedMailFlushResponse|\Ovh\StructType\AutomatedMailGetErrorsResponse|\Ovh\StructType\AutomatedMailGetStateResponse|\Ovh\StructType\AutomatedMailGetTodoResponse|\Ovh\StructType\AutomatedMailGetVolumeHistoryResponse|\Ovh\StructType\AutomatedMailLockResponse|\Ovh\StructType\AutomatedMailReturnSetResponse|\Ovh\StructType\AutomatedMailUnlockResponse
      */
     public function getResult()
     {

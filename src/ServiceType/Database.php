@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Database extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DatabaseChangePassword $parameters
-     * @return \PayPal\StructType\DatabaseChangePasswordResponse|bool
+     * @param \Ovh\StructType\DatabaseChangePassword $parameters
+     * @return \Ovh\StructType\DatabaseChangePasswordResponse|bool
      */
-    public function databaseChangePassword(\PayPal\StructType\DatabaseChangePassword $parameters)
+    public function databaseChangePassword(\Ovh\StructType\DatabaseChangePassword $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->databaseChangePassword($parameters));
@@ -36,10 +36,10 @@ class Database extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DatabaseDump $parameters
-     * @return \PayPal\StructType\DatabaseDumpResponse|bool
+     * @param \Ovh\StructType\DatabaseDump $parameters
+     * @return \Ovh\StructType\DatabaseDumpResponse|bool
      */
-    public function databaseDump(\PayPal\StructType\DatabaseDump $parameters)
+    public function databaseDump(\Ovh\StructType\DatabaseDump $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->databaseDump($parameters));
@@ -55,10 +55,10 @@ class Database extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DatabaseCreate $parameters
-     * @return \PayPal\StructType\DatabaseCreateResponse|bool
+     * @param \Ovh\StructType\DatabaseCreate $parameters
+     * @return \Ovh\StructType\DatabaseCreateResponse|bool
      */
-    public function databaseCreate(\PayPal\StructType\DatabaseCreate $parameters)
+    public function databaseCreate(\Ovh\StructType\DatabaseCreate $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->databaseCreate($parameters));
@@ -74,10 +74,10 @@ class Database extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DatabaseList $parameters
-     * @return \PayPal\StructType\DatabaseListResponse|bool
+     * @param \Ovh\StructType\DatabaseList $parameters
+     * @return \Ovh\StructType\DatabaseListResponse|bool
      */
-    public function databaseList(\PayPal\StructType\DatabaseList $parameters)
+    public function databaseList(\Ovh\StructType\DatabaseList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->databaseList($parameters));
@@ -93,10 +93,10 @@ class Database extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DatabaseDelete $parameters
-     * @return \PayPal\StructType\DatabaseDeleteResponse|bool
+     * @param \Ovh\StructType\DatabaseDelete $parameters
+     * @return \Ovh\StructType\DatabaseDeleteResponse|bool
      */
-    public function databaseDelete(\PayPal\StructType\DatabaseDelete $parameters)
+    public function databaseDelete(\Ovh\StructType\DatabaseDelete $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->databaseDelete($parameters));
@@ -112,10 +112,10 @@ class Database extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DatabaseRecreate $parameters
-     * @return \PayPal\StructType\DatabaseRecreateResponse|bool
+     * @param \Ovh\StructType\DatabaseRecreate $parameters
+     * @return \Ovh\StructType\DatabaseRecreateResponse|bool
      */
-    public function databaseRecreate(\PayPal\StructType\DatabaseRecreate $parameters)
+    public function databaseRecreate(\Ovh\StructType\DatabaseRecreate $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->databaseRecreate($parameters));
@@ -128,7 +128,7 @@ class Database extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\DatabaseChangePasswordResponse|\PayPal\StructType\DatabaseCreateResponse|\PayPal\StructType\DatabaseDeleteResponse|\PayPal\StructType\DatabaseDumpResponse|\PayPal\StructType\DatabaseListResponse|\PayPal\StructType\DatabaseRecreateResponse
+     * @return \Ovh\StructType\DatabaseChangePasswordResponse|\Ovh\StructType\DatabaseCreateResponse|\Ovh\StructType\DatabaseDeleteResponse|\Ovh\StructType\DatabaseDumpResponse|\Ovh\StructType\DatabaseListResponse|\Ovh\StructType\DatabaseRecreateResponse
      */
     public function getResult()
     {

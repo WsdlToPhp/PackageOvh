@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedRipeUpdateOrganisationResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\RipeUpdateReturn
+     * @var \Ovh\StructType\RipeUpdateReturn
      */
     public $return;
     /**
      * Constructor method for dedicatedRipeUpdateOrganisationResponse
      * @uses DedicatedRipeUpdateOrganisationResponse::setReturn()
-     * @param \PayPal\StructType\RipeUpdateReturn $return
+     * @param \Ovh\StructType\RipeUpdateReturn $return
      */
-    public function __construct(\PayPal\StructType\RipeUpdateReturn $return = null)
+    public function __construct(\Ovh\StructType\RipeUpdateReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\RipeUpdateReturn|null
+     * @return \Ovh\StructType\RipeUpdateReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedRipeUpdateOrganisationResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\RipeUpdateReturn $return
-     * @return \PayPal\StructType\DedicatedRipeUpdateOrganisationResponse
+     * @param \Ovh\StructType\RipeUpdateReturn $return
+     * @return \Ovh\StructType\DedicatedRipeUpdateOrganisationResponse
      */
-    public function setReturn(\PayPal\StructType\RipeUpdateReturn $return = null)
+    public function setReturn(\Ovh\StructType\RipeUpdateReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedRipeUpdateOrganisationResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedRipeUpdateOrganisationResponse
+     * @return \Ovh\StructType\DedicatedRipeUpdateOrganisationResponse
      */
     public static function __set_state(array $array)
     {

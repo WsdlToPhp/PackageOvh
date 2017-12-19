@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class DedicatedFilterIrcRuleStruct extends AbstractStructBase
     /**
      * Set fromIp value
      * @param string $fromIp
-     * @return \PayPal\StructType\DedicatedFilterIrcRuleStruct
+     * @return \Ovh\StructType\DedicatedFilterIrcRuleStruct
      */
     public function setFromIp($fromIp = null)
     {
@@ -83,7 +83,7 @@ class DedicatedFilterIrcRuleStruct extends AbstractStructBase
     /**
      * Set fromPort value
      * @param string $fromPort
-     * @return \PayPal\StructType\DedicatedFilterIrcRuleStruct
+     * @return \Ovh\StructType\DedicatedFilterIrcRuleStruct
      */
     public function setFromPort($fromPort = null)
     {
@@ -105,7 +105,7 @@ class DedicatedFilterIrcRuleStruct extends AbstractStructBase
     /**
      * Set toIp value
      * @param string $toIp
-     * @return \PayPal\StructType\DedicatedFilterIrcRuleStruct
+     * @return \Ovh\StructType\DedicatedFilterIrcRuleStruct
      */
     public function setToIp($toIp = null)
     {
@@ -127,7 +127,7 @@ class DedicatedFilterIrcRuleStruct extends AbstractStructBase
     /**
      * Set toPort value
      * @param string $toPort
-     * @return \PayPal\StructType\DedicatedFilterIrcRuleStruct
+     * @return \Ovh\StructType\DedicatedFilterIrcRuleStruct
      */
     public function setToPort($toPort = null)
     {
@@ -144,7 +144,7 @@ class DedicatedFilterIrcRuleStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedFilterIrcRuleStruct
+     * @return \Ovh\StructType\DedicatedFilterIrcRuleStruct
      */
     public static function __set_state(array $array)
     {

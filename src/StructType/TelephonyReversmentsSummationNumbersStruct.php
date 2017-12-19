@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class TelephonyReversmentsSummationNumbersStruct extends AbstractStructBase
     public $number;
     /**
      * The list
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType
      */
     public $list;
     /**
@@ -26,9 +26,9 @@ class TelephonyReversmentsSummationNumbersStruct extends AbstractStructBase
      * @uses TelephonyReversmentsSummationNumbersStruct::setNumber()
      * @uses TelephonyReversmentsSummationNumbersStruct::setList()
      * @param string $number
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType $list
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType $list
      */
-    public function __construct($number = null, \PayPal\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType $list = null)
+    public function __construct($number = null, \Ovh\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType $list = null)
     {
         $this
             ->setNumber($number)
@@ -45,7 +45,7 @@ class TelephonyReversmentsSummationNumbersStruct extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyReversmentsSummationNumbersStruct
+     * @return \Ovh\StructType\TelephonyReversmentsSummationNumbersStruct
      */
     public function setNumber($number = null)
     {
@@ -58,7 +58,7 @@ class TelephonyReversmentsSummationNumbersStruct extends AbstractStructBase
     }
     /**
      * Get list value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType|null
      */
     public function getList()
     {
@@ -66,10 +66,10 @@ class TelephonyReversmentsSummationNumbersStruct extends AbstractStructBase
     }
     /**
      * Set list value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType $list
-     * @return \PayPal\StructType\TelephonyReversmentsSummationNumbersStruct
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType $list
+     * @return \Ovh\StructType\TelephonyReversmentsSummationNumbersStruct
      */
-    public function setList(\PayPal\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType $list = null)
+    public function setList(\Ovh\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType $list = null)
     {
         $this->list = $list;
         return $this;
@@ -80,7 +80,7 @@ class TelephonyReversmentsSummationNumbersStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyReversmentsSummationNumbersStruct
+     * @return \Ovh\StructType\TelephonyReversmentsSummationNumbersStruct
      */
     public static function __set_state(array $array)
     {

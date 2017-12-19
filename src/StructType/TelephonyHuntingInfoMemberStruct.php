@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class TelephonyHuntingInfoMemberStruct extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyHuntingInfoMemberStruct
+     * @return \Ovh\StructType\TelephonyHuntingInfoMemberStruct
      */
     public function setNumber($number = null)
     {
@@ -91,7 +91,7 @@ class TelephonyHuntingInfoMemberStruct extends AbstractStructBase
     /**
      * Set numberInternational value
      * @param string $numberInternational
-     * @return \PayPal\StructType\TelephonyHuntingInfoMemberStruct
+     * @return \Ovh\StructType\TelephonyHuntingInfoMemberStruct
      */
     public function setNumberInternational($numberInternational = null)
     {
@@ -113,7 +113,7 @@ class TelephonyHuntingInfoMemberStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\TelephonyHuntingInfoMemberStruct
+     * @return \Ovh\StructType\TelephonyHuntingInfoMemberStruct
      */
     public function setStatus($status = null)
     {
@@ -135,7 +135,7 @@ class TelephonyHuntingInfoMemberStruct extends AbstractStructBase
     /**
      * Set logged value
      * @param bool $logged
-     * @return \PayPal\StructType\TelephonyHuntingInfoMemberStruct
+     * @return \Ovh\StructType\TelephonyHuntingInfoMemberStruct
      */
     public function setLogged($logged = null)
     {
@@ -157,7 +157,7 @@ class TelephonyHuntingInfoMemberStruct extends AbstractStructBase
     /**
      * Set noReplyTimer value
      * @param int $noReplyTimer
-     * @return \PayPal\StructType\TelephonyHuntingInfoMemberStruct
+     * @return \Ovh\StructType\TelephonyHuntingInfoMemberStruct
      */
     public function setNoReplyTimer($noReplyTimer = null)
     {
@@ -174,7 +174,7 @@ class TelephonyHuntingInfoMemberStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyHuntingInfoMemberStruct
+     * @return \Ovh\StructType\TelephonyHuntingInfoMemberStruct
      */
     public static function __set_state(array $array)
     {

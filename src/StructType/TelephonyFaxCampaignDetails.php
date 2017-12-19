@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class TelephonyFaxCampaignDetails extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyFaxCampaignDetails
+     * @return \Ovh\StructType\TelephonyFaxCampaignDetails
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class TelephonyFaxCampaignDetails extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyFaxCampaignDetails
+     * @return \Ovh\StructType\TelephonyFaxCampaignDetails
      */
     public function setNumber($number = null)
     {
@@ -123,7 +123,7 @@ class TelephonyFaxCampaignDetails extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyFaxCampaignDetails
+     * @return \Ovh\StructType\TelephonyFaxCampaignDetails
      */
     public function setCountry($country = null)
     {
@@ -145,7 +145,7 @@ class TelephonyFaxCampaignDetails extends AbstractStructBase
     /**
      * Set reference value
      * @param string $reference
-     * @return \PayPal\StructType\TelephonyFaxCampaignDetails
+     * @return \Ovh\StructType\TelephonyFaxCampaignDetails
      */
     public function setReference($reference = null)
     {
@@ -167,7 +167,7 @@ class TelephonyFaxCampaignDetails extends AbstractStructBase
     /**
      * Set sendRecipients value
      * @param bool $sendRecipients
-     * @return \PayPal\StructType\TelephonyFaxCampaignDetails
+     * @return \Ovh\StructType\TelephonyFaxCampaignDetails
      */
     public function setSendRecipients($sendRecipients = null)
     {
@@ -184,7 +184,7 @@ class TelephonyFaxCampaignDetails extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFaxCampaignDetails
+     * @return \Ovh\StructType\TelephonyFaxCampaignDetails
      */
     public static function __set_state(array $array)
     {

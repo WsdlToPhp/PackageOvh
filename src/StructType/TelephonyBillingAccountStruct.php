@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -43,7 +43,7 @@ class TelephonyBillingAccountStruct extends AbstractStructBase
     public $trusted;
     /**
      * The pendingAction
-     * @var \PayPal\StructType\TelephonyPendingActionStruct
+     * @var \Ovh\StructType\TelephonyPendingActionStruct
      */
     public $pendingAction;
     /**
@@ -67,10 +67,10 @@ class TelephonyBillingAccountStruct extends AbstractStructBase
      * @param string $expirationDate
      * @param string $version
      * @param bool $trusted
-     * @param \PayPal\StructType\TelephonyPendingActionStruct $pendingAction
+     * @param \Ovh\StructType\TelephonyPendingActionStruct $pendingAction
      * @param string $descriptionUser
      */
-    public function __construct($description = null, $mobile = null, $mobileDestination = null, $expirationDate = null, $version = null, $trusted = null, \PayPal\StructType\TelephonyPendingActionStruct $pendingAction = null, $descriptionUser = null)
+    public function __construct($description = null, $mobile = null, $mobileDestination = null, $expirationDate = null, $version = null, $trusted = null, \Ovh\StructType\TelephonyPendingActionStruct $pendingAction = null, $descriptionUser = null)
     {
         $this
             ->setDescription($description)
@@ -93,7 +93,7 @@ class TelephonyBillingAccountStruct extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \PayPal\StructType\TelephonyBillingAccountStruct
+     * @return \Ovh\StructType\TelephonyBillingAccountStruct
      */
     public function setDescription($description = null)
     {
@@ -115,7 +115,7 @@ class TelephonyBillingAccountStruct extends AbstractStructBase
     /**
      * Set mobile value
      * @param string $mobile
-     * @return \PayPal\StructType\TelephonyBillingAccountStruct
+     * @return \Ovh\StructType\TelephonyBillingAccountStruct
      */
     public function setMobile($mobile = null)
     {
@@ -137,7 +137,7 @@ class TelephonyBillingAccountStruct extends AbstractStructBase
     /**
      * Set mobileDestination value
      * @param string $mobileDestination
-     * @return \PayPal\StructType\TelephonyBillingAccountStruct
+     * @return \Ovh\StructType\TelephonyBillingAccountStruct
      */
     public function setMobileDestination($mobileDestination = null)
     {
@@ -159,7 +159,7 @@ class TelephonyBillingAccountStruct extends AbstractStructBase
     /**
      * Set expirationDate value
      * @param string $expirationDate
-     * @return \PayPal\StructType\TelephonyBillingAccountStruct
+     * @return \Ovh\StructType\TelephonyBillingAccountStruct
      */
     public function setExpirationDate($expirationDate = null)
     {
@@ -181,7 +181,7 @@ class TelephonyBillingAccountStruct extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \PayPal\StructType\TelephonyBillingAccountStruct
+     * @return \Ovh\StructType\TelephonyBillingAccountStruct
      */
     public function setVersion($version = null)
     {
@@ -203,7 +203,7 @@ class TelephonyBillingAccountStruct extends AbstractStructBase
     /**
      * Set trusted value
      * @param bool $trusted
-     * @return \PayPal\StructType\TelephonyBillingAccountStruct
+     * @return \Ovh\StructType\TelephonyBillingAccountStruct
      */
     public function setTrusted($trusted = null)
     {
@@ -216,7 +216,7 @@ class TelephonyBillingAccountStruct extends AbstractStructBase
     }
     /**
      * Get pendingAction value
-     * @return \PayPal\StructType\TelephonyPendingActionStruct|null
+     * @return \Ovh\StructType\TelephonyPendingActionStruct|null
      */
     public function getPendingAction()
     {
@@ -224,10 +224,10 @@ class TelephonyBillingAccountStruct extends AbstractStructBase
     }
     /**
      * Set pendingAction value
-     * @param \PayPal\StructType\TelephonyPendingActionStruct $pendingAction
-     * @return \PayPal\StructType\TelephonyBillingAccountStruct
+     * @param \Ovh\StructType\TelephonyPendingActionStruct $pendingAction
+     * @return \Ovh\StructType\TelephonyBillingAccountStruct
      */
-    public function setPendingAction(\PayPal\StructType\TelephonyPendingActionStruct $pendingAction = null)
+    public function setPendingAction(\Ovh\StructType\TelephonyPendingActionStruct $pendingAction = null)
     {
         $this->pendingAction = $pendingAction;
         return $this;
@@ -243,7 +243,7 @@ class TelephonyBillingAccountStruct extends AbstractStructBase
     /**
      * Set descriptionUser value
      * @param string $descriptionUser
-     * @return \PayPal\StructType\TelephonyBillingAccountStruct
+     * @return \Ovh\StructType\TelephonyBillingAccountStruct
      */
     public function setDescriptionUser($descriptionUser = null)
     {
@@ -260,7 +260,7 @@ class TelephonyBillingAccountStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyBillingAccountStruct
+     * @return \Ovh\StructType\TelephonyBillingAccountStruct
      */
     public static function __set_state(array $array)
     {

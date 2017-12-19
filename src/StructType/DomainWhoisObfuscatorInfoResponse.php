@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DomainWhoisObfuscatorInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\DomainWhoisObfuscatorStruct
+     * @var \Ovh\StructType\DomainWhoisObfuscatorStruct
      */
     public $return;
     /**
      * Constructor method for domainWhoisObfuscatorInfoResponse
      * @uses DomainWhoisObfuscatorInfoResponse::setReturn()
-     * @param \PayPal\StructType\DomainWhoisObfuscatorStruct $return
+     * @param \Ovh\StructType\DomainWhoisObfuscatorStruct $return
      */
-    public function __construct(\PayPal\StructType\DomainWhoisObfuscatorStruct $return = null)
+    public function __construct(\Ovh\StructType\DomainWhoisObfuscatorStruct $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\DomainWhoisObfuscatorStruct|null
+     * @return \Ovh\StructType\DomainWhoisObfuscatorStruct|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DomainWhoisObfuscatorInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\DomainWhoisObfuscatorStruct $return
-     * @return \PayPal\StructType\DomainWhoisObfuscatorInfoResponse
+     * @param \Ovh\StructType\DomainWhoisObfuscatorStruct $return
+     * @return \Ovh\StructType\DomainWhoisObfuscatorInfoResponse
      */
-    public function setReturn(\PayPal\StructType\DomainWhoisObfuscatorStruct $return = null)
+    public function setReturn(\Ovh\StructType\DomainWhoisObfuscatorStruct $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DomainWhoisObfuscatorInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DomainWhoisObfuscatorInfoResponse
+     * @return \Ovh\StructType\DomainWhoisObfuscatorInfoResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class TelephonyGetTimeZoneNumber extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyGetTimeZoneNumber
+     * @return \Ovh\StructType\TelephonyGetTimeZoneNumber
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class TelephonyGetTimeZoneNumber extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyGetTimeZoneNumber
+     * @return \Ovh\StructType\TelephonyGetTimeZoneNumber
      */
     public function setNumber($number = null)
     {
@@ -103,7 +103,7 @@ class TelephonyGetTimeZoneNumber extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \PayPal\StructType\TelephonyGetTimeZoneNumber
+     * @return \Ovh\StructType\TelephonyGetTimeZoneNumber
      */
     public function setCountryCode($countryCode = null)
     {
@@ -120,7 +120,7 @@ class TelephonyGetTimeZoneNumber extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyGetTimeZoneNumber
+     * @return \Ovh\StructType\TelephonyGetTimeZoneNumber
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedAllowedDistributionReturn extends AbstractStructBase
 {
     /**
      * The distribution
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionMoreStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionMoreStructType
      */
     public $distribution;
     /**
      * Constructor method for dedicatedAllowedDistributionReturn
      * @uses DedicatedAllowedDistributionReturn::setDistribution()
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionMoreStructType $distribution
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionMoreStructType $distribution
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionMoreStructType $distribution = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionMoreStructType $distribution = null)
     {
         $this
             ->setDistribution($distribution);
     }
     /**
      * Get distribution value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionMoreStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionMoreStructType|null
      */
     public function getDistribution()
     {
@@ -36,10 +36,10 @@ class DedicatedAllowedDistributionReturn extends AbstractStructBase
     }
     /**
      * Set distribution value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionMoreStructType $distribution
-     * @return \PayPal\StructType\DedicatedAllowedDistributionReturn
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionMoreStructType $distribution
+     * @return \Ovh\StructType\DedicatedAllowedDistributionReturn
      */
-    public function setDistribution(\PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionMoreStructType $distribution = null)
+    public function setDistribution(\Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionMoreStructType $distribution = null)
     {
         $this->distribution = $distribution;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedAllowedDistributionReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedAllowedDistributionReturn
+     * @return \Ovh\StructType\DedicatedAllowedDistributionReturn
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class PrepaidGetSummaryReturn extends AbstractStructBase
     /**
      * Set contract value
      * @param string $contract
-     * @return \PayPal\StructType\PrepaidGetSummaryReturn
+     * @return \Ovh\StructType\PrepaidGetSummaryReturn
      */
     public function setContract($contract = null)
     {
@@ -83,7 +83,7 @@ class PrepaidGetSummaryReturn extends AbstractStructBase
     /**
      * Set threshold value
      * @param int $threshold
-     * @return \PayPal\StructType\PrepaidGetSummaryReturn
+     * @return \Ovh\StructType\PrepaidGetSummaryReturn
      */
     public function setThreshold($threshold = null)
     {
@@ -105,7 +105,7 @@ class PrepaidGetSummaryReturn extends AbstractStructBase
     /**
      * Set balance value
      * @param float $balance
-     * @return \PayPal\StructType\PrepaidGetSummaryReturn
+     * @return \Ovh\StructType\PrepaidGetSummaryReturn
      */
     public function setBalance($balance = null)
     {
@@ -123,7 +123,7 @@ class PrepaidGetSummaryReturn extends AbstractStructBase
     /**
      * Set md5 value
      * @param string $md5
-     * @return \PayPal\StructType\PrepaidGetSummaryReturn
+     * @return \Ovh\StructType\PrepaidGetSummaryReturn
      */
     public function setMd5($md5 = null)
     {
@@ -140,7 +140,7 @@ class PrepaidGetSummaryReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\PrepaidGetSummaryReturn
+     * @return \Ovh\StructType\PrepaidGetSummaryReturn
      */
     public static function __set_state(array $array)
     {

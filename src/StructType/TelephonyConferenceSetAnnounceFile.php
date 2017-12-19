@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class TelephonyConferenceSetAnnounceFile extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyConferenceSetAnnounceFile
+     * @return \Ovh\StructType\TelephonyConferenceSetAnnounceFile
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class TelephonyConferenceSetAnnounceFile extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyConferenceSetAnnounceFile
+     * @return \Ovh\StructType\TelephonyConferenceSetAnnounceFile
      */
     public function setNumber($number = null)
     {
@@ -133,7 +133,7 @@ class TelephonyConferenceSetAnnounceFile extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyConferenceSetAnnounceFile
+     * @return \Ovh\StructType\TelephonyConferenceSetAnnounceFile
      */
     public function setCountry($country = null)
     {
@@ -155,7 +155,7 @@ class TelephonyConferenceSetAnnounceFile extends AbstractStructBase
     /**
      * Set filename value
      * @param string $filename
-     * @return \PayPal\StructType\TelephonyConferenceSetAnnounceFile
+     * @return \Ovh\StructType\TelephonyConferenceSetAnnounceFile
      */
     public function setFilename($filename = null)
     {
@@ -177,7 +177,7 @@ class TelephonyConferenceSetAnnounceFile extends AbstractStructBase
     /**
      * Set filedata value
      * @param string $filedata
-     * @return \PayPal\StructType\TelephonyConferenceSetAnnounceFile
+     * @return \Ovh\StructType\TelephonyConferenceSetAnnounceFile
      */
     public function setFiledata($filedata = null)
     {
@@ -199,7 +199,7 @@ class TelephonyConferenceSetAnnounceFile extends AbstractStructBase
     /**
      * Set md5sum value
      * @param string $md5sum
-     * @return \PayPal\StructType\TelephonyConferenceSetAnnounceFile
+     * @return \Ovh\StructType\TelephonyConferenceSetAnnounceFile
      */
     public function setMd5sum($md5sum = null)
     {
@@ -216,7 +216,7 @@ class TelephonyConferenceSetAnnounceFile extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyConferenceSetAnnounceFile
+     * @return \Ovh\StructType\TelephonyConferenceSetAnnounceFile
      */
     public static function __set_state(array $array)
     {

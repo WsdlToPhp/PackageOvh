@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -139,7 +139,7 @@ class TelephonyPhonebookContactModify extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyPhonebookContactModify
+     * @return \Ovh\StructType\TelephonyPhonebookContactModify
      */
     public function setSession($session = null)
     {
@@ -161,7 +161,7 @@ class TelephonyPhonebookContactModify extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyPhonebookContactModify
+     * @return \Ovh\StructType\TelephonyPhonebookContactModify
      */
     public function setNumber($number = null)
     {
@@ -183,7 +183,7 @@ class TelephonyPhonebookContactModify extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyPhonebookContactModify
+     * @return \Ovh\StructType\TelephonyPhonebookContactModify
      */
     public function setCountry($country = null)
     {
@@ -205,7 +205,7 @@ class TelephonyPhonebookContactModify extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\TelephonyPhonebookContactModify
+     * @return \Ovh\StructType\TelephonyPhonebookContactModify
      */
     public function setId($id = null)
     {
@@ -227,7 +227,7 @@ class TelephonyPhonebookContactModify extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\TelephonyPhonebookContactModify
+     * @return \Ovh\StructType\TelephonyPhonebookContactModify
      */
     public function setName($name = null)
     {
@@ -249,7 +249,7 @@ class TelephonyPhonebookContactModify extends AbstractStructBase
     /**
      * Set surname value
      * @param string $surname
-     * @return \PayPal\StructType\TelephonyPhonebookContactModify
+     * @return \Ovh\StructType\TelephonyPhonebookContactModify
      */
     public function setSurname($surname = null)
     {
@@ -271,7 +271,7 @@ class TelephonyPhonebookContactModify extends AbstractStructBase
     /**
      * Set workPhone value
      * @param string $workPhone
-     * @return \PayPal\StructType\TelephonyPhonebookContactModify
+     * @return \Ovh\StructType\TelephonyPhonebookContactModify
      */
     public function setWorkPhone($workPhone = null)
     {
@@ -293,7 +293,7 @@ class TelephonyPhonebookContactModify extends AbstractStructBase
     /**
      * Set workMobile value
      * @param string $workMobile
-     * @return \PayPal\StructType\TelephonyPhonebookContactModify
+     * @return \Ovh\StructType\TelephonyPhonebookContactModify
      */
     public function setWorkMobile($workMobile = null)
     {
@@ -315,7 +315,7 @@ class TelephonyPhonebookContactModify extends AbstractStructBase
     /**
      * Set homePhone value
      * @param string $homePhone
-     * @return \PayPal\StructType\TelephonyPhonebookContactModify
+     * @return \Ovh\StructType\TelephonyPhonebookContactModify
      */
     public function setHomePhone($homePhone = null)
     {
@@ -337,7 +337,7 @@ class TelephonyPhonebookContactModify extends AbstractStructBase
     /**
      * Set homeMobile value
      * @param string $homeMobile
-     * @return \PayPal\StructType\TelephonyPhonebookContactModify
+     * @return \Ovh\StructType\TelephonyPhonebookContactModify
      */
     public function setHomeMobile($homeMobile = null)
     {
@@ -359,7 +359,7 @@ class TelephonyPhonebookContactModify extends AbstractStructBase
     /**
      * Set group value
      * @param string $group
-     * @return \PayPal\StructType\TelephonyPhonebookContactModify
+     * @return \Ovh\StructType\TelephonyPhonebookContactModify
      */
     public function setGroup($group = null)
     {
@@ -376,7 +376,7 @@ class TelephonyPhonebookContactModify extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyPhonebookContactModify
+     * @return \Ovh\StructType\TelephonyPhonebookContactModify
      */
     public static function __set_state(array $array)
     {

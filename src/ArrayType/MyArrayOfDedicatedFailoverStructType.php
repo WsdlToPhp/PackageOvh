@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfDedicatedFailoverStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\DedicatedFailoverStruct[]
+     * @var \Ovh\StructType\DedicatedFailoverStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfDedicatedFailoverStructType
      * @uses MyArrayOfDedicatedFailoverStructType::setItem()
-     * @param \PayPal\StructType\DedicatedFailoverStruct[] $item
+     * @param \Ovh\StructType\DedicatedFailoverStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfDedicatedFailoverStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\DedicatedFailoverStruct[]|null
+     * @return \Ovh\StructType\DedicatedFailoverStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfDedicatedFailoverStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedFailoverStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedFailoverStructType
+     * @param \Ovh\StructType\DedicatedFailoverStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedFailoverStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfDedicatedFailoverStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfDedicatedFailoverStructTypeItemItem instanceof \PayPal\StructType\DedicatedFailoverStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedFailoverStruct, "%s" given', is_object($myArrayOfDedicatedFailoverStructTypeItemItem) ? get_class($myArrayOfDedicatedFailoverStructTypeItemItem) : gettype($myArrayOfDedicatedFailoverStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfDedicatedFailoverStructTypeItemItem instanceof \Ovh\StructType\DedicatedFailoverStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedFailoverStruct, "%s" given', is_object($myArrayOfDedicatedFailoverStructTypeItemItem) ? get_class($myArrayOfDedicatedFailoverStructTypeItemItem) : gettype($myArrayOfDedicatedFailoverStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfDedicatedFailoverStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedFailoverStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedFailoverStructType
+     * @param \Ovh\StructType\DedicatedFailoverStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedFailoverStructType
      */
-    public function addToItem(\PayPal\StructType\DedicatedFailoverStruct $item)
+    public function addToItem(\Ovh\StructType\DedicatedFailoverStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\DedicatedFailoverStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedFailoverStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\DedicatedFailoverStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedFailoverStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfDedicatedFailoverStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\DedicatedFailoverStruct|null
+     * @return \Ovh\StructType\DedicatedFailoverStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfDedicatedFailoverStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\DedicatedFailoverStruct|null
+     * @return \Ovh\StructType\DedicatedFailoverStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfDedicatedFailoverStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\DedicatedFailoverStruct|null
+     * @return \Ovh\StructType\DedicatedFailoverStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfDedicatedFailoverStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\DedicatedFailoverStruct|null
+     * @return \Ovh\StructType\DedicatedFailoverStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfDedicatedFailoverStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\DedicatedFailoverStruct|null
+     * @return \Ovh\StructType\DedicatedFailoverStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfDedicatedFailoverStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedFailoverStructType
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedFailoverStructType
      */
     public static function __set_state(array $array)
     {

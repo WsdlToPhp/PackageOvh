@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -189,7 +189,7 @@ class PrepaidDomainTransfer extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\PrepaidDomainTransfer
+     * @return \Ovh\StructType\PrepaidDomainTransfer
      */
     public function setSession($session = null)
     {
@@ -211,7 +211,7 @@ class PrepaidDomainTransfer extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\PrepaidDomainTransfer
+     * @return \Ovh\StructType\PrepaidDomainTransfer
      */
     public function setDomain($domain = null)
     {
@@ -233,7 +233,7 @@ class PrepaidDomainTransfer extends AbstractStructBase
     /**
      * Set nicowner value
      * @param string $nicowner
-     * @return \PayPal\StructType\PrepaidDomainTransfer
+     * @return \Ovh\StructType\PrepaidDomainTransfer
      */
     public function setNicowner($nicowner = null)
     {
@@ -255,7 +255,7 @@ class PrepaidDomainTransfer extends AbstractStructBase
     /**
      * Set nicadmin value
      * @param string $nicadmin
-     * @return \PayPal\StructType\PrepaidDomainTransfer
+     * @return \Ovh\StructType\PrepaidDomainTransfer
      */
     public function setNicadmin($nicadmin = null)
     {
@@ -277,7 +277,7 @@ class PrepaidDomainTransfer extends AbstractStructBase
     /**
      * Set nictech value
      * @param string $nictech
-     * @return \PayPal\StructType\PrepaidDomainTransfer
+     * @return \Ovh\StructType\PrepaidDomainTransfer
      */
     public function setNictech($nictech = null)
     {
@@ -299,7 +299,7 @@ class PrepaidDomainTransfer extends AbstractStructBase
     /**
      * Set nicbilling value
      * @param string $nicbilling
-     * @return \PayPal\StructType\PrepaidDomainTransfer
+     * @return \Ovh\StructType\PrepaidDomainTransfer
      */
     public function setNicbilling($nicbilling = null)
     {
@@ -321,7 +321,7 @@ class PrepaidDomainTransfer extends AbstractStructBase
     /**
      * Set dns1 value
      * @param string $dns1
-     * @return \PayPal\StructType\PrepaidDomainTransfer
+     * @return \Ovh\StructType\PrepaidDomainTransfer
      */
     public function setDns1($dns1 = null)
     {
@@ -343,7 +343,7 @@ class PrepaidDomainTransfer extends AbstractStructBase
     /**
      * Set dns2 value
      * @param string $dns2
-     * @return \PayPal\StructType\PrepaidDomainTransfer
+     * @return \Ovh\StructType\PrepaidDomainTransfer
      */
     public function setDns2($dns2 = null)
     {
@@ -365,7 +365,7 @@ class PrepaidDomainTransfer extends AbstractStructBase
     /**
      * Set dns3 value
      * @param string $dns3
-     * @return \PayPal\StructType\PrepaidDomainTransfer
+     * @return \Ovh\StructType\PrepaidDomainTransfer
      */
     public function setDns3($dns3 = null)
     {
@@ -387,7 +387,7 @@ class PrepaidDomainTransfer extends AbstractStructBase
     /**
      * Set dns4 value
      * @param string $dns4
-     * @return \PayPal\StructType\PrepaidDomainTransfer
+     * @return \Ovh\StructType\PrepaidDomainTransfer
      */
     public function setDns4($dns4 = null)
     {
@@ -409,7 +409,7 @@ class PrepaidDomainTransfer extends AbstractStructBase
     /**
      * Set dns5 value
      * @param string $dns5
-     * @return \PayPal\StructType\PrepaidDomainTransfer
+     * @return \Ovh\StructType\PrepaidDomainTransfer
      */
     public function setDns5($dns5 = null)
     {
@@ -431,7 +431,7 @@ class PrepaidDomainTransfer extends AbstractStructBase
     /**
      * Set frpartBirthday value
      * @param string $frpartBirthday
-     * @return \PayPal\StructType\PrepaidDomainTransfer
+     * @return \Ovh\StructType\PrepaidDomainTransfer
      */
     public function setFrpartBirthday($frpartBirthday = null)
     {
@@ -453,7 +453,7 @@ class PrepaidDomainTransfer extends AbstractStructBase
     /**
      * Set frpartBirthCountry value
      * @param string $frpartBirthCountry
-     * @return \PayPal\StructType\PrepaidDomainTransfer
+     * @return \Ovh\StructType\PrepaidDomainTransfer
      */
     public function setFrpartBirthCountry($frpartBirthCountry = null)
     {
@@ -475,7 +475,7 @@ class PrepaidDomainTransfer extends AbstractStructBase
     /**
      * Set frpartBirthDepartment value
      * @param string $frpartBirthDepartment
-     * @return \PayPal\StructType\PrepaidDomainTransfer
+     * @return \Ovh\StructType\PrepaidDomainTransfer
      */
     public function setFrpartBirthDepartment($frpartBirthDepartment = null)
     {
@@ -497,7 +497,7 @@ class PrepaidDomainTransfer extends AbstractStructBase
     /**
      * Set frpartBirthTown value
      * @param string $frpartBirthTown
-     * @return \PayPal\StructType\PrepaidDomainTransfer
+     * @return \Ovh\StructType\PrepaidDomainTransfer
      */
     public function setFrpartBirthTown($frpartBirthTown = null)
     {
@@ -519,7 +519,7 @@ class PrepaidDomainTransfer extends AbstractStructBase
     /**
      * Set dryRun value
      * @param bool $dryRun
-     * @return \PayPal\StructType\PrepaidDomainTransfer
+     * @return \Ovh\StructType\PrepaidDomainTransfer
      */
     public function setDryRun($dryRun = null)
     {
@@ -536,7 +536,7 @@ class PrepaidDomainTransfer extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\PrepaidDomainTransfer
+     * @return \Ovh\StructType\PrepaidDomainTransfer
      */
     public static function __set_state(array $array)
     {

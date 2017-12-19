@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -17,13 +17,13 @@ class MyArrayOfTelephonyLineSwitchPossibilityPriceStructType extends AbstractStr
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TelephonyLineSwitchPossibilityPriceStruct[]
+     * @var \Ovh\StructType\TelephonyLineSwitchPossibilityPriceStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTelephonyLineSwitchPossibilityPriceStructType
      * @uses MyArrayOfTelephonyLineSwitchPossibilityPriceStructType::setItem()
-     * @param \PayPal\StructType\TelephonyLineSwitchPossibilityPriceStruct[] $item
+     * @param \Ovh\StructType\TelephonyLineSwitchPossibilityPriceStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -32,7 +32,7 @@ class MyArrayOfTelephonyLineSwitchPossibilityPriceStructType extends AbstractStr
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TelephonyLineSwitchPossibilityPriceStruct[]|null
+     * @return \Ovh\StructType\TelephonyLineSwitchPossibilityPriceStruct[]|null
      */
     public function getItem()
     {
@@ -41,15 +41,15 @@ class MyArrayOfTelephonyLineSwitchPossibilityPriceStructType extends AbstractStr
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyLineSwitchPossibilityPriceStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyLineSwitchPossibilityPriceStructType
+     * @param \Ovh\StructType\TelephonyLineSwitchPossibilityPriceStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyLineSwitchPossibilityPriceStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTelephonyLineSwitchPossibilityPriceStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTelephonyLineSwitchPossibilityPriceStructTypeItemItem instanceof \PayPal\StructType\TelephonyLineSwitchPossibilityPriceStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyLineSwitchPossibilityPriceStruct, "%s" given', is_object($myArrayOfTelephonyLineSwitchPossibilityPriceStructTypeItemItem) ? get_class($myArrayOfTelephonyLineSwitchPossibilityPriceStructTypeItemItem) : gettype($myArrayOfTelephonyLineSwitchPossibilityPriceStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTelephonyLineSwitchPossibilityPriceStructTypeItemItem instanceof \Ovh\StructType\TelephonyLineSwitchPossibilityPriceStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyLineSwitchPossibilityPriceStruct, "%s" given', is_object($myArrayOfTelephonyLineSwitchPossibilityPriceStructTypeItemItem) ? get_class($myArrayOfTelephonyLineSwitchPossibilityPriceStructTypeItemItem) : gettype($myArrayOfTelephonyLineSwitchPossibilityPriceStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -58,14 +58,14 @@ class MyArrayOfTelephonyLineSwitchPossibilityPriceStructType extends AbstractStr
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyLineSwitchPossibilityPriceStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyLineSwitchPossibilityPriceStructType
+     * @param \Ovh\StructType\TelephonyLineSwitchPossibilityPriceStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyLineSwitchPossibilityPriceStructType
      */
-    public function addToItem(\PayPal\StructType\TelephonyLineSwitchPossibilityPriceStruct $item)
+    public function addToItem(\Ovh\StructType\TelephonyLineSwitchPossibilityPriceStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TelephonyLineSwitchPossibilityPriceStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyLineSwitchPossibilityPriceStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TelephonyLineSwitchPossibilityPriceStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyLineSwitchPossibilityPriceStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class MyArrayOfTelephonyLineSwitchPossibilityPriceStructType extends AbstractStr
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonyLineSwitchPossibilityPriceStruct|null
+     * @return \Ovh\StructType\TelephonyLineSwitchPossibilityPriceStruct|null
      */
     public function current()
     {
@@ -83,7 +83,7 @@ class MyArrayOfTelephonyLineSwitchPossibilityPriceStructType extends AbstractStr
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonyLineSwitchPossibilityPriceStruct|null
+     * @return \Ovh\StructType\TelephonyLineSwitchPossibilityPriceStruct|null
      */
     public function item($index)
     {
@@ -92,7 +92,7 @@ class MyArrayOfTelephonyLineSwitchPossibilityPriceStructType extends AbstractStr
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonyLineSwitchPossibilityPriceStruct|null
+     * @return \Ovh\StructType\TelephonyLineSwitchPossibilityPriceStruct|null
      */
     public function first()
     {
@@ -101,7 +101,7 @@ class MyArrayOfTelephonyLineSwitchPossibilityPriceStructType extends AbstractStr
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonyLineSwitchPossibilityPriceStruct|null
+     * @return \Ovh\StructType\TelephonyLineSwitchPossibilityPriceStruct|null
      */
     public function last()
     {
@@ -111,7 +111,7 @@ class MyArrayOfTelephonyLineSwitchPossibilityPriceStructType extends AbstractStr
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonyLineSwitchPossibilityPriceStruct|null
+     * @return \Ovh\StructType\TelephonyLineSwitchPossibilityPriceStruct|null
      */
     public function offsetGet($offset)
     {
@@ -132,7 +132,7 @@ class MyArrayOfTelephonyLineSwitchPossibilityPriceStructType extends AbstractStr
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyLineSwitchPossibilityPriceStructType
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyLineSwitchPossibilityPriceStructType
      */
     public static function __set_state(array $array)
     {

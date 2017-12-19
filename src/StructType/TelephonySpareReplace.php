@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class TelephonySpareReplace extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonySpareReplace
+     * @return \Ovh\StructType\TelephonySpareReplace
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class TelephonySpareReplace extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\TelephonySpareReplace
+     * @return \Ovh\StructType\TelephonySpareReplace
      */
     public function setType($type = null)
     {
@@ -133,7 +133,7 @@ class TelephonySpareReplace extends AbstractStructBase
     /**
      * Set service value
      * @param string $service
-     * @return \PayPal\StructType\TelephonySpareReplace
+     * @return \Ovh\StructType\TelephonySpareReplace
      */
     public function setService($service = null)
     {
@@ -155,7 +155,7 @@ class TelephonySpareReplace extends AbstractStructBase
     /**
      * Set spare value
      * @param string $spare
-     * @return \PayPal\StructType\TelephonySpareReplace
+     * @return \Ovh\StructType\TelephonySpareReplace
      */
     public function setSpare($spare = null)
     {
@@ -177,7 +177,7 @@ class TelephonySpareReplace extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \PayPal\StructType\TelephonySpareReplace
+     * @return \Ovh\StructType\TelephonySpareReplace
      */
     public function setAction($action = null)
     {
@@ -199,7 +199,7 @@ class TelephonySpareReplace extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\TelephonySpareReplace
+     * @return \Ovh\StructType\TelephonySpareReplace
      */
     public function setIp($ip = null)
     {
@@ -216,7 +216,7 @@ class TelephonySpareReplace extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySpareReplace
+     * @return \Ovh\StructType\TelephonySpareReplace
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -129,7 +129,7 @@ class DedicatedBackupUpdateDate extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedBackupUpdateDate
+     * @return \Ovh\StructType\DedicatedBackupUpdateDate
      */
     public function setSession($session = null)
     {
@@ -151,7 +151,7 @@ class DedicatedBackupUpdateDate extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedBackupUpdateDate
+     * @return \Ovh\StructType\DedicatedBackupUpdateDate
      */
     public function setHostname($hostname = null)
     {
@@ -173,7 +173,7 @@ class DedicatedBackupUpdateDate extends AbstractStructBase
     /**
      * Set backupId value
      * @param string $backupId
-     * @return \PayPal\StructType\DedicatedBackupUpdateDate
+     * @return \Ovh\StructType\DedicatedBackupUpdateDate
      */
     public function setBackupId($backupId = null)
     {
@@ -195,7 +195,7 @@ class DedicatedBackupUpdateDate extends AbstractStructBase
     /**
      * Set monday value
      * @param string $monday
-     * @return \PayPal\StructType\DedicatedBackupUpdateDate
+     * @return \Ovh\StructType\DedicatedBackupUpdateDate
      */
     public function setMonday($monday = null)
     {
@@ -217,7 +217,7 @@ class DedicatedBackupUpdateDate extends AbstractStructBase
     /**
      * Set tuesday value
      * @param string $tuesday
-     * @return \PayPal\StructType\DedicatedBackupUpdateDate
+     * @return \Ovh\StructType\DedicatedBackupUpdateDate
      */
     public function setTuesday($tuesday = null)
     {
@@ -239,7 +239,7 @@ class DedicatedBackupUpdateDate extends AbstractStructBase
     /**
      * Set wednesday value
      * @param string $wednesday
-     * @return \PayPal\StructType\DedicatedBackupUpdateDate
+     * @return \Ovh\StructType\DedicatedBackupUpdateDate
      */
     public function setWednesday($wednesday = null)
     {
@@ -261,7 +261,7 @@ class DedicatedBackupUpdateDate extends AbstractStructBase
     /**
      * Set thursday value
      * @param string $thursday
-     * @return \PayPal\StructType\DedicatedBackupUpdateDate
+     * @return \Ovh\StructType\DedicatedBackupUpdateDate
      */
     public function setThursday($thursday = null)
     {
@@ -283,7 +283,7 @@ class DedicatedBackupUpdateDate extends AbstractStructBase
     /**
      * Set friday value
      * @param string $friday
-     * @return \PayPal\StructType\DedicatedBackupUpdateDate
+     * @return \Ovh\StructType\DedicatedBackupUpdateDate
      */
     public function setFriday($friday = null)
     {
@@ -305,7 +305,7 @@ class DedicatedBackupUpdateDate extends AbstractStructBase
     /**
      * Set saturday value
      * @param string $saturday
-     * @return \PayPal\StructType\DedicatedBackupUpdateDate
+     * @return \Ovh\StructType\DedicatedBackupUpdateDate
      */
     public function setSaturday($saturday = null)
     {
@@ -327,7 +327,7 @@ class DedicatedBackupUpdateDate extends AbstractStructBase
     /**
      * Set sunday value
      * @param string $sunday
-     * @return \PayPal\StructType\DedicatedBackupUpdateDate
+     * @return \Ovh\StructType\DedicatedBackupUpdateDate
      */
     public function setSunday($sunday = null)
     {
@@ -344,7 +344,7 @@ class DedicatedBackupUpdateDate extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedBackupUpdateDate
+     * @return \Ovh\StructType\DedicatedBackupUpdateDate
      */
     public static function __set_state(array $array)
     {

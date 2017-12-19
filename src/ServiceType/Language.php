@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Language extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\Language $parameters
-     * @return \PayPal\StructType\LanguageResponse|bool
+     * @param \Ovh\StructType\Language $parameters
+     * @return \Ovh\StructType\LanguageResponse|bool
      */
-    public function language(\PayPal\StructType\Language $parameters)
+    public function language(\Ovh\StructType\Language $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->language($parameters));
@@ -33,7 +33,7 @@ class Language extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\LanguageResponse
+     * @return \Ovh\StructType\LanguageResponse
      */
     public function getResult()
     {

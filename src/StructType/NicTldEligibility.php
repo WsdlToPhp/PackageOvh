@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class NicTldEligibility extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\NicTldEligibility
+     * @return \Ovh\StructType\NicTldEligibility
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class NicTldEligibility extends AbstractStructBase
     /**
      * Set nic value
      * @param string $nic
-     * @return \PayPal\StructType\NicTldEligibility
+     * @return \Ovh\StructType\NicTldEligibility
      */
     public function setNic($nic = null)
     {
@@ -103,7 +103,7 @@ class NicTldEligibility extends AbstractStructBase
     /**
      * Set tld value
      * @param string $tld
-     * @return \PayPal\StructType\NicTldEligibility
+     * @return \Ovh\StructType\NicTldEligibility
      */
     public function setTld($tld = null)
     {
@@ -120,7 +120,7 @@ class NicTldEligibility extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\NicTldEligibility
+     * @return \Ovh\StructType\NicTldEligibility
      */
     public static function __set_state(array $array)
     {

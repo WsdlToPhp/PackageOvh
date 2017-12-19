@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Responder extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ResponderEmailList $parameters
-     * @return \PayPal\StructType\ResponderEmailListResponse|bool
+     * @param \Ovh\StructType\ResponderEmailList $parameters
+     * @return \Ovh\StructType\ResponderEmailListResponse|bool
      */
-    public function responderEmailList(\PayPal\StructType\ResponderEmailList $parameters)
+    public function responderEmailList(\Ovh\StructType\ResponderEmailList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->responderEmailList($parameters));
@@ -36,10 +36,10 @@ class Responder extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ResponderEmailInfo $parameters
-     * @return \PayPal\StructType\ResponderEmailInfoResponse|bool
+     * @param \Ovh\StructType\ResponderEmailInfo $parameters
+     * @return \Ovh\StructType\ResponderEmailInfoResponse|bool
      */
-    public function responderEmailInfo(\PayPal\StructType\ResponderEmailInfo $parameters)
+    public function responderEmailInfo(\Ovh\StructType\ResponderEmailInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->responderEmailInfo($parameters));
@@ -55,10 +55,10 @@ class Responder extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ResponderEmailDel $parameters
-     * @return \PayPal\StructType\ResponderEmailDelResponse|bool
+     * @param \Ovh\StructType\ResponderEmailDel $parameters
+     * @return \Ovh\StructType\ResponderEmailDelResponse|bool
      */
-    public function responderEmailDel(\PayPal\StructType\ResponderEmailDel $parameters)
+    public function responderEmailDel(\Ovh\StructType\ResponderEmailDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->responderEmailDel($parameters));
@@ -74,10 +74,10 @@ class Responder extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ResponderEmailModify $parameters
-     * @return \PayPal\StructType\ResponderEmailModifyResponse|bool
+     * @param \Ovh\StructType\ResponderEmailModify $parameters
+     * @return \Ovh\StructType\ResponderEmailModifyResponse|bool
      */
-    public function responderEmailModify(\PayPal\StructType\ResponderEmailModify $parameters)
+    public function responderEmailModify(\Ovh\StructType\ResponderEmailModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->responderEmailModify($parameters));
@@ -93,10 +93,10 @@ class Responder extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ResponderEmailAdd $parameters
-     * @return \PayPal\StructType\ResponderEmailAddResponse|bool
+     * @param \Ovh\StructType\ResponderEmailAdd $parameters
+     * @return \Ovh\StructType\ResponderEmailAddResponse|bool
      */
-    public function responderEmailAdd(\PayPal\StructType\ResponderEmailAdd $parameters)
+    public function responderEmailAdd(\Ovh\StructType\ResponderEmailAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->responderEmailAdd($parameters));
@@ -109,7 +109,7 @@ class Responder extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\ResponderEmailAddResponse|\PayPal\StructType\ResponderEmailDelResponse|\PayPal\StructType\ResponderEmailInfoResponse|\PayPal\StructType\ResponderEmailListResponse|\PayPal\StructType\ResponderEmailModifyResponse
+     * @return \Ovh\StructType\ResponderEmailAddResponse|\Ovh\StructType\ResponderEmailDelResponse|\Ovh\StructType\ResponderEmailInfoResponse|\Ovh\StructType\ResponderEmailListResponse|\Ovh\StructType\ResponderEmailModifyResponse
      */
     public function getResult()
     {

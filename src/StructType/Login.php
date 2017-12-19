@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class Login extends AbstractStructBase
     /**
      * Set nic value
      * @param string $nic
-     * @return \PayPal\StructType\Login
+     * @return \Ovh\StructType\Login
      */
     public function setNic($nic = null)
     {
@@ -91,7 +91,7 @@ class Login extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \PayPal\StructType\Login
+     * @return \Ovh\StructType\Login
      */
     public function setPassword($password = null)
     {
@@ -113,7 +113,7 @@ class Login extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \PayPal\StructType\Login
+     * @return \Ovh\StructType\Login
      */
     public function setLanguage($language = null)
     {
@@ -135,7 +135,7 @@ class Login extends AbstractStructBase
     /**
      * Set multisession value
      * @param bool $multisession
-     * @return \PayPal\StructType\Login
+     * @return \Ovh\StructType\Login
      */
     public function setMultisession($multisession = null)
     {
@@ -152,7 +152,7 @@ class Login extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\Login
+     * @return \Ovh\StructType\Login
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,17 +13,17 @@ class DedicatedMrtgInfoReturn extends AbstractStructBase
 {
     /**
      * The average
-     * @var \PayPal\StructType\DedicatedMrtgInfoStruct
+     * @var \Ovh\StructType\DedicatedMrtgInfoStruct
      */
     public $average;
     /**
      * The current
-     * @var \PayPal\StructType\DedicatedMrtgInfoStruct
+     * @var \Ovh\StructType\DedicatedMrtgInfoStruct
      */
     public $current;
     /**
      * The max
-     * @var \PayPal\StructType\DedicatedMrtgInfoStruct
+     * @var \Ovh\StructType\DedicatedMrtgInfoStruct
      */
     public $max;
     /**
@@ -37,12 +37,12 @@ class DedicatedMrtgInfoReturn extends AbstractStructBase
      * @uses DedicatedMrtgInfoReturn::setCurrent()
      * @uses DedicatedMrtgInfoReturn::setMax()
      * @uses DedicatedMrtgInfoReturn::setImage()
-     * @param \PayPal\StructType\DedicatedMrtgInfoStruct $average
-     * @param \PayPal\StructType\DedicatedMrtgInfoStruct $current
-     * @param \PayPal\StructType\DedicatedMrtgInfoStruct $max
+     * @param \Ovh\StructType\DedicatedMrtgInfoStruct $average
+     * @param \Ovh\StructType\DedicatedMrtgInfoStruct $current
+     * @param \Ovh\StructType\DedicatedMrtgInfoStruct $max
      * @param string $image
      */
-    public function __construct(\PayPal\StructType\DedicatedMrtgInfoStruct $average = null, \PayPal\StructType\DedicatedMrtgInfoStruct $current = null, \PayPal\StructType\DedicatedMrtgInfoStruct $max = null, $image = null)
+    public function __construct(\Ovh\StructType\DedicatedMrtgInfoStruct $average = null, \Ovh\StructType\DedicatedMrtgInfoStruct $current = null, \Ovh\StructType\DedicatedMrtgInfoStruct $max = null, $image = null)
     {
         $this
             ->setAverage($average)
@@ -52,7 +52,7 @@ class DedicatedMrtgInfoReturn extends AbstractStructBase
     }
     /**
      * Get average value
-     * @return \PayPal\StructType\DedicatedMrtgInfoStruct|null
+     * @return \Ovh\StructType\DedicatedMrtgInfoStruct|null
      */
     public function getAverage()
     {
@@ -60,17 +60,17 @@ class DedicatedMrtgInfoReturn extends AbstractStructBase
     }
     /**
      * Set average value
-     * @param \PayPal\StructType\DedicatedMrtgInfoStruct $average
-     * @return \PayPal\StructType\DedicatedMrtgInfoReturn
+     * @param \Ovh\StructType\DedicatedMrtgInfoStruct $average
+     * @return \Ovh\StructType\DedicatedMrtgInfoReturn
      */
-    public function setAverage(\PayPal\StructType\DedicatedMrtgInfoStruct $average = null)
+    public function setAverage(\Ovh\StructType\DedicatedMrtgInfoStruct $average = null)
     {
         $this->average = $average;
         return $this;
     }
     /**
      * Get current value
-     * @return \PayPal\StructType\DedicatedMrtgInfoStruct|null
+     * @return \Ovh\StructType\DedicatedMrtgInfoStruct|null
      */
     public function getCurrent()
     {
@@ -78,17 +78,17 @@ class DedicatedMrtgInfoReturn extends AbstractStructBase
     }
     /**
      * Set current value
-     * @param \PayPal\StructType\DedicatedMrtgInfoStruct $current
-     * @return \PayPal\StructType\DedicatedMrtgInfoReturn
+     * @param \Ovh\StructType\DedicatedMrtgInfoStruct $current
+     * @return \Ovh\StructType\DedicatedMrtgInfoReturn
      */
-    public function setCurrent(\PayPal\StructType\DedicatedMrtgInfoStruct $current = null)
+    public function setCurrent(\Ovh\StructType\DedicatedMrtgInfoStruct $current = null)
     {
         $this->current = $current;
         return $this;
     }
     /**
      * Get max value
-     * @return \PayPal\StructType\DedicatedMrtgInfoStruct|null
+     * @return \Ovh\StructType\DedicatedMrtgInfoStruct|null
      */
     public function getMax()
     {
@@ -96,10 +96,10 @@ class DedicatedMrtgInfoReturn extends AbstractStructBase
     }
     /**
      * Set max value
-     * @param \PayPal\StructType\DedicatedMrtgInfoStruct $max
-     * @return \PayPal\StructType\DedicatedMrtgInfoReturn
+     * @param \Ovh\StructType\DedicatedMrtgInfoStruct $max
+     * @return \Ovh\StructType\DedicatedMrtgInfoReturn
      */
-    public function setMax(\PayPal\StructType\DedicatedMrtgInfoStruct $max = null)
+    public function setMax(\Ovh\StructType\DedicatedMrtgInfoStruct $max = null)
     {
         $this->max = $max;
         return $this;
@@ -115,7 +115,7 @@ class DedicatedMrtgInfoReturn extends AbstractStructBase
     /**
      * Set image value
      * @param string $image
-     * @return \PayPal\StructType\DedicatedMrtgInfoReturn
+     * @return \Ovh\StructType\DedicatedMrtgInfoReturn
      */
     public function setImage($image = null)
     {
@@ -132,7 +132,7 @@ class DedicatedMrtgInfoReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedMrtgInfoReturn
+     * @return \Ovh\StructType\DedicatedMrtgInfoReturn
      */
     public static function __set_state(array $array)
     {

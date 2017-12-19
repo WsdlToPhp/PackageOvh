@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -43,7 +43,7 @@ class TelephonyBillingAccountInfoReturn extends AbstractStructBase
     public $facturationDate;
     /**
      * The children
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyBillingAccountInfoChildrenStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyBillingAccountInfoChildrenStructType
      */
     public $children;
     /**
@@ -61,9 +61,9 @@ class TelephonyBillingAccountInfoReturn extends AbstractStructBase
      * @param string $consumtionTime
      * @param string $outPlan
      * @param string $facturationDate
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyBillingAccountInfoChildrenStructType $children
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyBillingAccountInfoChildrenStructType $children
      */
-    public function __construct($name = null, $description = null, $offer = null, $consumtionTime = null, $outPlan = null, $facturationDate = null, \PayPal\ArrayType\MyArrayOfTelephonyBillingAccountInfoChildrenStructType $children = null)
+    public function __construct($name = null, $description = null, $offer = null, $consumtionTime = null, $outPlan = null, $facturationDate = null, \Ovh\ArrayType\MyArrayOfTelephonyBillingAccountInfoChildrenStructType $children = null)
     {
         $this
             ->setName($name)
@@ -85,7 +85,7 @@ class TelephonyBillingAccountInfoReturn extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoReturn
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoReturn
      */
     public function setName($name = null)
     {
@@ -107,7 +107,7 @@ class TelephonyBillingAccountInfoReturn extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoReturn
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoReturn
      */
     public function setDescription($description = null)
     {
@@ -129,7 +129,7 @@ class TelephonyBillingAccountInfoReturn extends AbstractStructBase
     /**
      * Set offer value
      * @param string $offer
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoReturn
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoReturn
      */
     public function setOffer($offer = null)
     {
@@ -151,7 +151,7 @@ class TelephonyBillingAccountInfoReturn extends AbstractStructBase
     /**
      * Set consumtionTime value
      * @param string $consumtionTime
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoReturn
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoReturn
      */
     public function setConsumtionTime($consumtionTime = null)
     {
@@ -173,7 +173,7 @@ class TelephonyBillingAccountInfoReturn extends AbstractStructBase
     /**
      * Set outPlan value
      * @param string $outPlan
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoReturn
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoReturn
      */
     public function setOutPlan($outPlan = null)
     {
@@ -195,7 +195,7 @@ class TelephonyBillingAccountInfoReturn extends AbstractStructBase
     /**
      * Set facturationDate value
      * @param string $facturationDate
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoReturn
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoReturn
      */
     public function setFacturationDate($facturationDate = null)
     {
@@ -208,7 +208,7 @@ class TelephonyBillingAccountInfoReturn extends AbstractStructBase
     }
     /**
      * Get children value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyBillingAccountInfoChildrenStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyBillingAccountInfoChildrenStructType|null
      */
     public function getChildren()
     {
@@ -216,10 +216,10 @@ class TelephonyBillingAccountInfoReturn extends AbstractStructBase
     }
     /**
      * Set children value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyBillingAccountInfoChildrenStructType $children
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoReturn
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyBillingAccountInfoChildrenStructType $children
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoReturn
      */
-    public function setChildren(\PayPal\ArrayType\MyArrayOfTelephonyBillingAccountInfoChildrenStructType $children = null)
+    public function setChildren(\Ovh\ArrayType\MyArrayOfTelephonyBillingAccountInfoChildrenStructType $children = null)
     {
         $this->children = $children;
         return $this;
@@ -230,7 +230,7 @@ class TelephonyBillingAccountInfoReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoReturn
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoReturn
      */
     public static function __set_state(array $array)
     {

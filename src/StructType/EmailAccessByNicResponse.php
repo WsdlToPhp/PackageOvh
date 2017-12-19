@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class EmailAccessByNicResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $return;
     /**
      * Constructor method for emailAccessByNicResponse
      * @uses EmailAccessByNicResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfStringType $return
+     * @param \Ovh\ArrayType\MyArrayOfStringType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfStringType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfStringType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class EmailAccessByNicResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $return
-     * @return \PayPal\StructType\EmailAccessByNicResponse
+     * @param \Ovh\ArrayType\MyArrayOfStringType $return
+     * @return \Ovh\StructType\EmailAccessByNicResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfStringType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfStringType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class EmailAccessByNicResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\EmailAccessByNicResponse
+     * @return \Ovh\StructType\EmailAccessByNicResponse
      */
     public static function __set_state(array $array)
     {

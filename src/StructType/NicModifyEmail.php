@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class NicModifyEmail extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\NicModifyEmail
+     * @return \Ovh\StructType\NicModifyEmail
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class NicModifyEmail extends AbstractStructBase
     /**
      * Set nic value
      * @param string $nic
-     * @return \PayPal\StructType\NicModifyEmail
+     * @return \Ovh\StructType\NicModifyEmail
      */
     public function setNic($nic = null)
     {
@@ -103,7 +103,7 @@ class NicModifyEmail extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\NicModifyEmail
+     * @return \Ovh\StructType\NicModifyEmail
      */
     public function setEmail($email = null)
     {
@@ -120,7 +120,7 @@ class NicModifyEmail extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\NicModifyEmail
+     * @return \Ovh\StructType\NicModifyEmail
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class DatabaseCreate extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DatabaseCreate
+     * @return \Ovh\StructType\DatabaseCreate
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class DatabaseCreate extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\DatabaseCreate
+     * @return \Ovh\StructType\DatabaseCreate
      */
     public function setDomain($domain = null)
     {
@@ -123,7 +123,7 @@ class DatabaseCreate extends AbstractStructBase
     /**
      * Set db value
      * @param string $db
-     * @return \PayPal\StructType\DatabaseCreate
+     * @return \Ovh\StructType\DatabaseCreate
      */
     public function setDb($db = null)
     {
@@ -145,7 +145,7 @@ class DatabaseCreate extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \PayPal\StructType\DatabaseCreate
+     * @return \Ovh\StructType\DatabaseCreate
      */
     public function setPassword($password = null)
     {
@@ -167,7 +167,7 @@ class DatabaseCreate extends AbstractStructBase
     /**
      * Set dbType value
      * @param string $dbType
-     * @return \PayPal\StructType\DatabaseCreate
+     * @return \Ovh\StructType\DatabaseCreate
      */
     public function setDbType($dbType = null)
     {
@@ -184,7 +184,7 @@ class DatabaseCreate extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DatabaseCreate
+     * @return \Ovh\StructType\DatabaseCreate
      */
     public static function __set_state(array $array)
     {

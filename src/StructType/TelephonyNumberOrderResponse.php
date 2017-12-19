@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyNumberOrderResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyNumberOrderReturn
+     * @var \Ovh\StructType\TelephonyNumberOrderReturn
      */
     public $return;
     /**
      * Constructor method for telephonyNumberOrderResponse
      * @uses TelephonyNumberOrderResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyNumberOrderReturn $return
+     * @param \Ovh\StructType\TelephonyNumberOrderReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonyNumberOrderReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonyNumberOrderReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyNumberOrderReturn|null
+     * @return \Ovh\StructType\TelephonyNumberOrderReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyNumberOrderResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyNumberOrderReturn $return
-     * @return \PayPal\StructType\TelephonyNumberOrderResponse
+     * @param \Ovh\StructType\TelephonyNumberOrderReturn $return
+     * @return \Ovh\StructType\TelephonyNumberOrderResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyNumberOrderReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyNumberOrderReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyNumberOrderResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyNumberOrderResponse
+     * @return \Ovh\StructType\TelephonyNumberOrderResponse
      */
     public static function __set_state(array $array)
     {

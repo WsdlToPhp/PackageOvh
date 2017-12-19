@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,22 +23,22 @@ class TelephonyBillingAccountSummaryLineStruct extends AbstractStructBase
     public $phoneNumber;
     /**
      * The fixe
-     * @var \PayPal\StructType\TelephonyCallsSummaryStruct
+     * @var \Ovh\StructType\TelephonyCallsSummaryStruct
      */
     public $fixe;
     /**
      * The special
-     * @var \PayPal\StructType\TelephonyCallsSummaryStruct
+     * @var \Ovh\StructType\TelephonyCallsSummaryStruct
      */
     public $special;
     /**
      * The mobile
-     * @var \PayPal\StructType\TelephonyCallsSummaryStruct
+     * @var \Ovh\StructType\TelephonyCallsSummaryStruct
      */
     public $mobile;
     /**
      * The fax
-     * @var \PayPal\StructType\TelephonyFaxSummaryStruct
+     * @var \Ovh\StructType\TelephonyFaxSummaryStruct
      */
     public $fax;
     /**
@@ -51,12 +51,12 @@ class TelephonyBillingAccountSummaryLineStruct extends AbstractStructBase
      * @uses TelephonyBillingAccountSummaryLineStruct::setFax()
      * @param string $line
      * @param string $phoneNumber
-     * @param \PayPal\StructType\TelephonyCallsSummaryStruct $fixe
-     * @param \PayPal\StructType\TelephonyCallsSummaryStruct $special
-     * @param \PayPal\StructType\TelephonyCallsSummaryStruct $mobile
-     * @param \PayPal\StructType\TelephonyFaxSummaryStruct $fax
+     * @param \Ovh\StructType\TelephonyCallsSummaryStruct $fixe
+     * @param \Ovh\StructType\TelephonyCallsSummaryStruct $special
+     * @param \Ovh\StructType\TelephonyCallsSummaryStruct $mobile
+     * @param \Ovh\StructType\TelephonyFaxSummaryStruct $fax
      */
-    public function __construct($line = null, $phoneNumber = null, \PayPal\StructType\TelephonyCallsSummaryStruct $fixe = null, \PayPal\StructType\TelephonyCallsSummaryStruct $special = null, \PayPal\StructType\TelephonyCallsSummaryStruct $mobile = null, \PayPal\StructType\TelephonyFaxSummaryStruct $fax = null)
+    public function __construct($line = null, $phoneNumber = null, \Ovh\StructType\TelephonyCallsSummaryStruct $fixe = null, \Ovh\StructType\TelephonyCallsSummaryStruct $special = null, \Ovh\StructType\TelephonyCallsSummaryStruct $mobile = null, \Ovh\StructType\TelephonyFaxSummaryStruct $fax = null)
     {
         $this
             ->setLine($line)
@@ -77,7 +77,7 @@ class TelephonyBillingAccountSummaryLineStruct extends AbstractStructBase
     /**
      * Set line value
      * @param string $line
-     * @return \PayPal\StructType\TelephonyBillingAccountSummaryLineStruct
+     * @return \Ovh\StructType\TelephonyBillingAccountSummaryLineStruct
      */
     public function setLine($line = null)
     {
@@ -99,7 +99,7 @@ class TelephonyBillingAccountSummaryLineStruct extends AbstractStructBase
     /**
      * Set phoneNumber value
      * @param string $phoneNumber
-     * @return \PayPal\StructType\TelephonyBillingAccountSummaryLineStruct
+     * @return \Ovh\StructType\TelephonyBillingAccountSummaryLineStruct
      */
     public function setPhoneNumber($phoneNumber = null)
     {
@@ -112,7 +112,7 @@ class TelephonyBillingAccountSummaryLineStruct extends AbstractStructBase
     }
     /**
      * Get fixe value
-     * @return \PayPal\StructType\TelephonyCallsSummaryStruct|null
+     * @return \Ovh\StructType\TelephonyCallsSummaryStruct|null
      */
     public function getFixe()
     {
@@ -120,17 +120,17 @@ class TelephonyBillingAccountSummaryLineStruct extends AbstractStructBase
     }
     /**
      * Set fixe value
-     * @param \PayPal\StructType\TelephonyCallsSummaryStruct $fixe
-     * @return \PayPal\StructType\TelephonyBillingAccountSummaryLineStruct
+     * @param \Ovh\StructType\TelephonyCallsSummaryStruct $fixe
+     * @return \Ovh\StructType\TelephonyBillingAccountSummaryLineStruct
      */
-    public function setFixe(\PayPal\StructType\TelephonyCallsSummaryStruct $fixe = null)
+    public function setFixe(\Ovh\StructType\TelephonyCallsSummaryStruct $fixe = null)
     {
         $this->fixe = $fixe;
         return $this;
     }
     /**
      * Get special value
-     * @return \PayPal\StructType\TelephonyCallsSummaryStruct|null
+     * @return \Ovh\StructType\TelephonyCallsSummaryStruct|null
      */
     public function getSpecial()
     {
@@ -138,17 +138,17 @@ class TelephonyBillingAccountSummaryLineStruct extends AbstractStructBase
     }
     /**
      * Set special value
-     * @param \PayPal\StructType\TelephonyCallsSummaryStruct $special
-     * @return \PayPal\StructType\TelephonyBillingAccountSummaryLineStruct
+     * @param \Ovh\StructType\TelephonyCallsSummaryStruct $special
+     * @return \Ovh\StructType\TelephonyBillingAccountSummaryLineStruct
      */
-    public function setSpecial(\PayPal\StructType\TelephonyCallsSummaryStruct $special = null)
+    public function setSpecial(\Ovh\StructType\TelephonyCallsSummaryStruct $special = null)
     {
         $this->special = $special;
         return $this;
     }
     /**
      * Get mobile value
-     * @return \PayPal\StructType\TelephonyCallsSummaryStruct|null
+     * @return \Ovh\StructType\TelephonyCallsSummaryStruct|null
      */
     public function getMobile()
     {
@@ -156,17 +156,17 @@ class TelephonyBillingAccountSummaryLineStruct extends AbstractStructBase
     }
     /**
      * Set mobile value
-     * @param \PayPal\StructType\TelephonyCallsSummaryStruct $mobile
-     * @return \PayPal\StructType\TelephonyBillingAccountSummaryLineStruct
+     * @param \Ovh\StructType\TelephonyCallsSummaryStruct $mobile
+     * @return \Ovh\StructType\TelephonyBillingAccountSummaryLineStruct
      */
-    public function setMobile(\PayPal\StructType\TelephonyCallsSummaryStruct $mobile = null)
+    public function setMobile(\Ovh\StructType\TelephonyCallsSummaryStruct $mobile = null)
     {
         $this->mobile = $mobile;
         return $this;
     }
     /**
      * Get fax value
-     * @return \PayPal\StructType\TelephonyFaxSummaryStruct|null
+     * @return \Ovh\StructType\TelephonyFaxSummaryStruct|null
      */
     public function getFax()
     {
@@ -174,10 +174,10 @@ class TelephonyBillingAccountSummaryLineStruct extends AbstractStructBase
     }
     /**
      * Set fax value
-     * @param \PayPal\StructType\TelephonyFaxSummaryStruct $fax
-     * @return \PayPal\StructType\TelephonyBillingAccountSummaryLineStruct
+     * @param \Ovh\StructType\TelephonyFaxSummaryStruct $fax
+     * @return \Ovh\StructType\TelephonyBillingAccountSummaryLineStruct
      */
-    public function setFax(\PayPal\StructType\TelephonyFaxSummaryStruct $fax = null)
+    public function setFax(\Ovh\StructType\TelephonyFaxSummaryStruct $fax = null)
     {
         $this->fax = $fax;
         return $this;
@@ -188,7 +188,7 @@ class TelephonyBillingAccountSummaryLineStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyBillingAccountSummaryLineStruct
+     * @return \Ovh\StructType\TelephonyBillingAccountSummaryLineStruct
      */
     public static function __set_state(array $array)
     {

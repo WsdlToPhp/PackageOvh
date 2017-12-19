@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Mailing extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\MailingListModeratorDel $parameters
-     * @return \PayPal\StructType\MailingListModeratorDelResponse|bool
+     * @param \Ovh\StructType\MailingListModeratorDel $parameters
+     * @return \Ovh\StructType\MailingListModeratorDelResponse|bool
      */
-    public function mailingListModeratorDel(\PayPal\StructType\MailingListModeratorDel $parameters)
+    public function mailingListModeratorDel(\Ovh\StructType\MailingListModeratorDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->mailingListModeratorDel($parameters));
@@ -36,10 +36,10 @@ class Mailing extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\MailingListModeratorList $parameters
-     * @return \PayPal\StructType\MailingListModeratorListResponse|bool
+     * @param \Ovh\StructType\MailingListModeratorList $parameters
+     * @return \Ovh\StructType\MailingListModeratorListResponse|bool
      */
-    public function mailingListModeratorList(\PayPal\StructType\MailingListModeratorList $parameters)
+    public function mailingListModeratorList(\Ovh\StructType\MailingListModeratorList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->mailingListModeratorList($parameters));
@@ -55,10 +55,10 @@ class Mailing extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\MailingListFullInfo $parameters
-     * @return \PayPal\StructType\MailingListFullInfoResponse|bool
+     * @param \Ovh\StructType\MailingListFullInfo $parameters
+     * @return \Ovh\StructType\MailingListFullInfoResponse|bool
      */
-    public function mailingListFullInfo(\PayPal\StructType\MailingListFullInfo $parameters)
+    public function mailingListFullInfo(\Ovh\StructType\MailingListFullInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->mailingListFullInfo($parameters));
@@ -74,10 +74,10 @@ class Mailing extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\MailingListDel $parameters
-     * @return \PayPal\StructType\MailingListDelResponse|bool
+     * @param \Ovh\StructType\MailingListDel $parameters
+     * @return \Ovh\StructType\MailingListDelResponse|bool
      */
-    public function mailingListDel(\PayPal\StructType\MailingListDel $parameters)
+    public function mailingListDel(\Ovh\StructType\MailingListDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->mailingListDel($parameters));
@@ -93,10 +93,10 @@ class Mailing extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\MailingListSubscriberAdd $parameters
-     * @return \PayPal\StructType\MailingListSubscriberAddResponse|bool
+     * @param \Ovh\StructType\MailingListSubscriberAdd $parameters
+     * @return \Ovh\StructType\MailingListSubscriberAddResponse|bool
      */
-    public function mailingListSubscriberAdd(\PayPal\StructType\MailingListSubscriberAdd $parameters)
+    public function mailingListSubscriberAdd(\Ovh\StructType\MailingListSubscriberAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->mailingListSubscriberAdd($parameters));
@@ -112,10 +112,10 @@ class Mailing extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\MailingListModeratorAdd $parameters
-     * @return \PayPal\StructType\MailingListModeratorAddResponse|bool
+     * @param \Ovh\StructType\MailingListModeratorAdd $parameters
+     * @return \Ovh\StructType\MailingListModeratorAddResponse|bool
      */
-    public function mailingListModeratorAdd(\PayPal\StructType\MailingListModeratorAdd $parameters)
+    public function mailingListModeratorAdd(\Ovh\StructType\MailingListModeratorAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->mailingListModeratorAdd($parameters));
@@ -131,10 +131,10 @@ class Mailing extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\MailingListSubscriberList $parameters
-     * @return \PayPal\StructType\MailingListSubscriberListResponse|bool
+     * @param \Ovh\StructType\MailingListSubscriberList $parameters
+     * @return \Ovh\StructType\MailingListSubscriberListResponse|bool
      */
-    public function mailingListSubscriberList(\PayPal\StructType\MailingListSubscriberList $parameters)
+    public function mailingListSubscriberList(\Ovh\StructType\MailingListSubscriberList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->mailingListSubscriberList($parameters));
@@ -150,10 +150,10 @@ class Mailing extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\MailingListSubscriberDel $parameters
-     * @return \PayPal\StructType\MailingListSubscriberDelResponse|bool
+     * @param \Ovh\StructType\MailingListSubscriberDel $parameters
+     * @return \Ovh\StructType\MailingListSubscriberDelResponse|bool
      */
-    public function mailingListSubscriberDel(\PayPal\StructType\MailingListSubscriberDel $parameters)
+    public function mailingListSubscriberDel(\Ovh\StructType\MailingListSubscriberDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->mailingListSubscriberDel($parameters));
@@ -169,10 +169,10 @@ class Mailing extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\MailingListInfo $parameters
-     * @return \PayPal\StructType\MailingListInfoResponse|bool
+     * @param \Ovh\StructType\MailingListInfo $parameters
+     * @return \Ovh\StructType\MailingListInfoResponse|bool
      */
-    public function mailingListInfo(\PayPal\StructType\MailingListInfo $parameters)
+    public function mailingListInfo(\Ovh\StructType\MailingListInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->mailingListInfo($parameters));
@@ -188,10 +188,10 @@ class Mailing extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\MailingListModify $parameters
-     * @return \PayPal\StructType\MailingListModifyResponse|bool
+     * @param \Ovh\StructType\MailingListModify $parameters
+     * @return \Ovh\StructType\MailingListModifyResponse|bool
      */
-    public function mailingListModify(\PayPal\StructType\MailingListModify $parameters)
+    public function mailingListModify(\Ovh\StructType\MailingListModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->mailingListModify($parameters));
@@ -207,10 +207,10 @@ class Mailing extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\MailingListAdd $parameters
-     * @return \PayPal\StructType\MailingListAddResponse|bool
+     * @param \Ovh\StructType\MailingListAdd $parameters
+     * @return \Ovh\StructType\MailingListAddResponse|bool
      */
-    public function mailingListAdd(\PayPal\StructType\MailingListAdd $parameters)
+    public function mailingListAdd(\Ovh\StructType\MailingListAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->mailingListAdd($parameters));
@@ -226,10 +226,10 @@ class Mailing extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\MailingListList $parameters
-     * @return \PayPal\StructType\MailingListListResponse|bool
+     * @param \Ovh\StructType\MailingListList $parameters
+     * @return \Ovh\StructType\MailingListListResponse|bool
      */
-    public function mailingListList(\PayPal\StructType\MailingListList $parameters)
+    public function mailingListList(\Ovh\StructType\MailingListList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->mailingListList($parameters));
@@ -245,10 +245,10 @@ class Mailing extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\MailingListSubscriberListByEmail $parameters
-     * @return \PayPal\StructType\MailingListSubscriberListByEmailResponse|bool
+     * @param \Ovh\StructType\MailingListSubscriberListByEmail $parameters
+     * @return \Ovh\StructType\MailingListSubscriberListByEmailResponse|bool
      */
-    public function mailingListSubscriberListByEmail(\PayPal\StructType\MailingListSubscriberListByEmail $parameters)
+    public function mailingListSubscriberListByEmail(\Ovh\StructType\MailingListSubscriberListByEmail $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->mailingListSubscriberListByEmail($parameters));
@@ -261,7 +261,7 @@ class Mailing extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\MailingListAddResponse|\PayPal\StructType\MailingListDelResponse|\PayPal\StructType\MailingListFullInfoResponse|\PayPal\StructType\MailingListInfoResponse|\PayPal\StructType\MailingListListResponse|\PayPal\StructType\MailingListModeratorAddResponse|\PayPal\StructType\MailingListModeratorDelResponse|\PayPal\StructType\MailingListModeratorListResponse|\PayPal\StructType\MailingListModifyResponse|\PayPal\StructType\MailingListSubscriberAddResponse|\PayPal\StructType\MailingListSubscriberDelResponse|\PayPal\StructType\MailingListSubscriberListByEmailResponse|\PayPal\StructType\MailingListSubscriberListResponse
+     * @return \Ovh\StructType\MailingListAddResponse|\Ovh\StructType\MailingListDelResponse|\Ovh\StructType\MailingListFullInfoResponse|\Ovh\StructType\MailingListInfoResponse|\Ovh\StructType\MailingListListResponse|\Ovh\StructType\MailingListModeratorAddResponse|\Ovh\StructType\MailingListModeratorDelResponse|\Ovh\StructType\MailingListModeratorListResponse|\Ovh\StructType\MailingListModifyResponse|\Ovh\StructType\MailingListSubscriberAddResponse|\Ovh\StructType\MailingListSubscriberDelResponse|\Ovh\StructType\MailingListSubscriberListByEmailResponse|\Ovh\StructType\MailingListSubscriberListResponse
      */
     public function getResult()
     {

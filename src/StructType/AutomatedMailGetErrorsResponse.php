@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class AutomatedMailGetErrorsResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfAutomatedMailGetErrorsStructType
+     * @var \Ovh\ArrayType\MyArrayOfAutomatedMailGetErrorsStructType
      */
     public $return;
     /**
      * Constructor method for automatedMailGetErrorsResponse
      * @uses AutomatedMailGetErrorsResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfAutomatedMailGetErrorsStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfAutomatedMailGetErrorsStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfAutomatedMailGetErrorsStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfAutomatedMailGetErrorsStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfAutomatedMailGetErrorsStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfAutomatedMailGetErrorsStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class AutomatedMailGetErrorsResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfAutomatedMailGetErrorsStructType $return
-     * @return \PayPal\StructType\AutomatedMailGetErrorsResponse
+     * @param \Ovh\ArrayType\MyArrayOfAutomatedMailGetErrorsStructType $return
+     * @return \Ovh\StructType\AutomatedMailGetErrorsResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfAutomatedMailGetErrorsStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfAutomatedMailGetErrorsStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class AutomatedMailGetErrorsResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\AutomatedMailGetErrorsResponse
+     * @return \Ovh\StructType\AutomatedMailGetErrorsResponse
      */
     public static function __set_state(array $array)
     {

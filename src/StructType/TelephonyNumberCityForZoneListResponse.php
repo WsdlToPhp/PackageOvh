@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyNumberCityForZoneListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyNumberCityForZoneStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyNumberCityForZoneStructType
      */
     public $return;
     /**
      * Constructor method for telephonyNumberCityForZoneListResponse
      * @uses TelephonyNumberCityForZoneListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyNumberCityForZoneStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyNumberCityForZoneStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonyNumberCityForZoneStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonyNumberCityForZoneStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyNumberCityForZoneStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyNumberCityForZoneStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyNumberCityForZoneListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyNumberCityForZoneStructType $return
-     * @return \PayPal\StructType\TelephonyNumberCityForZoneListResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyNumberCityForZoneStructType $return
+     * @return \Ovh\StructType\TelephonyNumberCityForZoneListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonyNumberCityForZoneStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonyNumberCityForZoneStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyNumberCityForZoneListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyNumberCityForZoneListResponse
+     * @return \Ovh\StructType\TelephonyNumberCityForZoneListResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -139,7 +139,7 @@ class TelephonyCallList extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyCallList
+     * @return \Ovh\StructType\TelephonyCallList
      */
     public function setSession($session = null)
     {
@@ -161,7 +161,7 @@ class TelephonyCallList extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyCallList
+     * @return \Ovh\StructType\TelephonyCallList
      */
     public function setNumber($number = null)
     {
@@ -183,7 +183,7 @@ class TelephonyCallList extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyCallList
+     * @return \Ovh\StructType\TelephonyCallList
      */
     public function setCountry($country = null)
     {
@@ -205,7 +205,7 @@ class TelephonyCallList extends AbstractStructBase
     /**
      * Set listBegin value
      * @param int $listBegin
-     * @return \PayPal\StructType\TelephonyCallList
+     * @return \Ovh\StructType\TelephonyCallList
      */
     public function setListBegin($listBegin = null)
     {
@@ -227,7 +227,7 @@ class TelephonyCallList extends AbstractStructBase
     /**
      * Set listLimit value
      * @param int $listLimit
-     * @return \PayPal\StructType\TelephonyCallList
+     * @return \Ovh\StructType\TelephonyCallList
      */
     public function setListLimit($listLimit = null)
     {
@@ -249,7 +249,7 @@ class TelephonyCallList extends AbstractStructBase
     /**
      * Set listType value
      * @param string $listType
-     * @return \PayPal\StructType\TelephonyCallList
+     * @return \Ovh\StructType\TelephonyCallList
      */
     public function setListType($listType = null)
     {
@@ -271,7 +271,7 @@ class TelephonyCallList extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\TelephonyCallList
+     * @return \Ovh\StructType\TelephonyCallList
      */
     public function setDate($date = null)
     {
@@ -293,7 +293,7 @@ class TelephonyCallList extends AbstractStructBase
     /**
      * Set callReceived value
      * @param bool $callReceived
-     * @return \PayPal\StructType\TelephonyCallList
+     * @return \Ovh\StructType\TelephonyCallList
      */
     public function setCallReceived($callReceived = null)
     {
@@ -315,7 +315,7 @@ class TelephonyCallList extends AbstractStructBase
     /**
      * Set filterSearch value
      * @param string $filterSearch
-     * @return \PayPal\StructType\TelephonyCallList
+     * @return \Ovh\StructType\TelephonyCallList
      */
     public function setFilterSearch($filterSearch = null)
     {
@@ -337,7 +337,7 @@ class TelephonyCallList extends AbstractStructBase
     /**
      * Set filterValue value
      * @param string $filterValue
-     * @return \PayPal\StructType\TelephonyCallList
+     * @return \Ovh\StructType\TelephonyCallList
      */
     public function setFilterValue($filterValue = null)
     {
@@ -359,7 +359,7 @@ class TelephonyCallList extends AbstractStructBase
     /**
      * Set planType value
      * @param string $planType
-     * @return \PayPal\StructType\TelephonyCallList
+     * @return \Ovh\StructType\TelephonyCallList
      */
     public function setPlanType($planType = null)
     {
@@ -376,7 +376,7 @@ class TelephonyCallList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyCallList
+     * @return \Ovh\StructType\TelephonyCallList
      */
     public static function __set_state(array $array)
     {

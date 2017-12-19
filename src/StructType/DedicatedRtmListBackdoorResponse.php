@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedRtmListBackdoorResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedRtmListBackdoorStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedRtmListBackdoorStructType
      */
     public $return;
     /**
      * Constructor method for dedicatedRtmListBackdoorResponse
      * @uses DedicatedRtmListBackdoorResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedRtmListBackdoorStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedRtmListBackdoorStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfDedicatedRtmListBackdoorStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfDedicatedRtmListBackdoorStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedRtmListBackdoorStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedRtmListBackdoorStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedRtmListBackdoorResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedRtmListBackdoorStructType $return
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorResponse
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedRtmListBackdoorStructType $return
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfDedicatedRtmListBackdoorStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfDedicatedRtmListBackdoorStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedRtmListBackdoorResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorResponse
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorResponse
      */
     public static function __set_state(array $array)
     {

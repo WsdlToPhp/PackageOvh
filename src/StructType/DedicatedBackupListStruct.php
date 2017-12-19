@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -78,22 +78,22 @@ class DedicatedBackupListStruct extends AbstractStructBase
     public $backupType;
     /**
      * The src
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $src;
     /**
      * The include
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $include;
     /**
      * The exclude
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $exclude;
     /**
      * The excludeHard
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $excludeHard;
     /**
@@ -128,12 +128,12 @@ class DedicatedBackupListStruct extends AbstractStructBase
      * @param int $snapshotNumber
      * @param string $superBackupName
      * @param string $backupType
-     * @param \PayPal\ArrayType\MyArrayOfStringType $src
-     * @param \PayPal\ArrayType\MyArrayOfStringType $include
-     * @param \PayPal\ArrayType\MyArrayOfStringType $exclude
-     * @param \PayPal\ArrayType\MyArrayOfStringType $excludeHard
+     * @param \Ovh\ArrayType\MyArrayOfStringType $src
+     * @param \Ovh\ArrayType\MyArrayOfStringType $include
+     * @param \Ovh\ArrayType\MyArrayOfStringType $exclude
+     * @param \Ovh\ArrayType\MyArrayOfStringType $excludeHard
      */
-    public function __construct($backupId = null, $backupFeature = null, $enable = null, $language = null, $backupSize = null, $sshPort = null, $percentUsed = null, $hostname = null, $backupName = null, $email = null, $snapshotNumber = null, $superBackupName = null, $backupType = null, \PayPal\ArrayType\MyArrayOfStringType $src = null, \PayPal\ArrayType\MyArrayOfStringType $include = null, \PayPal\ArrayType\MyArrayOfStringType $exclude = null, \PayPal\ArrayType\MyArrayOfStringType $excludeHard = null)
+    public function __construct($backupId = null, $backupFeature = null, $enable = null, $language = null, $backupSize = null, $sshPort = null, $percentUsed = null, $hostname = null, $backupName = null, $email = null, $snapshotNumber = null, $superBackupName = null, $backupType = null, \Ovh\ArrayType\MyArrayOfStringType $src = null, \Ovh\ArrayType\MyArrayOfStringType $include = null, \Ovh\ArrayType\MyArrayOfStringType $exclude = null, \Ovh\ArrayType\MyArrayOfStringType $excludeHard = null)
     {
         $this
             ->setBackupId($backupId)
@@ -165,7 +165,7 @@ class DedicatedBackupListStruct extends AbstractStructBase
     /**
      * Set backupId value
      * @param int $backupId
-     * @return \PayPal\StructType\DedicatedBackupListStruct
+     * @return \Ovh\StructType\DedicatedBackupListStruct
      */
     public function setBackupId($backupId = null)
     {
@@ -187,7 +187,7 @@ class DedicatedBackupListStruct extends AbstractStructBase
     /**
      * Set backupFeature value
      * @param string $backupFeature
-     * @return \PayPal\StructType\DedicatedBackupListStruct
+     * @return \Ovh\StructType\DedicatedBackupListStruct
      */
     public function setBackupFeature($backupFeature = null)
     {
@@ -209,7 +209,7 @@ class DedicatedBackupListStruct extends AbstractStructBase
     /**
      * Set enable value
      * @param int $enable
-     * @return \PayPal\StructType\DedicatedBackupListStruct
+     * @return \Ovh\StructType\DedicatedBackupListStruct
      */
     public function setEnable($enable = null)
     {
@@ -231,7 +231,7 @@ class DedicatedBackupListStruct extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \PayPal\StructType\DedicatedBackupListStruct
+     * @return \Ovh\StructType\DedicatedBackupListStruct
      */
     public function setLanguage($language = null)
     {
@@ -253,7 +253,7 @@ class DedicatedBackupListStruct extends AbstractStructBase
     /**
      * Set backupSize value
      * @param string $backupSize
-     * @return \PayPal\StructType\DedicatedBackupListStruct
+     * @return \Ovh\StructType\DedicatedBackupListStruct
      */
     public function setBackupSize($backupSize = null)
     {
@@ -275,7 +275,7 @@ class DedicatedBackupListStruct extends AbstractStructBase
     /**
      * Set sshPort value
      * @param int $sshPort
-     * @return \PayPal\StructType\DedicatedBackupListStruct
+     * @return \Ovh\StructType\DedicatedBackupListStruct
      */
     public function setSshPort($sshPort = null)
     {
@@ -297,7 +297,7 @@ class DedicatedBackupListStruct extends AbstractStructBase
     /**
      * Set percentUsed value
      * @param string $percentUsed
-     * @return \PayPal\StructType\DedicatedBackupListStruct
+     * @return \Ovh\StructType\DedicatedBackupListStruct
      */
     public function setPercentUsed($percentUsed = null)
     {
@@ -319,7 +319,7 @@ class DedicatedBackupListStruct extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedBackupListStruct
+     * @return \Ovh\StructType\DedicatedBackupListStruct
      */
     public function setHostname($hostname = null)
     {
@@ -341,7 +341,7 @@ class DedicatedBackupListStruct extends AbstractStructBase
     /**
      * Set backupName value
      * @param string $backupName
-     * @return \PayPal\StructType\DedicatedBackupListStruct
+     * @return \Ovh\StructType\DedicatedBackupListStruct
      */
     public function setBackupName($backupName = null)
     {
@@ -363,7 +363,7 @@ class DedicatedBackupListStruct extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\DedicatedBackupListStruct
+     * @return \Ovh\StructType\DedicatedBackupListStruct
      */
     public function setEmail($email = null)
     {
@@ -385,7 +385,7 @@ class DedicatedBackupListStruct extends AbstractStructBase
     /**
      * Set snapshotNumber value
      * @param int $snapshotNumber
-     * @return \PayPal\StructType\DedicatedBackupListStruct
+     * @return \Ovh\StructType\DedicatedBackupListStruct
      */
     public function setSnapshotNumber($snapshotNumber = null)
     {
@@ -407,7 +407,7 @@ class DedicatedBackupListStruct extends AbstractStructBase
     /**
      * Set superBackupName value
      * @param string $superBackupName
-     * @return \PayPal\StructType\DedicatedBackupListStruct
+     * @return \Ovh\StructType\DedicatedBackupListStruct
      */
     public function setSuperBackupName($superBackupName = null)
     {
@@ -429,7 +429,7 @@ class DedicatedBackupListStruct extends AbstractStructBase
     /**
      * Set backupType value
      * @param string $backupType
-     * @return \PayPal\StructType\DedicatedBackupListStruct
+     * @return \Ovh\StructType\DedicatedBackupListStruct
      */
     public function setBackupType($backupType = null)
     {
@@ -442,7 +442,7 @@ class DedicatedBackupListStruct extends AbstractStructBase
     }
     /**
      * Get src value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getSrc()
     {
@@ -450,17 +450,17 @@ class DedicatedBackupListStruct extends AbstractStructBase
     }
     /**
      * Set src value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $src
-     * @return \PayPal\StructType\DedicatedBackupListStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $src
+     * @return \Ovh\StructType\DedicatedBackupListStruct
      */
-    public function setSrc(\PayPal\ArrayType\MyArrayOfStringType $src = null)
+    public function setSrc(\Ovh\ArrayType\MyArrayOfStringType $src = null)
     {
         $this->src = $src;
         return $this;
     }
     /**
      * Get include value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getInclude()
     {
@@ -468,17 +468,17 @@ class DedicatedBackupListStruct extends AbstractStructBase
     }
     /**
      * Set include value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $include
-     * @return \PayPal\StructType\DedicatedBackupListStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $include
+     * @return \Ovh\StructType\DedicatedBackupListStruct
      */
-    public function setInclude(\PayPal\ArrayType\MyArrayOfStringType $include = null)
+    public function setInclude(\Ovh\ArrayType\MyArrayOfStringType $include = null)
     {
         $this->include = $include;
         return $this;
     }
     /**
      * Get exclude value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getExclude()
     {
@@ -486,17 +486,17 @@ class DedicatedBackupListStruct extends AbstractStructBase
     }
     /**
      * Set exclude value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $exclude
-     * @return \PayPal\StructType\DedicatedBackupListStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $exclude
+     * @return \Ovh\StructType\DedicatedBackupListStruct
      */
-    public function setExclude(\PayPal\ArrayType\MyArrayOfStringType $exclude = null)
+    public function setExclude(\Ovh\ArrayType\MyArrayOfStringType $exclude = null)
     {
         $this->exclude = $exclude;
         return $this;
     }
     /**
      * Get excludeHard value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getExcludeHard()
     {
@@ -504,10 +504,10 @@ class DedicatedBackupListStruct extends AbstractStructBase
     }
     /**
      * Set excludeHard value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $excludeHard
-     * @return \PayPal\StructType\DedicatedBackupListStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $excludeHard
+     * @return \Ovh\StructType\DedicatedBackupListStruct
      */
-    public function setExcludeHard(\PayPal\ArrayType\MyArrayOfStringType $excludeHard = null)
+    public function setExcludeHard(\Ovh\ArrayType\MyArrayOfStringType $excludeHard = null)
     {
         $this->excludeHard = $excludeHard;
         return $this;
@@ -518,7 +518,7 @@ class DedicatedBackupListStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedBackupListStruct
+     * @return \Ovh\StructType\DedicatedBackupListStruct
      */
     public static function __set_state(array $array)
     {

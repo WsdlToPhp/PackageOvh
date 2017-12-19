@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -85,7 +85,7 @@ class BillingInvoiceInfoPayementStruct extends AbstractStructBase
     /**
      * Set finaldate value
      * @param string $finaldate
-     * @return \PayPal\StructType\BillingInvoiceInfoPayementStruct
+     * @return \Ovh\StructType\BillingInvoiceInfoPayementStruct
      */
     public function setFinaldate($finaldate = null)
     {
@@ -107,7 +107,7 @@ class BillingInvoiceInfoPayementStruct extends AbstractStructBase
     /**
      * Set deposit_date value
      * @param string $deposit_date
-     * @return \PayPal\StructType\BillingInvoiceInfoPayementStruct
+     * @return \Ovh\StructType\BillingInvoiceInfoPayementStruct
      */
     public function setDeposit_date($deposit_date = null)
     {
@@ -129,7 +129,7 @@ class BillingInvoiceInfoPayementStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\BillingInvoiceInfoPayementStruct
+     * @return \Ovh\StructType\BillingInvoiceInfoPayementStruct
      */
     public function setStatus($status = null)
     {
@@ -151,7 +151,7 @@ class BillingInvoiceInfoPayementStruct extends AbstractStructBase
     /**
      * Set customerid value
      * @param string $customerid
-     * @return \PayPal\StructType\BillingInvoiceInfoPayementStruct
+     * @return \Ovh\StructType\BillingInvoiceInfoPayementStruct
      */
     public function setCustomerid($customerid = null)
     {
@@ -173,7 +173,7 @@ class BillingInvoiceInfoPayementStruct extends AbstractStructBase
     /**
      * Set paymentmean value
      * @param string $paymentmean
-     * @return \PayPal\StructType\BillingInvoiceInfoPayementStruct
+     * @return \Ovh\StructType\BillingInvoiceInfoPayementStruct
      */
     public function setPaymentmean($paymentmean = null)
     {
@@ -195,7 +195,7 @@ class BillingInvoiceInfoPayementStruct extends AbstractStructBase
     /**
      * Set paymentdate value
      * @param string $paymentdate
-     * @return \PayPal\StructType\BillingInvoiceInfoPayementStruct
+     * @return \Ovh\StructType\BillingInvoiceInfoPayementStruct
      */
     public function setPaymentdate($paymentdate = null)
     {
@@ -217,7 +217,7 @@ class BillingInvoiceInfoPayementStruct extends AbstractStructBase
     /**
      * Set orderid value
      * @param int $orderid
-     * @return \PayPal\StructType\BillingInvoiceInfoPayementStruct
+     * @return \Ovh\StructType\BillingInvoiceInfoPayementStruct
      */
     public function setOrderid($orderid = null)
     {
@@ -234,7 +234,7 @@ class BillingInvoiceInfoPayementStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\BillingInvoiceInfoPayementStruct
+     * @return \Ovh\StructType\BillingInvoiceInfoPayementStruct
      */
     public static function __set_state(array $array)
     {

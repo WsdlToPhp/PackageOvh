@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class IPForUDPServerListStruct extends AbstractStructBase
     public $reverse;
     /**
      * The ipList
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedIPForUDPStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedIPForUDPStructType
      */
     public $ipList;
     /**
@@ -33,9 +33,9 @@ class IPForUDPServerListStruct extends AbstractStructBase
      * @uses IPForUDPServerListStruct::setIpList()
      * @param string $server
      * @param string $reverse
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedIPForUDPStructType $ipList
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedIPForUDPStructType $ipList
      */
-    public function __construct($server = null, $reverse = null, \PayPal\ArrayType\MyArrayOfDedicatedIPForUDPStructType $ipList = null)
+    public function __construct($server = null, $reverse = null, \Ovh\ArrayType\MyArrayOfDedicatedIPForUDPStructType $ipList = null)
     {
         $this
             ->setServer($server)
@@ -53,7 +53,7 @@ class IPForUDPServerListStruct extends AbstractStructBase
     /**
      * Set server value
      * @param string $server
-     * @return \PayPal\StructType\IPForUDPServerListStruct
+     * @return \Ovh\StructType\IPForUDPServerListStruct
      */
     public function setServer($server = null)
     {
@@ -75,7 +75,7 @@ class IPForUDPServerListStruct extends AbstractStructBase
     /**
      * Set reverse value
      * @param string $reverse
-     * @return \PayPal\StructType\IPForUDPServerListStruct
+     * @return \Ovh\StructType\IPForUDPServerListStruct
      */
     public function setReverse($reverse = null)
     {
@@ -88,7 +88,7 @@ class IPForUDPServerListStruct extends AbstractStructBase
     }
     /**
      * Get ipList value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedIPForUDPStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedIPForUDPStructType|null
      */
     public function getIpList()
     {
@@ -96,10 +96,10 @@ class IPForUDPServerListStruct extends AbstractStructBase
     }
     /**
      * Set ipList value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedIPForUDPStructType $ipList
-     * @return \PayPal\StructType\IPForUDPServerListStruct
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedIPForUDPStructType $ipList
+     * @return \Ovh\StructType\IPForUDPServerListStruct
      */
-    public function setIpList(\PayPal\ArrayType\MyArrayOfDedicatedIPForUDPStructType $ipList = null)
+    public function setIpList(\Ovh\ArrayType\MyArrayOfDedicatedIPForUDPStructType $ipList = null)
     {
         $this->ipList = $ipList;
         return $this;
@@ -110,7 +110,7 @@ class IPForUDPServerListStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\IPForUDPServerListStruct
+     * @return \Ovh\StructType\IPForUDPServerListStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -43,12 +43,12 @@ class TelephonySmsplusChoicesStruct extends AbstractStructBase
     public $rates;
     /**
      * The applicationTypes
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyApplicationTypeStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyApplicationTypeStructType
      */
     public $applicationTypes;
     /**
      * The shortCodes
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $shortCodes;
     /**
@@ -67,10 +67,10 @@ class TelephonySmsplusChoicesStruct extends AbstractStructBase
      * @param int $shortCodeCategory
      * @param string $publicType
      * @param string $rates
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyApplicationTypeStructType $applicationTypes
-     * @param \PayPal\ArrayType\MyArrayOfStringType $shortCodes
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyApplicationTypeStructType $applicationTypes
+     * @param \Ovh\ArrayType\MyArrayOfStringType $shortCodes
      */
-    public function __construct($level = null, $price = null, $priceReversed = null, $shortCodeCategory = null, $publicType = null, $rates = null, \PayPal\ArrayType\MyArrayOfTelephonyApplicationTypeStructType $applicationTypes = null, \PayPal\ArrayType\MyArrayOfStringType $shortCodes = null)
+    public function __construct($level = null, $price = null, $priceReversed = null, $shortCodeCategory = null, $publicType = null, $rates = null, \Ovh\ArrayType\MyArrayOfTelephonyApplicationTypeStructType $applicationTypes = null, \Ovh\ArrayType\MyArrayOfStringType $shortCodes = null)
     {
         $this
             ->setLevel($level)
@@ -93,7 +93,7 @@ class TelephonySmsplusChoicesStruct extends AbstractStructBase
     /**
      * Set level value
      * @param int $level
-     * @return \PayPal\StructType\TelephonySmsplusChoicesStruct
+     * @return \Ovh\StructType\TelephonySmsplusChoicesStruct
      */
     public function setLevel($level = null)
     {
@@ -115,7 +115,7 @@ class TelephonySmsplusChoicesStruct extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \PayPal\StructType\TelephonySmsplusChoicesStruct
+     * @return \Ovh\StructType\TelephonySmsplusChoicesStruct
      */
     public function setPrice($price = null)
     {
@@ -133,7 +133,7 @@ class TelephonySmsplusChoicesStruct extends AbstractStructBase
     /**
      * Set priceReversed value
      * @param float $priceReversed
-     * @return \PayPal\StructType\TelephonySmsplusChoicesStruct
+     * @return \Ovh\StructType\TelephonySmsplusChoicesStruct
      */
     public function setPriceReversed($priceReversed = null)
     {
@@ -151,7 +151,7 @@ class TelephonySmsplusChoicesStruct extends AbstractStructBase
     /**
      * Set shortCodeCategory value
      * @param int $shortCodeCategory
-     * @return \PayPal\StructType\TelephonySmsplusChoicesStruct
+     * @return \Ovh\StructType\TelephonySmsplusChoicesStruct
      */
     public function setShortCodeCategory($shortCodeCategory = null)
     {
@@ -173,7 +173,7 @@ class TelephonySmsplusChoicesStruct extends AbstractStructBase
     /**
      * Set publicType value
      * @param string $publicType
-     * @return \PayPal\StructType\TelephonySmsplusChoicesStruct
+     * @return \Ovh\StructType\TelephonySmsplusChoicesStruct
      */
     public function setPublicType($publicType = null)
     {
@@ -195,7 +195,7 @@ class TelephonySmsplusChoicesStruct extends AbstractStructBase
     /**
      * Set rates value
      * @param string $rates
-     * @return \PayPal\StructType\TelephonySmsplusChoicesStruct
+     * @return \Ovh\StructType\TelephonySmsplusChoicesStruct
      */
     public function setRates($rates = null)
     {
@@ -208,7 +208,7 @@ class TelephonySmsplusChoicesStruct extends AbstractStructBase
     }
     /**
      * Get applicationTypes value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyApplicationTypeStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyApplicationTypeStructType|null
      */
     public function getApplicationTypes()
     {
@@ -216,17 +216,17 @@ class TelephonySmsplusChoicesStruct extends AbstractStructBase
     }
     /**
      * Set applicationTypes value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyApplicationTypeStructType $applicationTypes
-     * @return \PayPal\StructType\TelephonySmsplusChoicesStruct
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyApplicationTypeStructType $applicationTypes
+     * @return \Ovh\StructType\TelephonySmsplusChoicesStruct
      */
-    public function setApplicationTypes(\PayPal\ArrayType\MyArrayOfTelephonyApplicationTypeStructType $applicationTypes = null)
+    public function setApplicationTypes(\Ovh\ArrayType\MyArrayOfTelephonyApplicationTypeStructType $applicationTypes = null)
     {
         $this->applicationTypes = $applicationTypes;
         return $this;
     }
     /**
      * Get shortCodes value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getShortCodes()
     {
@@ -234,10 +234,10 @@ class TelephonySmsplusChoicesStruct extends AbstractStructBase
     }
     /**
      * Set shortCodes value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $shortCodes
-     * @return \PayPal\StructType\TelephonySmsplusChoicesStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $shortCodes
+     * @return \Ovh\StructType\TelephonySmsplusChoicesStruct
      */
-    public function setShortCodes(\PayPal\ArrayType\MyArrayOfStringType $shortCodes = null)
+    public function setShortCodes(\Ovh\ArrayType\MyArrayOfStringType $shortCodes = null)
     {
         $this->shortCodes = $shortCodes;
         return $this;
@@ -248,7 +248,7 @@ class TelephonySmsplusChoicesStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsplusChoicesStruct
+     * @return \Ovh\StructType\TelephonySmsplusChoicesStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class DedicatedInstallationTemplateUse extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedInstallationTemplateUse
+     * @return \Ovh\StructType\DedicatedInstallationTemplateUse
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class DedicatedInstallationTemplateUse extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedInstallationTemplateUse
+     * @return \Ovh\StructType\DedicatedInstallationTemplateUse
      */
     public function setHostname($hostname = null)
     {
@@ -103,7 +103,7 @@ class DedicatedInstallationTemplateUse extends AbstractStructBase
     /**
      * Set template value
      * @param string $template
-     * @return \PayPal\StructType\DedicatedInstallationTemplateUse
+     * @return \Ovh\StructType\DedicatedInstallationTemplateUse
      */
     public function setTemplate($template = null)
     {
@@ -120,7 +120,7 @@ class DedicatedInstallationTemplateUse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedInstallationTemplateUse
+     * @return \Ovh\StructType\DedicatedInstallationTemplateUse
      */
     public static function __set_state(array $array)
     {

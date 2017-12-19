@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonySpareListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonySpareListReturn
+     * @var \Ovh\StructType\TelephonySpareListReturn
      */
     public $return;
     /**
      * Constructor method for telephonySpareListResponse
      * @uses TelephonySpareListResponse::setReturn()
-     * @param \PayPal\StructType\TelephonySpareListReturn $return
+     * @param \Ovh\StructType\TelephonySpareListReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonySpareListReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonySpareListReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonySpareListReturn|null
+     * @return \Ovh\StructType\TelephonySpareListReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonySpareListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonySpareListReturn $return
-     * @return \PayPal\StructType\TelephonySpareListResponse
+     * @param \Ovh\StructType\TelephonySpareListReturn $return
+     * @return \Ovh\StructType\TelephonySpareListResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonySpareListReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonySpareListReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonySpareListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySpareListResponse
+     * @return \Ovh\StructType\TelephonySpareListResponse
      */
     public static function __set_state(array $array)
     {

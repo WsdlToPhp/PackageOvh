@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -109,7 +109,7 @@ class PrepaidOperationStruct extends AbstractStructBase
     /**
      * Set balance_forward value
      * @param float $balance_forward
-     * @return \PayPal\StructType\PrepaidOperationStruct
+     * @return \Ovh\StructType\PrepaidOperationStruct
      */
     public function setBalance_forward($balance_forward = null)
     {
@@ -127,7 +127,7 @@ class PrepaidOperationStruct extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\PrepaidOperationStruct
+     * @return \Ovh\StructType\PrepaidOperationStruct
      */
     public function setDate($date = null)
     {
@@ -149,7 +149,7 @@ class PrepaidOperationStruct extends AbstractStructBase
     /**
      * Set nic value
      * @param string $nic
-     * @return \PayPal\StructType\PrepaidOperationStruct
+     * @return \Ovh\StructType\PrepaidOperationStruct
      */
     public function setNic($nic = null)
     {
@@ -171,7 +171,7 @@ class PrepaidOperationStruct extends AbstractStructBase
     /**
      * Set account_name value
      * @param string $account_name
-     * @return \PayPal\StructType\PrepaidOperationStruct
+     * @return \Ovh\StructType\PrepaidOperationStruct
      */
     public function setAccount_name($account_name = null)
     {
@@ -193,7 +193,7 @@ class PrepaidOperationStruct extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \PayPal\StructType\PrepaidOperationStruct
+     * @return \Ovh\StructType\PrepaidOperationStruct
      */
     public function setDescription($description = null)
     {
@@ -215,7 +215,7 @@ class PrepaidOperationStruct extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \PayPal\StructType\PrepaidOperationStruct
+     * @return \Ovh\StructType\PrepaidOperationStruct
      */
     public function setAmount($amount = null)
     {
@@ -233,7 +233,7 @@ class PrepaidOperationStruct extends AbstractStructBase
     /**
      * Set balance value
      * @param float $balance
-     * @return \PayPal\StructType\PrepaidOperationStruct
+     * @return \Ovh\StructType\PrepaidOperationStruct
      */
     public function setBalance($balance = null)
     {
@@ -251,7 +251,7 @@ class PrepaidOperationStruct extends AbstractStructBase
     /**
      * Set order value
      * @param int $order
-     * @return \PayPal\StructType\PrepaidOperationStruct
+     * @return \Ovh\StructType\PrepaidOperationStruct
      */
     public function setOrder($order = null)
     {
@@ -273,7 +273,7 @@ class PrepaidOperationStruct extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\PrepaidOperationStruct
+     * @return \Ovh\StructType\PrepaidOperationStruct
      */
     public function setId($id = null)
     {
@@ -295,7 +295,7 @@ class PrepaidOperationStruct extends AbstractStructBase
     /**
      * Set operation value
      * @param string $operation
-     * @return \PayPal\StructType\PrepaidOperationStruct
+     * @return \Ovh\StructType\PrepaidOperationStruct
      */
     public function setOperation($operation = null)
     {
@@ -312,7 +312,7 @@ class PrepaidOperationStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\PrepaidOperationStruct
+     * @return \Ovh\StructType\PrepaidOperationStruct
      */
     public static function __set_state(array $array)
     {

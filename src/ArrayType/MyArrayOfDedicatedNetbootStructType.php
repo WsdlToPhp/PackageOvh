@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfDedicatedNetbootStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\DedicatedNetbootStruct[]
+     * @var \Ovh\StructType\DedicatedNetbootStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfDedicatedNetbootStructType
      * @uses MyArrayOfDedicatedNetbootStructType::setItem()
-     * @param \PayPal\StructType\DedicatedNetbootStruct[] $item
+     * @param \Ovh\StructType\DedicatedNetbootStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfDedicatedNetbootStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\DedicatedNetbootStruct[]|null
+     * @return \Ovh\StructType\DedicatedNetbootStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfDedicatedNetbootStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedNetbootStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedNetbootStructType
+     * @param \Ovh\StructType\DedicatedNetbootStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedNetbootStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfDedicatedNetbootStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfDedicatedNetbootStructTypeItemItem instanceof \PayPal\StructType\DedicatedNetbootStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedNetbootStruct, "%s" given', is_object($myArrayOfDedicatedNetbootStructTypeItemItem) ? get_class($myArrayOfDedicatedNetbootStructTypeItemItem) : gettype($myArrayOfDedicatedNetbootStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfDedicatedNetbootStructTypeItemItem instanceof \Ovh\StructType\DedicatedNetbootStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedNetbootStruct, "%s" given', is_object($myArrayOfDedicatedNetbootStructTypeItemItem) ? get_class($myArrayOfDedicatedNetbootStructTypeItemItem) : gettype($myArrayOfDedicatedNetbootStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfDedicatedNetbootStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedNetbootStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedNetbootStructType
+     * @param \Ovh\StructType\DedicatedNetbootStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedNetbootStructType
      */
-    public function addToItem(\PayPal\StructType\DedicatedNetbootStruct $item)
+    public function addToItem(\Ovh\StructType\DedicatedNetbootStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\DedicatedNetbootStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedNetbootStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\DedicatedNetbootStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedNetbootStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfDedicatedNetbootStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\DedicatedNetbootStruct|null
+     * @return \Ovh\StructType\DedicatedNetbootStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfDedicatedNetbootStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\DedicatedNetbootStruct|null
+     * @return \Ovh\StructType\DedicatedNetbootStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfDedicatedNetbootStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\DedicatedNetbootStruct|null
+     * @return \Ovh\StructType\DedicatedNetbootStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfDedicatedNetbootStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\DedicatedNetbootStruct|null
+     * @return \Ovh\StructType\DedicatedNetbootStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfDedicatedNetbootStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\DedicatedNetbootStruct|null
+     * @return \Ovh\StructType\DedicatedNetbootStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfDedicatedNetbootStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedNetbootStructType
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedNetbootStructType
      */
     public static function __set_state(array $array)
     {

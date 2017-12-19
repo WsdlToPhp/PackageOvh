@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedHardRebootStatusResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\DedicatedHardRebootStatusReturn
+     * @var \Ovh\StructType\DedicatedHardRebootStatusReturn
      */
     public $return;
     /**
      * Constructor method for dedicatedHardRebootStatusResponse
      * @uses DedicatedHardRebootStatusResponse::setReturn()
-     * @param \PayPal\StructType\DedicatedHardRebootStatusReturn $return
+     * @param \Ovh\StructType\DedicatedHardRebootStatusReturn $return
      */
-    public function __construct(\PayPal\StructType\DedicatedHardRebootStatusReturn $return = null)
+    public function __construct(\Ovh\StructType\DedicatedHardRebootStatusReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\DedicatedHardRebootStatusReturn|null
+     * @return \Ovh\StructType\DedicatedHardRebootStatusReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedHardRebootStatusResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\DedicatedHardRebootStatusReturn $return
-     * @return \PayPal\StructType\DedicatedHardRebootStatusResponse
+     * @param \Ovh\StructType\DedicatedHardRebootStatusReturn $return
+     * @return \Ovh\StructType\DedicatedHardRebootStatusResponse
      */
-    public function setReturn(\PayPal\StructType\DedicatedHardRebootStatusReturn $return = null)
+    public function setReturn(\Ovh\StructType\DedicatedHardRebootStatusReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedHardRebootStatusResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedHardRebootStatusResponse
+     * @return \Ovh\StructType\DedicatedHardRebootStatusResponse
      */
     public static function __set_state(array $array)
     {

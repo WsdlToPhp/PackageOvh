@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class TelephonyClick2CallDo extends AbstractStructBase
     /**
      * Set login value
      * @param string $login
-     * @return \PayPal\StructType\TelephonyClick2CallDo
+     * @return \Ovh\StructType\TelephonyClick2CallDo
      */
     public function setLogin($login = null)
     {
@@ -101,7 +101,7 @@ class TelephonyClick2CallDo extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \PayPal\StructType\TelephonyClick2CallDo
+     * @return \Ovh\StructType\TelephonyClick2CallDo
      */
     public function setPassword($password = null)
     {
@@ -123,7 +123,7 @@ class TelephonyClick2CallDo extends AbstractStructBase
     /**
      * Set calling value
      * @param string $calling
-     * @return \PayPal\StructType\TelephonyClick2CallDo
+     * @return \Ovh\StructType\TelephonyClick2CallDo
      */
     public function setCalling($calling = null)
     {
@@ -145,7 +145,7 @@ class TelephonyClick2CallDo extends AbstractStructBase
     /**
      * Set called value
      * @param string $called
-     * @return \PayPal\StructType\TelephonyClick2CallDo
+     * @return \Ovh\StructType\TelephonyClick2CallDo
      */
     public function setCalled($called = null)
     {
@@ -167,7 +167,7 @@ class TelephonyClick2CallDo extends AbstractStructBase
     /**
      * Set billingNumber value
      * @param string $billingNumber
-     * @return \PayPal\StructType\TelephonyClick2CallDo
+     * @return \Ovh\StructType\TelephonyClick2CallDo
      */
     public function setBillingNumber($billingNumber = null)
     {
@@ -184,7 +184,7 @@ class TelephonyClick2CallDo extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyClick2CallDo
+     * @return \Ovh\StructType\TelephonyClick2CallDo
      */
     public static function __set_state(array $array)
     {

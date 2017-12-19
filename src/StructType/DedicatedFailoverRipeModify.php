@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class DedicatedFailoverRipeModify extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedFailoverRipeModify
+     * @return \Ovh\StructType\DedicatedFailoverRipeModify
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class DedicatedFailoverRipeModify extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedFailoverRipeModify
+     * @return \Ovh\StructType\DedicatedFailoverRipeModify
      */
     public function setHostname($hostname = null)
     {
@@ -133,7 +133,7 @@ class DedicatedFailoverRipeModify extends AbstractStructBase
     /**
      * Set hostnameNew value
      * @param string $hostnameNew
-     * @return \PayPal\StructType\DedicatedFailoverRipeModify
+     * @return \Ovh\StructType\DedicatedFailoverRipeModify
      */
     public function setHostnameNew($hostnameNew = null)
     {
@@ -155,7 +155,7 @@ class DedicatedFailoverRipeModify extends AbstractStructBase
     /**
      * Set networkIp value
      * @param string $networkIp
-     * @return \PayPal\StructType\DedicatedFailoverRipeModify
+     * @return \Ovh\StructType\DedicatedFailoverRipeModify
      */
     public function setNetworkIp($networkIp = null)
     {
@@ -177,7 +177,7 @@ class DedicatedFailoverRipeModify extends AbstractStructBase
     /**
      * Set suffix value
      * @param int $suffix
-     * @return \PayPal\StructType\DedicatedFailoverRipeModify
+     * @return \Ovh\StructType\DedicatedFailoverRipeModify
      */
     public function setSuffix($suffix = null)
     {
@@ -199,7 +199,7 @@ class DedicatedFailoverRipeModify extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\DedicatedFailoverRipeModify
+     * @return \Ovh\StructType\DedicatedFailoverRipeModify
      */
     public function setIp($ip = null)
     {
@@ -216,7 +216,7 @@ class DedicatedFailoverRipeModify extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedFailoverRipeModify
+     * @return \Ovh\StructType\DedicatedFailoverRipeModify
      */
     public static function __set_state(array $array)
     {

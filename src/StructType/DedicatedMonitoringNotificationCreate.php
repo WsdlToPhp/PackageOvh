@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class DedicatedMonitoringNotificationCreate extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedMonitoringNotificationCreate
+     * @return \Ovh\StructType\DedicatedMonitoringNotificationCreate
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class DedicatedMonitoringNotificationCreate extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedMonitoringNotificationCreate
+     * @return \Ovh\StructType\DedicatedMonitoringNotificationCreate
      */
     public function setHostname($hostname = null)
     {
@@ -123,7 +123,7 @@ class DedicatedMonitoringNotificationCreate extends AbstractStructBase
     /**
      * Set nicAlert value
      * @param string $nicAlert
-     * @return \PayPal\StructType\DedicatedMonitoringNotificationCreate
+     * @return \Ovh\StructType\DedicatedMonitoringNotificationCreate
      */
     public function setNicAlert($nicAlert = null)
     {
@@ -145,7 +145,7 @@ class DedicatedMonitoringNotificationCreate extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \PayPal\StructType\DedicatedMonitoringNotificationCreate
+     * @return \Ovh\StructType\DedicatedMonitoringNotificationCreate
      */
     public function setLanguage($language = null)
     {
@@ -167,7 +167,7 @@ class DedicatedMonitoringNotificationCreate extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\DedicatedMonitoringNotificationCreate
+     * @return \Ovh\StructType\DedicatedMonitoringNotificationCreate
      */
     public function setStatus($status = null)
     {
@@ -184,7 +184,7 @@ class DedicatedMonitoringNotificationCreate extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedMonitoringNotificationCreate
+     * @return \Ovh\StructType\DedicatedMonitoringNotificationCreate
      */
     public static function __set_state(array $array)
     {

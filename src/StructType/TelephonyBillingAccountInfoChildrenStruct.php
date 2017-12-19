@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -77,7 +77,7 @@ class TelephonyBillingAccountInfoChildrenStruct extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoChildrenStruct
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoChildrenStruct
      */
     public function setNumber($number = null)
     {
@@ -99,7 +99,7 @@ class TelephonyBillingAccountInfoChildrenStruct extends AbstractStructBase
     /**
      * Set offer value
      * @param string $offer
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoChildrenStruct
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoChildrenStruct
      */
     public function setOffer($offer = null)
     {
@@ -121,7 +121,7 @@ class TelephonyBillingAccountInfoChildrenStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoChildrenStruct
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoChildrenStruct
      */
     public function setType($type = null)
     {
@@ -143,7 +143,7 @@ class TelephonyBillingAccountInfoChildrenStruct extends AbstractStructBase
     /**
      * Set expirationDate value
      * @param string $expirationDate
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoChildrenStruct
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoChildrenStruct
      */
     public function setExpirationDate($expirationDate = null)
     {
@@ -165,7 +165,7 @@ class TelephonyBillingAccountInfoChildrenStruct extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoChildrenStruct
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoChildrenStruct
      */
     public function setDescription($description = null)
     {
@@ -187,7 +187,7 @@ class TelephonyBillingAccountInfoChildrenStruct extends AbstractStructBase
     /**
      * Set simultaneousLines value
      * @param int $simultaneousLines
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoChildrenStruct
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoChildrenStruct
      */
     public function setSimultaneousLines($simultaneousLines = null)
     {
@@ -204,7 +204,7 @@ class TelephonyBillingAccountInfoChildrenStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoChildrenStruct
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoChildrenStruct
      */
     public static function __set_state(array $array)
     {

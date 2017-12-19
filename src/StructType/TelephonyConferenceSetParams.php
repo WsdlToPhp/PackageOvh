@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -129,7 +129,7 @@ class TelephonyConferenceSetParams extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyConferenceSetParams
+     * @return \Ovh\StructType\TelephonyConferenceSetParams
      */
     public function setSession($session = null)
     {
@@ -151,7 +151,7 @@ class TelephonyConferenceSetParams extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyConferenceSetParams
+     * @return \Ovh\StructType\TelephonyConferenceSetParams
      */
     public function setNumber($number = null)
     {
@@ -173,7 +173,7 @@ class TelephonyConferenceSetParams extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyConferenceSetParams
+     * @return \Ovh\StructType\TelephonyConferenceSetParams
      */
     public function setCountry($country = null)
     {
@@ -195,7 +195,7 @@ class TelephonyConferenceSetParams extends AbstractStructBase
     /**
      * Set lang value
      * @param string $lang
-     * @return \PayPal\StructType\TelephonyConferenceSetParams
+     * @return \Ovh\StructType\TelephonyConferenceSetParams
      */
     public function setLang($lang = null)
     {
@@ -217,7 +217,7 @@ class TelephonyConferenceSetParams extends AbstractStructBase
     /**
      * Set pin value
      * @param string $pin
-     * @return \PayPal\StructType\TelephonyConferenceSetParams
+     * @return \Ovh\StructType\TelephonyConferenceSetParams
      */
     public function setPin($pin = null)
     {
@@ -239,7 +239,7 @@ class TelephonyConferenceSetParams extends AbstractStructBase
     /**
      * Set enterMuted value
      * @param bool $enterMuted
-     * @return \PayPal\StructType\TelephonyConferenceSetParams
+     * @return \Ovh\StructType\TelephonyConferenceSetParams
      */
     public function setEnterMuted($enterMuted = null)
     {
@@ -261,7 +261,7 @@ class TelephonyConferenceSetParams extends AbstractStructBase
     /**
      * Set announceStatus value
      * @param bool $announceStatus
-     * @return \PayPal\StructType\TelephonyConferenceSetParams
+     * @return \Ovh\StructType\TelephonyConferenceSetParams
      */
     public function setAnnounceStatus($announceStatus = null)
     {
@@ -283,7 +283,7 @@ class TelephonyConferenceSetParams extends AbstractStructBase
     /**
      * Set recordStatus value
      * @param bool $recordStatus
-     * @return \PayPal\StructType\TelephonyConferenceSetParams
+     * @return \Ovh\StructType\TelephonyConferenceSetParams
      */
     public function setRecordStatus($recordStatus = null)
     {
@@ -305,7 +305,7 @@ class TelephonyConferenceSetParams extends AbstractStructBase
     /**
      * Set reportStatus value
      * @param string $reportStatus
-     * @return \PayPal\StructType\TelephonyConferenceSetParams
+     * @return \Ovh\StructType\TelephonyConferenceSetParams
      */
     public function setReportStatus($reportStatus = null)
     {
@@ -327,7 +327,7 @@ class TelephonyConferenceSetParams extends AbstractStructBase
     /**
      * Set reportMail value
      * @param string $reportMail
-     * @return \PayPal\StructType\TelephonyConferenceSetParams
+     * @return \Ovh\StructType\TelephonyConferenceSetParams
      */
     public function setReportMail($reportMail = null)
     {
@@ -344,7 +344,7 @@ class TelephonyConferenceSetParams extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyConferenceSetParams
+     * @return \Ovh\StructType\TelephonyConferenceSetParams
      */
     public static function __set_state(array $array)
     {

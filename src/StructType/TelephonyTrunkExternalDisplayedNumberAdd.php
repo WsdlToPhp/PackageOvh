@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class TelephonyTrunkExternalDisplayedNumberAdd extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberAdd
+     * @return \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberAdd
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class TelephonyTrunkExternalDisplayedNumberAdd extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberAdd
+     * @return \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberAdd
      */
     public function setNumber($number = null)
     {
@@ -123,7 +123,7 @@ class TelephonyTrunkExternalDisplayedNumberAdd extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberAdd
+     * @return \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberAdd
      */
     public function setCountry($country = null)
     {
@@ -145,7 +145,7 @@ class TelephonyTrunkExternalDisplayedNumberAdd extends AbstractStructBase
     /**
      * Set externalDisplayedNumber value
      * @param string $externalDisplayedNumber
-     * @return \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberAdd
+     * @return \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberAdd
      */
     public function setExternalDisplayedNumber($externalDisplayedNumber = null)
     {
@@ -167,7 +167,7 @@ class TelephonyTrunkExternalDisplayedNumberAdd extends AbstractStructBase
     /**
      * Set whiteLabel value
      * @param bool $whiteLabel
-     * @return \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberAdd
+     * @return \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberAdd
      */
     public function setWhiteLabel($whiteLabel = null)
     {
@@ -184,7 +184,7 @@ class TelephonyTrunkExternalDisplayedNumberAdd extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberAdd
+     * @return \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberAdd
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfTelephonyFaxHistoryStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TelephonyFaxHistoryStruct[]
+     * @var \Ovh\StructType\TelephonyFaxHistoryStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTelephonyFaxHistoryStructType
      * @uses MyArrayOfTelephonyFaxHistoryStructType::setItem()
-     * @param \PayPal\StructType\TelephonyFaxHistoryStruct[] $item
+     * @param \Ovh\StructType\TelephonyFaxHistoryStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfTelephonyFaxHistoryStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TelephonyFaxHistoryStruct[]|null
+     * @return \Ovh\StructType\TelephonyFaxHistoryStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfTelephonyFaxHistoryStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyFaxHistoryStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyFaxHistoryStructType
+     * @param \Ovh\StructType\TelephonyFaxHistoryStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyFaxHistoryStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTelephonyFaxHistoryStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTelephonyFaxHistoryStructTypeItemItem instanceof \PayPal\StructType\TelephonyFaxHistoryStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyFaxHistoryStruct, "%s" given', is_object($myArrayOfTelephonyFaxHistoryStructTypeItemItem) ? get_class($myArrayOfTelephonyFaxHistoryStructTypeItemItem) : gettype($myArrayOfTelephonyFaxHistoryStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTelephonyFaxHistoryStructTypeItemItem instanceof \Ovh\StructType\TelephonyFaxHistoryStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyFaxHistoryStruct, "%s" given', is_object($myArrayOfTelephonyFaxHistoryStructTypeItemItem) ? get_class($myArrayOfTelephonyFaxHistoryStructTypeItemItem) : gettype($myArrayOfTelephonyFaxHistoryStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfTelephonyFaxHistoryStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyFaxHistoryStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyFaxHistoryStructType
+     * @param \Ovh\StructType\TelephonyFaxHistoryStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyFaxHistoryStructType
      */
-    public function addToItem(\PayPal\StructType\TelephonyFaxHistoryStruct $item)
+    public function addToItem(\Ovh\StructType\TelephonyFaxHistoryStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TelephonyFaxHistoryStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyFaxHistoryStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TelephonyFaxHistoryStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyFaxHistoryStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfTelephonyFaxHistoryStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonyFaxHistoryStruct|null
+     * @return \Ovh\StructType\TelephonyFaxHistoryStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfTelephonyFaxHistoryStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonyFaxHistoryStruct|null
+     * @return \Ovh\StructType\TelephonyFaxHistoryStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfTelephonyFaxHistoryStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonyFaxHistoryStruct|null
+     * @return \Ovh\StructType\TelephonyFaxHistoryStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfTelephonyFaxHistoryStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonyFaxHistoryStruct|null
+     * @return \Ovh\StructType\TelephonyFaxHistoryStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfTelephonyFaxHistoryStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonyFaxHistoryStruct|null
+     * @return \Ovh\StructType\TelephonyFaxHistoryStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfTelephonyFaxHistoryStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyFaxHistoryStructType
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyFaxHistoryStructType
      */
     public static function __set_state(array $array)
     {

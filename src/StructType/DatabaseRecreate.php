@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class DatabaseRecreate extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DatabaseRecreate
+     * @return \Ovh\StructType\DatabaseRecreate
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class DatabaseRecreate extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\DatabaseRecreate
+     * @return \Ovh\StructType\DatabaseRecreate
      */
     public function setDomain($domain = null)
     {
@@ -103,7 +103,7 @@ class DatabaseRecreate extends AbstractStructBase
     /**
      * Set db value
      * @param string $db
-     * @return \PayPal\StructType\DatabaseRecreate
+     * @return \Ovh\StructType\DatabaseRecreate
      */
     public function setDb($db = null)
     {
@@ -120,7 +120,7 @@ class DatabaseRecreate extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DatabaseRecreate
+     * @return \Ovh\StructType\DatabaseRecreate
      */
     public static function __set_state(array $array)
     {

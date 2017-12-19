@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class DedicatedServerPartioningReturn extends AbstractStructBase
     public $langaue;
     /**
      * The partioning
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedServerPartioningDetailStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedServerPartioningDetailStructType
      */
     public $partioning;
     /**
@@ -39,10 +39,10 @@ class DedicatedServerPartioningReturn extends AbstractStructBase
      * @uses DedicatedServerPartioningReturn::setWarn()
      * @param string $os
      * @param string $langaue
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedServerPartioningDetailStructType $partioning
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedServerPartioningDetailStructType $partioning
      * @param int $warn
      */
-    public function __construct($os = null, $langaue = null, \PayPal\ArrayType\MyArrayOfDedicatedServerPartioningDetailStructType $partioning = null, $warn = null)
+    public function __construct($os = null, $langaue = null, \Ovh\ArrayType\MyArrayOfDedicatedServerPartioningDetailStructType $partioning = null, $warn = null)
     {
         $this
             ->setOs($os)
@@ -61,7 +61,7 @@ class DedicatedServerPartioningReturn extends AbstractStructBase
     /**
      * Set os value
      * @param string $os
-     * @return \PayPal\StructType\DedicatedServerPartioningReturn
+     * @return \Ovh\StructType\DedicatedServerPartioningReturn
      */
     public function setOs($os = null)
     {
@@ -83,7 +83,7 @@ class DedicatedServerPartioningReturn extends AbstractStructBase
     /**
      * Set langaue value
      * @param string $langaue
-     * @return \PayPal\StructType\DedicatedServerPartioningReturn
+     * @return \Ovh\StructType\DedicatedServerPartioningReturn
      */
     public function setLangaue($langaue = null)
     {
@@ -96,7 +96,7 @@ class DedicatedServerPartioningReturn extends AbstractStructBase
     }
     /**
      * Get partioning value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedServerPartioningDetailStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedServerPartioningDetailStructType|null
      */
     public function getPartioning()
     {
@@ -104,10 +104,10 @@ class DedicatedServerPartioningReturn extends AbstractStructBase
     }
     /**
      * Set partioning value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedServerPartioningDetailStructType $partioning
-     * @return \PayPal\StructType\DedicatedServerPartioningReturn
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedServerPartioningDetailStructType $partioning
+     * @return \Ovh\StructType\DedicatedServerPartioningReturn
      */
-    public function setPartioning(\PayPal\ArrayType\MyArrayOfDedicatedServerPartioningDetailStructType $partioning = null)
+    public function setPartioning(\Ovh\ArrayType\MyArrayOfDedicatedServerPartioningDetailStructType $partioning = null)
     {
         $this->partioning = $partioning;
         return $this;
@@ -123,7 +123,7 @@ class DedicatedServerPartioningReturn extends AbstractStructBase
     /**
      * Set warn value
      * @param int $warn
-     * @return \PayPal\StructType\DedicatedServerPartioningReturn
+     * @return \Ovh\StructType\DedicatedServerPartioningReturn
      */
     public function setWarn($warn = null)
     {
@@ -140,7 +140,7 @@ class DedicatedServerPartioningReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedServerPartioningReturn
+     * @return \Ovh\StructType\DedicatedServerPartioningReturn
      */
     public static function __set_state(array $array)
     {

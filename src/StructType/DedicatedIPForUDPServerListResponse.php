@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedIPForUDPServerListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfIPForUDPServerListStructType
+     * @var \Ovh\ArrayType\MyArrayOfIPForUDPServerListStructType
      */
     public $return;
     /**
      * Constructor method for dedicatedIPForUDPServerListResponse
      * @uses DedicatedIPForUDPServerListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfIPForUDPServerListStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfIPForUDPServerListStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfIPForUDPServerListStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfIPForUDPServerListStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfIPForUDPServerListStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfIPForUDPServerListStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedIPForUDPServerListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfIPForUDPServerListStructType $return
-     * @return \PayPal\StructType\DedicatedIPForUDPServerListResponse
+     * @param \Ovh\ArrayType\MyArrayOfIPForUDPServerListStructType $return
+     * @return \Ovh\StructType\DedicatedIPForUDPServerListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfIPForUDPServerListStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfIPForUDPServerListStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedIPForUDPServerListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedIPForUDPServerListResponse
+     * @return \Ovh\StructType\DedicatedIPForUDPServerListResponse
      */
     public static function __set_state(array $array)
     {

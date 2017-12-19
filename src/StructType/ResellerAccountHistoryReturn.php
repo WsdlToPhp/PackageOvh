@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class ResellerAccountHistoryReturn extends AbstractStructBase
     public $year;
     /**
      * The movements
-     * @var \PayPal\ArrayType\MyArrayOfResellerAccountMovementStructType
+     * @var \Ovh\ArrayType\MyArrayOfResellerAccountMovementStructType
      */
     public $movements;
     /**
@@ -33,9 +33,9 @@ class ResellerAccountHistoryReturn extends AbstractStructBase
      * @uses ResellerAccountHistoryReturn::setMovements()
      * @param int $month
      * @param int $year
-     * @param \PayPal\ArrayType\MyArrayOfResellerAccountMovementStructType $movements
+     * @param \Ovh\ArrayType\MyArrayOfResellerAccountMovementStructType $movements
      */
-    public function __construct($month = null, $year = null, \PayPal\ArrayType\MyArrayOfResellerAccountMovementStructType $movements = null)
+    public function __construct($month = null, $year = null, \Ovh\ArrayType\MyArrayOfResellerAccountMovementStructType $movements = null)
     {
         $this
             ->setMonth($month)
@@ -53,7 +53,7 @@ class ResellerAccountHistoryReturn extends AbstractStructBase
     /**
      * Set month value
      * @param int $month
-     * @return \PayPal\StructType\ResellerAccountHistoryReturn
+     * @return \Ovh\StructType\ResellerAccountHistoryReturn
      */
     public function setMonth($month = null)
     {
@@ -75,7 +75,7 @@ class ResellerAccountHistoryReturn extends AbstractStructBase
     /**
      * Set year value
      * @param int $year
-     * @return \PayPal\StructType\ResellerAccountHistoryReturn
+     * @return \Ovh\StructType\ResellerAccountHistoryReturn
      */
     public function setYear($year = null)
     {
@@ -88,7 +88,7 @@ class ResellerAccountHistoryReturn extends AbstractStructBase
     }
     /**
      * Get movements value
-     * @return \PayPal\ArrayType\MyArrayOfResellerAccountMovementStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfResellerAccountMovementStructType|null
      */
     public function getMovements()
     {
@@ -96,10 +96,10 @@ class ResellerAccountHistoryReturn extends AbstractStructBase
     }
     /**
      * Set movements value
-     * @param \PayPal\ArrayType\MyArrayOfResellerAccountMovementStructType $movements
-     * @return \PayPal\StructType\ResellerAccountHistoryReturn
+     * @param \Ovh\ArrayType\MyArrayOfResellerAccountMovementStructType $movements
+     * @return \Ovh\StructType\ResellerAccountHistoryReturn
      */
-    public function setMovements(\PayPal\ArrayType\MyArrayOfResellerAccountMovementStructType $movements = null)
+    public function setMovements(\Ovh\ArrayType\MyArrayOfResellerAccountMovementStructType $movements = null)
     {
         $this->movements = $movements;
         return $this;
@@ -110,7 +110,7 @@ class ResellerAccountHistoryReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ResellerAccountHistoryReturn
+     * @return \Ovh\StructType\ResellerAccountHistoryReturn
      */
     public static function __set_state(array $array)
     {

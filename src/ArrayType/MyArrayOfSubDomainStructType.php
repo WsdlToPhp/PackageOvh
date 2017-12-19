@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfSubDomainStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\SubDomainStruct[]
+     * @var \Ovh\StructType\SubDomainStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfSubDomainStructType
      * @uses MyArrayOfSubDomainStructType::setItem()
-     * @param \PayPal\StructType\SubDomainStruct[] $item
+     * @param \Ovh\StructType\SubDomainStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfSubDomainStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\SubDomainStruct[]|null
+     * @return \Ovh\StructType\SubDomainStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfSubDomainStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\SubDomainStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfSubDomainStructType
+     * @param \Ovh\StructType\SubDomainStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfSubDomainStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfSubDomainStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfSubDomainStructTypeItemItem instanceof \PayPal\StructType\SubDomainStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\SubDomainStruct, "%s" given', is_object($myArrayOfSubDomainStructTypeItemItem) ? get_class($myArrayOfSubDomainStructTypeItemItem) : gettype($myArrayOfSubDomainStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfSubDomainStructTypeItemItem instanceof \Ovh\StructType\SubDomainStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\SubDomainStruct, "%s" given', is_object($myArrayOfSubDomainStructTypeItemItem) ? get_class($myArrayOfSubDomainStructTypeItemItem) : gettype($myArrayOfSubDomainStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfSubDomainStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\SubDomainStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfSubDomainStructType
+     * @param \Ovh\StructType\SubDomainStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfSubDomainStructType
      */
-    public function addToItem(\PayPal\StructType\SubDomainStruct $item)
+    public function addToItem(\Ovh\StructType\SubDomainStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\SubDomainStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\SubDomainStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\SubDomainStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\SubDomainStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfSubDomainStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\SubDomainStruct|null
+     * @return \Ovh\StructType\SubDomainStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfSubDomainStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\SubDomainStruct|null
+     * @return \Ovh\StructType\SubDomainStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfSubDomainStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\SubDomainStruct|null
+     * @return \Ovh\StructType\SubDomainStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfSubDomainStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\SubDomainStruct|null
+     * @return \Ovh\StructType\SubDomainStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfSubDomainStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\SubDomainStruct|null
+     * @return \Ovh\StructType\SubDomainStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfSubDomainStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfSubDomainStructType
+     * @return \Ovh\ArrayType\MyArrayOfSubDomainStructType
      */
     public static function __set_state(array $array)
     {

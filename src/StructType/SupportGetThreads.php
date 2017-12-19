@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -99,7 +99,7 @@ class SupportGetThreads extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\SupportGetThreads
+     * @return \Ovh\StructType\SupportGetThreads
      */
     public function setSession($session = null)
     {
@@ -121,7 +121,7 @@ class SupportGetThreads extends AbstractStructBase
     /**
      * Set page value
      * @param int $page
-     * @return \PayPal\StructType\SupportGetThreads
+     * @return \Ovh\StructType\SupportGetThreads
      */
     public function setPage($page = null)
     {
@@ -143,7 +143,7 @@ class SupportGetThreads extends AbstractStructBase
     /**
      * Set view value
      * @param string $view
-     * @return \PayPal\StructType\SupportGetThreads
+     * @return \Ovh\StructType\SupportGetThreads
      */
     public function setView($view = null)
     {
@@ -165,7 +165,7 @@ class SupportGetThreads extends AbstractStructBase
     /**
      * Set unread value
      * @param bool $unread
-     * @return \PayPal\StructType\SupportGetThreads
+     * @return \Ovh\StructType\SupportGetThreads
      */
     public function setUnread($unread = null)
     {
@@ -187,7 +187,7 @@ class SupportGetThreads extends AbstractStructBase
     /**
      * Set sortDir value
      * @param string $sortDir
-     * @return \PayPal\StructType\SupportGetThreads
+     * @return \Ovh\StructType\SupportGetThreads
      */
     public function setSortDir($sortDir = null)
     {
@@ -209,7 +209,7 @@ class SupportGetThreads extends AbstractStructBase
     /**
      * Set sortBy value
      * @param string $sortBy
-     * @return \PayPal\StructType\SupportGetThreads
+     * @return \Ovh\StructType\SupportGetThreads
      */
     public function setSortBy($sortBy = null)
     {
@@ -231,7 +231,7 @@ class SupportGetThreads extends AbstractStructBase
     /**
      * Set limit value
      * @param int $limit
-     * @return \PayPal\StructType\SupportGetThreads
+     * @return \Ovh\StructType\SupportGetThreads
      */
     public function setLimit($limit = null)
     {
@@ -248,7 +248,7 @@ class SupportGetThreads extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SupportGetThreads
+     * @return \Ovh\StructType\SupportGetThreads
      */
     public static function __set_state(array $array)
     {

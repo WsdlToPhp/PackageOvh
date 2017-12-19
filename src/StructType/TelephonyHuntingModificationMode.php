@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class TelephonyHuntingModificationMode extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyHuntingModificationMode
+     * @return \Ovh\StructType\TelephonyHuntingModificationMode
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class TelephonyHuntingModificationMode extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyHuntingModificationMode
+     * @return \Ovh\StructType\TelephonyHuntingModificationMode
      */
     public function setNumber($number = null)
     {
@@ -133,7 +133,7 @@ class TelephonyHuntingModificationMode extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyHuntingModificationMode
+     * @return \Ovh\StructType\TelephonyHuntingModificationMode
      */
     public function setCountry($country = null)
     {
@@ -155,7 +155,7 @@ class TelephonyHuntingModificationMode extends AbstractStructBase
     /**
      * Set billingAccount value
      * @param string $billingAccount
-     * @return \PayPal\StructType\TelephonyHuntingModificationMode
+     * @return \Ovh\StructType\TelephonyHuntingModificationMode
      */
     public function setBillingAccount($billingAccount = null)
     {
@@ -177,7 +177,7 @@ class TelephonyHuntingModificationMode extends AbstractStructBase
     /**
      * Set strategy value
      * @param string $strategy
-     * @return \PayPal\StructType\TelephonyHuntingModificationMode
+     * @return \Ovh\StructType\TelephonyHuntingModificationMode
      */
     public function setStrategy($strategy = null)
     {
@@ -199,7 +199,7 @@ class TelephonyHuntingModificationMode extends AbstractStructBase
     /**
      * Set pattern value
      * @param string $pattern
-     * @return \PayPal\StructType\TelephonyHuntingModificationMode
+     * @return \Ovh\StructType\TelephonyHuntingModificationMode
      */
     public function setPattern($pattern = null)
     {
@@ -216,7 +216,7 @@ class TelephonyHuntingModificationMode extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyHuntingModificationMode
+     * @return \Ovh\StructType\TelephonyHuntingModificationMode
      */
     public static function __set_state(array $array)
     {

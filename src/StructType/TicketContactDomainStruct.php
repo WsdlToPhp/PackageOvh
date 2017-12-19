@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class TicketContactDomainStruct extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\TicketContactDomainStruct
+     * @return \Ovh\StructType\TicketContactDomainStruct
      */
     public function setDomain($domain = null)
     {
@@ -75,7 +75,7 @@ class TicketContactDomainStruct extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \PayPal\StructType\TicketContactDomainStruct
+     * @return \Ovh\StructType\TicketContactDomainStruct
      */
     public function setState($state = null)
     {
@@ -97,7 +97,7 @@ class TicketContactDomainStruct extends AbstractStructBase
     /**
      * Set reverse value
      * @param string $reverse
-     * @return \PayPal\StructType\TicketContactDomainStruct
+     * @return \Ovh\StructType\TicketContactDomainStruct
      */
     public function setReverse($reverse = null)
     {
@@ -114,7 +114,7 @@ class TicketContactDomainStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TicketContactDomainStruct
+     * @return \Ovh\StructType\TicketContactDomainStruct
      */
     public static function __set_state(array $array)
     {

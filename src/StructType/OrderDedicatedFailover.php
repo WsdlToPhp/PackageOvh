@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class OrderDedicatedFailover extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\OrderDedicatedFailover
+     * @return \Ovh\StructType\OrderDedicatedFailover
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class OrderDedicatedFailover extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\OrderDedicatedFailover
+     * @return \Ovh\StructType\OrderDedicatedFailover
      */
     public function setDomain($domain = null)
     {
@@ -113,7 +113,7 @@ class OrderDedicatedFailover extends AbstractStructBase
     /**
      * Set orderIps value
      * @param int $orderIps
-     * @return \PayPal\StructType\OrderDedicatedFailover
+     * @return \Ovh\StructType\OrderDedicatedFailover
      */
     public function setOrderIps($orderIps = null)
     {
@@ -135,7 +135,7 @@ class OrderDedicatedFailover extends AbstractStructBase
     /**
      * Set payWithPoints value
      * @param bool $payWithPoints
-     * @return \PayPal\StructType\OrderDedicatedFailover
+     * @return \Ovh\StructType\OrderDedicatedFailover
      */
     public function setPayWithPoints($payWithPoints = null)
     {
@@ -152,7 +152,7 @@ class OrderDedicatedFailover extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\OrderDedicatedFailover
+     * @return \Ovh\StructType\OrderDedicatedFailover
      */
     public static function __set_state(array $array)
     {

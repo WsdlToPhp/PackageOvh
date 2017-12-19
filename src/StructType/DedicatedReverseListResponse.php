@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedReverseListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedReverseStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedReverseStructType
      */
     public $return;
     /**
      * Constructor method for dedicatedReverseListResponse
      * @uses DedicatedReverseListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedReverseStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedReverseStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfDedicatedReverseStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfDedicatedReverseStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedReverseStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedReverseStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedReverseListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedReverseStructType $return
-     * @return \PayPal\StructType\DedicatedReverseListResponse
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedReverseStructType $return
+     * @return \Ovh\StructType\DedicatedReverseListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfDedicatedReverseStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfDedicatedReverseStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedReverseListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedReverseListResponse
+     * @return \Ovh\StructType\DedicatedReverseListResponse
      */
     public static function __set_state(array $array)
     {

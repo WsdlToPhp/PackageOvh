@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class TelephonyClick2CallUserPasswordResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyClick2CallUserPasswordResponse
+     * @return \Ovh\StructType\TelephonyClick2CallUserPasswordResponse
      */
     public static function __set_state(array $array)
     {

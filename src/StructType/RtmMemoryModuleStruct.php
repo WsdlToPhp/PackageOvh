@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class RtmMemoryModuleStruct extends AbstractStructBase
     /**
      * Set moduleName value
      * @param string $moduleName
-     * @return \PayPal\StructType\RtmMemoryModuleStruct
+     * @return \Ovh\StructType\RtmMemoryModuleStruct
      */
     public function setModuleName($moduleName = null)
     {
@@ -67,7 +67,7 @@ class RtmMemoryModuleStruct extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \PayPal\StructType\RtmMemoryModuleStruct
+     * @return \Ovh\StructType\RtmMemoryModuleStruct
      */
     public function setValue($value = null)
     {
@@ -84,7 +84,7 @@ class RtmMemoryModuleStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RtmMemoryModuleStruct
+     * @return \Ovh\StructType\RtmMemoryModuleStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Hosting extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\HostingAccessByNic $parameters
-     * @return \PayPal\StructType\HostingAccessByNicResponse|bool
+     * @param \Ovh\StructType\HostingAccessByNic $parameters
+     * @return \Ovh\StructType\HostingAccessByNicResponse|bool
      */
-    public function hostingAccessByNic(\PayPal\StructType\HostingAccessByNic $parameters)
+    public function hostingAccessByNic(\Ovh\StructType\HostingAccessByNic $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->hostingAccessByNic($parameters));
@@ -36,10 +36,10 @@ class Hosting extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\HostingSummary $parameters
-     * @return \PayPal\StructType\HostingSummaryResponse|bool
+     * @param \Ovh\StructType\HostingSummary $parameters
+     * @return \Ovh\StructType\HostingSummaryResponse|bool
      */
-    public function hostingSummary(\PayPal\StructType\HostingSummary $parameters)
+    public function hostingSummary(\Ovh\StructType\HostingSummary $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->hostingSummary($parameters));
@@ -55,10 +55,10 @@ class Hosting extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\HostingGetCapabilities $parameters
-     * @return \PayPal\StructType\HostingGetCapabilitiesResponse|bool
+     * @param \Ovh\StructType\HostingGetCapabilities $parameters
+     * @return \Ovh\StructType\HostingGetCapabilitiesResponse|bool
      */
-    public function hostingGetCapabilities(\PayPal\StructType\HostingGetCapabilities $parameters)
+    public function hostingGetCapabilities(\Ovh\StructType\HostingGetCapabilities $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->hostingGetCapabilities($parameters));
@@ -74,10 +74,10 @@ class Hosting extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\HostingChangeMainDomain $parameters
-     * @return \PayPal\StructType\HostingChangeMainDomainResponse|bool
+     * @param \Ovh\StructType\HostingChangeMainDomain $parameters
+     * @return \Ovh\StructType\HostingChangeMainDomainResponse|bool
      */
-    public function hostingChangeMainDomain(\PayPal\StructType\HostingChangeMainDomain $parameters)
+    public function hostingChangeMainDomain(\Ovh\StructType\HostingChangeMainDomain $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->hostingChangeMainDomain($parameters));
@@ -93,10 +93,10 @@ class Hosting extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\HostingList $parameters
-     * @return \PayPal\StructType\HostingListResponse|bool
+     * @param \Ovh\StructType\HostingList $parameters
+     * @return \Ovh\StructType\HostingListResponse|bool
      */
-    public function hostingList(\PayPal\StructType\HostingList $parameters)
+    public function hostingList(\Ovh\StructType\HostingList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->hostingList($parameters));
@@ -109,7 +109,7 @@ class Hosting extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\HostingAccessByNicResponse|\PayPal\StructType\HostingChangeMainDomainResponse|\PayPal\StructType\HostingGetCapabilitiesResponse|\PayPal\StructType\HostingListResponse|\PayPal\StructType\HostingSummaryResponse
+     * @return \Ovh\StructType\HostingAccessByNicResponse|\Ovh\StructType\HostingChangeMainDomainResponse|\Ovh\StructType\HostingGetCapabilitiesResponse|\Ovh\StructType\HostingListResponse|\Ovh\StructType\HostingSummaryResponse
      */
     public function getResult()
     {

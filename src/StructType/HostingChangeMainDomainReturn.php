@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -85,7 +85,7 @@ class HostingChangeMainDomainReturn extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\HostingChangeMainDomainReturn
+     * @return \Ovh\StructType\HostingChangeMainDomainReturn
      */
     public function setId($id = null)
     {
@@ -107,7 +107,7 @@ class HostingChangeMainDomainReturn extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\HostingChangeMainDomainReturn
+     * @return \Ovh\StructType\HostingChangeMainDomainReturn
      */
     public function setCountry($country = null)
     {
@@ -129,7 +129,7 @@ class HostingChangeMainDomainReturn extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \PayPal\StructType\HostingChangeMainDomainReturn
+     * @return \Ovh\StructType\HostingChangeMainDomainReturn
      */
     public function setPassword($password = null)
     {
@@ -151,7 +151,7 @@ class HostingChangeMainDomainReturn extends AbstractStructBase
     /**
      * Set totalPriceWithVat value
      * @param float $totalPriceWithVat
-     * @return \PayPal\StructType\HostingChangeMainDomainReturn
+     * @return \Ovh\StructType\HostingChangeMainDomainReturn
      */
     public function setTotalPriceWithVat($totalPriceWithVat = null)
     {
@@ -169,7 +169,7 @@ class HostingChangeMainDomainReturn extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \PayPal\StructType\HostingChangeMainDomainReturn
+     * @return \Ovh\StructType\HostingChangeMainDomainReturn
      */
     public function setTotalPrice($totalPrice = null)
     {
@@ -187,7 +187,7 @@ class HostingChangeMainDomainReturn extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \PayPal\StructType\HostingChangeMainDomainReturn
+     * @return \Ovh\StructType\HostingChangeMainDomainReturn
      */
     public function setUrl($url = null)
     {
@@ -209,7 +209,7 @@ class HostingChangeMainDomainReturn extends AbstractStructBase
     /**
      * Set vatRate value
      * @param float $vatRate
-     * @return \PayPal\StructType\HostingChangeMainDomainReturn
+     * @return \Ovh\StructType\HostingChangeMainDomainReturn
      */
     public function setVatRate($vatRate = null)
     {
@@ -222,7 +222,7 @@ class HostingChangeMainDomainReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\HostingChangeMainDomainReturn
+     * @return \Ovh\StructType\HostingChangeMainDomainReturn
      */
     public static function __set_state(array $array)
     {

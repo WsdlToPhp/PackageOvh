@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,7 +50,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
      * The extraNumbers
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $extraNumbers;
     /**
@@ -218,7 +218,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
      * @param string $offer
      * @param string $desireDate
      * @param string $callNumber
-     * @param \PayPal\ArrayType\MyArrayOfStringType $extraNumbers
+     * @param \Ovh\ArrayType\MyArrayOfStringType $extraNumbers
      * @param string $legalForm
      * @param string $name
      * @param string $firstName
@@ -239,7 +239,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
      * @param string $contactName
      * @param string $contactNumber
      */
-    public function __construct($session = null, $billingAccount = null, $offer = null, $desireDate = null, $callNumber = null, \PayPal\ArrayType\MyArrayOfStringType $extraNumbers = null, $legalForm = null, $name = null, $firstName = null, $siret = null, $streetNumber = null, $streetNumberExtra = null, $streetType = null, $streetName = null, $building = null, $stair = null, $floor = null, $door = null, $zip = null, $city = null, $country = null, $displayUniversalDirectory = null, $category = null, $contactName = null, $contactNumber = null)
+    public function __construct($session = null, $billingAccount = null, $offer = null, $desireDate = null, $callNumber = null, \Ovh\ArrayType\MyArrayOfStringType $extraNumbers = null, $legalForm = null, $name = null, $firstName = null, $siret = null, $streetNumber = null, $streetNumberExtra = null, $streetType = null, $streetName = null, $building = null, $stair = null, $floor = null, $door = null, $zip = null, $city = null, $country = null, $displayUniversalDirectory = null, $category = null, $contactName = null, $contactNumber = null)
     {
         $this
             ->setSession($session)
@@ -279,7 +279,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setSession($session = null)
     {
@@ -301,7 +301,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set billingAccount value
      * @param string $billingAccount
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setBillingAccount($billingAccount = null)
     {
@@ -323,7 +323,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set offer value
      * @param string $offer
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setOffer($offer = null)
     {
@@ -345,7 +345,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set desireDate value
      * @param string $desireDate
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setDesireDate($desireDate = null)
     {
@@ -367,7 +367,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set callNumber value
      * @param string $callNumber
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setCallNumber($callNumber = null)
     {
@@ -380,7 +380,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     }
     /**
      * Get extraNumbers value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getExtraNumbers()
     {
@@ -388,10 +388,10 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     }
     /**
      * Set extraNumbers value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $extraNumbers
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @param \Ovh\ArrayType\MyArrayOfStringType $extraNumbers
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
-    public function setExtraNumbers(\PayPal\ArrayType\MyArrayOfStringType $extraNumbers = null)
+    public function setExtraNumbers(\Ovh\ArrayType\MyArrayOfStringType $extraNumbers = null)
     {
         $this->extraNumbers = $extraNumbers;
         return $this;
@@ -407,7 +407,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set legalForm value
      * @param string $legalForm
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setLegalForm($legalForm = null)
     {
@@ -429,7 +429,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setName($name = null)
     {
@@ -451,7 +451,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set firstName value
      * @param string $firstName
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setFirstName($firstName = null)
     {
@@ -473,7 +473,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set siret value
      * @param string $siret
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setSiret($siret = null)
     {
@@ -495,7 +495,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set streetNumber value
      * @param string $streetNumber
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setStreetNumber($streetNumber = null)
     {
@@ -517,7 +517,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set streetNumberExtra value
      * @param string $streetNumberExtra
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setStreetNumberExtra($streetNumberExtra = null)
     {
@@ -539,7 +539,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set streetType value
      * @param string $streetType
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setStreetType($streetType = null)
     {
@@ -561,7 +561,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set streetName value
      * @param string $streetName
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setStreetName($streetName = null)
     {
@@ -583,7 +583,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set building value
      * @param string $building
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setBuilding($building = null)
     {
@@ -605,7 +605,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set stair value
      * @param string $stair
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setStair($stair = null)
     {
@@ -627,7 +627,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set floor value
      * @param string $floor
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setFloor($floor = null)
     {
@@ -649,7 +649,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set door value
      * @param string $door
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setDoor($door = null)
     {
@@ -671,7 +671,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set zip value
      * @param string $zip
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setZip($zip = null)
     {
@@ -693,7 +693,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setCity($city = null)
     {
@@ -715,7 +715,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setCountry($country = null)
     {
@@ -737,7 +737,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set displayUniversalDirectory value
      * @param string $displayUniversalDirectory
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setDisplayUniversalDirectory($displayUniversalDirectory = null)
     {
@@ -759,7 +759,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set category value
      * @param string $category
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setCategory($category = null)
     {
@@ -781,7 +781,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set contactName value
      * @param string $contactName
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setContactName($contactName = null)
     {
@@ -803,7 +803,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
     /**
      * Set contactNumber value
      * @param string $contactNumber
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public function setContactNumber($contactNumber = null)
     {
@@ -820,7 +820,7 @@ class TelephonyPortabilityOrderSpecialNumber extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber
      */
     public static function __set_state(array $array)
     {

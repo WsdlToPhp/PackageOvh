@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedNetbootGetAvailableResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedNetbootStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedNetbootStructType
      */
     public $return;
     /**
      * Constructor method for dedicatedNetbootGetAvailableResponse
      * @uses DedicatedNetbootGetAvailableResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedNetbootStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedNetbootStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfDedicatedNetbootStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfDedicatedNetbootStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedNetbootStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedNetbootStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedNetbootGetAvailableResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedNetbootStructType $return
-     * @return \PayPal\StructType\DedicatedNetbootGetAvailableResponse
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedNetbootStructType $return
+     * @return \Ovh\StructType\DedicatedNetbootGetAvailableResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfDedicatedNetbootStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfDedicatedNetbootStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedNetbootGetAvailableResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedNetbootGetAvailableResponse
+     * @return \Ovh\StructType\DedicatedNetbootGetAvailableResponse
      */
     public static function __set_state(array $array)
     {

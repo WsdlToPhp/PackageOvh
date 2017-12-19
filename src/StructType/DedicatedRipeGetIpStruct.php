@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class DedicatedRipeGetIpStruct extends AbstractStructBase
     /**
      * Set exclusion value
      * @param string $exclusion
-     * @return \PayPal\StructType\DedicatedRipeGetIpStruct
+     * @return \Ovh\StructType\DedicatedRipeGetIpStruct
      */
     public function setExclusion($exclusion = null)
     {
@@ -83,7 +83,7 @@ class DedicatedRipeGetIpStruct extends AbstractStructBase
     /**
      * Set routedTo value
      * @param string $routedTo
-     * @return \PayPal\StructType\DedicatedRipeGetIpStruct
+     * @return \Ovh\StructType\DedicatedRipeGetIpStruct
      */
     public function setRoutedTo($routedTo = null)
     {
@@ -105,7 +105,7 @@ class DedicatedRipeGetIpStruct extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\DedicatedRipeGetIpStruct
+     * @return \Ovh\StructType\DedicatedRipeGetIpStruct
      */
     public function setIp($ip = null)
     {
@@ -127,7 +127,7 @@ class DedicatedRipeGetIpStruct extends AbstractStructBase
     /**
      * Set netname value
      * @param string $netname
-     * @return \PayPal\StructType\DedicatedRipeGetIpStruct
+     * @return \Ovh\StructType\DedicatedRipeGetIpStruct
      */
     public function setNetname($netname = null)
     {
@@ -144,7 +144,7 @@ class DedicatedRipeGetIpStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedRipeGetIpStruct
+     * @return \Ovh\StructType\DedicatedRipeGetIpStruct
      */
     public static function __set_state(array $array)
     {

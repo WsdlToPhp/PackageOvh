@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class DedicatedFailoverRipeSplit extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedFailoverRipeSplit
+     * @return \Ovh\StructType\DedicatedFailoverRipeSplit
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class DedicatedFailoverRipeSplit extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedFailoverRipeSplit
+     * @return \Ovh\StructType\DedicatedFailoverRipeSplit
      */
     public function setHostname($hostname = null)
     {
@@ -113,7 +113,7 @@ class DedicatedFailoverRipeSplit extends AbstractStructBase
     /**
      * Set netname value
      * @param string $netname
-     * @return \PayPal\StructType\DedicatedFailoverRipeSplit
+     * @return \Ovh\StructType\DedicatedFailoverRipeSplit
      */
     public function setNetname($netname = null)
     {
@@ -135,7 +135,7 @@ class DedicatedFailoverRipeSplit extends AbstractStructBase
     /**
      * Set networkIp value
      * @param string $networkIp
-     * @return \PayPal\StructType\DedicatedFailoverRipeSplit
+     * @return \Ovh\StructType\DedicatedFailoverRipeSplit
      */
     public function setNetworkIp($networkIp = null)
     {
@@ -152,7 +152,7 @@ class DedicatedFailoverRipeSplit extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedFailoverRipeSplit
+     * @return \Ovh\StructType\DedicatedFailoverRipeSplit
      */
     public static function __set_state(array $array)
     {

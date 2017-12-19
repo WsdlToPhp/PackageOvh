@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Service extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ServiceGroupGetAllInfo $parameters
-     * @return \PayPal\StructType\ServiceGroupGetAllInfoResponse|bool
+     * @param \Ovh\StructType\ServiceGroupGetAllInfo $parameters
+     * @return \Ovh\StructType\ServiceGroupGetAllInfoResponse|bool
      */
-    public function serviceGroupGetAllInfo(\PayPal\StructType\ServiceGroupGetAllInfo $parameters)
+    public function serviceGroupGetAllInfo(\Ovh\StructType\ServiceGroupGetAllInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->serviceGroupGetAllInfo($parameters));
@@ -36,10 +36,10 @@ class Service extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ServiceGroupList $parameters
-     * @return \PayPal\StructType\ServiceGroupListResponse|bool
+     * @param \Ovh\StructType\ServiceGroupList $parameters
+     * @return \Ovh\StructType\ServiceGroupListResponse|bool
      */
-    public function serviceGroupList(\PayPal\StructType\ServiceGroupList $parameters)
+    public function serviceGroupList(\Ovh\StructType\ServiceGroupList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->serviceGroupList($parameters));
@@ -55,10 +55,10 @@ class Service extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ServiceListPaginated $parameters
-     * @return \PayPal\StructType\ServiceListPaginatedResponse|bool
+     * @param \Ovh\StructType\ServiceListPaginated $parameters
+     * @return \Ovh\StructType\ServiceListPaginatedResponse|bool
      */
-    public function serviceListPaginated(\PayPal\StructType\ServiceListPaginated $parameters)
+    public function serviceListPaginated(\Ovh\StructType\ServiceListPaginated $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->serviceListPaginated($parameters));
@@ -74,10 +74,10 @@ class Service extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ServiceGroupCreate $parameters
-     * @return \PayPal\StructType\ServiceGroupCreateResponse|bool
+     * @param \Ovh\StructType\ServiceGroupCreate $parameters
+     * @return \Ovh\StructType\ServiceGroupCreateResponse|bool
      */
-    public function serviceGroupCreate(\PayPal\StructType\ServiceGroupCreate $parameters)
+    public function serviceGroupCreate(\Ovh\StructType\ServiceGroupCreate $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->serviceGroupCreate($parameters));
@@ -93,10 +93,10 @@ class Service extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ServiceModifyContact $parameters
-     * @return \PayPal\StructType\ServiceModifyContactResponse|bool
+     * @param \Ovh\StructType\ServiceModifyContact $parameters
+     * @return \Ovh\StructType\ServiceModifyContactResponse|bool
      */
-    public function serviceModifyContact(\PayPal\StructType\ServiceModifyContact $parameters)
+    public function serviceModifyContact(\Ovh\StructType\ServiceModifyContact $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->serviceModifyContact($parameters));
@@ -112,10 +112,10 @@ class Service extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ServiceModifyOwner $parameters
-     * @return \PayPal\StructType\ServiceModifyOwnerResponse|bool
+     * @param \Ovh\StructType\ServiceModifyOwner $parameters
+     * @return \Ovh\StructType\ServiceModifyOwnerResponse|bool
      */
-    public function serviceModifyOwner(\PayPal\StructType\ServiceModifyOwner $parameters)
+    public function serviceModifyOwner(\Ovh\StructType\ServiceModifyOwner $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->serviceModifyOwner($parameters));
@@ -131,10 +131,10 @@ class Service extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ServiceModifyOwnerInfos $parameters
-     * @return \PayPal\StructType\ServiceModifyOwnerInfosResponse|bool
+     * @param \Ovh\StructType\ServiceModifyOwnerInfos $parameters
+     * @return \Ovh\StructType\ServiceModifyOwnerInfosResponse|bool
      */
-    public function serviceModifyOwnerInfos(\PayPal\StructType\ServiceModifyOwnerInfos $parameters)
+    public function serviceModifyOwnerInfos(\Ovh\StructType\ServiceModifyOwnerInfos $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->serviceModifyOwnerInfos($parameters));
@@ -150,10 +150,10 @@ class Service extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ServiceGroupDelete $parameters
-     * @return \PayPal\StructType\ServiceGroupDeleteResponse|bool
+     * @param \Ovh\StructType\ServiceGroupDelete $parameters
+     * @return \Ovh\StructType\ServiceGroupDeleteResponse|bool
      */
-    public function serviceGroupDelete(\PayPal\StructType\ServiceGroupDelete $parameters)
+    public function serviceGroupDelete(\Ovh\StructType\ServiceGroupDelete $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->serviceGroupDelete($parameters));
@@ -169,10 +169,10 @@ class Service extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ServiceList $parameters
-     * @return \PayPal\StructType\ServiceListResponse|bool
+     * @param \Ovh\StructType\ServiceList $parameters
+     * @return \Ovh\StructType\ServiceListResponse|bool
      */
-    public function serviceList(\PayPal\StructType\ServiceList $parameters)
+    public function serviceList(\Ovh\StructType\ServiceList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->serviceList($parameters));
@@ -188,10 +188,10 @@ class Service extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ServiceGroupSetComment $parameters
-     * @return \PayPal\StructType\ServiceGroupSetCommentResponse|bool
+     * @param \Ovh\StructType\ServiceGroupSetComment $parameters
+     * @return \Ovh\StructType\ServiceGroupSetCommentResponse|bool
      */
-    public function serviceGroupSetComment(\PayPal\StructType\ServiceGroupSetComment $parameters)
+    public function serviceGroupSetComment(\Ovh\StructType\ServiceGroupSetComment $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->serviceGroupSetComment($parameters));
@@ -207,10 +207,10 @@ class Service extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ServiceGroupRemoveService $parameters
-     * @return \PayPal\StructType\ServiceGroupRemoveServiceResponse|bool
+     * @param \Ovh\StructType\ServiceGroupRemoveService $parameters
+     * @return \Ovh\StructType\ServiceGroupRemoveServiceResponse|bool
      */
-    public function serviceGroupRemoveService(\PayPal\StructType\ServiceGroupRemoveService $parameters)
+    public function serviceGroupRemoveService(\Ovh\StructType\ServiceGroupRemoveService $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->serviceGroupRemoveService($parameters));
@@ -226,10 +226,10 @@ class Service extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ServiceFreedomList $parameters
-     * @return \PayPal\StructType\ServiceFreedomListResponse|bool
+     * @param \Ovh\StructType\ServiceFreedomList $parameters
+     * @return \Ovh\StructType\ServiceFreedomListResponse|bool
      */
-    public function serviceFreedomList(\PayPal\StructType\ServiceFreedomList $parameters)
+    public function serviceFreedomList(\Ovh\StructType\ServiceFreedomList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->serviceFreedomList($parameters));
@@ -245,10 +245,10 @@ class Service extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ServiceGroupSetName $parameters
-     * @return \PayPal\StructType\ServiceGroupSetNameResponse|bool
+     * @param \Ovh\StructType\ServiceGroupSetName $parameters
+     * @return \Ovh\StructType\ServiceGroupSetNameResponse|bool
      */
-    public function serviceGroupSetName(\PayPal\StructType\ServiceGroupSetName $parameters)
+    public function serviceGroupSetName(\Ovh\StructType\ServiceGroupSetName $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->serviceGroupSetName($parameters));
@@ -264,10 +264,10 @@ class Service extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ServiceGroupInfo $parameters
-     * @return \PayPal\StructType\ServiceGroupInfoResponse|bool
+     * @param \Ovh\StructType\ServiceGroupInfo $parameters
+     * @return \Ovh\StructType\ServiceGroupInfoResponse|bool
      */
-    public function serviceGroupInfo(\PayPal\StructType\ServiceGroupInfo $parameters)
+    public function serviceGroupInfo(\Ovh\StructType\ServiceGroupInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->serviceGroupInfo($parameters));
@@ -283,10 +283,10 @@ class Service extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ServiceGroupAddService $parameters
-     * @return \PayPal\StructType\ServiceGroupAddServiceResponse|bool
+     * @param \Ovh\StructType\ServiceGroupAddService $parameters
+     * @return \Ovh\StructType\ServiceGroupAddServiceResponse|bool
      */
-    public function serviceGroupAddService(\PayPal\StructType\ServiceGroupAddService $parameters)
+    public function serviceGroupAddService(\Ovh\StructType\ServiceGroupAddService $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->serviceGroupAddService($parameters));
@@ -299,7 +299,7 @@ class Service extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\ServiceFreedomListResponse|\PayPal\StructType\ServiceGroupAddServiceResponse|\PayPal\StructType\ServiceGroupCreateResponse|\PayPal\StructType\ServiceGroupDeleteResponse|\PayPal\StructType\ServiceGroupGetAllInfoResponse|\PayPal\StructType\ServiceGroupInfoResponse|\PayPal\StructType\ServiceGroupListResponse|\PayPal\StructType\ServiceGroupRemoveServiceResponse|\PayPal\StructType\ServiceGroupSetCommentResponse|\PayPal\StructType\ServiceGroupSetNameResponse|\PayPal\StructType\ServiceListPaginatedResponse|\PayPal\StructType\ServiceListResponse|\PayPal\StructType\ServiceModifyContactResponse|\PayPal\StructType\ServiceModifyOwnerInfosResponse|\PayPal\StructType\ServiceModifyOwnerResponse
+     * @return \Ovh\StructType\ServiceFreedomListResponse|\Ovh\StructType\ServiceGroupAddServiceResponse|\Ovh\StructType\ServiceGroupCreateResponse|\Ovh\StructType\ServiceGroupDeleteResponse|\Ovh\StructType\ServiceGroupGetAllInfoResponse|\Ovh\StructType\ServiceGroupInfoResponse|\Ovh\StructType\ServiceGroupListResponse|\Ovh\StructType\ServiceGroupRemoveServiceResponse|\Ovh\StructType\ServiceGroupSetCommentResponse|\Ovh\StructType\ServiceGroupSetNameResponse|\Ovh\StructType\ServiceListPaginatedResponse|\Ovh\StructType\ServiceListResponse|\Ovh\StructType\ServiceModifyContactResponse|\Ovh\StructType\ServiceModifyOwnerInfosResponse|\Ovh\StructType\ServiceModifyOwnerResponse
      */
     public function getResult()
     {

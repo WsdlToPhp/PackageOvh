@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class HostingGetCapabilitiesResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\HostingGetCapabilitiesReturn
+     * @var \Ovh\StructType\HostingGetCapabilitiesReturn
      */
     public $return;
     /**
      * Constructor method for hostingGetCapabilitiesResponse
      * @uses HostingGetCapabilitiesResponse::setReturn()
-     * @param \PayPal\StructType\HostingGetCapabilitiesReturn $return
+     * @param \Ovh\StructType\HostingGetCapabilitiesReturn $return
      */
-    public function __construct(\PayPal\StructType\HostingGetCapabilitiesReturn $return = null)
+    public function __construct(\Ovh\StructType\HostingGetCapabilitiesReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\HostingGetCapabilitiesReturn|null
+     * @return \Ovh\StructType\HostingGetCapabilitiesReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class HostingGetCapabilitiesResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\HostingGetCapabilitiesReturn $return
-     * @return \PayPal\StructType\HostingGetCapabilitiesResponse
+     * @param \Ovh\StructType\HostingGetCapabilitiesReturn $return
+     * @return \Ovh\StructType\HostingGetCapabilitiesResponse
      */
-    public function setReturn(\PayPal\StructType\HostingGetCapabilitiesReturn $return = null)
+    public function setReturn(\Ovh\StructType\HostingGetCapabilitiesReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class HostingGetCapabilitiesResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\HostingGetCapabilitiesResponse
+     * @return \Ovh\StructType\HostingGetCapabilitiesResponse
      */
     public static function __set_state(array $array)
     {

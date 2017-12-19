@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -93,7 +93,7 @@ class BillingInvoiceInfoDetailStruct extends AbstractStructBase
     /**
      * Set quantity value
      * @param int $quantity
-     * @return \PayPal\StructType\BillingInvoiceInfoDetailStruct
+     * @return \Ovh\StructType\BillingInvoiceInfoDetailStruct
      */
     public function setQuantity($quantity = null)
     {
@@ -115,7 +115,7 @@ class BillingInvoiceInfoDetailStruct extends AbstractStructBase
     /**
      * Set service value
      * @param string $service
-     * @return \PayPal\StructType\BillingInvoiceInfoDetailStruct
+     * @return \Ovh\StructType\BillingInvoiceInfoDetailStruct
      */
     public function setService($service = null)
     {
@@ -137,7 +137,7 @@ class BillingInvoiceInfoDetailStruct extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \PayPal\StructType\BillingInvoiceInfoDetailStruct
+     * @return \Ovh\StructType\BillingInvoiceInfoDetailStruct
      */
     public function setDescription($description = null)
     {
@@ -159,7 +159,7 @@ class BillingInvoiceInfoDetailStruct extends AbstractStructBase
     /**
      * Set end value
      * @param string $end
-     * @return \PayPal\StructType\BillingInvoiceInfoDetailStruct
+     * @return \Ovh\StructType\BillingInvoiceInfoDetailStruct
      */
     public function setEnd($end = null)
     {
@@ -181,7 +181,7 @@ class BillingInvoiceInfoDetailStruct extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\BillingInvoiceInfoDetailStruct
+     * @return \Ovh\StructType\BillingInvoiceInfoDetailStruct
      */
     public function setDomain($domain = null)
     {
@@ -203,7 +203,7 @@ class BillingInvoiceInfoDetailStruct extends AbstractStructBase
     /**
      * Set baseprice value
      * @param float $baseprice
-     * @return \PayPal\StructType\BillingInvoiceInfoDetailStruct
+     * @return \Ovh\StructType\BillingInvoiceInfoDetailStruct
      */
     public function setBaseprice($baseprice = null)
     {
@@ -221,7 +221,7 @@ class BillingInvoiceInfoDetailStruct extends AbstractStructBase
     /**
      * Set totalprice value
      * @param float $totalprice
-     * @return \PayPal\StructType\BillingInvoiceInfoDetailStruct
+     * @return \Ovh\StructType\BillingInvoiceInfoDetailStruct
      */
     public function setTotalprice($totalprice = null)
     {
@@ -239,7 +239,7 @@ class BillingInvoiceInfoDetailStruct extends AbstractStructBase
     /**
      * Set start value
      * @param string $start
-     * @return \PayPal\StructType\BillingInvoiceInfoDetailStruct
+     * @return \Ovh\StructType\BillingInvoiceInfoDetailStruct
      */
     public function setStart($start = null)
     {
@@ -256,7 +256,7 @@ class BillingInvoiceInfoDetailStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\BillingInvoiceInfoDetailStruct
+     * @return \Ovh\StructType\BillingInvoiceInfoDetailStruct
      */
     public static function __set_state(array $array)
     {

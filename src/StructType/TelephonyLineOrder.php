@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class TelephonyLineOrder extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyLineOrder
+     * @return \Ovh\StructType\TelephonyLineOrder
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class TelephonyLineOrder extends AbstractStructBase
     /**
      * Set billingAccount value
      * @param string $billingAccount
-     * @return \PayPal\StructType\TelephonyLineOrder
+     * @return \Ovh\StructType\TelephonyLineOrder
      */
     public function setBillingAccount($billingAccount = null)
     {
@@ -133,7 +133,7 @@ class TelephonyLineOrder extends AbstractStructBase
     /**
      * Set offer value
      * @param string $offer
-     * @return \PayPal\StructType\TelephonyLineOrder
+     * @return \Ovh\StructType\TelephonyLineOrder
      */
     public function setOffer($offer = null)
     {
@@ -155,7 +155,7 @@ class TelephonyLineOrder extends AbstractStructBase
     /**
      * Set prefix value
      * @param string $prefix
-     * @return \PayPal\StructType\TelephonyLineOrder
+     * @return \Ovh\StructType\TelephonyLineOrder
      */
     public function setPrefix($prefix = null)
     {
@@ -177,7 +177,7 @@ class TelephonyLineOrder extends AbstractStructBase
     /**
      * Set quantity value
      * @param int $quantity
-     * @return \PayPal\StructType\TelephonyLineOrder
+     * @return \Ovh\StructType\TelephonyLineOrder
      */
     public function setQuantity($quantity = null)
     {
@@ -199,7 +199,7 @@ class TelephonyLineOrder extends AbstractStructBase
     /**
      * Set payWithPoints value
      * @param bool $payWithPoints
-     * @return \PayPal\StructType\TelephonyLineOrder
+     * @return \Ovh\StructType\TelephonyLineOrder
      */
     public function setPayWithPoints($payWithPoints = null)
     {
@@ -216,7 +216,7 @@ class TelephonyLineOrder extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyLineOrder
+     * @return \Ovh\StructType\TelephonyLineOrder
      */
     public static function __set_state(array $array)
     {

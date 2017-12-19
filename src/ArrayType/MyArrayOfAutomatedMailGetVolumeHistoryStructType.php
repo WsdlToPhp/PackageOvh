@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfAutomatedMailGetVolumeHistoryStructType extends AbstractStructArr
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\AutomatedMailGetVolumeHistoryStruct[]
+     * @var \Ovh\StructType\AutomatedMailGetVolumeHistoryStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfAutomatedMailGetVolumeHistoryStructType
      * @uses MyArrayOfAutomatedMailGetVolumeHistoryStructType::setItem()
-     * @param \PayPal\StructType\AutomatedMailGetVolumeHistoryStruct[] $item
+     * @param \Ovh\StructType\AutomatedMailGetVolumeHistoryStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfAutomatedMailGetVolumeHistoryStructType extends AbstractStructArr
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\AutomatedMailGetVolumeHistoryStruct[]|null
+     * @return \Ovh\StructType\AutomatedMailGetVolumeHistoryStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfAutomatedMailGetVolumeHistoryStructType extends AbstractStructArr
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\AutomatedMailGetVolumeHistoryStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfAutomatedMailGetVolumeHistoryStructType
+     * @param \Ovh\StructType\AutomatedMailGetVolumeHistoryStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfAutomatedMailGetVolumeHistoryStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfAutomatedMailGetVolumeHistoryStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfAutomatedMailGetVolumeHistoryStructTypeItemItem instanceof \PayPal\StructType\AutomatedMailGetVolumeHistoryStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\AutomatedMailGetVolumeHistoryStruct, "%s" given', is_object($myArrayOfAutomatedMailGetVolumeHistoryStructTypeItemItem) ? get_class($myArrayOfAutomatedMailGetVolumeHistoryStructTypeItemItem) : gettype($myArrayOfAutomatedMailGetVolumeHistoryStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfAutomatedMailGetVolumeHistoryStructTypeItemItem instanceof \Ovh\StructType\AutomatedMailGetVolumeHistoryStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\AutomatedMailGetVolumeHistoryStruct, "%s" given', is_object($myArrayOfAutomatedMailGetVolumeHistoryStructTypeItemItem) ? get_class($myArrayOfAutomatedMailGetVolumeHistoryStructTypeItemItem) : gettype($myArrayOfAutomatedMailGetVolumeHistoryStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfAutomatedMailGetVolumeHistoryStructType extends AbstractStructArr
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\AutomatedMailGetVolumeHistoryStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfAutomatedMailGetVolumeHistoryStructType
+     * @param \Ovh\StructType\AutomatedMailGetVolumeHistoryStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfAutomatedMailGetVolumeHistoryStructType
      */
-    public function addToItem(\PayPal\StructType\AutomatedMailGetVolumeHistoryStruct $item)
+    public function addToItem(\Ovh\StructType\AutomatedMailGetVolumeHistoryStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\AutomatedMailGetVolumeHistoryStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\AutomatedMailGetVolumeHistoryStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\AutomatedMailGetVolumeHistoryStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\AutomatedMailGetVolumeHistoryStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfAutomatedMailGetVolumeHistoryStructType extends AbstractStructArr
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\AutomatedMailGetVolumeHistoryStruct|null
+     * @return \Ovh\StructType\AutomatedMailGetVolumeHistoryStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfAutomatedMailGetVolumeHistoryStructType extends AbstractStructArr
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\AutomatedMailGetVolumeHistoryStruct|null
+     * @return \Ovh\StructType\AutomatedMailGetVolumeHistoryStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfAutomatedMailGetVolumeHistoryStructType extends AbstractStructArr
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\AutomatedMailGetVolumeHistoryStruct|null
+     * @return \Ovh\StructType\AutomatedMailGetVolumeHistoryStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfAutomatedMailGetVolumeHistoryStructType extends AbstractStructArr
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\AutomatedMailGetVolumeHistoryStruct|null
+     * @return \Ovh\StructType\AutomatedMailGetVolumeHistoryStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfAutomatedMailGetVolumeHistoryStructType extends AbstractStructArr
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\AutomatedMailGetVolumeHistoryStruct|null
+     * @return \Ovh\StructType\AutomatedMailGetVolumeHistoryStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfAutomatedMailGetVolumeHistoryStructType extends AbstractStructArr
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfAutomatedMailGetVolumeHistoryStructType
+     * @return \Ovh\ArrayType\MyArrayOfAutomatedMailGetVolumeHistoryStructType
      */
     public static function __set_state(array $array)
     {

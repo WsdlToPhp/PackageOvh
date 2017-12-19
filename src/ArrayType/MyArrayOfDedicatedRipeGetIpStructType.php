@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfDedicatedRipeGetIpStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\DedicatedRipeGetIpStruct[]
+     * @var \Ovh\StructType\DedicatedRipeGetIpStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfDedicatedRipeGetIpStructType
      * @uses MyArrayOfDedicatedRipeGetIpStructType::setItem()
-     * @param \PayPal\StructType\DedicatedRipeGetIpStruct[] $item
+     * @param \Ovh\StructType\DedicatedRipeGetIpStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfDedicatedRipeGetIpStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\DedicatedRipeGetIpStruct[]|null
+     * @return \Ovh\StructType\DedicatedRipeGetIpStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfDedicatedRipeGetIpStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedRipeGetIpStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedRipeGetIpStructType
+     * @param \Ovh\StructType\DedicatedRipeGetIpStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedRipeGetIpStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfDedicatedRipeGetIpStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfDedicatedRipeGetIpStructTypeItemItem instanceof \PayPal\StructType\DedicatedRipeGetIpStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedRipeGetIpStruct, "%s" given', is_object($myArrayOfDedicatedRipeGetIpStructTypeItemItem) ? get_class($myArrayOfDedicatedRipeGetIpStructTypeItemItem) : gettype($myArrayOfDedicatedRipeGetIpStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfDedicatedRipeGetIpStructTypeItemItem instanceof \Ovh\StructType\DedicatedRipeGetIpStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedRipeGetIpStruct, "%s" given', is_object($myArrayOfDedicatedRipeGetIpStructTypeItemItem) ? get_class($myArrayOfDedicatedRipeGetIpStructTypeItemItem) : gettype($myArrayOfDedicatedRipeGetIpStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfDedicatedRipeGetIpStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedRipeGetIpStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedRipeGetIpStructType
+     * @param \Ovh\StructType\DedicatedRipeGetIpStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedRipeGetIpStructType
      */
-    public function addToItem(\PayPal\StructType\DedicatedRipeGetIpStruct $item)
+    public function addToItem(\Ovh\StructType\DedicatedRipeGetIpStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\DedicatedRipeGetIpStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedRipeGetIpStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\DedicatedRipeGetIpStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedRipeGetIpStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfDedicatedRipeGetIpStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\DedicatedRipeGetIpStruct|null
+     * @return \Ovh\StructType\DedicatedRipeGetIpStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfDedicatedRipeGetIpStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\DedicatedRipeGetIpStruct|null
+     * @return \Ovh\StructType\DedicatedRipeGetIpStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfDedicatedRipeGetIpStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\DedicatedRipeGetIpStruct|null
+     * @return \Ovh\StructType\DedicatedRipeGetIpStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfDedicatedRipeGetIpStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\DedicatedRipeGetIpStruct|null
+     * @return \Ovh\StructType\DedicatedRipeGetIpStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfDedicatedRipeGetIpStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\DedicatedRipeGetIpStruct|null
+     * @return \Ovh\StructType\DedicatedRipeGetIpStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfDedicatedRipeGetIpStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedRipeGetIpStructType
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedRipeGetIpStructType
      */
     public static function __set_state(array $array)
     {

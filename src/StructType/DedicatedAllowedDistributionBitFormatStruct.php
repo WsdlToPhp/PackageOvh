@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class DedicatedAllowedDistributionBitFormatStruct extends AbstractStructBase
     /**
      * Set reference value
      * @param string $reference
-     * @return \PayPal\StructType\DedicatedAllowedDistributionBitFormatStruct
+     * @return \Ovh\StructType\DedicatedAllowedDistributionBitFormatStruct
      */
     public function setReference($reference = null)
     {
@@ -67,7 +67,7 @@ class DedicatedAllowedDistributionBitFormatStruct extends AbstractStructBase
     /**
      * Set bits value
      * @param int $bits
-     * @return \PayPal\StructType\DedicatedAllowedDistributionBitFormatStruct
+     * @return \Ovh\StructType\DedicatedAllowedDistributionBitFormatStruct
      */
     public function setBits($bits = null)
     {
@@ -84,7 +84,7 @@ class DedicatedAllowedDistributionBitFormatStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedAllowedDistributionBitFormatStruct
+     * @return \Ovh\StructType\DedicatedAllowedDistributionBitFormatStruct
      */
     public static function __set_state(array $array)
     {

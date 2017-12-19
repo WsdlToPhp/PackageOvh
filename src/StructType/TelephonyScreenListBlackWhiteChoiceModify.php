@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class TelephonyScreenListBlackWhiteChoiceModify extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyScreenListBlackWhiteChoiceModify
+     * @return \Ovh\StructType\TelephonyScreenListBlackWhiteChoiceModify
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class TelephonyScreenListBlackWhiteChoiceModify extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyScreenListBlackWhiteChoiceModify
+     * @return \Ovh\StructType\TelephonyScreenListBlackWhiteChoiceModify
      */
     public function setNumber($number = null)
     {
@@ -133,7 +133,7 @@ class TelephonyScreenListBlackWhiteChoiceModify extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyScreenListBlackWhiteChoiceModify
+     * @return \Ovh\StructType\TelephonyScreenListBlackWhiteChoiceModify
      */
     public function setCountry($country = null)
     {
@@ -155,7 +155,7 @@ class TelephonyScreenListBlackWhiteChoiceModify extends AbstractStructBase
     /**
      * Set screenList value
      * @param string $screenList
-     * @return \PayPal\StructType\TelephonyScreenListBlackWhiteChoiceModify
+     * @return \Ovh\StructType\TelephonyScreenListBlackWhiteChoiceModify
      */
     public function setScreenList($screenList = null)
     {
@@ -177,7 +177,7 @@ class TelephonyScreenListBlackWhiteChoiceModify extends AbstractStructBase
     /**
      * Set outgoingCodeUnlock value
      * @param string $outgoingCodeUnlock
-     * @return \PayPal\StructType\TelephonyScreenListBlackWhiteChoiceModify
+     * @return \Ovh\StructType\TelephonyScreenListBlackWhiteChoiceModify
      */
     public function setOutgoingCodeUnlock($outgoingCodeUnlock = null)
     {
@@ -199,7 +199,7 @@ class TelephonyScreenListBlackWhiteChoiceModify extends AbstractStructBase
     /**
      * Set incomingOoutgoing value
      * @param string $incomingOoutgoing
-     * @return \PayPal\StructType\TelephonyScreenListBlackWhiteChoiceModify
+     * @return \Ovh\StructType\TelephonyScreenListBlackWhiteChoiceModify
      */
     public function setIncomingOoutgoing($incomingOoutgoing = null)
     {
@@ -216,7 +216,7 @@ class TelephonyScreenListBlackWhiteChoiceModify extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyScreenListBlackWhiteChoiceModify
+     * @return \Ovh\StructType\TelephonyScreenListBlackWhiteChoiceModify
      */
     public static function __set_state(array $array)
     {

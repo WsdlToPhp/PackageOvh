@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class ZoneEntryAdd extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\ZoneEntryAdd
+     * @return \Ovh\StructType\ZoneEntryAdd
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class ZoneEntryAdd extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\ZoneEntryAdd
+     * @return \Ovh\StructType\ZoneEntryAdd
      */
     public function setDomain($domain = null)
     {
@@ -133,7 +133,7 @@ class ZoneEntryAdd extends AbstractStructBase
     /**
      * Set subdomain value
      * @param string $subdomain
-     * @return \PayPal\StructType\ZoneEntryAdd
+     * @return \Ovh\StructType\ZoneEntryAdd
      */
     public function setSubdomain($subdomain = null)
     {
@@ -155,7 +155,7 @@ class ZoneEntryAdd extends AbstractStructBase
     /**
      * Set fieldtype value
      * @param string $fieldtype
-     * @return \PayPal\StructType\ZoneEntryAdd
+     * @return \Ovh\StructType\ZoneEntryAdd
      */
     public function setFieldtype($fieldtype = null)
     {
@@ -177,7 +177,7 @@ class ZoneEntryAdd extends AbstractStructBase
     /**
      * Set target value
      * @param string $target
-     * @return \PayPal\StructType\ZoneEntryAdd
+     * @return \Ovh\StructType\ZoneEntryAdd
      */
     public function setTarget($target = null)
     {
@@ -199,7 +199,7 @@ class ZoneEntryAdd extends AbstractStructBase
     /**
      * Set overwrite value
      * @param bool $overwrite
-     * @return \PayPal\StructType\ZoneEntryAdd
+     * @return \Ovh\StructType\ZoneEntryAdd
      */
     public function setOverwrite($overwrite = null)
     {
@@ -216,7 +216,7 @@ class ZoneEntryAdd extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ZoneEntryAdd
+     * @return \Ovh\StructType\ZoneEntryAdd
      */
     public static function __set_state(array $array)
     {

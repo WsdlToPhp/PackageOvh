@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Nic extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\NicModifyInfos $parameters
-     * @return \PayPal\StructType\NicModifyInfosResponse|bool
+     * @param \Ovh\StructType\NicModifyInfos $parameters
+     * @return \Ovh\StructType\NicModifyInfosResponse|bool
      */
-    public function nicModifyInfos(\PayPal\StructType\NicModifyInfos $parameters)
+    public function nicModifyInfos(\Ovh\StructType\NicModifyInfos $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->nicModifyInfos($parameters));
@@ -36,10 +36,10 @@ class Nic extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\Nic $parameters
-     * @return \PayPal\StructType\NicResponse|bool
+     * @param \Ovh\StructType\Nic $parameters
+     * @return \Ovh\StructType\NicResponse|bool
      */
-    public function nic(\PayPal\StructType\Nic $parameters)
+    public function nic(\Ovh\StructType\Nic $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->nic($parameters));
@@ -55,10 +55,10 @@ class Nic extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\NicTldEligibility $parameters
-     * @return \PayPal\StructType\NicTldEligibilityResponse|bool
+     * @param \Ovh\StructType\NicTldEligibility $parameters
+     * @return \Ovh\StructType\NicTldEligibilityResponse|bool
      */
-    public function nicTldEligibility(\PayPal\StructType\NicTldEligibility $parameters)
+    public function nicTldEligibility(\Ovh\StructType\NicTldEligibility $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->nicTldEligibility($parameters));
@@ -74,10 +74,10 @@ class Nic extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\NicModifyLanguage $parameters
-     * @return \PayPal\StructType\NicModifyLanguageResponse|bool
+     * @param \Ovh\StructType\NicModifyLanguage $parameters
+     * @return \Ovh\StructType\NicModifyLanguageResponse|bool
      */
-    public function nicModifyLanguage(\PayPal\StructType\NicModifyLanguage $parameters)
+    public function nicModifyLanguage(\Ovh\StructType\NicModifyLanguage $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->nicModifyLanguage($parameters));
@@ -93,10 +93,10 @@ class Nic extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\NicCreate $parameters
-     * @return \PayPal\StructType\NicCreateResponse|bool
+     * @param \Ovh\StructType\NicCreate $parameters
+     * @return \Ovh\StructType\NicCreateResponse|bool
      */
-    public function nicCreate(\PayPal\StructType\NicCreate $parameters)
+    public function nicCreate(\Ovh\StructType\NicCreate $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->nicCreate($parameters));
@@ -112,10 +112,10 @@ class Nic extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\NicInfo $parameters
-     * @return \PayPal\StructType\NicInfoResponse|bool
+     * @param \Ovh\StructType\NicInfo $parameters
+     * @return \Ovh\StructType\NicInfoResponse|bool
      */
-    public function nicInfo(\PayPal\StructType\NicInfo $parameters)
+    public function nicInfo(\Ovh\StructType\NicInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->nicInfo($parameters));
@@ -131,10 +131,10 @@ class Nic extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\NicModifyInfosIT $parameters
-     * @return \PayPal\StructType\NicModifyInfosITResponse|bool
+     * @param \Ovh\StructType\NicModifyInfosIT $parameters
+     * @return \Ovh\StructType\NicModifyInfosITResponse|bool
      */
-    public function nicModifyInfosIT(\PayPal\StructType\NicModifyInfosIT $parameters)
+    public function nicModifyInfosIT(\Ovh\StructType\NicModifyInfosIT $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->nicModifyInfosIT($parameters));
@@ -150,10 +150,10 @@ class Nic extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\NicPublicInfo $parameters
-     * @return \PayPal\StructType\NicPublicInfoResponse|bool
+     * @param \Ovh\StructType\NicPublicInfo $parameters
+     * @return \Ovh\StructType\NicPublicInfoResponse|bool
      */
-    public function nicPublicInfo(\PayPal\StructType\NicPublicInfo $parameters)
+    public function nicPublicInfo(\Ovh\StructType\NicPublicInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->nicPublicInfo($parameters));
@@ -169,10 +169,10 @@ class Nic extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\NicCreateIT $parameters
-     * @return \PayPal\StructType\NicCreateITResponse|bool
+     * @param \Ovh\StructType\NicCreateIT $parameters
+     * @return \Ovh\StructType\NicCreateITResponse|bool
      */
-    public function nicCreateIT(\PayPal\StructType\NicCreateIT $parameters)
+    public function nicCreateIT(\Ovh\StructType\NicCreateIT $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->nicCreateIT($parameters));
@@ -188,10 +188,10 @@ class Nic extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\NicModifyEmail $parameters
-     * @return \PayPal\StructType\NicModifyEmailResponse|bool
+     * @param \Ovh\StructType\NicModifyEmail $parameters
+     * @return \Ovh\StructType\NicModifyEmailResponse|bool
      */
-    public function nicModifyEmail(\PayPal\StructType\NicModifyEmail $parameters)
+    public function nicModifyEmail(\Ovh\StructType\NicModifyEmail $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->nicModifyEmail($parameters));
@@ -207,10 +207,10 @@ class Nic extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\NicUpdateIT $parameters
-     * @return \PayPal\StructType\NicUpdateITResponse|bool
+     * @param \Ovh\StructType\NicUpdateIT $parameters
+     * @return \Ovh\StructType\NicUpdateITResponse|bool
      */
-    public function nicUpdateIT(\PayPal\StructType\NicUpdateIT $parameters)
+    public function nicUpdateIT(\Ovh\StructType\NicUpdateIT $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->nicUpdateIT($parameters));
@@ -226,10 +226,10 @@ class Nic extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\NicUpdate $parameters
-     * @return \PayPal\StructType\NicUpdateResponse|bool
+     * @param \Ovh\StructType\NicUpdate $parameters
+     * @return \Ovh\StructType\NicUpdateResponse|bool
      */
-    public function nicUpdate(\PayPal\StructType\NicUpdate $parameters)
+    public function nicUpdate(\Ovh\StructType\NicUpdate $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->nicUpdate($parameters));
@@ -242,7 +242,7 @@ class Nic extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\NicCreateITResponse|\PayPal\StructType\NicCreateResponse|\PayPal\StructType\NicInfoResponse|\PayPal\StructType\NicModifyEmailResponse|\PayPal\StructType\NicModifyInfosITResponse|\PayPal\StructType\NicModifyInfosResponse|\PayPal\StructType\NicModifyLanguageResponse|\PayPal\StructType\NicPublicInfoResponse|\PayPal\StructType\NicResponse|\PayPal\StructType\NicTldEligibilityResponse|\PayPal\StructType\NicUpdateITResponse|\PayPal\StructType\NicUpdateResponse
+     * @return \Ovh\StructType\NicCreateITResponse|\Ovh\StructType\NicCreateResponse|\Ovh\StructType\NicInfoResponse|\Ovh\StructType\NicModifyEmailResponse|\Ovh\StructType\NicModifyInfosITResponse|\Ovh\StructType\NicModifyInfosResponse|\Ovh\StructType\NicModifyLanguageResponse|\Ovh\StructType\NicPublicInfoResponse|\Ovh\StructType\NicResponse|\Ovh\StructType\NicTldEligibilityResponse|\Ovh\StructType\NicUpdateITResponse|\Ovh\StructType\NicUpdateResponse
      */
     public function getResult()
     {

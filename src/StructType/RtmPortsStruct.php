@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class RtmPortsStruct extends AbstractStructBase
 {
     /**
      * The listening
-     * @var \PayPal\ArrayType\MyArrayOfRtmPortsIfaceStructType
+     * @var \Ovh\ArrayType\MyArrayOfRtmPortsIfaceStructType
      */
     public $listening;
     /**
      * Constructor method for rtmPortsStruct
      * @uses RtmPortsStruct::setListening()
-     * @param \PayPal\ArrayType\MyArrayOfRtmPortsIfaceStructType $listening
+     * @param \Ovh\ArrayType\MyArrayOfRtmPortsIfaceStructType $listening
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfRtmPortsIfaceStructType $listening = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfRtmPortsIfaceStructType $listening = null)
     {
         $this
             ->setListening($listening);
     }
     /**
      * Get listening value
-     * @return \PayPal\ArrayType\MyArrayOfRtmPortsIfaceStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfRtmPortsIfaceStructType|null
      */
     public function getListening()
     {
@@ -36,10 +36,10 @@ class RtmPortsStruct extends AbstractStructBase
     }
     /**
      * Set listening value
-     * @param \PayPal\ArrayType\MyArrayOfRtmPortsIfaceStructType $listening
-     * @return \PayPal\StructType\RtmPortsStruct
+     * @param \Ovh\ArrayType\MyArrayOfRtmPortsIfaceStructType $listening
+     * @return \Ovh\StructType\RtmPortsStruct
      */
-    public function setListening(\PayPal\ArrayType\MyArrayOfRtmPortsIfaceStructType $listening = null)
+    public function setListening(\Ovh\ArrayType\MyArrayOfRtmPortsIfaceStructType $listening = null)
     {
         $this->listening = $listening;
         return $this;
@@ -50,7 +50,7 @@ class RtmPortsStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RtmPortsStruct
+     * @return \Ovh\StructType\RtmPortsStruct
      */
     public static function __set_state(array $array)
     {

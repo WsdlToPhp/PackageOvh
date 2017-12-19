@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfTelephonyPhonebookSharePeerStructType extends AbstractStructArray
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TelephonyPhonebookSharePeerStruct[]
+     * @var \Ovh\StructType\TelephonyPhonebookSharePeerStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTelephonyPhonebookSharePeerStructType
      * @uses MyArrayOfTelephonyPhonebookSharePeerStructType::setItem()
-     * @param \PayPal\StructType\TelephonyPhonebookSharePeerStruct[] $item
+     * @param \Ovh\StructType\TelephonyPhonebookSharePeerStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfTelephonyPhonebookSharePeerStructType extends AbstractStructArray
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TelephonyPhonebookSharePeerStruct[]|null
+     * @return \Ovh\StructType\TelephonyPhonebookSharePeerStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfTelephonyPhonebookSharePeerStructType extends AbstractStructArray
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyPhonebookSharePeerStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyPhonebookSharePeerStructType
+     * @param \Ovh\StructType\TelephonyPhonebookSharePeerStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyPhonebookSharePeerStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTelephonyPhonebookSharePeerStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTelephonyPhonebookSharePeerStructTypeItemItem instanceof \PayPal\StructType\TelephonyPhonebookSharePeerStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyPhonebookSharePeerStruct, "%s" given', is_object($myArrayOfTelephonyPhonebookSharePeerStructTypeItemItem) ? get_class($myArrayOfTelephonyPhonebookSharePeerStructTypeItemItem) : gettype($myArrayOfTelephonyPhonebookSharePeerStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTelephonyPhonebookSharePeerStructTypeItemItem instanceof \Ovh\StructType\TelephonyPhonebookSharePeerStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyPhonebookSharePeerStruct, "%s" given', is_object($myArrayOfTelephonyPhonebookSharePeerStructTypeItemItem) ? get_class($myArrayOfTelephonyPhonebookSharePeerStructTypeItemItem) : gettype($myArrayOfTelephonyPhonebookSharePeerStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfTelephonyPhonebookSharePeerStructType extends AbstractStructArray
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyPhonebookSharePeerStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyPhonebookSharePeerStructType
+     * @param \Ovh\StructType\TelephonyPhonebookSharePeerStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyPhonebookSharePeerStructType
      */
-    public function addToItem(\PayPal\StructType\TelephonyPhonebookSharePeerStruct $item)
+    public function addToItem(\Ovh\StructType\TelephonyPhonebookSharePeerStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TelephonyPhonebookSharePeerStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyPhonebookSharePeerStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TelephonyPhonebookSharePeerStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyPhonebookSharePeerStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfTelephonyPhonebookSharePeerStructType extends AbstractStructArray
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonyPhonebookSharePeerStruct|null
+     * @return \Ovh\StructType\TelephonyPhonebookSharePeerStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfTelephonyPhonebookSharePeerStructType extends AbstractStructArray
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonyPhonebookSharePeerStruct|null
+     * @return \Ovh\StructType\TelephonyPhonebookSharePeerStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfTelephonyPhonebookSharePeerStructType extends AbstractStructArray
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonyPhonebookSharePeerStruct|null
+     * @return \Ovh\StructType\TelephonyPhonebookSharePeerStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfTelephonyPhonebookSharePeerStructType extends AbstractStructArray
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonyPhonebookSharePeerStruct|null
+     * @return \Ovh\StructType\TelephonyPhonebookSharePeerStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfTelephonyPhonebookSharePeerStructType extends AbstractStructArray
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonyPhonebookSharePeerStruct|null
+     * @return \Ovh\StructType\TelephonyPhonebookSharePeerStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfTelephonyPhonebookSharePeerStructType extends AbstractStructArray
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyPhonebookSharePeerStructType
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyPhonebookSharePeerStructType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -77,7 +77,7 @@ class SqlpriveStruct extends AbstractStructBase
     /**
      * Set server value
      * @param string $server
-     * @return \PayPal\StructType\SqlpriveStruct
+     * @return \Ovh\StructType\SqlpriveStruct
      */
     public function setServer($server = null)
     {
@@ -99,7 +99,7 @@ class SqlpriveStruct extends AbstractStructBase
     /**
      * Set expiration value
      * @param string $expiration
-     * @return \PayPal\StructType\SqlpriveStruct
+     * @return \Ovh\StructType\SqlpriveStruct
      */
     public function setExpiration($expiration = null)
     {
@@ -121,7 +121,7 @@ class SqlpriveStruct extends AbstractStructBase
     /**
      * Set memory value
      * @param string $memory
-     * @return \PayPal\StructType\SqlpriveStruct
+     * @return \Ovh\StructType\SqlpriveStruct
      */
     public function setMemory($memory = null)
     {
@@ -143,7 +143,7 @@ class SqlpriveStruct extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\SqlpriveStruct
+     * @return \Ovh\StructType\SqlpriveStruct
      */
     public function setIp($ip = null)
     {
@@ -165,7 +165,7 @@ class SqlpriveStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\SqlpriveStruct
+     * @return \Ovh\StructType\SqlpriveStruct
      */
     public function setType($type = null)
     {
@@ -187,7 +187,7 @@ class SqlpriveStruct extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \PayPal\StructType\SqlpriveStruct
+     * @return \Ovh\StructType\SqlpriveStruct
      */
     public function setVersion($version = null)
     {
@@ -204,7 +204,7 @@ class SqlpriveStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SqlpriveStruct
+     * @return \Ovh\StructType\SqlpriveStruct
      */
     public static function __set_state(array $array)
     {

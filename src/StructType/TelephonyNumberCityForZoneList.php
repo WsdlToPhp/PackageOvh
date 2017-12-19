@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,7 +49,7 @@ class TelephonyNumberCityForZoneList extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyNumberCityForZoneList
+     * @return \Ovh\StructType\TelephonyNumberCityForZoneList
      */
     public function setSession($session = null)
     {
@@ -71,7 +71,7 @@ class TelephonyNumberCityForZoneList extends AbstractStructBase
     /**
      * Set zone value
      * @param string $zone
-     * @return \PayPal\StructType\TelephonyNumberCityForZoneList
+     * @return \Ovh\StructType\TelephonyNumberCityForZoneList
      */
     public function setZone($zone = null)
     {
@@ -88,7 +88,7 @@ class TelephonyNumberCityForZoneList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyNumberCityForZoneList
+     * @return \Ovh\StructType\TelephonyNumberCityForZoneList
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class EmailFilterRuleDel extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\EmailFilterRuleDel
+     * @return \Ovh\StructType\EmailFilterRuleDel
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class EmailFilterRuleDel extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\EmailFilterRuleDel
+     * @return \Ovh\StructType\EmailFilterRuleDel
      */
     public function setDomain($domain = null)
     {
@@ -123,7 +123,7 @@ class EmailFilterRuleDel extends AbstractStructBase
     /**
      * Set pop value
      * @param string $pop
-     * @return \PayPal\StructType\EmailFilterRuleDel
+     * @return \Ovh\StructType\EmailFilterRuleDel
      */
     public function setPop($pop = null)
     {
@@ -145,7 +145,7 @@ class EmailFilterRuleDel extends AbstractStructBase
     /**
      * Set filter value
      * @param string $filter
-     * @return \PayPal\StructType\EmailFilterRuleDel
+     * @return \Ovh\StructType\EmailFilterRuleDel
      */
     public function setFilter($filter = null)
     {
@@ -167,7 +167,7 @@ class EmailFilterRuleDel extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\EmailFilterRuleDel
+     * @return \Ovh\StructType\EmailFilterRuleDel
      */
     public function setId($id = null)
     {
@@ -184,7 +184,7 @@ class EmailFilterRuleDel extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\EmailFilterRuleDel
+     * @return \Ovh\StructType\EmailFilterRuleDel
      */
     public static function __set_state(array $array)
     {

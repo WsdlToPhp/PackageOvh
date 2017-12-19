@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,7 +38,7 @@ class ManagedServicesPartitionStruct extends AbstractStructBase
     public $state;
     /**
      * The accessList
-     * @var \PayPal\ArrayType\MyArrayOfManagedServicesAclStructType
+     * @var \Ovh\ArrayType\MyArrayOfManagedServicesAclStructType
      */
     public $accessList;
     /**
@@ -54,9 +54,9 @@ class ManagedServicesPartitionStruct extends AbstractStructBase
      * @param string $size
      * @param string $used
      * @param string $state
-     * @param \PayPal\ArrayType\MyArrayOfManagedServicesAclStructType $accessList
+     * @param \Ovh\ArrayType\MyArrayOfManagedServicesAclStructType $accessList
      */
-    public function __construct($idZfs = null, $name = null, $size = null, $used = null, $state = null, \PayPal\ArrayType\MyArrayOfManagedServicesAclStructType $accessList = null)
+    public function __construct($idZfs = null, $name = null, $size = null, $used = null, $state = null, \Ovh\ArrayType\MyArrayOfManagedServicesAclStructType $accessList = null)
     {
         $this
             ->setIdZfs($idZfs)
@@ -77,7 +77,7 @@ class ManagedServicesPartitionStruct extends AbstractStructBase
     /**
      * Set idZfs value
      * @param string $idZfs
-     * @return \PayPal\StructType\ManagedServicesPartitionStruct
+     * @return \Ovh\StructType\ManagedServicesPartitionStruct
      */
     public function setIdZfs($idZfs = null)
     {
@@ -99,7 +99,7 @@ class ManagedServicesPartitionStruct extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\ManagedServicesPartitionStruct
+     * @return \Ovh\StructType\ManagedServicesPartitionStruct
      */
     public function setName($name = null)
     {
@@ -121,7 +121,7 @@ class ManagedServicesPartitionStruct extends AbstractStructBase
     /**
      * Set size value
      * @param string $size
-     * @return \PayPal\StructType\ManagedServicesPartitionStruct
+     * @return \Ovh\StructType\ManagedServicesPartitionStruct
      */
     public function setSize($size = null)
     {
@@ -143,7 +143,7 @@ class ManagedServicesPartitionStruct extends AbstractStructBase
     /**
      * Set used value
      * @param string $used
-     * @return \PayPal\StructType\ManagedServicesPartitionStruct
+     * @return \Ovh\StructType\ManagedServicesPartitionStruct
      */
     public function setUsed($used = null)
     {
@@ -165,7 +165,7 @@ class ManagedServicesPartitionStruct extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \PayPal\StructType\ManagedServicesPartitionStruct
+     * @return \Ovh\StructType\ManagedServicesPartitionStruct
      */
     public function setState($state = null)
     {
@@ -178,7 +178,7 @@ class ManagedServicesPartitionStruct extends AbstractStructBase
     }
     /**
      * Get accessList value
-     * @return \PayPal\ArrayType\MyArrayOfManagedServicesAclStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfManagedServicesAclStructType|null
      */
     public function getAccessList()
     {
@@ -186,10 +186,10 @@ class ManagedServicesPartitionStruct extends AbstractStructBase
     }
     /**
      * Set accessList value
-     * @param \PayPal\ArrayType\MyArrayOfManagedServicesAclStructType $accessList
-     * @return \PayPal\StructType\ManagedServicesPartitionStruct
+     * @param \Ovh\ArrayType\MyArrayOfManagedServicesAclStructType $accessList
+     * @return \Ovh\StructType\ManagedServicesPartitionStruct
      */
-    public function setAccessList(\PayPal\ArrayType\MyArrayOfManagedServicesAclStructType $accessList = null)
+    public function setAccessList(\Ovh\ArrayType\MyArrayOfManagedServicesAclStructType $accessList = null)
     {
         $this->accessList = $accessList;
         return $this;
@@ -200,7 +200,7 @@ class ManagedServicesPartitionStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ManagedServicesPartitionStruct
+     * @return \Ovh\StructType\ManagedServicesPartitionStruct
      */
     public static function __set_state(array $array)
     {

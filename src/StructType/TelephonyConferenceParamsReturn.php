@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -109,7 +109,7 @@ class TelephonyConferenceParamsReturn extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyConferenceParamsReturn
+     * @return \Ovh\StructType\TelephonyConferenceParamsReturn
      */
     public function setNumber($number = null)
     {
@@ -131,7 +131,7 @@ class TelephonyConferenceParamsReturn extends AbstractStructBase
     /**
      * Set lang value
      * @param string $lang
-     * @return \PayPal\StructType\TelephonyConferenceParamsReturn
+     * @return \Ovh\StructType\TelephonyConferenceParamsReturn
      */
     public function setLang($lang = null)
     {
@@ -153,7 +153,7 @@ class TelephonyConferenceParamsReturn extends AbstractStructBase
     /**
      * Set pin value
      * @param int $pin
-     * @return \PayPal\StructType\TelephonyConferenceParamsReturn
+     * @return \Ovh\StructType\TelephonyConferenceParamsReturn
      */
     public function setPin($pin = null)
     {
@@ -175,7 +175,7 @@ class TelephonyConferenceParamsReturn extends AbstractStructBase
     /**
      * Set enterMuted value
      * @param bool $enterMuted
-     * @return \PayPal\StructType\TelephonyConferenceParamsReturn
+     * @return \Ovh\StructType\TelephonyConferenceParamsReturn
      */
     public function setEnterMuted($enterMuted = null)
     {
@@ -197,7 +197,7 @@ class TelephonyConferenceParamsReturn extends AbstractStructBase
     /**
      * Set announceStatus value
      * @param bool $announceStatus
-     * @return \PayPal\StructType\TelephonyConferenceParamsReturn
+     * @return \Ovh\StructType\TelephonyConferenceParamsReturn
      */
     public function setAnnounceStatus($announceStatus = null)
     {
@@ -219,7 +219,7 @@ class TelephonyConferenceParamsReturn extends AbstractStructBase
     /**
      * Set announceFilename value
      * @param string $announceFilename
-     * @return \PayPal\StructType\TelephonyConferenceParamsReturn
+     * @return \Ovh\StructType\TelephonyConferenceParamsReturn
      */
     public function setAnnounceFilename($announceFilename = null)
     {
@@ -241,7 +241,7 @@ class TelephonyConferenceParamsReturn extends AbstractStructBase
     /**
      * Set recordStatus value
      * @param bool $recordStatus
-     * @return \PayPal\StructType\TelephonyConferenceParamsReturn
+     * @return \Ovh\StructType\TelephonyConferenceParamsReturn
      */
     public function setRecordStatus($recordStatus = null)
     {
@@ -263,7 +263,7 @@ class TelephonyConferenceParamsReturn extends AbstractStructBase
     /**
      * Set reportStatus value
      * @param string $reportStatus
-     * @return \PayPal\StructType\TelephonyConferenceParamsReturn
+     * @return \Ovh\StructType\TelephonyConferenceParamsReturn
      */
     public function setReportStatus($reportStatus = null)
     {
@@ -285,7 +285,7 @@ class TelephonyConferenceParamsReturn extends AbstractStructBase
     /**
      * Set reportMail value
      * @param string $reportMail
-     * @return \PayPal\StructType\TelephonyConferenceParamsReturn
+     * @return \Ovh\StructType\TelephonyConferenceParamsReturn
      */
     public function setReportMail($reportMail = null)
     {
@@ -307,7 +307,7 @@ class TelephonyConferenceParamsReturn extends AbstractStructBase
     /**
      * Set eventsHash value
      * @param string $eventsHash
-     * @return \PayPal\StructType\TelephonyConferenceParamsReturn
+     * @return \Ovh\StructType\TelephonyConferenceParamsReturn
      */
     public function setEventsHash($eventsHash = null)
     {
@@ -324,7 +324,7 @@ class TelephonyConferenceParamsReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyConferenceParamsReturn
+     * @return \Ovh\StructType\TelephonyConferenceParamsReturn
      */
     public static function __set_state(array $array)
     {

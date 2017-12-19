@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class DedicatedIPForUDPMoveGetStatus extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedIPForUDPMoveGetStatus
+     * @return \Ovh\StructType\DedicatedIPForUDPMoveGetStatus
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class DedicatedIPForUDPMoveGetStatus extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedIPForUDPMoveGetStatus
+     * @return \Ovh\StructType\DedicatedIPForUDPMoveGetStatus
      */
     public function setHostname($hostname = null)
     {
@@ -103,7 +103,7 @@ class DedicatedIPForUDPMoveGetStatus extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\DedicatedIPForUDPMoveGetStatus
+     * @return \Ovh\StructType\DedicatedIPForUDPMoveGetStatus
      */
     public function setIp($ip = null)
     {
@@ -120,7 +120,7 @@ class DedicatedIPForUDPMoveGetStatus extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedIPForUDPMoveGetStatus
+     * @return \Ovh\StructType\DedicatedIPForUDPMoveGetStatus
      */
     public static function __set_state(array $array)
     {

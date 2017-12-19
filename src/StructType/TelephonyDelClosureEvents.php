@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -43,7 +43,7 @@ class TelephonyDelClosureEvents extends AbstractStructBase
      * The uids
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $uids;
     /**
@@ -57,9 +57,9 @@ class TelephonyDelClosureEvents extends AbstractStructBase
      * @param string $number
      * @param string $country
      * @param int $deleteAll
-     * @param \PayPal\ArrayType\MyArrayOfStringType $uids
+     * @param \Ovh\ArrayType\MyArrayOfStringType $uids
      */
-    public function __construct($session = null, $number = null, $country = null, $deleteAll = null, \PayPal\ArrayType\MyArrayOfStringType $uids = null)
+    public function __construct($session = null, $number = null, $country = null, $deleteAll = null, \Ovh\ArrayType\MyArrayOfStringType $uids = null)
     {
         $this
             ->setSession($session)
@@ -79,7 +79,7 @@ class TelephonyDelClosureEvents extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyDelClosureEvents
+     * @return \Ovh\StructType\TelephonyDelClosureEvents
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class TelephonyDelClosureEvents extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyDelClosureEvents
+     * @return \Ovh\StructType\TelephonyDelClosureEvents
      */
     public function setNumber($number = null)
     {
@@ -123,7 +123,7 @@ class TelephonyDelClosureEvents extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyDelClosureEvents
+     * @return \Ovh\StructType\TelephonyDelClosureEvents
      */
     public function setCountry($country = null)
     {
@@ -145,7 +145,7 @@ class TelephonyDelClosureEvents extends AbstractStructBase
     /**
      * Set deleteAll value
      * @param int $deleteAll
-     * @return \PayPal\StructType\TelephonyDelClosureEvents
+     * @return \Ovh\StructType\TelephonyDelClosureEvents
      */
     public function setDeleteAll($deleteAll = null)
     {
@@ -158,7 +158,7 @@ class TelephonyDelClosureEvents extends AbstractStructBase
     }
     /**
      * Get uids value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getUids()
     {
@@ -166,10 +166,10 @@ class TelephonyDelClosureEvents extends AbstractStructBase
     }
     /**
      * Set uids value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $uids
-     * @return \PayPal\StructType\TelephonyDelClosureEvents
+     * @param \Ovh\ArrayType\MyArrayOfStringType $uids
+     * @return \Ovh\StructType\TelephonyDelClosureEvents
      */
-    public function setUids(\PayPal\ArrayType\MyArrayOfStringType $uids = null)
+    public function setUids(\Ovh\ArrayType\MyArrayOfStringType $uids = null)
     {
         $this->uids = $uids;
         return $this;
@@ -180,7 +180,7 @@ class TelephonyDelClosureEvents extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyDelClosureEvents
+     * @return \Ovh\StructType\TelephonyDelClosureEvents
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class DedicatedFreedomStruct extends AbstractStructBase
     /**
      * Set remaining value
      * @param int $remaining
-     * @return \PayPal\StructType\DedicatedFreedomStruct
+     * @return \Ovh\StructType\DedicatedFreedomStruct
      */
     public function setRemaining($remaining = null)
     {
@@ -83,7 +83,7 @@ class DedicatedFreedomStruct extends AbstractStructBase
     /**
      * Set assigned value
      * @param int $assigned
-     * @return \PayPal\StructType\DedicatedFreedomStruct
+     * @return \Ovh\StructType\DedicatedFreedomStruct
      */
     public function setAssigned($assigned = null)
     {
@@ -105,7 +105,7 @@ class DedicatedFreedomStruct extends AbstractStructBase
     /**
      * Set total value
      * @param int $total
-     * @return \PayPal\StructType\DedicatedFreedomStruct
+     * @return \Ovh\StructType\DedicatedFreedomStruct
      */
     public function setTotal($total = null)
     {
@@ -127,7 +127,7 @@ class DedicatedFreedomStruct extends AbstractStructBase
     /**
      * Set preset value
      * @param int $preset
-     * @return \PayPal\StructType\DedicatedFreedomStruct
+     * @return \Ovh\StructType\DedicatedFreedomStruct
      */
     public function setPreset($preset = null)
     {
@@ -144,7 +144,7 @@ class DedicatedFreedomStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedFreedomStruct
+     * @return \Ovh\StructType\DedicatedFreedomStruct
      */
     public static function __set_state(array $array)
     {

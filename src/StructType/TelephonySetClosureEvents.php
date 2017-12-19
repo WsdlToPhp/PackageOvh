@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class TelephonySetClosureEvents extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonySetClosureEvents
+     * @return \Ovh\StructType\TelephonySetClosureEvents
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class TelephonySetClosureEvents extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonySetClosureEvents
+     * @return \Ovh\StructType\TelephonySetClosureEvents
      */
     public function setNumber($number = null)
     {
@@ -113,7 +113,7 @@ class TelephonySetClosureEvents extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonySetClosureEvents
+     * @return \Ovh\StructType\TelephonySetClosureEvents
      */
     public function setCountry($country = null)
     {
@@ -135,7 +135,7 @@ class TelephonySetClosureEvents extends AbstractStructBase
     /**
      * Set events value
      * @param string $events
-     * @return \PayPal\StructType\TelephonySetClosureEvents
+     * @return \Ovh\StructType\TelephonySetClosureEvents
      */
     public function setEvents($events = null)
     {
@@ -152,7 +152,7 @@ class TelephonySetClosureEvents extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySetClosureEvents
+     * @return \Ovh\StructType\TelephonySetClosureEvents
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfBillingInvoiceDetailStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\BillingInvoiceDetailStruct[]
+     * @var \Ovh\StructType\BillingInvoiceDetailStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfBillingInvoiceDetailStructType
      * @uses MyArrayOfBillingInvoiceDetailStructType::setItem()
-     * @param \PayPal\StructType\BillingInvoiceDetailStruct[] $item
+     * @param \Ovh\StructType\BillingInvoiceDetailStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfBillingInvoiceDetailStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\BillingInvoiceDetailStruct[]|null
+     * @return \Ovh\StructType\BillingInvoiceDetailStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfBillingInvoiceDetailStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\BillingInvoiceDetailStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfBillingInvoiceDetailStructType
+     * @param \Ovh\StructType\BillingInvoiceDetailStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfBillingInvoiceDetailStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfBillingInvoiceDetailStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfBillingInvoiceDetailStructTypeItemItem instanceof \PayPal\StructType\BillingInvoiceDetailStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\BillingInvoiceDetailStruct, "%s" given', is_object($myArrayOfBillingInvoiceDetailStructTypeItemItem) ? get_class($myArrayOfBillingInvoiceDetailStructTypeItemItem) : gettype($myArrayOfBillingInvoiceDetailStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfBillingInvoiceDetailStructTypeItemItem instanceof \Ovh\StructType\BillingInvoiceDetailStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\BillingInvoiceDetailStruct, "%s" given', is_object($myArrayOfBillingInvoiceDetailStructTypeItemItem) ? get_class($myArrayOfBillingInvoiceDetailStructTypeItemItem) : gettype($myArrayOfBillingInvoiceDetailStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfBillingInvoiceDetailStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\BillingInvoiceDetailStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfBillingInvoiceDetailStructType
+     * @param \Ovh\StructType\BillingInvoiceDetailStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfBillingInvoiceDetailStructType
      */
-    public function addToItem(\PayPal\StructType\BillingInvoiceDetailStruct $item)
+    public function addToItem(\Ovh\StructType\BillingInvoiceDetailStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\BillingInvoiceDetailStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\BillingInvoiceDetailStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\BillingInvoiceDetailStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\BillingInvoiceDetailStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfBillingInvoiceDetailStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\BillingInvoiceDetailStruct|null
+     * @return \Ovh\StructType\BillingInvoiceDetailStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfBillingInvoiceDetailStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\BillingInvoiceDetailStruct|null
+     * @return \Ovh\StructType\BillingInvoiceDetailStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfBillingInvoiceDetailStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\BillingInvoiceDetailStruct|null
+     * @return \Ovh\StructType\BillingInvoiceDetailStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfBillingInvoiceDetailStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\BillingInvoiceDetailStruct|null
+     * @return \Ovh\StructType\BillingInvoiceDetailStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfBillingInvoiceDetailStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\BillingInvoiceDetailStruct|null
+     * @return \Ovh\StructType\BillingInvoiceDetailStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfBillingInvoiceDetailStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfBillingInvoiceDetailStructType
+     * @return \Ovh\ArrayType\MyArrayOfBillingInvoiceDetailStructType
      */
     public static function __set_state(array $array)
     {

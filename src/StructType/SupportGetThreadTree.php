@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,7 +49,7 @@ class SupportGetThreadTree extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\SupportGetThreadTree
+     * @return \Ovh\StructType\SupportGetThreadTree
      */
     public function setSession($session = null)
     {
@@ -71,7 +71,7 @@ class SupportGetThreadTree extends AbstractStructBase
     /**
      * Set threadId value
      * @param int $threadId
-     * @return \PayPal\StructType\SupportGetThreadTree
+     * @return \Ovh\StructType\SupportGetThreadTree
      */
     public function setThreadId($threadId = null)
     {
@@ -88,7 +88,7 @@ class SupportGetThreadTree extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SupportGetThreadTree
+     * @return \Ovh\StructType\SupportGetThreadTree
      */
     public static function __set_state(array $array)
     {

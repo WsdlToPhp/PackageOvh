@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class TelephonyDepositMovementModify extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyDepositMovementModify
+     * @return \Ovh\StructType\TelephonyDepositMovementModify
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class TelephonyDepositMovementModify extends AbstractStructBase
     /**
      * Set billingAccountSource value
      * @param string $billingAccountSource
-     * @return \PayPal\StructType\TelephonyDepositMovementModify
+     * @return \Ovh\StructType\TelephonyDepositMovementModify
      */
     public function setBillingAccountSource($billingAccountSource = null)
     {
@@ -113,7 +113,7 @@ class TelephonyDepositMovementModify extends AbstractStructBase
     /**
      * Set billingAccountDestination value
      * @param string $billingAccountDestination
-     * @return \PayPal\StructType\TelephonyDepositMovementModify
+     * @return \Ovh\StructType\TelephonyDepositMovementModify
      */
     public function setBillingAccountDestination($billingAccountDestination = null)
     {
@@ -135,7 +135,7 @@ class TelephonyDepositMovementModify extends AbstractStructBase
     /**
      * Set amount value
      * @param int $amount
-     * @return \PayPal\StructType\TelephonyDepositMovementModify
+     * @return \Ovh\StructType\TelephonyDepositMovementModify
      */
     public function setAmount($amount = null)
     {
@@ -152,7 +152,7 @@ class TelephonyDepositMovementModify extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyDepositMovementModify
+     * @return \Ovh\StructType\TelephonyDepositMovementModify
      */
     public static function __set_state(array $array)
     {

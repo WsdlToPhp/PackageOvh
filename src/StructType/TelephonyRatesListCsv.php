@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class TelephonyRatesListCsv extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyRatesListCsv
+     * @return \Ovh\StructType\TelephonyRatesListCsv
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class TelephonyRatesListCsv extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \PayPal\StructType\TelephonyRatesListCsv
+     * @return \Ovh\StructType\TelephonyRatesListCsv
      */
     public function setCountryCode($countryCode = null)
     {
@@ -103,7 +103,7 @@ class TelephonyRatesListCsv extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\TelephonyRatesListCsv
+     * @return \Ovh\StructType\TelephonyRatesListCsv
      */
     public function setType($type = null)
     {
@@ -120,7 +120,7 @@ class TelephonyRatesListCsv extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyRatesListCsv
+     * @return \Ovh\StructType\TelephonyRatesListCsv
      */
     public static function __set_state(array $array)
     {

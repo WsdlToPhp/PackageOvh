@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,7 +49,7 @@ class DedicatedMonitoringStatusGet extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedMonitoringStatusGet
+     * @return \Ovh\StructType\DedicatedMonitoringStatusGet
      */
     public function setSession($session = null)
     {
@@ -71,7 +71,7 @@ class DedicatedMonitoringStatusGet extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedMonitoringStatusGet
+     * @return \Ovh\StructType\DedicatedMonitoringStatusGet
      */
     public function setHostname($hostname = null)
     {
@@ -88,7 +88,7 @@ class DedicatedMonitoringStatusGet extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedMonitoringStatusGet
+     * @return \Ovh\StructType\DedicatedMonitoringStatusGet
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -289,7 +289,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setSession($session = null)
     {
@@ -311,7 +311,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set callNumber value
      * @param string $callNumber
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setCallNumber($callNumber = null)
     {
@@ -333,7 +333,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setCountryCode($countryCode = null)
     {
@@ -355,7 +355,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setName($name = null)
     {
@@ -377,7 +377,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set firstName value
      * @param string $firstName
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setFirstName($firstName = null)
     {
@@ -399,7 +399,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set wayNumber value
      * @param string $wayNumber
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setWayNumber($wayNumber = null)
     {
@@ -421,7 +421,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set wayNumberExtra value
      * @param string $wayNumberExtra
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setWayNumberExtra($wayNumberExtra = null)
     {
@@ -443,7 +443,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set wayType value
      * @param string $wayType
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setWayType($wayType = null)
     {
@@ -465,7 +465,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set wayName value
      * @param string $wayName
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setWayName($wayName = null)
     {
@@ -487,7 +487,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set addressExtra value
      * @param string $addressExtra
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setAddressExtra($addressExtra = null)
     {
@@ -509,7 +509,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set urbanDistrict value
      * @param string $urbanDistrict
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setUrbanDistrict($urbanDistrict = null)
     {
@@ -531,7 +531,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set postBox value
      * @param string $postBox
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setPostBox($postBox = null)
     {
@@ -553,7 +553,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set cedex value
      * @param string $cedex
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setCedex($cedex = null)
     {
@@ -575,7 +575,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set postCode value
      * @param string $postCode
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setPostCode($postCode = null)
     {
@@ -597,7 +597,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setCity($city = null)
     {
@@ -619,7 +619,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setCountry($country = null)
     {
@@ -641,7 +641,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setEmail($email = null)
     {
@@ -663,7 +663,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set legalForm value
      * @param string $legalForm
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setLegalForm($legalForm = null)
     {
@@ -685,7 +685,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set socialNomination value
      * @param string $socialNomination
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setSocialNomination($socialNomination = null)
     {
@@ -707,7 +707,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set PJSocialNomination value
      * @param string $pJSocialNomination
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setPJSocialNomination($pJSocialNomination = null)
     {
@@ -729,7 +729,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set socialNominationExtra value
      * @param string $socialNominationExtra
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setSocialNominationExtra($socialNominationExtra = null)
     {
@@ -751,7 +751,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set occupation value
      * @param string $occupation
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setOccupation($occupation = null)
     {
@@ -773,7 +773,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set siret value
      * @param string $siret
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setSiret($siret = null)
     {
@@ -795,7 +795,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set ape value
      * @param string $ape
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setApe($ape = null)
     {
@@ -817,7 +817,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set PJCode value
      * @param string $pJCode
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setPJCode($pJCode = null)
     {
@@ -839,7 +839,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
     /**
      * Set address value
      * @param string $address
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public function setAddress($address = null)
     {
@@ -856,7 +856,7 @@ class TelephonyDirectoryModifyAddress extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddress
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddress
      */
     public static function __set_state(array $array)
     {

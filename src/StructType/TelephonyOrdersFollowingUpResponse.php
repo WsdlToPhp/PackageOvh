@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyOrdersFollowingUpResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfOrderFollowingUpStructType
+     * @var \Ovh\ArrayType\MyArrayOfOrderFollowingUpStructType
      */
     public $return;
     /**
      * Constructor method for telephonyOrdersFollowingUpResponse
      * @uses TelephonyOrdersFollowingUpResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfOrderFollowingUpStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfOrderFollowingUpStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfOrderFollowingUpStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfOrderFollowingUpStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfOrderFollowingUpStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfOrderFollowingUpStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyOrdersFollowingUpResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfOrderFollowingUpStructType $return
-     * @return \PayPal\StructType\TelephonyOrdersFollowingUpResponse
+     * @param \Ovh\ArrayType\MyArrayOfOrderFollowingUpStructType $return
+     * @return \Ovh\StructType\TelephonyOrdersFollowingUpResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfOrderFollowingUpStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfOrderFollowingUpStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyOrdersFollowingUpResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyOrdersFollowingUpResponse
+     * @return \Ovh\StructType\TelephonyOrdersFollowingUpResponse
      */
     public static function __set_state(array $array)
     {

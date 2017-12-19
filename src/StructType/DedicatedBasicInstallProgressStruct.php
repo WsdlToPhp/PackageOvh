@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class DedicatedBasicInstallProgressStruct extends AbstractStructBase
     /**
      * Set step value
      * @param int $step
-     * @return \PayPal\StructType\DedicatedBasicInstallProgressStruct
+     * @return \Ovh\StructType\DedicatedBasicInstallProgressStruct
      */
     public function setStep($step = null)
     {
@@ -91,7 +91,7 @@ class DedicatedBasicInstallProgressStruct extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \PayPal\StructType\DedicatedBasicInstallProgressStruct
+     * @return \Ovh\StructType\DedicatedBasicInstallProgressStruct
      */
     public function setComment($comment = null)
     {
@@ -113,7 +113,7 @@ class DedicatedBasicInstallProgressStruct extends AbstractStructBase
     /**
      * Set time value
      * @param string $time
-     * @return \PayPal\StructType\DedicatedBasicInstallProgressStruct
+     * @return \Ovh\StructType\DedicatedBasicInstallProgressStruct
      */
     public function setTime($time = null)
     {
@@ -135,7 +135,7 @@ class DedicatedBasicInstallProgressStruct extends AbstractStructBase
     /**
      * Set error value
      * @param string $error
-     * @return \PayPal\StructType\DedicatedBasicInstallProgressStruct
+     * @return \Ovh\StructType\DedicatedBasicInstallProgressStruct
      */
     public function setError($error = null)
     {
@@ -157,7 +157,7 @@ class DedicatedBasicInstallProgressStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\DedicatedBasicInstallProgressStruct
+     * @return \Ovh\StructType\DedicatedBasicInstallProgressStruct
      */
     public function setStatus($status = null)
     {
@@ -174,7 +174,7 @@ class DedicatedBasicInstallProgressStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedBasicInstallProgressStruct
+     * @return \Ovh\StructType\DedicatedBasicInstallProgressStruct
      */
     public static function __set_state(array $array)
     {

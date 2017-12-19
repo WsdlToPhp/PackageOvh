@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -17,13 +17,13 @@ class MyArrayOfTelephonyConferenceParticipantStructType extends AbstractStructAr
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TelephonyConferenceParticipantStruct[]
+     * @var \Ovh\StructType\TelephonyConferenceParticipantStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTelephonyConferenceParticipantStructType
      * @uses MyArrayOfTelephonyConferenceParticipantStructType::setItem()
-     * @param \PayPal\StructType\TelephonyConferenceParticipantStruct[] $item
+     * @param \Ovh\StructType\TelephonyConferenceParticipantStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -32,7 +32,7 @@ class MyArrayOfTelephonyConferenceParticipantStructType extends AbstractStructAr
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TelephonyConferenceParticipantStruct[]|null
+     * @return \Ovh\StructType\TelephonyConferenceParticipantStruct[]|null
      */
     public function getItem()
     {
@@ -41,15 +41,15 @@ class MyArrayOfTelephonyConferenceParticipantStructType extends AbstractStructAr
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyConferenceParticipantStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyConferenceParticipantStructType
+     * @param \Ovh\StructType\TelephonyConferenceParticipantStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyConferenceParticipantStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTelephonyConferenceParticipantStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTelephonyConferenceParticipantStructTypeItemItem instanceof \PayPal\StructType\TelephonyConferenceParticipantStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyConferenceParticipantStruct, "%s" given', is_object($myArrayOfTelephonyConferenceParticipantStructTypeItemItem) ? get_class($myArrayOfTelephonyConferenceParticipantStructTypeItemItem) : gettype($myArrayOfTelephonyConferenceParticipantStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTelephonyConferenceParticipantStructTypeItemItem instanceof \Ovh\StructType\TelephonyConferenceParticipantStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyConferenceParticipantStruct, "%s" given', is_object($myArrayOfTelephonyConferenceParticipantStructTypeItemItem) ? get_class($myArrayOfTelephonyConferenceParticipantStructTypeItemItem) : gettype($myArrayOfTelephonyConferenceParticipantStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -58,14 +58,14 @@ class MyArrayOfTelephonyConferenceParticipantStructType extends AbstractStructAr
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyConferenceParticipantStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyConferenceParticipantStructType
+     * @param \Ovh\StructType\TelephonyConferenceParticipantStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyConferenceParticipantStructType
      */
-    public function addToItem(\PayPal\StructType\TelephonyConferenceParticipantStruct $item)
+    public function addToItem(\Ovh\StructType\TelephonyConferenceParticipantStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TelephonyConferenceParticipantStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyConferenceParticipantStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TelephonyConferenceParticipantStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyConferenceParticipantStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class MyArrayOfTelephonyConferenceParticipantStructType extends AbstractStructAr
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonyConferenceParticipantStruct|null
+     * @return \Ovh\StructType\TelephonyConferenceParticipantStruct|null
      */
     public function current()
     {
@@ -83,7 +83,7 @@ class MyArrayOfTelephonyConferenceParticipantStructType extends AbstractStructAr
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonyConferenceParticipantStruct|null
+     * @return \Ovh\StructType\TelephonyConferenceParticipantStruct|null
      */
     public function item($index)
     {
@@ -92,7 +92,7 @@ class MyArrayOfTelephonyConferenceParticipantStructType extends AbstractStructAr
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonyConferenceParticipantStruct|null
+     * @return \Ovh\StructType\TelephonyConferenceParticipantStruct|null
      */
     public function first()
     {
@@ -101,7 +101,7 @@ class MyArrayOfTelephonyConferenceParticipantStructType extends AbstractStructAr
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonyConferenceParticipantStruct|null
+     * @return \Ovh\StructType\TelephonyConferenceParticipantStruct|null
      */
     public function last()
     {
@@ -111,7 +111,7 @@ class MyArrayOfTelephonyConferenceParticipantStructType extends AbstractStructAr
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonyConferenceParticipantStruct|null
+     * @return \Ovh\StructType\TelephonyConferenceParticipantStruct|null
      */
     public function offsetGet($offset)
     {
@@ -132,7 +132,7 @@ class MyArrayOfTelephonyConferenceParticipantStructType extends AbstractStructAr
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyConferenceParticipantStructType
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyConferenceParticipantStructType
      */
     public static function __set_state(array $array)
     {

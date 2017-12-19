@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfCmsAvailableStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\CmsAvailableStruct[]
+     * @var \Ovh\StructType\CmsAvailableStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfCmsAvailableStructType
      * @uses MyArrayOfCmsAvailableStructType::setItem()
-     * @param \PayPal\StructType\CmsAvailableStruct[] $item
+     * @param \Ovh\StructType\CmsAvailableStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfCmsAvailableStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\CmsAvailableStruct[]|null
+     * @return \Ovh\StructType\CmsAvailableStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfCmsAvailableStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\CmsAvailableStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfCmsAvailableStructType
+     * @param \Ovh\StructType\CmsAvailableStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfCmsAvailableStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfCmsAvailableStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfCmsAvailableStructTypeItemItem instanceof \PayPal\StructType\CmsAvailableStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\CmsAvailableStruct, "%s" given', is_object($myArrayOfCmsAvailableStructTypeItemItem) ? get_class($myArrayOfCmsAvailableStructTypeItemItem) : gettype($myArrayOfCmsAvailableStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfCmsAvailableStructTypeItemItem instanceof \Ovh\StructType\CmsAvailableStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\CmsAvailableStruct, "%s" given', is_object($myArrayOfCmsAvailableStructTypeItemItem) ? get_class($myArrayOfCmsAvailableStructTypeItemItem) : gettype($myArrayOfCmsAvailableStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfCmsAvailableStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\CmsAvailableStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfCmsAvailableStructType
+     * @param \Ovh\StructType\CmsAvailableStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfCmsAvailableStructType
      */
-    public function addToItem(\PayPal\StructType\CmsAvailableStruct $item)
+    public function addToItem(\Ovh\StructType\CmsAvailableStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\CmsAvailableStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\CmsAvailableStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\CmsAvailableStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\CmsAvailableStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfCmsAvailableStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\CmsAvailableStruct|null
+     * @return \Ovh\StructType\CmsAvailableStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfCmsAvailableStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\CmsAvailableStruct|null
+     * @return \Ovh\StructType\CmsAvailableStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfCmsAvailableStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\CmsAvailableStruct|null
+     * @return \Ovh\StructType\CmsAvailableStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfCmsAvailableStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\CmsAvailableStruct|null
+     * @return \Ovh\StructType\CmsAvailableStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfCmsAvailableStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\CmsAvailableStruct|null
+     * @return \Ovh\StructType\CmsAvailableStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfCmsAvailableStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfCmsAvailableStructType
+     * @return \Ovh\ArrayType\MyArrayOfCmsAvailableStructType
      */
     public static function __set_state(array $array)
     {

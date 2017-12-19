@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class RtmSystemKernelStruct extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \PayPal\StructType\RtmSystemKernelStruct
+     * @return \Ovh\StructType\RtmSystemKernelStruct
      */
     public function setVersion($version = null)
     {
@@ -91,7 +91,7 @@ class RtmSystemKernelStruct extends AbstractStructBase
     /**
      * Set current value
      * @param string $current
-     * @return \PayPal\StructType\RtmSystemKernelStruct
+     * @return \Ovh\StructType\RtmSystemKernelStruct
      */
     public function setCurrent($current = null)
     {
@@ -113,7 +113,7 @@ class RtmSystemKernelStruct extends AbstractStructBase
     /**
      * Set current value
      * @param string $current
-     * @return \PayPal\StructType\RtmSystemKernelStruct
+     * @return \Ovh\StructType\RtmSystemKernelStruct
      */
     public function setCurrent_26($current_26 = null)
     {
@@ -135,7 +135,7 @@ class RtmSystemKernelStruct extends AbstractStructBase
     /**
      * Set current_ipv6 value
      * @param string $current_ipv6
-     * @return \PayPal\StructType\RtmSystemKernelStruct
+     * @return \Ovh\StructType\RtmSystemKernelStruct
      */
     public function setCurrent_ipv6($current_ipv6 = null)
     {
@@ -157,7 +157,7 @@ class RtmSystemKernelStruct extends AbstractStructBase
     /**
      * Set release value
      * @param string $release
-     * @return \PayPal\StructType\RtmSystemKernelStruct
+     * @return \Ovh\StructType\RtmSystemKernelStruct
      */
     public function setRelease($release = null)
     {
@@ -174,7 +174,7 @@ class RtmSystemKernelStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RtmSystemKernelStruct
+     * @return \Ovh\StructType\RtmSystemKernelStruct
      */
     public static function __set_state(array $array)
     {

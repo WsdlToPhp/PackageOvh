@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfRtmMemoryModuleStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\RtmMemoryModuleStruct[]
+     * @var \Ovh\StructType\RtmMemoryModuleStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfRtmMemoryModuleStructType
      * @uses MyArrayOfRtmMemoryModuleStructType::setItem()
-     * @param \PayPal\StructType\RtmMemoryModuleStruct[] $item
+     * @param \Ovh\StructType\RtmMemoryModuleStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfRtmMemoryModuleStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\RtmMemoryModuleStruct[]|null
+     * @return \Ovh\StructType\RtmMemoryModuleStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfRtmMemoryModuleStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\RtmMemoryModuleStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfRtmMemoryModuleStructType
+     * @param \Ovh\StructType\RtmMemoryModuleStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfRtmMemoryModuleStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfRtmMemoryModuleStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfRtmMemoryModuleStructTypeItemItem instanceof \PayPal\StructType\RtmMemoryModuleStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\RtmMemoryModuleStruct, "%s" given', is_object($myArrayOfRtmMemoryModuleStructTypeItemItem) ? get_class($myArrayOfRtmMemoryModuleStructTypeItemItem) : gettype($myArrayOfRtmMemoryModuleStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfRtmMemoryModuleStructTypeItemItem instanceof \Ovh\StructType\RtmMemoryModuleStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\RtmMemoryModuleStruct, "%s" given', is_object($myArrayOfRtmMemoryModuleStructTypeItemItem) ? get_class($myArrayOfRtmMemoryModuleStructTypeItemItem) : gettype($myArrayOfRtmMemoryModuleStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfRtmMemoryModuleStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\RtmMemoryModuleStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfRtmMemoryModuleStructType
+     * @param \Ovh\StructType\RtmMemoryModuleStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfRtmMemoryModuleStructType
      */
-    public function addToItem(\PayPal\StructType\RtmMemoryModuleStruct $item)
+    public function addToItem(\Ovh\StructType\RtmMemoryModuleStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\RtmMemoryModuleStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\RtmMemoryModuleStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\RtmMemoryModuleStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\RtmMemoryModuleStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfRtmMemoryModuleStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\RtmMemoryModuleStruct|null
+     * @return \Ovh\StructType\RtmMemoryModuleStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfRtmMemoryModuleStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\RtmMemoryModuleStruct|null
+     * @return \Ovh\StructType\RtmMemoryModuleStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfRtmMemoryModuleStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\RtmMemoryModuleStruct|null
+     * @return \Ovh\StructType\RtmMemoryModuleStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfRtmMemoryModuleStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\RtmMemoryModuleStruct|null
+     * @return \Ovh\StructType\RtmMemoryModuleStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfRtmMemoryModuleStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\RtmMemoryModuleStruct|null
+     * @return \Ovh\StructType\RtmMemoryModuleStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfRtmMemoryModuleStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfRtmMemoryModuleStructType
+     * @return \Ovh\ArrayType\MyArrayOfRtmMemoryModuleStructType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class RedirectedEmailListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfEmailRedirectionStructType
+     * @var \Ovh\ArrayType\MyArrayOfEmailRedirectionStructType
      */
     public $return;
     /**
      * Constructor method for redirectedEmailListResponse
      * @uses RedirectedEmailListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfEmailRedirectionStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfEmailRedirectionStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfEmailRedirectionStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfEmailRedirectionStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfEmailRedirectionStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfEmailRedirectionStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class RedirectedEmailListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfEmailRedirectionStructType $return
-     * @return \PayPal\StructType\RedirectedEmailListResponse
+     * @param \Ovh\ArrayType\MyArrayOfEmailRedirectionStructType $return
+     * @return \Ovh\StructType\RedirectedEmailListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfEmailRedirectionStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfEmailRedirectionStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class RedirectedEmailListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RedirectedEmailListResponse
+     * @return \Ovh\StructType\RedirectedEmailListResponse
      */
     public static function __set_state(array $array)
     {

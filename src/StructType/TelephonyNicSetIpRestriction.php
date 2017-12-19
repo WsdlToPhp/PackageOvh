@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,7 +22,7 @@ class TelephonyNicSetIpRestriction extends AbstractStructBase
      * The ips
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $ips;
     /**
@@ -30,9 +30,9 @@ class TelephonyNicSetIpRestriction extends AbstractStructBase
      * @uses TelephonyNicSetIpRestriction::setSession()
      * @uses TelephonyNicSetIpRestriction::setIps()
      * @param string $session
-     * @param \PayPal\ArrayType\MyArrayOfStringType $ips
+     * @param \Ovh\ArrayType\MyArrayOfStringType $ips
      */
-    public function __construct($session = null, \PayPal\ArrayType\MyArrayOfStringType $ips = null)
+    public function __construct($session = null, \Ovh\ArrayType\MyArrayOfStringType $ips = null)
     {
         $this
             ->setSession($session)
@@ -49,7 +49,7 @@ class TelephonyNicSetIpRestriction extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyNicSetIpRestriction
+     * @return \Ovh\StructType\TelephonyNicSetIpRestriction
      */
     public function setSession($session = null)
     {
@@ -62,7 +62,7 @@ class TelephonyNicSetIpRestriction extends AbstractStructBase
     }
     /**
      * Get ips value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getIps()
     {
@@ -70,10 +70,10 @@ class TelephonyNicSetIpRestriction extends AbstractStructBase
     }
     /**
      * Set ips value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $ips
-     * @return \PayPal\StructType\TelephonyNicSetIpRestriction
+     * @param \Ovh\ArrayType\MyArrayOfStringType $ips
+     * @return \Ovh\StructType\TelephonyNicSetIpRestriction
      */
-    public function setIps(\PayPal\ArrayType\MyArrayOfStringType $ips = null)
+    public function setIps(\Ovh\ArrayType\MyArrayOfStringType $ips = null)
     {
         $this->ips = $ips;
         return $this;
@@ -84,7 +84,7 @@ class TelephonyNicSetIpRestriction extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyNicSetIpRestriction
+     * @return \Ovh\StructType\TelephonyNicSetIpRestriction
      */
     public static function __set_state(array $array)
     {

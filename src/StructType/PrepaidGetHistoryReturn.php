@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -33,7 +33,7 @@ class PrepaidGetHistoryReturn extends AbstractStructBase
     public $end;
     /**
      * The operations
-     * @var \PayPal\ArrayType\MyArrayOfPrepaidOperationStructType
+     * @var \Ovh\ArrayType\MyArrayOfPrepaidOperationStructType
      */
     public $operations;
     /**
@@ -47,9 +47,9 @@ class PrepaidGetHistoryReturn extends AbstractStructBase
      * @param int $total
      * @param int $start
      * @param int $end
-     * @param \PayPal\ArrayType\MyArrayOfPrepaidOperationStructType $operations
+     * @param \Ovh\ArrayType\MyArrayOfPrepaidOperationStructType $operations
      */
-    public function __construct($page = null, $total = null, $start = null, $end = null, \PayPal\ArrayType\MyArrayOfPrepaidOperationStructType $operations = null)
+    public function __construct($page = null, $total = null, $start = null, $end = null, \Ovh\ArrayType\MyArrayOfPrepaidOperationStructType $operations = null)
     {
         $this
             ->setPage($page)
@@ -69,7 +69,7 @@ class PrepaidGetHistoryReturn extends AbstractStructBase
     /**
      * Set page value
      * @param int $page
-     * @return \PayPal\StructType\PrepaidGetHistoryReturn
+     * @return \Ovh\StructType\PrepaidGetHistoryReturn
      */
     public function setPage($page = null)
     {
@@ -91,7 +91,7 @@ class PrepaidGetHistoryReturn extends AbstractStructBase
     /**
      * Set total value
      * @param int $total
-     * @return \PayPal\StructType\PrepaidGetHistoryReturn
+     * @return \Ovh\StructType\PrepaidGetHistoryReturn
      */
     public function setTotal($total = null)
     {
@@ -113,7 +113,7 @@ class PrepaidGetHistoryReturn extends AbstractStructBase
     /**
      * Set start value
      * @param int $start
-     * @return \PayPal\StructType\PrepaidGetHistoryReturn
+     * @return \Ovh\StructType\PrepaidGetHistoryReturn
      */
     public function setStart($start = null)
     {
@@ -135,7 +135,7 @@ class PrepaidGetHistoryReturn extends AbstractStructBase
     /**
      * Set end value
      * @param int $end
-     * @return \PayPal\StructType\PrepaidGetHistoryReturn
+     * @return \Ovh\StructType\PrepaidGetHistoryReturn
      */
     public function setEnd($end = null)
     {
@@ -148,7 +148,7 @@ class PrepaidGetHistoryReturn extends AbstractStructBase
     }
     /**
      * Get operations value
-     * @return \PayPal\ArrayType\MyArrayOfPrepaidOperationStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfPrepaidOperationStructType|null
      */
     public function getOperations()
     {
@@ -156,10 +156,10 @@ class PrepaidGetHistoryReturn extends AbstractStructBase
     }
     /**
      * Set operations value
-     * @param \PayPal\ArrayType\MyArrayOfPrepaidOperationStructType $operations
-     * @return \PayPal\StructType\PrepaidGetHistoryReturn
+     * @param \Ovh\ArrayType\MyArrayOfPrepaidOperationStructType $operations
+     * @return \Ovh\StructType\PrepaidGetHistoryReturn
      */
-    public function setOperations(\PayPal\ArrayType\MyArrayOfPrepaidOperationStructType $operations = null)
+    public function setOperations(\Ovh\ArrayType\MyArrayOfPrepaidOperationStructType $operations = null)
     {
         $this->operations = $operations;
         return $this;
@@ -170,7 +170,7 @@ class PrepaidGetHistoryReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\PrepaidGetHistoryReturn
+     * @return \Ovh\StructType\PrepaidGetHistoryReturn
      */
     public static function __set_state(array $array)
     {

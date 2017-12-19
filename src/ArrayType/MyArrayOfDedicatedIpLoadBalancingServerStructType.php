@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -17,13 +17,13 @@ class MyArrayOfDedicatedIpLoadBalancingServerStructType extends AbstractStructAr
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\DedicatedIpLoadBalancingServerStruct[]
+     * @var \Ovh\StructType\DedicatedIpLoadBalancingServerStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfDedicatedIpLoadBalancingServerStructType
      * @uses MyArrayOfDedicatedIpLoadBalancingServerStructType::setItem()
-     * @param \PayPal\StructType\DedicatedIpLoadBalancingServerStruct[] $item
+     * @param \Ovh\StructType\DedicatedIpLoadBalancingServerStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -32,7 +32,7 @@ class MyArrayOfDedicatedIpLoadBalancingServerStructType extends AbstractStructAr
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingServerStruct[]|null
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingServerStruct[]|null
      */
     public function getItem()
     {
@@ -41,15 +41,15 @@ class MyArrayOfDedicatedIpLoadBalancingServerStructType extends AbstractStructAr
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedIpLoadBalancingServerStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedIpLoadBalancingServerStructType
+     * @param \Ovh\StructType\DedicatedIpLoadBalancingServerStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedIpLoadBalancingServerStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfDedicatedIpLoadBalancingServerStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfDedicatedIpLoadBalancingServerStructTypeItemItem instanceof \PayPal\StructType\DedicatedIpLoadBalancingServerStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedIpLoadBalancingServerStruct, "%s" given', is_object($myArrayOfDedicatedIpLoadBalancingServerStructTypeItemItem) ? get_class($myArrayOfDedicatedIpLoadBalancingServerStructTypeItemItem) : gettype($myArrayOfDedicatedIpLoadBalancingServerStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfDedicatedIpLoadBalancingServerStructTypeItemItem instanceof \Ovh\StructType\DedicatedIpLoadBalancingServerStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedIpLoadBalancingServerStruct, "%s" given', is_object($myArrayOfDedicatedIpLoadBalancingServerStructTypeItemItem) ? get_class($myArrayOfDedicatedIpLoadBalancingServerStructTypeItemItem) : gettype($myArrayOfDedicatedIpLoadBalancingServerStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -58,14 +58,14 @@ class MyArrayOfDedicatedIpLoadBalancingServerStructType extends AbstractStructAr
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedIpLoadBalancingServerStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedIpLoadBalancingServerStructType
+     * @param \Ovh\StructType\DedicatedIpLoadBalancingServerStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedIpLoadBalancingServerStructType
      */
-    public function addToItem(\PayPal\StructType\DedicatedIpLoadBalancingServerStruct $item)
+    public function addToItem(\Ovh\StructType\DedicatedIpLoadBalancingServerStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\DedicatedIpLoadBalancingServerStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedIpLoadBalancingServerStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\DedicatedIpLoadBalancingServerStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedIpLoadBalancingServerStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class MyArrayOfDedicatedIpLoadBalancingServerStructType extends AbstractStructAr
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingServerStruct|null
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingServerStruct|null
      */
     public function current()
     {
@@ -83,7 +83,7 @@ class MyArrayOfDedicatedIpLoadBalancingServerStructType extends AbstractStructAr
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingServerStruct|null
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingServerStruct|null
      */
     public function item($index)
     {
@@ -92,7 +92,7 @@ class MyArrayOfDedicatedIpLoadBalancingServerStructType extends AbstractStructAr
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingServerStruct|null
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingServerStruct|null
      */
     public function first()
     {
@@ -101,7 +101,7 @@ class MyArrayOfDedicatedIpLoadBalancingServerStructType extends AbstractStructAr
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingServerStruct|null
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingServerStruct|null
      */
     public function last()
     {
@@ -111,7 +111,7 @@ class MyArrayOfDedicatedIpLoadBalancingServerStructType extends AbstractStructAr
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingServerStruct|null
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingServerStruct|null
      */
     public function offsetGet($offset)
     {
@@ -132,7 +132,7 @@ class MyArrayOfDedicatedIpLoadBalancingServerStructType extends AbstractStructAr
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedIpLoadBalancingServerStructType
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedIpLoadBalancingServerStructType
      */
     public static function __set_state(array $array)
     {

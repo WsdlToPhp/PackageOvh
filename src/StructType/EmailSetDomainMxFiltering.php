@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class EmailSetDomainMxFiltering extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\EmailSetDomainMxFiltering
+     * @return \Ovh\StructType\EmailSetDomainMxFiltering
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class EmailSetDomainMxFiltering extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\EmailSetDomainMxFiltering
+     * @return \Ovh\StructType\EmailSetDomainMxFiltering
      */
     public function setDomain($domain = null)
     {
@@ -123,7 +123,7 @@ class EmailSetDomainMxFiltering extends AbstractStructBase
     /**
      * Set subdomain value
      * @param string $subdomain
-     * @return \PayPal\StructType\EmailSetDomainMxFiltering
+     * @return \Ovh\StructType\EmailSetDomainMxFiltering
      */
     public function setSubdomain($subdomain = null)
     {
@@ -145,7 +145,7 @@ class EmailSetDomainMxFiltering extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\EmailSetDomainMxFiltering
+     * @return \Ovh\StructType\EmailSetDomainMxFiltering
      */
     public function setType($type = null)
     {
@@ -167,7 +167,7 @@ class EmailSetDomainMxFiltering extends AbstractStructBase
     /**
      * Set mx value
      * @param string $mx
-     * @return \PayPal\StructType\EmailSetDomainMxFiltering
+     * @return \Ovh\StructType\EmailSetDomainMxFiltering
      */
     public function setMx($mx = null)
     {
@@ -184,7 +184,7 @@ class EmailSetDomainMxFiltering extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\EmailSetDomainMxFiltering
+     * @return \Ovh\StructType\EmailSetDomainMxFiltering
      */
     public static function __set_state(array $array)
     {

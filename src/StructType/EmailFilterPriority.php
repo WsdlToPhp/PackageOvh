@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class EmailFilterPriority extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\EmailFilterPriority
+     * @return \Ovh\StructType\EmailFilterPriority
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class EmailFilterPriority extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\EmailFilterPriority
+     * @return \Ovh\StructType\EmailFilterPriority
      */
     public function setDomain($domain = null)
     {
@@ -123,7 +123,7 @@ class EmailFilterPriority extends AbstractStructBase
     /**
      * Set pop value
      * @param string $pop
-     * @return \PayPal\StructType\EmailFilterPriority
+     * @return \Ovh\StructType\EmailFilterPriority
      */
     public function setPop($pop = null)
     {
@@ -145,7 +145,7 @@ class EmailFilterPriority extends AbstractStructBase
     /**
      * Set filter value
      * @param string $filter
-     * @return \PayPal\StructType\EmailFilterPriority
+     * @return \Ovh\StructType\EmailFilterPriority
      */
     public function setFilter($filter = null)
     {
@@ -167,7 +167,7 @@ class EmailFilterPriority extends AbstractStructBase
     /**
      * Set priority value
      * @param string $priority
-     * @return \PayPal\StructType\EmailFilterPriority
+     * @return \Ovh\StructType\EmailFilterPriority
      */
     public function setPriority($priority = null)
     {
@@ -184,7 +184,7 @@ class EmailFilterPriority extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\EmailFilterPriority
+     * @return \Ovh\StructType\EmailFilterPriority
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -125,7 +125,7 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \PayPal\StructType\TelephonySecurityDepositCreditReturn
+     * @return \Ovh\StructType\TelephonySecurityDepositCreditReturn
      */
     public function setOrderId($orderId = null)
     {
@@ -147,7 +147,7 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
     /**
      * Set orderPassword value
      * @param string $orderPassword
-     * @return \PayPal\StructType\TelephonySecurityDepositCreditReturn
+     * @return \Ovh\StructType\TelephonySecurityDepositCreditReturn
      */
     public function setOrderPassword($orderPassword = null)
     {
@@ -169,7 +169,7 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
     /**
      * Set orderUrl value
      * @param string $orderUrl
-     * @return \PayPal\StructType\TelephonySecurityDepositCreditReturn
+     * @return \Ovh\StructType\TelephonySecurityDepositCreditReturn
      */
     public function setOrderUrl($orderUrl = null)
     {
@@ -191,7 +191,7 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \PayPal\StructType\TelephonySecurityDepositCreditReturn
+     * @return \Ovh\StructType\TelephonySecurityDepositCreditReturn
      */
     public function setTotalPrice($totalPrice = null)
     {
@@ -209,7 +209,7 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
     /**
      * Set vat value
      * @param float $vat
-     * @return \PayPal\StructType\TelephonySecurityDepositCreditReturn
+     * @return \Ovh\StructType\TelephonySecurityDepositCreditReturn
      */
     public function setVat($vat = null)
     {
@@ -227,7 +227,7 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
     /**
      * Set totalPriceWithVat value
      * @param float $totalPriceWithVat
-     * @return \PayPal\StructType\TelephonySecurityDepositCreditReturn
+     * @return \Ovh\StructType\TelephonySecurityDepositCreditReturn
      */
     public function setTotalPriceWithVat($totalPriceWithVat = null)
     {
@@ -245,7 +245,7 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
     /**
      * Set ribBankCode value
      * @param string $ribBankCode
-     * @return \PayPal\StructType\TelephonySecurityDepositCreditReturn
+     * @return \Ovh\StructType\TelephonySecurityDepositCreditReturn
      */
     public function setRibBankCode($ribBankCode = null)
     {
@@ -267,7 +267,7 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
     /**
      * Set ribAgencyCode value
      * @param string $ribAgencyCode
-     * @return \PayPal\StructType\TelephonySecurityDepositCreditReturn
+     * @return \Ovh\StructType\TelephonySecurityDepositCreditReturn
      */
     public function setRibAgencyCode($ribAgencyCode = null)
     {
@@ -289,7 +289,7 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
     /**
      * Set ribAccountNumber value
      * @param string $ribAccountNumber
-     * @return \PayPal\StructType\TelephonySecurityDepositCreditReturn
+     * @return \Ovh\StructType\TelephonySecurityDepositCreditReturn
      */
     public function setRibAccountNumber($ribAccountNumber = null)
     {
@@ -311,7 +311,7 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
     /**
      * Set ribKey value
      * @param string $ribKey
-     * @return \PayPal\StructType\TelephonySecurityDepositCreditReturn
+     * @return \Ovh\StructType\TelephonySecurityDepositCreditReturn
      */
     public function setRibKey($ribKey = null)
     {
@@ -333,7 +333,7 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
     /**
      * Set iban value
      * @param string $iban
-     * @return \PayPal\StructType\TelephonySecurityDepositCreditReturn
+     * @return \Ovh\StructType\TelephonySecurityDepositCreditReturn
      */
     public function setIban($iban = null)
     {
@@ -355,7 +355,7 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
     /**
      * Set bic value
      * @param string $bic
-     * @return \PayPal\StructType\TelephonySecurityDepositCreditReturn
+     * @return \Ovh\StructType\TelephonySecurityDepositCreditReturn
      */
     public function setBic($bic = null)
     {
@@ -372,7 +372,7 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySecurityDepositCreditReturn
+     * @return \Ovh\StructType\TelephonySecurityDepositCreditReturn
      */
     public static function __set_state(array $array)
     {

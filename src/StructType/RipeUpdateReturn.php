@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class RipeUpdateReturn extends AbstractStructBase
     /**
      * Set object value
      * @param string $object
-     * @return \PayPal\StructType\RipeUpdateReturn
+     * @return \Ovh\StructType\RipeUpdateReturn
      */
     public function setObject($object = null)
     {
@@ -83,7 +83,7 @@ class RipeUpdateReturn extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \PayPal\StructType\RipeUpdateReturn
+     * @return \Ovh\StructType\RipeUpdateReturn
      */
     public function setValue($value = null)
     {
@@ -105,7 +105,7 @@ class RipeUpdateReturn extends AbstractStructBase
     /**
      * Set operation value
      * @param string $operation
-     * @return \PayPal\StructType\RipeUpdateReturn
+     * @return \Ovh\StructType\RipeUpdateReturn
      */
     public function setOperation($operation = null)
     {
@@ -127,7 +127,7 @@ class RipeUpdateReturn extends AbstractStructBase
     /**
      * Set result value
      * @param string $result
-     * @return \PayPal\StructType\RipeUpdateReturn
+     * @return \Ovh\StructType\RipeUpdateReturn
      */
     public function setResult($result = null)
     {
@@ -144,7 +144,7 @@ class RipeUpdateReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RipeUpdateReturn
+     * @return \Ovh\StructType\RipeUpdateReturn
      */
     public static function __set_state(array $array)
     {

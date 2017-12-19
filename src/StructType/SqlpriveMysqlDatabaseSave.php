@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class SqlpriveMysqlDatabaseSave extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseSave
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseSave
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class SqlpriveMysqlDatabaseSave extends AbstractStructBase
     /**
      * Set server value
      * @param string $server
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseSave
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseSave
      */
     public function setServer($server = null)
     {
@@ -123,7 +123,7 @@ class SqlpriveMysqlDatabaseSave extends AbstractStructBase
     /**
      * Set database value
      * @param string $database
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseSave
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseSave
      */
     public function setDatabase($database = null)
     {
@@ -145,7 +145,7 @@ class SqlpriveMysqlDatabaseSave extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseSave
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseSave
      */
     public function setComment($comment = null)
     {
@@ -167,7 +167,7 @@ class SqlpriveMysqlDatabaseSave extends AbstractStructBase
     /**
      * Set compress value
      * @param bool $compress
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseSave
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseSave
      */
     public function setCompress($compress = null)
     {
@@ -184,7 +184,7 @@ class SqlpriveMysqlDatabaseSave extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseSave
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseSave
      */
     public static function __set_state(array $array)
     {

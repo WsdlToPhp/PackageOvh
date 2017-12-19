@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class ManagedServicesPartitionCreate extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\ManagedServicesPartitionCreate
+     * @return \Ovh\StructType\ManagedServicesPartitionCreate
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class ManagedServicesPartitionCreate extends AbstractStructBase
     /**
      * Set storage value
      * @param string $storage
-     * @return \PayPal\StructType\ManagedServicesPartitionCreate
+     * @return \Ovh\StructType\ManagedServicesPartitionCreate
      */
     public function setStorage($storage = null)
     {
@@ -123,7 +123,7 @@ class ManagedServicesPartitionCreate extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\ManagedServicesPartitionCreate
+     * @return \Ovh\StructType\ManagedServicesPartitionCreate
      */
     public function setName($name = null)
     {
@@ -145,7 +145,7 @@ class ManagedServicesPartitionCreate extends AbstractStructBase
     /**
      * Set size value
      * @param int $size
-     * @return \PayPal\StructType\ManagedServicesPartitionCreate
+     * @return \Ovh\StructType\ManagedServicesPartitionCreate
      */
     public function setSize($size = null)
     {
@@ -167,7 +167,7 @@ class ManagedServicesPartitionCreate extends AbstractStructBase
     /**
      * Set protocol value
      * @param string $protocol
-     * @return \PayPal\StructType\ManagedServicesPartitionCreate
+     * @return \Ovh\StructType\ManagedServicesPartitionCreate
      */
     public function setProtocol($protocol = null)
     {
@@ -184,7 +184,7 @@ class ManagedServicesPartitionCreate extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ManagedServicesPartitionCreate
+     * @return \Ovh\StructType\ManagedServicesPartitionCreate
      */
     public static function __set_state(array $array)
     {

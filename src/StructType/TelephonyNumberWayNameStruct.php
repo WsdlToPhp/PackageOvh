@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class TelephonyNumberWayNameStruct extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\TelephonyNumberWayNameStruct
+     * @return \Ovh\StructType\TelephonyNumberWayNameStruct
      */
     public function setName($name = null)
     {
@@ -67,7 +67,7 @@ class TelephonyNumberWayNameStruct extends AbstractStructBase
     /**
      * Set code value
      * @param string $code
-     * @return \PayPal\StructType\TelephonyNumberWayNameStruct
+     * @return \Ovh\StructType\TelephonyNumberWayNameStruct
      */
     public function setCode($code = null)
     {
@@ -84,7 +84,7 @@ class TelephonyNumberWayNameStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyNumberWayNameStruct
+     * @return \Ovh\StructType\TelephonyNumberWayNameStruct
      */
     public static function __set_state(array $array)
     {

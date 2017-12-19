@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class SqlpriveMysqlOvhMyAdmin extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\SqlpriveMysqlOvhMyAdmin
+     * @return \Ovh\StructType\SqlpriveMysqlOvhMyAdmin
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class SqlpriveMysqlOvhMyAdmin extends AbstractStructBase
     /**
      * Set server value
      * @param string $server
-     * @return \PayPal\StructType\SqlpriveMysqlOvhMyAdmin
+     * @return \Ovh\StructType\SqlpriveMysqlOvhMyAdmin
      */
     public function setServer($server = null)
     {
@@ -133,7 +133,7 @@ class SqlpriveMysqlOvhMyAdmin extends AbstractStructBase
     /**
      * Set function value
      * @param string $function
-     * @return \PayPal\StructType\SqlpriveMysqlOvhMyAdmin
+     * @return \Ovh\StructType\SqlpriveMysqlOvhMyAdmin
      */
     public function setFunction($function = null)
     {
@@ -155,7 +155,7 @@ class SqlpriveMysqlOvhMyAdmin extends AbstractStructBase
     /**
      * Set database value
      * @param string $database
-     * @return \PayPal\StructType\SqlpriveMysqlOvhMyAdmin
+     * @return \Ovh\StructType\SqlpriveMysqlOvhMyAdmin
      */
     public function setDatabase($database = null)
     {
@@ -177,7 +177,7 @@ class SqlpriveMysqlOvhMyAdmin extends AbstractStructBase
     /**
      * Set username value
      * @param string $username
-     * @return \PayPal\StructType\SqlpriveMysqlOvhMyAdmin
+     * @return \Ovh\StructType\SqlpriveMysqlOvhMyAdmin
      */
     public function setUsername($username = null)
     {
@@ -199,7 +199,7 @@ class SqlpriveMysqlOvhMyAdmin extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \PayPal\StructType\SqlpriveMysqlOvhMyAdmin
+     * @return \Ovh\StructType\SqlpriveMysqlOvhMyAdmin
      */
     public function setPassword($password = null)
     {
@@ -216,7 +216,7 @@ class SqlpriveMysqlOvhMyAdmin extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SqlpriveMysqlOvhMyAdmin
+     * @return \Ovh\StructType\SqlpriveMysqlOvhMyAdmin
      */
     public static function __set_state(array $array)
     {

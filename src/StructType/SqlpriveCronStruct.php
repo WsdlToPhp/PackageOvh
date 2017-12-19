@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -85,7 +85,7 @@ class SqlpriveCronStruct extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\SqlpriveCronStruct
+     * @return \Ovh\StructType\SqlpriveCronStruct
      */
     public function setId($id = null)
     {
@@ -107,7 +107,7 @@ class SqlpriveCronStruct extends AbstractStructBase
     /**
      * Set active value
      * @param string $active
-     * @return \PayPal\StructType\SqlpriveCronStruct
+     * @return \Ovh\StructType\SqlpriveCronStruct
      */
     public function setActive($active = null)
     {
@@ -129,7 +129,7 @@ class SqlpriveCronStruct extends AbstractStructBase
     /**
      * Set days value
      * @param string $days
-     * @return \PayPal\StructType\SqlpriveCronStruct
+     * @return \Ovh\StructType\SqlpriveCronStruct
      */
     public function setDays($days = null)
     {
@@ -151,7 +151,7 @@ class SqlpriveCronStruct extends AbstractStructBase
     /**
      * Set hours value
      * @param string $hours
-     * @return \PayPal\StructType\SqlpriveCronStruct
+     * @return \Ovh\StructType\SqlpriveCronStruct
      */
     public function setHours($hours = null)
     {
@@ -173,7 +173,7 @@ class SqlpriveCronStruct extends AbstractStructBase
     /**
      * Set operation value
      * @param string $operation
-     * @return \PayPal\StructType\SqlpriveCronStruct
+     * @return \Ovh\StructType\SqlpriveCronStruct
      */
     public function setOperation($operation = null)
     {
@@ -195,7 +195,7 @@ class SqlpriveCronStruct extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \PayPal\StructType\SqlpriveCronStruct
+     * @return \Ovh\StructType\SqlpriveCronStruct
      */
     public function setEndDate($endDate = null)
     {
@@ -217,7 +217,7 @@ class SqlpriveCronStruct extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \PayPal\StructType\SqlpriveCronStruct
+     * @return \Ovh\StructType\SqlpriveCronStruct
      */
     public function setComment($comment = null)
     {
@@ -234,7 +234,7 @@ class SqlpriveCronStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SqlpriveCronStruct
+     * @return \Ovh\StructType\SqlpriveCronStruct
      */
     public static function __set_state(array $array)
     {

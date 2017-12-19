@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class TelephonySmsAddCsvAttachment extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonySmsAddCsvAttachment
+     * @return \Ovh\StructType\TelephonySmsAddCsvAttachment
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class TelephonySmsAddCsvAttachment extends AbstractStructBase
     /**
      * Set smsAccount value
      * @param string $smsAccount
-     * @return \PayPal\StructType\TelephonySmsAddCsvAttachment
+     * @return \Ovh\StructType\TelephonySmsAddCsvAttachment
      */
     public function setSmsAccount($smsAccount = null)
     {
@@ -123,7 +123,7 @@ class TelephonySmsAddCsvAttachment extends AbstractStructBase
     /**
      * Set csvUrl value
      * @param string $csvUrl
-     * @return \PayPal\StructType\TelephonySmsAddCsvAttachment
+     * @return \Ovh\StructType\TelephonySmsAddCsvAttachment
      */
     public function setCsvUrl($csvUrl = null)
     {
@@ -145,7 +145,7 @@ class TelephonySmsAddCsvAttachment extends AbstractStructBase
     /**
      * Set id value
      * @param string $id
-     * @return \PayPal\StructType\TelephonySmsAddCsvAttachment
+     * @return \Ovh\StructType\TelephonySmsAddCsvAttachment
      */
     public function setId($id = null)
     {
@@ -167,7 +167,7 @@ class TelephonySmsAddCsvAttachment extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\TelephonySmsAddCsvAttachment
+     * @return \Ovh\StructType\TelephonySmsAddCsvAttachment
      */
     public function setName($name = null)
     {
@@ -184,7 +184,7 @@ class TelephonySmsAddCsvAttachment extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsAddCsvAttachment
+     * @return \Ovh\StructType\TelephonySmsAddCsvAttachment
      */
     public static function __set_state(array $array)
     {

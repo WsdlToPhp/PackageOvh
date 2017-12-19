@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -133,7 +133,7 @@ class TelephonyCallStruct extends AbstractStructBase
     /**
      * Set idkey value
      * @param string $idkey
-     * @return \PayPal\StructType\TelephonyCallStruct
+     * @return \Ovh\StructType\TelephonyCallStruct
      */
     public function setIdkey($idkey = null)
     {
@@ -155,7 +155,7 @@ class TelephonyCallStruct extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyCallStruct
+     * @return \Ovh\StructType\TelephonyCallStruct
      */
     public function setNumber($number = null)
     {
@@ -177,7 +177,7 @@ class TelephonyCallStruct extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\TelephonyCallStruct
+     * @return \Ovh\StructType\TelephonyCallStruct
      */
     public function setDate($date = null)
     {
@@ -199,7 +199,7 @@ class TelephonyCallStruct extends AbstractStructBase
     /**
      * Set duration value
      * @param string $duration
-     * @return \PayPal\StructType\TelephonyCallStruct
+     * @return \Ovh\StructType\TelephonyCallStruct
      */
     public function setDuration($duration = null)
     {
@@ -221,7 +221,7 @@ class TelephonyCallStruct extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \PayPal\StructType\TelephonyCallStruct
+     * @return \Ovh\StructType\TelephonyCallStruct
      */
     public function setDestination($destination = null)
     {
@@ -243,7 +243,7 @@ class TelephonyCallStruct extends AbstractStructBase
     /**
      * Set priceWithoutVAT value
      * @param float $priceWithoutVAT
-     * @return \PayPal\StructType\TelephonyCallStruct
+     * @return \Ovh\StructType\TelephonyCallStruct
      */
     public function setPriceWithoutVAT($priceWithoutVAT = null)
     {
@@ -261,7 +261,7 @@ class TelephonyCallStruct extends AbstractStructBase
     /**
      * Set nature value
      * @param string $nature
-     * @return \PayPal\StructType\TelephonyCallStruct
+     * @return \Ovh\StructType\TelephonyCallStruct
      */
     public function setNature($nature = null)
     {
@@ -283,7 +283,7 @@ class TelephonyCallStruct extends AbstractStructBase
     /**
      * Set overLimit value
      * @param bool $overLimit
-     * @return \PayPal\StructType\TelephonyCallStruct
+     * @return \Ovh\StructType\TelephonyCallStruct
      */
     public function setOverLimit($overLimit = null)
     {
@@ -305,7 +305,7 @@ class TelephonyCallStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\TelephonyCallStruct
+     * @return \Ovh\StructType\TelephonyCallStruct
      */
     public function setType($type = null)
     {
@@ -327,7 +327,7 @@ class TelephonyCallStruct extends AbstractStructBase
     /**
      * Set callingNumber value
      * @param string $callingNumber
-     * @return \PayPal\StructType\TelephonyCallStruct
+     * @return \Ovh\StructType\TelephonyCallStruct
      */
     public function setCallingNumber($callingNumber = null)
     {
@@ -349,7 +349,7 @@ class TelephonyCallStruct extends AbstractStructBase
     /**
      * Set presentation value
      * @param bool $presentation
-     * @return \PayPal\StructType\TelephonyCallStruct
+     * @return \Ovh\StructType\TelephonyCallStruct
      */
     public function setPresentation($presentation = null)
     {
@@ -371,7 +371,7 @@ class TelephonyCallStruct extends AbstractStructBase
     /**
      * Set designation value
      * @param string $designation
-     * @return \PayPal\StructType\TelephonyCallStruct
+     * @return \Ovh\StructType\TelephonyCallStruct
      */
     public function setDesignation($designation = null)
     {
@@ -393,7 +393,7 @@ class TelephonyCallStruct extends AbstractStructBase
     /**
      * Set calledNumber value
      * @param string $calledNumber
-     * @return \PayPal\StructType\TelephonyCallStruct
+     * @return \Ovh\StructType\TelephonyCallStruct
      */
     public function setCalledNumber($calledNumber = null)
     {
@@ -410,7 +410,7 @@ class TelephonyCallStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyCallStruct
+     * @return \Ovh\StructType\TelephonyCallStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -141,7 +141,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     /**
      * Set uid value
      * @param string $uid
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct
      */
     public function setUid($uid = null)
     {
@@ -163,7 +163,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     /**
      * Set summary value
      * @param string $summary
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct
      */
     public function setSummary($summary = null)
     {
@@ -185,7 +185,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct
      */
     public function setDescription($description = null)
     {
@@ -207,7 +207,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     /**
      * Set categories value
      * @param string $categories
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct
      */
     public function setCategories($categories = null)
     {
@@ -229,7 +229,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     /**
      * Set created value
      * @param string $created
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct
      */
     public function setCreated($created = null)
     {
@@ -251,7 +251,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     /**
      * Set lastModified value
      * @param string $lastModified
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct
      */
     public function setLastModified($lastModified = null)
     {
@@ -273,7 +273,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     /**
      * Set dtStart value
      * @param string $dtStart
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct
      */
     public function setDtStart($dtStart = null)
     {
@@ -295,7 +295,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     /**
      * Set dtStartValue value
      * @param string $dtStartValue
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct
      */
     public function setDtStartValue($dtStartValue = null)
     {
@@ -317,7 +317,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     /**
      * Set dtStartTzid value
      * @param string $dtStartTzid
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct
      */
     public function setDtStartTzid($dtStartTzid = null)
     {
@@ -339,7 +339,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     /**
      * Set dtStartUserValue value
      * @param string $dtStartUserValue
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct
      */
     public function setDtStartUserValue($dtStartUserValue = null)
     {
@@ -361,7 +361,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     /**
      * Set dtEnd value
      * @param string $dtEnd
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct
      */
     public function setDtEnd($dtEnd = null)
     {
@@ -383,7 +383,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     /**
      * Set dtEndValue value
      * @param string $dtEndValue
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct
      */
     public function setDtEndValue($dtEndValue = null)
     {
@@ -405,7 +405,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     /**
      * Set dtEndTzid value
      * @param string $dtEndTzid
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct
      */
     public function setDtEndTzid($dtEndTzid = null)
     {
@@ -427,7 +427,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     /**
      * Set dtEndUserValue value
      * @param string $dtEndUserValue
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct
      */
     public function setDtEndUserValue($dtEndUserValue = null)
     {
@@ -444,7 +444,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct
      */
     public static function __set_state(array $array)
     {

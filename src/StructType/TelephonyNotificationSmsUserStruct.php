@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class TelephonyNotificationSmsUserStruct extends AbstractStructBase
     /**
      * Set support value
      * @param string $support
-     * @return \PayPal\StructType\TelephonyNotificationSmsUserStruct
+     * @return \Ovh\StructType\TelephonyNotificationSmsUserStruct
      */
     public function setSupport($support = null)
     {
@@ -83,7 +83,7 @@ class TelephonyNotificationSmsUserStruct extends AbstractStructBase
     /**
      * Set alertThreshold value
      * @param int $alertThreshold
-     * @return \PayPal\StructType\TelephonyNotificationSmsUserStruct
+     * @return \Ovh\StructType\TelephonyNotificationSmsUserStruct
      */
     public function setAlertThreshold($alertThreshold = null)
     {
@@ -105,7 +105,7 @@ class TelephonyNotificationSmsUserStruct extends AbstractStructBase
     /**
      * Set alertNumber value
      * @param string $alertNumber
-     * @return \PayPal\StructType\TelephonyNotificationSmsUserStruct
+     * @return \Ovh\StructType\TelephonyNotificationSmsUserStruct
      */
     public function setAlertNumber($alertNumber = null)
     {
@@ -127,7 +127,7 @@ class TelephonyNotificationSmsUserStruct extends AbstractStructBase
     /**
      * Set alertEmail value
      * @param string $alertEmail
-     * @return \PayPal\StructType\TelephonyNotificationSmsUserStruct
+     * @return \Ovh\StructType\TelephonyNotificationSmsUserStruct
      */
     public function setAlertEmail($alertEmail = null)
     {
@@ -144,7 +144,7 @@ class TelephonyNotificationSmsUserStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyNotificationSmsUserStruct
+     * @return \Ovh\StructType\TelephonyNotificationSmsUserStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class TelephonyLineAliasPoolStruct extends AbstractStructBase
     /**
      * Set poolNumber value
      * @param int $poolNumber
-     * @return \PayPal\StructType\TelephonyLineAliasPoolStruct
+     * @return \Ovh\StructType\TelephonyLineAliasPoolStruct
      */
     public function setPoolNumber($poolNumber = null)
     {
@@ -75,7 +75,7 @@ class TelephonyLineAliasPoolStruct extends AbstractStructBase
     /**
      * Set service value
      * @param string $service
-     * @return \PayPal\StructType\TelephonyLineAliasPoolStruct
+     * @return \Ovh\StructType\TelephonyLineAliasPoolStruct
      */
     public function setService($service = null)
     {
@@ -97,7 +97,7 @@ class TelephonyLineAliasPoolStruct extends AbstractStructBase
     /**
      * Set display value
      * @param string $display
-     * @return \PayPal\StructType\TelephonyLineAliasPoolStruct
+     * @return \Ovh\StructType\TelephonyLineAliasPoolStruct
      */
     public function setDisplay($display = null)
     {
@@ -114,7 +114,7 @@ class TelephonyLineAliasPoolStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyLineAliasPoolStruct
+     * @return \Ovh\StructType\TelephonyLineAliasPoolStruct
      */
     public static function __set_state(array $array)
     {

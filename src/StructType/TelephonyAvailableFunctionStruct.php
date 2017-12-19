@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -28,7 +28,7 @@ class TelephonyAvailableFunctionStruct extends AbstractStructBase
     public $defaultValue;
     /**
      * The possibilities
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $possibilities;
     /**
@@ -40,9 +40,9 @@ class TelephonyAvailableFunctionStruct extends AbstractStructBase
      * @param string $function
      * @param string $relatedValue
      * @param string $defaultValue
-     * @param \PayPal\ArrayType\MyArrayOfStringType $possibilities
+     * @param \Ovh\ArrayType\MyArrayOfStringType $possibilities
      */
-    public function __construct($function = null, $relatedValue = null, $defaultValue = null, \PayPal\ArrayType\MyArrayOfStringType $possibilities = null)
+    public function __construct($function = null, $relatedValue = null, $defaultValue = null, \Ovh\ArrayType\MyArrayOfStringType $possibilities = null)
     {
         $this
             ->setFunction($function)
@@ -61,7 +61,7 @@ class TelephonyAvailableFunctionStruct extends AbstractStructBase
     /**
      * Set function value
      * @param string $function
-     * @return \PayPal\StructType\TelephonyAvailableFunctionStruct
+     * @return \Ovh\StructType\TelephonyAvailableFunctionStruct
      */
     public function setFunction($function = null)
     {
@@ -83,7 +83,7 @@ class TelephonyAvailableFunctionStruct extends AbstractStructBase
     /**
      * Set relatedValue value
      * @param string $relatedValue
-     * @return \PayPal\StructType\TelephonyAvailableFunctionStruct
+     * @return \Ovh\StructType\TelephonyAvailableFunctionStruct
      */
     public function setRelatedValue($relatedValue = null)
     {
@@ -105,7 +105,7 @@ class TelephonyAvailableFunctionStruct extends AbstractStructBase
     /**
      * Set defaultValue value
      * @param string $defaultValue
-     * @return \PayPal\StructType\TelephonyAvailableFunctionStruct
+     * @return \Ovh\StructType\TelephonyAvailableFunctionStruct
      */
     public function setDefaultValue($defaultValue = null)
     {
@@ -118,7 +118,7 @@ class TelephonyAvailableFunctionStruct extends AbstractStructBase
     }
     /**
      * Get possibilities value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getPossibilities()
     {
@@ -126,10 +126,10 @@ class TelephonyAvailableFunctionStruct extends AbstractStructBase
     }
     /**
      * Set possibilities value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $possibilities
-     * @return \PayPal\StructType\TelephonyAvailableFunctionStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $possibilities
+     * @return \Ovh\StructType\TelephonyAvailableFunctionStruct
      */
-    public function setPossibilities(\PayPal\ArrayType\MyArrayOfStringType $possibilities = null)
+    public function setPossibilities(\Ovh\ArrayType\MyArrayOfStringType $possibilities = null)
     {
         $this->possibilities = $possibilities;
         return $this;
@@ -140,7 +140,7 @@ class TelephonyAvailableFunctionStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyAvailableFunctionStruct
+     * @return \Ovh\StructType\TelephonyAvailableFunctionStruct
      */
     public static function __set_state(array $array)
     {

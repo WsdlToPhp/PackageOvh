@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class SupportGetThreadsResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfSupportThreadDetailStructType
+     * @var \Ovh\ArrayType\MyArrayOfSupportThreadDetailStructType
      */
     public $return;
     /**
      * Constructor method for supportGetThreadsResponse
      * @uses SupportGetThreadsResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfSupportThreadDetailStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfSupportThreadDetailStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfSupportThreadDetailStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfSupportThreadDetailStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfSupportThreadDetailStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfSupportThreadDetailStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class SupportGetThreadsResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfSupportThreadDetailStructType $return
-     * @return \PayPal\StructType\SupportGetThreadsResponse
+     * @param \Ovh\ArrayType\MyArrayOfSupportThreadDetailStructType $return
+     * @return \Ovh\StructType\SupportGetThreadsResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfSupportThreadDetailStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfSupportThreadDetailStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class SupportGetThreadsResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SupportGetThreadsResponse
+     * @return \Ovh\StructType\SupportGetThreadsResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -99,7 +99,7 @@ class DedicatedVirtualMacIpAdd extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedVirtualMacIpAdd
+     * @return \Ovh\StructType\DedicatedVirtualMacIpAdd
      */
     public function setSession($session = null)
     {
@@ -121,7 +121,7 @@ class DedicatedVirtualMacIpAdd extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedVirtualMacIpAdd
+     * @return \Ovh\StructType\DedicatedVirtualMacIpAdd
      */
     public function setHostname($hostname = null)
     {
@@ -143,7 +143,7 @@ class DedicatedVirtualMacIpAdd extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\DedicatedVirtualMacIpAdd
+     * @return \Ovh\StructType\DedicatedVirtualMacIpAdd
      */
     public function setIp($ip = null)
     {
@@ -165,7 +165,7 @@ class DedicatedVirtualMacIpAdd extends AbstractStructBase
     /**
      * Set newMac value
      * @param string $newMac
-     * @return \PayPal\StructType\DedicatedVirtualMacIpAdd
+     * @return \Ovh\StructType\DedicatedVirtualMacIpAdd
      */
     public function setNewMac($newMac = null)
     {
@@ -187,7 +187,7 @@ class DedicatedVirtualMacIpAdd extends AbstractStructBase
     /**
      * Set typeMac value
      * @param string $typeMac
-     * @return \PayPal\StructType\DedicatedVirtualMacIpAdd
+     * @return \Ovh\StructType\DedicatedVirtualMacIpAdd
      */
     public function setTypeMac($typeMac = null)
     {
@@ -209,7 +209,7 @@ class DedicatedVirtualMacIpAdd extends AbstractStructBase
     /**
      * Set macName value
      * @param string $macName
-     * @return \PayPal\StructType\DedicatedVirtualMacIpAdd
+     * @return \Ovh\StructType\DedicatedVirtualMacIpAdd
      */
     public function setMacName($macName = null)
     {
@@ -231,7 +231,7 @@ class DedicatedVirtualMacIpAdd extends AbstractStructBase
     /**
      * Set mac value
      * @param string $mac
-     * @return \PayPal\StructType\DedicatedVirtualMacIpAdd
+     * @return \Ovh\StructType\DedicatedVirtualMacIpAdd
      */
     public function setMac($mac = null)
     {
@@ -248,7 +248,7 @@ class DedicatedVirtualMacIpAdd extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedVirtualMacIpAdd
+     * @return \Ovh\StructType\DedicatedVirtualMacIpAdd
      */
     public static function __set_state(array $array)
     {

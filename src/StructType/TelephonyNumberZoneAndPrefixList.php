@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -29,7 +29,7 @@ class TelephonyNumberZoneAndPrefixList extends AbstractStructBase
      * The types
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $types;
     /**
@@ -39,9 +39,9 @@ class TelephonyNumberZoneAndPrefixList extends AbstractStructBase
      * @uses TelephonyNumberZoneAndPrefixList::setTypes()
      * @param string $session
      * @param string $country
-     * @param \PayPal\ArrayType\MyArrayOfStringType $types
+     * @param \Ovh\ArrayType\MyArrayOfStringType $types
      */
-    public function __construct($session = null, $country = null, \PayPal\ArrayType\MyArrayOfStringType $types = null)
+    public function __construct($session = null, $country = null, \Ovh\ArrayType\MyArrayOfStringType $types = null)
     {
         $this
             ->setSession($session)
@@ -59,7 +59,7 @@ class TelephonyNumberZoneAndPrefixList extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyNumberZoneAndPrefixList
+     * @return \Ovh\StructType\TelephonyNumberZoneAndPrefixList
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class TelephonyNumberZoneAndPrefixList extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyNumberZoneAndPrefixList
+     * @return \Ovh\StructType\TelephonyNumberZoneAndPrefixList
      */
     public function setCountry($country = null)
     {
@@ -94,7 +94,7 @@ class TelephonyNumberZoneAndPrefixList extends AbstractStructBase
     }
     /**
      * Get types value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getTypes()
     {
@@ -102,10 +102,10 @@ class TelephonyNumberZoneAndPrefixList extends AbstractStructBase
     }
     /**
      * Set types value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $types
-     * @return \PayPal\StructType\TelephonyNumberZoneAndPrefixList
+     * @param \Ovh\ArrayType\MyArrayOfStringType $types
+     * @return \Ovh\StructType\TelephonyNumberZoneAndPrefixList
      */
-    public function setTypes(\PayPal\ArrayType\MyArrayOfStringType $types = null)
+    public function setTypes(\Ovh\ArrayType\MyArrayOfStringType $types = null)
     {
         $this->types = $types;
         return $this;
@@ -116,7 +116,7 @@ class TelephonyNumberZoneAndPrefixList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyNumberZoneAndPrefixList
+     * @return \Ovh\StructType\TelephonyNumberZoneAndPrefixList
      */
     public static function __set_state(array $array)
     {

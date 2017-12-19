@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class TelephonyListSummationCallsFromBillingAccount extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyListSummationCallsFromBillingAccount
+     * @return \Ovh\StructType\TelephonyListSummationCallsFromBillingAccount
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class TelephonyListSummationCallsFromBillingAccount extends AbstractStructBase
     /**
      * Set billingAccount value
      * @param string $billingAccount
-     * @return \PayPal\StructType\TelephonyListSummationCallsFromBillingAccount
+     * @return \Ovh\StructType\TelephonyListSummationCallsFromBillingAccount
      */
     public function setBillingAccount($billingAccount = null)
     {
@@ -103,7 +103,7 @@ class TelephonyListSummationCallsFromBillingAccount extends AbstractStructBase
     /**
      * Set reversableDelay value
      * @param string $reversableDelay
-     * @return \PayPal\StructType\TelephonyListSummationCallsFromBillingAccount
+     * @return \Ovh\StructType\TelephonyListSummationCallsFromBillingAccount
      */
     public function setReversableDelay($reversableDelay = null)
     {
@@ -120,7 +120,7 @@ class TelephonyListSummationCallsFromBillingAccount extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyListSummationCallsFromBillingAccount
+     * @return \Ovh\StructType\TelephonyListSummationCallsFromBillingAccount
      */
     public static function __set_state(array $array)
     {

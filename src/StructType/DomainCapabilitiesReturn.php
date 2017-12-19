@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -93,7 +93,7 @@ class DomainCapabilitiesReturn extends AbstractStructBase
     /**
      * Set needAuthInfo value
      * @param bool $needAuthInfo
-     * @return \PayPal\StructType\DomainCapabilitiesReturn
+     * @return \Ovh\StructType\DomainCapabilitiesReturn
      */
     public function setNeedAuthInfo($needAuthInfo = null)
     {
@@ -115,7 +115,7 @@ class DomainCapabilitiesReturn extends AbstractStructBase
     /**
      * Set needZoneCheck value
      * @param bool $needZoneCheck
-     * @return \PayPal\StructType\DomainCapabilitiesReturn
+     * @return \Ovh\StructType\DomainCapabilitiesReturn
      */
     public function setNeedZoneCheck($needZoneCheck = null)
     {
@@ -137,7 +137,7 @@ class DomainCapabilitiesReturn extends AbstractStructBase
     /**
      * Set owo value
      * @param bool $owo
-     * @return \PayPal\StructType\DomainCapabilitiesReturn
+     * @return \Ovh\StructType\DomainCapabilitiesReturn
      */
     public function setOwo($owo = null)
     {
@@ -159,7 +159,7 @@ class DomainCapabilitiesReturn extends AbstractStructBase
     /**
      * Set hostIPv4 value
      * @param bool $hostIPv4
-     * @return \PayPal\StructType\DomainCapabilitiesReturn
+     * @return \Ovh\StructType\DomainCapabilitiesReturn
      */
     public function setHostIPv4($hostIPv4 = null)
     {
@@ -181,7 +181,7 @@ class DomainCapabilitiesReturn extends AbstractStructBase
     /**
      * Set hostIPv6 value
      * @param bool $hostIPv6
-     * @return \PayPal\StructType\DomainCapabilitiesReturn
+     * @return \Ovh\StructType\DomainCapabilitiesReturn
      */
     public function setHostIPv6($hostIPv6 = null)
     {
@@ -203,7 +203,7 @@ class DomainCapabilitiesReturn extends AbstractStructBase
     /**
      * Set hostmultiIp value
      * @param bool $hostmultiIp
-     * @return \PayPal\StructType\DomainCapabilitiesReturn
+     * @return \Ovh\StructType\DomainCapabilitiesReturn
      */
     public function setHostmultiIp($hostmultiIp = null)
     {
@@ -225,7 +225,7 @@ class DomainCapabilitiesReturn extends AbstractStructBase
     /**
      * Set ownerUpdateAllowed value
      * @param bool $ownerUpdateAllowed
-     * @return \PayPal\StructType\DomainCapabilitiesReturn
+     * @return \Ovh\StructType\DomainCapabilitiesReturn
      */
     public function setOwnerUpdateAllowed($ownerUpdateAllowed = null)
     {
@@ -247,7 +247,7 @@ class DomainCapabilitiesReturn extends AbstractStructBase
     /**
      * Set ownerTradeAllowed value
      * @param bool $ownerTradeAllowed
-     * @return \PayPal\StructType\DomainCapabilitiesReturn
+     * @return \Ovh\StructType\DomainCapabilitiesReturn
      */
     public function setOwnerTradeAllowed($ownerTradeAllowed = null)
     {
@@ -264,7 +264,7 @@ class DomainCapabilitiesReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DomainCapabilitiesReturn
+     * @return \Ovh\StructType\DomainCapabilitiesReturn
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class TelephonyAbbreviatedNumberListPaginatedReturn extends AbstractStructBase
     public $totalRecords;
     /**
      * The list
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyAbbreviatedNumberStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyAbbreviatedNumberStructType
      */
     public $list;
     /**
@@ -26,9 +26,9 @@ class TelephonyAbbreviatedNumberListPaginatedReturn extends AbstractStructBase
      * @uses TelephonyAbbreviatedNumberListPaginatedReturn::setTotalRecords()
      * @uses TelephonyAbbreviatedNumberListPaginatedReturn::setList()
      * @param int $totalRecords
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyAbbreviatedNumberStructType $list
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyAbbreviatedNumberStructType $list
      */
-    public function __construct($totalRecords = null, \PayPal\ArrayType\MyArrayOfTelephonyAbbreviatedNumberStructType $list = null)
+    public function __construct($totalRecords = null, \Ovh\ArrayType\MyArrayOfTelephonyAbbreviatedNumberStructType $list = null)
     {
         $this
             ->setTotalRecords($totalRecords)
@@ -45,7 +45,7 @@ class TelephonyAbbreviatedNumberListPaginatedReturn extends AbstractStructBase
     /**
      * Set totalRecords value
      * @param int $totalRecords
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberListPaginatedReturn
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberListPaginatedReturn
      */
     public function setTotalRecords($totalRecords = null)
     {
@@ -58,7 +58,7 @@ class TelephonyAbbreviatedNumberListPaginatedReturn extends AbstractStructBase
     }
     /**
      * Get list value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyAbbreviatedNumberStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyAbbreviatedNumberStructType|null
      */
     public function getList()
     {
@@ -66,10 +66,10 @@ class TelephonyAbbreviatedNumberListPaginatedReturn extends AbstractStructBase
     }
     /**
      * Set list value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyAbbreviatedNumberStructType $list
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberListPaginatedReturn
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyAbbreviatedNumberStructType $list
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberListPaginatedReturn
      */
-    public function setList(\PayPal\ArrayType\MyArrayOfTelephonyAbbreviatedNumberStructType $list = null)
+    public function setList(\Ovh\ArrayType\MyArrayOfTelephonyAbbreviatedNumberStructType $list = null)
     {
         $this->list = $list;
         return $this;
@@ -80,7 +80,7 @@ class TelephonyAbbreviatedNumberListPaginatedReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberListPaginatedReturn
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberListPaginatedReturn
      */
     public static function __set_state(array $array)
     {

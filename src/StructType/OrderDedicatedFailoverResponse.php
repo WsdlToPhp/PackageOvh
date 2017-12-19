@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class OrderDedicatedFailoverResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\OrderStruct
+     * @var \Ovh\StructType\OrderStruct
      */
     public $return;
     /**
      * Constructor method for orderDedicatedFailoverResponse
      * @uses OrderDedicatedFailoverResponse::setReturn()
-     * @param \PayPal\StructType\OrderStruct $return
+     * @param \Ovh\StructType\OrderStruct $return
      */
-    public function __construct(\PayPal\StructType\OrderStruct $return = null)
+    public function __construct(\Ovh\StructType\OrderStruct $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\OrderStruct|null
+     * @return \Ovh\StructType\OrderStruct|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class OrderDedicatedFailoverResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\OrderStruct $return
-     * @return \PayPal\StructType\OrderDedicatedFailoverResponse
+     * @param \Ovh\StructType\OrderStruct $return
+     * @return \Ovh\StructType\OrderDedicatedFailoverResponse
      */
-    public function setReturn(\PayPal\StructType\OrderStruct $return = null)
+    public function setReturn(\Ovh\StructType\OrderStruct $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class OrderDedicatedFailoverResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\OrderDedicatedFailoverResponse
+     * @return \Ovh\StructType\OrderDedicatedFailoverResponse
      */
     public static function __set_state(array $array)
     {

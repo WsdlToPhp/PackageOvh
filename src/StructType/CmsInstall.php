@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class CmsInstall extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\CmsInstall
+     * @return \Ovh\StructType\CmsInstall
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class CmsInstall extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\CmsInstall
+     * @return \Ovh\StructType\CmsInstall
      */
     public function setDomain($domain = null)
     {
@@ -123,7 +123,7 @@ class CmsInstall extends AbstractStructBase
     /**
      * Set cmsName value
      * @param string $cmsName
-     * @return \PayPal\StructType\CmsInstall
+     * @return \Ovh\StructType\CmsInstall
      */
     public function setCmsName($cmsName = null)
     {
@@ -145,7 +145,7 @@ class CmsInstall extends AbstractStructBase
     /**
      * Set path value
      * @param string $path
-     * @return \PayPal\StructType\CmsInstall
+     * @return \Ovh\StructType\CmsInstall
      */
     public function setPath($path = null)
     {
@@ -167,7 +167,7 @@ class CmsInstall extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \PayPal\StructType\CmsInstall
+     * @return \Ovh\StructType\CmsInstall
      */
     public function setLanguage($language = null)
     {
@@ -184,7 +184,7 @@ class CmsInstall extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\CmsInstall
+     * @return \Ovh\StructType\CmsInstall
      */
     public static function __set_state(array $array)
     {

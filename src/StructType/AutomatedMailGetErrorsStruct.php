@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class AutomatedMailGetErrorsStruct extends AbstractStructBase
     /**
      * Set to value
      * @param string $to
-     * @return \PayPal\StructType\AutomatedMailGetErrorsStruct
+     * @return \Ovh\StructType\AutomatedMailGetErrorsStruct
      */
     public function setTo($to = null)
     {
@@ -83,7 +83,7 @@ class AutomatedMailGetErrorsStruct extends AbstractStructBase
     /**
      * Set total value
      * @param int $total
-     * @return \PayPal\StructType\AutomatedMailGetErrorsStruct
+     * @return \Ovh\StructType\AutomatedMailGetErrorsStruct
      */
     public function setTotal($total = null)
     {
@@ -105,7 +105,7 @@ class AutomatedMailGetErrorsStruct extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\AutomatedMailGetErrorsStruct
+     * @return \Ovh\StructType\AutomatedMailGetErrorsStruct
      */
     public function setDate($date = null)
     {
@@ -127,7 +127,7 @@ class AutomatedMailGetErrorsStruct extends AbstractStructBase
     /**
      * Set message value
      * @param string $message
-     * @return \PayPal\StructType\AutomatedMailGetErrorsStruct
+     * @return \Ovh\StructType\AutomatedMailGetErrorsStruct
      */
     public function setMessage($message = null)
     {
@@ -144,7 +144,7 @@ class AutomatedMailGetErrorsStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\AutomatedMailGetErrorsStruct
+     * @return \Ovh\StructType\AutomatedMailGetErrorsStruct
      */
     public static function __set_state(array $array)
     {

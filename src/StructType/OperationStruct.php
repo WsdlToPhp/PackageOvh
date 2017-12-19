@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -43,7 +43,7 @@ class OperationStruct extends AbstractStructBase
     public $comment;
     /**
      * The users
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $users;
     /**
@@ -109,7 +109,7 @@ class OperationStruct extends AbstractStructBase
      * @param string $status
      * @param string $internalStatus
      * @param string $comment
-     * @param \PayPal\ArrayType\MyArrayOfStringType $users
+     * @param \Ovh\ArrayType\MyArrayOfStringType $users
      * @param int $retry
      * @param string $todoDate
      * @param string $lastUpdate
@@ -119,7 +119,7 @@ class OperationStruct extends AbstractStructBase
      * @param bool $canRelaunch
      * @param string $restartStep
      */
-    public function __construct($id = null, $domain = null, $function = null, $status = null, $internalStatus = null, $comment = null, \PayPal\ArrayType\MyArrayOfStringType $users = null, $retry = null, $todoDate = null, $lastUpdate = null, $doneDate = null, $canCancel = null, $canCorrect = null, $canRelaunch = null, $restartStep = null)
+    public function __construct($id = null, $domain = null, $function = null, $status = null, $internalStatus = null, $comment = null, \Ovh\ArrayType\MyArrayOfStringType $users = null, $retry = null, $todoDate = null, $lastUpdate = null, $doneDate = null, $canCancel = null, $canCorrect = null, $canRelaunch = null, $restartStep = null)
     {
         $this
             ->setId($id)
@@ -149,7 +149,7 @@ class OperationStruct extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\OperationStruct
+     * @return \Ovh\StructType\OperationStruct
      */
     public function setId($id = null)
     {
@@ -171,7 +171,7 @@ class OperationStruct extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\OperationStruct
+     * @return \Ovh\StructType\OperationStruct
      */
     public function setDomain($domain = null)
     {
@@ -193,7 +193,7 @@ class OperationStruct extends AbstractStructBase
     /**
      * Set function value
      * @param string $function
-     * @return \PayPal\StructType\OperationStruct
+     * @return \Ovh\StructType\OperationStruct
      */
     public function setFunction($function = null)
     {
@@ -215,7 +215,7 @@ class OperationStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\OperationStruct
+     * @return \Ovh\StructType\OperationStruct
      */
     public function setStatus($status = null)
     {
@@ -237,7 +237,7 @@ class OperationStruct extends AbstractStructBase
     /**
      * Set internalStatus value
      * @param string $internalStatus
-     * @return \PayPal\StructType\OperationStruct
+     * @return \Ovh\StructType\OperationStruct
      */
     public function setInternalStatus($internalStatus = null)
     {
@@ -259,7 +259,7 @@ class OperationStruct extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \PayPal\StructType\OperationStruct
+     * @return \Ovh\StructType\OperationStruct
      */
     public function setComment($comment = null)
     {
@@ -272,7 +272,7 @@ class OperationStruct extends AbstractStructBase
     }
     /**
      * Get users value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getUsers()
     {
@@ -280,10 +280,10 @@ class OperationStruct extends AbstractStructBase
     }
     /**
      * Set users value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $users
-     * @return \PayPal\StructType\OperationStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $users
+     * @return \Ovh\StructType\OperationStruct
      */
-    public function setUsers(\PayPal\ArrayType\MyArrayOfStringType $users = null)
+    public function setUsers(\Ovh\ArrayType\MyArrayOfStringType $users = null)
     {
         $this->users = $users;
         return $this;
@@ -299,7 +299,7 @@ class OperationStruct extends AbstractStructBase
     /**
      * Set retry value
      * @param int $retry
-     * @return \PayPal\StructType\OperationStruct
+     * @return \Ovh\StructType\OperationStruct
      */
     public function setRetry($retry = null)
     {
@@ -321,7 +321,7 @@ class OperationStruct extends AbstractStructBase
     /**
      * Set todoDate value
      * @param string $todoDate
-     * @return \PayPal\StructType\OperationStruct
+     * @return \Ovh\StructType\OperationStruct
      */
     public function setTodoDate($todoDate = null)
     {
@@ -343,7 +343,7 @@ class OperationStruct extends AbstractStructBase
     /**
      * Set lastUpdate value
      * @param string $lastUpdate
-     * @return \PayPal\StructType\OperationStruct
+     * @return \Ovh\StructType\OperationStruct
      */
     public function setLastUpdate($lastUpdate = null)
     {
@@ -365,7 +365,7 @@ class OperationStruct extends AbstractStructBase
     /**
      * Set doneDate value
      * @param string $doneDate
-     * @return \PayPal\StructType\OperationStruct
+     * @return \Ovh\StructType\OperationStruct
      */
     public function setDoneDate($doneDate = null)
     {
@@ -387,7 +387,7 @@ class OperationStruct extends AbstractStructBase
     /**
      * Set canCancel value
      * @param bool $canCancel
-     * @return \PayPal\StructType\OperationStruct
+     * @return \Ovh\StructType\OperationStruct
      */
     public function setCanCancel($canCancel = null)
     {
@@ -409,7 +409,7 @@ class OperationStruct extends AbstractStructBase
     /**
      * Set canCorrect value
      * @param bool $canCorrect
-     * @return \PayPal\StructType\OperationStruct
+     * @return \Ovh\StructType\OperationStruct
      */
     public function setCanCorrect($canCorrect = null)
     {
@@ -431,7 +431,7 @@ class OperationStruct extends AbstractStructBase
     /**
      * Set canRelaunch value
      * @param bool $canRelaunch
-     * @return \PayPal\StructType\OperationStruct
+     * @return \Ovh\StructType\OperationStruct
      */
     public function setCanRelaunch($canRelaunch = null)
     {
@@ -453,7 +453,7 @@ class OperationStruct extends AbstractStructBase
     /**
      * Set restartStep value
      * @param string $restartStep
-     * @return \PayPal\StructType\OperationStruct
+     * @return \Ovh\StructType\OperationStruct
      */
     public function setRestartStep($restartStep = null)
     {
@@ -470,7 +470,7 @@ class OperationStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\OperationStruct
+     * @return \Ovh\StructType\OperationStruct
      */
     public static function __set_state(array $array)
     {

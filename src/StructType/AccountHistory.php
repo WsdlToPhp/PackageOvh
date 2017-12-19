@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class AccountHistory extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\AccountHistory
+     * @return \Ovh\StructType\AccountHistory
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class AccountHistory extends AbstractStructBase
     /**
      * Set month value
      * @param int $month
-     * @return \PayPal\StructType\AccountHistory
+     * @return \Ovh\StructType\AccountHistory
      */
     public function setMonth($month = null)
     {
@@ -103,7 +103,7 @@ class AccountHistory extends AbstractStructBase
     /**
      * Set year value
      * @param int $year
-     * @return \PayPal\StructType\AccountHistory
+     * @return \Ovh\StructType\AccountHistory
      */
     public function setYear($year = null)
     {
@@ -120,7 +120,7 @@ class AccountHistory extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\AccountHistory
+     * @return \Ovh\StructType\AccountHistory
      */
     public static function __set_state(array $array)
     {

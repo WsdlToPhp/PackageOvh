@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class PopListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfPopStructType
+     * @var \Ovh\ArrayType\MyArrayOfPopStructType
      */
     public $return;
     /**
      * Constructor method for popListResponse
      * @uses PopListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfPopStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfPopStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfPopStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfPopStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfPopStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfPopStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class PopListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfPopStructType $return
-     * @return \PayPal\StructType\PopListResponse
+     * @param \Ovh\ArrayType\MyArrayOfPopStructType $return
+     * @return \Ovh\StructType\PopListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfPopStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfPopStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class PopListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\PopListResponse
+     * @return \Ovh\StructType\PopListResponse
      */
     public static function __set_state(array $array)
     {

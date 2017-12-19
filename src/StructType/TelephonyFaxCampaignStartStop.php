@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class TelephonyFaxCampaignStartStop extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyFaxCampaignStartStop
+     * @return \Ovh\StructType\TelephonyFaxCampaignStartStop
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class TelephonyFaxCampaignStartStop extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyFaxCampaignStartStop
+     * @return \Ovh\StructType\TelephonyFaxCampaignStartStop
      */
     public function setNumber($number = null)
     {
@@ -123,7 +123,7 @@ class TelephonyFaxCampaignStartStop extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyFaxCampaignStartStop
+     * @return \Ovh\StructType\TelephonyFaxCampaignStartStop
      */
     public function setCountry($country = null)
     {
@@ -145,7 +145,7 @@ class TelephonyFaxCampaignStartStop extends AbstractStructBase
     /**
      * Set reference value
      * @param string $reference
-     * @return \PayPal\StructType\TelephonyFaxCampaignStartStop
+     * @return \Ovh\StructType\TelephonyFaxCampaignStartStop
      */
     public function setReference($reference = null)
     {
@@ -167,7 +167,7 @@ class TelephonyFaxCampaignStartStop extends AbstractStructBase
     /**
      * Set forceStart value
      * @param bool $forceStart
-     * @return \PayPal\StructType\TelephonyFaxCampaignStartStop
+     * @return \Ovh\StructType\TelephonyFaxCampaignStartStop
      */
     public function setForceStart($forceStart = null)
     {
@@ -184,7 +184,7 @@ class TelephonyFaxCampaignStartStop extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFaxCampaignStartStop
+     * @return \Ovh\StructType\TelephonyFaxCampaignStartStop
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class SubDomainModify extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\SubDomainModify
+     * @return \Ovh\StructType\SubDomainModify
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class SubDomainModify extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\SubDomainModify
+     * @return \Ovh\StructType\SubDomainModify
      */
     public function setDomain($domain = null)
     {
@@ -123,7 +123,7 @@ class SubDomainModify extends AbstractStructBase
     /**
      * Set subdomain value
      * @param string $subdomain
-     * @return \PayPal\StructType\SubDomainModify
+     * @return \Ovh\StructType\SubDomainModify
      */
     public function setSubdomain($subdomain = null)
     {
@@ -145,7 +145,7 @@ class SubDomainModify extends AbstractStructBase
     /**
      * Set target value
      * @param string $target
-     * @return \PayPal\StructType\SubDomainModify
+     * @return \Ovh\StructType\SubDomainModify
      */
     public function setTarget($target = null)
     {
@@ -167,7 +167,7 @@ class SubDomainModify extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\SubDomainModify
+     * @return \Ovh\StructType\SubDomainModify
      */
     public function setCountry($country = null)
     {
@@ -184,7 +184,7 @@ class SubDomainModify extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SubDomainModify
+     * @return \Ovh\StructType\SubDomainModify
      */
     public static function __set_state(array $array)
     {

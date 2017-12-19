@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class DomainWhoisObfuscatorUnset extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DomainWhoisObfuscatorUnset
+     * @return \Ovh\StructType\DomainWhoisObfuscatorUnset
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class DomainWhoisObfuscatorUnset extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\DomainWhoisObfuscatorUnset
+     * @return \Ovh\StructType\DomainWhoisObfuscatorUnset
      */
     public function setDomain($domain = null)
     {
@@ -103,7 +103,7 @@ class DomainWhoisObfuscatorUnset extends AbstractStructBase
     /**
      * Set field value
      * @param string $field
-     * @return \PayPal\StructType\DomainWhoisObfuscatorUnset
+     * @return \Ovh\StructType\DomainWhoisObfuscatorUnset
      */
     public function setField($field = null)
     {
@@ -120,7 +120,7 @@ class DomainWhoisObfuscatorUnset extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DomainWhoisObfuscatorUnset
+     * @return \Ovh\StructType\DomainWhoisObfuscatorUnset
      */
     public static function __set_state(array $array)
     {

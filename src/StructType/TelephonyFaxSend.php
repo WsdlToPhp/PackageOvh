@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -43,7 +43,7 @@ class TelephonyFaxSend extends AbstractStructBase
      * The recipients
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $recipients;
     /**
@@ -81,12 +81,12 @@ class TelephonyFaxSend extends AbstractStructBase
      * @param string $number
      * @param string $country
      * @param string $pdfUrl
-     * @param \PayPal\ArrayType\MyArrayOfStringType $recipients
+     * @param \Ovh\ArrayType\MyArrayOfStringType $recipients
      * @param string $quality
      * @param string $email
      * @param string $referer
      */
-    public function __construct($session = null, $number = null, $country = null, $pdfUrl = null, \PayPal\ArrayType\MyArrayOfStringType $recipients = null, $quality = null, $email = null, $referer = null)
+    public function __construct($session = null, $number = null, $country = null, $pdfUrl = null, \Ovh\ArrayType\MyArrayOfStringType $recipients = null, $quality = null, $email = null, $referer = null)
     {
         $this
             ->setSession($session)
@@ -109,7 +109,7 @@ class TelephonyFaxSend extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyFaxSend
+     * @return \Ovh\StructType\TelephonyFaxSend
      */
     public function setSession($session = null)
     {
@@ -131,7 +131,7 @@ class TelephonyFaxSend extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyFaxSend
+     * @return \Ovh\StructType\TelephonyFaxSend
      */
     public function setNumber($number = null)
     {
@@ -153,7 +153,7 @@ class TelephonyFaxSend extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyFaxSend
+     * @return \Ovh\StructType\TelephonyFaxSend
      */
     public function setCountry($country = null)
     {
@@ -175,7 +175,7 @@ class TelephonyFaxSend extends AbstractStructBase
     /**
      * Set pdfUrl value
      * @param string $pdfUrl
-     * @return \PayPal\StructType\TelephonyFaxSend
+     * @return \Ovh\StructType\TelephonyFaxSend
      */
     public function setPdfUrl($pdfUrl = null)
     {
@@ -188,7 +188,7 @@ class TelephonyFaxSend extends AbstractStructBase
     }
     /**
      * Get recipients value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getRecipients()
     {
@@ -196,10 +196,10 @@ class TelephonyFaxSend extends AbstractStructBase
     }
     /**
      * Set recipients value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $recipients
-     * @return \PayPal\StructType\TelephonyFaxSend
+     * @param \Ovh\ArrayType\MyArrayOfStringType $recipients
+     * @return \Ovh\StructType\TelephonyFaxSend
      */
-    public function setRecipients(\PayPal\ArrayType\MyArrayOfStringType $recipients = null)
+    public function setRecipients(\Ovh\ArrayType\MyArrayOfStringType $recipients = null)
     {
         $this->recipients = $recipients;
         return $this;
@@ -215,7 +215,7 @@ class TelephonyFaxSend extends AbstractStructBase
     /**
      * Set quality value
      * @param string $quality
-     * @return \PayPal\StructType\TelephonyFaxSend
+     * @return \Ovh\StructType\TelephonyFaxSend
      */
     public function setQuality($quality = null)
     {
@@ -237,7 +237,7 @@ class TelephonyFaxSend extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\TelephonyFaxSend
+     * @return \Ovh\StructType\TelephonyFaxSend
      */
     public function setEmail($email = null)
     {
@@ -259,7 +259,7 @@ class TelephonyFaxSend extends AbstractStructBase
     /**
      * Set referer value
      * @param string $referer
-     * @return \PayPal\StructType\TelephonyFaxSend
+     * @return \Ovh\StructType\TelephonyFaxSend
      */
     public function setReferer($referer = null)
     {
@@ -276,7 +276,7 @@ class TelephonyFaxSend extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFaxSend
+     * @return \Ovh\StructType\TelephonyFaxSend
      */
     public static function __set_state(array $array)
     {

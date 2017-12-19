@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -80,7 +80,7 @@ class TelephonyFMHuntingModificationAnonymousCallRejection extends AbstractStruc
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyFMHuntingModificationAnonymousCallRejection
+     * @return \Ovh\StructType\TelephonyFMHuntingModificationAnonymousCallRejection
      */
     public function setSession($session = null)
     {
@@ -102,7 +102,7 @@ class TelephonyFMHuntingModificationAnonymousCallRejection extends AbstractStruc
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyFMHuntingModificationAnonymousCallRejection
+     * @return \Ovh\StructType\TelephonyFMHuntingModificationAnonymousCallRejection
      */
     public function setNumber($number = null)
     {
@@ -124,7 +124,7 @@ class TelephonyFMHuntingModificationAnonymousCallRejection extends AbstractStruc
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyFMHuntingModificationAnonymousCallRejection
+     * @return \Ovh\StructType\TelephonyFMHuntingModificationAnonymousCallRejection
      */
     public function setCountry($country = null)
     {
@@ -146,7 +146,7 @@ class TelephonyFMHuntingModificationAnonymousCallRejection extends AbstractStruc
     /**
      * Set billingAccount value
      * @param string $billingAccount
-     * @return \PayPal\StructType\TelephonyFMHuntingModificationAnonymousCallRejection
+     * @return \Ovh\StructType\TelephonyFMHuntingModificationAnonymousCallRejection
      */
     public function setBillingAccount($billingAccount = null)
     {
@@ -168,7 +168,7 @@ class TelephonyFMHuntingModificationAnonymousCallRejection extends AbstractStruc
     /**
      * Set anonymousCallRejection value
      * @param bool $anonymousCallRejection
-     * @return \PayPal\StructType\TelephonyFMHuntingModificationAnonymousCallRejection
+     * @return \Ovh\StructType\TelephonyFMHuntingModificationAnonymousCallRejection
      */
     public function setAnonymousCallRejection($anonymousCallRejection = null)
     {
@@ -185,7 +185,7 @@ class TelephonyFMHuntingModificationAnonymousCallRejection extends AbstractStruc
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFMHuntingModificationAnonymousCallRejection
+     * @return \Ovh\StructType\TelephonyFMHuntingModificationAnonymousCallRejection
      */
     public static function __set_state(array $array)
     {

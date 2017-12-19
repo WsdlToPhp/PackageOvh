@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfRtmHddStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\RtmHddStruct[]
+     * @var \Ovh\StructType\RtmHddStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfRtmHddStructType
      * @uses MyArrayOfRtmHddStructType::setItem()
-     * @param \PayPal\StructType\RtmHddStruct[] $item
+     * @param \Ovh\StructType\RtmHddStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfRtmHddStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\RtmHddStruct[]|null
+     * @return \Ovh\StructType\RtmHddStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfRtmHddStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\RtmHddStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfRtmHddStructType
+     * @param \Ovh\StructType\RtmHddStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfRtmHddStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfRtmHddStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfRtmHddStructTypeItemItem instanceof \PayPal\StructType\RtmHddStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\RtmHddStruct, "%s" given', is_object($myArrayOfRtmHddStructTypeItemItem) ? get_class($myArrayOfRtmHddStructTypeItemItem) : gettype($myArrayOfRtmHddStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfRtmHddStructTypeItemItem instanceof \Ovh\StructType\RtmHddStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\RtmHddStruct, "%s" given', is_object($myArrayOfRtmHddStructTypeItemItem) ? get_class($myArrayOfRtmHddStructTypeItemItem) : gettype($myArrayOfRtmHddStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfRtmHddStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\RtmHddStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfRtmHddStructType
+     * @param \Ovh\StructType\RtmHddStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfRtmHddStructType
      */
-    public function addToItem(\PayPal\StructType\RtmHddStruct $item)
+    public function addToItem(\Ovh\StructType\RtmHddStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\RtmHddStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\RtmHddStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\RtmHddStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\RtmHddStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfRtmHddStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\RtmHddStruct|null
+     * @return \Ovh\StructType\RtmHddStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfRtmHddStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\RtmHddStruct|null
+     * @return \Ovh\StructType\RtmHddStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfRtmHddStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\RtmHddStruct|null
+     * @return \Ovh\StructType\RtmHddStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfRtmHddStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\RtmHddStruct|null
+     * @return \Ovh\StructType\RtmHddStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfRtmHddStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\RtmHddStruct|null
+     * @return \Ovh\StructType\RtmHddStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfRtmHddStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfRtmHddStructType
+     * @return \Ovh\ArrayType\MyArrayOfRtmHddStructType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Cms extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\CmsInstall $parameters
-     * @return \PayPal\StructType\CmsInstallResponse|bool
+     * @param \Ovh\StructType\CmsInstall $parameters
+     * @return \Ovh\StructType\CmsInstallResponse|bool
      */
-    public function cmsInstall(\PayPal\StructType\CmsInstall $parameters)
+    public function cmsInstall(\Ovh\StructType\CmsInstall $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->cmsInstall($parameters));
@@ -36,10 +36,10 @@ class Cms extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\CmsAvailableList $parameters
-     * @return \PayPal\StructType\CmsAvailableListResponse|bool
+     * @param \Ovh\StructType\CmsAvailableList $parameters
+     * @return \Ovh\StructType\CmsAvailableListResponse|bool
      */
-    public function cmsAvailableList(\PayPal\StructType\CmsAvailableList $parameters)
+    public function cmsAvailableList(\Ovh\StructType\CmsAvailableList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->cmsAvailableList($parameters));
@@ -55,10 +55,10 @@ class Cms extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\CmsRemove $parameters
-     * @return \PayPal\StructType\CmsRemoveResponse|bool
+     * @param \Ovh\StructType\CmsRemove $parameters
+     * @return \Ovh\StructType\CmsRemoveResponse|bool
      */
-    public function cmsRemove(\PayPal\StructType\CmsRemove $parameters)
+    public function cmsRemove(\Ovh\StructType\CmsRemove $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->cmsRemove($parameters));
@@ -74,10 +74,10 @@ class Cms extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\CmsList $parameters
-     * @return \PayPal\StructType\CmsListResponse|bool
+     * @param \Ovh\StructType\CmsList $parameters
+     * @return \Ovh\StructType\CmsListResponse|bool
      */
-    public function cmsList(\PayPal\StructType\CmsList $parameters)
+    public function cmsList(\Ovh\StructType\CmsList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->cmsList($parameters));
@@ -93,10 +93,10 @@ class Cms extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\CmsRenewAdminPassword $parameters
-     * @return \PayPal\StructType\CmsRenewAdminPasswordResponse|bool
+     * @param \Ovh\StructType\CmsRenewAdminPassword $parameters
+     * @return \Ovh\StructType\CmsRenewAdminPasswordResponse|bool
      */
-    public function cmsRenewAdminPassword(\PayPal\StructType\CmsRenewAdminPassword $parameters)
+    public function cmsRenewAdminPassword(\Ovh\StructType\CmsRenewAdminPassword $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->cmsRenewAdminPassword($parameters));
@@ -109,7 +109,7 @@ class Cms extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\CmsAvailableListResponse|\PayPal\StructType\CmsInstallResponse|\PayPal\StructType\CmsListResponse|\PayPal\StructType\CmsRemoveResponse|\PayPal\StructType\CmsRenewAdminPasswordResponse
+     * @return \Ovh\StructType\CmsAvailableListResponse|\Ovh\StructType\CmsInstallResponse|\Ovh\StructType\CmsListResponse|\Ovh\StructType\CmsRemoveResponse|\Ovh\StructType\CmsRenewAdminPasswordResponse
      */
     public function getResult()
     {

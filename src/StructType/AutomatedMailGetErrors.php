@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class AutomatedMailGetErrors extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\AutomatedMailGetErrors
+     * @return \Ovh\StructType\AutomatedMailGetErrors
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class AutomatedMailGetErrors extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\AutomatedMailGetErrors
+     * @return \Ovh\StructType\AutomatedMailGetErrors
      */
     public function setDomain($domain = null)
     {
@@ -113,7 +113,7 @@ class AutomatedMailGetErrors extends AbstractStructBase
     /**
      * Set deep value
      * @param int $deep
-     * @return \PayPal\StructType\AutomatedMailGetErrors
+     * @return \Ovh\StructType\AutomatedMailGetErrors
      */
     public function setDeep($deep = null)
     {
@@ -135,7 +135,7 @@ class AutomatedMailGetErrors extends AbstractStructBase
     /**
      * Set limit value
      * @param int $limit
-     * @return \PayPal\StructType\AutomatedMailGetErrors
+     * @return \Ovh\StructType\AutomatedMailGetErrors
      */
     public function setLimit($limit = null)
     {
@@ -152,7 +152,7 @@ class AutomatedMailGetErrors extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\AutomatedMailGetErrors
+     * @return \Ovh\StructType\AutomatedMailGetErrors
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -17,13 +17,13 @@ class MyArrayOfTelephonyBillingAccountSummaryLineStructType extends AbstractStru
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TelephonyBillingAccountSummaryLineStruct[]
+     * @var \Ovh\StructType\TelephonyBillingAccountSummaryLineStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTelephonyBillingAccountSummaryLineStructType
      * @uses MyArrayOfTelephonyBillingAccountSummaryLineStructType::setItem()
-     * @param \PayPal\StructType\TelephonyBillingAccountSummaryLineStruct[] $item
+     * @param \Ovh\StructType\TelephonyBillingAccountSummaryLineStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -32,7 +32,7 @@ class MyArrayOfTelephonyBillingAccountSummaryLineStructType extends AbstractStru
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TelephonyBillingAccountSummaryLineStruct[]|null
+     * @return \Ovh\StructType\TelephonyBillingAccountSummaryLineStruct[]|null
      */
     public function getItem()
     {
@@ -41,15 +41,15 @@ class MyArrayOfTelephonyBillingAccountSummaryLineStructType extends AbstractStru
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyBillingAccountSummaryLineStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyBillingAccountSummaryLineStructType
+     * @param \Ovh\StructType\TelephonyBillingAccountSummaryLineStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyBillingAccountSummaryLineStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTelephonyBillingAccountSummaryLineStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTelephonyBillingAccountSummaryLineStructTypeItemItem instanceof \PayPal\StructType\TelephonyBillingAccountSummaryLineStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyBillingAccountSummaryLineStruct, "%s" given', is_object($myArrayOfTelephonyBillingAccountSummaryLineStructTypeItemItem) ? get_class($myArrayOfTelephonyBillingAccountSummaryLineStructTypeItemItem) : gettype($myArrayOfTelephonyBillingAccountSummaryLineStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTelephonyBillingAccountSummaryLineStructTypeItemItem instanceof \Ovh\StructType\TelephonyBillingAccountSummaryLineStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyBillingAccountSummaryLineStruct, "%s" given', is_object($myArrayOfTelephonyBillingAccountSummaryLineStructTypeItemItem) ? get_class($myArrayOfTelephonyBillingAccountSummaryLineStructTypeItemItem) : gettype($myArrayOfTelephonyBillingAccountSummaryLineStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -58,14 +58,14 @@ class MyArrayOfTelephonyBillingAccountSummaryLineStructType extends AbstractStru
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyBillingAccountSummaryLineStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyBillingAccountSummaryLineStructType
+     * @param \Ovh\StructType\TelephonyBillingAccountSummaryLineStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyBillingAccountSummaryLineStructType
      */
-    public function addToItem(\PayPal\StructType\TelephonyBillingAccountSummaryLineStruct $item)
+    public function addToItem(\Ovh\StructType\TelephonyBillingAccountSummaryLineStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TelephonyBillingAccountSummaryLineStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyBillingAccountSummaryLineStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TelephonyBillingAccountSummaryLineStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyBillingAccountSummaryLineStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class MyArrayOfTelephonyBillingAccountSummaryLineStructType extends AbstractStru
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonyBillingAccountSummaryLineStruct|null
+     * @return \Ovh\StructType\TelephonyBillingAccountSummaryLineStruct|null
      */
     public function current()
     {
@@ -83,7 +83,7 @@ class MyArrayOfTelephonyBillingAccountSummaryLineStructType extends AbstractStru
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonyBillingAccountSummaryLineStruct|null
+     * @return \Ovh\StructType\TelephonyBillingAccountSummaryLineStruct|null
      */
     public function item($index)
     {
@@ -92,7 +92,7 @@ class MyArrayOfTelephonyBillingAccountSummaryLineStructType extends AbstractStru
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonyBillingAccountSummaryLineStruct|null
+     * @return \Ovh\StructType\TelephonyBillingAccountSummaryLineStruct|null
      */
     public function first()
     {
@@ -101,7 +101,7 @@ class MyArrayOfTelephonyBillingAccountSummaryLineStructType extends AbstractStru
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonyBillingAccountSummaryLineStruct|null
+     * @return \Ovh\StructType\TelephonyBillingAccountSummaryLineStruct|null
      */
     public function last()
     {
@@ -111,7 +111,7 @@ class MyArrayOfTelephonyBillingAccountSummaryLineStructType extends AbstractStru
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonyBillingAccountSummaryLineStruct|null
+     * @return \Ovh\StructType\TelephonyBillingAccountSummaryLineStruct|null
      */
     public function offsetGet($offset)
     {
@@ -132,7 +132,7 @@ class MyArrayOfTelephonyBillingAccountSummaryLineStructType extends AbstractStru
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyBillingAccountSummaryLineStructType
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyBillingAccountSummaryLineStructType
      */
     public static function __set_state(array $array)
     {

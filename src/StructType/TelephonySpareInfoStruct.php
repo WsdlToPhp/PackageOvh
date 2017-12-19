@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,12 +38,12 @@ class TelephonySpareInfoStruct extends AbstractStructBase
     public $mac;
     /**
      * The compatibles
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $compatibles;
     /**
      * The actions
-     * @var \PayPal\StructType\TelephonySpareActionsStruct
+     * @var \Ovh\StructType\TelephonySpareActionsStruct
      */
     public $actions;
     /**
@@ -60,10 +60,10 @@ class TelephonySpareInfoStruct extends AbstractStructBase
      * @param string $spare
      * @param string $model
      * @param string $mac
-     * @param \PayPal\ArrayType\MyArrayOfStringType $compatibles
-     * @param \PayPal\StructType\TelephonySpareActionsStruct $actions
+     * @param \Ovh\ArrayType\MyArrayOfStringType $compatibles
+     * @param \Ovh\StructType\TelephonySpareActionsStruct $actions
      */
-    public function __construct($type = null, $family = null, $spare = null, $model = null, $mac = null, \PayPal\ArrayType\MyArrayOfStringType $compatibles = null, \PayPal\StructType\TelephonySpareActionsStruct $actions = null)
+    public function __construct($type = null, $family = null, $spare = null, $model = null, $mac = null, \Ovh\ArrayType\MyArrayOfStringType $compatibles = null, \Ovh\StructType\TelephonySpareActionsStruct $actions = null)
     {
         $this
             ->setType($type)
@@ -85,7 +85,7 @@ class TelephonySpareInfoStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\TelephonySpareInfoStruct
+     * @return \Ovh\StructType\TelephonySpareInfoStruct
      */
     public function setType($type = null)
     {
@@ -107,7 +107,7 @@ class TelephonySpareInfoStruct extends AbstractStructBase
     /**
      * Set family value
      * @param string $family
-     * @return \PayPal\StructType\TelephonySpareInfoStruct
+     * @return \Ovh\StructType\TelephonySpareInfoStruct
      */
     public function setFamily($family = null)
     {
@@ -129,7 +129,7 @@ class TelephonySpareInfoStruct extends AbstractStructBase
     /**
      * Set spare value
      * @param string $spare
-     * @return \PayPal\StructType\TelephonySpareInfoStruct
+     * @return \Ovh\StructType\TelephonySpareInfoStruct
      */
     public function setSpare($spare = null)
     {
@@ -151,7 +151,7 @@ class TelephonySpareInfoStruct extends AbstractStructBase
     /**
      * Set model value
      * @param string $model
-     * @return \PayPal\StructType\TelephonySpareInfoStruct
+     * @return \Ovh\StructType\TelephonySpareInfoStruct
      */
     public function setModel($model = null)
     {
@@ -173,7 +173,7 @@ class TelephonySpareInfoStruct extends AbstractStructBase
     /**
      * Set mac value
      * @param string $mac
-     * @return \PayPal\StructType\TelephonySpareInfoStruct
+     * @return \Ovh\StructType\TelephonySpareInfoStruct
      */
     public function setMac($mac = null)
     {
@@ -186,7 +186,7 @@ class TelephonySpareInfoStruct extends AbstractStructBase
     }
     /**
      * Get compatibles value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getCompatibles()
     {
@@ -194,17 +194,17 @@ class TelephonySpareInfoStruct extends AbstractStructBase
     }
     /**
      * Set compatibles value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $compatibles
-     * @return \PayPal\StructType\TelephonySpareInfoStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $compatibles
+     * @return \Ovh\StructType\TelephonySpareInfoStruct
      */
-    public function setCompatibles(\PayPal\ArrayType\MyArrayOfStringType $compatibles = null)
+    public function setCompatibles(\Ovh\ArrayType\MyArrayOfStringType $compatibles = null)
     {
         $this->compatibles = $compatibles;
         return $this;
     }
     /**
      * Get actions value
-     * @return \PayPal\StructType\TelephonySpareActionsStruct|null
+     * @return \Ovh\StructType\TelephonySpareActionsStruct|null
      */
     public function getActions()
     {
@@ -212,10 +212,10 @@ class TelephonySpareInfoStruct extends AbstractStructBase
     }
     /**
      * Set actions value
-     * @param \PayPal\StructType\TelephonySpareActionsStruct $actions
-     * @return \PayPal\StructType\TelephonySpareInfoStruct
+     * @param \Ovh\StructType\TelephonySpareActionsStruct $actions
+     * @return \Ovh\StructType\TelephonySpareInfoStruct
      */
-    public function setActions(\PayPal\StructType\TelephonySpareActionsStruct $actions = null)
+    public function setActions(\Ovh\StructType\TelephonySpareActionsStruct $actions = null)
     {
         $this->actions = $actions;
         return $this;
@@ -226,7 +226,7 @@ class TelephonySpareInfoStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySpareInfoStruct
+     * @return \Ovh\StructType\TelephonySpareInfoStruct
      */
     public static function __set_state(array $array)
     {

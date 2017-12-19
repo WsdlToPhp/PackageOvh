@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class RpsMigrationGetProgressStatusReturn extends AbstractStructBase
 {
     /**
      * The step1
-     * @var \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct
+     * @var \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct
      */
     public $step1;
     /**
      * The step2
-     * @var \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct
+     * @var \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct
      */
     public $step2;
     /**
      * The step3
-     * @var \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct
+     * @var \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct
      */
     public $step3;
     /**
      * The step4
-     * @var \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct
+     * @var \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct
      */
     public $step4;
     /**
@@ -37,12 +37,12 @@ class RpsMigrationGetProgressStatusReturn extends AbstractStructBase
      * @uses RpsMigrationGetProgressStatusReturn::setStep2()
      * @uses RpsMigrationGetProgressStatusReturn::setStep3()
      * @uses RpsMigrationGetProgressStatusReturn::setStep4()
-     * @param \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct $step1
-     * @param \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct $step2
-     * @param \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct $step3
-     * @param \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct $step4
+     * @param \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct $step1
+     * @param \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct $step2
+     * @param \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct $step3
+     * @param \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct $step4
      */
-    public function __construct(\PayPal\StructType\RpsMigrationGetProgressStatusStepStruct $step1 = null, \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct $step2 = null, \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct $step3 = null, \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct $step4 = null)
+    public function __construct(\Ovh\StructType\RpsMigrationGetProgressStatusStepStruct $step1 = null, \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct $step2 = null, \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct $step3 = null, \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct $step4 = null)
     {
         $this
             ->setStep1($step1)
@@ -52,7 +52,7 @@ class RpsMigrationGetProgressStatusReturn extends AbstractStructBase
     }
     /**
      * Get step1 value
-     * @return \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct|null
+     * @return \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct|null
      */
     public function getStep1()
     {
@@ -60,17 +60,17 @@ class RpsMigrationGetProgressStatusReturn extends AbstractStructBase
     }
     /**
      * Set step1 value
-     * @param \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct $step1
-     * @return \PayPal\StructType\RpsMigrationGetProgressStatusReturn
+     * @param \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct $step1
+     * @return \Ovh\StructType\RpsMigrationGetProgressStatusReturn
      */
-    public function setStep1(\PayPal\StructType\RpsMigrationGetProgressStatusStepStruct $step1 = null)
+    public function setStep1(\Ovh\StructType\RpsMigrationGetProgressStatusStepStruct $step1 = null)
     {
         $this->step1 = $step1;
         return $this;
     }
     /**
      * Get step2 value
-     * @return \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct|null
+     * @return \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct|null
      */
     public function getStep2()
     {
@@ -78,17 +78,17 @@ class RpsMigrationGetProgressStatusReturn extends AbstractStructBase
     }
     /**
      * Set step2 value
-     * @param \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct $step2
-     * @return \PayPal\StructType\RpsMigrationGetProgressStatusReturn
+     * @param \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct $step2
+     * @return \Ovh\StructType\RpsMigrationGetProgressStatusReturn
      */
-    public function setStep2(\PayPal\StructType\RpsMigrationGetProgressStatusStepStruct $step2 = null)
+    public function setStep2(\Ovh\StructType\RpsMigrationGetProgressStatusStepStruct $step2 = null)
     {
         $this->step2 = $step2;
         return $this;
     }
     /**
      * Get step3 value
-     * @return \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct|null
+     * @return \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct|null
      */
     public function getStep3()
     {
@@ -96,17 +96,17 @@ class RpsMigrationGetProgressStatusReturn extends AbstractStructBase
     }
     /**
      * Set step3 value
-     * @param \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct $step3
-     * @return \PayPal\StructType\RpsMigrationGetProgressStatusReturn
+     * @param \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct $step3
+     * @return \Ovh\StructType\RpsMigrationGetProgressStatusReturn
      */
-    public function setStep3(\PayPal\StructType\RpsMigrationGetProgressStatusStepStruct $step3 = null)
+    public function setStep3(\Ovh\StructType\RpsMigrationGetProgressStatusStepStruct $step3 = null)
     {
         $this->step3 = $step3;
         return $this;
     }
     /**
      * Get step4 value
-     * @return \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct|null
+     * @return \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct|null
      */
     public function getStep4()
     {
@@ -114,10 +114,10 @@ class RpsMigrationGetProgressStatusReturn extends AbstractStructBase
     }
     /**
      * Set step4 value
-     * @param \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct $step4
-     * @return \PayPal\StructType\RpsMigrationGetProgressStatusReturn
+     * @param \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct $step4
+     * @return \Ovh\StructType\RpsMigrationGetProgressStatusReturn
      */
-    public function setStep4(\PayPal\StructType\RpsMigrationGetProgressStatusStepStruct $step4 = null)
+    public function setStep4(\Ovh\StructType\RpsMigrationGetProgressStatusStepStruct $step4 = null)
     {
         $this->step4 = $step4;
         return $this;
@@ -128,7 +128,7 @@ class RpsMigrationGetProgressStatusReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RpsMigrationGetProgressStatusReturn
+     * @return \Ovh\StructType\RpsMigrationGetProgressStatusReturn
      */
     public static function __set_state(array $array)
     {

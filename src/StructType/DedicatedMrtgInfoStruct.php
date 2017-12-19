@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class DedicatedMrtgInfoStruct extends AbstractStructBase
     /**
      * Set in value
      * @param string $in
-     * @return \PayPal\StructType\DedicatedMrtgInfoStruct
+     * @return \Ovh\StructType\DedicatedMrtgInfoStruct
      */
     public function setIn($in = null)
     {
@@ -67,7 +67,7 @@ class DedicatedMrtgInfoStruct extends AbstractStructBase
     /**
      * Set out value
      * @param string $out
-     * @return \PayPal\StructType\DedicatedMrtgInfoStruct
+     * @return \Ovh\StructType\DedicatedMrtgInfoStruct
      */
     public function setOut($out = null)
     {
@@ -84,7 +84,7 @@ class DedicatedMrtgInfoStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedMrtgInfoStruct
+     * @return \Ovh\StructType\DedicatedMrtgInfoStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -99,7 +99,7 @@ class TelephonyAbbreviatedNumberListPaginated extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberListPaginated
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberListPaginated
      */
     public function setSession($session = null)
     {
@@ -121,7 +121,7 @@ class TelephonyAbbreviatedNumberListPaginated extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberListPaginated
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberListPaginated
      */
     public function setNumber($number = null)
     {
@@ -143,7 +143,7 @@ class TelephonyAbbreviatedNumberListPaginated extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberListPaginated
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberListPaginated
      */
     public function setCountry($country = null)
     {
@@ -165,7 +165,7 @@ class TelephonyAbbreviatedNumberListPaginated extends AbstractStructBase
     /**
      * Set pagingStart value
      * @param int $pagingStart
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberListPaginated
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberListPaginated
      */
     public function setPagingStart($pagingStart = null)
     {
@@ -187,7 +187,7 @@ class TelephonyAbbreviatedNumberListPaginated extends AbstractStructBase
     /**
      * Set pagingLimit value
      * @param int $pagingLimit
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberListPaginated
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberListPaginated
      */
     public function setPagingLimit($pagingLimit = null)
     {
@@ -209,7 +209,7 @@ class TelephonyAbbreviatedNumberListPaginated extends AbstractStructBase
     /**
      * Set sortField value
      * @param string $sortField
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberListPaginated
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberListPaginated
      */
     public function setSortField($sortField = null)
     {
@@ -231,7 +231,7 @@ class TelephonyAbbreviatedNumberListPaginated extends AbstractStructBase
     /**
      * Set sortOrder value
      * @param string $sortOrder
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberListPaginated
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberListPaginated
      */
     public function setSortOrder($sortOrder = null)
     {
@@ -248,7 +248,7 @@ class TelephonyAbbreviatedNumberListPaginated extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberListPaginated
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberListPaginated
      */
     public static function __set_state(array $array)
     {

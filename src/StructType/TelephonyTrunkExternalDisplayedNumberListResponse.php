@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,22 +14,22 @@ class TelephonyTrunkExternalDisplayedNumberListResponse extends AbstractStructBa
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType
      */
     public $return;
     /**
      * Constructor method for telephonyTrunkExternalDisplayedNumberListResponse
      * @uses TelephonyTrunkExternalDisplayedNumberListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType|null
      */
     public function getReturn()
     {
@@ -37,10 +37,10 @@ class TelephonyTrunkExternalDisplayedNumberListResponse extends AbstractStructBa
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType $return
-     * @return \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberListResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType $return
+     * @return \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -51,7 +51,7 @@ class TelephonyTrunkExternalDisplayedNumberListResponse extends AbstractStructBa
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberListResponse
+     * @return \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberListResponse
      */
     public static function __set_state(array $array)
     {

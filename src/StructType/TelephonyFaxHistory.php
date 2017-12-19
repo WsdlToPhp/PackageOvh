@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class TelephonyFaxHistory extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyFaxHistory
+     * @return \Ovh\StructType\TelephonyFaxHistory
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class TelephonyFaxHistory extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyFaxHistory
+     * @return \Ovh\StructType\TelephonyFaxHistory
      */
     public function setNumber($number = null)
     {
@@ -113,7 +113,7 @@ class TelephonyFaxHistory extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyFaxHistory
+     * @return \Ovh\StructType\TelephonyFaxHistory
      */
     public function setCountry($country = null)
     {
@@ -135,7 +135,7 @@ class TelephonyFaxHistory extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \PayPal\StructType\TelephonyFaxHistory
+     * @return \Ovh\StructType\TelephonyFaxHistory
      */
     public function setState($state = null)
     {
@@ -152,7 +152,7 @@ class TelephonyFaxHistory extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFaxHistory
+     * @return \Ovh\StructType\TelephonyFaxHistory
      */
     public static function __set_state(array $array)
     {

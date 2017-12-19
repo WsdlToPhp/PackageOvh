@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class TelephonyVoicemailMailboxDownloadReturn extends AbstractStructBase
     /**
      * Set fileName value
      * @param string $fileName
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxDownloadReturn
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxDownloadReturn
      */
     public function setFileName($fileName = null)
     {
@@ -75,7 +75,7 @@ class TelephonyVoicemailMailboxDownloadReturn extends AbstractStructBase
     /**
      * Set fileData value
      * @param string $fileData
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxDownloadReturn
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxDownloadReturn
      */
     public function setFileData($fileData = null)
     {
@@ -97,7 +97,7 @@ class TelephonyVoicemailMailboxDownloadReturn extends AbstractStructBase
     /**
      * Set md5sum value
      * @param string $md5sum
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxDownloadReturn
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxDownloadReturn
      */
     public function setMd5sum($md5sum = null)
     {
@@ -114,7 +114,7 @@ class TelephonyVoicemailMailboxDownloadReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxDownloadReturn
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxDownloadReturn
      */
     public static function __set_state(array $array)
     {

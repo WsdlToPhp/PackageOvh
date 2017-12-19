@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class ResponderEmailListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfResponderEmailStructType
+     * @var \Ovh\ArrayType\MyArrayOfResponderEmailStructType
      */
     public $return;
     /**
      * Constructor method for responderEmailListResponse
      * @uses ResponderEmailListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfResponderEmailStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfResponderEmailStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfResponderEmailStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfResponderEmailStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfResponderEmailStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfResponderEmailStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class ResponderEmailListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfResponderEmailStructType $return
-     * @return \PayPal\StructType\ResponderEmailListResponse
+     * @param \Ovh\ArrayType\MyArrayOfResponderEmailStructType $return
+     * @return \Ovh\StructType\ResponderEmailListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfResponderEmailStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfResponderEmailStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class ResponderEmailListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ResponderEmailListResponse
+     * @return \Ovh\StructType\ResponderEmailListResponse
      */
     public static function __set_state(array $array)
     {

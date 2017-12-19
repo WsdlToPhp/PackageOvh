@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -93,7 +93,7 @@ class DedicatedCapabilitiesStruct extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedCapabilitiesStruct
+     * @return \Ovh\StructType\DedicatedCapabilitiesStruct
      */
     public function setHostname($hostname = null)
     {
@@ -115,7 +115,7 @@ class DedicatedCapabilitiesStruct extends AbstractStructBase
     /**
      * Set originalClassicFailover value
      * @param int $originalClassicFailover
-     * @return \PayPal\StructType\DedicatedCapabilitiesStruct
+     * @return \Ovh\StructType\DedicatedCapabilitiesStruct
      */
     public function setOriginalClassicFailover($originalClassicFailover = null)
     {
@@ -137,7 +137,7 @@ class DedicatedCapabilitiesStruct extends AbstractStructBase
     /**
      * Set originalFailoverRipe value
      * @param int $originalFailoverRipe
-     * @return \PayPal\StructType\DedicatedCapabilitiesStruct
+     * @return \Ovh\StructType\DedicatedCapabilitiesStruct
      */
     public function setOriginalFailoverRipe($originalFailoverRipe = null)
     {
@@ -159,7 +159,7 @@ class DedicatedCapabilitiesStruct extends AbstractStructBase
     /**
      * Set originalLoadBalancingSlot value
      * @param int $originalLoadBalancingSlot
-     * @return \PayPal\StructType\DedicatedCapabilitiesStruct
+     * @return \Ovh\StructType\DedicatedCapabilitiesStruct
      */
     public function setOriginalLoadBalancingSlot($originalLoadBalancingSlot = null)
     {
@@ -181,7 +181,7 @@ class DedicatedCapabilitiesStruct extends AbstractStructBase
     /**
      * Set additionalClassicFailover value
      * @param int $additionalClassicFailover
-     * @return \PayPal\StructType\DedicatedCapabilitiesStruct
+     * @return \Ovh\StructType\DedicatedCapabilitiesStruct
      */
     public function setAdditionalClassicFailover($additionalClassicFailover = null)
     {
@@ -203,7 +203,7 @@ class DedicatedCapabilitiesStruct extends AbstractStructBase
     /**
      * Set additionalFailoverRipe value
      * @param int $additionalFailoverRipe
-     * @return \PayPal\StructType\DedicatedCapabilitiesStruct
+     * @return \Ovh\StructType\DedicatedCapabilitiesStruct
      */
     public function setAdditionalFailoverRipe($additionalFailoverRipe = null)
     {
@@ -225,7 +225,7 @@ class DedicatedCapabilitiesStruct extends AbstractStructBase
     /**
      * Set usedClassicFailover value
      * @param int $usedClassicFailover
-     * @return \PayPal\StructType\DedicatedCapabilitiesStruct
+     * @return \Ovh\StructType\DedicatedCapabilitiesStruct
      */
     public function setUsedClassicFailover($usedClassicFailover = null)
     {
@@ -247,7 +247,7 @@ class DedicatedCapabilitiesStruct extends AbstractStructBase
     /**
      * Set usedFailoverRipe value
      * @param int $usedFailoverRipe
-     * @return \PayPal\StructType\DedicatedCapabilitiesStruct
+     * @return \Ovh\StructType\DedicatedCapabilitiesStruct
      */
     public function setUsedFailoverRipe($usedFailoverRipe = null)
     {
@@ -264,7 +264,7 @@ class DedicatedCapabilitiesStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedCapabilitiesStruct
+     * @return \Ovh\StructType\DedicatedCapabilitiesStruct
      */
     public static function __set_state(array $array)
     {

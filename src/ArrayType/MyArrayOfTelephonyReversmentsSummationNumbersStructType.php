@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -17,13 +17,13 @@ class MyArrayOfTelephonyReversmentsSummationNumbersStructType extends AbstractSt
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TelephonyReversmentsSummationNumbersStruct[]
+     * @var \Ovh\StructType\TelephonyReversmentsSummationNumbersStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTelephonyReversmentsSummationNumbersStructType
      * @uses MyArrayOfTelephonyReversmentsSummationNumbersStructType::setItem()
-     * @param \PayPal\StructType\TelephonyReversmentsSummationNumbersStruct[] $item
+     * @param \Ovh\StructType\TelephonyReversmentsSummationNumbersStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -32,7 +32,7 @@ class MyArrayOfTelephonyReversmentsSummationNumbersStructType extends AbstractSt
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TelephonyReversmentsSummationNumbersStruct[]|null
+     * @return \Ovh\StructType\TelephonyReversmentsSummationNumbersStruct[]|null
      */
     public function getItem()
     {
@@ -41,15 +41,15 @@ class MyArrayOfTelephonyReversmentsSummationNumbersStructType extends AbstractSt
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyReversmentsSummationNumbersStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyReversmentsSummationNumbersStructType
+     * @param \Ovh\StructType\TelephonyReversmentsSummationNumbersStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyReversmentsSummationNumbersStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTelephonyReversmentsSummationNumbersStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTelephonyReversmentsSummationNumbersStructTypeItemItem instanceof \PayPal\StructType\TelephonyReversmentsSummationNumbersStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyReversmentsSummationNumbersStruct, "%s" given', is_object($myArrayOfTelephonyReversmentsSummationNumbersStructTypeItemItem) ? get_class($myArrayOfTelephonyReversmentsSummationNumbersStructTypeItemItem) : gettype($myArrayOfTelephonyReversmentsSummationNumbersStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTelephonyReversmentsSummationNumbersStructTypeItemItem instanceof \Ovh\StructType\TelephonyReversmentsSummationNumbersStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyReversmentsSummationNumbersStruct, "%s" given', is_object($myArrayOfTelephonyReversmentsSummationNumbersStructTypeItemItem) ? get_class($myArrayOfTelephonyReversmentsSummationNumbersStructTypeItemItem) : gettype($myArrayOfTelephonyReversmentsSummationNumbersStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -58,14 +58,14 @@ class MyArrayOfTelephonyReversmentsSummationNumbersStructType extends AbstractSt
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyReversmentsSummationNumbersStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyReversmentsSummationNumbersStructType
+     * @param \Ovh\StructType\TelephonyReversmentsSummationNumbersStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyReversmentsSummationNumbersStructType
      */
-    public function addToItem(\PayPal\StructType\TelephonyReversmentsSummationNumbersStruct $item)
+    public function addToItem(\Ovh\StructType\TelephonyReversmentsSummationNumbersStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TelephonyReversmentsSummationNumbersStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyReversmentsSummationNumbersStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TelephonyReversmentsSummationNumbersStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyReversmentsSummationNumbersStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class MyArrayOfTelephonyReversmentsSummationNumbersStructType extends AbstractSt
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonyReversmentsSummationNumbersStruct|null
+     * @return \Ovh\StructType\TelephonyReversmentsSummationNumbersStruct|null
      */
     public function current()
     {
@@ -83,7 +83,7 @@ class MyArrayOfTelephonyReversmentsSummationNumbersStructType extends AbstractSt
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonyReversmentsSummationNumbersStruct|null
+     * @return \Ovh\StructType\TelephonyReversmentsSummationNumbersStruct|null
      */
     public function item($index)
     {
@@ -92,7 +92,7 @@ class MyArrayOfTelephonyReversmentsSummationNumbersStructType extends AbstractSt
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonyReversmentsSummationNumbersStruct|null
+     * @return \Ovh\StructType\TelephonyReversmentsSummationNumbersStruct|null
      */
     public function first()
     {
@@ -101,7 +101,7 @@ class MyArrayOfTelephonyReversmentsSummationNumbersStructType extends AbstractSt
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonyReversmentsSummationNumbersStruct|null
+     * @return \Ovh\StructType\TelephonyReversmentsSummationNumbersStruct|null
      */
     public function last()
     {
@@ -111,7 +111,7 @@ class MyArrayOfTelephonyReversmentsSummationNumbersStructType extends AbstractSt
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonyReversmentsSummationNumbersStruct|null
+     * @return \Ovh\StructType\TelephonyReversmentsSummationNumbersStruct|null
      */
     public function offsetGet($offset)
     {
@@ -132,7 +132,7 @@ class MyArrayOfTelephonyReversmentsSummationNumbersStructType extends AbstractSt
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyReversmentsSummationNumbersStructType
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyReversmentsSummationNumbersStructType
      */
     public static function __set_state(array $array)
     {

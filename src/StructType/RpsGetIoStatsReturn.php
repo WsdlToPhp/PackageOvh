@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,17 +13,17 @@ class RpsGetIoStatsReturn extends AbstractStructBase
 {
     /**
      * The average
-     * @var \PayPal\StructType\RpsGetIOStatsDetailStruct
+     * @var \Ovh\StructType\RpsGetIOStatsDetailStruct
      */
     public $average;
     /**
      * The current
-     * @var \PayPal\StructType\RpsGetIOStatsDetailStruct
+     * @var \Ovh\StructType\RpsGetIOStatsDetailStruct
      */
     public $current;
     /**
      * The max
-     * @var \PayPal\StructType\RpsGetIOStatsDetailStruct
+     * @var \Ovh\StructType\RpsGetIOStatsDetailStruct
      */
     public $max;
     /**
@@ -37,12 +37,12 @@ class RpsGetIoStatsReturn extends AbstractStructBase
      * @uses RpsGetIoStatsReturn::setCurrent()
      * @uses RpsGetIoStatsReturn::setMax()
      * @uses RpsGetIoStatsReturn::setImage()
-     * @param \PayPal\StructType\RpsGetIOStatsDetailStruct $average
-     * @param \PayPal\StructType\RpsGetIOStatsDetailStruct $current
-     * @param \PayPal\StructType\RpsGetIOStatsDetailStruct $max
+     * @param \Ovh\StructType\RpsGetIOStatsDetailStruct $average
+     * @param \Ovh\StructType\RpsGetIOStatsDetailStruct $current
+     * @param \Ovh\StructType\RpsGetIOStatsDetailStruct $max
      * @param string $image
      */
-    public function __construct(\PayPal\StructType\RpsGetIOStatsDetailStruct $average = null, \PayPal\StructType\RpsGetIOStatsDetailStruct $current = null, \PayPal\StructType\RpsGetIOStatsDetailStruct $max = null, $image = null)
+    public function __construct(\Ovh\StructType\RpsGetIOStatsDetailStruct $average = null, \Ovh\StructType\RpsGetIOStatsDetailStruct $current = null, \Ovh\StructType\RpsGetIOStatsDetailStruct $max = null, $image = null)
     {
         $this
             ->setAverage($average)
@@ -52,7 +52,7 @@ class RpsGetIoStatsReturn extends AbstractStructBase
     }
     /**
      * Get average value
-     * @return \PayPal\StructType\RpsGetIOStatsDetailStruct|null
+     * @return \Ovh\StructType\RpsGetIOStatsDetailStruct|null
      */
     public function getAverage()
     {
@@ -60,17 +60,17 @@ class RpsGetIoStatsReturn extends AbstractStructBase
     }
     /**
      * Set average value
-     * @param \PayPal\StructType\RpsGetIOStatsDetailStruct $average
-     * @return \PayPal\StructType\RpsGetIoStatsReturn
+     * @param \Ovh\StructType\RpsGetIOStatsDetailStruct $average
+     * @return \Ovh\StructType\RpsGetIoStatsReturn
      */
-    public function setAverage(\PayPal\StructType\RpsGetIOStatsDetailStruct $average = null)
+    public function setAverage(\Ovh\StructType\RpsGetIOStatsDetailStruct $average = null)
     {
         $this->average = $average;
         return $this;
     }
     /**
      * Get current value
-     * @return \PayPal\StructType\RpsGetIOStatsDetailStruct|null
+     * @return \Ovh\StructType\RpsGetIOStatsDetailStruct|null
      */
     public function getCurrent()
     {
@@ -78,17 +78,17 @@ class RpsGetIoStatsReturn extends AbstractStructBase
     }
     /**
      * Set current value
-     * @param \PayPal\StructType\RpsGetIOStatsDetailStruct $current
-     * @return \PayPal\StructType\RpsGetIoStatsReturn
+     * @param \Ovh\StructType\RpsGetIOStatsDetailStruct $current
+     * @return \Ovh\StructType\RpsGetIoStatsReturn
      */
-    public function setCurrent(\PayPal\StructType\RpsGetIOStatsDetailStruct $current = null)
+    public function setCurrent(\Ovh\StructType\RpsGetIOStatsDetailStruct $current = null)
     {
         $this->current = $current;
         return $this;
     }
     /**
      * Get max value
-     * @return \PayPal\StructType\RpsGetIOStatsDetailStruct|null
+     * @return \Ovh\StructType\RpsGetIOStatsDetailStruct|null
      */
     public function getMax()
     {
@@ -96,10 +96,10 @@ class RpsGetIoStatsReturn extends AbstractStructBase
     }
     /**
      * Set max value
-     * @param \PayPal\StructType\RpsGetIOStatsDetailStruct $max
-     * @return \PayPal\StructType\RpsGetIoStatsReturn
+     * @param \Ovh\StructType\RpsGetIOStatsDetailStruct $max
+     * @return \Ovh\StructType\RpsGetIoStatsReturn
      */
-    public function setMax(\PayPal\StructType\RpsGetIOStatsDetailStruct $max = null)
+    public function setMax(\Ovh\StructType\RpsGetIOStatsDetailStruct $max = null)
     {
         $this->max = $max;
         return $this;
@@ -115,7 +115,7 @@ class RpsGetIoStatsReturn extends AbstractStructBase
     /**
      * Set image value
      * @param string $image
-     * @return \PayPal\StructType\RpsGetIoStatsReturn
+     * @return \Ovh\StructType\RpsGetIoStatsReturn
      */
     public function setImage($image = null)
     {
@@ -132,7 +132,7 @@ class RpsGetIoStatsReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RpsGetIoStatsReturn
+     * @return \Ovh\StructType\RpsGetIoStatsReturn
      */
     public static function __set_state(array $array)
     {

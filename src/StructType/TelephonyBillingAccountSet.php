@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -29,7 +29,7 @@ class TelephonyBillingAccountSet extends AbstractStructBase
      * The numbers
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $numbers;
     /**
@@ -39,9 +39,9 @@ class TelephonyBillingAccountSet extends AbstractStructBase
      * @uses TelephonyBillingAccountSet::setNumbers()
      * @param string $session
      * @param string $billingAccount
-     * @param \PayPal\ArrayType\MyArrayOfStringType $numbers
+     * @param \Ovh\ArrayType\MyArrayOfStringType $numbers
      */
-    public function __construct($session = null, $billingAccount = null, \PayPal\ArrayType\MyArrayOfStringType $numbers = null)
+    public function __construct($session = null, $billingAccount = null, \Ovh\ArrayType\MyArrayOfStringType $numbers = null)
     {
         $this
             ->setSession($session)
@@ -59,7 +59,7 @@ class TelephonyBillingAccountSet extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyBillingAccountSet
+     * @return \Ovh\StructType\TelephonyBillingAccountSet
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class TelephonyBillingAccountSet extends AbstractStructBase
     /**
      * Set billingAccount value
      * @param string $billingAccount
-     * @return \PayPal\StructType\TelephonyBillingAccountSet
+     * @return \Ovh\StructType\TelephonyBillingAccountSet
      */
     public function setBillingAccount($billingAccount = null)
     {
@@ -94,7 +94,7 @@ class TelephonyBillingAccountSet extends AbstractStructBase
     }
     /**
      * Get numbers value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getNumbers()
     {
@@ -102,10 +102,10 @@ class TelephonyBillingAccountSet extends AbstractStructBase
     }
     /**
      * Set numbers value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $numbers
-     * @return \PayPal\StructType\TelephonyBillingAccountSet
+     * @param \Ovh\ArrayType\MyArrayOfStringType $numbers
+     * @return \Ovh\StructType\TelephonyBillingAccountSet
      */
-    public function setNumbers(\PayPal\ArrayType\MyArrayOfStringType $numbers = null)
+    public function setNumbers(\Ovh\ArrayType\MyArrayOfStringType $numbers = null)
     {
         $this->numbers = $numbers;
         return $this;
@@ -116,7 +116,7 @@ class TelephonyBillingAccountSet extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyBillingAccountSet
+     * @return \Ovh\StructType\TelephonyBillingAccountSet
      */
     public static function __set_state(array $array)
     {

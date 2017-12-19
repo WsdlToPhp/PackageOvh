@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class ManagedServicesNameUpdate extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\ManagedServicesNameUpdate
+     * @return \Ovh\StructType\ManagedServicesNameUpdate
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class ManagedServicesNameUpdate extends AbstractStructBase
     /**
      * Set storage value
      * @param string $storage
-     * @return \PayPal\StructType\ManagedServicesNameUpdate
+     * @return \Ovh\StructType\ManagedServicesNameUpdate
      */
     public function setStorage($storage = null)
     {
@@ -103,7 +103,7 @@ class ManagedServicesNameUpdate extends AbstractStructBase
     /**
      * Set customName value
      * @param string $customName
-     * @return \PayPal\StructType\ManagedServicesNameUpdate
+     * @return \Ovh\StructType\ManagedServicesNameUpdate
      */
     public function setCustomName($customName = null)
     {
@@ -120,7 +120,7 @@ class ManagedServicesNameUpdate extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ManagedServicesNameUpdate
+     * @return \Ovh\StructType\ManagedServicesNameUpdate
      */
     public static function __set_state(array $array)
     {

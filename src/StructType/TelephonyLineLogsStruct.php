@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class TelephonyLineLogsStruct extends AbstractStructBase
     public $number;
     /**
      * The list
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyLineLogsListStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyLineLogsListStructType
      */
     public $list;
     /**
@@ -32,10 +32,10 @@ class TelephonyLineLogsStruct extends AbstractStructBase
      * @uses TelephonyLineLogsStruct::setList()
      * @uses TelephonyLineLogsStruct::setTotalRecords()
      * @param string $number
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyLineLogsListStructType $list
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyLineLogsListStructType $list
      * @param int $totalRecords
      */
-    public function __construct($number = null, \PayPal\ArrayType\MyArrayOfTelephonyLineLogsListStructType $list = null, $totalRecords = null)
+    public function __construct($number = null, \Ovh\ArrayType\MyArrayOfTelephonyLineLogsListStructType $list = null, $totalRecords = null)
     {
         $this
             ->setNumber($number)
@@ -53,7 +53,7 @@ class TelephonyLineLogsStruct extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyLineLogsStruct
+     * @return \Ovh\StructType\TelephonyLineLogsStruct
      */
     public function setNumber($number = null)
     {
@@ -66,7 +66,7 @@ class TelephonyLineLogsStruct extends AbstractStructBase
     }
     /**
      * Get list value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyLineLogsListStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyLineLogsListStructType|null
      */
     public function getList()
     {
@@ -74,10 +74,10 @@ class TelephonyLineLogsStruct extends AbstractStructBase
     }
     /**
      * Set list value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyLineLogsListStructType $list
-     * @return \PayPal\StructType\TelephonyLineLogsStruct
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyLineLogsListStructType $list
+     * @return \Ovh\StructType\TelephonyLineLogsStruct
      */
-    public function setList(\PayPal\ArrayType\MyArrayOfTelephonyLineLogsListStructType $list = null)
+    public function setList(\Ovh\ArrayType\MyArrayOfTelephonyLineLogsListStructType $list = null)
     {
         $this->list = $list;
         return $this;
@@ -93,7 +93,7 @@ class TelephonyLineLogsStruct extends AbstractStructBase
     /**
      * Set totalRecords value
      * @param int $totalRecords
-     * @return \PayPal\StructType\TelephonyLineLogsStruct
+     * @return \Ovh\StructType\TelephonyLineLogsStruct
      */
     public function setTotalRecords($totalRecords = null)
     {
@@ -110,7 +110,7 @@ class TelephonyLineLogsStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyLineLogsStruct
+     * @return \Ovh\StructType\TelephonyLineLogsStruct
      */
     public static function __set_state(array $array)
     {

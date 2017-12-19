@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyRatesListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyRateStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyRateStructType
      */
     public $return;
     /**
      * Constructor method for telephonyRatesListResponse
      * @uses TelephonyRatesListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyRateStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyRateStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonyRateStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonyRateStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyRateStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyRateStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyRatesListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyRateStructType $return
-     * @return \PayPal\StructType\TelephonyRatesListResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyRateStructType $return
+     * @return \Ovh\StructType\TelephonyRatesListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonyRateStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonyRateStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyRatesListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyRatesListResponse
+     * @return \Ovh\StructType\TelephonyRatesListResponse
      */
     public static function __set_state(array $array)
     {

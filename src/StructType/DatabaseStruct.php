@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -109,7 +109,7 @@ class DatabaseStruct extends AbstractStructBase
     /**
      * Set db value
      * @param string $db
-     * @return \PayPal\StructType\DatabaseStruct
+     * @return \Ovh\StructType\DatabaseStruct
      */
     public function setDb($db = null)
     {
@@ -131,7 +131,7 @@ class DatabaseStruct extends AbstractStructBase
     /**
      * Set quota value
      * @param float $quota
-     * @return \PayPal\StructType\DatabaseStruct
+     * @return \Ovh\StructType\DatabaseStruct
      */
     public function setQuota($quota = null)
     {
@@ -149,7 +149,7 @@ class DatabaseStruct extends AbstractStructBase
     /**
      * Set limit value
      * @param float $limit
-     * @return \PayPal\StructType\DatabaseStruct
+     * @return \Ovh\StructType\DatabaseStruct
      */
     public function setLimit($limit = null)
     {
@@ -167,7 +167,7 @@ class DatabaseStruct extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \PayPal\StructType\DatabaseStruct
+     * @return \Ovh\StructType\DatabaseStruct
      */
     public function setVersion($version = null)
     {
@@ -189,7 +189,7 @@ class DatabaseStruct extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\DatabaseStruct
+     * @return \Ovh\StructType\DatabaseStruct
      */
     public function setDate($date = null)
     {
@@ -211,7 +211,7 @@ class DatabaseStruct extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \PayPal\StructType\DatabaseStruct
+     * @return \Ovh\StructType\DatabaseStruct
      */
     public function setState($state = null)
     {
@@ -233,7 +233,7 @@ class DatabaseStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\DatabaseStruct
+     * @return \Ovh\StructType\DatabaseStruct
      */
     public function setType($type = null)
     {
@@ -255,7 +255,7 @@ class DatabaseStruct extends AbstractStructBase
     /**
      * Set server value
      * @param string $server
-     * @return \PayPal\StructType\DatabaseStruct
+     * @return \Ovh\StructType\DatabaseStruct
      */
     public function setServer($server = null)
     {
@@ -277,7 +277,7 @@ class DatabaseStruct extends AbstractStructBase
     /**
      * Set todo value
      * @param bool $todo
-     * @return \PayPal\StructType\DatabaseStruct
+     * @return \Ovh\StructType\DatabaseStruct
      */
     public function setTodo($todo = null)
     {
@@ -299,7 +299,7 @@ class DatabaseStruct extends AbstractStructBase
     /**
      * Set quota_warning value
      * @param bool $quota_warning
-     * @return \PayPal\StructType\DatabaseStruct
+     * @return \Ovh\StructType\DatabaseStruct
      */
     public function setQuota_warning($quota_warning = null)
     {
@@ -316,7 +316,7 @@ class DatabaseStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DatabaseStruct
+     * @return \Ovh\StructType\DatabaseStruct
      */
     public static function __set_state(array $array)
     {

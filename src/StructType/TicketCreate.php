@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -129,7 +129,7 @@ class TicketCreate extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TicketCreate
+     * @return \Ovh\StructType\TicketCreate
      */
     public function setSession($session = null)
     {
@@ -151,7 +151,7 @@ class TicketCreate extends AbstractStructBase
     /**
      * Set componentType value
      * @param string $componentType
-     * @return \PayPal\StructType\TicketCreate
+     * @return \Ovh\StructType\TicketCreate
      */
     public function setComponentType($componentType = null)
     {
@@ -173,7 +173,7 @@ class TicketCreate extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\TicketCreate
+     * @return \Ovh\StructType\TicketCreate
      */
     public function setDomain($domain = null)
     {
@@ -195,7 +195,7 @@ class TicketCreate extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\TicketCreate
+     * @return \Ovh\StructType\TicketCreate
      */
     public function setEmail($email = null)
     {
@@ -217,7 +217,7 @@ class TicketCreate extends AbstractStructBase
     /**
      * Set phone value
      * @param string $phone
-     * @return \PayPal\StructType\TicketCreate
+     * @return \Ovh\StructType\TicketCreate
      */
     public function setPhone($phone = null)
     {
@@ -239,7 +239,7 @@ class TicketCreate extends AbstractStructBase
     /**
      * Set subject value
      * @param string $subject
-     * @return \PayPal\StructType\TicketCreate
+     * @return \Ovh\StructType\TicketCreate
      */
     public function setSubject($subject = null)
     {
@@ -261,7 +261,7 @@ class TicketCreate extends AbstractStructBase
     /**
      * Set incidentSummary value
      * @param string $incidentSummary
-     * @return \PayPal\StructType\TicketCreate
+     * @return \Ovh\StructType\TicketCreate
      */
     public function setIncidentSummary($incidentSummary = null)
     {
@@ -283,7 +283,7 @@ class TicketCreate extends AbstractStructBase
     /**
      * Set incidentDetails value
      * @param string $incidentDetails
-     * @return \PayPal\StructType\TicketCreate
+     * @return \Ovh\StructType\TicketCreate
      */
     public function setIncidentDetails($incidentDetails = null)
     {
@@ -305,7 +305,7 @@ class TicketCreate extends AbstractStructBase
     /**
      * Set incidentManip value
      * @param string $incidentManip
-     * @return \PayPal\StructType\TicketCreate
+     * @return \Ovh\StructType\TicketCreate
      */
     public function setIncidentManip($incidentManip = null)
     {
@@ -327,7 +327,7 @@ class TicketCreate extends AbstractStructBase
     /**
      * Set level value
      * @param string $level
-     * @return \PayPal\StructType\TicketCreate
+     * @return \Ovh\StructType\TicketCreate
      */
     public function setLevel($level = null)
     {
@@ -344,7 +344,7 @@ class TicketCreate extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TicketCreate
+     * @return \Ovh\StructType\TicketCreate
      */
     public static function __set_state(array $array)
     {

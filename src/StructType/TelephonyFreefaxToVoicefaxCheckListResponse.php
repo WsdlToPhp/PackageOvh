@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyFreefaxToVoicefaxCheckListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType
      */
     public $return;
     /**
      * Constructor method for telephonyFreefaxToVoicefaxCheckListResponse
      * @uses TelephonyFreefaxToVoicefaxCheckListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyFreefaxToVoicefaxCheckListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType $return
-     * @return \PayPal\StructType\TelephonyFreefaxToVoicefaxCheckListResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType $return
+     * @return \Ovh\StructType\TelephonyFreefaxToVoicefaxCheckListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyFreefaxToVoicefaxCheckListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFreefaxToVoicefaxCheckListResponse
+     * @return \Ovh\StructType\TelephonyFreefaxToVoicefaxCheckListResponse
      */
     public static function __set_state(array $array)
     {

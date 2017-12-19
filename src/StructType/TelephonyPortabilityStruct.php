@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -33,7 +33,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     public $callNumber;
     /**
      * The extraNumbers
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $extraNumbers;
     /**
@@ -173,7 +173,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
      * @param string $customerFullName
      * @param string $billingAccount
      * @param string $callNumber
-     * @param \PayPal\ArrayType\MyArrayOfStringType $extraNumbers
+     * @param \Ovh\ArrayType\MyArrayOfStringType $extraNumbers
      * @param string $planDate
      * @param bool $resellerOrder
      * @param bool $customerMailSent
@@ -196,7 +196,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
      * @param string $lcpOrderPort
      * @param string $lcpOrderPortComment
      */
-    public function __construct($id = null, $customerFullName = null, $billingAccount = null, $callNumber = null, \PayPal\ArrayType\MyArrayOfStringType $extraNumbers = null, $planDate = null, $resellerOrder = null, $customerMailSent = null, $customerMailSendDate = null, $customerMailReturned = null, $customerMailReturnDate = null, $customerMailTracking = null, $rangeHolderName = null, $losingCpName = null, $rhOrderSent = null, $rhOrderReceived = null, $rhOrderAck = null, $rhOrderAckComment = null, $rhOrderPort = null, $rhOrderPortComment = null, $lcpOrderSent = null, $lcpOrderReceived = null, $lcpOrderAck = null, $lcpOrderAckComment = null, $lcpOrderPort = null, $lcpOrderPortComment = null)
+    public function __construct($id = null, $customerFullName = null, $billingAccount = null, $callNumber = null, \Ovh\ArrayType\MyArrayOfStringType $extraNumbers = null, $planDate = null, $resellerOrder = null, $customerMailSent = null, $customerMailSendDate = null, $customerMailReturned = null, $customerMailReturnDate = null, $customerMailTracking = null, $rangeHolderName = null, $losingCpName = null, $rhOrderSent = null, $rhOrderReceived = null, $rhOrderAck = null, $rhOrderAckComment = null, $rhOrderPort = null, $rhOrderPortComment = null, $lcpOrderSent = null, $lcpOrderReceived = null, $lcpOrderAck = null, $lcpOrderAckComment = null, $lcpOrderPort = null, $lcpOrderPortComment = null)
     {
         $this
             ->setId($id)
@@ -237,7 +237,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setId($id = null)
     {
@@ -259,7 +259,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set customerFullName value
      * @param string $customerFullName
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setCustomerFullName($customerFullName = null)
     {
@@ -281,7 +281,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set billingAccount value
      * @param string $billingAccount
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setBillingAccount($billingAccount = null)
     {
@@ -303,7 +303,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set callNumber value
      * @param string $callNumber
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setCallNumber($callNumber = null)
     {
@@ -316,7 +316,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     }
     /**
      * Get extraNumbers value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getExtraNumbers()
     {
@@ -324,10 +324,10 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     }
     /**
      * Set extraNumbers value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $extraNumbers
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $extraNumbers
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
-    public function setExtraNumbers(\PayPal\ArrayType\MyArrayOfStringType $extraNumbers = null)
+    public function setExtraNumbers(\Ovh\ArrayType\MyArrayOfStringType $extraNumbers = null)
     {
         $this->extraNumbers = $extraNumbers;
         return $this;
@@ -343,7 +343,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set planDate value
      * @param string $planDate
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setPlanDate($planDate = null)
     {
@@ -365,7 +365,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set resellerOrder value
      * @param bool $resellerOrder
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setResellerOrder($resellerOrder = null)
     {
@@ -387,7 +387,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set customerMailSent value
      * @param bool $customerMailSent
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setCustomerMailSent($customerMailSent = null)
     {
@@ -409,7 +409,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set customerMailSendDate value
      * @param string $customerMailSendDate
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setCustomerMailSendDate($customerMailSendDate = null)
     {
@@ -431,7 +431,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set customerMailReturned value
      * @param bool $customerMailReturned
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setCustomerMailReturned($customerMailReturned = null)
     {
@@ -453,7 +453,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set customerMailReturnDate value
      * @param string $customerMailReturnDate
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setCustomerMailReturnDate($customerMailReturnDate = null)
     {
@@ -475,7 +475,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set customerMailTracking value
      * @param string $customerMailTracking
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setCustomerMailTracking($customerMailTracking = null)
     {
@@ -497,7 +497,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set rangeHolderName value
      * @param string $rangeHolderName
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setRangeHolderName($rangeHolderName = null)
     {
@@ -519,7 +519,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set losingCpName value
      * @param string $losingCpName
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setLosingCpName($losingCpName = null)
     {
@@ -541,7 +541,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set rhOrderSent value
      * @param bool $rhOrderSent
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setRhOrderSent($rhOrderSent = null)
     {
@@ -563,7 +563,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set rhOrderReceived value
      * @param bool $rhOrderReceived
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setRhOrderReceived($rhOrderReceived = null)
     {
@@ -585,7 +585,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set rhOrderAck value
      * @param string $rhOrderAck
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setRhOrderAck($rhOrderAck = null)
     {
@@ -607,7 +607,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set rhOrderAckComment value
      * @param string $rhOrderAckComment
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setRhOrderAckComment($rhOrderAckComment = null)
     {
@@ -629,7 +629,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set rhOrderPort value
      * @param string $rhOrderPort
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setRhOrderPort($rhOrderPort = null)
     {
@@ -651,7 +651,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set rhOrderPortComment value
      * @param string $rhOrderPortComment
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setRhOrderPortComment($rhOrderPortComment = null)
     {
@@ -673,7 +673,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set lcpOrderSent value
      * @param bool $lcpOrderSent
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setLcpOrderSent($lcpOrderSent = null)
     {
@@ -695,7 +695,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set lcpOrderReceived value
      * @param bool $lcpOrderReceived
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setLcpOrderReceived($lcpOrderReceived = null)
     {
@@ -717,7 +717,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set lcpOrderAck value
      * @param string $lcpOrderAck
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setLcpOrderAck($lcpOrderAck = null)
     {
@@ -739,7 +739,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set lcpOrderAckComment value
      * @param string $lcpOrderAckComment
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setLcpOrderAckComment($lcpOrderAckComment = null)
     {
@@ -761,7 +761,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set lcpOrderPort value
      * @param string $lcpOrderPort
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setLcpOrderPort($lcpOrderPort = null)
     {
@@ -783,7 +783,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     /**
      * Set lcpOrderPortComment value
      * @param string $lcpOrderPortComment
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public function setLcpOrderPortComment($lcpOrderPortComment = null)
     {
@@ -800,7 +800,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyPortabilityStruct
+     * @return \Ovh\StructType\TelephonyPortabilityStruct
      */
     public static function __set_state(array $array)
     {

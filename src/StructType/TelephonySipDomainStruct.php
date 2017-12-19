@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class TelephonySipDomainStruct extends AbstractStructBase
     public $country;
     /**
      * The list
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $list;
     /**
@@ -33,9 +33,9 @@ class TelephonySipDomainStruct extends AbstractStructBase
      * @uses TelephonySipDomainStruct::setList()
      * @param string $domain
      * @param string $country
-     * @param \PayPal\ArrayType\MyArrayOfStringType $list
+     * @param \Ovh\ArrayType\MyArrayOfStringType $list
      */
-    public function __construct($domain = null, $country = null, \PayPal\ArrayType\MyArrayOfStringType $list = null)
+    public function __construct($domain = null, $country = null, \Ovh\ArrayType\MyArrayOfStringType $list = null)
     {
         $this
             ->setDomain($domain)
@@ -53,7 +53,7 @@ class TelephonySipDomainStruct extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\TelephonySipDomainStruct
+     * @return \Ovh\StructType\TelephonySipDomainStruct
      */
     public function setDomain($domain = null)
     {
@@ -75,7 +75,7 @@ class TelephonySipDomainStruct extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonySipDomainStruct
+     * @return \Ovh\StructType\TelephonySipDomainStruct
      */
     public function setCountry($country = null)
     {
@@ -88,7 +88,7 @@ class TelephonySipDomainStruct extends AbstractStructBase
     }
     /**
      * Get list value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getList()
     {
@@ -96,10 +96,10 @@ class TelephonySipDomainStruct extends AbstractStructBase
     }
     /**
      * Set list value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $list
-     * @return \PayPal\StructType\TelephonySipDomainStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $list
+     * @return \Ovh\StructType\TelephonySipDomainStruct
      */
-    public function setList(\PayPal\ArrayType\MyArrayOfStringType $list = null)
+    public function setList(\Ovh\ArrayType\MyArrayOfStringType $list = null)
     {
         $this->list = $list;
         return $this;
@@ -110,7 +110,7 @@ class TelephonySipDomainStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySipDomainStruct
+     * @return \Ovh\StructType\TelephonySipDomainStruct
      */
     public static function __set_state(array $array)
     {

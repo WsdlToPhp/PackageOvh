@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyLineListReturn extends AbstractStructBase
 {
     /**
      * The link
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyLineStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyLineStructType
      */
     public $link;
     /**
      * The alias
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyLineStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyLineStructType
      */
     public $alias;
     /**
      * Constructor method for telephonyLineListReturn
      * @uses TelephonyLineListReturn::setLink()
      * @uses TelephonyLineListReturn::setAlias()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyLineStructType $link
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyLineStructType $alias
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyLineStructType $link
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyLineStructType $alias
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonyLineStructType $link = null, \PayPal\ArrayType\MyArrayOfTelephonyLineStructType $alias = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonyLineStructType $link = null, \Ovh\ArrayType\MyArrayOfTelephonyLineStructType $alias = null)
     {
         $this
             ->setLink($link)
@@ -36,7 +36,7 @@ class TelephonyLineListReturn extends AbstractStructBase
     }
     /**
      * Get link value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyLineStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyLineStructType|null
      */
     public function getLink()
     {
@@ -44,17 +44,17 @@ class TelephonyLineListReturn extends AbstractStructBase
     }
     /**
      * Set link value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyLineStructType $link
-     * @return \PayPal\StructType\TelephonyLineListReturn
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyLineStructType $link
+     * @return \Ovh\StructType\TelephonyLineListReturn
      */
-    public function setLink(\PayPal\ArrayType\MyArrayOfTelephonyLineStructType $link = null)
+    public function setLink(\Ovh\ArrayType\MyArrayOfTelephonyLineStructType $link = null)
     {
         $this->link = $link;
         return $this;
     }
     /**
      * Get alias value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyLineStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyLineStructType|null
      */
     public function getAlias()
     {
@@ -62,10 +62,10 @@ class TelephonyLineListReturn extends AbstractStructBase
     }
     /**
      * Set alias value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyLineStructType $alias
-     * @return \PayPal\StructType\TelephonyLineListReturn
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyLineStructType $alias
+     * @return \Ovh\StructType\TelephonyLineListReturn
      */
-    public function setAlias(\PayPal\ArrayType\MyArrayOfTelephonyLineStructType $alias = null)
+    public function setAlias(\Ovh\ArrayType\MyArrayOfTelephonyLineStructType $alias = null)
     {
         $this->alias = $alias;
         return $this;
@@ -76,7 +76,7 @@ class TelephonyLineListReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyLineListReturn
+     * @return \Ovh\StructType\TelephonyLineListReturn
      */
     public static function __set_state(array $array)
     {

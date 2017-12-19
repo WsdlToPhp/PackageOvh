@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -133,7 +133,7 @@ class TelephonyFaxCallStruct extends AbstractStructBase
     /**
      * Set calledNumber value
      * @param string $calledNumber
-     * @return \PayPal\StructType\TelephonyFaxCallStruct
+     * @return \Ovh\StructType\TelephonyFaxCallStruct
      */
     public function setCalledNumber($calledNumber = null)
     {
@@ -155,7 +155,7 @@ class TelephonyFaxCallStruct extends AbstractStructBase
     /**
      * Set callingNumber value
      * @param string $callingNumber
-     * @return \PayPal\StructType\TelephonyFaxCallStruct
+     * @return \Ovh\StructType\TelephonyFaxCallStruct
      */
     public function setCallingNumber($callingNumber = null)
     {
@@ -177,7 +177,7 @@ class TelephonyFaxCallStruct extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \PayPal\StructType\TelephonyFaxCallStruct
+     * @return \Ovh\StructType\TelephonyFaxCallStruct
      */
     public function setDestination($destination = null)
     {
@@ -199,7 +199,7 @@ class TelephonyFaxCallStruct extends AbstractStructBase
     /**
      * Set jobid value
      * @param int $jobid
-     * @return \PayPal\StructType\TelephonyFaxCallStruct
+     * @return \Ovh\StructType\TelephonyFaxCallStruct
      */
     public function setJobid($jobid = null)
     {
@@ -221,7 +221,7 @@ class TelephonyFaxCallStruct extends AbstractStructBase
     /**
      * Set nature value
      * @param string $nature
-     * @return \PayPal\StructType\TelephonyFaxCallStruct
+     * @return \Ovh\StructType\TelephonyFaxCallStruct
      */
     public function setNature($nature = null)
     {
@@ -243,7 +243,7 @@ class TelephonyFaxCallStruct extends AbstractStructBase
     /**
      * Set countryCode value
      * @param int $countryCode
-     * @return \PayPal\StructType\TelephonyFaxCallStruct
+     * @return \Ovh\StructType\TelephonyFaxCallStruct
      */
     public function setCountryCode($countryCode = null)
     {
@@ -265,7 +265,7 @@ class TelephonyFaxCallStruct extends AbstractStructBase
     /**
      * Set designation value
      * @param string $designation
-     * @return \PayPal\StructType\TelephonyFaxCallStruct
+     * @return \Ovh\StructType\TelephonyFaxCallStruct
      */
     public function setDesignation($designation = null)
     {
@@ -287,7 +287,7 @@ class TelephonyFaxCallStruct extends AbstractStructBase
     /**
      * Set jobtag value
      * @param string $jobtag
-     * @return \PayPal\StructType\TelephonyFaxCallStruct
+     * @return \Ovh\StructType\TelephonyFaxCallStruct
      */
     public function setJobtag($jobtag = null)
     {
@@ -309,7 +309,7 @@ class TelephonyFaxCallStruct extends AbstractStructBase
     /**
      * Set idkey value
      * @param string $idkey
-     * @return \PayPal\StructType\TelephonyFaxCallStruct
+     * @return \Ovh\StructType\TelephonyFaxCallStruct
      */
     public function setIdkey($idkey = null)
     {
@@ -331,7 +331,7 @@ class TelephonyFaxCallStruct extends AbstractStructBase
     /**
      * Set priceWithoutVAT value
      * @param float $priceWithoutVAT
-     * @return \PayPal\StructType\TelephonyFaxCallStruct
+     * @return \Ovh\StructType\TelephonyFaxCallStruct
      */
     public function setPriceWithoutVAT($priceWithoutVAT = null)
     {
@@ -349,7 +349,7 @@ class TelephonyFaxCallStruct extends AbstractStructBase
     /**
      * Set quality value
      * @param string $quality
-     * @return \PayPal\StructType\TelephonyFaxCallStruct
+     * @return \Ovh\StructType\TelephonyFaxCallStruct
      */
     public function setQuality($quality = null)
     {
@@ -371,7 +371,7 @@ class TelephonyFaxCallStruct extends AbstractStructBase
     /**
      * Set callDate value
      * @param string $callDate
-     * @return \PayPal\StructType\TelephonyFaxCallStruct
+     * @return \Ovh\StructType\TelephonyFaxCallStruct
      */
     public function setCallDate($callDate = null)
     {
@@ -393,7 +393,7 @@ class TelephonyFaxCallStruct extends AbstractStructBase
     /**
      * Set pages value
      * @param int $pages
-     * @return \PayPal\StructType\TelephonyFaxCallStruct
+     * @return \Ovh\StructType\TelephonyFaxCallStruct
      */
     public function setPages($pages = null)
     {
@@ -410,7 +410,7 @@ class TelephonyFaxCallStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFaxCallStruct
+     * @return \Ovh\StructType\TelephonyFaxCallStruct
      */
     public static function __set_state(array $array)
     {

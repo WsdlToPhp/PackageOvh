@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class MultiDomainInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\MultiDomainStruct
+     * @var \Ovh\StructType\MultiDomainStruct
      */
     public $return;
     /**
      * Constructor method for multiDomainInfoResponse
      * @uses MultiDomainInfoResponse::setReturn()
-     * @param \PayPal\StructType\MultiDomainStruct $return
+     * @param \Ovh\StructType\MultiDomainStruct $return
      */
-    public function __construct(\PayPal\StructType\MultiDomainStruct $return = null)
+    public function __construct(\Ovh\StructType\MultiDomainStruct $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\MultiDomainStruct|null
+     * @return \Ovh\StructType\MultiDomainStruct|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class MultiDomainInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\MultiDomainStruct $return
-     * @return \PayPal\StructType\MultiDomainInfoResponse
+     * @param \Ovh\StructType\MultiDomainStruct $return
+     * @return \Ovh\StructType\MultiDomainInfoResponse
      */
-    public function setReturn(\PayPal\StructType\MultiDomainStruct $return = null)
+    public function setReturn(\Ovh\StructType\MultiDomainStruct $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class MultiDomainInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\MultiDomainInfoResponse
+     * @return \Ovh\StructType\MultiDomainInfoResponse
      */
     public static function __set_state(array $array)
     {

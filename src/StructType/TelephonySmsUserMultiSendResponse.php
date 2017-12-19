@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonySmsUserMultiSendResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfIntType
+     * @var \Ovh\ArrayType\MyArrayOfIntType
      */
     public $return;
     /**
      * Constructor method for telephonySmsUserMultiSendResponse
      * @uses TelephonySmsUserMultiSendResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfIntType $return
+     * @param \Ovh\ArrayType\MyArrayOfIntType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfIntType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfIntType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfIntType|null
+     * @return \Ovh\ArrayType\MyArrayOfIntType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonySmsUserMultiSendResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfIntType $return
-     * @return \PayPal\StructType\TelephonySmsUserMultiSendResponse
+     * @param \Ovh\ArrayType\MyArrayOfIntType $return
+     * @return \Ovh\StructType\TelephonySmsUserMultiSendResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfIntType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfIntType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonySmsUserMultiSendResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsUserMultiSendResponse
+     * @return \Ovh\StructType\TelephonySmsUserMultiSendResponse
      */
     public static function __set_state(array $array)
     {

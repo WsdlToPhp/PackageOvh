@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class SqlpriveGetPossibleDumpStruct extends AbstractStructBase
     public $date;
     /**
      * The file
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $file;
     /**
@@ -32,10 +32,10 @@ class SqlpriveGetPossibleDumpStruct extends AbstractStructBase
      * @uses SqlpriveGetPossibleDumpStruct::setFile()
      * @uses SqlpriveGetPossibleDumpStruct::setComment()
      * @param string $date
-     * @param \PayPal\ArrayType\MyArrayOfStringType $file
+     * @param \Ovh\ArrayType\MyArrayOfStringType $file
      * @param string $comment
      */
-    public function __construct($date = null, \PayPal\ArrayType\MyArrayOfStringType $file = null, $comment = null)
+    public function __construct($date = null, \Ovh\ArrayType\MyArrayOfStringType $file = null, $comment = null)
     {
         $this
             ->setDate($date)
@@ -53,7 +53,7 @@ class SqlpriveGetPossibleDumpStruct extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\SqlpriveGetPossibleDumpStruct
+     * @return \Ovh\StructType\SqlpriveGetPossibleDumpStruct
      */
     public function setDate($date = null)
     {
@@ -66,7 +66,7 @@ class SqlpriveGetPossibleDumpStruct extends AbstractStructBase
     }
     /**
      * Get file value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getFile()
     {
@@ -74,10 +74,10 @@ class SqlpriveGetPossibleDumpStruct extends AbstractStructBase
     }
     /**
      * Set file value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $file
-     * @return \PayPal\StructType\SqlpriveGetPossibleDumpStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $file
+     * @return \Ovh\StructType\SqlpriveGetPossibleDumpStruct
      */
-    public function setFile(\PayPal\ArrayType\MyArrayOfStringType $file = null)
+    public function setFile(\Ovh\ArrayType\MyArrayOfStringType $file = null)
     {
         $this->file = $file;
         return $this;
@@ -93,7 +93,7 @@ class SqlpriveGetPossibleDumpStruct extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \PayPal\StructType\SqlpriveGetPossibleDumpStruct
+     * @return \Ovh\StructType\SqlpriveGetPossibleDumpStruct
      */
     public function setComment($comment = null)
     {
@@ -110,7 +110,7 @@ class SqlpriveGetPossibleDumpStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SqlpriveGetPossibleDumpStruct
+     * @return \Ovh\StructType\SqlpriveGetPossibleDumpStruct
      */
     public static function __set_state(array $array)
     {

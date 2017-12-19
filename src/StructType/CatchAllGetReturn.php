@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class CatchAllGetReturn extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\CatchAllGetReturn
+     * @return \Ovh\StructType\CatchAllGetReturn
      */
     public function setDomain($domain = null)
     {
@@ -75,7 +75,7 @@ class CatchAllGetReturn extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\CatchAllGetReturn
+     * @return \Ovh\StructType\CatchAllGetReturn
      */
     public function setType($type = null)
     {
@@ -97,7 +97,7 @@ class CatchAllGetReturn extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \PayPal\StructType\CatchAllGetReturn
+     * @return \Ovh\StructType\CatchAllGetReturn
      */
     public function setDestination($destination = null)
     {
@@ -114,7 +114,7 @@ class CatchAllGetReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\CatchAllGetReturn
+     * @return \Ovh\StructType\CatchAllGetReturn
      */
     public static function __set_state(array $array)
     {

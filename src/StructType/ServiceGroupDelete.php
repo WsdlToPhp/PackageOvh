@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,7 +49,7 @@ class ServiceGroupDelete extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\ServiceGroupDelete
+     * @return \Ovh\StructType\ServiceGroupDelete
      */
     public function setSession($session = null)
     {
@@ -71,7 +71,7 @@ class ServiceGroupDelete extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\ServiceGroupDelete
+     * @return \Ovh\StructType\ServiceGroupDelete
      */
     public function setName($name = null)
     {
@@ -88,7 +88,7 @@ class ServiceGroupDelete extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ServiceGroupDelete
+     * @return \Ovh\StructType\ServiceGroupDelete
      */
     public static function __set_state(array $array)
     {

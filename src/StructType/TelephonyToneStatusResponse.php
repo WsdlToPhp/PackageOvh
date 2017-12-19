@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyToneStatusResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyToneStatusReturn
+     * @var \Ovh\StructType\TelephonyToneStatusReturn
      */
     public $return;
     /**
      * Constructor method for telephonyToneStatusResponse
      * @uses TelephonyToneStatusResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyToneStatusReturn $return
+     * @param \Ovh\StructType\TelephonyToneStatusReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonyToneStatusReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonyToneStatusReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyToneStatusReturn|null
+     * @return \Ovh\StructType\TelephonyToneStatusReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyToneStatusResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyToneStatusReturn $return
-     * @return \PayPal\StructType\TelephonyToneStatusResponse
+     * @param \Ovh\StructType\TelephonyToneStatusReturn $return
+     * @return \Ovh\StructType\TelephonyToneStatusResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyToneStatusReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyToneStatusReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyToneStatusResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyToneStatusResponse
+     * @return \Ovh\StructType\TelephonyToneStatusResponse
      */
     public static function __set_state(array $array)
     {

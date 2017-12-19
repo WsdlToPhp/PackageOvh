@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -109,7 +109,7 @@ class TelephonyListReversableCallsFromNumber extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyListReversableCallsFromNumber
+     * @return \Ovh\StructType\TelephonyListReversableCallsFromNumber
      */
     public function setSession($session = null)
     {
@@ -131,7 +131,7 @@ class TelephonyListReversableCallsFromNumber extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyListReversableCallsFromNumber
+     * @return \Ovh\StructType\TelephonyListReversableCallsFromNumber
      */
     public function setNumber($number = null)
     {
@@ -153,7 +153,7 @@ class TelephonyListReversableCallsFromNumber extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyListReversableCallsFromNumber
+     * @return \Ovh\StructType\TelephonyListReversableCallsFromNumber
      */
     public function setCountry($country = null)
     {
@@ -175,7 +175,7 @@ class TelephonyListReversableCallsFromNumber extends AbstractStructBase
     /**
      * Set reversableDelay value
      * @param string $reversableDelay
-     * @return \PayPal\StructType\TelephonyListReversableCallsFromNumber
+     * @return \Ovh\StructType\TelephonyListReversableCallsFromNumber
      */
     public function setReversableDelay($reversableDelay = null)
     {
@@ -197,7 +197,7 @@ class TelephonyListReversableCallsFromNumber extends AbstractStructBase
     /**
      * Set pagingStart value
      * @param int $pagingStart
-     * @return \PayPal\StructType\TelephonyListReversableCallsFromNumber
+     * @return \Ovh\StructType\TelephonyListReversableCallsFromNumber
      */
     public function setPagingStart($pagingStart = null)
     {
@@ -219,7 +219,7 @@ class TelephonyListReversableCallsFromNumber extends AbstractStructBase
     /**
      * Set pagingLimit value
      * @param int $pagingLimit
-     * @return \PayPal\StructType\TelephonyListReversableCallsFromNumber
+     * @return \Ovh\StructType\TelephonyListReversableCallsFromNumber
      */
     public function setPagingLimit($pagingLimit = null)
     {
@@ -241,7 +241,7 @@ class TelephonyListReversableCallsFromNumber extends AbstractStructBase
     /**
      * Set sortOrder value
      * @param string $sortOrder
-     * @return \PayPal\StructType\TelephonyListReversableCallsFromNumber
+     * @return \Ovh\StructType\TelephonyListReversableCallsFromNumber
      */
     public function setSortOrder($sortOrder = null)
     {
@@ -263,7 +263,7 @@ class TelephonyListReversableCallsFromNumber extends AbstractStructBase
     /**
      * Set sortField value
      * @param string $sortField
-     * @return \PayPal\StructType\TelephonyListReversableCallsFromNumber
+     * @return \Ovh\StructType\TelephonyListReversableCallsFromNumber
      */
     public function setSortField($sortField = null)
     {
@@ -280,7 +280,7 @@ class TelephonyListReversableCallsFromNumber extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyListReversableCallsFromNumber
+     * @return \Ovh\StructType\TelephonyListReversableCallsFromNumber
      */
     public static function __set_state(array $array)
     {

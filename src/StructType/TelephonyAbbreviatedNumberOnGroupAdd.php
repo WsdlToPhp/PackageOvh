@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class TelephonyAbbreviatedNumberOnGroupAdd extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberOnGroupAdd
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberOnGroupAdd
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class TelephonyAbbreviatedNumberOnGroupAdd extends AbstractStructBase
     /**
      * Set group value
      * @param string $group
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberOnGroupAdd
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberOnGroupAdd
      */
     public function setGroup($group = null)
     {
@@ -133,7 +133,7 @@ class TelephonyAbbreviatedNumberOnGroupAdd extends AbstractStructBase
     /**
      * Set abbreviatedNumber value
      * @param string $abbreviatedNumber
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberOnGroupAdd
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberOnGroupAdd
      */
     public function setAbbreviatedNumber($abbreviatedNumber = null)
     {
@@ -155,7 +155,7 @@ class TelephonyAbbreviatedNumberOnGroupAdd extends AbstractStructBase
     /**
      * Set relatedNumber value
      * @param string $relatedNumber
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberOnGroupAdd
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberOnGroupAdd
      */
     public function setRelatedNumber($relatedNumber = null)
     {
@@ -177,7 +177,7 @@ class TelephonyAbbreviatedNumberOnGroupAdd extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberOnGroupAdd
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberOnGroupAdd
      */
     public function setName($name = null)
     {
@@ -199,7 +199,7 @@ class TelephonyAbbreviatedNumberOnGroupAdd extends AbstractStructBase
     /**
      * Set surname value
      * @param string $surname
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberOnGroupAdd
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberOnGroupAdd
      */
     public function setSurname($surname = null)
     {
@@ -216,7 +216,7 @@ class TelephonyAbbreviatedNumberOnGroupAdd extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberOnGroupAdd
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberOnGroupAdd
      */
     public static function __set_state(array $array)
     {

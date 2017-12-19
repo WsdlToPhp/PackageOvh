@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Ftp extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\FtpInfo $parameters
-     * @return \PayPal\StructType\FtpInfoResponse|bool
+     * @param \Ovh\StructType\FtpInfo $parameters
+     * @return \Ovh\StructType\FtpInfoResponse|bool
      */
-    public function ftpInfo(\PayPal\StructType\FtpInfo $parameters)
+    public function ftpInfo(\Ovh\StructType\FtpInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->ftpInfo($parameters));
@@ -36,10 +36,10 @@ class Ftp extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\FtpChangePassword $parameters
-     * @return \PayPal\StructType\FtpChangePasswordResponse|bool
+     * @param \Ovh\StructType\FtpChangePassword $parameters
+     * @return \Ovh\StructType\FtpChangePasswordResponse|bool
      */
-    public function ftpChangePassword(\PayPal\StructType\FtpChangePassword $parameters)
+    public function ftpChangePassword(\Ovh\StructType\FtpChangePassword $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->ftpChangePassword($parameters));
@@ -52,7 +52,7 @@ class Ftp extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\FtpChangePasswordResponse|\PayPal\StructType\FtpInfoResponse
+     * @return \Ovh\StructType\FtpChangePasswordResponse|\Ovh\StructType\FtpInfoResponse
      */
     public function getResult()
     {

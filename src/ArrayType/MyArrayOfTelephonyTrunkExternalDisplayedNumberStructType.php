@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -17,13 +17,13 @@ class MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType extends AbstractS
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberStruct[]
+     * @var \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType
      * @uses MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType::setItem()
-     * @param \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberStruct[] $item
+     * @param \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -32,7 +32,7 @@ class MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType extends AbstractS
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberStruct[]|null
+     * @return \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberStruct[]|null
      */
     public function getItem()
     {
@@ -41,15 +41,15 @@ class MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType extends AbstractS
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType
+     * @param \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTelephonyTrunkExternalDisplayedNumberStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTelephonyTrunkExternalDisplayedNumberStructTypeItemItem instanceof \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberStruct, "%s" given', is_object($myArrayOfTelephonyTrunkExternalDisplayedNumberStructTypeItemItem) ? get_class($myArrayOfTelephonyTrunkExternalDisplayedNumberStructTypeItemItem) : gettype($myArrayOfTelephonyTrunkExternalDisplayedNumberStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTelephonyTrunkExternalDisplayedNumberStructTypeItemItem instanceof \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberStruct, "%s" given', is_object($myArrayOfTelephonyTrunkExternalDisplayedNumberStructTypeItemItem) ? get_class($myArrayOfTelephonyTrunkExternalDisplayedNumberStructTypeItemItem) : gettype($myArrayOfTelephonyTrunkExternalDisplayedNumberStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -58,14 +58,14 @@ class MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType extends AbstractS
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType
+     * @param \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType
      */
-    public function addToItem(\PayPal\StructType\TelephonyTrunkExternalDisplayedNumberStruct $item)
+    public function addToItem(\Ovh\StructType\TelephonyTrunkExternalDisplayedNumberStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType extends AbstractS
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberStruct|null
+     * @return \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberStruct|null
      */
     public function current()
     {
@@ -83,7 +83,7 @@ class MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType extends AbstractS
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberStruct|null
+     * @return \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberStruct|null
      */
     public function item($index)
     {
@@ -92,7 +92,7 @@ class MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType extends AbstractS
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberStruct|null
+     * @return \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberStruct|null
      */
     public function first()
     {
@@ -101,7 +101,7 @@ class MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType extends AbstractS
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberStruct|null
+     * @return \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberStruct|null
      */
     public function last()
     {
@@ -111,7 +111,7 @@ class MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType extends AbstractS
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberStruct|null
+     * @return \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberStruct|null
      */
     public function offsetGet($offset)
     {
@@ -132,7 +132,7 @@ class MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType extends AbstractS
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyTrunkExternalDisplayedNumberStructType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfDatabaseStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\DatabaseStruct[]
+     * @var \Ovh\StructType\DatabaseStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfDatabaseStructType
      * @uses MyArrayOfDatabaseStructType::setItem()
-     * @param \PayPal\StructType\DatabaseStruct[] $item
+     * @param \Ovh\StructType\DatabaseStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfDatabaseStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\DatabaseStruct[]|null
+     * @return \Ovh\StructType\DatabaseStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfDatabaseStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DatabaseStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfDatabaseStructType
+     * @param \Ovh\StructType\DatabaseStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfDatabaseStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfDatabaseStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfDatabaseStructTypeItemItem instanceof \PayPal\StructType\DatabaseStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DatabaseStruct, "%s" given', is_object($myArrayOfDatabaseStructTypeItemItem) ? get_class($myArrayOfDatabaseStructTypeItemItem) : gettype($myArrayOfDatabaseStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfDatabaseStructTypeItemItem instanceof \Ovh\StructType\DatabaseStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DatabaseStruct, "%s" given', is_object($myArrayOfDatabaseStructTypeItemItem) ? get_class($myArrayOfDatabaseStructTypeItemItem) : gettype($myArrayOfDatabaseStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfDatabaseStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DatabaseStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfDatabaseStructType
+     * @param \Ovh\StructType\DatabaseStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfDatabaseStructType
      */
-    public function addToItem(\PayPal\StructType\DatabaseStruct $item)
+    public function addToItem(\Ovh\StructType\DatabaseStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\DatabaseStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DatabaseStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\DatabaseStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DatabaseStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfDatabaseStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\DatabaseStruct|null
+     * @return \Ovh\StructType\DatabaseStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfDatabaseStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\DatabaseStruct|null
+     * @return \Ovh\StructType\DatabaseStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfDatabaseStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\DatabaseStruct|null
+     * @return \Ovh\StructType\DatabaseStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfDatabaseStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\DatabaseStruct|null
+     * @return \Ovh\StructType\DatabaseStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfDatabaseStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\DatabaseStruct|null
+     * @return \Ovh\StructType\DatabaseStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfDatabaseStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfDatabaseStructType
+     * @return \Ovh\ArrayType\MyArrayOfDatabaseStructType
      */
     public static function __set_state(array $array)
     {

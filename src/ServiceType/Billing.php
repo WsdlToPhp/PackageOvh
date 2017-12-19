@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Billing extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\BillingInvoiceList $parameters
-     * @return \PayPal\StructType\BillingInvoiceListResponse|bool
+     * @param \Ovh\StructType\BillingInvoiceList $parameters
+     * @return \Ovh\StructType\BillingInvoiceListResponse|bool
      */
-    public function billingInvoiceList(\PayPal\StructType\BillingInvoiceList $parameters)
+    public function billingInvoiceList(\Ovh\StructType\BillingInvoiceList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->billingInvoiceList($parameters));
@@ -36,10 +36,10 @@ class Billing extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\BillingGetReferencesToExpired $parameters
-     * @return \PayPal\StructType\BillingGetReferencesToExpiredResponse|bool
+     * @param \Ovh\StructType\BillingGetReferencesToExpired $parameters
+     * @return \Ovh\StructType\BillingGetReferencesToExpiredResponse|bool
      */
-    public function billingGetReferencesToExpired(\PayPal\StructType\BillingGetReferencesToExpired $parameters)
+    public function billingGetReferencesToExpired(\Ovh\StructType\BillingGetReferencesToExpired $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->billingGetReferencesToExpired($parameters));
@@ -55,10 +55,10 @@ class Billing extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\BillingGetAccessByNic $parameters
-     * @return \PayPal\StructType\BillingGetAccessByNicResponse|bool
+     * @param \Ovh\StructType\BillingGetAccessByNic $parameters
+     * @return \Ovh\StructType\BillingGetAccessByNicResponse|bool
      */
-    public function billingGetAccessByNic(\PayPal\StructType\BillingGetAccessByNic $parameters)
+    public function billingGetAccessByNic(\Ovh\StructType\BillingGetAccessByNic $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->billingGetAccessByNic($parameters));
@@ -74,10 +74,10 @@ class Billing extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\BillingInvoiceInfo $parameters
-     * @return \PayPal\StructType\BillingInvoiceInfoResponse|bool
+     * @param \Ovh\StructType\BillingInvoiceInfo $parameters
+     * @return \Ovh\StructType\BillingInvoiceInfoResponse|bool
      */
-    public function billingInvoiceInfo(\PayPal\StructType\BillingInvoiceInfo $parameters)
+    public function billingInvoiceInfo(\Ovh\StructType\BillingInvoiceInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->billingInvoiceInfo($parameters));
@@ -90,7 +90,7 @@ class Billing extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\BillingGetAccessByNicResponse|\PayPal\StructType\BillingGetReferencesToExpiredResponse|\PayPal\StructType\BillingInvoiceInfoResponse|\PayPal\StructType\BillingInvoiceListResponse
+     * @return \Ovh\StructType\BillingGetAccessByNicResponse|\Ovh\StructType\BillingGetReferencesToExpiredResponse|\Ovh\StructType\BillingInvoiceInfoResponse|\Ovh\StructType\BillingInvoiceListResponse
      */
     public function getResult()
     {

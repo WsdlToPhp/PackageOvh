@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class MailingListInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\MailingListStruct
+     * @var \Ovh\StructType\MailingListStruct
      */
     public $return;
     /**
      * Constructor method for mailingListInfoResponse
      * @uses MailingListInfoResponse::setReturn()
-     * @param \PayPal\StructType\MailingListStruct $return
+     * @param \Ovh\StructType\MailingListStruct $return
      */
-    public function __construct(\PayPal\StructType\MailingListStruct $return = null)
+    public function __construct(\Ovh\StructType\MailingListStruct $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\MailingListStruct|null
+     * @return \Ovh\StructType\MailingListStruct|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class MailingListInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\MailingListStruct $return
-     * @return \PayPal\StructType\MailingListInfoResponse
+     * @param \Ovh\StructType\MailingListStruct $return
+     * @return \Ovh\StructType\MailingListInfoResponse
      */
-    public function setReturn(\PayPal\StructType\MailingListStruct $return = null)
+    public function setReturn(\Ovh\StructType\MailingListStruct $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class MailingListInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\MailingListInfoResponse
+     * @return \Ovh\StructType\MailingListInfoResponse
      */
     public static function __set_state(array $array)
     {

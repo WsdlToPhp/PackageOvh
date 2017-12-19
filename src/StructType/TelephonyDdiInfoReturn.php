@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class TelephonyDdiInfoReturn extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyDdiInfoReturn
+     * @return \Ovh\StructType\TelephonyDdiInfoReturn
      */
     public function setNumber($number = null)
     {
@@ -83,7 +83,7 @@ class TelephonyDdiInfoReturn extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyDdiInfoReturn
+     * @return \Ovh\StructType\TelephonyDdiInfoReturn
      */
     public function setCountry($country = null)
     {
@@ -105,7 +105,7 @@ class TelephonyDdiInfoReturn extends AbstractStructBase
     /**
      * Set noReplyTimer value
      * @param int $noReplyTimer
-     * @return \PayPal\StructType\TelephonyDdiInfoReturn
+     * @return \Ovh\StructType\TelephonyDdiInfoReturn
      */
     public function setNoReplyTimer($noReplyTimer = null)
     {
@@ -127,7 +127,7 @@ class TelephonyDdiInfoReturn extends AbstractStructBase
     /**
      * Set logged value
      * @param bool $logged
-     * @return \PayPal\StructType\TelephonyDdiInfoReturn
+     * @return \Ovh\StructType\TelephonyDdiInfoReturn
      */
     public function setLogged($logged = null)
     {
@@ -144,7 +144,7 @@ class TelephonyDdiInfoReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyDdiInfoReturn
+     * @return \Ovh\StructType\TelephonyDdiInfoReturn
      */
     public static function __set_state(array $array)
     {

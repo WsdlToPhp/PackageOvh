@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class DedicatedAllowedDistributionLanguageStruct extends AbstractStructBase
     /**
      * Set code value
      * @param string $code
-     * @return \PayPal\StructType\DedicatedAllowedDistributionLanguageStruct
+     * @return \Ovh\StructType\DedicatedAllowedDistributionLanguageStruct
      */
     public function setCode($code = null)
     {
@@ -67,7 +67,7 @@ class DedicatedAllowedDistributionLanguageStruct extends AbstractStructBase
     /**
      * Set desc value
      * @param string $desc
-     * @return \PayPal\StructType\DedicatedAllowedDistributionLanguageStruct
+     * @return \Ovh\StructType\DedicatedAllowedDistributionLanguageStruct
      */
     public function setDesc($desc = null)
     {
@@ -84,7 +84,7 @@ class DedicatedAllowedDistributionLanguageStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedAllowedDistributionLanguageStruct
+     * @return \Ovh\StructType\DedicatedAllowedDistributionLanguageStruct
      */
     public static function __set_state(array $array)
     {

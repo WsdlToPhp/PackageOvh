@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class ServiceModifyContact extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\ServiceModifyContact
+     * @return \Ovh\StructType\ServiceModifyContact
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class ServiceModifyContact extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\ServiceModifyContact
+     * @return \Ovh\StructType\ServiceModifyContact
      */
     public function setDomain($domain = null)
     {
@@ -133,7 +133,7 @@ class ServiceModifyContact extends AbstractStructBase
     /**
      * Set component value
      * @param string $component
-     * @return \PayPal\StructType\ServiceModifyContact
+     * @return \Ovh\StructType\ServiceModifyContact
      */
     public function setComponent($component = null)
     {
@@ -155,7 +155,7 @@ class ServiceModifyContact extends AbstractStructBase
     /**
      * Set contact value
      * @param string $contact
-     * @return \PayPal\StructType\ServiceModifyContact
+     * @return \Ovh\StructType\ServiceModifyContact
      */
     public function setContact($contact = null)
     {
@@ -177,7 +177,7 @@ class ServiceModifyContact extends AbstractStructBase
     /**
      * Set nic value
      * @param string $nic
-     * @return \PayPal\StructType\ServiceModifyContact
+     * @return \Ovh\StructType\ServiceModifyContact
      */
     public function setNic($nic = null)
     {
@@ -199,7 +199,7 @@ class ServiceModifyContact extends AbstractStructBase
     /**
      * Set componentSubType value
      * @param string $componentSubType
-     * @return \PayPal\StructType\ServiceModifyContact
+     * @return \Ovh\StructType\ServiceModifyContact
      */
     public function setComponentSubType($componentSubType = null)
     {
@@ -216,7 +216,7 @@ class ServiceModifyContact extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ServiceModifyContact
+     * @return \Ovh\StructType\ServiceModifyContact
      */
     public static function __set_state(array $array)
     {

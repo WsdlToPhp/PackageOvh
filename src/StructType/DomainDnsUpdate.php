@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -149,7 +149,7 @@ class DomainDnsUpdate extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DomainDnsUpdate
+     * @return \Ovh\StructType\DomainDnsUpdate
      */
     public function setSession($session = null)
     {
@@ -171,7 +171,7 @@ class DomainDnsUpdate extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\DomainDnsUpdate
+     * @return \Ovh\StructType\DomainDnsUpdate
      */
     public function setDomain($domain = null)
     {
@@ -193,7 +193,7 @@ class DomainDnsUpdate extends AbstractStructBase
     /**
      * Set dns1 value
      * @param string $dns1
-     * @return \PayPal\StructType\DomainDnsUpdate
+     * @return \Ovh\StructType\DomainDnsUpdate
      */
     public function setDns1($dns1 = null)
     {
@@ -215,7 +215,7 @@ class DomainDnsUpdate extends AbstractStructBase
     /**
      * Set ip1 value
      * @param string $ip1
-     * @return \PayPal\StructType\DomainDnsUpdate
+     * @return \Ovh\StructType\DomainDnsUpdate
      */
     public function setIp1($ip1 = null)
     {
@@ -237,7 +237,7 @@ class DomainDnsUpdate extends AbstractStructBase
     /**
      * Set dns2 value
      * @param string $dns2
-     * @return \PayPal\StructType\DomainDnsUpdate
+     * @return \Ovh\StructType\DomainDnsUpdate
      */
     public function setDns2($dns2 = null)
     {
@@ -259,7 +259,7 @@ class DomainDnsUpdate extends AbstractStructBase
     /**
      * Set ip2 value
      * @param string $ip2
-     * @return \PayPal\StructType\DomainDnsUpdate
+     * @return \Ovh\StructType\DomainDnsUpdate
      */
     public function setIp2($ip2 = null)
     {
@@ -281,7 +281,7 @@ class DomainDnsUpdate extends AbstractStructBase
     /**
      * Set dns3 value
      * @param string $dns3
-     * @return \PayPal\StructType\DomainDnsUpdate
+     * @return \Ovh\StructType\DomainDnsUpdate
      */
     public function setDns3($dns3 = null)
     {
@@ -303,7 +303,7 @@ class DomainDnsUpdate extends AbstractStructBase
     /**
      * Set ip3 value
      * @param string $ip3
-     * @return \PayPal\StructType\DomainDnsUpdate
+     * @return \Ovh\StructType\DomainDnsUpdate
      */
     public function setIp3($ip3 = null)
     {
@@ -325,7 +325,7 @@ class DomainDnsUpdate extends AbstractStructBase
     /**
      * Set dns4 value
      * @param string $dns4
-     * @return \PayPal\StructType\DomainDnsUpdate
+     * @return \Ovh\StructType\DomainDnsUpdate
      */
     public function setDns4($dns4 = null)
     {
@@ -347,7 +347,7 @@ class DomainDnsUpdate extends AbstractStructBase
     /**
      * Set ip4 value
      * @param string $ip4
-     * @return \PayPal\StructType\DomainDnsUpdate
+     * @return \Ovh\StructType\DomainDnsUpdate
      */
     public function setIp4($ip4 = null)
     {
@@ -369,7 +369,7 @@ class DomainDnsUpdate extends AbstractStructBase
     /**
      * Set dns5 value
      * @param string $dns5
-     * @return \PayPal\StructType\DomainDnsUpdate
+     * @return \Ovh\StructType\DomainDnsUpdate
      */
     public function setDns5($dns5 = null)
     {
@@ -391,7 +391,7 @@ class DomainDnsUpdate extends AbstractStructBase
     /**
      * Set ip5 value
      * @param string $ip5
-     * @return \PayPal\StructType\DomainDnsUpdate
+     * @return \Ovh\StructType\DomainDnsUpdate
      */
     public function setIp5($ip5 = null)
     {
@@ -408,7 +408,7 @@ class DomainDnsUpdate extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DomainDnsUpdate
+     * @return \Ovh\StructType\DomainDnsUpdate
      */
     public static function __set_state(array $array)
     {

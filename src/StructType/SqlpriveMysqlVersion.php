@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class SqlpriveMysqlVersion extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\SqlpriveMysqlVersion
+     * @return \Ovh\StructType\SqlpriveMysqlVersion
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class SqlpriveMysqlVersion extends AbstractStructBase
     /**
      * Set server value
      * @param string $server
-     * @return \PayPal\StructType\SqlpriveMysqlVersion
+     * @return \Ovh\StructType\SqlpriveMysqlVersion
      */
     public function setServer($server = null)
     {
@@ -103,7 +103,7 @@ class SqlpriveMysqlVersion extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \PayPal\StructType\SqlpriveMysqlVersion
+     * @return \Ovh\StructType\SqlpriveMysqlVersion
      */
     public function setVersion($version = null)
     {
@@ -120,7 +120,7 @@ class SqlpriveMysqlVersion extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SqlpriveMysqlVersion
+     * @return \Ovh\StructType\SqlpriveMysqlVersion
      */
     public static function __set_state(array $array)
     {

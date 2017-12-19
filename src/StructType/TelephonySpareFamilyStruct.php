@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,12 +23,12 @@ class TelephonySpareFamilyStruct extends AbstractStructBase
     public $family;
     /**
      * The compatibles
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $compatibles;
     /**
      * The spares
-     * @var \PayPal\ArrayType\MyArrayOfTelephonySpareDetailStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonySpareDetailStructType
      */
     public $spares;
     /**
@@ -39,10 +39,10 @@ class TelephonySpareFamilyStruct extends AbstractStructBase
      * @uses TelephonySpareFamilyStruct::setSpares()
      * @param string $type
      * @param string $family
-     * @param \PayPal\ArrayType\MyArrayOfStringType $compatibles
-     * @param \PayPal\ArrayType\MyArrayOfTelephonySpareDetailStructType $spares
+     * @param \Ovh\ArrayType\MyArrayOfStringType $compatibles
+     * @param \Ovh\ArrayType\MyArrayOfTelephonySpareDetailStructType $spares
      */
-    public function __construct($type = null, $family = null, \PayPal\ArrayType\MyArrayOfStringType $compatibles = null, \PayPal\ArrayType\MyArrayOfTelephonySpareDetailStructType $spares = null)
+    public function __construct($type = null, $family = null, \Ovh\ArrayType\MyArrayOfStringType $compatibles = null, \Ovh\ArrayType\MyArrayOfTelephonySpareDetailStructType $spares = null)
     {
         $this
             ->setType($type)
@@ -61,7 +61,7 @@ class TelephonySpareFamilyStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\TelephonySpareFamilyStruct
+     * @return \Ovh\StructType\TelephonySpareFamilyStruct
      */
     public function setType($type = null)
     {
@@ -83,7 +83,7 @@ class TelephonySpareFamilyStruct extends AbstractStructBase
     /**
      * Set family value
      * @param string $family
-     * @return \PayPal\StructType\TelephonySpareFamilyStruct
+     * @return \Ovh\StructType\TelephonySpareFamilyStruct
      */
     public function setFamily($family = null)
     {
@@ -96,7 +96,7 @@ class TelephonySpareFamilyStruct extends AbstractStructBase
     }
     /**
      * Get compatibles value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getCompatibles()
     {
@@ -104,17 +104,17 @@ class TelephonySpareFamilyStruct extends AbstractStructBase
     }
     /**
      * Set compatibles value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $compatibles
-     * @return \PayPal\StructType\TelephonySpareFamilyStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $compatibles
+     * @return \Ovh\StructType\TelephonySpareFamilyStruct
      */
-    public function setCompatibles(\PayPal\ArrayType\MyArrayOfStringType $compatibles = null)
+    public function setCompatibles(\Ovh\ArrayType\MyArrayOfStringType $compatibles = null)
     {
         $this->compatibles = $compatibles;
         return $this;
     }
     /**
      * Get spares value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonySpareDetailStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonySpareDetailStructType|null
      */
     public function getSpares()
     {
@@ -122,10 +122,10 @@ class TelephonySpareFamilyStruct extends AbstractStructBase
     }
     /**
      * Set spares value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonySpareDetailStructType $spares
-     * @return \PayPal\StructType\TelephonySpareFamilyStruct
+     * @param \Ovh\ArrayType\MyArrayOfTelephonySpareDetailStructType $spares
+     * @return \Ovh\StructType\TelephonySpareFamilyStruct
      */
-    public function setSpares(\PayPal\ArrayType\MyArrayOfTelephonySpareDetailStructType $spares = null)
+    public function setSpares(\Ovh\ArrayType\MyArrayOfTelephonySpareDetailStructType $spares = null)
     {
         $this->spares = $spares;
         return $this;
@@ -136,7 +136,7 @@ class TelephonySpareFamilyStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySpareFamilyStruct
+     * @return \Ovh\StructType\TelephonySpareFamilyStruct
      */
     public static function __set_state(array $array)
     {

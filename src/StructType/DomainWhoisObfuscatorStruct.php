@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class DomainWhoisObfuscatorStruct extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\DomainWhoisObfuscatorStruct
+     * @return \Ovh\StructType\DomainWhoisObfuscatorStruct
      */
     public function setDomain($domain = null)
     {
@@ -83,7 +83,7 @@ class DomainWhoisObfuscatorStruct extends AbstractStructBase
     /**
      * Set email value
      * @param bool $email
-     * @return \PayPal\StructType\DomainWhoisObfuscatorStruct
+     * @return \Ovh\StructType\DomainWhoisObfuscatorStruct
      */
     public function setEmail($email = null)
     {
@@ -105,7 +105,7 @@ class DomainWhoisObfuscatorStruct extends AbstractStructBase
     /**
      * Set address value
      * @param bool $address
-     * @return \PayPal\StructType\DomainWhoisObfuscatorStruct
+     * @return \Ovh\StructType\DomainWhoisObfuscatorStruct
      */
     public function setAddress($address = null)
     {
@@ -127,7 +127,7 @@ class DomainWhoisObfuscatorStruct extends AbstractStructBase
     /**
      * Set phone value
      * @param bool $phone
-     * @return \PayPal\StructType\DomainWhoisObfuscatorStruct
+     * @return \Ovh\StructType\DomainWhoisObfuscatorStruct
      */
     public function setPhone($phone = null)
     {
@@ -144,7 +144,7 @@ class DomainWhoisObfuscatorStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DomainWhoisObfuscatorStruct
+     * @return \Ovh\StructType\DomainWhoisObfuscatorStruct
      */
     public static function __set_state(array $array)
     {

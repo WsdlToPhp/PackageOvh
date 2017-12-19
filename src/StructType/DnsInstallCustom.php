@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -119,7 +119,7 @@ class DnsInstallCustom extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DnsInstallCustom
+     * @return \Ovh\StructType\DnsInstallCustom
      */
     public function setSession($session = null)
     {
@@ -141,7 +141,7 @@ class DnsInstallCustom extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\DnsInstallCustom
+     * @return \Ovh\StructType\DnsInstallCustom
      */
     public function setDomain($domain = null)
     {
@@ -163,7 +163,7 @@ class DnsInstallCustom extends AbstractStructBase
     /**
      * Set subdomain value
      * @param string $subdomain
-     * @return \PayPal\StructType\DnsInstallCustom
+     * @return \Ovh\StructType\DnsInstallCustom
      */
     public function setSubdomain($subdomain = null)
     {
@@ -185,7 +185,7 @@ class DnsInstallCustom extends AbstractStructBase
     /**
      * Set hostingtype value
      * @param string $hostingtype
-     * @return \PayPal\StructType\DnsInstallCustom
+     * @return \Ovh\StructType\DnsInstallCustom
      */
     public function setHostingtype($hostingtype = null)
     {
@@ -207,7 +207,7 @@ class DnsInstallCustom extends AbstractStructBase
     /**
      * Set hosting value
      * @param string $hosting
-     * @return \PayPal\StructType\DnsInstallCustom
+     * @return \Ovh\StructType\DnsInstallCustom
      */
     public function setHosting($hosting = null)
     {
@@ -229,7 +229,7 @@ class DnsInstallCustom extends AbstractStructBase
     /**
      * Set mxtype value
      * @param string $mxtype
-     * @return \PayPal\StructType\DnsInstallCustom
+     * @return \Ovh\StructType\DnsInstallCustom
      */
     public function setMxtype($mxtype = null)
     {
@@ -251,7 +251,7 @@ class DnsInstallCustom extends AbstractStructBase
     /**
      * Set mx value
      * @param string $mx
-     * @return \PayPal\StructType\DnsInstallCustom
+     * @return \Ovh\StructType\DnsInstallCustom
      */
     public function setMx($mx = null)
     {
@@ -273,7 +273,7 @@ class DnsInstallCustom extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\DnsInstallCustom
+     * @return \Ovh\StructType\DnsInstallCustom
      */
     public function setCountry($country = null)
     {
@@ -295,7 +295,7 @@ class DnsInstallCustom extends AbstractStructBase
     /**
      * Set minimized value
      * @param bool $minimized
-     * @return \PayPal\StructType\DnsInstallCustom
+     * @return \Ovh\StructType\DnsInstallCustom
      */
     public function setMinimized($minimized = null)
     {
@@ -312,7 +312,7 @@ class DnsInstallCustom extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DnsInstallCustom
+     * @return \Ovh\StructType\DnsInstallCustom
      */
     public static function __set_state(array $array)
     {

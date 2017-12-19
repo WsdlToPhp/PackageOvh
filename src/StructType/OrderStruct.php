@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class OrderStruct extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \PayPal\StructType\OrderStruct
+     * @return \Ovh\StructType\OrderStruct
      */
     public function setOrderId($orderId = null)
     {
@@ -91,7 +91,7 @@ class OrderStruct extends AbstractStructBase
     /**
      * Set orderPassword value
      * @param string $orderPassword
-     * @return \PayPal\StructType\OrderStruct
+     * @return \Ovh\StructType\OrderStruct
      */
     public function setOrderPassword($orderPassword = null)
     {
@@ -113,7 +113,7 @@ class OrderStruct extends AbstractStructBase
     /**
      * Set orderUrl value
      * @param string $orderUrl
-     * @return \PayPal\StructType\OrderStruct
+     * @return \Ovh\StructType\OrderStruct
      */
     public function setOrderUrl($orderUrl = null)
     {
@@ -135,7 +135,7 @@ class OrderStruct extends AbstractStructBase
     /**
      * Set isPaid value
      * @param bool $isPaid
-     * @return \PayPal\StructType\OrderStruct
+     * @return \Ovh\StructType\OrderStruct
      */
     public function setIsPaid($isPaid = null)
     {
@@ -157,7 +157,7 @@ class OrderStruct extends AbstractStructBase
     /**
      * Set paymentStatus value
      * @param string $paymentStatus
-     * @return \PayPal\StructType\OrderStruct
+     * @return \Ovh\StructType\OrderStruct
      */
     public function setPaymentStatus($paymentStatus = null)
     {
@@ -174,7 +174,7 @@ class OrderStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\OrderStruct
+     * @return \Ovh\StructType\OrderStruct
      */
     public static function __set_state(array $array)
     {

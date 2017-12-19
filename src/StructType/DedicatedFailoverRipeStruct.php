@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -93,7 +93,7 @@ class DedicatedFailoverRipeStruct extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\DedicatedFailoverRipeStruct
+     * @return \Ovh\StructType\DedicatedFailoverRipeStruct
      */
     public function setCountry($country = null)
     {
@@ -115,7 +115,7 @@ class DedicatedFailoverRipeStruct extends AbstractStructBase
     /**
      * Set netname value
      * @param string $netname
-     * @return \PayPal\StructType\DedicatedFailoverRipeStruct
+     * @return \Ovh\StructType\DedicatedFailoverRipeStruct
      */
     public function setNetname($netname = null)
     {
@@ -137,7 +137,7 @@ class DedicatedFailoverRipeStruct extends AbstractStructBase
     /**
      * Set routedTo value
      * @param string $routedTo
-     * @return \PayPal\StructType\DedicatedFailoverRipeStruct
+     * @return \Ovh\StructType\DedicatedFailoverRipeStruct
      */
     public function setRoutedTo($routedTo = null)
     {
@@ -159,7 +159,7 @@ class DedicatedFailoverRipeStruct extends AbstractStructBase
     /**
      * Set routingStatus value
      * @param string $routingStatus
-     * @return \PayPal\StructType\DedicatedFailoverRipeStruct
+     * @return \Ovh\StructType\DedicatedFailoverRipeStruct
      */
     public function setRoutingStatus($routingStatus = null)
     {
@@ -181,7 +181,7 @@ class DedicatedFailoverRipeStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\DedicatedFailoverRipeStruct
+     * @return \Ovh\StructType\DedicatedFailoverRipeStruct
      */
     public function setStatus($status = null)
     {
@@ -203,7 +203,7 @@ class DedicatedFailoverRipeStruct extends AbstractStructBase
     /**
      * Set addressesNumber value
      * @param int $addressesNumber
-     * @return \PayPal\StructType\DedicatedFailoverRipeStruct
+     * @return \Ovh\StructType\DedicatedFailoverRipeStruct
      */
     public function setAddressesNumber($addressesNumber = null)
     {
@@ -225,7 +225,7 @@ class DedicatedFailoverRipeStruct extends AbstractStructBase
     /**
      * Set networkIp value
      * @param string $networkIp
-     * @return \PayPal\StructType\DedicatedFailoverRipeStruct
+     * @return \Ovh\StructType\DedicatedFailoverRipeStruct
      */
     public function setNetworkIp($networkIp = null)
     {
@@ -247,7 +247,7 @@ class DedicatedFailoverRipeStruct extends AbstractStructBase
     /**
      * Set isExclude value
      * @param bool $isExclude
-     * @return \PayPal\StructType\DedicatedFailoverRipeStruct
+     * @return \Ovh\StructType\DedicatedFailoverRipeStruct
      */
     public function setIsExclude($isExclude = null)
     {
@@ -264,7 +264,7 @@ class DedicatedFailoverRipeStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedFailoverRipeStruct
+     * @return \Ovh\StructType\DedicatedFailoverRipeStruct
      */
     public static function __set_state(array $array)
     {

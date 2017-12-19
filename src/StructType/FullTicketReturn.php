@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -68,7 +68,7 @@ class FullTicketReturn extends AbstractStructBase
     public $componentType;
     /**
      * The messages
-     * @var \PayPal\ArrayType\MyArrayOfMessageDetailStructType
+     * @var \Ovh\ArrayType\MyArrayOfMessageDetailStructType
      */
     public $messages;
     /**
@@ -96,9 +96,9 @@ class FullTicketReturn extends AbstractStructBase
      * @param string $domain
      * @param int $orderId
      * @param string $componentType
-     * @param \PayPal\ArrayType\MyArrayOfMessageDetailStructType $messages
+     * @param \Ovh\ArrayType\MyArrayOfMessageDetailStructType $messages
      */
-    public function __construct($ticketId = null, $requestStatus = null, $status = null, $subject = null, $nic = null, $phone = null, $email = null, $level = null, $domain = null, $orderId = null, $componentType = null, \PayPal\ArrayType\MyArrayOfMessageDetailStructType $messages = null)
+    public function __construct($ticketId = null, $requestStatus = null, $status = null, $subject = null, $nic = null, $phone = null, $email = null, $level = null, $domain = null, $orderId = null, $componentType = null, \Ovh\ArrayType\MyArrayOfMessageDetailStructType $messages = null)
     {
         $this
             ->setTicketId($ticketId)
@@ -125,7 +125,7 @@ class FullTicketReturn extends AbstractStructBase
     /**
      * Set ticketId value
      * @param int $ticketId
-     * @return \PayPal\StructType\FullTicketReturn
+     * @return \Ovh\StructType\FullTicketReturn
      */
     public function setTicketId($ticketId = null)
     {
@@ -147,7 +147,7 @@ class FullTicketReturn extends AbstractStructBase
     /**
      * Set requestStatus value
      * @param string $requestStatus
-     * @return \PayPal\StructType\FullTicketReturn
+     * @return \Ovh\StructType\FullTicketReturn
      */
     public function setRequestStatus($requestStatus = null)
     {
@@ -169,7 +169,7 @@ class FullTicketReturn extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\FullTicketReturn
+     * @return \Ovh\StructType\FullTicketReturn
      */
     public function setStatus($status = null)
     {
@@ -191,7 +191,7 @@ class FullTicketReturn extends AbstractStructBase
     /**
      * Set subject value
      * @param string $subject
-     * @return \PayPal\StructType\FullTicketReturn
+     * @return \Ovh\StructType\FullTicketReturn
      */
     public function setSubject($subject = null)
     {
@@ -213,7 +213,7 @@ class FullTicketReturn extends AbstractStructBase
     /**
      * Set nic value
      * @param string $nic
-     * @return \PayPal\StructType\FullTicketReturn
+     * @return \Ovh\StructType\FullTicketReturn
      */
     public function setNic($nic = null)
     {
@@ -235,7 +235,7 @@ class FullTicketReturn extends AbstractStructBase
     /**
      * Set phone value
      * @param string $phone
-     * @return \PayPal\StructType\FullTicketReturn
+     * @return \Ovh\StructType\FullTicketReturn
      */
     public function setPhone($phone = null)
     {
@@ -257,7 +257,7 @@ class FullTicketReturn extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\FullTicketReturn
+     * @return \Ovh\StructType\FullTicketReturn
      */
     public function setEmail($email = null)
     {
@@ -279,7 +279,7 @@ class FullTicketReturn extends AbstractStructBase
     /**
      * Set level value
      * @param string $level
-     * @return \PayPal\StructType\FullTicketReturn
+     * @return \Ovh\StructType\FullTicketReturn
      */
     public function setLevel($level = null)
     {
@@ -301,7 +301,7 @@ class FullTicketReturn extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\FullTicketReturn
+     * @return \Ovh\StructType\FullTicketReturn
      */
     public function setDomain($domain = null)
     {
@@ -323,7 +323,7 @@ class FullTicketReturn extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \PayPal\StructType\FullTicketReturn
+     * @return \Ovh\StructType\FullTicketReturn
      */
     public function setOrderId($orderId = null)
     {
@@ -345,7 +345,7 @@ class FullTicketReturn extends AbstractStructBase
     /**
      * Set componentType value
      * @param string $componentType
-     * @return \PayPal\StructType\FullTicketReturn
+     * @return \Ovh\StructType\FullTicketReturn
      */
     public function setComponentType($componentType = null)
     {
@@ -358,7 +358,7 @@ class FullTicketReturn extends AbstractStructBase
     }
     /**
      * Get messages value
-     * @return \PayPal\ArrayType\MyArrayOfMessageDetailStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfMessageDetailStructType|null
      */
     public function getMessages()
     {
@@ -366,10 +366,10 @@ class FullTicketReturn extends AbstractStructBase
     }
     /**
      * Set messages value
-     * @param \PayPal\ArrayType\MyArrayOfMessageDetailStructType $messages
-     * @return \PayPal\StructType\FullTicketReturn
+     * @param \Ovh\ArrayType\MyArrayOfMessageDetailStructType $messages
+     * @return \Ovh\StructType\FullTicketReturn
      */
-    public function setMessages(\PayPal\ArrayType\MyArrayOfMessageDetailStructType $messages = null)
+    public function setMessages(\Ovh\ArrayType\MyArrayOfMessageDetailStructType $messages = null)
     {
         $this->messages = $messages;
         return $this;
@@ -380,7 +380,7 @@ class FullTicketReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\FullTicketReturn
+     * @return \Ovh\StructType\FullTicketReturn
      */
     public static function __set_state(array $array)
     {

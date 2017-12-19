@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,7 +49,7 @@ class AnonymousFtpInfo extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\AnonymousFtpInfo
+     * @return \Ovh\StructType\AnonymousFtpInfo
      */
     public function setSession($session = null)
     {
@@ -71,7 +71,7 @@ class AnonymousFtpInfo extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\AnonymousFtpInfo
+     * @return \Ovh\StructType\AnonymousFtpInfo
      */
     public function setDomain($domain = null)
     {
@@ -88,7 +88,7 @@ class AnonymousFtpInfo extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\AnonymousFtpInfo
+     * @return \Ovh\StructType\AnonymousFtpInfo
      */
     public static function __set_state(array $array)
     {

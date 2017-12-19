@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class ManagedServicesAclStruct extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\ManagedServicesAclStruct
+     * @return \Ovh\StructType\ManagedServicesAclStruct
      */
     public function setIp($ip = null)
     {
@@ -75,7 +75,7 @@ class ManagedServicesAclStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\ManagedServicesAclStruct
+     * @return \Ovh\StructType\ManagedServicesAclStruct
      */
     public function setType($type = null)
     {
@@ -97,7 +97,7 @@ class ManagedServicesAclStruct extends AbstractStructBase
     /**
      * Set host value
      * @param string $host
-     * @return \PayPal\StructType\ManagedServicesAclStruct
+     * @return \Ovh\StructType\ManagedServicesAclStruct
      */
     public function setHost($host = null)
     {
@@ -114,7 +114,7 @@ class ManagedServicesAclStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ManagedServicesAclStruct
+     * @return \Ovh\StructType\ManagedServicesAclStruct
      */
     public static function __set_state(array $array)
     {

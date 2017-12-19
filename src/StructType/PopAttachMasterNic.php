@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class PopAttachMasterNic extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\PopAttachMasterNic
+     * @return \Ovh\StructType\PopAttachMasterNic
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class PopAttachMasterNic extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\PopAttachMasterNic
+     * @return \Ovh\StructType\PopAttachMasterNic
      */
     public function setDomain($domain = null)
     {
@@ -113,7 +113,7 @@ class PopAttachMasterNic extends AbstractStructBase
     /**
      * Set pop value
      * @param string $pop
-     * @return \PayPal\StructType\PopAttachMasterNic
+     * @return \Ovh\StructType\PopAttachMasterNic
      */
     public function setPop($pop = null)
     {
@@ -135,7 +135,7 @@ class PopAttachMasterNic extends AbstractStructBase
     /**
      * Set nic value
      * @param string $nic
-     * @return \PayPal\StructType\PopAttachMasterNic
+     * @return \Ovh\StructType\PopAttachMasterNic
      */
     public function setNic($nic = null)
     {
@@ -152,7 +152,7 @@ class PopAttachMasterNic extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\PopAttachMasterNic
+     * @return \Ovh\StructType\PopAttachMasterNic
      */
     public static function __set_state(array $array)
     {

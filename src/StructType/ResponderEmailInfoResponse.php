@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class ResponderEmailInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\ResponderEmailStruct
+     * @var \Ovh\StructType\ResponderEmailStruct
      */
     public $return;
     /**
      * Constructor method for responderEmailInfoResponse
      * @uses ResponderEmailInfoResponse::setReturn()
-     * @param \PayPal\StructType\ResponderEmailStruct $return
+     * @param \Ovh\StructType\ResponderEmailStruct $return
      */
-    public function __construct(\PayPal\StructType\ResponderEmailStruct $return = null)
+    public function __construct(\Ovh\StructType\ResponderEmailStruct $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\ResponderEmailStruct|null
+     * @return \Ovh\StructType\ResponderEmailStruct|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class ResponderEmailInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\ResponderEmailStruct $return
-     * @return \PayPal\StructType\ResponderEmailInfoResponse
+     * @param \Ovh\StructType\ResponderEmailStruct $return
+     * @return \Ovh\StructType\ResponderEmailInfoResponse
      */
-    public function setReturn(\PayPal\StructType\ResponderEmailStruct $return = null)
+    public function setReturn(\Ovh\StructType\ResponderEmailStruct $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class ResponderEmailInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ResponderEmailInfoResponse
+     * @return \Ovh\StructType\ResponderEmailInfoResponse
      */
     public static function __set_state(array $array)
     {

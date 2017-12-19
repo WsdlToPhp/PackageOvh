@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,7 +50,7 @@ class SqlpriveAlertSet extends AbstractStructBase
      * The alert
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $alert;
     /**
@@ -66,9 +66,9 @@ class SqlpriveAlertSet extends AbstractStructBase
      * @param string $email
      * @param string $smsAccount
      * @param string $smsNumber
-     * @param \PayPal\ArrayType\MyArrayOfStringType $alert
+     * @param \Ovh\ArrayType\MyArrayOfStringType $alert
      */
-    public function __construct($session = null, $server = null, $email = null, $smsAccount = null, $smsNumber = null, \PayPal\ArrayType\MyArrayOfStringType $alert = null)
+    public function __construct($session = null, $server = null, $email = null, $smsAccount = null, $smsNumber = null, \Ovh\ArrayType\MyArrayOfStringType $alert = null)
     {
         $this
             ->setSession($session)
@@ -89,7 +89,7 @@ class SqlpriveAlertSet extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\SqlpriveAlertSet
+     * @return \Ovh\StructType\SqlpriveAlertSet
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class SqlpriveAlertSet extends AbstractStructBase
     /**
      * Set server value
      * @param string $server
-     * @return \PayPal\StructType\SqlpriveAlertSet
+     * @return \Ovh\StructType\SqlpriveAlertSet
      */
     public function setServer($server = null)
     {
@@ -133,7 +133,7 @@ class SqlpriveAlertSet extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\SqlpriveAlertSet
+     * @return \Ovh\StructType\SqlpriveAlertSet
      */
     public function setEmail($email = null)
     {
@@ -155,7 +155,7 @@ class SqlpriveAlertSet extends AbstractStructBase
     /**
      * Set smsAccount value
      * @param string $smsAccount
-     * @return \PayPal\StructType\SqlpriveAlertSet
+     * @return \Ovh\StructType\SqlpriveAlertSet
      */
     public function setSmsAccount($smsAccount = null)
     {
@@ -177,7 +177,7 @@ class SqlpriveAlertSet extends AbstractStructBase
     /**
      * Set smsNumber value
      * @param string $smsNumber
-     * @return \PayPal\StructType\SqlpriveAlertSet
+     * @return \Ovh\StructType\SqlpriveAlertSet
      */
     public function setSmsNumber($smsNumber = null)
     {
@@ -190,7 +190,7 @@ class SqlpriveAlertSet extends AbstractStructBase
     }
     /**
      * Get alert value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getAlert()
     {
@@ -198,10 +198,10 @@ class SqlpriveAlertSet extends AbstractStructBase
     }
     /**
      * Set alert value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $alert
-     * @return \PayPal\StructType\SqlpriveAlertSet
+     * @param \Ovh\ArrayType\MyArrayOfStringType $alert
+     * @return \Ovh\StructType\SqlpriveAlertSet
      */
-    public function setAlert(\PayPal\ArrayType\MyArrayOfStringType $alert = null)
+    public function setAlert(\Ovh\ArrayType\MyArrayOfStringType $alert = null)
     {
         $this->alert = $alert;
         return $this;
@@ -212,7 +212,7 @@ class SqlpriveAlertSet extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SqlpriveAlertSet
+     * @return \Ovh\StructType\SqlpriveAlertSet
      */
     public static function __set_state(array $array)
     {

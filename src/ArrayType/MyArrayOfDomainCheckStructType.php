@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfDomainCheckStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\DomainCheckStruct[]
+     * @var \Ovh\StructType\DomainCheckStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfDomainCheckStructType
      * @uses MyArrayOfDomainCheckStructType::setItem()
-     * @param \PayPal\StructType\DomainCheckStruct[] $item
+     * @param \Ovh\StructType\DomainCheckStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfDomainCheckStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\DomainCheckStruct[]|null
+     * @return \Ovh\StructType\DomainCheckStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfDomainCheckStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DomainCheckStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfDomainCheckStructType
+     * @param \Ovh\StructType\DomainCheckStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfDomainCheckStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfDomainCheckStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfDomainCheckStructTypeItemItem instanceof \PayPal\StructType\DomainCheckStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DomainCheckStruct, "%s" given', is_object($myArrayOfDomainCheckStructTypeItemItem) ? get_class($myArrayOfDomainCheckStructTypeItemItem) : gettype($myArrayOfDomainCheckStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfDomainCheckStructTypeItemItem instanceof \Ovh\StructType\DomainCheckStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DomainCheckStruct, "%s" given', is_object($myArrayOfDomainCheckStructTypeItemItem) ? get_class($myArrayOfDomainCheckStructTypeItemItem) : gettype($myArrayOfDomainCheckStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfDomainCheckStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DomainCheckStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfDomainCheckStructType
+     * @param \Ovh\StructType\DomainCheckStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfDomainCheckStructType
      */
-    public function addToItem(\PayPal\StructType\DomainCheckStruct $item)
+    public function addToItem(\Ovh\StructType\DomainCheckStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\DomainCheckStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DomainCheckStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\DomainCheckStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DomainCheckStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfDomainCheckStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\DomainCheckStruct|null
+     * @return \Ovh\StructType\DomainCheckStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfDomainCheckStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\DomainCheckStruct|null
+     * @return \Ovh\StructType\DomainCheckStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfDomainCheckStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\DomainCheckStruct|null
+     * @return \Ovh\StructType\DomainCheckStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfDomainCheckStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\DomainCheckStruct|null
+     * @return \Ovh\StructType\DomainCheckStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfDomainCheckStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\DomainCheckStruct|null
+     * @return \Ovh\StructType\DomainCheckStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfDomainCheckStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfDomainCheckStructType
+     * @return \Ovh\ArrayType\MyArrayOfDomainCheckStructType
      */
     public static function __set_state(array $array)
     {

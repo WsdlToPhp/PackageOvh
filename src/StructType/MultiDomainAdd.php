@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class MultiDomainAdd extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\MultiDomainAdd
+     * @return \Ovh\StructType\MultiDomainAdd
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class MultiDomainAdd extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\MultiDomainAdd
+     * @return \Ovh\StructType\MultiDomainAdd
      */
     public function setDomain($domain = null)
     {
@@ -133,7 +133,7 @@ class MultiDomainAdd extends AbstractStructBase
     /**
      * Set multidomain value
      * @param string $multidomain
-     * @return \PayPal\StructType\MultiDomainAdd
+     * @return \Ovh\StructType\MultiDomainAdd
      */
     public function setMultidomain($multidomain = null)
     {
@@ -155,7 +155,7 @@ class MultiDomainAdd extends AbstractStructBase
     /**
      * Set target value
      * @param string $target
-     * @return \PayPal\StructType\MultiDomainAdd
+     * @return \Ovh\StructType\MultiDomainAdd
      */
     public function setTarget($target = null)
     {
@@ -177,7 +177,7 @@ class MultiDomainAdd extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\MultiDomainAdd
+     * @return \Ovh\StructType\MultiDomainAdd
      */
     public function setCountry($country = null)
     {
@@ -199,7 +199,7 @@ class MultiDomainAdd extends AbstractStructBase
     /**
      * Set ownLog value
      * @param bool $ownLog
-     * @return \PayPal\StructType\MultiDomainAdd
+     * @return \Ovh\StructType\MultiDomainAdd
      */
     public function setOwnLog($ownLog = null)
     {
@@ -216,7 +216,7 @@ class MultiDomainAdd extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\MultiDomainAdd
+     * @return \Ovh\StructType\MultiDomainAdd
      */
     public static function __set_state(array $array)
     {

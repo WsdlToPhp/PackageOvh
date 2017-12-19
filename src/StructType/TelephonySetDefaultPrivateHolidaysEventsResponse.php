@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -24,7 +24,7 @@ class TelephonySetDefaultPrivateHolidaysEventsResponse extends AbstractStructBas
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySetDefaultPrivateHolidaysEventsResponse
+     * @return \Ovh\StructType\TelephonySetDefaultPrivateHolidaysEventsResponse
      */
     public static function __set_state(array $array)
     {

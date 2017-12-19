@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -93,7 +93,7 @@ class SqlpriveMysqlProcessStruct extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\SqlpriveMysqlProcessStruct
+     * @return \Ovh\StructType\SqlpriveMysqlProcessStruct
      */
     public function setId($id = null)
     {
@@ -115,7 +115,7 @@ class SqlpriveMysqlProcessStruct extends AbstractStructBase
     /**
      * Set user value
      * @param string $user
-     * @return \PayPal\StructType\SqlpriveMysqlProcessStruct
+     * @return \Ovh\StructType\SqlpriveMysqlProcessStruct
      */
     public function setUser($user = null)
     {
@@ -137,7 +137,7 @@ class SqlpriveMysqlProcessStruct extends AbstractStructBase
     /**
      * Set host value
      * @param string $host
-     * @return \PayPal\StructType\SqlpriveMysqlProcessStruct
+     * @return \Ovh\StructType\SqlpriveMysqlProcessStruct
      */
     public function setHost($host = null)
     {
@@ -159,7 +159,7 @@ class SqlpriveMysqlProcessStruct extends AbstractStructBase
     /**
      * Set database value
      * @param string $database
-     * @return \PayPal\StructType\SqlpriveMysqlProcessStruct
+     * @return \Ovh\StructType\SqlpriveMysqlProcessStruct
      */
     public function setDatabase($database = null)
     {
@@ -181,7 +181,7 @@ class SqlpriveMysqlProcessStruct extends AbstractStructBase
     /**
      * Set query value
      * @param string $query
-     * @return \PayPal\StructType\SqlpriveMysqlProcessStruct
+     * @return \Ovh\StructType\SqlpriveMysqlProcessStruct
      */
     public function setQuery($query = null)
     {
@@ -203,7 +203,7 @@ class SqlpriveMysqlProcessStruct extends AbstractStructBase
     /**
      * Set time value
      * @param string $time
-     * @return \PayPal\StructType\SqlpriveMysqlProcessStruct
+     * @return \Ovh\StructType\SqlpriveMysqlProcessStruct
      */
     public function setTime($time = null)
     {
@@ -225,7 +225,7 @@ class SqlpriveMysqlProcessStruct extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \PayPal\StructType\SqlpriveMysqlProcessStruct
+     * @return \Ovh\StructType\SqlpriveMysqlProcessStruct
      */
     public function setState($state = null)
     {
@@ -247,7 +247,7 @@ class SqlpriveMysqlProcessStruct extends AbstractStructBase
     /**
      * Set request value
      * @param string $request
-     * @return \PayPal\StructType\SqlpriveMysqlProcessStruct
+     * @return \Ovh\StructType\SqlpriveMysqlProcessStruct
      */
     public function setRequest($request = null)
     {
@@ -264,7 +264,7 @@ class SqlpriveMysqlProcessStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SqlpriveMysqlProcessStruct
+     * @return \Ovh\StructType\SqlpriveMysqlProcessStruct
      */
     public static function __set_state(array $array)
     {

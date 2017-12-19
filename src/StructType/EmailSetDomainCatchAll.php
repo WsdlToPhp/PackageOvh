@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class EmailSetDomainCatchAll extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\EmailSetDomainCatchAll
+     * @return \Ovh\StructType\EmailSetDomainCatchAll
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class EmailSetDomainCatchAll extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\EmailSetDomainCatchAll
+     * @return \Ovh\StructType\EmailSetDomainCatchAll
      */
     public function setDomain($domain = null)
     {
@@ -123,7 +123,7 @@ class EmailSetDomainCatchAll extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\EmailSetDomainCatchAll
+     * @return \Ovh\StructType\EmailSetDomainCatchAll
      */
     public function setType($type = null)
     {
@@ -145,7 +145,7 @@ class EmailSetDomainCatchAll extends AbstractStructBase
     /**
      * Set pop value
      * @param string $pop
-     * @return \PayPal\StructType\EmailSetDomainCatchAll
+     * @return \Ovh\StructType\EmailSetDomainCatchAll
      */
     public function setPop($pop = null)
     {
@@ -167,7 +167,7 @@ class EmailSetDomainCatchAll extends AbstractStructBase
     /**
      * Set address value
      * @param string $address
-     * @return \PayPal\StructType\EmailSetDomainCatchAll
+     * @return \Ovh\StructType\EmailSetDomainCatchAll
      */
     public function setAddress($address = null)
     {
@@ -184,7 +184,7 @@ class EmailSetDomainCatchAll extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\EmailSetDomainCatchAll
+     * @return \Ovh\StructType\EmailSetDomainCatchAll
      */
     public static function __set_state(array $array)
     {

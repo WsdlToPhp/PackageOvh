@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class AutomatedMailGetVolumeHistoryResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfAutomatedMailGetVolumeHistoryStructType
+     * @var \Ovh\ArrayType\MyArrayOfAutomatedMailGetVolumeHistoryStructType
      */
     public $return;
     /**
      * Constructor method for automatedMailGetVolumeHistoryResponse
      * @uses AutomatedMailGetVolumeHistoryResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfAutomatedMailGetVolumeHistoryStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfAutomatedMailGetVolumeHistoryStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfAutomatedMailGetVolumeHistoryStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfAutomatedMailGetVolumeHistoryStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfAutomatedMailGetVolumeHistoryStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfAutomatedMailGetVolumeHistoryStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class AutomatedMailGetVolumeHistoryResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfAutomatedMailGetVolumeHistoryStructType $return
-     * @return \PayPal\StructType\AutomatedMailGetVolumeHistoryResponse
+     * @param \Ovh\ArrayType\MyArrayOfAutomatedMailGetVolumeHistoryStructType $return
+     * @return \Ovh\StructType\AutomatedMailGetVolumeHistoryResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfAutomatedMailGetVolumeHistoryStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfAutomatedMailGetVolumeHistoryStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class AutomatedMailGetVolumeHistoryResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\AutomatedMailGetVolumeHistoryResponse
+     * @return \Ovh\StructType\AutomatedMailGetVolumeHistoryResponse
      */
     public static function __set_state(array $array)
     {

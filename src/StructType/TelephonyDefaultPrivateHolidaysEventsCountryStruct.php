@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,7 +14,7 @@ class TelephonyDefaultPrivateHolidaysEventsCountryStruct extends AbstractStructB
 {
     /**
      * The dates
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $dates;
     /**
@@ -26,10 +26,10 @@ class TelephonyDefaultPrivateHolidaysEventsCountryStruct extends AbstractStructB
      * Constructor method for telephonyDefaultPrivateHolidaysEventsCountryStruct
      * @uses TelephonyDefaultPrivateHolidaysEventsCountryStruct::setDates()
      * @uses TelephonyDefaultPrivateHolidaysEventsCountryStruct::setTzid()
-     * @param \PayPal\ArrayType\MyArrayOfStringType $dates
+     * @param \Ovh\ArrayType\MyArrayOfStringType $dates
      * @param string $tzid
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfStringType $dates = null, $tzid = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfStringType $dates = null, $tzid = null)
     {
         $this
             ->setDates($dates)
@@ -37,7 +37,7 @@ class TelephonyDefaultPrivateHolidaysEventsCountryStruct extends AbstractStructB
     }
     /**
      * Get dates value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getDates()
     {
@@ -45,10 +45,10 @@ class TelephonyDefaultPrivateHolidaysEventsCountryStruct extends AbstractStructB
     }
     /**
      * Set dates value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $dates
-     * @return \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $dates
+     * @return \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct
      */
-    public function setDates(\PayPal\ArrayType\MyArrayOfStringType $dates = null)
+    public function setDates(\Ovh\ArrayType\MyArrayOfStringType $dates = null)
     {
         $this->dates = $dates;
         return $this;
@@ -64,7 +64,7 @@ class TelephonyDefaultPrivateHolidaysEventsCountryStruct extends AbstractStructB
     /**
      * Set tzid value
      * @param string $tzid
-     * @return \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct
+     * @return \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct
      */
     public function setTzid($tzid = null)
     {
@@ -81,7 +81,7 @@ class TelephonyDefaultPrivateHolidaysEventsCountryStruct extends AbstractStructB
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct
+     * @return \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class SupportGetThreadTreeResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\SupportThreadTreeReturn
+     * @var \Ovh\StructType\SupportThreadTreeReturn
      */
     public $return;
     /**
      * Constructor method for supportGetThreadTreeResponse
      * @uses SupportGetThreadTreeResponse::setReturn()
-     * @param \PayPal\StructType\SupportThreadTreeReturn $return
+     * @param \Ovh\StructType\SupportThreadTreeReturn $return
      */
-    public function __construct(\PayPal\StructType\SupportThreadTreeReturn $return = null)
+    public function __construct(\Ovh\StructType\SupportThreadTreeReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\SupportThreadTreeReturn|null
+     * @return \Ovh\StructType\SupportThreadTreeReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class SupportGetThreadTreeResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\SupportThreadTreeReturn $return
-     * @return \PayPal\StructType\SupportGetThreadTreeResponse
+     * @param \Ovh\StructType\SupportThreadTreeReturn $return
+     * @return \Ovh\StructType\SupportGetThreadTreeResponse
      */
-    public function setReturn(\PayPal\StructType\SupportThreadTreeReturn $return = null)
+    public function setReturn(\Ovh\StructType\SupportThreadTreeReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class SupportGetThreadTreeResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SupportGetThreadTreeResponse
+     * @return \Ovh\StructType\SupportGetThreadTreeResponse
      */
     public static function __set_state(array $array)
     {

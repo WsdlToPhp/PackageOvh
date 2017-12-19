@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,7 +49,7 @@ class PrepaidGetThreshold extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\PrepaidGetThreshold
+     * @return \Ovh\StructType\PrepaidGetThreshold
      */
     public function setSession($session = null)
     {
@@ -71,7 +71,7 @@ class PrepaidGetThreshold extends AbstractStructBase
     /**
      * Set nic value
      * @param string $nic
-     * @return \PayPal\StructType\PrepaidGetThreshold
+     * @return \Ovh\StructType\PrepaidGetThreshold
      */
     public function setNic($nic = null)
     {
@@ -88,7 +88,7 @@ class PrepaidGetThreshold extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\PrepaidGetThreshold
+     * @return \Ovh\StructType\PrepaidGetThreshold
      */
     public static function __set_state(array $array)
     {

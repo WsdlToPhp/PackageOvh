@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,7 +49,7 @@ class SupportGetFullMessage extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\SupportGetFullMessage
+     * @return \Ovh\StructType\SupportGetFullMessage
      */
     public function setSession($session = null)
     {
@@ -71,7 +71,7 @@ class SupportGetFullMessage extends AbstractStructBase
     /**
      * Set messageId value
      * @param int $messageId
-     * @return \PayPal\StructType\SupportGetFullMessage
+     * @return \Ovh\StructType\SupportGetFullMessage
      */
     public function setMessageId($messageId = null)
     {
@@ -88,7 +88,7 @@ class SupportGetFullMessage extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SupportGetFullMessage
+     * @return \Ovh\StructType\SupportGetFullMessage
      */
     public static function __set_state(array $array)
     {

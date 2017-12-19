@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyDirectoryInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyDirectoryInfoReturn
+     * @var \Ovh\StructType\TelephonyDirectoryInfoReturn
      */
     public $return;
     /**
      * Constructor method for telephonyDirectoryInfoResponse
      * @uses TelephonyDirectoryInfoResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyDirectoryInfoReturn $return
+     * @param \Ovh\StructType\TelephonyDirectoryInfoReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonyDirectoryInfoReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonyDirectoryInfoReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyDirectoryInfoReturn|null
+     * @return \Ovh\StructType\TelephonyDirectoryInfoReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyDirectoryInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyDirectoryInfoReturn $return
-     * @return \PayPal\StructType\TelephonyDirectoryInfoResponse
+     * @param \Ovh\StructType\TelephonyDirectoryInfoReturn $return
+     * @return \Ovh\StructType\TelephonyDirectoryInfoResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyDirectoryInfoReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyDirectoryInfoReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyDirectoryInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyDirectoryInfoResponse
+     * @return \Ovh\StructType\TelephonyDirectoryInfoResponse
      */
     public static function __set_state(array $array)
     {

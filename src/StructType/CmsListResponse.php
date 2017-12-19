@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class CmsListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfCmsStructType
+     * @var \Ovh\ArrayType\MyArrayOfCmsStructType
      */
     public $return;
     /**
      * Constructor method for cmsListResponse
      * @uses CmsListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfCmsStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfCmsStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfCmsStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfCmsStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfCmsStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfCmsStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class CmsListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfCmsStructType $return
-     * @return \PayPal\StructType\CmsListResponse
+     * @param \Ovh\ArrayType\MyArrayOfCmsStructType $return
+     * @return \Ovh\StructType\CmsListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfCmsStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfCmsStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class CmsListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\CmsListResponse
+     * @return \Ovh\StructType\CmsListResponse
      */
     public static function __set_state(array $array)
     {

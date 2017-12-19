@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfSupportThreadDetailStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\SupportThreadDetailStruct[]
+     * @var \Ovh\StructType\SupportThreadDetailStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfSupportThreadDetailStructType
      * @uses MyArrayOfSupportThreadDetailStructType::setItem()
-     * @param \PayPal\StructType\SupportThreadDetailStruct[] $item
+     * @param \Ovh\StructType\SupportThreadDetailStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfSupportThreadDetailStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\SupportThreadDetailStruct[]|null
+     * @return \Ovh\StructType\SupportThreadDetailStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfSupportThreadDetailStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\SupportThreadDetailStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfSupportThreadDetailStructType
+     * @param \Ovh\StructType\SupportThreadDetailStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfSupportThreadDetailStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfSupportThreadDetailStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfSupportThreadDetailStructTypeItemItem instanceof \PayPal\StructType\SupportThreadDetailStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\SupportThreadDetailStruct, "%s" given', is_object($myArrayOfSupportThreadDetailStructTypeItemItem) ? get_class($myArrayOfSupportThreadDetailStructTypeItemItem) : gettype($myArrayOfSupportThreadDetailStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfSupportThreadDetailStructTypeItemItem instanceof \Ovh\StructType\SupportThreadDetailStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\SupportThreadDetailStruct, "%s" given', is_object($myArrayOfSupportThreadDetailStructTypeItemItem) ? get_class($myArrayOfSupportThreadDetailStructTypeItemItem) : gettype($myArrayOfSupportThreadDetailStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfSupportThreadDetailStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\SupportThreadDetailStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfSupportThreadDetailStructType
+     * @param \Ovh\StructType\SupportThreadDetailStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfSupportThreadDetailStructType
      */
-    public function addToItem(\PayPal\StructType\SupportThreadDetailStruct $item)
+    public function addToItem(\Ovh\StructType\SupportThreadDetailStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\SupportThreadDetailStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\SupportThreadDetailStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\SupportThreadDetailStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\SupportThreadDetailStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfSupportThreadDetailStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\SupportThreadDetailStruct|null
+     * @return \Ovh\StructType\SupportThreadDetailStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfSupportThreadDetailStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\SupportThreadDetailStruct|null
+     * @return \Ovh\StructType\SupportThreadDetailStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfSupportThreadDetailStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\SupportThreadDetailStruct|null
+     * @return \Ovh\StructType\SupportThreadDetailStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfSupportThreadDetailStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\SupportThreadDetailStruct|null
+     * @return \Ovh\StructType\SupportThreadDetailStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfSupportThreadDetailStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\SupportThreadDetailStruct|null
+     * @return \Ovh\StructType\SupportThreadDetailStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfSupportThreadDetailStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfSupportThreadDetailStructType
+     * @return \Ovh\ArrayType\MyArrayOfSupportThreadDetailStructType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -24,7 +24,7 @@ class TelephonyHuntingGenericScreenStatusModifyResponse extends AbstractStructBa
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenStatusModifyResponse
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenStatusModifyResponse
      */
     public static function __set_state(array $array)
     {

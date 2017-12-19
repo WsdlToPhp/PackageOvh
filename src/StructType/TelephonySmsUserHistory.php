@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -139,7 +139,7 @@ class TelephonySmsUserHistory extends AbstractStructBase
     /**
      * Set login value
      * @param string $login
-     * @return \PayPal\StructType\TelephonySmsUserHistory
+     * @return \Ovh\StructType\TelephonySmsUserHistory
      */
     public function setLogin($login = null)
     {
@@ -161,7 +161,7 @@ class TelephonySmsUserHistory extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \PayPal\StructType\TelephonySmsUserHistory
+     * @return \Ovh\StructType\TelephonySmsUserHistory
      */
     public function setPassword($password = null)
     {
@@ -183,7 +183,7 @@ class TelephonySmsUserHistory extends AbstractStructBase
     /**
      * Set smsAccount value
      * @param string $smsAccount
-     * @return \PayPal\StructType\TelephonySmsUserHistory
+     * @return \Ovh\StructType\TelephonySmsUserHistory
      */
     public function setSmsAccount($smsAccount = null)
     {
@@ -205,7 +205,7 @@ class TelephonySmsUserHistory extends AbstractStructBase
     /**
      * Set smsId value
      * @param int $smsId
-     * @return \PayPal\StructType\TelephonySmsUserHistory
+     * @return \Ovh\StructType\TelephonySmsUserHistory
      */
     public function setSmsId($smsId = null)
     {
@@ -227,7 +227,7 @@ class TelephonySmsUserHistory extends AbstractStructBase
     /**
      * Set user value
      * @param string $user
-     * @return \PayPal\StructType\TelephonySmsUserHistory
+     * @return \Ovh\StructType\TelephonySmsUserHistory
      */
     public function setUser($user = null)
     {
@@ -249,7 +249,7 @@ class TelephonySmsUserHistory extends AbstractStructBase
     /**
      * Set pagingStart value
      * @param int $pagingStart
-     * @return \PayPal\StructType\TelephonySmsUserHistory
+     * @return \Ovh\StructType\TelephonySmsUserHistory
      */
     public function setPagingStart($pagingStart = null)
     {
@@ -271,7 +271,7 @@ class TelephonySmsUserHistory extends AbstractStructBase
     /**
      * Set pagingLimit value
      * @param int $pagingLimit
-     * @return \PayPal\StructType\TelephonySmsUserHistory
+     * @return \Ovh\StructType\TelephonySmsUserHistory
      */
     public function setPagingLimit($pagingLimit = null)
     {
@@ -293,7 +293,7 @@ class TelephonySmsUserHistory extends AbstractStructBase
     /**
      * Set sortField value
      * @param string $sortField
-     * @return \PayPal\StructType\TelephonySmsUserHistory
+     * @return \Ovh\StructType\TelephonySmsUserHistory
      */
     public function setSortField($sortField = null)
     {
@@ -315,7 +315,7 @@ class TelephonySmsUserHistory extends AbstractStructBase
     /**
      * Set sortOrder value
      * @param string $sortOrder
-     * @return \PayPal\StructType\TelephonySmsUserHistory
+     * @return \Ovh\StructType\TelephonySmsUserHistory
      */
     public function setSortOrder($sortOrder = null)
     {
@@ -337,7 +337,7 @@ class TelephonySmsUserHistory extends AbstractStructBase
     /**
      * Set tag value
      * @param string $tag
-     * @return \PayPal\StructType\TelephonySmsUserHistory
+     * @return \Ovh\StructType\TelephonySmsUserHistory
      */
     public function setTag($tag = null)
     {
@@ -359,7 +359,7 @@ class TelephonySmsUserHistory extends AbstractStructBase
     /**
      * Set filter value
      * @param string $filter
-     * @return \PayPal\StructType\TelephonySmsUserHistory
+     * @return \Ovh\StructType\TelephonySmsUserHistory
      */
     public function setFilter($filter = null)
     {
@@ -376,7 +376,7 @@ class TelephonySmsUserHistory extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsUserHistory
+     * @return \Ovh\StructType\TelephonySmsUserHistory
      */
     public static function __set_state(array $array)
     {

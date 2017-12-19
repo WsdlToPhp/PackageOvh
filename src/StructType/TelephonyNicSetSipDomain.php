@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class TelephonyNicSetSipDomain extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyNicSetSipDomain
+     * @return \Ovh\StructType\TelephonyNicSetSipDomain
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class TelephonyNicSetSipDomain extends AbstractStructBase
     /**
      * Set fr value
      * @param string $fr
-     * @return \PayPal\StructType\TelephonyNicSetSipDomain
+     * @return \Ovh\StructType\TelephonyNicSetSipDomain
      */
     public function setFr($fr = null)
     {
@@ -133,7 +133,7 @@ class TelephonyNicSetSipDomain extends AbstractStructBase
     /**
      * Set de value
      * @param string $de
-     * @return \PayPal\StructType\TelephonyNicSetSipDomain
+     * @return \Ovh\StructType\TelephonyNicSetSipDomain
      */
     public function setDe($de = null)
     {
@@ -155,7 +155,7 @@ class TelephonyNicSetSipDomain extends AbstractStructBase
     /**
      * Set es value
      * @param string $es
-     * @return \PayPal\StructType\TelephonyNicSetSipDomain
+     * @return \Ovh\StructType\TelephonyNicSetSipDomain
      */
     public function setEs($es = null)
     {
@@ -177,7 +177,7 @@ class TelephonyNicSetSipDomain extends AbstractStructBase
     /**
      * Set uk value
      * @param string $uk
-     * @return \PayPal\StructType\TelephonyNicSetSipDomain
+     * @return \Ovh\StructType\TelephonyNicSetSipDomain
      */
     public function setUk($uk = null)
     {
@@ -199,7 +199,7 @@ class TelephonyNicSetSipDomain extends AbstractStructBase
     /**
      * Set be value
      * @param string $be
-     * @return \PayPal\StructType\TelephonyNicSetSipDomain
+     * @return \Ovh\StructType\TelephonyNicSetSipDomain
      */
     public function setBe($be = null)
     {
@@ -216,7 +216,7 @@ class TelephonyNicSetSipDomain extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyNicSetSipDomain
+     * @return \Ovh\StructType\TelephonyNicSetSipDomain
      */
     public static function __set_state(array $array)
     {

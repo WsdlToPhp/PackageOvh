@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Dns extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DnsDefaultInstallCustom $parameters
-     * @return \PayPal\StructType\DnsDefaultInstallCustomResponse|bool
+     * @param \Ovh\StructType\DnsDefaultInstallCustom $parameters
+     * @return \Ovh\StructType\DnsDefaultInstallCustomResponse|bool
      */
-    public function dnsDefaultInstallCustom(\PayPal\StructType\DnsDefaultInstallCustom $parameters)
+    public function dnsDefaultInstallCustom(\Ovh\StructType\DnsDefaultInstallCustom $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dnsDefaultInstallCustom($parameters));
@@ -36,10 +36,10 @@ class Dns extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DnsInstall $parameters
-     * @return \PayPal\StructType\DnsInstallResponse|bool
+     * @param \Ovh\StructType\DnsInstall $parameters
+     * @return \Ovh\StructType\DnsInstallResponse|bool
      */
-    public function dnsInstall(\PayPal\StructType\DnsInstall $parameters)
+    public function dnsInstall(\Ovh\StructType\DnsInstall $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dnsInstall($parameters));
@@ -55,10 +55,10 @@ class Dns extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DnsReset $parameters
-     * @return \PayPal\StructType\DnsResetResponse|bool
+     * @param \Ovh\StructType\DnsReset $parameters
+     * @return \Ovh\StructType\DnsResetResponse|bool
      */
-    public function dnsReset(\PayPal\StructType\DnsReset $parameters)
+    public function dnsReset(\Ovh\StructType\DnsReset $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dnsReset($parameters));
@@ -74,10 +74,10 @@ class Dns extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DnsSoaModify $parameters
-     * @return \PayPal\StructType\DnsSoaModifyResponse|bool
+     * @param \Ovh\StructType\DnsSoaModify $parameters
+     * @return \Ovh\StructType\DnsSoaModifyResponse|bool
      */
-    public function dnsSoaModify(\PayPal\StructType\DnsSoaModify $parameters)
+    public function dnsSoaModify(\Ovh\StructType\DnsSoaModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dnsSoaModify($parameters));
@@ -93,10 +93,10 @@ class Dns extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DnsInstallCustom $parameters
-     * @return \PayPal\StructType\DnsInstallCustomResponse|bool
+     * @param \Ovh\StructType\DnsInstallCustom $parameters
+     * @return \Ovh\StructType\DnsInstallCustomResponse|bool
      */
-    public function dnsInstallCustom(\PayPal\StructType\DnsInstallCustom $parameters)
+    public function dnsInstallCustom(\Ovh\StructType\DnsInstallCustom $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dnsInstallCustom($parameters));
@@ -112,10 +112,10 @@ class Dns extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DnsUninstall $parameters
-     * @return \PayPal\StructType\DnsUninstallResponse|bool
+     * @param \Ovh\StructType\DnsUninstall $parameters
+     * @return \Ovh\StructType\DnsUninstallResponse|bool
      */
-    public function dnsUninstall(\PayPal\StructType\DnsUninstall $parameters)
+    public function dnsUninstall(\Ovh\StructType\DnsUninstall $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dnsUninstall($parameters));
@@ -131,10 +131,10 @@ class Dns extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DnsGeolocalizeHosting $parameters
-     * @return \PayPal\StructType\DnsGeolocalizeHostingResponse|bool
+     * @param \Ovh\StructType\DnsGeolocalizeHosting $parameters
+     * @return \Ovh\StructType\DnsGeolocalizeHostingResponse|bool
      */
-    public function dnsGeolocalizeHosting(\PayPal\StructType\DnsGeolocalizeHosting $parameters)
+    public function dnsGeolocalizeHosting(\Ovh\StructType\DnsGeolocalizeHosting $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dnsGeolocalizeHosting($parameters));
@@ -147,7 +147,7 @@ class Dns extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\DnsDefaultInstallCustomResponse|\PayPal\StructType\DnsGeolocalizeHostingResponse|\PayPal\StructType\DnsInstallCustomResponse|\PayPal\StructType\DnsInstallResponse|\PayPal\StructType\DnsResetResponse|\PayPal\StructType\DnsSoaModifyResponse|\PayPal\StructType\DnsUninstallResponse
+     * @return \Ovh\StructType\DnsDefaultInstallCustomResponse|\Ovh\StructType\DnsGeolocalizeHostingResponse|\Ovh\StructType\DnsInstallCustomResponse|\Ovh\StructType\DnsInstallResponse|\Ovh\StructType\DnsResetResponse|\Ovh\StructType\DnsSoaModifyResponse|\Ovh\StructType\DnsUninstallResponse
      */
     public function getResult()
     {

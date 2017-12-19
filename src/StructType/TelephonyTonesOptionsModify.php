@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -99,7 +99,7 @@ class TelephonyTonesOptionsModify extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyTonesOptionsModify
+     * @return \Ovh\StructType\TelephonyTonesOptionsModify
      */
     public function setSession($session = null)
     {
@@ -121,7 +121,7 @@ class TelephonyTonesOptionsModify extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyTonesOptionsModify
+     * @return \Ovh\StructType\TelephonyTonesOptionsModify
      */
     public function setNumber($number = null)
     {
@@ -143,7 +143,7 @@ class TelephonyTonesOptionsModify extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyTonesOptionsModify
+     * @return \Ovh\StructType\TelephonyTonesOptionsModify
      */
     public function setCountry($country = null)
     {
@@ -165,7 +165,7 @@ class TelephonyTonesOptionsModify extends AbstractStructBase
     /**
      * Set toneRingback value
      * @param string $toneRingback
-     * @return \PayPal\StructType\TelephonyTonesOptionsModify
+     * @return \Ovh\StructType\TelephonyTonesOptionsModify
      */
     public function setToneRingback($toneRingback = null)
     {
@@ -187,7 +187,7 @@ class TelephonyTonesOptionsModify extends AbstractStructBase
     /**
      * Set toneOnHold value
      * @param string $toneOnHold
-     * @return \PayPal\StructType\TelephonyTonesOptionsModify
+     * @return \Ovh\StructType\TelephonyTonesOptionsModify
      */
     public function setToneOnHold($toneOnHold = null)
     {
@@ -209,7 +209,7 @@ class TelephonyTonesOptionsModify extends AbstractStructBase
     /**
      * Set toneOnClosure value
      * @param string $toneOnClosure
-     * @return \PayPal\StructType\TelephonyTonesOptionsModify
+     * @return \Ovh\StructType\TelephonyTonesOptionsModify
      */
     public function setToneOnClosure($toneOnClosure = null)
     {
@@ -231,7 +231,7 @@ class TelephonyTonesOptionsModify extends AbstractStructBase
     /**
      * Set toneOnCallWaiting value
      * @param string $toneOnCallWaiting
-     * @return \PayPal\StructType\TelephonyTonesOptionsModify
+     * @return \Ovh\StructType\TelephonyTonesOptionsModify
      */
     public function setToneOnCallWaiting($toneOnCallWaiting = null)
     {
@@ -248,7 +248,7 @@ class TelephonyTonesOptionsModify extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyTonesOptionsModify
+     * @return \Ovh\StructType\TelephonyTonesOptionsModify
      */
     public static function __set_state(array $array)
     {

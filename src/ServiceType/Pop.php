@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Pop extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\PopDetachMasterNic $parameters
-     * @return \PayPal\StructType\PopDetachMasterNicResponse|bool
+     * @param \Ovh\StructType\PopDetachMasterNic $parameters
+     * @return \Ovh\StructType\PopDetachMasterNicResponse|bool
      */
-    public function popDetachMasterNic(\PayPal\StructType\PopDetachMasterNic $parameters)
+    public function popDetachMasterNic(\Ovh\StructType\PopDetachMasterNic $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->popDetachMasterNic($parameters));
@@ -36,10 +36,10 @@ class Pop extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\PopList $parameters
-     * @return \PayPal\StructType\PopListResponse|bool
+     * @param \Ovh\StructType\PopList $parameters
+     * @return \Ovh\StructType\PopListResponse|bool
      */
-    public function popList(\PayPal\StructType\PopList $parameters)
+    public function popList(\Ovh\StructType\PopList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->popList($parameters));
@@ -55,10 +55,10 @@ class Pop extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\PopUpgradeQuota $parameters
-     * @return \PayPal\StructType\PopUpgradeQuotaResponse|bool
+     * @param \Ovh\StructType\PopUpgradeQuota $parameters
+     * @return \Ovh\StructType\PopUpgradeQuotaResponse|bool
      */
-    public function popUpgradeQuota(\PayPal\StructType\PopUpgradeQuota $parameters)
+    public function popUpgradeQuota(\Ovh\StructType\PopUpgradeQuota $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->popUpgradeQuota($parameters));
@@ -74,10 +74,10 @@ class Pop extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\PopDel $parameters
-     * @return \PayPal\StructType\PopDelResponse|bool
+     * @param \Ovh\StructType\PopDel $parameters
+     * @return \Ovh\StructType\PopDelResponse|bool
      */
-    public function popDel(\PayPal\StructType\PopDel $parameters)
+    public function popDel(\Ovh\StructType\PopDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->popDel($parameters));
@@ -93,10 +93,10 @@ class Pop extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\PopListByMasterNic $parameters
-     * @return \PayPal\StructType\PopListByMasterNicResponse|bool
+     * @param \Ovh\StructType\PopListByMasterNic $parameters
+     * @return \Ovh\StructType\PopListByMasterNicResponse|bool
      */
-    public function popListByMasterNic(\PayPal\StructType\PopListByMasterNic $parameters)
+    public function popListByMasterNic(\Ovh\StructType\PopListByMasterNic $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->popListByMasterNic($parameters));
@@ -112,10 +112,10 @@ class Pop extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\PopModifyDescription $parameters
-     * @return \PayPal\StructType\PopModifyDescriptionResponse|bool
+     * @param \Ovh\StructType\PopModifyDescription $parameters
+     * @return \Ovh\StructType\PopModifyDescriptionResponse|bool
      */
-    public function popModifyDescription(\PayPal\StructType\PopModifyDescription $parameters)
+    public function popModifyDescription(\Ovh\StructType\PopModifyDescription $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->popModifyDescription($parameters));
@@ -131,10 +131,10 @@ class Pop extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\PopInfo $parameters
-     * @return \PayPal\StructType\PopInfoResponse|bool
+     * @param \Ovh\StructType\PopInfo $parameters
+     * @return \Ovh\StructType\PopInfoResponse|bool
      */
-    public function popInfo(\PayPal\StructType\PopInfo $parameters)
+    public function popInfo(\Ovh\StructType\PopInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->popInfo($parameters));
@@ -150,10 +150,10 @@ class Pop extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\PopModifyPassword $parameters
-     * @return \PayPal\StructType\PopModifyPasswordResponse|bool
+     * @param \Ovh\StructType\PopModifyPassword $parameters
+     * @return \Ovh\StructType\PopModifyPasswordResponse|bool
      */
-    public function popModifyPassword(\PayPal\StructType\PopModifyPassword $parameters)
+    public function popModifyPassword(\Ovh\StructType\PopModifyPassword $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->popModifyPassword($parameters));
@@ -169,10 +169,10 @@ class Pop extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\PopAttachMasterNic $parameters
-     * @return \PayPal\StructType\PopAttachMasterNicResponse|bool
+     * @param \Ovh\StructType\PopAttachMasterNic $parameters
+     * @return \Ovh\StructType\PopAttachMasterNicResponse|bool
      */
-    public function popAttachMasterNic(\PayPal\StructType\PopAttachMasterNic $parameters)
+    public function popAttachMasterNic(\Ovh\StructType\PopAttachMasterNic $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->popAttachMasterNic($parameters));
@@ -188,10 +188,10 @@ class Pop extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\PopAdd $parameters
-     * @return \PayPal\StructType\PopAddResponse|bool
+     * @param \Ovh\StructType\PopAdd $parameters
+     * @return \Ovh\StructType\PopAddResponse|bool
      */
-    public function popAdd(\PayPal\StructType\PopAdd $parameters)
+    public function popAdd(\Ovh\StructType\PopAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->popAdd($parameters));
@@ -207,10 +207,10 @@ class Pop extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\PopGetQuota $parameters
-     * @return \PayPal\StructType\PopGetQuotaResponse|bool
+     * @param \Ovh\StructType\PopGetQuota $parameters
+     * @return \Ovh\StructType\PopGetQuotaResponse|bool
      */
-    public function popGetQuota(\PayPal\StructType\PopGetQuota $parameters)
+    public function popGetQuota(\Ovh\StructType\PopGetQuota $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->popGetQuota($parameters));
@@ -223,7 +223,7 @@ class Pop extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\PopAddResponse|\PayPal\StructType\PopAttachMasterNicResponse|\PayPal\StructType\PopDelResponse|\PayPal\StructType\PopDetachMasterNicResponse|\PayPal\StructType\PopGetQuotaResponse|\PayPal\StructType\PopInfoResponse|\PayPal\StructType\PopListByMasterNicResponse|\PayPal\StructType\PopListResponse|\PayPal\StructType\PopModifyDescriptionResponse|\PayPal\StructType\PopModifyPasswordResponse|\PayPal\StructType\PopUpgradeQuotaResponse
+     * @return \Ovh\StructType\PopAddResponse|\Ovh\StructType\PopAttachMasterNicResponse|\Ovh\StructType\PopDelResponse|\Ovh\StructType\PopDetachMasterNicResponse|\Ovh\StructType\PopGetQuotaResponse|\Ovh\StructType\PopInfoResponse|\Ovh\StructType\PopListByMasterNicResponse|\Ovh\StructType\PopListResponse|\Ovh\StructType\PopModifyDescriptionResponse|\Ovh\StructType\PopModifyPasswordResponse|\Ovh\StructType\PopUpgradeQuotaResponse
      */
     public function getResult()
     {

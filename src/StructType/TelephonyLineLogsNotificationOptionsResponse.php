@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyLineLogsNotificationOptionsResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyLineLogsNotificationOptionsReturn
+     * @var \Ovh\StructType\TelephonyLineLogsNotificationOptionsReturn
      */
     public $return;
     /**
      * Constructor method for telephonyLineLogsNotificationOptionsResponse
      * @uses TelephonyLineLogsNotificationOptionsResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyLineLogsNotificationOptionsReturn $return
+     * @param \Ovh\StructType\TelephonyLineLogsNotificationOptionsReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonyLineLogsNotificationOptionsReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonyLineLogsNotificationOptionsReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyLineLogsNotificationOptionsReturn|null
+     * @return \Ovh\StructType\TelephonyLineLogsNotificationOptionsReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyLineLogsNotificationOptionsResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyLineLogsNotificationOptionsReturn $return
-     * @return \PayPal\StructType\TelephonyLineLogsNotificationOptionsResponse
+     * @param \Ovh\StructType\TelephonyLineLogsNotificationOptionsReturn $return
+     * @return \Ovh\StructType\TelephonyLineLogsNotificationOptionsResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyLineLogsNotificationOptionsReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyLineLogsNotificationOptionsReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyLineLogsNotificationOptionsResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyLineLogsNotificationOptionsResponse
+     * @return \Ovh\StructType\TelephonyLineLogsNotificationOptionsResponse
      */
     public static function __set_state(array $array)
     {

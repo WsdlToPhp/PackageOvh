@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfOrtStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\OrtStruct[]
+     * @var \Ovh\StructType\OrtStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfOrtStructType
      * @uses MyArrayOfOrtStructType::setItem()
-     * @param \PayPal\StructType\OrtStruct[] $item
+     * @param \Ovh\StructType\OrtStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfOrtStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\OrtStruct[]|null
+     * @return \Ovh\StructType\OrtStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfOrtStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\OrtStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfOrtStructType
+     * @param \Ovh\StructType\OrtStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfOrtStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfOrtStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfOrtStructTypeItemItem instanceof \PayPal\StructType\OrtStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\OrtStruct, "%s" given', is_object($myArrayOfOrtStructTypeItemItem) ? get_class($myArrayOfOrtStructTypeItemItem) : gettype($myArrayOfOrtStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfOrtStructTypeItemItem instanceof \Ovh\StructType\OrtStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\OrtStruct, "%s" given', is_object($myArrayOfOrtStructTypeItemItem) ? get_class($myArrayOfOrtStructTypeItemItem) : gettype($myArrayOfOrtStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfOrtStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\OrtStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfOrtStructType
+     * @param \Ovh\StructType\OrtStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfOrtStructType
      */
-    public function addToItem(\PayPal\StructType\OrtStruct $item)
+    public function addToItem(\Ovh\StructType\OrtStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\OrtStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\OrtStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\OrtStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\OrtStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfOrtStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\OrtStruct|null
+     * @return \Ovh\StructType\OrtStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfOrtStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\OrtStruct|null
+     * @return \Ovh\StructType\OrtStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfOrtStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\OrtStruct|null
+     * @return \Ovh\StructType\OrtStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfOrtStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\OrtStruct|null
+     * @return \Ovh\StructType\OrtStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfOrtStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\OrtStruct|null
+     * @return \Ovh\StructType\OrtStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfOrtStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfOrtStructType
+     * @return \Ovh\ArrayType\MyArrayOfOrtStructType
      */
     public static function __set_state(array $array)
     {

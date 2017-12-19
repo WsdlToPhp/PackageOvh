@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedSecondaryDNSGetAllResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfAllSecondaryDNSStructType
+     * @var \Ovh\ArrayType\MyArrayOfAllSecondaryDNSStructType
      */
     public $return;
     /**
      * Constructor method for dedicatedSecondaryDNSGetAllResponse
      * @uses DedicatedSecondaryDNSGetAllResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfAllSecondaryDNSStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfAllSecondaryDNSStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfAllSecondaryDNSStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfAllSecondaryDNSStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfAllSecondaryDNSStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfAllSecondaryDNSStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedSecondaryDNSGetAllResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfAllSecondaryDNSStructType $return
-     * @return \PayPal\StructType\DedicatedSecondaryDNSGetAllResponse
+     * @param \Ovh\ArrayType\MyArrayOfAllSecondaryDNSStructType $return
+     * @return \Ovh\StructType\DedicatedSecondaryDNSGetAllResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfAllSecondaryDNSStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfAllSecondaryDNSStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedSecondaryDNSGetAllResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedSecondaryDNSGetAllResponse
+     * @return \Ovh\StructType\DedicatedSecondaryDNSGetAllResponse
      */
     public static function __set_state(array $array)
     {

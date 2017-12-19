@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,7 +37,7 @@ class DedicatedReverseInfoResponse extends AbstractStructBase
     /**
      * Set return value
      * @param string $return
-     * @return \PayPal\StructType\DedicatedReverseInfoResponse
+     * @return \Ovh\StructType\DedicatedReverseInfoResponse
      */
     public function setReturn($return = null)
     {
@@ -54,7 +54,7 @@ class DedicatedReverseInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedReverseInfoResponse
+     * @return \Ovh\StructType\DedicatedReverseInfoResponse
      */
     public static function __set_state(array $array)
     {

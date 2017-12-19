@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,17 +13,17 @@ class TelephonySpecialNumberCustomListReturn extends AbstractStructBase
 {
     /**
      * The easyNumbers
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $easyNumbers;
     /**
      * The staticAttributionRange
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $staticAttributionRange;
     /**
      * The proposedNumbers
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $proposedNumbers;
     /**
@@ -31,11 +31,11 @@ class TelephonySpecialNumberCustomListReturn extends AbstractStructBase
      * @uses TelephonySpecialNumberCustomListReturn::setEasyNumbers()
      * @uses TelephonySpecialNumberCustomListReturn::setStaticAttributionRange()
      * @uses TelephonySpecialNumberCustomListReturn::setProposedNumbers()
-     * @param \PayPal\ArrayType\MyArrayOfStringType $easyNumbers
-     * @param \PayPal\ArrayType\MyArrayOfStringType $staticAttributionRange
-     * @param \PayPal\ArrayType\MyArrayOfStringType $proposedNumbers
+     * @param \Ovh\ArrayType\MyArrayOfStringType $easyNumbers
+     * @param \Ovh\ArrayType\MyArrayOfStringType $staticAttributionRange
+     * @param \Ovh\ArrayType\MyArrayOfStringType $proposedNumbers
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfStringType $easyNumbers = null, \PayPal\ArrayType\MyArrayOfStringType $staticAttributionRange = null, \PayPal\ArrayType\MyArrayOfStringType $proposedNumbers = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfStringType $easyNumbers = null, \Ovh\ArrayType\MyArrayOfStringType $staticAttributionRange = null, \Ovh\ArrayType\MyArrayOfStringType $proposedNumbers = null)
     {
         $this
             ->setEasyNumbers($easyNumbers)
@@ -44,7 +44,7 @@ class TelephonySpecialNumberCustomListReturn extends AbstractStructBase
     }
     /**
      * Get easyNumbers value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getEasyNumbers()
     {
@@ -52,17 +52,17 @@ class TelephonySpecialNumberCustomListReturn extends AbstractStructBase
     }
     /**
      * Set easyNumbers value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $easyNumbers
-     * @return \PayPal\StructType\TelephonySpecialNumberCustomListReturn
+     * @param \Ovh\ArrayType\MyArrayOfStringType $easyNumbers
+     * @return \Ovh\StructType\TelephonySpecialNumberCustomListReturn
      */
-    public function setEasyNumbers(\PayPal\ArrayType\MyArrayOfStringType $easyNumbers = null)
+    public function setEasyNumbers(\Ovh\ArrayType\MyArrayOfStringType $easyNumbers = null)
     {
         $this->easyNumbers = $easyNumbers;
         return $this;
     }
     /**
      * Get staticAttributionRange value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getStaticAttributionRange()
     {
@@ -70,17 +70,17 @@ class TelephonySpecialNumberCustomListReturn extends AbstractStructBase
     }
     /**
      * Set staticAttributionRange value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $staticAttributionRange
-     * @return \PayPal\StructType\TelephonySpecialNumberCustomListReturn
+     * @param \Ovh\ArrayType\MyArrayOfStringType $staticAttributionRange
+     * @return \Ovh\StructType\TelephonySpecialNumberCustomListReturn
      */
-    public function setStaticAttributionRange(\PayPal\ArrayType\MyArrayOfStringType $staticAttributionRange = null)
+    public function setStaticAttributionRange(\Ovh\ArrayType\MyArrayOfStringType $staticAttributionRange = null)
     {
         $this->staticAttributionRange = $staticAttributionRange;
         return $this;
     }
     /**
      * Get proposedNumbers value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getProposedNumbers()
     {
@@ -88,10 +88,10 @@ class TelephonySpecialNumberCustomListReturn extends AbstractStructBase
     }
     /**
      * Set proposedNumbers value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $proposedNumbers
-     * @return \PayPal\StructType\TelephonySpecialNumberCustomListReturn
+     * @param \Ovh\ArrayType\MyArrayOfStringType $proposedNumbers
+     * @return \Ovh\StructType\TelephonySpecialNumberCustomListReturn
      */
-    public function setProposedNumbers(\PayPal\ArrayType\MyArrayOfStringType $proposedNumbers = null)
+    public function setProposedNumbers(\Ovh\ArrayType\MyArrayOfStringType $proposedNumbers = null)
     {
         $this->proposedNumbers = $proposedNumbers;
         return $this;
@@ -102,7 +102,7 @@ class TelephonySpecialNumberCustomListReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySpecialNumberCustomListReturn
+     * @return \Ovh\StructType\TelephonySpecialNumberCustomListReturn
      */
     public static function __set_state(array $array)
     {

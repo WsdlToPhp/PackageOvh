@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyNumberZoneAndPrefixListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyNumberZoneAndPrefixStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyNumberZoneAndPrefixStructType
      */
     public $return;
     /**
      * Constructor method for telephonyNumberZoneAndPrefixListResponse
      * @uses TelephonyNumberZoneAndPrefixListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyNumberZoneAndPrefixStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyNumberZoneAndPrefixStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonyNumberZoneAndPrefixStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonyNumberZoneAndPrefixStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyNumberZoneAndPrefixStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyNumberZoneAndPrefixStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyNumberZoneAndPrefixListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyNumberZoneAndPrefixStructType $return
-     * @return \PayPal\StructType\TelephonyNumberZoneAndPrefixListResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyNumberZoneAndPrefixStructType $return
+     * @return \Ovh\StructType\TelephonyNumberZoneAndPrefixListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonyNumberZoneAndPrefixStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonyNumberZoneAndPrefixStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyNumberZoneAndPrefixListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyNumberZoneAndPrefixListResponse
+     * @return \Ovh\StructType\TelephonyNumberZoneAndPrefixListResponse
      */
     public static function __set_state(array $array)
     {

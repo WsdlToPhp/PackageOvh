@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class DedicatedBackupList extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedBackupList
+     * @return \Ovh\StructType\DedicatedBackupList
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class DedicatedBackupList extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedBackupList
+     * @return \Ovh\StructType\DedicatedBackupList
      */
     public function setHostname($hostname = null)
     {
@@ -113,7 +113,7 @@ class DedicatedBackupList extends AbstractStructBase
     /**
      * Set backupId value
      * @param string $backupId
-     * @return \PayPal\StructType\DedicatedBackupList
+     * @return \Ovh\StructType\DedicatedBackupList
      */
     public function setBackupId($backupId = null)
     {
@@ -135,7 +135,7 @@ class DedicatedBackupList extends AbstractStructBase
     /**
      * Set backupName value
      * @param string $backupName
-     * @return \PayPal\StructType\DedicatedBackupList
+     * @return \Ovh\StructType\DedicatedBackupList
      */
     public function setBackupName($backupName = null)
     {
@@ -152,7 +152,7 @@ class DedicatedBackupList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedBackupList
+     * @return \Ovh\StructType\DedicatedBackupList
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class TelephonyFunctionKeyModify extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyFunctionKeyModify
+     * @return \Ovh\StructType\TelephonyFunctionKeyModify
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class TelephonyFunctionKeyModify extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyFunctionKeyModify
+     * @return \Ovh\StructType\TelephonyFunctionKeyModify
      */
     public function setNumber($number = null)
     {
@@ -133,7 +133,7 @@ class TelephonyFunctionKeyModify extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyFunctionKeyModify
+     * @return \Ovh\StructType\TelephonyFunctionKeyModify
      */
     public function setCountry($country = null)
     {
@@ -155,7 +155,7 @@ class TelephonyFunctionKeyModify extends AbstractStructBase
     /**
      * Set keyNum value
      * @param int $keyNum
-     * @return \PayPal\StructType\TelephonyFunctionKeyModify
+     * @return \Ovh\StructType\TelephonyFunctionKeyModify
      */
     public function setKeyNum($keyNum = null)
     {
@@ -177,7 +177,7 @@ class TelephonyFunctionKeyModify extends AbstractStructBase
     /**
      * Set function value
      * @param string $function
-     * @return \PayPal\StructType\TelephonyFunctionKeyModify
+     * @return \Ovh\StructType\TelephonyFunctionKeyModify
      */
     public function setFunction($function = null)
     {
@@ -199,7 +199,7 @@ class TelephonyFunctionKeyModify extends AbstractStructBase
     /**
      * Set relatedNumber value
      * @param string $relatedNumber
-     * @return \PayPal\StructType\TelephonyFunctionKeyModify
+     * @return \Ovh\StructType\TelephonyFunctionKeyModify
      */
     public function setRelatedNumber($relatedNumber = null)
     {
@@ -216,7 +216,7 @@ class TelephonyFunctionKeyModify extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFunctionKeyModify
+     * @return \Ovh\StructType\TelephonyFunctionKeyModify
      */
     public static function __set_state(array $array)
     {

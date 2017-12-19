@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedBasicInstallProgressReturn extends AbstractStructBase
 {
     /**
      * The progress
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedBasicInstallProgressStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedBasicInstallProgressStructType
      */
     public $progress;
     /**
      * Constructor method for dedicatedBasicInstallProgressReturn
      * @uses DedicatedBasicInstallProgressReturn::setProgress()
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedBasicInstallProgressStructType $progress
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedBasicInstallProgressStructType $progress
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfDedicatedBasicInstallProgressStructType $progress = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfDedicatedBasicInstallProgressStructType $progress = null)
     {
         $this
             ->setProgress($progress);
     }
     /**
      * Get progress value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedBasicInstallProgressStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedBasicInstallProgressStructType|null
      */
     public function getProgress()
     {
@@ -36,10 +36,10 @@ class DedicatedBasicInstallProgressReturn extends AbstractStructBase
     }
     /**
      * Set progress value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedBasicInstallProgressStructType $progress
-     * @return \PayPal\StructType\DedicatedBasicInstallProgressReturn
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedBasicInstallProgressStructType $progress
+     * @return \Ovh\StructType\DedicatedBasicInstallProgressReturn
      */
-    public function setProgress(\PayPal\ArrayType\MyArrayOfDedicatedBasicInstallProgressStructType $progress = null)
+    public function setProgress(\Ovh\ArrayType\MyArrayOfDedicatedBasicInstallProgressStructType $progress = null)
     {
         $this->progress = $progress;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedBasicInstallProgressReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedBasicInstallProgressReturn
+     * @return \Ovh\StructType\DedicatedBasicInstallProgressReturn
      */
     public static function __set_state(array $array)
     {

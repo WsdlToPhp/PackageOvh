@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,7 +49,7 @@ class InfrastructureIpListGet extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\InfrastructureIpListGet
+     * @return \Ovh\StructType\InfrastructureIpListGet
      */
     public function setSession($session = null)
     {
@@ -71,7 +71,7 @@ class InfrastructureIpListGet extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\InfrastructureIpListGet
+     * @return \Ovh\StructType\InfrastructureIpListGet
      */
     public function setHostname($hostname = null)
     {
@@ -88,7 +88,7 @@ class InfrastructureIpListGet extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\InfrastructureIpListGet
+     * @return \Ovh\StructType\InfrastructureIpListGet
      */
     public static function __set_state(array $array)
     {

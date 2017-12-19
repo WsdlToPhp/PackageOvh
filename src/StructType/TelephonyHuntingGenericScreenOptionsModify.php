@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -99,7 +99,7 @@ class TelephonyHuntingGenericScreenOptionsModify extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenOptionsModify
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenOptionsModify
      */
     public function setSession($session = null)
     {
@@ -121,7 +121,7 @@ class TelephonyHuntingGenericScreenOptionsModify extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenOptionsModify
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenOptionsModify
      */
     public function setNumber($number = null)
     {
@@ -143,7 +143,7 @@ class TelephonyHuntingGenericScreenOptionsModify extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenOptionsModify
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenOptionsModify
      */
     public function setCountry($country = null)
     {
@@ -165,7 +165,7 @@ class TelephonyHuntingGenericScreenOptionsModify extends AbstractStructBase
     /**
      * Set forwardUnconditionalNumber value
      * @param string $forwardUnconditionalNumber
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenOptionsModify
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenOptionsModify
      */
     public function setForwardUnconditionalNumber($forwardUnconditionalNumber = null)
     {
@@ -187,7 +187,7 @@ class TelephonyHuntingGenericScreenOptionsModify extends AbstractStructBase
     /**
      * Set mainVoicemail value
      * @param string $mainVoicemail
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenOptionsModify
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenOptionsModify
      */
     public function setMainVoicemail($mainVoicemail = null)
     {
@@ -209,7 +209,7 @@ class TelephonyHuntingGenericScreenOptionsModify extends AbstractStructBase
     /**
      * Set forwardPolicyIndex value
      * @param string $forwardPolicyIndex
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenOptionsModify
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenOptionsModify
      */
     public function setForwardPolicyIndex($forwardPolicyIndex = null)
     {
@@ -231,7 +231,7 @@ class TelephonyHuntingGenericScreenOptionsModify extends AbstractStructBase
     /**
      * Set timeout value
      * @param int $timeout
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenOptionsModify
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenOptionsModify
      */
     public function setTimeout($timeout = null)
     {
@@ -248,7 +248,7 @@ class TelephonyHuntingGenericScreenOptionsModify extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenOptionsModify
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenOptionsModify
      */
     public static function __set_state(array $array)
     {

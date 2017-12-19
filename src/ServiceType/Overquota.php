@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Overquota extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\OverquotaInfo $parameters
-     * @return \PayPal\StructType\OverquotaInfoResponse|bool
+     * @param \Ovh\StructType\OverquotaInfo $parameters
+     * @return \Ovh\StructType\OverquotaInfoResponse|bool
      */
-    public function overquotaInfo(\PayPal\StructType\OverquotaInfo $parameters)
+    public function overquotaInfo(\Ovh\StructType\OverquotaInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->overquotaInfo($parameters));
@@ -33,7 +33,7 @@ class Overquota extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\OverquotaInfoResponse
+     * @return \Ovh\StructType\OverquotaInfoResponse
      */
     public function getResult()
     {

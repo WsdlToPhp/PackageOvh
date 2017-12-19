@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,7 +50,7 @@ class TelephonyGetClosureEventsAsArray extends AbstractStructBase
      * The categories
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $categories;
     /**
@@ -66,9 +66,9 @@ class TelephonyGetClosureEventsAsArray extends AbstractStructBase
      * @param string $country
      * @param string $dateStart
      * @param string $dateEnd
-     * @param \PayPal\ArrayType\MyArrayOfStringType $categories
+     * @param \Ovh\ArrayType\MyArrayOfStringType $categories
      */
-    public function __construct($session = null, $number = null, $country = null, $dateStart = null, $dateEnd = null, \PayPal\ArrayType\MyArrayOfStringType $categories = null)
+    public function __construct($session = null, $number = null, $country = null, $dateStart = null, $dateEnd = null, \Ovh\ArrayType\MyArrayOfStringType $categories = null)
     {
         $this
             ->setSession($session)
@@ -89,7 +89,7 @@ class TelephonyGetClosureEventsAsArray extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArray
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArray
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class TelephonyGetClosureEventsAsArray extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArray
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArray
      */
     public function setNumber($number = null)
     {
@@ -133,7 +133,7 @@ class TelephonyGetClosureEventsAsArray extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArray
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArray
      */
     public function setCountry($country = null)
     {
@@ -155,7 +155,7 @@ class TelephonyGetClosureEventsAsArray extends AbstractStructBase
     /**
      * Set dateStart value
      * @param string $dateStart
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArray
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArray
      */
     public function setDateStart($dateStart = null)
     {
@@ -177,7 +177,7 @@ class TelephonyGetClosureEventsAsArray extends AbstractStructBase
     /**
      * Set dateEnd value
      * @param string $dateEnd
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArray
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArray
      */
     public function setDateEnd($dateEnd = null)
     {
@@ -190,7 +190,7 @@ class TelephonyGetClosureEventsAsArray extends AbstractStructBase
     }
     /**
      * Get categories value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getCategories()
     {
@@ -198,10 +198,10 @@ class TelephonyGetClosureEventsAsArray extends AbstractStructBase
     }
     /**
      * Set categories value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $categories
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArray
+     * @param \Ovh\ArrayType\MyArrayOfStringType $categories
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArray
      */
-    public function setCategories(\PayPal\ArrayType\MyArrayOfStringType $categories = null)
+    public function setCategories(\Ovh\ArrayType\MyArrayOfStringType $categories = null)
     {
         $this->categories = $categories;
         return $this;
@@ -212,7 +212,7 @@ class TelephonyGetClosureEventsAsArray extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArray
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArray
      */
     public static function __set_state(array $array)
     {

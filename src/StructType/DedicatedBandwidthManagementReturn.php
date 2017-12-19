@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class DedicatedBandwidthManagementReturn extends AbstractStructBase
     /**
      * Set serverName value
      * @param string $serverName
-     * @return \PayPal\StructType\DedicatedBandwidthManagementReturn
+     * @return \Ovh\StructType\DedicatedBandwidthManagementReturn
      */
     public function setServerName($serverName = null)
     {
@@ -83,7 +83,7 @@ class DedicatedBandwidthManagementReturn extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\DedicatedBandwidthManagementReturn
+     * @return \Ovh\StructType\DedicatedBandwidthManagementReturn
      */
     public function setId($id = null)
     {
@@ -105,7 +105,7 @@ class DedicatedBandwidthManagementReturn extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\DedicatedBandwidthManagementReturn
+     * @return \Ovh\StructType\DedicatedBandwidthManagementReturn
      */
     public function setStatus($status = null)
     {
@@ -127,7 +127,7 @@ class DedicatedBandwidthManagementReturn extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\DedicatedBandwidthManagementReturn
+     * @return \Ovh\StructType\DedicatedBandwidthManagementReturn
      */
     public function setDate($date = null)
     {
@@ -144,7 +144,7 @@ class DedicatedBandwidthManagementReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedBandwidthManagementReturn
+     * @return \Ovh\StructType\DedicatedBandwidthManagementReturn
      */
     public static function __set_state(array $array)
     {

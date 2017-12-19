@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfTelephonyAvailableFunctionStructType extends AbstractStructArrayB
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TelephonyAvailableFunctionStruct[]
+     * @var \Ovh\StructType\TelephonyAvailableFunctionStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTelephonyAvailableFunctionStructType
      * @uses MyArrayOfTelephonyAvailableFunctionStructType::setItem()
-     * @param \PayPal\StructType\TelephonyAvailableFunctionStruct[] $item
+     * @param \Ovh\StructType\TelephonyAvailableFunctionStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfTelephonyAvailableFunctionStructType extends AbstractStructArrayB
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TelephonyAvailableFunctionStruct[]|null
+     * @return \Ovh\StructType\TelephonyAvailableFunctionStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfTelephonyAvailableFunctionStructType extends AbstractStructArrayB
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyAvailableFunctionStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyAvailableFunctionStructType
+     * @param \Ovh\StructType\TelephonyAvailableFunctionStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyAvailableFunctionStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTelephonyAvailableFunctionStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTelephonyAvailableFunctionStructTypeItemItem instanceof \PayPal\StructType\TelephonyAvailableFunctionStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyAvailableFunctionStruct, "%s" given', is_object($myArrayOfTelephonyAvailableFunctionStructTypeItemItem) ? get_class($myArrayOfTelephonyAvailableFunctionStructTypeItemItem) : gettype($myArrayOfTelephonyAvailableFunctionStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTelephonyAvailableFunctionStructTypeItemItem instanceof \Ovh\StructType\TelephonyAvailableFunctionStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyAvailableFunctionStruct, "%s" given', is_object($myArrayOfTelephonyAvailableFunctionStructTypeItemItem) ? get_class($myArrayOfTelephonyAvailableFunctionStructTypeItemItem) : gettype($myArrayOfTelephonyAvailableFunctionStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfTelephonyAvailableFunctionStructType extends AbstractStructArrayB
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyAvailableFunctionStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyAvailableFunctionStructType
+     * @param \Ovh\StructType\TelephonyAvailableFunctionStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyAvailableFunctionStructType
      */
-    public function addToItem(\PayPal\StructType\TelephonyAvailableFunctionStruct $item)
+    public function addToItem(\Ovh\StructType\TelephonyAvailableFunctionStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TelephonyAvailableFunctionStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyAvailableFunctionStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TelephonyAvailableFunctionStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyAvailableFunctionStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfTelephonyAvailableFunctionStructType extends AbstractStructArrayB
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonyAvailableFunctionStruct|null
+     * @return \Ovh\StructType\TelephonyAvailableFunctionStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfTelephonyAvailableFunctionStructType extends AbstractStructArrayB
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonyAvailableFunctionStruct|null
+     * @return \Ovh\StructType\TelephonyAvailableFunctionStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfTelephonyAvailableFunctionStructType extends AbstractStructArrayB
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonyAvailableFunctionStruct|null
+     * @return \Ovh\StructType\TelephonyAvailableFunctionStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfTelephonyAvailableFunctionStructType extends AbstractStructArrayB
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonyAvailableFunctionStruct|null
+     * @return \Ovh\StructType\TelephonyAvailableFunctionStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfTelephonyAvailableFunctionStructType extends AbstractStructArrayB
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonyAvailableFunctionStruct|null
+     * @return \Ovh\StructType\TelephonyAvailableFunctionStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfTelephonyAvailableFunctionStructType extends AbstractStructArrayB
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyAvailableFunctionStructType
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyAvailableFunctionStructType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -29,14 +29,14 @@ class TelephonySparePurchase extends AbstractStructBase
      * The offers
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $offers;
     /**
      * The quantities
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfIntType
+     * @var \Ovh\ArrayType\MyArrayOfIntType
      */
     public $quantities;
     /**
@@ -95,8 +95,8 @@ class TelephonySparePurchase extends AbstractStructBase
      * @uses TelephonySparePurchase::setCountry()
      * @param string $session
      * @param string $type
-     * @param \PayPal\ArrayType\MyArrayOfStringType $offers
-     * @param \PayPal\ArrayType\MyArrayOfIntType $quantities
+     * @param \Ovh\ArrayType\MyArrayOfStringType $offers
+     * @param \Ovh\ArrayType\MyArrayOfIntType $quantities
      * @param string $nicShipping
      * @param string $name
      * @param string $address
@@ -104,7 +104,7 @@ class TelephonySparePurchase extends AbstractStructBase
      * @param string $city
      * @param string $country
      */
-    public function __construct($session = null, $type = null, \PayPal\ArrayType\MyArrayOfStringType $offers = null, \PayPal\ArrayType\MyArrayOfIntType $quantities = null, $nicShipping = null, $name = null, $address = null, $zip = null, $city = null, $country = null)
+    public function __construct($session = null, $type = null, \Ovh\ArrayType\MyArrayOfStringType $offers = null, \Ovh\ArrayType\MyArrayOfIntType $quantities = null, $nicShipping = null, $name = null, $address = null, $zip = null, $city = null, $country = null)
     {
         $this
             ->setSession($session)
@@ -129,7 +129,7 @@ class TelephonySparePurchase extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonySparePurchase
+     * @return \Ovh\StructType\TelephonySparePurchase
      */
     public function setSession($session = null)
     {
@@ -151,7 +151,7 @@ class TelephonySparePurchase extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\TelephonySparePurchase
+     * @return \Ovh\StructType\TelephonySparePurchase
      */
     public function setType($type = null)
     {
@@ -164,7 +164,7 @@ class TelephonySparePurchase extends AbstractStructBase
     }
     /**
      * Get offers value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getOffers()
     {
@@ -172,17 +172,17 @@ class TelephonySparePurchase extends AbstractStructBase
     }
     /**
      * Set offers value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $offers
-     * @return \PayPal\StructType\TelephonySparePurchase
+     * @param \Ovh\ArrayType\MyArrayOfStringType $offers
+     * @return \Ovh\StructType\TelephonySparePurchase
      */
-    public function setOffers(\PayPal\ArrayType\MyArrayOfStringType $offers = null)
+    public function setOffers(\Ovh\ArrayType\MyArrayOfStringType $offers = null)
     {
         $this->offers = $offers;
         return $this;
     }
     /**
      * Get quantities value
-     * @return \PayPal\ArrayType\MyArrayOfIntType|null
+     * @return \Ovh\ArrayType\MyArrayOfIntType|null
      */
     public function getQuantities()
     {
@@ -190,10 +190,10 @@ class TelephonySparePurchase extends AbstractStructBase
     }
     /**
      * Set quantities value
-     * @param \PayPal\ArrayType\MyArrayOfIntType $quantities
-     * @return \PayPal\StructType\TelephonySparePurchase
+     * @param \Ovh\ArrayType\MyArrayOfIntType $quantities
+     * @return \Ovh\StructType\TelephonySparePurchase
      */
-    public function setQuantities(\PayPal\ArrayType\MyArrayOfIntType $quantities = null)
+    public function setQuantities(\Ovh\ArrayType\MyArrayOfIntType $quantities = null)
     {
         $this->quantities = $quantities;
         return $this;
@@ -209,7 +209,7 @@ class TelephonySparePurchase extends AbstractStructBase
     /**
      * Set nicShipping value
      * @param string $nicShipping
-     * @return \PayPal\StructType\TelephonySparePurchase
+     * @return \Ovh\StructType\TelephonySparePurchase
      */
     public function setNicShipping($nicShipping = null)
     {
@@ -231,7 +231,7 @@ class TelephonySparePurchase extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\TelephonySparePurchase
+     * @return \Ovh\StructType\TelephonySparePurchase
      */
     public function setName($name = null)
     {
@@ -253,7 +253,7 @@ class TelephonySparePurchase extends AbstractStructBase
     /**
      * Set address value
      * @param string $address
-     * @return \PayPal\StructType\TelephonySparePurchase
+     * @return \Ovh\StructType\TelephonySparePurchase
      */
     public function setAddress($address = null)
     {
@@ -275,7 +275,7 @@ class TelephonySparePurchase extends AbstractStructBase
     /**
      * Set zip value
      * @param string $zip
-     * @return \PayPal\StructType\TelephonySparePurchase
+     * @return \Ovh\StructType\TelephonySparePurchase
      */
     public function setZip($zip = null)
     {
@@ -297,7 +297,7 @@ class TelephonySparePurchase extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \PayPal\StructType\TelephonySparePurchase
+     * @return \Ovh\StructType\TelephonySparePurchase
      */
     public function setCity($city = null)
     {
@@ -319,7 +319,7 @@ class TelephonySparePurchase extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonySparePurchase
+     * @return \Ovh\StructType\TelephonySparePurchase
      */
     public function setCountry($country = null)
     {
@@ -336,7 +336,7 @@ class TelephonySparePurchase extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySparePurchase
+     * @return \Ovh\StructType\TelephonySparePurchase
      */
     public static function __set_state(array $array)
     {

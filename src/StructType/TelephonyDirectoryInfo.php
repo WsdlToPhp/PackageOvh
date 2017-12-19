@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class TelephonyDirectoryInfo extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyDirectoryInfo
+     * @return \Ovh\StructType\TelephonyDirectoryInfo
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class TelephonyDirectoryInfo extends AbstractStructBase
     /**
      * Set callNumber value
      * @param string $callNumber
-     * @return \PayPal\StructType\TelephonyDirectoryInfo
+     * @return \Ovh\StructType\TelephonyDirectoryInfo
      */
     public function setCallNumber($callNumber = null)
     {
@@ -103,7 +103,7 @@ class TelephonyDirectoryInfo extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \PayPal\StructType\TelephonyDirectoryInfo
+     * @return \Ovh\StructType\TelephonyDirectoryInfo
      */
     public function setCountryCode($countryCode = null)
     {
@@ -120,7 +120,7 @@ class TelephonyDirectoryInfo extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyDirectoryInfo
+     * @return \Ovh\StructType\TelephonyDirectoryInfo
      */
     public static function __set_state(array $array)
     {

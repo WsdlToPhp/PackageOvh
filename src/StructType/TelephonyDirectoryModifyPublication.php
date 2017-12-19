@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -129,7 +129,7 @@ class TelephonyDirectoryModifyPublication extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyDirectoryModifyPublication
+     * @return \Ovh\StructType\TelephonyDirectoryModifyPublication
      */
     public function setSession($session = null)
     {
@@ -151,7 +151,7 @@ class TelephonyDirectoryModifyPublication extends AbstractStructBase
     /**
      * Set callNumber value
      * @param string $callNumber
-     * @return \PayPal\StructType\TelephonyDirectoryModifyPublication
+     * @return \Ovh\StructType\TelephonyDirectoryModifyPublication
      */
     public function setCallNumber($callNumber = null)
     {
@@ -173,7 +173,7 @@ class TelephonyDirectoryModifyPublication extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \PayPal\StructType\TelephonyDirectoryModifyPublication
+     * @return \Ovh\StructType\TelephonyDirectoryModifyPublication
      */
     public function setCountryCode($countryCode = null)
     {
@@ -195,7 +195,7 @@ class TelephonyDirectoryModifyPublication extends AbstractStructBase
     /**
      * Set lineDescription value
      * @param string $lineDescription
-     * @return \PayPal\StructType\TelephonyDirectoryModifyPublication
+     * @return \Ovh\StructType\TelephonyDirectoryModifyPublication
      */
     public function setLineDescription($lineDescription = null)
     {
@@ -217,7 +217,7 @@ class TelephonyDirectoryModifyPublication extends AbstractStructBase
     /**
      * Set displayFirstName value
      * @param string $displayFirstName
-     * @return \PayPal\StructType\TelephonyDirectoryModifyPublication
+     * @return \Ovh\StructType\TelephonyDirectoryModifyPublication
      */
     public function setDisplayFirstName($displayFirstName = null)
     {
@@ -239,7 +239,7 @@ class TelephonyDirectoryModifyPublication extends AbstractStructBase
     /**
      * Set displayOnlyCity value
      * @param string $displayOnlyCity
-     * @return \PayPal\StructType\TelephonyDirectoryModifyPublication
+     * @return \Ovh\StructType\TelephonyDirectoryModifyPublication
      */
     public function setDisplayOnlyCity($displayOnlyCity = null)
     {
@@ -261,7 +261,7 @@ class TelephonyDirectoryModifyPublication extends AbstractStructBase
     /**
      * Set displayUniversalDirectory value
      * @param string $displayUniversalDirectory
-     * @return \PayPal\StructType\TelephonyDirectoryModifyPublication
+     * @return \Ovh\StructType\TelephonyDirectoryModifyPublication
      */
     public function setDisplayUniversalDirectory($displayUniversalDirectory = null)
     {
@@ -283,7 +283,7 @@ class TelephonyDirectoryModifyPublication extends AbstractStructBase
     /**
      * Set displayMarketingDirectory value
      * @param string $displayMarketingDirectory
-     * @return \PayPal\StructType\TelephonyDirectoryModifyPublication
+     * @return \Ovh\StructType\TelephonyDirectoryModifyPublication
      */
     public function setDisplayMarketingDirectory($displayMarketingDirectory = null)
     {
@@ -305,7 +305,7 @@ class TelephonyDirectoryModifyPublication extends AbstractStructBase
     /**
      * Set displaySearchReverse value
      * @param string $displaySearchReverse
-     * @return \PayPal\StructType\TelephonyDirectoryModifyPublication
+     * @return \Ovh\StructType\TelephonyDirectoryModifyPublication
      */
     public function setDisplaySearchReverse($displaySearchReverse = null)
     {
@@ -327,7 +327,7 @@ class TelephonyDirectoryModifyPublication extends AbstractStructBase
     /**
      * Set receivePJDirectory value
      * @param string $receivePJDirectory
-     * @return \PayPal\StructType\TelephonyDirectoryModifyPublication
+     * @return \Ovh\StructType\TelephonyDirectoryModifyPublication
      */
     public function setReceivePJDirectory($receivePJDirectory = null)
     {
@@ -344,7 +344,7 @@ class TelephonyDirectoryModifyPublication extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyDirectoryModifyPublication
+     * @return \Ovh\StructType\TelephonyDirectoryModifyPublication
      */
     public static function __set_state(array $array)
     {

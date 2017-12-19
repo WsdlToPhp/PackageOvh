@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class _Global extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\GlobalAccessByNic $parameters
-     * @return \PayPal\StructType\GlobalAccessByNicResponse|bool
+     * @param \Ovh\StructType\GlobalAccessByNic $parameters
+     * @return \Ovh\StructType\GlobalAccessByNicResponse|bool
      */
-    public function globalAccessByNic(\PayPal\StructType\GlobalAccessByNic $parameters)
+    public function globalAccessByNic(\Ovh\StructType\GlobalAccessByNic $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->globalAccessByNic($parameters));
@@ -33,7 +33,7 @@ class _Global extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\GlobalAccessByNicResponse
+     * @return \Ovh\StructType\GlobalAccessByNicResponse
      */
     public function getResult()
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class TelephonySmsplusShortCodesList extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonySmsplusShortCodesList
+     * @return \Ovh\StructType\TelephonySmsplusShortCodesList
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class TelephonySmsplusShortCodesList extends AbstractStructBase
     /**
      * Set shortCode value
      * @param string $shortCode
-     * @return \PayPal\StructType\TelephonySmsplusShortCodesList
+     * @return \Ovh\StructType\TelephonySmsplusShortCodesList
      */
     public function setShortCode($shortCode = null)
     {
@@ -133,7 +133,7 @@ class TelephonySmsplusShortCodesList extends AbstractStructBase
     /**
      * Set shortCodeCategory value
      * @param int $shortCodeCategory
-     * @return \PayPal\StructType\TelephonySmsplusShortCodesList
+     * @return \Ovh\StructType\TelephonySmsplusShortCodesList
      */
     public function setShortCodeCategory($shortCodeCategory = null)
     {
@@ -155,7 +155,7 @@ class TelephonySmsplusShortCodesList extends AbstractStructBase
     /**
      * Set publicType value
      * @param string $publicType
-     * @return \PayPal\StructType\TelephonySmsplusShortCodesList
+     * @return \Ovh\StructType\TelephonySmsplusShortCodesList
      */
     public function setPublicType($publicType = null)
     {
@@ -177,7 +177,7 @@ class TelephonySmsplusShortCodesList extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \PayPal\StructType\TelephonySmsplusShortCodesList
+     * @return \Ovh\StructType\TelephonySmsplusShortCodesList
      */
     public function setPrice($price = null)
     {
@@ -195,7 +195,7 @@ class TelephonySmsplusShortCodesList extends AbstractStructBase
     /**
      * Set rates value
      * @param string $rates
-     * @return \PayPal\StructType\TelephonySmsplusShortCodesList
+     * @return \Ovh\StructType\TelephonySmsplusShortCodesList
      */
     public function setRates($rates = null)
     {
@@ -212,7 +212,7 @@ class TelephonySmsplusShortCodesList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsplusShortCodesList
+     * @return \Ovh\StructType\TelephonySmsplusShortCodesList
      */
     public static function __set_state(array $array)
     {

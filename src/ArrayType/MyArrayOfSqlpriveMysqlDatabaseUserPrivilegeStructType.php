@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -17,13 +17,13 @@ class MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType extends AbstractStru
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct[]
+     * @var \Ovh\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType
      * @uses MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType::setItem()
-     * @param \PayPal\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct[] $item
+     * @param \Ovh\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -32,7 +32,7 @@ class MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType extends AbstractStru
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct[]|null
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct[]|null
      */
     public function getItem()
     {
@@ -41,15 +41,15 @@ class MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType extends AbstractStru
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType
+     * @param \Ovh\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructTypeItemItem instanceof \PayPal\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct, "%s" given', is_object($myArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructTypeItemItem) ? get_class($myArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructTypeItemItem) : gettype($myArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructTypeItemItem instanceof \Ovh\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct, "%s" given', is_object($myArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructTypeItemItem) ? get_class($myArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructTypeItemItem) : gettype($myArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -58,14 +58,14 @@ class MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType extends AbstractStru
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType
+     * @param \Ovh\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType
      */
-    public function addToItem(\PayPal\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct $item)
+    public function addToItem(\Ovh\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType extends AbstractStru
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct|null
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct|null
      */
     public function current()
     {
@@ -83,7 +83,7 @@ class MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType extends AbstractStru
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct|null
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct|null
      */
     public function item($index)
     {
@@ -92,7 +92,7 @@ class MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType extends AbstractStru
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct|null
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct|null
      */
     public function first()
     {
@@ -101,7 +101,7 @@ class MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType extends AbstractStru
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct|null
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct|null
      */
     public function last()
     {
@@ -111,7 +111,7 @@ class MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType extends AbstractStru
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct|null
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct|null
      */
     public function offsetGet($offset)
     {
@@ -132,7 +132,7 @@ class MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType extends AbstractStru
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType
+     * @return \Ovh\ArrayType\MyArrayOfSqlpriveMysqlDatabaseUserPrivilegeStructType
      */
     public static function __set_state(array $array)
     {

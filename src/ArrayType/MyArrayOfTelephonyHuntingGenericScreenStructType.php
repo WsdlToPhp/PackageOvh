@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfTelephonyHuntingGenericScreenStructType extends AbstractStructArr
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TelephonyHuntingGenericScreenStruct[]
+     * @var \Ovh\StructType\TelephonyHuntingGenericScreenStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTelephonyHuntingGenericScreenStructType
      * @uses MyArrayOfTelephonyHuntingGenericScreenStructType::setItem()
-     * @param \PayPal\StructType\TelephonyHuntingGenericScreenStruct[] $item
+     * @param \Ovh\StructType\TelephonyHuntingGenericScreenStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfTelephonyHuntingGenericScreenStructType extends AbstractStructArr
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenStruct[]|null
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfTelephonyHuntingGenericScreenStructType extends AbstractStructArr
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyHuntingGenericScreenStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyHuntingGenericScreenStructType
+     * @param \Ovh\StructType\TelephonyHuntingGenericScreenStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyHuntingGenericScreenStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTelephonyHuntingGenericScreenStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTelephonyHuntingGenericScreenStructTypeItemItem instanceof \PayPal\StructType\TelephonyHuntingGenericScreenStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyHuntingGenericScreenStruct, "%s" given', is_object($myArrayOfTelephonyHuntingGenericScreenStructTypeItemItem) ? get_class($myArrayOfTelephonyHuntingGenericScreenStructTypeItemItem) : gettype($myArrayOfTelephonyHuntingGenericScreenStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTelephonyHuntingGenericScreenStructTypeItemItem instanceof \Ovh\StructType\TelephonyHuntingGenericScreenStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyHuntingGenericScreenStruct, "%s" given', is_object($myArrayOfTelephonyHuntingGenericScreenStructTypeItemItem) ? get_class($myArrayOfTelephonyHuntingGenericScreenStructTypeItemItem) : gettype($myArrayOfTelephonyHuntingGenericScreenStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfTelephonyHuntingGenericScreenStructType extends AbstractStructArr
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyHuntingGenericScreenStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyHuntingGenericScreenStructType
+     * @param \Ovh\StructType\TelephonyHuntingGenericScreenStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyHuntingGenericScreenStructType
      */
-    public function addToItem(\PayPal\StructType\TelephonyHuntingGenericScreenStruct $item)
+    public function addToItem(\Ovh\StructType\TelephonyHuntingGenericScreenStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TelephonyHuntingGenericScreenStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyHuntingGenericScreenStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TelephonyHuntingGenericScreenStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyHuntingGenericScreenStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfTelephonyHuntingGenericScreenStructType extends AbstractStructArr
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenStruct|null
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfTelephonyHuntingGenericScreenStructType extends AbstractStructArr
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenStruct|null
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfTelephonyHuntingGenericScreenStructType extends AbstractStructArr
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenStruct|null
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfTelephonyHuntingGenericScreenStructType extends AbstractStructArr
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenStruct|null
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfTelephonyHuntingGenericScreenStructType extends AbstractStructArr
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenStruct|null
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfTelephonyHuntingGenericScreenStructType extends AbstractStructArr
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyHuntingGenericScreenStructType
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyHuntingGenericScreenStructType
      */
     public static function __set_state(array $array)
     {

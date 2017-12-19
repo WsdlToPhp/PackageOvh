@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyFaxHistoryResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyFaxHistoryStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyFaxHistoryStructType
      */
     public $return;
     /**
      * Constructor method for telephonyFaxHistoryResponse
      * @uses TelephonyFaxHistoryResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyFaxHistoryStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyFaxHistoryStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonyFaxHistoryStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonyFaxHistoryStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyFaxHistoryStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyFaxHistoryStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyFaxHistoryResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyFaxHistoryStructType $return
-     * @return \PayPal\StructType\TelephonyFaxHistoryResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyFaxHistoryStructType $return
+     * @return \Ovh\StructType\TelephonyFaxHistoryResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonyFaxHistoryStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonyFaxHistoryStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyFaxHistoryResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFaxHistoryResponse
+     * @return \Ovh\StructType\TelephonyFaxHistoryResponse
      */
     public static function __set_state(array $array)
     {

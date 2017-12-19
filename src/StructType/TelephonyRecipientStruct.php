@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class TelephonyRecipientStruct extends AbstractStructBase
     /**
      * Set recipient value
      * @param string $recipient
-     * @return \PayPal\StructType\TelephonyRecipientStruct
+     * @return \Ovh\StructType\TelephonyRecipientStruct
      */
     public function setRecipient($recipient = null)
     {
@@ -67,7 +67,7 @@ class TelephonyRecipientStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\TelephonyRecipientStruct
+     * @return \Ovh\StructType\TelephonyRecipientStruct
      */
     public function setStatus($status = null)
     {
@@ -84,7 +84,7 @@ class TelephonyRecipientStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyRecipientStruct
+     * @return \Ovh\StructType\TelephonyRecipientStruct
      */
     public static function __set_state(array $array)
     {

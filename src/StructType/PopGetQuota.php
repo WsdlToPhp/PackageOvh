@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class PopGetQuota extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\PopGetQuota
+     * @return \Ovh\StructType\PopGetQuota
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class PopGetQuota extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\PopGetQuota
+     * @return \Ovh\StructType\PopGetQuota
      */
     public function setDomain($domain = null)
     {
@@ -103,7 +103,7 @@ class PopGetQuota extends AbstractStructBase
     /**
      * Set pop value
      * @param string $pop
-     * @return \PayPal\StructType\PopGetQuota
+     * @return \Ovh\StructType\PopGetQuota
      */
     public function setPop($pop = null)
     {
@@ -120,7 +120,7 @@ class PopGetQuota extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\PopGetQuota
+     * @return \Ovh\StructType\PopGetQuota
      */
     public static function __set_state(array $array)
     {

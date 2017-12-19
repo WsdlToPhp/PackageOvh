@@ -21,7 +21,7 @@ php wsdltophp.phar generate:package \
     --composer-settings="autoload.psr-4.SoapClient\:./SoapClient/" \
     --addcomments="author:WsdlToPhp <contact@wsdltophp.com>" \
     --soapclient="\SoapClient\SoapClientBase" \
-    --namespace="PayPal";
+    --namespace="Ovh";
 
 # generate package
 php wsdltophp.phar generate:package \
@@ -31,5 +31,5 @@ php wsdltophp.phar generate:package \
     --composer-settings="autoload.psr-4.SoapClient\:./SoapClient/" \
     --addcomments="author:WsdlToPhp <contact@wsdltophp.com>" \
     --soapclient="\SoapClient\SoapClientBase" \
-    --namespace="PayPal" \
+    --namespace="Ovh" \
     --force;

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Ticket extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TicketListIncidentsByDomain $parameters
-     * @return \PayPal\StructType\TicketListIncidentsByDomainResponse|bool
+     * @param \Ovh\StructType\TicketListIncidentsByDomain $parameters
+     * @return \Ovh\StructType\TicketListIncidentsByDomainResponse|bool
      */
-    public function ticketListIncidentsByDomain(\PayPal\StructType\TicketListIncidentsByDomain $parameters)
+    public function ticketListIncidentsByDomain(\Ovh\StructType\TicketListIncidentsByDomain $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->ticketListIncidentsByDomain($parameters));
@@ -36,10 +36,10 @@ class Ticket extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TicketListIncidents $parameters
-     * @return \PayPal\StructType\TicketListIncidentsResponse|bool
+     * @param \Ovh\StructType\TicketListIncidents $parameters
+     * @return \Ovh\StructType\TicketListIncidentsResponse|bool
      */
-    public function ticketListIncidents(\PayPal\StructType\TicketListIncidents $parameters)
+    public function ticketListIncidents(\Ovh\StructType\TicketListIncidents $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->ticketListIncidents($parameters));
@@ -55,10 +55,10 @@ class Ticket extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TicketReopen $parameters
-     * @return \PayPal\StructType\TicketReopenResponse|bool
+     * @param \Ovh\StructType\TicketReopen $parameters
+     * @return \Ovh\StructType\TicketReopenResponse|bool
      */
-    public function ticketReopen(\PayPal\StructType\TicketReopen $parameters)
+    public function ticketReopen(\Ovh\StructType\TicketReopen $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->ticketReopen($parameters));
@@ -74,10 +74,10 @@ class Ticket extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TicketListContact $parameters
-     * @return \PayPal\StructType\TicketListContactResponse|bool
+     * @param \Ovh\StructType\TicketListContact $parameters
+     * @return \Ovh\StructType\TicketListContactResponse|bool
      */
-    public function ticketListContact(\PayPal\StructType\TicketListContact $parameters)
+    public function ticketListContact(\Ovh\StructType\TicketListContact $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->ticketListContact($parameters));
@@ -93,10 +93,10 @@ class Ticket extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TicketGet $parameters
-     * @return \PayPal\StructType\TicketGetResponse|bool
+     * @param \Ovh\StructType\TicketGet $parameters
+     * @return \Ovh\StructType\TicketGetResponse|bool
      */
-    public function ticketGet(\PayPal\StructType\TicketGet $parameters)
+    public function ticketGet(\Ovh\StructType\TicketGet $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->ticketGet($parameters));
@@ -112,10 +112,10 @@ class Ticket extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TicketAnswer $parameters
-     * @return \PayPal\StructType\TicketAnswerResponse|bool
+     * @param \Ovh\StructType\TicketAnswer $parameters
+     * @return \Ovh\StructType\TicketAnswerResponse|bool
      */
-    public function ticketAnswer(\PayPal\StructType\TicketAnswer $parameters)
+    public function ticketAnswer(\Ovh\StructType\TicketAnswer $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->ticketAnswer($parameters));
@@ -131,10 +131,10 @@ class Ticket extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TicketClose $parameters
-     * @return \PayPal\StructType\TicketCloseResponse|bool
+     * @param \Ovh\StructType\TicketClose $parameters
+     * @return \Ovh\StructType\TicketCloseResponse|bool
      */
-    public function ticketClose(\PayPal\StructType\TicketClose $parameters)
+    public function ticketClose(\Ovh\StructType\TicketClose $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->ticketClose($parameters));
@@ -150,10 +150,10 @@ class Ticket extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TicketCreate $parameters
-     * @return \PayPal\StructType\TicketCreateResponse|bool
+     * @param \Ovh\StructType\TicketCreate $parameters
+     * @return \Ovh\StructType\TicketCreateResponse|bool
      */
-    public function ticketCreate(\PayPal\StructType\TicketCreate $parameters)
+    public function ticketCreate(\Ovh\StructType\TicketCreate $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->ticketCreate($parameters));
@@ -166,7 +166,7 @@ class Ticket extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\TicketAnswerResponse|\PayPal\StructType\TicketCloseResponse|\PayPal\StructType\TicketCreateResponse|\PayPal\StructType\TicketGetResponse|\PayPal\StructType\TicketListContactResponse|\PayPal\StructType\TicketListIncidentsByDomainResponse|\PayPal\StructType\TicketListIncidentsResponse|\PayPal\StructType\TicketReopenResponse
+     * @return \Ovh\StructType\TicketAnswerResponse|\Ovh\StructType\TicketCloseResponse|\Ovh\StructType\TicketCreateResponse|\Ovh\StructType\TicketGetResponse|\Ovh\StructType\TicketListContactResponse|\Ovh\StructType\TicketListIncidentsByDomainResponse|\Ovh\StructType\TicketListIncidentsResponse|\Ovh\StructType\TicketReopenResponse
      */
     public function getResult()
     {

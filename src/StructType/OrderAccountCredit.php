@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,7 +49,7 @@ class OrderAccountCredit extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\OrderAccountCredit
+     * @return \Ovh\StructType\OrderAccountCredit
      */
     public function setSession($session = null)
     {
@@ -71,7 +71,7 @@ class OrderAccountCredit extends AbstractStructBase
     /**
      * Set amount value
      * @param int $amount
-     * @return \PayPal\StructType\OrderAccountCredit
+     * @return \Ovh\StructType\OrderAccountCredit
      */
     public function setAmount($amount = null)
     {
@@ -88,7 +88,7 @@ class OrderAccountCredit extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\OrderAccountCredit
+     * @return \Ovh\StructType\OrderAccountCredit
      */
     public static function __set_state(array $array)
     {

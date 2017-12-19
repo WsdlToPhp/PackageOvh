@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -13,22 +13,22 @@ class TelephonyGetClosureEventsAsArrayResponse extends AbstractStructArrayBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyGetClosureEventsAsArrayStruct
+     * @var \Ovh\StructType\TelephonyGetClosureEventsAsArrayStruct
      */
     public $return;
     /**
      * Constructor method for telephonyGetClosureEventsAsArrayResponse
      * @uses TelephonyGetClosureEventsAsArrayResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyGetClosureEventsAsArrayStruct $return
+     * @param \Ovh\StructType\TelephonyGetClosureEventsAsArrayStruct $return
      */
-    public function __construct(\PayPal\StructType\TelephonyGetClosureEventsAsArrayStruct $return = null)
+    public function __construct(\Ovh\StructType\TelephonyGetClosureEventsAsArrayStruct $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayStruct|null
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayStruct|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyGetClosureEventsAsArrayResponse extends AbstractStructArrayBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyGetClosureEventsAsArrayStruct $return
-     * @return \PayPal\ArrayType\TelephonyGetClosureEventsAsArrayResponse
+     * @param \Ovh\StructType\TelephonyGetClosureEventsAsArrayStruct $return
+     * @return \Ovh\ArrayType\TelephonyGetClosureEventsAsArrayResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyGetClosureEventsAsArrayStruct $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyGetClosureEventsAsArrayStruct $return = null)
     {
         $this->return = $return;
         return $this;
@@ -47,7 +47,7 @@ class TelephonyGetClosureEventsAsArrayResponse extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayStruct|null
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayStruct|null
      */
     public function current()
     {
@@ -57,7 +57,7 @@ class TelephonyGetClosureEventsAsArrayResponse extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayStruct|null
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayStruct|null
      */
     public function item($index)
     {
@@ -66,7 +66,7 @@ class TelephonyGetClosureEventsAsArrayResponse extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayStruct|null
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayStruct|null
      */
     public function first()
     {
@@ -75,7 +75,7 @@ class TelephonyGetClosureEventsAsArrayResponse extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayStruct|null
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayStruct|null
      */
     public function last()
     {
@@ -85,7 +85,7 @@ class TelephonyGetClosureEventsAsArrayResponse extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayStruct|null
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayStruct|null
      */
     public function offsetGet($offset)
     {
@@ -106,7 +106,7 @@ class TelephonyGetClosureEventsAsArrayResponse extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\TelephonyGetClosureEventsAsArrayResponse
+     * @return \Ovh\ArrayType\TelephonyGetClosureEventsAsArrayResponse
      */
     public static function __set_state(array $array)
     {

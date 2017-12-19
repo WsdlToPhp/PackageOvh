@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedBackupGetDateResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedBackupDateStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedBackupDateStructType
      */
     public $return;
     /**
      * Constructor method for dedicatedBackupGetDateResponse
      * @uses DedicatedBackupGetDateResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedBackupDateStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedBackupDateStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfDedicatedBackupDateStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfDedicatedBackupDateStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedBackupDateStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedBackupDateStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedBackupGetDateResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedBackupDateStructType $return
-     * @return \PayPal\StructType\DedicatedBackupGetDateResponse
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedBackupDateStructType $return
+     * @return \Ovh\StructType\DedicatedBackupGetDateResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfDedicatedBackupDateStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfDedicatedBackupDateStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedBackupGetDateResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedBackupGetDateResponse
+     * @return \Ovh\StructType\DedicatedBackupGetDateResponse
      */
     public static function __set_state(array $array)
     {

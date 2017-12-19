@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -17,13 +17,13 @@ class MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType extends AbstractStructA
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TelephonyFreefaxToVoicefaxCheckStruct[]
+     * @var \Ovh\StructType\TelephonyFreefaxToVoicefaxCheckStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType
      * @uses MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType::setItem()
-     * @param \PayPal\StructType\TelephonyFreefaxToVoicefaxCheckStruct[] $item
+     * @param \Ovh\StructType\TelephonyFreefaxToVoicefaxCheckStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -32,7 +32,7 @@ class MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType extends AbstractStructA
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TelephonyFreefaxToVoicefaxCheckStruct[]|null
+     * @return \Ovh\StructType\TelephonyFreefaxToVoicefaxCheckStruct[]|null
      */
     public function getItem()
     {
@@ -41,15 +41,15 @@ class MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType extends AbstractStructA
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyFreefaxToVoicefaxCheckStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType
+     * @param \Ovh\StructType\TelephonyFreefaxToVoicefaxCheckStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTelephonyFreefaxToVoicefaxCheckStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTelephonyFreefaxToVoicefaxCheckStructTypeItemItem instanceof \PayPal\StructType\TelephonyFreefaxToVoicefaxCheckStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyFreefaxToVoicefaxCheckStruct, "%s" given', is_object($myArrayOfTelephonyFreefaxToVoicefaxCheckStructTypeItemItem) ? get_class($myArrayOfTelephonyFreefaxToVoicefaxCheckStructTypeItemItem) : gettype($myArrayOfTelephonyFreefaxToVoicefaxCheckStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTelephonyFreefaxToVoicefaxCheckStructTypeItemItem instanceof \Ovh\StructType\TelephonyFreefaxToVoicefaxCheckStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyFreefaxToVoicefaxCheckStruct, "%s" given', is_object($myArrayOfTelephonyFreefaxToVoicefaxCheckStructTypeItemItem) ? get_class($myArrayOfTelephonyFreefaxToVoicefaxCheckStructTypeItemItem) : gettype($myArrayOfTelephonyFreefaxToVoicefaxCheckStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -58,14 +58,14 @@ class MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType extends AbstractStructA
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyFreefaxToVoicefaxCheckStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType
+     * @param \Ovh\StructType\TelephonyFreefaxToVoicefaxCheckStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType
      */
-    public function addToItem(\PayPal\StructType\TelephonyFreefaxToVoicefaxCheckStruct $item)
+    public function addToItem(\Ovh\StructType\TelephonyFreefaxToVoicefaxCheckStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TelephonyFreefaxToVoicefaxCheckStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyFreefaxToVoicefaxCheckStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TelephonyFreefaxToVoicefaxCheckStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyFreefaxToVoicefaxCheckStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType extends AbstractStructA
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonyFreefaxToVoicefaxCheckStruct|null
+     * @return \Ovh\StructType\TelephonyFreefaxToVoicefaxCheckStruct|null
      */
     public function current()
     {
@@ -83,7 +83,7 @@ class MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType extends AbstractStructA
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonyFreefaxToVoicefaxCheckStruct|null
+     * @return \Ovh\StructType\TelephonyFreefaxToVoicefaxCheckStruct|null
      */
     public function item($index)
     {
@@ -92,7 +92,7 @@ class MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType extends AbstractStructA
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonyFreefaxToVoicefaxCheckStruct|null
+     * @return \Ovh\StructType\TelephonyFreefaxToVoicefaxCheckStruct|null
      */
     public function first()
     {
@@ -101,7 +101,7 @@ class MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType extends AbstractStructA
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonyFreefaxToVoicefaxCheckStruct|null
+     * @return \Ovh\StructType\TelephonyFreefaxToVoicefaxCheckStruct|null
      */
     public function last()
     {
@@ -111,7 +111,7 @@ class MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType extends AbstractStructA
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonyFreefaxToVoicefaxCheckStruct|null
+     * @return \Ovh\StructType\TelephonyFreefaxToVoicefaxCheckStruct|null
      */
     public function offsetGet($offset)
     {
@@ -132,7 +132,7 @@ class MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType extends AbstractStructA
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyFreefaxToVoicefaxCheckStructType
      */
     public static function __set_state(array $array)
     {

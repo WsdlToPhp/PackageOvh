@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedRipeQueryResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\RipeReturn
+     * @var \Ovh\StructType\RipeReturn
      */
     public $return;
     /**
      * Constructor method for dedicatedRipeQueryResponse
      * @uses DedicatedRipeQueryResponse::setReturn()
-     * @param \PayPal\StructType\RipeReturn $return
+     * @param \Ovh\StructType\RipeReturn $return
      */
-    public function __construct(\PayPal\StructType\RipeReturn $return = null)
+    public function __construct(\Ovh\StructType\RipeReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\RipeReturn|null
+     * @return \Ovh\StructType\RipeReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedRipeQueryResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\RipeReturn $return
-     * @return \PayPal\StructType\DedicatedRipeQueryResponse
+     * @param \Ovh\StructType\RipeReturn $return
+     * @return \Ovh\StructType\DedicatedRipeQueryResponse
      */
-    public function setReturn(\PayPal\StructType\RipeReturn $return = null)
+    public function setReturn(\Ovh\StructType\RipeReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedRipeQueryResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedRipeQueryResponse
+     * @return \Ovh\StructType\DedicatedRipeQueryResponse
      */
     public static function __set_state(array $array)
     {

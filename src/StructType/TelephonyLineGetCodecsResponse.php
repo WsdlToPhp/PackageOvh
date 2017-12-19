@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyLineGetCodecsResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyLineGetCodecsReturn
+     * @var \Ovh\StructType\TelephonyLineGetCodecsReturn
      */
     public $return;
     /**
      * Constructor method for telephonyLineGetCodecsResponse
      * @uses TelephonyLineGetCodecsResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyLineGetCodecsReturn $return
+     * @param \Ovh\StructType\TelephonyLineGetCodecsReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonyLineGetCodecsReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonyLineGetCodecsReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyLineGetCodecsReturn|null
+     * @return \Ovh\StructType\TelephonyLineGetCodecsReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyLineGetCodecsResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyLineGetCodecsReturn $return
-     * @return \PayPal\StructType\TelephonyLineGetCodecsResponse
+     * @param \Ovh\StructType\TelephonyLineGetCodecsReturn $return
+     * @return \Ovh\StructType\TelephonyLineGetCodecsResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyLineGetCodecsReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyLineGetCodecsReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyLineGetCodecsResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyLineGetCodecsResponse
+     * @return \Ovh\StructType\TelephonyLineGetCodecsResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,7 +49,7 @@ class DedicatedIPForUDPServerList extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedIPForUDPServerList
+     * @return \Ovh\StructType\DedicatedIPForUDPServerList
      */
     public function setSession($session = null)
     {
@@ -71,7 +71,7 @@ class DedicatedIPForUDPServerList extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedIPForUDPServerList
+     * @return \Ovh\StructType\DedicatedIPForUDPServerList
      */
     public function setHostname($hostname = null)
     {
@@ -88,7 +88,7 @@ class DedicatedIPForUDPServerList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedIPForUDPServerList
+     * @return \Ovh\StructType\DedicatedIPForUDPServerList
      */
     public static function __set_state(array $array)
     {

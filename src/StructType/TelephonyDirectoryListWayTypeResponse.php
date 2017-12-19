@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyDirectoryListWayTypeResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyDirectoryWayTypeStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyDirectoryWayTypeStructType
      */
     public $return;
     /**
      * Constructor method for telephonyDirectoryListWayTypeResponse
      * @uses TelephonyDirectoryListWayTypeResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyDirectoryWayTypeStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyDirectoryWayTypeStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonyDirectoryWayTypeStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonyDirectoryWayTypeStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyDirectoryWayTypeStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyDirectoryWayTypeStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyDirectoryListWayTypeResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyDirectoryWayTypeStructType $return
-     * @return \PayPal\StructType\TelephonyDirectoryListWayTypeResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyDirectoryWayTypeStructType $return
+     * @return \Ovh\StructType\TelephonyDirectoryListWayTypeResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonyDirectoryWayTypeStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonyDirectoryWayTypeStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyDirectoryListWayTypeResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyDirectoryListWayTypeResponse
+     * @return \Ovh\StructType\TelephonyDirectoryListWayTypeResponse
      */
     public static function __set_state(array $array)
     {

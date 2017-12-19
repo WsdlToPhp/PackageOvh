@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfSupportDomainStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\SupportDomainStruct[]
+     * @var \Ovh\StructType\SupportDomainStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfSupportDomainStructType
      * @uses MyArrayOfSupportDomainStructType::setItem()
-     * @param \PayPal\StructType\SupportDomainStruct[] $item
+     * @param \Ovh\StructType\SupportDomainStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfSupportDomainStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\SupportDomainStruct[]|null
+     * @return \Ovh\StructType\SupportDomainStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfSupportDomainStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\SupportDomainStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfSupportDomainStructType
+     * @param \Ovh\StructType\SupportDomainStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfSupportDomainStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfSupportDomainStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfSupportDomainStructTypeItemItem instanceof \PayPal\StructType\SupportDomainStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\SupportDomainStruct, "%s" given', is_object($myArrayOfSupportDomainStructTypeItemItem) ? get_class($myArrayOfSupportDomainStructTypeItemItem) : gettype($myArrayOfSupportDomainStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfSupportDomainStructTypeItemItem instanceof \Ovh\StructType\SupportDomainStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\SupportDomainStruct, "%s" given', is_object($myArrayOfSupportDomainStructTypeItemItem) ? get_class($myArrayOfSupportDomainStructTypeItemItem) : gettype($myArrayOfSupportDomainStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfSupportDomainStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\SupportDomainStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfSupportDomainStructType
+     * @param \Ovh\StructType\SupportDomainStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfSupportDomainStructType
      */
-    public function addToItem(\PayPal\StructType\SupportDomainStruct $item)
+    public function addToItem(\Ovh\StructType\SupportDomainStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\SupportDomainStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\SupportDomainStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\SupportDomainStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\SupportDomainStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfSupportDomainStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\SupportDomainStruct|null
+     * @return \Ovh\StructType\SupportDomainStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfSupportDomainStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\SupportDomainStruct|null
+     * @return \Ovh\StructType\SupportDomainStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfSupportDomainStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\SupportDomainStruct|null
+     * @return \Ovh\StructType\SupportDomainStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfSupportDomainStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\SupportDomainStruct|null
+     * @return \Ovh\StructType\SupportDomainStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfSupportDomainStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\SupportDomainStruct|null
+     * @return \Ovh\StructType\SupportDomainStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfSupportDomainStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfSupportDomainStructType
+     * @return \Ovh\ArrayType\MyArrayOfSupportDomainStructType
      */
     public static function __set_state(array $array)
     {

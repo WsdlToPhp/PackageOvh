@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -28,7 +28,7 @@ class RipeOrganisationStruct extends AbstractStructBase
     public $orgtype;
     /**
      * The address
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $address;
     /**
@@ -76,7 +76,7 @@ class RipeOrganisationStruct extends AbstractStructBase
      * @param string $organisation
      * @param string $orgname
      * @param string $orgtype
-     * @param \PayPal\ArrayType\MyArrayOfStringType $address
+     * @param \Ovh\ArrayType\MyArrayOfStringType $address
      * @param string $email
      * @param string $abusemailbox
      * @param string $mntref
@@ -84,7 +84,7 @@ class RipeOrganisationStruct extends AbstractStructBase
      * @param string $changed
      * @param string $source
      */
-    public function __construct($organisation = null, $orgname = null, $orgtype = null, \PayPal\ArrayType\MyArrayOfStringType $address = null, $email = null, $abusemailbox = null, $mntref = null, $mntby = null, $changed = null, $source = null)
+    public function __construct($organisation = null, $orgname = null, $orgtype = null, \Ovh\ArrayType\MyArrayOfStringType $address = null, $email = null, $abusemailbox = null, $mntref = null, $mntby = null, $changed = null, $source = null)
     {
         $this
             ->setOrganisation($organisation)
@@ -109,7 +109,7 @@ class RipeOrganisationStruct extends AbstractStructBase
     /**
      * Set organisation value
      * @param string $organisation
-     * @return \PayPal\StructType\RipeOrganisationStruct
+     * @return \Ovh\StructType\RipeOrganisationStruct
      */
     public function setOrganisation($organisation = null)
     {
@@ -131,7 +131,7 @@ class RipeOrganisationStruct extends AbstractStructBase
     /**
      * Set orgname value
      * @param string $orgname
-     * @return \PayPal\StructType\RipeOrganisationStruct
+     * @return \Ovh\StructType\RipeOrganisationStruct
      */
     public function setOrgname($orgname = null)
     {
@@ -153,7 +153,7 @@ class RipeOrganisationStruct extends AbstractStructBase
     /**
      * Set orgtype value
      * @param string $orgtype
-     * @return \PayPal\StructType\RipeOrganisationStruct
+     * @return \Ovh\StructType\RipeOrganisationStruct
      */
     public function setOrgtype($orgtype = null)
     {
@@ -166,7 +166,7 @@ class RipeOrganisationStruct extends AbstractStructBase
     }
     /**
      * Get address value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getAddress()
     {
@@ -174,10 +174,10 @@ class RipeOrganisationStruct extends AbstractStructBase
     }
     /**
      * Set address value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $address
-     * @return \PayPal\StructType\RipeOrganisationStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $address
+     * @return \Ovh\StructType\RipeOrganisationStruct
      */
-    public function setAddress(\PayPal\ArrayType\MyArrayOfStringType $address = null)
+    public function setAddress(\Ovh\ArrayType\MyArrayOfStringType $address = null)
     {
         $this->address = $address;
         return $this;
@@ -193,7 +193,7 @@ class RipeOrganisationStruct extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\RipeOrganisationStruct
+     * @return \Ovh\StructType\RipeOrganisationStruct
      */
     public function setEmail($email = null)
     {
@@ -215,7 +215,7 @@ class RipeOrganisationStruct extends AbstractStructBase
     /**
      * Set abusemailbox value
      * @param string $abusemailbox
-     * @return \PayPal\StructType\RipeOrganisationStruct
+     * @return \Ovh\StructType\RipeOrganisationStruct
      */
     public function setAbusemailbox($abusemailbox = null)
     {
@@ -237,7 +237,7 @@ class RipeOrganisationStruct extends AbstractStructBase
     /**
      * Set mntref value
      * @param string $mntref
-     * @return \PayPal\StructType\RipeOrganisationStruct
+     * @return \Ovh\StructType\RipeOrganisationStruct
      */
     public function setMntref($mntref = null)
     {
@@ -259,7 +259,7 @@ class RipeOrganisationStruct extends AbstractStructBase
     /**
      * Set mntby value
      * @param string $mntby
-     * @return \PayPal\StructType\RipeOrganisationStruct
+     * @return \Ovh\StructType\RipeOrganisationStruct
      */
     public function setMntby($mntby = null)
     {
@@ -281,7 +281,7 @@ class RipeOrganisationStruct extends AbstractStructBase
     /**
      * Set changed value
      * @param string $changed
-     * @return \PayPal\StructType\RipeOrganisationStruct
+     * @return \Ovh\StructType\RipeOrganisationStruct
      */
     public function setChanged($changed = null)
     {
@@ -303,7 +303,7 @@ class RipeOrganisationStruct extends AbstractStructBase
     /**
      * Set source value
      * @param string $source
-     * @return \PayPal\StructType\RipeOrganisationStruct
+     * @return \Ovh\StructType\RipeOrganisationStruct
      */
     public function setSource($source = null)
     {
@@ -320,7 +320,7 @@ class RipeOrganisationStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RipeOrganisationStruct
+     * @return \Ovh\StructType\RipeOrganisationStruct
      */
     public static function __set_state(array $array)
     {

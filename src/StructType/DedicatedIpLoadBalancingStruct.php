@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -33,7 +33,7 @@ class DedicatedIpLoadBalancingStruct extends AbstractStructBase
     public $inactive;
     /**
      * The serverList
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedIpLoadBalancingServerStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedIpLoadBalancingServerStructType
      */
     public $serverList;
     /**
@@ -47,9 +47,9 @@ class DedicatedIpLoadBalancingStruct extends AbstractStructBase
      * @param string $ipLoadBalancing
      * @param int $active
      * @param int $inactive
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedIpLoadBalancingServerStructType $serverList
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedIpLoadBalancingServerStructType $serverList
      */
-    public function __construct($name = null, $ipLoadBalancing = null, $active = null, $inactive = null, \PayPal\ArrayType\MyArrayOfDedicatedIpLoadBalancingServerStructType $serverList = null)
+    public function __construct($name = null, $ipLoadBalancing = null, $active = null, $inactive = null, \Ovh\ArrayType\MyArrayOfDedicatedIpLoadBalancingServerStructType $serverList = null)
     {
         $this
             ->setName($name)
@@ -69,7 +69,7 @@ class DedicatedIpLoadBalancingStruct extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingStruct
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingStruct
      */
     public function setName($name = null)
     {
@@ -91,7 +91,7 @@ class DedicatedIpLoadBalancingStruct extends AbstractStructBase
     /**
      * Set ipLoadBalancing value
      * @param string $ipLoadBalancing
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingStruct
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingStruct
      */
     public function setIpLoadBalancing($ipLoadBalancing = null)
     {
@@ -113,7 +113,7 @@ class DedicatedIpLoadBalancingStruct extends AbstractStructBase
     /**
      * Set active value
      * @param int $active
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingStruct
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingStruct
      */
     public function setActive($active = null)
     {
@@ -135,7 +135,7 @@ class DedicatedIpLoadBalancingStruct extends AbstractStructBase
     /**
      * Set inactive value
      * @param int $inactive
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingStruct
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingStruct
      */
     public function setInactive($inactive = null)
     {
@@ -148,7 +148,7 @@ class DedicatedIpLoadBalancingStruct extends AbstractStructBase
     }
     /**
      * Get serverList value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedIpLoadBalancingServerStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedIpLoadBalancingServerStructType|null
      */
     public function getServerList()
     {
@@ -156,10 +156,10 @@ class DedicatedIpLoadBalancingStruct extends AbstractStructBase
     }
     /**
      * Set serverList value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedIpLoadBalancingServerStructType $serverList
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingStruct
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedIpLoadBalancingServerStructType $serverList
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingStruct
      */
-    public function setServerList(\PayPal\ArrayType\MyArrayOfDedicatedIpLoadBalancingServerStructType $serverList = null)
+    public function setServerList(\Ovh\ArrayType\MyArrayOfDedicatedIpLoadBalancingServerStructType $serverList = null)
     {
         $this->serverList = $serverList;
         return $this;
@@ -170,7 +170,7 @@ class DedicatedIpLoadBalancingStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingStruct
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingStruct
      */
     public static function __set_state(array $array)
     {

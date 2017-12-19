@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class ManagedServicesPartitionGetResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfManagedServicesPartitionStructType
+     * @var \Ovh\ArrayType\MyArrayOfManagedServicesPartitionStructType
      */
     public $return;
     /**
      * Constructor method for managedServicesPartitionGetResponse
      * @uses ManagedServicesPartitionGetResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfManagedServicesPartitionStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfManagedServicesPartitionStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfManagedServicesPartitionStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfManagedServicesPartitionStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfManagedServicesPartitionStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfManagedServicesPartitionStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class ManagedServicesPartitionGetResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfManagedServicesPartitionStructType $return
-     * @return \PayPal\StructType\ManagedServicesPartitionGetResponse
+     * @param \Ovh\ArrayType\MyArrayOfManagedServicesPartitionStructType $return
+     * @return \Ovh\StructType\ManagedServicesPartitionGetResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfManagedServicesPartitionStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfManagedServicesPartitionStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class ManagedServicesPartitionGetResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ManagedServicesPartitionGetResponse
+     * @return \Ovh\StructType\ManagedServicesPartitionGetResponse
      */
     public static function __set_state(array $array)
     {

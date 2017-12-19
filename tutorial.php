@@ -19,16 +19,16 @@ require_once __DIR__ . '/vendor/autoload.php';
  */
 $options = array(
     \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_URL => 'http://www.ovh.com/soapi/soapi-dlw-1.63.wsdl',
-    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => \PayPal\ClassMap::get(),
+    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => \Ovh\ClassMap::get(),
 );
 /**
  * Samples for Mailing ServiceType
  */
-$mailing = new \PayPal\ServiceType\Mailing($options);
+$mailing = new \Ovh\ServiceType\Mailing($options);
 /**
  * Sample call for mailingListModeratorDel operation/method
  */
-if ($mailing->mailingListModeratorDel(new \PayPal\StructType\MailingListModeratorDel()) !== false) {
+if ($mailing->mailingListModeratorDel(new \Ovh\StructType\MailingListModeratorDel()) !== false) {
     print_r($mailing->getResult());
 } else {
     print_r($mailing->getLastError());
@@ -36,7 +36,7 @@ if ($mailing->mailingListModeratorDel(new \PayPal\StructType\MailingListModerato
 /**
  * Sample call for mailingListModeratorList operation/method
  */
-if ($mailing->mailingListModeratorList(new \PayPal\StructType\MailingListModeratorList()) !== false) {
+if ($mailing->mailingListModeratorList(new \Ovh\StructType\MailingListModeratorList()) !== false) {
     print_r($mailing->getResult());
 } else {
     print_r($mailing->getLastError());
@@ -44,7 +44,7 @@ if ($mailing->mailingListModeratorList(new \PayPal\StructType\MailingListModerat
 /**
  * Sample call for mailingListFullInfo operation/method
  */
-if ($mailing->mailingListFullInfo(new \PayPal\StructType\MailingListFullInfo()) !== false) {
+if ($mailing->mailingListFullInfo(new \Ovh\StructType\MailingListFullInfo()) !== false) {
     print_r($mailing->getResult());
 } else {
     print_r($mailing->getLastError());
@@ -52,7 +52,7 @@ if ($mailing->mailingListFullInfo(new \PayPal\StructType\MailingListFullInfo()) 
 /**
  * Sample call for mailingListDel operation/method
  */
-if ($mailing->mailingListDel(new \PayPal\StructType\MailingListDel()) !== false) {
+if ($mailing->mailingListDel(new \Ovh\StructType\MailingListDel()) !== false) {
     print_r($mailing->getResult());
 } else {
     print_r($mailing->getLastError());
@@ -60,7 +60,7 @@ if ($mailing->mailingListDel(new \PayPal\StructType\MailingListDel()) !== false)
 /**
  * Sample call for mailingListSubscriberAdd operation/method
  */
-if ($mailing->mailingListSubscriberAdd(new \PayPal\StructType\MailingListSubscriberAdd()) !== false) {
+if ($mailing->mailingListSubscriberAdd(new \Ovh\StructType\MailingListSubscriberAdd()) !== false) {
     print_r($mailing->getResult());
 } else {
     print_r($mailing->getLastError());
@@ -68,7 +68,7 @@ if ($mailing->mailingListSubscriberAdd(new \PayPal\StructType\MailingListSubscri
 /**
  * Sample call for mailingListModeratorAdd operation/method
  */
-if ($mailing->mailingListModeratorAdd(new \PayPal\StructType\MailingListModeratorAdd()) !== false) {
+if ($mailing->mailingListModeratorAdd(new \Ovh\StructType\MailingListModeratorAdd()) !== false) {
     print_r($mailing->getResult());
 } else {
     print_r($mailing->getLastError());
@@ -76,7 +76,7 @@ if ($mailing->mailingListModeratorAdd(new \PayPal\StructType\MailingListModerato
 /**
  * Sample call for mailingListSubscriberList operation/method
  */
-if ($mailing->mailingListSubscriberList(new \PayPal\StructType\MailingListSubscriberList()) !== false) {
+if ($mailing->mailingListSubscriberList(new \Ovh\StructType\MailingListSubscriberList()) !== false) {
     print_r($mailing->getResult());
 } else {
     print_r($mailing->getLastError());
@@ -84,7 +84,7 @@ if ($mailing->mailingListSubscriberList(new \PayPal\StructType\MailingListSubscr
 /**
  * Sample call for mailingListSubscriberDel operation/method
  */
-if ($mailing->mailingListSubscriberDel(new \PayPal\StructType\MailingListSubscriberDel()) !== false) {
+if ($mailing->mailingListSubscriberDel(new \Ovh\StructType\MailingListSubscriberDel()) !== false) {
     print_r($mailing->getResult());
 } else {
     print_r($mailing->getLastError());
@@ -92,7 +92,7 @@ if ($mailing->mailingListSubscriberDel(new \PayPal\StructType\MailingListSubscri
 /**
  * Sample call for mailingListInfo operation/method
  */
-if ($mailing->mailingListInfo(new \PayPal\StructType\MailingListInfo()) !== false) {
+if ($mailing->mailingListInfo(new \Ovh\StructType\MailingListInfo()) !== false) {
     print_r($mailing->getResult());
 } else {
     print_r($mailing->getLastError());
@@ -100,7 +100,7 @@ if ($mailing->mailingListInfo(new \PayPal\StructType\MailingListInfo()) !== fals
 /**
  * Sample call for mailingListModify operation/method
  */
-if ($mailing->mailingListModify(new \PayPal\StructType\MailingListModify()) !== false) {
+if ($mailing->mailingListModify(new \Ovh\StructType\MailingListModify()) !== false) {
     print_r($mailing->getResult());
 } else {
     print_r($mailing->getLastError());
@@ -108,7 +108,7 @@ if ($mailing->mailingListModify(new \PayPal\StructType\MailingListModify()) !== 
 /**
  * Sample call for mailingListAdd operation/method
  */
-if ($mailing->mailingListAdd(new \PayPal\StructType\MailingListAdd()) !== false) {
+if ($mailing->mailingListAdd(new \Ovh\StructType\MailingListAdd()) !== false) {
     print_r($mailing->getResult());
 } else {
     print_r($mailing->getLastError());
@@ -116,7 +116,7 @@ if ($mailing->mailingListAdd(new \PayPal\StructType\MailingListAdd()) !== false)
 /**
  * Sample call for mailingListList operation/method
  */
-if ($mailing->mailingListList(new \PayPal\StructType\MailingListList()) !== false) {
+if ($mailing->mailingListList(new \Ovh\StructType\MailingListList()) !== false) {
     print_r($mailing->getResult());
 } else {
     print_r($mailing->getLastError());
@@ -124,7 +124,7 @@ if ($mailing->mailingListList(new \PayPal\StructType\MailingListList()) !== fals
 /**
  * Sample call for mailingListSubscriberListByEmail operation/method
  */
-if ($mailing->mailingListSubscriberListByEmail(new \PayPal\StructType\MailingListSubscriberListByEmail()) !== false) {
+if ($mailing->mailingListSubscriberListByEmail(new \Ovh\StructType\MailingListSubscriberListByEmail()) !== false) {
     print_r($mailing->getResult());
 } else {
     print_r($mailing->getLastError());
@@ -132,11 +132,11 @@ if ($mailing->mailingListSubscriberListByEmail(new \PayPal\StructType\MailingLis
 /**
  * Samples for Telephony ServiceType
  */
-$telephony = new \PayPal\ServiceType\Telephony($options);
+$telephony = new \Ovh\ServiceType\Telephony($options);
 /**
  * Sample call for telephonyNumberInfo operation/method
  */
-if ($telephony->telephonyNumberInfo(new \PayPal\StructType\TelephonyNumberInfo()) !== false) {
+if ($telephony->telephonyNumberInfo(new \Ovh\StructType\TelephonyNumberInfo()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -144,7 +144,7 @@ if ($telephony->telephonyNumberInfo(new \PayPal\StructType\TelephonyNumberInfo()
 /**
  * Sample call for telephonyVoicemailOptionsList operation/method
  */
-if ($telephony->telephonyVoicemailOptionsList(new \PayPal\StructType\TelephonyVoicemailOptionsList()) !== false) {
+if ($telephony->telephonyVoicemailOptionsList(new \Ovh\StructType\TelephonyVoicemailOptionsList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -152,7 +152,7 @@ if ($telephony->telephonyVoicemailOptionsList(new \PayPal\StructType\TelephonyVo
 /**
  * Sample call for telephonyPhonebookSharePeerList operation/method
  */
-if ($telephony->telephonyPhonebookSharePeerList(new \PayPal\StructType\TelephonyPhonebookSharePeerList()) !== false) {
+if ($telephony->telephonyPhonebookSharePeerList(new \Ovh\StructType\TelephonyPhonebookSharePeerList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -160,7 +160,7 @@ if ($telephony->telephonyPhonebookSharePeerList(new \PayPal\StructType\Telephony
 /**
  * Sample call for telephonyRedirectModify operation/method
  */
-if ($telephony->telephonyRedirectModify(new \PayPal\StructType\TelephonyRedirectModify()) !== false) {
+if ($telephony->telephonyRedirectModify(new \Ovh\StructType\TelephonyRedirectModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -168,7 +168,7 @@ if ($telephony->telephonyRedirectModify(new \PayPal\StructType\TelephonyRedirect
 /**
  * Sample call for telephonyNumberModify operation/method
  */
-if ($telephony->telephonyNumberModify(new \PayPal\StructType\TelephonyNumberModify()) !== false) {
+if ($telephony->telephonyNumberModify(new \Ovh\StructType\TelephonyNumberModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -176,7 +176,7 @@ if ($telephony->telephonyNumberModify(new \PayPal\StructType\TelephonyNumberModi
 /**
  * Sample call for telephonyGetCitiesFromZip operation/method
  */
-if ($telephony->telephonyGetCitiesFromZip(new \PayPal\StructType\TelephonyGetCitiesFromZip()) !== false) {
+if ($telephony->telephonyGetCitiesFromZip(new \Ovh\StructType\TelephonyGetCitiesFromZip()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -184,7 +184,7 @@ if ($telephony->telephonyGetCitiesFromZip(new \PayPal\StructType\TelephonyGetCit
 /**
  * Sample call for telephonySmsplusSendSmsMt operation/method
  */
-if ($telephony->telephonySmsplusSendSmsMt(new \PayPal\StructType\TelephonySmsplusSendSmsMt()) !== false) {
+if ($telephony->telephonySmsplusSendSmsMt(new \Ovh\StructType\TelephonySmsplusSendSmsMt()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -192,7 +192,7 @@ if ($telephony->telephonySmsplusSendSmsMt(new \PayPal\StructType\TelephonySmsplu
 /**
  * Sample call for telephonySmsUserGetCsvAttachment operation/method
  */
-if ($telephony->telephonySmsUserGetCsvAttachment(new \PayPal\StructType\TelephonySmsUserGetCsvAttachment()) !== false) {
+if ($telephony->telephonySmsUserGetCsvAttachment(new \Ovh\StructType\TelephonySmsUserGetCsvAttachment()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -200,7 +200,7 @@ if ($telephony->telephonySmsUserGetCsvAttachment(new \PayPal\StructType\Telephon
 /**
  * Sample call for telephonyPhonebookOnSmsList operation/method
  */
-if ($telephony->telephonyPhonebookOnSmsList(new \PayPal\StructType\TelephonyPhonebookOnSmsList()) !== false) {
+if ($telephony->telephonyPhonebookOnSmsList(new \Ovh\StructType\TelephonyPhonebookOnSmsList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -208,7 +208,7 @@ if ($telephony->telephonyPhonebookOnSmsList(new \PayPal\StructType\TelephonyPhon
 /**
  * Sample call for telephonySetClosureEvents operation/method
  */
-if ($telephony->telephonySetClosureEvents(new \PayPal\StructType\TelephonySetClosureEvents()) !== false) {
+if ($telephony->telephonySetClosureEvents(new \Ovh\StructType\TelephonySetClosureEvents()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -216,7 +216,7 @@ if ($telephony->telephonySetClosureEvents(new \PayPal\StructType\TelephonySetClo
 /**
  * Sample call for telephonyNicSetSipDomain operation/method
  */
-if ($telephony->telephonyNicSetSipDomain(new \PayPal\StructType\TelephonyNicSetSipDomain()) !== false) {
+if ($telephony->telephonyNicSetSipDomain(new \Ovh\StructType\TelephonyNicSetSipDomain()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -224,7 +224,7 @@ if ($telephony->telephonyNicSetSipDomain(new \PayPal\StructType\TelephonyNicSetS
 /**
  * Sample call for telephonySmsMultiSend operation/method
  */
-if ($telephony->telephonySmsMultiSend(new \PayPal\StructType\TelephonySmsMultiSend()) !== false) {
+if ($telephony->telephonySmsMultiSend(new \Ovh\StructType\TelephonySmsMultiSend()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -232,7 +232,7 @@ if ($telephony->telephonySmsMultiSend(new \PayPal\StructType\TelephonySmsMultiSe
 /**
  * Sample call for telephonySmsUserAddCsvAttachment operation/method
  */
-if ($telephony->telephonySmsUserAddCsvAttachment(new \PayPal\StructType\TelephonySmsUserAddCsvAttachment()) !== false) {
+if ($telephony->telephonySmsUserAddCsvAttachment(new \Ovh\StructType\TelephonySmsUserAddCsvAttachment()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -240,7 +240,7 @@ if ($telephony->telephonySmsUserAddCsvAttachment(new \PayPal\StructType\Telephon
 /**
  * Sample call for telephonySpareDel operation/method
  */
-if ($telephony->telephonySpareDel(new \PayPal\StructType\TelephonySpareDel()) !== false) {
+if ($telephony->telephonySpareDel(new \Ovh\StructType\TelephonySpareDel()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -248,7 +248,7 @@ if ($telephony->telephonySpareDel(new \PayPal\StructType\TelephonySpareDel()) !=
 /**
  * Sample call for telephonyFaxHistory operation/method
  */
-if ($telephony->telephonyFaxHistory(new \PayPal\StructType\TelephonyFaxHistory()) !== false) {
+if ($telephony->telephonyFaxHistory(new \Ovh\StructType\TelephonyFaxHistory()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -256,7 +256,7 @@ if ($telephony->telephonyFaxHistory(new \PayPal\StructType\TelephonyFaxHistory()
 /**
  * Sample call for telephonyFreefaxToVoicefax operation/method
  */
-if ($telephony->telephonyFreefaxToVoicefax(new \PayPal\StructType\TelephonyFreefaxToVoicefax()) !== false) {
+if ($telephony->telephonyFreefaxToVoicefax(new \Ovh\StructType\TelephonyFreefaxToVoicefax()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -264,7 +264,7 @@ if ($telephony->telephonyFreefaxToVoicefax(new \PayPal\StructType\TelephonyFreef
 /**
  * Sample call for telephonyFaxSend operation/method
  */
-if ($telephony->telephonyFaxSend(new \PayPal\StructType\TelephonyFaxSend()) !== false) {
+if ($telephony->telephonyFaxSend(new \Ovh\StructType\TelephonyFaxSend()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -272,7 +272,7 @@ if ($telephony->telephonyFaxSend(new \PayPal\StructType\TelephonyFaxSend()) !== 
 /**
  * Sample call for telephonyRestrictionList operation/method
  */
-if ($telephony->telephonyRestrictionList(new \PayPal\StructType\TelephonyRestrictionList()) !== false) {
+if ($telephony->telephonyRestrictionList(new \Ovh\StructType\TelephonyRestrictionList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -280,7 +280,7 @@ if ($telephony->telephonyRestrictionList(new \PayPal\StructType\TelephonyRestric
 /**
  * Sample call for telephonyBillList operation/method
  */
-if ($telephony->telephonyBillList(new \PayPal\StructType\TelephonyBillList()) !== false) {
+if ($telephony->telephonyBillList(new \Ovh\StructType\TelephonyBillList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -288,7 +288,7 @@ if ($telephony->telephonyBillList(new \PayPal\StructType\TelephonyBillList()) !=
 /**
  * Sample call for telephonyNumberCustomList operation/method
  */
-if ($telephony->telephonyNumberCustomList(new \PayPal\StructType\TelephonyNumberCustomList()) !== false) {
+if ($telephony->telephonyNumberCustomList(new \Ovh\StructType\TelephonyNumberCustomList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -296,7 +296,7 @@ if ($telephony->telephonyNumberCustomList(new \PayPal\StructType\TelephonyNumber
 /**
  * Sample call for telephonyPlugAndPhoneSkinModify operation/method
  */
-if ($telephony->telephonyPlugAndPhoneSkinModify(new \PayPal\StructType\TelephonyPlugAndPhoneSkinModify()) !== false) {
+if ($telephony->telephonyPlugAndPhoneSkinModify(new \Ovh\StructType\TelephonyPlugAndPhoneSkinModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -304,7 +304,7 @@ if ($telephony->telephonyPlugAndPhoneSkinModify(new \PayPal\StructType\Telephony
 /**
  * Sample call for telephonyFaxOptionsModify operation/method
  */
-if ($telephony->telephonyFaxOptionsModify(new \PayPal\StructType\TelephonyFaxOptionsModify()) !== false) {
+if ($telephony->telephonyFaxOptionsModify(new \Ovh\StructType\TelephonyFaxOptionsModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -312,7 +312,7 @@ if ($telephony->telephonyFaxOptionsModify(new \PayPal\StructType\TelephonyFaxOpt
 /**
  * Sample call for telephonyBillingAccountSummary operation/method
  */
-if ($telephony->telephonyBillingAccountSummary(new \PayPal\StructType\TelephonyBillingAccountSummary()) !== false) {
+if ($telephony->telephonyBillingAccountSummary(new \Ovh\StructType\TelephonyBillingAccountSummary()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -320,7 +320,7 @@ if ($telephony->telephonyBillingAccountSummary(new \PayPal\StructType\TelephonyB
 /**
  * Sample call for telephonyConferenceSetAnnounceFile operation/method
  */
-if ($telephony->telephonyConferenceSetAnnounceFile(new \PayPal\StructType\TelephonyConferenceSetAnnounceFile()) !== false) {
+if ($telephony->telephonyConferenceSetAnnounceFile(new \Ovh\StructType\TelephonyConferenceSetAnnounceFile()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -328,7 +328,7 @@ if ($telephony->telephonyConferenceSetAnnounceFile(new \PayPal\StructType\Teleph
 /**
  * Sample call for telephonyPhonebookOnSmsAdd operation/method
  */
-if ($telephony->telephonyPhonebookOnSmsAdd(new \PayPal\StructType\TelephonyPhonebookOnSmsAdd()) !== false) {
+if ($telephony->telephonyPhonebookOnSmsAdd(new \Ovh\StructType\TelephonyPhonebookOnSmsAdd()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -336,7 +336,7 @@ if ($telephony->telephonyPhonebookOnSmsAdd(new \PayPal\StructType\TelephonyPhone
 /**
  * Sample call for telephonyClick2CallUserDel operation/method
  */
-if ($telephony->telephonyClick2CallUserDel(new \PayPal\StructType\TelephonyClick2CallUserDel()) !== false) {
+if ($telephony->telephonyClick2CallUserDel(new \Ovh\StructType\TelephonyClick2CallUserDel()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -344,7 +344,7 @@ if ($telephony->telephonyClick2CallUserDel(new \PayPal\StructType\TelephonyClick
 /**
  * Sample call for telephonySmsAccountList operation/method
  */
-if ($telephony->telephonySmsAccountList(new \PayPal\StructType\TelephonySmsAccountList()) !== false) {
+if ($telephony->telephonySmsAccountList(new \Ovh\StructType\TelephonySmsAccountList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -352,7 +352,7 @@ if ($telephony->telephonySmsAccountList(new \PayPal\StructType\TelephonySmsAccou
 /**
  * Sample call for telephonyBillingAccountConsumptionCSVByMail operation/method
  */
-if ($telephony->telephonyBillingAccountConsumptionCSVByMail(new \PayPal\StructType\TelephonyBillingAccountConsumptionCSVByMail()) !== false) {
+if ($telephony->telephonyBillingAccountConsumptionCSVByMail(new \Ovh\StructType\TelephonyBillingAccountConsumptionCSVByMail()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -360,7 +360,7 @@ if ($telephony->telephonyBillingAccountConsumptionCSVByMail(new \PayPal\StructTy
 /**
  * Sample call for telephonyFMHuntingModificationVoicemail operation/method
  */
-if ($telephony->telephonyFMHuntingModificationVoicemail(new \PayPal\StructType\TelephonyFMHuntingModificationVoicemail()) !== false) {
+if ($telephony->telephonyFMHuntingModificationVoicemail(new \Ovh\StructType\TelephonyFMHuntingModificationVoicemail()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -368,7 +368,7 @@ if ($telephony->telephonyFMHuntingModificationVoicemail(new \PayPal\StructType\T
 /**
  * Sample call for telephonyOrdersFollowingUp operation/method
  */
-if ($telephony->telephonyOrdersFollowingUp(new \PayPal\StructType\TelephonyOrdersFollowingUp()) !== false) {
+if ($telephony->telephonyOrdersFollowingUp(new \Ovh\StructType\TelephonyOrdersFollowingUp()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -376,7 +376,7 @@ if ($telephony->telephonyOrdersFollowingUp(new \PayPal\StructType\TelephonyOrder
 /**
  * Sample call for telephonyPhonebookOnGroupContactAdd operation/method
  */
-if ($telephony->telephonyPhonebookOnGroupContactAdd(new \PayPal\StructType\TelephonyPhonebookOnGroupContactAdd()) !== false) {
+if ($telephony->telephonyPhonebookOnGroupContactAdd(new \Ovh\StructType\TelephonyPhonebookOnGroupContactAdd()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -384,7 +384,7 @@ if ($telephony->telephonyPhonebookOnGroupContactAdd(new \PayPal\StructType\Telep
 /**
  * Sample call for telephonyBillDetailsCSV operation/method
  */
-if ($telephony->telephonyBillDetailsCSV(new \PayPal\StructType\TelephonyBillDetailsCSV()) !== false) {
+if ($telephony->telephonyBillDetailsCSV(new \Ovh\StructType\TelephonyBillDetailsCSV()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -392,7 +392,7 @@ if ($telephony->telephonyBillDetailsCSV(new \PayPal\StructType\TelephonyBillDeta
 /**
  * Sample call for telephonySmsCreditLeft operation/method
  */
-if ($telephony->telephonySmsCreditLeft(new \PayPal\StructType\TelephonySmsCreditLeft()) !== false) {
+if ($telephony->telephonySmsCreditLeft(new \Ovh\StructType\TelephonySmsCreditLeft()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -400,7 +400,7 @@ if ($telephony->telephonySmsCreditLeft(new \PayPal\StructType\TelephonySmsCredit
 /**
  * Sample call for telephonyDirectoryPJCode operation/method
  */
-if ($telephony->telephonyDirectoryPJCode(new \PayPal\StructType\TelephonyDirectoryPJCode()) !== false) {
+if ($telephony->telephonyDirectoryPJCode(new \Ovh\StructType\TelephonyDirectoryPJCode()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -408,7 +408,7 @@ if ($telephony->telephonyDirectoryPJCode(new \PayPal\StructType\TelephonyDirecto
 /**
  * Sample call for telephonyListSummationCallsFromBillingAccount operation/method
  */
-if ($telephony->telephonyListSummationCallsFromBillingAccount(new \PayPal\StructType\TelephonyListSummationCallsFromBillingAccount()) !== false) {
+if ($telephony->telephonyListSummationCallsFromBillingAccount(new \Ovh\StructType\TelephonyListSummationCallsFromBillingAccount()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -416,7 +416,7 @@ if ($telephony->telephonyListSummationCallsFromBillingAccount(new \PayPal\Struct
 /**
  * Sample call for telephonyBillingAccountDescriptionModify operation/method
  */
-if ($telephony->telephonyBillingAccountDescriptionModify(new \PayPal\StructType\TelephonyBillingAccountDescriptionModify()) !== false) {
+if ($telephony->telephonyBillingAccountDescriptionModify(new \Ovh\StructType\TelephonyBillingAccountDescriptionModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -424,7 +424,7 @@ if ($telephony->telephonyBillingAccountDescriptionModify(new \PayPal\StructType\
 /**
  * Sample call for telephonyAbbreviatedNumberDel operation/method
  */
-if ($telephony->telephonyAbbreviatedNumberDel(new \PayPal\StructType\TelephonyAbbreviatedNumberDel()) !== false) {
+if ($telephony->telephonyAbbreviatedNumberDel(new \Ovh\StructType\TelephonyAbbreviatedNumberDel()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -432,7 +432,7 @@ if ($telephony->telephonyAbbreviatedNumberDel(new \PayPal\StructType\TelephonyAb
 /**
  * Sample call for telephonyFaxOptionsList operation/method
  */
-if ($telephony->telephonyFaxOptionsList(new \PayPal\StructType\TelephonyFaxOptionsList()) !== false) {
+if ($telephony->telephonyFaxOptionsList(new \Ovh\StructType\TelephonyFaxOptionsList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -440,7 +440,7 @@ if ($telephony->telephonyFaxOptionsList(new \PayPal\StructType\TelephonyFaxOptio
 /**
  * Sample call for telephonyTrunkExternalDisplayedNumberAdd operation/method
  */
-if ($telephony->telephonyTrunkExternalDisplayedNumberAdd(new \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberAdd()) !== false) {
+if ($telephony->telephonyTrunkExternalDisplayedNumberAdd(new \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberAdd()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -448,7 +448,7 @@ if ($telephony->telephonyTrunkExternalDisplayedNumberAdd(new \PayPal\StructType\
 /**
  * Sample call for telephonyBillingAccountSet operation/method
  */
-if ($telephony->telephonyBillingAccountSet(new \PayPal\StructType\TelephonyBillingAccountSet()) !== false) {
+if ($telephony->telephonyBillingAccountSet(new \Ovh\StructType\TelephonyBillingAccountSet()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -456,7 +456,7 @@ if ($telephony->telephonyBillingAccountSet(new \PayPal\StructType\TelephonyBilli
 /**
  * Sample call for telephonyDepositMovementModify operation/method
  */
-if ($telephony->telephonyDepositMovementModify(new \PayPal\StructType\TelephonyDepositMovementModify()) !== false) {
+if ($telephony->telephonyDepositMovementModify(new \Ovh\StructType\TelephonyDepositMovementModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -464,7 +464,7 @@ if ($telephony->telephonyDepositMovementModify(new \PayPal\StructType\TelephonyD
 /**
  * Sample call for telephonyClick2CallDo operation/method
  */
-if ($telephony->telephonyClick2CallDo(new \PayPal\StructType\TelephonyClick2CallDo()) !== false) {
+if ($telephony->telephonyClick2CallDo(new \Ovh\StructType\TelephonyClick2CallDo()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -472,7 +472,7 @@ if ($telephony->telephonyClick2CallDo(new \PayPal\StructType\TelephonyClick2Call
 /**
  * Sample call for telephonySpecialNumberOrder operation/method
  */
-if ($telephony->telephonySpecialNumberOrder(new \PayPal\StructType\TelephonySpecialNumberOrder()) !== false) {
+if ($telephony->telephonySpecialNumberOrder(new \Ovh\StructType\TelephonySpecialNumberOrder()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -480,7 +480,7 @@ if ($telephony->telephonySpecialNumberOrder(new \PayPal\StructType\TelephonySpec
 /**
  * Sample call for telephonyVoicemailOptionsModify operation/method
  */
-if ($telephony->telephonyVoicemailOptionsModify(new \PayPal\StructType\TelephonyVoicemailOptionsModify()) !== false) {
+if ($telephony->telephonyVoicemailOptionsModify(new \Ovh\StructType\TelephonyVoicemailOptionsModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -488,7 +488,7 @@ if ($telephony->telephonyVoicemailOptionsModify(new \PayPal\StructType\Telephony
 /**
  * Sample call for telephonyLineSwitchOldOffer operation/method
  */
-if ($telephony->telephonyLineSwitchOldOffer(new \PayPal\StructType\TelephonyLineSwitchOldOffer()) !== false) {
+if ($telephony->telephonyLineSwitchOldOffer(new \Ovh\StructType\TelephonyLineSwitchOldOffer()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -496,7 +496,7 @@ if ($telephony->telephonyLineSwitchOldOffer(new \PayPal\StructType\TelephonyLine
 /**
  * Sample call for telephonyPhonebookOnGroupContactDel operation/method
  */
-if ($telephony->telephonyPhonebookOnGroupContactDel(new \PayPal\StructType\TelephonyPhonebookOnGroupContactDel()) !== false) {
+if ($telephony->telephonyPhonebookOnGroupContactDel(new \Ovh\StructType\TelephonyPhonebookOnGroupContactDel()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -504,7 +504,7 @@ if ($telephony->telephonyPhonebookOnGroupContactDel(new \PayPal\StructType\Telep
 /**
  * Sample call for telephonySpareAdd operation/method
  */
-if ($telephony->telephonySpareAdd(new \PayPal\StructType\TelephonySpareAdd()) !== false) {
+if ($telephony->telephonySpareAdd(new \Ovh\StructType\TelephonySpareAdd()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -512,7 +512,7 @@ if ($telephony->telephonySpareAdd(new \PayPal\StructType\TelephonySpareAdd()) !=
 /**
  * Sample call for telephonySmsAddCsvAttachment operation/method
  */
-if ($telephony->telephonySmsAddCsvAttachment(new \PayPal\StructType\TelephonySmsAddCsvAttachment()) !== false) {
+if ($telephony->telephonySmsAddCsvAttachment(new \Ovh\StructType\TelephonySmsAddCsvAttachment()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -520,7 +520,7 @@ if ($telephony->telephonySmsAddCsvAttachment(new \PayPal\StructType\TelephonySms
 /**
  * Sample call for telephonyDefaultPrivateHolidaysEvents operation/method
  */
-if ($telephony->telephonyDefaultPrivateHolidaysEvents(new \PayPal\StructType\TelephonyDefaultPrivateHolidaysEvents()) !== false) {
+if ($telephony->telephonyDefaultPrivateHolidaysEvents(new \Ovh\StructType\TelephonyDefaultPrivateHolidaysEvents()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -528,7 +528,7 @@ if ($telephony->telephonyDefaultPrivateHolidaysEvents(new \PayPal\StructType\Tel
 /**
  * Sample call for telephonyToneRemoteUpload operation/method
  */
-if ($telephony->telephonyToneRemoteUpload(new \PayPal\StructType\TelephonyToneRemoteUpload()) !== false) {
+if ($telephony->telephonyToneRemoteUpload(new \Ovh\StructType\TelephonyToneRemoteUpload()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -536,7 +536,7 @@ if ($telephony->telephonyToneRemoteUpload(new \PayPal\StructType\TelephonyToneRe
 /**
  * Sample call for telephonyNumberGetFrWayNamesFromInsee operation/method
  */
-if ($telephony->telephonyNumberGetFrWayNamesFromInsee(new \PayPal\StructType\TelephonyNumberGetFrWayNamesFromInsee()) !== false) {
+if ($telephony->telephonyNumberGetFrWayNamesFromInsee(new \Ovh\StructType\TelephonyNumberGetFrWayNamesFromInsee()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -544,7 +544,7 @@ if ($telephony->telephonyNumberGetFrWayNamesFromInsee(new \PayPal\StructType\Tel
 /**
  * Sample call for telephonyFMHuntingModificationMode operation/method
  */
-if ($telephony->telephonyFMHuntingModificationMode(new \PayPal\StructType\TelephonyFMHuntingModificationMode()) !== false) {
+if ($telephony->telephonyFMHuntingModificationMode(new \Ovh\StructType\TelephonyFMHuntingModificationMode()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -552,7 +552,7 @@ if ($telephony->telephonyFMHuntingModificationMode(new \PayPal\StructType\Teleph
 /**
  * Sample call for telephonyAliasToSipOffer operation/method
  */
-if ($telephony->telephonyAliasToSipOffer(new \PayPal\StructType\TelephonyAliasToSipOffer()) !== false) {
+if ($telephony->telephonyAliasToSipOffer(new \Ovh\StructType\TelephonyAliasToSipOffer()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -560,7 +560,7 @@ if ($telephony->telephonyAliasToSipOffer(new \PayPal\StructType\TelephonyAliasTo
 /**
  * Sample call for telephonySmsUserMultiSend operation/method
  */
-if ($telephony->telephonySmsUserMultiSend(new \PayPal\StructType\TelephonySmsUserMultiSend()) !== false) {
+if ($telephony->telephonySmsUserMultiSend(new \Ovh\StructType\TelephonySmsUserMultiSend()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -568,7 +568,7 @@ if ($telephony->telephonySmsUserMultiSend(new \PayPal\StructType\TelephonySmsUse
 /**
  * Sample call for telephonySmsGetCsvAttachment operation/method
  */
-if ($telephony->telephonySmsGetCsvAttachment(new \PayPal\StructType\TelephonySmsGetCsvAttachment()) !== false) {
+if ($telephony->telephonySmsGetCsvAttachment(new \Ovh\StructType\TelephonySmsGetCsvAttachment()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -576,7 +576,7 @@ if ($telephony->telephonySmsGetCsvAttachment(new \PayPal\StructType\TelephonySms
 /**
  * Sample call for telephonySmsHistory operation/method
  */
-if ($telephony->telephonySmsHistory(new \PayPal\StructType\TelephonySmsHistory()) !== false) {
+if ($telephony->telephonySmsHistory(new \Ovh\StructType\TelephonySmsHistory()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -584,7 +584,7 @@ if ($telephony->telephonySmsHistory(new \PayPal\StructType\TelephonySmsHistory()
 /**
  * Sample call for telephonyAbbreviatedNumberOnGroupModify operation/method
  */
-if ($telephony->telephonyAbbreviatedNumberOnGroupModify(new \PayPal\StructType\TelephonyAbbreviatedNumberOnGroupModify()) !== false) {
+if ($telephony->telephonyAbbreviatedNumberOnGroupModify(new \Ovh\StructType\TelephonyAbbreviatedNumberOnGroupModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -592,7 +592,7 @@ if ($telephony->telephonyAbbreviatedNumberOnGroupModify(new \PayPal\StructType\T
 /**
  * Sample call for telephonyHuntingGenericScreenList operation/method
  */
-if ($telephony->telephonyHuntingGenericScreenList(new \PayPal\StructType\TelephonyHuntingGenericScreenList()) !== false) {
+if ($telephony->telephonyHuntingGenericScreenList(new \Ovh\StructType\TelephonyHuntingGenericScreenList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -600,7 +600,7 @@ if ($telephony->telephonyHuntingGenericScreenList(new \PayPal\StructType\Telepho
 /**
  * Sample call for telephonyHuntingGenericScreenStatus operation/method
  */
-if ($telephony->telephonyHuntingGenericScreenStatus(new \PayPal\StructType\TelephonyHuntingGenericScreenStatus()) !== false) {
+if ($telephony->telephonyHuntingGenericScreenStatus(new \Ovh\StructType\TelephonyHuntingGenericScreenStatus()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -608,7 +608,7 @@ if ($telephony->telephonyHuntingGenericScreenStatus(new \PayPal\StructType\Telep
 /**
  * Sample call for telephonyHuntingModificationMembers operation/method
  */
-if ($telephony->telephonyHuntingModificationMembers(new \PayPal\StructType\TelephonyHuntingModificationMembers()) !== false) {
+if ($telephony->telephonyHuntingModificationMembers(new \Ovh\StructType\TelephonyHuntingModificationMembers()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -616,7 +616,7 @@ if ($telephony->telephonyHuntingModificationMembers(new \PayPal\StructType\Telep
 /**
  * Sample call for telephonyVoicemailMessagesDownload operation/method
  */
-if ($telephony->telephonyVoicemailMessagesDownload(new \PayPal\StructType\TelephonyVoicemailMessagesDownload()) !== false) {
+if ($telephony->telephonyVoicemailMessagesDownload(new \Ovh\StructType\TelephonyVoicemailMessagesDownload()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -624,7 +624,7 @@ if ($telephony->telephonyVoicemailMessagesDownload(new \PayPal\StructType\Teleph
 /**
  * Sample call for telephonyFaxCampaignCreation operation/method
  */
-if ($telephony->telephonyFaxCampaignCreation(new \PayPal\StructType\TelephonyFaxCampaignCreation()) !== false) {
+if ($telephony->telephonyFaxCampaignCreation(new \Ovh\StructType\TelephonyFaxCampaignCreation()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -632,7 +632,7 @@ if ($telephony->telephonyFaxCampaignCreation(new \PayPal\StructType\TelephonyFax
 /**
  * Sample call for telephonyLineLogsNotificationOptions operation/method
  */
-if ($telephony->telephonyLineLogsNotificationOptions(new \PayPal\StructType\TelephonyLineLogsNotificationOptions()) !== false) {
+if ($telephony->telephonyLineLogsNotificationOptions(new \Ovh\StructType\TelephonyLineLogsNotificationOptions()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -640,7 +640,7 @@ if ($telephony->telephonyLineLogsNotificationOptions(new \PayPal\StructType\Tele
 /**
  * Sample call for telephonyLineGetIpRestriction operation/method
  */
-if ($telephony->telephonyLineGetIpRestriction(new \PayPal\StructType\TelephonyLineGetIpRestriction()) !== false) {
+if ($telephony->telephonyLineGetIpRestriction(new \Ovh\StructType\TelephonyLineGetIpRestriction()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -648,7 +648,7 @@ if ($telephony->telephonyLineGetIpRestriction(new \PayPal\StructType\TelephonyLi
 /**
  * Sample call for telephonyGetTimeZoneNumber operation/method
  */
-if ($telephony->telephonyGetTimeZoneNumber(new \PayPal\StructType\TelephonyGetTimeZoneNumber()) !== false) {
+if ($telephony->telephonyGetTimeZoneNumber(new \Ovh\StructType\TelephonyGetTimeZoneNumber()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -656,7 +656,7 @@ if ($telephony->telephonyGetTimeZoneNumber(new \PayPal\StructType\TelephonyGetTi
 /**
  * Sample call for telephonyFMHuntingModificationMembers operation/method
  */
-if ($telephony->telephonyFMHuntingModificationMembers(new \PayPal\StructType\TelephonyFMHuntingModificationMembers()) !== false) {
+if ($telephony->telephonyFMHuntingModificationMembers(new \Ovh\StructType\TelephonyFMHuntingModificationMembers()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -664,7 +664,7 @@ if ($telephony->telephonyFMHuntingModificationMembers(new \PayPal\StructType\Tel
 /**
  * Sample call for telephonyPhonebookAdd operation/method
  */
-if ($telephony->telephonyPhonebookAdd(new \PayPal\StructType\TelephonyPhonebookAdd()) !== false) {
+if ($telephony->telephonyPhonebookAdd(new \Ovh\StructType\TelephonyPhonebookAdd()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -672,7 +672,7 @@ if ($telephony->telephonyPhonebookAdd(new \PayPal\StructType\TelephonyPhonebookA
 /**
  * Sample call for telephonyRestrictionModify operation/method
  */
-if ($telephony->telephonyRestrictionModify(new \PayPal\StructType\TelephonyRestrictionModify()) !== false) {
+if ($telephony->telephonyRestrictionModify(new \Ovh\StructType\TelephonyRestrictionModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -680,7 +680,7 @@ if ($telephony->telephonyRestrictionModify(new \PayPal\StructType\TelephonyRestr
 /**
  * Sample call for telephonyRatesList operation/method
  */
-if ($telephony->telephonyRatesList(new \PayPal\StructType\TelephonyRatesList()) !== false) {
+if ($telephony->telephonyRatesList(new \Ovh\StructType\TelephonyRatesList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -688,7 +688,7 @@ if ($telephony->telephonyRatesList(new \PayPal\StructType\TelephonyRatesList()) 
 /**
  * Sample call for telephonyHuntingGenericScreenOptions operation/method
  */
-if ($telephony->telephonyHuntingGenericScreenOptions(new \PayPal\StructType\TelephonyHuntingGenericScreenOptions()) !== false) {
+if ($telephony->telephonyHuntingGenericScreenOptions(new \Ovh\StructType\TelephonyHuntingGenericScreenOptions()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -696,7 +696,7 @@ if ($telephony->telephonyHuntingGenericScreenOptions(new \PayPal\StructType\Tele
 /**
  * Sample call for telephonyBillingAccountAdd operation/method
  */
-if ($telephony->telephonyBillingAccountAdd(new \PayPal\StructType\TelephonyBillingAccountAdd()) !== false) {
+if ($telephony->telephonyBillingAccountAdd(new \Ovh\StructType\TelephonyBillingAccountAdd()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -704,7 +704,7 @@ if ($telephony->telephonyBillingAccountAdd(new \PayPal\StructType\TelephonyBilli
 /**
  * Sample call for telephonySmsplusIsFreeKeyword operation/method
  */
-if ($telephony->telephonySmsplusIsFreeKeyword(new \PayPal\StructType\TelephonySmsplusIsFreeKeyword()) !== false) {
+if ($telephony->telephonySmsplusIsFreeKeyword(new \Ovh\StructType\TelephonySmsplusIsFreeKeyword()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -712,7 +712,7 @@ if ($telephony->telephonySmsplusIsFreeKeyword(new \PayPal\StructType\TelephonySm
 /**
  * Sample call for telephonyLineGetCodecs operation/method
  */
-if ($telephony->telephonyLineGetCodecs(new \PayPal\StructType\TelephonyLineGetCodecs()) !== false) {
+if ($telephony->telephonyLineGetCodecs(new \Ovh\StructType\TelephonyLineGetCodecs()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -720,7 +720,7 @@ if ($telephony->telephonyLineGetCodecs(new \PayPal\StructType\TelephonyLineGetCo
 /**
  * Sample call for telephonySmsSenderValidate operation/method
  */
-if ($telephony->telephonySmsSenderValidate(new \PayPal\StructType\TelephonySmsSenderValidate()) !== false) {
+if ($telephony->telephonySmsSenderValidate(new \Ovh\StructType\TelephonySmsSenderValidate()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -728,7 +728,7 @@ if ($telephony->telephonySmsSenderValidate(new \PayPal\StructType\TelephonySmsSe
 /**
  * Sample call for telephonyHuntingModificationSimultaneousCalls operation/method
  */
-if ($telephony->telephonyHuntingModificationSimultaneousCalls(new \PayPal\StructType\TelephonyHuntingModificationSimultaneousCalls()) !== false) {
+if ($telephony->telephonyHuntingModificationSimultaneousCalls(new \Ovh\StructType\TelephonyHuntingModificationSimultaneousCalls()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -736,7 +736,7 @@ if ($telephony->telephonyHuntingModificationSimultaneousCalls(new \PayPal\Struct
 /**
  * Sample call for telephonyDirectoryInfoGetSameSiret operation/method
  */
-if ($telephony->telephonyDirectoryInfoGetSameSiret(new \PayPal\StructType\TelephonyDirectoryInfoGetSameSiret()) !== false) {
+if ($telephony->telephonyDirectoryInfoGetSameSiret(new \Ovh\StructType\TelephonyDirectoryInfoGetSameSiret()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -744,7 +744,7 @@ if ($telephony->telephonyDirectoryInfoGetSameSiret(new \PayPal\StructType\Teleph
 /**
  * Sample call for telephonyConferenceSetParams operation/method
  */
-if ($telephony->telephonyConferenceSetParams(new \PayPal\StructType\TelephonyConferenceSetParams()) !== false) {
+if ($telephony->telephonyConferenceSetParams(new \Ovh\StructType\TelephonyConferenceSetParams()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -752,7 +752,7 @@ if ($telephony->telephonyConferenceSetParams(new \PayPal\StructType\TelephonyCon
 /**
  * Sample call for telephonySparePurchase operation/method
  */
-if ($telephony->telephonySparePurchase(new \PayPal\StructType\TelephonySparePurchase()) !== false) {
+if ($telephony->telephonySparePurchase(new \Ovh\StructType\TelephonySparePurchase()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -760,7 +760,7 @@ if ($telephony->telephonySparePurchase(new \PayPal\StructType\TelephonySparePurc
 /**
  * Sample call for telephonyFaxCampaignList operation/method
  */
-if ($telephony->telephonyFaxCampaignList(new \PayPal\StructType\TelephonyFaxCampaignList()) !== false) {
+if ($telephony->telephonyFaxCampaignList(new \Ovh\StructType\TelephonyFaxCampaignList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -768,7 +768,7 @@ if ($telephony->telephonyFaxCampaignList(new \PayPal\StructType\TelephonyFaxCamp
 /**
  * Sample call for telephonyNicGetMgcpIpRestriction operation/method
  */
-if ($telephony->telephonyNicGetMgcpIpRestriction(new \PayPal\StructType\TelephonyNicGetMgcpIpRestriction()) !== false) {
+if ($telephony->telephonyNicGetMgcpIpRestriction(new \Ovh\StructType\TelephonyNicGetMgcpIpRestriction()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -776,7 +776,7 @@ if ($telephony->telephonyNicGetMgcpIpRestriction(new \PayPal\StructType\Telephon
 /**
  * Sample call for telephonySmsGetUserQuotaForUser operation/method
  */
-if ($telephony->telephonySmsGetUserQuotaForUser(new \PayPal\StructType\TelephonySmsGetUserQuotaForUser()) !== false) {
+if ($telephony->telephonySmsGetUserQuotaForUser(new \Ovh\StructType\TelephonySmsGetUserQuotaForUser()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -784,7 +784,7 @@ if ($telephony->telephonySmsGetUserQuotaForUser(new \PayPal\StructType\Telephony
 /**
  * Sample call for telephonyDirectoryInfoGetSiret operation/method
  */
-if ($telephony->telephonyDirectoryInfoGetSiret(new \PayPal\StructType\TelephonyDirectoryInfoGetSiret()) !== false) {
+if ($telephony->telephonyDirectoryInfoGetSiret(new \Ovh\StructType\TelephonyDirectoryInfoGetSiret()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -792,7 +792,7 @@ if ($telephony->telephonyDirectoryInfoGetSiret(new \PayPal\StructType\TelephonyD
 /**
  * Sample call for telephonyFunctionKeyModify operation/method
  */
-if ($telephony->telephonyFunctionKeyModify(new \PayPal\StructType\TelephonyFunctionKeyModify()) !== false) {
+if ($telephony->telephonyFunctionKeyModify(new \Ovh\StructType\TelephonyFunctionKeyModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -800,7 +800,7 @@ if ($telephony->telephonyFunctionKeyModify(new \PayPal\StructType\TelephonyFunct
 /**
  * Sample call for telephonyAbbreviatedNumberList operation/method
  */
-if ($telephony->telephonyAbbreviatedNumberList(new \PayPal\StructType\TelephonyAbbreviatedNumberList()) !== false) {
+if ($telephony->telephonyAbbreviatedNumberList(new \Ovh\StructType\TelephonyAbbreviatedNumberList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -808,7 +808,7 @@ if ($telephony->telephonyAbbreviatedNumberList(new \PayPal\StructType\TelephonyA
 /**
  * Sample call for telephonyFaxModifyPassword operation/method
  */
-if ($telephony->telephonyFaxModifyPassword(new \PayPal\StructType\TelephonyFaxModifyPassword()) !== false) {
+if ($telephony->telephonyFaxModifyPassword(new \Ovh\StructType\TelephonyFaxModifyPassword()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -816,7 +816,7 @@ if ($telephony->telephonyFaxModifyPassword(new \PayPal\StructType\TelephonyFaxMo
 /**
  * Sample call for telephonySmsDelete operation/method
  */
-if ($telephony->telephonySmsDelete(new \PayPal\StructType\TelephonySmsDelete()) !== false) {
+if ($telephony->telephonySmsDelete(new \Ovh\StructType\TelephonySmsDelete()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -824,7 +824,7 @@ if ($telephony->telephonySmsDelete(new \PayPal\StructType\TelephonySmsDelete()) 
 /**
  * Sample call for telephonyDirectoryModifyPublication operation/method
  */
-if ($telephony->telephonyDirectoryModifyPublication(new \PayPal\StructType\TelephonyDirectoryModifyPublication()) !== false) {
+if ($telephony->telephonyDirectoryModifyPublication(new \Ovh\StructType\TelephonyDirectoryModifyPublication()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -832,7 +832,7 @@ if ($telephony->telephonyDirectoryModifyPublication(new \PayPal\StructType\Telep
 /**
  * Sample call for telephonyPhonebookOnGroupAdd operation/method
  */
-if ($telephony->telephonyPhonebookOnGroupAdd(new \PayPal\StructType\TelephonyPhonebookOnGroupAdd()) !== false) {
+if ($telephony->telephonyPhonebookOnGroupAdd(new \Ovh\StructType\TelephonyPhonebookOnGroupAdd()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -840,7 +840,7 @@ if ($telephony->telephonyPhonebookOnGroupAdd(new \PayPal\StructType\TelephonyPho
 /**
  * Sample call for telephonyLineSwitchOfferPossibility operation/method
  */
-if ($telephony->telephonyLineSwitchOfferPossibility(new \PayPal\StructType\TelephonyLineSwitchOfferPossibility()) !== false) {
+if ($telephony->telephonyLineSwitchOfferPossibility(new \Ovh\StructType\TelephonyLineSwitchOfferPossibility()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -848,7 +848,7 @@ if ($telephony->telephonyLineSwitchOfferPossibility(new \PayPal\StructType\Telep
 /**
  * Sample call for telephonySmsSenderList operation/method
  */
-if ($telephony->telephonySmsSenderList(new \PayPal\StructType\TelephonySmsSenderList()) !== false) {
+if ($telephony->telephonySmsSenderList(new \Ovh\StructType\TelephonySmsSenderList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -856,7 +856,7 @@ if ($telephony->telephonySmsSenderList(new \PayPal\StructType\TelephonySmsSender
 /**
  * Sample call for telephonySipToAliasOffer operation/method
  */
-if ($telephony->telephonySipToAliasOffer(new \PayPal\StructType\TelephonySipToAliasOffer()) !== false) {
+if ($telephony->telephonySipToAliasOffer(new \Ovh\StructType\TelephonySipToAliasOffer()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -864,7 +864,7 @@ if ($telephony->telephonySipToAliasOffer(new \PayPal\StructType\TelephonySipToAl
 /**
  * Sample call for telephonyFunctionKeyList operation/method
  */
-if ($telephony->telephonyFunctionKeyList(new \PayPal\StructType\TelephonyFunctionKeyList()) !== false) {
+if ($telephony->telephonyFunctionKeyList(new \Ovh\StructType\TelephonyFunctionKeyList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -872,7 +872,7 @@ if ($telephony->telephonyFunctionKeyList(new \PayPal\StructType\TelephonyFunctio
 /**
  * Sample call for telephonySmsGetCallBack operation/method
  */
-if ($telephony->telephonySmsGetCallBack(new \PayPal\StructType\TelephonySmsGetCallBack()) !== false) {
+if ($telephony->telephonySmsGetCallBack(new \Ovh\StructType\TelephonySmsGetCallBack()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -880,7 +880,7 @@ if ($telephony->telephonySmsGetCallBack(new \PayPal\StructType\TelephonySmsGetCa
 /**
  * Sample call for telephonySviModify operation/method
  */
-if ($telephony->telephonySviModify(new \PayPal\StructType\TelephonySviModify()) !== false) {
+if ($telephony->telephonySviModify(new \Ovh\StructType\TelephonySviModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -888,7 +888,7 @@ if ($telephony->telephonySviModify(new \PayPal\StructType\TelephonySviModify()) 
 /**
  * Sample call for telephonySmsplusServiceDelete operation/method
  */
-if ($telephony->telephonySmsplusServiceDelete(new \PayPal\StructType\TelephonySmsplusServiceDelete()) !== false) {
+if ($telephony->telephonySmsplusServiceDelete(new \Ovh\StructType\TelephonySmsplusServiceDelete()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -896,7 +896,7 @@ if ($telephony->telephonySmsplusServiceDelete(new \PayPal\StructType\TelephonySm
 /**
  * Sample call for telephonyLineSwitchOffer operation/method
  */
-if ($telephony->telephonyLineSwitchOffer(new \PayPal\StructType\TelephonyLineSwitchOffer()) !== false) {
+if ($telephony->telephonyLineSwitchOffer(new \Ovh\StructType\TelephonyLineSwitchOffer()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -904,7 +904,7 @@ if ($telephony->telephonyLineSwitchOffer(new \PayPal\StructType\TelephonyLineSwi
 /**
  * Sample call for telephonyTrunkExternalDisplayedNumberCheck operation/method
  */
-if ($telephony->telephonyTrunkExternalDisplayedNumberCheck(new \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberCheck()) !== false) {
+if ($telephony->telephonyTrunkExternalDisplayedNumberCheck(new \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberCheck()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -912,7 +912,7 @@ if ($telephony->telephonyTrunkExternalDisplayedNumberCheck(new \PayPal\StructTyp
 /**
  * Sample call for telephonyDelClosureEvents operation/method
  */
-if ($telephony->telephonyDelClosureEvents(new \PayPal\StructType\TelephonyDelClosureEvents()) !== false) {
+if ($telephony->telephonyDelClosureEvents(new \Ovh\StructType\TelephonyDelClosureEvents()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -920,7 +920,7 @@ if ($telephony->telephonyDelClosureEvents(new \PayPal\StructType\TelephonyDelClo
 /**
  * Sample call for telephonyFreefaxToVoicefaxCheckList operation/method
  */
-if ($telephony->telephonyFreefaxToVoicefaxCheckList(new \PayPal\StructType\TelephonyFreefaxToVoicefaxCheckList()) !== false) {
+if ($telephony->telephonyFreefaxToVoicefaxCheckList(new \Ovh\StructType\TelephonyFreefaxToVoicefaxCheckList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -928,7 +928,7 @@ if ($telephony->telephonyFreefaxToVoicefaxCheckList(new \PayPal\StructType\Telep
 /**
  * Sample call for telephonyVoicemailModifyPassword operation/method
  */
-if ($telephony->telephonyVoicemailModifyPassword(new \PayPal\StructType\TelephonyVoicemailModifyPassword()) !== false) {
+if ($telephony->telephonyVoicemailModifyPassword(new \Ovh\StructType\TelephonyVoicemailModifyPassword()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -936,7 +936,7 @@ if ($telephony->telephonyVoicemailModifyPassword(new \PayPal\StructType\Telephon
 /**
  * Sample call for telephonySpareCapabilities operation/method
  */
-if ($telephony->telephonySpareCapabilities(new \PayPal\StructType\TelephonySpareCapabilities()) !== false) {
+if ($telephony->telephonySpareCapabilities(new \Ovh\StructType\TelephonySpareCapabilities()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -944,7 +944,7 @@ if ($telephony->telephonySpareCapabilities(new \PayPal\StructType\TelephonySpare
 /**
  * Sample call for telephonyPhonebookOnSmsDel operation/method
  */
-if ($telephony->telephonyPhonebookOnSmsDel(new \PayPal\StructType\TelephonyPhonebookOnSmsDel()) !== false) {
+if ($telephony->telephonyPhonebookOnSmsDel(new \Ovh\StructType\TelephonyPhonebookOnSmsDel()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -952,7 +952,7 @@ if ($telephony->telephonyPhonebookOnSmsDel(new \PayPal\StructType\TelephonyPhone
 /**
  * Sample call for telephonyPhonebookShare operation/method
  */
-if ($telephony->telephonyPhonebookShare(new \PayPal\StructType\TelephonyPhonebookShare()) !== false) {
+if ($telephony->telephonyPhonebookShare(new \Ovh\StructType\TelephonyPhonebookShare()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -960,7 +960,7 @@ if ($telephony->telephonyPhonebookShare(new \PayPal\StructType\TelephonyPhoneboo
 /**
  * Sample call for telephonySmsSetUserQuota operation/method
  */
-if ($telephony->telephonySmsSetUserQuota(new \PayPal\StructType\TelephonySmsSetUserQuota()) !== false) {
+if ($telephony->telephonySmsSetUserQuota(new \Ovh\StructType\TelephonySmsSetUserQuota()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -968,7 +968,7 @@ if ($telephony->telephonySmsSetUserQuota(new \PayPal\StructType\TelephonySmsSetU
 /**
  * Sample call for telephonySmsHistoryCsv operation/method
  */
-if ($telephony->telephonySmsHistoryCsv(new \PayPal\StructType\TelephonySmsHistoryCsv()) !== false) {
+if ($telephony->telephonySmsHistoryCsv(new \Ovh\StructType\TelephonySmsHistoryCsv()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -976,7 +976,7 @@ if ($telephony->telephonySmsHistoryCsv(new \PayPal\StructType\TelephonySmsHistor
 /**
  * Sample call for telephonyAbbreviatedNumberOnGroupList operation/method
  */
-if ($telephony->telephonyAbbreviatedNumberOnGroupList(new \PayPal\StructType\TelephonyAbbreviatedNumberOnGroupList()) !== false) {
+if ($telephony->telephonyAbbreviatedNumberOnGroupList(new \Ovh\StructType\TelephonyAbbreviatedNumberOnGroupList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -984,7 +984,7 @@ if ($telephony->telephonyAbbreviatedNumberOnGroupList(new \PayPal\StructType\Tel
 /**
  * Sample call for telephonyLineLogs operation/method
  */
-if ($telephony->telephonyLineLogs(new \PayPal\StructType\TelephonyLineLogs()) !== false) {
+if ($telephony->telephonyLineLogs(new \Ovh\StructType\TelephonyLineLogs()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -992,7 +992,7 @@ if ($telephony->telephonyLineLogs(new \PayPal\StructType\TelephonyLineLogs()) !=
 /**
  * Sample call for telephonySpareReplace operation/method
  */
-if ($telephony->telephonySpareReplace(new \PayPal\StructType\TelephonySpareReplace()) !== false) {
+if ($telephony->telephonySpareReplace(new \Ovh\StructType\TelephonySpareReplace()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1000,7 +1000,7 @@ if ($telephony->telephonySpareReplace(new \PayPal\StructType\TelephonySpareRepla
 /**
  * Sample call for telephonyClick2CallUserList operation/method
  */
-if ($telephony->telephonyClick2CallUserList(new \PayPal\StructType\TelephonyClick2CallUserList()) !== false) {
+if ($telephony->telephonyClick2CallUserList(new \Ovh\StructType\TelephonyClick2CallUserList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1008,7 +1008,7 @@ if ($telephony->telephonyClick2CallUserList(new \PayPal\StructType\TelephonyClic
 /**
  * Sample call for telephonyVoicemailMailboxList operation/method
  */
-if ($telephony->telephonyVoicemailMailboxList(new \PayPal\StructType\TelephonyVoicemailMailboxList()) !== false) {
+if ($telephony->telephonyVoicemailMailboxList(new \Ovh\StructType\TelephonyVoicemailMailboxList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1016,7 +1016,7 @@ if ($telephony->telephonyVoicemailMailboxList(new \PayPal\StructType\TelephonyVo
 /**
  * Sample call for telephonyFaxCampaignDetails operation/method
  */
-if ($telephony->telephonyFaxCampaignDetails(new \PayPal\StructType\TelephonyFaxCampaignDetails()) !== false) {
+if ($telephony->telephonyFaxCampaignDetails(new \Ovh\StructType\TelephonyFaxCampaignDetails()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1024,7 +1024,7 @@ if ($telephony->telephonyFaxCampaignDetails(new \PayPal\StructType\TelephonyFaxC
 /**
  * Sample call for telephonyPhonebookOnGroupDel operation/method
  */
-if ($telephony->telephonyPhonebookOnGroupDel(new \PayPal\StructType\TelephonyPhonebookOnGroupDel()) !== false) {
+if ($telephony->telephonyPhonebookOnGroupDel(new \Ovh\StructType\TelephonyPhonebookOnGroupDel()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1032,7 +1032,7 @@ if ($telephony->telephonyPhonebookOnGroupDel(new \PayPal\StructType\TelephonyPho
 /**
  * Sample call for telephonyPhonebookOnGroupList operation/method
  */
-if ($telephony->telephonyPhonebookOnGroupList(new \PayPal\StructType\TelephonyPhonebookOnGroupList()) !== false) {
+if ($telephony->telephonyPhonebookOnGroupList(new \Ovh\StructType\TelephonyPhonebookOnGroupList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1040,7 +1040,7 @@ if ($telephony->telephonyPhonebookOnGroupList(new \PayPal\StructType\TelephonyPh
 /**
  * Sample call for telephonySpecialNumberCustomList operation/method
  */
-if ($telephony->telephonySpecialNumberCustomList(new \PayPal\StructType\TelephonySpecialNumberCustomList()) !== false) {
+if ($telephony->telephonySpecialNumberCustomList(new \Ovh\StructType\TelephonySpecialNumberCustomList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1048,7 +1048,7 @@ if ($telephony->telephonySpecialNumberCustomList(new \PayPal\StructType\Telephon
 /**
  * Sample call for telephonyFMHuntingModificationSimultaneousCalls operation/method
  */
-if ($telephony->telephonyFMHuntingModificationSimultaneousCalls(new \PayPal\StructType\TelephonyFMHuntingModificationSimultaneousCalls()) !== false) {
+if ($telephony->telephonyFMHuntingModificationSimultaneousCalls(new \Ovh\StructType\TelephonyFMHuntingModificationSimultaneousCalls()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1056,7 +1056,7 @@ if ($telephony->telephonyFMHuntingModificationSimultaneousCalls(new \PayPal\Stru
 /**
  * Sample call for telephonyVoicemailMailboxDownload operation/method
  */
-if ($telephony->telephonyVoicemailMailboxDownload(new \PayPal\StructType\TelephonyVoicemailMailboxDownload()) !== false) {
+if ($telephony->telephonyVoicemailMailboxDownload(new \Ovh\StructType\TelephonyVoicemailMailboxDownload()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1064,7 +1064,7 @@ if ($telephony->telephonyVoicemailMailboxDownload(new \PayPal\StructType\Telepho
 /**
  * Sample call for telephonyNicGetIpRestriction operation/method
  */
-if ($telephony->telephonyNicGetIpRestriction(new \PayPal\StructType\TelephonyNicGetIpRestriction()) !== false) {
+if ($telephony->telephonyNicGetIpRestriction(new \Ovh\StructType\TelephonyNicGetIpRestriction()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1072,7 +1072,7 @@ if ($telephony->telephonyNicGetIpRestriction(new \PayPal\StructType\TelephonyNic
 /**
  * Sample call for telephonyGetClosureEventsAsArray operation/method
  */
-if ($telephony->telephonyGetClosureEventsAsArray(new \PayPal\StructType\TelephonyGetClosureEventsAsArray()) !== false) {
+if ($telephony->telephonyGetClosureEventsAsArray(new \Ovh\StructType\TelephonyGetClosureEventsAsArray()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1080,7 +1080,7 @@ if ($telephony->telephonyGetClosureEventsAsArray(new \PayPal\StructType\Telephon
 /**
  * Sample call for telephonyPhonebookOnSmsContactDel operation/method
  */
-if ($telephony->telephonyPhonebookOnSmsContactDel(new \PayPal\StructType\TelephonyPhonebookOnSmsContactDel()) !== false) {
+if ($telephony->telephonyPhonebookOnSmsContactDel(new \Ovh\StructType\TelephonyPhonebookOnSmsContactDel()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1088,7 +1088,7 @@ if ($telephony->telephonyPhonebookOnSmsContactDel(new \PayPal\StructType\Telepho
 /**
  * Sample call for telephonyReversmentsRefundIsPending operation/method
  */
-if ($telephony->telephonyReversmentsRefundIsPending(new \PayPal\StructType\TelephonyReversmentsRefundIsPending()) !== false) {
+if ($telephony->telephonyReversmentsRefundIsPending(new \Ovh\StructType\TelephonyReversmentsRefundIsPending()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1096,7 +1096,7 @@ if ($telephony->telephonyReversmentsRefundIsPending(new \PayPal\StructType\Telep
 /**
  * Sample call for telephonyScreenListInfoModify operation/method
  */
-if ($telephony->telephonyScreenListInfoModify(new \PayPal\StructType\TelephonyScreenListInfoModify()) !== false) {
+if ($telephony->telephonyScreenListInfoModify(new \Ovh\StructType\TelephonyScreenListInfoModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1104,7 +1104,7 @@ if ($telephony->telephonyScreenListInfoModify(new \PayPal\StructType\TelephonySc
 /**
  * Sample call for telephonySmsplusServiceReversableTicketsList operation/method
  */
-if ($telephony->telephonySmsplusServiceReversableTicketsList(new \PayPal\StructType\TelephonySmsplusServiceReversableTicketsList()) !== false) {
+if ($telephony->telephonySmsplusServiceReversableTicketsList(new \Ovh\StructType\TelephonySmsplusServiceReversableTicketsList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1112,7 +1112,7 @@ if ($telephony->telephonySmsplusServiceReversableTicketsList(new \PayPal\StructT
 /**
  * Sample call for telephonyHuntingGenericScreenStatusModify operation/method
  */
-if ($telephony->telephonyHuntingGenericScreenStatusModify(new \PayPal\StructType\TelephonyHuntingGenericScreenStatusModify()) !== false) {
+if ($telephony->telephonyHuntingGenericScreenStatusModify(new \Ovh\StructType\TelephonyHuntingGenericScreenStatusModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1120,7 +1120,7 @@ if ($telephony->telephonyHuntingGenericScreenStatusModify(new \PayPal\StructType
 /**
  * Sample call for telephonySmsBlacklistedSendersList operation/method
  */
-if ($telephony->telephonySmsBlacklistedSendersList(new \PayPal\StructType\TelephonySmsBlacklistedSendersList()) !== false) {
+if ($telephony->telephonySmsBlacklistedSendersList(new \Ovh\StructType\TelephonySmsBlacklistedSendersList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1128,7 +1128,7 @@ if ($telephony->telephonySmsBlacklistedSendersList(new \PayPal\StructType\Teleph
 /**
  * Sample call for telephonyPhonebookContactAdd operation/method
  */
-if ($telephony->telephonyPhonebookContactAdd(new \PayPal\StructType\TelephonyPhonebookContactAdd()) !== false) {
+if ($telephony->telephonyPhonebookContactAdd(new \Ovh\StructType\TelephonyPhonebookContactAdd()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1136,7 +1136,7 @@ if ($telephony->telephonyPhonebookContactAdd(new \PayPal\StructType\TelephonyPho
 /**
  * Sample call for telephonyPortabilityOrderSpecialNumber operation/method
  */
-if ($telephony->telephonyPortabilityOrderSpecialNumber(new \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber()) !== false) {
+if ($telephony->telephonyPortabilityOrderSpecialNumber(new \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1144,7 +1144,7 @@ if ($telephony->telephonyPortabilityOrderSpecialNumber(new \PayPal\StructType\Te
 /**
  * Sample call for telephonySmsUserSetCallBack operation/method
  */
-if ($telephony->telephonySmsUserSetCallBack(new \PayPal\StructType\TelephonySmsUserSetCallBack()) !== false) {
+if ($telephony->telephonySmsUserSetCallBack(new \Ovh\StructType\TelephonySmsUserSetCallBack()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1152,7 +1152,7 @@ if ($telephony->telephonySmsUserSetCallBack(new \PayPal\StructType\TelephonySmsU
 /**
  * Sample call for telephonyPhonebookOnGroupModify operation/method
  */
-if ($telephony->telephonyPhonebookOnGroupModify(new \PayPal\StructType\TelephonyPhonebookOnGroupModify()) !== false) {
+if ($telephony->telephonyPhonebookOnGroupModify(new \Ovh\StructType\TelephonyPhonebookOnGroupModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1160,7 +1160,7 @@ if ($telephony->telephonyPhonebookOnGroupModify(new \PayPal\StructType\Telephony
 /**
  * Sample call for telephonyLineSwitchOldOfferPossibility operation/method
  */
-if ($telephony->telephonyLineSwitchOldOfferPossibility(new \PayPal\StructType\TelephonyLineSwitchOldOfferPossibility()) !== false) {
+if ($telephony->telephonyLineSwitchOldOfferPossibility(new \Ovh\StructType\TelephonyLineSwitchOldOfferPossibility()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1168,7 +1168,7 @@ if ($telephony->telephonyLineSwitchOldOfferPossibility(new \PayPal\StructType\Te
 /**
  * Sample call for telephonySmsplusServiceList operation/method
  */
-if ($telephony->telephonySmsplusServiceList(new \PayPal\StructType\TelephonySmsplusServiceList()) !== false) {
+if ($telephony->telephonySmsplusServiceList(new \Ovh\StructType\TelephonySmsplusServiceList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1177,7 +1177,7 @@ if ($telephony->telephonySmsplusServiceList(new \PayPal\StructType\TelephonySmsp
  * Sample call for telephonyHuntingModificationAnonymousCallRejection
  * operation/method
  */
-if ($telephony->telephonyHuntingModificationAnonymousCallRejection(new \PayPal\StructType\TelephonyHuntingModificationAnonymousCallRejection()) !== false) {
+if ($telephony->telephonyHuntingModificationAnonymousCallRejection(new \Ovh\StructType\TelephonyHuntingModificationAnonymousCallRejection()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1185,7 +1185,7 @@ if ($telephony->telephonyHuntingModificationAnonymousCallRejection(new \PayPal\S
 /**
  * Sample call for telephonyNumberGetBillingAccount operation/method
  */
-if ($telephony->telephonyNumberGetBillingAccount(new \PayPal\StructType\TelephonyNumberGetBillingAccount()) !== false) {
+if ($telephony->telephonyNumberGetBillingAccount(new \Ovh\StructType\TelephonyNumberGetBillingAccount()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1193,7 +1193,7 @@ if ($telephony->telephonyNumberGetBillingAccount(new \PayPal\StructType\Telephon
 /**
  * Sample call for telephonyTonesOptionsList operation/method
  */
-if ($telephony->telephonyTonesOptionsList(new \PayPal\StructType\TelephonyTonesOptionsList()) !== false) {
+if ($telephony->telephonyTonesOptionsList(new \Ovh\StructType\TelephonyTonesOptionsList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1201,7 +1201,7 @@ if ($telephony->telephonyTonesOptionsList(new \PayPal\StructType\TelephonyTonesO
 /**
  * Sample call for telephonySpareList operation/method
  */
-if ($telephony->telephonySpareList(new \PayPal\StructType\TelephonySpareList()) !== false) {
+if ($telephony->telephonySpareList(new \Ovh\StructType\TelephonySpareList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1209,7 +1209,7 @@ if ($telephony->telephonySpareList(new \PayPal\StructType\TelephonySpareList()) 
 /**
  * Sample call for telephonyListSummationCallsFromNumber operation/method
  */
-if ($telephony->telephonyListSummationCallsFromNumber(new \PayPal\StructType\TelephonyListSummationCallsFromNumber()) !== false) {
+if ($telephony->telephonyListSummationCallsFromNumber(new \Ovh\StructType\TelephonyListSummationCallsFromNumber()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1217,7 +1217,7 @@ if ($telephony->telephonyListSummationCallsFromNumber(new \PayPal\StructType\Tel
 /**
  * Sample call for telephonyConferenceGetParams operation/method
  */
-if ($telephony->telephonyConferenceGetParams(new \PayPal\StructType\TelephonyConferenceGetParams()) !== false) {
+if ($telephony->telephonyConferenceGetParams(new \Ovh\StructType\TelephonyConferenceGetParams()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1225,7 +1225,7 @@ if ($telephony->telephonyConferenceGetParams(new \PayPal\StructType\TelephonyCon
 /**
  * Sample call for telephonyPhonebookContactModify operation/method
  */
-if ($telephony->telephonyPhonebookContactModify(new \PayPal\StructType\TelephonyPhonebookContactModify()) !== false) {
+if ($telephony->telephonyPhonebookContactModify(new \Ovh\StructType\TelephonyPhonebookContactModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1233,7 +1233,7 @@ if ($telephony->telephonyPhonebookContactModify(new \PayPal\StructType\Telephony
 /**
  * Sample call for telephonyLineList operation/method
  */
-if ($telephony->telephonyLineList(new \PayPal\StructType\TelephonyLineList()) !== false) {
+if ($telephony->telephonyLineList(new \Ovh\StructType\TelephonyLineList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1241,7 +1241,7 @@ if ($telephony->telephonyLineList(new \PayPal\StructType\TelephonyLineList()) !=
 /**
  * Sample call for telephonyLineOptionsModify operation/method
  */
-if ($telephony->telephonyLineOptionsModify(new \PayPal\StructType\TelephonyLineOptionsModify()) !== false) {
+if ($telephony->telephonyLineOptionsModify(new \Ovh\StructType\TelephonyLineOptionsModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1249,7 +1249,7 @@ if ($telephony->telephonyLineOptionsModify(new \PayPal\StructType\TelephonyLineO
 /**
  * Sample call for telephonyHuntingGenericScreenSet operation/method
  */
-if ($telephony->telephonyHuntingGenericScreenSet(new \PayPal\StructType\TelephonyHuntingGenericScreenSet()) !== false) {
+if ($telephony->telephonyHuntingGenericScreenSet(new \Ovh\StructType\TelephonyHuntingGenericScreenSet()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1257,7 +1257,7 @@ if ($telephony->telephonyHuntingGenericScreenSet(new \PayPal\StructType\Telephon
 /**
  * Sample call for telephonyFaxCampaignStartStop operation/method
  */
-if ($telephony->telephonyFaxCampaignStartStop(new \PayPal\StructType\TelephonyFaxCampaignStartStop()) !== false) {
+if ($telephony->telephonyFaxCampaignStartStop(new \Ovh\StructType\TelephonyFaxCampaignStartStop()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1265,7 +1265,7 @@ if ($telephony->telephonyFaxCampaignStartStop(new \PayPal\StructType\TelephonyFa
 /**
  * Sample call for telephonyDirectoryModifyAddress operation/method
  */
-if ($telephony->telephonyDirectoryModifyAddress(new \PayPal\StructType\TelephonyDirectoryModifyAddress()) !== false) {
+if ($telephony->telephonyDirectoryModifyAddress(new \Ovh\StructType\TelephonyDirectoryModifyAddress()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1273,7 +1273,7 @@ if ($telephony->telephonyDirectoryModifyAddress(new \PayPal\StructType\Telephony
 /**
  * Sample call for telephonyNicSetMgcpIpRestriction operation/method
  */
-if ($telephony->telephonyNicSetMgcpIpRestriction(new \PayPal\StructType\TelephonyNicSetMgcpIpRestriction()) !== false) {
+if ($telephony->telephonyNicSetMgcpIpRestriction(new \Ovh\StructType\TelephonyNicSetMgcpIpRestriction()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1281,7 +1281,7 @@ if ($telephony->telephonyNicSetMgcpIpRestriction(new \PayPal\StructType\Telephon
 /**
  * Sample call for telephonySecurityDepositCredit operation/method
  */
-if ($telephony->telephonySecurityDepositCredit(new \PayPal\StructType\TelephonySecurityDepositCredit()) !== false) {
+if ($telephony->telephonySecurityDepositCredit(new \Ovh\StructType\TelephonySecurityDepositCredit()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1289,7 +1289,7 @@ if ($telephony->telephonySecurityDepositCredit(new \PayPal\StructType\TelephonyS
 /**
  * Sample call for telephonyLineOrder operation/method
  */
-if ($telephony->telephonyLineOrder(new \PayPal\StructType\TelephonyLineOrder()) !== false) {
+if ($telephony->telephonyLineOrder(new \Ovh\StructType\TelephonyLineOrder()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1297,7 +1297,7 @@ if ($telephony->telephonyLineOrder(new \PayPal\StructType\TelephonyLineOrder()) 
 /**
  * Sample call for telephonyConferenceAction operation/method
  */
-if ($telephony->telephonyConferenceAction(new \PayPal\StructType\TelephonyConferenceAction()) !== false) {
+if ($telephony->telephonyConferenceAction(new \Ovh\StructType\TelephonyConferenceAction()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1305,7 +1305,7 @@ if ($telephony->telephonyConferenceAction(new \PayPal\StructType\TelephonyConfer
 /**
  * Sample call for telephonyFunctionKeyDel operation/method
  */
-if ($telephony->telephonyFunctionKeyDel(new \PayPal\StructType\TelephonyFunctionKeyDel()) !== false) {
+if ($telephony->telephonyFunctionKeyDel(new \Ovh\StructType\TelephonyFunctionKeyDel()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1313,7 +1313,7 @@ if ($telephony->telephonyFunctionKeyDel(new \PayPal\StructType\TelephonyFunction
 /**
  * Sample call for telephonyNicGetSipDomain operation/method
  */
-if ($telephony->telephonyNicGetSipDomain(new \PayPal\StructType\TelephonyNicGetSipDomain()) !== false) {
+if ($telephony->telephonyNicGetSipDomain(new \Ovh\StructType\TelephonyNicGetSipDomain()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1321,7 +1321,7 @@ if ($telephony->telephonyNicGetSipDomain(new \PayPal\StructType\TelephonyNicGetS
 /**
  * Sample call for telephonyGetClosureEventsAsICS operation/method
  */
-if ($telephony->telephonyGetClosureEventsAsICS(new \PayPal\StructType\TelephonyGetClosureEventsAsICS()) !== false) {
+if ($telephony->telephonyGetClosureEventsAsICS(new \Ovh\StructType\TelephonyGetClosureEventsAsICS()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1329,7 +1329,7 @@ if ($telephony->telephonyGetClosureEventsAsICS(new \PayPal\StructType\TelephonyG
 /**
  * Sample call for telephonySmsUserCreditLeft operation/method
  */
-if ($telephony->telephonySmsUserCreditLeft(new \PayPal\StructType\TelephonySmsUserCreditLeft()) !== false) {
+if ($telephony->telephonySmsUserCreditLeft(new \Ovh\StructType\TelephonySmsUserCreditLeft()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1337,7 +1337,7 @@ if ($telephony->telephonySmsUserCreditLeft(new \PayPal\StructType\TelephonySmsUs
 /**
  * Sample call for telephonyPortabilityOrder operation/method
  */
-if ($telephony->telephonyPortabilityOrder(new \PayPal\StructType\TelephonyPortabilityOrder()) !== false) {
+if ($telephony->telephonyPortabilityOrder(new \Ovh\StructType\TelephonyPortabilityOrder()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1345,7 +1345,7 @@ if ($telephony->telephonyPortabilityOrder(new \PayPal\StructType\TelephonyPortab
 /**
  * Sample call for telephonyVoicemailMailboxDelete operation/method
  */
-if ($telephony->telephonyVoicemailMailboxDelete(new \PayPal\StructType\TelephonyVoicemailMailboxDelete()) !== false) {
+if ($telephony->telephonyVoicemailMailboxDelete(new \Ovh\StructType\TelephonyVoicemailMailboxDelete()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1353,7 +1353,7 @@ if ($telephony->telephonyVoicemailMailboxDelete(new \PayPal\StructType\Telephony
 /**
  * Sample call for telephonyBillingAccountDel operation/method
  */
-if ($telephony->telephonyBillingAccountDel(new \PayPal\StructType\TelephonyBillingAccountDel()) !== false) {
+if ($telephony->telephonyBillingAccountDel(new \Ovh\StructType\TelephonyBillingAccountDel()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1361,7 +1361,7 @@ if ($telephony->telephonyBillingAccountDel(new \PayPal\StructType\TelephonyBilli
 /**
  * Sample call for telephonyNumberClean operation/method
  */
-if ($telephony->telephonyNumberClean(new \PayPal\StructType\TelephonyNumberClean()) !== false) {
+if ($telephony->telephonyNumberClean(new \Ovh\StructType\TelephonyNumberClean()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1369,7 +1369,7 @@ if ($telephony->telephonyNumberClean(new \PayPal\StructType\TelephonyNumberClean
 /**
  * Sample call for telephonyPlugAndPhoneOperation operation/method
  */
-if ($telephony->telephonyPlugAndPhoneOperation(new \PayPal\StructType\TelephonyPlugAndPhoneOperation()) !== false) {
+if ($telephony->telephonyPlugAndPhoneOperation(new \Ovh\StructType\TelephonyPlugAndPhoneOperation()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1377,7 +1377,7 @@ if ($telephony->telephonyPlugAndPhoneOperation(new \PayPal\StructType\TelephonyP
 /**
  * Sample call for telephonyPhonebookOnSmsContactModify operation/method
  */
-if ($telephony->telephonyPhonebookOnSmsContactModify(new \PayPal\StructType\TelephonyPhonebookOnSmsContactModify()) !== false) {
+if ($telephony->telephonyPhonebookOnSmsContactModify(new \Ovh\StructType\TelephonyPhonebookOnSmsContactModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1385,7 +1385,7 @@ if ($telephony->telephonyPhonebookOnSmsContactModify(new \PayPal\StructType\Tele
 /**
  * Sample call for telephonyPhonebookOnSmsModify operation/method
  */
-if ($telephony->telephonyPhonebookOnSmsModify(new \PayPal\StructType\TelephonyPhonebookOnSmsModify()) !== false) {
+if ($telephony->telephonyPhonebookOnSmsModify(new \Ovh\StructType\TelephonyPhonebookOnSmsModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1393,7 +1393,7 @@ if ($telephony->telephonyPhonebookOnSmsModify(new \PayPal\StructType\TelephonyPh
 /**
  * Sample call for telephonySmsSetQuotaNotification operation/method
  */
-if ($telephony->telephonySmsSetQuotaNotification(new \PayPal\StructType\TelephonySmsSetQuotaNotification()) !== false) {
+if ($telephony->telephonySmsSetQuotaNotification(new \Ovh\StructType\TelephonySmsSetQuotaNotification()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1401,7 +1401,7 @@ if ($telephony->telephonySmsSetQuotaNotification(new \PayPal\StructType\Telephon
 /**
  * Sample call for telephonySmsUserList operation/method
  */
-if ($telephony->telephonySmsUserList(new \PayPal\StructType\TelephonySmsUserList()) !== false) {
+if ($telephony->telephonySmsUserList(new \Ovh\StructType\TelephonySmsUserList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1409,7 +1409,7 @@ if ($telephony->telephonySmsUserList(new \PayPal\StructType\TelephonySmsUserList
 /**
  * Sample call for telephonyHuntingInfo operation/method
  */
-if ($telephony->telephonyHuntingInfo(new \PayPal\StructType\TelephonyHuntingInfo()) !== false) {
+if ($telephony->telephonyHuntingInfo(new \Ovh\StructType\TelephonyHuntingInfo()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1417,7 +1417,7 @@ if ($telephony->telephonyHuntingInfo(new \PayPal\StructType\TelephonyHuntingInfo
 /**
  * Sample call for telephonyPhonebookContactList operation/method
  */
-if ($telephony->telephonyPhonebookContactList(new \PayPal\StructType\TelephonyPhonebookContactList()) !== false) {
+if ($telephony->telephonyPhonebookContactList(new \Ovh\StructType\TelephonyPhonebookContactList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1425,7 +1425,7 @@ if ($telephony->telephonyPhonebookContactList(new \PayPal\StructType\TelephonyPh
 /**
  * Sample call for telephonySmsUserPassword operation/method
  */
-if ($telephony->telephonySmsUserPassword(new \PayPal\StructType\TelephonySmsUserPassword()) !== false) {
+if ($telephony->telephonySmsUserPassword(new \Ovh\StructType\TelephonySmsUserPassword()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1433,7 +1433,7 @@ if ($telephony->telephonySmsUserPassword(new \PayPal\StructType\TelephonySmsUser
 /**
  * Sample call for telephonyLineGetOfferPrices operation/method
  */
-if ($telephony->telephonyLineGetOfferPrices(new \PayPal\StructType\TelephonyLineGetOfferPrices()) !== false) {
+if ($telephony->telephonyLineGetOfferPrices(new \Ovh\StructType\TelephonyLineGetOfferPrices()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1441,7 +1441,7 @@ if ($telephony->telephonyLineGetOfferPrices(new \PayPal\StructType\TelephonyLine
 /**
  * Sample call for telephonySmsGetQuotaNotification operation/method
  */
-if ($telephony->telephonySmsGetQuotaNotification(new \PayPal\StructType\TelephonySmsGetQuotaNotification()) !== false) {
+if ($telephony->telephonySmsGetQuotaNotification(new \Ovh\StructType\TelephonySmsGetQuotaNotification()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1449,7 +1449,7 @@ if ($telephony->telephonySmsGetQuotaNotification(new \PayPal\StructType\Telephon
 /**
  * Sample call for telephonyHuntingModificationMode operation/method
  */
-if ($telephony->telephonyHuntingModificationMode(new \PayPal\StructType\TelephonyHuntingModificationMode()) !== false) {
+if ($telephony->telephonyHuntingModificationMode(new \Ovh\StructType\TelephonyHuntingModificationMode()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1457,7 +1457,7 @@ if ($telephony->telephonyHuntingModificationMode(new \PayPal\StructType\Telephon
 /**
  * Sample call for telephonyScreenListBlackWhiteChoice operation/method
  */
-if ($telephony->telephonyScreenListBlackWhiteChoice(new \PayPal\StructType\TelephonyScreenListBlackWhiteChoice()) !== false) {
+if ($telephony->telephonyScreenListBlackWhiteChoice(new \Ovh\StructType\TelephonyScreenListBlackWhiteChoice()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1465,7 +1465,7 @@ if ($telephony->telephonyScreenListBlackWhiteChoice(new \PayPal\StructType\Telep
 /**
  * Sample call for telephonySmsDeleteCsvAttachment operation/method
  */
-if ($telephony->telephonySmsDeleteCsvAttachment(new \PayPal\StructType\TelephonySmsDeleteCsvAttachment()) !== false) {
+if ($telephony->telephonySmsDeleteCsvAttachment(new \Ovh\StructType\TelephonySmsDeleteCsvAttachment()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1473,7 +1473,7 @@ if ($telephony->telephonySmsDeleteCsvAttachment(new \PayPal\StructType\Telephony
 /**
  * Sample call for telephonyNumberZoneAndPrefixList operation/method
  */
-if ($telephony->telephonyNumberZoneAndPrefixList(new \PayPal\StructType\TelephonyNumberZoneAndPrefixList()) !== false) {
+if ($telephony->telephonyNumberZoneAndPrefixList(new \Ovh\StructType\TelephonyNumberZoneAndPrefixList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1481,7 +1481,7 @@ if ($telephony->telephonyNumberZoneAndPrefixList(new \PayPal\StructType\Telephon
 /**
  * Sample call for telephonyLineSetSipDomain operation/method
  */
-if ($telephony->telephonyLineSetSipDomain(new \PayPal\StructType\TelephonyLineSetSipDomain()) !== false) {
+if ($telephony->telephonyLineSetSipDomain(new \Ovh\StructType\TelephonyLineSetSipDomain()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1489,7 +1489,7 @@ if ($telephony->telephonyLineSetSipDomain(new \PayPal\StructType\TelephonyLineSe
 /**
  * Sample call for telephonyTrunkExternalDisplayedNumberDel operation/method
  */
-if ($telephony->telephonyTrunkExternalDisplayedNumberDel(new \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberDel()) !== false) {
+if ($telephony->telephonyTrunkExternalDisplayedNumberDel(new \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberDel()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1497,7 +1497,7 @@ if ($telephony->telephonyTrunkExternalDisplayedNumberDel(new \PayPal\StructType\
 /**
  * Sample call for telephonyPhonebookOnGroupContactList operation/method
  */
-if ($telephony->telephonyPhonebookOnGroupContactList(new \PayPal\StructType\TelephonyPhonebookOnGroupContactList()) !== false) {
+if ($telephony->telephonyPhonebookOnGroupContactList(new \Ovh\StructType\TelephonyPhonebookOnGroupContactList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1505,7 +1505,7 @@ if ($telephony->telephonyPhonebookOnGroupContactList(new \PayPal\StructType\Tele
 /**
  * Sample call for telephonySmsplusServiceReversableTicketsSummary operation/method
  */
-if ($telephony->telephonySmsplusServiceReversableTicketsSummary(new \PayPal\StructType\TelephonySmsplusServiceReversableTicketsSummary()) !== false) {
+if ($telephony->telephonySmsplusServiceReversableTicketsSummary(new \Ovh\StructType\TelephonySmsplusServiceReversableTicketsSummary()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1513,7 +1513,7 @@ if ($telephony->telephonySmsplusServiceReversableTicketsSummary(new \PayPal\Stru
 /**
  * Sample call for telephonyDeleteLine operation/method
  */
-if ($telephony->telephonyDeleteLine(new \PayPal\StructType\TelephonyDeleteLine()) !== false) {
+if ($telephony->telephonyDeleteLine(new \Ovh\StructType\TelephonyDeleteLine()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1521,7 +1521,7 @@ if ($telephony->telephonyDeleteLine(new \PayPal\StructType\TelephonyDeleteLine()
 /**
  * Sample call for telephonySetTimeZoneNumber operation/method
  */
-if ($telephony->telephonySetTimeZoneNumber(new \PayPal\StructType\TelephonySetTimeZoneNumber()) !== false) {
+if ($telephony->telephonySetTimeZoneNumber(new \Ovh\StructType\TelephonySetTimeZoneNumber()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1529,7 +1529,7 @@ if ($telephony->telephonySetTimeZoneNumber(new \PayPal\StructType\TelephonySetTi
 /**
  * Sample call for telephonyNicSetIpRestriction operation/method
  */
-if ($telephony->telephonyNicSetIpRestriction(new \PayPal\StructType\TelephonyNicSetIpRestriction()) !== false) {
+if ($telephony->telephonyNicSetIpRestriction(new \Ovh\StructType\TelephonyNicSetIpRestriction()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1537,7 +1537,7 @@ if ($telephony->telephonyNicSetIpRestriction(new \PayPal\StructType\TelephonyNic
 /**
  * Sample call for telephonyPortabilityStatus operation/method
  */
-if ($telephony->telephonyPortabilityStatus(new \PayPal\StructType\TelephonyPortabilityStatus()) !== false) {
+if ($telephony->telephonyPortabilityStatus(new \Ovh\StructType\TelephonyPortabilityStatus()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1545,7 +1545,7 @@ if ($telephony->telephonyPortabilityStatus(new \PayPal\StructType\TelephonyPorta
 /**
  * Sample call for telephonySecurityDepositInfo operation/method
  */
-if ($telephony->telephonySecurityDepositInfo(new \PayPal\StructType\TelephonySecurityDepositInfo()) !== false) {
+if ($telephony->telephonySecurityDepositInfo(new \Ovh\StructType\TelephonySecurityDepositInfo()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1553,7 +1553,7 @@ if ($telephony->telephonySecurityDepositInfo(new \PayPal\StructType\TelephonySec
 /**
  * Sample call for telephonySmsListCsvAttachment operation/method
  */
-if ($telephony->telephonySmsListCsvAttachment(new \PayPal\StructType\TelephonySmsListCsvAttachment()) !== false) {
+if ($telephony->telephonySmsListCsvAttachment(new \Ovh\StructType\TelephonySmsListCsvAttachment()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1561,7 +1561,7 @@ if ($telephony->telephonySmsListCsvAttachment(new \PayPal\StructType\TelephonySm
 /**
  * Sample call for telephonySmsCancelSending operation/method
  */
-if ($telephony->telephonySmsCancelSending(new \PayPal\StructType\TelephonySmsCancelSending()) !== false) {
+if ($telephony->telephonySmsCancelSending(new \Ovh\StructType\TelephonySmsCancelSending()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1569,7 +1569,7 @@ if ($telephony->telephonySmsCancelSending(new \PayPal\StructType\TelephonySmsCan
 /**
  * Sample call for telephonyScreenListInfo operation/method
  */
-if ($telephony->telephonyScreenListInfo(new \PayPal\StructType\TelephonyScreenListInfo()) !== false) {
+if ($telephony->telephonyScreenListInfo(new \Ovh\StructType\TelephonyScreenListInfo()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1577,7 +1577,7 @@ if ($telephony->telephonyScreenListInfo(new \PayPal\StructType\TelephonyScreenLi
 /**
  * Sample call for telephonyLineLogsOnGroup operation/method
  */
-if ($telephony->telephonyLineLogsOnGroup(new \PayPal\StructType\TelephonyLineLogsOnGroup()) !== false) {
+if ($telephony->telephonyLineLogsOnGroup(new \Ovh\StructType\TelephonyLineLogsOnGroup()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1585,7 +1585,7 @@ if ($telephony->telephonyLineLogsOnGroup(new \PayPal\StructType\TelephonyLineLog
 /**
  * Sample call for telephonyLineGetMgcpIpRestriction operation/method
  */
-if ($telephony->telephonyLineGetMgcpIpRestriction(new \PayPal\StructType\TelephonyLineGetMgcpIpRestriction()) !== false) {
+if ($telephony->telephonyLineGetMgcpIpRestriction(new \Ovh\StructType\TelephonyLineGetMgcpIpRestriction()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1593,7 +1593,7 @@ if ($telephony->telephonyLineGetMgcpIpRestriction(new \PayPal\StructType\Telepho
 /**
  * Sample call for telephonyLineDetails operation/method
  */
-if ($telephony->telephonyLineDetails(new \PayPal\StructType\TelephonyLineDetails()) !== false) {
+if ($telephony->telephonyLineDetails(new \Ovh\StructType\TelephonyLineDetails()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1601,7 +1601,7 @@ if ($telephony->telephonyLineDetails(new \PayPal\StructType\TelephonyLineDetails
 /**
  * Sample call for telephonyPhonebookContactDel operation/method
  */
-if ($telephony->telephonyPhonebookContactDel(new \PayPal\StructType\TelephonyPhonebookContactDel()) !== false) {
+if ($telephony->telephonyPhonebookContactDel(new \Ovh\StructType\TelephonyPhonebookContactDel()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1609,7 +1609,7 @@ if ($telephony->telephonyPhonebookContactDel(new \PayPal\StructType\TelephonyPho
 /**
  * Sample call for telephonyRatesListCsv operation/method
  */
-if ($telephony->telephonyRatesListCsv(new \PayPal\StructType\TelephonyRatesListCsv()) !== false) {
+if ($telephony->telephonyRatesListCsv(new \Ovh\StructType\TelephonyRatesListCsv()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1617,7 +1617,7 @@ if ($telephony->telephonyRatesListCsv(new \PayPal\StructType\TelephonyRatesListC
 /**
  * Sample call for telephonyConferenceGetInfos operation/method
  */
-if ($telephony->telephonyConferenceGetInfos(new \PayPal\StructType\TelephonyConferenceGetInfos()) !== false) {
+if ($telephony->telephonyConferenceGetInfos(new \Ovh\StructType\TelephonyConferenceGetInfos()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1625,7 +1625,7 @@ if ($telephony->telephonyConferenceGetInfos(new \PayPal\StructType\TelephonyConf
 /**
  * Sample call for telephonyPhonebookOnSmsContactList operation/method
  */
-if ($telephony->telephonyPhonebookOnSmsContactList(new \PayPal\StructType\TelephonyPhonebookOnSmsContactList()) !== false) {
+if ($telephony->telephonyPhonebookOnSmsContactList(new \Ovh\StructType\TelephonyPhonebookOnSmsContactList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1633,7 +1633,7 @@ if ($telephony->telephonyPhonebookOnSmsContactList(new \PayPal\StructType\Teleph
 /**
  * Sample call for telephonyPhonebookOnSmsContactAdd operation/method
  */
-if ($telephony->telephonyPhonebookOnSmsContactAdd(new \PayPal\StructType\TelephonyPhonebookOnSmsContactAdd()) !== false) {
+if ($telephony->telephonyPhonebookOnSmsContactAdd(new \Ovh\StructType\TelephonyPhonebookOnSmsContactAdd()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1642,7 +1642,7 @@ if ($telephony->telephonyPhonebookOnSmsContactAdd(new \PayPal\StructType\Telepho
  * Sample call for telephonyFMHuntingModificationAnonymousCallRejection
  * operation/method
  */
-if ($telephony->telephonyFMHuntingModificationAnonymousCallRejection(new \PayPal\StructType\TelephonyFMHuntingModificationAnonymousCallRejection()) !== false) {
+if ($telephony->telephonyFMHuntingModificationAnonymousCallRejection(new \Ovh\StructType\TelephonyFMHuntingModificationAnonymousCallRejection()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1650,7 +1650,7 @@ if ($telephony->telephonyFMHuntingModificationAnonymousCallRejection(new \PayPal
 /**
  * Sample call for telephonyDdiModify operation/method
  */
-if ($telephony->telephonyDdiModify(new \PayPal\StructType\TelephonyDdiModify()) !== false) {
+if ($telephony->telephonyDdiModify(new \Ovh\StructType\TelephonyDdiModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1658,7 +1658,7 @@ if ($telephony->telephonyDdiModify(new \PayPal\StructType\TelephonyDdiModify()) 
 /**
  * Sample call for telephonyRedirectInfo operation/method
  */
-if ($telephony->telephonyRedirectInfo(new \PayPal\StructType\TelephonyRedirectInfo()) !== false) {
+if ($telephony->telephonyRedirectInfo(new \Ovh\StructType\TelephonyRedirectInfo()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1666,7 +1666,7 @@ if ($telephony->telephonyRedirectInfo(new \PayPal\StructType\TelephonyRedirectIn
 /**
  * Sample call for telephonySmsSend operation/method
  */
-if ($telephony->telephonySmsSend(new \PayPal\StructType\TelephonySmsSend()) !== false) {
+if ($telephony->telephonySmsSend(new \Ovh\StructType\TelephonySmsSend()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1674,7 +1674,7 @@ if ($telephony->telephonySmsSend(new \PayPal\StructType\TelephonySmsSend()) !== 
 /**
  * Sample call for telephonyLineGetSipDomain operation/method
  */
-if ($telephony->telephonyLineGetSipDomain(new \PayPal\StructType\TelephonyLineGetSipDomain()) !== false) {
+if ($telephony->telephonyLineGetSipDomain(new \Ovh\StructType\TelephonyLineGetSipDomain()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1682,7 +1682,7 @@ if ($telephony->telephonyLineGetSipDomain(new \PayPal\StructType\TelephonyLineGe
 /**
  * Sample call for telephonyToneDelete operation/method
  */
-if ($telephony->telephonyToneDelete(new \PayPal\StructType\TelephonyToneDelete()) !== false) {
+if ($telephony->telephonyToneDelete(new \Ovh\StructType\TelephonyToneDelete()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1690,7 +1690,7 @@ if ($telephony->telephonyToneDelete(new \PayPal\StructType\TelephonyToneDelete()
 /**
  * Sample call for telephonyLineSetMgcpIpRestriction operation/method
  */
-if ($telephony->telephonyLineSetMgcpIpRestriction(new \PayPal\StructType\TelephonyLineSetMgcpIpRestriction()) !== false) {
+if ($telephony->telephonyLineSetMgcpIpRestriction(new \Ovh\StructType\TelephonyLineSetMgcpIpRestriction()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1698,7 +1698,7 @@ if ($telephony->telephonyLineSetMgcpIpRestriction(new \PayPal\StructType\Telepho
 /**
  * Sample call for telephonyPhonebookOnGroupContactModify operation/method
  */
-if ($telephony->telephonyPhonebookOnGroupContactModify(new \PayPal\StructType\TelephonyPhonebookOnGroupContactModify()) !== false) {
+if ($telephony->telephonyPhonebookOnGroupContactModify(new \Ovh\StructType\TelephonyPhonebookOnGroupContactModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1706,7 +1706,7 @@ if ($telephony->telephonyPhonebookOnGroupContactModify(new \PayPal\StructType\Te
 /**
  * Sample call for telephonyScreenListBlackWhiteChoiceModify operation/method
  */
-if ($telephony->telephonyScreenListBlackWhiteChoiceModify(new \PayPal\StructType\TelephonyScreenListBlackWhiteChoiceModify()) !== false) {
+if ($telephony->telephonyScreenListBlackWhiteChoiceModify(new \Ovh\StructType\TelephonyScreenListBlackWhiteChoiceModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1714,7 +1714,7 @@ if ($telephony->telephonyScreenListBlackWhiteChoiceModify(new \PayPal\StructType
 /**
  * Sample call for telephonySmsplusServiceDetails operation/method
  */
-if ($telephony->telephonySmsplusServiceDetails(new \PayPal\StructType\TelephonySmsplusServiceDetails()) !== false) {
+if ($telephony->telephonySmsplusServiceDetails(new \Ovh\StructType\TelephonySmsplusServiceDetails()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1722,7 +1722,7 @@ if ($telephony->telephonySmsplusServiceDetails(new \PayPal\StructType\TelephonyS
 /**
  * Sample call for telephonyAbbreviatedNumberOnGroupDel operation/method
  */
-if ($telephony->telephonyAbbreviatedNumberOnGroupDel(new \PayPal\StructType\TelephonyAbbreviatedNumberOnGroupDel()) !== false) {
+if ($telephony->telephonyAbbreviatedNumberOnGroupDel(new \Ovh\StructType\TelephonyAbbreviatedNumberOnGroupDel()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1730,7 +1730,7 @@ if ($telephony->telephonyAbbreviatedNumberOnGroupDel(new \PayPal\StructType\Tele
 /**
  * Sample call for telephonySmsSenderDescription operation/method
  */
-if ($telephony->telephonySmsSenderDescription(new \PayPal\StructType\TelephonySmsSenderDescription()) !== false) {
+if ($telephony->telephonySmsSenderDescription(new \Ovh\StructType\TelephonySmsSenderDescription()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1738,7 +1738,7 @@ if ($telephony->telephonySmsSenderDescription(new \PayPal\StructType\TelephonySm
 /**
  * Sample call for telephonyAbbreviatedNumberListPaginated operation/method
  */
-if ($telephony->telephonyAbbreviatedNumberListPaginated(new \PayPal\StructType\TelephonyAbbreviatedNumberListPaginated()) !== false) {
+if ($telephony->telephonyAbbreviatedNumberListPaginated(new \Ovh\StructType\TelephonyAbbreviatedNumberListPaginated()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1746,7 +1746,7 @@ if ($telephony->telephonyAbbreviatedNumberListPaginated(new \PayPal\StructType\T
 /**
  * Sample call for telephonySetDefaultPrivateHolidaysEvents operation/method
  */
-if ($telephony->telephonySetDefaultPrivateHolidaysEvents(new \PayPal\StructType\TelephonySetDefaultPrivateHolidaysEvents()) !== false) {
+if ($telephony->telephonySetDefaultPrivateHolidaysEvents(new \Ovh\StructType\TelephonySetDefaultPrivateHolidaysEvents()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1754,7 +1754,7 @@ if ($telephony->telephonySetDefaultPrivateHolidaysEvents(new \PayPal\StructType\
 /**
  * Sample call for telephonySpareServiceList operation/method
  */
-if ($telephony->telephonySpareServiceList(new \PayPal\StructType\TelephonySpareServiceList()) !== false) {
+if ($telephony->telephonySpareServiceList(new \Ovh\StructType\TelephonySpareServiceList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1762,7 +1762,7 @@ if ($telephony->telephonySpareServiceList(new \PayPal\StructType\TelephonySpareS
 /**
  * Sample call for telephonySmsUserListCsvAttachment operation/method
  */
-if ($telephony->telephonySmsUserListCsvAttachment(new \PayPal\StructType\TelephonySmsUserListCsvAttachment()) !== false) {
+if ($telephony->telephonySmsUserListCsvAttachment(new \Ovh\StructType\TelephonySmsUserListCsvAttachment()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1770,7 +1770,7 @@ if ($telephony->telephonySmsUserListCsvAttachment(new \PayPal\StructType\Telepho
 /**
  * Sample call for telephonyFaxCallList operation/method
  */
-if ($telephony->telephonyFaxCallList(new \PayPal\StructType\TelephonyFaxCallList()) !== false) {
+if ($telephony->telephonyFaxCallList(new \Ovh\StructType\TelephonyFaxCallList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1778,7 +1778,7 @@ if ($telephony->telephonyFaxCallList(new \PayPal\StructType\TelephonyFaxCallList
 /**
  * Sample call for telephonySmsUserSend operation/method
  */
-if ($telephony->telephonySmsUserSend(new \PayPal\StructType\TelephonySmsUserSend()) !== false) {
+if ($telephony->telephonySmsUserSend(new \Ovh\StructType\TelephonySmsUserSend()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1786,7 +1786,7 @@ if ($telephony->telephonySmsUserSend(new \PayPal\StructType\TelephonySmsUserSend
 /**
  * Sample call for telephonyPhonebookOnGroupGroupList operation/method
  */
-if ($telephony->telephonyPhonebookOnGroupGroupList(new \PayPal\StructType\TelephonyPhonebookOnGroupGroupList()) !== false) {
+if ($telephony->telephonyPhonebookOnGroupGroupList(new \Ovh\StructType\TelephonyPhonebookOnGroupGroupList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1794,7 +1794,7 @@ if ($telephony->telephonyPhonebookOnGroupGroupList(new \PayPal\StructType\Teleph
 /**
  * Sample call for telephonyClick2CallUserPassword operation/method
  */
-if ($telephony->telephonyClick2CallUserPassword(new \PayPal\StructType\TelephonyClick2CallUserPassword()) !== false) {
+if ($telephony->telephonyClick2CallUserPassword(new \Ovh\StructType\TelephonyClick2CallUserPassword()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1802,7 +1802,7 @@ if ($telephony->telephonyClick2CallUserPassword(new \PayPal\StructType\Telephony
 /**
  * Sample call for telephonySmsGetUserQuota operation/method
  */
-if ($telephony->telephonySmsGetUserQuota(new \PayPal\StructType\TelephonySmsGetUserQuota()) !== false) {
+if ($telephony->telephonySmsGetUserQuota(new \Ovh\StructType\TelephonySmsGetUserQuota()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1810,7 +1810,7 @@ if ($telephony->telephonySmsGetUserQuota(new \PayPal\StructType\TelephonySmsGetU
 /**
  * Sample call for telephonySmsSenderDelete operation/method
  */
-if ($telephony->telephonySmsSenderDelete(new \PayPal\StructType\TelephonySmsSenderDelete()) !== false) {
+if ($telephony->telephonySmsSenderDelete(new \Ovh\StructType\TelephonySmsSenderDelete()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1818,7 +1818,7 @@ if ($telephony->telephonySmsSenderDelete(new \PayPal\StructType\TelephonySmsSend
 /**
  * Sample call for telephonyToneStatus operation/method
  */
-if ($telephony->telephonyToneStatus(new \PayPal\StructType\TelephonyToneStatus()) !== false) {
+if ($telephony->telephonyToneStatus(new \Ovh\StructType\TelephonyToneStatus()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1826,7 +1826,7 @@ if ($telephony->telephonyToneStatus(new \PayPal\StructType\TelephonyToneStatus()
 /**
  * Sample call for telephonyDdiInfo operation/method
  */
-if ($telephony->telephonyDdiInfo(new \PayPal\StructType\TelephonyDdiInfo()) !== false) {
+if ($telephony->telephonyDdiInfo(new \Ovh\StructType\TelephonyDdiInfo()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1834,7 +1834,7 @@ if ($telephony->telephonyDdiInfo(new \PayPal\StructType\TelephonyDdiInfo()) !== 
 /**
  * Sample call for telephonyHuntingGroupList operation/method
  */
-if ($telephony->telephonyHuntingGroupList(new \PayPal\StructType\TelephonyHuntingGroupList()) !== false) {
+if ($telephony->telephonyHuntingGroupList(new \Ovh\StructType\TelephonyHuntingGroupList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1842,7 +1842,7 @@ if ($telephony->telephonyHuntingGroupList(new \PayPal\StructType\TelephonyHuntin
 /**
  * Sample call for telephonyTrunkExternalDisplayedNumberList operation/method
  */
-if ($telephony->telephonyTrunkExternalDisplayedNumberList(new \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberList()) !== false) {
+if ($telephony->telephonyTrunkExternalDisplayedNumberList(new \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1850,7 +1850,7 @@ if ($telephony->telephonyTrunkExternalDisplayedNumberList(new \PayPal\StructType
 /**
  * Sample call for telephonyDirectoryListWayType operation/method
  */
-if ($telephony->telephonyDirectoryListWayType(new \PayPal\StructType\TelephonyDirectoryListWayType()) !== false) {
+if ($telephony->telephonyDirectoryListWayType(new \Ovh\StructType\TelephonyDirectoryListWayType()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1858,7 +1858,7 @@ if ($telephony->telephonyDirectoryListWayType(new \PayPal\StructType\TelephonyDi
 /**
  * Sample call for telephonySmsUserHistoryCsv operation/method
  */
-if ($telephony->telephonySmsUserHistoryCsv(new \PayPal\StructType\TelephonySmsUserHistoryCsv()) !== false) {
+if ($telephony->telephonySmsUserHistoryCsv(new \Ovh\StructType\TelephonySmsUserHistoryCsv()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1866,7 +1866,7 @@ if ($telephony->telephonySmsUserHistoryCsv(new \PayPal\StructType\TelephonySmsUs
 /**
  * Sample call for telephonyCallList operation/method
  */
-if ($telephony->telephonyCallList(new \PayPal\StructType\TelephonyCallList()) !== false) {
+if ($telephony->telephonyCallList(new \Ovh\StructType\TelephonyCallList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1874,7 +1874,7 @@ if ($telephony->telephonyCallList(new \PayPal\StructType\TelephonyCallList()) !=
 /**
  * Sample call for telephonyGetDefaultPrivateHolidaysEvents operation/method
  */
-if ($telephony->telephonyGetDefaultPrivateHolidaysEvents(new \PayPal\StructType\TelephonyGetDefaultPrivateHolidaysEvents()) !== false) {
+if ($telephony->telephonyGetDefaultPrivateHolidaysEvents(new \Ovh\StructType\TelephonyGetDefaultPrivateHolidaysEvents()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1882,7 +1882,7 @@ if ($telephony->telephonyGetDefaultPrivateHolidaysEvents(new \PayPal\StructType\
 /**
  * Sample call for telephonySmsplusShortCodesList operation/method
  */
-if ($telephony->telephonySmsplusShortCodesList(new \PayPal\StructType\TelephonySmsplusShortCodesList()) !== false) {
+if ($telephony->telephonySmsplusShortCodesList(new \Ovh\StructType\TelephonySmsplusShortCodesList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1890,7 +1890,7 @@ if ($telephony->telephonySmsplusShortCodesList(new \PayPal\StructType\TelephonyS
 /**
  * Sample call for telephonyAliasToSipPossibilities operation/method
  */
-if ($telephony->telephonyAliasToSipPossibilities(new \PayPal\StructType\TelephonyAliasToSipPossibilities()) !== false) {
+if ($telephony->telephonyAliasToSipPossibilities(new \Ovh\StructType\TelephonyAliasToSipPossibilities()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1898,7 +1898,7 @@ if ($telephony->telephonyAliasToSipPossibilities(new \PayPal\StructType\Telephon
 /**
  * Sample call for telephonyAbbreviatedNumberOnGroupAdd operation/method
  */
-if ($telephony->telephonyAbbreviatedNumberOnGroupAdd(new \PayPal\StructType\TelephonyAbbreviatedNumberOnGroupAdd()) !== false) {
+if ($telephony->telephonyAbbreviatedNumberOnGroupAdd(new \Ovh\StructType\TelephonyAbbreviatedNumberOnGroupAdd()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1906,7 +1906,7 @@ if ($telephony->telephonyAbbreviatedNumberOnGroupAdd(new \PayPal\StructType\Tele
 /**
  * Sample call for telephonyHuntingModificationQueue operation/method
  */
-if ($telephony->telephonyHuntingModificationQueue(new \PayPal\StructType\TelephonyHuntingModificationQueue()) !== false) {
+if ($telephony->telephonyHuntingModificationQueue(new \Ovh\StructType\TelephonyHuntingModificationQueue()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1914,7 +1914,7 @@ if ($telephony->telephonyHuntingModificationQueue(new \PayPal\StructType\Telepho
 /**
  * Sample call for telephonyDirectoryInfo operation/method
  */
-if ($telephony->telephonyDirectoryInfo(new \PayPal\StructType\TelephonyDirectoryInfo()) !== false) {
+if ($telephony->telephonyDirectoryInfo(new \Ovh\StructType\TelephonyDirectoryInfo()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1922,7 +1922,7 @@ if ($telephony->telephonyDirectoryInfo(new \PayPal\StructType\TelephonyDirectory
 /**
  * Sample call for telephonyBillDetails operation/method
  */
-if ($telephony->telephonyBillDetails(new \PayPal\StructType\TelephonyBillDetails()) !== false) {
+if ($telephony->telephonyBillDetails(new \Ovh\StructType\TelephonyBillDetails()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1930,7 +1930,7 @@ if ($telephony->telephonyBillDetails(new \PayPal\StructType\TelephonyBillDetails
 /**
  * Sample call for telephonyLineLogsNotificationOptionsModify operation/method
  */
-if ($telephony->telephonyLineLogsNotificationOptionsModify(new \PayPal\StructType\TelephonyLineLogsNotificationOptionsModify()) !== false) {
+if ($telephony->telephonyLineLogsNotificationOptionsModify(new \Ovh\StructType\TelephonyLineLogsNotificationOptionsModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1938,7 +1938,7 @@ if ($telephony->telephonyLineLogsNotificationOptionsModify(new \PayPal\StructTyp
 /**
  * Sample call for telephonyClick2CallDoBySession operation/method
  */
-if ($telephony->telephonyClick2CallDoBySession(new \PayPal\StructType\TelephonyClick2CallDoBySession()) !== false) {
+if ($telephony->telephonyClick2CallDoBySession(new \Ovh\StructType\TelephonyClick2CallDoBySession()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1946,7 +1946,7 @@ if ($telephony->telephonyClick2CallDoBySession(new \PayPal\StructType\TelephonyC
 /**
  * Sample call for telephonyAbbreviatedNumberAdd operation/method
  */
-if ($telephony->telephonyAbbreviatedNumberAdd(new \PayPal\StructType\TelephonyAbbreviatedNumberAdd()) !== false) {
+if ($telephony->telephonyAbbreviatedNumberAdd(new \Ovh\StructType\TelephonyAbbreviatedNumberAdd()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1954,7 +1954,7 @@ if ($telephony->telephonyAbbreviatedNumberAdd(new \PayPal\StructType\TelephonyAb
 /**
  * Sample call for telephonyNumberOrder operation/method
  */
-if ($telephony->telephonyNumberOrder(new \PayPal\StructType\TelephonyNumberOrder()) !== false) {
+if ($telephony->telephonyNumberOrder(new \Ovh\StructType\TelephonyNumberOrder()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1962,7 +1962,7 @@ if ($telephony->telephonyNumberOrder(new \PayPal\StructType\TelephonyNumberOrder
 /**
  * Sample call for telephonyLineSetIpRestriction operation/method
  */
-if ($telephony->telephonyLineSetIpRestriction(new \PayPal\StructType\TelephonyLineSetIpRestriction()) !== false) {
+if ($telephony->telephonyLineSetIpRestriction(new \Ovh\StructType\TelephonyLineSetIpRestriction()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1970,7 +1970,7 @@ if ($telephony->telephonyLineSetIpRestriction(new \PayPal\StructType\TelephonyLi
 /**
  * Sample call for telephonyLineSetCodecs operation/method
  */
-if ($telephony->telephonyLineSetCodecs(new \PayPal\StructType\TelephonyLineSetCodecs()) !== false) {
+if ($telephony->telephonyLineSetCodecs(new \Ovh\StructType\TelephonyLineSetCodecs()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1978,7 +1978,7 @@ if ($telephony->telephonyLineSetCodecs(new \PayPal\StructType\TelephonyLineSetCo
 /**
  * Sample call for telephonyNumberCityForZoneList operation/method
  */
-if ($telephony->telephonyNumberCityForZoneList(new \PayPal\StructType\TelephonyNumberCityForZoneList()) !== false) {
+if ($telephony->telephonyNumberCityForZoneList(new \Ovh\StructType\TelephonyNumberCityForZoneList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1986,7 +1986,7 @@ if ($telephony->telephonyNumberCityForZoneList(new \PayPal\StructType\TelephonyN
 /**
  * Sample call for telephonyTonesOptionsModify operation/method
  */
-if ($telephony->telephonyTonesOptionsModify(new \PayPal\StructType\TelephonyTonesOptionsModify()) !== false) {
+if ($telephony->telephonyTonesOptionsModify(new \Ovh\StructType\TelephonyTonesOptionsModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -1994,7 +1994,7 @@ if ($telephony->telephonyTonesOptionsModify(new \PayPal\StructType\TelephonyTone
 /**
  * Sample call for telephonyVoicemailMessagesRemoteUpload operation/method
  */
-if ($telephony->telephonyVoicemailMessagesRemoteUpload(new \PayPal\StructType\TelephonyVoicemailMessagesRemoteUpload()) !== false) {
+if ($telephony->telephonyVoicemailMessagesRemoteUpload(new \Ovh\StructType\TelephonyVoicemailMessagesRemoteUpload()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2002,7 +2002,7 @@ if ($telephony->telephonyVoicemailMessagesRemoteUpload(new \PayPal\StructType\Te
 /**
  * Sample call for telephonyOfferInfo operation/method
  */
-if ($telephony->telephonyOfferInfo(new \PayPal\StructType\TelephonyOfferInfo()) !== false) {
+if ($telephony->telephonyOfferInfo(new \Ovh\StructType\TelephonyOfferInfo()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2010,7 +2010,7 @@ if ($telephony->telephonyOfferInfo(new \PayPal\StructType\TelephonyOfferInfo()) 
 /**
  * Sample call for telephonyPhonebookDel operation/method
  */
-if ($telephony->telephonyPhonebookDel(new \PayPal\StructType\TelephonyPhonebookDel()) !== false) {
+if ($telephony->telephonyPhonebookDel(new \Ovh\StructType\TelephonyPhonebookDel()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2018,7 +2018,7 @@ if ($telephony->telephonyPhonebookDel(new \PayPal\StructType\TelephonyPhonebookD
 /**
  * Sample call for telephonySmsUserAdd operation/method
  */
-if ($telephony->telephonySmsUserAdd(new \PayPal\StructType\TelephonySmsUserAdd()) !== false) {
+if ($telephony->telephonySmsUserAdd(new \Ovh\StructType\TelephonySmsUserAdd()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2026,7 +2026,7 @@ if ($telephony->telephonySmsUserAdd(new \PayPal\StructType\TelephonySmsUserAdd()
 /**
  * Sample call for telephonySmsUserHistory operation/method
  */
-if ($telephony->telephonySmsUserHistory(new \PayPal\StructType\TelephonySmsUserHistory()) !== false) {
+if ($telephony->telephonySmsUserHistory(new \Ovh\StructType\TelephonySmsUserHistory()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2034,7 +2034,7 @@ if ($telephony->telephonySmsUserHistory(new \PayPal\StructType\TelephonySmsUserH
 /**
  * Sample call for telephonySmsUserGetCallBack operation/method
  */
-if ($telephony->telephonySmsUserGetCallBack(new \PayPal\StructType\TelephonySmsUserGetCallBack()) !== false) {
+if ($telephony->telephonySmsUserGetCallBack(new \Ovh\StructType\TelephonySmsUserGetCallBack()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2042,7 +2042,7 @@ if ($telephony->telephonySmsUserGetCallBack(new \PayPal\StructType\TelephonySmsU
 /**
  * Sample call for telephonyOfferModifyPassword operation/method
  */
-if ($telephony->telephonyOfferModifyPassword(new \PayPal\StructType\TelephonyOfferModifyPassword()) !== false) {
+if ($telephony->telephonyOfferModifyPassword(new \Ovh\StructType\TelephonyOfferModifyPassword()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2050,7 +2050,7 @@ if ($telephony->telephonyOfferModifyPassword(new \PayPal\StructType\TelephonyOff
 /**
  * Sample call for telephonyFunctionKeyAdd operation/method
  */
-if ($telephony->telephonyFunctionKeyAdd(new \PayPal\StructType\TelephonyFunctionKeyAdd()) !== false) {
+if ($telephony->telephonyFunctionKeyAdd(new \Ovh\StructType\TelephonyFunctionKeyAdd()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2058,7 +2058,7 @@ if ($telephony->telephonyFunctionKeyAdd(new \PayPal\StructType\TelephonyFunction
 /**
  * Sample call for telephonyPhonebookList operation/method
  */
-if ($telephony->telephonyPhonebookList(new \PayPal\StructType\TelephonyPhonebookList()) !== false) {
+if ($telephony->telephonyPhonebookList(new \Ovh\StructType\TelephonyPhonebookList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2066,7 +2066,7 @@ if ($telephony->telephonyPhonebookList(new \PayPal\StructType\TelephonyPhonebook
 /**
  * Sample call for telephonyPlugAndPhoneReset operation/method
  */
-if ($telephony->telephonyPlugAndPhoneReset(new \PayPal\StructType\TelephonyPlugAndPhoneReset()) !== false) {
+if ($telephony->telephonyPlugAndPhoneReset(new \Ovh\StructType\TelephonyPlugAndPhoneReset()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2074,7 +2074,7 @@ if ($telephony->telephonyPlugAndPhoneReset(new \PayPal\StructType\TelephonyPlugA
 /**
  * Sample call for telephonySpareInfo operation/method
  */
-if ($telephony->telephonySpareInfo(new \PayPal\StructType\TelephonySpareInfo()) !== false) {
+if ($telephony->telephonySpareInfo(new \Ovh\StructType\TelephonySpareInfo()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2082,7 +2082,7 @@ if ($telephony->telephonySpareInfo(new \PayPal\StructType\TelephonySpareInfo()) 
 /**
  * Sample call for telephonySmsUserDel operation/method
  */
-if ($telephony->telephonySmsUserDel(new \PayPal\StructType\TelephonySmsUserDel()) !== false) {
+if ($telephony->telephonySmsUserDel(new \Ovh\StructType\TelephonySmsUserDel()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2090,7 +2090,7 @@ if ($telephony->telephonySmsUserDel(new \PayPal\StructType\TelephonySmsUserDel()
 /**
  * Sample call for telephonyVoicemailMessagesStatus operation/method
  */
-if ($telephony->telephonyVoicemailMessagesStatus(new \PayPal\StructType\TelephonyVoicemailMessagesStatus()) !== false) {
+if ($telephony->telephonyVoicemailMessagesStatus(new \Ovh\StructType\TelephonyVoicemailMessagesStatus()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2098,7 +2098,7 @@ if ($telephony->telephonyVoicemailMessagesStatus(new \PayPal\StructType\Telephon
 /**
  * Sample call for telephonyPhonebookModify operation/method
  */
-if ($telephony->telephonyPhonebookModify(new \PayPal\StructType\TelephonyPhonebookModify()) !== false) {
+if ($telephony->telephonyPhonebookModify(new \Ovh\StructType\TelephonyPhonebookModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2106,7 +2106,7 @@ if ($telephony->telephonyPhonebookModify(new \PayPal\StructType\TelephonyPhonebo
 /**
  * Sample call for telephonyOfferModifyName operation/method
  */
-if ($telephony->telephonyOfferModifyName(new \PayPal\StructType\TelephonyOfferModifyName()) !== false) {
+if ($telephony->telephonyOfferModifyName(new \Ovh\StructType\TelephonyOfferModifyName()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2114,7 +2114,7 @@ if ($telephony->telephonyOfferModifyName(new \PayPal\StructType\TelephonyOfferMo
 /**
  * Sample call for telephonySmsSetCallBack operation/method
  */
-if ($telephony->telephonySmsSetCallBack(new \PayPal\StructType\TelephonySmsSetCallBack()) !== false) {
+if ($telephony->telephonySmsSetCallBack(new \Ovh\StructType\TelephonySmsSetCallBack()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2122,7 +2122,7 @@ if ($telephony->telephonySmsSetCallBack(new \PayPal\StructType\TelephonySmsSetCa
 /**
  * Sample call for telephonyPhonebookGroupList operation/method
  */
-if ($telephony->telephonyPhonebookGroupList(new \PayPal\StructType\TelephonyPhonebookGroupList()) !== false) {
+if ($telephony->telephonyPhonebookGroupList(new \Ovh\StructType\TelephonyPhonebookGroupList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2130,7 +2130,7 @@ if ($telephony->telephonyPhonebookGroupList(new \PayPal\StructType\TelephonyPhon
 /**
  * Sample call for telephonyBillingAccountInfo operation/method
  */
-if ($telephony->telephonyBillingAccountInfo(new \PayPal\StructType\TelephonyBillingAccountInfo()) !== false) {
+if ($telephony->telephonyBillingAccountInfo(new \Ovh\StructType\TelephonyBillingAccountInfo()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2138,7 +2138,7 @@ if ($telephony->telephonyBillingAccountInfo(new \PayPal\StructType\TelephonyBill
 /**
  * Sample call for telephonySmsSenderAdd operation/method
  */
-if ($telephony->telephonySmsSenderAdd(new \PayPal\StructType\TelephonySmsSenderAdd()) !== false) {
+if ($telephony->telephonySmsSenderAdd(new \Ovh\StructType\TelephonySmsSenderAdd()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2146,7 +2146,7 @@ if ($telephony->telephonySmsSenderAdd(new \PayPal\StructType\TelephonySmsSenderA
 /**
  * Sample call for telephonyLineConsumptionCSVByMail operation/method
  */
-if ($telephony->telephonyLineConsumptionCSVByMail(new \PayPal\StructType\TelephonyLineConsumptionCSVByMail()) !== false) {
+if ($telephony->telephonyLineConsumptionCSVByMail(new \Ovh\StructType\TelephonyLineConsumptionCSVByMail()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2154,7 +2154,7 @@ if ($telephony->telephonyLineConsumptionCSVByMail(new \PayPal\StructType\Telepho
 /**
  * Sample call for telephonySmsUserDeleteCsvAttachment operation/method
  */
-if ($telephony->telephonySmsUserDeleteCsvAttachment(new \PayPal\StructType\TelephonySmsUserDeleteCsvAttachment()) !== false) {
+if ($telephony->telephonySmsUserDeleteCsvAttachment(new \Ovh\StructType\TelephonySmsUserDeleteCsvAttachment()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2162,7 +2162,7 @@ if ($telephony->telephonySmsUserDeleteCsvAttachment(new \PayPal\StructType\Telep
 /**
  * Sample call for telephonyListReversableCallsFromNumber operation/method
  */
-if ($telephony->telephonyListReversableCallsFromNumber(new \PayPal\StructType\TelephonyListReversableCallsFromNumber()) !== false) {
+if ($telephony->telephonyListReversableCallsFromNumber(new \Ovh\StructType\TelephonyListReversableCallsFromNumber()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2170,7 +2170,7 @@ if ($telephony->telephonyListReversableCallsFromNumber(new \PayPal\StructType\Te
 /**
  * Sample call for telephonyBillingAccountList operation/method
  */
-if ($telephony->telephonyBillingAccountList(new \PayPal\StructType\TelephonyBillingAccountList()) !== false) {
+if ($telephony->telephonyBillingAccountList(new \Ovh\StructType\TelephonyBillingAccountList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2178,7 +2178,7 @@ if ($telephony->telephonyBillingAccountList(new \PayPal\StructType\TelephonyBill
 /**
  * Sample call for telephonySmsGetQuotaNotificationForUser operation/method
  */
-if ($telephony->telephonySmsGetQuotaNotificationForUser(new \PayPal\StructType\TelephonySmsGetQuotaNotificationForUser()) !== false) {
+if ($telephony->telephonySmsGetQuotaNotificationForUser(new \Ovh\StructType\TelephonySmsGetQuotaNotificationForUser()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2186,7 +2186,7 @@ if ($telephony->telephonySmsGetQuotaNotificationForUser(new \PayPal\StructType\T
 /**
  * Sample call for telephonyChangeNicModify operation/method
  */
-if ($telephony->telephonyChangeNicModify(new \PayPal\StructType\TelephonyChangeNicModify()) !== false) {
+if ($telephony->telephonyChangeNicModify(new \Ovh\StructType\TelephonyChangeNicModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2194,7 +2194,7 @@ if ($telephony->telephonyChangeNicModify(new \PayPal\StructType\TelephonyChangeN
 /**
  * Sample call for telephonySviInfo operation/method
  */
-if ($telephony->telephonySviInfo(new \PayPal\StructType\TelephonySviInfo()) !== false) {
+if ($telephony->telephonySviInfo(new \Ovh\StructType\TelephonySviInfo()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2202,7 +2202,7 @@ if ($telephony->telephonySviInfo(new \PayPal\StructType\TelephonySviInfo()) !== 
 /**
  * Sample call for telephonyClick2CallUserAdd operation/method
  */
-if ($telephony->telephonyClick2CallUserAdd(new \PayPal\StructType\TelephonyClick2CallUserAdd()) !== false) {
+if ($telephony->telephonyClick2CallUserAdd(new \Ovh\StructType\TelephonyClick2CallUserAdd()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2210,7 +2210,7 @@ if ($telephony->telephonyClick2CallUserAdd(new \PayPal\StructType\TelephonyClick
 /**
  * Sample call for telephonySmsBlacklistedSendersDelete operation/method
  */
-if ($telephony->telephonySmsBlacklistedSendersDelete(new \PayPal\StructType\TelephonySmsBlacklistedSendersDelete()) !== false) {
+if ($telephony->telephonySmsBlacklistedSendersDelete(new \Ovh\StructType\TelephonySmsBlacklistedSendersDelete()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2218,7 +2218,7 @@ if ($telephony->telephonySmsBlacklistedSendersDelete(new \PayPal\StructType\Tele
 /**
  * Sample call for telephonySmsplusServiceAdd operation/method
  */
-if ($telephony->telephonySmsplusServiceAdd(new \PayPal\StructType\TelephonySmsplusServiceAdd()) !== false) {
+if ($telephony->telephonySmsplusServiceAdd(new \Ovh\StructType\TelephonySmsplusServiceAdd()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2226,7 +2226,7 @@ if ($telephony->telephonySmsplusServiceAdd(new \PayPal\StructType\TelephonySmspl
 /**
  * Sample call for telephonySpareCreateRMA operation/method
  */
-if ($telephony->telephonySpareCreateRMA(new \PayPal\StructType\TelephonySpareCreateRMA()) !== false) {
+if ($telephony->telephonySpareCreateRMA(new \Ovh\StructType\TelephonySpareCreateRMA()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2234,7 +2234,7 @@ if ($telephony->telephonySpareCreateRMA(new \PayPal\StructType\TelephonySpareCre
 /**
  * Sample call for telephonySmsplusServiceEdit operation/method
  */
-if ($telephony->telephonySmsplusServiceEdit(new \PayPal\StructType\TelephonySmsplusServiceEdit()) !== false) {
+if ($telephony->telephonySmsplusServiceEdit(new \Ovh\StructType\TelephonySmsplusServiceEdit()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2242,7 +2242,7 @@ if ($telephony->telephonySmsplusServiceEdit(new \PayPal\StructType\TelephonySmsp
 /**
  * Sample call for telephonyHuntingGenericScreenOptionsModify operation/method
  */
-if ($telephony->telephonyHuntingGenericScreenOptionsModify(new \PayPal\StructType\TelephonyHuntingGenericScreenOptionsModify()) !== false) {
+if ($telephony->telephonyHuntingGenericScreenOptionsModify(new \Ovh\StructType\TelephonyHuntingGenericScreenOptionsModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2250,7 +2250,7 @@ if ($telephony->telephonyHuntingGenericScreenOptionsModify(new \PayPal\StructTyp
 /**
  * Sample call for telephonyPlugAndPhoneInfo operation/method
  */
-if ($telephony->telephonyPlugAndPhoneInfo(new \PayPal\StructType\TelephonyPlugAndPhoneInfo()) !== false) {
+if ($telephony->telephonyPlugAndPhoneInfo(new \Ovh\StructType\TelephonyPlugAndPhoneInfo()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2258,7 +2258,7 @@ if ($telephony->telephonyPlugAndPhoneInfo(new \PayPal\StructType\TelephonyPlugAn
 /**
  * Sample call for telephonyFaxCampaignDelete operation/method
  */
-if ($telephony->telephonyFaxCampaignDelete(new \PayPal\StructType\TelephonyFaxCampaignDelete()) !== false) {
+if ($telephony->telephonyFaxCampaignDelete(new \Ovh\StructType\TelephonyFaxCampaignDelete()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2266,7 +2266,7 @@ if ($telephony->telephonyFaxCampaignDelete(new \PayPal\StructType\TelephonyFaxCa
 /**
  * Sample call for telephonyReversmentsRefundFromBillingAccount operation/method
  */
-if ($telephony->telephonyReversmentsRefundFromBillingAccount(new \PayPal\StructType\TelephonyReversmentsRefundFromBillingAccount()) !== false) {
+if ($telephony->telephonyReversmentsRefundFromBillingAccount(new \Ovh\StructType\TelephonyReversmentsRefundFromBillingAccount()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2274,7 +2274,7 @@ if ($telephony->telephonyReversmentsRefundFromBillingAccount(new \PayPal\StructT
 /**
  * Sample call for telephonyVoicemailMessageDelete operation/method
  */
-if ($telephony->telephonyVoicemailMessageDelete(new \PayPal\StructType\TelephonyVoicemailMessageDelete()) !== false) {
+if ($telephony->telephonyVoicemailMessageDelete(new \Ovh\StructType\TelephonyVoicemailMessageDelete()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2282,7 +2282,7 @@ if ($telephony->telephonyVoicemailMessageDelete(new \PayPal\StructType\Telephony
 /**
  * Sample call for telephonyLineOptionsList operation/method
  */
-if ($telephony->telephonyLineOptionsList(new \PayPal\StructType\TelephonyLineOptionsList()) !== false) {
+if ($telephony->telephonyLineOptionsList(new \Ovh\StructType\TelephonyLineOptionsList()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2290,7 +2290,7 @@ if ($telephony->telephonyLineOptionsList(new \PayPal\StructType\TelephonyLineOpt
 /**
  * Sample call for telephonySpareServiceInfo operation/method
  */
-if ($telephony->telephonySpareServiceInfo(new \PayPal\StructType\TelephonySpareServiceInfo()) !== false) {
+if ($telephony->telephonySpareServiceInfo(new \Ovh\StructType\TelephonySpareServiceInfo()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2298,7 +2298,7 @@ if ($telephony->telephonySpareServiceInfo(new \PayPal\StructType\TelephonySpareS
 /**
  * Sample call for telephonyAbbreviatedNumberModify operation/method
  */
-if ($telephony->telephonyAbbreviatedNumberModify(new \PayPal\StructType\TelephonyAbbreviatedNumberModify()) !== false) {
+if ($telephony->telephonyAbbreviatedNumberModify(new \Ovh\StructType\TelephonyAbbreviatedNumberModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2306,7 +2306,7 @@ if ($telephony->telephonyAbbreviatedNumberModify(new \PayPal\StructType\Telephon
 /**
  * Sample call for telephonyOfferSimultaneousLinesModify operation/method
  */
-if ($telephony->telephonyOfferSimultaneousLinesModify(new \PayPal\StructType\TelephonyOfferSimultaneousLinesModify()) !== false) {
+if ($telephony->telephonyOfferSimultaneousLinesModify(new \Ovh\StructType\TelephonyOfferSimultaneousLinesModify()) !== false) {
     print_r($telephony->getResult());
 } else {
     print_r($telephony->getLastError());
@@ -2314,11 +2314,11 @@ if ($telephony->telephonyOfferSimultaneousLinesModify(new \PayPal\StructType\Tel
 /**
  * Samples for Sqlprive ServiceType
  */
-$sqlprive = new \PayPal\ServiceType\Sqlprive($options);
+$sqlprive = new \Ovh\ServiceType\Sqlprive($options);
 /**
  * Sample call for sqlpriveMysqlRestart operation/method
  */
-if ($sqlprive->sqlpriveMysqlRestart(new \PayPal\StructType\SqlpriveMysqlRestart()) !== false) {
+if ($sqlprive->sqlpriveMysqlRestart(new \Ovh\StructType\SqlpriveMysqlRestart()) !== false) {
     print_r($sqlprive->getResult());
 } else {
     print_r($sqlprive->getLastError());
@@ -2326,7 +2326,7 @@ if ($sqlprive->sqlpriveMysqlRestart(new \PayPal\StructType\SqlpriveMysqlRestart(
 /**
  * Sample call for sqlpriveMysqlVersion operation/method
  */
-if ($sqlprive->sqlpriveMysqlVersion(new \PayPal\StructType\SqlpriveMysqlVersion()) !== false) {
+if ($sqlprive->sqlpriveMysqlVersion(new \Ovh\StructType\SqlpriveMysqlVersion()) !== false) {
     print_r($sqlprive->getResult());
 } else {
     print_r($sqlprive->getLastError());
@@ -2334,7 +2334,7 @@ if ($sqlprive->sqlpriveMysqlVersion(new \PayPal\StructType\SqlpriveMysqlVersion(
 /**
  * Sample call for sqlpriveMysqlDatabaseImportFromFile operation/method
  */
-if ($sqlprive->sqlpriveMysqlDatabaseImportFromFile(new \PayPal\StructType\SqlpriveMysqlDatabaseImportFromFile()) !== false) {
+if ($sqlprive->sqlpriveMysqlDatabaseImportFromFile(new \Ovh\StructType\SqlpriveMysqlDatabaseImportFromFile()) !== false) {
     print_r($sqlprive->getResult());
 } else {
     print_r($sqlprive->getLastError());
@@ -2342,7 +2342,7 @@ if ($sqlprive->sqlpriveMysqlDatabaseImportFromFile(new \PayPal\StructType\Sqlpri
 /**
  * Sample call for sqlpriveMysqlUserList operation/method
  */
-if ($sqlprive->sqlpriveMysqlUserList(new \PayPal\StructType\SqlpriveMysqlUserList()) !== false) {
+if ($sqlprive->sqlpriveMysqlUserList(new \Ovh\StructType\SqlpriveMysqlUserList()) !== false) {
     print_r($sqlprive->getResult());
 } else {
     print_r($sqlprive->getLastError());
@@ -2350,7 +2350,7 @@ if ($sqlprive->sqlpriveMysqlUserList(new \PayPal\StructType\SqlpriveMysqlUserLis
 /**
  * Sample call for sqlpriveMysqlRamUsed operation/method
  */
-if ($sqlprive->sqlpriveMysqlRamUsed(new \PayPal\StructType\SqlpriveMysqlRamUsed()) !== false) {
+if ($sqlprive->sqlpriveMysqlRamUsed(new \Ovh\StructType\SqlpriveMysqlRamUsed()) !== false) {
     print_r($sqlprive->getResult());
 } else {
     print_r($sqlprive->getLastError());
@@ -2358,7 +2358,7 @@ if ($sqlprive->sqlpriveMysqlRamUsed(new \PayPal\StructType\SqlpriveMysqlRamUsed(
 /**
  * Sample call for sqlpriveAlertInfo operation/method
  */
-if ($sqlprive->sqlpriveAlertInfo(new \PayPal\StructType\SqlpriveAlertInfo()) !== false) {
+if ($sqlprive->sqlpriveAlertInfo(new \Ovh\StructType\SqlpriveAlertInfo()) !== false) {
     print_r($sqlprive->getResult());
 } else {
     print_r($sqlprive->getLastError());
@@ -2366,7 +2366,7 @@ if ($sqlprive->sqlpriveAlertInfo(new \PayPal\StructType\SqlpriveAlertInfo()) !==
 /**
  * Sample call for sqlpriveList operation/method
  */
-if ($sqlprive->sqlpriveList(new \PayPal\StructType\SqlpriveList()) !== false) {
+if ($sqlprive->sqlpriveList(new \Ovh\StructType\SqlpriveList()) !== false) {
     print_r($sqlprive->getResult());
 } else {
     print_r($sqlprive->getLastError());
@@ -2374,7 +2374,7 @@ if ($sqlprive->sqlpriveList(new \PayPal\StructType\SqlpriveList()) !== false) {
 /**
  * Sample call for sqlpriveMysqlLogs operation/method
  */
-if ($sqlprive->sqlpriveMysqlLogs(new \PayPal\StructType\SqlpriveMysqlLogs()) !== false) {
+if ($sqlprive->sqlpriveMysqlLogs(new \Ovh\StructType\SqlpriveMysqlLogs()) !== false) {
     print_r($sqlprive->getResult());
 } else {
     print_r($sqlprive->getLastError());
@@ -2382,7 +2382,7 @@ if ($sqlprive->sqlpriveMysqlLogs(new \PayPal\StructType\SqlpriveMysqlLogs()) !==
 /**
  * Sample call for sqlpriveCronSet operation/method
  */
-if ($sqlprive->sqlpriveCronSet(new \PayPal\StructType\SqlpriveCronSet()) !== false) {
+if ($sqlprive->sqlpriveCronSet(new \Ovh\StructType\SqlpriveCronSet()) !== false) {
     print_r($sqlprive->getResult());
 } else {
     print_r($sqlprive->getLastError());
@@ -2390,7 +2390,7 @@ if ($sqlprive->sqlpriveCronSet(new \PayPal\StructType\SqlpriveCronSet()) !== fal
 /**
  * Sample call for sqlpriveMysqlDatabasePrivilegeList operation/method
  */
-if ($sqlprive->sqlpriveMysqlDatabasePrivilegeList(new \PayPal\StructType\SqlpriveMysqlDatabasePrivilegeList()) !== false) {
+if ($sqlprive->sqlpriveMysqlDatabasePrivilegeList(new \Ovh\StructType\SqlpriveMysqlDatabasePrivilegeList()) !== false) {
     print_r($sqlprive->getResult());
 } else {
     print_r($sqlprive->getLastError());
@@ -2398,7 +2398,7 @@ if ($sqlprive->sqlpriveMysqlDatabasePrivilegeList(new \PayPal\StructType\Sqlpriv
 /**
  * Sample call for sqlpriveCronDel operation/method
  */
-if ($sqlprive->sqlpriveCronDel(new \PayPal\StructType\SqlpriveCronDel()) !== false) {
+if ($sqlprive->sqlpriveCronDel(new \Ovh\StructType\SqlpriveCronDel()) !== false) {
     print_r($sqlprive->getResult());
 } else {
     print_r($sqlprive->getLastError());
@@ -2406,7 +2406,7 @@ if ($sqlprive->sqlpriveCronDel(new \PayPal\StructType\SqlpriveCronDel()) !== fal
 /**
  * Sample call for sqlpriveMysqlDatabaseImportFromHost operation/method
  */
-if ($sqlprive->sqlpriveMysqlDatabaseImportFromHost(new \PayPal\StructType\SqlpriveMysqlDatabaseImportFromHost()) !== false) {
+if ($sqlprive->sqlpriveMysqlDatabaseImportFromHost(new \Ovh\StructType\SqlpriveMysqlDatabaseImportFromHost()) !== false) {
     print_r($sqlprive->getResult());
 } else {
     print_r($sqlprive->getLastError());
@@ -2414,7 +2414,7 @@ if ($sqlprive->sqlpriveMysqlDatabaseImportFromHost(new \PayPal\StructType\Sqlpri
 /**
  * Sample call for sqlpriveAlertSet operation/method
  */
-if ($sqlprive->sqlpriveAlertSet(new \PayPal\StructType\SqlpriveAlertSet()) !== false) {
+if ($sqlprive->sqlpriveAlertSet(new \Ovh\StructType\SqlpriveAlertSet()) !== false) {
     print_r($sqlprive->getResult());
 } else {
     print_r($sqlprive->getLastError());
@@ -2422,7 +2422,7 @@ if ($sqlprive->sqlpriveAlertSet(new \PayPal\StructType\SqlpriveAlertSet()) !== f
 /**
  * Sample call for sqlpriveMysqlOvhMyAdmin operation/method
  */
-if ($sqlprive->sqlpriveMysqlOvhMyAdmin(new \PayPal\StructType\SqlpriveMysqlOvhMyAdmin()) !== false) {
+if ($sqlprive->sqlpriveMysqlOvhMyAdmin(new \Ovh\StructType\SqlpriveMysqlOvhMyAdmin()) !== false) {
     print_r($sqlprive->getResult());
 } else {
     print_r($sqlprive->getLastError());
@@ -2430,7 +2430,7 @@ if ($sqlprive->sqlpriveMysqlOvhMyAdmin(new \PayPal\StructType\SqlpriveMysqlOvhMy
 /**
  * Sample call for sqlpriveMysqlDatabaseList operation/method
  */
-if ($sqlprive->sqlpriveMysqlDatabaseList(new \PayPal\StructType\SqlpriveMysqlDatabaseList()) !== false) {
+if ($sqlprive->sqlpriveMysqlDatabaseList(new \Ovh\StructType\SqlpriveMysqlDatabaseList()) !== false) {
     print_r($sqlprive->getResult());
 } else {
     print_r($sqlprive->getLastError());
@@ -2438,7 +2438,7 @@ if ($sqlprive->sqlpriveMysqlDatabaseList(new \PayPal\StructType\SqlpriveMysqlDat
 /**
  * Sample call for sqlpriveMysqlProcessList operation/method
  */
-if ($sqlprive->sqlpriveMysqlProcessList(new \PayPal\StructType\SqlpriveMysqlProcessList()) !== false) {
+if ($sqlprive->sqlpriveMysqlProcessList(new \Ovh\StructType\SqlpriveMysqlProcessList()) !== false) {
     print_r($sqlprive->getResult());
 } else {
     print_r($sqlprive->getLastError());
@@ -2446,7 +2446,7 @@ if ($sqlprive->sqlpriveMysqlProcessList(new \PayPal\StructType\SqlpriveMysqlProc
 /**
  * Sample call for sqlpriveMysqlActivateOvhManagement operation/method
  */
-if ($sqlprive->sqlpriveMysqlActivateOvhManagement(new \PayPal\StructType\SqlpriveMysqlActivateOvhManagement()) !== false) {
+if ($sqlprive->sqlpriveMysqlActivateOvhManagement(new \Ovh\StructType\SqlpriveMysqlActivateOvhManagement()) !== false) {
     print_r($sqlprive->getResult());
 } else {
     print_r($sqlprive->getLastError());
@@ -2454,7 +2454,7 @@ if ($sqlprive->sqlpriveMysqlActivateOvhManagement(new \PayPal\StructType\Sqlpriv
 /**
  * Sample call for sqlpriveMysqlGetPossibleDump operation/method
  */
-if ($sqlprive->sqlpriveMysqlGetPossibleDump(new \PayPal\StructType\SqlpriveMysqlGetPossibleDump()) !== false) {
+if ($sqlprive->sqlpriveMysqlGetPossibleDump(new \Ovh\StructType\SqlpriveMysqlGetPossibleDump()) !== false) {
     print_r($sqlprive->getResult());
 } else {
     print_r($sqlprive->getLastError());
@@ -2462,7 +2462,7 @@ if ($sqlprive->sqlpriveMysqlGetPossibleDump(new \PayPal\StructType\SqlpriveMysql
 /**
  * Sample call for sqlpriveFtpPassword operation/method
  */
-if ($sqlprive->sqlpriveFtpPassword(new \PayPal\StructType\SqlpriveFtpPassword()) !== false) {
+if ($sqlprive->sqlpriveFtpPassword(new \Ovh\StructType\SqlpriveFtpPassword()) !== false) {
     print_r($sqlprive->getResult());
 } else {
     print_r($sqlprive->getLastError());
@@ -2470,7 +2470,7 @@ if ($sqlprive->sqlpriveFtpPassword(new \PayPal\StructType\SqlpriveFtpPassword())
 /**
  * Sample call for sqlpriveMysqlRootPassword operation/method
  */
-if ($sqlprive->sqlpriveMysqlRootPassword(new \PayPal\StructType\SqlpriveMysqlRootPassword()) !== false) {
+if ($sqlprive->sqlpriveMysqlRootPassword(new \Ovh\StructType\SqlpriveMysqlRootPassword()) !== false) {
     print_r($sqlprive->getResult());
 } else {
     print_r($sqlprive->getLastError());
@@ -2478,7 +2478,7 @@ if ($sqlprive->sqlpriveMysqlRootPassword(new \PayPal\StructType\SqlpriveMysqlRoo
 /**
  * Sample call for sqlpriveMysqlProcessKill operation/method
  */
-if ($sqlprive->sqlpriveMysqlProcessKill(new \PayPal\StructType\SqlpriveMysqlProcessKill()) !== false) {
+if ($sqlprive->sqlpriveMysqlProcessKill(new \Ovh\StructType\SqlpriveMysqlProcessKill()) !== false) {
     print_r($sqlprive->getResult());
 } else {
     print_r($sqlprive->getLastError());
@@ -2486,7 +2486,7 @@ if ($sqlprive->sqlpriveMysqlProcessKill(new \PayPal\StructType\SqlpriveMysqlProc
 /**
  * Sample call for sqlpriveMysqlDatabaseSave operation/method
  */
-if ($sqlprive->sqlpriveMysqlDatabaseSave(new \PayPal\StructType\SqlpriveMysqlDatabaseSave()) !== false) {
+if ($sqlprive->sqlpriveMysqlDatabaseSave(new \Ovh\StructType\SqlpriveMysqlDatabaseSave()) !== false) {
     print_r($sqlprive->getResult());
 } else {
     print_r($sqlprive->getLastError());
@@ -2494,7 +2494,7 @@ if ($sqlprive->sqlpriveMysqlDatabaseSave(new \PayPal\StructType\SqlpriveMysqlDat
 /**
  * Sample call for sqlpriveCronGet operation/method
  */
-if ($sqlprive->sqlpriveCronGet(new \PayPal\StructType\SqlpriveCronGet()) !== false) {
+if ($sqlprive->sqlpriveCronGet(new \Ovh\StructType\SqlpriveCronGet()) !== false) {
     print_r($sqlprive->getResult());
 } else {
     print_r($sqlprive->getLastError());
@@ -2502,11 +2502,11 @@ if ($sqlprive->sqlpriveCronGet(new \PayPal\StructType\SqlpriveCronGet()) !== fal
 /**
  * Samples for Logout ServiceType
  */
-$logout = new \PayPal\ServiceType\Logout($options);
+$logout = new \Ovh\ServiceType\Logout($options);
 /**
  * Sample call for logout operation/method
  */
-if ($logout->logout(new \PayPal\StructType\Logout()) !== false) {
+if ($logout->logout(new \Ovh\StructType\Logout()) !== false) {
     print_r($logout->getResult());
 } else {
     print_r($logout->getLastError());
@@ -2514,11 +2514,11 @@ if ($logout->logout(new \PayPal\StructType\Logout()) !== false) {
 /**
  * Samples for Multi ServiceType
  */
-$multi = new \PayPal\ServiceType\Multi($options);
+$multi = new \Ovh\ServiceType\Multi($options);
 /**
  * Sample call for multiFtpChangeDirectory operation/method
  */
-if ($multi->multiFtpChangeDirectory(new \PayPal\StructType\MultiFtpChangeDirectory()) !== false) {
+if ($multi->multiFtpChangeDirectory(new \Ovh\StructType\MultiFtpChangeDirectory()) !== false) {
     print_r($multi->getResult());
 } else {
     print_r($multi->getLastError());
@@ -2526,7 +2526,7 @@ if ($multi->multiFtpChangeDirectory(new \PayPal\StructType\MultiFtpChangeDirecto
 /**
  * Sample call for multiFtpChangePassword operation/method
  */
-if ($multi->multiFtpChangePassword(new \PayPal\StructType\MultiFtpChangePassword()) !== false) {
+if ($multi->multiFtpChangePassword(new \Ovh\StructType\MultiFtpChangePassword()) !== false) {
     print_r($multi->getResult());
 } else {
     print_r($multi->getLastError());
@@ -2534,7 +2534,7 @@ if ($multi->multiFtpChangePassword(new \PayPal\StructType\MultiFtpChangePassword
 /**
  * Sample call for multiFtpList operation/method
  */
-if ($multi->multiFtpList(new \PayPal\StructType\MultiFtpList()) !== false) {
+if ($multi->multiFtpList(new \Ovh\StructType\MultiFtpList()) !== false) {
     print_r($multi->getResult());
 } else {
     print_r($multi->getLastError());
@@ -2542,7 +2542,7 @@ if ($multi->multiFtpList(new \PayPal\StructType\MultiFtpList()) !== false) {
 /**
  * Sample call for multiFtpAdd operation/method
  */
-if ($multi->multiFtpAdd(new \PayPal\StructType\MultiFtpAdd()) !== false) {
+if ($multi->multiFtpAdd(new \Ovh\StructType\MultiFtpAdd()) !== false) {
     print_r($multi->getResult());
 } else {
     print_r($multi->getLastError());
@@ -2550,7 +2550,7 @@ if ($multi->multiFtpAdd(new \PayPal\StructType\MultiFtpAdd()) !== false) {
 /**
  * Sample call for multiDomainList operation/method
  */
-if ($multi->multiDomainList(new \PayPal\StructType\MultiDomainList()) !== false) {
+if ($multi->multiDomainList(new \Ovh\StructType\MultiDomainList()) !== false) {
     print_r($multi->getResult());
 } else {
     print_r($multi->getLastError());
@@ -2558,7 +2558,7 @@ if ($multi->multiDomainList(new \PayPal\StructType\MultiDomainList()) !== false)
 /**
  * Sample call for multiFtpDel operation/method
  */
-if ($multi->multiFtpDel(new \PayPal\StructType\MultiFtpDel()) !== false) {
+if ($multi->multiFtpDel(new \Ovh\StructType\MultiFtpDel()) !== false) {
     print_r($multi->getResult());
 } else {
     print_r($multi->getLastError());
@@ -2566,7 +2566,7 @@ if ($multi->multiFtpDel(new \PayPal\StructType\MultiFtpDel()) !== false) {
 /**
  * Sample call for multiDomainAdd operation/method
  */
-if ($multi->multiDomainAdd(new \PayPal\StructType\MultiDomainAdd()) !== false) {
+if ($multi->multiDomainAdd(new \Ovh\StructType\MultiDomainAdd()) !== false) {
     print_r($multi->getResult());
 } else {
     print_r($multi->getLastError());
@@ -2574,7 +2574,7 @@ if ($multi->multiDomainAdd(new \PayPal\StructType\MultiDomainAdd()) !== false) {
 /**
  * Sample call for multiDomainModify operation/method
  */
-if ($multi->multiDomainModify(new \PayPal\StructType\MultiDomainModify()) !== false) {
+if ($multi->multiDomainModify(new \Ovh\StructType\MultiDomainModify()) !== false) {
     print_r($multi->getResult());
 } else {
     print_r($multi->getLastError());
@@ -2582,7 +2582,7 @@ if ($multi->multiDomainModify(new \PayPal\StructType\MultiDomainModify()) !== fa
 /**
  * Sample call for multiDomainInfo operation/method
  */
-if ($multi->multiDomainInfo(new \PayPal\StructType\MultiDomainInfo()) !== false) {
+if ($multi->multiDomainInfo(new \Ovh\StructType\MultiDomainInfo()) !== false) {
     print_r($multi->getResult());
 } else {
     print_r($multi->getLastError());
@@ -2590,7 +2590,7 @@ if ($multi->multiDomainInfo(new \PayPal\StructType\MultiDomainInfo()) !== false)
 /**
  * Sample call for multiDomainDel operation/method
  */
-if ($multi->multiDomainDel(new \PayPal\StructType\MultiDomainDel()) !== false) {
+if ($multi->multiDomainDel(new \Ovh\StructType\MultiDomainDel()) !== false) {
     print_r($multi->getResult());
 } else {
     print_r($multi->getLastError());
@@ -2598,11 +2598,11 @@ if ($multi->multiDomainDel(new \PayPal\StructType\MultiDomainDel()) !== false) {
 /**
  * Samples for Dedicated ServiceType
  */
-$dedicated = new \PayPal\ServiceType\Dedicated($options);
+$dedicated = new \Ovh\ServiceType\Dedicated($options);
 /**
  * Sample call for dedicatedReverseDel operation/method
  */
-if ($dedicated->dedicatedReverseDel(new \PayPal\StructType\DedicatedReverseDel()) !== false) {
+if ($dedicated->dedicatedReverseDel(new \Ovh\StructType\DedicatedReverseDel()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2610,7 +2610,7 @@ if ($dedicated->dedicatedReverseDel(new \PayPal\StructType\DedicatedReverseDel()
 /**
  * Sample call for dedicatedDelServiceMonitoringAlert operation/method
  */
-if ($dedicated->dedicatedDelServiceMonitoringAlert(new \PayPal\StructType\DedicatedDelServiceMonitoringAlert()) !== false) {
+if ($dedicated->dedicatedDelServiceMonitoringAlert(new \Ovh\StructType\DedicatedDelServiceMonitoringAlert()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2618,7 +2618,7 @@ if ($dedicated->dedicatedDelServiceMonitoringAlert(new \PayPal\StructType\Dedica
 /**
  * Sample call for dedicatedAddServiceMonitoringAlertSMS operation/method
  */
-if ($dedicated->dedicatedAddServiceMonitoringAlertSMS(new \PayPal\StructType\DedicatedAddServiceMonitoringAlertSMS()) !== false) {
+if ($dedicated->dedicatedAddServiceMonitoringAlertSMS(new \Ovh\StructType\DedicatedAddServiceMonitoringAlertSMS()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2626,7 +2626,7 @@ if ($dedicated->dedicatedAddServiceMonitoringAlertSMS(new \PayPal\StructType\Ded
 /**
  * Sample call for dedicatedIpLoadBalancingList operation/method
  */
-if ($dedicated->dedicatedIpLoadBalancingList(new \PayPal\StructType\DedicatedIpLoadBalancingList()) !== false) {
+if ($dedicated->dedicatedIpLoadBalancingList(new \Ovh\StructType\DedicatedIpLoadBalancingList()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2634,7 +2634,7 @@ if ($dedicated->dedicatedIpLoadBalancingList(new \PayPal\StructType\DedicatedIpL
 /**
  * Sample call for dedicatedBackupReinstallConfiguration operation/method
  */
-if ($dedicated->dedicatedBackupReinstallConfiguration(new \PayPal\StructType\DedicatedBackupReinstallConfiguration()) !== false) {
+if ($dedicated->dedicatedBackupReinstallConfiguration(new \Ovh\StructType\DedicatedBackupReinstallConfiguration()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2642,7 +2642,7 @@ if ($dedicated->dedicatedBackupReinstallConfiguration(new \PayPal\StructType\Ded
 /**
  * Sample call for dedicatedBackupGetHisto operation/method
  */
-if ($dedicated->dedicatedBackupGetHisto(new \PayPal\StructType\DedicatedBackupGetHisto()) !== false) {
+if ($dedicated->dedicatedBackupGetHisto(new \Ovh\StructType\DedicatedBackupGetHisto()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2650,7 +2650,7 @@ if ($dedicated->dedicatedBackupGetHisto(new \PayPal\StructType\DedicatedBackupGe
 /**
  * Sample call for dedicatedBackupUpdate operation/method
  */
-if ($dedicated->dedicatedBackupUpdate(new \PayPal\StructType\DedicatedBackupUpdate()) !== false) {
+if ($dedicated->dedicatedBackupUpdate(new \Ovh\StructType\DedicatedBackupUpdate()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2658,7 +2658,7 @@ if ($dedicated->dedicatedBackupUpdate(new \PayPal\StructType\DedicatedBackupUpda
 /**
  * Sample call for dedicatedNetbootGetRescueEmail operation/method
  */
-if ($dedicated->dedicatedNetbootGetRescueEmail(new \PayPal\StructType\DedicatedNetbootGetRescueEmail()) !== false) {
+if ($dedicated->dedicatedNetbootGetRescueEmail(new \Ovh\StructType\DedicatedNetbootGetRescueEmail()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2666,7 +2666,7 @@ if ($dedicated->dedicatedNetbootGetRescueEmail(new \PayPal\StructType\DedicatedN
 /**
  * Sample call for dedicatedRtmListBackdoor operation/method
  */
-if ($dedicated->dedicatedRtmListBackdoor(new \PayPal\StructType\DedicatedRtmListBackdoor()) !== false) {
+if ($dedicated->dedicatedRtmListBackdoor(new \Ovh\StructType\DedicatedRtmListBackdoor()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2674,7 +2674,7 @@ if ($dedicated->dedicatedRtmListBackdoor(new \PayPal\StructType\DedicatedRtmList
 /**
  * Sample call for dedicatedMonitoringNotificationCreate operation/method
  */
-if ($dedicated->dedicatedMonitoringNotificationCreate(new \PayPal\StructType\DedicatedMonitoringNotificationCreate()) !== false) {
+if ($dedicated->dedicatedMonitoringNotificationCreate(new \Ovh\StructType\DedicatedMonitoringNotificationCreate()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2682,7 +2682,7 @@ if ($dedicated->dedicatedMonitoringNotificationCreate(new \PayPal\StructType\Ded
 /**
  * Sample call for dedicatedBackupList operation/method
  */
-if ($dedicated->dedicatedBackupList(new \PayPal\StructType\DedicatedBackupList()) !== false) {
+if ($dedicated->dedicatedBackupList(new \Ovh\StructType\DedicatedBackupList()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2690,7 +2690,7 @@ if ($dedicated->dedicatedBackupList(new \PayPal\StructType\DedicatedBackupList()
 /**
  * Sample call for dedicatedNetbootGetAll operation/method
  */
-if ($dedicated->dedicatedNetbootGetAll(new \PayPal\StructType\DedicatedNetbootGetAll()) !== false) {
+if ($dedicated->dedicatedNetbootGetAll(new \Ovh\StructType\DedicatedNetbootGetAll()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2698,7 +2698,7 @@ if ($dedicated->dedicatedNetbootGetAll(new \PayPal\StructType\DedicatedNetbootGe
 /**
  * Sample call for dedicatedVirtualMacIpAvailableGetList operation/method
  */
-if ($dedicated->dedicatedVirtualMacIpAvailableGetList(new \PayPal\StructType\DedicatedVirtualMacIpAvailableGetList()) !== false) {
+if ($dedicated->dedicatedVirtualMacIpAvailableGetList(new \Ovh\StructType\DedicatedVirtualMacIpAvailableGetList()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2706,7 +2706,7 @@ if ($dedicated->dedicatedVirtualMacIpAvailableGetList(new \PayPal\StructType\Ded
 /**
  * Sample call for dedicatedMonitoringSMSCreate operation/method
  */
-if ($dedicated->dedicatedMonitoringSMSCreate(new \PayPal\StructType\DedicatedMonitoringSMSCreate()) !== false) {
+if ($dedicated->dedicatedMonitoringSMSCreate(new \Ovh\StructType\DedicatedMonitoringSMSCreate()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2714,7 +2714,7 @@ if ($dedicated->dedicatedMonitoringSMSCreate(new \PayPal\StructType\DedicatedMon
 /**
  * Sample call for dedicatedRipeQuery operation/method
  */
-if ($dedicated->dedicatedRipeQuery(new \PayPal\StructType\DedicatedRipeQuery()) !== false) {
+if ($dedicated->dedicatedRipeQuery(new \Ovh\StructType\DedicatedRipeQuery()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2722,7 +2722,7 @@ if ($dedicated->dedicatedRipeQuery(new \PayPal\StructType\DedicatedRipeQuery()) 
 /**
  * Sample call for dedicatedBackupFtpPassword operation/method
  */
-if ($dedicated->dedicatedBackupFtpPassword(new \PayPal\StructType\DedicatedBackupFtpPassword()) !== false) {
+if ($dedicated->dedicatedBackupFtpPassword(new \Ovh\StructType\DedicatedBackupFtpPassword()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2730,7 +2730,7 @@ if ($dedicated->dedicatedBackupFtpPassword(new \PayPal\StructType\DedicatedBacku
 /**
  * Sample call for dedicatedRtmBackdoorUpdateAlert operation/method
  */
-if ($dedicated->dedicatedRtmBackdoorUpdateAlert(new \PayPal\StructType\DedicatedRtmBackdoorUpdateAlert()) !== false) {
+if ($dedicated->dedicatedRtmBackdoorUpdateAlert(new \Ovh\StructType\DedicatedRtmBackdoorUpdateAlert()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2738,7 +2738,7 @@ if ($dedicated->dedicatedRtmBackdoorUpdateAlert(new \PayPal\StructType\Dedicated
 /**
  * Sample call for dedicatedSecondaryDNSAdd operation/method
  */
-if ($dedicated->dedicatedSecondaryDNSAdd(new \PayPal\StructType\DedicatedSecondaryDNSAdd()) !== false) {
+if ($dedicated->dedicatedSecondaryDNSAdd(new \Ovh\StructType\DedicatedSecondaryDNSAdd()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2746,7 +2746,7 @@ if ($dedicated->dedicatedSecondaryDNSAdd(new \PayPal\StructType\DedicatedSeconda
 /**
  * Sample call for dedicatedRtmGetStatus operation/method
  */
-if ($dedicated->dedicatedRtmGetStatus(new \PayPal\StructType\DedicatedRtmGetStatus()) !== false) {
+if ($dedicated->dedicatedRtmGetStatus(new \Ovh\StructType\DedicatedRtmGetStatus()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2754,7 +2754,7 @@ if ($dedicated->dedicatedRtmGetStatus(new \PayPal\StructType\DedicatedRtmGetStat
 /**
  * Sample call for dedicatedNetbootGetAvailable operation/method
  */
-if ($dedicated->dedicatedNetbootGetAvailable(new \PayPal\StructType\DedicatedNetbootGetAvailable()) !== false) {
+if ($dedicated->dedicatedNetbootGetAvailable(new \Ovh\StructType\DedicatedNetbootGetAvailable()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2762,7 +2762,7 @@ if ($dedicated->dedicatedNetbootGetAvailable(new \PayPal\StructType\DedicatedNet
 /**
  * Sample call for dedicatedMailinglistGetAllowed operation/method
  */
-if ($dedicated->dedicatedMailinglistGetAllowed(new \PayPal\StructType\DedicatedMailinglistGetAllowed()) !== false) {
+if ($dedicated->dedicatedMailinglistGetAllowed(new \Ovh\StructType\DedicatedMailinglistGetAllowed()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2770,7 +2770,7 @@ if ($dedicated->dedicatedMailinglistGetAllowed(new \PayPal\StructType\DedicatedM
 /**
  * Sample call for dedicatedBackupInfo operation/method
  */
-if ($dedicated->dedicatedBackupInfo(new \PayPal\StructType\DedicatedBackupInfo()) !== false) {
+if ($dedicated->dedicatedBackupInfo(new \Ovh\StructType\DedicatedBackupInfo()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2778,7 +2778,7 @@ if ($dedicated->dedicatedBackupInfo(new \PayPal\StructType\DedicatedBackupInfo()
 /**
  * Sample call for dedicatedFailoverRipeAdd operation/method
  */
-if ($dedicated->dedicatedFailoverRipeAdd(new \PayPal\StructType\DedicatedFailoverRipeAdd()) !== false) {
+if ($dedicated->dedicatedFailoverRipeAdd(new \Ovh\StructType\DedicatedFailoverRipeAdd()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2786,7 +2786,7 @@ if ($dedicated->dedicatedFailoverRipeAdd(new \PayPal\StructType\DedicatedFailove
 /**
  * Sample call for dedicatedFilterIrcClientRuleAdd operation/method
  */
-if ($dedicated->dedicatedFilterIrcClientRuleAdd(new \PayPal\StructType\DedicatedFilterIrcClientRuleAdd()) !== false) {
+if ($dedicated->dedicatedFilterIrcClientRuleAdd(new \Ovh\StructType\DedicatedFilterIrcClientRuleAdd()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2794,7 +2794,7 @@ if ($dedicated->dedicatedFilterIrcClientRuleAdd(new \PayPal\StructType\Dedicated
 /**
  * Sample call for dedicatedInstallationTemplateList operation/method
  */
-if ($dedicated->dedicatedInstallationTemplateList(new \PayPal\StructType\DedicatedInstallationTemplateList()) !== false) {
+if ($dedicated->dedicatedInstallationTemplateList(new \Ovh\StructType\DedicatedInstallationTemplateList()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2802,7 +2802,7 @@ if ($dedicated->dedicatedInstallationTemplateList(new \PayPal\StructType\Dedicat
 /**
  * Sample call for dedicatedBackupGetCalendar operation/method
  */
-if ($dedicated->dedicatedBackupGetCalendar(new \PayPal\StructType\DedicatedBackupGetCalendar()) !== false) {
+if ($dedicated->dedicatedBackupGetCalendar(new \Ovh\StructType\DedicatedBackupGetCalendar()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2810,7 +2810,7 @@ if ($dedicated->dedicatedBackupGetCalendar(new \PayPal\StructType\DedicatedBacku
 /**
  * Sample call for dedicatedIpLoadBalancingServerDel operation/method
  */
-if ($dedicated->dedicatedIpLoadBalancingServerDel(new \PayPal\StructType\DedicatedIpLoadBalancingServerDel()) !== false) {
+if ($dedicated->dedicatedIpLoadBalancingServerDel(new \Ovh\StructType\DedicatedIpLoadBalancingServerDel()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2818,7 +2818,7 @@ if ($dedicated->dedicatedIpLoadBalancingServerDel(new \PayPal\StructType\Dedicat
 /**
  * Sample call for dedicatedEditServiceMonitoringItem operation/method
  */
-if ($dedicated->dedicatedEditServiceMonitoringItem(new \PayPal\StructType\DedicatedEditServiceMonitoringItem()) !== false) {
+if ($dedicated->dedicatedEditServiceMonitoringItem(new \Ovh\StructType\DedicatedEditServiceMonitoringItem()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2826,7 +2826,7 @@ if ($dedicated->dedicatedEditServiceMonitoringItem(new \PayPal\StructType\Dedica
 /**
  * Sample call for dedicatedIPForUDPServerList operation/method
  */
-if ($dedicated->dedicatedIPForUDPServerList(new \PayPal\StructType\DedicatedIPForUDPServerList()) !== false) {
+if ($dedicated->dedicatedIPForUDPServerList(new \Ovh\StructType\DedicatedIPForUDPServerList()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2834,7 +2834,7 @@ if ($dedicated->dedicatedIPForUDPServerList(new \PayPal\StructType\DedicatedIPFo
 /**
  * Sample call for dedicatedBackupSet operation/method
  */
-if ($dedicated->dedicatedBackupSet(new \PayPal\StructType\DedicatedBackupSet()) !== false) {
+if ($dedicated->dedicatedBackupSet(new \Ovh\StructType\DedicatedBackupSet()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2842,7 +2842,7 @@ if ($dedicated->dedicatedBackupSet(new \PayPal\StructType\DedicatedBackupSet()) 
 /**
  * Sample call for dedicatedVirtualMacIpDelete operation/method
  */
-if ($dedicated->dedicatedVirtualMacIpDelete(new \PayPal\StructType\DedicatedVirtualMacIpDelete()) !== false) {
+if ($dedicated->dedicatedVirtualMacIpDelete(new \Ovh\StructType\DedicatedVirtualMacIpDelete()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2850,7 +2850,7 @@ if ($dedicated->dedicatedVirtualMacIpDelete(new \PayPal\StructType\DedicatedVirt
 /**
  * Sample call for dedicatedFailoverRipeSplit operation/method
  */
-if ($dedicated->dedicatedFailoverRipeSplit(new \PayPal\StructType\DedicatedFailoverRipeSplit()) !== false) {
+if ($dedicated->dedicatedFailoverRipeSplit(new \Ovh\StructType\DedicatedFailoverRipeSplit()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2858,7 +2858,7 @@ if ($dedicated->dedicatedFailoverRipeSplit(new \PayPal\StructType\DedicatedFailo
 /**
  * Sample call for dedicatedReverseInfo operation/method
  */
-if ($dedicated->dedicatedReverseInfo(new \PayPal\StructType\DedicatedReverseInfo()) !== false) {
+if ($dedicated->dedicatedReverseInfo(new \Ovh\StructType\DedicatedReverseInfo()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2866,7 +2866,7 @@ if ($dedicated->dedicatedReverseInfo(new \PayPal\StructType\DedicatedReverseInfo
 /**
  * Sample call for dedicatedCapabilitiesGetAll operation/method
  */
-if ($dedicated->dedicatedCapabilitiesGetAll(new \PayPal\StructType\DedicatedCapabilitiesGetAll()) !== false) {
+if ($dedicated->dedicatedCapabilitiesGetAll(new \Ovh\StructType\DedicatedCapabilitiesGetAll()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2874,7 +2874,7 @@ if ($dedicated->dedicatedCapabilitiesGetAll(new \PayPal\StructType\DedicatedCapa
 /**
  * Sample call for dedicatedBackupIncludeAdd operation/method
  */
-if ($dedicated->dedicatedBackupIncludeAdd(new \PayPal\StructType\DedicatedBackupIncludeAdd()) !== false) {
+if ($dedicated->dedicatedBackupIncludeAdd(new \Ovh\StructType\DedicatedBackupIncludeAdd()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2882,7 +2882,7 @@ if ($dedicated->dedicatedBackupIncludeAdd(new \PayPal\StructType\DedicatedBackup
 /**
  * Sample call for dedicatedFailoverRipeList operation/method
  */
-if ($dedicated->dedicatedFailoverRipeList(new \PayPal\StructType\DedicatedFailoverRipeList()) !== false) {
+if ($dedicated->dedicatedFailoverRipeList(new \Ovh\StructType\DedicatedFailoverRipeList()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2890,7 +2890,7 @@ if ($dedicated->dedicatedFailoverRipeList(new \PayPal\StructType\DedicatedFailov
 /**
  * Sample call for dedicatedMonitoringServiceAdd operation/method
  */
-if ($dedicated->dedicatedMonitoringServiceAdd(new \PayPal\StructType\DedicatedMonitoringServiceAdd()) !== false) {
+if ($dedicated->dedicatedMonitoringServiceAdd(new \Ovh\StructType\DedicatedMonitoringServiceAdd()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2898,7 +2898,7 @@ if ($dedicated->dedicatedMonitoringServiceAdd(new \PayPal\StructType\DedicatedMo
 /**
  * Sample call for dedicatedHardRebootDo operation/method
  */
-if ($dedicated->dedicatedHardRebootDo(new \PayPal\StructType\DedicatedHardRebootDo()) !== false) {
+if ($dedicated->dedicatedHardRebootDo(new \Ovh\StructType\DedicatedHardRebootDo()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2906,7 +2906,7 @@ if ($dedicated->dedicatedHardRebootDo(new \PayPal\StructType\DedicatedHardReboot
 /**
  * Sample call for dedicatedReverseList operation/method
  */
-if ($dedicated->dedicatedReverseList(new \PayPal\StructType\DedicatedReverseList()) !== false) {
+if ($dedicated->dedicatedReverseList(new \Ovh\StructType\DedicatedReverseList()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2914,7 +2914,7 @@ if ($dedicated->dedicatedReverseList(new \PayPal\StructType\DedicatedReverseList
 /**
  * Sample call for dedicatedBackupFtpAdd operation/method
  */
-if ($dedicated->dedicatedBackupFtpAdd(new \PayPal\StructType\DedicatedBackupFtpAdd()) !== false) {
+if ($dedicated->dedicatedBackupFtpAdd(new \Ovh\StructType\DedicatedBackupFtpAdd()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2922,7 +2922,7 @@ if ($dedicated->dedicatedBackupFtpAdd(new \PayPal\StructType\DedicatedBackupFtpA
 /**
  * Sample call for dedicatedVirtualMacIpUsedGetList operation/method
  */
-if ($dedicated->dedicatedVirtualMacIpUsedGetList(new \PayPal\StructType\DedicatedVirtualMacIpUsedGetList()) !== false) {
+if ($dedicated->dedicatedVirtualMacIpUsedGetList(new \Ovh\StructType\DedicatedVirtualMacIpUsedGetList()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2930,7 +2930,7 @@ if ($dedicated->dedicatedVirtualMacIpUsedGetList(new \PayPal\StructType\Dedicate
 /**
  * Sample call for dedicatedNetbootInfo operation/method
  */
-if ($dedicated->dedicatedNetbootInfo(new \PayPal\StructType\DedicatedNetbootInfo()) !== false) {
+if ($dedicated->dedicatedNetbootInfo(new \Ovh\StructType\DedicatedNetbootInfo()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2938,7 +2938,7 @@ if ($dedicated->dedicatedNetbootInfo(new \PayPal\StructType\DedicatedNetbootInfo
 /**
  * Sample call for dedicatedIpLoadBalancingAdd operation/method
  */
-if ($dedicated->dedicatedIpLoadBalancingAdd(new \PayPal\StructType\DedicatedIpLoadBalancingAdd()) !== false) {
+if ($dedicated->dedicatedIpLoadBalancingAdd(new \Ovh\StructType\DedicatedIpLoadBalancingAdd()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2946,7 +2946,7 @@ if ($dedicated->dedicatedIpLoadBalancingAdd(new \PayPal\StructType\DedicatedIpLo
 /**
  * Sample call for dedicatedAvailableNotificationNicsGet operation/method
  */
-if ($dedicated->dedicatedAvailableNotificationNicsGet(new \PayPal\StructType\DedicatedAvailableNotificationNicsGet()) !== false) {
+if ($dedicated->dedicatedAvailableNotificationNicsGet(new \Ovh\StructType\DedicatedAvailableNotificationNicsGet()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2954,7 +2954,7 @@ if ($dedicated->dedicatedAvailableNotificationNicsGet(new \PayPal\StructType\Ded
 /**
  * Sample call for dedicatedMonitoringServiceDel operation/method
  */
-if ($dedicated->dedicatedMonitoringServiceDel(new \PayPal\StructType\DedicatedMonitoringServiceDel()) !== false) {
+if ($dedicated->dedicatedMonitoringServiceDel(new \Ovh\StructType\DedicatedMonitoringServiceDel()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2962,7 +2962,7 @@ if ($dedicated->dedicatedMonitoringServiceDel(new \PayPal\StructType\DedicatedMo
 /**
  * Sample call for dedicatedIpLoadBalancingServerStateModify operation/method
  */
-if ($dedicated->dedicatedIpLoadBalancingServerStateModify(new \PayPal\StructType\DedicatedIpLoadBalancingServerStateModify()) !== false) {
+if ($dedicated->dedicatedIpLoadBalancingServerStateModify(new \Ovh\StructType\DedicatedIpLoadBalancingServerStateModify()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2970,7 +2970,7 @@ if ($dedicated->dedicatedIpLoadBalancingServerStateModify(new \PayPal\StructType
 /**
  * Sample call for dedicatedReverseModify operation/method
  */
-if ($dedicated->dedicatedReverseModify(new \PayPal\StructType\DedicatedReverseModify()) !== false) {
+if ($dedicated->dedicatedReverseModify(new \Ovh\StructType\DedicatedReverseModify()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2978,7 +2978,7 @@ if ($dedicated->dedicatedReverseModify(new \PayPal\StructType\DedicatedReverseMo
 /**
  * Sample call for dedicatedFailoverList operation/method
  */
-if ($dedicated->dedicatedFailoverList(new \PayPal\StructType\DedicatedFailoverList()) !== false) {
+if ($dedicated->dedicatedFailoverList(new \Ovh\StructType\DedicatedFailoverList()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2986,7 +2986,7 @@ if ($dedicated->dedicatedFailoverList(new \PayPal\StructType\DedicatedFailoverLi
 /**
  * Sample call for dedicatedSecondaryDNSInfo operation/method
  */
-if ($dedicated->dedicatedSecondaryDNSInfo(new \PayPal\StructType\DedicatedSecondaryDNSInfo()) !== false) {
+if ($dedicated->dedicatedSecondaryDNSInfo(new \Ovh\StructType\DedicatedSecondaryDNSInfo()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -2994,7 +2994,7 @@ if ($dedicated->dedicatedSecondaryDNSInfo(new \PayPal\StructType\DedicatedSecond
 /**
  * Sample call for dedicatedRipeUpdateInetnum operation/method
  */
-if ($dedicated->dedicatedRipeUpdateInetnum(new \PayPal\StructType\DedicatedRipeUpdateInetnum()) !== false) {
+if ($dedicated->dedicatedRipeUpdateInetnum(new \Ovh\StructType\DedicatedRipeUpdateInetnum()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3002,7 +3002,7 @@ if ($dedicated->dedicatedRipeUpdateInetnum(new \PayPal\StructType\DedicatedRipeU
 /**
  * Sample call for dedicatedGetAvailableNetworkFromCountry operation/method
  */
-if ($dedicated->dedicatedGetAvailableNetworkFromCountry(new \PayPal\StructType\DedicatedGetAvailableNetworkFromCountry()) !== false) {
+if ($dedicated->dedicatedGetAvailableNetworkFromCountry(new \Ovh\StructType\DedicatedGetAvailableNetworkFromCountry()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3010,7 +3010,7 @@ if ($dedicated->dedicatedGetAvailableNetworkFromCountry(new \PayPal\StructType\D
 /**
  * Sample call for dedicatedFailoverAdd operation/method
  */
-if ($dedicated->dedicatedFailoverAdd(new \PayPal\StructType\DedicatedFailoverAdd()) !== false) {
+if ($dedicated->dedicatedFailoverAdd(new \Ovh\StructType\DedicatedFailoverAdd()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3018,7 +3018,7 @@ if ($dedicated->dedicatedFailoverAdd(new \PayPal\StructType\DedicatedFailoverAdd
 /**
  * Sample call for dedicatedFilterIrcServerRuleList operation/method
  */
-if ($dedicated->dedicatedFilterIrcServerRuleList(new \PayPal\StructType\DedicatedFilterIrcServerRuleList()) !== false) {
+if ($dedicated->dedicatedFilterIrcServerRuleList(new \Ovh\StructType\DedicatedFilterIrcServerRuleList()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3026,7 +3026,7 @@ if ($dedicated->dedicatedFilterIrcServerRuleList(new \PayPal\StructType\Dedicate
 /**
  * Sample call for dedicatedRipeCreateOrganisation operation/method
  */
-if ($dedicated->dedicatedRipeCreateOrganisation(new \PayPal\StructType\DedicatedRipeCreateOrganisation()) !== false) {
+if ($dedicated->dedicatedRipeCreateOrganisation(new \Ovh\StructType\DedicatedRipeCreateOrganisation()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3034,7 +3034,7 @@ if ($dedicated->dedicatedRipeCreateOrganisation(new \PayPal\StructType\Dedicated
 /**
  * Sample call for dedicatedBackupExcludeAdd operation/method
  */
-if ($dedicated->dedicatedBackupExcludeAdd(new \PayPal\StructType\DedicatedBackupExcludeAdd()) !== false) {
+if ($dedicated->dedicatedBackupExcludeAdd(new \Ovh\StructType\DedicatedBackupExcludeAdd()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3042,7 +3042,7 @@ if ($dedicated->dedicatedBackupExcludeAdd(new \PayPal\StructType\DedicatedBackup
 /**
  * Sample call for dedicatedFilterIrcServerRuleDel operation/method
  */
-if ($dedicated->dedicatedFilterIrcServerRuleDel(new \PayPal\StructType\DedicatedFilterIrcServerRuleDel()) !== false) {
+if ($dedicated->dedicatedFilterIrcServerRuleDel(new \Ovh\StructType\DedicatedFilterIrcServerRuleDel()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3050,7 +3050,7 @@ if ($dedicated->dedicatedFilterIrcServerRuleDel(new \PayPal\StructType\Dedicated
 /**
  * Sample call for dedicatedFailoverRipeModify operation/method
  */
-if ($dedicated->dedicatedFailoverRipeModify(new \PayPal\StructType\DedicatedFailoverRipeModify()) !== false) {
+if ($dedicated->dedicatedFailoverRipeModify(new \Ovh\StructType\DedicatedFailoverRipeModify()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3058,7 +3058,7 @@ if ($dedicated->dedicatedFailoverRipeModify(new \PayPal\StructType\DedicatedFail
 /**
  * Sample call for dedicatedMonitoringList operation/method
  */
-if ($dedicated->dedicatedMonitoringList(new \PayPal\StructType\DedicatedMonitoringList()) !== false) {
+if ($dedicated->dedicatedMonitoringList(new \Ovh\StructType\DedicatedMonitoringList()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3066,7 +3066,7 @@ if ($dedicated->dedicatedMonitoringList(new \PayPal\StructType\DedicatedMonitori
 /**
  * Sample call for dedicatedBackupExcludeDel operation/method
  */
-if ($dedicated->dedicatedBackupExcludeDel(new \PayPal\StructType\DedicatedBackupExcludeDel()) !== false) {
+if ($dedicated->dedicatedBackupExcludeDel(new \Ovh\StructType\DedicatedBackupExcludeDel()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3074,7 +3074,7 @@ if ($dedicated->dedicatedBackupExcludeDel(new \PayPal\StructType\DedicatedBackup
 /**
  * Sample call for dedicatedHardRebootStatus operation/method
  */
-if ($dedicated->dedicatedHardRebootStatus(new \PayPal\StructType\DedicatedHardRebootStatus()) !== false) {
+if ($dedicated->dedicatedHardRebootStatus(new \Ovh\StructType\DedicatedHardRebootStatus()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3082,7 +3082,7 @@ if ($dedicated->dedicatedHardRebootStatus(new \PayPal\StructType\DedicatedHardRe
 /**
  * Sample call for dedicatedGetServiceMonitoringItem operation/method
  */
-if ($dedicated->dedicatedGetServiceMonitoringItem(new \PayPal\StructType\DedicatedGetServiceMonitoringItem()) !== false) {
+if ($dedicated->dedicatedGetServiceMonitoringItem(new \Ovh\StructType\DedicatedGetServiceMonitoringItem()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3090,7 +3090,7 @@ if ($dedicated->dedicatedGetServiceMonitoringItem(new \PayPal\StructType\Dedicat
 /**
  * Sample call for dedicatedReverseAdd operation/method
  */
-if ($dedicated->dedicatedReverseAdd(new \PayPal\StructType\DedicatedReverseAdd()) !== false) {
+if ($dedicated->dedicatedReverseAdd(new \Ovh\StructType\DedicatedReverseAdd()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3098,7 +3098,7 @@ if ($dedicated->dedicatedReverseAdd(new \PayPal\StructType\DedicatedReverseAdd()
 /**
  * Sample call for dedicatedBackupGetFreePlanning operation/method
  */
-if ($dedicated->dedicatedBackupGetFreePlanning(new \PayPal\StructType\DedicatedBackupGetFreePlanning()) !== false) {
+if ($dedicated->dedicatedBackupGetFreePlanning(new \Ovh\StructType\DedicatedBackupGetFreePlanning()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3106,7 +3106,7 @@ if ($dedicated->dedicatedBackupGetFreePlanning(new \PayPal\StructType\DedicatedB
 /**
  * Sample call for dedicatedInstallAllowedDistributionGet operation/method
  */
-if ($dedicated->dedicatedInstallAllowedDistributionGet(new \PayPal\StructType\DedicatedInstallAllowedDistributionGet()) !== false) {
+if ($dedicated->dedicatedInstallAllowedDistributionGet(new \Ovh\StructType\DedicatedInstallAllowedDistributionGet()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3114,7 +3114,7 @@ if ($dedicated->dedicatedInstallAllowedDistributionGet(new \PayPal\StructType\De
 /**
  * Sample call for dedicatedCapabilitiesGet operation/method
  */
-if ($dedicated->dedicatedCapabilitiesGet(new \PayPal\StructType\DedicatedCapabilitiesGet()) !== false) {
+if ($dedicated->dedicatedCapabilitiesGet(new \Ovh\StructType\DedicatedCapabilitiesGet()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3122,7 +3122,7 @@ if ($dedicated->dedicatedCapabilitiesGet(new \PayPal\StructType\DedicatedCapabil
 /**
  * Sample call for dedicatedMonitoringSMSDel operation/method
  */
-if ($dedicated->dedicatedMonitoringSMSDel(new \PayPal\StructType\DedicatedMonitoringSMSDel()) !== false) {
+if ($dedicated->dedicatedMonitoringSMSDel(new \Ovh\StructType\DedicatedMonitoringSMSDel()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3130,7 +3130,7 @@ if ($dedicated->dedicatedMonitoringSMSDel(new \PayPal\StructType\DedicatedMonito
 /**
  * Sample call for dedicatedMonitoringAdd operation/method
  */
-if ($dedicated->dedicatedMonitoringAdd(new \PayPal\StructType\DedicatedMonitoringAdd()) !== false) {
+if ($dedicated->dedicatedMonitoringAdd(new \Ovh\StructType\DedicatedMonitoringAdd()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3138,7 +3138,7 @@ if ($dedicated->dedicatedMonitoringAdd(new \PayPal\StructType\DedicatedMonitorin
 /**
  * Sample call for dedicatedOperationList operation/method
  */
-if ($dedicated->dedicatedOperationList(new \PayPal\StructType\DedicatedOperationList()) !== false) {
+if ($dedicated->dedicatedOperationList(new \Ovh\StructType\DedicatedOperationList()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3146,7 +3146,7 @@ if ($dedicated->dedicatedOperationList(new \PayPal\StructType\DedicatedOperation
 /**
  * Sample call for dedicatedBackupIncludeDel operation/method
  */
-if ($dedicated->dedicatedBackupIncludeDel(new \PayPal\StructType\DedicatedBackupIncludeDel()) !== false) {
+if ($dedicated->dedicatedBackupIncludeDel(new \Ovh\StructType\DedicatedBackupIncludeDel()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3154,7 +3154,7 @@ if ($dedicated->dedicatedBackupIncludeDel(new \PayPal\StructType\DedicatedBackup
 /**
  * Sample call for dedicatedBandwidthSwitching operation/method
  */
-if ($dedicated->dedicatedBandwidthSwitching(new \PayPal\StructType\DedicatedBandwidthSwitching()) !== false) {
+if ($dedicated->dedicatedBandwidthSwitching(new \Ovh\StructType\DedicatedBandwidthSwitching()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3162,7 +3162,7 @@ if ($dedicated->dedicatedBandwidthSwitching(new \PayPal\StructType\DedicatedBand
 /**
  * Sample call for dedicatedIpLoadBalancingDel operation/method
  */
-if ($dedicated->dedicatedIpLoadBalancingDel(new \PayPal\StructType\DedicatedIpLoadBalancingDel()) !== false) {
+if ($dedicated->dedicatedIpLoadBalancingDel(new \Ovh\StructType\DedicatedIpLoadBalancingDel()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3170,7 +3170,7 @@ if ($dedicated->dedicatedIpLoadBalancingDel(new \PayPal\StructType\DedicatedIpLo
 /**
  * Sample call for dedicatedInstallationTemplateUse operation/method
  */
-if ($dedicated->dedicatedInstallationTemplateUse(new \PayPal\StructType\DedicatedInstallationTemplateUse()) !== false) {
+if ($dedicated->dedicatedInstallationTemplateUse(new \Ovh\StructType\DedicatedInstallationTemplateUse()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3178,7 +3178,7 @@ if ($dedicated->dedicatedInstallationTemplateUse(new \PayPal\StructType\Dedicate
 /**
  * Sample call for dedicatedIpLoadBalancingServerAdd operation/method
  */
-if ($dedicated->dedicatedIpLoadBalancingServerAdd(new \PayPal\StructType\DedicatedIpLoadBalancingServerAdd()) !== false) {
+if ($dedicated->dedicatedIpLoadBalancingServerAdd(new \Ovh\StructType\DedicatedIpLoadBalancingServerAdd()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3186,7 +3186,7 @@ if ($dedicated->dedicatedIpLoadBalancingServerAdd(new \PayPal\StructType\Dedicat
 /**
  * Sample call for dedicatedRipeUpdateOrganisation operation/method
  */
-if ($dedicated->dedicatedRipeUpdateOrganisation(new \PayPal\StructType\DedicatedRipeUpdateOrganisation()) !== false) {
+if ($dedicated->dedicatedRipeUpdateOrganisation(new \Ovh\StructType\DedicatedRipeUpdateOrganisation()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3194,7 +3194,7 @@ if ($dedicated->dedicatedRipeUpdateOrganisation(new \PayPal\StructType\Dedicated
 /**
  * Sample call for dedicatedNetbootModifyById operation/method
  */
-if ($dedicated->dedicatedNetbootModifyById(new \PayPal\StructType\DedicatedNetbootModifyById()) !== false) {
+if ($dedicated->dedicatedNetbootModifyById(new \Ovh\StructType\DedicatedNetbootModifyById()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3202,7 +3202,7 @@ if ($dedicated->dedicatedNetbootModifyById(new \PayPal\StructType\DedicatedNetbo
 /**
  * Sample call for dedicatedBackupGetDate operation/method
  */
-if ($dedicated->dedicatedBackupGetDate(new \PayPal\StructType\DedicatedBackupGetDate()) !== false) {
+if ($dedicated->dedicatedBackupGetDate(new \Ovh\StructType\DedicatedBackupGetDate()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3210,7 +3210,7 @@ if ($dedicated->dedicatedBackupGetDate(new \PayPal\StructType\DedicatedBackupGet
 /**
  * Sample call for dedicatedSecondaryDNSDel operation/method
  */
-if ($dedicated->dedicatedSecondaryDNSDel(new \PayPal\StructType\DedicatedSecondaryDNSDel()) !== false) {
+if ($dedicated->dedicatedSecondaryDNSDel(new \Ovh\StructType\DedicatedSecondaryDNSDel()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3218,7 +3218,7 @@ if ($dedicated->dedicatedSecondaryDNSDel(new \PayPal\StructType\DedicatedSeconda
 /**
  * Sample call for dedicatedSecondaryDNSGetAll operation/method
  */
-if ($dedicated->dedicatedSecondaryDNSGetAll(new \PayPal\StructType\DedicatedSecondaryDNSGetAll()) !== false) {
+if ($dedicated->dedicatedSecondaryDNSGetAll(new \Ovh\StructType\DedicatedSecondaryDNSGetAll()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3226,7 +3226,7 @@ if ($dedicated->dedicatedSecondaryDNSGetAll(new \PayPal\StructType\DedicatedSeco
 /**
  * Sample call for dedicatedMonitoringNotificationDel operation/method
  */
-if ($dedicated->dedicatedMonitoringNotificationDel(new \PayPal\StructType\DedicatedMonitoringNotificationDel()) !== false) {
+if ($dedicated->dedicatedMonitoringNotificationDel(new \Ovh\StructType\DedicatedMonitoringNotificationDel()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3234,7 +3234,7 @@ if ($dedicated->dedicatedMonitoringNotificationDel(new \PayPal\StructType\Dedica
 /**
  * Sample call for dedicatedBandwidthManagementGet operation/method
  */
-if ($dedicated->dedicatedBandwidthManagementGet(new \PayPal\StructType\DedicatedBandwidthManagementGet()) !== false) {
+if ($dedicated->dedicatedBandwidthManagementGet(new \Ovh\StructType\DedicatedBandwidthManagementGet()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3242,7 +3242,7 @@ if ($dedicated->dedicatedBandwidthManagementGet(new \PayPal\StructType\Dedicated
 /**
  * Sample call for dedicatedMonitoringStatusUpdate operation/method
  */
-if ($dedicated->dedicatedMonitoringStatusUpdate(new \PayPal\StructType\DedicatedMonitoringStatusUpdate()) !== false) {
+if ($dedicated->dedicatedMonitoringStatusUpdate(new \Ovh\StructType\DedicatedMonitoringStatusUpdate()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3250,7 +3250,7 @@ if ($dedicated->dedicatedMonitoringStatusUpdate(new \PayPal\StructType\Dedicated
 /**
  * Sample call for dedicatedIPForUDPMoveGetStatus operation/method
  */
-if ($dedicated->dedicatedIPForUDPMoveGetStatus(new \PayPal\StructType\DedicatedIPForUDPMoveGetStatus()) !== false) {
+if ($dedicated->dedicatedIPForUDPMoveGetStatus(new \Ovh\StructType\DedicatedIPForUDPMoveGetStatus()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3258,7 +3258,7 @@ if ($dedicated->dedicatedIPForUDPMoveGetStatus(new \PayPal\StructType\DedicatedI
 /**
  * Sample call for dedicatedRipeDeleteOrganisation operation/method
  */
-if ($dedicated->dedicatedRipeDeleteOrganisation(new \PayPal\StructType\DedicatedRipeDeleteOrganisation()) !== false) {
+if ($dedicated->dedicatedRipeDeleteOrganisation(new \Ovh\StructType\DedicatedRipeDeleteOrganisation()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3266,7 +3266,7 @@ if ($dedicated->dedicatedRipeDeleteOrganisation(new \PayPal\StructType\Dedicated
 /**
  * Sample call for dedicatedFailoverRipeGetIp operation/method
  */
-if ($dedicated->dedicatedFailoverRipeGetIp(new \PayPal\StructType\DedicatedFailoverRipeGetIp()) !== false) {
+if ($dedicated->dedicatedFailoverRipeGetIp(new \Ovh\StructType\DedicatedFailoverRipeGetIp()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3274,7 +3274,7 @@ if ($dedicated->dedicatedFailoverRipeGetIp(new \PayPal\StructType\DedicatedFailo
 /**
  * Sample call for dedicatedInstallBasic operation/method
  */
-if ($dedicated->dedicatedInstallBasic(new \PayPal\StructType\DedicatedInstallBasic()) !== false) {
+if ($dedicated->dedicatedInstallBasic(new \Ovh\StructType\DedicatedInstallBasic()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3282,7 +3282,7 @@ if ($dedicated->dedicatedInstallBasic(new \PayPal\StructType\DedicatedInstallBas
 /**
  * Sample call for dedicatedInstallReset operation/method
  */
-if ($dedicated->dedicatedInstallReset(new \PayPal\StructType\DedicatedInstallReset()) !== false) {
+if ($dedicated->dedicatedInstallReset(new \Ovh\StructType\DedicatedInstallReset()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3290,7 +3290,7 @@ if ($dedicated->dedicatedInstallReset(new \PayPal\StructType\DedicatedInstallRes
 /**
  * Sample call for dedicatedMonitoringServiceAddNotification operation/method
  */
-if ($dedicated->dedicatedMonitoringServiceAddNotification(new \PayPal\StructType\DedicatedMonitoringServiceAddNotification()) !== false) {
+if ($dedicated->dedicatedMonitoringServiceAddNotification(new \Ovh\StructType\DedicatedMonitoringServiceAddNotification()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3298,7 +3298,7 @@ if ($dedicated->dedicatedMonitoringServiceAddNotification(new \PayPal\StructType
 /**
  * Sample call for dedicatedFilterIrcClientRuleDel operation/method
  */
-if ($dedicated->dedicatedFilterIrcClientRuleDel(new \PayPal\StructType\DedicatedFilterIrcClientRuleDel()) !== false) {
+if ($dedicated->dedicatedFilterIrcClientRuleDel(new \Ovh\StructType\DedicatedFilterIrcClientRuleDel()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3306,7 +3306,7 @@ if ($dedicated->dedicatedFilterIrcClientRuleDel(new \PayPal\StructType\Dedicated
 /**
  * Sample call for dedicatedMrtgInfo operation/method
  */
-if ($dedicated->dedicatedMrtgInfo(new \PayPal\StructType\DedicatedMrtgInfo()) !== false) {
+if ($dedicated->dedicatedMrtgInfo(new \Ovh\StructType\DedicatedMrtgInfo()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3314,7 +3314,7 @@ if ($dedicated->dedicatedMrtgInfo(new \PayPal\StructType\DedicatedMrtgInfo()) !=
 /**
  * Sample call for dedicatedBackupReinstallData operation/method
  */
-if ($dedicated->dedicatedBackupReinstallData(new \PayPal\StructType\DedicatedBackupReinstallData()) !== false) {
+if ($dedicated->dedicatedBackupReinstallData(new \Ovh\StructType\DedicatedBackupReinstallData()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3322,7 +3322,7 @@ if ($dedicated->dedicatedBackupReinstallData(new \PayPal\StructType\DedicatedBac
 /**
  * Sample call for dedicatedBackupFtpInfo operation/method
  */
-if ($dedicated->dedicatedBackupFtpInfo(new \PayPal\StructType\DedicatedBackupFtpInfo()) !== false) {
+if ($dedicated->dedicatedBackupFtpInfo(new \Ovh\StructType\DedicatedBackupFtpInfo()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3330,7 +3330,7 @@ if ($dedicated->dedicatedBackupFtpInfo(new \PayPal\StructType\DedicatedBackupFtp
 /**
  * Sample call for dedicatedMonitoringModify operation/method
  */
-if ($dedicated->dedicatedMonitoringModify(new \PayPal\StructType\DedicatedMonitoringModify()) !== false) {
+if ($dedicated->dedicatedMonitoringModify(new \Ovh\StructType\DedicatedMonitoringModify()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3338,7 +3338,7 @@ if ($dedicated->dedicatedMonitoringModify(new \PayPal\StructType\DedicatedMonito
 /**
  * Sample call for dedicatedGetRandomAvailableIpFromCountry operation/method
  */
-if ($dedicated->dedicatedGetRandomAvailableIpFromCountry(new \PayPal\StructType\DedicatedGetRandomAvailableIpFromCountry()) !== false) {
+if ($dedicated->dedicatedGetRandomAvailableIpFromCountry(new \Ovh\StructType\DedicatedGetRandomAvailableIpFromCountry()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3346,7 +3346,7 @@ if ($dedicated->dedicatedGetRandomAvailableIpFromCountry(new \PayPal\StructType\
 /**
  * Sample call for dedicatedInstallBasicProgress operation/method
  */
-if ($dedicated->dedicatedInstallBasicProgress(new \PayPal\StructType\DedicatedInstallBasicProgress()) !== false) {
+if ($dedicated->dedicatedInstallBasicProgress(new \Ovh\StructType\DedicatedInstallBasicProgress()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3354,7 +3354,7 @@ if ($dedicated->dedicatedInstallBasicProgress(new \PayPal\StructType\DedicatedIn
 /**
  * Sample call for dedicatedAddServiceMonitoringAlertEmail operation/method
  */
-if ($dedicated->dedicatedAddServiceMonitoringAlertEmail(new \PayPal\StructType\DedicatedAddServiceMonitoringAlertEmail()) !== false) {
+if ($dedicated->dedicatedAddServiceMonitoringAlertEmail(new \Ovh\StructType\DedicatedAddServiceMonitoringAlertEmail()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3362,7 +3362,7 @@ if ($dedicated->dedicatedAddServiceMonitoringAlertEmail(new \PayPal\StructType\D
 /**
  * Sample call for dedicatedFailoverUpdate operation/method
  */
-if ($dedicated->dedicatedFailoverUpdate(new \PayPal\StructType\DedicatedFailoverUpdate()) !== false) {
+if ($dedicated->dedicatedFailoverUpdate(new \Ovh\StructType\DedicatedFailoverUpdate()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3370,7 +3370,7 @@ if ($dedicated->dedicatedFailoverUpdate(new \PayPal\StructType\DedicatedFailover
 /**
  * Sample call for dedicatedFilterIrcServerRuleAdd operation/method
  */
-if ($dedicated->dedicatedFilterIrcServerRuleAdd(new \PayPal\StructType\DedicatedFilterIrcServerRuleAdd()) !== false) {
+if ($dedicated->dedicatedFilterIrcServerRuleAdd(new \Ovh\StructType\DedicatedFilterIrcServerRuleAdd()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3378,7 +3378,7 @@ if ($dedicated->dedicatedFilterIrcServerRuleAdd(new \PayPal\StructType\Dedicated
 /**
  * Sample call for dedicatedVirtualMacIpAdd operation/method
  */
-if ($dedicated->dedicatedVirtualMacIpAdd(new \PayPal\StructType\DedicatedVirtualMacIpAdd()) !== false) {
+if ($dedicated->dedicatedVirtualMacIpAdd(new \Ovh\StructType\DedicatedVirtualMacIpAdd()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3386,7 +3386,7 @@ if ($dedicated->dedicatedVirtualMacIpAdd(new \PayPal\StructType\DedicatedVirtual
 /**
  * Sample call for dedicatedRipeGetRipeIds operation/method
  */
-if ($dedicated->dedicatedRipeGetRipeIds(new \PayPal\StructType\DedicatedRipeGetRipeIds()) !== false) {
+if ($dedicated->dedicatedRipeGetRipeIds(new \Ovh\StructType\DedicatedRipeGetRipeIds()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3394,7 +3394,7 @@ if ($dedicated->dedicatedRipeGetRipeIds(new \PayPal\StructType\DedicatedRipeGetR
 /**
  * Sample call for dedicatedInfo operation/method
  */
-if ($dedicated->dedicatedInfo(new \PayPal\StructType\DedicatedInfo()) !== false) {
+if ($dedicated->dedicatedInfo(new \Ovh\StructType\DedicatedInfo()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3402,7 +3402,7 @@ if ($dedicated->dedicatedInfo(new \PayPal\StructType\DedicatedInfo()) !== false)
 /**
  * Sample call for dedicatedBackupUpdateDate operation/method
  */
-if ($dedicated->dedicatedBackupUpdateDate(new \PayPal\StructType\DedicatedBackupUpdateDate()) !== false) {
+if ($dedicated->dedicatedBackupUpdateDate(new \Ovh\StructType\DedicatedBackupUpdateDate()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3410,7 +3410,7 @@ if ($dedicated->dedicatedBackupUpdateDate(new \PayPal\StructType\DedicatedBackup
 /**
  * Sample call for dedicatedMonitoringStatusGet operation/method
  */
-if ($dedicated->dedicatedMonitoringStatusGet(new \PayPal\StructType\DedicatedMonitoringStatusGet()) !== false) {
+if ($dedicated->dedicatedMonitoringStatusGet(new \Ovh\StructType\DedicatedMonitoringStatusGet()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3418,7 +3418,7 @@ if ($dedicated->dedicatedMonitoringStatusGet(new \PayPal\StructType\DedicatedMon
 /**
  * Sample call for dedicatedNetbootModify operation/method
  */
-if ($dedicated->dedicatedNetbootModify(new \PayPal\StructType\DedicatedNetbootModify()) !== false) {
+if ($dedicated->dedicatedNetbootModify(new \Ovh\StructType\DedicatedNetbootModify()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3426,7 +3426,7 @@ if ($dedicated->dedicatedNetbootModify(new \PayPal\StructType\DedicatedNetbootMo
 /**
  * Sample call for dedicatedFilterIrcClientRuleList operation/method
  */
-if ($dedicated->dedicatedFilterIrcClientRuleList(new \PayPal\StructType\DedicatedFilterIrcClientRuleList()) !== false) {
+if ($dedicated->dedicatedFilterIrcClientRuleList(new \Ovh\StructType\DedicatedFilterIrcClientRuleList()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3434,7 +3434,7 @@ if ($dedicated->dedicatedFilterIrcClientRuleList(new \PayPal\StructType\Dedicate
 /**
  * Sample call for dedicatedIPForUDPMove operation/method
  */
-if ($dedicated->dedicatedIPForUDPMove(new \PayPal\StructType\DedicatedIPForUDPMove()) !== false) {
+if ($dedicated->dedicatedIPForUDPMove(new \Ovh\StructType\DedicatedIPForUDPMove()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3442,7 +3442,7 @@ if ($dedicated->dedicatedIPForUDPMove(new \PayPal\StructType\DedicatedIPForUDPMo
 /**
  * Sample call for dedicatedMonitoringSMSModify operation/method
  */
-if ($dedicated->dedicatedMonitoringSMSModify(new \PayPal\StructType\DedicatedMonitoringSMSModify()) !== false) {
+if ($dedicated->dedicatedMonitoringSMSModify(new \Ovh\StructType\DedicatedMonitoringSMSModify()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3450,7 +3450,7 @@ if ($dedicated->dedicatedMonitoringSMSModify(new \PayPal\StructType\DedicatedMon
 /**
  * Sample call for dedicatedMonitoringDel operation/method
  */
-if ($dedicated->dedicatedMonitoringDel(new \PayPal\StructType\DedicatedMonitoringDel()) !== false) {
+if ($dedicated->dedicatedMonitoringDel(new \Ovh\StructType\DedicatedMonitoringDel()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3458,7 +3458,7 @@ if ($dedicated->dedicatedMonitoringDel(new \PayPal\StructType\DedicatedMonitorin
 /**
  * Sample call for dedicatedMonitoringServiceAddSMS operation/method
  */
-if ($dedicated->dedicatedMonitoringServiceAddSMS(new \PayPal\StructType\DedicatedMonitoringServiceAddSMS()) !== false) {
+if ($dedicated->dedicatedMonitoringServiceAddSMS(new \Ovh\StructType\DedicatedMonitoringServiceAddSMS()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3466,7 +3466,7 @@ if ($dedicated->dedicatedMonitoringServiceAddSMS(new \PayPal\StructType\Dedicate
 /**
  * Sample call for dedicatedList operation/method
  */
-if ($dedicated->dedicatedList(new \PayPal\StructType\DedicatedList()) !== false) {
+if ($dedicated->dedicatedList(new \Ovh\StructType\DedicatedList()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3474,7 +3474,7 @@ if ($dedicated->dedicatedList(new \PayPal\StructType\DedicatedList()) !== false)
 /**
  * Sample call for dedicatedIPForUDPGet operation/method
  */
-if ($dedicated->dedicatedIPForUDPGet(new \PayPal\StructType\DedicatedIPForUDPGet()) !== false) {
+if ($dedicated->dedicatedIPForUDPGet(new \Ovh\StructType\DedicatedIPForUDPGet()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3482,7 +3482,7 @@ if ($dedicated->dedicatedIPForUDPGet(new \PayPal\StructType\DedicatedIPForUDPGet
 /**
  * Sample call for dedicatedGetAvailableIpFromNetwork operation/method
  */
-if ($dedicated->dedicatedGetAvailableIpFromNetwork(new \PayPal\StructType\DedicatedGetAvailableIpFromNetwork()) !== false) {
+if ($dedicated->dedicatedGetAvailableIpFromNetwork(new \Ovh\StructType\DedicatedGetAvailableIpFromNetwork()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3490,7 +3490,7 @@ if ($dedicated->dedicatedGetAvailableIpFromNetwork(new \PayPal\StructType\Dedica
 /**
  * Sample call for dedicatedMailinglistSubscribe operation/method
  */
-if ($dedicated->dedicatedMailinglistSubscribe(new \PayPal\StructType\DedicatedMailinglistSubscribe()) !== false) {
+if ($dedicated->dedicatedMailinglistSubscribe(new \Ovh\StructType\DedicatedMailinglistSubscribe()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3498,7 +3498,7 @@ if ($dedicated->dedicatedMailinglistSubscribe(new \PayPal\StructType\DedicatedMa
 /**
  * Sample call for dedicatedIpLoadBalancingNameModify operation/method
  */
-if ($dedicated->dedicatedIpLoadBalancingNameModify(new \PayPal\StructType\DedicatedIpLoadBalancingNameModify()) !== false) {
+if ($dedicated->dedicatedIpLoadBalancingNameModify(new \Ovh\StructType\DedicatedIpLoadBalancingNameModify()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3506,7 +3506,7 @@ if ($dedicated->dedicatedIpLoadBalancingNameModify(new \PayPal\StructType\Dedica
 /**
  * Sample call for dedicatedMonitoringServiceList operation/method
  */
-if ($dedicated->dedicatedMonitoringServiceList(new \PayPal\StructType\DedicatedMonitoringServiceList()) !== false) {
+if ($dedicated->dedicatedMonitoringServiceList(new \Ovh\StructType\DedicatedMonitoringServiceList()) !== false) {
     print_r($dedicated->getResult());
 } else {
     print_r($dedicated->getLastError());
@@ -3514,11 +3514,11 @@ if ($dedicated->dedicatedMonitoringServiceList(new \PayPal\StructType\DedicatedM
 /**
  * Samples for Service ServiceType
  */
-$service = new \PayPal\ServiceType\Service($options);
+$service = new \Ovh\ServiceType\Service($options);
 /**
  * Sample call for serviceGroupGetAllInfo operation/method
  */
-if ($service->serviceGroupGetAllInfo(new \PayPal\StructType\ServiceGroupGetAllInfo()) !== false) {
+if ($service->serviceGroupGetAllInfo(new \Ovh\StructType\ServiceGroupGetAllInfo()) !== false) {
     print_r($service->getResult());
 } else {
     print_r($service->getLastError());
@@ -3526,7 +3526,7 @@ if ($service->serviceGroupGetAllInfo(new \PayPal\StructType\ServiceGroupGetAllIn
 /**
  * Sample call for serviceGroupList operation/method
  */
-if ($service->serviceGroupList(new \PayPal\StructType\ServiceGroupList()) !== false) {
+if ($service->serviceGroupList(new \Ovh\StructType\ServiceGroupList()) !== false) {
     print_r($service->getResult());
 } else {
     print_r($service->getLastError());
@@ -3534,7 +3534,7 @@ if ($service->serviceGroupList(new \PayPal\StructType\ServiceGroupList()) !== fa
 /**
  * Sample call for serviceListPaginated operation/method
  */
-if ($service->serviceListPaginated(new \PayPal\StructType\ServiceListPaginated()) !== false) {
+if ($service->serviceListPaginated(new \Ovh\StructType\ServiceListPaginated()) !== false) {
     print_r($service->getResult());
 } else {
     print_r($service->getLastError());
@@ -3542,7 +3542,7 @@ if ($service->serviceListPaginated(new \PayPal\StructType\ServiceListPaginated()
 /**
  * Sample call for serviceGroupCreate operation/method
  */
-if ($service->serviceGroupCreate(new \PayPal\StructType\ServiceGroupCreate()) !== false) {
+if ($service->serviceGroupCreate(new \Ovh\StructType\ServiceGroupCreate()) !== false) {
     print_r($service->getResult());
 } else {
     print_r($service->getLastError());
@@ -3550,7 +3550,7 @@ if ($service->serviceGroupCreate(new \PayPal\StructType\ServiceGroupCreate()) !=
 /**
  * Sample call for serviceModifyContact operation/method
  */
-if ($service->serviceModifyContact(new \PayPal\StructType\ServiceModifyContact()) !== false) {
+if ($service->serviceModifyContact(new \Ovh\StructType\ServiceModifyContact()) !== false) {
     print_r($service->getResult());
 } else {
     print_r($service->getLastError());
@@ -3558,7 +3558,7 @@ if ($service->serviceModifyContact(new \PayPal\StructType\ServiceModifyContact()
 /**
  * Sample call for serviceModifyOwner operation/method
  */
-if ($service->serviceModifyOwner(new \PayPal\StructType\ServiceModifyOwner()) !== false) {
+if ($service->serviceModifyOwner(new \Ovh\StructType\ServiceModifyOwner()) !== false) {
     print_r($service->getResult());
 } else {
     print_r($service->getLastError());
@@ -3566,7 +3566,7 @@ if ($service->serviceModifyOwner(new \PayPal\StructType\ServiceModifyOwner()) !=
 /**
  * Sample call for serviceModifyOwnerInfos operation/method
  */
-if ($service->serviceModifyOwnerInfos(new \PayPal\StructType\ServiceModifyOwnerInfos()) !== false) {
+if ($service->serviceModifyOwnerInfos(new \Ovh\StructType\ServiceModifyOwnerInfos()) !== false) {
     print_r($service->getResult());
 } else {
     print_r($service->getLastError());
@@ -3574,7 +3574,7 @@ if ($service->serviceModifyOwnerInfos(new \PayPal\StructType\ServiceModifyOwnerI
 /**
  * Sample call for serviceGroupDelete operation/method
  */
-if ($service->serviceGroupDelete(new \PayPal\StructType\ServiceGroupDelete()) !== false) {
+if ($service->serviceGroupDelete(new \Ovh\StructType\ServiceGroupDelete()) !== false) {
     print_r($service->getResult());
 } else {
     print_r($service->getLastError());
@@ -3582,7 +3582,7 @@ if ($service->serviceGroupDelete(new \PayPal\StructType\ServiceGroupDelete()) !=
 /**
  * Sample call for serviceList operation/method
  */
-if ($service->serviceList(new \PayPal\StructType\ServiceList()) !== false) {
+if ($service->serviceList(new \Ovh\StructType\ServiceList()) !== false) {
     print_r($service->getResult());
 } else {
     print_r($service->getLastError());
@@ -3590,7 +3590,7 @@ if ($service->serviceList(new \PayPal\StructType\ServiceList()) !== false) {
 /**
  * Sample call for serviceGroupSetComment operation/method
  */
-if ($service->serviceGroupSetComment(new \PayPal\StructType\ServiceGroupSetComment()) !== false) {
+if ($service->serviceGroupSetComment(new \Ovh\StructType\ServiceGroupSetComment()) !== false) {
     print_r($service->getResult());
 } else {
     print_r($service->getLastError());
@@ -3598,7 +3598,7 @@ if ($service->serviceGroupSetComment(new \PayPal\StructType\ServiceGroupSetComme
 /**
  * Sample call for serviceGroupRemoveService operation/method
  */
-if ($service->serviceGroupRemoveService(new \PayPal\StructType\ServiceGroupRemoveService()) !== false) {
+if ($service->serviceGroupRemoveService(new \Ovh\StructType\ServiceGroupRemoveService()) !== false) {
     print_r($service->getResult());
 } else {
     print_r($service->getLastError());
@@ -3606,7 +3606,7 @@ if ($service->serviceGroupRemoveService(new \PayPal\StructType\ServiceGroupRemov
 /**
  * Sample call for serviceFreedomList operation/method
  */
-if ($service->serviceFreedomList(new \PayPal\StructType\ServiceFreedomList()) !== false) {
+if ($service->serviceFreedomList(new \Ovh\StructType\ServiceFreedomList()) !== false) {
     print_r($service->getResult());
 } else {
     print_r($service->getLastError());
@@ -3614,7 +3614,7 @@ if ($service->serviceFreedomList(new \PayPal\StructType\ServiceFreedomList()) !=
 /**
  * Sample call for serviceGroupSetName operation/method
  */
-if ($service->serviceGroupSetName(new \PayPal\StructType\ServiceGroupSetName()) !== false) {
+if ($service->serviceGroupSetName(new \Ovh\StructType\ServiceGroupSetName()) !== false) {
     print_r($service->getResult());
 } else {
     print_r($service->getLastError());
@@ -3622,7 +3622,7 @@ if ($service->serviceGroupSetName(new \PayPal\StructType\ServiceGroupSetName()) 
 /**
  * Sample call for serviceGroupInfo operation/method
  */
-if ($service->serviceGroupInfo(new \PayPal\StructType\ServiceGroupInfo()) !== false) {
+if ($service->serviceGroupInfo(new \Ovh\StructType\ServiceGroupInfo()) !== false) {
     print_r($service->getResult());
 } else {
     print_r($service->getLastError());
@@ -3630,7 +3630,7 @@ if ($service->serviceGroupInfo(new \PayPal\StructType\ServiceGroupInfo()) !== fa
 /**
  * Sample call for serviceGroupAddService operation/method
  */
-if ($service->serviceGroupAddService(new \PayPal\StructType\ServiceGroupAddService()) !== false) {
+if ($service->serviceGroupAddService(new \Ovh\StructType\ServiceGroupAddService()) !== false) {
     print_r($service->getResult());
 } else {
     print_r($service->getLastError());
@@ -3638,11 +3638,11 @@ if ($service->serviceGroupAddService(new \PayPal\StructType\ServiceGroupAddServi
 /**
  * Samples for Redirected ServiceType
  */
-$redirected = new \PayPal\ServiceType\Redirected($options);
+$redirected = new \Ovh\ServiceType\Redirected($options);
 /**
  * Sample call for redirectedEmailAdd operation/method
  */
-if ($redirected->redirectedEmailAdd(new \PayPal\StructType\RedirectedEmailAdd()) !== false) {
+if ($redirected->redirectedEmailAdd(new \Ovh\StructType\RedirectedEmailAdd()) !== false) {
     print_r($redirected->getResult());
 } else {
     print_r($redirected->getLastError());
@@ -3650,7 +3650,7 @@ if ($redirected->redirectedEmailAdd(new \PayPal\StructType\RedirectedEmailAdd())
 /**
  * Sample call for redirectedEmailModify operation/method
  */
-if ($redirected->redirectedEmailModify(new \PayPal\StructType\RedirectedEmailModify()) !== false) {
+if ($redirected->redirectedEmailModify(new \Ovh\StructType\RedirectedEmailModify()) !== false) {
     print_r($redirected->getResult());
 } else {
     print_r($redirected->getLastError());
@@ -3658,7 +3658,7 @@ if ($redirected->redirectedEmailModify(new \PayPal\StructType\RedirectedEmailMod
 /**
  * Sample call for redirectedEmailDel operation/method
  */
-if ($redirected->redirectedEmailDel(new \PayPal\StructType\RedirectedEmailDel()) !== false) {
+if ($redirected->redirectedEmailDel(new \Ovh\StructType\RedirectedEmailDel()) !== false) {
     print_r($redirected->getResult());
 } else {
     print_r($redirected->getLastError());
@@ -3666,7 +3666,7 @@ if ($redirected->redirectedEmailDel(new \PayPal\StructType\RedirectedEmailDel())
 /**
  * Sample call for redirectedEmailList operation/method
  */
-if ($redirected->redirectedEmailList(new \PayPal\StructType\RedirectedEmailList()) !== false) {
+if ($redirected->redirectedEmailList(new \Ovh\StructType\RedirectedEmailList()) !== false) {
     print_r($redirected->getResult());
 } else {
     print_r($redirected->getLastError());
@@ -3674,11 +3674,11 @@ if ($redirected->redirectedEmailList(new \PayPal\StructType\RedirectedEmailList(
 /**
  * Samples for Nic ServiceType
  */
-$nic = new \PayPal\ServiceType\Nic($options);
+$nic = new \Ovh\ServiceType\Nic($options);
 /**
  * Sample call for nicModifyInfos operation/method
  */
-if ($nic->nicModifyInfos(new \PayPal\StructType\NicModifyInfos()) !== false) {
+if ($nic->nicModifyInfos(new \Ovh\StructType\NicModifyInfos()) !== false) {
     print_r($nic->getResult());
 } else {
     print_r($nic->getLastError());
@@ -3686,7 +3686,7 @@ if ($nic->nicModifyInfos(new \PayPal\StructType\NicModifyInfos()) !== false) {
 /**
  * Sample call for nic operation/method
  */
-if ($nic->nic(new \PayPal\StructType\Nic()) !== false) {
+if ($nic->nic(new \Ovh\StructType\Nic()) !== false) {
     print_r($nic->getResult());
 } else {
     print_r($nic->getLastError());
@@ -3694,7 +3694,7 @@ if ($nic->nic(new \PayPal\StructType\Nic()) !== false) {
 /**
  * Sample call for nicTldEligibility operation/method
  */
-if ($nic->nicTldEligibility(new \PayPal\StructType\NicTldEligibility()) !== false) {
+if ($nic->nicTldEligibility(new \Ovh\StructType\NicTldEligibility()) !== false) {
     print_r($nic->getResult());
 } else {
     print_r($nic->getLastError());
@@ -3702,7 +3702,7 @@ if ($nic->nicTldEligibility(new \PayPal\StructType\NicTldEligibility()) !== fals
 /**
  * Sample call for nicModifyLanguage operation/method
  */
-if ($nic->nicModifyLanguage(new \PayPal\StructType\NicModifyLanguage()) !== false) {
+if ($nic->nicModifyLanguage(new \Ovh\StructType\NicModifyLanguage()) !== false) {
     print_r($nic->getResult());
 } else {
     print_r($nic->getLastError());
@@ -3710,7 +3710,7 @@ if ($nic->nicModifyLanguage(new \PayPal\StructType\NicModifyLanguage()) !== fals
 /**
  * Sample call for nicCreate operation/method
  */
-if ($nic->nicCreate(new \PayPal\StructType\NicCreate()) !== false) {
+if ($nic->nicCreate(new \Ovh\StructType\NicCreate()) !== false) {
     print_r($nic->getResult());
 } else {
     print_r($nic->getLastError());
@@ -3718,7 +3718,7 @@ if ($nic->nicCreate(new \PayPal\StructType\NicCreate()) !== false) {
 /**
  * Sample call for nicInfo operation/method
  */
-if ($nic->nicInfo(new \PayPal\StructType\NicInfo()) !== false) {
+if ($nic->nicInfo(new \Ovh\StructType\NicInfo()) !== false) {
     print_r($nic->getResult());
 } else {
     print_r($nic->getLastError());
@@ -3726,7 +3726,7 @@ if ($nic->nicInfo(new \PayPal\StructType\NicInfo()) !== false) {
 /**
  * Sample call for nicModifyInfosIT operation/method
  */
-if ($nic->nicModifyInfosIT(new \PayPal\StructType\NicModifyInfosIT()) !== false) {
+if ($nic->nicModifyInfosIT(new \Ovh\StructType\NicModifyInfosIT()) !== false) {
     print_r($nic->getResult());
 } else {
     print_r($nic->getLastError());
@@ -3734,7 +3734,7 @@ if ($nic->nicModifyInfosIT(new \PayPal\StructType\NicModifyInfosIT()) !== false)
 /**
  * Sample call for nicPublicInfo operation/method
  */
-if ($nic->nicPublicInfo(new \PayPal\StructType\NicPublicInfo()) !== false) {
+if ($nic->nicPublicInfo(new \Ovh\StructType\NicPublicInfo()) !== false) {
     print_r($nic->getResult());
 } else {
     print_r($nic->getLastError());
@@ -3742,7 +3742,7 @@ if ($nic->nicPublicInfo(new \PayPal\StructType\NicPublicInfo()) !== false) {
 /**
  * Sample call for nicCreateIT operation/method
  */
-if ($nic->nicCreateIT(new \PayPal\StructType\NicCreateIT()) !== false) {
+if ($nic->nicCreateIT(new \Ovh\StructType\NicCreateIT()) !== false) {
     print_r($nic->getResult());
 } else {
     print_r($nic->getLastError());
@@ -3750,7 +3750,7 @@ if ($nic->nicCreateIT(new \PayPal\StructType\NicCreateIT()) !== false) {
 /**
  * Sample call for nicModifyEmail operation/method
  */
-if ($nic->nicModifyEmail(new \PayPal\StructType\NicModifyEmail()) !== false) {
+if ($nic->nicModifyEmail(new \Ovh\StructType\NicModifyEmail()) !== false) {
     print_r($nic->getResult());
 } else {
     print_r($nic->getLastError());
@@ -3758,7 +3758,7 @@ if ($nic->nicModifyEmail(new \PayPal\StructType\NicModifyEmail()) !== false) {
 /**
  * Sample call for nicUpdateIT operation/method
  */
-if ($nic->nicUpdateIT(new \PayPal\StructType\NicUpdateIT()) !== false) {
+if ($nic->nicUpdateIT(new \Ovh\StructType\NicUpdateIT()) !== false) {
     print_r($nic->getResult());
 } else {
     print_r($nic->getLastError());
@@ -3766,7 +3766,7 @@ if ($nic->nicUpdateIT(new \PayPal\StructType\NicUpdateIT()) !== false) {
 /**
  * Sample call for nicUpdate operation/method
  */
-if ($nic->nicUpdate(new \PayPal\StructType\NicUpdate()) !== false) {
+if ($nic->nicUpdate(new \Ovh\StructType\NicUpdate()) !== false) {
     print_r($nic->getResult());
 } else {
     print_r($nic->getLastError());
@@ -3774,11 +3774,11 @@ if ($nic->nicUpdate(new \PayPal\StructType\NicUpdate()) !== false) {
 /**
  * Samples for Ripe ServiceType
  */
-$ripe = new \PayPal\ServiceType\Ripe($options);
+$ripe = new \Ovh\ServiceType\Ripe($options);
 /**
  * Sample call for ripeGetRipeIds operation/method
  */
-if ($ripe->ripeGetRipeIds(new \PayPal\StructType\RipeGetRipeIds()) !== false) {
+if ($ripe->ripeGetRipeIds(new \Ovh\StructType\RipeGetRipeIds()) !== false) {
     print_r($ripe->getResult());
 } else {
     print_r($ripe->getLastError());
@@ -3786,7 +3786,7 @@ if ($ripe->ripeGetRipeIds(new \PayPal\StructType\RipeGetRipeIds()) !== false) {
 /**
  * Sample call for ripeUpdateInetnum operation/method
  */
-if ($ripe->ripeUpdateInetnum(new \PayPal\StructType\RipeUpdateInetnum()) !== false) {
+if ($ripe->ripeUpdateInetnum(new \Ovh\StructType\RipeUpdateInetnum()) !== false) {
     print_r($ripe->getResult());
 } else {
     print_r($ripe->getLastError());
@@ -3794,7 +3794,7 @@ if ($ripe->ripeUpdateInetnum(new \PayPal\StructType\RipeUpdateInetnum()) !== fal
 /**
  * Sample call for ripeQuery operation/method
  */
-if ($ripe->ripeQuery(new \PayPal\StructType\RipeQuery()) !== false) {
+if ($ripe->ripeQuery(new \Ovh\StructType\RipeQuery()) !== false) {
     print_r($ripe->getResult());
 } else {
     print_r($ripe->getLastError());
@@ -3802,7 +3802,7 @@ if ($ripe->ripeQuery(new \PayPal\StructType\RipeQuery()) !== false) {
 /**
  * Sample call for ripeDeleteOrganisation operation/method
  */
-if ($ripe->ripeDeleteOrganisation(new \PayPal\StructType\RipeDeleteOrganisation()) !== false) {
+if ($ripe->ripeDeleteOrganisation(new \Ovh\StructType\RipeDeleteOrganisation()) !== false) {
     print_r($ripe->getResult());
 } else {
     print_r($ripe->getLastError());
@@ -3810,7 +3810,7 @@ if ($ripe->ripeDeleteOrganisation(new \PayPal\StructType\RipeDeleteOrganisation(
 /**
  * Sample call for ripeUpdateOrganisation operation/method
  */
-if ($ripe->ripeUpdateOrganisation(new \PayPal\StructType\RipeUpdateOrganisation()) !== false) {
+if ($ripe->ripeUpdateOrganisation(new \Ovh\StructType\RipeUpdateOrganisation()) !== false) {
     print_r($ripe->getResult());
 } else {
     print_r($ripe->getLastError());
@@ -3818,7 +3818,7 @@ if ($ripe->ripeUpdateOrganisation(new \PayPal\StructType\RipeUpdateOrganisation(
 /**
  * Sample call for ripeCreateOrganisation operation/method
  */
-if ($ripe->ripeCreateOrganisation(new \PayPal\StructType\RipeCreateOrganisation()) !== false) {
+if ($ripe->ripeCreateOrganisation(new \Ovh\StructType\RipeCreateOrganisation()) !== false) {
     print_r($ripe->getResult());
 } else {
     print_r($ripe->getLastError());
@@ -3826,11 +3826,11 @@ if ($ripe->ripeCreateOrganisation(new \PayPal\StructType\RipeCreateOrganisation(
 /**
  * Samples for Automated ServiceType
  */
-$automated = new \PayPal\ServiceType\Automated($options);
+$automated = new \Ovh\ServiceType\Automated($options);
 /**
  * Sample call for automatedMailGetVolumeHistory operation/method
  */
-if ($automated->automatedMailGetVolumeHistory(new \PayPal\StructType\AutomatedMailGetVolumeHistory()) !== false) {
+if ($automated->automatedMailGetVolumeHistory(new \Ovh\StructType\AutomatedMailGetVolumeHistory()) !== false) {
     print_r($automated->getResult());
 } else {
     print_r($automated->getLastError());
@@ -3838,7 +3838,7 @@ if ($automated->automatedMailGetVolumeHistory(new \PayPal\StructType\AutomatedMa
 /**
  * Sample call for automatedMailGetTodo operation/method
  */
-if ($automated->automatedMailGetTodo(new \PayPal\StructType\AutomatedMailGetTodo()) !== false) {
+if ($automated->automatedMailGetTodo(new \Ovh\StructType\AutomatedMailGetTodo()) !== false) {
     print_r($automated->getResult());
 } else {
     print_r($automated->getLastError());
@@ -3846,7 +3846,7 @@ if ($automated->automatedMailGetTodo(new \PayPal\StructType\AutomatedMailGetTodo
 /**
  * Sample call for automatedMailGetErrors operation/method
  */
-if ($automated->automatedMailGetErrors(new \PayPal\StructType\AutomatedMailGetErrors()) !== false) {
+if ($automated->automatedMailGetErrors(new \Ovh\StructType\AutomatedMailGetErrors()) !== false) {
     print_r($automated->getResult());
 } else {
     print_r($automated->getLastError());
@@ -3854,7 +3854,7 @@ if ($automated->automatedMailGetErrors(new \PayPal\StructType\AutomatedMailGetEr
 /**
  * Sample call for automatedMailGetState operation/method
  */
-if ($automated->automatedMailGetState(new \PayPal\StructType\AutomatedMailGetState()) !== false) {
+if ($automated->automatedMailGetState(new \Ovh\StructType\AutomatedMailGetState()) !== false) {
     print_r($automated->getResult());
 } else {
     print_r($automated->getLastError());
@@ -3862,7 +3862,7 @@ if ($automated->automatedMailGetState(new \PayPal\StructType\AutomatedMailGetSta
 /**
  * Sample call for automatedMailUnlock operation/method
  */
-if ($automated->automatedMailUnlock(new \PayPal\StructType\AutomatedMailUnlock()) !== false) {
+if ($automated->automatedMailUnlock(new \Ovh\StructType\AutomatedMailUnlock()) !== false) {
     print_r($automated->getResult());
 } else {
     print_r($automated->getLastError());
@@ -3870,7 +3870,7 @@ if ($automated->automatedMailUnlock(new \PayPal\StructType\AutomatedMailUnlock()
 /**
  * Sample call for automatedMailLock operation/method
  */
-if ($automated->automatedMailLock(new \PayPal\StructType\AutomatedMailLock()) !== false) {
+if ($automated->automatedMailLock(new \Ovh\StructType\AutomatedMailLock()) !== false) {
     print_r($automated->getResult());
 } else {
     print_r($automated->getLastError());
@@ -3878,7 +3878,7 @@ if ($automated->automatedMailLock(new \PayPal\StructType\AutomatedMailLock()) !=
 /**
  * Sample call for automatedMailReturnSet operation/method
  */
-if ($automated->automatedMailReturnSet(new \PayPal\StructType\AutomatedMailReturnSet()) !== false) {
+if ($automated->automatedMailReturnSet(new \Ovh\StructType\AutomatedMailReturnSet()) !== false) {
     print_r($automated->getResult());
 } else {
     print_r($automated->getLastError());
@@ -3886,7 +3886,7 @@ if ($automated->automatedMailReturnSet(new \PayPal\StructType\AutomatedMailRetur
 /**
  * Sample call for automatedMailFlush operation/method
  */
-if ($automated->automatedMailFlush(new \PayPal\StructType\AutomatedMailFlush()) !== false) {
+if ($automated->automatedMailFlush(new \Ovh\StructType\AutomatedMailFlush()) !== false) {
     print_r($automated->getResult());
 } else {
     print_r($automated->getLastError());
@@ -3894,11 +3894,11 @@ if ($automated->automatedMailFlush(new \PayPal\StructType\AutomatedMailFlush()) 
 /**
  * Samples for Domain ServiceType
  */
-$domain = new \PayPal\ServiceType\Domain($options);
+$domain = new \Ovh\ServiceType\Domain($options);
 /**
  * Sample call for domainHostUpdate operation/method
  */
-if ($domain->domainHostUpdate(new \PayPal\StructType\DomainHostUpdate()) !== false) {
+if ($domain->domainHostUpdate(new \Ovh\StructType\DomainHostUpdate()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -3906,7 +3906,7 @@ if ($domain->domainHostUpdate(new \PayPal\StructType\DomainHostUpdate()) !== fal
 /**
  * Sample call for domainUnlock operation/method
  */
-if ($domain->domainUnlock(new \PayPal\StructType\DomainUnlock()) !== false) {
+if ($domain->domainUnlock(new \Ovh\StructType\DomainUnlock()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -3914,7 +3914,7 @@ if ($domain->domainUnlock(new \PayPal\StructType\DomainUnlock()) !== false) {
 /**
  * Sample call for domainWhoisObfuscatorSetAll operation/method
  */
-if ($domain->domainWhoisObfuscatorSetAll(new \PayPal\StructType\DomainWhoisObfuscatorSetAll()) !== false) {
+if ($domain->domainWhoisObfuscatorSetAll(new \Ovh\StructType\DomainWhoisObfuscatorSetAll()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -3922,7 +3922,7 @@ if ($domain->domainWhoisObfuscatorSetAll(new \PayPal\StructType\DomainWhoisObfus
 /**
  * Sample call for domainList operation/method
  */
-if ($domain->domainList(new \PayPal\StructType\DomainList()) !== false) {
+if ($domain->domainList(new \Ovh\StructType\DomainList()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -3930,7 +3930,7 @@ if ($domain->domainList(new \PayPal\StructType\DomainList()) !== false) {
 /**
  * Sample call for domainWhoisObfuscatorInfo operation/method
  */
-if ($domain->domainWhoisObfuscatorInfo(new \PayPal\StructType\DomainWhoisObfuscatorInfo()) !== false) {
+if ($domain->domainWhoisObfuscatorInfo(new \Ovh\StructType\DomainWhoisObfuscatorInfo()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -3938,7 +3938,7 @@ if ($domain->domainWhoisObfuscatorInfo(new \PayPal\StructType\DomainWhoisObfusca
 /**
  * Sample call for domainCheck operation/method
  */
-if ($domain->domainCheck(new \PayPal\StructType\DomainCheck()) !== false) {
+if ($domain->domainCheck(new \Ovh\StructType\DomainCheck()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -3946,7 +3946,7 @@ if ($domain->domainCheck(new \PayPal\StructType\DomainCheck()) !== false) {
 /**
  * Sample call for domainWhoisObfuscatorSet operation/method
  */
-if ($domain->domainWhoisObfuscatorSet(new \PayPal\StructType\DomainWhoisObfuscatorSet()) !== false) {
+if ($domain->domainWhoisObfuscatorSet(new \Ovh\StructType\DomainWhoisObfuscatorSet()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -3954,7 +3954,7 @@ if ($domain->domainWhoisObfuscatorSet(new \PayPal\StructType\DomainWhoisObfuscat
 /**
  * Sample call for domainResellerSet operation/method
  */
-if ($domain->domainResellerSet(new \PayPal\StructType\DomainResellerSet()) !== false) {
+if ($domain->domainResellerSet(new \Ovh\StructType\DomainResellerSet()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -3962,7 +3962,7 @@ if ($domain->domainResellerSet(new \PayPal\StructType\DomainResellerSet()) !== f
 /**
  * Sample call for domainOperationRelaunch operation/method
  */
-if ($domain->domainOperationRelaunch(new \PayPal\StructType\DomainOperationRelaunch()) !== false) {
+if ($domain->domainOperationRelaunch(new \Ovh\StructType\DomainOperationRelaunch()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -3970,7 +3970,7 @@ if ($domain->domainOperationRelaunch(new \PayPal\StructType\DomainOperationRelau
 /**
  * Sample call for domainCapabilities operation/method
  */
-if ($domain->domainCapabilities(new \PayPal\StructType\DomainCapabilities()) !== false) {
+if ($domain->domainCapabilities(new \Ovh\StructType\DomainCapabilities()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -3978,7 +3978,7 @@ if ($domain->domainCapabilities(new \PayPal\StructType\DomainCapabilities()) !==
 /**
  * Sample call for domainDnsList operation/method
  */
-if ($domain->domainDnsList(new \PayPal\StructType\DomainDnsList()) !== false) {
+if ($domain->domainDnsList(new \Ovh\StructType\DomainDnsList()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -3986,7 +3986,7 @@ if ($domain->domainDnsList(new \PayPal\StructType\DomainDnsList()) !== false) {
 /**
  * Sample call for domainOperationInfo operation/method
  */
-if ($domain->domainOperationInfo(new \PayPal\StructType\DomainOperationInfo()) !== false) {
+if ($domain->domainOperationInfo(new \Ovh\StructType\DomainOperationInfo()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -3994,7 +3994,7 @@ if ($domain->domainOperationInfo(new \PayPal\StructType\DomainOperationInfo()) !
 /**
  * Sample call for domainDnsUpdate operation/method
  */
-if ($domain->domainDnsUpdate(new \PayPal\StructType\DomainDnsUpdate()) !== false) {
+if ($domain->domainDnsUpdate(new \Ovh\StructType\DomainDnsUpdate()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -4002,7 +4002,7 @@ if ($domain->domainDnsUpdate(new \PayPal\StructType\DomainDnsUpdate()) !== false
 /**
  * Sample call for domainResellerDel operation/method
  */
-if ($domain->domainResellerDel(new \PayPal\StructType\DomainResellerDel()) !== false) {
+if ($domain->domainResellerDel(new \Ovh\StructType\DomainResellerDel()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -4010,7 +4010,7 @@ if ($domain->domainResellerDel(new \PayPal\StructType\DomainResellerDel()) !== f
 /**
  * Sample call for domainDnsGetOvhDefault operation/method
  */
-if ($domain->domainDnsGetOvhDefault(new \PayPal\StructType\DomainDnsGetOvhDefault()) !== false) {
+if ($domain->domainDnsGetOvhDefault(new \Ovh\StructType\DomainDnsGetOvhDefault()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -4018,7 +4018,7 @@ if ($domain->domainDnsGetOvhDefault(new \PayPal\StructType\DomainDnsGetOvhDefaul
 /**
  * Sample call for domainWhoisObfuscatorUnset operation/method
  */
-if ($domain->domainWhoisObfuscatorUnset(new \PayPal\StructType\DomainWhoisObfuscatorUnset()) !== false) {
+if ($domain->domainWhoisObfuscatorUnset(new \Ovh\StructType\DomainWhoisObfuscatorUnset()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -4026,7 +4026,7 @@ if ($domain->domainWhoisObfuscatorUnset(new \PayPal\StructType\DomainWhoisObfusc
 /**
  * Sample call for domainHostDel operation/method
  */
-if ($domain->domainHostDel(new \PayPal\StructType\DomainHostDel()) !== false) {
+if ($domain->domainHostDel(new \Ovh\StructType\DomainHostDel()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -4034,7 +4034,7 @@ if ($domain->domainHostDel(new \PayPal\StructType\DomainHostDel()) !== false) {
 /**
  * Sample call for domainInfo operation/method
  */
-if ($domain->domainInfo(new \PayPal\StructType\DomainInfo()) !== false) {
+if ($domain->domainInfo(new \Ovh\StructType\DomainInfo()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -4042,7 +4042,7 @@ if ($domain->domainInfo(new \PayPal\StructType\DomainInfo()) !== false) {
 /**
  * Sample call for domainHostList operation/method
  */
-if ($domain->domainHostList(new \PayPal\StructType\DomainHostList()) !== false) {
+if ($domain->domainHostList(new \Ovh\StructType\DomainHostList()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -4050,7 +4050,7 @@ if ($domain->domainHostList(new \PayPal\StructType\DomainHostList()) !== false) 
 /**
  * Sample call for domainLockStatus operation/method
  */
-if ($domain->domainLockStatus(new \PayPal\StructType\DomainLockStatus()) !== false) {
+if ($domain->domainLockStatus(new \Ovh\StructType\DomainLockStatus()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -4058,7 +4058,7 @@ if ($domain->domainLockStatus(new \PayPal\StructType\DomainLockStatus()) !== fal
 /**
  * Sample call for domainLock operation/method
  */
-if ($domain->domainLock(new \PayPal\StructType\DomainLock()) !== false) {
+if ($domain->domainLock(new \Ovh\StructType\DomainLock()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -4066,7 +4066,7 @@ if ($domain->domainLock(new \PayPal\StructType\DomainLock()) !== false) {
 /**
  * Sample call for domainOperationCancel operation/method
  */
-if ($domain->domainOperationCancel(new \PayPal\StructType\DomainOperationCancel()) !== false) {
+if ($domain->domainOperationCancel(new \Ovh\StructType\DomainOperationCancel()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -4074,7 +4074,7 @@ if ($domain->domainOperationCancel(new \PayPal\StructType\DomainOperationCancel(
 /**
  * Sample call for domainHostAdd operation/method
  */
-if ($domain->domainHostAdd(new \PayPal\StructType\DomainHostAdd()) !== false) {
+if ($domain->domainHostAdd(new \Ovh\StructType\DomainHostAdd()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -4082,7 +4082,7 @@ if ($domain->domainHostAdd(new \PayPal\StructType\DomainHostAdd()) !== false) {
 /**
  * Sample call for domainWhoisObfuscatorUnsetAll operation/method
  */
-if ($domain->domainWhoisObfuscatorUnsetAll(new \PayPal\StructType\DomainWhoisObfuscatorUnsetAll()) !== false) {
+if ($domain->domainWhoisObfuscatorUnsetAll(new \Ovh\StructType\DomainWhoisObfuscatorUnsetAll()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -4090,7 +4090,7 @@ if ($domain->domainWhoisObfuscatorUnsetAll(new \PayPal\StructType\DomainWhoisObf
 /**
  * Sample call for domainOperationList operation/method
  */
-if ($domain->domainOperationList(new \PayPal\StructType\DomainOperationList()) !== false) {
+if ($domain->domainOperationList(new \Ovh\StructType\DomainOperationList()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -4098,7 +4098,7 @@ if ($domain->domainOperationList(new \PayPal\StructType\DomainOperationList()) !
 /**
  * Sample call for domainWhoisObfuscatorList operation/method
  */
-if ($domain->domainWhoisObfuscatorList(new \PayPal\StructType\DomainWhoisObfuscatorList()) !== false) {
+if ($domain->domainWhoisObfuscatorList(new \Ovh\StructType\DomainWhoisObfuscatorList()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -4106,7 +4106,7 @@ if ($domain->domainWhoisObfuscatorList(new \PayPal\StructType\DomainWhoisObfusca
 /**
  * Sample call for domainHostInfo operation/method
  */
-if ($domain->domainHostInfo(new \PayPal\StructType\DomainHostInfo()) !== false) {
+if ($domain->domainHostInfo(new \Ovh\StructType\DomainHostInfo()) !== false) {
     print_r($domain->getResult());
 } else {
     print_r($domain->getLastError());
@@ -4114,11 +4114,11 @@ if ($domain->domainHostInfo(new \PayPal\StructType\DomainHostInfo()) !== false) 
 /**
  * Samples for Database ServiceType
  */
-$database = new \PayPal\ServiceType\Database($options);
+$database = new \Ovh\ServiceType\Database($options);
 /**
  * Sample call for databaseChangePassword operation/method
  */
-if ($database->databaseChangePassword(new \PayPal\StructType\DatabaseChangePassword()) !== false) {
+if ($database->databaseChangePassword(new \Ovh\StructType\DatabaseChangePassword()) !== false) {
     print_r($database->getResult());
 } else {
     print_r($database->getLastError());
@@ -4126,7 +4126,7 @@ if ($database->databaseChangePassword(new \PayPal\StructType\DatabaseChangePassw
 /**
  * Sample call for databaseDump operation/method
  */
-if ($database->databaseDump(new \PayPal\StructType\DatabaseDump()) !== false) {
+if ($database->databaseDump(new \Ovh\StructType\DatabaseDump()) !== false) {
     print_r($database->getResult());
 } else {
     print_r($database->getLastError());
@@ -4134,7 +4134,7 @@ if ($database->databaseDump(new \PayPal\StructType\DatabaseDump()) !== false) {
 /**
  * Sample call for databaseCreate operation/method
  */
-if ($database->databaseCreate(new \PayPal\StructType\DatabaseCreate()) !== false) {
+if ($database->databaseCreate(new \Ovh\StructType\DatabaseCreate()) !== false) {
     print_r($database->getResult());
 } else {
     print_r($database->getLastError());
@@ -4142,7 +4142,7 @@ if ($database->databaseCreate(new \PayPal\StructType\DatabaseCreate()) !== false
 /**
  * Sample call for databaseList operation/method
  */
-if ($database->databaseList(new \PayPal\StructType\DatabaseList()) !== false) {
+if ($database->databaseList(new \Ovh\StructType\DatabaseList()) !== false) {
     print_r($database->getResult());
 } else {
     print_r($database->getLastError());
@@ -4150,7 +4150,7 @@ if ($database->databaseList(new \PayPal\StructType\DatabaseList()) !== false) {
 /**
  * Sample call for databaseDelete operation/method
  */
-if ($database->databaseDelete(new \PayPal\StructType\DatabaseDelete()) !== false) {
+if ($database->databaseDelete(new \Ovh\StructType\DatabaseDelete()) !== false) {
     print_r($database->getResult());
 } else {
     print_r($database->getLastError());
@@ -4158,7 +4158,7 @@ if ($database->databaseDelete(new \PayPal\StructType\DatabaseDelete()) !== false
 /**
  * Sample call for databaseRecreate operation/method
  */
-if ($database->databaseRecreate(new \PayPal\StructType\DatabaseRecreate()) !== false) {
+if ($database->databaseRecreate(new \Ovh\StructType\DatabaseRecreate()) !== false) {
     print_r($database->getResult());
 } else {
     print_r($database->getLastError());
@@ -4166,11 +4166,11 @@ if ($database->databaseRecreate(new \PayPal\StructType\DatabaseRecreate()) !== f
 /**
  * Samples for Billing ServiceType
  */
-$billing = new \PayPal\ServiceType\Billing($options);
+$billing = new \Ovh\ServiceType\Billing($options);
 /**
  * Sample call for billingInvoiceList operation/method
  */
-if ($billing->billingInvoiceList(new \PayPal\StructType\BillingInvoiceList()) !== false) {
+if ($billing->billingInvoiceList(new \Ovh\StructType\BillingInvoiceList()) !== false) {
     print_r($billing->getResult());
 } else {
     print_r($billing->getLastError());
@@ -4178,7 +4178,7 @@ if ($billing->billingInvoiceList(new \PayPal\StructType\BillingInvoiceList()) !=
 /**
  * Sample call for billingGetReferencesToExpired operation/method
  */
-if ($billing->billingGetReferencesToExpired(new \PayPal\StructType\BillingGetReferencesToExpired()) !== false) {
+if ($billing->billingGetReferencesToExpired(new \Ovh\StructType\BillingGetReferencesToExpired()) !== false) {
     print_r($billing->getResult());
 } else {
     print_r($billing->getLastError());
@@ -4186,7 +4186,7 @@ if ($billing->billingGetReferencesToExpired(new \PayPal\StructType\BillingGetRef
 /**
  * Sample call for billingGetAccessByNic operation/method
  */
-if ($billing->billingGetAccessByNic(new \PayPal\StructType\BillingGetAccessByNic()) !== false) {
+if ($billing->billingGetAccessByNic(new \Ovh\StructType\BillingGetAccessByNic()) !== false) {
     print_r($billing->getResult());
 } else {
     print_r($billing->getLastError());
@@ -4194,7 +4194,7 @@ if ($billing->billingGetAccessByNic(new \PayPal\StructType\BillingGetAccessByNic
 /**
  * Sample call for billingInvoiceInfo operation/method
  */
-if ($billing->billingInvoiceInfo(new \PayPal\StructType\BillingInvoiceInfo()) !== false) {
+if ($billing->billingInvoiceInfo(new \Ovh\StructType\BillingInvoiceInfo()) !== false) {
     print_r($billing->getResult());
 } else {
     print_r($billing->getLastError());
@@ -4202,11 +4202,11 @@ if ($billing->billingInvoiceInfo(new \PayPal\StructType\BillingInvoiceInfo()) !=
 /**
  * Samples for Global ServiceType
  */
-$global = new \PayPal\ServiceType\_Global($options);
+$global = new \Ovh\ServiceType\_Global($options);
 /**
  * Sample call for globalAccessByNic operation/method
  */
-if ($global->globalAccessByNic(new \PayPal\StructType\GlobalAccessByNic()) !== false) {
+if ($global->globalAccessByNic(new \Ovh\StructType\GlobalAccessByNic()) !== false) {
     print_r($global->getResult());
 } else {
     print_r($global->getLastError());
@@ -4214,11 +4214,11 @@ if ($global->globalAccessByNic(new \PayPal\StructType\GlobalAccessByNic()) !== f
 /**
  * Samples for Ticket ServiceType
  */
-$ticket = new \PayPal\ServiceType\Ticket($options);
+$ticket = new \Ovh\ServiceType\Ticket($options);
 /**
  * Sample call for ticketListIncidentsByDomain operation/method
  */
-if ($ticket->ticketListIncidentsByDomain(new \PayPal\StructType\TicketListIncidentsByDomain()) !== false) {
+if ($ticket->ticketListIncidentsByDomain(new \Ovh\StructType\TicketListIncidentsByDomain()) !== false) {
     print_r($ticket->getResult());
 } else {
     print_r($ticket->getLastError());
@@ -4226,7 +4226,7 @@ if ($ticket->ticketListIncidentsByDomain(new \PayPal\StructType\TicketListIncide
 /**
  * Sample call for ticketListIncidents operation/method
  */
-if ($ticket->ticketListIncidents(new \PayPal\StructType\TicketListIncidents()) !== false) {
+if ($ticket->ticketListIncidents(new \Ovh\StructType\TicketListIncidents()) !== false) {
     print_r($ticket->getResult());
 } else {
     print_r($ticket->getLastError());
@@ -4234,7 +4234,7 @@ if ($ticket->ticketListIncidents(new \PayPal\StructType\TicketListIncidents()) !
 /**
  * Sample call for ticketReopen operation/method
  */
-if ($ticket->ticketReopen(new \PayPal\StructType\TicketReopen()) !== false) {
+if ($ticket->ticketReopen(new \Ovh\StructType\TicketReopen()) !== false) {
     print_r($ticket->getResult());
 } else {
     print_r($ticket->getLastError());
@@ -4242,7 +4242,7 @@ if ($ticket->ticketReopen(new \PayPal\StructType\TicketReopen()) !== false) {
 /**
  * Sample call for ticketListContact operation/method
  */
-if ($ticket->ticketListContact(new \PayPal\StructType\TicketListContact()) !== false) {
+if ($ticket->ticketListContact(new \Ovh\StructType\TicketListContact()) !== false) {
     print_r($ticket->getResult());
 } else {
     print_r($ticket->getLastError());
@@ -4250,7 +4250,7 @@ if ($ticket->ticketListContact(new \PayPal\StructType\TicketListContact()) !== f
 /**
  * Sample call for ticketGet operation/method
  */
-if ($ticket->ticketGet(new \PayPal\StructType\TicketGet()) !== false) {
+if ($ticket->ticketGet(new \Ovh\StructType\TicketGet()) !== false) {
     print_r($ticket->getResult());
 } else {
     print_r($ticket->getLastError());
@@ -4258,7 +4258,7 @@ if ($ticket->ticketGet(new \PayPal\StructType\TicketGet()) !== false) {
 /**
  * Sample call for ticketAnswer operation/method
  */
-if ($ticket->ticketAnswer(new \PayPal\StructType\TicketAnswer()) !== false) {
+if ($ticket->ticketAnswer(new \Ovh\StructType\TicketAnswer()) !== false) {
     print_r($ticket->getResult());
 } else {
     print_r($ticket->getLastError());
@@ -4266,7 +4266,7 @@ if ($ticket->ticketAnswer(new \PayPal\StructType\TicketAnswer()) !== false) {
 /**
  * Sample call for ticketClose operation/method
  */
-if ($ticket->ticketClose(new \PayPal\StructType\TicketClose()) !== false) {
+if ($ticket->ticketClose(new \Ovh\StructType\TicketClose()) !== false) {
     print_r($ticket->getResult());
 } else {
     print_r($ticket->getLastError());
@@ -4274,7 +4274,7 @@ if ($ticket->ticketClose(new \PayPal\StructType\TicketClose()) !== false) {
 /**
  * Sample call for ticketCreate operation/method
  */
-if ($ticket->ticketCreate(new \PayPal\StructType\TicketCreate()) !== false) {
+if ($ticket->ticketCreate(new \Ovh\StructType\TicketCreate()) !== false) {
     print_r($ticket->getResult());
 } else {
     print_r($ticket->getLastError());
@@ -4282,11 +4282,11 @@ if ($ticket->ticketCreate(new \PayPal\StructType\TicketCreate()) !== false) {
 /**
  * Samples for Zone ServiceType
  */
-$zone = new \PayPal\ServiceType\Zone($options);
+$zone = new \Ovh\ServiceType\Zone($options);
 /**
  * Sample call for zoneEntryList operation/method
  */
-if ($zone->zoneEntryList(new \PayPal\StructType\ZoneEntryList()) !== false) {
+if ($zone->zoneEntryList(new \Ovh\StructType\ZoneEntryList()) !== false) {
     print_r($zone->getResult());
 } else {
     print_r($zone->getLastError());
@@ -4294,7 +4294,7 @@ if ($zone->zoneEntryList(new \PayPal\StructType\ZoneEntryList()) !== false) {
 /**
  * Sample call for zoneEntryAddCustom operation/method
  */
-if ($zone->zoneEntryAddCustom(new \PayPal\StructType\ZoneEntryAddCustom()) !== false) {
+if ($zone->zoneEntryAddCustom(new \Ovh\StructType\ZoneEntryAddCustom()) !== false) {
     print_r($zone->getResult());
 } else {
     print_r($zone->getLastError());
@@ -4302,7 +4302,7 @@ if ($zone->zoneEntryAddCustom(new \PayPal\StructType\ZoneEntryAddCustom()) !== f
 /**
  * Sample call for zoneEntryModify operation/method
  */
-if ($zone->zoneEntryModify(new \PayPal\StructType\ZoneEntryModify()) !== false) {
+if ($zone->zoneEntryModify(new \Ovh\StructType\ZoneEntryModify()) !== false) {
     print_r($zone->getResult());
 } else {
     print_r($zone->getLastError());
@@ -4310,7 +4310,7 @@ if ($zone->zoneEntryModify(new \PayPal\StructType\ZoneEntryModify()) !== false) 
 /**
  * Sample call for zoneEntryDel operation/method
  */
-if ($zone->zoneEntryDel(new \PayPal\StructType\ZoneEntryDel()) !== false) {
+if ($zone->zoneEntryDel(new \Ovh\StructType\ZoneEntryDel()) !== false) {
     print_r($zone->getResult());
 } else {
     print_r($zone->getLastError());
@@ -4318,7 +4318,7 @@ if ($zone->zoneEntryDel(new \PayPal\StructType\ZoneEntryDel()) !== false) {
 /**
  * Sample call for zoneEntryAdd operation/method
  */
-if ($zone->zoneEntryAdd(new \PayPal\StructType\ZoneEntryAdd()) !== false) {
+if ($zone->zoneEntryAdd(new \Ovh\StructType\ZoneEntryAdd()) !== false) {
     print_r($zone->getResult());
 } else {
     print_r($zone->getLastError());
@@ -4326,7 +4326,7 @@ if ($zone->zoneEntryAdd(new \PayPal\StructType\ZoneEntryAdd()) !== false) {
 /**
  * Sample call for zoneExport operation/method
  */
-if ($zone->zoneExport(new \PayPal\StructType\ZoneExport()) !== false) {
+if ($zone->zoneExport(new \Ovh\StructType\ZoneExport()) !== false) {
     print_r($zone->getResult());
 } else {
     print_r($zone->getLastError());
@@ -4334,7 +4334,7 @@ if ($zone->zoneExport(new \PayPal\StructType\ZoneExport()) !== false) {
 /**
  * Sample call for zoneImport operation/method
  */
-if ($zone->zoneImport(new \PayPal\StructType\ZoneImport()) !== false) {
+if ($zone->zoneImport(new \Ovh\StructType\ZoneImport()) !== false) {
     print_r($zone->getResult());
 } else {
     print_r($zone->getLastError());
@@ -4342,11 +4342,11 @@ if ($zone->zoneImport(new \PayPal\StructType\ZoneImport()) !== false) {
 /**
  * Samples for Dns ServiceType
  */
-$dns = new \PayPal\ServiceType\Dns($options);
+$dns = new \Ovh\ServiceType\Dns($options);
 /**
  * Sample call for dnsDefaultInstallCustom operation/method
  */
-if ($dns->dnsDefaultInstallCustom(new \PayPal\StructType\DnsDefaultInstallCustom()) !== false) {
+if ($dns->dnsDefaultInstallCustom(new \Ovh\StructType\DnsDefaultInstallCustom()) !== false) {
     print_r($dns->getResult());
 } else {
     print_r($dns->getLastError());
@@ -4354,7 +4354,7 @@ if ($dns->dnsDefaultInstallCustom(new \PayPal\StructType\DnsDefaultInstallCustom
 /**
  * Sample call for dnsInstall operation/method
  */
-if ($dns->dnsInstall(new \PayPal\StructType\DnsInstall()) !== false) {
+if ($dns->dnsInstall(new \Ovh\StructType\DnsInstall()) !== false) {
     print_r($dns->getResult());
 } else {
     print_r($dns->getLastError());
@@ -4362,7 +4362,7 @@ if ($dns->dnsInstall(new \PayPal\StructType\DnsInstall()) !== false) {
 /**
  * Sample call for dnsReset operation/method
  */
-if ($dns->dnsReset(new \PayPal\StructType\DnsReset()) !== false) {
+if ($dns->dnsReset(new \Ovh\StructType\DnsReset()) !== false) {
     print_r($dns->getResult());
 } else {
     print_r($dns->getLastError());
@@ -4370,7 +4370,7 @@ if ($dns->dnsReset(new \PayPal\StructType\DnsReset()) !== false) {
 /**
  * Sample call for dnsSoaModify operation/method
  */
-if ($dns->dnsSoaModify(new \PayPal\StructType\DnsSoaModify()) !== false) {
+if ($dns->dnsSoaModify(new \Ovh\StructType\DnsSoaModify()) !== false) {
     print_r($dns->getResult());
 } else {
     print_r($dns->getLastError());
@@ -4378,7 +4378,7 @@ if ($dns->dnsSoaModify(new \PayPal\StructType\DnsSoaModify()) !== false) {
 /**
  * Sample call for dnsInstallCustom operation/method
  */
-if ($dns->dnsInstallCustom(new \PayPal\StructType\DnsInstallCustom()) !== false) {
+if ($dns->dnsInstallCustom(new \Ovh\StructType\DnsInstallCustom()) !== false) {
     print_r($dns->getResult());
 } else {
     print_r($dns->getLastError());
@@ -4386,7 +4386,7 @@ if ($dns->dnsInstallCustom(new \PayPal\StructType\DnsInstallCustom()) !== false)
 /**
  * Sample call for dnsUninstall operation/method
  */
-if ($dns->dnsUninstall(new \PayPal\StructType\DnsUninstall()) !== false) {
+if ($dns->dnsUninstall(new \Ovh\StructType\DnsUninstall()) !== false) {
     print_r($dns->getResult());
 } else {
     print_r($dns->getLastError());
@@ -4394,7 +4394,7 @@ if ($dns->dnsUninstall(new \PayPal\StructType\DnsUninstall()) !== false) {
 /**
  * Sample call for dnsGeolocalizeHosting operation/method
  */
-if ($dns->dnsGeolocalizeHosting(new \PayPal\StructType\DnsGeolocalizeHosting()) !== false) {
+if ($dns->dnsGeolocalizeHosting(new \Ovh\StructType\DnsGeolocalizeHosting()) !== false) {
     print_r($dns->getResult());
 } else {
     print_r($dns->getLastError());
@@ -4402,11 +4402,11 @@ if ($dns->dnsGeolocalizeHosting(new \PayPal\StructType\DnsGeolocalizeHosting()) 
 /**
  * Samples for Pop ServiceType
  */
-$pop = new \PayPal\ServiceType\Pop($options);
+$pop = new \Ovh\ServiceType\Pop($options);
 /**
  * Sample call for popDetachMasterNic operation/method
  */
-if ($pop->popDetachMasterNic(new \PayPal\StructType\PopDetachMasterNic()) !== false) {
+if ($pop->popDetachMasterNic(new \Ovh\StructType\PopDetachMasterNic()) !== false) {
     print_r($pop->getResult());
 } else {
     print_r($pop->getLastError());
@@ -4414,7 +4414,7 @@ if ($pop->popDetachMasterNic(new \PayPal\StructType\PopDetachMasterNic()) !== fa
 /**
  * Sample call for popList operation/method
  */
-if ($pop->popList(new \PayPal\StructType\PopList()) !== false) {
+if ($pop->popList(new \Ovh\StructType\PopList()) !== false) {
     print_r($pop->getResult());
 } else {
     print_r($pop->getLastError());
@@ -4422,7 +4422,7 @@ if ($pop->popList(new \PayPal\StructType\PopList()) !== false) {
 /**
  * Sample call for popUpgradeQuota operation/method
  */
-if ($pop->popUpgradeQuota(new \PayPal\StructType\PopUpgradeQuota()) !== false) {
+if ($pop->popUpgradeQuota(new \Ovh\StructType\PopUpgradeQuota()) !== false) {
     print_r($pop->getResult());
 } else {
     print_r($pop->getLastError());
@@ -4430,7 +4430,7 @@ if ($pop->popUpgradeQuota(new \PayPal\StructType\PopUpgradeQuota()) !== false) {
 /**
  * Sample call for popDel operation/method
  */
-if ($pop->popDel(new \PayPal\StructType\PopDel()) !== false) {
+if ($pop->popDel(new \Ovh\StructType\PopDel()) !== false) {
     print_r($pop->getResult());
 } else {
     print_r($pop->getLastError());
@@ -4438,7 +4438,7 @@ if ($pop->popDel(new \PayPal\StructType\PopDel()) !== false) {
 /**
  * Sample call for popListByMasterNic operation/method
  */
-if ($pop->popListByMasterNic(new \PayPal\StructType\PopListByMasterNic()) !== false) {
+if ($pop->popListByMasterNic(new \Ovh\StructType\PopListByMasterNic()) !== false) {
     print_r($pop->getResult());
 } else {
     print_r($pop->getLastError());
@@ -4446,7 +4446,7 @@ if ($pop->popListByMasterNic(new \PayPal\StructType\PopListByMasterNic()) !== fa
 /**
  * Sample call for popModifyDescription operation/method
  */
-if ($pop->popModifyDescription(new \PayPal\StructType\PopModifyDescription()) !== false) {
+if ($pop->popModifyDescription(new \Ovh\StructType\PopModifyDescription()) !== false) {
     print_r($pop->getResult());
 } else {
     print_r($pop->getLastError());
@@ -4454,7 +4454,7 @@ if ($pop->popModifyDescription(new \PayPal\StructType\PopModifyDescription()) !=
 /**
  * Sample call for popInfo operation/method
  */
-if ($pop->popInfo(new \PayPal\StructType\PopInfo()) !== false) {
+if ($pop->popInfo(new \Ovh\StructType\PopInfo()) !== false) {
     print_r($pop->getResult());
 } else {
     print_r($pop->getLastError());
@@ -4462,7 +4462,7 @@ if ($pop->popInfo(new \PayPal\StructType\PopInfo()) !== false) {
 /**
  * Sample call for popModifyPassword operation/method
  */
-if ($pop->popModifyPassword(new \PayPal\StructType\PopModifyPassword()) !== false) {
+if ($pop->popModifyPassword(new \Ovh\StructType\PopModifyPassword()) !== false) {
     print_r($pop->getResult());
 } else {
     print_r($pop->getLastError());
@@ -4470,7 +4470,7 @@ if ($pop->popModifyPassword(new \PayPal\StructType\PopModifyPassword()) !== fals
 /**
  * Sample call for popAttachMasterNic operation/method
  */
-if ($pop->popAttachMasterNic(new \PayPal\StructType\PopAttachMasterNic()) !== false) {
+if ($pop->popAttachMasterNic(new \Ovh\StructType\PopAttachMasterNic()) !== false) {
     print_r($pop->getResult());
 } else {
     print_r($pop->getLastError());
@@ -4478,7 +4478,7 @@ if ($pop->popAttachMasterNic(new \PayPal\StructType\PopAttachMasterNic()) !== fa
 /**
  * Sample call for popAdd operation/method
  */
-if ($pop->popAdd(new \PayPal\StructType\PopAdd()) !== false) {
+if ($pop->popAdd(new \Ovh\StructType\PopAdd()) !== false) {
     print_r($pop->getResult());
 } else {
     print_r($pop->getLastError());
@@ -4486,7 +4486,7 @@ if ($pop->popAdd(new \PayPal\StructType\PopAdd()) !== false) {
 /**
  * Sample call for popGetQuota operation/method
  */
-if ($pop->popGetQuota(new \PayPal\StructType\PopGetQuota()) !== false) {
+if ($pop->popGetQuota(new \Ovh\StructType\PopGetQuota()) !== false) {
     print_r($pop->getResult());
 } else {
     print_r($pop->getLastError());
@@ -4494,11 +4494,11 @@ if ($pop->popGetQuota(new \PayPal\StructType\PopGetQuota()) !== false) {
 /**
  * Samples for Overquota ServiceType
  */
-$overquota = new \PayPal\ServiceType\Overquota($options);
+$overquota = new \Ovh\ServiceType\Overquota($options);
 /**
  * Sample call for overquotaInfo operation/method
  */
-if ($overquota->overquotaInfo(new \PayPal\StructType\OverquotaInfo()) !== false) {
+if ($overquota->overquotaInfo(new \Ovh\StructType\OverquotaInfo()) !== false) {
     print_r($overquota->getResult());
 } else {
     print_r($overquota->getLastError());
@@ -4506,11 +4506,11 @@ if ($overquota->overquotaInfo(new \PayPal\StructType\OverquotaInfo()) !== false)
 /**
  * Samples for Email ServiceType
  */
-$email = new \PayPal\ServiceType\Email($options);
+$email = new \Ovh\ServiceType\Email($options);
 /**
  * Sample call for emailGetCapabilities operation/method
  */
-if ($email->emailGetCapabilities(new \PayPal\StructType\EmailGetCapabilities()) !== false) {
+if ($email->emailGetCapabilities(new \Ovh\StructType\EmailGetCapabilities()) !== false) {
     print_r($email->getResult());
 } else {
     print_r($email->getLastError());
@@ -4518,7 +4518,7 @@ if ($email->emailGetCapabilities(new \PayPal\StructType\EmailGetCapabilities()) 
 /**
  * Sample call for emailDomainListByMasterNic operation/method
  */
-if ($email->emailDomainListByMasterNic(new \PayPal\StructType\EmailDomainListByMasterNic()) !== false) {
+if ($email->emailDomainListByMasterNic(new \Ovh\StructType\EmailDomainListByMasterNic()) !== false) {
     print_r($email->getResult());
 } else {
     print_r($email->getLastError());
@@ -4526,7 +4526,7 @@ if ($email->emailDomainListByMasterNic(new \PayPal\StructType\EmailDomainListByM
 /**
  * Sample call for emailDomainSummary operation/method
  */
-if ($email->emailDomainSummary(new \PayPal\StructType\EmailDomainSummary()) !== false) {
+if ($email->emailDomainSummary(new \Ovh\StructType\EmailDomainSummary()) !== false) {
     print_r($email->getResult());
 } else {
     print_r($email->getLastError());
@@ -4534,7 +4534,7 @@ if ($email->emailDomainSummary(new \PayPal\StructType\EmailDomainSummary()) !== 
 /**
  * Sample call for emailFilterAdd operation/method
  */
-if ($email->emailFilterAdd(new \PayPal\StructType\EmailFilterAdd()) !== false) {
+if ($email->emailFilterAdd(new \Ovh\StructType\EmailFilterAdd()) !== false) {
     print_r($email->getResult());
 } else {
     print_r($email->getLastError());
@@ -4542,7 +4542,7 @@ if ($email->emailFilterAdd(new \PayPal\StructType\EmailFilterAdd()) !== false) {
 /**
  * Sample call for emailAccessByNic operation/method
  */
-if ($email->emailAccessByNic(new \PayPal\StructType\EmailAccessByNic()) !== false) {
+if ($email->emailAccessByNic(new \Ovh\StructType\EmailAccessByNic()) !== false) {
     print_r($email->getResult());
 } else {
     print_r($email->getLastError());
@@ -4550,7 +4550,7 @@ if ($email->emailAccessByNic(new \PayPal\StructType\EmailAccessByNic()) !== fals
 /**
  * Sample call for emailFilterRuleDel operation/method
  */
-if ($email->emailFilterRuleDel(new \PayPal\StructType\EmailFilterRuleDel()) !== false) {
+if ($email->emailFilterRuleDel(new \Ovh\StructType\EmailFilterRuleDel()) !== false) {
     print_r($email->getResult());
 } else {
     print_r($email->getLastError());
@@ -4558,7 +4558,7 @@ if ($email->emailFilterRuleDel(new \PayPal\StructType\EmailFilterRuleDel()) !== 
 /**
  * Sample call for emailFilterPriority operation/method
  */
-if ($email->emailFilterPriority(new \PayPal\StructType\EmailFilterPriority()) !== false) {
+if ($email->emailFilterPriority(new \Ovh\StructType\EmailFilterPriority()) !== false) {
     print_r($email->getResult());
 } else {
     print_r($email->getLastError());
@@ -4566,7 +4566,7 @@ if ($email->emailFilterPriority(new \PayPal\StructType\EmailFilterPriority()) !=
 /**
  * Sample call for emailFilterDel operation/method
  */
-if ($email->emailFilterDel(new \PayPal\StructType\EmailFilterDel()) !== false) {
+if ($email->emailFilterDel(new \Ovh\StructType\EmailFilterDel()) !== false) {
     print_r($email->getResult());
 } else {
     print_r($email->getLastError());
@@ -4574,7 +4574,7 @@ if ($email->emailFilterDel(new \PayPal\StructType\EmailFilterDel()) !== false) {
 /**
  * Sample call for emailSetDomainCatchAll operation/method
  */
-if ($email->emailSetDomainCatchAll(new \PayPal\StructType\EmailSetDomainCatchAll()) !== false) {
+if ($email->emailSetDomainCatchAll(new \Ovh\StructType\EmailSetDomainCatchAll()) !== false) {
     print_r($email->getResult());
 } else {
     print_r($email->getLastError());
@@ -4582,7 +4582,7 @@ if ($email->emailSetDomainCatchAll(new \PayPal\StructType\EmailSetDomainCatchAll
 /**
  * Sample call for emailDomainMxList operation/method
  */
-if ($email->emailDomainMxList(new \PayPal\StructType\EmailDomainMxList()) !== false) {
+if ($email->emailDomainMxList(new \Ovh\StructType\EmailDomainMxList()) !== false) {
     print_r($email->getResult());
 } else {
     print_r($email->getLastError());
@@ -4590,7 +4590,7 @@ if ($email->emailDomainMxList(new \PayPal\StructType\EmailDomainMxList()) !== fa
 /**
  * Sample call for emailFilterRuleAdd operation/method
  */
-if ($email->emailFilterRuleAdd(new \PayPal\StructType\EmailFilterRuleAdd()) !== false) {
+if ($email->emailFilterRuleAdd(new \Ovh\StructType\EmailFilterRuleAdd()) !== false) {
     print_r($email->getResult());
 } else {
     print_r($email->getLastError());
@@ -4598,7 +4598,7 @@ if ($email->emailFilterRuleAdd(new \PayPal\StructType\EmailFilterRuleAdd()) !== 
 /**
  * Sample call for emailFilterActive operation/method
  */
-if ($email->emailFilterActive(new \PayPal\StructType\EmailFilterActive()) !== false) {
+if ($email->emailFilterActive(new \Ovh\StructType\EmailFilterActive()) !== false) {
     print_r($email->getResult());
 } else {
     print_r($email->getLastError());
@@ -4606,7 +4606,7 @@ if ($email->emailFilterActive(new \PayPal\StructType\EmailFilterActive()) !== fa
 /**
  * Sample call for emailFilterList operation/method
  */
-if ($email->emailFilterList(new \PayPal\StructType\EmailFilterList()) !== false) {
+if ($email->emailFilterList(new \Ovh\StructType\EmailFilterList()) !== false) {
     print_r($email->getResult());
 } else {
     print_r($email->getLastError());
@@ -4614,7 +4614,7 @@ if ($email->emailFilterList(new \PayPal\StructType\EmailFilterList()) !== false)
 /**
  * Sample call for emailGetDomainMxFiltering operation/method
  */
-if ($email->emailGetDomainMxFiltering(new \PayPal\StructType\EmailGetDomainMxFiltering()) !== false) {
+if ($email->emailGetDomainMxFiltering(new \Ovh\StructType\EmailGetDomainMxFiltering()) !== false) {
     print_r($email->getResult());
 } else {
     print_r($email->getLastError());
@@ -4622,7 +4622,7 @@ if ($email->emailGetDomainMxFiltering(new \PayPal\StructType\EmailGetDomainMxFil
 /**
  * Sample call for emailDelMasterNic operation/method
  */
-if ($email->emailDelMasterNic(new \PayPal\StructType\EmailDelMasterNic()) !== false) {
+if ($email->emailDelMasterNic(new \Ovh\StructType\EmailDelMasterNic()) !== false) {
     print_r($email->getResult());
 } else {
     print_r($email->getLastError());
@@ -4630,7 +4630,7 @@ if ($email->emailDelMasterNic(new \PayPal\StructType\EmailDelMasterNic()) !== fa
 /**
  * Sample call for emailGetDomainCatchAll operation/method
  */
-if ($email->emailGetDomainCatchAll(new \PayPal\StructType\EmailGetDomainCatchAll()) !== false) {
+if ($email->emailGetDomainCatchAll(new \Ovh\StructType\EmailGetDomainCatchAll()) !== false) {
     print_r($email->getResult());
 } else {
     print_r($email->getLastError());
@@ -4638,7 +4638,7 @@ if ($email->emailGetDomainCatchAll(new \PayPal\StructType\EmailGetDomainCatchAll
 /**
  * Sample call for emailSetMasterNic operation/method
  */
-if ($email->emailSetMasterNic(new \PayPal\StructType\EmailSetMasterNic()) !== false) {
+if ($email->emailSetMasterNic(new \Ovh\StructType\EmailSetMasterNic()) !== false) {
     print_r($email->getResult());
 } else {
     print_r($email->getLastError());
@@ -4646,7 +4646,7 @@ if ($email->emailSetMasterNic(new \PayPal\StructType\EmailSetMasterNic()) !== fa
 /**
  * Sample call for emailSetDomainMxFiltering operation/method
  */
-if ($email->emailSetDomainMxFiltering(new \PayPal\StructType\EmailSetDomainMxFiltering()) !== false) {
+if ($email->emailSetDomainMxFiltering(new \Ovh\StructType\EmailSetDomainMxFiltering()) !== false) {
     print_r($email->getResult());
 } else {
     print_r($email->getLastError());
@@ -4654,11 +4654,11 @@ if ($email->emailSetDomainMxFiltering(new \PayPal\StructType\EmailSetDomainMxFil
 /**
  * Samples for Ort ServiceType
  */
-$ort = new \PayPal\ServiceType\Ort($options);
+$ort = new \Ovh\ServiceType\Ort($options);
 /**
  * Sample call for ortDomainDel operation/method
  */
-if ($ort->ortDomainDel(new \PayPal\StructType\OrtDomainDel()) !== false) {
+if ($ort->ortDomainDel(new \Ovh\StructType\OrtDomainDel()) !== false) {
     print_r($ort->getResult());
 } else {
     print_r($ort->getLastError());
@@ -4666,7 +4666,7 @@ if ($ort->ortDomainDel(new \PayPal\StructType\OrtDomainDel()) !== false) {
 /**
  * Sample call for ortDomainList operation/method
  */
-if ($ort->ortDomainList(new \PayPal\StructType\OrtDomainList()) !== false) {
+if ($ort->ortDomainList(new \Ovh\StructType\OrtDomainList()) !== false) {
     print_r($ort->getResult());
 } else {
     print_r($ort->getLastError());
@@ -4674,7 +4674,7 @@ if ($ort->ortDomainList(new \PayPal\StructType\OrtDomainList()) !== false) {
 /**
  * Sample call for ortDomainAdd operation/method
  */
-if ($ort->ortDomainAdd(new \PayPal\StructType\OrtDomainAdd()) !== false) {
+if ($ort->ortDomainAdd(new \Ovh\StructType\OrtDomainAdd()) !== false) {
     print_r($ort->getResult());
 } else {
     print_r($ort->getLastError());
@@ -4682,11 +4682,11 @@ if ($ort->ortDomainAdd(new \PayPal\StructType\OrtDomainAdd()) !== false) {
 /**
  * Samples for Prepaid ServiceType
  */
-$prepaid = new \PayPal\ServiceType\Prepaid($options);
+$prepaid = new \Ovh\ServiceType\Prepaid($options);
 /**
  * Sample call for prepaidDomainCreate operation/method
  */
-if ($prepaid->prepaidDomainCreate(new \PayPal\StructType\PrepaidDomainCreate()) !== false) {
+if ($prepaid->prepaidDomainCreate(new \Ovh\StructType\PrepaidDomainCreate()) !== false) {
     print_r($prepaid->getResult());
 } else {
     print_r($prepaid->getLastError());
@@ -4694,7 +4694,7 @@ if ($prepaid->prepaidDomainCreate(new \PayPal\StructType\PrepaidDomainCreate()) 
 /**
  * Sample call for prepaidDomainTransfer operation/method
  */
-if ($prepaid->prepaidDomainTransfer(new \PayPal\StructType\PrepaidDomainTransfer()) !== false) {
+if ($prepaid->prepaidDomainTransfer(new \Ovh\StructType\PrepaidDomainTransfer()) !== false) {
     print_r($prepaid->getResult());
 } else {
     print_r($prepaid->getLastError());
@@ -4702,7 +4702,7 @@ if ($prepaid->prepaidDomainTransfer(new \PayPal\StructType\PrepaidDomainTransfer
 /**
  * Sample call for prepaidSetThreshold operation/method
  */
-if ($prepaid->prepaidSetThreshold(new \PayPal\StructType\PrepaidSetThreshold()) !== false) {
+if ($prepaid->prepaidSetThreshold(new \Ovh\StructType\PrepaidSetThreshold()) !== false) {
     print_r($prepaid->getResult());
 } else {
     print_r($prepaid->getLastError());
@@ -4710,7 +4710,7 @@ if ($prepaid->prepaidSetThreshold(new \PayPal\StructType\PrepaidSetThreshold()) 
 /**
  * Sample call for prepaidGetSummary operation/method
  */
-if ($prepaid->prepaidGetSummary(new \PayPal\StructType\PrepaidGetSummary()) !== false) {
+if ($prepaid->prepaidGetSummary(new \Ovh\StructType\PrepaidGetSummary()) !== false) {
     print_r($prepaid->getResult());
 } else {
     print_r($prepaid->getLastError());
@@ -4718,7 +4718,7 @@ if ($prepaid->prepaidGetSummary(new \PayPal\StructType\PrepaidGetSummary()) !== 
 /**
  * Sample call for prepaidDomainRenew operation/method
  */
-if ($prepaid->prepaidDomainRenew(new \PayPal\StructType\PrepaidDomainRenew()) !== false) {
+if ($prepaid->prepaidDomainRenew(new \Ovh\StructType\PrepaidDomainRenew()) !== false) {
     print_r($prepaid->getResult());
 } else {
     print_r($prepaid->getLastError());
@@ -4726,7 +4726,7 @@ if ($prepaid->prepaidDomainRenew(new \PayPal\StructType\PrepaidDomainRenew()) !=
 /**
  * Sample call for prepaidGetThreshold operation/method
  */
-if ($prepaid->prepaidGetThreshold(new \PayPal\StructType\PrepaidGetThreshold()) !== false) {
+if ($prepaid->prepaidGetThreshold(new \Ovh\StructType\PrepaidGetThreshold()) !== false) {
     print_r($prepaid->getResult());
 } else {
     print_r($prepaid->getLastError());
@@ -4734,7 +4734,7 @@ if ($prepaid->prepaidGetThreshold(new \PayPal\StructType\PrepaidGetThreshold()) 
 /**
  * Sample call for prepaidGetHistory operation/method
  */
-if ($prepaid->prepaidGetHistory(new \PayPal\StructType\PrepaidGetHistory()) !== false) {
+if ($prepaid->prepaidGetHistory(new \Ovh\StructType\PrepaidGetHistory()) !== false) {
     print_r($prepaid->getResult());
 } else {
     print_r($prepaid->getLastError());
@@ -4742,7 +4742,7 @@ if ($prepaid->prepaidGetHistory(new \PayPal\StructType\PrepaidGetHistory()) !== 
 /**
  * Sample call for prepaidGetBalance operation/method
  */
-if ($prepaid->prepaidGetBalance(new \PayPal\StructType\PrepaidGetBalance()) !== false) {
+if ($prepaid->prepaidGetBalance(new \Ovh\StructType\PrepaidGetBalance()) !== false) {
     print_r($prepaid->getResult());
 } else {
     print_r($prepaid->getLastError());
@@ -4750,11 +4750,11 @@ if ($prepaid->prepaidGetBalance(new \PayPal\StructType\PrepaidGetBalance()) !== 
 /**
  * Samples for Reseller ServiceType
  */
-$reseller = new \PayPal\ServiceType\Reseller($options);
+$reseller = new \Ovh\ServiceType\Reseller($options);
 /**
  * Sample call for resellerDomainTransferIT operation/method
  */
-if ($reseller->resellerDomainTransferIT(new \PayPal\StructType\ResellerDomainTransferIT()) !== false) {
+if ($reseller->resellerDomainTransferIT(new \Ovh\StructType\ResellerDomainTransferIT()) !== false) {
     print_r($reseller->getResult());
 } else {
     print_r($reseller->getLastError());
@@ -4762,7 +4762,7 @@ if ($reseller->resellerDomainTransferIT(new \PayPal\StructType\ResellerDomainTra
 /**
  * Sample call for resellerDomainRestore operation/method
  */
-if ($reseller->resellerDomainRestore(new \PayPal\StructType\ResellerDomainRestore()) !== false) {
+if ($reseller->resellerDomainRestore(new \Ovh\StructType\ResellerDomainRestore()) !== false) {
     print_r($reseller->getResult());
 } else {
     print_r($reseller->getLastError());
@@ -4770,7 +4770,7 @@ if ($reseller->resellerDomainRestore(new \PayPal\StructType\ResellerDomainRestor
 /**
  * Sample call for resellerDomainRenew operation/method
  */
-if ($reseller->resellerDomainRenew(new \PayPal\StructType\ResellerDomainRenew()) !== false) {
+if ($reseller->resellerDomainRenew(new \Ovh\StructType\ResellerDomainRenew()) !== false) {
     print_r($reseller->getResult());
 } else {
     print_r($reseller->getLastError());
@@ -4778,7 +4778,7 @@ if ($reseller->resellerDomainRenew(new \PayPal\StructType\ResellerDomainRenew())
 /**
  * Sample call for resellerDomainCreate operation/method
  */
-if ($reseller->resellerDomainCreate(new \PayPal\StructType\ResellerDomainCreate()) !== false) {
+if ($reseller->resellerDomainCreate(new \Ovh\StructType\ResellerDomainCreate()) !== false) {
     print_r($reseller->getResult());
 } else {
     print_r($reseller->getLastError());
@@ -4786,7 +4786,7 @@ if ($reseller->resellerDomainCreate(new \PayPal\StructType\ResellerDomainCreate(
 /**
  * Sample call for resellerDomainCreateIT operation/method
  */
-if ($reseller->resellerDomainCreateIT(new \PayPal\StructType\ResellerDomainCreateIT()) !== false) {
+if ($reseller->resellerDomainCreateIT(new \Ovh\StructType\ResellerDomainCreateIT()) !== false) {
     print_r($reseller->getResult());
 } else {
     print_r($reseller->getLastError());
@@ -4794,7 +4794,7 @@ if ($reseller->resellerDomainCreateIT(new \PayPal\StructType\ResellerDomainCreat
 /**
  * Sample call for resellerDomainTransferASIA operation/method
  */
-if ($reseller->resellerDomainTransferASIA(new \PayPal\StructType\ResellerDomainTransferASIA()) !== false) {
+if ($reseller->resellerDomainTransferASIA(new \Ovh\StructType\ResellerDomainTransferASIA()) !== false) {
     print_r($reseller->getResult());
 } else {
     print_r($reseller->getLastError());
@@ -4802,7 +4802,7 @@ if ($reseller->resellerDomainTransferASIA(new \PayPal\StructType\ResellerDomainT
 /**
  * Sample call for resellerDomainCreateCAT operation/method
  */
-if ($reseller->resellerDomainCreateCAT(new \PayPal\StructType\ResellerDomainCreateCAT()) !== false) {
+if ($reseller->resellerDomainCreateCAT(new \Ovh\StructType\ResellerDomainCreateCAT()) !== false) {
     print_r($reseller->getResult());
 } else {
     print_r($reseller->getLastError());
@@ -4810,7 +4810,7 @@ if ($reseller->resellerDomainCreateCAT(new \PayPal\StructType\ResellerDomainCrea
 /**
  * Sample call for resellerDomainCreateASIA operation/method
  */
-if ($reseller->resellerDomainCreateASIA(new \PayPal\StructType\ResellerDomainCreateASIA()) !== false) {
+if ($reseller->resellerDomainCreateASIA(new \Ovh\StructType\ResellerDomainCreateASIA()) !== false) {
     print_r($reseller->getResult());
 } else {
     print_r($reseller->getLastError());
@@ -4818,7 +4818,7 @@ if ($reseller->resellerDomainCreateASIA(new \PayPal\StructType\ResellerDomainCre
 /**
  * Sample call for resellerDomainTransfer operation/method
  */
-if ($reseller->resellerDomainTransfer(new \PayPal\StructType\ResellerDomainTransfer()) !== false) {
+if ($reseller->resellerDomainTransfer(new \Ovh\StructType\ResellerDomainTransfer()) !== false) {
     print_r($reseller->getResult());
 } else {
     print_r($reseller->getLastError());
@@ -4826,11 +4826,11 @@ if ($reseller->resellerDomainTransfer(new \PayPal\StructType\ResellerDomainTrans
 /**
  * Samples for Infrastructure ServiceType
  */
-$infrastructure = new \PayPal\ServiceType\Infrastructure($options);
+$infrastructure = new \Ovh\ServiceType\Infrastructure($options);
 /**
  * Sample call for infrastructureReverseModify operation/method
  */
-if ($infrastructure->infrastructureReverseModify(new \PayPal\StructType\InfrastructureReverseModify()) !== false) {
+if ($infrastructure->infrastructureReverseModify(new \Ovh\StructType\InfrastructureReverseModify()) !== false) {
     print_r($infrastructure->getResult());
 } else {
     print_r($infrastructure->getLastError());
@@ -4838,7 +4838,7 @@ if ($infrastructure->infrastructureReverseModify(new \PayPal\StructType\Infrastr
 /**
  * Sample call for infrastructureIpListGet operation/method
  */
-if ($infrastructure->infrastructureIpListGet(new \PayPal\StructType\InfrastructureIpListGet()) !== false) {
+if ($infrastructure->infrastructureIpListGet(new \Ovh\StructType\InfrastructureIpListGet()) !== false) {
     print_r($infrastructure->getResult());
 } else {
     print_r($infrastructure->getLastError());
@@ -4846,11 +4846,11 @@ if ($infrastructure->infrastructureIpListGet(new \PayPal\StructType\Infrastructu
 /**
  * Samples for Responder ServiceType
  */
-$responder = new \PayPal\ServiceType\Responder($options);
+$responder = new \Ovh\ServiceType\Responder($options);
 /**
  * Sample call for responderEmailList operation/method
  */
-if ($responder->responderEmailList(new \PayPal\StructType\ResponderEmailList()) !== false) {
+if ($responder->responderEmailList(new \Ovh\StructType\ResponderEmailList()) !== false) {
     print_r($responder->getResult());
 } else {
     print_r($responder->getLastError());
@@ -4858,7 +4858,7 @@ if ($responder->responderEmailList(new \PayPal\StructType\ResponderEmailList()) 
 /**
  * Sample call for responderEmailInfo operation/method
  */
-if ($responder->responderEmailInfo(new \PayPal\StructType\ResponderEmailInfo()) !== false) {
+if ($responder->responderEmailInfo(new \Ovh\StructType\ResponderEmailInfo()) !== false) {
     print_r($responder->getResult());
 } else {
     print_r($responder->getLastError());
@@ -4866,7 +4866,7 @@ if ($responder->responderEmailInfo(new \PayPal\StructType\ResponderEmailInfo()) 
 /**
  * Sample call for responderEmailDel operation/method
  */
-if ($responder->responderEmailDel(new \PayPal\StructType\ResponderEmailDel()) !== false) {
+if ($responder->responderEmailDel(new \Ovh\StructType\ResponderEmailDel()) !== false) {
     print_r($responder->getResult());
 } else {
     print_r($responder->getLastError());
@@ -4874,7 +4874,7 @@ if ($responder->responderEmailDel(new \PayPal\StructType\ResponderEmailDel()) !=
 /**
  * Sample call for responderEmailModify operation/method
  */
-if ($responder->responderEmailModify(new \PayPal\StructType\ResponderEmailModify()) !== false) {
+if ($responder->responderEmailModify(new \Ovh\StructType\ResponderEmailModify()) !== false) {
     print_r($responder->getResult());
 } else {
     print_r($responder->getLastError());
@@ -4882,7 +4882,7 @@ if ($responder->responderEmailModify(new \PayPal\StructType\ResponderEmailModify
 /**
  * Sample call for responderEmailAdd operation/method
  */
-if ($responder->responderEmailAdd(new \PayPal\StructType\ResponderEmailAdd()) !== false) {
+if ($responder->responderEmailAdd(new \Ovh\StructType\ResponderEmailAdd()) !== false) {
     print_r($responder->getResult());
 } else {
     print_r($responder->getLastError());
@@ -4890,11 +4890,11 @@ if ($responder->responderEmailAdd(new \PayPal\StructType\ResponderEmailAdd()) !=
 /**
  * Samples for Hosting ServiceType
  */
-$hosting = new \PayPal\ServiceType\Hosting($options);
+$hosting = new \Ovh\ServiceType\Hosting($options);
 /**
  * Sample call for hostingAccessByNic operation/method
  */
-if ($hosting->hostingAccessByNic(new \PayPal\StructType\HostingAccessByNic()) !== false) {
+if ($hosting->hostingAccessByNic(new \Ovh\StructType\HostingAccessByNic()) !== false) {
     print_r($hosting->getResult());
 } else {
     print_r($hosting->getLastError());
@@ -4902,7 +4902,7 @@ if ($hosting->hostingAccessByNic(new \PayPal\StructType\HostingAccessByNic()) !=
 /**
  * Sample call for hostingSummary operation/method
  */
-if ($hosting->hostingSummary(new \PayPal\StructType\HostingSummary()) !== false) {
+if ($hosting->hostingSummary(new \Ovh\StructType\HostingSummary()) !== false) {
     print_r($hosting->getResult());
 } else {
     print_r($hosting->getLastError());
@@ -4910,7 +4910,7 @@ if ($hosting->hostingSummary(new \PayPal\StructType\HostingSummary()) !== false)
 /**
  * Sample call for hostingGetCapabilities operation/method
  */
-if ($hosting->hostingGetCapabilities(new \PayPal\StructType\HostingGetCapabilities()) !== false) {
+if ($hosting->hostingGetCapabilities(new \Ovh\StructType\HostingGetCapabilities()) !== false) {
     print_r($hosting->getResult());
 } else {
     print_r($hosting->getLastError());
@@ -4918,7 +4918,7 @@ if ($hosting->hostingGetCapabilities(new \PayPal\StructType\HostingGetCapabiliti
 /**
  * Sample call for hostingChangeMainDomain operation/method
  */
-if ($hosting->hostingChangeMainDomain(new \PayPal\StructType\HostingChangeMainDomain()) !== false) {
+if ($hosting->hostingChangeMainDomain(new \Ovh\StructType\HostingChangeMainDomain()) !== false) {
     print_r($hosting->getResult());
 } else {
     print_r($hosting->getLastError());
@@ -4926,7 +4926,7 @@ if ($hosting->hostingChangeMainDomain(new \PayPal\StructType\HostingChangeMainDo
 /**
  * Sample call for hostingList operation/method
  */
-if ($hosting->hostingList(new \PayPal\StructType\HostingList()) !== false) {
+if ($hosting->hostingList(new \Ovh\StructType\HostingList()) !== false) {
     print_r($hosting->getResult());
 } else {
     print_r($hosting->getLastError());
@@ -4934,11 +4934,11 @@ if ($hosting->hostingList(new \PayPal\StructType\HostingList()) !== false) {
 /**
  * Samples for Managed ServiceType
  */
-$managed = new \PayPal\ServiceType\Managed($options);
+$managed = new \Ovh\ServiceType\Managed($options);
 /**
  * Sample call for managedServicesPartitionQuotaUsed operation/method
  */
-if ($managed->managedServicesPartitionQuotaUsed(new \PayPal\StructType\ManagedServicesPartitionQuotaUsed()) !== false) {
+if ($managed->managedServicesPartitionQuotaUsed(new \Ovh\StructType\ManagedServicesPartitionQuotaUsed()) !== false) {
     print_r($managed->getResult());
 } else {
     print_r($managed->getLastError());
@@ -4946,7 +4946,7 @@ if ($managed->managedServicesPartitionQuotaUsed(new \PayPal\StructType\ManagedSe
 /**
  * Sample call for managedServicesIpAccessChange operation/method
  */
-if ($managed->managedServicesIpAccessChange(new \PayPal\StructType\ManagedServicesIpAccessChange()) !== false) {
+if ($managed->managedServicesIpAccessChange(new \Ovh\StructType\ManagedServicesIpAccessChange()) !== false) {
     print_r($managed->getResult());
 } else {
     print_r($managed->getLastError());
@@ -4954,7 +4954,7 @@ if ($managed->managedServicesIpAccessChange(new \PayPal\StructType\ManagedServic
 /**
  * Sample call for managedServicesSnapshotUpdate operation/method
  */
-if ($managed->managedServicesSnapshotUpdate(new \PayPal\StructType\ManagedServicesSnapshotUpdate()) !== false) {
+if ($managed->managedServicesSnapshotUpdate(new \Ovh\StructType\ManagedServicesSnapshotUpdate()) !== false) {
     print_r($managed->getResult());
 } else {
     print_r($managed->getLastError());
@@ -4962,7 +4962,7 @@ if ($managed->managedServicesSnapshotUpdate(new \PayPal\StructType\ManagedServic
 /**
  * Sample call for managedServicesHostMasterIpGet operation/method
  */
-if ($managed->managedServicesHostMasterIpGet(new \PayPal\StructType\ManagedServicesHostMasterIpGet()) !== false) {
+if ($managed->managedServicesHostMasterIpGet(new \Ovh\StructType\ManagedServicesHostMasterIpGet()) !== false) {
     print_r($managed->getResult());
 } else {
     print_r($managed->getLastError());
@@ -4970,7 +4970,7 @@ if ($managed->managedServicesHostMasterIpGet(new \PayPal\StructType\ManagedServi
 /**
  * Sample call for managedServicesPartitionDelete operation/method
  */
-if ($managed->managedServicesPartitionDelete(new \PayPal\StructType\ManagedServicesPartitionDelete()) !== false) {
+if ($managed->managedServicesPartitionDelete(new \Ovh\StructType\ManagedServicesPartitionDelete()) !== false) {
     print_r($managed->getResult());
 } else {
     print_r($managed->getLastError());
@@ -4978,7 +4978,7 @@ if ($managed->managedServicesPartitionDelete(new \PayPal\StructType\ManagedServi
 /**
  * Sample call for managedServicesPartitionStatusCheck operation/method
  */
-if ($managed->managedServicesPartitionStatusCheck(new \PayPal\StructType\ManagedServicesPartitionStatusCheck()) !== false) {
+if ($managed->managedServicesPartitionStatusCheck(new \Ovh\StructType\ManagedServicesPartitionStatusCheck()) !== false) {
     print_r($managed->getResult());
 } else {
     print_r($managed->getLastError());
@@ -4986,7 +4986,7 @@ if ($managed->managedServicesPartitionStatusCheck(new \PayPal\StructType\Managed
 /**
  * Sample call for managedServicesPartitionCreate operation/method
  */
-if ($managed->managedServicesPartitionCreate(new \PayPal\StructType\ManagedServicesPartitionCreate()) !== false) {
+if ($managed->managedServicesPartitionCreate(new \Ovh\StructType\ManagedServicesPartitionCreate()) !== false) {
     print_r($managed->getResult());
 } else {
     print_r($managed->getLastError());
@@ -4994,7 +4994,7 @@ if ($managed->managedServicesPartitionCreate(new \PayPal\StructType\ManagedServi
 /**
  * Sample call for managedServicesPartitionGet operation/method
  */
-if ($managed->managedServicesPartitionGet(new \PayPal\StructType\ManagedServicesPartitionGet()) !== false) {
+if ($managed->managedServicesPartitionGet(new \Ovh\StructType\ManagedServicesPartitionGet()) !== false) {
     print_r($managed->getResult());
 } else {
     print_r($managed->getLastError());
@@ -5002,7 +5002,7 @@ if ($managed->managedServicesPartitionGet(new \PayPal\StructType\ManagedServices
 /**
  * Sample call for managedServicesPartitionUpdate operation/method
  */
-if ($managed->managedServicesPartitionUpdate(new \PayPal\StructType\ManagedServicesPartitionUpdate()) !== false) {
+if ($managed->managedServicesPartitionUpdate(new \Ovh\StructType\ManagedServicesPartitionUpdate()) !== false) {
     print_r($managed->getResult());
 } else {
     print_r($managed->getLastError());
@@ -5010,7 +5010,7 @@ if ($managed->managedServicesPartitionUpdate(new \PayPal\StructType\ManagedServi
 /**
  * Sample call for managedServicesNameUpdate operation/method
  */
-if ($managed->managedServicesNameUpdate(new \PayPal\StructType\ManagedServicesNameUpdate()) !== false) {
+if ($managed->managedServicesNameUpdate(new \Ovh\StructType\ManagedServicesNameUpdate()) !== false) {
     print_r($managed->getResult());
 } else {
     print_r($managed->getLastError());
@@ -5018,11 +5018,11 @@ if ($managed->managedServicesNameUpdate(new \PayPal\StructType\ManagedServicesNa
 /**
  * Samples for Account ServiceType
  */
-$account = new \PayPal\ServiceType\Account($options);
+$account = new \Ovh\ServiceType\Account($options);
 /**
  * Sample call for accountSummary operation/method
  */
-if ($account->accountSummary(new \PayPal\StructType\AccountSummary()) !== false) {
+if ($account->accountSummary(new \Ovh\StructType\AccountSummary()) !== false) {
     print_r($account->getResult());
 } else {
     print_r($account->getLastError());
@@ -5030,7 +5030,7 @@ if ($account->accountSummary(new \PayPal\StructType\AccountSummary()) !== false)
 /**
  * Sample call for accountHistory operation/method
  */
-if ($account->accountHistory(new \PayPal\StructType\AccountHistory()) !== false) {
+if ($account->accountHistory(new \Ovh\StructType\AccountHistory()) !== false) {
     print_r($account->getResult());
 } else {
     print_r($account->getLastError());
@@ -5038,7 +5038,7 @@ if ($account->accountHistory(new \PayPal\StructType\AccountHistory()) !== false)
 /**
  * Sample call for accountAlertThresholdSet operation/method
  */
-if ($account->accountAlertThresholdSet(new \PayPal\StructType\AccountAlertThresholdSet()) !== false) {
+if ($account->accountAlertThresholdSet(new \Ovh\StructType\AccountAlertThresholdSet()) !== false) {
     print_r($account->getResult());
 } else {
     print_r($account->getLastError());
@@ -5046,11 +5046,11 @@ if ($account->accountAlertThresholdSet(new \PayPal\StructType\AccountAlertThresh
 /**
  * Samples for Sub ServiceType
  */
-$sub = new \PayPal\ServiceType\Sub($options);
+$sub = new \Ovh\ServiceType\Sub($options);
 /**
  * Sample call for subDomainDel operation/method
  */
-if ($sub->subDomainDel(new \PayPal\StructType\SubDomainDel()) !== false) {
+if ($sub->subDomainDel(new \Ovh\StructType\SubDomainDel()) !== false) {
     print_r($sub->getResult());
 } else {
     print_r($sub->getLastError());
@@ -5058,7 +5058,7 @@ if ($sub->subDomainDel(new \PayPal\StructType\SubDomainDel()) !== false) {
 /**
  * Sample call for subDomainModify operation/method
  */
-if ($sub->subDomainModify(new \PayPal\StructType\SubDomainModify()) !== false) {
+if ($sub->subDomainModify(new \Ovh\StructType\SubDomainModify()) !== false) {
     print_r($sub->getResult());
 } else {
     print_r($sub->getLastError());
@@ -5066,7 +5066,7 @@ if ($sub->subDomainModify(new \PayPal\StructType\SubDomainModify()) !== false) {
 /**
  * Sample call for subDomainAdd operation/method
  */
-if ($sub->subDomainAdd(new \PayPal\StructType\SubDomainAdd()) !== false) {
+if ($sub->subDomainAdd(new \Ovh\StructType\SubDomainAdd()) !== false) {
     print_r($sub->getResult());
 } else {
     print_r($sub->getLastError());
@@ -5074,7 +5074,7 @@ if ($sub->subDomainAdd(new \PayPal\StructType\SubDomainAdd()) !== false) {
 /**
  * Sample call for subDomainList operation/method
  */
-if ($sub->subDomainList(new \PayPal\StructType\SubDomainList()) !== false) {
+if ($sub->subDomainList(new \Ovh\StructType\SubDomainList()) !== false) {
     print_r($sub->getResult());
 } else {
     print_r($sub->getLastError());
@@ -5082,11 +5082,11 @@ if ($sub->subDomainList(new \PayPal\StructType\SubDomainList()) !== false) {
 /**
  * Samples for Support ServiceType
  */
-$support = new \PayPal\ServiceType\Support($options);
+$support = new \Ovh\ServiceType\Support($options);
 /**
  * Sample call for supportGetNicDomains operation/method
  */
-if ($support->supportGetNicDomains(new \PayPal\StructType\SupportGetNicDomains()) !== false) {
+if ($support->supportGetNicDomains(new \Ovh\StructType\SupportGetNicDomains()) !== false) {
     print_r($support->getResult());
 } else {
     print_r($support->getLastError());
@@ -5094,7 +5094,7 @@ if ($support->supportGetNicDomains(new \PayPal\StructType\SupportGetNicDomains()
 /**
  * Sample call for supportGetThreads operation/method
  */
-if ($support->supportGetThreads(new \PayPal\StructType\SupportGetThreads()) !== false) {
+if ($support->supportGetThreads(new \Ovh\StructType\SupportGetThreads()) !== false) {
     print_r($support->getResult());
 } else {
     print_r($support->getLastError());
@@ -5102,7 +5102,7 @@ if ($support->supportGetThreads(new \PayPal\StructType\SupportGetThreads()) !== 
 /**
  * Sample call for supportSendMessage operation/method
  */
-if ($support->supportSendMessage(new \PayPal\StructType\SupportSendMessage()) !== false) {
+if ($support->supportSendMessage(new \Ovh\StructType\SupportSendMessage()) !== false) {
     print_r($support->getResult());
 } else {
     print_r($support->getLastError());
@@ -5110,7 +5110,7 @@ if ($support->supportSendMessage(new \PayPal\StructType\SupportSendMessage()) !=
 /**
  * Sample call for supportGetAllVisibleCategories operation/method
  */
-if ($support->supportGetAllVisibleCategories(new \PayPal\StructType\SupportGetAllVisibleCategories()) !== false) {
+if ($support->supportGetAllVisibleCategories(new \Ovh\StructType\SupportGetAllVisibleCategories()) !== false) {
     print_r($support->getResult());
 } else {
     print_r($support->getLastError());
@@ -5118,7 +5118,7 @@ if ($support->supportGetAllVisibleCategories(new \PayPal\StructType\SupportGetAl
 /**
  * Sample call for supportGetThreadTree operation/method
  */
-if ($support->supportGetThreadTree(new \PayPal\StructType\SupportGetThreadTree()) !== false) {
+if ($support->supportGetThreadTree(new \Ovh\StructType\SupportGetThreadTree()) !== false) {
     print_r($support->getResult());
 } else {
     print_r($support->getLastError());
@@ -5126,7 +5126,7 @@ if ($support->supportGetThreadTree(new \PayPal\StructType\SupportGetThreadTree()
 /**
  * Sample call for supportReportAnswerProblem operation/method
  */
-if ($support->supportReportAnswerProblem(new \PayPal\StructType\SupportReportAnswerProblem()) !== false) {
+if ($support->supportReportAnswerProblem(new \Ovh\StructType\SupportReportAnswerProblem()) !== false) {
     print_r($support->getResult());
 } else {
     print_r($support->getLastError());
@@ -5134,7 +5134,7 @@ if ($support->supportReportAnswerProblem(new \PayPal\StructType\SupportReportAns
 /**
  * Sample call for supportGetFullMessage operation/method
  */
-if ($support->supportGetFullMessage(new \PayPal\StructType\SupportGetFullMessage()) !== false) {
+if ($support->supportGetFullMessage(new \Ovh\StructType\SupportGetFullMessage()) !== false) {
     print_r($support->getResult());
 } else {
     print_r($support->getLastError());
@@ -5142,7 +5142,7 @@ if ($support->supportGetFullMessage(new \PayPal\StructType\SupportGetFullMessage
 /**
  * Sample call for supportCloseThreads operation/method
  */
-if ($support->supportCloseThreads(new \PayPal\StructType\SupportCloseThreads()) !== false) {
+if ($support->supportCloseThreads(new \Ovh\StructType\SupportCloseThreads()) !== false) {
     print_r($support->getResult());
 } else {
     print_r($support->getLastError());
@@ -5150,7 +5150,7 @@ if ($support->supportCloseThreads(new \PayPal\StructType\SupportCloseThreads()) 
 /**
  * Sample call for supportReactivateThread operation/method
  */
-if ($support->supportReactivateThread(new \PayPal\StructType\SupportReactivateThread()) !== false) {
+if ($support->supportReactivateThread(new \Ovh\StructType\SupportReactivateThread()) !== false) {
     print_r($support->getResult());
 } else {
     print_r($support->getLastError());
@@ -5158,11 +5158,11 @@ if ($support->supportReactivateThread(new \PayPal\StructType\SupportReactivateTh
 /**
  * Samples for Crontab ServiceType
  */
-$crontab = new \PayPal\ServiceType\Crontab($options);
+$crontab = new \Ovh\ServiceType\Crontab($options);
 /**
  * Sample call for crontabDel operation/method
  */
-if ($crontab->crontabDel(new \PayPal\StructType\CrontabDel()) !== false) {
+if ($crontab->crontabDel(new \Ovh\StructType\CrontabDel()) !== false) {
     print_r($crontab->getResult());
 } else {
     print_r($crontab->getLastError());
@@ -5170,7 +5170,7 @@ if ($crontab->crontabDel(new \PayPal\StructType\CrontabDel()) !== false) {
 /**
  * Sample call for crontabList operation/method
  */
-if ($crontab->crontabList(new \PayPal\StructType\CrontabList()) !== false) {
+if ($crontab->crontabList(new \Ovh\StructType\CrontabList()) !== false) {
     print_r($crontab->getResult());
 } else {
     print_r($crontab->getLastError());
@@ -5178,7 +5178,7 @@ if ($crontab->crontabList(new \PayPal\StructType\CrontabList()) !== false) {
 /**
  * Sample call for crontabAdd operation/method
  */
-if ($crontab->crontabAdd(new \PayPal\StructType\CrontabAdd()) !== false) {
+if ($crontab->crontabAdd(new \Ovh\StructType\CrontabAdd()) !== false) {
     print_r($crontab->getResult());
 } else {
     print_r($crontab->getLastError());
@@ -5186,7 +5186,7 @@ if ($crontab->crontabAdd(new \PayPal\StructType\CrontabAdd()) !== false) {
 /**
  * Sample call for crontabInfo operation/method
  */
-if ($crontab->crontabInfo(new \PayPal\StructType\CrontabInfo()) !== false) {
+if ($crontab->crontabInfo(new \Ovh\StructType\CrontabInfo()) !== false) {
     print_r($crontab->getResult());
 } else {
     print_r($crontab->getLastError());
@@ -5194,7 +5194,7 @@ if ($crontab->crontabInfo(new \PayPal\StructType\CrontabInfo()) !== false) {
 /**
  * Sample call for crontabModify operation/method
  */
-if ($crontab->crontabModify(new \PayPal\StructType\CrontabModify()) !== false) {
+if ($crontab->crontabModify(new \Ovh\StructType\CrontabModify()) !== false) {
     print_r($crontab->getResult());
 } else {
     print_r($crontab->getLastError());
@@ -5202,11 +5202,11 @@ if ($crontab->crontabModify(new \PayPal\StructType\CrontabModify()) !== false) {
 /**
  * Samples for Order ServiceType
  */
-$order = new \PayPal\ServiceType\Order($options);
+$order = new \Ovh\ServiceType\Order($options);
 /**
  * Sample call for orderTelephonySmsCredit operation/method
  */
-if ($order->orderTelephonySmsCredit(new \PayPal\StructType\OrderTelephonySmsCredit()) !== false) {
+if ($order->orderTelephonySmsCredit(new \Ovh\StructType\OrderTelephonySmsCredit()) !== false) {
     print_r($order->getResult());
 } else {
     print_r($order->getLastError());
@@ -5214,7 +5214,7 @@ if ($order->orderTelephonySmsCredit(new \PayPal\StructType\OrderTelephonySmsCred
 /**
  * Sample call for orderAccountCredit operation/method
  */
-if ($order->orderAccountCredit(new \PayPal\StructType\OrderAccountCredit()) !== false) {
+if ($order->orderAccountCredit(new \Ovh\StructType\OrderAccountCredit()) !== false) {
     print_r($order->getResult());
 } else {
     print_r($order->getLastError());
@@ -5222,7 +5222,7 @@ if ($order->orderAccountCredit(new \PayPal\StructType\OrderAccountCredit()) !== 
 /**
  * Sample call for orderEmailMxPlan operation/method
  */
-if ($order->orderEmailMxPlan(new \PayPal\StructType\OrderEmailMxPlan()) !== false) {
+if ($order->orderEmailMxPlan(new \Ovh\StructType\OrderEmailMxPlan()) !== false) {
     print_r($order->getResult());
 } else {
     print_r($order->getLastError());
@@ -5230,7 +5230,7 @@ if ($order->orderEmailMxPlan(new \PayPal\StructType\OrderEmailMxPlan()) !== fals
 /**
  * Sample call for orderEmailMxLarge operation/method
  */
-if ($order->orderEmailMxLarge(new \PayPal\StructType\OrderEmailMxLarge()) !== false) {
+if ($order->orderEmailMxLarge(new \Ovh\StructType\OrderEmailMxLarge()) !== false) {
     print_r($order->getResult());
 } else {
     print_r($order->getLastError());
@@ -5238,7 +5238,7 @@ if ($order->orderEmailMxLarge(new \PayPal\StructType\OrderEmailMxLarge()) !== fa
 /**
  * Sample call for orderDedicatedFailover operation/method
  */
-if ($order->orderDedicatedFailover(new \PayPal\StructType\OrderDedicatedFailover()) !== false) {
+if ($order->orderDedicatedFailover(new \Ovh\StructType\OrderDedicatedFailover()) !== false) {
     print_r($order->getResult());
 } else {
     print_r($order->getLastError());
@@ -5246,7 +5246,7 @@ if ($order->orderDedicatedFailover(new \PayPal\StructType\OrderDedicatedFailover
 /**
  * Sample call for orderDedicatedFailoverRipe operation/method
  */
-if ($order->orderDedicatedFailoverRipe(new \PayPal\StructType\OrderDedicatedFailoverRipe()) !== false) {
+if ($order->orderDedicatedFailoverRipe(new \Ovh\StructType\OrderDedicatedFailoverRipe()) !== false) {
     print_r($order->getResult());
 } else {
     print_r($order->getLastError());
@@ -5254,11 +5254,11 @@ if ($order->orderDedicatedFailoverRipe(new \PayPal\StructType\OrderDedicatedFail
 /**
  * Samples for Cms ServiceType
  */
-$cms = new \PayPal\ServiceType\Cms($options);
+$cms = new \Ovh\ServiceType\Cms($options);
 /**
  * Sample call for cmsInstall operation/method
  */
-if ($cms->cmsInstall(new \PayPal\StructType\CmsInstall()) !== false) {
+if ($cms->cmsInstall(new \Ovh\StructType\CmsInstall()) !== false) {
     print_r($cms->getResult());
 } else {
     print_r($cms->getLastError());
@@ -5266,7 +5266,7 @@ if ($cms->cmsInstall(new \PayPal\StructType\CmsInstall()) !== false) {
 /**
  * Sample call for cmsAvailableList operation/method
  */
-if ($cms->cmsAvailableList(new \PayPal\StructType\CmsAvailableList()) !== false) {
+if ($cms->cmsAvailableList(new \Ovh\StructType\CmsAvailableList()) !== false) {
     print_r($cms->getResult());
 } else {
     print_r($cms->getLastError());
@@ -5274,7 +5274,7 @@ if ($cms->cmsAvailableList(new \PayPal\StructType\CmsAvailableList()) !== false)
 /**
  * Sample call for cmsRemove operation/method
  */
-if ($cms->cmsRemove(new \PayPal\StructType\CmsRemove()) !== false) {
+if ($cms->cmsRemove(new \Ovh\StructType\CmsRemove()) !== false) {
     print_r($cms->getResult());
 } else {
     print_r($cms->getLastError());
@@ -5282,7 +5282,7 @@ if ($cms->cmsRemove(new \PayPal\StructType\CmsRemove()) !== false) {
 /**
  * Sample call for cmsList operation/method
  */
-if ($cms->cmsList(new \PayPal\StructType\CmsList()) !== false) {
+if ($cms->cmsList(new \Ovh\StructType\CmsList()) !== false) {
     print_r($cms->getResult());
 } else {
     print_r($cms->getLastError());
@@ -5290,7 +5290,7 @@ if ($cms->cmsList(new \PayPal\StructType\CmsList()) !== false) {
 /**
  * Sample call for cmsRenewAdminPassword operation/method
  */
-if ($cms->cmsRenewAdminPassword(new \PayPal\StructType\CmsRenewAdminPassword()) !== false) {
+if ($cms->cmsRenewAdminPassword(new \Ovh\StructType\CmsRenewAdminPassword()) !== false) {
     print_r($cms->getResult());
 } else {
     print_r($cms->getLastError());
@@ -5298,11 +5298,11 @@ if ($cms->cmsRenewAdminPassword(new \PayPal\StructType\CmsRenewAdminPassword()) 
 /**
  * Samples for Login ServiceType
  */
-$login = new \PayPal\ServiceType\Login($options);
+$login = new \Ovh\ServiceType\Login($options);
 /**
  * Sample call for login operation/method
  */
-if ($login->login(new \PayPal\StructType\Login()) !== false) {
+if ($login->login(new \Ovh\StructType\Login()) !== false) {
     print_r($login->getResult());
 } else {
     print_r($login->getLastError());
@@ -5310,11 +5310,11 @@ if ($login->login(new \PayPal\StructType\Login()) !== false) {
 /**
  * Samples for Password ServiceType
  */
-$password = new \PayPal\ServiceType\Password($options);
+$password = new \Ovh\ServiceType\Password($options);
 /**
  * Sample call for passwordSoapi operation/method
  */
-if ($password->passwordSoapi(new \PayPal\StructType\PasswordSoapi()) !== false) {
+if ($password->passwordSoapi(new \Ovh\StructType\PasswordSoapi()) !== false) {
     print_r($password->getResult());
 } else {
     print_r($password->getLastError());
@@ -5322,7 +5322,7 @@ if ($password->passwordSoapi(new \PayPal\StructType\PasswordSoapi()) !== false) 
 /**
  * Sample call for passwordManager operation/method
  */
-if ($password->passwordManager(new \PayPal\StructType\PasswordManager()) !== false) {
+if ($password->passwordManager(new \Ovh\StructType\PasswordManager()) !== false) {
     print_r($password->getResult());
 } else {
     print_r($password->getLastError());
@@ -5330,11 +5330,11 @@ if ($password->passwordManager(new \PayPal\StructType\PasswordManager()) !== fal
 /**
  * Samples for Version ServiceType
  */
-$version = new \PayPal\ServiceType\Version($options);
+$version = new \Ovh\ServiceType\Version($options);
 /**
  * Sample call for version operation/method
  */
-if ($version->version(new \PayPal\StructType\Version()) !== false) {
+if ($version->version(new \Ovh\StructType\Version()) !== false) {
     print_r($version->getResult());
 } else {
     print_r($version->getLastError());
@@ -5342,11 +5342,11 @@ if ($version->version(new \PayPal\StructType\Version()) !== false) {
 /**
  * Samples for Anonymous ServiceType
  */
-$anonymous = new \PayPal\ServiceType\Anonymous($options);
+$anonymous = new \Ovh\ServiceType\Anonymous($options);
 /**
  * Sample call for anonymousFtpInfo operation/method
  */
-if ($anonymous->anonymousFtpInfo(new \PayPal\StructType\AnonymousFtpInfo()) !== false) {
+if ($anonymous->anonymousFtpInfo(new \Ovh\StructType\AnonymousFtpInfo()) !== false) {
     print_r($anonymous->getResult());
 } else {
     print_r($anonymous->getLastError());
@@ -5354,7 +5354,7 @@ if ($anonymous->anonymousFtpInfo(new \PayPal\StructType\AnonymousFtpInfo()) !== 
 /**
  * Sample call for anonymousFtpActivate operation/method
  */
-if ($anonymous->anonymousFtpActivate(new \PayPal\StructType\AnonymousFtpActivate()) !== false) {
+if ($anonymous->anonymousFtpActivate(new \Ovh\StructType\AnonymousFtpActivate()) !== false) {
     print_r($anonymous->getResult());
 } else {
     print_r($anonymous->getLastError());
@@ -5362,7 +5362,7 @@ if ($anonymous->anonymousFtpActivate(new \PayPal\StructType\AnonymousFtpActivate
 /**
  * Sample call for anonymousFtpChangePassword operation/method
  */
-if ($anonymous->anonymousFtpChangePassword(new \PayPal\StructType\AnonymousFtpChangePassword()) !== false) {
+if ($anonymous->anonymousFtpChangePassword(new \Ovh\StructType\AnonymousFtpChangePassword()) !== false) {
     print_r($anonymous->getResult());
 } else {
     print_r($anonymous->getLastError());
@@ -5370,11 +5370,11 @@ if ($anonymous->anonymousFtpChangePassword(new \PayPal\StructType\AnonymousFtpCh
 /**
  * Samples for Logs ServiceType
  */
-$logs = new \PayPal\ServiceType\Logs($options);
+$logs = new \Ovh\ServiceType\Logs($options);
 /**
  * Sample call for logsAccessList operation/method
  */
-if ($logs->logsAccessList(new \PayPal\StructType\LogsAccessList()) !== false) {
+if ($logs->logsAccessList(new \Ovh\StructType\LogsAccessList()) !== false) {
     print_r($logs->getResult());
 } else {
     print_r($logs->getLastError());
@@ -5382,7 +5382,7 @@ if ($logs->logsAccessList(new \PayPal\StructType\LogsAccessList()) !== false) {
 /**
  * Sample call for logsAccessDel operation/method
  */
-if ($logs->logsAccessDel(new \PayPal\StructType\LogsAccessDel()) !== false) {
+if ($logs->logsAccessDel(new \Ovh\StructType\LogsAccessDel()) !== false) {
     print_r($logs->getResult());
 } else {
     print_r($logs->getLastError());
@@ -5390,7 +5390,7 @@ if ($logs->logsAccessDel(new \PayPal\StructType\LogsAccessDel()) !== false) {
 /**
  * Sample call for logsAccessAdd operation/method
  */
-if ($logs->logsAccessAdd(new \PayPal\StructType\LogsAccessAdd()) !== false) {
+if ($logs->logsAccessAdd(new \Ovh\StructType\LogsAccessAdd()) !== false) {
     print_r($logs->getResult());
 } else {
     print_r($logs->getLastError());
@@ -5398,11 +5398,11 @@ if ($logs->logsAccessAdd(new \PayPal\StructType\LogsAccessAdd()) !== false) {
 /**
  * Samples for Ftp ServiceType
  */
-$ftp = new \PayPal\ServiceType\Ftp($options);
+$ftp = new \Ovh\ServiceType\Ftp($options);
 /**
  * Sample call for ftpInfo operation/method
  */
-if ($ftp->ftpInfo(new \PayPal\StructType\FtpInfo()) !== false) {
+if ($ftp->ftpInfo(new \Ovh\StructType\FtpInfo()) !== false) {
     print_r($ftp->getResult());
 } else {
     print_r($ftp->getLastError());
@@ -5410,7 +5410,7 @@ if ($ftp->ftpInfo(new \PayPal\StructType\FtpInfo()) !== false) {
 /**
  * Sample call for ftpChangePassword operation/method
  */
-if ($ftp->ftpChangePassword(new \PayPal\StructType\FtpChangePassword()) !== false) {
+if ($ftp->ftpChangePassword(new \Ovh\StructType\FtpChangePassword()) !== false) {
     print_r($ftp->getResult());
 } else {
     print_r($ftp->getLastError());
@@ -5418,11 +5418,11 @@ if ($ftp->ftpChangePassword(new \PayPal\StructType\FtpChangePassword()) !== fals
 /**
  * Samples for Language ServiceType
  */
-$language = new \PayPal\ServiceType\Language($options);
+$language = new \Ovh\ServiceType\Language($options);
 /**
  * Sample call for language operation/method
  */
-if ($language->language(new \PayPal\StructType\Language()) !== false) {
+if ($language->language(new \Ovh\StructType\Language()) !== false) {
     print_r($language->getResult());
 } else {
     print_r($language->getLastError());

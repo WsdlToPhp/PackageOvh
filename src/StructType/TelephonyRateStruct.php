@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class TelephonyRateStruct extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyRateStruct
+     * @return \Ovh\StructType\TelephonyRateStruct
      */
     public function setCountry($country = null)
     {
@@ -83,7 +83,7 @@ class TelephonyRateStruct extends AbstractStructBase
     /**
      * Set countrySuffixe value
      * @param string $countrySuffixe
-     * @return \PayPal\StructType\TelephonyRateStruct
+     * @return \Ovh\StructType\TelephonyRateStruct
      */
     public function setCountrySuffixe($countrySuffixe = null)
     {
@@ -105,7 +105,7 @@ class TelephonyRateStruct extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \PayPal\StructType\TelephonyRateStruct
+     * @return \Ovh\StructType\TelephonyRateStruct
      */
     public function setPrice($price = null)
     {
@@ -123,7 +123,7 @@ class TelephonyRateStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\TelephonyRateStruct
+     * @return \Ovh\StructType\TelephonyRateStruct
      */
     public function setType($type = null)
     {
@@ -140,7 +140,7 @@ class TelephonyRateStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyRateStruct
+     * @return \Ovh\StructType\TelephonyRateStruct
      */
     public static function __set_state(array $array)
     {

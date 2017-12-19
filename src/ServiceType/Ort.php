@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Ort extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\OrtDomainDel $parameters
-     * @return \PayPal\StructType\OrtDomainDelResponse|bool
+     * @param \Ovh\StructType\OrtDomainDel $parameters
+     * @return \Ovh\StructType\OrtDomainDelResponse|bool
      */
-    public function ortDomainDel(\PayPal\StructType\OrtDomainDel $parameters)
+    public function ortDomainDel(\Ovh\StructType\OrtDomainDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->ortDomainDel($parameters));
@@ -36,10 +36,10 @@ class Ort extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\OrtDomainList $parameters
-     * @return \PayPal\StructType\OrtDomainListResponse|bool
+     * @param \Ovh\StructType\OrtDomainList $parameters
+     * @return \Ovh\StructType\OrtDomainListResponse|bool
      */
-    public function ortDomainList(\PayPal\StructType\OrtDomainList $parameters)
+    public function ortDomainList(\Ovh\StructType\OrtDomainList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->ortDomainList($parameters));
@@ -55,10 +55,10 @@ class Ort extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\OrtDomainAdd $parameters
-     * @return \PayPal\StructType\OrtDomainAddResponse|bool
+     * @param \Ovh\StructType\OrtDomainAdd $parameters
+     * @return \Ovh\StructType\OrtDomainAddResponse|bool
      */
-    public function ortDomainAdd(\PayPal\StructType\OrtDomainAdd $parameters)
+    public function ortDomainAdd(\Ovh\StructType\OrtDomainAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->ortDomainAdd($parameters));
@@ -71,7 +71,7 @@ class Ort extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\OrtDomainAddResponse|\PayPal\StructType\OrtDomainDelResponse|\PayPal\StructType\OrtDomainListResponse
+     * @return \Ovh\StructType\OrtDomainAddResponse|\Ovh\StructType\OrtDomainDelResponse|\Ovh\StructType\OrtDomainListResponse
      */
     public function getResult()
     {

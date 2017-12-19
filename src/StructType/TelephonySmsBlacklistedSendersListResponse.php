@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonySmsBlacklistedSendersListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonySmsBlacklistedSendersListReturn
+     * @var \Ovh\StructType\TelephonySmsBlacklistedSendersListReturn
      */
     public $return;
     /**
      * Constructor method for telephonySmsBlacklistedSendersListResponse
      * @uses TelephonySmsBlacklistedSendersListResponse::setReturn()
-     * @param \PayPal\StructType\TelephonySmsBlacklistedSendersListReturn $return
+     * @param \Ovh\StructType\TelephonySmsBlacklistedSendersListReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonySmsBlacklistedSendersListReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonySmsBlacklistedSendersListReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonySmsBlacklistedSendersListReturn|null
+     * @return \Ovh\StructType\TelephonySmsBlacklistedSendersListReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonySmsBlacklistedSendersListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonySmsBlacklistedSendersListReturn $return
-     * @return \PayPal\StructType\TelephonySmsBlacklistedSendersListResponse
+     * @param \Ovh\StructType\TelephonySmsBlacklistedSendersListReturn $return
+     * @return \Ovh\StructType\TelephonySmsBlacklistedSendersListResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonySmsBlacklistedSendersListReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonySmsBlacklistedSendersListReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonySmsBlacklistedSendersListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsBlacklistedSendersListResponse
+     * @return \Ovh\StructType\TelephonySmsBlacklistedSendersListResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class BufferStepStruct extends AbstractStructBase
     /**
      * Set durationUnit value
      * @param string $durationUnit
-     * @return \PayPal\StructType\BufferStepStruct
+     * @return \Ovh\StructType\BufferStepStruct
      */
     public function setDurationUnit($durationUnit = null)
     {
@@ -83,7 +83,7 @@ class BufferStepStruct extends AbstractStructBase
     /**
      * Set durationValue value
      * @param string $durationValue
-     * @return \PayPal\StructType\BufferStepStruct
+     * @return \Ovh\StructType\BufferStepStruct
      */
     public function setDurationValue($durationValue = null)
     {
@@ -105,7 +105,7 @@ class BufferStepStruct extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\BufferStepStruct
+     * @return \Ovh\StructType\BufferStepStruct
      */
     public function setDate($date = null)
     {
@@ -127,7 +127,7 @@ class BufferStepStruct extends AbstractStructBase
     /**
      * Set extraInfo value
      * @param string $extraInfo
-     * @return \PayPal\StructType\BufferStepStruct
+     * @return \Ovh\StructType\BufferStepStruct
      */
     public function setExtraInfo($extraInfo = null)
     {
@@ -144,7 +144,7 @@ class BufferStepStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\BufferStepStruct
+     * @return \Ovh\StructType\BufferStepStruct
      */
     public static function __set_state(array $array)
     {

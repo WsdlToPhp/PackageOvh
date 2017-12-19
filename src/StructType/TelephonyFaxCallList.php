@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class TelephonyFaxCallList extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyFaxCallList
+     * @return \Ovh\StructType\TelephonyFaxCallList
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class TelephonyFaxCallList extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyFaxCallList
+     * @return \Ovh\StructType\TelephonyFaxCallList
      */
     public function setNumber($number = null)
     {
@@ -133,7 +133,7 @@ class TelephonyFaxCallList extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyFaxCallList
+     * @return \Ovh\StructType\TelephonyFaxCallList
      */
     public function setCountry($country = null)
     {
@@ -155,7 +155,7 @@ class TelephonyFaxCallList extends AbstractStructBase
     /**
      * Set listBegin value
      * @param int $listBegin
-     * @return \PayPal\StructType\TelephonyFaxCallList
+     * @return \Ovh\StructType\TelephonyFaxCallList
      */
     public function setListBegin($listBegin = null)
     {
@@ -177,7 +177,7 @@ class TelephonyFaxCallList extends AbstractStructBase
     /**
      * Set listLimit value
      * @param int $listLimit
-     * @return \PayPal\StructType\TelephonyFaxCallList
+     * @return \Ovh\StructType\TelephonyFaxCallList
      */
     public function setListLimit($listLimit = null)
     {
@@ -199,7 +199,7 @@ class TelephonyFaxCallList extends AbstractStructBase
     /**
      * Set faxReceived value
      * @param bool $faxReceived
-     * @return \PayPal\StructType\TelephonyFaxCallList
+     * @return \Ovh\StructType\TelephonyFaxCallList
      */
     public function setFaxReceived($faxReceived = null)
     {
@@ -216,7 +216,7 @@ class TelephonyFaxCallList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFaxCallList
+     * @return \Ovh\StructType\TelephonyFaxCallList
      */
     public static function __set_state(array $array)
     {

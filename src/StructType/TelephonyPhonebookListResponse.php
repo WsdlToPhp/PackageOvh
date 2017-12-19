@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyPhonebookListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyPhonebookStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyPhonebookStructType
      */
     public $return;
     /**
      * Constructor method for telephonyPhonebookListResponse
      * @uses TelephonyPhonebookListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyPhonebookStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyPhonebookStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonyPhonebookStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonyPhonebookStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyPhonebookStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyPhonebookStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyPhonebookListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyPhonebookStructType $return
-     * @return \PayPal\StructType\TelephonyPhonebookListResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyPhonebookStructType $return
+     * @return \Ovh\StructType\TelephonyPhonebookListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonyPhonebookStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonyPhonebookStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyPhonebookListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyPhonebookListResponse
+     * @return \Ovh\StructType\TelephonyPhonebookListResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfDedicatedBackupListStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\DedicatedBackupListStruct[]
+     * @var \Ovh\StructType\DedicatedBackupListStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfDedicatedBackupListStructType
      * @uses MyArrayOfDedicatedBackupListStructType::setItem()
-     * @param \PayPal\StructType\DedicatedBackupListStruct[] $item
+     * @param \Ovh\StructType\DedicatedBackupListStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfDedicatedBackupListStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\DedicatedBackupListStruct[]|null
+     * @return \Ovh\StructType\DedicatedBackupListStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfDedicatedBackupListStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedBackupListStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedBackupListStructType
+     * @param \Ovh\StructType\DedicatedBackupListStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedBackupListStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfDedicatedBackupListStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfDedicatedBackupListStructTypeItemItem instanceof \PayPal\StructType\DedicatedBackupListStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedBackupListStruct, "%s" given', is_object($myArrayOfDedicatedBackupListStructTypeItemItem) ? get_class($myArrayOfDedicatedBackupListStructTypeItemItem) : gettype($myArrayOfDedicatedBackupListStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfDedicatedBackupListStructTypeItemItem instanceof \Ovh\StructType\DedicatedBackupListStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedBackupListStruct, "%s" given', is_object($myArrayOfDedicatedBackupListStructTypeItemItem) ? get_class($myArrayOfDedicatedBackupListStructTypeItemItem) : gettype($myArrayOfDedicatedBackupListStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfDedicatedBackupListStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedBackupListStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedBackupListStructType
+     * @param \Ovh\StructType\DedicatedBackupListStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedBackupListStructType
      */
-    public function addToItem(\PayPal\StructType\DedicatedBackupListStruct $item)
+    public function addToItem(\Ovh\StructType\DedicatedBackupListStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\DedicatedBackupListStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedBackupListStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\DedicatedBackupListStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedBackupListStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfDedicatedBackupListStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\DedicatedBackupListStruct|null
+     * @return \Ovh\StructType\DedicatedBackupListStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfDedicatedBackupListStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\DedicatedBackupListStruct|null
+     * @return \Ovh\StructType\DedicatedBackupListStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfDedicatedBackupListStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\DedicatedBackupListStruct|null
+     * @return \Ovh\StructType\DedicatedBackupListStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfDedicatedBackupListStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\DedicatedBackupListStruct|null
+     * @return \Ovh\StructType\DedicatedBackupListStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfDedicatedBackupListStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\DedicatedBackupListStruct|null
+     * @return \Ovh\StructType\DedicatedBackupListStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfDedicatedBackupListStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedBackupListStructType
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedBackupListStructType
      */
     public static function __set_state(array $array)
     {

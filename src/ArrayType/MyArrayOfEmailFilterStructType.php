@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfEmailFilterStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\EmailFilterStruct[]
+     * @var \Ovh\StructType\EmailFilterStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfEmailFilterStructType
      * @uses MyArrayOfEmailFilterStructType::setItem()
-     * @param \PayPal\StructType\EmailFilterStruct[] $item
+     * @param \Ovh\StructType\EmailFilterStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfEmailFilterStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\EmailFilterStruct[]|null
+     * @return \Ovh\StructType\EmailFilterStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfEmailFilterStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\EmailFilterStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfEmailFilterStructType
+     * @param \Ovh\StructType\EmailFilterStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfEmailFilterStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfEmailFilterStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfEmailFilterStructTypeItemItem instanceof \PayPal\StructType\EmailFilterStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\EmailFilterStruct, "%s" given', is_object($myArrayOfEmailFilterStructTypeItemItem) ? get_class($myArrayOfEmailFilterStructTypeItemItem) : gettype($myArrayOfEmailFilterStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfEmailFilterStructTypeItemItem instanceof \Ovh\StructType\EmailFilterStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\EmailFilterStruct, "%s" given', is_object($myArrayOfEmailFilterStructTypeItemItem) ? get_class($myArrayOfEmailFilterStructTypeItemItem) : gettype($myArrayOfEmailFilterStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfEmailFilterStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\EmailFilterStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfEmailFilterStructType
+     * @param \Ovh\StructType\EmailFilterStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfEmailFilterStructType
      */
-    public function addToItem(\PayPal\StructType\EmailFilterStruct $item)
+    public function addToItem(\Ovh\StructType\EmailFilterStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\EmailFilterStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\EmailFilterStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\EmailFilterStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\EmailFilterStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfEmailFilterStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\EmailFilterStruct|null
+     * @return \Ovh\StructType\EmailFilterStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfEmailFilterStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\EmailFilterStruct|null
+     * @return \Ovh\StructType\EmailFilterStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfEmailFilterStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\EmailFilterStruct|null
+     * @return \Ovh\StructType\EmailFilterStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfEmailFilterStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\EmailFilterStruct|null
+     * @return \Ovh\StructType\EmailFilterStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfEmailFilterStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\EmailFilterStruct|null
+     * @return \Ovh\StructType\EmailFilterStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfEmailFilterStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfEmailFilterStructType
+     * @return \Ovh\ArrayType\MyArrayOfEmailFilterStructType
      */
     public static function __set_state(array $array)
     {

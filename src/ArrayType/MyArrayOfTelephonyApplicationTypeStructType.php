@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfTelephonyApplicationTypeStructType extends AbstractStructArrayBas
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TelephonyApplicationTypeStruct[]
+     * @var \Ovh\StructType\TelephonyApplicationTypeStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTelephonyApplicationTypeStructType
      * @uses MyArrayOfTelephonyApplicationTypeStructType::setItem()
-     * @param \PayPal\StructType\TelephonyApplicationTypeStruct[] $item
+     * @param \Ovh\StructType\TelephonyApplicationTypeStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfTelephonyApplicationTypeStructType extends AbstractStructArrayBas
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TelephonyApplicationTypeStruct[]|null
+     * @return \Ovh\StructType\TelephonyApplicationTypeStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfTelephonyApplicationTypeStructType extends AbstractStructArrayBas
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyApplicationTypeStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyApplicationTypeStructType
+     * @param \Ovh\StructType\TelephonyApplicationTypeStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyApplicationTypeStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTelephonyApplicationTypeStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTelephonyApplicationTypeStructTypeItemItem instanceof \PayPal\StructType\TelephonyApplicationTypeStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyApplicationTypeStruct, "%s" given', is_object($myArrayOfTelephonyApplicationTypeStructTypeItemItem) ? get_class($myArrayOfTelephonyApplicationTypeStructTypeItemItem) : gettype($myArrayOfTelephonyApplicationTypeStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTelephonyApplicationTypeStructTypeItemItem instanceof \Ovh\StructType\TelephonyApplicationTypeStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyApplicationTypeStruct, "%s" given', is_object($myArrayOfTelephonyApplicationTypeStructTypeItemItem) ? get_class($myArrayOfTelephonyApplicationTypeStructTypeItemItem) : gettype($myArrayOfTelephonyApplicationTypeStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfTelephonyApplicationTypeStructType extends AbstractStructArrayBas
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyApplicationTypeStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyApplicationTypeStructType
+     * @param \Ovh\StructType\TelephonyApplicationTypeStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyApplicationTypeStructType
      */
-    public function addToItem(\PayPal\StructType\TelephonyApplicationTypeStruct $item)
+    public function addToItem(\Ovh\StructType\TelephonyApplicationTypeStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TelephonyApplicationTypeStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyApplicationTypeStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TelephonyApplicationTypeStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyApplicationTypeStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfTelephonyApplicationTypeStructType extends AbstractStructArrayBas
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonyApplicationTypeStruct|null
+     * @return \Ovh\StructType\TelephonyApplicationTypeStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfTelephonyApplicationTypeStructType extends AbstractStructArrayBas
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonyApplicationTypeStruct|null
+     * @return \Ovh\StructType\TelephonyApplicationTypeStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfTelephonyApplicationTypeStructType extends AbstractStructArrayBas
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonyApplicationTypeStruct|null
+     * @return \Ovh\StructType\TelephonyApplicationTypeStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfTelephonyApplicationTypeStructType extends AbstractStructArrayBas
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonyApplicationTypeStruct|null
+     * @return \Ovh\StructType\TelephonyApplicationTypeStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfTelephonyApplicationTypeStructType extends AbstractStructArrayBas
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonyApplicationTypeStruct|null
+     * @return \Ovh\StructType\TelephonyApplicationTypeStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfTelephonyApplicationTypeStructType extends AbstractStructArrayBas
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyApplicationTypeStructType
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyApplicationTypeStructType
      */
     public static function __set_state(array $array)
     {

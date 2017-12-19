@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class TelephonyReversmentsDetailsStruct extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\TelephonyReversmentsDetailsStruct
+     * @return \Ovh\StructType\TelephonyReversmentsDetailsStruct
      */
     public function setDate($date = null)
     {
@@ -91,7 +91,7 @@ class TelephonyReversmentsDetailsStruct extends AbstractStructBase
     /**
      * Set connectionDuration value
      * @param string $connectionDuration
-     * @return \PayPal\StructType\TelephonyReversmentsDetailsStruct
+     * @return \Ovh\StructType\TelephonyReversmentsDetailsStruct
      */
     public function setConnectionDuration($connectionDuration = null)
     {
@@ -113,7 +113,7 @@ class TelephonyReversmentsDetailsStruct extends AbstractStructBase
     /**
      * Set callingNumber value
      * @param string $callingNumber
-     * @return \PayPal\StructType\TelephonyReversmentsDetailsStruct
+     * @return \Ovh\StructType\TelephonyReversmentsDetailsStruct
      */
     public function setCallingNumber($callingNumber = null)
     {
@@ -135,7 +135,7 @@ class TelephonyReversmentsDetailsStruct extends AbstractStructBase
     /**
      * Set priceReversed value
      * @param string $priceReversed
-     * @return \PayPal\StructType\TelephonyReversmentsDetailsStruct
+     * @return \Ovh\StructType\TelephonyReversmentsDetailsStruct
      */
     public function setPriceReversed($priceReversed = null)
     {
@@ -157,7 +157,7 @@ class TelephonyReversmentsDetailsStruct extends AbstractStructBase
     /**
      * Set operatorCode value
      * @param string $operatorCode
-     * @return \PayPal\StructType\TelephonyReversmentsDetailsStruct
+     * @return \Ovh\StructType\TelephonyReversmentsDetailsStruct
      */
     public function setOperatorCode($operatorCode = null)
     {
@@ -174,7 +174,7 @@ class TelephonyReversmentsDetailsStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyReversmentsDetailsStruct
+     * @return \Ovh\StructType\TelephonyReversmentsDetailsStruct
      */
     public static function __set_state(array $array)
     {

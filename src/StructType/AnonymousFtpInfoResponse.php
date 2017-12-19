@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class AnonymousFtpInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\AnonymousFtpInfoReturn
+     * @var \Ovh\StructType\AnonymousFtpInfoReturn
      */
     public $return;
     /**
      * Constructor method for anonymousFtpInfoResponse
      * @uses AnonymousFtpInfoResponse::setReturn()
-     * @param \PayPal\StructType\AnonymousFtpInfoReturn $return
+     * @param \Ovh\StructType\AnonymousFtpInfoReturn $return
      */
-    public function __construct(\PayPal\StructType\AnonymousFtpInfoReturn $return = null)
+    public function __construct(\Ovh\StructType\AnonymousFtpInfoReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\AnonymousFtpInfoReturn|null
+     * @return \Ovh\StructType\AnonymousFtpInfoReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class AnonymousFtpInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\AnonymousFtpInfoReturn $return
-     * @return \PayPal\StructType\AnonymousFtpInfoResponse
+     * @param \Ovh\StructType\AnonymousFtpInfoReturn $return
+     * @return \Ovh\StructType\AnonymousFtpInfoResponse
      */
-    public function setReturn(\PayPal\StructType\AnonymousFtpInfoReturn $return = null)
+    public function setReturn(\Ovh\StructType\AnonymousFtpInfoReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class AnonymousFtpInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\AnonymousFtpInfoResponse
+     * @return \Ovh\StructType\AnonymousFtpInfoResponse
      */
     public static function __set_state(array $array)
     {

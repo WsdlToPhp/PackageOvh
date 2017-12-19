@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class TelephonyPlugAndPhoneReinitConfigurationReturn extends AbstractStructBase
     /**
      * Set autoConfigurationCode value
      * @param string $autoConfigurationCode
-     * @return \PayPal\StructType\TelephonyPlugAndPhoneReinitConfigurationReturn
+     * @return \Ovh\StructType\TelephonyPlugAndPhoneReinitConfigurationReturn
      */
     public function setAutoConfigurationCode($autoConfigurationCode = null)
     {
@@ -75,7 +75,7 @@ class TelephonyPlugAndPhoneReinitConfigurationReturn extends AbstractStructBase
     /**
      * Set contactsBookKey value
      * @param string $contactsBookKey
-     * @return \PayPal\StructType\TelephonyPlugAndPhoneReinitConfigurationReturn
+     * @return \Ovh\StructType\TelephonyPlugAndPhoneReinitConfigurationReturn
      */
     public function setContactsBookKey($contactsBookKey = null)
     {
@@ -97,7 +97,7 @@ class TelephonyPlugAndPhoneReinitConfigurationReturn extends AbstractStructBase
     /**
      * Set serverUrl value
      * @param string $serverUrl
-     * @return \PayPal\StructType\TelephonyPlugAndPhoneReinitConfigurationReturn
+     * @return \Ovh\StructType\TelephonyPlugAndPhoneReinitConfigurationReturn
      */
     public function setServerUrl($serverUrl = null)
     {
@@ -114,7 +114,7 @@ class TelephonyPlugAndPhoneReinitConfigurationReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyPlugAndPhoneReinitConfigurationReturn
+     * @return \Ovh\StructType\TelephonyPlugAndPhoneReinitConfigurationReturn
      */
     public static function __set_state(array $array)
     {

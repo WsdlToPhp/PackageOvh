@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Managed extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ManagedServicesPartitionQuotaUsed $parameters
-     * @return \PayPal\StructType\ManagedServicesPartitionQuotaUsedResponse|bool
+     * @param \Ovh\StructType\ManagedServicesPartitionQuotaUsed $parameters
+     * @return \Ovh\StructType\ManagedServicesPartitionQuotaUsedResponse|bool
      */
-    public function managedServicesPartitionQuotaUsed(\PayPal\StructType\ManagedServicesPartitionQuotaUsed $parameters)
+    public function managedServicesPartitionQuotaUsed(\Ovh\StructType\ManagedServicesPartitionQuotaUsed $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->managedServicesPartitionQuotaUsed($parameters));
@@ -36,10 +36,10 @@ class Managed extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ManagedServicesIpAccessChange $parameters
-     * @return \PayPal\StructType\ManagedServicesIpAccessChangeResponse|bool
+     * @param \Ovh\StructType\ManagedServicesIpAccessChange $parameters
+     * @return \Ovh\StructType\ManagedServicesIpAccessChangeResponse|bool
      */
-    public function managedServicesIpAccessChange(\PayPal\StructType\ManagedServicesIpAccessChange $parameters)
+    public function managedServicesIpAccessChange(\Ovh\StructType\ManagedServicesIpAccessChange $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->managedServicesIpAccessChange($parameters));
@@ -55,10 +55,10 @@ class Managed extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ManagedServicesSnapshotUpdate $parameters
-     * @return \PayPal\StructType\ManagedServicesSnapshotUpdateResponse|bool
+     * @param \Ovh\StructType\ManagedServicesSnapshotUpdate $parameters
+     * @return \Ovh\StructType\ManagedServicesSnapshotUpdateResponse|bool
      */
-    public function managedServicesSnapshotUpdate(\PayPal\StructType\ManagedServicesSnapshotUpdate $parameters)
+    public function managedServicesSnapshotUpdate(\Ovh\StructType\ManagedServicesSnapshotUpdate $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->managedServicesSnapshotUpdate($parameters));
@@ -74,10 +74,10 @@ class Managed extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ManagedServicesHostMasterIpGet $parameters
-     * @return \PayPal\StructType\ManagedServicesHostMasterIpGetResponse|bool
+     * @param \Ovh\StructType\ManagedServicesHostMasterIpGet $parameters
+     * @return \Ovh\StructType\ManagedServicesHostMasterIpGetResponse|bool
      */
-    public function managedServicesHostMasterIpGet(\PayPal\StructType\ManagedServicesHostMasterIpGet $parameters)
+    public function managedServicesHostMasterIpGet(\Ovh\StructType\ManagedServicesHostMasterIpGet $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->managedServicesHostMasterIpGet($parameters));
@@ -93,10 +93,10 @@ class Managed extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ManagedServicesPartitionDelete $parameters
-     * @return \PayPal\StructType\ManagedServicesPartitionDeleteResponse|bool
+     * @param \Ovh\StructType\ManagedServicesPartitionDelete $parameters
+     * @return \Ovh\StructType\ManagedServicesPartitionDeleteResponse|bool
      */
-    public function managedServicesPartitionDelete(\PayPal\StructType\ManagedServicesPartitionDelete $parameters)
+    public function managedServicesPartitionDelete(\Ovh\StructType\ManagedServicesPartitionDelete $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->managedServicesPartitionDelete($parameters));
@@ -113,10 +113,10 @@ class Managed extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ManagedServicesPartitionStatusCheck $parameters
-     * @return \PayPal\StructType\ManagedServicesPartitionStatusCheckResponse|bool
+     * @param \Ovh\StructType\ManagedServicesPartitionStatusCheck $parameters
+     * @return \Ovh\StructType\ManagedServicesPartitionStatusCheckResponse|bool
      */
-    public function managedServicesPartitionStatusCheck(\PayPal\StructType\ManagedServicesPartitionStatusCheck $parameters)
+    public function managedServicesPartitionStatusCheck(\Ovh\StructType\ManagedServicesPartitionStatusCheck $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->managedServicesPartitionStatusCheck($parameters));
@@ -132,10 +132,10 @@ class Managed extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ManagedServicesPartitionCreate $parameters
-     * @return \PayPal\StructType\ManagedServicesPartitionCreateResponse|bool
+     * @param \Ovh\StructType\ManagedServicesPartitionCreate $parameters
+     * @return \Ovh\StructType\ManagedServicesPartitionCreateResponse|bool
      */
-    public function managedServicesPartitionCreate(\PayPal\StructType\ManagedServicesPartitionCreate $parameters)
+    public function managedServicesPartitionCreate(\Ovh\StructType\ManagedServicesPartitionCreate $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->managedServicesPartitionCreate($parameters));
@@ -151,10 +151,10 @@ class Managed extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ManagedServicesPartitionGet $parameters
-     * @return \PayPal\StructType\ManagedServicesPartitionGetResponse|bool
+     * @param \Ovh\StructType\ManagedServicesPartitionGet $parameters
+     * @return \Ovh\StructType\ManagedServicesPartitionGetResponse|bool
      */
-    public function managedServicesPartitionGet(\PayPal\StructType\ManagedServicesPartitionGet $parameters)
+    public function managedServicesPartitionGet(\Ovh\StructType\ManagedServicesPartitionGet $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->managedServicesPartitionGet($parameters));
@@ -170,10 +170,10 @@ class Managed extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ManagedServicesPartitionUpdate $parameters
-     * @return \PayPal\StructType\ManagedServicesPartitionUpdateResponse|bool
+     * @param \Ovh\StructType\ManagedServicesPartitionUpdate $parameters
+     * @return \Ovh\StructType\ManagedServicesPartitionUpdateResponse|bool
      */
-    public function managedServicesPartitionUpdate(\PayPal\StructType\ManagedServicesPartitionUpdate $parameters)
+    public function managedServicesPartitionUpdate(\Ovh\StructType\ManagedServicesPartitionUpdate $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->managedServicesPartitionUpdate($parameters));
@@ -189,10 +189,10 @@ class Managed extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ManagedServicesNameUpdate $parameters
-     * @return \PayPal\StructType\ManagedServicesNameUpdateResponse|bool
+     * @param \Ovh\StructType\ManagedServicesNameUpdate $parameters
+     * @return \Ovh\StructType\ManagedServicesNameUpdateResponse|bool
      */
-    public function managedServicesNameUpdate(\PayPal\StructType\ManagedServicesNameUpdate $parameters)
+    public function managedServicesNameUpdate(\Ovh\StructType\ManagedServicesNameUpdate $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->managedServicesNameUpdate($parameters));
@@ -205,7 +205,7 @@ class Managed extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\ManagedServicesHostMasterIpGetResponse|\PayPal\StructType\ManagedServicesIpAccessChangeResponse|\PayPal\StructType\ManagedServicesNameUpdateResponse|\PayPal\StructType\ManagedServicesPartitionCreateResponse|\PayPal\StructType\ManagedServicesPartitionDeleteResponse|\PayPal\StructType\ManagedServicesPartitionGetResponse|\PayPal\StructType\ManagedServicesPartitionQuotaUsedResponse|\PayPal\StructType\ManagedServicesPartitionStatusCheckResponse|\PayPal\StructType\ManagedServicesPartitionUpdateResponse|\PayPal\StructType\ManagedServicesSnapshotUpdateResponse
+     * @return \Ovh\StructType\ManagedServicesHostMasterIpGetResponse|\Ovh\StructType\ManagedServicesIpAccessChangeResponse|\Ovh\StructType\ManagedServicesNameUpdateResponse|\Ovh\StructType\ManagedServicesPartitionCreateResponse|\Ovh\StructType\ManagedServicesPartitionDeleteResponse|\Ovh\StructType\ManagedServicesPartitionGetResponse|\Ovh\StructType\ManagedServicesPartitionQuotaUsedResponse|\Ovh\StructType\ManagedServicesPartitionStatusCheckResponse|\Ovh\StructType\ManagedServicesPartitionUpdateResponse|\Ovh\StructType\ManagedServicesSnapshotUpdateResponse
      */
     public function getResult()
     {

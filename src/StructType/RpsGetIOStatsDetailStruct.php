@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class RpsGetIOStatsDetailStruct extends AbstractStructBase
 {
     /**
      * The serviceTime
-     * @var \PayPal\StructType\RpsGetIOStatsDetailRawStruct
+     * @var \Ovh\StructType\RpsGetIOStatsDetailRawStruct
      */
     public $serviceTime;
     /**
      * The IoRequests
-     * @var \PayPal\StructType\RpsGetIOStatsDetailIoRequestsStruct
+     * @var \Ovh\StructType\RpsGetIOStatsDetailIoRequestsStruct
      */
     public $IoRequests;
     /**
      * Constructor method for rpsGetIOStatsDetailStruct
      * @uses RpsGetIOStatsDetailStruct::setServiceTime()
      * @uses RpsGetIOStatsDetailStruct::setIoRequests()
-     * @param \PayPal\StructType\RpsGetIOStatsDetailRawStruct $serviceTime
-     * @param \PayPal\StructType\RpsGetIOStatsDetailIoRequestsStruct $ioRequests
+     * @param \Ovh\StructType\RpsGetIOStatsDetailRawStruct $serviceTime
+     * @param \Ovh\StructType\RpsGetIOStatsDetailIoRequestsStruct $ioRequests
      */
-    public function __construct(\PayPal\StructType\RpsGetIOStatsDetailRawStruct $serviceTime = null, \PayPal\StructType\RpsGetIOStatsDetailIoRequestsStruct $ioRequests = null)
+    public function __construct(\Ovh\StructType\RpsGetIOStatsDetailRawStruct $serviceTime = null, \Ovh\StructType\RpsGetIOStatsDetailIoRequestsStruct $ioRequests = null)
     {
         $this
             ->setServiceTime($serviceTime)
@@ -36,7 +36,7 @@ class RpsGetIOStatsDetailStruct extends AbstractStructBase
     }
     /**
      * Get serviceTime value
-     * @return \PayPal\StructType\RpsGetIOStatsDetailRawStruct|null
+     * @return \Ovh\StructType\RpsGetIOStatsDetailRawStruct|null
      */
     public function getServiceTime()
     {
@@ -44,17 +44,17 @@ class RpsGetIOStatsDetailStruct extends AbstractStructBase
     }
     /**
      * Set serviceTime value
-     * @param \PayPal\StructType\RpsGetIOStatsDetailRawStruct $serviceTime
-     * @return \PayPal\StructType\RpsGetIOStatsDetailStruct
+     * @param \Ovh\StructType\RpsGetIOStatsDetailRawStruct $serviceTime
+     * @return \Ovh\StructType\RpsGetIOStatsDetailStruct
      */
-    public function setServiceTime(\PayPal\StructType\RpsGetIOStatsDetailRawStruct $serviceTime = null)
+    public function setServiceTime(\Ovh\StructType\RpsGetIOStatsDetailRawStruct $serviceTime = null)
     {
         $this->serviceTime = $serviceTime;
         return $this;
     }
     /**
      * Get IoRequests value
-     * @return \PayPal\StructType\RpsGetIOStatsDetailIoRequestsStruct|null
+     * @return \Ovh\StructType\RpsGetIOStatsDetailIoRequestsStruct|null
      */
     public function getIoRequests()
     {
@@ -62,10 +62,10 @@ class RpsGetIOStatsDetailStruct extends AbstractStructBase
     }
     /**
      * Set IoRequests value
-     * @param \PayPal\StructType\RpsGetIOStatsDetailIoRequestsStruct $ioRequests
-     * @return \PayPal\StructType\RpsGetIOStatsDetailStruct
+     * @param \Ovh\StructType\RpsGetIOStatsDetailIoRequestsStruct $ioRequests
+     * @return \Ovh\StructType\RpsGetIOStatsDetailStruct
      */
-    public function setIoRequests(\PayPal\StructType\RpsGetIOStatsDetailIoRequestsStruct $ioRequests = null)
+    public function setIoRequests(\Ovh\StructType\RpsGetIOStatsDetailIoRequestsStruct $ioRequests = null)
     {
         $this->IoRequests = $ioRequests;
         return $this;
@@ -76,7 +76,7 @@ class RpsGetIOStatsDetailStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RpsGetIOStatsDetailStruct
+     * @return \Ovh\StructType\RpsGetIOStatsDetailStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,22 +14,22 @@ class TelephonyGetDefaultPrivateHolidaysEventsResponse extends AbstractStructBas
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn
+     * @var \Ovh\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn
      */
     public $return;
     /**
      * Constructor method for telephonyGetDefaultPrivateHolidaysEventsResponse
      * @uses TelephonyGetDefaultPrivateHolidaysEventsResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn $return
+     * @param \Ovh\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn|null
+     * @return \Ovh\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn|null
      */
     public function getReturn()
     {
@@ -37,10 +37,10 @@ class TelephonyGetDefaultPrivateHolidaysEventsResponse extends AbstractStructBas
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn $return
-     * @return \PayPal\StructType\TelephonyGetDefaultPrivateHolidaysEventsResponse
+     * @param \Ovh\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn $return
+     * @return \Ovh\StructType\TelephonyGetDefaultPrivateHolidaysEventsResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -51,7 +51,7 @@ class TelephonyGetDefaultPrivateHolidaysEventsResponse extends AbstractStructBas
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyGetDefaultPrivateHolidaysEventsResponse
+     * @return \Ovh\StructType\TelephonyGetDefaultPrivateHolidaysEventsResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class FtpChangePassword extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\FtpChangePassword
+     * @return \Ovh\StructType\FtpChangePassword
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class FtpChangePassword extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\FtpChangePassword
+     * @return \Ovh\StructType\FtpChangePassword
      */
     public function setDomain($domain = null)
     {
@@ -123,7 +123,7 @@ class FtpChangePassword extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \PayPal\StructType\FtpChangePassword
+     * @return \Ovh\StructType\FtpChangePassword
      */
     public function setPassword($password = null)
     {
@@ -145,7 +145,7 @@ class FtpChangePassword extends AbstractStructBase
     /**
      * Set oldstate value
      * @param string $oldstate
-     * @return \PayPal\StructType\FtpChangePassword
+     * @return \Ovh\StructType\FtpChangePassword
      */
     public function setOldstate($oldstate = null)
     {
@@ -167,7 +167,7 @@ class FtpChangePassword extends AbstractStructBase
     /**
      * Set newstate value
      * @param string $newstate
-     * @return \PayPal\StructType\FtpChangePassword
+     * @return \Ovh\StructType\FtpChangePassword
      */
     public function setNewstate($newstate = null)
     {
@@ -184,7 +184,7 @@ class FtpChangePassword extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\FtpChangePassword
+     * @return \Ovh\StructType\FtpChangePassword
      */
     public static function __set_state(array $array)
     {

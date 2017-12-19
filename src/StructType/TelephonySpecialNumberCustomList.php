@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class TelephonySpecialNumberCustomList extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonySpecialNumberCustomList
+     * @return \Ovh\StructType\TelephonySpecialNumberCustomList
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class TelephonySpecialNumberCustomList extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonySpecialNumberCustomList
+     * @return \Ovh\StructType\TelephonySpecialNumberCustomList
      */
     public function setCountry($country = null)
     {
@@ -103,7 +103,7 @@ class TelephonySpecialNumberCustomList extends AbstractStructBase
     /**
      * Set prefix value
      * @param string $prefix
-     * @return \PayPal\StructType\TelephonySpecialNumberCustomList
+     * @return \Ovh\StructType\TelephonySpecialNumberCustomList
      */
     public function setPrefix($prefix = null)
     {
@@ -120,7 +120,7 @@ class TelephonySpecialNumberCustomList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySpecialNumberCustomList
+     * @return \Ovh\StructType\TelephonySpecialNumberCustomList
      */
     public static function __set_state(array $array)
     {

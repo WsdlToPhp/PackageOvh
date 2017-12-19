@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonySmsplusServiceDetailsResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonySmsplusDetailsStruct
+     * @var \Ovh\StructType\TelephonySmsplusDetailsStruct
      */
     public $return;
     /**
      * Constructor method for telephonySmsplusServiceDetailsResponse
      * @uses TelephonySmsplusServiceDetailsResponse::setReturn()
-     * @param \PayPal\StructType\TelephonySmsplusDetailsStruct $return
+     * @param \Ovh\StructType\TelephonySmsplusDetailsStruct $return
      */
-    public function __construct(\PayPal\StructType\TelephonySmsplusDetailsStruct $return = null)
+    public function __construct(\Ovh\StructType\TelephonySmsplusDetailsStruct $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonySmsplusDetailsStruct|null
+     * @return \Ovh\StructType\TelephonySmsplusDetailsStruct|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonySmsplusServiceDetailsResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonySmsplusDetailsStruct $return
-     * @return \PayPal\StructType\TelephonySmsplusServiceDetailsResponse
+     * @param \Ovh\StructType\TelephonySmsplusDetailsStruct $return
+     * @return \Ovh\StructType\TelephonySmsplusServiceDetailsResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonySmsplusDetailsStruct $return = null)
+    public function setReturn(\Ovh\StructType\TelephonySmsplusDetailsStruct $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonySmsplusServiceDetailsResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsplusServiceDetailsResponse
+     * @return \Ovh\StructType\TelephonySmsplusServiceDetailsResponse
      */
     public static function __set_state(array $array)
     {

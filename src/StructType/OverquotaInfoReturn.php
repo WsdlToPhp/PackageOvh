@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class OverquotaInfoReturn extends AbstractStructBase
     public $domain;
     /**
      * The quota
-     * @var \PayPal\ArrayType\MyArrayOfOverquotaInfoStructType
+     * @var \Ovh\ArrayType\MyArrayOfOverquotaInfoStructType
      */
     public $quota;
     /**
@@ -38,11 +38,11 @@ class OverquotaInfoReturn extends AbstractStructBase
      * @uses OverquotaInfoReturn::setCapacities()
      * @uses OverquotaInfoReturn::setOrder()
      * @param string $domain
-     * @param \PayPal\ArrayType\MyArrayOfOverquotaInfoStructType $quota
+     * @param \Ovh\ArrayType\MyArrayOfOverquotaInfoStructType $quota
      * @param int $capacities
      * @param int $order
      */
-    public function __construct($domain = null, \PayPal\ArrayType\MyArrayOfOverquotaInfoStructType $quota = null, $capacities = null, $order = null)
+    public function __construct($domain = null, \Ovh\ArrayType\MyArrayOfOverquotaInfoStructType $quota = null, $capacities = null, $order = null)
     {
         $this
             ->setDomain($domain)
@@ -61,7 +61,7 @@ class OverquotaInfoReturn extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\OverquotaInfoReturn
+     * @return \Ovh\StructType\OverquotaInfoReturn
      */
     public function setDomain($domain = null)
     {
@@ -74,7 +74,7 @@ class OverquotaInfoReturn extends AbstractStructBase
     }
     /**
      * Get quota value
-     * @return \PayPal\ArrayType\MyArrayOfOverquotaInfoStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfOverquotaInfoStructType|null
      */
     public function getQuota()
     {
@@ -82,10 +82,10 @@ class OverquotaInfoReturn extends AbstractStructBase
     }
     /**
      * Set quota value
-     * @param \PayPal\ArrayType\MyArrayOfOverquotaInfoStructType $quota
-     * @return \PayPal\StructType\OverquotaInfoReturn
+     * @param \Ovh\ArrayType\MyArrayOfOverquotaInfoStructType $quota
+     * @return \Ovh\StructType\OverquotaInfoReturn
      */
-    public function setQuota(\PayPal\ArrayType\MyArrayOfOverquotaInfoStructType $quota = null)
+    public function setQuota(\Ovh\ArrayType\MyArrayOfOverquotaInfoStructType $quota = null)
     {
         $this->quota = $quota;
         return $this;
@@ -101,7 +101,7 @@ class OverquotaInfoReturn extends AbstractStructBase
     /**
      * Set capacities value
      * @param int $capacities
-     * @return \PayPal\StructType\OverquotaInfoReturn
+     * @return \Ovh\StructType\OverquotaInfoReturn
      */
     public function setCapacities($capacities = null)
     {
@@ -123,7 +123,7 @@ class OverquotaInfoReturn extends AbstractStructBase
     /**
      * Set order value
      * @param int $order
-     * @return \PayPal\StructType\OverquotaInfoReturn
+     * @return \Ovh\StructType\OverquotaInfoReturn
      */
     public function setOrder($order = null)
     {
@@ -140,7 +140,7 @@ class OverquotaInfoReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\OverquotaInfoReturn
+     * @return \Ovh\StructType\OverquotaInfoReturn
      */
     public static function __set_state(array $array)
     {

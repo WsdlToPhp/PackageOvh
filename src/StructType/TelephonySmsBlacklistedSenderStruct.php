@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class TelephonySmsBlacklistedSenderStruct extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\TelephonySmsBlacklistedSenderStruct
+     * @return \Ovh\StructType\TelephonySmsBlacklistedSenderStruct
      */
     public function setId($id = null)
     {
@@ -75,7 +75,7 @@ class TelephonySmsBlacklistedSenderStruct extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\TelephonySmsBlacklistedSenderStruct
+     * @return \Ovh\StructType\TelephonySmsBlacklistedSenderStruct
      */
     public function setDate($date = null)
     {
@@ -97,7 +97,7 @@ class TelephonySmsBlacklistedSenderStruct extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonySmsBlacklistedSenderStruct
+     * @return \Ovh\StructType\TelephonySmsBlacklistedSenderStruct
      */
     public function setNumber($number = null)
     {
@@ -114,7 +114,7 @@ class TelephonySmsBlacklistedSenderStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsBlacklistedSenderStruct
+     * @return \Ovh\StructType\TelephonySmsBlacklistedSenderStruct
      */
     public static function __set_state(array $array)
     {

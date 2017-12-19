@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class TelephonyGetClosureEventsAsArrayStruct extends AbstractStructBase
     public $numberOfEvents;
     /**
      * The events
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType
      */
     public $events;
     /**
@@ -26,9 +26,9 @@ class TelephonyGetClosureEventsAsArrayStruct extends AbstractStructBase
      * @uses TelephonyGetClosureEventsAsArrayStruct::setNumberOfEvents()
      * @uses TelephonyGetClosureEventsAsArrayStruct::setEvents()
      * @param int $numberOfEvents
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType $events
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType $events
      */
-    public function __construct($numberOfEvents = null, \PayPal\ArrayType\MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType $events = null)
+    public function __construct($numberOfEvents = null, \Ovh\ArrayType\MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType $events = null)
     {
         $this
             ->setNumberOfEvents($numberOfEvents)
@@ -45,7 +45,7 @@ class TelephonyGetClosureEventsAsArrayStruct extends AbstractStructBase
     /**
      * Set numberOfEvents value
      * @param int $numberOfEvents
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayStruct
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayStruct
      */
     public function setNumberOfEvents($numberOfEvents = null)
     {
@@ -58,7 +58,7 @@ class TelephonyGetClosureEventsAsArrayStruct extends AbstractStructBase
     }
     /**
      * Get events value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType|null
      */
     public function getEvents()
     {
@@ -66,10 +66,10 @@ class TelephonyGetClosureEventsAsArrayStruct extends AbstractStructBase
     }
     /**
      * Set events value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType $events
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayStruct
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType $events
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayStruct
      */
-    public function setEvents(\PayPal\ArrayType\MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType $events = null)
+    public function setEvents(\Ovh\ArrayType\MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType $events = null)
     {
         $this->events = $events;
         return $this;
@@ -80,7 +80,7 @@ class TelephonyGetClosureEventsAsArrayStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayStruct
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayStruct
      */
     public static function __set_state(array $array)
     {

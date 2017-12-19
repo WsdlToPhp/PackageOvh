@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainHostUpdate $parameters
-     * @return \PayPal\StructType\DomainHostUpdateResponse|bool
+     * @param \Ovh\StructType\DomainHostUpdate $parameters
+     * @return \Ovh\StructType\DomainHostUpdateResponse|bool
      */
-    public function domainHostUpdate(\PayPal\StructType\DomainHostUpdate $parameters)
+    public function domainHostUpdate(\Ovh\StructType\DomainHostUpdate $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainHostUpdate($parameters));
@@ -36,10 +36,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainUnlock $parameters
-     * @return \PayPal\StructType\DomainUnlockResponse|bool
+     * @param \Ovh\StructType\DomainUnlock $parameters
+     * @return \Ovh\StructType\DomainUnlockResponse|bool
      */
-    public function domainUnlock(\PayPal\StructType\DomainUnlock $parameters)
+    public function domainUnlock(\Ovh\StructType\DomainUnlock $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainUnlock($parameters));
@@ -55,10 +55,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainWhoisObfuscatorSetAll $parameters
-     * @return \PayPal\StructType\DomainWhoisObfuscatorSetAllResponse|bool
+     * @param \Ovh\StructType\DomainWhoisObfuscatorSetAll $parameters
+     * @return \Ovh\StructType\DomainWhoisObfuscatorSetAllResponse|bool
      */
-    public function domainWhoisObfuscatorSetAll(\PayPal\StructType\DomainWhoisObfuscatorSetAll $parameters)
+    public function domainWhoisObfuscatorSetAll(\Ovh\StructType\DomainWhoisObfuscatorSetAll $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainWhoisObfuscatorSetAll($parameters));
@@ -74,10 +74,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainList $parameters
-     * @return \PayPal\StructType\DomainListResponse|bool
+     * @param \Ovh\StructType\DomainList $parameters
+     * @return \Ovh\StructType\DomainListResponse|bool
      */
-    public function domainList(\PayPal\StructType\DomainList $parameters)
+    public function domainList(\Ovh\StructType\DomainList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainList($parameters));
@@ -93,10 +93,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainWhoisObfuscatorInfo $parameters
-     * @return \PayPal\StructType\DomainWhoisObfuscatorInfoResponse|bool
+     * @param \Ovh\StructType\DomainWhoisObfuscatorInfo $parameters
+     * @return \Ovh\StructType\DomainWhoisObfuscatorInfoResponse|bool
      */
-    public function domainWhoisObfuscatorInfo(\PayPal\StructType\DomainWhoisObfuscatorInfo $parameters)
+    public function domainWhoisObfuscatorInfo(\Ovh\StructType\DomainWhoisObfuscatorInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainWhoisObfuscatorInfo($parameters));
@@ -112,10 +112,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainCheck $parameters
-     * @return \PayPal\StructType\DomainCheckResponse|bool
+     * @param \Ovh\StructType\DomainCheck $parameters
+     * @return \Ovh\StructType\DomainCheckResponse|bool
      */
-    public function domainCheck(\PayPal\StructType\DomainCheck $parameters)
+    public function domainCheck(\Ovh\StructType\DomainCheck $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainCheck($parameters));
@@ -131,10 +131,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainWhoisObfuscatorSet $parameters
-     * @return \PayPal\StructType\DomainWhoisObfuscatorSetResponse|bool
+     * @param \Ovh\StructType\DomainWhoisObfuscatorSet $parameters
+     * @return \Ovh\StructType\DomainWhoisObfuscatorSetResponse|bool
      */
-    public function domainWhoisObfuscatorSet(\PayPal\StructType\DomainWhoisObfuscatorSet $parameters)
+    public function domainWhoisObfuscatorSet(\Ovh\StructType\DomainWhoisObfuscatorSet $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainWhoisObfuscatorSet($parameters));
@@ -150,10 +150,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainResellerSet $parameters
-     * @return \PayPal\StructType\DomainResellerSetResponse|bool
+     * @param \Ovh\StructType\DomainResellerSet $parameters
+     * @return \Ovh\StructType\DomainResellerSetResponse|bool
      */
-    public function domainResellerSet(\PayPal\StructType\DomainResellerSet $parameters)
+    public function domainResellerSet(\Ovh\StructType\DomainResellerSet $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainResellerSet($parameters));
@@ -169,10 +169,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainOperationRelaunch $parameters
-     * @return \PayPal\StructType\DomainOperationRelaunchResponse|bool
+     * @param \Ovh\StructType\DomainOperationRelaunch $parameters
+     * @return \Ovh\StructType\DomainOperationRelaunchResponse|bool
      */
-    public function domainOperationRelaunch(\PayPal\StructType\DomainOperationRelaunch $parameters)
+    public function domainOperationRelaunch(\Ovh\StructType\DomainOperationRelaunch $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainOperationRelaunch($parameters));
@@ -188,10 +188,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainCapabilities $parameters
-     * @return \PayPal\StructType\DomainCapabilitiesResponse|bool
+     * @param \Ovh\StructType\DomainCapabilities $parameters
+     * @return \Ovh\StructType\DomainCapabilitiesResponse|bool
      */
-    public function domainCapabilities(\PayPal\StructType\DomainCapabilities $parameters)
+    public function domainCapabilities(\Ovh\StructType\DomainCapabilities $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainCapabilities($parameters));
@@ -207,10 +207,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainDnsList $parameters
-     * @return \PayPal\StructType\DomainDnsListResponse|bool
+     * @param \Ovh\StructType\DomainDnsList $parameters
+     * @return \Ovh\StructType\DomainDnsListResponse|bool
      */
-    public function domainDnsList(\PayPal\StructType\DomainDnsList $parameters)
+    public function domainDnsList(\Ovh\StructType\DomainDnsList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainDnsList($parameters));
@@ -226,10 +226,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainOperationInfo $parameters
-     * @return \PayPal\StructType\DomainOperationInfoResponse|bool
+     * @param \Ovh\StructType\DomainOperationInfo $parameters
+     * @return \Ovh\StructType\DomainOperationInfoResponse|bool
      */
-    public function domainOperationInfo(\PayPal\StructType\DomainOperationInfo $parameters)
+    public function domainOperationInfo(\Ovh\StructType\DomainOperationInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainOperationInfo($parameters));
@@ -245,10 +245,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainDnsUpdate $parameters
-     * @return \PayPal\StructType\DomainDnsUpdateResponse|bool
+     * @param \Ovh\StructType\DomainDnsUpdate $parameters
+     * @return \Ovh\StructType\DomainDnsUpdateResponse|bool
      */
-    public function domainDnsUpdate(\PayPal\StructType\DomainDnsUpdate $parameters)
+    public function domainDnsUpdate(\Ovh\StructType\DomainDnsUpdate $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainDnsUpdate($parameters));
@@ -264,10 +264,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainResellerDel $parameters
-     * @return \PayPal\StructType\DomainResellerDelResponse|bool
+     * @param \Ovh\StructType\DomainResellerDel $parameters
+     * @return \Ovh\StructType\DomainResellerDelResponse|bool
      */
-    public function domainResellerDel(\PayPal\StructType\DomainResellerDel $parameters)
+    public function domainResellerDel(\Ovh\StructType\DomainResellerDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainResellerDel($parameters));
@@ -283,10 +283,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainDnsGetOvhDefault $parameters
-     * @return \PayPal\StructType\DomainDnsGetOvhDefaultResponse|bool
+     * @param \Ovh\StructType\DomainDnsGetOvhDefault $parameters
+     * @return \Ovh\StructType\DomainDnsGetOvhDefaultResponse|bool
      */
-    public function domainDnsGetOvhDefault(\PayPal\StructType\DomainDnsGetOvhDefault $parameters)
+    public function domainDnsGetOvhDefault(\Ovh\StructType\DomainDnsGetOvhDefault $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainDnsGetOvhDefault($parameters));
@@ -302,10 +302,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainWhoisObfuscatorUnset $parameters
-     * @return \PayPal\StructType\DomainWhoisObfuscatorUnsetResponse|bool
+     * @param \Ovh\StructType\DomainWhoisObfuscatorUnset $parameters
+     * @return \Ovh\StructType\DomainWhoisObfuscatorUnsetResponse|bool
      */
-    public function domainWhoisObfuscatorUnset(\PayPal\StructType\DomainWhoisObfuscatorUnset $parameters)
+    public function domainWhoisObfuscatorUnset(\Ovh\StructType\DomainWhoisObfuscatorUnset $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainWhoisObfuscatorUnset($parameters));
@@ -321,10 +321,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainHostDel $parameters
-     * @return \PayPal\StructType\DomainHostDelResponse|bool
+     * @param \Ovh\StructType\DomainHostDel $parameters
+     * @return \Ovh\StructType\DomainHostDelResponse|bool
      */
-    public function domainHostDel(\PayPal\StructType\DomainHostDel $parameters)
+    public function domainHostDel(\Ovh\StructType\DomainHostDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainHostDel($parameters));
@@ -340,10 +340,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainInfo $parameters
-     * @return \PayPal\StructType\DomainInfoResponse|bool
+     * @param \Ovh\StructType\DomainInfo $parameters
+     * @return \Ovh\StructType\DomainInfoResponse|bool
      */
-    public function domainInfo(\PayPal\StructType\DomainInfo $parameters)
+    public function domainInfo(\Ovh\StructType\DomainInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainInfo($parameters));
@@ -359,10 +359,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainHostList $parameters
-     * @return \PayPal\StructType\DomainHostListResponse|bool
+     * @param \Ovh\StructType\DomainHostList $parameters
+     * @return \Ovh\StructType\DomainHostListResponse|bool
      */
-    public function domainHostList(\PayPal\StructType\DomainHostList $parameters)
+    public function domainHostList(\Ovh\StructType\DomainHostList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainHostList($parameters));
@@ -378,10 +378,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainLockStatus $parameters
-     * @return \PayPal\StructType\DomainLockStatusResponse|bool
+     * @param \Ovh\StructType\DomainLockStatus $parameters
+     * @return \Ovh\StructType\DomainLockStatusResponse|bool
      */
-    public function domainLockStatus(\PayPal\StructType\DomainLockStatus $parameters)
+    public function domainLockStatus(\Ovh\StructType\DomainLockStatus $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainLockStatus($parameters));
@@ -397,10 +397,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainLock $parameters
-     * @return \PayPal\StructType\DomainLockResponse|bool
+     * @param \Ovh\StructType\DomainLock $parameters
+     * @return \Ovh\StructType\DomainLockResponse|bool
      */
-    public function domainLock(\PayPal\StructType\DomainLock $parameters)
+    public function domainLock(\Ovh\StructType\DomainLock $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainLock($parameters));
@@ -416,10 +416,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainOperationCancel $parameters
-     * @return \PayPal\StructType\DomainOperationCancelResponse|bool
+     * @param \Ovh\StructType\DomainOperationCancel $parameters
+     * @return \Ovh\StructType\DomainOperationCancelResponse|bool
      */
-    public function domainOperationCancel(\PayPal\StructType\DomainOperationCancel $parameters)
+    public function domainOperationCancel(\Ovh\StructType\DomainOperationCancel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainOperationCancel($parameters));
@@ -435,10 +435,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainHostAdd $parameters
-     * @return \PayPal\StructType\DomainHostAddResponse|bool
+     * @param \Ovh\StructType\DomainHostAdd $parameters
+     * @return \Ovh\StructType\DomainHostAddResponse|bool
      */
-    public function domainHostAdd(\PayPal\StructType\DomainHostAdd $parameters)
+    public function domainHostAdd(\Ovh\StructType\DomainHostAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainHostAdd($parameters));
@@ -454,10 +454,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainWhoisObfuscatorUnsetAll $parameters
-     * @return \PayPal\StructType\DomainWhoisObfuscatorUnsetAllResponse|bool
+     * @param \Ovh\StructType\DomainWhoisObfuscatorUnsetAll $parameters
+     * @return \Ovh\StructType\DomainWhoisObfuscatorUnsetAllResponse|bool
      */
-    public function domainWhoisObfuscatorUnsetAll(\PayPal\StructType\DomainWhoisObfuscatorUnsetAll $parameters)
+    public function domainWhoisObfuscatorUnsetAll(\Ovh\StructType\DomainWhoisObfuscatorUnsetAll $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainWhoisObfuscatorUnsetAll($parameters));
@@ -473,10 +473,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainOperationList $parameters
-     * @return \PayPal\StructType\DomainOperationListResponse|bool
+     * @param \Ovh\StructType\DomainOperationList $parameters
+     * @return \Ovh\StructType\DomainOperationListResponse|bool
      */
-    public function domainOperationList(\PayPal\StructType\DomainOperationList $parameters)
+    public function domainOperationList(\Ovh\StructType\DomainOperationList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainOperationList($parameters));
@@ -492,10 +492,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainWhoisObfuscatorList $parameters
-     * @return \PayPal\StructType\DomainWhoisObfuscatorListResponse|bool
+     * @param \Ovh\StructType\DomainWhoisObfuscatorList $parameters
+     * @return \Ovh\StructType\DomainWhoisObfuscatorListResponse|bool
      */
-    public function domainWhoisObfuscatorList(\PayPal\StructType\DomainWhoisObfuscatorList $parameters)
+    public function domainWhoisObfuscatorList(\Ovh\StructType\DomainWhoisObfuscatorList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainWhoisObfuscatorList($parameters));
@@ -511,10 +511,10 @@ class Domain extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DomainHostInfo $parameters
-     * @return \PayPal\StructType\DomainHostInfoResponse|bool
+     * @param \Ovh\StructType\DomainHostInfo $parameters
+     * @return \Ovh\StructType\DomainHostInfoResponse|bool
      */
-    public function domainHostInfo(\PayPal\StructType\DomainHostInfo $parameters)
+    public function domainHostInfo(\Ovh\StructType\DomainHostInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->domainHostInfo($parameters));
@@ -527,7 +527,7 @@ class Domain extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\DomainCapabilitiesResponse|\PayPal\StructType\DomainCheckResponse|\PayPal\StructType\DomainDnsGetOvhDefaultResponse|\PayPal\StructType\DomainDnsListResponse|\PayPal\StructType\DomainDnsUpdateResponse|\PayPal\StructType\DomainHostAddResponse|\PayPal\StructType\DomainHostDelResponse|\PayPal\StructType\DomainHostInfoResponse|\PayPal\StructType\DomainHostListResponse|\PayPal\StructType\DomainHostUpdateResponse|\PayPal\StructType\DomainInfoResponse|\PayPal\StructType\DomainListResponse|\PayPal\StructType\DomainLockResponse|\PayPal\StructType\DomainLockStatusResponse|\PayPal\StructType\DomainOperationCancelResponse|\PayPal\StructType\DomainOperationInfoResponse|\PayPal\StructType\DomainOperationListResponse|\PayPal\StructType\DomainOperationRelaunchResponse|\PayPal\StructType\DomainResellerDelResponse|\PayPal\StructType\DomainResellerSetResponse|\PayPal\StructType\DomainUnlockResponse|\PayPal\StructType\DomainWhoisObfuscatorInfoResponse|\PayPal\StructType\DomainWhoisObfuscatorListResponse|\PayPal\StructType\DomainWhoisObfuscatorSetAllResponse|\PayPal\StructType\DomainWhoisObfuscatorSetResponse|\PayPal\StructType\DomainWhoisObfuscatorUnsetAllResponse|\PayPal\StructType\DomainWhoisObfuscatorUnsetResponse
+     * @return \Ovh\StructType\DomainCapabilitiesResponse|\Ovh\StructType\DomainCheckResponse|\Ovh\StructType\DomainDnsGetOvhDefaultResponse|\Ovh\StructType\DomainDnsListResponse|\Ovh\StructType\DomainDnsUpdateResponse|\Ovh\StructType\DomainHostAddResponse|\Ovh\StructType\DomainHostDelResponse|\Ovh\StructType\DomainHostInfoResponse|\Ovh\StructType\DomainHostListResponse|\Ovh\StructType\DomainHostUpdateResponse|\Ovh\StructType\DomainInfoResponse|\Ovh\StructType\DomainListResponse|\Ovh\StructType\DomainLockResponse|\Ovh\StructType\DomainLockStatusResponse|\Ovh\StructType\DomainOperationCancelResponse|\Ovh\StructType\DomainOperationInfoResponse|\Ovh\StructType\DomainOperationListResponse|\Ovh\StructType\DomainOperationRelaunchResponse|\Ovh\StructType\DomainResellerDelResponse|\Ovh\StructType\DomainResellerSetResponse|\Ovh\StructType\DomainUnlockResponse|\Ovh\StructType\DomainWhoisObfuscatorInfoResponse|\Ovh\StructType\DomainWhoisObfuscatorListResponse|\Ovh\StructType\DomainWhoisObfuscatorSetAllResponse|\Ovh\StructType\DomainWhoisObfuscatorSetResponse|\Ovh\StructType\DomainWhoisObfuscatorUnsetAllResponse|\Ovh\StructType\DomainWhoisObfuscatorUnsetResponse
      */
     public function getResult()
     {

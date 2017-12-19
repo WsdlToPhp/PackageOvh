@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class OrtDomainDel extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\OrtDomainDel
+     * @return \Ovh\StructType\OrtDomainDel
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class OrtDomainDel extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\OrtDomainDel
+     * @return \Ovh\StructType\OrtDomainDel
      */
     public function setDomain($domain = null)
     {
@@ -113,7 +113,7 @@ class OrtDomainDel extends AbstractStructBase
     /**
      * Set subdomain value
      * @param string $subdomain
-     * @return \PayPal\StructType\OrtDomainDel
+     * @return \Ovh\StructType\OrtDomainDel
      */
     public function setSubdomain($subdomain = null)
     {
@@ -135,7 +135,7 @@ class OrtDomainDel extends AbstractStructBase
     /**
      * Set target value
      * @param string $target
-     * @return \PayPal\StructType\OrtDomainDel
+     * @return \Ovh\StructType\OrtDomainDel
      */
     public function setTarget($target = null)
     {
@@ -152,7 +152,7 @@ class OrtDomainDel extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\OrtDomainDel
+     * @return \Ovh\StructType\OrtDomainDel
      */
     public static function __set_state(array $array)
     {

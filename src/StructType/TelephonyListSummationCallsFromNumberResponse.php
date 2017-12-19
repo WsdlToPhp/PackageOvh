@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyListSummationCallsFromNumberResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType
      */
     public $return;
     /**
      * Constructor method for telephonyListSummationCallsFromNumberResponse
      * @uses TelephonyListSummationCallsFromNumberResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyListSummationCallsFromNumberResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType $return
-     * @return \PayPal\StructType\TelephonyListSummationCallsFromNumberResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType $return
+     * @return \Ovh\StructType\TelephonyListSummationCallsFromNumberResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonyReversmentsSummationStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyListSummationCallsFromNumberResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyListSummationCallsFromNumberResponse
+     * @return \Ovh\StructType\TelephonyListSummationCallsFromNumberResponse
      */
     public static function __set_state(array $array)
     {

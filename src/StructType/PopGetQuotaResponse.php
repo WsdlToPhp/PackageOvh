@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class PopGetQuotaResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\PopGetQuotaReturn
+     * @var \Ovh\StructType\PopGetQuotaReturn
      */
     public $return;
     /**
      * Constructor method for popGetQuotaResponse
      * @uses PopGetQuotaResponse::setReturn()
-     * @param \PayPal\StructType\PopGetQuotaReturn $return
+     * @param \Ovh\StructType\PopGetQuotaReturn $return
      */
-    public function __construct(\PayPal\StructType\PopGetQuotaReturn $return = null)
+    public function __construct(\Ovh\StructType\PopGetQuotaReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\PopGetQuotaReturn|null
+     * @return \Ovh\StructType\PopGetQuotaReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class PopGetQuotaResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\PopGetQuotaReturn $return
-     * @return \PayPal\StructType\PopGetQuotaResponse
+     * @param \Ovh\StructType\PopGetQuotaReturn $return
+     * @return \Ovh\StructType\PopGetQuotaResponse
      */
-    public function setReturn(\PayPal\StructType\PopGetQuotaReturn $return = null)
+    public function setReturn(\Ovh\StructType\PopGetQuotaReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class PopGetQuotaResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\PopGetQuotaResponse
+     * @return \Ovh\StructType\PopGetQuotaResponse
      */
     public static function __set_state(array $array)
     {

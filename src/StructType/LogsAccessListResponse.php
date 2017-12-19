@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class LogsAccessListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfLogsAccessStructType
+     * @var \Ovh\ArrayType\MyArrayOfLogsAccessStructType
      */
     public $return;
     /**
      * Constructor method for logsAccessListResponse
      * @uses LogsAccessListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfLogsAccessStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfLogsAccessStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfLogsAccessStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfLogsAccessStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfLogsAccessStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfLogsAccessStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class LogsAccessListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfLogsAccessStructType $return
-     * @return \PayPal\StructType\LogsAccessListResponse
+     * @param \Ovh\ArrayType\MyArrayOfLogsAccessStructType $return
+     * @return \Ovh\StructType\LogsAccessListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfLogsAccessStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfLogsAccessStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class LogsAccessListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\LogsAccessListResponse
+     * @return \Ovh\StructType\LogsAccessListResponse
      */
     public static function __set_state(array $array)
     {

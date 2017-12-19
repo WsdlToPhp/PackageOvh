@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyScreenListInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyScreenStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyScreenStructType
      */
     public $return;
     /**
      * Constructor method for telephonyScreenListInfoResponse
      * @uses TelephonyScreenListInfoResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyScreenStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyScreenStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonyScreenStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonyScreenStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyScreenStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyScreenStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyScreenListInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyScreenStructType $return
-     * @return \PayPal\StructType\TelephonyScreenListInfoResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyScreenStructType $return
+     * @return \Ovh\StructType\TelephonyScreenListInfoResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonyScreenStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonyScreenStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyScreenListInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyScreenListInfoResponse
+     * @return \Ovh\StructType\TelephonyScreenListInfoResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedOperationListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedOperationStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedOperationStructType
      */
     public $return;
     /**
      * Constructor method for dedicatedOperationListResponse
      * @uses DedicatedOperationListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedOperationStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedOperationStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfDedicatedOperationStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfDedicatedOperationStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedOperationStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedOperationStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedOperationListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedOperationStructType $return
-     * @return \PayPal\StructType\DedicatedOperationListResponse
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedOperationStructType $return
+     * @return \Ovh\StructType\DedicatedOperationListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfDedicatedOperationStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfDedicatedOperationStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedOperationListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedOperationListResponse
+     * @return \Ovh\StructType\DedicatedOperationListResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class DomainHostInfo extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DomainHostInfo
+     * @return \Ovh\StructType\DomainHostInfo
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class DomainHostInfo extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\DomainHostInfo
+     * @return \Ovh\StructType\DomainHostInfo
      */
     public function setDomain($domain = null)
     {
@@ -103,7 +103,7 @@ class DomainHostInfo extends AbstractStructBase
     /**
      * Set host value
      * @param string $host
-     * @return \PayPal\StructType\DomainHostInfo
+     * @return \Ovh\StructType\DomainHostInfo
      */
     public function setHost($host = null)
     {
@@ -120,7 +120,7 @@ class DomainHostInfo extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DomainHostInfo
+     * @return \Ovh\StructType\DomainHostInfo
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfSqlpriveMysqlProcessStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\SqlpriveMysqlProcessStruct[]
+     * @var \Ovh\StructType\SqlpriveMysqlProcessStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfSqlpriveMysqlProcessStructType
      * @uses MyArrayOfSqlpriveMysqlProcessStructType::setItem()
-     * @param \PayPal\StructType\SqlpriveMysqlProcessStruct[] $item
+     * @param \Ovh\StructType\SqlpriveMysqlProcessStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfSqlpriveMysqlProcessStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\SqlpriveMysqlProcessStruct[]|null
+     * @return \Ovh\StructType\SqlpriveMysqlProcessStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfSqlpriveMysqlProcessStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\SqlpriveMysqlProcessStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfSqlpriveMysqlProcessStructType
+     * @param \Ovh\StructType\SqlpriveMysqlProcessStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfSqlpriveMysqlProcessStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfSqlpriveMysqlProcessStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfSqlpriveMysqlProcessStructTypeItemItem instanceof \PayPal\StructType\SqlpriveMysqlProcessStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\SqlpriveMysqlProcessStruct, "%s" given', is_object($myArrayOfSqlpriveMysqlProcessStructTypeItemItem) ? get_class($myArrayOfSqlpriveMysqlProcessStructTypeItemItem) : gettype($myArrayOfSqlpriveMysqlProcessStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfSqlpriveMysqlProcessStructTypeItemItem instanceof \Ovh\StructType\SqlpriveMysqlProcessStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\SqlpriveMysqlProcessStruct, "%s" given', is_object($myArrayOfSqlpriveMysqlProcessStructTypeItemItem) ? get_class($myArrayOfSqlpriveMysqlProcessStructTypeItemItem) : gettype($myArrayOfSqlpriveMysqlProcessStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfSqlpriveMysqlProcessStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\SqlpriveMysqlProcessStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfSqlpriveMysqlProcessStructType
+     * @param \Ovh\StructType\SqlpriveMysqlProcessStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfSqlpriveMysqlProcessStructType
      */
-    public function addToItem(\PayPal\StructType\SqlpriveMysqlProcessStruct $item)
+    public function addToItem(\Ovh\StructType\SqlpriveMysqlProcessStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\SqlpriveMysqlProcessStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\SqlpriveMysqlProcessStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\SqlpriveMysqlProcessStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\SqlpriveMysqlProcessStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfSqlpriveMysqlProcessStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\SqlpriveMysqlProcessStruct|null
+     * @return \Ovh\StructType\SqlpriveMysqlProcessStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfSqlpriveMysqlProcessStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\SqlpriveMysqlProcessStruct|null
+     * @return \Ovh\StructType\SqlpriveMysqlProcessStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfSqlpriveMysqlProcessStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\SqlpriveMysqlProcessStruct|null
+     * @return \Ovh\StructType\SqlpriveMysqlProcessStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfSqlpriveMysqlProcessStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\SqlpriveMysqlProcessStruct|null
+     * @return \Ovh\StructType\SqlpriveMysqlProcessStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfSqlpriveMysqlProcessStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\SqlpriveMysqlProcessStruct|null
+     * @return \Ovh\StructType\SqlpriveMysqlProcessStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfSqlpriveMysqlProcessStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfSqlpriveMysqlProcessStructType
+     * @return \Ovh\ArrayType\MyArrayOfSqlpriveMysqlProcessStructType
      */
     public static function __set_state(array $array)
     {

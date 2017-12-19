@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class ZoneEntryDel extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\ZoneEntryDel
+     * @return \Ovh\StructType\ZoneEntryDel
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class ZoneEntryDel extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\ZoneEntryDel
+     * @return \Ovh\StructType\ZoneEntryDel
      */
     public function setDomain($domain = null)
     {
@@ -123,7 +123,7 @@ class ZoneEntryDel extends AbstractStructBase
     /**
      * Set subdomain value
      * @param string $subdomain
-     * @return \PayPal\StructType\ZoneEntryDel
+     * @return \Ovh\StructType\ZoneEntryDel
      */
     public function setSubdomain($subdomain = null)
     {
@@ -145,7 +145,7 @@ class ZoneEntryDel extends AbstractStructBase
     /**
      * Set fieldtype value
      * @param string $fieldtype
-     * @return \PayPal\StructType\ZoneEntryDel
+     * @return \Ovh\StructType\ZoneEntryDel
      */
     public function setFieldtype($fieldtype = null)
     {
@@ -167,7 +167,7 @@ class ZoneEntryDel extends AbstractStructBase
     /**
      * Set target value
      * @param string $target
-     * @return \PayPal\StructType\ZoneEntryDel
+     * @return \Ovh\StructType\ZoneEntryDel
      */
     public function setTarget($target = null)
     {
@@ -184,7 +184,7 @@ class ZoneEntryDel extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ZoneEntryDel
+     * @return \Ovh\StructType\ZoneEntryDel
      */
     public static function __set_state(array $array)
     {

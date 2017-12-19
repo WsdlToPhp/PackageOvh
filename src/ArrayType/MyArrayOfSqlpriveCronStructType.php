@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfSqlpriveCronStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\SqlpriveCronStruct[]
+     * @var \Ovh\StructType\SqlpriveCronStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfSqlpriveCronStructType
      * @uses MyArrayOfSqlpriveCronStructType::setItem()
-     * @param \PayPal\StructType\SqlpriveCronStruct[] $item
+     * @param \Ovh\StructType\SqlpriveCronStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfSqlpriveCronStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\SqlpriveCronStruct[]|null
+     * @return \Ovh\StructType\SqlpriveCronStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfSqlpriveCronStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\SqlpriveCronStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfSqlpriveCronStructType
+     * @param \Ovh\StructType\SqlpriveCronStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfSqlpriveCronStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfSqlpriveCronStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfSqlpriveCronStructTypeItemItem instanceof \PayPal\StructType\SqlpriveCronStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\SqlpriveCronStruct, "%s" given', is_object($myArrayOfSqlpriveCronStructTypeItemItem) ? get_class($myArrayOfSqlpriveCronStructTypeItemItem) : gettype($myArrayOfSqlpriveCronStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfSqlpriveCronStructTypeItemItem instanceof \Ovh\StructType\SqlpriveCronStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\SqlpriveCronStruct, "%s" given', is_object($myArrayOfSqlpriveCronStructTypeItemItem) ? get_class($myArrayOfSqlpriveCronStructTypeItemItem) : gettype($myArrayOfSqlpriveCronStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfSqlpriveCronStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\SqlpriveCronStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfSqlpriveCronStructType
+     * @param \Ovh\StructType\SqlpriveCronStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfSqlpriveCronStructType
      */
-    public function addToItem(\PayPal\StructType\SqlpriveCronStruct $item)
+    public function addToItem(\Ovh\StructType\SqlpriveCronStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\SqlpriveCronStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\SqlpriveCronStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\SqlpriveCronStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\SqlpriveCronStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfSqlpriveCronStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\SqlpriveCronStruct|null
+     * @return \Ovh\StructType\SqlpriveCronStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfSqlpriveCronStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\SqlpriveCronStruct|null
+     * @return \Ovh\StructType\SqlpriveCronStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfSqlpriveCronStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\SqlpriveCronStruct|null
+     * @return \Ovh\StructType\SqlpriveCronStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfSqlpriveCronStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\SqlpriveCronStruct|null
+     * @return \Ovh\StructType\SqlpriveCronStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfSqlpriveCronStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\SqlpriveCronStruct|null
+     * @return \Ovh\StructType\SqlpriveCronStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfSqlpriveCronStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfSqlpriveCronStructType
+     * @return \Ovh\ArrayType\MyArrayOfSqlpriveCronStructType
      */
     public static function __set_state(array $array)
     {

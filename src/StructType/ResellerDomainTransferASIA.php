@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -299,7 +299,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setSession($session = null)
     {
@@ -321,7 +321,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setDomain($domain = null)
     {
@@ -343,7 +343,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set authinfo value
      * @param string $authinfo
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setAuthinfo($authinfo = null)
     {
@@ -365,7 +365,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set hosting value
      * @param string $hosting
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setHosting($hosting = null)
     {
@@ -387,7 +387,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set offer value
      * @param string $offer
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setOffer($offer = null)
     {
@@ -409,7 +409,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set profile value
      * @param string $profile
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setProfile($profile = null)
     {
@@ -431,7 +431,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set owo value
      * @param string $owo
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setOwo($owo = null)
     {
@@ -453,7 +453,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set owner value
      * @param string $owner
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setOwner($owner = null)
     {
@@ -475,7 +475,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set admin value
      * @param string $admin
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setAdmin($admin = null)
     {
@@ -497,7 +497,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set tech value
      * @param string $tech
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setTech($tech = null)
     {
@@ -519,7 +519,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set billing value
      * @param string $billing
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setBilling($billing = null)
     {
@@ -541,7 +541,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set dns1 value
      * @param string $dns1
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setDns1($dns1 = null)
     {
@@ -563,7 +563,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set dns2 value
      * @param string $dns2
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setDns2($dns2 = null)
     {
@@ -585,7 +585,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set dns3 value
      * @param string $dns3
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setDns3($dns3 = null)
     {
@@ -607,7 +607,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set dns4 value
      * @param string $dns4
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setDns4($dns4 = null)
     {
@@ -629,7 +629,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set dns5 value
      * @param string $dns5
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setDns5($dns5 = null)
     {
@@ -651,7 +651,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set CedCea value
      * @param string $cedCea
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setCedCea($cedCea = null)
     {
@@ -673,7 +673,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set contactCED value
      * @param string $contactCED
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setContactCED($contactCED = null)
     {
@@ -695,7 +695,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set localityCity value
      * @param string $localityCity
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setLocalityCity($localityCity = null)
     {
@@ -717,7 +717,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set localitySp value
      * @param string $localitySp
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setLocalitySp($localitySp = null)
     {
@@ -739,7 +739,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set ccLocality value
      * @param string $ccLocality
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setCcLocality($ccLocality = null)
     {
@@ -761,7 +761,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set legalEntityType value
      * @param string $legalEntityType
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setLegalEntityType($legalEntityType = null)
     {
@@ -783,7 +783,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set otherLEType value
      * @param string $otherLEType
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setOtherLEType($otherLEType = null)
     {
@@ -805,7 +805,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set identForm value
      * @param string $identForm
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setIdentForm($identForm = null)
     {
@@ -827,7 +827,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set otherIdentForm value
      * @param string $otherIdentForm
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setOtherIdentForm($otherIdentForm = null)
     {
@@ -849,7 +849,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set identNumber value
      * @param string $identNumber
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setIdentNumber($identNumber = null)
     {
@@ -871,7 +871,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     /**
      * Set dryRun value
      * @param bool $dryRun
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public function setDryRun($dryRun = null)
     {
@@ -888,7 +888,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ResellerDomainTransferASIA
+     * @return \Ovh\StructType\ResellerDomainTransferASIA
      */
     public static function __set_state(array $array)
     {

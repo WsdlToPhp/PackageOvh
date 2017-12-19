@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfSqlpriveStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\SqlpriveStruct[]
+     * @var \Ovh\StructType\SqlpriveStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfSqlpriveStructType
      * @uses MyArrayOfSqlpriveStructType::setItem()
-     * @param \PayPal\StructType\SqlpriveStruct[] $item
+     * @param \Ovh\StructType\SqlpriveStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfSqlpriveStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\SqlpriveStruct[]|null
+     * @return \Ovh\StructType\SqlpriveStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfSqlpriveStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\SqlpriveStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfSqlpriveStructType
+     * @param \Ovh\StructType\SqlpriveStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfSqlpriveStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfSqlpriveStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfSqlpriveStructTypeItemItem instanceof \PayPal\StructType\SqlpriveStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\SqlpriveStruct, "%s" given', is_object($myArrayOfSqlpriveStructTypeItemItem) ? get_class($myArrayOfSqlpriveStructTypeItemItem) : gettype($myArrayOfSqlpriveStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfSqlpriveStructTypeItemItem instanceof \Ovh\StructType\SqlpriveStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\SqlpriveStruct, "%s" given', is_object($myArrayOfSqlpriveStructTypeItemItem) ? get_class($myArrayOfSqlpriveStructTypeItemItem) : gettype($myArrayOfSqlpriveStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfSqlpriveStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\SqlpriveStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfSqlpriveStructType
+     * @param \Ovh\StructType\SqlpriveStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfSqlpriveStructType
      */
-    public function addToItem(\PayPal\StructType\SqlpriveStruct $item)
+    public function addToItem(\Ovh\StructType\SqlpriveStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\SqlpriveStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\SqlpriveStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\SqlpriveStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\SqlpriveStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfSqlpriveStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\SqlpriveStruct|null
+     * @return \Ovh\StructType\SqlpriveStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfSqlpriveStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\SqlpriveStruct|null
+     * @return \Ovh\StructType\SqlpriveStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfSqlpriveStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\SqlpriveStruct|null
+     * @return \Ovh\StructType\SqlpriveStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfSqlpriveStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\SqlpriveStruct|null
+     * @return \Ovh\StructType\SqlpriveStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfSqlpriveStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\SqlpriveStruct|null
+     * @return \Ovh\StructType\SqlpriveStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfSqlpriveStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfSqlpriveStructType
+     * @return \Ovh\ArrayType\MyArrayOfSqlpriveStructType
      */
     public static function __set_state(array $array)
     {

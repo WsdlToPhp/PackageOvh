@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class DedicatedInstallationTemplateStruct extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\DedicatedInstallationTemplateStruct
+     * @return \Ovh\StructType\DedicatedInstallationTemplateStruct
      */
     public function setName($name = null)
     {
@@ -67,7 +67,7 @@ class DedicatedInstallationTemplateStruct extends AbstractStructBase
     /**
      * Set os value
      * @param string $os
-     * @return \PayPal\StructType\DedicatedInstallationTemplateStruct
+     * @return \Ovh\StructType\DedicatedInstallationTemplateStruct
      */
     public function setOs($os = null)
     {
@@ -84,7 +84,7 @@ class DedicatedInstallationTemplateStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedInstallationTemplateStruct
+     * @return \Ovh\StructType\DedicatedInstallationTemplateStruct
      */
     public static function __set_state(array $array)
     {

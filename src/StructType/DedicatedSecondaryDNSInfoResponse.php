@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedSecondaryDNSInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfSecondaryDNSStructType
+     * @var \Ovh\ArrayType\MyArrayOfSecondaryDNSStructType
      */
     public $return;
     /**
      * Constructor method for dedicatedSecondaryDNSInfoResponse
      * @uses DedicatedSecondaryDNSInfoResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfSecondaryDNSStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfSecondaryDNSStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfSecondaryDNSStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfSecondaryDNSStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfSecondaryDNSStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfSecondaryDNSStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedSecondaryDNSInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfSecondaryDNSStructType $return
-     * @return \PayPal\StructType\DedicatedSecondaryDNSInfoResponse
+     * @param \Ovh\ArrayType\MyArrayOfSecondaryDNSStructType $return
+     * @return \Ovh\StructType\DedicatedSecondaryDNSInfoResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfSecondaryDNSStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfSecondaryDNSStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedSecondaryDNSInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedSecondaryDNSInfoResponse
+     * @return \Ovh\StructType\DedicatedSecondaryDNSInfoResponse
      */
     public static function __set_state(array $array)
     {

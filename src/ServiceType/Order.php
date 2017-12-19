@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Order extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\OrderTelephonySmsCredit $parameters
-     * @return \PayPal\StructType\OrderTelephonySmsCreditResponse|bool
+     * @param \Ovh\StructType\OrderTelephonySmsCredit $parameters
+     * @return \Ovh\StructType\OrderTelephonySmsCreditResponse|bool
      */
-    public function orderTelephonySmsCredit(\PayPal\StructType\OrderTelephonySmsCredit $parameters)
+    public function orderTelephonySmsCredit(\Ovh\StructType\OrderTelephonySmsCredit $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->orderTelephonySmsCredit($parameters));
@@ -36,10 +36,10 @@ class Order extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\OrderAccountCredit $parameters
-     * @return \PayPal\StructType\OrderAccountCreditResponse|bool
+     * @param \Ovh\StructType\OrderAccountCredit $parameters
+     * @return \Ovh\StructType\OrderAccountCreditResponse|bool
      */
-    public function orderAccountCredit(\PayPal\StructType\OrderAccountCredit $parameters)
+    public function orderAccountCredit(\Ovh\StructType\OrderAccountCredit $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->orderAccountCredit($parameters));
@@ -55,10 +55,10 @@ class Order extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\OrderEmailMxPlan $parameters
-     * @return \PayPal\StructType\OrderEmailMxPlanResponse|bool
+     * @param \Ovh\StructType\OrderEmailMxPlan $parameters
+     * @return \Ovh\StructType\OrderEmailMxPlanResponse|bool
      */
-    public function orderEmailMxPlan(\PayPal\StructType\OrderEmailMxPlan $parameters)
+    public function orderEmailMxPlan(\Ovh\StructType\OrderEmailMxPlan $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->orderEmailMxPlan($parameters));
@@ -74,10 +74,10 @@ class Order extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\OrderEmailMxLarge $parameters
-     * @return \PayPal\StructType\OrderEmailMxLargeResponse|bool
+     * @param \Ovh\StructType\OrderEmailMxLarge $parameters
+     * @return \Ovh\StructType\OrderEmailMxLargeResponse|bool
      */
-    public function orderEmailMxLarge(\PayPal\StructType\OrderEmailMxLarge $parameters)
+    public function orderEmailMxLarge(\Ovh\StructType\OrderEmailMxLarge $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->orderEmailMxLarge($parameters));
@@ -93,10 +93,10 @@ class Order extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\OrderDedicatedFailover $parameters
-     * @return \PayPal\StructType\OrderDedicatedFailoverResponse|bool
+     * @param \Ovh\StructType\OrderDedicatedFailover $parameters
+     * @return \Ovh\StructType\OrderDedicatedFailoverResponse|bool
      */
-    public function orderDedicatedFailover(\PayPal\StructType\OrderDedicatedFailover $parameters)
+    public function orderDedicatedFailover(\Ovh\StructType\OrderDedicatedFailover $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->orderDedicatedFailover($parameters));
@@ -112,10 +112,10 @@ class Order extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\OrderDedicatedFailoverRipe $parameters
-     * @return \PayPal\StructType\OrderDedicatedFailoverRipeResponse|bool
+     * @param \Ovh\StructType\OrderDedicatedFailoverRipe $parameters
+     * @return \Ovh\StructType\OrderDedicatedFailoverRipeResponse|bool
      */
-    public function orderDedicatedFailoverRipe(\PayPal\StructType\OrderDedicatedFailoverRipe $parameters)
+    public function orderDedicatedFailoverRipe(\Ovh\StructType\OrderDedicatedFailoverRipe $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->orderDedicatedFailoverRipe($parameters));
@@ -128,7 +128,7 @@ class Order extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\OrderAccountCreditResponse|\PayPal\StructType\OrderDedicatedFailoverResponse|\PayPal\StructType\OrderDedicatedFailoverRipeResponse|\PayPal\StructType\OrderEmailMxLargeResponse|\PayPal\StructType\OrderEmailMxPlanResponse|\PayPal\StructType\OrderTelephonySmsCreditResponse
+     * @return \Ovh\StructType\OrderAccountCreditResponse|\Ovh\StructType\OrderDedicatedFailoverResponse|\Ovh\StructType\OrderDedicatedFailoverRipeResponse|\Ovh\StructType\OrderEmailMxLargeResponse|\Ovh\StructType\OrderEmailMxPlanResponse|\Ovh\StructType\OrderTelephonySmsCreditResponse
      */
     public function getResult()
     {

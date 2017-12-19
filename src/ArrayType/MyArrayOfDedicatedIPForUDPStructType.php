@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfDedicatedIPForUDPStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\DedicatedIPForUDPStruct[]
+     * @var \Ovh\StructType\DedicatedIPForUDPStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfDedicatedIPForUDPStructType
      * @uses MyArrayOfDedicatedIPForUDPStructType::setItem()
-     * @param \PayPal\StructType\DedicatedIPForUDPStruct[] $item
+     * @param \Ovh\StructType\DedicatedIPForUDPStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfDedicatedIPForUDPStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\DedicatedIPForUDPStruct[]|null
+     * @return \Ovh\StructType\DedicatedIPForUDPStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfDedicatedIPForUDPStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedIPForUDPStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedIPForUDPStructType
+     * @param \Ovh\StructType\DedicatedIPForUDPStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedIPForUDPStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfDedicatedIPForUDPStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfDedicatedIPForUDPStructTypeItemItem instanceof \PayPal\StructType\DedicatedIPForUDPStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedIPForUDPStruct, "%s" given', is_object($myArrayOfDedicatedIPForUDPStructTypeItemItem) ? get_class($myArrayOfDedicatedIPForUDPStructTypeItemItem) : gettype($myArrayOfDedicatedIPForUDPStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfDedicatedIPForUDPStructTypeItemItem instanceof \Ovh\StructType\DedicatedIPForUDPStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedIPForUDPStruct, "%s" given', is_object($myArrayOfDedicatedIPForUDPStructTypeItemItem) ? get_class($myArrayOfDedicatedIPForUDPStructTypeItemItem) : gettype($myArrayOfDedicatedIPForUDPStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfDedicatedIPForUDPStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedIPForUDPStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedIPForUDPStructType
+     * @param \Ovh\StructType\DedicatedIPForUDPStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedIPForUDPStructType
      */
-    public function addToItem(\PayPal\StructType\DedicatedIPForUDPStruct $item)
+    public function addToItem(\Ovh\StructType\DedicatedIPForUDPStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\DedicatedIPForUDPStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedIPForUDPStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\DedicatedIPForUDPStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedIPForUDPStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfDedicatedIPForUDPStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\DedicatedIPForUDPStruct|null
+     * @return \Ovh\StructType\DedicatedIPForUDPStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfDedicatedIPForUDPStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\DedicatedIPForUDPStruct|null
+     * @return \Ovh\StructType\DedicatedIPForUDPStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfDedicatedIPForUDPStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\DedicatedIPForUDPStruct|null
+     * @return \Ovh\StructType\DedicatedIPForUDPStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfDedicatedIPForUDPStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\DedicatedIPForUDPStruct|null
+     * @return \Ovh\StructType\DedicatedIPForUDPStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfDedicatedIPForUDPStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\DedicatedIPForUDPStruct|null
+     * @return \Ovh\StructType\DedicatedIPForUDPStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfDedicatedIPForUDPStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedIPForUDPStructType
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedIPForUDPStructType
      */
     public static function __set_state(array $array)
     {

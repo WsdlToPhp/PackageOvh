@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -165,7 +165,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     /**
      * Set date_email value
      * @param string $date_email
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct
      */
     public function setDate_email($date_email = null)
     {
@@ -187,7 +187,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     /**
      * Set date_start value
      * @param string $date_start
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct
      */
     public function setDate_start($date_start = null)
     {
@@ -209,7 +209,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     /**
      * Set date_end value
      * @param string $date_end
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct
      */
     public function setDate_end($date_end = null)
     {
@@ -231,7 +231,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     /**
      * Set date_today value
      * @param string $date_today
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct
      */
     public function setDate_today($date_today = null)
     {
@@ -253,7 +253,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct
      */
     public function setId($id = null)
     {
@@ -275,7 +275,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     /**
      * Set uid value
      * @param string $uid
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct
      */
     public function setUid($uid = null)
     {
@@ -297,7 +297,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     /**
      * Set pid value
      * @param int $pid
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct
      */
     public function setPid($pid = null)
     {
@@ -319,7 +319,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     /**
      * Set do_not_mail value
      * @param bool $do_not_mail
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct
      */
     public function setDo_not_mail($do_not_mail = null)
     {
@@ -341,7 +341,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     /**
      * Set active value
      * @param bool $active
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct
      */
     public function setActive($active = null)
     {
@@ -363,7 +363,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     /**
      * Set status value
      * @param int $status
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct
      */
     public function setStatus($status = null)
     {
@@ -385,7 +385,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct
      */
     public function setIp($ip = null)
     {
@@ -407,7 +407,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct
      */
     public function setType($type = null)
     {
@@ -429,7 +429,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     /**
      * Set cmdline value
      * @param string $cmdline
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct
      */
     public function setCmdline($cmdline = null)
     {
@@ -451,7 +451,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     /**
      * Set port value
      * @param int $port
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct
      */
     public function setPort($port = null)
     {
@@ -473,7 +473,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     /**
      * Set ports value
      * @param string $ports
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct
      */
     public function setPorts($ports = null)
     {
@@ -495,7 +495,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     /**
      * Set procname value
      * @param string $procname
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct
      */
     public function setProcname($procname = null)
     {
@@ -517,7 +517,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     /**
      * Set exe value
      * @param string $exe
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct
      */
     public function setExe($exe = null)
     {
@@ -534,7 +534,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct
      */
     public static function __set_state(array $array)
     {

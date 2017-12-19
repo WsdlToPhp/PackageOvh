@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedBackupListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedBackupListStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedBackupListStructType
      */
     public $return;
     /**
      * Constructor method for dedicatedBackupListResponse
      * @uses DedicatedBackupListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedBackupListStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedBackupListStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfDedicatedBackupListStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfDedicatedBackupListStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedBackupListStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedBackupListStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedBackupListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedBackupListStructType $return
-     * @return \PayPal\StructType\DedicatedBackupListResponse
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedBackupListStructType $return
+     * @return \Ovh\StructType\DedicatedBackupListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfDedicatedBackupListStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfDedicatedBackupListStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedBackupListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedBackupListResponse
+     * @return \Ovh\StructType\DedicatedBackupListResponse
      */
     public static function __set_state(array $array)
     {

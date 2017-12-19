@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -101,7 +101,7 @@ class TelephonyOfferInfoHardwareStruct extends AbstractStructBase
     /**
      * Set brand value
      * @param string $brand
-     * @return \PayPal\StructType\TelephonyOfferInfoHardwareStruct
+     * @return \Ovh\StructType\TelephonyOfferInfoHardwareStruct
      */
     public function setBrand($brand = null)
     {
@@ -123,7 +123,7 @@ class TelephonyOfferInfoHardwareStruct extends AbstractStructBase
     /**
      * Set model value
      * @param string $model
-     * @return \PayPal\StructType\TelephonyOfferInfoHardwareStruct
+     * @return \Ovh\StructType\TelephonyOfferInfoHardwareStruct
      */
     public function setModel($model = null)
     {
@@ -145,7 +145,7 @@ class TelephonyOfferInfoHardwareStruct extends AbstractStructBase
     /**
      * Set protocol value
      * @param string $protocol
-     * @return \PayPal\StructType\TelephonyOfferInfoHardwareStruct
+     * @return \Ovh\StructType\TelephonyOfferInfoHardwareStruct
      */
     public function setProtocol($protocol = null)
     {
@@ -167,7 +167,7 @@ class TelephonyOfferInfoHardwareStruct extends AbstractStructBase
     /**
      * Set mac value
      * @param string $mac
-     * @return \PayPal\StructType\TelephonyOfferInfoHardwareStruct
+     * @return \Ovh\StructType\TelephonyOfferInfoHardwareStruct
      */
     public function setMac($mac = null)
     {
@@ -189,7 +189,7 @@ class TelephonyOfferInfoHardwareStruct extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\TelephonyOfferInfoHardwareStruct
+     * @return \Ovh\StructType\TelephonyOfferInfoHardwareStruct
      */
     public function setIp($ip = null)
     {
@@ -211,7 +211,7 @@ class TelephonyOfferInfoHardwareStruct extends AbstractStructBase
     /**
      * Set engage value
      * @param bool $engage
-     * @return \PayPal\StructType\TelephonyOfferInfoHardwareStruct
+     * @return \Ovh\StructType\TelephonyOfferInfoHardwareStruct
      */
     public function setEngage($engage = null)
     {
@@ -233,7 +233,7 @@ class TelephonyOfferInfoHardwareStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\TelephonyOfferInfoHardwareStruct
+     * @return \Ovh\StructType\TelephonyOfferInfoHardwareStruct
      */
     public function setStatus($status = null)
     {
@@ -255,7 +255,7 @@ class TelephonyOfferInfoHardwareStruct extends AbstractStructBase
     /**
      * Set port value
      * @param int $port
-     * @return \PayPal\StructType\TelephonyOfferInfoHardwareStruct
+     * @return \Ovh\StructType\TelephonyOfferInfoHardwareStruct
      */
     public function setPort($port = null)
     {
@@ -277,7 +277,7 @@ class TelephonyOfferInfoHardwareStruct extends AbstractStructBase
     /**
      * Set outOfService value
      * @param bool $outOfService
-     * @return \PayPal\StructType\TelephonyOfferInfoHardwareStruct
+     * @return \Ovh\StructType\TelephonyOfferInfoHardwareStruct
      */
     public function setOutOfService($outOfService = null)
     {
@@ -294,7 +294,7 @@ class TelephonyOfferInfoHardwareStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyOfferInfoHardwareStruct
+     * @return \Ovh\StructType\TelephonyOfferInfoHardwareStruct
      */
     public static function __set_state(array $array)
     {

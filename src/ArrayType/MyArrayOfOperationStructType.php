@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfOperationStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\OperationStruct[]
+     * @var \Ovh\StructType\OperationStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfOperationStructType
      * @uses MyArrayOfOperationStructType::setItem()
-     * @param \PayPal\StructType\OperationStruct[] $item
+     * @param \Ovh\StructType\OperationStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfOperationStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\OperationStruct[]|null
+     * @return \Ovh\StructType\OperationStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfOperationStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\OperationStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfOperationStructType
+     * @param \Ovh\StructType\OperationStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfOperationStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfOperationStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfOperationStructTypeItemItem instanceof \PayPal\StructType\OperationStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\OperationStruct, "%s" given', is_object($myArrayOfOperationStructTypeItemItem) ? get_class($myArrayOfOperationStructTypeItemItem) : gettype($myArrayOfOperationStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfOperationStructTypeItemItem instanceof \Ovh\StructType\OperationStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\OperationStruct, "%s" given', is_object($myArrayOfOperationStructTypeItemItem) ? get_class($myArrayOfOperationStructTypeItemItem) : gettype($myArrayOfOperationStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfOperationStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\OperationStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfOperationStructType
+     * @param \Ovh\StructType\OperationStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfOperationStructType
      */
-    public function addToItem(\PayPal\StructType\OperationStruct $item)
+    public function addToItem(\Ovh\StructType\OperationStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\OperationStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\OperationStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\OperationStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\OperationStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfOperationStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\OperationStruct|null
+     * @return \Ovh\StructType\OperationStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfOperationStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\OperationStruct|null
+     * @return \Ovh\StructType\OperationStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfOperationStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\OperationStruct|null
+     * @return \Ovh\StructType\OperationStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfOperationStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\OperationStruct|null
+     * @return \Ovh\StructType\OperationStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfOperationStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\OperationStruct|null
+     * @return \Ovh\StructType\OperationStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfOperationStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfOperationStructType
+     * @return \Ovh\ArrayType\MyArrayOfOperationStructType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class TelephonyListReversableCallsFromNumberReturn extends AbstractStructBase
     public $totalRecords;
     /**
      * The list
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyReversmentsDetailsStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyReversmentsDetailsStructType
      */
     public $list;
     /**
@@ -26,9 +26,9 @@ class TelephonyListReversableCallsFromNumberReturn extends AbstractStructBase
      * @uses TelephonyListReversableCallsFromNumberReturn::setTotalRecords()
      * @uses TelephonyListReversableCallsFromNumberReturn::setList()
      * @param int $totalRecords
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyReversmentsDetailsStructType $list
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyReversmentsDetailsStructType $list
      */
-    public function __construct($totalRecords = null, \PayPal\ArrayType\MyArrayOfTelephonyReversmentsDetailsStructType $list = null)
+    public function __construct($totalRecords = null, \Ovh\ArrayType\MyArrayOfTelephonyReversmentsDetailsStructType $list = null)
     {
         $this
             ->setTotalRecords($totalRecords)
@@ -45,7 +45,7 @@ class TelephonyListReversableCallsFromNumberReturn extends AbstractStructBase
     /**
      * Set totalRecords value
      * @param int $totalRecords
-     * @return \PayPal\StructType\TelephonyListReversableCallsFromNumberReturn
+     * @return \Ovh\StructType\TelephonyListReversableCallsFromNumberReturn
      */
     public function setTotalRecords($totalRecords = null)
     {
@@ -58,7 +58,7 @@ class TelephonyListReversableCallsFromNumberReturn extends AbstractStructBase
     }
     /**
      * Get list value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyReversmentsDetailsStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyReversmentsDetailsStructType|null
      */
     public function getList()
     {
@@ -66,10 +66,10 @@ class TelephonyListReversableCallsFromNumberReturn extends AbstractStructBase
     }
     /**
      * Set list value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyReversmentsDetailsStructType $list
-     * @return \PayPal\StructType\TelephonyListReversableCallsFromNumberReturn
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyReversmentsDetailsStructType $list
+     * @return \Ovh\StructType\TelephonyListReversableCallsFromNumberReturn
      */
-    public function setList(\PayPal\ArrayType\MyArrayOfTelephonyReversmentsDetailsStructType $list = null)
+    public function setList(\Ovh\ArrayType\MyArrayOfTelephonyReversmentsDetailsStructType $list = null)
     {
         $this->list = $list;
         return $this;
@@ -80,7 +80,7 @@ class TelephonyListReversableCallsFromNumberReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyListReversableCallsFromNumberReturn
+     * @return \Ovh\StructType\TelephonyListReversableCallsFromNumberReturn
      */
     public static function __set_state(array $array)
     {

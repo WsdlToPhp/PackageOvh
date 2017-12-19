@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,42 +13,42 @@ class DedicatedRtmStatusReturn extends AbstractStructBase
 {
     /**
      * The cpu
-     * @var \PayPal\StructType\RtmCpuStruct
+     * @var \Ovh\StructType\RtmCpuStruct
      */
     public $cpu;
     /**
      * The hardDrives
-     * @var \PayPal\ArrayType\MyArrayOfRtmHddStructType
+     * @var \Ovh\ArrayType\MyArrayOfRtmHddStructType
      */
     public $hardDrives;
     /**
      * The systemInfo
-     * @var \PayPal\StructType\RtmSystemStruct
+     * @var \Ovh\StructType\RtmSystemStruct
      */
     public $systemInfo;
     /**
      * The memory
-     * @var \PayPal\StructType\RtmMemoryStruct
+     * @var \Ovh\StructType\RtmMemoryStruct
      */
     public $memory;
     /**
      * The motherboard
-     * @var \PayPal\StructType\RtmMotherboardStruct
+     * @var \Ovh\StructType\RtmMotherboardStruct
      */
     public $motherboard;
     /**
      * The lspci
-     * @var \PayPal\ArrayType\MyArrayOfRtmLspciStructType
+     * @var \Ovh\ArrayType\MyArrayOfRtmLspciStructType
      */
     public $lspci;
     /**
      * The portsUsed
-     * @var \PayPal\StructType\RtmPortsStruct
+     * @var \Ovh\StructType\RtmPortsStruct
      */
     public $portsUsed;
     /**
      * The raid
-     * @var \PayPal\StructType\RtmRaidStruct
+     * @var \Ovh\StructType\RtmRaidStruct
      */
     public $raid;
     /**
@@ -61,16 +61,16 @@ class DedicatedRtmStatusReturn extends AbstractStructBase
      * @uses DedicatedRtmStatusReturn::setLspci()
      * @uses DedicatedRtmStatusReturn::setPortsUsed()
      * @uses DedicatedRtmStatusReturn::setRaid()
-     * @param \PayPal\StructType\RtmCpuStruct $cpu
-     * @param \PayPal\ArrayType\MyArrayOfRtmHddStructType $hardDrives
-     * @param \PayPal\StructType\RtmSystemStruct $systemInfo
-     * @param \PayPal\StructType\RtmMemoryStruct $memory
-     * @param \PayPal\StructType\RtmMotherboardStruct $motherboard
-     * @param \PayPal\ArrayType\MyArrayOfRtmLspciStructType $lspci
-     * @param \PayPal\StructType\RtmPortsStruct $portsUsed
-     * @param \PayPal\StructType\RtmRaidStruct $raid
+     * @param \Ovh\StructType\RtmCpuStruct $cpu
+     * @param \Ovh\ArrayType\MyArrayOfRtmHddStructType $hardDrives
+     * @param \Ovh\StructType\RtmSystemStruct $systemInfo
+     * @param \Ovh\StructType\RtmMemoryStruct $memory
+     * @param \Ovh\StructType\RtmMotherboardStruct $motherboard
+     * @param \Ovh\ArrayType\MyArrayOfRtmLspciStructType $lspci
+     * @param \Ovh\StructType\RtmPortsStruct $portsUsed
+     * @param \Ovh\StructType\RtmRaidStruct $raid
      */
-    public function __construct(\PayPal\StructType\RtmCpuStruct $cpu = null, \PayPal\ArrayType\MyArrayOfRtmHddStructType $hardDrives = null, \PayPal\StructType\RtmSystemStruct $systemInfo = null, \PayPal\StructType\RtmMemoryStruct $memory = null, \PayPal\StructType\RtmMotherboardStruct $motherboard = null, \PayPal\ArrayType\MyArrayOfRtmLspciStructType $lspci = null, \PayPal\StructType\RtmPortsStruct $portsUsed = null, \PayPal\StructType\RtmRaidStruct $raid = null)
+    public function __construct(\Ovh\StructType\RtmCpuStruct $cpu = null, \Ovh\ArrayType\MyArrayOfRtmHddStructType $hardDrives = null, \Ovh\StructType\RtmSystemStruct $systemInfo = null, \Ovh\StructType\RtmMemoryStruct $memory = null, \Ovh\StructType\RtmMotherboardStruct $motherboard = null, \Ovh\ArrayType\MyArrayOfRtmLspciStructType $lspci = null, \Ovh\StructType\RtmPortsStruct $portsUsed = null, \Ovh\StructType\RtmRaidStruct $raid = null)
     {
         $this
             ->setCpu($cpu)
@@ -84,7 +84,7 @@ class DedicatedRtmStatusReturn extends AbstractStructBase
     }
     /**
      * Get cpu value
-     * @return \PayPal\StructType\RtmCpuStruct|null
+     * @return \Ovh\StructType\RtmCpuStruct|null
      */
     public function getCpu()
     {
@@ -92,17 +92,17 @@ class DedicatedRtmStatusReturn extends AbstractStructBase
     }
     /**
      * Set cpu value
-     * @param \PayPal\StructType\RtmCpuStruct $cpu
-     * @return \PayPal\StructType\DedicatedRtmStatusReturn
+     * @param \Ovh\StructType\RtmCpuStruct $cpu
+     * @return \Ovh\StructType\DedicatedRtmStatusReturn
      */
-    public function setCpu(\PayPal\StructType\RtmCpuStruct $cpu = null)
+    public function setCpu(\Ovh\StructType\RtmCpuStruct $cpu = null)
     {
         $this->cpu = $cpu;
         return $this;
     }
     /**
      * Get hardDrives value
-     * @return \PayPal\ArrayType\MyArrayOfRtmHddStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfRtmHddStructType|null
      */
     public function getHardDrives()
     {
@@ -110,17 +110,17 @@ class DedicatedRtmStatusReturn extends AbstractStructBase
     }
     /**
      * Set hardDrives value
-     * @param \PayPal\ArrayType\MyArrayOfRtmHddStructType $hardDrives
-     * @return \PayPal\StructType\DedicatedRtmStatusReturn
+     * @param \Ovh\ArrayType\MyArrayOfRtmHddStructType $hardDrives
+     * @return \Ovh\StructType\DedicatedRtmStatusReturn
      */
-    public function setHardDrives(\PayPal\ArrayType\MyArrayOfRtmHddStructType $hardDrives = null)
+    public function setHardDrives(\Ovh\ArrayType\MyArrayOfRtmHddStructType $hardDrives = null)
     {
         $this->hardDrives = $hardDrives;
         return $this;
     }
     /**
      * Get systemInfo value
-     * @return \PayPal\StructType\RtmSystemStruct|null
+     * @return \Ovh\StructType\RtmSystemStruct|null
      */
     public function getSystemInfo()
     {
@@ -128,17 +128,17 @@ class DedicatedRtmStatusReturn extends AbstractStructBase
     }
     /**
      * Set systemInfo value
-     * @param \PayPal\StructType\RtmSystemStruct $systemInfo
-     * @return \PayPal\StructType\DedicatedRtmStatusReturn
+     * @param \Ovh\StructType\RtmSystemStruct $systemInfo
+     * @return \Ovh\StructType\DedicatedRtmStatusReturn
      */
-    public function setSystemInfo(\PayPal\StructType\RtmSystemStruct $systemInfo = null)
+    public function setSystemInfo(\Ovh\StructType\RtmSystemStruct $systemInfo = null)
     {
         $this->systemInfo = $systemInfo;
         return $this;
     }
     /**
      * Get memory value
-     * @return \PayPal\StructType\RtmMemoryStruct|null
+     * @return \Ovh\StructType\RtmMemoryStruct|null
      */
     public function getMemory()
     {
@@ -146,17 +146,17 @@ class DedicatedRtmStatusReturn extends AbstractStructBase
     }
     /**
      * Set memory value
-     * @param \PayPal\StructType\RtmMemoryStruct $memory
-     * @return \PayPal\StructType\DedicatedRtmStatusReturn
+     * @param \Ovh\StructType\RtmMemoryStruct $memory
+     * @return \Ovh\StructType\DedicatedRtmStatusReturn
      */
-    public function setMemory(\PayPal\StructType\RtmMemoryStruct $memory = null)
+    public function setMemory(\Ovh\StructType\RtmMemoryStruct $memory = null)
     {
         $this->memory = $memory;
         return $this;
     }
     /**
      * Get motherboard value
-     * @return \PayPal\StructType\RtmMotherboardStruct|null
+     * @return \Ovh\StructType\RtmMotherboardStruct|null
      */
     public function getMotherboard()
     {
@@ -164,17 +164,17 @@ class DedicatedRtmStatusReturn extends AbstractStructBase
     }
     /**
      * Set motherboard value
-     * @param \PayPal\StructType\RtmMotherboardStruct $motherboard
-     * @return \PayPal\StructType\DedicatedRtmStatusReturn
+     * @param \Ovh\StructType\RtmMotherboardStruct $motherboard
+     * @return \Ovh\StructType\DedicatedRtmStatusReturn
      */
-    public function setMotherboard(\PayPal\StructType\RtmMotherboardStruct $motherboard = null)
+    public function setMotherboard(\Ovh\StructType\RtmMotherboardStruct $motherboard = null)
     {
         $this->motherboard = $motherboard;
         return $this;
     }
     /**
      * Get lspci value
-     * @return \PayPal\ArrayType\MyArrayOfRtmLspciStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfRtmLspciStructType|null
      */
     public function getLspci()
     {
@@ -182,17 +182,17 @@ class DedicatedRtmStatusReturn extends AbstractStructBase
     }
     /**
      * Set lspci value
-     * @param \PayPal\ArrayType\MyArrayOfRtmLspciStructType $lspci
-     * @return \PayPal\StructType\DedicatedRtmStatusReturn
+     * @param \Ovh\ArrayType\MyArrayOfRtmLspciStructType $lspci
+     * @return \Ovh\StructType\DedicatedRtmStatusReturn
      */
-    public function setLspci(\PayPal\ArrayType\MyArrayOfRtmLspciStructType $lspci = null)
+    public function setLspci(\Ovh\ArrayType\MyArrayOfRtmLspciStructType $lspci = null)
     {
         $this->lspci = $lspci;
         return $this;
     }
     /**
      * Get portsUsed value
-     * @return \PayPal\StructType\RtmPortsStruct|null
+     * @return \Ovh\StructType\RtmPortsStruct|null
      */
     public function getPortsUsed()
     {
@@ -200,17 +200,17 @@ class DedicatedRtmStatusReturn extends AbstractStructBase
     }
     /**
      * Set portsUsed value
-     * @param \PayPal\StructType\RtmPortsStruct $portsUsed
-     * @return \PayPal\StructType\DedicatedRtmStatusReturn
+     * @param \Ovh\StructType\RtmPortsStruct $portsUsed
+     * @return \Ovh\StructType\DedicatedRtmStatusReturn
      */
-    public function setPortsUsed(\PayPal\StructType\RtmPortsStruct $portsUsed = null)
+    public function setPortsUsed(\Ovh\StructType\RtmPortsStruct $portsUsed = null)
     {
         $this->portsUsed = $portsUsed;
         return $this;
     }
     /**
      * Get raid value
-     * @return \PayPal\StructType\RtmRaidStruct|null
+     * @return \Ovh\StructType\RtmRaidStruct|null
      */
     public function getRaid()
     {
@@ -218,10 +218,10 @@ class DedicatedRtmStatusReturn extends AbstractStructBase
     }
     /**
      * Set raid value
-     * @param \PayPal\StructType\RtmRaidStruct $raid
-     * @return \PayPal\StructType\DedicatedRtmStatusReturn
+     * @param \Ovh\StructType\RtmRaidStruct $raid
+     * @return \Ovh\StructType\DedicatedRtmStatusReturn
      */
-    public function setRaid(\PayPal\StructType\RtmRaidStruct $raid = null)
+    public function setRaid(\Ovh\StructType\RtmRaidStruct $raid = null)
     {
         $this->raid = $raid;
         return $this;
@@ -232,7 +232,7 @@ class DedicatedRtmStatusReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedRtmStatusReturn
+     * @return \Ovh\StructType\DedicatedRtmStatusReturn
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedInstallAllowedDistributionGetResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\DedicatedAllowedDistributionReturn
+     * @var \Ovh\StructType\DedicatedAllowedDistributionReturn
      */
     public $return;
     /**
      * Constructor method for dedicatedInstallAllowedDistributionGetResponse
      * @uses DedicatedInstallAllowedDistributionGetResponse::setReturn()
-     * @param \PayPal\StructType\DedicatedAllowedDistributionReturn $return
+     * @param \Ovh\StructType\DedicatedAllowedDistributionReturn $return
      */
-    public function __construct(\PayPal\StructType\DedicatedAllowedDistributionReturn $return = null)
+    public function __construct(\Ovh\StructType\DedicatedAllowedDistributionReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\DedicatedAllowedDistributionReturn|null
+     * @return \Ovh\StructType\DedicatedAllowedDistributionReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedInstallAllowedDistributionGetResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\DedicatedAllowedDistributionReturn $return
-     * @return \PayPal\StructType\DedicatedInstallAllowedDistributionGetResponse
+     * @param \Ovh\StructType\DedicatedAllowedDistributionReturn $return
+     * @return \Ovh\StructType\DedicatedInstallAllowedDistributionGetResponse
      */
-    public function setReturn(\PayPal\StructType\DedicatedAllowedDistributionReturn $return = null)
+    public function setReturn(\Ovh\StructType\DedicatedAllowedDistributionReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedInstallAllowedDistributionGetResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedInstallAllowedDistributionGetResponse
+     * @return \Ovh\StructType\DedicatedInstallAllowedDistributionGetResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class SqlpriveFtpPassword extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\SqlpriveFtpPassword
+     * @return \Ovh\StructType\SqlpriveFtpPassword
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class SqlpriveFtpPassword extends AbstractStructBase
     /**
      * Set server value
      * @param string $server
-     * @return \PayPal\StructType\SqlpriveFtpPassword
+     * @return \Ovh\StructType\SqlpriveFtpPassword
      */
     public function setServer($server = null)
     {
@@ -103,7 +103,7 @@ class SqlpriveFtpPassword extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \PayPal\StructType\SqlpriveFtpPassword
+     * @return \Ovh\StructType\SqlpriveFtpPassword
      */
     public function setPassword($password = null)
     {
@@ -120,7 +120,7 @@ class SqlpriveFtpPassword extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SqlpriveFtpPassword
+     * @return \Ovh\StructType\SqlpriveFtpPassword
      */
     public static function __set_state(array $array)
     {

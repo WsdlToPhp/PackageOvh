@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class PasswordManager extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\PasswordManager
+     * @return \Ovh\StructType\PasswordManager
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class PasswordManager extends AbstractStructBase
     /**
      * Set currentPassword value
      * @param string $currentPassword
-     * @return \PayPal\StructType\PasswordManager
+     * @return \Ovh\StructType\PasswordManager
      */
     public function setCurrentPassword($currentPassword = null)
     {
@@ -103,7 +103,7 @@ class PasswordManager extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \PayPal\StructType\PasswordManager
+     * @return \Ovh\StructType\PasswordManager
      */
     public function setPassword($password = null)
     {
@@ -120,7 +120,7 @@ class PasswordManager extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\PasswordManager
+     * @return \Ovh\StructType\PasswordManager
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfIPForUDPServerListStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\IPForUDPServerListStruct[]
+     * @var \Ovh\StructType\IPForUDPServerListStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfIPForUDPServerListStructType
      * @uses MyArrayOfIPForUDPServerListStructType::setItem()
-     * @param \PayPal\StructType\IPForUDPServerListStruct[] $item
+     * @param \Ovh\StructType\IPForUDPServerListStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfIPForUDPServerListStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\IPForUDPServerListStruct[]|null
+     * @return \Ovh\StructType\IPForUDPServerListStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfIPForUDPServerListStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\IPForUDPServerListStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfIPForUDPServerListStructType
+     * @param \Ovh\StructType\IPForUDPServerListStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfIPForUDPServerListStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfIPForUDPServerListStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfIPForUDPServerListStructTypeItemItem instanceof \PayPal\StructType\IPForUDPServerListStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\IPForUDPServerListStruct, "%s" given', is_object($myArrayOfIPForUDPServerListStructTypeItemItem) ? get_class($myArrayOfIPForUDPServerListStructTypeItemItem) : gettype($myArrayOfIPForUDPServerListStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfIPForUDPServerListStructTypeItemItem instanceof \Ovh\StructType\IPForUDPServerListStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\IPForUDPServerListStruct, "%s" given', is_object($myArrayOfIPForUDPServerListStructTypeItemItem) ? get_class($myArrayOfIPForUDPServerListStructTypeItemItem) : gettype($myArrayOfIPForUDPServerListStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfIPForUDPServerListStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\IPForUDPServerListStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfIPForUDPServerListStructType
+     * @param \Ovh\StructType\IPForUDPServerListStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfIPForUDPServerListStructType
      */
-    public function addToItem(\PayPal\StructType\IPForUDPServerListStruct $item)
+    public function addToItem(\Ovh\StructType\IPForUDPServerListStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\IPForUDPServerListStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\IPForUDPServerListStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\IPForUDPServerListStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\IPForUDPServerListStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfIPForUDPServerListStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\IPForUDPServerListStruct|null
+     * @return \Ovh\StructType\IPForUDPServerListStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfIPForUDPServerListStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\IPForUDPServerListStruct|null
+     * @return \Ovh\StructType\IPForUDPServerListStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfIPForUDPServerListStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\IPForUDPServerListStruct|null
+     * @return \Ovh\StructType\IPForUDPServerListStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfIPForUDPServerListStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\IPForUDPServerListStruct|null
+     * @return \Ovh\StructType\IPForUDPServerListStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfIPForUDPServerListStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\IPForUDPServerListStruct|null
+     * @return \Ovh\StructType\IPForUDPServerListStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfIPForUDPServerListStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfIPForUDPServerListStructType
+     * @return \Ovh\ArrayType\MyArrayOfIPForUDPServerListStructType
      */
     public static function __set_state(array $array)
     {

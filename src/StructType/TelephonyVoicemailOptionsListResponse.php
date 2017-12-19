@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyVoicemailOptionsListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyVoicemailOptionsListReturn
+     * @var \Ovh\StructType\TelephonyVoicemailOptionsListReturn
      */
     public $return;
     /**
      * Constructor method for telephonyVoicemailOptionsListResponse
      * @uses TelephonyVoicemailOptionsListResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyVoicemailOptionsListReturn $return
+     * @param \Ovh\StructType\TelephonyVoicemailOptionsListReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonyVoicemailOptionsListReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonyVoicemailOptionsListReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsListReturn|null
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsListReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyVoicemailOptionsListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyVoicemailOptionsListReturn $return
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsListResponse
+     * @param \Ovh\StructType\TelephonyVoicemailOptionsListReturn $return
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsListResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyVoicemailOptionsListReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyVoicemailOptionsListReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyVoicemailOptionsListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsListResponse
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsListResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -129,7 +129,7 @@ class TelephonySmsHistoryCsv extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonySmsHistoryCsv
+     * @return \Ovh\StructType\TelephonySmsHistoryCsv
      */
     public function setSession($session = null)
     {
@@ -151,7 +151,7 @@ class TelephonySmsHistoryCsv extends AbstractStructBase
     /**
      * Set smsAccount value
      * @param string $smsAccount
-     * @return \PayPal\StructType\TelephonySmsHistoryCsv
+     * @return \Ovh\StructType\TelephonySmsHistoryCsv
      */
     public function setSmsAccount($smsAccount = null)
     {
@@ -173,7 +173,7 @@ class TelephonySmsHistoryCsv extends AbstractStructBase
     /**
      * Set smsId value
      * @param int $smsId
-     * @return \PayPal\StructType\TelephonySmsHistoryCsv
+     * @return \Ovh\StructType\TelephonySmsHistoryCsv
      */
     public function setSmsId($smsId = null)
     {
@@ -195,7 +195,7 @@ class TelephonySmsHistoryCsv extends AbstractStructBase
     /**
      * Set user value
      * @param string $user
-     * @return \PayPal\StructType\TelephonySmsHistoryCsv
+     * @return \Ovh\StructType\TelephonySmsHistoryCsv
      */
     public function setUser($user = null)
     {
@@ -217,7 +217,7 @@ class TelephonySmsHistoryCsv extends AbstractStructBase
     /**
      * Set pagingStart value
      * @param int $pagingStart
-     * @return \PayPal\StructType\TelephonySmsHistoryCsv
+     * @return \Ovh\StructType\TelephonySmsHistoryCsv
      */
     public function setPagingStart($pagingStart = null)
     {
@@ -239,7 +239,7 @@ class TelephonySmsHistoryCsv extends AbstractStructBase
     /**
      * Set pagingLimit value
      * @param int $pagingLimit
-     * @return \PayPal\StructType\TelephonySmsHistoryCsv
+     * @return \Ovh\StructType\TelephonySmsHistoryCsv
      */
     public function setPagingLimit($pagingLimit = null)
     {
@@ -261,7 +261,7 @@ class TelephonySmsHistoryCsv extends AbstractStructBase
     /**
      * Set sortField value
      * @param string $sortField
-     * @return \PayPal\StructType\TelephonySmsHistoryCsv
+     * @return \Ovh\StructType\TelephonySmsHistoryCsv
      */
     public function setSortField($sortField = null)
     {
@@ -283,7 +283,7 @@ class TelephonySmsHistoryCsv extends AbstractStructBase
     /**
      * Set sortOrder value
      * @param string $sortOrder
-     * @return \PayPal\StructType\TelephonySmsHistoryCsv
+     * @return \Ovh\StructType\TelephonySmsHistoryCsv
      */
     public function setSortOrder($sortOrder = null)
     {
@@ -305,7 +305,7 @@ class TelephonySmsHistoryCsv extends AbstractStructBase
     /**
      * Set tag value
      * @param string $tag
-     * @return \PayPal\StructType\TelephonySmsHistoryCsv
+     * @return \Ovh\StructType\TelephonySmsHistoryCsv
      */
     public function setTag($tag = null)
     {
@@ -327,7 +327,7 @@ class TelephonySmsHistoryCsv extends AbstractStructBase
     /**
      * Set filter value
      * @param string $filter
-     * @return \PayPal\StructType\TelephonySmsHistoryCsv
+     * @return \Ovh\StructType\TelephonySmsHistoryCsv
      */
     public function setFilter($filter = null)
     {
@@ -344,7 +344,7 @@ class TelephonySmsHistoryCsv extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsHistoryCsv
+     * @return \Ovh\StructType\TelephonySmsHistoryCsv
      */
     public static function __set_state(array $array)
     {

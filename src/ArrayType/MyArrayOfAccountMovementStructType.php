@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfAccountMovementStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\AccountMovementStruct[]
+     * @var \Ovh\StructType\AccountMovementStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfAccountMovementStructType
      * @uses MyArrayOfAccountMovementStructType::setItem()
-     * @param \PayPal\StructType\AccountMovementStruct[] $item
+     * @param \Ovh\StructType\AccountMovementStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfAccountMovementStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\AccountMovementStruct[]|null
+     * @return \Ovh\StructType\AccountMovementStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfAccountMovementStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\AccountMovementStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfAccountMovementStructType
+     * @param \Ovh\StructType\AccountMovementStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfAccountMovementStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfAccountMovementStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfAccountMovementStructTypeItemItem instanceof \PayPal\StructType\AccountMovementStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\AccountMovementStruct, "%s" given', is_object($myArrayOfAccountMovementStructTypeItemItem) ? get_class($myArrayOfAccountMovementStructTypeItemItem) : gettype($myArrayOfAccountMovementStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfAccountMovementStructTypeItemItem instanceof \Ovh\StructType\AccountMovementStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\AccountMovementStruct, "%s" given', is_object($myArrayOfAccountMovementStructTypeItemItem) ? get_class($myArrayOfAccountMovementStructTypeItemItem) : gettype($myArrayOfAccountMovementStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfAccountMovementStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\AccountMovementStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfAccountMovementStructType
+     * @param \Ovh\StructType\AccountMovementStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfAccountMovementStructType
      */
-    public function addToItem(\PayPal\StructType\AccountMovementStruct $item)
+    public function addToItem(\Ovh\StructType\AccountMovementStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\AccountMovementStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\AccountMovementStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\AccountMovementStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\AccountMovementStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfAccountMovementStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\AccountMovementStruct|null
+     * @return \Ovh\StructType\AccountMovementStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfAccountMovementStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\AccountMovementStruct|null
+     * @return \Ovh\StructType\AccountMovementStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfAccountMovementStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\AccountMovementStruct|null
+     * @return \Ovh\StructType\AccountMovementStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfAccountMovementStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\AccountMovementStruct|null
+     * @return \Ovh\StructType\AccountMovementStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfAccountMovementStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\AccountMovementStruct|null
+     * @return \Ovh\StructType\AccountMovementStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfAccountMovementStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfAccountMovementStructType
+     * @return \Ovh\ArrayType\MyArrayOfAccountMovementStructType
      */
     public static function __set_state(array $array)
     {

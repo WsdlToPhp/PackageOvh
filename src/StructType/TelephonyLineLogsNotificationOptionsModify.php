@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class TelephonyLineLogsNotificationOptionsModify extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyLineLogsNotificationOptionsModify
+     * @return \Ovh\StructType\TelephonyLineLogsNotificationOptionsModify
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class TelephonyLineLogsNotificationOptionsModify extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyLineLogsNotificationOptionsModify
+     * @return \Ovh\StructType\TelephonyLineLogsNotificationOptionsModify
      */
     public function setNumber($number = null)
     {
@@ -133,7 +133,7 @@ class TelephonyLineLogsNotificationOptionsModify extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyLineLogsNotificationOptionsModify
+     * @return \Ovh\StructType\TelephonyLineLogsNotificationOptionsModify
      */
     public function setCountry($country = null)
     {
@@ -155,7 +155,7 @@ class TelephonyLineLogsNotificationOptionsModify extends AbstractStructBase
     /**
      * Set frequency value
      * @param string $frequency
-     * @return \PayPal\StructType\TelephonyLineLogsNotificationOptionsModify
+     * @return \Ovh\StructType\TelephonyLineLogsNotificationOptionsModify
      */
     public function setFrequency($frequency = null)
     {
@@ -177,7 +177,7 @@ class TelephonyLineLogsNotificationOptionsModify extends AbstractStructBase
     /**
      * Set sendIfNull value
      * @param bool $sendIfNull
-     * @return \PayPal\StructType\TelephonyLineLogsNotificationOptionsModify
+     * @return \Ovh\StructType\TelephonyLineLogsNotificationOptionsModify
      */
     public function setSendIfNull($sendIfNull = null)
     {
@@ -199,7 +199,7 @@ class TelephonyLineLogsNotificationOptionsModify extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\TelephonyLineLogsNotificationOptionsModify
+     * @return \Ovh\StructType\TelephonyLineLogsNotificationOptionsModify
      */
     public function setEmail($email = null)
     {
@@ -216,7 +216,7 @@ class TelephonyLineLogsNotificationOptionsModify extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyLineLogsNotificationOptionsModify
+     * @return \Ovh\StructType\TelephonyLineLogsNotificationOptionsModify
      */
     public static function __set_state(array $array)
     {

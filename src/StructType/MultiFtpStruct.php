@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class MultiFtpStruct extends AbstractStructBase
     /**
      * Set subdir value
      * @param string $subdir
-     * @return \PayPal\StructType\MultiFtpStruct
+     * @return \Ovh\StructType\MultiFtpStruct
      */
     public function setSubdir($subdir = null)
     {
@@ -67,7 +67,7 @@ class MultiFtpStruct extends AbstractStructBase
     /**
      * Set login value
      * @param string $login
-     * @return \PayPal\StructType\MultiFtpStruct
+     * @return \Ovh\StructType\MultiFtpStruct
      */
     public function setLogin($login = null)
     {
@@ -84,7 +84,7 @@ class MultiFtpStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\MultiFtpStruct
+     * @return \Ovh\StructType\MultiFtpStruct
      */
     public static function __set_state(array $array)
     {

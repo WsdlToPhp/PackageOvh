@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,12 +48,12 @@ class DedicatedGetServiceMonitoringItemStruct extends AbstractStructBase
     public $url;
     /**
      * The sms
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $sms;
     /**
      * The email
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $email;
     /**
@@ -74,10 +74,10 @@ class DedicatedGetServiceMonitoringItemStruct extends AbstractStructBase
      * @param string $period
      * @param string $string
      * @param string $url
-     * @param \PayPal\ArrayType\MyArrayOfStringType $sms
-     * @param \PayPal\ArrayType\MyArrayOfStringType $email
+     * @param \Ovh\ArrayType\MyArrayOfStringType $sms
+     * @param \Ovh\ArrayType\MyArrayOfStringType $email
      */
-    public function __construct($id = null, $ip = null, $port = null, $protocol = null, $period = null, $string = null, $url = null, \PayPal\ArrayType\MyArrayOfStringType $sms = null, \PayPal\ArrayType\MyArrayOfStringType $email = null)
+    public function __construct($id = null, $ip = null, $port = null, $protocol = null, $period = null, $string = null, $url = null, \Ovh\ArrayType\MyArrayOfStringType $sms = null, \Ovh\ArrayType\MyArrayOfStringType $email = null)
     {
         $this
             ->setId($id)
@@ -101,7 +101,7 @@ class DedicatedGetServiceMonitoringItemStruct extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\DedicatedGetServiceMonitoringItemStruct
+     * @return \Ovh\StructType\DedicatedGetServiceMonitoringItemStruct
      */
     public function setId($id = null)
     {
@@ -123,7 +123,7 @@ class DedicatedGetServiceMonitoringItemStruct extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\DedicatedGetServiceMonitoringItemStruct
+     * @return \Ovh\StructType\DedicatedGetServiceMonitoringItemStruct
      */
     public function setIp($ip = null)
     {
@@ -145,7 +145,7 @@ class DedicatedGetServiceMonitoringItemStruct extends AbstractStructBase
     /**
      * Set port value
      * @param int $port
-     * @return \PayPal\StructType\DedicatedGetServiceMonitoringItemStruct
+     * @return \Ovh\StructType\DedicatedGetServiceMonitoringItemStruct
      */
     public function setPort($port = null)
     {
@@ -167,7 +167,7 @@ class DedicatedGetServiceMonitoringItemStruct extends AbstractStructBase
     /**
      * Set protocol value
      * @param string $protocol
-     * @return \PayPal\StructType\DedicatedGetServiceMonitoringItemStruct
+     * @return \Ovh\StructType\DedicatedGetServiceMonitoringItemStruct
      */
     public function setProtocol($protocol = null)
     {
@@ -189,7 +189,7 @@ class DedicatedGetServiceMonitoringItemStruct extends AbstractStructBase
     /**
      * Set period value
      * @param string $period
-     * @return \PayPal\StructType\DedicatedGetServiceMonitoringItemStruct
+     * @return \Ovh\StructType\DedicatedGetServiceMonitoringItemStruct
      */
     public function setPeriod($period = null)
     {
@@ -211,7 +211,7 @@ class DedicatedGetServiceMonitoringItemStruct extends AbstractStructBase
     /**
      * Set string value
      * @param string $string
-     * @return \PayPal\StructType\DedicatedGetServiceMonitoringItemStruct
+     * @return \Ovh\StructType\DedicatedGetServiceMonitoringItemStruct
      */
     public function setString($string = null)
     {
@@ -233,7 +233,7 @@ class DedicatedGetServiceMonitoringItemStruct extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \PayPal\StructType\DedicatedGetServiceMonitoringItemStruct
+     * @return \Ovh\StructType\DedicatedGetServiceMonitoringItemStruct
      */
     public function setUrl($url = null)
     {
@@ -246,7 +246,7 @@ class DedicatedGetServiceMonitoringItemStruct extends AbstractStructBase
     }
     /**
      * Get sms value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getSms()
     {
@@ -254,17 +254,17 @@ class DedicatedGetServiceMonitoringItemStruct extends AbstractStructBase
     }
     /**
      * Set sms value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $sms
-     * @return \PayPal\StructType\DedicatedGetServiceMonitoringItemStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $sms
+     * @return \Ovh\StructType\DedicatedGetServiceMonitoringItemStruct
      */
-    public function setSms(\PayPal\ArrayType\MyArrayOfStringType $sms = null)
+    public function setSms(\Ovh\ArrayType\MyArrayOfStringType $sms = null)
     {
         $this->sms = $sms;
         return $this;
     }
     /**
      * Get email value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getEmail()
     {
@@ -272,10 +272,10 @@ class DedicatedGetServiceMonitoringItemStruct extends AbstractStructBase
     }
     /**
      * Set email value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $email
-     * @return \PayPal\StructType\DedicatedGetServiceMonitoringItemStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $email
+     * @return \Ovh\StructType\DedicatedGetServiceMonitoringItemStruct
      */
-    public function setEmail(\PayPal\ArrayType\MyArrayOfStringType $email = null)
+    public function setEmail(\Ovh\ArrayType\MyArrayOfStringType $email = null)
     {
         $this->email = $email;
         return $this;
@@ -286,7 +286,7 @@ class DedicatedGetServiceMonitoringItemStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedGetServiceMonitoringItemStruct
+     * @return \Ovh\StructType\DedicatedGetServiceMonitoringItemStruct
      */
     public static function __set_state(array $array)
     {

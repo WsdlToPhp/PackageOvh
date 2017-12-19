@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class SupportSendMessageReturn extends AbstractStructBase
     /**
      * Set threadId value
      * @param int $threadId
-     * @return \PayPal\StructType\SupportSendMessageReturn
+     * @return \Ovh\StructType\SupportSendMessageReturn
      */
     public function setThreadId($threadId = null)
     {
@@ -75,7 +75,7 @@ class SupportSendMessageReturn extends AbstractStructBase
     /**
      * Set messageId value
      * @param int $messageId
-     * @return \PayPal\StructType\SupportSendMessageReturn
+     * @return \Ovh\StructType\SupportSendMessageReturn
      */
     public function setMessageId($messageId = null)
     {
@@ -97,7 +97,7 @@ class SupportSendMessageReturn extends AbstractStructBase
     /**
      * Set dateTime value
      * @param string $dateTime
-     * @return \PayPal\StructType\SupportSendMessageReturn
+     * @return \Ovh\StructType\SupportSendMessageReturn
      */
     public function setDateTime($dateTime = null)
     {
@@ -114,7 +114,7 @@ class SupportSendMessageReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SupportSendMessageReturn
+     * @return \Ovh\StructType\SupportSendMessageReturn
      */
     public static function __set_state(array $array)
     {

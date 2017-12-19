@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class TelephonyLineGetCodecsReturn extends AbstractStructBase
     public $codecs;
     /**
      * The availableCodecsList
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $availableCodecsList;
     /**
@@ -32,10 +32,10 @@ class TelephonyLineGetCodecsReturn extends AbstractStructBase
      * @uses TelephonyLineGetCodecsReturn::setAvailableCodecsList()
      * @uses TelephonyLineGetCodecsReturn::setDefaultCodecs()
      * @param string $codecs
-     * @param \PayPal\ArrayType\MyArrayOfStringType $availableCodecsList
+     * @param \Ovh\ArrayType\MyArrayOfStringType $availableCodecsList
      * @param string $defaultCodecs
      */
-    public function __construct($codecs = null, \PayPal\ArrayType\MyArrayOfStringType $availableCodecsList = null, $defaultCodecs = null)
+    public function __construct($codecs = null, \Ovh\ArrayType\MyArrayOfStringType $availableCodecsList = null, $defaultCodecs = null)
     {
         $this
             ->setCodecs($codecs)
@@ -53,7 +53,7 @@ class TelephonyLineGetCodecsReturn extends AbstractStructBase
     /**
      * Set codecs value
      * @param string $codecs
-     * @return \PayPal\StructType\TelephonyLineGetCodecsReturn
+     * @return \Ovh\StructType\TelephonyLineGetCodecsReturn
      */
     public function setCodecs($codecs = null)
     {
@@ -66,7 +66,7 @@ class TelephonyLineGetCodecsReturn extends AbstractStructBase
     }
     /**
      * Get availableCodecsList value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getAvailableCodecsList()
     {
@@ -74,10 +74,10 @@ class TelephonyLineGetCodecsReturn extends AbstractStructBase
     }
     /**
      * Set availableCodecsList value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $availableCodecsList
-     * @return \PayPal\StructType\TelephonyLineGetCodecsReturn
+     * @param \Ovh\ArrayType\MyArrayOfStringType $availableCodecsList
+     * @return \Ovh\StructType\TelephonyLineGetCodecsReturn
      */
-    public function setAvailableCodecsList(\PayPal\ArrayType\MyArrayOfStringType $availableCodecsList = null)
+    public function setAvailableCodecsList(\Ovh\ArrayType\MyArrayOfStringType $availableCodecsList = null)
     {
         $this->availableCodecsList = $availableCodecsList;
         return $this;
@@ -93,7 +93,7 @@ class TelephonyLineGetCodecsReturn extends AbstractStructBase
     /**
      * Set defaultCodecs value
      * @param string $defaultCodecs
-     * @return \PayPal\StructType\TelephonyLineGetCodecsReturn
+     * @return \Ovh\StructType\TelephonyLineGetCodecsReturn
      */
     public function setDefaultCodecs($defaultCodecs = null)
     {
@@ -110,7 +110,7 @@ class TelephonyLineGetCodecsReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyLineGetCodecsReturn
+     * @return \Ovh\StructType\TelephonyLineGetCodecsReturn
      */
     public static function __set_state(array $array)
     {

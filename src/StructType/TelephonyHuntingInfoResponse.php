@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyHuntingInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyHuntingInfoReturn
+     * @var \Ovh\StructType\TelephonyHuntingInfoReturn
      */
     public $return;
     /**
      * Constructor method for telephonyHuntingInfoResponse
      * @uses TelephonyHuntingInfoResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyHuntingInfoReturn $return
+     * @param \Ovh\StructType\TelephonyHuntingInfoReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonyHuntingInfoReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonyHuntingInfoReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyHuntingInfoReturn|null
+     * @return \Ovh\StructType\TelephonyHuntingInfoReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyHuntingInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyHuntingInfoReturn $return
-     * @return \PayPal\StructType\TelephonyHuntingInfoResponse
+     * @param \Ovh\StructType\TelephonyHuntingInfoReturn $return
+     * @return \Ovh\StructType\TelephonyHuntingInfoResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyHuntingInfoReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyHuntingInfoReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyHuntingInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyHuntingInfoResponse
+     * @return \Ovh\StructType\TelephonyHuntingInfoResponse
      */
     public static function __set_state(array $array)
     {

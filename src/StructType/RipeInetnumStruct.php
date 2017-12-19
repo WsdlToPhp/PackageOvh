@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class RipeInetnumStruct extends AbstractStructBase
     public $netname;
     /**
      * The descr
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $descr;
     /**
@@ -81,7 +81,7 @@ class RipeInetnumStruct extends AbstractStructBase
      * @uses RipeInetnumStruct::setSource()
      * @param string $inetnum
      * @param string $netname
-     * @param \PayPal\ArrayType\MyArrayOfStringType $descr
+     * @param \Ovh\ArrayType\MyArrayOfStringType $descr
      * @param string $org
      * @param string $country
      * @param string $adminc
@@ -91,7 +91,7 @@ class RipeInetnumStruct extends AbstractStructBase
      * @param string $changed
      * @param string $source
      */
-    public function __construct($inetnum = null, $netname = null, \PayPal\ArrayType\MyArrayOfStringType $descr = null, $org = null, $country = null, $adminc = null, $techc = null, $status = null, $mntby = null, $changed = null, $source = null)
+    public function __construct($inetnum = null, $netname = null, \Ovh\ArrayType\MyArrayOfStringType $descr = null, $org = null, $country = null, $adminc = null, $techc = null, $status = null, $mntby = null, $changed = null, $source = null)
     {
         $this
             ->setInetnum($inetnum)
@@ -117,7 +117,7 @@ class RipeInetnumStruct extends AbstractStructBase
     /**
      * Set inetnum value
      * @param string $inetnum
-     * @return \PayPal\StructType\RipeInetnumStruct
+     * @return \Ovh\StructType\RipeInetnumStruct
      */
     public function setInetnum($inetnum = null)
     {
@@ -139,7 +139,7 @@ class RipeInetnumStruct extends AbstractStructBase
     /**
      * Set netname value
      * @param string $netname
-     * @return \PayPal\StructType\RipeInetnumStruct
+     * @return \Ovh\StructType\RipeInetnumStruct
      */
     public function setNetname($netname = null)
     {
@@ -152,7 +152,7 @@ class RipeInetnumStruct extends AbstractStructBase
     }
     /**
      * Get descr value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getDescr()
     {
@@ -160,10 +160,10 @@ class RipeInetnumStruct extends AbstractStructBase
     }
     /**
      * Set descr value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $descr
-     * @return \PayPal\StructType\RipeInetnumStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $descr
+     * @return \Ovh\StructType\RipeInetnumStruct
      */
-    public function setDescr(\PayPal\ArrayType\MyArrayOfStringType $descr = null)
+    public function setDescr(\Ovh\ArrayType\MyArrayOfStringType $descr = null)
     {
         $this->descr = $descr;
         return $this;
@@ -179,7 +179,7 @@ class RipeInetnumStruct extends AbstractStructBase
     /**
      * Set org value
      * @param string $org
-     * @return \PayPal\StructType\RipeInetnumStruct
+     * @return \Ovh\StructType\RipeInetnumStruct
      */
     public function setOrg($org = null)
     {
@@ -201,7 +201,7 @@ class RipeInetnumStruct extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\RipeInetnumStruct
+     * @return \Ovh\StructType\RipeInetnumStruct
      */
     public function setCountry($country = null)
     {
@@ -223,7 +223,7 @@ class RipeInetnumStruct extends AbstractStructBase
     /**
      * Set adminc value
      * @param string $adminc
-     * @return \PayPal\StructType\RipeInetnumStruct
+     * @return \Ovh\StructType\RipeInetnumStruct
      */
     public function setAdminc($adminc = null)
     {
@@ -245,7 +245,7 @@ class RipeInetnumStruct extends AbstractStructBase
     /**
      * Set techc value
      * @param string $techc
-     * @return \PayPal\StructType\RipeInetnumStruct
+     * @return \Ovh\StructType\RipeInetnumStruct
      */
     public function setTechc($techc = null)
     {
@@ -267,7 +267,7 @@ class RipeInetnumStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\RipeInetnumStruct
+     * @return \Ovh\StructType\RipeInetnumStruct
      */
     public function setStatus($status = null)
     {
@@ -289,7 +289,7 @@ class RipeInetnumStruct extends AbstractStructBase
     /**
      * Set mntby value
      * @param string $mntby
-     * @return \PayPal\StructType\RipeInetnumStruct
+     * @return \Ovh\StructType\RipeInetnumStruct
      */
     public function setMntby($mntby = null)
     {
@@ -311,7 +311,7 @@ class RipeInetnumStruct extends AbstractStructBase
     /**
      * Set changed value
      * @param string $changed
-     * @return \PayPal\StructType\RipeInetnumStruct
+     * @return \Ovh\StructType\RipeInetnumStruct
      */
     public function setChanged($changed = null)
     {
@@ -333,7 +333,7 @@ class RipeInetnumStruct extends AbstractStructBase
     /**
      * Set source value
      * @param string $source
-     * @return \PayPal\StructType\RipeInetnumStruct
+     * @return \Ovh\StructType\RipeInetnumStruct
      */
     public function setSource($source = null)
     {
@@ -350,7 +350,7 @@ class RipeInetnumStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RipeInetnumStruct
+     * @return \Ovh\StructType\RipeInetnumStruct
      */
     public static function __set_state(array $array)
     {

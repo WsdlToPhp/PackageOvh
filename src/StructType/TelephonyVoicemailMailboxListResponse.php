@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyVoicemailMailboxListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyVoicemailMailboxStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyVoicemailMailboxStructType
      */
     public $return;
     /**
      * Constructor method for telephonyVoicemailMailboxListResponse
      * @uses TelephonyVoicemailMailboxListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyVoicemailMailboxStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyVoicemailMailboxStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonyVoicemailMailboxStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonyVoicemailMailboxStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyVoicemailMailboxStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyVoicemailMailboxStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyVoicemailMailboxListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyVoicemailMailboxStructType $return
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxListResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyVoicemailMailboxStructType $return
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonyVoicemailMailboxStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonyVoicemailMailboxStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyVoicemailMailboxListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxListResponse
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxListResponse
      */
     public static function __set_state(array $array)
     {

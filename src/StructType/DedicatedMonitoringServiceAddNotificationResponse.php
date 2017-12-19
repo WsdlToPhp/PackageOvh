@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,7 +38,7 @@ class DedicatedMonitoringServiceAddNotificationResponse extends AbstractStructBa
     /**
      * Set return value
      * @param string $return
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAddNotificationResponse
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAddNotificationResponse
      */
     public function setReturn($return = null)
     {
@@ -55,7 +55,7 @@ class DedicatedMonitoringServiceAddNotificationResponse extends AbstractStructBa
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAddNotificationResponse
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAddNotificationResponse
      */
     public static function __set_state(array $array)
     {

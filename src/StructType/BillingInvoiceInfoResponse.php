@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class BillingInvoiceInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\BillingInvoiceInfoReturn
+     * @var \Ovh\StructType\BillingInvoiceInfoReturn
      */
     public $return;
     /**
      * Constructor method for billingInvoiceInfoResponse
      * @uses BillingInvoiceInfoResponse::setReturn()
-     * @param \PayPal\StructType\BillingInvoiceInfoReturn $return
+     * @param \Ovh\StructType\BillingInvoiceInfoReturn $return
      */
-    public function __construct(\PayPal\StructType\BillingInvoiceInfoReturn $return = null)
+    public function __construct(\Ovh\StructType\BillingInvoiceInfoReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\BillingInvoiceInfoReturn|null
+     * @return \Ovh\StructType\BillingInvoiceInfoReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class BillingInvoiceInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\BillingInvoiceInfoReturn $return
-     * @return \PayPal\StructType\BillingInvoiceInfoResponse
+     * @param \Ovh\StructType\BillingInvoiceInfoReturn $return
+     * @return \Ovh\StructType\BillingInvoiceInfoResponse
      */
-    public function setReturn(\PayPal\StructType\BillingInvoiceInfoReturn $return = null)
+    public function setReturn(\Ovh\StructType\BillingInvoiceInfoReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class BillingInvoiceInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\BillingInvoiceInfoResponse
+     * @return \Ovh\StructType\BillingInvoiceInfoResponse
      */
     public static function __set_state(array $array)
     {

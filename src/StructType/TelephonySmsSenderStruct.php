@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class TelephonySmsSenderStruct extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonySmsSenderStruct
+     * @return \Ovh\StructType\TelephonySmsSenderStruct
      */
     public function setNumber($number = null)
     {
@@ -75,7 +75,7 @@ class TelephonySmsSenderStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\TelephonySmsSenderStruct
+     * @return \Ovh\StructType\TelephonySmsSenderStruct
      */
     public function setStatus($status = null)
     {
@@ -97,7 +97,7 @@ class TelephonySmsSenderStruct extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \PayPal\StructType\TelephonySmsSenderStruct
+     * @return \Ovh\StructType\TelephonySmsSenderStruct
      */
     public function setDescription($description = null)
     {
@@ -114,7 +114,7 @@ class TelephonySmsSenderStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsSenderStruct
+     * @return \Ovh\StructType\TelephonySmsSenderStruct
      */
     public static function __set_state(array $array)
     {

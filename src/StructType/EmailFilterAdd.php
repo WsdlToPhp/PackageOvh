@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -139,7 +139,7 @@ class EmailFilterAdd extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\EmailFilterAdd
+     * @return \Ovh\StructType\EmailFilterAdd
      */
     public function setSession($session = null)
     {
@@ -161,7 +161,7 @@ class EmailFilterAdd extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\EmailFilterAdd
+     * @return \Ovh\StructType\EmailFilterAdd
      */
     public function setDomain($domain = null)
     {
@@ -183,7 +183,7 @@ class EmailFilterAdd extends AbstractStructBase
     /**
      * Set pop value
      * @param string $pop
-     * @return \PayPal\StructType\EmailFilterAdd
+     * @return \Ovh\StructType\EmailFilterAdd
      */
     public function setPop($pop = null)
     {
@@ -205,7 +205,7 @@ class EmailFilterAdd extends AbstractStructBase
     /**
      * Set filter value
      * @param string $filter
-     * @return \PayPal\StructType\EmailFilterAdd
+     * @return \Ovh\StructType\EmailFilterAdd
      */
     public function setFilter($filter = null)
     {
@@ -227,7 +227,7 @@ class EmailFilterAdd extends AbstractStructBase
     /**
      * Set priority value
      * @param int $priority
-     * @return \PayPal\StructType\EmailFilterAdd
+     * @return \Ovh\StructType\EmailFilterAdd
      */
     public function setPriority($priority = null)
     {
@@ -249,7 +249,7 @@ class EmailFilterAdd extends AbstractStructBase
     /**
      * Set active value
      * @param bool $active
-     * @return \PayPal\StructType\EmailFilterAdd
+     * @return \Ovh\StructType\EmailFilterAdd
      */
     public function setActive($active = null)
     {
@@ -271,7 +271,7 @@ class EmailFilterAdd extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \PayPal\StructType\EmailFilterAdd
+     * @return \Ovh\StructType\EmailFilterAdd
      */
     public function setAction($action = null)
     {
@@ -293,7 +293,7 @@ class EmailFilterAdd extends AbstractStructBase
     /**
      * Set action_param value
      * @param string $action_param
-     * @return \PayPal\StructType\EmailFilterAdd
+     * @return \Ovh\StructType\EmailFilterAdd
      */
     public function setAction_param($action_param = null)
     {
@@ -315,7 +315,7 @@ class EmailFilterAdd extends AbstractStructBase
     /**
      * Set header value
      * @param string $header
-     * @return \PayPal\StructType\EmailFilterAdd
+     * @return \Ovh\StructType\EmailFilterAdd
      */
     public function setHeader($header = null)
     {
@@ -337,7 +337,7 @@ class EmailFilterAdd extends AbstractStructBase
     /**
      * Set rule value
      * @param string $rule
-     * @return \PayPal\StructType\EmailFilterAdd
+     * @return \Ovh\StructType\EmailFilterAdd
      */
     public function setRule($rule = null)
     {
@@ -359,7 +359,7 @@ class EmailFilterAdd extends AbstractStructBase
     /**
      * Set rule_param value
      * @param string $rule_param
-     * @return \PayPal\StructType\EmailFilterAdd
+     * @return \Ovh\StructType\EmailFilterAdd
      */
     public function setRule_param($rule_param = null)
     {
@@ -376,7 +376,7 @@ class EmailFilterAdd extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\EmailFilterAdd
+     * @return \Ovh\StructType\EmailFilterAdd
      */
     public static function __set_state(array $array)
     {

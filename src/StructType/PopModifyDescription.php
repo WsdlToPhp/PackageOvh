@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class PopModifyDescription extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\PopModifyDescription
+     * @return \Ovh\StructType\PopModifyDescription
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class PopModifyDescription extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\PopModifyDescription
+     * @return \Ovh\StructType\PopModifyDescription
      */
     public function setDomain($domain = null)
     {
@@ -113,7 +113,7 @@ class PopModifyDescription extends AbstractStructBase
     /**
      * Set pop value
      * @param string $pop
-     * @return \PayPal\StructType\PopModifyDescription
+     * @return \Ovh\StructType\PopModifyDescription
      */
     public function setPop($pop = null)
     {
@@ -135,7 +135,7 @@ class PopModifyDescription extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \PayPal\StructType\PopModifyDescription
+     * @return \Ovh\StructType\PopModifyDescription
      */
     public function setDescription($description = null)
     {
@@ -152,7 +152,7 @@ class PopModifyDescription extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\PopModifyDescription
+     * @return \Ovh\StructType\PopModifyDescription
      */
     public static function __set_state(array $array)
     {

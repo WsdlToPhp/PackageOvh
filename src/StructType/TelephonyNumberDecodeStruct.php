@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -93,7 +93,7 @@ class TelephonyNumberDecodeStruct extends AbstractStructBase
     /**
      * Set numberDisplay value
      * @param string $numberDisplay
-     * @return \PayPal\StructType\TelephonyNumberDecodeStruct
+     * @return \Ovh\StructType\TelephonyNumberDecodeStruct
      */
     public function setNumberDisplay($numberDisplay = null)
     {
@@ -115,7 +115,7 @@ class TelephonyNumberDecodeStruct extends AbstractStructBase
     /**
      * Set numberInternal value
      * @param string $numberInternal
-     * @return \PayPal\StructType\TelephonyNumberDecodeStruct
+     * @return \Ovh\StructType\TelephonyNumberDecodeStruct
      */
     public function setNumberInternal($numberInternal = null)
     {
@@ -137,7 +137,7 @@ class TelephonyNumberDecodeStruct extends AbstractStructBase
     /**
      * Set numberInternational value
      * @param string $numberInternational
-     * @return \PayPal\StructType\TelephonyNumberDecodeStruct
+     * @return \Ovh\StructType\TelephonyNumberDecodeStruct
      */
     public function setNumberInternational($numberInternational = null)
     {
@@ -159,7 +159,7 @@ class TelephonyNumberDecodeStruct extends AbstractStructBase
     /**
      * Set numberNational value
      * @param string $numberNational
-     * @return \PayPal\StructType\TelephonyNumberDecodeStruct
+     * @return \Ovh\StructType\TelephonyNumberDecodeStruct
      */
     public function setNumberNational($numberNational = null)
     {
@@ -181,7 +181,7 @@ class TelephonyNumberDecodeStruct extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \PayPal\StructType\TelephonyNumberDecodeStruct
+     * @return \Ovh\StructType\TelephonyNumberDecodeStruct
      */
     public function setCountryCode($countryCode = null)
     {
@@ -203,7 +203,7 @@ class TelephonyNumberDecodeStruct extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \PayPal\StructType\TelephonyNumberDecodeStruct
+     * @return \Ovh\StructType\TelephonyNumberDecodeStruct
      */
     public function setLanguage($language = null)
     {
@@ -225,7 +225,7 @@ class TelephonyNumberDecodeStruct extends AbstractStructBase
     /**
      * Set cirpackNature value
      * @param string $cirpackNature
-     * @return \PayPal\StructType\TelephonyNumberDecodeStruct
+     * @return \Ovh\StructType\TelephonyNumberDecodeStruct
      */
     public function setCirpackNature($cirpackNature = null)
     {
@@ -247,7 +247,7 @@ class TelephonyNumberDecodeStruct extends AbstractStructBase
     /**
      * Set cirpackNumber value
      * @param string $cirpackNumber
-     * @return \PayPal\StructType\TelephonyNumberDecodeStruct
+     * @return \Ovh\StructType\TelephonyNumberDecodeStruct
      */
     public function setCirpackNumber($cirpackNumber = null)
     {
@@ -264,7 +264,7 @@ class TelephonyNumberDecodeStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyNumberDecodeStruct
+     * @return \Ovh\StructType\TelephonyNumberDecodeStruct
      */
     public static function __set_state(array $array)
     {

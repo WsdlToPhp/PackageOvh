@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class DedicatedReverseAdd extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedReverseAdd
+     * @return \Ovh\StructType\DedicatedReverseAdd
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class DedicatedReverseAdd extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedReverseAdd
+     * @return \Ovh\StructType\DedicatedReverseAdd
      */
     public function setHostname($hostname = null)
     {
@@ -113,7 +113,7 @@ class DedicatedReverseAdd extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\DedicatedReverseAdd
+     * @return \Ovh\StructType\DedicatedReverseAdd
      */
     public function setIp($ip = null)
     {
@@ -135,7 +135,7 @@ class DedicatedReverseAdd extends AbstractStructBase
     /**
      * Set reverse value
      * @param string $reverse
-     * @return \PayPal\StructType\DedicatedReverseAdd
+     * @return \Ovh\StructType\DedicatedReverseAdd
      */
     public function setReverse($reverse = null)
     {
@@ -152,7 +152,7 @@ class DedicatedReverseAdd extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedReverseAdd
+     * @return \Ovh\StructType\DedicatedReverseAdd
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyHuntingGenericScreenListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyHuntingGenericScreenStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyHuntingGenericScreenStructType
      */
     public $return;
     /**
      * Constructor method for telephonyHuntingGenericScreenListResponse
      * @uses TelephonyHuntingGenericScreenListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyHuntingGenericScreenStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyHuntingGenericScreenStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonyHuntingGenericScreenStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonyHuntingGenericScreenStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyHuntingGenericScreenStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyHuntingGenericScreenStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyHuntingGenericScreenListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyHuntingGenericScreenStructType $return
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenListResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyHuntingGenericScreenStructType $return
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonyHuntingGenericScreenStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonyHuntingGenericScreenStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyHuntingGenericScreenListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenListResponse
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenListResponse
      */
     public static function __set_state(array $array)
     {

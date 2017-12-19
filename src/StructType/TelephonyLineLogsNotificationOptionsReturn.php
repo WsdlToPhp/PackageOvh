@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class TelephonyLineLogsNotificationOptionsReturn extends AbstractStructBase
     /**
      * Set frequency value
      * @param string $frequency
-     * @return \PayPal\StructType\TelephonyLineLogsNotificationOptionsReturn
+     * @return \Ovh\StructType\TelephonyLineLogsNotificationOptionsReturn
      */
     public function setFrequency($frequency = null)
     {
@@ -75,7 +75,7 @@ class TelephonyLineLogsNotificationOptionsReturn extends AbstractStructBase
     /**
      * Set sendIfNull value
      * @param bool $sendIfNull
-     * @return \PayPal\StructType\TelephonyLineLogsNotificationOptionsReturn
+     * @return \Ovh\StructType\TelephonyLineLogsNotificationOptionsReturn
      */
     public function setSendIfNull($sendIfNull = null)
     {
@@ -97,7 +97,7 @@ class TelephonyLineLogsNotificationOptionsReturn extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\TelephonyLineLogsNotificationOptionsReturn
+     * @return \Ovh\StructType\TelephonyLineLogsNotificationOptionsReturn
      */
     public function setEmail($email = null)
     {
@@ -114,7 +114,7 @@ class TelephonyLineLogsNotificationOptionsReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyLineLogsNotificationOptionsReturn
+     * @return \Ovh\StructType\TelephonyLineLogsNotificationOptionsReturn
      */
     public static function __set_state(array $array)
     {

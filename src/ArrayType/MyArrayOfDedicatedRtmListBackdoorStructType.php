@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfDedicatedRtmListBackdoorStructType extends AbstractStructArrayBas
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\DedicatedRtmListBackdoorStruct[]
+     * @var \Ovh\StructType\DedicatedRtmListBackdoorStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfDedicatedRtmListBackdoorStructType
      * @uses MyArrayOfDedicatedRtmListBackdoorStructType::setItem()
-     * @param \PayPal\StructType\DedicatedRtmListBackdoorStruct[] $item
+     * @param \Ovh\StructType\DedicatedRtmListBackdoorStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfDedicatedRtmListBackdoorStructType extends AbstractStructArrayBas
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct[]|null
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfDedicatedRtmListBackdoorStructType extends AbstractStructArrayBas
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedRtmListBackdoorStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedRtmListBackdoorStructType
+     * @param \Ovh\StructType\DedicatedRtmListBackdoorStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedRtmListBackdoorStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfDedicatedRtmListBackdoorStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfDedicatedRtmListBackdoorStructTypeItemItem instanceof \PayPal\StructType\DedicatedRtmListBackdoorStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedRtmListBackdoorStruct, "%s" given', is_object($myArrayOfDedicatedRtmListBackdoorStructTypeItemItem) ? get_class($myArrayOfDedicatedRtmListBackdoorStructTypeItemItem) : gettype($myArrayOfDedicatedRtmListBackdoorStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfDedicatedRtmListBackdoorStructTypeItemItem instanceof \Ovh\StructType\DedicatedRtmListBackdoorStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedRtmListBackdoorStruct, "%s" given', is_object($myArrayOfDedicatedRtmListBackdoorStructTypeItemItem) ? get_class($myArrayOfDedicatedRtmListBackdoorStructTypeItemItem) : gettype($myArrayOfDedicatedRtmListBackdoorStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfDedicatedRtmListBackdoorStructType extends AbstractStructArrayBas
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedRtmListBackdoorStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedRtmListBackdoorStructType
+     * @param \Ovh\StructType\DedicatedRtmListBackdoorStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedRtmListBackdoorStructType
      */
-    public function addToItem(\PayPal\StructType\DedicatedRtmListBackdoorStruct $item)
+    public function addToItem(\Ovh\StructType\DedicatedRtmListBackdoorStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\DedicatedRtmListBackdoorStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedRtmListBackdoorStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\DedicatedRtmListBackdoorStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedRtmListBackdoorStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfDedicatedRtmListBackdoorStructType extends AbstractStructArrayBas
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct|null
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfDedicatedRtmListBackdoorStructType extends AbstractStructArrayBas
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct|null
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfDedicatedRtmListBackdoorStructType extends AbstractStructArrayBas
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct|null
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfDedicatedRtmListBackdoorStructType extends AbstractStructArrayBas
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct|null
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfDedicatedRtmListBackdoorStructType extends AbstractStructArrayBas
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorStruct|null
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfDedicatedRtmListBackdoorStructType extends AbstractStructArrayBas
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedRtmListBackdoorStructType
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedRtmListBackdoorStructType
      */
     public static function __set_state(array $array)
     {

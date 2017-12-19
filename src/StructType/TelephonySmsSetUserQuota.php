@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class TelephonySmsSetUserQuota extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonySmsSetUserQuota
+     * @return \Ovh\StructType\TelephonySmsSetUserQuota
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class TelephonySmsSetUserQuota extends AbstractStructBase
     /**
      * Set smsAccount value
      * @param string $smsAccount
-     * @return \PayPal\StructType\TelephonySmsSetUserQuota
+     * @return \Ovh\StructType\TelephonySmsSetUserQuota
      */
     public function setSmsAccount($smsAccount = null)
     {
@@ -123,7 +123,7 @@ class TelephonySmsSetUserQuota extends AbstractStructBase
     /**
      * Set login value
      * @param string $login
-     * @return \PayPal\StructType\TelephonySmsSetUserQuota
+     * @return \Ovh\StructType\TelephonySmsSetUserQuota
      */
     public function setLogin($login = null)
     {
@@ -145,7 +145,7 @@ class TelephonySmsSetUserQuota extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\TelephonySmsSetUserQuota
+     * @return \Ovh\StructType\TelephonySmsSetUserQuota
      */
     public function setStatus($status = null)
     {
@@ -167,7 +167,7 @@ class TelephonySmsSetUserQuota extends AbstractStructBase
     /**
      * Set quotaDiff value
      * @param string $quotaDiff
-     * @return \PayPal\StructType\TelephonySmsSetUserQuota
+     * @return \Ovh\StructType\TelephonySmsSetUserQuota
      */
     public function setQuotaDiff($quotaDiff = null)
     {
@@ -184,7 +184,7 @@ class TelephonySmsSetUserQuota extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsSetUserQuota
+     * @return \Ovh\StructType\TelephonySmsSetUserQuota
      */
     public static function __set_state(array $array)
     {

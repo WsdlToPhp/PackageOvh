@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class ManagedServicesPartitionUpdate extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\ManagedServicesPartitionUpdate
+     * @return \Ovh\StructType\ManagedServicesPartitionUpdate
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class ManagedServicesPartitionUpdate extends AbstractStructBase
     /**
      * Set storage value
      * @param string $storage
-     * @return \PayPal\StructType\ManagedServicesPartitionUpdate
+     * @return \Ovh\StructType\ManagedServicesPartitionUpdate
      */
     public function setStorage($storage = null)
     {
@@ -113,7 +113,7 @@ class ManagedServicesPartitionUpdate extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\ManagedServicesPartitionUpdate
+     * @return \Ovh\StructType\ManagedServicesPartitionUpdate
      */
     public function setName($name = null)
     {
@@ -135,7 +135,7 @@ class ManagedServicesPartitionUpdate extends AbstractStructBase
     /**
      * Set size value
      * @param int $size
-     * @return \PayPal\StructType\ManagedServicesPartitionUpdate
+     * @return \Ovh\StructType\ManagedServicesPartitionUpdate
      */
     public function setSize($size = null)
     {
@@ -152,7 +152,7 @@ class ManagedServicesPartitionUpdate extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ManagedServicesPartitionUpdate
+     * @return \Ovh\StructType\ManagedServicesPartitionUpdate
      */
     public static function __set_state(array $array)
     {

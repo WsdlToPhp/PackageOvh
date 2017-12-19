@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -85,7 +85,7 @@ class DedicatedCapabilityStruct extends AbstractStructBase
     /**
      * Set backupFtp value
      * @param int $backupFtp
-     * @return \PayPal\StructType\DedicatedCapabilityStruct
+     * @return \Ovh\StructType\DedicatedCapabilityStruct
      */
     public function setBackupFtp($backupFtp = null)
     {
@@ -107,7 +107,7 @@ class DedicatedCapabilityStruct extends AbstractStructBase
     /**
      * Set backupFtpServer value
      * @param string $backupFtpServer
-     * @return \PayPal\StructType\DedicatedCapabilityStruct
+     * @return \Ovh\StructType\DedicatedCapabilityStruct
      */
     public function setBackupFtpServer($backupFtpServer = null)
     {
@@ -129,7 +129,7 @@ class DedicatedCapabilityStruct extends AbstractStructBase
     /**
      * Set allocationBlockIp value
      * @param int $allocationBlockIp
-     * @return \PayPal\StructType\DedicatedCapabilityStruct
+     * @return \Ovh\StructType\DedicatedCapabilityStruct
      */
     public function setAllocationBlockIp($allocationBlockIp = null)
     {
@@ -151,7 +151,7 @@ class DedicatedCapabilityStruct extends AbstractStructBase
     /**
      * Set additionalIp value
      * @param int $additionalIp
-     * @return \PayPal\StructType\DedicatedCapabilityStruct
+     * @return \Ovh\StructType\DedicatedCapabilityStruct
      */
     public function setAdditionalIp($additionalIp = null)
     {
@@ -173,7 +173,7 @@ class DedicatedCapabilityStruct extends AbstractStructBase
     /**
      * Set rootDevice value
      * @param string $rootDevice
-     * @return \PayPal\StructType\DedicatedCapabilityStruct
+     * @return \Ovh\StructType\DedicatedCapabilityStruct
      */
     public function setRootDevice($rootDevice = null)
     {
@@ -195,7 +195,7 @@ class DedicatedCapabilityStruct extends AbstractStructBase
     /**
      * Set diskSize value
      * @param int $diskSize
-     * @return \PayPal\StructType\DedicatedCapabilityStruct
+     * @return \Ovh\StructType\DedicatedCapabilityStruct
      */
     public function setDiskSize($diskSize = null)
     {
@@ -217,7 +217,7 @@ class DedicatedCapabilityStruct extends AbstractStructBase
     /**
      * Set tuning value
      * @param int $tuning
-     * @return \PayPal\StructType\DedicatedCapabilityStruct
+     * @return \Ovh\StructType\DedicatedCapabilityStruct
      */
     public function setTuning($tuning = null)
     {
@@ -234,7 +234,7 @@ class DedicatedCapabilityStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedCapabilityStruct
+     * @return \Ovh\StructType\DedicatedCapabilityStruct
      */
     public static function __set_state(array $array)
     {

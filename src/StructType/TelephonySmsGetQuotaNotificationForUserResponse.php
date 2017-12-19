@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonySmsGetQuotaNotificationForUserResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyNotificationSmsUserStruct
+     * @var \Ovh\StructType\TelephonyNotificationSmsUserStruct
      */
     public $return;
     /**
      * Constructor method for telephonySmsGetQuotaNotificationForUserResponse
      * @uses TelephonySmsGetQuotaNotificationForUserResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyNotificationSmsUserStruct $return
+     * @param \Ovh\StructType\TelephonyNotificationSmsUserStruct $return
      */
-    public function __construct(\PayPal\StructType\TelephonyNotificationSmsUserStruct $return = null)
+    public function __construct(\Ovh\StructType\TelephonyNotificationSmsUserStruct $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyNotificationSmsUserStruct|null
+     * @return \Ovh\StructType\TelephonyNotificationSmsUserStruct|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonySmsGetQuotaNotificationForUserResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyNotificationSmsUserStruct $return
-     * @return \PayPal\StructType\TelephonySmsGetQuotaNotificationForUserResponse
+     * @param \Ovh\StructType\TelephonyNotificationSmsUserStruct $return
+     * @return \Ovh\StructType\TelephonySmsGetQuotaNotificationForUserResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyNotificationSmsUserStruct $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyNotificationSmsUserStruct $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonySmsGetQuotaNotificationForUserResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsGetQuotaNotificationForUserResponse
+     * @return \Ovh\StructType\TelephonySmsGetQuotaNotificationForUserResponse
      */
     public static function __set_state(array $array)
     {

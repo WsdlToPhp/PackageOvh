@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class RipeReturn extends AbstractStructBase
 {
     /**
      * The inetnum
-     * @var \PayPal\StructType\RipeInetnumStruct
+     * @var \Ovh\StructType\RipeInetnumStruct
      */
     public $inetnum;
     /**
      * The organisation
-     * @var \PayPal\StructType\RipeOrganisationStruct
+     * @var \Ovh\StructType\RipeOrganisationStruct
      */
     public $organisation;
     /**
      * Constructor method for ripeReturn
      * @uses RipeReturn::setInetnum()
      * @uses RipeReturn::setOrganisation()
-     * @param \PayPal\StructType\RipeInetnumStruct $inetnum
-     * @param \PayPal\StructType\RipeOrganisationStruct $organisation
+     * @param \Ovh\StructType\RipeInetnumStruct $inetnum
+     * @param \Ovh\StructType\RipeOrganisationStruct $organisation
      */
-    public function __construct(\PayPal\StructType\RipeInetnumStruct $inetnum = null, \PayPal\StructType\RipeOrganisationStruct $organisation = null)
+    public function __construct(\Ovh\StructType\RipeInetnumStruct $inetnum = null, \Ovh\StructType\RipeOrganisationStruct $organisation = null)
     {
         $this
             ->setInetnum($inetnum)
@@ -36,7 +36,7 @@ class RipeReturn extends AbstractStructBase
     }
     /**
      * Get inetnum value
-     * @return \PayPal\StructType\RipeInetnumStruct|null
+     * @return \Ovh\StructType\RipeInetnumStruct|null
      */
     public function getInetnum()
     {
@@ -44,17 +44,17 @@ class RipeReturn extends AbstractStructBase
     }
     /**
      * Set inetnum value
-     * @param \PayPal\StructType\RipeInetnumStruct $inetnum
-     * @return \PayPal\StructType\RipeReturn
+     * @param \Ovh\StructType\RipeInetnumStruct $inetnum
+     * @return \Ovh\StructType\RipeReturn
      */
-    public function setInetnum(\PayPal\StructType\RipeInetnumStruct $inetnum = null)
+    public function setInetnum(\Ovh\StructType\RipeInetnumStruct $inetnum = null)
     {
         $this->inetnum = $inetnum;
         return $this;
     }
     /**
      * Get organisation value
-     * @return \PayPal\StructType\RipeOrganisationStruct|null
+     * @return \Ovh\StructType\RipeOrganisationStruct|null
      */
     public function getOrganisation()
     {
@@ -62,10 +62,10 @@ class RipeReturn extends AbstractStructBase
     }
     /**
      * Set organisation value
-     * @param \PayPal\StructType\RipeOrganisationStruct $organisation
-     * @return \PayPal\StructType\RipeReturn
+     * @param \Ovh\StructType\RipeOrganisationStruct $organisation
+     * @return \Ovh\StructType\RipeReturn
      */
-    public function setOrganisation(\PayPal\StructType\RipeOrganisationStruct $organisation = null)
+    public function setOrganisation(\Ovh\StructType\RipeOrganisationStruct $organisation = null)
     {
         $this->organisation = $organisation;
         return $this;
@@ -76,7 +76,7 @@ class RipeReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RipeReturn
+     * @return \Ovh\StructType\RipeReturn
      */
     public static function __set_state(array $array)
     {

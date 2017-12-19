@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class TelephonyGetClosureEventsAsIcsStruct extends AbstractStructBase
     /**
      * Set numberOfEvents value
      * @param int $numberOfEvents
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsIcsStruct
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsIcsStruct
      */
     public function setNumberOfEvents($numberOfEvents = null)
     {
@@ -67,7 +67,7 @@ class TelephonyGetClosureEventsAsIcsStruct extends AbstractStructBase
     /**
      * Set datas value
      * @param string $datas
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsIcsStruct
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsIcsStruct
      */
     public function setDatas($datas = null)
     {
@@ -84,7 +84,7 @@ class TelephonyGetClosureEventsAsIcsStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsIcsStruct
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsIcsStruct
      */
     public static function __set_state(array $array)
     {

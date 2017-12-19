@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,7 +49,7 @@ class BillingGetReferencesToExpired extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\BillingGetReferencesToExpired
+     * @return \Ovh\StructType\BillingGetReferencesToExpired
      */
     public function setSession($session = null)
     {
@@ -71,7 +71,7 @@ class BillingGetReferencesToExpired extends AbstractStructBase
     /**
      * Set delay value
      * @param int $delay
-     * @return \PayPal\StructType\BillingGetReferencesToExpired
+     * @return \Ovh\StructType\BillingGetReferencesToExpired
      */
     public function setDelay($delay = null)
     {
@@ -88,7 +88,7 @@ class BillingGetReferencesToExpired extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\BillingGetReferencesToExpired
+     * @return \Ovh\StructType\BillingGetReferencesToExpired
      */
     public static function __set_state(array $array)
     {

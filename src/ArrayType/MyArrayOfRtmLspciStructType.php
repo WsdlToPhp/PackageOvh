@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfRtmLspciStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\RtmLspciStruct[]
+     * @var \Ovh\StructType\RtmLspciStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfRtmLspciStructType
      * @uses MyArrayOfRtmLspciStructType::setItem()
-     * @param \PayPal\StructType\RtmLspciStruct[] $item
+     * @param \Ovh\StructType\RtmLspciStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfRtmLspciStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\RtmLspciStruct[]|null
+     * @return \Ovh\StructType\RtmLspciStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfRtmLspciStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\RtmLspciStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfRtmLspciStructType
+     * @param \Ovh\StructType\RtmLspciStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfRtmLspciStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfRtmLspciStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfRtmLspciStructTypeItemItem instanceof \PayPal\StructType\RtmLspciStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\RtmLspciStruct, "%s" given', is_object($myArrayOfRtmLspciStructTypeItemItem) ? get_class($myArrayOfRtmLspciStructTypeItemItem) : gettype($myArrayOfRtmLspciStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfRtmLspciStructTypeItemItem instanceof \Ovh\StructType\RtmLspciStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\RtmLspciStruct, "%s" given', is_object($myArrayOfRtmLspciStructTypeItemItem) ? get_class($myArrayOfRtmLspciStructTypeItemItem) : gettype($myArrayOfRtmLspciStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfRtmLspciStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\RtmLspciStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfRtmLspciStructType
+     * @param \Ovh\StructType\RtmLspciStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfRtmLspciStructType
      */
-    public function addToItem(\PayPal\StructType\RtmLspciStruct $item)
+    public function addToItem(\Ovh\StructType\RtmLspciStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\RtmLspciStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\RtmLspciStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\RtmLspciStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\RtmLspciStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfRtmLspciStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\RtmLspciStruct|null
+     * @return \Ovh\StructType\RtmLspciStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfRtmLspciStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\RtmLspciStruct|null
+     * @return \Ovh\StructType\RtmLspciStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfRtmLspciStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\RtmLspciStruct|null
+     * @return \Ovh\StructType\RtmLspciStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfRtmLspciStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\RtmLspciStruct|null
+     * @return \Ovh\StructType\RtmLspciStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfRtmLspciStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\RtmLspciStruct|null
+     * @return \Ovh\StructType\RtmLspciStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfRtmLspciStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfRtmLspciStructType
+     * @return \Ovh\ArrayType\MyArrayOfRtmLspciStructType
      */
     public static function __set_state(array $array)
     {

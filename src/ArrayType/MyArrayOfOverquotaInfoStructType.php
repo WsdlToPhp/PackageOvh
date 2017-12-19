@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfOverquotaInfoStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\OverquotaInfoStruct[]
+     * @var \Ovh\StructType\OverquotaInfoStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfOverquotaInfoStructType
      * @uses MyArrayOfOverquotaInfoStructType::setItem()
-     * @param \PayPal\StructType\OverquotaInfoStruct[] $item
+     * @param \Ovh\StructType\OverquotaInfoStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfOverquotaInfoStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\OverquotaInfoStruct[]|null
+     * @return \Ovh\StructType\OverquotaInfoStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfOverquotaInfoStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\OverquotaInfoStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfOverquotaInfoStructType
+     * @param \Ovh\StructType\OverquotaInfoStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfOverquotaInfoStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfOverquotaInfoStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfOverquotaInfoStructTypeItemItem instanceof \PayPal\StructType\OverquotaInfoStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\OverquotaInfoStruct, "%s" given', is_object($myArrayOfOverquotaInfoStructTypeItemItem) ? get_class($myArrayOfOverquotaInfoStructTypeItemItem) : gettype($myArrayOfOverquotaInfoStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfOverquotaInfoStructTypeItemItem instanceof \Ovh\StructType\OverquotaInfoStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\OverquotaInfoStruct, "%s" given', is_object($myArrayOfOverquotaInfoStructTypeItemItem) ? get_class($myArrayOfOverquotaInfoStructTypeItemItem) : gettype($myArrayOfOverquotaInfoStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfOverquotaInfoStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\OverquotaInfoStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfOverquotaInfoStructType
+     * @param \Ovh\StructType\OverquotaInfoStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfOverquotaInfoStructType
      */
-    public function addToItem(\PayPal\StructType\OverquotaInfoStruct $item)
+    public function addToItem(\Ovh\StructType\OverquotaInfoStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\OverquotaInfoStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\OverquotaInfoStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\OverquotaInfoStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\OverquotaInfoStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfOverquotaInfoStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\OverquotaInfoStruct|null
+     * @return \Ovh\StructType\OverquotaInfoStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfOverquotaInfoStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\OverquotaInfoStruct|null
+     * @return \Ovh\StructType\OverquotaInfoStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfOverquotaInfoStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\OverquotaInfoStruct|null
+     * @return \Ovh\StructType\OverquotaInfoStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfOverquotaInfoStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\OverquotaInfoStruct|null
+     * @return \Ovh\StructType\OverquotaInfoStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfOverquotaInfoStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\OverquotaInfoStruct|null
+     * @return \Ovh\StructType\OverquotaInfoStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfOverquotaInfoStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfOverquotaInfoStructType
+     * @return \Ovh\ArrayType\MyArrayOfOverquotaInfoStructType
      */
     public static function __set_state(array $array)
     {

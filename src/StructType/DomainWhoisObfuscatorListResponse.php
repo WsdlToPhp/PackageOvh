@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DomainWhoisObfuscatorListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfDomainWhoisObfuscatorStructType
+     * @var \Ovh\ArrayType\MyArrayOfDomainWhoisObfuscatorStructType
      */
     public $return;
     /**
      * Constructor method for domainWhoisObfuscatorListResponse
      * @uses DomainWhoisObfuscatorListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfDomainWhoisObfuscatorStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfDomainWhoisObfuscatorStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfDomainWhoisObfuscatorStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfDomainWhoisObfuscatorStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfDomainWhoisObfuscatorStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDomainWhoisObfuscatorStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DomainWhoisObfuscatorListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfDomainWhoisObfuscatorStructType $return
-     * @return \PayPal\StructType\DomainWhoisObfuscatorListResponse
+     * @param \Ovh\ArrayType\MyArrayOfDomainWhoisObfuscatorStructType $return
+     * @return \Ovh\StructType\DomainWhoisObfuscatorListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfDomainWhoisObfuscatorStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfDomainWhoisObfuscatorStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DomainWhoisObfuscatorListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DomainWhoisObfuscatorListResponse
+     * @return \Ovh\StructType\DomainWhoisObfuscatorListResponse
      */
     public static function __set_state(array $array)
     {

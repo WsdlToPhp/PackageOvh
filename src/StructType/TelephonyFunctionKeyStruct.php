@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -43,7 +43,7 @@ class TelephonyFunctionKeyStruct extends AbstractStructBase
     public $type;
     /**
      * The functionList
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyAvailableFunctionStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyAvailableFunctionStructType
      */
     public $functionList;
     /**
@@ -61,9 +61,9 @@ class TelephonyFunctionKeyStruct extends AbstractStructBase
      * @param string $label
      * @param string $default
      * @param string $type
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyAvailableFunctionStructType $functionList
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyAvailableFunctionStructType $functionList
      */
-    public function __construct($keyNum = null, $function = null, $relatedNumber = null, $label = null, $default = null, $type = null, \PayPal\ArrayType\MyArrayOfTelephonyAvailableFunctionStructType $functionList = null)
+    public function __construct($keyNum = null, $function = null, $relatedNumber = null, $label = null, $default = null, $type = null, \Ovh\ArrayType\MyArrayOfTelephonyAvailableFunctionStructType $functionList = null)
     {
         $this
             ->setKeyNum($keyNum)
@@ -85,7 +85,7 @@ class TelephonyFunctionKeyStruct extends AbstractStructBase
     /**
      * Set keyNum value
      * @param int $keyNum
-     * @return \PayPal\StructType\TelephonyFunctionKeyStruct
+     * @return \Ovh\StructType\TelephonyFunctionKeyStruct
      */
     public function setKeyNum($keyNum = null)
     {
@@ -107,7 +107,7 @@ class TelephonyFunctionKeyStruct extends AbstractStructBase
     /**
      * Set function value
      * @param string $function
-     * @return \PayPal\StructType\TelephonyFunctionKeyStruct
+     * @return \Ovh\StructType\TelephonyFunctionKeyStruct
      */
     public function setFunction($function = null)
     {
@@ -129,7 +129,7 @@ class TelephonyFunctionKeyStruct extends AbstractStructBase
     /**
      * Set relatedNumber value
      * @param string $relatedNumber
-     * @return \PayPal\StructType\TelephonyFunctionKeyStruct
+     * @return \Ovh\StructType\TelephonyFunctionKeyStruct
      */
     public function setRelatedNumber($relatedNumber = null)
     {
@@ -151,7 +151,7 @@ class TelephonyFunctionKeyStruct extends AbstractStructBase
     /**
      * Set label value
      * @param string $label
-     * @return \PayPal\StructType\TelephonyFunctionKeyStruct
+     * @return \Ovh\StructType\TelephonyFunctionKeyStruct
      */
     public function setLabel($label = null)
     {
@@ -173,7 +173,7 @@ class TelephonyFunctionKeyStruct extends AbstractStructBase
     /**
      * Set default value
      * @param string $default
-     * @return \PayPal\StructType\TelephonyFunctionKeyStruct
+     * @return \Ovh\StructType\TelephonyFunctionKeyStruct
      */
     public function setDefault($default = null)
     {
@@ -195,7 +195,7 @@ class TelephonyFunctionKeyStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\TelephonyFunctionKeyStruct
+     * @return \Ovh\StructType\TelephonyFunctionKeyStruct
      */
     public function setType($type = null)
     {
@@ -208,7 +208,7 @@ class TelephonyFunctionKeyStruct extends AbstractStructBase
     }
     /**
      * Get functionList value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyAvailableFunctionStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyAvailableFunctionStructType|null
      */
     public function getFunctionList()
     {
@@ -216,10 +216,10 @@ class TelephonyFunctionKeyStruct extends AbstractStructBase
     }
     /**
      * Set functionList value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyAvailableFunctionStructType $functionList
-     * @return \PayPal\StructType\TelephonyFunctionKeyStruct
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyAvailableFunctionStructType $functionList
+     * @return \Ovh\StructType\TelephonyFunctionKeyStruct
      */
-    public function setFunctionList(\PayPal\ArrayType\MyArrayOfTelephonyAvailableFunctionStructType $functionList = null)
+    public function setFunctionList(\Ovh\ArrayType\MyArrayOfTelephonyAvailableFunctionStructType $functionList = null)
     {
         $this->functionList = $functionList;
         return $this;
@@ -230,7 +230,7 @@ class TelephonyFunctionKeyStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFunctionKeyStruct
+     * @return \Ovh\StructType\TelephonyFunctionKeyStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class SqlpriveMysqlGetPossibleDump extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\SqlpriveMysqlGetPossibleDump
+     * @return \Ovh\StructType\SqlpriveMysqlGetPossibleDump
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class SqlpriveMysqlGetPossibleDump extends AbstractStructBase
     /**
      * Set server value
      * @param string $server
-     * @return \PayPal\StructType\SqlpriveMysqlGetPossibleDump
+     * @return \Ovh\StructType\SqlpriveMysqlGetPossibleDump
      */
     public function setServer($server = null)
     {
@@ -103,7 +103,7 @@ class SqlpriveMysqlGetPossibleDump extends AbstractStructBase
     /**
      * Set directory value
      * @param string $directory
-     * @return \PayPal\StructType\SqlpriveMysqlGetPossibleDump
+     * @return \Ovh\StructType\SqlpriveMysqlGetPossibleDump
      */
     public function setDirectory($directory = null)
     {
@@ -120,7 +120,7 @@ class SqlpriveMysqlGetPossibleDump extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SqlpriveMysqlGetPossibleDump
+     * @return \Ovh\StructType\SqlpriveMysqlGetPossibleDump
      */
     public static function __set_state(array $array)
     {

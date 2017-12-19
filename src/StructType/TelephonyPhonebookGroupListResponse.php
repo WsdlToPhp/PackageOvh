@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyPhonebookGroupListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType
      */
     public $return;
     /**
      * Constructor method for telephonyPhonebookGroupListResponse
      * @uses TelephonyPhonebookGroupListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyPhonebookGroupListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType $return
-     * @return \PayPal\StructType\TelephonyPhonebookGroupListResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType $return
+     * @return \Ovh\StructType\TelephonyPhonebookGroupListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyPhonebookGroupListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyPhonebookGroupListResponse
+     * @return \Ovh\StructType\TelephonyPhonebookGroupListResponse
      */
     public static function __set_state(array $array)
     {

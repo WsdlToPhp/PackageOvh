@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -129,7 +129,7 @@ class CrontabAdd extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\CrontabAdd
+     * @return \Ovh\StructType\CrontabAdd
      */
     public function setSession($session = null)
     {
@@ -151,7 +151,7 @@ class CrontabAdd extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\CrontabAdd
+     * @return \Ovh\StructType\CrontabAdd
      */
     public function setDomain($domain = null)
     {
@@ -173,7 +173,7 @@ class CrontabAdd extends AbstractStructBase
     /**
      * Set path value
      * @param string $path
-     * @return \PayPal\StructType\CrontabAdd
+     * @return \Ovh\StructType\CrontabAdd
      */
     public function setPath($path = null)
     {
@@ -195,7 +195,7 @@ class CrontabAdd extends AbstractStructBase
     /**
      * Set programLanguage value
      * @param string $programLanguage
-     * @return \PayPal\StructType\CrontabAdd
+     * @return \Ovh\StructType\CrontabAdd
      */
     public function setProgramLanguage($programLanguage = null)
     {
@@ -217,7 +217,7 @@ class CrontabAdd extends AbstractStructBase
     /**
      * Set weekDay value
      * @param string $weekDay
-     * @return \PayPal\StructType\CrontabAdd
+     * @return \Ovh\StructType\CrontabAdd
      */
     public function setWeekDay($weekDay = null)
     {
@@ -239,7 +239,7 @@ class CrontabAdd extends AbstractStructBase
     /**
      * Set days value
      * @param string $days
-     * @return \PayPal\StructType\CrontabAdd
+     * @return \Ovh\StructType\CrontabAdd
      */
     public function setDays($days = null)
     {
@@ -261,7 +261,7 @@ class CrontabAdd extends AbstractStructBase
     /**
      * Set hours value
      * @param string $hours
-     * @return \PayPal\StructType\CrontabAdd
+     * @return \Ovh\StructType\CrontabAdd
      */
     public function setHours($hours = null)
     {
@@ -283,7 +283,7 @@ class CrontabAdd extends AbstractStructBase
     /**
      * Set desc value
      * @param string $desc
-     * @return \PayPal\StructType\CrontabAdd
+     * @return \Ovh\StructType\CrontabAdd
      */
     public function setDesc($desc = null)
     {
@@ -305,7 +305,7 @@ class CrontabAdd extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\CrontabAdd
+     * @return \Ovh\StructType\CrontabAdd
      */
     public function setEmail($email = null)
     {
@@ -327,7 +327,7 @@ class CrontabAdd extends AbstractStructBase
     /**
      * Set otherEmail value
      * @param string $otherEmail
-     * @return \PayPal\StructType\CrontabAdd
+     * @return \Ovh\StructType\CrontabAdd
      */
     public function setOtherEmail($otherEmail = null)
     {
@@ -344,7 +344,7 @@ class CrontabAdd extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\CrontabAdd
+     * @return \Ovh\StructType\CrontabAdd
      */
     public static function __set_state(array $array)
     {

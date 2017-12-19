@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class RtmLspciStruct extends AbstractStructBase
     /**
      * Set address value
      * @param string $address
-     * @return \PayPal\StructType\RtmLspciStruct
+     * @return \Ovh\StructType\RtmLspciStruct
      */
     public function setAddress($address = null)
     {
@@ -67,7 +67,7 @@ class RtmLspciStruct extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \PayPal\StructType\RtmLspciStruct
+     * @return \Ovh\StructType\RtmLspciStruct
      */
     public function setDescription($description = null)
     {
@@ -84,7 +84,7 @@ class RtmLspciStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RtmLspciStruct
+     * @return \Ovh\StructType\RtmLspciStruct
      */
     public static function __set_state(array $array)
     {

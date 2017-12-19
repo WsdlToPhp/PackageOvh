@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,27 +13,27 @@ class TelephonyGetDefaultPrivateHolidaysEventsReturn extends AbstractStructBase
 {
     /**
      * The fr
-     * @var \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct
+     * @var \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct
      */
     public $fr;
     /**
      * The be
-     * @var \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct
+     * @var \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct
      */
     public $be;
     /**
      * The uk
-     * @var \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct
+     * @var \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct
      */
     public $uk;
     /**
      * The de
-     * @var \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct
+     * @var \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct
      */
     public $de;
     /**
      * The es
-     * @var \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct
+     * @var \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct
      */
     public $es;
     /**
@@ -43,13 +43,13 @@ class TelephonyGetDefaultPrivateHolidaysEventsReturn extends AbstractStructBase
      * @uses TelephonyGetDefaultPrivateHolidaysEventsReturn::setUk()
      * @uses TelephonyGetDefaultPrivateHolidaysEventsReturn::setDe()
      * @uses TelephonyGetDefaultPrivateHolidaysEventsReturn::setEs()
-     * @param \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $fr
-     * @param \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $be
-     * @param \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $uk
-     * @param \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $de
-     * @param \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $es
+     * @param \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $fr
+     * @param \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $be
+     * @param \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $uk
+     * @param \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $de
+     * @param \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $es
      */
-    public function __construct(\PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $fr = null, \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $be = null, \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $uk = null, \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $de = null, \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $es = null)
+    public function __construct(\Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $fr = null, \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $be = null, \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $uk = null, \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $de = null, \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $es = null)
     {
         $this
             ->setFr($fr)
@@ -60,7 +60,7 @@ class TelephonyGetDefaultPrivateHolidaysEventsReturn extends AbstractStructBase
     }
     /**
      * Get fr value
-     * @return \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct|null
+     * @return \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct|null
      */
     public function getFr()
     {
@@ -68,17 +68,17 @@ class TelephonyGetDefaultPrivateHolidaysEventsReturn extends AbstractStructBase
     }
     /**
      * Set fr value
-     * @param \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $fr
-     * @return \PayPal\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn
+     * @param \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $fr
+     * @return \Ovh\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn
      */
-    public function setFr(\PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $fr = null)
+    public function setFr(\Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $fr = null)
     {
         $this->fr = $fr;
         return $this;
     }
     /**
      * Get be value
-     * @return \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct|null
+     * @return \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct|null
      */
     public function getBe()
     {
@@ -86,17 +86,17 @@ class TelephonyGetDefaultPrivateHolidaysEventsReturn extends AbstractStructBase
     }
     /**
      * Set be value
-     * @param \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $be
-     * @return \PayPal\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn
+     * @param \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $be
+     * @return \Ovh\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn
      */
-    public function setBe(\PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $be = null)
+    public function setBe(\Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $be = null)
     {
         $this->be = $be;
         return $this;
     }
     /**
      * Get uk value
-     * @return \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct|null
+     * @return \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct|null
      */
     public function getUk()
     {
@@ -104,17 +104,17 @@ class TelephonyGetDefaultPrivateHolidaysEventsReturn extends AbstractStructBase
     }
     /**
      * Set uk value
-     * @param \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $uk
-     * @return \PayPal\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn
+     * @param \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $uk
+     * @return \Ovh\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn
      */
-    public function setUk(\PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $uk = null)
+    public function setUk(\Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $uk = null)
     {
         $this->uk = $uk;
         return $this;
     }
     /**
      * Get de value
-     * @return \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct|null
+     * @return \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct|null
      */
     public function getDe()
     {
@@ -122,17 +122,17 @@ class TelephonyGetDefaultPrivateHolidaysEventsReturn extends AbstractStructBase
     }
     /**
      * Set de value
-     * @param \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $de
-     * @return \PayPal\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn
+     * @param \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $de
+     * @return \Ovh\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn
      */
-    public function setDe(\PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $de = null)
+    public function setDe(\Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $de = null)
     {
         $this->de = $de;
         return $this;
     }
     /**
      * Get es value
-     * @return \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct|null
+     * @return \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct|null
      */
     public function getEs()
     {
@@ -140,10 +140,10 @@ class TelephonyGetDefaultPrivateHolidaysEventsReturn extends AbstractStructBase
     }
     /**
      * Set es value
-     * @param \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $es
-     * @return \PayPal\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn
+     * @param \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $es
+     * @return \Ovh\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn
      */
-    public function setEs(\PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $es = null)
+    public function setEs(\Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsCountryStruct $es = null)
     {
         $this->es = $es;
         return $this;
@@ -154,7 +154,7 @@ class TelephonyGetDefaultPrivateHolidaysEventsReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn
+     * @return \Ovh\StructType\TelephonyGetDefaultPrivateHolidaysEventsReturn
      */
     public static function __set_state(array $array)
     {

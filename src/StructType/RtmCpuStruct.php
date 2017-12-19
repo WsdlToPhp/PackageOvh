@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,7 +38,7 @@ class RtmCpuStruct extends AbstractStructBase
     public $percentLoad;
     /**
      * The loadAvg
-     * @var \PayPal\StructType\RtmCpuLoadAvgStruct
+     * @var \Ovh\StructType\RtmCpuLoadAvgStruct
      */
     public $loadAvg;
     /**
@@ -54,9 +54,9 @@ class RtmCpuStruct extends AbstractStructBase
      * @param string $name
      * @param string $cache
      * @param int $percentLoad
-     * @param \PayPal\StructType\RtmCpuLoadAvgStruct $loadAvg
+     * @param \Ovh\StructType\RtmCpuLoadAvgStruct $loadAvg
      */
-    public function __construct($frequency = null, $core = null, $name = null, $cache = null, $percentLoad = null, \PayPal\StructType\RtmCpuLoadAvgStruct $loadAvg = null)
+    public function __construct($frequency = null, $core = null, $name = null, $cache = null, $percentLoad = null, \Ovh\StructType\RtmCpuLoadAvgStruct $loadAvg = null)
     {
         $this
             ->setFrequency($frequency)
@@ -77,7 +77,7 @@ class RtmCpuStruct extends AbstractStructBase
     /**
      * Set frequency value
      * @param string $frequency
-     * @return \PayPal\StructType\RtmCpuStruct
+     * @return \Ovh\StructType\RtmCpuStruct
      */
     public function setFrequency($frequency = null)
     {
@@ -99,7 +99,7 @@ class RtmCpuStruct extends AbstractStructBase
     /**
      * Set core value
      * @param int $core
-     * @return \PayPal\StructType\RtmCpuStruct
+     * @return \Ovh\StructType\RtmCpuStruct
      */
     public function setCore($core = null)
     {
@@ -121,7 +121,7 @@ class RtmCpuStruct extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\RtmCpuStruct
+     * @return \Ovh\StructType\RtmCpuStruct
      */
     public function setName($name = null)
     {
@@ -143,7 +143,7 @@ class RtmCpuStruct extends AbstractStructBase
     /**
      * Set cache value
      * @param string $cache
-     * @return \PayPal\StructType\RtmCpuStruct
+     * @return \Ovh\StructType\RtmCpuStruct
      */
     public function setCache($cache = null)
     {
@@ -165,7 +165,7 @@ class RtmCpuStruct extends AbstractStructBase
     /**
      * Set percentLoad value
      * @param int $percentLoad
-     * @return \PayPal\StructType\RtmCpuStruct
+     * @return \Ovh\StructType\RtmCpuStruct
      */
     public function setPercentLoad($percentLoad = null)
     {
@@ -178,7 +178,7 @@ class RtmCpuStruct extends AbstractStructBase
     }
     /**
      * Get loadAvg value
-     * @return \PayPal\StructType\RtmCpuLoadAvgStruct|null
+     * @return \Ovh\StructType\RtmCpuLoadAvgStruct|null
      */
     public function getLoadAvg()
     {
@@ -186,10 +186,10 @@ class RtmCpuStruct extends AbstractStructBase
     }
     /**
      * Set loadAvg value
-     * @param \PayPal\StructType\RtmCpuLoadAvgStruct $loadAvg
-     * @return \PayPal\StructType\RtmCpuStruct
+     * @param \Ovh\StructType\RtmCpuLoadAvgStruct $loadAvg
+     * @return \Ovh\StructType\RtmCpuStruct
      */
-    public function setLoadAvg(\PayPal\StructType\RtmCpuLoadAvgStruct $loadAvg = null)
+    public function setLoadAvg(\Ovh\StructType\RtmCpuLoadAvgStruct $loadAvg = null)
     {
         $this->loadAvg = $loadAvg;
         return $this;
@@ -200,7 +200,7 @@ class RtmCpuStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RtmCpuStruct
+     * @return \Ovh\StructType\RtmCpuStruct
      */
     public static function __set_state(array $array)
     {

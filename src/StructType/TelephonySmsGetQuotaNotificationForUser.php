@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class TelephonySmsGetQuotaNotificationForUser extends AbstractStructBase
     /**
      * Set smsAccount value
      * @param string $smsAccount
-     * @return \PayPal\StructType\TelephonySmsGetQuotaNotificationForUser
+     * @return \Ovh\StructType\TelephonySmsGetQuotaNotificationForUser
      */
     public function setSmsAccount($smsAccount = null)
     {
@@ -81,7 +81,7 @@ class TelephonySmsGetQuotaNotificationForUser extends AbstractStructBase
     /**
      * Set login value
      * @param string $login
-     * @return \PayPal\StructType\TelephonySmsGetQuotaNotificationForUser
+     * @return \Ovh\StructType\TelephonySmsGetQuotaNotificationForUser
      */
     public function setLogin($login = null)
     {
@@ -103,7 +103,7 @@ class TelephonySmsGetQuotaNotificationForUser extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \PayPal\StructType\TelephonySmsGetQuotaNotificationForUser
+     * @return \Ovh\StructType\TelephonySmsGetQuotaNotificationForUser
      */
     public function setPassword($password = null)
     {
@@ -120,7 +120,7 @@ class TelephonySmsGetQuotaNotificationForUser extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsGetQuotaNotificationForUser
+     * @return \Ovh\StructType\TelephonySmsGetQuotaNotificationForUser
      */
     public static function __set_state(array $array)
     {

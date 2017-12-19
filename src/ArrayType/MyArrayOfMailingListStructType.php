@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfMailingListStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\MailingListStruct[]
+     * @var \Ovh\StructType\MailingListStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfMailingListStructType
      * @uses MyArrayOfMailingListStructType::setItem()
-     * @param \PayPal\StructType\MailingListStruct[] $item
+     * @param \Ovh\StructType\MailingListStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfMailingListStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\MailingListStruct[]|null
+     * @return \Ovh\StructType\MailingListStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfMailingListStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\MailingListStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfMailingListStructType
+     * @param \Ovh\StructType\MailingListStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfMailingListStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfMailingListStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfMailingListStructTypeItemItem instanceof \PayPal\StructType\MailingListStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\MailingListStruct, "%s" given', is_object($myArrayOfMailingListStructTypeItemItem) ? get_class($myArrayOfMailingListStructTypeItemItem) : gettype($myArrayOfMailingListStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfMailingListStructTypeItemItem instanceof \Ovh\StructType\MailingListStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\MailingListStruct, "%s" given', is_object($myArrayOfMailingListStructTypeItemItem) ? get_class($myArrayOfMailingListStructTypeItemItem) : gettype($myArrayOfMailingListStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfMailingListStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\MailingListStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfMailingListStructType
+     * @param \Ovh\StructType\MailingListStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfMailingListStructType
      */
-    public function addToItem(\PayPal\StructType\MailingListStruct $item)
+    public function addToItem(\Ovh\StructType\MailingListStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\MailingListStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\MailingListStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\MailingListStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\MailingListStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfMailingListStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\MailingListStruct|null
+     * @return \Ovh\StructType\MailingListStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfMailingListStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\MailingListStruct|null
+     * @return \Ovh\StructType\MailingListStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfMailingListStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\MailingListStruct|null
+     * @return \Ovh\StructType\MailingListStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfMailingListStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\MailingListStruct|null
+     * @return \Ovh\StructType\MailingListStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfMailingListStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\MailingListStruct|null
+     * @return \Ovh\StructType\MailingListStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfMailingListStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfMailingListStructType
+     * @return \Ovh\ArrayType\MyArrayOfMailingListStructType
      */
     public static function __set_state(array $array)
     {

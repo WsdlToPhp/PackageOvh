@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -119,7 +119,7 @@ class RipeCreateOrganisation extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\RipeCreateOrganisation
+     * @return \Ovh\StructType\RipeCreateOrganisation
      */
     public function setSession($session = null)
     {
@@ -141,7 +141,7 @@ class RipeCreateOrganisation extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\RipeCreateOrganisation
+     * @return \Ovh\StructType\RipeCreateOrganisation
      */
     public function setName($name = null)
     {
@@ -163,7 +163,7 @@ class RipeCreateOrganisation extends AbstractStructBase
     /**
      * Set address value
      * @param string $address
-     * @return \PayPal\StructType\RipeCreateOrganisation
+     * @return \Ovh\StructType\RipeCreateOrganisation
      */
     public function setAddress($address = null)
     {
@@ -185,7 +185,7 @@ class RipeCreateOrganisation extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\RipeCreateOrganisation
+     * @return \Ovh\StructType\RipeCreateOrganisation
      */
     public function setEmail($email = null)
     {
@@ -207,7 +207,7 @@ class RipeCreateOrganisation extends AbstractStructBase
     /**
      * Set abuse value
      * @param string $abuse
-     * @return \PayPal\StructType\RipeCreateOrganisation
+     * @return \Ovh\StructType\RipeCreateOrganisation
      */
     public function setAbuse($abuse = null)
     {
@@ -229,7 +229,7 @@ class RipeCreateOrganisation extends AbstractStructBase
     /**
      * Set descr value
      * @param string $descr
-     * @return \PayPal\StructType\RipeCreateOrganisation
+     * @return \Ovh\StructType\RipeCreateOrganisation
      */
     public function setDescr($descr = null)
     {
@@ -251,7 +251,7 @@ class RipeCreateOrganisation extends AbstractStructBase
     /**
      * Set phone value
      * @param string $phone
-     * @return \PayPal\StructType\RipeCreateOrganisation
+     * @return \Ovh\StructType\RipeCreateOrganisation
      */
     public function setPhone($phone = null)
     {
@@ -273,7 +273,7 @@ class RipeCreateOrganisation extends AbstractStructBase
     /**
      * Set fax value
      * @param string $fax
-     * @return \PayPal\StructType\RipeCreateOrganisation
+     * @return \Ovh\StructType\RipeCreateOrganisation
      */
     public function setFax($fax = null)
     {
@@ -295,7 +295,7 @@ class RipeCreateOrganisation extends AbstractStructBase
     /**
      * Set remarks value
      * @param string $remarks
-     * @return \PayPal\StructType\RipeCreateOrganisation
+     * @return \Ovh\StructType\RipeCreateOrganisation
      */
     public function setRemarks($remarks = null)
     {
@@ -312,7 +312,7 @@ class RipeCreateOrganisation extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RipeCreateOrganisation
+     * @return \Ovh\StructType\RipeCreateOrganisation
      */
     public static function __set_state(array $array)
     {

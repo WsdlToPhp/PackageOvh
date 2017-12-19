@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfTelephonyDirectoryWayTypeStructType extends AbstractStructArrayBa
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TelephonyDirectoryWayTypeStruct[]
+     * @var \Ovh\StructType\TelephonyDirectoryWayTypeStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTelephonyDirectoryWayTypeStructType
      * @uses MyArrayOfTelephonyDirectoryWayTypeStructType::setItem()
-     * @param \PayPal\StructType\TelephonyDirectoryWayTypeStruct[] $item
+     * @param \Ovh\StructType\TelephonyDirectoryWayTypeStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfTelephonyDirectoryWayTypeStructType extends AbstractStructArrayBa
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TelephonyDirectoryWayTypeStruct[]|null
+     * @return \Ovh\StructType\TelephonyDirectoryWayTypeStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfTelephonyDirectoryWayTypeStructType extends AbstractStructArrayBa
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyDirectoryWayTypeStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyDirectoryWayTypeStructType
+     * @param \Ovh\StructType\TelephonyDirectoryWayTypeStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyDirectoryWayTypeStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTelephonyDirectoryWayTypeStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTelephonyDirectoryWayTypeStructTypeItemItem instanceof \PayPal\StructType\TelephonyDirectoryWayTypeStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyDirectoryWayTypeStruct, "%s" given', is_object($myArrayOfTelephonyDirectoryWayTypeStructTypeItemItem) ? get_class($myArrayOfTelephonyDirectoryWayTypeStructTypeItemItem) : gettype($myArrayOfTelephonyDirectoryWayTypeStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTelephonyDirectoryWayTypeStructTypeItemItem instanceof \Ovh\StructType\TelephonyDirectoryWayTypeStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyDirectoryWayTypeStruct, "%s" given', is_object($myArrayOfTelephonyDirectoryWayTypeStructTypeItemItem) ? get_class($myArrayOfTelephonyDirectoryWayTypeStructTypeItemItem) : gettype($myArrayOfTelephonyDirectoryWayTypeStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfTelephonyDirectoryWayTypeStructType extends AbstractStructArrayBa
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyDirectoryWayTypeStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyDirectoryWayTypeStructType
+     * @param \Ovh\StructType\TelephonyDirectoryWayTypeStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyDirectoryWayTypeStructType
      */
-    public function addToItem(\PayPal\StructType\TelephonyDirectoryWayTypeStruct $item)
+    public function addToItem(\Ovh\StructType\TelephonyDirectoryWayTypeStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TelephonyDirectoryWayTypeStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyDirectoryWayTypeStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TelephonyDirectoryWayTypeStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyDirectoryWayTypeStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfTelephonyDirectoryWayTypeStructType extends AbstractStructArrayBa
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonyDirectoryWayTypeStruct|null
+     * @return \Ovh\StructType\TelephonyDirectoryWayTypeStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfTelephonyDirectoryWayTypeStructType extends AbstractStructArrayBa
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonyDirectoryWayTypeStruct|null
+     * @return \Ovh\StructType\TelephonyDirectoryWayTypeStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfTelephonyDirectoryWayTypeStructType extends AbstractStructArrayBa
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonyDirectoryWayTypeStruct|null
+     * @return \Ovh\StructType\TelephonyDirectoryWayTypeStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfTelephonyDirectoryWayTypeStructType extends AbstractStructArrayBa
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonyDirectoryWayTypeStruct|null
+     * @return \Ovh\StructType\TelephonyDirectoryWayTypeStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfTelephonyDirectoryWayTypeStructType extends AbstractStructArrayBa
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonyDirectoryWayTypeStruct|null
+     * @return \Ovh\StructType\TelephonyDirectoryWayTypeStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfTelephonyDirectoryWayTypeStructType extends AbstractStructArrayBa
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyDirectoryWayTypeStructType
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyDirectoryWayTypeStructType
      */
     public static function __set_state(array $array)
     {

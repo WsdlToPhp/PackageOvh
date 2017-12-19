@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -33,7 +33,7 @@ class DedicatedInstallConfigurationStruct extends AbstractStructBase
     public $serverName;
     /**
      * The parameters
-     * @var \PayPal\StructType\DedicatedInstallConfigurationParametersStruct
+     * @var \Ovh\StructType\DedicatedInstallConfigurationParametersStruct
      */
     public $parameters;
     /**
@@ -83,7 +83,7 @@ class DedicatedInstallConfigurationStruct extends AbstractStructBase
      * @param string $status
      * @param int $stageId
      * @param string $serverName
-     * @param \PayPal\StructType\DedicatedInstallConfigurationParametersStruct $parameters
+     * @param \Ovh\StructType\DedicatedInstallConfigurationParametersStruct $parameters
      * @param string $todoDate
      * @param string $doingDate
      * @param string $error
@@ -91,7 +91,7 @@ class DedicatedInstallConfigurationStruct extends AbstractStructBase
      * @param int $id
      * @param string $doneDate
      */
-    public function __construct($pendingDate = null, $status = null, $stageId = null, $serverName = null, \PayPal\StructType\DedicatedInstallConfigurationParametersStruct $parameters = null, $todoDate = null, $doingDate = null, $error = null, $action = null, $id = null, $doneDate = null)
+    public function __construct($pendingDate = null, $status = null, $stageId = null, $serverName = null, \Ovh\StructType\DedicatedInstallConfigurationParametersStruct $parameters = null, $todoDate = null, $doingDate = null, $error = null, $action = null, $id = null, $doneDate = null)
     {
         $this
             ->setPendingDate($pendingDate)
@@ -117,7 +117,7 @@ class DedicatedInstallConfigurationStruct extends AbstractStructBase
     /**
      * Set pendingDate value
      * @param string $pendingDate
-     * @return \PayPal\StructType\DedicatedInstallConfigurationStruct
+     * @return \Ovh\StructType\DedicatedInstallConfigurationStruct
      */
     public function setPendingDate($pendingDate = null)
     {
@@ -139,7 +139,7 @@ class DedicatedInstallConfigurationStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\DedicatedInstallConfigurationStruct
+     * @return \Ovh\StructType\DedicatedInstallConfigurationStruct
      */
     public function setStatus($status = null)
     {
@@ -161,7 +161,7 @@ class DedicatedInstallConfigurationStruct extends AbstractStructBase
     /**
      * Set stageId value
      * @param int $stageId
-     * @return \PayPal\StructType\DedicatedInstallConfigurationStruct
+     * @return \Ovh\StructType\DedicatedInstallConfigurationStruct
      */
     public function setStageId($stageId = null)
     {
@@ -183,7 +183,7 @@ class DedicatedInstallConfigurationStruct extends AbstractStructBase
     /**
      * Set serverName value
      * @param string $serverName
-     * @return \PayPal\StructType\DedicatedInstallConfigurationStruct
+     * @return \Ovh\StructType\DedicatedInstallConfigurationStruct
      */
     public function setServerName($serverName = null)
     {
@@ -196,7 +196,7 @@ class DedicatedInstallConfigurationStruct extends AbstractStructBase
     }
     /**
      * Get parameters value
-     * @return \PayPal\StructType\DedicatedInstallConfigurationParametersStruct|null
+     * @return \Ovh\StructType\DedicatedInstallConfigurationParametersStruct|null
      */
     public function getParameters()
     {
@@ -204,10 +204,10 @@ class DedicatedInstallConfigurationStruct extends AbstractStructBase
     }
     /**
      * Set parameters value
-     * @param \PayPal\StructType\DedicatedInstallConfigurationParametersStruct $parameters
-     * @return \PayPal\StructType\DedicatedInstallConfigurationStruct
+     * @param \Ovh\StructType\DedicatedInstallConfigurationParametersStruct $parameters
+     * @return \Ovh\StructType\DedicatedInstallConfigurationStruct
      */
-    public function setParameters(\PayPal\StructType\DedicatedInstallConfigurationParametersStruct $parameters = null)
+    public function setParameters(\Ovh\StructType\DedicatedInstallConfigurationParametersStruct $parameters = null)
     {
         $this->parameters = $parameters;
         return $this;
@@ -223,7 +223,7 @@ class DedicatedInstallConfigurationStruct extends AbstractStructBase
     /**
      * Set todoDate value
      * @param string $todoDate
-     * @return \PayPal\StructType\DedicatedInstallConfigurationStruct
+     * @return \Ovh\StructType\DedicatedInstallConfigurationStruct
      */
     public function setTodoDate($todoDate = null)
     {
@@ -245,7 +245,7 @@ class DedicatedInstallConfigurationStruct extends AbstractStructBase
     /**
      * Set doingDate value
      * @param string $doingDate
-     * @return \PayPal\StructType\DedicatedInstallConfigurationStruct
+     * @return \Ovh\StructType\DedicatedInstallConfigurationStruct
      */
     public function setDoingDate($doingDate = null)
     {
@@ -267,7 +267,7 @@ class DedicatedInstallConfigurationStruct extends AbstractStructBase
     /**
      * Set error value
      * @param string $error
-     * @return \PayPal\StructType\DedicatedInstallConfigurationStruct
+     * @return \Ovh\StructType\DedicatedInstallConfigurationStruct
      */
     public function setError($error = null)
     {
@@ -289,7 +289,7 @@ class DedicatedInstallConfigurationStruct extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \PayPal\StructType\DedicatedInstallConfigurationStruct
+     * @return \Ovh\StructType\DedicatedInstallConfigurationStruct
      */
     public function setAction($action = null)
     {
@@ -311,7 +311,7 @@ class DedicatedInstallConfigurationStruct extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\DedicatedInstallConfigurationStruct
+     * @return \Ovh\StructType\DedicatedInstallConfigurationStruct
      */
     public function setId($id = null)
     {
@@ -333,7 +333,7 @@ class DedicatedInstallConfigurationStruct extends AbstractStructBase
     /**
      * Set doneDate value
      * @param string $doneDate
-     * @return \PayPal\StructType\DedicatedInstallConfigurationStruct
+     * @return \Ovh\StructType\DedicatedInstallConfigurationStruct
      */
     public function setDoneDate($doneDate = null)
     {
@@ -350,7 +350,7 @@ class DedicatedInstallConfigurationStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedInstallConfigurationStruct
+     * @return \Ovh\StructType\DedicatedInstallConfigurationStruct
      */
     public static function __set_state(array $array)
     {
