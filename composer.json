@@ -1,5 +1,5 @@
 {
-    "name": "wsdltophp/package-paypal",
+    "name": "wsdltophp/package-ovh",
     "description": "Package generated from http://www.ovh.com/soapi/soapi-dlw-1.63.wsdl using wsdltophp/packagegenerator",
     "require": {
         "php": ">=5.3.3",

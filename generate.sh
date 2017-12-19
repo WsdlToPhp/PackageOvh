@@ -17,7 +17,7 @@ rm -rf  $DEST/src/ \
 php wsdltophp.phar generate:package \
     --urlorpath="http://www.ovh.com/soapi/soapi-dlw-1.63.wsdl" \
     --destination=$DEST \
-    --composer-name="wsdltophp/package-paypal" \
+    --composer-name="wsdltophp/package-ovh" \
     --composer-settings="autoload.psr-4.SoapClient\:./SoapClient/" \
     --addcomments="author:WsdlToPhp <contact@wsdltophp.com>" \
     --soapclient="\SoapClient\SoapClientBase" \
@@ -27,7 +27,7 @@ php wsdltophp.phar generate:package \
 php wsdltophp.phar generate:package \
     --urlorpath="http://www.ovh.com/soapi/soapi-dlw-1.63.wsdl" \
     --destination=$DEST \
-    --composer-name="wsdltophp/package-paypal" \
+    --composer-name="wsdltophp/package-ovh" \
     --composer-settings="autoload.psr-4.SoapClient\:./SoapClient/" \
     --addcomments="author:WsdlToPhp <contact@wsdltophp.com>" \
     --soapclient="\SoapClient\SoapClientBase" \
