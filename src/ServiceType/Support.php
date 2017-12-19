@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Support extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SupportGetNicDomains $parameters
-     * @return \PayPal\StructType\SupportGetNicDomainsResponse|bool
+     * @param \Ovh\StructType\SupportGetNicDomains $parameters
+     * @return \Ovh\StructType\SupportGetNicDomainsResponse|bool
      */
-    public function supportGetNicDomains(\PayPal\StructType\SupportGetNicDomains $parameters)
+    public function supportGetNicDomains(\Ovh\StructType\SupportGetNicDomains $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->supportGetNicDomains($parameters));
@@ -36,10 +36,10 @@ class Support extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SupportGetThreads $parameters
-     * @return \PayPal\StructType\SupportGetThreadsResponse|bool
+     * @param \Ovh\StructType\SupportGetThreads $parameters
+     * @return \Ovh\StructType\SupportGetThreadsResponse|bool
      */
-    public function supportGetThreads(\PayPal\StructType\SupportGetThreads $parameters)
+    public function supportGetThreads(\Ovh\StructType\SupportGetThreads $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->supportGetThreads($parameters));
@@ -55,10 +55,10 @@ class Support extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SupportSendMessage $parameters
-     * @return \PayPal\StructType\SupportSendMessageResponse|bool
+     * @param \Ovh\StructType\SupportSendMessage $parameters
+     * @return \Ovh\StructType\SupportSendMessageResponse|bool
      */
-    public function supportSendMessage(\PayPal\StructType\SupportSendMessage $parameters)
+    public function supportSendMessage(\Ovh\StructType\SupportSendMessage $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->supportSendMessage($parameters));
@@ -74,10 +74,10 @@ class Support extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SupportGetAllVisibleCategories $parameters
-     * @return \PayPal\StructType\SupportGetAllVisibleCategoriesResponse|bool
+     * @param \Ovh\StructType\SupportGetAllVisibleCategories $parameters
+     * @return \Ovh\StructType\SupportGetAllVisibleCategoriesResponse|bool
      */
-    public function supportGetAllVisibleCategories(\PayPal\StructType\SupportGetAllVisibleCategories $parameters)
+    public function supportGetAllVisibleCategories(\Ovh\StructType\SupportGetAllVisibleCategories $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->supportGetAllVisibleCategories($parameters));
@@ -93,10 +93,10 @@ class Support extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SupportGetThreadTree $parameters
-     * @return \PayPal\StructType\SupportGetThreadTreeResponse|bool
+     * @param \Ovh\StructType\SupportGetThreadTree $parameters
+     * @return \Ovh\StructType\SupportGetThreadTreeResponse|bool
      */
-    public function supportGetThreadTree(\PayPal\StructType\SupportGetThreadTree $parameters)
+    public function supportGetThreadTree(\Ovh\StructType\SupportGetThreadTree $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->supportGetThreadTree($parameters));
@@ -112,10 +112,10 @@ class Support extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SupportReportAnswerProblem $parameters
-     * @return \PayPal\StructType\SupportReportAnswerProblemResponse|bool
+     * @param \Ovh\StructType\SupportReportAnswerProblem $parameters
+     * @return \Ovh\StructType\SupportReportAnswerProblemResponse|bool
      */
-    public function supportReportAnswerProblem(\PayPal\StructType\SupportReportAnswerProblem $parameters)
+    public function supportReportAnswerProblem(\Ovh\StructType\SupportReportAnswerProblem $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->supportReportAnswerProblem($parameters));
@@ -131,10 +131,10 @@ class Support extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SupportGetFullMessage $parameters
-     * @return \PayPal\StructType\SupportGetFullMessageResponse|bool
+     * @param \Ovh\StructType\SupportGetFullMessage $parameters
+     * @return \Ovh\StructType\SupportGetFullMessageResponse|bool
      */
-    public function supportGetFullMessage(\PayPal\StructType\SupportGetFullMessage $parameters)
+    public function supportGetFullMessage(\Ovh\StructType\SupportGetFullMessage $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->supportGetFullMessage($parameters));
@@ -150,10 +150,10 @@ class Support extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SupportCloseThreads $parameters
-     * @return \PayPal\StructType\SupportCloseThreadsResponse|bool
+     * @param \Ovh\StructType\SupportCloseThreads $parameters
+     * @return \Ovh\StructType\SupportCloseThreadsResponse|bool
      */
-    public function supportCloseThreads(\PayPal\StructType\SupportCloseThreads $parameters)
+    public function supportCloseThreads(\Ovh\StructType\SupportCloseThreads $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->supportCloseThreads($parameters));
@@ -169,10 +169,10 @@ class Support extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SupportReactivateThread $parameters
-     * @return \PayPal\StructType\SupportReactivateThreadResponse|bool
+     * @param \Ovh\StructType\SupportReactivateThread $parameters
+     * @return \Ovh\StructType\SupportReactivateThreadResponse|bool
      */
-    public function supportReactivateThread(\PayPal\StructType\SupportReactivateThread $parameters)
+    public function supportReactivateThread(\Ovh\StructType\SupportReactivateThread $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->supportReactivateThread($parameters));
@@ -185,7 +185,7 @@ class Support extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\SupportCloseThreadsResponse|\PayPal\StructType\SupportGetAllVisibleCategoriesResponse|\PayPal\StructType\SupportGetFullMessageResponse|\PayPal\StructType\SupportGetNicDomainsResponse|\PayPal\StructType\SupportGetThreadsResponse|\PayPal\StructType\SupportGetThreadTreeResponse|\PayPal\StructType\SupportReactivateThreadResponse|\PayPal\StructType\SupportReportAnswerProblemResponse|\PayPal\StructType\SupportSendMessageResponse
+     * @return \Ovh\StructType\SupportCloseThreadsResponse|\Ovh\StructType\SupportGetAllVisibleCategoriesResponse|\Ovh\StructType\SupportGetFullMessageResponse|\Ovh\StructType\SupportGetNicDomainsResponse|\Ovh\StructType\SupportGetThreadsResponse|\Ovh\StructType\SupportGetThreadTreeResponse|\Ovh\StructType\SupportReactivateThreadResponse|\Ovh\StructType\SupportReportAnswerProblemResponse|\Ovh\StructType\SupportSendMessageResponse
      */
     public function getResult()
     {

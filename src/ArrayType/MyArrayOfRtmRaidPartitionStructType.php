@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfRtmRaidPartitionStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\RtmRaidPartitionStruct[]
+     * @var \Ovh\StructType\RtmRaidPartitionStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfRtmRaidPartitionStructType
      * @uses MyArrayOfRtmRaidPartitionStructType::setItem()
-     * @param \PayPal\StructType\RtmRaidPartitionStruct[] $item
+     * @param \Ovh\StructType\RtmRaidPartitionStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfRtmRaidPartitionStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\RtmRaidPartitionStruct[]|null
+     * @return \Ovh\StructType\RtmRaidPartitionStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfRtmRaidPartitionStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\RtmRaidPartitionStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfRtmRaidPartitionStructType
+     * @param \Ovh\StructType\RtmRaidPartitionStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfRtmRaidPartitionStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfRtmRaidPartitionStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfRtmRaidPartitionStructTypeItemItem instanceof \PayPal\StructType\RtmRaidPartitionStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\RtmRaidPartitionStruct, "%s" given', is_object($myArrayOfRtmRaidPartitionStructTypeItemItem) ? get_class($myArrayOfRtmRaidPartitionStructTypeItemItem) : gettype($myArrayOfRtmRaidPartitionStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfRtmRaidPartitionStructTypeItemItem instanceof \Ovh\StructType\RtmRaidPartitionStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\RtmRaidPartitionStruct, "%s" given', is_object($myArrayOfRtmRaidPartitionStructTypeItemItem) ? get_class($myArrayOfRtmRaidPartitionStructTypeItemItem) : gettype($myArrayOfRtmRaidPartitionStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfRtmRaidPartitionStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\RtmRaidPartitionStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfRtmRaidPartitionStructType
+     * @param \Ovh\StructType\RtmRaidPartitionStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfRtmRaidPartitionStructType
      */
-    public function addToItem(\PayPal\StructType\RtmRaidPartitionStruct $item)
+    public function addToItem(\Ovh\StructType\RtmRaidPartitionStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\RtmRaidPartitionStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\RtmRaidPartitionStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\RtmRaidPartitionStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\RtmRaidPartitionStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfRtmRaidPartitionStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\RtmRaidPartitionStruct|null
+     * @return \Ovh\StructType\RtmRaidPartitionStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfRtmRaidPartitionStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\RtmRaidPartitionStruct|null
+     * @return \Ovh\StructType\RtmRaidPartitionStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfRtmRaidPartitionStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\RtmRaidPartitionStruct|null
+     * @return \Ovh\StructType\RtmRaidPartitionStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfRtmRaidPartitionStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\RtmRaidPartitionStruct|null
+     * @return \Ovh\StructType\RtmRaidPartitionStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfRtmRaidPartitionStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\RtmRaidPartitionStruct|null
+     * @return \Ovh\StructType\RtmRaidPartitionStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfRtmRaidPartitionStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfRtmRaidPartitionStructType
+     * @return \Ovh\ArrayType\MyArrayOfRtmRaidPartitionStructType
      */
     public static function __set_state(array $array)
     {

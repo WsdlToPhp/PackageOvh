@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyNicGetSipDomainResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonySipDomainStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonySipDomainStructType
      */
     public $return;
     /**
      * Constructor method for telephonyNicGetSipDomainResponse
      * @uses TelephonyNicGetSipDomainResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonySipDomainStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonySipDomainStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonySipDomainStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonySipDomainStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonySipDomainStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonySipDomainStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyNicGetSipDomainResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonySipDomainStructType $return
-     * @return \PayPal\StructType\TelephonyNicGetSipDomainResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonySipDomainStructType $return
+     * @return \Ovh\StructType\TelephonyNicGetSipDomainResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonySipDomainStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonySipDomainStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyNicGetSipDomainResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyNicGetSipDomainResponse
+     * @return \Ovh\StructType\TelephonyNicGetSipDomainResponse
      */
     public static function __set_state(array $array)
     {

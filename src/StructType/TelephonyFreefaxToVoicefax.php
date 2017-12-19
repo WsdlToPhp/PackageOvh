@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class TelephonyFreefaxToVoicefax extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyFreefaxToVoicefax
+     * @return \Ovh\StructType\TelephonyFreefaxToVoicefax
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class TelephonyFreefaxToVoicefax extends AbstractStructBase
     /**
      * Set billingAccount value
      * @param string $billingAccount
-     * @return \PayPal\StructType\TelephonyFreefaxToVoicefax
+     * @return \Ovh\StructType\TelephonyFreefaxToVoicefax
      */
     public function setBillingAccount($billingAccount = null)
     {
@@ -113,7 +113,7 @@ class TelephonyFreefaxToVoicefax extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyFreefaxToVoicefax
+     * @return \Ovh\StructType\TelephonyFreefaxToVoicefax
      */
     public function setNumber($number = null)
     {
@@ -135,7 +135,7 @@ class TelephonyFreefaxToVoicefax extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyFreefaxToVoicefax
+     * @return \Ovh\StructType\TelephonyFreefaxToVoicefax
      */
     public function setCountry($country = null)
     {
@@ -152,7 +152,7 @@ class TelephonyFreefaxToVoicefax extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFreefaxToVoicefax
+     * @return \Ovh\StructType\TelephonyFreefaxToVoicefax
      */
     public static function __set_state(array $array)
     {

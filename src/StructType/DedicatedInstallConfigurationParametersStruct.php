@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -85,7 +85,7 @@ class DedicatedInstallConfigurationParametersStruct extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \PayPal\StructType\DedicatedInstallConfigurationParametersStruct
+     * @return \Ovh\StructType\DedicatedInstallConfigurationParametersStruct
      */
     public function setLanguage($language = null)
     {
@@ -107,7 +107,7 @@ class DedicatedInstallConfigurationParametersStruct extends AbstractStructBase
     /**
      * Set bitFormat value
      * @param string $bitFormat
-     * @return \PayPal\StructType\DedicatedInstallConfigurationParametersStruct
+     * @return \Ovh\StructType\DedicatedInstallConfigurationParametersStruct
      */
     public function setBitFormat($bitFormat = null)
     {
@@ -129,7 +129,7 @@ class DedicatedInstallConfigurationParametersStruct extends AbstractStructBase
     /**
      * Set softRaidDevices value
      * @param int $softRaidDevices
-     * @return \PayPal\StructType\DedicatedInstallConfigurationParametersStruct
+     * @return \Ovh\StructType\DedicatedInstallConfigurationParametersStruct
      */
     public function setSoftRaidDevices($softRaidDevices = null)
     {
@@ -151,7 +151,7 @@ class DedicatedInstallConfigurationParametersStruct extends AbstractStructBase
     /**
      * Set serverName value
      * @param string $serverName
-     * @return \PayPal\StructType\DedicatedInstallConfigurationParametersStruct
+     * @return \Ovh\StructType\DedicatedInstallConfigurationParametersStruct
      */
     public function setServerName($serverName = null)
     {
@@ -173,7 +173,7 @@ class DedicatedInstallConfigurationParametersStruct extends AbstractStructBase
     /**
      * Set softRaid value
      * @param string $softRaid
-     * @return \PayPal\StructType\DedicatedInstallConfigurationParametersStruct
+     * @return \Ovh\StructType\DedicatedInstallConfigurationParametersStruct
      */
     public function setSoftRaid($softRaid = null)
     {
@@ -195,7 +195,7 @@ class DedicatedInstallConfigurationParametersStruct extends AbstractStructBase
     /**
      * Set distribution value
      * @param string $distribution
-     * @return \PayPal\StructType\DedicatedInstallConfigurationParametersStruct
+     * @return \Ovh\StructType\DedicatedInstallConfigurationParametersStruct
      */
     public function setDistribution($distribution = null)
     {
@@ -217,7 +217,7 @@ class DedicatedInstallConfigurationParametersStruct extends AbstractStructBase
     /**
      * Set resinstallTodoId value
      * @param int $resinstallTodoId
-     * @return \PayPal\StructType\DedicatedInstallConfigurationParametersStruct
+     * @return \Ovh\StructType\DedicatedInstallConfigurationParametersStruct
      */
     public function setResinstallTodoId($resinstallTodoId = null)
     {
@@ -234,7 +234,7 @@ class DedicatedInstallConfigurationParametersStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedInstallConfigurationParametersStruct
+     * @return \Ovh\StructType\DedicatedInstallConfigurationParametersStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,12 +13,12 @@ class DedicatedAllowedDistributionMoreStruct extends AbstractStructBase
 {
     /**
      * The basicDistributions
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType
      */
     public $basicDistributions;
     /**
      * The readyToUse
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType
      */
     public $readyToUse;
     /**
@@ -31,11 +31,11 @@ class DedicatedAllowedDistributionMoreStruct extends AbstractStructBase
      * @uses DedicatedAllowedDistributionMoreStruct::setBasicDistributions()
      * @uses DedicatedAllowedDistributionMoreStruct::setReadyToUse()
      * @uses DedicatedAllowedDistributionMoreStruct::setType()
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType $basicDistributions
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType $readyToUse
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType $basicDistributions
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType $readyToUse
      * @param string $type
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType $basicDistributions = null, \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType $readyToUse = null, $type = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType $basicDistributions = null, \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType $readyToUse = null, $type = null)
     {
         $this
             ->setBasicDistributions($basicDistributions)
@@ -44,7 +44,7 @@ class DedicatedAllowedDistributionMoreStruct extends AbstractStructBase
     }
     /**
      * Get basicDistributions value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType|null
      */
     public function getBasicDistributions()
     {
@@ -52,17 +52,17 @@ class DedicatedAllowedDistributionMoreStruct extends AbstractStructBase
     }
     /**
      * Set basicDistributions value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType $basicDistributions
-     * @return \PayPal\StructType\DedicatedAllowedDistributionMoreStruct
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType $basicDistributions
+     * @return \Ovh\StructType\DedicatedAllowedDistributionMoreStruct
      */
-    public function setBasicDistributions(\PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType $basicDistributions = null)
+    public function setBasicDistributions(\Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType $basicDistributions = null)
     {
         $this->basicDistributions = $basicDistributions;
         return $this;
     }
     /**
      * Get readyToUse value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType|null
      */
     public function getReadyToUse()
     {
@@ -70,10 +70,10 @@ class DedicatedAllowedDistributionMoreStruct extends AbstractStructBase
     }
     /**
      * Set readyToUse value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType $readyToUse
-     * @return \PayPal\StructType\DedicatedAllowedDistributionMoreStruct
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType $readyToUse
+     * @return \Ovh\StructType\DedicatedAllowedDistributionMoreStruct
      */
-    public function setReadyToUse(\PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType $readyToUse = null)
+    public function setReadyToUse(\Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType $readyToUse = null)
     {
         $this->readyToUse = $readyToUse;
         return $this;
@@ -89,7 +89,7 @@ class DedicatedAllowedDistributionMoreStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\DedicatedAllowedDistributionMoreStruct
+     * @return \Ovh\StructType\DedicatedAllowedDistributionMoreStruct
      */
     public function setType($type = null)
     {
@@ -106,7 +106,7 @@ class DedicatedAllowedDistributionMoreStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedAllowedDistributionMoreStruct
+     * @return \Ovh\StructType\DedicatedAllowedDistributionMoreStruct
      */
     public static function __set_state(array $array)
     {

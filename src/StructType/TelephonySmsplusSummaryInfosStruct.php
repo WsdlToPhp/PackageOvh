@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class TelephonySmsplusSummaryInfosStruct extends AbstractStructBase
     /**
      * Set quantity value
      * @param string $quantity
-     * @return \PayPal\StructType\TelephonySmsplusSummaryInfosStruct
+     * @return \Ovh\StructType\TelephonySmsplusSummaryInfosStruct
      */
     public function setQuantity($quantity = null)
     {
@@ -75,7 +75,7 @@ class TelephonySmsplusSummaryInfosStruct extends AbstractStructBase
     /**
      * Set priceReversed value
      * @param float $priceReversed
-     * @return \PayPal\StructType\TelephonySmsplusSummaryInfosStruct
+     * @return \Ovh\StructType\TelephonySmsplusSummaryInfosStruct
      */
     public function setPriceReversed($priceReversed = null)
     {
@@ -93,7 +93,7 @@ class TelephonySmsplusSummaryInfosStruct extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \PayPal\StructType\TelephonySmsplusSummaryInfosStruct
+     * @return \Ovh\StructType\TelephonySmsplusSummaryInfosStruct
      */
     public function setPrice($price = null)
     {
@@ -106,7 +106,7 @@ class TelephonySmsplusSummaryInfosStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsplusSummaryInfosStruct
+     * @return \Ovh\StructType\TelephonySmsplusSummaryInfosStruct
      */
     public static function __set_state(array $array)
     {

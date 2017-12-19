@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class MultiDomainListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfMultiDomainStructType
+     * @var \Ovh\ArrayType\MyArrayOfMultiDomainStructType
      */
     public $return;
     /**
      * Constructor method for multiDomainListResponse
      * @uses MultiDomainListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfMultiDomainStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfMultiDomainStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfMultiDomainStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfMultiDomainStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfMultiDomainStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfMultiDomainStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class MultiDomainListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfMultiDomainStructType $return
-     * @return \PayPal\StructType\MultiDomainListResponse
+     * @param \Ovh\ArrayType\MyArrayOfMultiDomainStructType $return
+     * @return \Ovh\StructType\MultiDomainListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfMultiDomainStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfMultiDomainStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class MultiDomainListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\MultiDomainListResponse
+     * @return \Ovh\StructType\MultiDomainListResponse
      */
     public static function __set_state(array $array)
     {

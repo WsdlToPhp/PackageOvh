@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class EmailDomainSummaryResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\EmailDomainSummaryReturn
+     * @var \Ovh\StructType\EmailDomainSummaryReturn
      */
     public $return;
     /**
      * Constructor method for emailDomainSummaryResponse
      * @uses EmailDomainSummaryResponse::setReturn()
-     * @param \PayPal\StructType\EmailDomainSummaryReturn $return
+     * @param \Ovh\StructType\EmailDomainSummaryReturn $return
      */
-    public function __construct(\PayPal\StructType\EmailDomainSummaryReturn $return = null)
+    public function __construct(\Ovh\StructType\EmailDomainSummaryReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\EmailDomainSummaryReturn|null
+     * @return \Ovh\StructType\EmailDomainSummaryReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class EmailDomainSummaryResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\EmailDomainSummaryReturn $return
-     * @return \PayPal\StructType\EmailDomainSummaryResponse
+     * @param \Ovh\StructType\EmailDomainSummaryReturn $return
+     * @return \Ovh\StructType\EmailDomainSummaryResponse
      */
-    public function setReturn(\PayPal\StructType\EmailDomainSummaryReturn $return = null)
+    public function setReturn(\Ovh\StructType\EmailDomainSummaryReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class EmailDomainSummaryResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\EmailDomainSummaryResponse
+     * @return \Ovh\StructType\EmailDomainSummaryResponse
      */
     public static function __set_state(array $array)
     {

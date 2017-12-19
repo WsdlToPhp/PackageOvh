@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,12 +48,12 @@ class CrontabInfoReturn extends AbstractStructBase
     public $weekDay;
     /**
      * The days
-     * @var \PayPal\ArrayType\MyArrayOfIntType
+     * @var \Ovh\ArrayType\MyArrayOfIntType
      */
     public $days;
     /**
      * The hours
-     * @var \PayPal\ArrayType\MyArrayOfIntType
+     * @var \Ovh\ArrayType\MyArrayOfIntType
      */
     public $hours;
     /**
@@ -74,10 +74,10 @@ class CrontabInfoReturn extends AbstractStructBase
      * @param bool $enabled
      * @param string $programLanguage
      * @param string $weekDay
-     * @param \PayPal\ArrayType\MyArrayOfIntType $days
-     * @param \PayPal\ArrayType\MyArrayOfIntType $hours
+     * @param \Ovh\ArrayType\MyArrayOfIntType $days
+     * @param \Ovh\ArrayType\MyArrayOfIntType $hours
      */
-    public function __construct($id = null, $path = null, $desc = null, $email = null, $enabled = null, $programLanguage = null, $weekDay = null, \PayPal\ArrayType\MyArrayOfIntType $days = null, \PayPal\ArrayType\MyArrayOfIntType $hours = null)
+    public function __construct($id = null, $path = null, $desc = null, $email = null, $enabled = null, $programLanguage = null, $weekDay = null, \Ovh\ArrayType\MyArrayOfIntType $days = null, \Ovh\ArrayType\MyArrayOfIntType $hours = null)
     {
         $this
             ->setId($id)
@@ -101,7 +101,7 @@ class CrontabInfoReturn extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\CrontabInfoReturn
+     * @return \Ovh\StructType\CrontabInfoReturn
      */
     public function setId($id = null)
     {
@@ -123,7 +123,7 @@ class CrontabInfoReturn extends AbstractStructBase
     /**
      * Set path value
      * @param string $path
-     * @return \PayPal\StructType\CrontabInfoReturn
+     * @return \Ovh\StructType\CrontabInfoReturn
      */
     public function setPath($path = null)
     {
@@ -145,7 +145,7 @@ class CrontabInfoReturn extends AbstractStructBase
     /**
      * Set desc value
      * @param string $desc
-     * @return \PayPal\StructType\CrontabInfoReturn
+     * @return \Ovh\StructType\CrontabInfoReturn
      */
     public function setDesc($desc = null)
     {
@@ -167,7 +167,7 @@ class CrontabInfoReturn extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\CrontabInfoReturn
+     * @return \Ovh\StructType\CrontabInfoReturn
      */
     public function setEmail($email = null)
     {
@@ -189,7 +189,7 @@ class CrontabInfoReturn extends AbstractStructBase
     /**
      * Set enabled value
      * @param bool $enabled
-     * @return \PayPal\StructType\CrontabInfoReturn
+     * @return \Ovh\StructType\CrontabInfoReturn
      */
     public function setEnabled($enabled = null)
     {
@@ -211,7 +211,7 @@ class CrontabInfoReturn extends AbstractStructBase
     /**
      * Set programLanguage value
      * @param string $programLanguage
-     * @return \PayPal\StructType\CrontabInfoReturn
+     * @return \Ovh\StructType\CrontabInfoReturn
      */
     public function setProgramLanguage($programLanguage = null)
     {
@@ -233,7 +233,7 @@ class CrontabInfoReturn extends AbstractStructBase
     /**
      * Set weekDay value
      * @param string $weekDay
-     * @return \PayPal\StructType\CrontabInfoReturn
+     * @return \Ovh\StructType\CrontabInfoReturn
      */
     public function setWeekDay($weekDay = null)
     {
@@ -246,7 +246,7 @@ class CrontabInfoReturn extends AbstractStructBase
     }
     /**
      * Get days value
-     * @return \PayPal\ArrayType\MyArrayOfIntType|null
+     * @return \Ovh\ArrayType\MyArrayOfIntType|null
      */
     public function getDays()
     {
@@ -254,17 +254,17 @@ class CrontabInfoReturn extends AbstractStructBase
     }
     /**
      * Set days value
-     * @param \PayPal\ArrayType\MyArrayOfIntType $days
-     * @return \PayPal\StructType\CrontabInfoReturn
+     * @param \Ovh\ArrayType\MyArrayOfIntType $days
+     * @return \Ovh\StructType\CrontabInfoReturn
      */
-    public function setDays(\PayPal\ArrayType\MyArrayOfIntType $days = null)
+    public function setDays(\Ovh\ArrayType\MyArrayOfIntType $days = null)
     {
         $this->days = $days;
         return $this;
     }
     /**
      * Get hours value
-     * @return \PayPal\ArrayType\MyArrayOfIntType|null
+     * @return \Ovh\ArrayType\MyArrayOfIntType|null
      */
     public function getHours()
     {
@@ -272,10 +272,10 @@ class CrontabInfoReturn extends AbstractStructBase
     }
     /**
      * Set hours value
-     * @param \PayPal\ArrayType\MyArrayOfIntType $hours
-     * @return \PayPal\StructType\CrontabInfoReturn
+     * @param \Ovh\ArrayType\MyArrayOfIntType $hours
+     * @return \Ovh\StructType\CrontabInfoReturn
      */
-    public function setHours(\PayPal\ArrayType\MyArrayOfIntType $hours = null)
+    public function setHours(\Ovh\ArrayType\MyArrayOfIntType $hours = null)
     {
         $this->hours = $hours;
         return $this;
@@ -286,7 +286,7 @@ class CrontabInfoReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\CrontabInfoReturn
+     * @return \Ovh\StructType\CrontabInfoReturn
      */
     public static function __set_state(array $array)
     {

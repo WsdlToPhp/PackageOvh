@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class TelephonyHuntingModificationQueue extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyHuntingModificationQueue
+     * @return \Ovh\StructType\TelephonyHuntingModificationQueue
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class TelephonyHuntingModificationQueue extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyHuntingModificationQueue
+     * @return \Ovh\StructType\TelephonyHuntingModificationQueue
      */
     public function setNumber($number = null)
     {
@@ -133,7 +133,7 @@ class TelephonyHuntingModificationQueue extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyHuntingModificationQueue
+     * @return \Ovh\StructType\TelephonyHuntingModificationQueue
      */
     public function setCountry($country = null)
     {
@@ -155,7 +155,7 @@ class TelephonyHuntingModificationQueue extends AbstractStructBase
     /**
      * Set billingAccount value
      * @param string $billingAccount
-     * @return \PayPal\StructType\TelephonyHuntingModificationQueue
+     * @return \Ovh\StructType\TelephonyHuntingModificationQueue
      */
     public function setBillingAccount($billingAccount = null)
     {
@@ -177,7 +177,7 @@ class TelephonyHuntingModificationQueue extends AbstractStructBase
     /**
      * Set onHoldTimer value
      * @param int $onHoldTimer
-     * @return \PayPal\StructType\TelephonyHuntingModificationQueue
+     * @return \Ovh\StructType\TelephonyHuntingModificationQueue
      */
     public function setOnHoldTimer($onHoldTimer = null)
     {
@@ -199,7 +199,7 @@ class TelephonyHuntingModificationQueue extends AbstractStructBase
     /**
      * Set queueSize value
      * @param int $queueSize
-     * @return \PayPal\StructType\TelephonyHuntingModificationQueue
+     * @return \Ovh\StructType\TelephonyHuntingModificationQueue
      */
     public function setQueueSize($queueSize = null)
     {
@@ -216,7 +216,7 @@ class TelephonyHuntingModificationQueue extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyHuntingModificationQueue
+     * @return \Ovh\StructType\TelephonyHuntingModificationQueue
      */
     public static function __set_state(array $array)
     {

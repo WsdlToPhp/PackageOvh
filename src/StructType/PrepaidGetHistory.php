@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class PrepaidGetHistory extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\PrepaidGetHistory
+     * @return \Ovh\StructType\PrepaidGetHistory
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class PrepaidGetHistory extends AbstractStructBase
     /**
      * Set nic value
      * @param string $nic
-     * @return \PayPal\StructType\PrepaidGetHistory
+     * @return \Ovh\StructType\PrepaidGetHistory
      */
     public function setNic($nic = null)
     {
@@ -103,7 +103,7 @@ class PrepaidGetHistory extends AbstractStructBase
     /**
      * Set page value
      * @param int $page
-     * @return \PayPal\StructType\PrepaidGetHistory
+     * @return \Ovh\StructType\PrepaidGetHistory
      */
     public function setPage($page = null)
     {
@@ -120,7 +120,7 @@ class PrepaidGetHistory extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\PrepaidGetHistory
+     * @return \Ovh\StructType\PrepaidGetHistory
      */
     public static function __set_state(array $array)
     {

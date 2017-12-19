@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class CmsAvailableListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfCmsAvailableStructType
+     * @var \Ovh\ArrayType\MyArrayOfCmsAvailableStructType
      */
     public $return;
     /**
      * Constructor method for cmsAvailableListResponse
      * @uses CmsAvailableListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfCmsAvailableStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfCmsAvailableStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfCmsAvailableStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfCmsAvailableStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfCmsAvailableStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfCmsAvailableStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class CmsAvailableListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfCmsAvailableStructType $return
-     * @return \PayPal\StructType\CmsAvailableListResponse
+     * @param \Ovh\ArrayType\MyArrayOfCmsAvailableStructType $return
+     * @return \Ovh\StructType\CmsAvailableListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfCmsAvailableStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfCmsAvailableStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class CmsAvailableListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\CmsAvailableListResponse
+     * @return \Ovh\StructType\CmsAvailableListResponse
      */
     public static function __set_state(array $array)
     {

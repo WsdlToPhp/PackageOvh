@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -43,14 +43,14 @@ class TelephonyScreenListInfoModify extends AbstractStructBase
      * The numbersScreen
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $numbersScreen;
     /**
      * The naturesScreen
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $naturesScreen;
     /**
@@ -65,10 +65,10 @@ class TelephonyScreenListInfoModify extends AbstractStructBase
      * @param string $number
      * @param string $country
      * @param string $screenListType
-     * @param \PayPal\ArrayType\MyArrayOfStringType $numbersScreen
-     * @param \PayPal\ArrayType\MyArrayOfStringType $naturesScreen
+     * @param \Ovh\ArrayType\MyArrayOfStringType $numbersScreen
+     * @param \Ovh\ArrayType\MyArrayOfStringType $naturesScreen
      */
-    public function __construct($session = null, $number = null, $country = null, $screenListType = null, \PayPal\ArrayType\MyArrayOfStringType $numbersScreen = null, \PayPal\ArrayType\MyArrayOfStringType $naturesScreen = null)
+    public function __construct($session = null, $number = null, $country = null, $screenListType = null, \Ovh\ArrayType\MyArrayOfStringType $numbersScreen = null, \Ovh\ArrayType\MyArrayOfStringType $naturesScreen = null)
     {
         $this
             ->setSession($session)
@@ -89,7 +89,7 @@ class TelephonyScreenListInfoModify extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyScreenListInfoModify
+     * @return \Ovh\StructType\TelephonyScreenListInfoModify
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class TelephonyScreenListInfoModify extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyScreenListInfoModify
+     * @return \Ovh\StructType\TelephonyScreenListInfoModify
      */
     public function setNumber($number = null)
     {
@@ -133,7 +133,7 @@ class TelephonyScreenListInfoModify extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyScreenListInfoModify
+     * @return \Ovh\StructType\TelephonyScreenListInfoModify
      */
     public function setCountry($country = null)
     {
@@ -155,7 +155,7 @@ class TelephonyScreenListInfoModify extends AbstractStructBase
     /**
      * Set screenListType value
      * @param string $screenListType
-     * @return \PayPal\StructType\TelephonyScreenListInfoModify
+     * @return \Ovh\StructType\TelephonyScreenListInfoModify
      */
     public function setScreenListType($screenListType = null)
     {
@@ -168,7 +168,7 @@ class TelephonyScreenListInfoModify extends AbstractStructBase
     }
     /**
      * Get numbersScreen value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getNumbersScreen()
     {
@@ -176,17 +176,17 @@ class TelephonyScreenListInfoModify extends AbstractStructBase
     }
     /**
      * Set numbersScreen value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $numbersScreen
-     * @return \PayPal\StructType\TelephonyScreenListInfoModify
+     * @param \Ovh\ArrayType\MyArrayOfStringType $numbersScreen
+     * @return \Ovh\StructType\TelephonyScreenListInfoModify
      */
-    public function setNumbersScreen(\PayPal\ArrayType\MyArrayOfStringType $numbersScreen = null)
+    public function setNumbersScreen(\Ovh\ArrayType\MyArrayOfStringType $numbersScreen = null)
     {
         $this->numbersScreen = $numbersScreen;
         return $this;
     }
     /**
      * Get naturesScreen value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getNaturesScreen()
     {
@@ -194,10 +194,10 @@ class TelephonyScreenListInfoModify extends AbstractStructBase
     }
     /**
      * Set naturesScreen value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $naturesScreen
-     * @return \PayPal\StructType\TelephonyScreenListInfoModify
+     * @param \Ovh\ArrayType\MyArrayOfStringType $naturesScreen
+     * @return \Ovh\StructType\TelephonyScreenListInfoModify
      */
-    public function setNaturesScreen(\PayPal\ArrayType\MyArrayOfStringType $naturesScreen = null)
+    public function setNaturesScreen(\Ovh\ArrayType\MyArrayOfStringType $naturesScreen = null)
     {
         $this->naturesScreen = $naturesScreen;
         return $this;
@@ -208,7 +208,7 @@ class TelephonyScreenListInfoModify extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyScreenListInfoModify
+     * @return \Ovh\StructType\TelephonyScreenListInfoModify
      */
     public static function __set_state(array $array)
     {

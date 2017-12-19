@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class DedicatedBandwidthSwitching extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedBandwidthSwitching
+     * @return \Ovh\StructType\DedicatedBandwidthSwitching
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class DedicatedBandwidthSwitching extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedBandwidthSwitching
+     * @return \Ovh\StructType\DedicatedBandwidthSwitching
      */
     public function setHostname($hostname = null)
     {
@@ -113,7 +113,7 @@ class DedicatedBandwidthSwitching extends AbstractStructBase
     /**
      * Set oldBandwidth value
      * @param string $oldBandwidth
-     * @return \PayPal\StructType\DedicatedBandwidthSwitching
+     * @return \Ovh\StructType\DedicatedBandwidthSwitching
      */
     public function setOldBandwidth($oldBandwidth = null)
     {
@@ -135,7 +135,7 @@ class DedicatedBandwidthSwitching extends AbstractStructBase
     /**
      * Set newBandwidth value
      * @param string $newBandwidth
-     * @return \PayPal\StructType\DedicatedBandwidthSwitching
+     * @return \Ovh\StructType\DedicatedBandwidthSwitching
      */
     public function setNewBandwidth($newBandwidth = null)
     {
@@ -152,7 +152,7 @@ class DedicatedBandwidthSwitching extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedBandwidthSwitching
+     * @return \Ovh\StructType\DedicatedBandwidthSwitching
      */
     public static function __set_state(array $array)
     {

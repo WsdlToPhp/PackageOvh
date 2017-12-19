@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class AutomatedMailGetVolumeHistoryStruct extends AbstractStructBase
     /**
      * Set volume value
      * @param int $volume
-     * @return \PayPal\StructType\AutomatedMailGetVolumeHistoryStruct
+     * @return \Ovh\StructType\AutomatedMailGetVolumeHistoryStruct
      */
     public function setVolume($volume = null)
     {
@@ -67,7 +67,7 @@ class AutomatedMailGetVolumeHistoryStruct extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\AutomatedMailGetVolumeHistoryStruct
+     * @return \Ovh\StructType\AutomatedMailGetVolumeHistoryStruct
      */
     public function setDate($date = null)
     {
@@ -84,7 +84,7 @@ class AutomatedMailGetVolumeHistoryStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\AutomatedMailGetVolumeHistoryStruct
+     * @return \Ovh\StructType\AutomatedMailGetVolumeHistoryStruct
      */
     public static function __set_state(array $array)
     {

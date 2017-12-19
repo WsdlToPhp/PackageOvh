@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfTicketStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TicketStruct[]
+     * @var \Ovh\StructType\TicketStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTicketStructType
      * @uses MyArrayOfTicketStructType::setItem()
-     * @param \PayPal\StructType\TicketStruct[] $item
+     * @param \Ovh\StructType\TicketStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfTicketStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TicketStruct[]|null
+     * @return \Ovh\StructType\TicketStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfTicketStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TicketStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTicketStructType
+     * @param \Ovh\StructType\TicketStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTicketStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTicketStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTicketStructTypeItemItem instanceof \PayPal\StructType\TicketStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TicketStruct, "%s" given', is_object($myArrayOfTicketStructTypeItemItem) ? get_class($myArrayOfTicketStructTypeItemItem) : gettype($myArrayOfTicketStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTicketStructTypeItemItem instanceof \Ovh\StructType\TicketStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TicketStruct, "%s" given', is_object($myArrayOfTicketStructTypeItemItem) ? get_class($myArrayOfTicketStructTypeItemItem) : gettype($myArrayOfTicketStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfTicketStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TicketStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTicketStructType
+     * @param \Ovh\StructType\TicketStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTicketStructType
      */
-    public function addToItem(\PayPal\StructType\TicketStruct $item)
+    public function addToItem(\Ovh\StructType\TicketStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TicketStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TicketStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TicketStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TicketStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfTicketStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TicketStruct|null
+     * @return \Ovh\StructType\TicketStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfTicketStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TicketStruct|null
+     * @return \Ovh\StructType\TicketStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfTicketStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TicketStruct|null
+     * @return \Ovh\StructType\TicketStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfTicketStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TicketStruct|null
+     * @return \Ovh\StructType\TicketStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfTicketStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TicketStruct|null
+     * @return \Ovh\StructType\TicketStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfTicketStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTicketStructType
+     * @return \Ovh\ArrayType\MyArrayOfTicketStructType
      */
     public static function __set_state(array $array)
     {

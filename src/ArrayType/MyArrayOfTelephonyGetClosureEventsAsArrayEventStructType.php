@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -17,13 +17,13 @@ class MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType extends AbstractS
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct[]
+     * @var \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType
      * @uses MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType::setItem()
-     * @param \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct[] $item
+     * @param \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -32,7 +32,7 @@ class MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType extends AbstractS
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct[]|null
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct[]|null
      */
     public function getItem()
     {
@@ -41,15 +41,15 @@ class MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType extends AbstractS
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType
+     * @param \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTelephonyGetClosureEventsAsArrayEventStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTelephonyGetClosureEventsAsArrayEventStructTypeItemItem instanceof \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct, "%s" given', is_object($myArrayOfTelephonyGetClosureEventsAsArrayEventStructTypeItemItem) ? get_class($myArrayOfTelephonyGetClosureEventsAsArrayEventStructTypeItemItem) : gettype($myArrayOfTelephonyGetClosureEventsAsArrayEventStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTelephonyGetClosureEventsAsArrayEventStructTypeItemItem instanceof \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct, "%s" given', is_object($myArrayOfTelephonyGetClosureEventsAsArrayEventStructTypeItemItem) ? get_class($myArrayOfTelephonyGetClosureEventsAsArrayEventStructTypeItemItem) : gettype($myArrayOfTelephonyGetClosureEventsAsArrayEventStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -58,14 +58,14 @@ class MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType extends AbstractS
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType
+     * @param \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType
      */
-    public function addToItem(\PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct $item)
+    public function addToItem(\Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType extends AbstractS
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct|null
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct|null
      */
     public function current()
     {
@@ -83,7 +83,7 @@ class MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType extends AbstractS
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct|null
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct|null
      */
     public function item($index)
     {
@@ -92,7 +92,7 @@ class MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType extends AbstractS
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct|null
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct|null
      */
     public function first()
     {
@@ -101,7 +101,7 @@ class MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType extends AbstractS
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct|null
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct|null
      */
     public function last()
     {
@@ -111,7 +111,7 @@ class MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType extends AbstractS
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsArrayEventStruct|null
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct|null
      */
     public function offsetGet($offset)
     {
@@ -132,7 +132,7 @@ class MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType extends AbstractS
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyGetClosureEventsAsArrayEventStructType
      */
     public static function __set_state(array $array)
     {

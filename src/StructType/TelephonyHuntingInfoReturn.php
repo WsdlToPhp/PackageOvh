@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,7 +13,7 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
 {
     /**
      * The members
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyHuntingInfoMemberStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyHuntingInfoMemberStructType
      */
     public $members;
     /**
@@ -85,7 +85,7 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
      * @uses TelephonyHuntingInfoReturn::setToneRingback()
      * @uses TelephonyHuntingInfoReturn::setToneOnClosure()
      * @uses TelephonyHuntingInfoReturn::setAnonymousCallRejection()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyHuntingInfoMemberStructType $members
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyHuntingInfoMemberStructType $members
      * @param string $strategy
      * @param string $pattern
      * @param int $onHoldTimer
@@ -98,7 +98,7 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
      * @param bool $toneOnClosure
      * @param bool $anonymousCallRejection
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonyHuntingInfoMemberStructType $members = null, $strategy = null, $pattern = null, $onHoldTimer = null, $queueSize = null, $numberOfCalls = null, $noReplyTimer = null, $mainVoicemail = null, $toneOnHold = null, $toneRingback = null, $toneOnClosure = null, $anonymousCallRejection = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonyHuntingInfoMemberStructType $members = null, $strategy = null, $pattern = null, $onHoldTimer = null, $queueSize = null, $numberOfCalls = null, $noReplyTimer = null, $mainVoicemail = null, $toneOnHold = null, $toneRingback = null, $toneOnClosure = null, $anonymousCallRejection = null)
     {
         $this
             ->setMembers($members)
@@ -116,7 +116,7 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     }
     /**
      * Get members value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyHuntingInfoMemberStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyHuntingInfoMemberStructType|null
      */
     public function getMembers()
     {
@@ -124,10 +124,10 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     }
     /**
      * Set members value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyHuntingInfoMemberStructType $members
-     * @return \PayPal\StructType\TelephonyHuntingInfoReturn
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyHuntingInfoMemberStructType $members
+     * @return \Ovh\StructType\TelephonyHuntingInfoReturn
      */
-    public function setMembers(\PayPal\ArrayType\MyArrayOfTelephonyHuntingInfoMemberStructType $members = null)
+    public function setMembers(\Ovh\ArrayType\MyArrayOfTelephonyHuntingInfoMemberStructType $members = null)
     {
         $this->members = $members;
         return $this;
@@ -143,7 +143,7 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     /**
      * Set strategy value
      * @param string $strategy
-     * @return \PayPal\StructType\TelephonyHuntingInfoReturn
+     * @return \Ovh\StructType\TelephonyHuntingInfoReturn
      */
     public function setStrategy($strategy = null)
     {
@@ -165,7 +165,7 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     /**
      * Set pattern value
      * @param string $pattern
-     * @return \PayPal\StructType\TelephonyHuntingInfoReturn
+     * @return \Ovh\StructType\TelephonyHuntingInfoReturn
      */
     public function setPattern($pattern = null)
     {
@@ -187,7 +187,7 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     /**
      * Set onHoldTimer value
      * @param int $onHoldTimer
-     * @return \PayPal\StructType\TelephonyHuntingInfoReturn
+     * @return \Ovh\StructType\TelephonyHuntingInfoReturn
      */
     public function setOnHoldTimer($onHoldTimer = null)
     {
@@ -209,7 +209,7 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     /**
      * Set queueSize value
      * @param int $queueSize
-     * @return \PayPal\StructType\TelephonyHuntingInfoReturn
+     * @return \Ovh\StructType\TelephonyHuntingInfoReturn
      */
     public function setQueueSize($queueSize = null)
     {
@@ -231,7 +231,7 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     /**
      * Set numberOfCalls value
      * @param int $numberOfCalls
-     * @return \PayPal\StructType\TelephonyHuntingInfoReturn
+     * @return \Ovh\StructType\TelephonyHuntingInfoReturn
      */
     public function setNumberOfCalls($numberOfCalls = null)
     {
@@ -253,7 +253,7 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     /**
      * Set noReplyTimer value
      * @param int $noReplyTimer
-     * @return \PayPal\StructType\TelephonyHuntingInfoReturn
+     * @return \Ovh\StructType\TelephonyHuntingInfoReturn
      */
     public function setNoReplyTimer($noReplyTimer = null)
     {
@@ -275,7 +275,7 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     /**
      * Set mainVoicemail value
      * @param string $mainVoicemail
-     * @return \PayPal\StructType\TelephonyHuntingInfoReturn
+     * @return \Ovh\StructType\TelephonyHuntingInfoReturn
      */
     public function setMainVoicemail($mainVoicemail = null)
     {
@@ -297,7 +297,7 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     /**
      * Set toneOnHold value
      * @param bool $toneOnHold
-     * @return \PayPal\StructType\TelephonyHuntingInfoReturn
+     * @return \Ovh\StructType\TelephonyHuntingInfoReturn
      */
     public function setToneOnHold($toneOnHold = null)
     {
@@ -319,7 +319,7 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     /**
      * Set toneRingback value
      * @param bool $toneRingback
-     * @return \PayPal\StructType\TelephonyHuntingInfoReturn
+     * @return \Ovh\StructType\TelephonyHuntingInfoReturn
      */
     public function setToneRingback($toneRingback = null)
     {
@@ -341,7 +341,7 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     /**
      * Set toneOnClosure value
      * @param bool $toneOnClosure
-     * @return \PayPal\StructType\TelephonyHuntingInfoReturn
+     * @return \Ovh\StructType\TelephonyHuntingInfoReturn
      */
     public function setToneOnClosure($toneOnClosure = null)
     {
@@ -363,7 +363,7 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     /**
      * Set anonymousCallRejection value
      * @param bool $anonymousCallRejection
-     * @return \PayPal\StructType\TelephonyHuntingInfoReturn
+     * @return \Ovh\StructType\TelephonyHuntingInfoReturn
      */
     public function setAnonymousCallRejection($anonymousCallRejection = null)
     {
@@ -380,7 +380,7 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyHuntingInfoReturn
+     * @return \Ovh\StructType\TelephonyHuntingInfoReturn
      */
     public static function __set_state(array $array)
     {

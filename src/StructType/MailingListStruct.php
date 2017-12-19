@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -101,7 +101,7 @@ class MailingListStruct extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\MailingListStruct
+     * @return \Ovh\StructType\MailingListStruct
      */
     public function setDomain($domain = null)
     {
@@ -123,7 +123,7 @@ class MailingListStruct extends AbstractStructBase
     /**
      * Set ml value
      * @param string $ml
-     * @return \PayPal\StructType\MailingListStruct
+     * @return \Ovh\StructType\MailingListStruct
      */
     public function setMl($ml = null)
     {
@@ -145,7 +145,7 @@ class MailingListStruct extends AbstractStructBase
     /**
      * Set owner value
      * @param string $owner
-     * @return \PayPal\StructType\MailingListStruct
+     * @return \Ovh\StructType\MailingListStruct
      */
     public function setOwner($owner = null)
     {
@@ -167,7 +167,7 @@ class MailingListStruct extends AbstractStructBase
     /**
      * Set nbSubscribers value
      * @param int $nbSubscribers
-     * @return \PayPal\StructType\MailingListStruct
+     * @return \Ovh\StructType\MailingListStruct
      */
     public function setNbSubscribers($nbSubscribers = null)
     {
@@ -189,7 +189,7 @@ class MailingListStruct extends AbstractStructBase
     /**
      * Set message_moderation value
      * @param bool $message_moderation
-     * @return \PayPal\StructType\MailingListStruct
+     * @return \Ovh\StructType\MailingListStruct
      */
     public function setMessage_moderation($message_moderation = null)
     {
@@ -211,7 +211,7 @@ class MailingListStruct extends AbstractStructBase
     /**
      * Set users_post_only value
      * @param bool $users_post_only
-     * @return \PayPal\StructType\MailingListStruct
+     * @return \Ovh\StructType\MailingListStruct
      */
     public function setUsers_post_only($users_post_only = null)
     {
@@ -233,7 +233,7 @@ class MailingListStruct extends AbstractStructBase
     /**
      * Set subscription_moderation value
      * @param bool $subscription_moderation
-     * @return \PayPal\StructType\MailingListStruct
+     * @return \Ovh\StructType\MailingListStruct
      */
     public function setSubscription_moderation($subscription_moderation = null)
     {
@@ -255,7 +255,7 @@ class MailingListStruct extends AbstractStructBase
     /**
      * Set replyto value
      * @param string $replyto
-     * @return \PayPal\StructType\MailingListStruct
+     * @return \Ovh\StructType\MailingListStruct
      */
     public function setReplyto($replyto = null)
     {
@@ -277,7 +277,7 @@ class MailingListStruct extends AbstractStructBase
     /**
      * Set lang value
      * @param string $lang
-     * @return \PayPal\StructType\MailingListStruct
+     * @return \Ovh\StructType\MailingListStruct
      */
     public function setLang($lang = null)
     {
@@ -294,7 +294,7 @@ class MailingListStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\MailingListStruct
+     * @return \Ovh\StructType\MailingListStruct
      */
     public static function __set_state(array $array)
     {

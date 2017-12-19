@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class ServiceListPaginatedStruct extends AbstractStructBase
     public $total;
     /**
      * The results
-     * @var \PayPal\ArrayType\MyArrayOfServiceLightStructType
+     * @var \Ovh\ArrayType\MyArrayOfServiceLightStructType
      */
     public $results;
     /**
@@ -26,9 +26,9 @@ class ServiceListPaginatedStruct extends AbstractStructBase
      * @uses ServiceListPaginatedStruct::setTotal()
      * @uses ServiceListPaginatedStruct::setResults()
      * @param int $total
-     * @param \PayPal\ArrayType\MyArrayOfServiceLightStructType $results
+     * @param \Ovh\ArrayType\MyArrayOfServiceLightStructType $results
      */
-    public function __construct($total = null, \PayPal\ArrayType\MyArrayOfServiceLightStructType $results = null)
+    public function __construct($total = null, \Ovh\ArrayType\MyArrayOfServiceLightStructType $results = null)
     {
         $this
             ->setTotal($total)
@@ -45,7 +45,7 @@ class ServiceListPaginatedStruct extends AbstractStructBase
     /**
      * Set total value
      * @param int $total
-     * @return \PayPal\StructType\ServiceListPaginatedStruct
+     * @return \Ovh\StructType\ServiceListPaginatedStruct
      */
     public function setTotal($total = null)
     {
@@ -58,7 +58,7 @@ class ServiceListPaginatedStruct extends AbstractStructBase
     }
     /**
      * Get results value
-     * @return \PayPal\ArrayType\MyArrayOfServiceLightStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfServiceLightStructType|null
      */
     public function getResults()
     {
@@ -66,10 +66,10 @@ class ServiceListPaginatedStruct extends AbstractStructBase
     }
     /**
      * Set results value
-     * @param \PayPal\ArrayType\MyArrayOfServiceLightStructType $results
-     * @return \PayPal\StructType\ServiceListPaginatedStruct
+     * @param \Ovh\ArrayType\MyArrayOfServiceLightStructType $results
+     * @return \Ovh\StructType\ServiceListPaginatedStruct
      */
-    public function setResults(\PayPal\ArrayType\MyArrayOfServiceLightStructType $results = null)
+    public function setResults(\Ovh\ArrayType\MyArrayOfServiceLightStructType $results = null)
     {
         $this->results = $results;
         return $this;
@@ -80,7 +80,7 @@ class ServiceListPaginatedStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ServiceListPaginatedStruct
+     * @return \Ovh\StructType\ServiceListPaginatedStruct
      */
     public static function __set_state(array $array)
     {

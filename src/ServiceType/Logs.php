@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Logs extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\LogsAccessList $parameters
-     * @return \PayPal\StructType\LogsAccessListResponse|bool
+     * @param \Ovh\StructType\LogsAccessList $parameters
+     * @return \Ovh\StructType\LogsAccessListResponse|bool
      */
-    public function logsAccessList(\PayPal\StructType\LogsAccessList $parameters)
+    public function logsAccessList(\Ovh\StructType\LogsAccessList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->logsAccessList($parameters));
@@ -36,10 +36,10 @@ class Logs extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\LogsAccessDel $parameters
-     * @return \PayPal\StructType\LogsAccessDelResponse|bool
+     * @param \Ovh\StructType\LogsAccessDel $parameters
+     * @return \Ovh\StructType\LogsAccessDelResponse|bool
      */
-    public function logsAccessDel(\PayPal\StructType\LogsAccessDel $parameters)
+    public function logsAccessDel(\Ovh\StructType\LogsAccessDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->logsAccessDel($parameters));
@@ -55,10 +55,10 @@ class Logs extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\LogsAccessAdd $parameters
-     * @return \PayPal\StructType\LogsAccessAddResponse|bool
+     * @param \Ovh\StructType\LogsAccessAdd $parameters
+     * @return \Ovh\StructType\LogsAccessAddResponse|bool
      */
-    public function logsAccessAdd(\PayPal\StructType\LogsAccessAdd $parameters)
+    public function logsAccessAdd(\Ovh\StructType\LogsAccessAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->logsAccessAdd($parameters));
@@ -71,7 +71,7 @@ class Logs extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\LogsAccessAddResponse|\PayPal\StructType\LogsAccessDelResponse|\PayPal\StructType\LogsAccessListResponse
+     * @return \Ovh\StructType\LogsAccessAddResponse|\Ovh\StructType\LogsAccessDelResponse|\Ovh\StructType\LogsAccessListResponse
      */
     public function getResult()
     {

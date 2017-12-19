@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -73,12 +73,12 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     public $type;
     /**
      * The details
-     * @var \PayPal\ArrayType\MyArrayOfBillingInvoiceInfoDetailStructType
+     * @var \Ovh\ArrayType\MyArrayOfBillingInvoiceInfoDetailStructType
      */
     public $details;
     /**
      * The payment
-     * @var \PayPal\StructType\BillingInvoiceInfoPayementStruct
+     * @var \Ovh\StructType\BillingInvoiceInfoPayementStruct
      */
     public $payment;
     /**
@@ -109,10 +109,10 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
      * @param float $taxrate
      * @param float $tax
      * @param string $type
-     * @param \PayPal\ArrayType\MyArrayOfBillingInvoiceInfoDetailStructType $details
-     * @param \PayPal\StructType\BillingInvoiceInfoPayementStruct $payment
+     * @param \Ovh\ArrayType\MyArrayOfBillingInvoiceInfoDetailStructType $details
+     * @param \Ovh\StructType\BillingInvoiceInfoPayementStruct $payment
      */
-    public function __construct($billnum = null, $date = null, $nicbilling = null, $baseprice = null, $finalprice = null, $password = null, $order = null, $nicorder = null, $country = null, $taxrate = null, $tax = null, $type = null, \PayPal\ArrayType\MyArrayOfBillingInvoiceInfoDetailStructType $details = null, \PayPal\StructType\BillingInvoiceInfoPayementStruct $payment = null)
+    public function __construct($billnum = null, $date = null, $nicbilling = null, $baseprice = null, $finalprice = null, $password = null, $order = null, $nicorder = null, $country = null, $taxrate = null, $tax = null, $type = null, \Ovh\ArrayType\MyArrayOfBillingInvoiceInfoDetailStructType $details = null, \Ovh\StructType\BillingInvoiceInfoPayementStruct $payment = null)
     {
         $this
             ->setBillnum($billnum)
@@ -141,7 +141,7 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     /**
      * Set billnum value
      * @param string $billnum
-     * @return \PayPal\StructType\BillingInvoiceInfoReturn
+     * @return \Ovh\StructType\BillingInvoiceInfoReturn
      */
     public function setBillnum($billnum = null)
     {
@@ -163,7 +163,7 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\BillingInvoiceInfoReturn
+     * @return \Ovh\StructType\BillingInvoiceInfoReturn
      */
     public function setDate($date = null)
     {
@@ -185,7 +185,7 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     /**
      * Set nicbilling value
      * @param string $nicbilling
-     * @return \PayPal\StructType\BillingInvoiceInfoReturn
+     * @return \Ovh\StructType\BillingInvoiceInfoReturn
      */
     public function setNicbilling($nicbilling = null)
     {
@@ -207,7 +207,7 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     /**
      * Set baseprice value
      * @param string $baseprice
-     * @return \PayPal\StructType\BillingInvoiceInfoReturn
+     * @return \Ovh\StructType\BillingInvoiceInfoReturn
      */
     public function setBaseprice($baseprice = null)
     {
@@ -229,7 +229,7 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     /**
      * Set finalprice value
      * @param float $finalprice
-     * @return \PayPal\StructType\BillingInvoiceInfoReturn
+     * @return \Ovh\StructType\BillingInvoiceInfoReturn
      */
     public function setFinalprice($finalprice = null)
     {
@@ -247,7 +247,7 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \PayPal\StructType\BillingInvoiceInfoReturn
+     * @return \Ovh\StructType\BillingInvoiceInfoReturn
      */
     public function setPassword($password = null)
     {
@@ -269,7 +269,7 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     /**
      * Set order value
      * @param string $order
-     * @return \PayPal\StructType\BillingInvoiceInfoReturn
+     * @return \Ovh\StructType\BillingInvoiceInfoReturn
      */
     public function setOrder($order = null)
     {
@@ -291,7 +291,7 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     /**
      * Set nicorder value
      * @param string $nicorder
-     * @return \PayPal\StructType\BillingInvoiceInfoReturn
+     * @return \Ovh\StructType\BillingInvoiceInfoReturn
      */
     public function setNicorder($nicorder = null)
     {
@@ -313,7 +313,7 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\BillingInvoiceInfoReturn
+     * @return \Ovh\StructType\BillingInvoiceInfoReturn
      */
     public function setCountry($country = null)
     {
@@ -335,7 +335,7 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     /**
      * Set taxrate value
      * @param float $taxrate
-     * @return \PayPal\StructType\BillingInvoiceInfoReturn
+     * @return \Ovh\StructType\BillingInvoiceInfoReturn
      */
     public function setTaxrate($taxrate = null)
     {
@@ -353,7 +353,7 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     /**
      * Set tax value
      * @param float $tax
-     * @return \PayPal\StructType\BillingInvoiceInfoReturn
+     * @return \Ovh\StructType\BillingInvoiceInfoReturn
      */
     public function setTax($tax = null)
     {
@@ -371,7 +371,7 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\BillingInvoiceInfoReturn
+     * @return \Ovh\StructType\BillingInvoiceInfoReturn
      */
     public function setType($type = null)
     {
@@ -384,7 +384,7 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     }
     /**
      * Get details value
-     * @return \PayPal\ArrayType\MyArrayOfBillingInvoiceInfoDetailStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfBillingInvoiceInfoDetailStructType|null
      */
     public function getDetails()
     {
@@ -392,17 +392,17 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     }
     /**
      * Set details value
-     * @param \PayPal\ArrayType\MyArrayOfBillingInvoiceInfoDetailStructType $details
-     * @return \PayPal\StructType\BillingInvoiceInfoReturn
+     * @param \Ovh\ArrayType\MyArrayOfBillingInvoiceInfoDetailStructType $details
+     * @return \Ovh\StructType\BillingInvoiceInfoReturn
      */
-    public function setDetails(\PayPal\ArrayType\MyArrayOfBillingInvoiceInfoDetailStructType $details = null)
+    public function setDetails(\Ovh\ArrayType\MyArrayOfBillingInvoiceInfoDetailStructType $details = null)
     {
         $this->details = $details;
         return $this;
     }
     /**
      * Get payment value
-     * @return \PayPal\StructType\BillingInvoiceInfoPayementStruct|null
+     * @return \Ovh\StructType\BillingInvoiceInfoPayementStruct|null
      */
     public function getPayment()
     {
@@ -410,10 +410,10 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     }
     /**
      * Set payment value
-     * @param \PayPal\StructType\BillingInvoiceInfoPayementStruct $payment
-     * @return \PayPal\StructType\BillingInvoiceInfoReturn
+     * @param \Ovh\StructType\BillingInvoiceInfoPayementStruct $payment
+     * @return \Ovh\StructType\BillingInvoiceInfoReturn
      */
-    public function setPayment(\PayPal\StructType\BillingInvoiceInfoPayementStruct $payment = null)
+    public function setPayment(\Ovh\StructType\BillingInvoiceInfoPayementStruct $payment = null)
     {
         $this->payment = $payment;
         return $this;
@@ -424,7 +424,7 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\BillingInvoiceInfoReturn
+     * @return \Ovh\StructType\BillingInvoiceInfoReturn
      */
     public static function __set_state(array $array)
     {

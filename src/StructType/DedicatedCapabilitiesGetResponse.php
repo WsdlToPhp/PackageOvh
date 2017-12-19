@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedCapabilitiesGetResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\DedicatedCapabilitiesStruct
+     * @var \Ovh\StructType\DedicatedCapabilitiesStruct
      */
     public $return;
     /**
      * Constructor method for dedicatedCapabilitiesGetResponse
      * @uses DedicatedCapabilitiesGetResponse::setReturn()
-     * @param \PayPal\StructType\DedicatedCapabilitiesStruct $return
+     * @param \Ovh\StructType\DedicatedCapabilitiesStruct $return
      */
-    public function __construct(\PayPal\StructType\DedicatedCapabilitiesStruct $return = null)
+    public function __construct(\Ovh\StructType\DedicatedCapabilitiesStruct $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\DedicatedCapabilitiesStruct|null
+     * @return \Ovh\StructType\DedicatedCapabilitiesStruct|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedCapabilitiesGetResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\DedicatedCapabilitiesStruct $return
-     * @return \PayPal\StructType\DedicatedCapabilitiesGetResponse
+     * @param \Ovh\StructType\DedicatedCapabilitiesStruct $return
+     * @return \Ovh\StructType\DedicatedCapabilitiesGetResponse
      */
-    public function setReturn(\PayPal\StructType\DedicatedCapabilitiesStruct $return = null)
+    public function setReturn(\Ovh\StructType\DedicatedCapabilitiesStruct $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedCapabilitiesGetResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedCapabilitiesGetResponse
+     * @return \Ovh\StructType\DedicatedCapabilitiesGetResponse
      */
     public static function __set_state(array $array)
     {

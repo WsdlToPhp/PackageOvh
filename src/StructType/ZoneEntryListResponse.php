@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class ZoneEntryListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfZoneStructType
+     * @var \Ovh\ArrayType\MyArrayOfZoneStructType
      */
     public $return;
     /**
      * Constructor method for zoneEntryListResponse
      * @uses ZoneEntryListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfZoneStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfZoneStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfZoneStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfZoneStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfZoneStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfZoneStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class ZoneEntryListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfZoneStructType $return
-     * @return \PayPal\StructType\ZoneEntryListResponse
+     * @param \Ovh\ArrayType\MyArrayOfZoneStructType $return
+     * @return \Ovh\StructType\ZoneEntryListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfZoneStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfZoneStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class ZoneEntryListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ZoneEntryListResponse
+     * @return \Ovh\StructType\ZoneEntryListResponse
      */
     public static function __set_state(array $array)
     {

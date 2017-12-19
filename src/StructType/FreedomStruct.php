@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -77,7 +77,7 @@ class FreedomStruct extends AbstractStructBase
     /**
      * Set referenceReferer value
      * @param string $referenceReferer
-     * @return \PayPal\StructType\FreedomStruct
+     * @return \Ovh\StructType\FreedomStruct
      */
     public function setReferenceReferer($referenceReferer = null)
     {
@@ -99,7 +99,7 @@ class FreedomStruct extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \PayPal\StructType\FreedomStruct
+     * @return \Ovh\StructType\FreedomStruct
      */
     public function setCreationDate($creationDate = null)
     {
@@ -121,7 +121,7 @@ class FreedomStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\FreedomStruct
+     * @return \Ovh\StructType\FreedomStruct
      */
     public function setStatus($status = null)
     {
@@ -143,7 +143,7 @@ class FreedomStruct extends AbstractStructBase
     /**
      * Set freeDom value
      * @param string $freeDom
-     * @return \PayPal\StructType\FreedomStruct
+     * @return \Ovh\StructType\FreedomStruct
      */
     public function setFreeDom($freeDom = null)
     {
@@ -165,7 +165,7 @@ class FreedomStruct extends AbstractStructBase
     /**
      * Set useDate value
      * @param string $useDate
-     * @return \PayPal\StructType\FreedomStruct
+     * @return \Ovh\StructType\FreedomStruct
      */
     public function setUseDate($useDate = null)
     {
@@ -187,7 +187,7 @@ class FreedomStruct extends AbstractStructBase
     /**
      * Set domainReferer value
      * @param string $domainReferer
-     * @return \PayPal\StructType\FreedomStruct
+     * @return \Ovh\StructType\FreedomStruct
      */
     public function setDomainReferer($domainReferer = null)
     {
@@ -204,7 +204,7 @@ class FreedomStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\FreedomStruct
+     * @return \Ovh\StructType\FreedomStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -58,7 +58,7 @@ class DomainInfoReturn extends AbstractStructBase
     public $authinfo;
     /**
      * The dns
-     * @var \PayPal\ArrayType\MyArrayOfNsStructType
+     * @var \Ovh\ArrayType\MyArrayOfNsStructType
      */
     public $dns;
     /**
@@ -82,9 +82,9 @@ class DomainInfoReturn extends AbstractStructBase
      * @param string $nictech
      * @param string $nicbilling
      * @param string $authinfo
-     * @param \PayPal\ArrayType\MyArrayOfNsStructType $dns
+     * @param \Ovh\ArrayType\MyArrayOfNsStructType $dns
      */
-    public function __construct($domain = null, $creation = null, $modification = null, $expiration = null, $nicowner = null, $nicadmin = null, $nictech = null, $nicbilling = null, $authinfo = null, \PayPal\ArrayType\MyArrayOfNsStructType $dns = null)
+    public function __construct($domain = null, $creation = null, $modification = null, $expiration = null, $nicowner = null, $nicadmin = null, $nictech = null, $nicbilling = null, $authinfo = null, \Ovh\ArrayType\MyArrayOfNsStructType $dns = null)
     {
         $this
             ->setDomain($domain)
@@ -109,7 +109,7 @@ class DomainInfoReturn extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\DomainInfoReturn
+     * @return \Ovh\StructType\DomainInfoReturn
      */
     public function setDomain($domain = null)
     {
@@ -131,7 +131,7 @@ class DomainInfoReturn extends AbstractStructBase
     /**
      * Set creation value
      * @param string $creation
-     * @return \PayPal\StructType\DomainInfoReturn
+     * @return \Ovh\StructType\DomainInfoReturn
      */
     public function setCreation($creation = null)
     {
@@ -153,7 +153,7 @@ class DomainInfoReturn extends AbstractStructBase
     /**
      * Set modification value
      * @param string $modification
-     * @return \PayPal\StructType\DomainInfoReturn
+     * @return \Ovh\StructType\DomainInfoReturn
      */
     public function setModification($modification = null)
     {
@@ -175,7 +175,7 @@ class DomainInfoReturn extends AbstractStructBase
     /**
      * Set expiration value
      * @param string $expiration
-     * @return \PayPal\StructType\DomainInfoReturn
+     * @return \Ovh\StructType\DomainInfoReturn
      */
     public function setExpiration($expiration = null)
     {
@@ -197,7 +197,7 @@ class DomainInfoReturn extends AbstractStructBase
     /**
      * Set nicowner value
      * @param string $nicowner
-     * @return \PayPal\StructType\DomainInfoReturn
+     * @return \Ovh\StructType\DomainInfoReturn
      */
     public function setNicowner($nicowner = null)
     {
@@ -219,7 +219,7 @@ class DomainInfoReturn extends AbstractStructBase
     /**
      * Set nicadmin value
      * @param string $nicadmin
-     * @return \PayPal\StructType\DomainInfoReturn
+     * @return \Ovh\StructType\DomainInfoReturn
      */
     public function setNicadmin($nicadmin = null)
     {
@@ -241,7 +241,7 @@ class DomainInfoReturn extends AbstractStructBase
     /**
      * Set nictech value
      * @param string $nictech
-     * @return \PayPal\StructType\DomainInfoReturn
+     * @return \Ovh\StructType\DomainInfoReturn
      */
     public function setNictech($nictech = null)
     {
@@ -263,7 +263,7 @@ class DomainInfoReturn extends AbstractStructBase
     /**
      * Set nicbilling value
      * @param string $nicbilling
-     * @return \PayPal\StructType\DomainInfoReturn
+     * @return \Ovh\StructType\DomainInfoReturn
      */
     public function setNicbilling($nicbilling = null)
     {
@@ -285,7 +285,7 @@ class DomainInfoReturn extends AbstractStructBase
     /**
      * Set authinfo value
      * @param string $authinfo
-     * @return \PayPal\StructType\DomainInfoReturn
+     * @return \Ovh\StructType\DomainInfoReturn
      */
     public function setAuthinfo($authinfo = null)
     {
@@ -298,7 +298,7 @@ class DomainInfoReturn extends AbstractStructBase
     }
     /**
      * Get dns value
-     * @return \PayPal\ArrayType\MyArrayOfNsStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfNsStructType|null
      */
     public function getDns()
     {
@@ -306,10 +306,10 @@ class DomainInfoReturn extends AbstractStructBase
     }
     /**
      * Set dns value
-     * @param \PayPal\ArrayType\MyArrayOfNsStructType $dns
-     * @return \PayPal\StructType\DomainInfoReturn
+     * @param \Ovh\ArrayType\MyArrayOfNsStructType $dns
+     * @return \Ovh\StructType\DomainInfoReturn
      */
-    public function setDns(\PayPal\ArrayType\MyArrayOfNsStructType $dns = null)
+    public function setDns(\Ovh\ArrayType\MyArrayOfNsStructType $dns = null)
     {
         $this->dns = $dns;
         return $this;
@@ -320,7 +320,7 @@ class DomainInfoReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DomainInfoReturn
+     * @return \Ovh\StructType\DomainInfoReturn
      */
     public static function __set_state(array $array)
     {

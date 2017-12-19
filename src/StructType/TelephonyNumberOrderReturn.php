@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class TelephonyNumberOrderReturn extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \PayPal\StructType\TelephonyNumberOrderReturn
+     * @return \Ovh\StructType\TelephonyNumberOrderReturn
      */
     public function setOrderId($orderId = null)
     {
@@ -83,7 +83,7 @@ class TelephonyNumberOrderReturn extends AbstractStructBase
     /**
      * Set orderPassword value
      * @param string $orderPassword
-     * @return \PayPal\StructType\TelephonyNumberOrderReturn
+     * @return \Ovh\StructType\TelephonyNumberOrderReturn
      */
     public function setOrderPassword($orderPassword = null)
     {
@@ -105,7 +105,7 @@ class TelephonyNumberOrderReturn extends AbstractStructBase
     /**
      * Set orderUrl value
      * @param string $orderUrl
-     * @return \PayPal\StructType\TelephonyNumberOrderReturn
+     * @return \Ovh\StructType\TelephonyNumberOrderReturn
      */
     public function setOrderUrl($orderUrl = null)
     {
@@ -127,7 +127,7 @@ class TelephonyNumberOrderReturn extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \PayPal\StructType\TelephonyNumberOrderReturn
+     * @return \Ovh\StructType\TelephonyNumberOrderReturn
      */
     public function setTotalPrice($totalPrice = null)
     {
@@ -140,7 +140,7 @@ class TelephonyNumberOrderReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyNumberOrderReturn
+     * @return \Ovh\StructType\TelephonyNumberOrderReturn
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class TelephonyLineLogsListStruct extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\TelephonyLineLogsListStruct
+     * @return \Ovh\StructType\TelephonyLineLogsListStruct
      */
     public function setDate($date = null)
     {
@@ -75,7 +75,7 @@ class TelephonyLineLogsListStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\TelephonyLineLogsListStruct
+     * @return \Ovh\StructType\TelephonyLineLogsListStruct
      */
     public function setType($type = null)
     {
@@ -97,7 +97,7 @@ class TelephonyLineLogsListStruct extends AbstractStructBase
     /**
      * Set msg value
      * @param string $msg
-     * @return \PayPal\StructType\TelephonyLineLogsListStruct
+     * @return \Ovh\StructType\TelephonyLineLogsListStruct
      */
     public function setMsg($msg = null)
     {
@@ -114,7 +114,7 @@ class TelephonyLineLogsListStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyLineLogsListStruct
+     * @return \Ovh\StructType\TelephonyLineLogsListStruct
      */
     public static function __set_state(array $array)
     {

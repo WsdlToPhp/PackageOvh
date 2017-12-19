@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfTelephonySmsHistoryStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TelephonySmsHistoryStruct[]
+     * @var \Ovh\StructType\TelephonySmsHistoryStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTelephonySmsHistoryStructType
      * @uses MyArrayOfTelephonySmsHistoryStructType::setItem()
-     * @param \PayPal\StructType\TelephonySmsHistoryStruct[] $item
+     * @param \Ovh\StructType\TelephonySmsHistoryStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfTelephonySmsHistoryStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TelephonySmsHistoryStruct[]|null
+     * @return \Ovh\StructType\TelephonySmsHistoryStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfTelephonySmsHistoryStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonySmsHistoryStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonySmsHistoryStructType
+     * @param \Ovh\StructType\TelephonySmsHistoryStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonySmsHistoryStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTelephonySmsHistoryStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTelephonySmsHistoryStructTypeItemItem instanceof \PayPal\StructType\TelephonySmsHistoryStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonySmsHistoryStruct, "%s" given', is_object($myArrayOfTelephonySmsHistoryStructTypeItemItem) ? get_class($myArrayOfTelephonySmsHistoryStructTypeItemItem) : gettype($myArrayOfTelephonySmsHistoryStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTelephonySmsHistoryStructTypeItemItem instanceof \Ovh\StructType\TelephonySmsHistoryStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonySmsHistoryStruct, "%s" given', is_object($myArrayOfTelephonySmsHistoryStructTypeItemItem) ? get_class($myArrayOfTelephonySmsHistoryStructTypeItemItem) : gettype($myArrayOfTelephonySmsHistoryStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfTelephonySmsHistoryStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonySmsHistoryStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonySmsHistoryStructType
+     * @param \Ovh\StructType\TelephonySmsHistoryStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonySmsHistoryStructType
      */
-    public function addToItem(\PayPal\StructType\TelephonySmsHistoryStruct $item)
+    public function addToItem(\Ovh\StructType\TelephonySmsHistoryStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TelephonySmsHistoryStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonySmsHistoryStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TelephonySmsHistoryStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonySmsHistoryStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfTelephonySmsHistoryStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonySmsHistoryStruct|null
+     * @return \Ovh\StructType\TelephonySmsHistoryStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfTelephonySmsHistoryStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonySmsHistoryStruct|null
+     * @return \Ovh\StructType\TelephonySmsHistoryStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfTelephonySmsHistoryStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonySmsHistoryStruct|null
+     * @return \Ovh\StructType\TelephonySmsHistoryStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfTelephonySmsHistoryStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonySmsHistoryStruct|null
+     * @return \Ovh\StructType\TelephonySmsHistoryStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfTelephonySmsHistoryStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonySmsHistoryStruct|null
+     * @return \Ovh\StructType\TelephonySmsHistoryStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfTelephonySmsHistoryStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTelephonySmsHistoryStructType
+     * @return \Ovh\ArrayType\MyArrayOfTelephonySmsHistoryStructType
      */
     public static function __set_state(array $array)
     {

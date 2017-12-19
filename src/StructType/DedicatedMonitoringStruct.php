@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -77,7 +77,7 @@ class DedicatedMonitoringStruct extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\DedicatedMonitoringStruct
+     * @return \Ovh\StructType\DedicatedMonitoringStruct
      */
     public function setId($id = null)
     {
@@ -99,7 +99,7 @@ class DedicatedMonitoringStruct extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \PayPal\StructType\DedicatedMonitoringStruct
+     * @return \Ovh\StructType\DedicatedMonitoringStruct
      */
     public function setDestination($destination = null)
     {
@@ -121,7 +121,7 @@ class DedicatedMonitoringStruct extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \PayPal\StructType\DedicatedMonitoringStruct
+     * @return \Ovh\StructType\DedicatedMonitoringStruct
      */
     public function setLanguage($language = null)
     {
@@ -143,7 +143,7 @@ class DedicatedMonitoringStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\DedicatedMonitoringStruct
+     * @return \Ovh\StructType\DedicatedMonitoringStruct
      */
     public function setStatus($status = null)
     {
@@ -165,7 +165,7 @@ class DedicatedMonitoringStruct extends AbstractStructBase
     /**
      * Set service value
      * @param string $service
-     * @return \PayPal\StructType\DedicatedMonitoringStruct
+     * @return \Ovh\StructType\DedicatedMonitoringStruct
      */
     public function setService($service = null)
     {
@@ -187,7 +187,7 @@ class DedicatedMonitoringStruct extends AbstractStructBase
     /**
      * Set smsAccount value
      * @param string $smsAccount
-     * @return \PayPal\StructType\DedicatedMonitoringStruct
+     * @return \Ovh\StructType\DedicatedMonitoringStruct
      */
     public function setSmsAccount($smsAccount = null)
     {
@@ -204,7 +204,7 @@ class DedicatedMonitoringStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedMonitoringStruct
+     * @return \Ovh\StructType\DedicatedMonitoringStruct
      */
     public static function __set_state(array $array)
     {

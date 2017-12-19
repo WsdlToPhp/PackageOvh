@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfDedicatedMonitoringStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\DedicatedMonitoringStruct[]
+     * @var \Ovh\StructType\DedicatedMonitoringStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfDedicatedMonitoringStructType
      * @uses MyArrayOfDedicatedMonitoringStructType::setItem()
-     * @param \PayPal\StructType\DedicatedMonitoringStruct[] $item
+     * @param \Ovh\StructType\DedicatedMonitoringStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfDedicatedMonitoringStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\DedicatedMonitoringStruct[]|null
+     * @return \Ovh\StructType\DedicatedMonitoringStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfDedicatedMonitoringStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedMonitoringStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedMonitoringStructType
+     * @param \Ovh\StructType\DedicatedMonitoringStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedMonitoringStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfDedicatedMonitoringStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfDedicatedMonitoringStructTypeItemItem instanceof \PayPal\StructType\DedicatedMonitoringStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedMonitoringStruct, "%s" given', is_object($myArrayOfDedicatedMonitoringStructTypeItemItem) ? get_class($myArrayOfDedicatedMonitoringStructTypeItemItem) : gettype($myArrayOfDedicatedMonitoringStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfDedicatedMonitoringStructTypeItemItem instanceof \Ovh\StructType\DedicatedMonitoringStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedMonitoringStruct, "%s" given', is_object($myArrayOfDedicatedMonitoringStructTypeItemItem) ? get_class($myArrayOfDedicatedMonitoringStructTypeItemItem) : gettype($myArrayOfDedicatedMonitoringStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfDedicatedMonitoringStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedMonitoringStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedMonitoringStructType
+     * @param \Ovh\StructType\DedicatedMonitoringStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedMonitoringStructType
      */
-    public function addToItem(\PayPal\StructType\DedicatedMonitoringStruct $item)
+    public function addToItem(\Ovh\StructType\DedicatedMonitoringStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\DedicatedMonitoringStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedMonitoringStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\DedicatedMonitoringStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedMonitoringStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfDedicatedMonitoringStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\DedicatedMonitoringStruct|null
+     * @return \Ovh\StructType\DedicatedMonitoringStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfDedicatedMonitoringStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\DedicatedMonitoringStruct|null
+     * @return \Ovh\StructType\DedicatedMonitoringStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfDedicatedMonitoringStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\DedicatedMonitoringStruct|null
+     * @return \Ovh\StructType\DedicatedMonitoringStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfDedicatedMonitoringStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\DedicatedMonitoringStruct|null
+     * @return \Ovh\StructType\DedicatedMonitoringStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfDedicatedMonitoringStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\DedicatedMonitoringStruct|null
+     * @return \Ovh\StructType\DedicatedMonitoringStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfDedicatedMonitoringStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedMonitoringStructType
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedMonitoringStructType
      */
     public static function __set_state(array $array)
     {

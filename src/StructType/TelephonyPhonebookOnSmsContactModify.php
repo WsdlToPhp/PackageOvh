@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -129,7 +129,7 @@ class TelephonyPhonebookOnSmsContactModify extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactModify
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactModify
      */
     public function setSession($session = null)
     {
@@ -151,7 +151,7 @@ class TelephonyPhonebookOnSmsContactModify extends AbstractStructBase
     /**
      * Set smsAccount value
      * @param string $smsAccount
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactModify
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactModify
      */
     public function setSmsAccount($smsAccount = null)
     {
@@ -173,7 +173,7 @@ class TelephonyPhonebookOnSmsContactModify extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactModify
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactModify
      */
     public function setId($id = null)
     {
@@ -195,7 +195,7 @@ class TelephonyPhonebookOnSmsContactModify extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactModify
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactModify
      */
     public function setName($name = null)
     {
@@ -217,7 +217,7 @@ class TelephonyPhonebookOnSmsContactModify extends AbstractStructBase
     /**
      * Set surname value
      * @param string $surname
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactModify
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactModify
      */
     public function setSurname($surname = null)
     {
@@ -239,7 +239,7 @@ class TelephonyPhonebookOnSmsContactModify extends AbstractStructBase
     /**
      * Set workPhone value
      * @param string $workPhone
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactModify
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactModify
      */
     public function setWorkPhone($workPhone = null)
     {
@@ -261,7 +261,7 @@ class TelephonyPhonebookOnSmsContactModify extends AbstractStructBase
     /**
      * Set workMobile value
      * @param string $workMobile
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactModify
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactModify
      */
     public function setWorkMobile($workMobile = null)
     {
@@ -283,7 +283,7 @@ class TelephonyPhonebookOnSmsContactModify extends AbstractStructBase
     /**
      * Set homePhone value
      * @param string $homePhone
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactModify
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactModify
      */
     public function setHomePhone($homePhone = null)
     {
@@ -305,7 +305,7 @@ class TelephonyPhonebookOnSmsContactModify extends AbstractStructBase
     /**
      * Set homeMobile value
      * @param string $homeMobile
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactModify
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactModify
      */
     public function setHomeMobile($homeMobile = null)
     {
@@ -327,7 +327,7 @@ class TelephonyPhonebookOnSmsContactModify extends AbstractStructBase
     /**
      * Set groupName value
      * @param string $groupName
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactModify
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactModify
      */
     public function setGroupName($groupName = null)
     {
@@ -344,7 +344,7 @@ class TelephonyPhonebookOnSmsContactModify extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactModify
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactModify
      */
     public static function __set_state(array $array)
     {

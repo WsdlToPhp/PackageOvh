@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,12 +23,12 @@ class TelephonyFaxCallListReturn extends AbstractStructBase
     public $toDate;
     /**
      * The list
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyFaxCallStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyFaxCallStructType
      */
     public $list;
     /**
      * The summary
-     * @var \PayPal\StructType\TelephonyFaxCallsSummaryStruct
+     * @var \Ovh\StructType\TelephonyFaxCallsSummaryStruct
      */
     public $summary;
     /**
@@ -39,10 +39,10 @@ class TelephonyFaxCallListReturn extends AbstractStructBase
      * @uses TelephonyFaxCallListReturn::setSummary()
      * @param string $fromDate
      * @param string $toDate
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyFaxCallStructType $list
-     * @param \PayPal\StructType\TelephonyFaxCallsSummaryStruct $summary
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyFaxCallStructType $list
+     * @param \Ovh\StructType\TelephonyFaxCallsSummaryStruct $summary
      */
-    public function __construct($fromDate = null, $toDate = null, \PayPal\ArrayType\MyArrayOfTelephonyFaxCallStructType $list = null, \PayPal\StructType\TelephonyFaxCallsSummaryStruct $summary = null)
+    public function __construct($fromDate = null, $toDate = null, \Ovh\ArrayType\MyArrayOfTelephonyFaxCallStructType $list = null, \Ovh\StructType\TelephonyFaxCallsSummaryStruct $summary = null)
     {
         $this
             ->setFromDate($fromDate)
@@ -61,7 +61,7 @@ class TelephonyFaxCallListReturn extends AbstractStructBase
     /**
      * Set fromDate value
      * @param string $fromDate
-     * @return \PayPal\StructType\TelephonyFaxCallListReturn
+     * @return \Ovh\StructType\TelephonyFaxCallListReturn
      */
     public function setFromDate($fromDate = null)
     {
@@ -83,7 +83,7 @@ class TelephonyFaxCallListReturn extends AbstractStructBase
     /**
      * Set toDate value
      * @param string $toDate
-     * @return \PayPal\StructType\TelephonyFaxCallListReturn
+     * @return \Ovh\StructType\TelephonyFaxCallListReturn
      */
     public function setToDate($toDate = null)
     {
@@ -96,7 +96,7 @@ class TelephonyFaxCallListReturn extends AbstractStructBase
     }
     /**
      * Get list value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyFaxCallStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyFaxCallStructType|null
      */
     public function getList()
     {
@@ -104,17 +104,17 @@ class TelephonyFaxCallListReturn extends AbstractStructBase
     }
     /**
      * Set list value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyFaxCallStructType $list
-     * @return \PayPal\StructType\TelephonyFaxCallListReturn
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyFaxCallStructType $list
+     * @return \Ovh\StructType\TelephonyFaxCallListReturn
      */
-    public function setList(\PayPal\ArrayType\MyArrayOfTelephonyFaxCallStructType $list = null)
+    public function setList(\Ovh\ArrayType\MyArrayOfTelephonyFaxCallStructType $list = null)
     {
         $this->list = $list;
         return $this;
     }
     /**
      * Get summary value
-     * @return \PayPal\StructType\TelephonyFaxCallsSummaryStruct|null
+     * @return \Ovh\StructType\TelephonyFaxCallsSummaryStruct|null
      */
     public function getSummary()
     {
@@ -122,10 +122,10 @@ class TelephonyFaxCallListReturn extends AbstractStructBase
     }
     /**
      * Set summary value
-     * @param \PayPal\StructType\TelephonyFaxCallsSummaryStruct $summary
-     * @return \PayPal\StructType\TelephonyFaxCallListReturn
+     * @param \Ovh\StructType\TelephonyFaxCallsSummaryStruct $summary
+     * @return \Ovh\StructType\TelephonyFaxCallListReturn
      */
-    public function setSummary(\PayPal\StructType\TelephonyFaxCallsSummaryStruct $summary = null)
+    public function setSummary(\Ovh\StructType\TelephonyFaxCallsSummaryStruct $summary = null)
     {
         $this->summary = $summary;
         return $this;
@@ -136,7 +136,7 @@ class TelephonyFaxCallListReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFaxCallListReturn
+     * @return \Ovh\StructType\TelephonyFaxCallListReturn
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -101,7 +101,7 @@ class RpsMigrationStatusReturn extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\RpsMigrationStatusReturn
+     * @return \Ovh\StructType\RpsMigrationStatusReturn
      */
     public function setId($id = null)
     {
@@ -123,7 +123,7 @@ class RpsMigrationStatusReturn extends AbstractStructBase
     /**
      * Set progressStatus value
      * @param int $progressStatus
-     * @return \PayPal\StructType\RpsMigrationStatusReturn
+     * @return \Ovh\StructType\RpsMigrationStatusReturn
      */
     public function setProgressStatus($progressStatus = null)
     {
@@ -145,7 +145,7 @@ class RpsMigrationStatusReturn extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\RpsMigrationStatusReturn
+     * @return \Ovh\StructType\RpsMigrationStatusReturn
      */
     public function setStatus($status = null)
     {
@@ -167,7 +167,7 @@ class RpsMigrationStatusReturn extends AbstractStructBase
     /**
      * Set logicalRpsName value
      * @param string $logicalRpsName
-     * @return \PayPal\StructType\RpsMigrationStatusReturn
+     * @return \Ovh\StructType\RpsMigrationStatusReturn
      */
     public function setLogicalRpsName($logicalRpsName = null)
     {
@@ -189,7 +189,7 @@ class RpsMigrationStatusReturn extends AbstractStructBase
     /**
      * Set physicalRpsTo value
      * @param string $physicalRpsTo
-     * @return \PayPal\StructType\RpsMigrationStatusReturn
+     * @return \Ovh\StructType\RpsMigrationStatusReturn
      */
     public function setPhysicalRpsTo($physicalRpsTo = null)
     {
@@ -211,7 +211,7 @@ class RpsMigrationStatusReturn extends AbstractStructBase
     /**
      * Set todoDate value
      * @param string $todoDate
-     * @return \PayPal\StructType\RpsMigrationStatusReturn
+     * @return \Ovh\StructType\RpsMigrationStatusReturn
      */
     public function setTodoDate($todoDate = null)
     {
@@ -233,7 +233,7 @@ class RpsMigrationStatusReturn extends AbstractStructBase
     /**
      * Set doingDate value
      * @param string $doingDate
-     * @return \PayPal\StructType\RpsMigrationStatusReturn
+     * @return \Ovh\StructType\RpsMigrationStatusReturn
      */
     public function setDoingDate($doingDate = null)
     {
@@ -255,7 +255,7 @@ class RpsMigrationStatusReturn extends AbstractStructBase
     /**
      * Set doneDate value
      * @param string $doneDate
-     * @return \PayPal\StructType\RpsMigrationStatusReturn
+     * @return \Ovh\StructType\RpsMigrationStatusReturn
      */
     public function setDoneDate($doneDate = null)
     {
@@ -277,7 +277,7 @@ class RpsMigrationStatusReturn extends AbstractStructBase
     /**
      * Set errorMessage value
      * @param string $errorMessage
-     * @return \PayPal\StructType\RpsMigrationStatusReturn
+     * @return \Ovh\StructType\RpsMigrationStatusReturn
      */
     public function setErrorMessage($errorMessage = null)
     {
@@ -294,7 +294,7 @@ class RpsMigrationStatusReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RpsMigrationStatusReturn
+     * @return \Ovh\StructType\RpsMigrationStatusReturn
      */
     public static function __set_state(array $array)
     {

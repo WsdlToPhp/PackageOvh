@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class TelephonyClick2CallUserDel extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyClick2CallUserDel
+     * @return \Ovh\StructType\TelephonyClick2CallUserDel
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class TelephonyClick2CallUserDel extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyClick2CallUserDel
+     * @return \Ovh\StructType\TelephonyClick2CallUserDel
      */
     public function setNumber($number = null)
     {
@@ -113,7 +113,7 @@ class TelephonyClick2CallUserDel extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyClick2CallUserDel
+     * @return \Ovh\StructType\TelephonyClick2CallUserDel
      */
     public function setCountry($country = null)
     {
@@ -135,7 +135,7 @@ class TelephonyClick2CallUserDel extends AbstractStructBase
     /**
      * Set login value
      * @param string $login
-     * @return \PayPal\StructType\TelephonyClick2CallUserDel
+     * @return \Ovh\StructType\TelephonyClick2CallUserDel
      */
     public function setLogin($login = null)
     {
@@ -152,7 +152,7 @@ class TelephonyClick2CallUserDel extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyClick2CallUserDel
+     * @return \Ovh\StructType\TelephonyClick2CallUserDel
      */
     public static function __set_state(array $array)
     {

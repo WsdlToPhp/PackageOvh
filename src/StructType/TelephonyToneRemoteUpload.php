@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class TelephonyToneRemoteUpload extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyToneRemoteUpload
+     * @return \Ovh\StructType\TelephonyToneRemoteUpload
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class TelephonyToneRemoteUpload extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyToneRemoteUpload
+     * @return \Ovh\StructType\TelephonyToneRemoteUpload
      */
     public function setNumber($number = null)
     {
@@ -133,7 +133,7 @@ class TelephonyToneRemoteUpload extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyToneRemoteUpload
+     * @return \Ovh\StructType\TelephonyToneRemoteUpload
      */
     public function setCountry($country = null)
     {
@@ -155,7 +155,7 @@ class TelephonyToneRemoteUpload extends AbstractStructBase
     /**
      * Set toneType value
      * @param string $toneType
-     * @return \PayPal\StructType\TelephonyToneRemoteUpload
+     * @return \Ovh\StructType\TelephonyToneRemoteUpload
      */
     public function setToneType($toneType = null)
     {
@@ -177,7 +177,7 @@ class TelephonyToneRemoteUpload extends AbstractStructBase
     /**
      * Set filename value
      * @param string $filename
-     * @return \PayPal\StructType\TelephonyToneRemoteUpload
+     * @return \Ovh\StructType\TelephonyToneRemoteUpload
      */
     public function setFilename($filename = null)
     {
@@ -199,7 +199,7 @@ class TelephonyToneRemoteUpload extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \PayPal\StructType\TelephonyToneRemoteUpload
+     * @return \Ovh\StructType\TelephonyToneRemoteUpload
      */
     public function setUrl($url = null)
     {
@@ -216,7 +216,7 @@ class TelephonyToneRemoteUpload extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyToneRemoteUpload
+     * @return \Ovh\StructType\TelephonyToneRemoteUpload
      */
     public static function __set_state(array $array)
     {

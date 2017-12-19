@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyCallListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyCallListReturn
+     * @var \Ovh\StructType\TelephonyCallListReturn
      */
     public $return;
     /**
      * Constructor method for telephonyCallListResponse
      * @uses TelephonyCallListResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyCallListReturn $return
+     * @param \Ovh\StructType\TelephonyCallListReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonyCallListReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonyCallListReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyCallListReturn|null
+     * @return \Ovh\StructType\TelephonyCallListReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyCallListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyCallListReturn $return
-     * @return \PayPal\StructType\TelephonyCallListResponse
+     * @param \Ovh\StructType\TelephonyCallListReturn $return
+     * @return \Ovh\StructType\TelephonyCallListResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyCallListReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyCallListReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyCallListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyCallListResponse
+     * @return \Ovh\StructType\TelephonyCallListResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class TelephonyScreenStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\TelephonyScreenStruct
+     * @return \Ovh\StructType\TelephonyScreenStruct
      */
     public function setStatus($status = null)
     {
@@ -75,7 +75,7 @@ class TelephonyScreenStruct extends AbstractStructBase
     /**
      * Set numberScreen value
      * @param string $numberScreen
-     * @return \PayPal\StructType\TelephonyScreenStruct
+     * @return \Ovh\StructType\TelephonyScreenStruct
      */
     public function setNumberScreen($numberScreen = null)
     {
@@ -97,7 +97,7 @@ class TelephonyScreenStruct extends AbstractStructBase
     /**
      * Set natureScreen value
      * @param string $natureScreen
-     * @return \PayPal\StructType\TelephonyScreenStruct
+     * @return \Ovh\StructType\TelephonyScreenStruct
      */
     public function setNatureScreen($natureScreen = null)
     {
@@ -114,7 +114,7 @@ class TelephonyScreenStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyScreenStruct
+     * @return \Ovh\StructType\TelephonyScreenStruct
      */
     public static function __set_state(array $array)
     {

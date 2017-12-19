@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class TelephonyAbbreviatedNumberOnGroupDel extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberOnGroupDel
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberOnGroupDel
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class TelephonyAbbreviatedNumberOnGroupDel extends AbstractStructBase
     /**
      * Set group value
      * @param string $group
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberOnGroupDel
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberOnGroupDel
      */
     public function setGroup($group = null)
     {
@@ -103,7 +103,7 @@ class TelephonyAbbreviatedNumberOnGroupDel extends AbstractStructBase
     /**
      * Set abbreviatedNumber value
      * @param string $abbreviatedNumber
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberOnGroupDel
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberOnGroupDel
      */
     public function setAbbreviatedNumber($abbreviatedNumber = null)
     {
@@ -120,7 +120,7 @@ class TelephonyAbbreviatedNumberOnGroupDel extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberOnGroupDel
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberOnGroupDel
      */
     public static function __set_state(array $array)
     {

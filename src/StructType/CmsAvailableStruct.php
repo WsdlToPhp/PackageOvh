@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class CmsAvailableStruct extends AbstractStructBase
     public $version;
     /**
      * The language
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $language;
     /**
@@ -51,12 +51,12 @@ class CmsAvailableStruct extends AbstractStructBase
      * @uses CmsAvailableStruct::setEnable()
      * @param string $name
      * @param string $version
-     * @param \PayPal\ArrayType\MyArrayOfStringType $language
+     * @param \Ovh\ArrayType\MyArrayOfStringType $language
      * @param string $category
      * @param string $dbPrefix
      * @param bool $enable
      */
-    public function __construct($name = null, $version = null, \PayPal\ArrayType\MyArrayOfStringType $language = null, $category = null, $dbPrefix = null, $enable = null)
+    public function __construct($name = null, $version = null, \Ovh\ArrayType\MyArrayOfStringType $language = null, $category = null, $dbPrefix = null, $enable = null)
     {
         $this
             ->setName($name)
@@ -77,7 +77,7 @@ class CmsAvailableStruct extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\CmsAvailableStruct
+     * @return \Ovh\StructType\CmsAvailableStruct
      */
     public function setName($name = null)
     {
@@ -99,7 +99,7 @@ class CmsAvailableStruct extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \PayPal\StructType\CmsAvailableStruct
+     * @return \Ovh\StructType\CmsAvailableStruct
      */
     public function setVersion($version = null)
     {
@@ -112,7 +112,7 @@ class CmsAvailableStruct extends AbstractStructBase
     }
     /**
      * Get language value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getLanguage()
     {
@@ -120,10 +120,10 @@ class CmsAvailableStruct extends AbstractStructBase
     }
     /**
      * Set language value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $language
-     * @return \PayPal\StructType\CmsAvailableStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $language
+     * @return \Ovh\StructType\CmsAvailableStruct
      */
-    public function setLanguage(\PayPal\ArrayType\MyArrayOfStringType $language = null)
+    public function setLanguage(\Ovh\ArrayType\MyArrayOfStringType $language = null)
     {
         $this->language = $language;
         return $this;
@@ -139,7 +139,7 @@ class CmsAvailableStruct extends AbstractStructBase
     /**
      * Set category value
      * @param string $category
-     * @return \PayPal\StructType\CmsAvailableStruct
+     * @return \Ovh\StructType\CmsAvailableStruct
      */
     public function setCategory($category = null)
     {
@@ -161,7 +161,7 @@ class CmsAvailableStruct extends AbstractStructBase
     /**
      * Set dbPrefix value
      * @param string $dbPrefix
-     * @return \PayPal\StructType\CmsAvailableStruct
+     * @return \Ovh\StructType\CmsAvailableStruct
      */
     public function setDbPrefix($dbPrefix = null)
     {
@@ -183,7 +183,7 @@ class CmsAvailableStruct extends AbstractStructBase
     /**
      * Set enable value
      * @param bool $enable
-     * @return \PayPal\StructType\CmsAvailableStruct
+     * @return \Ovh\StructType\CmsAvailableStruct
      */
     public function setEnable($enable = null)
     {
@@ -200,7 +200,7 @@ class CmsAvailableStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\CmsAvailableStruct
+     * @return \Ovh\StructType\CmsAvailableStruct
      */
     public static function __set_state(array $array)
     {

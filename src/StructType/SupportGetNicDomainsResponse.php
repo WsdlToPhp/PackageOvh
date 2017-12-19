@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class SupportGetNicDomainsResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfSupportDomainStructType
+     * @var \Ovh\ArrayType\MyArrayOfSupportDomainStructType
      */
     public $return;
     /**
      * Constructor method for supportGetNicDomainsResponse
      * @uses SupportGetNicDomainsResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfSupportDomainStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfSupportDomainStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfSupportDomainStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfSupportDomainStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfSupportDomainStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfSupportDomainStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class SupportGetNicDomainsResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfSupportDomainStructType $return
-     * @return \PayPal\StructType\SupportGetNicDomainsResponse
+     * @param \Ovh\ArrayType\MyArrayOfSupportDomainStructType $return
+     * @return \Ovh\StructType\SupportGetNicDomainsResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfSupportDomainStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfSupportDomainStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class SupportGetNicDomainsResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SupportGetNicDomainsResponse
+     * @return \Ovh\StructType\SupportGetNicDomainsResponse
      */
     public static function __set_state(array $array)
     {

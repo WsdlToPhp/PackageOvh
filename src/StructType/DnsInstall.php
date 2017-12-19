@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class DnsInstall extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DnsInstall
+     * @return \Ovh\StructType\DnsInstall
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class DnsInstall extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\DnsInstall
+     * @return \Ovh\StructType\DnsInstall
      */
     public function setDomain($domain = null)
     {
@@ -113,7 +113,7 @@ class DnsInstall extends AbstractStructBase
     /**
      * Set hosting value
      * @param string $hosting
-     * @return \PayPal\StructType\DnsInstall
+     * @return \Ovh\StructType\DnsInstall
      */
     public function setHosting($hosting = null)
     {
@@ -135,7 +135,7 @@ class DnsInstall extends AbstractStructBase
     /**
      * Set minimized value
      * @param bool $minimized
-     * @return \PayPal\StructType\DnsInstall
+     * @return \Ovh\StructType\DnsInstall
      */
     public function setMinimized($minimized = null)
     {
@@ -152,7 +152,7 @@ class DnsInstall extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DnsInstall
+     * @return \Ovh\StructType\DnsInstall
      */
     public static function __set_state(array $array)
     {

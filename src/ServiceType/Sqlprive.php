@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Sqlprive extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SqlpriveMysqlRestart $parameters
-     * @return \PayPal\StructType\SqlpriveMysqlRestartResponse|bool
+     * @param \Ovh\StructType\SqlpriveMysqlRestart $parameters
+     * @return \Ovh\StructType\SqlpriveMysqlRestartResponse|bool
      */
-    public function sqlpriveMysqlRestart(\PayPal\StructType\SqlpriveMysqlRestart $parameters)
+    public function sqlpriveMysqlRestart(\Ovh\StructType\SqlpriveMysqlRestart $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->sqlpriveMysqlRestart($parameters));
@@ -36,10 +36,10 @@ class Sqlprive extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SqlpriveMysqlVersion $parameters
-     * @return \PayPal\StructType\SqlpriveMysqlVersionResponse|bool
+     * @param \Ovh\StructType\SqlpriveMysqlVersion $parameters
+     * @return \Ovh\StructType\SqlpriveMysqlVersionResponse|bool
      */
-    public function sqlpriveMysqlVersion(\PayPal\StructType\SqlpriveMysqlVersion $parameters)
+    public function sqlpriveMysqlVersion(\Ovh\StructType\SqlpriveMysqlVersion $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->sqlpriveMysqlVersion($parameters));
@@ -56,10 +56,10 @@ class Sqlprive extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SqlpriveMysqlDatabaseImportFromFile $parameters
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseImportFromFileResponse|bool
+     * @param \Ovh\StructType\SqlpriveMysqlDatabaseImportFromFile $parameters
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseImportFromFileResponse|bool
      */
-    public function sqlpriveMysqlDatabaseImportFromFile(\PayPal\StructType\SqlpriveMysqlDatabaseImportFromFile $parameters)
+    public function sqlpriveMysqlDatabaseImportFromFile(\Ovh\StructType\SqlpriveMysqlDatabaseImportFromFile $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->sqlpriveMysqlDatabaseImportFromFile($parameters));
@@ -75,10 +75,10 @@ class Sqlprive extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SqlpriveMysqlUserList $parameters
-     * @return \PayPal\StructType\SqlpriveMysqlUserListResponse|bool
+     * @param \Ovh\StructType\SqlpriveMysqlUserList $parameters
+     * @return \Ovh\StructType\SqlpriveMysqlUserListResponse|bool
      */
-    public function sqlpriveMysqlUserList(\PayPal\StructType\SqlpriveMysqlUserList $parameters)
+    public function sqlpriveMysqlUserList(\Ovh\StructType\SqlpriveMysqlUserList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->sqlpriveMysqlUserList($parameters));
@@ -94,10 +94,10 @@ class Sqlprive extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SqlpriveMysqlRamUsed $parameters
-     * @return \PayPal\StructType\SqlpriveMysqlRamUsedResponse|bool
+     * @param \Ovh\StructType\SqlpriveMysqlRamUsed $parameters
+     * @return \Ovh\StructType\SqlpriveMysqlRamUsedResponse|bool
      */
-    public function sqlpriveMysqlRamUsed(\PayPal\StructType\SqlpriveMysqlRamUsed $parameters)
+    public function sqlpriveMysqlRamUsed(\Ovh\StructType\SqlpriveMysqlRamUsed $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->sqlpriveMysqlRamUsed($parameters));
@@ -113,10 +113,10 @@ class Sqlprive extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SqlpriveAlertInfo $parameters
-     * @return \PayPal\StructType\SqlpriveAlertInfoResponse|bool
+     * @param \Ovh\StructType\SqlpriveAlertInfo $parameters
+     * @return \Ovh\StructType\SqlpriveAlertInfoResponse|bool
      */
-    public function sqlpriveAlertInfo(\PayPal\StructType\SqlpriveAlertInfo $parameters)
+    public function sqlpriveAlertInfo(\Ovh\StructType\SqlpriveAlertInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->sqlpriveAlertInfo($parameters));
@@ -132,10 +132,10 @@ class Sqlprive extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SqlpriveList $parameters
-     * @return \PayPal\StructType\SqlpriveListResponse|bool
+     * @param \Ovh\StructType\SqlpriveList $parameters
+     * @return \Ovh\StructType\SqlpriveListResponse|bool
      */
-    public function sqlpriveList(\PayPal\StructType\SqlpriveList $parameters)
+    public function sqlpriveList(\Ovh\StructType\SqlpriveList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->sqlpriveList($parameters));
@@ -151,10 +151,10 @@ class Sqlprive extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SqlpriveMysqlLogs $parameters
-     * @return \PayPal\StructType\SqlpriveMysqlLogsResponse|bool
+     * @param \Ovh\StructType\SqlpriveMysqlLogs $parameters
+     * @return \Ovh\StructType\SqlpriveMysqlLogsResponse|bool
      */
-    public function sqlpriveMysqlLogs(\PayPal\StructType\SqlpriveMysqlLogs $parameters)
+    public function sqlpriveMysqlLogs(\Ovh\StructType\SqlpriveMysqlLogs $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->sqlpriveMysqlLogs($parameters));
@@ -170,10 +170,10 @@ class Sqlprive extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SqlpriveCronSet $parameters
-     * @return \PayPal\StructType\SqlpriveCronSetResponse|bool
+     * @param \Ovh\StructType\SqlpriveCronSet $parameters
+     * @return \Ovh\StructType\SqlpriveCronSetResponse|bool
      */
-    public function sqlpriveCronSet(\PayPal\StructType\SqlpriveCronSet $parameters)
+    public function sqlpriveCronSet(\Ovh\StructType\SqlpriveCronSet $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->sqlpriveCronSet($parameters));
@@ -189,10 +189,10 @@ class Sqlprive extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SqlpriveMysqlDatabasePrivilegeList $parameters
-     * @return \PayPal\StructType\SqlpriveMysqlDatabasePrivilegeListResponse|bool
+     * @param \Ovh\StructType\SqlpriveMysqlDatabasePrivilegeList $parameters
+     * @return \Ovh\StructType\SqlpriveMysqlDatabasePrivilegeListResponse|bool
      */
-    public function sqlpriveMysqlDatabasePrivilegeList(\PayPal\StructType\SqlpriveMysqlDatabasePrivilegeList $parameters)
+    public function sqlpriveMysqlDatabasePrivilegeList(\Ovh\StructType\SqlpriveMysqlDatabasePrivilegeList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->sqlpriveMysqlDatabasePrivilegeList($parameters));
@@ -208,10 +208,10 @@ class Sqlprive extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SqlpriveCronDel $parameters
-     * @return \PayPal\StructType\SqlpriveCronDelResponse|bool
+     * @param \Ovh\StructType\SqlpriveCronDel $parameters
+     * @return \Ovh\StructType\SqlpriveCronDelResponse|bool
      */
-    public function sqlpriveCronDel(\PayPal\StructType\SqlpriveCronDel $parameters)
+    public function sqlpriveCronDel(\Ovh\StructType\SqlpriveCronDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->sqlpriveCronDel($parameters));
@@ -228,10 +228,10 @@ class Sqlprive extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SqlpriveMysqlDatabaseImportFromHost $parameters
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseImportFromHostResponse|bool
+     * @param \Ovh\StructType\SqlpriveMysqlDatabaseImportFromHost $parameters
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseImportFromHostResponse|bool
      */
-    public function sqlpriveMysqlDatabaseImportFromHost(\PayPal\StructType\SqlpriveMysqlDatabaseImportFromHost $parameters)
+    public function sqlpriveMysqlDatabaseImportFromHost(\Ovh\StructType\SqlpriveMysqlDatabaseImportFromHost $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->sqlpriveMysqlDatabaseImportFromHost($parameters));
@@ -247,10 +247,10 @@ class Sqlprive extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SqlpriveAlertSet $parameters
-     * @return \PayPal\StructType\SqlpriveAlertSetResponse|bool
+     * @param \Ovh\StructType\SqlpriveAlertSet $parameters
+     * @return \Ovh\StructType\SqlpriveAlertSetResponse|bool
      */
-    public function sqlpriveAlertSet(\PayPal\StructType\SqlpriveAlertSet $parameters)
+    public function sqlpriveAlertSet(\Ovh\StructType\SqlpriveAlertSet $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->sqlpriveAlertSet($parameters));
@@ -266,10 +266,10 @@ class Sqlprive extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SqlpriveMysqlOvhMyAdmin $parameters
-     * @return \PayPal\StructType\SqlpriveMysqlOvhMyAdminResponse|bool
+     * @param \Ovh\StructType\SqlpriveMysqlOvhMyAdmin $parameters
+     * @return \Ovh\StructType\SqlpriveMysqlOvhMyAdminResponse|bool
      */
-    public function sqlpriveMysqlOvhMyAdmin(\PayPal\StructType\SqlpriveMysqlOvhMyAdmin $parameters)
+    public function sqlpriveMysqlOvhMyAdmin(\Ovh\StructType\SqlpriveMysqlOvhMyAdmin $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->sqlpriveMysqlOvhMyAdmin($parameters));
@@ -285,10 +285,10 @@ class Sqlprive extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SqlpriveMysqlDatabaseList $parameters
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseListResponse|bool
+     * @param \Ovh\StructType\SqlpriveMysqlDatabaseList $parameters
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseListResponse|bool
      */
-    public function sqlpriveMysqlDatabaseList(\PayPal\StructType\SqlpriveMysqlDatabaseList $parameters)
+    public function sqlpriveMysqlDatabaseList(\Ovh\StructType\SqlpriveMysqlDatabaseList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->sqlpriveMysqlDatabaseList($parameters));
@@ -304,10 +304,10 @@ class Sqlprive extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SqlpriveMysqlProcessList $parameters
-     * @return \PayPal\StructType\SqlpriveMysqlProcessListResponse|bool
+     * @param \Ovh\StructType\SqlpriveMysqlProcessList $parameters
+     * @return \Ovh\StructType\SqlpriveMysqlProcessListResponse|bool
      */
-    public function sqlpriveMysqlProcessList(\PayPal\StructType\SqlpriveMysqlProcessList $parameters)
+    public function sqlpriveMysqlProcessList(\Ovh\StructType\SqlpriveMysqlProcessList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->sqlpriveMysqlProcessList($parameters));
@@ -323,10 +323,10 @@ class Sqlprive extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SqlpriveMysqlActivateOvhManagement $parameters
-     * @return \PayPal\StructType\SqlpriveMysqlActivateOvhManagementResponse|bool
+     * @param \Ovh\StructType\SqlpriveMysqlActivateOvhManagement $parameters
+     * @return \Ovh\StructType\SqlpriveMysqlActivateOvhManagementResponse|bool
      */
-    public function sqlpriveMysqlActivateOvhManagement(\PayPal\StructType\SqlpriveMysqlActivateOvhManagement $parameters)
+    public function sqlpriveMysqlActivateOvhManagement(\Ovh\StructType\SqlpriveMysqlActivateOvhManagement $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->sqlpriveMysqlActivateOvhManagement($parameters));
@@ -342,10 +342,10 @@ class Sqlprive extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SqlpriveMysqlGetPossibleDump $parameters
-     * @return \PayPal\StructType\SqlpriveMysqlGetPossibleDumpResponse|bool
+     * @param \Ovh\StructType\SqlpriveMysqlGetPossibleDump $parameters
+     * @return \Ovh\StructType\SqlpriveMysqlGetPossibleDumpResponse|bool
      */
-    public function sqlpriveMysqlGetPossibleDump(\PayPal\StructType\SqlpriveMysqlGetPossibleDump $parameters)
+    public function sqlpriveMysqlGetPossibleDump(\Ovh\StructType\SqlpriveMysqlGetPossibleDump $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->sqlpriveMysqlGetPossibleDump($parameters));
@@ -361,10 +361,10 @@ class Sqlprive extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SqlpriveFtpPassword $parameters
-     * @return \PayPal\StructType\SqlpriveFtpPasswordResponse|bool
+     * @param \Ovh\StructType\SqlpriveFtpPassword $parameters
+     * @return \Ovh\StructType\SqlpriveFtpPasswordResponse|bool
      */
-    public function sqlpriveFtpPassword(\PayPal\StructType\SqlpriveFtpPassword $parameters)
+    public function sqlpriveFtpPassword(\Ovh\StructType\SqlpriveFtpPassword $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->sqlpriveFtpPassword($parameters));
@@ -380,10 +380,10 @@ class Sqlprive extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SqlpriveMysqlRootPassword $parameters
-     * @return \PayPal\StructType\SqlpriveMysqlRootPasswordResponse|bool
+     * @param \Ovh\StructType\SqlpriveMysqlRootPassword $parameters
+     * @return \Ovh\StructType\SqlpriveMysqlRootPasswordResponse|bool
      */
-    public function sqlpriveMysqlRootPassword(\PayPal\StructType\SqlpriveMysqlRootPassword $parameters)
+    public function sqlpriveMysqlRootPassword(\Ovh\StructType\SqlpriveMysqlRootPassword $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->sqlpriveMysqlRootPassword($parameters));
@@ -399,10 +399,10 @@ class Sqlprive extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SqlpriveMysqlProcessKill $parameters
-     * @return \PayPal\StructType\SqlpriveMysqlProcessKillResponse|bool
+     * @param \Ovh\StructType\SqlpriveMysqlProcessKill $parameters
+     * @return \Ovh\StructType\SqlpriveMysqlProcessKillResponse|bool
      */
-    public function sqlpriveMysqlProcessKill(\PayPal\StructType\SqlpriveMysqlProcessKill $parameters)
+    public function sqlpriveMysqlProcessKill(\Ovh\StructType\SqlpriveMysqlProcessKill $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->sqlpriveMysqlProcessKill($parameters));
@@ -418,10 +418,10 @@ class Sqlprive extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SqlpriveMysqlDatabaseSave $parameters
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseSaveResponse|bool
+     * @param \Ovh\StructType\SqlpriveMysqlDatabaseSave $parameters
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseSaveResponse|bool
      */
-    public function sqlpriveMysqlDatabaseSave(\PayPal\StructType\SqlpriveMysqlDatabaseSave $parameters)
+    public function sqlpriveMysqlDatabaseSave(\Ovh\StructType\SqlpriveMysqlDatabaseSave $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->sqlpriveMysqlDatabaseSave($parameters));
@@ -437,10 +437,10 @@ class Sqlprive extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SqlpriveCronGet $parameters
-     * @return \PayPal\StructType\SqlpriveCronGetResponse|bool
+     * @param \Ovh\StructType\SqlpriveCronGet $parameters
+     * @return \Ovh\StructType\SqlpriveCronGetResponse|bool
      */
-    public function sqlpriveCronGet(\PayPal\StructType\SqlpriveCronGet $parameters)
+    public function sqlpriveCronGet(\Ovh\StructType\SqlpriveCronGet $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->sqlpriveCronGet($parameters));
@@ -453,7 +453,7 @@ class Sqlprive extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\SqlpriveAlertInfoResponse|\PayPal\StructType\SqlpriveAlertSetResponse|\PayPal\StructType\SqlpriveCronDelResponse|\PayPal\StructType\SqlpriveCronGetResponse|\PayPal\StructType\SqlpriveCronSetResponse|\PayPal\StructType\SqlpriveFtpPasswordResponse|\PayPal\StructType\SqlpriveListResponse|\PayPal\StructType\SqlpriveMysqlActivateOvhManagementResponse|\PayPal\StructType\SqlpriveMysqlDatabaseImportFromFileResponse|\PayPal\StructType\SqlpriveMysqlDatabaseImportFromHostResponse|\PayPal\StructType\SqlpriveMysqlDatabaseListResponse|\PayPal\StructType\SqlpriveMysqlDatabasePrivilegeListResponse|\PayPal\StructType\SqlpriveMysqlDatabaseSaveResponse|\PayPal\StructType\SqlpriveMysqlGetPossibleDumpResponse|\PayPal\StructType\SqlpriveMysqlLogsResponse|\PayPal\StructType\SqlpriveMysqlOvhMyAdminResponse|\PayPal\StructType\SqlpriveMysqlProcessKillResponse|\PayPal\StructType\SqlpriveMysqlProcessListResponse|\PayPal\StructType\SqlpriveMysqlRamUsedResponse|\PayPal\StructType\SqlpriveMysqlRestartResponse|\PayPal\StructType\SqlpriveMysqlRootPasswordResponse|\PayPal\StructType\SqlpriveMysqlUserListResponse|\PayPal\StructType\SqlpriveMysqlVersionResponse
+     * @return \Ovh\StructType\SqlpriveAlertInfoResponse|\Ovh\StructType\SqlpriveAlertSetResponse|\Ovh\StructType\SqlpriveCronDelResponse|\Ovh\StructType\SqlpriveCronGetResponse|\Ovh\StructType\SqlpriveCronSetResponse|\Ovh\StructType\SqlpriveFtpPasswordResponse|\Ovh\StructType\SqlpriveListResponse|\Ovh\StructType\SqlpriveMysqlActivateOvhManagementResponse|\Ovh\StructType\SqlpriveMysqlDatabaseImportFromFileResponse|\Ovh\StructType\SqlpriveMysqlDatabaseImportFromHostResponse|\Ovh\StructType\SqlpriveMysqlDatabaseListResponse|\Ovh\StructType\SqlpriveMysqlDatabasePrivilegeListResponse|\Ovh\StructType\SqlpriveMysqlDatabaseSaveResponse|\Ovh\StructType\SqlpriveMysqlGetPossibleDumpResponse|\Ovh\StructType\SqlpriveMysqlLogsResponse|\Ovh\StructType\SqlpriveMysqlOvhMyAdminResponse|\Ovh\StructType\SqlpriveMysqlProcessKillResponse|\Ovh\StructType\SqlpriveMysqlProcessListResponse|\Ovh\StructType\SqlpriveMysqlRamUsedResponse|\Ovh\StructType\SqlpriveMysqlRestartResponse|\Ovh\StructType\SqlpriveMysqlRootPasswordResponse|\Ovh\StructType\SqlpriveMysqlUserListResponse|\Ovh\StructType\SqlpriveMysqlVersionResponse
      */
     public function getResult()
     {

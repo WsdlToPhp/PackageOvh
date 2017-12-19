@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DomainInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\DomainInfoReturn
+     * @var \Ovh\StructType\DomainInfoReturn
      */
     public $return;
     /**
      * Constructor method for domainInfoResponse
      * @uses DomainInfoResponse::setReturn()
-     * @param \PayPal\StructType\DomainInfoReturn $return
+     * @param \Ovh\StructType\DomainInfoReturn $return
      */
-    public function __construct(\PayPal\StructType\DomainInfoReturn $return = null)
+    public function __construct(\Ovh\StructType\DomainInfoReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\DomainInfoReturn|null
+     * @return \Ovh\StructType\DomainInfoReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DomainInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\DomainInfoReturn $return
-     * @return \PayPal\StructType\DomainInfoResponse
+     * @param \Ovh\StructType\DomainInfoReturn $return
+     * @return \Ovh\StructType\DomainInfoResponse
      */
-    public function setReturn(\PayPal\StructType\DomainInfoReturn $return = null)
+    public function setReturn(\Ovh\StructType\DomainInfoReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DomainInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DomainInfoResponse
+     * @return \Ovh\StructType\DomainInfoResponse
      */
     public static function __set_state(array $array)
     {

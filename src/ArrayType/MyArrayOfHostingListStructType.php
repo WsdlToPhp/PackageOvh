@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfHostingListStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\HostingListStruct[]
+     * @var \Ovh\StructType\HostingListStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfHostingListStructType
      * @uses MyArrayOfHostingListStructType::setItem()
-     * @param \PayPal\StructType\HostingListStruct[] $item
+     * @param \Ovh\StructType\HostingListStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfHostingListStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\HostingListStruct[]|null
+     * @return \Ovh\StructType\HostingListStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfHostingListStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\HostingListStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfHostingListStructType
+     * @param \Ovh\StructType\HostingListStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfHostingListStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfHostingListStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfHostingListStructTypeItemItem instanceof \PayPal\StructType\HostingListStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\HostingListStruct, "%s" given', is_object($myArrayOfHostingListStructTypeItemItem) ? get_class($myArrayOfHostingListStructTypeItemItem) : gettype($myArrayOfHostingListStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfHostingListStructTypeItemItem instanceof \Ovh\StructType\HostingListStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\HostingListStruct, "%s" given', is_object($myArrayOfHostingListStructTypeItemItem) ? get_class($myArrayOfHostingListStructTypeItemItem) : gettype($myArrayOfHostingListStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfHostingListStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\HostingListStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfHostingListStructType
+     * @param \Ovh\StructType\HostingListStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfHostingListStructType
      */
-    public function addToItem(\PayPal\StructType\HostingListStruct $item)
+    public function addToItem(\Ovh\StructType\HostingListStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\HostingListStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\HostingListStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\HostingListStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\HostingListStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfHostingListStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\HostingListStruct|null
+     * @return \Ovh\StructType\HostingListStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfHostingListStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\HostingListStruct|null
+     * @return \Ovh\StructType\HostingListStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfHostingListStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\HostingListStruct|null
+     * @return \Ovh\StructType\HostingListStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfHostingListStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\HostingListStruct|null
+     * @return \Ovh\StructType\HostingListStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfHostingListStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\HostingListStruct|null
+     * @return \Ovh\StructType\HostingListStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfHostingListStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfHostingListStructType
+     * @return \Ovh\ArrayType\MyArrayOfHostingListStructType
      */
     public static function __set_state(array $array)
     {

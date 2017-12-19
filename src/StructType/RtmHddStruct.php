@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -33,12 +33,12 @@ class RtmHddStruct extends AbstractStructBase
     public $status;
     /**
      * The partitions
-     * @var \PayPal\ArrayType\MyArrayOfRtmHddPartitionStructType
+     * @var \Ovh\ArrayType\MyArrayOfRtmHddPartitionStructType
      */
     public $partitions;
     /**
      * The smart
-     * @var \PayPal\StructType\RtmHddSmartStruct
+     * @var \Ovh\StructType\RtmHddSmartStruct
      */
     public $smart;
     /**
@@ -59,11 +59,11 @@ class RtmHddStruct extends AbstractStructBase
      * @param string $model
      * @param string $capacity
      * @param string $status
-     * @param \PayPal\ArrayType\MyArrayOfRtmHddPartitionStructType $partitions
-     * @param \PayPal\StructType\RtmHddSmartStruct $smart
+     * @param \Ovh\ArrayType\MyArrayOfRtmHddPartitionStructType $partitions
+     * @param \Ovh\StructType\RtmHddSmartStruct $smart
      * @param int $temperature
      */
-    public function __construct($device = null, $model = null, $capacity = null, $status = null, \PayPal\ArrayType\MyArrayOfRtmHddPartitionStructType $partitions = null, \PayPal\StructType\RtmHddSmartStruct $smart = null, $temperature = null)
+    public function __construct($device = null, $model = null, $capacity = null, $status = null, \Ovh\ArrayType\MyArrayOfRtmHddPartitionStructType $partitions = null, \Ovh\StructType\RtmHddSmartStruct $smart = null, $temperature = null)
     {
         $this
             ->setDevice($device)
@@ -85,7 +85,7 @@ class RtmHddStruct extends AbstractStructBase
     /**
      * Set device value
      * @param string $device
-     * @return \PayPal\StructType\RtmHddStruct
+     * @return \Ovh\StructType\RtmHddStruct
      */
     public function setDevice($device = null)
     {
@@ -107,7 +107,7 @@ class RtmHddStruct extends AbstractStructBase
     /**
      * Set model value
      * @param string $model
-     * @return \PayPal\StructType\RtmHddStruct
+     * @return \Ovh\StructType\RtmHddStruct
      */
     public function setModel($model = null)
     {
@@ -129,7 +129,7 @@ class RtmHddStruct extends AbstractStructBase
     /**
      * Set capacity value
      * @param string $capacity
-     * @return \PayPal\StructType\RtmHddStruct
+     * @return \Ovh\StructType\RtmHddStruct
      */
     public function setCapacity($capacity = null)
     {
@@ -151,7 +151,7 @@ class RtmHddStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\RtmHddStruct
+     * @return \Ovh\StructType\RtmHddStruct
      */
     public function setStatus($status = null)
     {
@@ -164,7 +164,7 @@ class RtmHddStruct extends AbstractStructBase
     }
     /**
      * Get partitions value
-     * @return \PayPal\ArrayType\MyArrayOfRtmHddPartitionStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfRtmHddPartitionStructType|null
      */
     public function getPartitions()
     {
@@ -172,17 +172,17 @@ class RtmHddStruct extends AbstractStructBase
     }
     /**
      * Set partitions value
-     * @param \PayPal\ArrayType\MyArrayOfRtmHddPartitionStructType $partitions
-     * @return \PayPal\StructType\RtmHddStruct
+     * @param \Ovh\ArrayType\MyArrayOfRtmHddPartitionStructType $partitions
+     * @return \Ovh\StructType\RtmHddStruct
      */
-    public function setPartitions(\PayPal\ArrayType\MyArrayOfRtmHddPartitionStructType $partitions = null)
+    public function setPartitions(\Ovh\ArrayType\MyArrayOfRtmHddPartitionStructType $partitions = null)
     {
         $this->partitions = $partitions;
         return $this;
     }
     /**
      * Get smart value
-     * @return \PayPal\StructType\RtmHddSmartStruct|null
+     * @return \Ovh\StructType\RtmHddSmartStruct|null
      */
     public function getSmart()
     {
@@ -190,10 +190,10 @@ class RtmHddStruct extends AbstractStructBase
     }
     /**
      * Set smart value
-     * @param \PayPal\StructType\RtmHddSmartStruct $smart
-     * @return \PayPal\StructType\RtmHddStruct
+     * @param \Ovh\StructType\RtmHddSmartStruct $smart
+     * @return \Ovh\StructType\RtmHddStruct
      */
-    public function setSmart(\PayPal\StructType\RtmHddSmartStruct $smart = null)
+    public function setSmart(\Ovh\StructType\RtmHddSmartStruct $smart = null)
     {
         $this->smart = $smart;
         return $this;
@@ -209,7 +209,7 @@ class RtmHddStruct extends AbstractStructBase
     /**
      * Set temperature value
      * @param int $temperature
-     * @return \PayPal\StructType\RtmHddStruct
+     * @return \Ovh\StructType\RtmHddStruct
      */
     public function setTemperature($temperature = null)
     {
@@ -226,7 +226,7 @@ class RtmHddStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RtmHddStruct
+     * @return \Ovh\StructType\RtmHddStruct
      */
     public static function __set_state(array $array)
     {

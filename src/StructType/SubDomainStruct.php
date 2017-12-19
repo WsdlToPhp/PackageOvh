@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class SubDomainStruct extends AbstractStructBase
     /**
      * Set subdomain value
      * @param string $subdomain
-     * @return \PayPal\StructType\SubDomainStruct
+     * @return \Ovh\StructType\SubDomainStruct
      */
     public function setSubdomain($subdomain = null)
     {
@@ -75,7 +75,7 @@ class SubDomainStruct extends AbstractStructBase
     /**
      * Set target value
      * @param string $target
-     * @return \PayPal\StructType\SubDomainStruct
+     * @return \Ovh\StructType\SubDomainStruct
      */
     public function setTarget($target = null)
     {
@@ -97,7 +97,7 @@ class SubDomainStruct extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\SubDomainStruct
+     * @return \Ovh\StructType\SubDomainStruct
      */
     public function setCountry($country = null)
     {
@@ -114,7 +114,7 @@ class SubDomainStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SubDomainStruct
+     * @return \Ovh\StructType\SubDomainStruct
      */
     public static function __set_state(array $array)
     {

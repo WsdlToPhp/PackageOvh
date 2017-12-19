@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class DedicatedIpVirtualMacUsedStruct extends AbstractStructBase
     /**
      * Set virtualMachineName value
      * @param string $virtualMachineName
-     * @return \PayPal\StructType\DedicatedIpVirtualMacUsedStruct
+     * @return \Ovh\StructType\DedicatedIpVirtualMacUsedStruct
      */
     public function setVirtualMachineName($virtualMachineName = null)
     {
@@ -91,7 +91,7 @@ class DedicatedIpVirtualMacUsedStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\DedicatedIpVirtualMacUsedStruct
+     * @return \Ovh\StructType\DedicatedIpVirtualMacUsedStruct
      */
     public function setStatus($status = null)
     {
@@ -113,7 +113,7 @@ class DedicatedIpVirtualMacUsedStruct extends AbstractStructBase
     /**
      * Set ipAddress value
      * @param string $ipAddress
-     * @return \PayPal\StructType\DedicatedIpVirtualMacUsedStruct
+     * @return \Ovh\StructType\DedicatedIpVirtualMacUsedStruct
      */
     public function setIpAddress($ipAddress = null)
     {
@@ -135,7 +135,7 @@ class DedicatedIpVirtualMacUsedStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\DedicatedIpVirtualMacUsedStruct
+     * @return \Ovh\StructType\DedicatedIpVirtualMacUsedStruct
      */
     public function setType($type = null)
     {
@@ -157,7 +157,7 @@ class DedicatedIpVirtualMacUsedStruct extends AbstractStructBase
     /**
      * Set mac value
      * @param string $mac
-     * @return \PayPal\StructType\DedicatedIpVirtualMacUsedStruct
+     * @return \Ovh\StructType\DedicatedIpVirtualMacUsedStruct
      */
     public function setMac($mac = null)
     {
@@ -174,7 +174,7 @@ class DedicatedIpVirtualMacUsedStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedIpVirtualMacUsedStruct
+     * @return \Ovh\StructType\DedicatedIpVirtualMacUsedStruct
      */
     public static function __set_state(array $array)
     {

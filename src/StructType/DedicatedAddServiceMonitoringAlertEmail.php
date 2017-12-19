@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class DedicatedAddServiceMonitoringAlertEmail extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedAddServiceMonitoringAlertEmail
+     * @return \Ovh\StructType\DedicatedAddServiceMonitoringAlertEmail
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class DedicatedAddServiceMonitoringAlertEmail extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\DedicatedAddServiceMonitoringAlertEmail
+     * @return \Ovh\StructType\DedicatedAddServiceMonitoringAlertEmail
      */
     public function setIp($ip = null)
     {
@@ -123,7 +123,7 @@ class DedicatedAddServiceMonitoringAlertEmail extends AbstractStructBase
     /**
      * Set port value
      * @param int $port
-     * @return \PayPal\StructType\DedicatedAddServiceMonitoringAlertEmail
+     * @return \Ovh\StructType\DedicatedAddServiceMonitoringAlertEmail
      */
     public function setPort($port = null)
     {
@@ -145,7 +145,7 @@ class DedicatedAddServiceMonitoringAlertEmail extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \PayPal\StructType\DedicatedAddServiceMonitoringAlertEmail
+     * @return \Ovh\StructType\DedicatedAddServiceMonitoringAlertEmail
      */
     public function setItemId($itemId = null)
     {
@@ -167,7 +167,7 @@ class DedicatedAddServiceMonitoringAlertEmail extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\DedicatedAddServiceMonitoringAlertEmail
+     * @return \Ovh\StructType\DedicatedAddServiceMonitoringAlertEmail
      */
     public function setEmail($email = null)
     {
@@ -184,7 +184,7 @@ class DedicatedAddServiceMonitoringAlertEmail extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedAddServiceMonitoringAlertEmail
+     * @return \Ovh\StructType\DedicatedAddServiceMonitoringAlertEmail
      */
     public static function __set_state(array $array)
     {

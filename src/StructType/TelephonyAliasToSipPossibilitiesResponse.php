@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyAliasToSipPossibilitiesResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyAliasToLinePossibilityPriceStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyAliasToLinePossibilityPriceStructType
      */
     public $return;
     /**
      * Constructor method for telephonyAliasToSipPossibilitiesResponse
      * @uses TelephonyAliasToSipPossibilitiesResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyAliasToLinePossibilityPriceStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyAliasToLinePossibilityPriceStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonyAliasToLinePossibilityPriceStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonyAliasToLinePossibilityPriceStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyAliasToLinePossibilityPriceStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyAliasToLinePossibilityPriceStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyAliasToSipPossibilitiesResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyAliasToLinePossibilityPriceStructType $return
-     * @return \PayPal\StructType\TelephonyAliasToSipPossibilitiesResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyAliasToLinePossibilityPriceStructType $return
+     * @return \Ovh\StructType\TelephonyAliasToSipPossibilitiesResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonyAliasToLinePossibilityPriceStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonyAliasToLinePossibilityPriceStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyAliasToSipPossibilitiesResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyAliasToSipPossibilitiesResponse
+     * @return \Ovh\StructType\TelephonyAliasToSipPossibilitiesResponse
      */
     public static function __set_state(array $array)
     {

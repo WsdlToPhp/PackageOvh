@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class RpsMigrationGetProgressStatusStepStruct extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct
+     * @return \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct
      */
     public function setComment($comment = null)
     {
@@ -83,7 +83,7 @@ class RpsMigrationGetProgressStatusStepStruct extends AbstractStructBase
     /**
      * Set time value
      * @param int $time
-     * @return \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct
+     * @return \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct
      */
     public function setTime($time = null)
     {
@@ -105,7 +105,7 @@ class RpsMigrationGetProgressStatusStepStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct
+     * @return \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct
      */
     public function setStatus($status = null)
     {
@@ -127,7 +127,7 @@ class RpsMigrationGetProgressStatusStepStruct extends AbstractStructBase
     /**
      * Set error value
      * @param string $error
-     * @return \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct
+     * @return \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct
      */
     public function setError($error = null)
     {
@@ -144,7 +144,7 @@ class RpsMigrationGetProgressStatusStepStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RpsMigrationGetProgressStatusStepStruct
+     * @return \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct
      */
     public static function __set_state(array $array)
     {

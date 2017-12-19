@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class TelephonyNumberZoneAndPrefixStruct extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyNumberZoneAndPrefixStruct
+     * @return \Ovh\StructType\TelephonyNumberZoneAndPrefixStruct
      */
     public function setCountry($country = null)
     {
@@ -83,7 +83,7 @@ class TelephonyNumberZoneAndPrefixStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\TelephonyNumberZoneAndPrefixStruct
+     * @return \Ovh\StructType\TelephonyNumberZoneAndPrefixStruct
      */
     public function setType($type = null)
     {
@@ -105,7 +105,7 @@ class TelephonyNumberZoneAndPrefixStruct extends AbstractStructBase
     /**
      * Set zone value
      * @param string $zone
-     * @return \PayPal\StructType\TelephonyNumberZoneAndPrefixStruct
+     * @return \Ovh\StructType\TelephonyNumberZoneAndPrefixStruct
      */
     public function setZone($zone = null)
     {
@@ -127,7 +127,7 @@ class TelephonyNumberZoneAndPrefixStruct extends AbstractStructBase
     /**
      * Set prefix value
      * @param string $prefix
-     * @return \PayPal\StructType\TelephonyNumberZoneAndPrefixStruct
+     * @return \Ovh\StructType\TelephonyNumberZoneAndPrefixStruct
      */
     public function setPrefix($prefix = null)
     {
@@ -144,7 +144,7 @@ class TelephonyNumberZoneAndPrefixStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyNumberZoneAndPrefixStruct
+     * @return \Ovh\StructType\TelephonyNumberZoneAndPrefixStruct
      */
     public static function __set_state(array $array)
     {

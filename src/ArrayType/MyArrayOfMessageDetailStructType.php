@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfMessageDetailStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\MessageDetailStruct[]
+     * @var \Ovh\StructType\MessageDetailStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfMessageDetailStructType
      * @uses MyArrayOfMessageDetailStructType::setItem()
-     * @param \PayPal\StructType\MessageDetailStruct[] $item
+     * @param \Ovh\StructType\MessageDetailStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfMessageDetailStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\MessageDetailStruct[]|null
+     * @return \Ovh\StructType\MessageDetailStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfMessageDetailStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\MessageDetailStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfMessageDetailStructType
+     * @param \Ovh\StructType\MessageDetailStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfMessageDetailStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfMessageDetailStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfMessageDetailStructTypeItemItem instanceof \PayPal\StructType\MessageDetailStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\MessageDetailStruct, "%s" given', is_object($myArrayOfMessageDetailStructTypeItemItem) ? get_class($myArrayOfMessageDetailStructTypeItemItem) : gettype($myArrayOfMessageDetailStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfMessageDetailStructTypeItemItem instanceof \Ovh\StructType\MessageDetailStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\MessageDetailStruct, "%s" given', is_object($myArrayOfMessageDetailStructTypeItemItem) ? get_class($myArrayOfMessageDetailStructTypeItemItem) : gettype($myArrayOfMessageDetailStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfMessageDetailStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\MessageDetailStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfMessageDetailStructType
+     * @param \Ovh\StructType\MessageDetailStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfMessageDetailStructType
      */
-    public function addToItem(\PayPal\StructType\MessageDetailStruct $item)
+    public function addToItem(\Ovh\StructType\MessageDetailStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\MessageDetailStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\MessageDetailStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\MessageDetailStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\MessageDetailStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfMessageDetailStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\MessageDetailStruct|null
+     * @return \Ovh\StructType\MessageDetailStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfMessageDetailStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\MessageDetailStruct|null
+     * @return \Ovh\StructType\MessageDetailStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfMessageDetailStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\MessageDetailStruct|null
+     * @return \Ovh\StructType\MessageDetailStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfMessageDetailStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\MessageDetailStruct|null
+     * @return \Ovh\StructType\MessageDetailStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfMessageDetailStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\MessageDetailStruct|null
+     * @return \Ovh\StructType\MessageDetailStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfMessageDetailStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfMessageDetailStructType
+     * @return \Ovh\ArrayType\MyArrayOfMessageDetailStructType
      */
     public static function __set_state(array $array)
     {

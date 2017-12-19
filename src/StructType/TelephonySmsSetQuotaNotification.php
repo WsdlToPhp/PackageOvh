@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class TelephonySmsSetQuotaNotification extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonySmsSetQuotaNotification
+     * @return \Ovh\StructType\TelephonySmsSetQuotaNotification
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class TelephonySmsSetQuotaNotification extends AbstractStructBase
     /**
      * Set smsAccount value
      * @param string $smsAccount
-     * @return \PayPal\StructType\TelephonySmsSetQuotaNotification
+     * @return \Ovh\StructType\TelephonySmsSetQuotaNotification
      */
     public function setSmsAccount($smsAccount = null)
     {
@@ -133,7 +133,7 @@ class TelephonySmsSetQuotaNotification extends AbstractStructBase
     /**
      * Set login value
      * @param string $login
-     * @return \PayPal\StructType\TelephonySmsSetQuotaNotification
+     * @return \Ovh\StructType\TelephonySmsSetQuotaNotification
      */
     public function setLogin($login = null)
     {
@@ -155,7 +155,7 @@ class TelephonySmsSetQuotaNotification extends AbstractStructBase
     /**
      * Set support value
      * @param string $support
-     * @return \PayPal\StructType\TelephonySmsSetQuotaNotification
+     * @return \Ovh\StructType\TelephonySmsSetQuotaNotification
      */
     public function setSupport($support = null)
     {
@@ -177,7 +177,7 @@ class TelephonySmsSetQuotaNotification extends AbstractStructBase
     /**
      * Set alertNumber value
      * @param string $alertNumber
-     * @return \PayPal\StructType\TelephonySmsSetQuotaNotification
+     * @return \Ovh\StructType\TelephonySmsSetQuotaNotification
      */
     public function setAlertNumber($alertNumber = null)
     {
@@ -199,7 +199,7 @@ class TelephonySmsSetQuotaNotification extends AbstractStructBase
     /**
      * Set alertThreshold value
      * @param string $alertThreshold
-     * @return \PayPal\StructType\TelephonySmsSetQuotaNotification
+     * @return \Ovh\StructType\TelephonySmsSetQuotaNotification
      */
     public function setAlertThreshold($alertThreshold = null)
     {
@@ -216,7 +216,7 @@ class TelephonySmsSetQuotaNotification extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsSetQuotaNotification
+     * @return \Ovh\StructType\TelephonySmsSetQuotaNotification
      */
     public static function __set_state(array $array)
     {

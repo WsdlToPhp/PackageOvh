@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -99,7 +99,7 @@ class PopAdd extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\PopAdd
+     * @return \Ovh\StructType\PopAdd
      */
     public function setSession($session = null)
     {
@@ -121,7 +121,7 @@ class PopAdd extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\PopAdd
+     * @return \Ovh\StructType\PopAdd
      */
     public function setDomain($domain = null)
     {
@@ -143,7 +143,7 @@ class PopAdd extends AbstractStructBase
     /**
      * Set pop value
      * @param string $pop
-     * @return \PayPal\StructType\PopAdd
+     * @return \Ovh\StructType\PopAdd
      */
     public function setPop($pop = null)
     {
@@ -165,7 +165,7 @@ class PopAdd extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \PayPal\StructType\PopAdd
+     * @return \Ovh\StructType\PopAdd
      */
     public function setPassword($password = null)
     {
@@ -187,7 +187,7 @@ class PopAdd extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \PayPal\StructType\PopAdd
+     * @return \Ovh\StructType\PopAdd
      */
     public function setDescription($description = null)
     {
@@ -209,7 +209,7 @@ class PopAdd extends AbstractStructBase
     /**
      * Set nic value
      * @param string $nic
-     * @return \PayPal\StructType\PopAdd
+     * @return \Ovh\StructType\PopAdd
      */
     public function setNic($nic = null)
     {
@@ -231,7 +231,7 @@ class PopAdd extends AbstractStructBase
     /**
      * Set quota value
      * @param int $quota
-     * @return \PayPal\StructType\PopAdd
+     * @return \Ovh\StructType\PopAdd
      */
     public function setQuota($quota = null)
     {
@@ -248,7 +248,7 @@ class PopAdd extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\PopAdd
+     * @return \Ovh\StructType\PopAdd
      */
     public static function __set_state(array $array)
     {

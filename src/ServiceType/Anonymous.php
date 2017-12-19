@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Anonymous extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\AnonymousFtpInfo $parameters
-     * @return \PayPal\StructType\AnonymousFtpInfoResponse|bool
+     * @param \Ovh\StructType\AnonymousFtpInfo $parameters
+     * @return \Ovh\StructType\AnonymousFtpInfoResponse|bool
      */
-    public function anonymousFtpInfo(\PayPal\StructType\AnonymousFtpInfo $parameters)
+    public function anonymousFtpInfo(\Ovh\StructType\AnonymousFtpInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->anonymousFtpInfo($parameters));
@@ -36,10 +36,10 @@ class Anonymous extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\AnonymousFtpActivate $parameters
-     * @return \PayPal\StructType\AnonymousFtpActivateResponse|bool
+     * @param \Ovh\StructType\AnonymousFtpActivate $parameters
+     * @return \Ovh\StructType\AnonymousFtpActivateResponse|bool
      */
-    public function anonymousFtpActivate(\PayPal\StructType\AnonymousFtpActivate $parameters)
+    public function anonymousFtpActivate(\Ovh\StructType\AnonymousFtpActivate $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->anonymousFtpActivate($parameters));
@@ -55,10 +55,10 @@ class Anonymous extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\AnonymousFtpChangePassword $parameters
-     * @return \PayPal\StructType\AnonymousFtpChangePasswordResponse|bool
+     * @param \Ovh\StructType\AnonymousFtpChangePassword $parameters
+     * @return \Ovh\StructType\AnonymousFtpChangePasswordResponse|bool
      */
-    public function anonymousFtpChangePassword(\PayPal\StructType\AnonymousFtpChangePassword $parameters)
+    public function anonymousFtpChangePassword(\Ovh\StructType\AnonymousFtpChangePassword $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->anonymousFtpChangePassword($parameters));
@@ -71,7 +71,7 @@ class Anonymous extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\AnonymousFtpActivateResponse|\PayPal\StructType\AnonymousFtpChangePasswordResponse|\PayPal\StructType\AnonymousFtpInfoResponse
+     * @return \Ovh\StructType\AnonymousFtpActivateResponse|\Ovh\StructType\AnonymousFtpChangePasswordResponse|\Ovh\StructType\AnonymousFtpInfoResponse
      */
     public function getResult()
     {

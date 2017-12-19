@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TicketListContactResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTicketContactStructType
+     * @var \Ovh\ArrayType\MyArrayOfTicketContactStructType
      */
     public $return;
     /**
      * Constructor method for ticketListContactResponse
      * @uses TicketListContactResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTicketContactStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTicketContactStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTicketContactStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTicketContactStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTicketContactStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTicketContactStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TicketListContactResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTicketContactStructType $return
-     * @return \PayPal\StructType\TicketListContactResponse
+     * @param \Ovh\ArrayType\MyArrayOfTicketContactStructType $return
+     * @return \Ovh\StructType\TicketListContactResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTicketContactStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTicketContactStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TicketListContactResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TicketListContactResponse
+     * @return \Ovh\StructType\TicketListContactResponse
      */
     public static function __set_state(array $array)
     {

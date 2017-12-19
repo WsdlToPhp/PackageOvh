@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -109,7 +109,7 @@ class DedicatedFailoverRipeAdd extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedFailoverRipeAdd
+     * @return \Ovh\StructType\DedicatedFailoverRipeAdd
      */
     public function setSession($session = null)
     {
@@ -131,7 +131,7 @@ class DedicatedFailoverRipeAdd extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedFailoverRipeAdd
+     * @return \Ovh\StructType\DedicatedFailoverRipeAdd
      */
     public function setHostname($hostname = null)
     {
@@ -153,7 +153,7 @@ class DedicatedFailoverRipeAdd extends AbstractStructBase
     /**
      * Set netname value
      * @param string $netname
-     * @return \PayPal\StructType\DedicatedFailoverRipeAdd
+     * @return \Ovh\StructType\DedicatedFailoverRipeAdd
      */
     public function setNetname($netname = null)
     {
@@ -175,7 +175,7 @@ class DedicatedFailoverRipeAdd extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \PayPal\StructType\DedicatedFailoverRipeAdd
+     * @return \Ovh\StructType\DedicatedFailoverRipeAdd
      */
     public function setDescription($description = null)
     {
@@ -197,7 +197,7 @@ class DedicatedFailoverRipeAdd extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\DedicatedFailoverRipeAdd
+     * @return \Ovh\StructType\DedicatedFailoverRipeAdd
      */
     public function setCountry($country = null)
     {
@@ -219,7 +219,7 @@ class DedicatedFailoverRipeAdd extends AbstractStructBase
     /**
      * Set addressesNumber value
      * @param int $addressesNumber
-     * @return \PayPal\StructType\DedicatedFailoverRipeAdd
+     * @return \Ovh\StructType\DedicatedFailoverRipeAdd
      */
     public function setAddressesNumber($addressesNumber = null)
     {
@@ -241,7 +241,7 @@ class DedicatedFailoverRipeAdd extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \PayPal\StructType\DedicatedFailoverRipeAdd
+     * @return \Ovh\StructType\DedicatedFailoverRipeAdd
      */
     public function setComment($comment = null)
     {
@@ -263,7 +263,7 @@ class DedicatedFailoverRipeAdd extends AbstractStructBase
     /**
      * Set routedToInterface value
      * @param string $routedToInterface
-     * @return \PayPal\StructType\DedicatedFailoverRipeAdd
+     * @return \Ovh\StructType\DedicatedFailoverRipeAdd
      */
     public function setRoutedToInterface($routedToInterface = null)
     {
@@ -280,7 +280,7 @@ class DedicatedFailoverRipeAdd extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedFailoverRipeAdd
+     * @return \Ovh\StructType\DedicatedFailoverRipeAdd
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class DedicatedEditServiceMonitoringItem extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedEditServiceMonitoringItem
+     * @return \Ovh\StructType\DedicatedEditServiceMonitoringItem
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class DedicatedEditServiceMonitoringItem extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\DedicatedEditServiceMonitoringItem
+     * @return \Ovh\StructType\DedicatedEditServiceMonitoringItem
      */
     public function setIp($ip = null)
     {
@@ -123,7 +123,7 @@ class DedicatedEditServiceMonitoringItem extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \PayPal\StructType\DedicatedEditServiceMonitoringItem
+     * @return \Ovh\StructType\DedicatedEditServiceMonitoringItem
      */
     public function setItemId($itemId = null)
     {
@@ -145,7 +145,7 @@ class DedicatedEditServiceMonitoringItem extends AbstractStructBase
     /**
      * Set period value
      * @param string $period
-     * @return \PayPal\StructType\DedicatedEditServiceMonitoringItem
+     * @return \Ovh\StructType\DedicatedEditServiceMonitoringItem
      */
     public function setPeriod($period = null)
     {
@@ -167,7 +167,7 @@ class DedicatedEditServiceMonitoringItem extends AbstractStructBase
     /**
      * Set string value
      * @param string $string
-     * @return \PayPal\StructType\DedicatedEditServiceMonitoringItem
+     * @return \Ovh\StructType\DedicatedEditServiceMonitoringItem
      */
     public function setString($string = null)
     {
@@ -184,7 +184,7 @@ class DedicatedEditServiceMonitoringItem extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedEditServiceMonitoringItem
+     * @return \Ovh\StructType\DedicatedEditServiceMonitoringItem
      */
     public static function __set_state(array $array)
     {

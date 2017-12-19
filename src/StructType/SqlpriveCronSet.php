@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,14 +36,14 @@ class SqlpriveCronSet extends AbstractStructBase
      * The recursivityDays
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $recursivityDays;
     /**
      * The recursivityHours
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $recursivityHours;
     /**
@@ -72,12 +72,12 @@ class SqlpriveCronSet extends AbstractStructBase
      * @param string $session
      * @param string $server
      * @param string $operation
-     * @param \PayPal\ArrayType\MyArrayOfStringType $recursivityDays
-     * @param \PayPal\ArrayType\MyArrayOfStringType $recursivityHours
+     * @param \Ovh\ArrayType\MyArrayOfStringType $recursivityDays
+     * @param \Ovh\ArrayType\MyArrayOfStringType $recursivityHours
      * @param string $endDate
      * @param string $comment
      */
-    public function __construct($session = null, $server = null, $operation = null, \PayPal\ArrayType\MyArrayOfStringType $recursivityDays = null, \PayPal\ArrayType\MyArrayOfStringType $recursivityHours = null, $endDate = null, $comment = null)
+    public function __construct($session = null, $server = null, $operation = null, \Ovh\ArrayType\MyArrayOfStringType $recursivityDays = null, \Ovh\ArrayType\MyArrayOfStringType $recursivityHours = null, $endDate = null, $comment = null)
     {
         $this
             ->setSession($session)
@@ -99,7 +99,7 @@ class SqlpriveCronSet extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\SqlpriveCronSet
+     * @return \Ovh\StructType\SqlpriveCronSet
      */
     public function setSession($session = null)
     {
@@ -121,7 +121,7 @@ class SqlpriveCronSet extends AbstractStructBase
     /**
      * Set server value
      * @param string $server
-     * @return \PayPal\StructType\SqlpriveCronSet
+     * @return \Ovh\StructType\SqlpriveCronSet
      */
     public function setServer($server = null)
     {
@@ -143,7 +143,7 @@ class SqlpriveCronSet extends AbstractStructBase
     /**
      * Set operation value
      * @param string $operation
-     * @return \PayPal\StructType\SqlpriveCronSet
+     * @return \Ovh\StructType\SqlpriveCronSet
      */
     public function setOperation($operation = null)
     {
@@ -156,7 +156,7 @@ class SqlpriveCronSet extends AbstractStructBase
     }
     /**
      * Get recursivityDays value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getRecursivityDays()
     {
@@ -164,17 +164,17 @@ class SqlpriveCronSet extends AbstractStructBase
     }
     /**
      * Set recursivityDays value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $recursivityDays
-     * @return \PayPal\StructType\SqlpriveCronSet
+     * @param \Ovh\ArrayType\MyArrayOfStringType $recursivityDays
+     * @return \Ovh\StructType\SqlpriveCronSet
      */
-    public function setRecursivityDays(\PayPal\ArrayType\MyArrayOfStringType $recursivityDays = null)
+    public function setRecursivityDays(\Ovh\ArrayType\MyArrayOfStringType $recursivityDays = null)
     {
         $this->recursivityDays = $recursivityDays;
         return $this;
     }
     /**
      * Get recursivityHours value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getRecursivityHours()
     {
@@ -182,10 +182,10 @@ class SqlpriveCronSet extends AbstractStructBase
     }
     /**
      * Set recursivityHours value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $recursivityHours
-     * @return \PayPal\StructType\SqlpriveCronSet
+     * @param \Ovh\ArrayType\MyArrayOfStringType $recursivityHours
+     * @return \Ovh\StructType\SqlpriveCronSet
      */
-    public function setRecursivityHours(\PayPal\ArrayType\MyArrayOfStringType $recursivityHours = null)
+    public function setRecursivityHours(\Ovh\ArrayType\MyArrayOfStringType $recursivityHours = null)
     {
         $this->recursivityHours = $recursivityHours;
         return $this;
@@ -201,7 +201,7 @@ class SqlpriveCronSet extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \PayPal\StructType\SqlpriveCronSet
+     * @return \Ovh\StructType\SqlpriveCronSet
      */
     public function setEndDate($endDate = null)
     {
@@ -223,7 +223,7 @@ class SqlpriveCronSet extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \PayPal\StructType\SqlpriveCronSet
+     * @return \Ovh\StructType\SqlpriveCronSet
      */
     public function setComment($comment = null)
     {
@@ -240,7 +240,7 @@ class SqlpriveCronSet extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SqlpriveCronSet
+     * @return \Ovh\StructType\SqlpriveCronSet
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class TelephonyDirectoryPJCode extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyDirectoryPJCode
+     * @return \Ovh\StructType\TelephonyDirectoryPJCode
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class TelephonyDirectoryPJCode extends AbstractStructBase
     /**
      * Set ape value
      * @param string $ape
-     * @return \PayPal\StructType\TelephonyDirectoryPJCode
+     * @return \Ovh\StructType\TelephonyDirectoryPJCode
      */
     public function setApe($ape = null)
     {
@@ -113,7 +113,7 @@ class TelephonyDirectoryPJCode extends AbstractStructBase
     /**
      * Set PJCode value
      * @param string $pJCode
-     * @return \PayPal\StructType\TelephonyDirectoryPJCode
+     * @return \Ovh\StructType\TelephonyDirectoryPJCode
      */
     public function setPJCode($pJCode = null)
     {
@@ -135,7 +135,7 @@ class TelephonyDirectoryPJCode extends AbstractStructBase
     /**
      * Set showOnlyAssociatedWithAPE value
      * @param bool $showOnlyAssociatedWithAPE
-     * @return \PayPal\StructType\TelephonyDirectoryPJCode
+     * @return \Ovh\StructType\TelephonyDirectoryPJCode
      */
     public function setShowOnlyAssociatedWithAPE($showOnlyAssociatedWithAPE = null)
     {
@@ -152,7 +152,7 @@ class TelephonyDirectoryPJCode extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyDirectoryPJCode
+     * @return \Ovh\StructType\TelephonyDirectoryPJCode
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Prepaid extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\PrepaidDomainCreate $parameters
-     * @return \PayPal\StructType\PrepaidDomainCreateResponse|bool
+     * @param \Ovh\StructType\PrepaidDomainCreate $parameters
+     * @return \Ovh\StructType\PrepaidDomainCreateResponse|bool
      */
-    public function prepaidDomainCreate(\PayPal\StructType\PrepaidDomainCreate $parameters)
+    public function prepaidDomainCreate(\Ovh\StructType\PrepaidDomainCreate $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->prepaidDomainCreate($parameters));
@@ -36,10 +36,10 @@ class Prepaid extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\PrepaidDomainTransfer $parameters
-     * @return \PayPal\StructType\PrepaidDomainTransferResponse|bool
+     * @param \Ovh\StructType\PrepaidDomainTransfer $parameters
+     * @return \Ovh\StructType\PrepaidDomainTransferResponse|bool
      */
-    public function prepaidDomainTransfer(\PayPal\StructType\PrepaidDomainTransfer $parameters)
+    public function prepaidDomainTransfer(\Ovh\StructType\PrepaidDomainTransfer $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->prepaidDomainTransfer($parameters));
@@ -55,10 +55,10 @@ class Prepaid extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\PrepaidSetThreshold $parameters
-     * @return \PayPal\StructType\PrepaidSetThresholdResponse|bool
+     * @param \Ovh\StructType\PrepaidSetThreshold $parameters
+     * @return \Ovh\StructType\PrepaidSetThresholdResponse|bool
      */
-    public function prepaidSetThreshold(\PayPal\StructType\PrepaidSetThreshold $parameters)
+    public function prepaidSetThreshold(\Ovh\StructType\PrepaidSetThreshold $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->prepaidSetThreshold($parameters));
@@ -74,10 +74,10 @@ class Prepaid extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\PrepaidGetSummary $parameters
-     * @return \PayPal\StructType\PrepaidGetSummaryResponse|bool
+     * @param \Ovh\StructType\PrepaidGetSummary $parameters
+     * @return \Ovh\StructType\PrepaidGetSummaryResponse|bool
      */
-    public function prepaidGetSummary(\PayPal\StructType\PrepaidGetSummary $parameters)
+    public function prepaidGetSummary(\Ovh\StructType\PrepaidGetSummary $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->prepaidGetSummary($parameters));
@@ -93,10 +93,10 @@ class Prepaid extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\PrepaidDomainRenew $parameters
-     * @return \PayPal\StructType\PrepaidDomainRenewResponse|bool
+     * @param \Ovh\StructType\PrepaidDomainRenew $parameters
+     * @return \Ovh\StructType\PrepaidDomainRenewResponse|bool
      */
-    public function prepaidDomainRenew(\PayPal\StructType\PrepaidDomainRenew $parameters)
+    public function prepaidDomainRenew(\Ovh\StructType\PrepaidDomainRenew $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->prepaidDomainRenew($parameters));
@@ -112,10 +112,10 @@ class Prepaid extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\PrepaidGetThreshold $parameters
-     * @return \PayPal\StructType\PrepaidGetThresholdResponse|bool
+     * @param \Ovh\StructType\PrepaidGetThreshold $parameters
+     * @return \Ovh\StructType\PrepaidGetThresholdResponse|bool
      */
-    public function prepaidGetThreshold(\PayPal\StructType\PrepaidGetThreshold $parameters)
+    public function prepaidGetThreshold(\Ovh\StructType\PrepaidGetThreshold $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->prepaidGetThreshold($parameters));
@@ -131,10 +131,10 @@ class Prepaid extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\PrepaidGetHistory $parameters
-     * @return \PayPal\StructType\PrepaidGetHistoryResponse|bool
+     * @param \Ovh\StructType\PrepaidGetHistory $parameters
+     * @return \Ovh\StructType\PrepaidGetHistoryResponse|bool
      */
-    public function prepaidGetHistory(\PayPal\StructType\PrepaidGetHistory $parameters)
+    public function prepaidGetHistory(\Ovh\StructType\PrepaidGetHistory $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->prepaidGetHistory($parameters));
@@ -150,10 +150,10 @@ class Prepaid extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\PrepaidGetBalance $parameters
-     * @return \PayPal\StructType\PrepaidGetBalanceResponse|bool
+     * @param \Ovh\StructType\PrepaidGetBalance $parameters
+     * @return \Ovh\StructType\PrepaidGetBalanceResponse|bool
      */
-    public function prepaidGetBalance(\PayPal\StructType\PrepaidGetBalance $parameters)
+    public function prepaidGetBalance(\Ovh\StructType\PrepaidGetBalance $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->prepaidGetBalance($parameters));
@@ -166,7 +166,7 @@ class Prepaid extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\PrepaidDomainCreateResponse|\PayPal\StructType\PrepaidDomainRenewResponse|\PayPal\StructType\PrepaidDomainTransferResponse|\PayPal\StructType\PrepaidGetBalanceResponse|\PayPal\StructType\PrepaidGetHistoryResponse|\PayPal\StructType\PrepaidGetSummaryResponse|\PayPal\StructType\PrepaidGetThresholdResponse|\PayPal\StructType\PrepaidSetThresholdResponse
+     * @return \Ovh\StructType\PrepaidDomainCreateResponse|\Ovh\StructType\PrepaidDomainRenewResponse|\Ovh\StructType\PrepaidDomainTransferResponse|\Ovh\StructType\PrepaidGetBalanceResponse|\Ovh\StructType\PrepaidGetHistoryResponse|\Ovh\StructType\PrepaidGetSummaryResponse|\Ovh\StructType\PrepaidGetThresholdResponse|\Ovh\StructType\PrepaidSetThresholdResponse
      */
     public function getResult()
     {

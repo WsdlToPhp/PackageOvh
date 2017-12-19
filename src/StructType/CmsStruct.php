@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -85,7 +85,7 @@ class CmsStruct extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\CmsStruct
+     * @return \Ovh\StructType\CmsStruct
      */
     public function setId($id = null)
     {
@@ -107,7 +107,7 @@ class CmsStruct extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\CmsStruct
+     * @return \Ovh\StructType\CmsStruct
      */
     public function setName($name = null)
     {
@@ -129,7 +129,7 @@ class CmsStruct extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \PayPal\StructType\CmsStruct
+     * @return \Ovh\StructType\CmsStruct
      */
     public function setVersion($version = null)
     {
@@ -151,7 +151,7 @@ class CmsStruct extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \PayPal\StructType\CmsStruct
+     * @return \Ovh\StructType\CmsStruct
      */
     public function setLanguage($language = null)
     {
@@ -173,7 +173,7 @@ class CmsStruct extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \PayPal\StructType\CmsStruct
+     * @return \Ovh\StructType\CmsStruct
      */
     public function setUrl($url = null)
     {
@@ -195,7 +195,7 @@ class CmsStruct extends AbstractStructBase
     /**
      * Set path value
      * @param string $path
-     * @return \PayPal\StructType\CmsStruct
+     * @return \Ovh\StructType\CmsStruct
      */
     public function setPath($path = null)
     {
@@ -217,7 +217,7 @@ class CmsStruct extends AbstractStructBase
     /**
      * Set adminLogin value
      * @param string $adminLogin
-     * @return \PayPal\StructType\CmsStruct
+     * @return \Ovh\StructType\CmsStruct
      */
     public function setAdminLogin($adminLogin = null)
     {
@@ -234,7 +234,7 @@ class CmsStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\CmsStruct
+     * @return \Ovh\StructType\CmsStruct
      */
     public static function __set_state(array $array)
     {

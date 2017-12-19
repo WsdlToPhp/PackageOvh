@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class TelephonyNumberGetFrWayNamesFromInsee extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyNumberGetFrWayNamesFromInsee
+     * @return \Ovh\StructType\TelephonyNumberGetFrWayNamesFromInsee
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class TelephonyNumberGetFrWayNamesFromInsee extends AbstractStructBase
     /**
      * Set insee value
      * @param string $insee
-     * @return \PayPal\StructType\TelephonyNumberGetFrWayNamesFromInsee
+     * @return \Ovh\StructType\TelephonyNumberGetFrWayNamesFromInsee
      */
     public function setInsee($insee = null)
     {
@@ -103,7 +103,7 @@ class TelephonyNumberGetFrWayNamesFromInsee extends AbstractStructBase
     /**
      * Set wayName value
      * @param string $wayName
-     * @return \PayPal\StructType\TelephonyNumberGetFrWayNamesFromInsee
+     * @return \Ovh\StructType\TelephonyNumberGetFrWayNamesFromInsee
      */
     public function setWayName($wayName = null)
     {
@@ -120,7 +120,7 @@ class TelephonyNumberGetFrWayNamesFromInsee extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyNumberGetFrWayNamesFromInsee
+     * @return \Ovh\StructType\TelephonyNumberGetFrWayNamesFromInsee
      */
     public static function __set_state(array $array)
     {

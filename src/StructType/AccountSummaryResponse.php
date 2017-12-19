@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class AccountSummaryResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\AccountSummaryReturn
+     * @var \Ovh\StructType\AccountSummaryReturn
      */
     public $return;
     /**
      * Constructor method for accountSummaryResponse
      * @uses AccountSummaryResponse::setReturn()
-     * @param \PayPal\StructType\AccountSummaryReturn $return
+     * @param \Ovh\StructType\AccountSummaryReturn $return
      */
-    public function __construct(\PayPal\StructType\AccountSummaryReturn $return = null)
+    public function __construct(\Ovh\StructType\AccountSummaryReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\AccountSummaryReturn|null
+     * @return \Ovh\StructType\AccountSummaryReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class AccountSummaryResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\AccountSummaryReturn $return
-     * @return \PayPal\StructType\AccountSummaryResponse
+     * @param \Ovh\StructType\AccountSummaryReturn $return
+     * @return \Ovh\StructType\AccountSummaryResponse
      */
-    public function setReturn(\PayPal\StructType\AccountSummaryReturn $return = null)
+    public function setReturn(\Ovh\StructType\AccountSummaryReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class AccountSummaryResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\AccountSummaryResponse
+     * @return \Ovh\StructType\AccountSummaryResponse
      */
     public static function __set_state(array $array)
     {

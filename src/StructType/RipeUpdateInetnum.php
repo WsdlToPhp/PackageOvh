@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class RipeUpdateInetnum extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\RipeUpdateInetnum
+     * @return \Ovh\StructType\RipeUpdateInetnum
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class RipeUpdateInetnum extends AbstractStructBase
     /**
      * Set block value
      * @param string $block
-     * @return \PayPal\StructType\RipeUpdateInetnum
+     * @return \Ovh\StructType\RipeUpdateInetnum
      */
     public function setBlock($block = null)
     {
@@ -123,7 +123,7 @@ class RipeUpdateInetnum extends AbstractStructBase
     /**
      * Set netname value
      * @param string $netname
-     * @return \PayPal\StructType\RipeUpdateInetnum
+     * @return \Ovh\StructType\RipeUpdateInetnum
      */
     public function setNetname($netname = null)
     {
@@ -145,7 +145,7 @@ class RipeUpdateInetnum extends AbstractStructBase
     /**
      * Set descr value
      * @param string $descr
-     * @return \PayPal\StructType\RipeUpdateInetnum
+     * @return \Ovh\StructType\RipeUpdateInetnum
      */
     public function setDescr($descr = null)
     {
@@ -167,7 +167,7 @@ class RipeUpdateInetnum extends AbstractStructBase
     /**
      * Set ripeId value
      * @param string $ripeId
-     * @return \PayPal\StructType\RipeUpdateInetnum
+     * @return \Ovh\StructType\RipeUpdateInetnum
      */
     public function setRipeId($ripeId = null)
     {
@@ -184,7 +184,7 @@ class RipeUpdateInetnum extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RipeUpdateInetnum
+     * @return \Ovh\StructType\RipeUpdateInetnum
      */
     public static function __set_state(array $array)
     {

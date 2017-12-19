@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class DedicatedBackupFtpInfoReturn extends AbstractStructBase
     /**
      * Set ftpBackupName value
      * @param string $ftpBackupName
-     * @return \PayPal\StructType\DedicatedBackupFtpInfoReturn
+     * @return \Ovh\StructType\DedicatedBackupFtpInfoReturn
      */
     public function setFtpBackupName($ftpBackupName = null)
     {
@@ -75,7 +75,7 @@ class DedicatedBackupFtpInfoReturn extends AbstractStructBase
     /**
      * Set quotaUsed value
      * @param int $quotaUsed
-     * @return \PayPal\StructType\DedicatedBackupFtpInfoReturn
+     * @return \Ovh\StructType\DedicatedBackupFtpInfoReturn
      */
     public function setQuotaUsed($quotaUsed = null)
     {
@@ -97,7 +97,7 @@ class DedicatedBackupFtpInfoReturn extends AbstractStructBase
     /**
      * Set quotaSize value
      * @param int $quotaSize
-     * @return \PayPal\StructType\DedicatedBackupFtpInfoReturn
+     * @return \Ovh\StructType\DedicatedBackupFtpInfoReturn
      */
     public function setQuotaSize($quotaSize = null)
     {
@@ -114,7 +114,7 @@ class DedicatedBackupFtpInfoReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedBackupFtpInfoReturn
+     * @return \Ovh\StructType\DedicatedBackupFtpInfoReturn
      */
     public static function __set_state(array $array)
     {

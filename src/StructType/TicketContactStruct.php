@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class TicketContactStruct extends AbstractStructBase
     public $componentType;
     /**
      * The domains
-     * @var \PayPal\ArrayType\MyArrayOfTicketContactDomainStructType
+     * @var \Ovh\ArrayType\MyArrayOfTicketContactDomainStructType
      */
     public $domains;
     /**
@@ -26,9 +26,9 @@ class TicketContactStruct extends AbstractStructBase
      * @uses TicketContactStruct::setComponentType()
      * @uses TicketContactStruct::setDomains()
      * @param string $componentType
-     * @param \PayPal\ArrayType\MyArrayOfTicketContactDomainStructType $domains
+     * @param \Ovh\ArrayType\MyArrayOfTicketContactDomainStructType $domains
      */
-    public function __construct($componentType = null, \PayPal\ArrayType\MyArrayOfTicketContactDomainStructType $domains = null)
+    public function __construct($componentType = null, \Ovh\ArrayType\MyArrayOfTicketContactDomainStructType $domains = null)
     {
         $this
             ->setComponentType($componentType)
@@ -45,7 +45,7 @@ class TicketContactStruct extends AbstractStructBase
     /**
      * Set componentType value
      * @param string $componentType
-     * @return \PayPal\StructType\TicketContactStruct
+     * @return \Ovh\StructType\TicketContactStruct
      */
     public function setComponentType($componentType = null)
     {
@@ -58,7 +58,7 @@ class TicketContactStruct extends AbstractStructBase
     }
     /**
      * Get domains value
-     * @return \PayPal\ArrayType\MyArrayOfTicketContactDomainStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTicketContactDomainStructType|null
      */
     public function getDomains()
     {
@@ -66,10 +66,10 @@ class TicketContactStruct extends AbstractStructBase
     }
     /**
      * Set domains value
-     * @param \PayPal\ArrayType\MyArrayOfTicketContactDomainStructType $domains
-     * @return \PayPal\StructType\TicketContactStruct
+     * @param \Ovh\ArrayType\MyArrayOfTicketContactDomainStructType $domains
+     * @return \Ovh\StructType\TicketContactStruct
      */
-    public function setDomains(\PayPal\ArrayType\MyArrayOfTicketContactDomainStructType $domains = null)
+    public function setDomains(\Ovh\ArrayType\MyArrayOfTicketContactDomainStructType $domains = null)
     {
         $this->domains = $domains;
         return $this;
@@ -80,7 +80,7 @@ class TicketContactStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TicketContactStruct
+     * @return \Ovh\StructType\TicketContactStruct
      */
     public static function __set_state(array $array)
     {

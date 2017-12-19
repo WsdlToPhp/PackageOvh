@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class MultiDomainStruct extends AbstractStructBase
     /**
      * Set multidomain value
      * @param string $multidomain
-     * @return \PayPal\StructType\MultiDomainStruct
+     * @return \Ovh\StructType\MultiDomainStruct
      */
     public function setMultidomain($multidomain = null)
     {
@@ -75,7 +75,7 @@ class MultiDomainStruct extends AbstractStructBase
     /**
      * Set target value
      * @param string $target
-     * @return \PayPal\StructType\MultiDomainStruct
+     * @return \Ovh\StructType\MultiDomainStruct
      */
     public function setTarget($target = null)
     {
@@ -97,7 +97,7 @@ class MultiDomainStruct extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\MultiDomainStruct
+     * @return \Ovh\StructType\MultiDomainStruct
      */
     public function setCountry($country = null)
     {
@@ -114,7 +114,7 @@ class MultiDomainStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\MultiDomainStruct
+     * @return \Ovh\StructType\MultiDomainStruct
      */
     public static function __set_state(array $array)
     {

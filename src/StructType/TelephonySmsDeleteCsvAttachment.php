@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -29,7 +29,7 @@ class TelephonySmsDeleteCsvAttachment extends AbstractStructBase
      * The ids
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfIntType
+     * @var \Ovh\ArrayType\MyArrayOfIntType
      */
     public $ids;
     /**
@@ -39,9 +39,9 @@ class TelephonySmsDeleteCsvAttachment extends AbstractStructBase
      * @uses TelephonySmsDeleteCsvAttachment::setIds()
      * @param string $session
      * @param string $smsAccount
-     * @param \PayPal\ArrayType\MyArrayOfIntType $ids
+     * @param \Ovh\ArrayType\MyArrayOfIntType $ids
      */
-    public function __construct($session = null, $smsAccount = null, \PayPal\ArrayType\MyArrayOfIntType $ids = null)
+    public function __construct($session = null, $smsAccount = null, \Ovh\ArrayType\MyArrayOfIntType $ids = null)
     {
         $this
             ->setSession($session)
@@ -59,7 +59,7 @@ class TelephonySmsDeleteCsvAttachment extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonySmsDeleteCsvAttachment
+     * @return \Ovh\StructType\TelephonySmsDeleteCsvAttachment
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class TelephonySmsDeleteCsvAttachment extends AbstractStructBase
     /**
      * Set smsAccount value
      * @param string $smsAccount
-     * @return \PayPal\StructType\TelephonySmsDeleteCsvAttachment
+     * @return \Ovh\StructType\TelephonySmsDeleteCsvAttachment
      */
     public function setSmsAccount($smsAccount = null)
     {
@@ -94,7 +94,7 @@ class TelephonySmsDeleteCsvAttachment extends AbstractStructBase
     }
     /**
      * Get ids value
-     * @return \PayPal\ArrayType\MyArrayOfIntType|null
+     * @return \Ovh\ArrayType\MyArrayOfIntType|null
      */
     public function getIds()
     {
@@ -102,10 +102,10 @@ class TelephonySmsDeleteCsvAttachment extends AbstractStructBase
     }
     /**
      * Set ids value
-     * @param \PayPal\ArrayType\MyArrayOfIntType $ids
-     * @return \PayPal\StructType\TelephonySmsDeleteCsvAttachment
+     * @param \Ovh\ArrayType\MyArrayOfIntType $ids
+     * @return \Ovh\StructType\TelephonySmsDeleteCsvAttachment
      */
-    public function setIds(\PayPal\ArrayType\MyArrayOfIntType $ids = null)
+    public function setIds(\Ovh\ArrayType\MyArrayOfIntType $ids = null)
     {
         $this->ids = $ids;
         return $this;
@@ -116,7 +116,7 @@ class TelephonySmsDeleteCsvAttachment extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsDeleteCsvAttachment
+     * @return \Ovh\StructType\TelephonySmsDeleteCsvAttachment
      */
     public static function __set_state(array $array)
     {

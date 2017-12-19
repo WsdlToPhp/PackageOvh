@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -125,7 +125,7 @@ class TelephonySmsHistoryStruct extends AbstractStructBase
     /**
      * Set smsId value
      * @param int $smsId
-     * @return \PayPal\StructType\TelephonySmsHistoryStruct
+     * @return \Ovh\StructType\TelephonySmsHistoryStruct
      */
     public function setSmsId($smsId = null)
     {
@@ -147,7 +147,7 @@ class TelephonySmsHistoryStruct extends AbstractStructBase
     /**
      * Set numberFrom value
      * @param string $numberFrom
-     * @return \PayPal\StructType\TelephonySmsHistoryStruct
+     * @return \Ovh\StructType\TelephonySmsHistoryStruct
      */
     public function setNumberFrom($numberFrom = null)
     {
@@ -169,7 +169,7 @@ class TelephonySmsHistoryStruct extends AbstractStructBase
     /**
      * Set numberTo value
      * @param string $numberTo
-     * @return \PayPal\StructType\TelephonySmsHistoryStruct
+     * @return \Ovh\StructType\TelephonySmsHistoryStruct
      */
     public function setNumberTo($numberTo = null)
     {
@@ -191,7 +191,7 @@ class TelephonySmsHistoryStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\TelephonySmsHistoryStruct
+     * @return \Ovh\StructType\TelephonySmsHistoryStruct
      */
     public function setStatus($status = null)
     {
@@ -213,7 +213,7 @@ class TelephonySmsHistoryStruct extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\TelephonySmsHistoryStruct
+     * @return \Ovh\StructType\TelephonySmsHistoryStruct
      */
     public function setDate($date = null)
     {
@@ -235,7 +235,7 @@ class TelephonySmsHistoryStruct extends AbstractStructBase
     /**
      * Set message value
      * @param string $message
-     * @return \PayPal\StructType\TelephonySmsHistoryStruct
+     * @return \Ovh\StructType\TelephonySmsHistoryStruct
      */
     public function setMessage($message = null)
     {
@@ -257,7 +257,7 @@ class TelephonySmsHistoryStruct extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \PayPal\StructType\TelephonySmsHistoryStruct
+     * @return \Ovh\StructType\TelephonySmsHistoryStruct
      */
     public function setText($text = null)
     {
@@ -279,7 +279,7 @@ class TelephonySmsHistoryStruct extends AbstractStructBase
     /**
      * Set user value
      * @param string $user
-     * @return \PayPal\StructType\TelephonySmsHistoryStruct
+     * @return \Ovh\StructType\TelephonySmsHistoryStruct
      */
     public function setUser($user = null)
     {
@@ -301,7 +301,7 @@ class TelephonySmsHistoryStruct extends AbstractStructBase
     /**
      * Set tag value
      * @param string $tag
-     * @return \PayPal\StructType\TelephonySmsHistoryStruct
+     * @return \Ovh\StructType\TelephonySmsHistoryStruct
      */
     public function setTag($tag = null)
     {
@@ -323,7 +323,7 @@ class TelephonySmsHistoryStruct extends AbstractStructBase
     /**
      * Set pttDescription value
      * @param string $pttDescription
-     * @return \PayPal\StructType\TelephonySmsHistoryStruct
+     * @return \Ovh\StructType\TelephonySmsHistoryStruct
      */
     public function setPttDescription($pttDescription = null)
     {
@@ -345,7 +345,7 @@ class TelephonySmsHistoryStruct extends AbstractStructBase
     /**
      * Set deliveryReceiptDescription value
      * @param string $deliveryReceiptDescription
-     * @return \PayPal\StructType\TelephonySmsHistoryStruct
+     * @return \Ovh\StructType\TelephonySmsHistoryStruct
      */
     public function setDeliveryReceiptDescription($deliveryReceiptDescription = null)
     {
@@ -367,7 +367,7 @@ class TelephonySmsHistoryStruct extends AbstractStructBase
     /**
      * Set pttDescriptionDetail value
      * @param string $pttDescriptionDetail
-     * @return \PayPal\StructType\TelephonySmsHistoryStruct
+     * @return \Ovh\StructType\TelephonySmsHistoryStruct
      */
     public function setPttDescriptionDetail($pttDescriptionDetail = null)
     {
@@ -384,7 +384,7 @@ class TelephonySmsHistoryStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsHistoryStruct
+     * @return \Ovh\StructType\TelephonySmsHistoryStruct
      */
     public static function __set_state(array $array)
     {

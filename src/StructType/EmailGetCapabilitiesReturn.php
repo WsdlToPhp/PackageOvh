@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -77,7 +77,7 @@ class EmailGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\EmailGetCapabilitiesReturn
+     * @return \Ovh\StructType\EmailGetCapabilitiesReturn
      */
     public function setName($name = null)
     {
@@ -99,7 +99,7 @@ class EmailGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set nbpops value
      * @param int $nbpops
-     * @return \PayPal\StructType\EmailGetCapabilitiesReturn
+     * @return \Ovh\StructType\EmailGetCapabilitiesReturn
      */
     public function setNbpops($nbpops = null)
     {
@@ -121,7 +121,7 @@ class EmailGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set nbforwards value
      * @param int $nbforwards
-     * @return \PayPal\StructType\EmailGetCapabilitiesReturn
+     * @return \Ovh\StructType\EmailGetCapabilitiesReturn
      */
     public function setNbforwards($nbforwards = null)
     {
@@ -143,7 +143,7 @@ class EmailGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set nbaliases value
      * @param int $nbaliases
-     * @return \PayPal\StructType\EmailGetCapabilitiesReturn
+     * @return \Ovh\StructType\EmailGetCapabilitiesReturn
      */
     public function setNbaliases($nbaliases = null)
     {
@@ -165,7 +165,7 @@ class EmailGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set nbresponders value
      * @param int $nbresponders
-     * @return \PayPal\StructType\EmailGetCapabilitiesReturn
+     * @return \Ovh\StructType\EmailGetCapabilitiesReturn
      */
     public function setNbresponders($nbresponders = null)
     {
@@ -187,7 +187,7 @@ class EmailGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set nbmls value
      * @param int $nbmls
-     * @return \PayPal\StructType\EmailGetCapabilitiesReturn
+     * @return \Ovh\StructType\EmailGetCapabilitiesReturn
      */
     public function setNbmls($nbmls = null)
     {
@@ -204,7 +204,7 @@ class EmailGetCapabilitiesReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\EmailGetCapabilitiesReturn
+     * @return \Ovh\StructType\EmailGetCapabilitiesReturn
      */
     public static function __set_state(array $array)
     {

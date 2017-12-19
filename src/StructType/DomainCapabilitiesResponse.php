@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DomainCapabilitiesResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\DomainCapabilitiesReturn
+     * @var \Ovh\StructType\DomainCapabilitiesReturn
      */
     public $return;
     /**
      * Constructor method for domainCapabilitiesResponse
      * @uses DomainCapabilitiesResponse::setReturn()
-     * @param \PayPal\StructType\DomainCapabilitiesReturn $return
+     * @param \Ovh\StructType\DomainCapabilitiesReturn $return
      */
-    public function __construct(\PayPal\StructType\DomainCapabilitiesReturn $return = null)
+    public function __construct(\Ovh\StructType\DomainCapabilitiesReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\DomainCapabilitiesReturn|null
+     * @return \Ovh\StructType\DomainCapabilitiesReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DomainCapabilitiesResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\DomainCapabilitiesReturn $return
-     * @return \PayPal\StructType\DomainCapabilitiesResponse
+     * @param \Ovh\StructType\DomainCapabilitiesReturn $return
+     * @return \Ovh\StructType\DomainCapabilitiesResponse
      */
-    public function setReturn(\PayPal\StructType\DomainCapabilitiesReturn $return = null)
+    public function setReturn(\Ovh\StructType\DomainCapabilitiesReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DomainCapabilitiesResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DomainCapabilitiesResponse
+     * @return \Ovh\StructType\DomainCapabilitiesResponse
      */
     public static function __set_state(array $array)
     {

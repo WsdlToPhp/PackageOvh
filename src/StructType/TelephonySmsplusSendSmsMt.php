@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -43,7 +43,7 @@ class TelephonySmsplusSendSmsMt extends AbstractStructBase
      * The idsList
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfIntType
+     * @var \Ovh\ArrayType\MyArrayOfIntType
      */
     public $idsList;
     /**
@@ -57,9 +57,9 @@ class TelephonySmsplusSendSmsMt extends AbstractStructBase
      * @param string $shortCode
      * @param string $keyword
      * @param string $message
-     * @param \PayPal\ArrayType\MyArrayOfIntType $idsList
+     * @param \Ovh\ArrayType\MyArrayOfIntType $idsList
      */
-    public function __construct($session = null, $shortCode = null, $keyword = null, $message = null, \PayPal\ArrayType\MyArrayOfIntType $idsList = null)
+    public function __construct($session = null, $shortCode = null, $keyword = null, $message = null, \Ovh\ArrayType\MyArrayOfIntType $idsList = null)
     {
         $this
             ->setSession($session)
@@ -79,7 +79,7 @@ class TelephonySmsplusSendSmsMt extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonySmsplusSendSmsMt
+     * @return \Ovh\StructType\TelephonySmsplusSendSmsMt
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class TelephonySmsplusSendSmsMt extends AbstractStructBase
     /**
      * Set shortCode value
      * @param string $shortCode
-     * @return \PayPal\StructType\TelephonySmsplusSendSmsMt
+     * @return \Ovh\StructType\TelephonySmsplusSendSmsMt
      */
     public function setShortCode($shortCode = null)
     {
@@ -123,7 +123,7 @@ class TelephonySmsplusSendSmsMt extends AbstractStructBase
     /**
      * Set keyword value
      * @param string $keyword
-     * @return \PayPal\StructType\TelephonySmsplusSendSmsMt
+     * @return \Ovh\StructType\TelephonySmsplusSendSmsMt
      */
     public function setKeyword($keyword = null)
     {
@@ -145,7 +145,7 @@ class TelephonySmsplusSendSmsMt extends AbstractStructBase
     /**
      * Set message value
      * @param string $message
-     * @return \PayPal\StructType\TelephonySmsplusSendSmsMt
+     * @return \Ovh\StructType\TelephonySmsplusSendSmsMt
      */
     public function setMessage($message = null)
     {
@@ -158,7 +158,7 @@ class TelephonySmsplusSendSmsMt extends AbstractStructBase
     }
     /**
      * Get idsList value
-     * @return \PayPal\ArrayType\MyArrayOfIntType|null
+     * @return \Ovh\ArrayType\MyArrayOfIntType|null
      */
     public function getIdsList()
     {
@@ -166,10 +166,10 @@ class TelephonySmsplusSendSmsMt extends AbstractStructBase
     }
     /**
      * Set idsList value
-     * @param \PayPal\ArrayType\MyArrayOfIntType $idsList
-     * @return \PayPal\StructType\TelephonySmsplusSendSmsMt
+     * @param \Ovh\ArrayType\MyArrayOfIntType $idsList
+     * @return \Ovh\StructType\TelephonySmsplusSendSmsMt
      */
-    public function setIdsList(\PayPal\ArrayType\MyArrayOfIntType $idsList = null)
+    public function setIdsList(\Ovh\ArrayType\MyArrayOfIntType $idsList = null)
     {
         $this->idsList = $idsList;
         return $this;
@@ -180,7 +180,7 @@ class TelephonySmsplusSendSmsMt extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsplusSendSmsMt
+     * @return \Ovh\StructType\TelephonySmsplusSendSmsMt
      */
     public static function __set_state(array $array)
     {

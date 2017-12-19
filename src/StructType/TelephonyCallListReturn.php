@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class TelephonyCallListReturn extends AbstractStructBase
     public $toDate;
     /**
      * The list
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyCallStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyCallStructType
      */
     public $list;
     /**
@@ -33,9 +33,9 @@ class TelephonyCallListReturn extends AbstractStructBase
      * @uses TelephonyCallListReturn::setList()
      * @param string $fromDate
      * @param string $toDate
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyCallStructType $list
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyCallStructType $list
      */
-    public function __construct($fromDate = null, $toDate = null, \PayPal\ArrayType\MyArrayOfTelephonyCallStructType $list = null)
+    public function __construct($fromDate = null, $toDate = null, \Ovh\ArrayType\MyArrayOfTelephonyCallStructType $list = null)
     {
         $this
             ->setFromDate($fromDate)
@@ -53,7 +53,7 @@ class TelephonyCallListReturn extends AbstractStructBase
     /**
      * Set fromDate value
      * @param string $fromDate
-     * @return \PayPal\StructType\TelephonyCallListReturn
+     * @return \Ovh\StructType\TelephonyCallListReturn
      */
     public function setFromDate($fromDate = null)
     {
@@ -75,7 +75,7 @@ class TelephonyCallListReturn extends AbstractStructBase
     /**
      * Set toDate value
      * @param string $toDate
-     * @return \PayPal\StructType\TelephonyCallListReturn
+     * @return \Ovh\StructType\TelephonyCallListReturn
      */
     public function setToDate($toDate = null)
     {
@@ -88,7 +88,7 @@ class TelephonyCallListReturn extends AbstractStructBase
     }
     /**
      * Get list value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyCallStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyCallStructType|null
      */
     public function getList()
     {
@@ -96,10 +96,10 @@ class TelephonyCallListReturn extends AbstractStructBase
     }
     /**
      * Set list value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyCallStructType $list
-     * @return \PayPal\StructType\TelephonyCallListReturn
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyCallStructType $list
+     * @return \Ovh\StructType\TelephonyCallListReturn
      */
-    public function setList(\PayPal\ArrayType\MyArrayOfTelephonyCallStructType $list = null)
+    public function setList(\Ovh\ArrayType\MyArrayOfTelephonyCallStructType $list = null)
     {
         $this->list = $list;
         return $this;
@@ -110,7 +110,7 @@ class TelephonyCallListReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyCallListReturn
+     * @return \Ovh\StructType\TelephonyCallListReturn
      */
     public static function __set_state(array $array)
     {

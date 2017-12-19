@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class BillingGetReferencesToExpiredResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfBillingGetReferencesToExpiredStructType
+     * @var \Ovh\ArrayType\MyArrayOfBillingGetReferencesToExpiredStructType
      */
     public $return;
     /**
      * Constructor method for billingGetReferencesToExpiredResponse
      * @uses BillingGetReferencesToExpiredResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfBillingGetReferencesToExpiredStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfBillingGetReferencesToExpiredStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfBillingGetReferencesToExpiredStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfBillingGetReferencesToExpiredStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfBillingGetReferencesToExpiredStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfBillingGetReferencesToExpiredStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class BillingGetReferencesToExpiredResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfBillingGetReferencesToExpiredStructType $return
-     * @return \PayPal\StructType\BillingGetReferencesToExpiredResponse
+     * @param \Ovh\ArrayType\MyArrayOfBillingGetReferencesToExpiredStructType $return
+     * @return \Ovh\StructType\BillingGetReferencesToExpiredResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfBillingGetReferencesToExpiredStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfBillingGetReferencesToExpiredStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class BillingGetReferencesToExpiredResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\BillingGetReferencesToExpiredResponse
+     * @return \Ovh\StructType\BillingGetReferencesToExpiredResponse
      */
     public static function __set_state(array $array)
     {

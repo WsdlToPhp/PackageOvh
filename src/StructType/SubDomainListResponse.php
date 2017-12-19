@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class SubDomainListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfSubDomainStructType
+     * @var \Ovh\ArrayType\MyArrayOfSubDomainStructType
      */
     public $return;
     /**
      * Constructor method for subDomainListResponse
      * @uses SubDomainListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfSubDomainStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfSubDomainStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfSubDomainStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfSubDomainStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfSubDomainStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfSubDomainStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class SubDomainListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfSubDomainStructType $return
-     * @return \PayPal\StructType\SubDomainListResponse
+     * @param \Ovh\ArrayType\MyArrayOfSubDomainStructType $return
+     * @return \Ovh\StructType\SubDomainListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfSubDomainStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfSubDomainStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class SubDomainListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SubDomainListResponse
+     * @return \Ovh\StructType\SubDomainListResponse
      */
     public static function __set_state(array $array)
     {

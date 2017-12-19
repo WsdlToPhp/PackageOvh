@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class TelephonyListSummationCallsFromNumber extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyListSummationCallsFromNumber
+     * @return \Ovh\StructType\TelephonyListSummationCallsFromNumber
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class TelephonyListSummationCallsFromNumber extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyListSummationCallsFromNumber
+     * @return \Ovh\StructType\TelephonyListSummationCallsFromNumber
      */
     public function setNumber($number = null)
     {
@@ -133,7 +133,7 @@ class TelephonyListSummationCallsFromNumber extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyListSummationCallsFromNumber
+     * @return \Ovh\StructType\TelephonyListSummationCallsFromNumber
      */
     public function setCountry($country = null)
     {
@@ -155,7 +155,7 @@ class TelephonyListSummationCallsFromNumber extends AbstractStructBase
     /**
      * Set reversableDelay value
      * @param string $reversableDelay
-     * @return \PayPal\StructType\TelephonyListSummationCallsFromNumber
+     * @return \Ovh\StructType\TelephonyListSummationCallsFromNumber
      */
     public function setReversableDelay($reversableDelay = null)
     {
@@ -177,7 +177,7 @@ class TelephonyListSummationCallsFromNumber extends AbstractStructBase
     /**
      * Set sortOrder value
      * @param string $sortOrder
-     * @return \PayPal\StructType\TelephonyListSummationCallsFromNumber
+     * @return \Ovh\StructType\TelephonyListSummationCallsFromNumber
      */
     public function setSortOrder($sortOrder = null)
     {
@@ -199,7 +199,7 @@ class TelephonyListSummationCallsFromNumber extends AbstractStructBase
     /**
      * Set sortField value
      * @param string $sortField
-     * @return \PayPal\StructType\TelephonyListSummationCallsFromNumber
+     * @return \Ovh\StructType\TelephonyListSummationCallsFromNumber
      */
     public function setSortField($sortField = null)
     {
@@ -216,7 +216,7 @@ class TelephonyListSummationCallsFromNumber extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyListSummationCallsFromNumber
+     * @return \Ovh\StructType\TelephonyListSummationCallsFromNumber
      */
     public static function __set_state(array $array)
     {

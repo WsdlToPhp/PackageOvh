@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedIpLoadBalancingListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedIpLoadBalancingStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedIpLoadBalancingStructType
      */
     public $return;
     /**
      * Constructor method for dedicatedIpLoadBalancingListResponse
      * @uses DedicatedIpLoadBalancingListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedIpLoadBalancingStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedIpLoadBalancingStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfDedicatedIpLoadBalancingStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfDedicatedIpLoadBalancingStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedIpLoadBalancingStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedIpLoadBalancingStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedIpLoadBalancingListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedIpLoadBalancingStructType $return
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingListResponse
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedIpLoadBalancingStructType $return
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfDedicatedIpLoadBalancingStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfDedicatedIpLoadBalancingStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedIpLoadBalancingListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingListResponse
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingListResponse
      */
     public static function __set_state(array $array)
     {

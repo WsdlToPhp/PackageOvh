@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -129,7 +129,7 @@ class DedicatedNetbootModify extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedNetbootModify
+     * @return \Ovh\StructType\DedicatedNetbootModify
      */
     public function setSession($session = null)
     {
@@ -151,7 +151,7 @@ class DedicatedNetbootModify extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedNetbootModify
+     * @return \Ovh\StructType\DedicatedNetbootModify
      */
     public function setHostname($hostname = null)
     {
@@ -173,7 +173,7 @@ class DedicatedNetbootModify extends AbstractStructBase
     /**
      * Set kernel value
      * @param string $kernel
-     * @return \PayPal\StructType\DedicatedNetbootModify
+     * @return \Ovh\StructType\DedicatedNetbootModify
      */
     public function setKernel($kernel = null)
     {
@@ -195,7 +195,7 @@ class DedicatedNetbootModify extends AbstractStructBase
     /**
      * Set cpufamily value
      * @param string $cpufamily
-     * @return \PayPal\StructType\DedicatedNetbootModify
+     * @return \Ovh\StructType\DedicatedNetbootModify
      */
     public function setCpufamily($cpufamily = null)
     {
@@ -217,7 +217,7 @@ class DedicatedNetbootModify extends AbstractStructBase
     /**
      * Set grsec value
      * @param bool $grsec
-     * @return \PayPal\StructType\DedicatedNetbootModify
+     * @return \Ovh\StructType\DedicatedNetbootModify
      */
     public function setGrsec($grsec = null)
     {
@@ -239,7 +239,7 @@ class DedicatedNetbootModify extends AbstractStructBase
     /**
      * Set smp value
      * @param bool $smp
-     * @return \PayPal\StructType\DedicatedNetbootModify
+     * @return \Ovh\StructType\DedicatedNetbootModify
      */
     public function setSmp($smp = null)
     {
@@ -261,7 +261,7 @@ class DedicatedNetbootModify extends AbstractStructBase
     /**
      * Set ipv6 value
      * @param bool $ipv6
-     * @return \PayPal\StructType\DedicatedNetbootModify
+     * @return \Ovh\StructType\DedicatedNetbootModify
      */
     public function setIpv6($ipv6 = null)
     {
@@ -283,7 +283,7 @@ class DedicatedNetbootModify extends AbstractStructBase
     /**
      * Set root value
      * @param string $root
-     * @return \PayPal\StructType\DedicatedNetbootModify
+     * @return \Ovh\StructType\DedicatedNetbootModify
      */
     public function setRoot($root = null)
     {
@@ -305,7 +305,7 @@ class DedicatedNetbootModify extends AbstractStructBase
     /**
      * Set rescueEmail value
      * @param string $rescueEmail
-     * @return \PayPal\StructType\DedicatedNetbootModify
+     * @return \Ovh\StructType\DedicatedNetbootModify
      */
     public function setRescueEmail($rescueEmail = null)
     {
@@ -327,7 +327,7 @@ class DedicatedNetbootModify extends AbstractStructBase
     /**
      * Set hz value
      * @param string $hz
-     * @return \PayPal\StructType\DedicatedNetbootModify
+     * @return \Ovh\StructType\DedicatedNetbootModify
      */
     public function setHz($hz = null)
     {
@@ -344,7 +344,7 @@ class DedicatedNetbootModify extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedNetbootModify
+     * @return \Ovh\StructType\DedicatedNetbootModify
      */
     public static function __set_state(array $array)
     {

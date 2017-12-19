@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class AutomatedMailReturnSet extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\AutomatedMailReturnSet
+     * @return \Ovh\StructType\AutomatedMailReturnSet
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class AutomatedMailReturnSet extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\AutomatedMailReturnSet
+     * @return \Ovh\StructType\AutomatedMailReturnSet
      */
     public function setDomain($domain = null)
     {
@@ -103,7 +103,7 @@ class AutomatedMailReturnSet extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\AutomatedMailReturnSet
+     * @return \Ovh\StructType\AutomatedMailReturnSet
      */
     public function setEmail($email = null)
     {
@@ -120,7 +120,7 @@ class AutomatedMailReturnSet extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\AutomatedMailReturnSet
+     * @return \Ovh\StructType\AutomatedMailReturnSet
      */
     public static function __set_state(array $array)
     {

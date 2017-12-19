@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class DedicatedFailoverStruct extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\DedicatedFailoverStruct
+     * @return \Ovh\StructType\DedicatedFailoverStruct
      */
     public function setIp($ip = null)
     {
@@ -83,7 +83,7 @@ class DedicatedFailoverStruct extends AbstractStructBase
     /**
      * Set routedTo value
      * @param string $routedTo
-     * @return \PayPal\StructType\DedicatedFailoverStruct
+     * @return \Ovh\StructType\DedicatedFailoverStruct
      */
     public function setRoutedTo($routedTo = null)
     {
@@ -105,7 +105,7 @@ class DedicatedFailoverStruct extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \PayPal\StructType\DedicatedFailoverStruct
+     * @return \Ovh\StructType\DedicatedFailoverStruct
      */
     public function setComment($comment = null)
     {
@@ -127,7 +127,7 @@ class DedicatedFailoverStruct extends AbstractStructBase
     /**
      * Set ssl value
      * @param bool $ssl
-     * @return \PayPal\StructType\DedicatedFailoverStruct
+     * @return \Ovh\StructType\DedicatedFailoverStruct
      */
     public function setSsl($ssl = null)
     {
@@ -144,7 +144,7 @@ class DedicatedFailoverStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedFailoverStruct
+     * @return \Ovh\StructType\DedicatedFailoverStruct
      */
     public static function __set_state(array $array)
     {

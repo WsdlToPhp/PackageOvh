@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedInstallationTemplateListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedInstallationTemplateStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedInstallationTemplateStructType
      */
     public $return;
     /**
      * Constructor method for dedicatedInstallationTemplateListResponse
      * @uses DedicatedInstallationTemplateListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedInstallationTemplateStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedInstallationTemplateStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfDedicatedInstallationTemplateStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfDedicatedInstallationTemplateStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedInstallationTemplateStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedInstallationTemplateStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedInstallationTemplateListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedInstallationTemplateStructType $return
-     * @return \PayPal\StructType\DedicatedInstallationTemplateListResponse
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedInstallationTemplateStructType $return
+     * @return \Ovh\StructType\DedicatedInstallationTemplateListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfDedicatedInstallationTemplateStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfDedicatedInstallationTemplateStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedInstallationTemplateListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedInstallationTemplateListResponse
+     * @return \Ovh\StructType\DedicatedInstallationTemplateListResponse
      */
     public static function __set_state(array $array)
     {

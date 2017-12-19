@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -17,13 +17,13 @@ class MyArrayOfDedicatedServerPartioningDetailStructType extends AbstractStructA
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\DedicatedServerPartioningDetailStruct[]
+     * @var \Ovh\StructType\DedicatedServerPartioningDetailStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfDedicatedServerPartioningDetailStructType
      * @uses MyArrayOfDedicatedServerPartioningDetailStructType::setItem()
-     * @param \PayPal\StructType\DedicatedServerPartioningDetailStruct[] $item
+     * @param \Ovh\StructType\DedicatedServerPartioningDetailStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -32,7 +32,7 @@ class MyArrayOfDedicatedServerPartioningDetailStructType extends AbstractStructA
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\DedicatedServerPartioningDetailStruct[]|null
+     * @return \Ovh\StructType\DedicatedServerPartioningDetailStruct[]|null
      */
     public function getItem()
     {
@@ -41,15 +41,15 @@ class MyArrayOfDedicatedServerPartioningDetailStructType extends AbstractStructA
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedServerPartioningDetailStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedServerPartioningDetailStructType
+     * @param \Ovh\StructType\DedicatedServerPartioningDetailStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedServerPartioningDetailStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfDedicatedServerPartioningDetailStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfDedicatedServerPartioningDetailStructTypeItemItem instanceof \PayPal\StructType\DedicatedServerPartioningDetailStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedServerPartioningDetailStruct, "%s" given', is_object($myArrayOfDedicatedServerPartioningDetailStructTypeItemItem) ? get_class($myArrayOfDedicatedServerPartioningDetailStructTypeItemItem) : gettype($myArrayOfDedicatedServerPartioningDetailStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfDedicatedServerPartioningDetailStructTypeItemItem instanceof \Ovh\StructType\DedicatedServerPartioningDetailStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedServerPartioningDetailStruct, "%s" given', is_object($myArrayOfDedicatedServerPartioningDetailStructTypeItemItem) ? get_class($myArrayOfDedicatedServerPartioningDetailStructTypeItemItem) : gettype($myArrayOfDedicatedServerPartioningDetailStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -58,14 +58,14 @@ class MyArrayOfDedicatedServerPartioningDetailStructType extends AbstractStructA
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedServerPartioningDetailStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedServerPartioningDetailStructType
+     * @param \Ovh\StructType\DedicatedServerPartioningDetailStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedServerPartioningDetailStructType
      */
-    public function addToItem(\PayPal\StructType\DedicatedServerPartioningDetailStruct $item)
+    public function addToItem(\Ovh\StructType\DedicatedServerPartioningDetailStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\DedicatedServerPartioningDetailStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedServerPartioningDetailStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\DedicatedServerPartioningDetailStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedServerPartioningDetailStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class MyArrayOfDedicatedServerPartioningDetailStructType extends AbstractStructA
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\DedicatedServerPartioningDetailStruct|null
+     * @return \Ovh\StructType\DedicatedServerPartioningDetailStruct|null
      */
     public function current()
     {
@@ -83,7 +83,7 @@ class MyArrayOfDedicatedServerPartioningDetailStructType extends AbstractStructA
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\DedicatedServerPartioningDetailStruct|null
+     * @return \Ovh\StructType\DedicatedServerPartioningDetailStruct|null
      */
     public function item($index)
     {
@@ -92,7 +92,7 @@ class MyArrayOfDedicatedServerPartioningDetailStructType extends AbstractStructA
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\DedicatedServerPartioningDetailStruct|null
+     * @return \Ovh\StructType\DedicatedServerPartioningDetailStruct|null
      */
     public function first()
     {
@@ -101,7 +101,7 @@ class MyArrayOfDedicatedServerPartioningDetailStructType extends AbstractStructA
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\DedicatedServerPartioningDetailStruct|null
+     * @return \Ovh\StructType\DedicatedServerPartioningDetailStruct|null
      */
     public function last()
     {
@@ -111,7 +111,7 @@ class MyArrayOfDedicatedServerPartioningDetailStructType extends AbstractStructA
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\DedicatedServerPartioningDetailStruct|null
+     * @return \Ovh\StructType\DedicatedServerPartioningDetailStruct|null
      */
     public function offsetGet($offset)
     {
@@ -132,7 +132,7 @@ class MyArrayOfDedicatedServerPartioningDetailStructType extends AbstractStructA
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedServerPartioningDetailStructType
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedServerPartioningDetailStructType
      */
     public static function __set_state(array $array)
     {

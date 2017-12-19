@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyDirectoryPJCodeResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyDirectoryPJHeadingStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyDirectoryPJHeadingStructType
      */
     public $return;
     /**
      * Constructor method for telephonyDirectoryPJCodeResponse
      * @uses TelephonyDirectoryPJCodeResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyDirectoryPJHeadingStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyDirectoryPJHeadingStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonyDirectoryPJHeadingStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonyDirectoryPJHeadingStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyDirectoryPJHeadingStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyDirectoryPJHeadingStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyDirectoryPJCodeResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyDirectoryPJHeadingStructType $return
-     * @return \PayPal\StructType\TelephonyDirectoryPJCodeResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyDirectoryPJHeadingStructType $return
+     * @return \Ovh\StructType\TelephonyDirectoryPJCodeResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonyDirectoryPJHeadingStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonyDirectoryPJHeadingStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyDirectoryPJCodeResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyDirectoryPJCodeResponse
+     * @return \Ovh\StructType\TelephonyDirectoryPJCodeResponse
      */
     public static function __set_state(array $array)
     {

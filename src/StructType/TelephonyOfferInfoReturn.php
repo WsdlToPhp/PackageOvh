@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -43,12 +43,12 @@ class TelephonyOfferInfoReturn extends AbstractStructBase
     public $simultaneousLines;
     /**
      * The hardware
-     * @var \PayPal\StructType\TelephonyOfferInfoHardwareStruct
+     * @var \Ovh\StructType\TelephonyOfferInfoHardwareStruct
      */
     public $hardware;
     /**
      * The sipAccount
-     * @var \PayPal\StructType\TelephonyOfferInfoSipAccountStruct
+     * @var \Ovh\StructType\TelephonyOfferInfoSipAccountStruct
      */
     public $sipAccount;
     /**
@@ -67,10 +67,10 @@ class TelephonyOfferInfoReturn extends AbstractStructBase
      * @param string $countryCode
      * @param string $nextBillingDate
      * @param int $simultaneousLines
-     * @param \PayPal\StructType\TelephonyOfferInfoHardwareStruct $hardware
-     * @param \PayPal\StructType\TelephonyOfferInfoSipAccountStruct $sipAccount
+     * @param \Ovh\StructType\TelephonyOfferInfoHardwareStruct $hardware
+     * @param \Ovh\StructType\TelephonyOfferInfoSipAccountStruct $sipAccount
      */
-    public function __construct($number = null, $description = null, $offer = null, $countryCode = null, $nextBillingDate = null, $simultaneousLines = null, \PayPal\StructType\TelephonyOfferInfoHardwareStruct $hardware = null, \PayPal\StructType\TelephonyOfferInfoSipAccountStruct $sipAccount = null)
+    public function __construct($number = null, $description = null, $offer = null, $countryCode = null, $nextBillingDate = null, $simultaneousLines = null, \Ovh\StructType\TelephonyOfferInfoHardwareStruct $hardware = null, \Ovh\StructType\TelephonyOfferInfoSipAccountStruct $sipAccount = null)
     {
         $this
             ->setNumber($number)
@@ -93,7 +93,7 @@ class TelephonyOfferInfoReturn extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyOfferInfoReturn
+     * @return \Ovh\StructType\TelephonyOfferInfoReturn
      */
     public function setNumber($number = null)
     {
@@ -115,7 +115,7 @@ class TelephonyOfferInfoReturn extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \PayPal\StructType\TelephonyOfferInfoReturn
+     * @return \Ovh\StructType\TelephonyOfferInfoReturn
      */
     public function setDescription($description = null)
     {
@@ -137,7 +137,7 @@ class TelephonyOfferInfoReturn extends AbstractStructBase
     /**
      * Set offer value
      * @param string $offer
-     * @return \PayPal\StructType\TelephonyOfferInfoReturn
+     * @return \Ovh\StructType\TelephonyOfferInfoReturn
      */
     public function setOffer($offer = null)
     {
@@ -159,7 +159,7 @@ class TelephonyOfferInfoReturn extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \PayPal\StructType\TelephonyOfferInfoReturn
+     * @return \Ovh\StructType\TelephonyOfferInfoReturn
      */
     public function setCountryCode($countryCode = null)
     {
@@ -181,7 +181,7 @@ class TelephonyOfferInfoReturn extends AbstractStructBase
     /**
      * Set nextBillingDate value
      * @param string $nextBillingDate
-     * @return \PayPal\StructType\TelephonyOfferInfoReturn
+     * @return \Ovh\StructType\TelephonyOfferInfoReturn
      */
     public function setNextBillingDate($nextBillingDate = null)
     {
@@ -203,7 +203,7 @@ class TelephonyOfferInfoReturn extends AbstractStructBase
     /**
      * Set simultaneousLines value
      * @param int $simultaneousLines
-     * @return \PayPal\StructType\TelephonyOfferInfoReturn
+     * @return \Ovh\StructType\TelephonyOfferInfoReturn
      */
     public function setSimultaneousLines($simultaneousLines = null)
     {
@@ -216,7 +216,7 @@ class TelephonyOfferInfoReturn extends AbstractStructBase
     }
     /**
      * Get hardware value
-     * @return \PayPal\StructType\TelephonyOfferInfoHardwareStruct|null
+     * @return \Ovh\StructType\TelephonyOfferInfoHardwareStruct|null
      */
     public function getHardware()
     {
@@ -224,17 +224,17 @@ class TelephonyOfferInfoReturn extends AbstractStructBase
     }
     /**
      * Set hardware value
-     * @param \PayPal\StructType\TelephonyOfferInfoHardwareStruct $hardware
-     * @return \PayPal\StructType\TelephonyOfferInfoReturn
+     * @param \Ovh\StructType\TelephonyOfferInfoHardwareStruct $hardware
+     * @return \Ovh\StructType\TelephonyOfferInfoReturn
      */
-    public function setHardware(\PayPal\StructType\TelephonyOfferInfoHardwareStruct $hardware = null)
+    public function setHardware(\Ovh\StructType\TelephonyOfferInfoHardwareStruct $hardware = null)
     {
         $this->hardware = $hardware;
         return $this;
     }
     /**
      * Get sipAccount value
-     * @return \PayPal\StructType\TelephonyOfferInfoSipAccountStruct|null
+     * @return \Ovh\StructType\TelephonyOfferInfoSipAccountStruct|null
      */
     public function getSipAccount()
     {
@@ -242,10 +242,10 @@ class TelephonyOfferInfoReturn extends AbstractStructBase
     }
     /**
      * Set sipAccount value
-     * @param \PayPal\StructType\TelephonyOfferInfoSipAccountStruct $sipAccount
-     * @return \PayPal\StructType\TelephonyOfferInfoReturn
+     * @param \Ovh\StructType\TelephonyOfferInfoSipAccountStruct $sipAccount
+     * @return \Ovh\StructType\TelephonyOfferInfoReturn
      */
-    public function setSipAccount(\PayPal\StructType\TelephonyOfferInfoSipAccountStruct $sipAccount = null)
+    public function setSipAccount(\Ovh\StructType\TelephonyOfferInfoSipAccountStruct $sipAccount = null)
     {
         $this->sipAccount = $sipAccount;
         return $this;
@@ -256,7 +256,7 @@ class TelephonyOfferInfoReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyOfferInfoReturn
+     * @return \Ovh\StructType\TelephonyOfferInfoReturn
      */
     public static function __set_state(array $array)
     {

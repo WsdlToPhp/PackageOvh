@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -149,7 +149,7 @@ class GlobalAccessStruct extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\GlobalAccessStruct
+     * @return \Ovh\StructType\GlobalAccessStruct
      */
     public function setName($name = null)
     {
@@ -171,7 +171,7 @@ class GlobalAccessStruct extends AbstractStructBase
     /**
      * Set domain value
      * @param bool $domain
-     * @return \PayPal\StructType\GlobalAccessStruct
+     * @return \Ovh\StructType\GlobalAccessStruct
      */
     public function setDomain($domain = null)
     {
@@ -193,7 +193,7 @@ class GlobalAccessStruct extends AbstractStructBase
     /**
      * Set hosting value
      * @param bool $hosting
-     * @return \PayPal\StructType\GlobalAccessStruct
+     * @return \Ovh\StructType\GlobalAccessStruct
      */
     public function setHosting($hosting = null)
     {
@@ -215,7 +215,7 @@ class GlobalAccessStruct extends AbstractStructBase
     /**
      * Set email value
      * @param bool $email
-     * @return \PayPal\StructType\GlobalAccessStruct
+     * @return \Ovh\StructType\GlobalAccessStruct
      */
     public function setEmail($email = null)
     {
@@ -237,7 +237,7 @@ class GlobalAccessStruct extends AbstractStructBase
     /**
      * Set pop value
      * @param bool $pop
-     * @return \PayPal\StructType\GlobalAccessStruct
+     * @return \Ovh\StructType\GlobalAccessStruct
      */
     public function setPop($pop = null)
     {
@@ -259,7 +259,7 @@ class GlobalAccessStruct extends AbstractStructBase
     /**
      * Set dedicated value
      * @param bool $dedicated
-     * @return \PayPal\StructType\GlobalAccessStruct
+     * @return \Ovh\StructType\GlobalAccessStruct
      */
     public function setDedicated($dedicated = null)
     {
@@ -281,7 +281,7 @@ class GlobalAccessStruct extends AbstractStructBase
     /**
      * Set reverse value
      * @param string $reverse
-     * @return \PayPal\StructType\GlobalAccessStruct
+     * @return \Ovh\StructType\GlobalAccessStruct
      */
     public function setReverse($reverse = null)
     {
@@ -303,7 +303,7 @@ class GlobalAccessStruct extends AbstractStructBase
     /**
      * Set alldom value
      * @param bool $alldom
-     * @return \PayPal\StructType\GlobalAccessStruct
+     * @return \Ovh\StructType\GlobalAccessStruct
      */
     public function setAlldom($alldom = null)
     {
@@ -325,7 +325,7 @@ class GlobalAccessStruct extends AbstractStructBase
     /**
      * Set ssl value
      * @param bool $ssl
-     * @return \PayPal\StructType\GlobalAccessStruct
+     * @return \Ovh\StructType\GlobalAccessStruct
      */
     public function setSsl($ssl = null)
     {
@@ -347,7 +347,7 @@ class GlobalAccessStruct extends AbstractStructBase
     /**
      * Set rps value
      * @param bool $rps
-     * @return \PayPal\StructType\GlobalAccessStruct
+     * @return \Ovh\StructType\GlobalAccessStruct
      */
     public function setRps($rps = null)
     {
@@ -369,7 +369,7 @@ class GlobalAccessStruct extends AbstractStructBase
     /**
      * Set rpsOrphan value
      * @param bool $rpsOrphan
-     * @return \PayPal\StructType\GlobalAccessStruct
+     * @return \Ovh\StructType\GlobalAccessStruct
      */
     public function setRpsOrphan($rpsOrphan = null)
     {
@@ -391,7 +391,7 @@ class GlobalAccessStruct extends AbstractStructBase
     /**
      * Set vs value
      * @param bool $vs
-     * @return \PayPal\StructType\GlobalAccessStruct
+     * @return \Ovh\StructType\GlobalAccessStruct
      */
     public function setVs($vs = null)
     {
@@ -413,7 +413,7 @@ class GlobalAccessStruct extends AbstractStructBase
     /**
      * Set voip value
      * @param bool $voip
-     * @return \PayPal\StructType\GlobalAccessStruct
+     * @return \Ovh\StructType\GlobalAccessStruct
      */
     public function setVoip($voip = null)
     {
@@ -435,7 +435,7 @@ class GlobalAccessStruct extends AbstractStructBase
     /**
      * Set housing value
      * @param bool $housing
-     * @return \PayPal\StructType\GlobalAccessStruct
+     * @return \Ovh\StructType\GlobalAccessStruct
      */
     public function setHousing($housing = null)
     {
@@ -457,7 +457,7 @@ class GlobalAccessStruct extends AbstractStructBase
     /**
      * Set sqlpriv value
      * @param bool $sqlpriv
-     * @return \PayPal\StructType\GlobalAccessStruct
+     * @return \Ovh\StructType\GlobalAccessStruct
      */
     public function setSqlpriv($sqlpriv = null)
     {
@@ -474,7 +474,7 @@ class GlobalAccessStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\GlobalAccessStruct
+     * @return \Ovh\StructType\GlobalAccessStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -58,27 +58,27 @@ class OrderFollowingUpStruct extends AbstractStructBase
     public $cloture;
     /**
      * The paymentBuffer
-     * @var \PayPal\StructType\BufferStepStruct
+     * @var \Ovh\StructType\BufferStepStruct
      */
     public $paymentBuffer;
     /**
      * The procedureBuffer
-     * @var \PayPal\StructType\BufferStepStruct
+     * @var \Ovh\StructType\BufferStepStruct
      */
     public $procedureBuffer;
     /**
      * The installBuffer
-     * @var \PayPal\StructType\BufferStepStruct
+     * @var \Ovh\StructType\BufferStepStruct
      */
     public $installBuffer;
     /**
      * The shippingBuffer
-     * @var \PayPal\StructType\BufferStepStruct
+     * @var \Ovh\StructType\BufferStepStruct
      */
     public $shippingBuffer;
     /**
      * The clotureBuffer
-     * @var \PayPal\StructType\BufferStepStruct
+     * @var \Ovh\StructType\BufferStepStruct
      */
     public $clotureBuffer;
     /**
@@ -112,14 +112,14 @@ class OrderFollowingUpStruct extends AbstractStructBase
      * @param string $install
      * @param string $shipping
      * @param string $cloture
-     * @param \PayPal\StructType\BufferStepStruct $paymentBuffer
-     * @param \PayPal\StructType\BufferStepStruct $procedureBuffer
-     * @param \PayPal\StructType\BufferStepStruct $installBuffer
-     * @param \PayPal\StructType\BufferStepStruct $shippingBuffer
-     * @param \PayPal\StructType\BufferStepStruct $clotureBuffer
+     * @param \Ovh\StructType\BufferStepStruct $paymentBuffer
+     * @param \Ovh\StructType\BufferStepStruct $procedureBuffer
+     * @param \Ovh\StructType\BufferStepStruct $installBuffer
+     * @param \Ovh\StructType\BufferStepStruct $shippingBuffer
+     * @param \Ovh\StructType\BufferStepStruct $clotureBuffer
      * @param string $avancement
      */
-    public function __construct($id = null, $urlId = null, $type = null, $creationDate = null, $payment = null, $procedure = null, $install = null, $shipping = null, $cloture = null, \PayPal\StructType\BufferStepStruct $paymentBuffer = null, \PayPal\StructType\BufferStepStruct $procedureBuffer = null, \PayPal\StructType\BufferStepStruct $installBuffer = null, \PayPal\StructType\BufferStepStruct $shippingBuffer = null, \PayPal\StructType\BufferStepStruct $clotureBuffer = null, $avancement = null)
+    public function __construct($id = null, $urlId = null, $type = null, $creationDate = null, $payment = null, $procedure = null, $install = null, $shipping = null, $cloture = null, \Ovh\StructType\BufferStepStruct $paymentBuffer = null, \Ovh\StructType\BufferStepStruct $procedureBuffer = null, \Ovh\StructType\BufferStepStruct $installBuffer = null, \Ovh\StructType\BufferStepStruct $shippingBuffer = null, \Ovh\StructType\BufferStepStruct $clotureBuffer = null, $avancement = null)
     {
         $this
             ->setId($id)
@@ -149,7 +149,7 @@ class OrderFollowingUpStruct extends AbstractStructBase
     /**
      * Set id value
      * @param string $id
-     * @return \PayPal\StructType\OrderFollowingUpStruct
+     * @return \Ovh\StructType\OrderFollowingUpStruct
      */
     public function setId($id = null)
     {
@@ -171,7 +171,7 @@ class OrderFollowingUpStruct extends AbstractStructBase
     /**
      * Set urlId value
      * @param string $urlId
-     * @return \PayPal\StructType\OrderFollowingUpStruct
+     * @return \Ovh\StructType\OrderFollowingUpStruct
      */
     public function setUrlId($urlId = null)
     {
@@ -193,7 +193,7 @@ class OrderFollowingUpStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\OrderFollowingUpStruct
+     * @return \Ovh\StructType\OrderFollowingUpStruct
      */
     public function setType($type = null)
     {
@@ -215,7 +215,7 @@ class OrderFollowingUpStruct extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \PayPal\StructType\OrderFollowingUpStruct
+     * @return \Ovh\StructType\OrderFollowingUpStruct
      */
     public function setCreationDate($creationDate = null)
     {
@@ -237,7 +237,7 @@ class OrderFollowingUpStruct extends AbstractStructBase
     /**
      * Set payment value
      * @param string $payment
-     * @return \PayPal\StructType\OrderFollowingUpStruct
+     * @return \Ovh\StructType\OrderFollowingUpStruct
      */
     public function setPayment($payment = null)
     {
@@ -259,7 +259,7 @@ class OrderFollowingUpStruct extends AbstractStructBase
     /**
      * Set procedure value
      * @param string $procedure
-     * @return \PayPal\StructType\OrderFollowingUpStruct
+     * @return \Ovh\StructType\OrderFollowingUpStruct
      */
     public function setProcedure($procedure = null)
     {
@@ -281,7 +281,7 @@ class OrderFollowingUpStruct extends AbstractStructBase
     /**
      * Set install value
      * @param string $install
-     * @return \PayPal\StructType\OrderFollowingUpStruct
+     * @return \Ovh\StructType\OrderFollowingUpStruct
      */
     public function setInstall($install = null)
     {
@@ -303,7 +303,7 @@ class OrderFollowingUpStruct extends AbstractStructBase
     /**
      * Set shipping value
      * @param string $shipping
-     * @return \PayPal\StructType\OrderFollowingUpStruct
+     * @return \Ovh\StructType\OrderFollowingUpStruct
      */
     public function setShipping($shipping = null)
     {
@@ -325,7 +325,7 @@ class OrderFollowingUpStruct extends AbstractStructBase
     /**
      * Set cloture value
      * @param string $cloture
-     * @return \PayPal\StructType\OrderFollowingUpStruct
+     * @return \Ovh\StructType\OrderFollowingUpStruct
      */
     public function setCloture($cloture = null)
     {
@@ -338,7 +338,7 @@ class OrderFollowingUpStruct extends AbstractStructBase
     }
     /**
      * Get paymentBuffer value
-     * @return \PayPal\StructType\BufferStepStruct|null
+     * @return \Ovh\StructType\BufferStepStruct|null
      */
     public function getPaymentBuffer()
     {
@@ -346,17 +346,17 @@ class OrderFollowingUpStruct extends AbstractStructBase
     }
     /**
      * Set paymentBuffer value
-     * @param \PayPal\StructType\BufferStepStruct $paymentBuffer
-     * @return \PayPal\StructType\OrderFollowingUpStruct
+     * @param \Ovh\StructType\BufferStepStruct $paymentBuffer
+     * @return \Ovh\StructType\OrderFollowingUpStruct
      */
-    public function setPaymentBuffer(\PayPal\StructType\BufferStepStruct $paymentBuffer = null)
+    public function setPaymentBuffer(\Ovh\StructType\BufferStepStruct $paymentBuffer = null)
     {
         $this->paymentBuffer = $paymentBuffer;
         return $this;
     }
     /**
      * Get procedureBuffer value
-     * @return \PayPal\StructType\BufferStepStruct|null
+     * @return \Ovh\StructType\BufferStepStruct|null
      */
     public function getProcedureBuffer()
     {
@@ -364,17 +364,17 @@ class OrderFollowingUpStruct extends AbstractStructBase
     }
     /**
      * Set procedureBuffer value
-     * @param \PayPal\StructType\BufferStepStruct $procedureBuffer
-     * @return \PayPal\StructType\OrderFollowingUpStruct
+     * @param \Ovh\StructType\BufferStepStruct $procedureBuffer
+     * @return \Ovh\StructType\OrderFollowingUpStruct
      */
-    public function setProcedureBuffer(\PayPal\StructType\BufferStepStruct $procedureBuffer = null)
+    public function setProcedureBuffer(\Ovh\StructType\BufferStepStruct $procedureBuffer = null)
     {
         $this->procedureBuffer = $procedureBuffer;
         return $this;
     }
     /**
      * Get installBuffer value
-     * @return \PayPal\StructType\BufferStepStruct|null
+     * @return \Ovh\StructType\BufferStepStruct|null
      */
     public function getInstallBuffer()
     {
@@ -382,17 +382,17 @@ class OrderFollowingUpStruct extends AbstractStructBase
     }
     /**
      * Set installBuffer value
-     * @param \PayPal\StructType\BufferStepStruct $installBuffer
-     * @return \PayPal\StructType\OrderFollowingUpStruct
+     * @param \Ovh\StructType\BufferStepStruct $installBuffer
+     * @return \Ovh\StructType\OrderFollowingUpStruct
      */
-    public function setInstallBuffer(\PayPal\StructType\BufferStepStruct $installBuffer = null)
+    public function setInstallBuffer(\Ovh\StructType\BufferStepStruct $installBuffer = null)
     {
         $this->installBuffer = $installBuffer;
         return $this;
     }
     /**
      * Get shippingBuffer value
-     * @return \PayPal\StructType\BufferStepStruct|null
+     * @return \Ovh\StructType\BufferStepStruct|null
      */
     public function getShippingBuffer()
     {
@@ -400,17 +400,17 @@ class OrderFollowingUpStruct extends AbstractStructBase
     }
     /**
      * Set shippingBuffer value
-     * @param \PayPal\StructType\BufferStepStruct $shippingBuffer
-     * @return \PayPal\StructType\OrderFollowingUpStruct
+     * @param \Ovh\StructType\BufferStepStruct $shippingBuffer
+     * @return \Ovh\StructType\OrderFollowingUpStruct
      */
-    public function setShippingBuffer(\PayPal\StructType\BufferStepStruct $shippingBuffer = null)
+    public function setShippingBuffer(\Ovh\StructType\BufferStepStruct $shippingBuffer = null)
     {
         $this->shippingBuffer = $shippingBuffer;
         return $this;
     }
     /**
      * Get clotureBuffer value
-     * @return \PayPal\StructType\BufferStepStruct|null
+     * @return \Ovh\StructType\BufferStepStruct|null
      */
     public function getClotureBuffer()
     {
@@ -418,10 +418,10 @@ class OrderFollowingUpStruct extends AbstractStructBase
     }
     /**
      * Set clotureBuffer value
-     * @param \PayPal\StructType\BufferStepStruct $clotureBuffer
-     * @return \PayPal\StructType\OrderFollowingUpStruct
+     * @param \Ovh\StructType\BufferStepStruct $clotureBuffer
+     * @return \Ovh\StructType\OrderFollowingUpStruct
      */
-    public function setClotureBuffer(\PayPal\StructType\BufferStepStruct $clotureBuffer = null)
+    public function setClotureBuffer(\Ovh\StructType\BufferStepStruct $clotureBuffer = null)
     {
         $this->clotureBuffer = $clotureBuffer;
         return $this;
@@ -437,7 +437,7 @@ class OrderFollowingUpStruct extends AbstractStructBase
     /**
      * Set avancement value
      * @param string $avancement
-     * @return \PayPal\StructType\OrderFollowingUpStruct
+     * @return \Ovh\StructType\OrderFollowingUpStruct
      */
     public function setAvancement($avancement = null)
     {
@@ -454,7 +454,7 @@ class OrderFollowingUpStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\OrderFollowingUpStruct
+     * @return \Ovh\StructType\OrderFollowingUpStruct
      */
     public static function __set_state(array $array)
     {

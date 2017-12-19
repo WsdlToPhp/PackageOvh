@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class DedicatedOrderStruct extends AbstractStructBase
     /**
      * Set orderPassword value
      * @param string $orderPassword
-     * @return \PayPal\StructType\DedicatedOrderStruct
+     * @return \Ovh\StructType\DedicatedOrderStruct
      */
     public function setOrderPassword($orderPassword = null)
     {
@@ -75,7 +75,7 @@ class DedicatedOrderStruct extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \PayPal\StructType\DedicatedOrderStruct
+     * @return \Ovh\StructType\DedicatedOrderStruct
      */
     public function setOrderId($orderId = null)
     {
@@ -97,7 +97,7 @@ class DedicatedOrderStruct extends AbstractStructBase
     /**
      * Set orderUrl value
      * @param string $orderUrl
-     * @return \PayPal\StructType\DedicatedOrderStruct
+     * @return \Ovh\StructType\DedicatedOrderStruct
      */
     public function setOrderUrl($orderUrl = null)
     {
@@ -114,7 +114,7 @@ class DedicatedOrderStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedOrderStruct
+     * @return \Ovh\StructType\DedicatedOrderStruct
      */
     public static function __set_state(array $array)
     {

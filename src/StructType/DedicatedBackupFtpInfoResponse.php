@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedBackupFtpInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\DedicatedBackupFtpInfoReturn
+     * @var \Ovh\StructType\DedicatedBackupFtpInfoReturn
      */
     public $return;
     /**
      * Constructor method for dedicatedBackupFtpInfoResponse
      * @uses DedicatedBackupFtpInfoResponse::setReturn()
-     * @param \PayPal\StructType\DedicatedBackupFtpInfoReturn $return
+     * @param \Ovh\StructType\DedicatedBackupFtpInfoReturn $return
      */
-    public function __construct(\PayPal\StructType\DedicatedBackupFtpInfoReturn $return = null)
+    public function __construct(\Ovh\StructType\DedicatedBackupFtpInfoReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\DedicatedBackupFtpInfoReturn|null
+     * @return \Ovh\StructType\DedicatedBackupFtpInfoReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedBackupFtpInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\DedicatedBackupFtpInfoReturn $return
-     * @return \PayPal\StructType\DedicatedBackupFtpInfoResponse
+     * @param \Ovh\StructType\DedicatedBackupFtpInfoReturn $return
+     * @return \Ovh\StructType\DedicatedBackupFtpInfoResponse
      */
-    public function setReturn(\PayPal\StructType\DedicatedBackupFtpInfoReturn $return = null)
+    public function setReturn(\Ovh\StructType\DedicatedBackupFtpInfoReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedBackupFtpInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedBackupFtpInfoResponse
+     * @return \Ovh\StructType\DedicatedBackupFtpInfoResponse
      */
     public static function __set_state(array $array)
     {

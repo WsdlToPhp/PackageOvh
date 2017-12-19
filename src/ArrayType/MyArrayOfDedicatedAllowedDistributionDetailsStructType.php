@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -17,13 +17,13 @@ class MyArrayOfDedicatedAllowedDistributionDetailsStructType extends AbstractStr
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\DedicatedAllowedDistributionDetailsStruct[]
+     * @var \Ovh\StructType\DedicatedAllowedDistributionDetailsStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfDedicatedAllowedDistributionDetailsStructType
      * @uses MyArrayOfDedicatedAllowedDistributionDetailsStructType::setItem()
-     * @param \PayPal\StructType\DedicatedAllowedDistributionDetailsStruct[] $item
+     * @param \Ovh\StructType\DedicatedAllowedDistributionDetailsStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -32,7 +32,7 @@ class MyArrayOfDedicatedAllowedDistributionDetailsStructType extends AbstractStr
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\DedicatedAllowedDistributionDetailsStruct[]|null
+     * @return \Ovh\StructType\DedicatedAllowedDistributionDetailsStruct[]|null
      */
     public function getItem()
     {
@@ -41,15 +41,15 @@ class MyArrayOfDedicatedAllowedDistributionDetailsStructType extends AbstractStr
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedAllowedDistributionDetailsStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType
+     * @param \Ovh\StructType\DedicatedAllowedDistributionDetailsStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfDedicatedAllowedDistributionDetailsStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfDedicatedAllowedDistributionDetailsStructTypeItemItem instanceof \PayPal\StructType\DedicatedAllowedDistributionDetailsStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedAllowedDistributionDetailsStruct, "%s" given', is_object($myArrayOfDedicatedAllowedDistributionDetailsStructTypeItemItem) ? get_class($myArrayOfDedicatedAllowedDistributionDetailsStructTypeItemItem) : gettype($myArrayOfDedicatedAllowedDistributionDetailsStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfDedicatedAllowedDistributionDetailsStructTypeItemItem instanceof \Ovh\StructType\DedicatedAllowedDistributionDetailsStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedAllowedDistributionDetailsStruct, "%s" given', is_object($myArrayOfDedicatedAllowedDistributionDetailsStructTypeItemItem) ? get_class($myArrayOfDedicatedAllowedDistributionDetailsStructTypeItemItem) : gettype($myArrayOfDedicatedAllowedDistributionDetailsStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -58,14 +58,14 @@ class MyArrayOfDedicatedAllowedDistributionDetailsStructType extends AbstractStr
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedAllowedDistributionDetailsStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType
+     * @param \Ovh\StructType\DedicatedAllowedDistributionDetailsStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType
      */
-    public function addToItem(\PayPal\StructType\DedicatedAllowedDistributionDetailsStruct $item)
+    public function addToItem(\Ovh\StructType\DedicatedAllowedDistributionDetailsStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\DedicatedAllowedDistributionDetailsStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedAllowedDistributionDetailsStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\DedicatedAllowedDistributionDetailsStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedAllowedDistributionDetailsStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class MyArrayOfDedicatedAllowedDistributionDetailsStructType extends AbstractStr
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\DedicatedAllowedDistributionDetailsStruct|null
+     * @return \Ovh\StructType\DedicatedAllowedDistributionDetailsStruct|null
      */
     public function current()
     {
@@ -83,7 +83,7 @@ class MyArrayOfDedicatedAllowedDistributionDetailsStructType extends AbstractStr
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\DedicatedAllowedDistributionDetailsStruct|null
+     * @return \Ovh\StructType\DedicatedAllowedDistributionDetailsStruct|null
      */
     public function item($index)
     {
@@ -92,7 +92,7 @@ class MyArrayOfDedicatedAllowedDistributionDetailsStructType extends AbstractStr
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\DedicatedAllowedDistributionDetailsStruct|null
+     * @return \Ovh\StructType\DedicatedAllowedDistributionDetailsStruct|null
      */
     public function first()
     {
@@ -101,7 +101,7 @@ class MyArrayOfDedicatedAllowedDistributionDetailsStructType extends AbstractStr
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\DedicatedAllowedDistributionDetailsStruct|null
+     * @return \Ovh\StructType\DedicatedAllowedDistributionDetailsStruct|null
      */
     public function last()
     {
@@ -111,7 +111,7 @@ class MyArrayOfDedicatedAllowedDistributionDetailsStructType extends AbstractStr
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\DedicatedAllowedDistributionDetailsStruct|null
+     * @return \Ovh\StructType\DedicatedAllowedDistributionDetailsStruct|null
      */
     public function offsetGet($offset)
     {
@@ -132,7 +132,7 @@ class MyArrayOfDedicatedAllowedDistributionDetailsStructType extends AbstractStr
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionDetailsStructType
      */
     public static function __set_state(array $array)
     {

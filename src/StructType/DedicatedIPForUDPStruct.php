@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class DedicatedIPForUDPStruct extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\DedicatedIPForUDPStruct
+     * @return \Ovh\StructType\DedicatedIPForUDPStruct
      */
     public function setIp($ip = null)
     {
@@ -91,7 +91,7 @@ class DedicatedIPForUDPStruct extends AbstractStructBase
     /**
      * Set routedTo value
      * @param string $routedTo
-     * @return \PayPal\StructType\DedicatedIPForUDPStruct
+     * @return \Ovh\StructType\DedicatedIPForUDPStruct
      */
     public function setRoutedTo($routedTo = null)
     {
@@ -113,7 +113,7 @@ class DedicatedIPForUDPStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\DedicatedIPForUDPStruct
+     * @return \Ovh\StructType\DedicatedIPForUDPStruct
      */
     public function setStatus($status = null)
     {
@@ -135,7 +135,7 @@ class DedicatedIPForUDPStruct extends AbstractStructBase
     /**
      * Set mac value
      * @param string $mac
-     * @return \PayPal\StructType\DedicatedIPForUDPStruct
+     * @return \Ovh\StructType\DedicatedIPForUDPStruct
      */
     public function setMac($mac = null)
     {
@@ -157,7 +157,7 @@ class DedicatedIPForUDPStruct extends AbstractStructBase
     /**
      * Set reverse value
      * @param string $reverse
-     * @return \PayPal\StructType\DedicatedIPForUDPStruct
+     * @return \Ovh\StructType\DedicatedIPForUDPStruct
      */
     public function setReverse($reverse = null)
     {
@@ -174,7 +174,7 @@ class DedicatedIPForUDPStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedIPForUDPStruct
+     * @return \Ovh\StructType\DedicatedIPForUDPStruct
      */
     public static function __set_state(array $array)
     {

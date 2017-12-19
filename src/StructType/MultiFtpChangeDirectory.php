@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class MultiFtpChangeDirectory extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\MultiFtpChangeDirectory
+     * @return \Ovh\StructType\MultiFtpChangeDirectory
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class MultiFtpChangeDirectory extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\MultiFtpChangeDirectory
+     * @return \Ovh\StructType\MultiFtpChangeDirectory
      */
     public function setDomain($domain = null)
     {
@@ -113,7 +113,7 @@ class MultiFtpChangeDirectory extends AbstractStructBase
     /**
      * Set login value
      * @param string $login
-     * @return \PayPal\StructType\MultiFtpChangeDirectory
+     * @return \Ovh\StructType\MultiFtpChangeDirectory
      */
     public function setLogin($login = null)
     {
@@ -135,7 +135,7 @@ class MultiFtpChangeDirectory extends AbstractStructBase
     /**
      * Set directory value
      * @param string $directory
-     * @return \PayPal\StructType\MultiFtpChangeDirectory
+     * @return \Ovh\StructType\MultiFtpChangeDirectory
      */
     public function setDirectory($directory = null)
     {
@@ -152,7 +152,7 @@ class MultiFtpChangeDirectory extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\MultiFtpChangeDirectory
+     * @return \Ovh\StructType\MultiFtpChangeDirectory
      */
     public static function __set_state(array $array)
     {

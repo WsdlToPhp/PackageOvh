@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Password extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\PasswordSoapi $parameters
-     * @return \PayPal\StructType\PasswordSoapiResponse|bool
+     * @param \Ovh\StructType\PasswordSoapi $parameters
+     * @return \Ovh\StructType\PasswordSoapiResponse|bool
      */
-    public function passwordSoapi(\PayPal\StructType\PasswordSoapi $parameters)
+    public function passwordSoapi(\Ovh\StructType\PasswordSoapi $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->passwordSoapi($parameters));
@@ -36,10 +36,10 @@ class Password extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\PasswordManager $parameters
-     * @return \PayPal\StructType\PasswordManagerResponse|bool
+     * @param \Ovh\StructType\PasswordManager $parameters
+     * @return \Ovh\StructType\PasswordManagerResponse|bool
      */
-    public function passwordManager(\PayPal\StructType\PasswordManager $parameters)
+    public function passwordManager(\Ovh\StructType\PasswordManager $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->passwordManager($parameters));
@@ -52,7 +52,7 @@ class Password extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\PasswordManagerResponse|\PayPal\StructType\PasswordSoapiResponse
+     * @return \Ovh\StructType\PasswordManagerResponse|\Ovh\StructType\PasswordSoapiResponse
      */
     public function getResult()
     {

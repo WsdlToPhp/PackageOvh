@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class LogsAccessStruct extends AbstractStructBase
     /**
      * Set user value
      * @param string $user
-     * @return \PayPal\StructType\LogsAccessStruct
+     * @return \Ovh\StructType\LogsAccessStruct
      */
     public function setUser($user = null)
     {
@@ -67,7 +67,7 @@ class LogsAccessStruct extends AbstractStructBase
     /**
      * Set lastUpdate value
      * @param string $lastUpdate
-     * @return \PayPal\StructType\LogsAccessStruct
+     * @return \Ovh\StructType\LogsAccessStruct
      */
     public function setLastUpdate($lastUpdate = null)
     {
@@ -84,7 +84,7 @@ class LogsAccessStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\LogsAccessStruct
+     * @return \Ovh\StructType\LogsAccessStruct
      */
     public static function __set_state(array $array)
     {

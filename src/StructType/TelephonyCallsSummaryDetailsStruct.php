@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class TelephonyCallsSummaryDetailsStruct extends AbstractStructBase
     /**
      * Set count value
      * @param int $count
-     * @return \PayPal\StructType\TelephonyCallsSummaryDetailsStruct
+     * @return \Ovh\StructType\TelephonyCallsSummaryDetailsStruct
      */
     public function setCount($count = null)
     {
@@ -75,7 +75,7 @@ class TelephonyCallsSummaryDetailsStruct extends AbstractStructBase
     /**
      * Set duration value
      * @param string $duration
-     * @return \PayPal\StructType\TelephonyCallsSummaryDetailsStruct
+     * @return \Ovh\StructType\TelephonyCallsSummaryDetailsStruct
      */
     public function setDuration($duration = null)
     {
@@ -97,7 +97,7 @@ class TelephonyCallsSummaryDetailsStruct extends AbstractStructBase
     /**
      * Set priceWithoutVAT value
      * @param float $priceWithoutVAT
-     * @return \PayPal\StructType\TelephonyCallsSummaryDetailsStruct
+     * @return \Ovh\StructType\TelephonyCallsSummaryDetailsStruct
      */
     public function setPriceWithoutVAT($priceWithoutVAT = null)
     {
@@ -110,7 +110,7 @@ class TelephonyCallsSummaryDetailsStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyCallsSummaryDetailsStruct
+     * @return \Ovh\StructType\TelephonyCallsSummaryDetailsStruct
      */
     public static function __set_state(array $array)
     {

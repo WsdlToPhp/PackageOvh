@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Multi extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\MultiFtpChangeDirectory $parameters
-     * @return \PayPal\StructType\MultiFtpChangeDirectoryResponse|bool
+     * @param \Ovh\StructType\MultiFtpChangeDirectory $parameters
+     * @return \Ovh\StructType\MultiFtpChangeDirectoryResponse|bool
      */
-    public function multiFtpChangeDirectory(\PayPal\StructType\MultiFtpChangeDirectory $parameters)
+    public function multiFtpChangeDirectory(\Ovh\StructType\MultiFtpChangeDirectory $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->multiFtpChangeDirectory($parameters));
@@ -36,10 +36,10 @@ class Multi extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\MultiFtpChangePassword $parameters
-     * @return \PayPal\StructType\MultiFtpChangePasswordResponse|bool
+     * @param \Ovh\StructType\MultiFtpChangePassword $parameters
+     * @return \Ovh\StructType\MultiFtpChangePasswordResponse|bool
      */
-    public function multiFtpChangePassword(\PayPal\StructType\MultiFtpChangePassword $parameters)
+    public function multiFtpChangePassword(\Ovh\StructType\MultiFtpChangePassword $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->multiFtpChangePassword($parameters));
@@ -55,10 +55,10 @@ class Multi extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\MultiFtpList $parameters
-     * @return \PayPal\StructType\MultiFtpListResponse|bool
+     * @param \Ovh\StructType\MultiFtpList $parameters
+     * @return \Ovh\StructType\MultiFtpListResponse|bool
      */
-    public function multiFtpList(\PayPal\StructType\MultiFtpList $parameters)
+    public function multiFtpList(\Ovh\StructType\MultiFtpList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->multiFtpList($parameters));
@@ -74,10 +74,10 @@ class Multi extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\MultiFtpAdd $parameters
-     * @return \PayPal\StructType\MultiFtpAddResponse|bool
+     * @param \Ovh\StructType\MultiFtpAdd $parameters
+     * @return \Ovh\StructType\MultiFtpAddResponse|bool
      */
-    public function multiFtpAdd(\PayPal\StructType\MultiFtpAdd $parameters)
+    public function multiFtpAdd(\Ovh\StructType\MultiFtpAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->multiFtpAdd($parameters));
@@ -93,10 +93,10 @@ class Multi extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\MultiDomainList $parameters
-     * @return \PayPal\StructType\MultiDomainListResponse|bool
+     * @param \Ovh\StructType\MultiDomainList $parameters
+     * @return \Ovh\StructType\MultiDomainListResponse|bool
      */
-    public function multiDomainList(\PayPal\StructType\MultiDomainList $parameters)
+    public function multiDomainList(\Ovh\StructType\MultiDomainList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->multiDomainList($parameters));
@@ -112,10 +112,10 @@ class Multi extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\MultiFtpDel $parameters
-     * @return \PayPal\StructType\MultiFtpDelResponse|bool
+     * @param \Ovh\StructType\MultiFtpDel $parameters
+     * @return \Ovh\StructType\MultiFtpDelResponse|bool
      */
-    public function multiFtpDel(\PayPal\StructType\MultiFtpDel $parameters)
+    public function multiFtpDel(\Ovh\StructType\MultiFtpDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->multiFtpDel($parameters));
@@ -131,10 +131,10 @@ class Multi extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\MultiDomainAdd $parameters
-     * @return \PayPal\StructType\MultiDomainAddResponse|bool
+     * @param \Ovh\StructType\MultiDomainAdd $parameters
+     * @return \Ovh\StructType\MultiDomainAddResponse|bool
      */
-    public function multiDomainAdd(\PayPal\StructType\MultiDomainAdd $parameters)
+    public function multiDomainAdd(\Ovh\StructType\MultiDomainAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->multiDomainAdd($parameters));
@@ -150,10 +150,10 @@ class Multi extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\MultiDomainModify $parameters
-     * @return \PayPal\StructType\MultiDomainModifyResponse|bool
+     * @param \Ovh\StructType\MultiDomainModify $parameters
+     * @return \Ovh\StructType\MultiDomainModifyResponse|bool
      */
-    public function multiDomainModify(\PayPal\StructType\MultiDomainModify $parameters)
+    public function multiDomainModify(\Ovh\StructType\MultiDomainModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->multiDomainModify($parameters));
@@ -169,10 +169,10 @@ class Multi extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\MultiDomainInfo $parameters
-     * @return \PayPal\StructType\MultiDomainInfoResponse|bool
+     * @param \Ovh\StructType\MultiDomainInfo $parameters
+     * @return \Ovh\StructType\MultiDomainInfoResponse|bool
      */
-    public function multiDomainInfo(\PayPal\StructType\MultiDomainInfo $parameters)
+    public function multiDomainInfo(\Ovh\StructType\MultiDomainInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->multiDomainInfo($parameters));
@@ -188,10 +188,10 @@ class Multi extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\MultiDomainDel $parameters
-     * @return \PayPal\StructType\MultiDomainDelResponse|bool
+     * @param \Ovh\StructType\MultiDomainDel $parameters
+     * @return \Ovh\StructType\MultiDomainDelResponse|bool
      */
-    public function multiDomainDel(\PayPal\StructType\MultiDomainDel $parameters)
+    public function multiDomainDel(\Ovh\StructType\MultiDomainDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->multiDomainDel($parameters));
@@ -204,7 +204,7 @@ class Multi extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\MultiDomainAddResponse|\PayPal\StructType\MultiDomainDelResponse|\PayPal\StructType\MultiDomainInfoResponse|\PayPal\StructType\MultiDomainListResponse|\PayPal\StructType\MultiDomainModifyResponse|\PayPal\StructType\MultiFtpAddResponse|\PayPal\StructType\MultiFtpChangeDirectoryResponse|\PayPal\StructType\MultiFtpChangePasswordResponse|\PayPal\StructType\MultiFtpDelResponse|\PayPal\StructType\MultiFtpListResponse
+     * @return \Ovh\StructType\MultiDomainAddResponse|\Ovh\StructType\MultiDomainDelResponse|\Ovh\StructType\MultiDomainInfoResponse|\Ovh\StructType\MultiDomainListResponse|\Ovh\StructType\MultiDomainModifyResponse|\Ovh\StructType\MultiFtpAddResponse|\Ovh\StructType\MultiFtpChangeDirectoryResponse|\Ovh\StructType\MultiFtpChangePasswordResponse|\Ovh\StructType\MultiFtpDelResponse|\Ovh\StructType\MultiFtpListResponse
      */
     public function getResult()
     {

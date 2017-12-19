@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedBackupGetFreePlanningResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedBackupGetPlanningStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedBackupGetPlanningStructType
      */
     public $return;
     /**
      * Constructor method for dedicatedBackupGetFreePlanningResponse
      * @uses DedicatedBackupGetFreePlanningResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedBackupGetPlanningStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedBackupGetPlanningStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfDedicatedBackupGetPlanningStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfDedicatedBackupGetPlanningStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedBackupGetPlanningStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedBackupGetPlanningStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedBackupGetFreePlanningResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedBackupGetPlanningStructType $return
-     * @return \PayPal\StructType\DedicatedBackupGetFreePlanningResponse
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedBackupGetPlanningStructType $return
+     * @return \Ovh\StructType\DedicatedBackupGetFreePlanningResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfDedicatedBackupGetPlanningStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfDedicatedBackupGetPlanningStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedBackupGetFreePlanningResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedBackupGetFreePlanningResponse
+     * @return \Ovh\StructType\DedicatedBackupGetFreePlanningResponse
      */
     public static function __set_state(array $array)
     {

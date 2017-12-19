@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class InfrastructureIpListGetResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfInfrastructureIpStructType
+     * @var \Ovh\ArrayType\MyArrayOfInfrastructureIpStructType
      */
     public $return;
     /**
      * Constructor method for infrastructureIpListGetResponse
      * @uses InfrastructureIpListGetResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfInfrastructureIpStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfInfrastructureIpStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfInfrastructureIpStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfInfrastructureIpStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfInfrastructureIpStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfInfrastructureIpStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class InfrastructureIpListGetResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfInfrastructureIpStructType $return
-     * @return \PayPal\StructType\InfrastructureIpListGetResponse
+     * @param \Ovh\ArrayType\MyArrayOfInfrastructureIpStructType $return
+     * @return \Ovh\StructType\InfrastructureIpListGetResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfInfrastructureIpStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfInfrastructureIpStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class InfrastructureIpListGetResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\InfrastructureIpListGetResponse
+     * @return \Ovh\StructType\InfrastructureIpListGetResponse
      */
     public static function __set_state(array $array)
     {

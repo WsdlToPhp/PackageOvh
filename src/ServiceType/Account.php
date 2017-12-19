@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Account extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\AccountSummary $parameters
-     * @return \PayPal\StructType\AccountSummaryResponse|bool
+     * @param \Ovh\StructType\AccountSummary $parameters
+     * @return \Ovh\StructType\AccountSummaryResponse|bool
      */
-    public function accountSummary(\PayPal\StructType\AccountSummary $parameters)
+    public function accountSummary(\Ovh\StructType\AccountSummary $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->accountSummary($parameters));
@@ -36,10 +36,10 @@ class Account extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\AccountHistory $parameters
-     * @return \PayPal\StructType\AccountHistoryResponse|bool
+     * @param \Ovh\StructType\AccountHistory $parameters
+     * @return \Ovh\StructType\AccountHistoryResponse|bool
      */
-    public function accountHistory(\PayPal\StructType\AccountHistory $parameters)
+    public function accountHistory(\Ovh\StructType\AccountHistory $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->accountHistory($parameters));
@@ -55,10 +55,10 @@ class Account extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\AccountAlertThresholdSet $parameters
-     * @return \PayPal\StructType\AccountAlertThresholdSetResponse|bool
+     * @param \Ovh\StructType\AccountAlertThresholdSet $parameters
+     * @return \Ovh\StructType\AccountAlertThresholdSetResponse|bool
      */
-    public function accountAlertThresholdSet(\PayPal\StructType\AccountAlertThresholdSet $parameters)
+    public function accountAlertThresholdSet(\Ovh\StructType\AccountAlertThresholdSet $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->accountAlertThresholdSet($parameters));
@@ -71,7 +71,7 @@ class Account extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\AccountAlertThresholdSetResponse|\PayPal\StructType\AccountHistoryResponse|\PayPal\StructType\AccountSummaryResponse
+     * @return \Ovh\StructType\AccountAlertThresholdSetResponse|\Ovh\StructType\AccountHistoryResponse|\Ovh\StructType\AccountSummaryResponse
      */
     public function getResult()
     {

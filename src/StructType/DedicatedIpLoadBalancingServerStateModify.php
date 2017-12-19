@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class DedicatedIpLoadBalancingServerStateModify extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingServerStateModify
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingServerStateModify
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class DedicatedIpLoadBalancingServerStateModify extends AbstractStructBase
     /**
      * Set ipLoadBalancing value
      * @param string $ipLoadBalancing
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingServerStateModify
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingServerStateModify
      */
     public function setIpLoadBalancing($ipLoadBalancing = null)
     {
@@ -113,7 +113,7 @@ class DedicatedIpLoadBalancingServerStateModify extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingServerStateModify
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingServerStateModify
      */
     public function setHostname($hostname = null)
     {
@@ -135,7 +135,7 @@ class DedicatedIpLoadBalancingServerStateModify extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingServerStateModify
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingServerStateModify
      */
     public function setState($state = null)
     {
@@ -152,7 +152,7 @@ class DedicatedIpLoadBalancingServerStateModify extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingServerStateModify
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingServerStateModify
      */
     public static function __set_state(array $array)
     {

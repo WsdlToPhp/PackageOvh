@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -149,7 +149,7 @@ class CrontabModify extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\CrontabModify
+     * @return \Ovh\StructType\CrontabModify
      */
     public function setSession($session = null)
     {
@@ -171,7 +171,7 @@ class CrontabModify extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\CrontabModify
+     * @return \Ovh\StructType\CrontabModify
      */
     public function setDomain($domain = null)
     {
@@ -193,7 +193,7 @@ class CrontabModify extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\CrontabModify
+     * @return \Ovh\StructType\CrontabModify
      */
     public function setId($id = null)
     {
@@ -215,7 +215,7 @@ class CrontabModify extends AbstractStructBase
     /**
      * Set path value
      * @param string $path
-     * @return \PayPal\StructType\CrontabModify
+     * @return \Ovh\StructType\CrontabModify
      */
     public function setPath($path = null)
     {
@@ -237,7 +237,7 @@ class CrontabModify extends AbstractStructBase
     /**
      * Set programLanguage value
      * @param string $programLanguage
-     * @return \PayPal\StructType\CrontabModify
+     * @return \Ovh\StructType\CrontabModify
      */
     public function setProgramLanguage($programLanguage = null)
     {
@@ -259,7 +259,7 @@ class CrontabModify extends AbstractStructBase
     /**
      * Set weekDay value
      * @param string $weekDay
-     * @return \PayPal\StructType\CrontabModify
+     * @return \Ovh\StructType\CrontabModify
      */
     public function setWeekDay($weekDay = null)
     {
@@ -281,7 +281,7 @@ class CrontabModify extends AbstractStructBase
     /**
      * Set days value
      * @param string $days
-     * @return \PayPal\StructType\CrontabModify
+     * @return \Ovh\StructType\CrontabModify
      */
     public function setDays($days = null)
     {
@@ -303,7 +303,7 @@ class CrontabModify extends AbstractStructBase
     /**
      * Set hours value
      * @param string $hours
-     * @return \PayPal\StructType\CrontabModify
+     * @return \Ovh\StructType\CrontabModify
      */
     public function setHours($hours = null)
     {
@@ -325,7 +325,7 @@ class CrontabModify extends AbstractStructBase
     /**
      * Set desc value
      * @param string $desc
-     * @return \PayPal\StructType\CrontabModify
+     * @return \Ovh\StructType\CrontabModify
      */
     public function setDesc($desc = null)
     {
@@ -347,7 +347,7 @@ class CrontabModify extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\CrontabModify
+     * @return \Ovh\StructType\CrontabModify
      */
     public function setEmail($email = null)
     {
@@ -369,7 +369,7 @@ class CrontabModify extends AbstractStructBase
     /**
      * Set otherEmail value
      * @param string $otherEmail
-     * @return \PayPal\StructType\CrontabModify
+     * @return \Ovh\StructType\CrontabModify
      */
     public function setOtherEmail($otherEmail = null)
     {
@@ -391,7 +391,7 @@ class CrontabModify extends AbstractStructBase
     /**
      * Set enable value
      * @param bool $enable
-     * @return \PayPal\StructType\CrontabModify
+     * @return \Ovh\StructType\CrontabModify
      */
     public function setEnable($enable = null)
     {
@@ -408,7 +408,7 @@ class CrontabModify extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\CrontabModify
+     * @return \Ovh\StructType\CrontabModify
      */
     public static function __set_state(array $array)
     {

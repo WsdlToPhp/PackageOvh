@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -197,7 +197,7 @@ class TelephonyLineOptionsListReturn extends AbstractStructBase
     /**
      * Set identificationRestriction value
      * @param bool $identificationRestriction
-     * @return \PayPal\StructType\TelephonyLineOptionsListReturn
+     * @return \Ovh\StructType\TelephonyLineOptionsListReturn
      */
     public function setIdentificationRestriction($identificationRestriction = null)
     {
@@ -219,7 +219,7 @@ class TelephonyLineOptionsListReturn extends AbstractStructBase
     /**
      * Set anonymousCallRejection value
      * @param bool $anonymousCallRejection
-     * @return \PayPal\StructType\TelephonyLineOptionsListReturn
+     * @return \Ovh\StructType\TelephonyLineOptionsListReturn
      */
     public function setAnonymousCallRejection($anonymousCallRejection = null)
     {
@@ -241,7 +241,7 @@ class TelephonyLineOptionsListReturn extends AbstractStructBase
     /**
      * Set doNotDisturb value
      * @param bool $doNotDisturb
-     * @return \PayPal\StructType\TelephonyLineOptionsListReturn
+     * @return \Ovh\StructType\TelephonyLineOptionsListReturn
      */
     public function setDoNotDisturb($doNotDisturb = null)
     {
@@ -263,7 +263,7 @@ class TelephonyLineOptionsListReturn extends AbstractStructBase
     /**
      * Set absentSuscriber value
      * @param bool $absentSuscriber
-     * @return \PayPal\StructType\TelephonyLineOptionsListReturn
+     * @return \Ovh\StructType\TelephonyLineOptionsListReturn
      */
     public function setAbsentSuscriber($absentSuscriber = null)
     {
@@ -285,7 +285,7 @@ class TelephonyLineOptionsListReturn extends AbstractStructBase
     /**
      * Set lockOutCall value
      * @param bool $lockOutCall
-     * @return \PayPal\StructType\TelephonyLineOptionsListReturn
+     * @return \Ovh\StructType\TelephonyLineOptionsListReturn
      */
     public function setLockOutCall($lockOutCall = null)
     {
@@ -307,7 +307,7 @@ class TelephonyLineOptionsListReturn extends AbstractStructBase
     /**
      * Set lockOutCallPassword value
      * @param string $lockOutCallPassword
-     * @return \PayPal\StructType\TelephonyLineOptionsListReturn
+     * @return \Ovh\StructType\TelephonyLineOptionsListReturn
      */
     public function setLockOutCallPassword($lockOutCallPassword = null)
     {
@@ -329,7 +329,7 @@ class TelephonyLineOptionsListReturn extends AbstractStructBase
     /**
      * Set forwardUnconditional value
      * @param bool $forwardUnconditional
-     * @return \PayPal\StructType\TelephonyLineOptionsListReturn
+     * @return \Ovh\StructType\TelephonyLineOptionsListReturn
      */
     public function setForwardUnconditional($forwardUnconditional = null)
     {
@@ -351,7 +351,7 @@ class TelephonyLineOptionsListReturn extends AbstractStructBase
     /**
      * Set forwardUnconditionalNumber value
      * @param string $forwardUnconditionalNumber
-     * @return \PayPal\StructType\TelephonyLineOptionsListReturn
+     * @return \Ovh\StructType\TelephonyLineOptionsListReturn
      */
     public function setForwardUnconditionalNumber($forwardUnconditionalNumber = null)
     {
@@ -373,7 +373,7 @@ class TelephonyLineOptionsListReturn extends AbstractStructBase
     /**
      * Set forwardNoReply value
      * @param bool $forwardNoReply
-     * @return \PayPal\StructType\TelephonyLineOptionsListReturn
+     * @return \Ovh\StructType\TelephonyLineOptionsListReturn
      */
     public function setForwardNoReply($forwardNoReply = null)
     {
@@ -395,7 +395,7 @@ class TelephonyLineOptionsListReturn extends AbstractStructBase
     /**
      * Set forwardNoReplyDelay value
      * @param int $forwardNoReplyDelay
-     * @return \PayPal\StructType\TelephonyLineOptionsListReturn
+     * @return \Ovh\StructType\TelephonyLineOptionsListReturn
      */
     public function setForwardNoReplyDelay($forwardNoReplyDelay = null)
     {
@@ -417,7 +417,7 @@ class TelephonyLineOptionsListReturn extends AbstractStructBase
     /**
      * Set forwardNoReplyNumber value
      * @param string $forwardNoReplyNumber
-     * @return \PayPal\StructType\TelephonyLineOptionsListReturn
+     * @return \Ovh\StructType\TelephonyLineOptionsListReturn
      */
     public function setForwardNoReplyNumber($forwardNoReplyNumber = null)
     {
@@ -439,7 +439,7 @@ class TelephonyLineOptionsListReturn extends AbstractStructBase
     /**
      * Set forwardBusy value
      * @param bool $forwardBusy
-     * @return \PayPal\StructType\TelephonyLineOptionsListReturn
+     * @return \Ovh\StructType\TelephonyLineOptionsListReturn
      */
     public function setForwardBusy($forwardBusy = null)
     {
@@ -461,7 +461,7 @@ class TelephonyLineOptionsListReturn extends AbstractStructBase
     /**
      * Set forwardBusyNumber value
      * @param string $forwardBusyNumber
-     * @return \PayPal\StructType\TelephonyLineOptionsListReturn
+     * @return \Ovh\StructType\TelephonyLineOptionsListReturn
      */
     public function setForwardBusyNumber($forwardBusyNumber = null)
     {
@@ -483,7 +483,7 @@ class TelephonyLineOptionsListReturn extends AbstractStructBase
     /**
      * Set forwardBackup value
      * @param bool $forwardBackup
-     * @return \PayPal\StructType\TelephonyLineOptionsListReturn
+     * @return \Ovh\StructType\TelephonyLineOptionsListReturn
      */
     public function setForwardBackup($forwardBackup = null)
     {
@@ -505,7 +505,7 @@ class TelephonyLineOptionsListReturn extends AbstractStructBase
     /**
      * Set forwardBackupNumber value
      * @param string $forwardBackupNumber
-     * @return \PayPal\StructType\TelephonyLineOptionsListReturn
+     * @return \Ovh\StructType\TelephonyLineOptionsListReturn
      */
     public function setForwardBackupNumber($forwardBackupNumber = null)
     {
@@ -527,7 +527,7 @@ class TelephonyLineOptionsListReturn extends AbstractStructBase
     /**
      * Set callWaiting value
      * @param bool $callWaiting
-     * @return \PayPal\StructType\TelephonyLineOptionsListReturn
+     * @return \Ovh\StructType\TelephonyLineOptionsListReturn
      */
     public function setCallWaiting($callWaiting = null)
     {
@@ -549,7 +549,7 @@ class TelephonyLineOptionsListReturn extends AbstractStructBase
     /**
      * Set displayCallNumber value
      * @param string $displayCallNumber
-     * @return \PayPal\StructType\TelephonyLineOptionsListReturn
+     * @return \Ovh\StructType\TelephonyLineOptionsListReturn
      */
     public function setDisplayCallNumber($displayCallNumber = null)
     {
@@ -571,7 +571,7 @@ class TelephonyLineOptionsListReturn extends AbstractStructBase
     /**
      * Set forwardUnconditionalNature value
      * @param string $forwardUnconditionalNature
-     * @return \PayPal\StructType\TelephonyLineOptionsListReturn
+     * @return \Ovh\StructType\TelephonyLineOptionsListReturn
      */
     public function setForwardUnconditionalNature($forwardUnconditionalNature = null)
     {
@@ -593,7 +593,7 @@ class TelephonyLineOptionsListReturn extends AbstractStructBase
     /**
      * Set forwardNoReplyNature value
      * @param string $forwardNoReplyNature
-     * @return \PayPal\StructType\TelephonyLineOptionsListReturn
+     * @return \Ovh\StructType\TelephonyLineOptionsListReturn
      */
     public function setForwardNoReplyNature($forwardNoReplyNature = null)
     {
@@ -615,7 +615,7 @@ class TelephonyLineOptionsListReturn extends AbstractStructBase
     /**
      * Set forwardBusyNature value
      * @param string $forwardBusyNature
-     * @return \PayPal\StructType\TelephonyLineOptionsListReturn
+     * @return \Ovh\StructType\TelephonyLineOptionsListReturn
      */
     public function setForwardBusyNature($forwardBusyNature = null)
     {
@@ -637,7 +637,7 @@ class TelephonyLineOptionsListReturn extends AbstractStructBase
     /**
      * Set forwardBackupNature value
      * @param string $forwardBackupNature
-     * @return \PayPal\StructType\TelephonyLineOptionsListReturn
+     * @return \Ovh\StructType\TelephonyLineOptionsListReturn
      */
     public function setForwardBackupNature($forwardBackupNature = null)
     {
@@ -654,7 +654,7 @@ class TelephonyLineOptionsListReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyLineOptionsListReturn
+     * @return \Ovh\StructType\TelephonyLineOptionsListReturn
      */
     public static function __set_state(array $array)
     {

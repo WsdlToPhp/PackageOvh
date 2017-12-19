@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -141,7 +141,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     /**
      * Set callNumber value
      * @param string $callNumber
-     * @return \PayPal\StructType\TelephonyFaxOptionsListReturn
+     * @return \Ovh\StructType\TelephonyFaxOptionsListReturn
      */
     public function setCallNumber($callNumber = null)
     {
@@ -163,7 +163,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \PayPal\StructType\TelephonyFaxOptionsListReturn
+     * @return \Ovh\StructType\TelephonyFaxOptionsListReturn
      */
     public function setCountryCode($countryCode = null)
     {
@@ -185,7 +185,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     /**
      * Set fromName value
      * @param string $fromName
-     * @return \PayPal\StructType\TelephonyFaxOptionsListReturn
+     * @return \Ovh\StructType\TelephonyFaxOptionsListReturn
      */
     public function setFromName($fromName = null)
     {
@@ -207,7 +207,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     /**
      * Set fromEmail value
      * @param string $fromEmail
-     * @return \PayPal\StructType\TelephonyFaxOptionsListReturn
+     * @return \Ovh\StructType\TelephonyFaxOptionsListReturn
      */
     public function setFromEmail($fromEmail = null)
     {
@@ -229,7 +229,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     /**
      * Set faxQuality value
      * @param string $faxQuality
-     * @return \PayPal\StructType\TelephonyFaxOptionsListReturn
+     * @return \Ovh\StructType\TelephonyFaxOptionsListReturn
      */
     public function setFaxQuality($faxQuality = null)
     {
@@ -251,7 +251,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     /**
      * Set faxTagLine value
      * @param string $faxTagLine
-     * @return \PayPal\StructType\TelephonyFaxOptionsListReturn
+     * @return \Ovh\StructType\TelephonyFaxOptionsListReturn
      */
     public function setFaxTagLine($faxTagLine = null)
     {
@@ -273,7 +273,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     /**
      * Set faxMaxCall value
      * @param int $faxMaxCall
-     * @return \PayPal\StructType\TelephonyFaxOptionsListReturn
+     * @return \Ovh\StructType\TelephonyFaxOptionsListReturn
      */
     public function setFaxMaxCall($faxMaxCall = null)
     {
@@ -295,7 +295,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     /**
      * Set receivId value
      * @param string $receivId
-     * @return \PayPal\StructType\TelephonyFaxOptionsListReturn
+     * @return \Ovh\StructType\TelephonyFaxOptionsListReturn
      */
     public function setReceivId($receivId = null)
     {
@@ -317,7 +317,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     /**
      * Set senderId value
      * @param string $senderId
-     * @return \PayPal\StructType\TelephonyFaxOptionsListReturn
+     * @return \Ovh\StructType\TelephonyFaxOptionsListReturn
      */
     public function setSenderId($senderId = null)
     {
@@ -339,7 +339,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     /**
      * Set redirection1Email value
      * @param string $redirection1Email
-     * @return \PayPal\StructType\TelephonyFaxOptionsListReturn
+     * @return \Ovh\StructType\TelephonyFaxOptionsListReturn
      */
     public function setRedirection1Email($redirection1Email = null)
     {
@@ -361,7 +361,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     /**
      * Set redirection2Email value
      * @param string $redirection2Email
-     * @return \PayPal\StructType\TelephonyFaxOptionsListReturn
+     * @return \Ovh\StructType\TelephonyFaxOptionsListReturn
      */
     public function setRedirection2Email($redirection2Email = null)
     {
@@ -383,7 +383,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     /**
      * Set redirection3Email value
      * @param string $redirection3Email
-     * @return \PayPal\StructType\TelephonyFaxOptionsListReturn
+     * @return \Ovh\StructType\TelephonyFaxOptionsListReturn
      */
     public function setRedirection3Email($redirection3Email = null)
     {
@@ -405,7 +405,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     /**
      * Set redirection4Email value
      * @param string $redirection4Email
-     * @return \PayPal\StructType\TelephonyFaxOptionsListReturn
+     * @return \Ovh\StructType\TelephonyFaxOptionsListReturn
      */
     public function setRedirection4Email($redirection4Email = null)
     {
@@ -427,7 +427,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     /**
      * Set redirection5Email value
      * @param string $redirection5Email
-     * @return \PayPal\StructType\TelephonyFaxOptionsListReturn
+     * @return \Ovh\StructType\TelephonyFaxOptionsListReturn
      */
     public function setRedirection5Email($redirection5Email = null)
     {
@@ -444,7 +444,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFaxOptionsListReturn
+     * @return \Ovh\StructType\TelephonyFaxOptionsListReturn
      */
     public static function __set_state(array $array)
     {

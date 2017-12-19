@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfDedicatedNetworkInterfaceStructType extends AbstractStructArrayBa
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\DedicatedNetworkInterfaceStruct[]
+     * @var \Ovh\StructType\DedicatedNetworkInterfaceStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfDedicatedNetworkInterfaceStructType
      * @uses MyArrayOfDedicatedNetworkInterfaceStructType::setItem()
-     * @param \PayPal\StructType\DedicatedNetworkInterfaceStruct[] $item
+     * @param \Ovh\StructType\DedicatedNetworkInterfaceStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfDedicatedNetworkInterfaceStructType extends AbstractStructArrayBa
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\DedicatedNetworkInterfaceStruct[]|null
+     * @return \Ovh\StructType\DedicatedNetworkInterfaceStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfDedicatedNetworkInterfaceStructType extends AbstractStructArrayBa
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedNetworkInterfaceStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedNetworkInterfaceStructType
+     * @param \Ovh\StructType\DedicatedNetworkInterfaceStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedNetworkInterfaceStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfDedicatedNetworkInterfaceStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfDedicatedNetworkInterfaceStructTypeItemItem instanceof \PayPal\StructType\DedicatedNetworkInterfaceStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedNetworkInterfaceStruct, "%s" given', is_object($myArrayOfDedicatedNetworkInterfaceStructTypeItemItem) ? get_class($myArrayOfDedicatedNetworkInterfaceStructTypeItemItem) : gettype($myArrayOfDedicatedNetworkInterfaceStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfDedicatedNetworkInterfaceStructTypeItemItem instanceof \Ovh\StructType\DedicatedNetworkInterfaceStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedNetworkInterfaceStruct, "%s" given', is_object($myArrayOfDedicatedNetworkInterfaceStructTypeItemItem) ? get_class($myArrayOfDedicatedNetworkInterfaceStructTypeItemItem) : gettype($myArrayOfDedicatedNetworkInterfaceStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfDedicatedNetworkInterfaceStructType extends AbstractStructArrayBa
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedNetworkInterfaceStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedNetworkInterfaceStructType
+     * @param \Ovh\StructType\DedicatedNetworkInterfaceStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedNetworkInterfaceStructType
      */
-    public function addToItem(\PayPal\StructType\DedicatedNetworkInterfaceStruct $item)
+    public function addToItem(\Ovh\StructType\DedicatedNetworkInterfaceStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\DedicatedNetworkInterfaceStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedNetworkInterfaceStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\DedicatedNetworkInterfaceStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedNetworkInterfaceStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfDedicatedNetworkInterfaceStructType extends AbstractStructArrayBa
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\DedicatedNetworkInterfaceStruct|null
+     * @return \Ovh\StructType\DedicatedNetworkInterfaceStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfDedicatedNetworkInterfaceStructType extends AbstractStructArrayBa
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\DedicatedNetworkInterfaceStruct|null
+     * @return \Ovh\StructType\DedicatedNetworkInterfaceStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfDedicatedNetworkInterfaceStructType extends AbstractStructArrayBa
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\DedicatedNetworkInterfaceStruct|null
+     * @return \Ovh\StructType\DedicatedNetworkInterfaceStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfDedicatedNetworkInterfaceStructType extends AbstractStructArrayBa
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\DedicatedNetworkInterfaceStruct|null
+     * @return \Ovh\StructType\DedicatedNetworkInterfaceStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfDedicatedNetworkInterfaceStructType extends AbstractStructArrayBa
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\DedicatedNetworkInterfaceStruct|null
+     * @return \Ovh\StructType\DedicatedNetworkInterfaceStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfDedicatedNetworkInterfaceStructType extends AbstractStructArrayBa
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedNetworkInterfaceStructType
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedNetworkInterfaceStructType
      */
     public static function __set_state(array $array)
     {

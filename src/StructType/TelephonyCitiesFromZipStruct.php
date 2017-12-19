@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class TelephonyCitiesFromZipStruct extends AbstractStructBase
     /**
      * Set insee value
      * @param string $insee
-     * @return \PayPal\StructType\TelephonyCitiesFromZipStruct
+     * @return \Ovh\StructType\TelephonyCitiesFromZipStruct
      */
     public function setInsee($insee = null)
     {
@@ -83,7 +83,7 @@ class TelephonyCitiesFromZipStruct extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \PayPal\StructType\TelephonyCitiesFromZipStruct
+     * @return \Ovh\StructType\TelephonyCitiesFromZipStruct
      */
     public function setCity($city = null)
     {
@@ -105,7 +105,7 @@ class TelephonyCitiesFromZipStruct extends AbstractStructBase
     /**
      * Set zip value
      * @param string $zip
-     * @return \PayPal\StructType\TelephonyCitiesFromZipStruct
+     * @return \Ovh\StructType\TelephonyCitiesFromZipStruct
      */
     public function setZip($zip = null)
     {
@@ -127,7 +127,7 @@ class TelephonyCitiesFromZipStruct extends AbstractStructBase
     /**
      * Set zne value
      * @param string $zne
-     * @return \PayPal\StructType\TelephonyCitiesFromZipStruct
+     * @return \Ovh\StructType\TelephonyCitiesFromZipStruct
      */
     public function setZne($zne = null)
     {
@@ -144,7 +144,7 @@ class TelephonyCitiesFromZipStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyCitiesFromZipStruct
+     * @return \Ovh\StructType\TelephonyCitiesFromZipStruct
      */
     public static function __set_state(array $array)
     {

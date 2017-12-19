@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -93,7 +93,7 @@ class SupportThreadDetailStruct extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\SupportThreadDetailStruct
+     * @return \Ovh\StructType\SupportThreadDetailStruct
      */
     public function setId($id = null)
     {
@@ -115,7 +115,7 @@ class SupportThreadDetailStruct extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\SupportThreadDetailStruct
+     * @return \Ovh\StructType\SupportThreadDetailStruct
      */
     public function setDate($date = null)
     {
@@ -137,7 +137,7 @@ class SupportThreadDetailStruct extends AbstractStructBase
     /**
      * Set subject value
      * @param string $subject
-     * @return \PayPal\StructType\SupportThreadDetailStruct
+     * @return \Ovh\StructType\SupportThreadDetailStruct
      */
     public function setSubject($subject = null)
     {
@@ -159,7 +159,7 @@ class SupportThreadDetailStruct extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\SupportThreadDetailStruct
+     * @return \Ovh\StructType\SupportThreadDetailStruct
      */
     public function setDomain($domain = null)
     {
@@ -181,7 +181,7 @@ class SupportThreadDetailStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\SupportThreadDetailStruct
+     * @return \Ovh\StructType\SupportThreadDetailStruct
      */
     public function setStatus($status = null)
     {
@@ -203,7 +203,7 @@ class SupportThreadDetailStruct extends AbstractStructBase
     /**
      * Set unread value
      * @param int $unread
-     * @return \PayPal\StructType\SupportThreadDetailStruct
+     * @return \Ovh\StructType\SupportThreadDetailStruct
      */
     public function setUnread($unread = null)
     {
@@ -225,7 +225,7 @@ class SupportThreadDetailStruct extends AbstractStructBase
     /**
      * Set closed value
      * @param int $closed
-     * @return \PayPal\StructType\SupportThreadDetailStruct
+     * @return \Ovh\StructType\SupportThreadDetailStruct
      */
     public function setClosed($closed = null)
     {
@@ -247,7 +247,7 @@ class SupportThreadDetailStruct extends AbstractStructBase
     /**
      * Set answered value
      * @param int $answered
-     * @return \PayPal\StructType\SupportThreadDetailStruct
+     * @return \Ovh\StructType\SupportThreadDetailStruct
      */
     public function setAnswered($answered = null)
     {
@@ -264,7 +264,7 @@ class SupportThreadDetailStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SupportThreadDetailStruct
+     * @return \Ovh\StructType\SupportThreadDetailStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class BillingInvoiceList extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\BillingInvoiceList
+     * @return \Ovh\StructType\BillingInvoiceList
      */
     public function setSession($session = null)
     {
@@ -56,7 +56,7 @@ class BillingInvoiceList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\BillingInvoiceList
+     * @return \Ovh\StructType\BillingInvoiceList
      */
     public static function __set_state(array $array)
     {

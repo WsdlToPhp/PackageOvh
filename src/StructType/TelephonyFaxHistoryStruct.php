@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -109,7 +109,7 @@ class TelephonyFaxHistoryStruct extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\TelephonyFaxHistoryStruct
+     * @return \Ovh\StructType\TelephonyFaxHistoryStruct
      */
     public function setId($id = null)
     {
@@ -131,7 +131,7 @@ class TelephonyFaxHistoryStruct extends AbstractStructBase
     /**
      * Set relatedNumber value
      * @param string $relatedNumber
-     * @return \PayPal\StructType\TelephonyFaxHistoryStruct
+     * @return \Ovh\StructType\TelephonyFaxHistoryStruct
      */
     public function setRelatedNumber($relatedNumber = null)
     {
@@ -153,7 +153,7 @@ class TelephonyFaxHistoryStruct extends AbstractStructBase
     /**
      * Set jobid value
      * @param int $jobid
-     * @return \PayPal\StructType\TelephonyFaxHistoryStruct
+     * @return \Ovh\StructType\TelephonyFaxHistoryStruct
      */
     public function setJobid($jobid = null)
     {
@@ -175,7 +175,7 @@ class TelephonyFaxHistoryStruct extends AbstractStructBase
     /**
      * Set jobtag value
      * @param string $jobtag
-     * @return \PayPal\StructType\TelephonyFaxHistoryStruct
+     * @return \Ovh\StructType\TelephonyFaxHistoryStruct
      */
     public function setJobtag($jobtag = null)
     {
@@ -197,7 +197,7 @@ class TelephonyFaxHistoryStruct extends AbstractStructBase
     /**
      * Set sender value
      * @param string $sender
-     * @return \PayPal\StructType\TelephonyFaxHistoryStruct
+     * @return \Ovh\StructType\TelephonyFaxHistoryStruct
      */
     public function setSender($sender = null)
     {
@@ -219,7 +219,7 @@ class TelephonyFaxHistoryStruct extends AbstractStructBase
     /**
      * Set pages value
      * @param int $pages
-     * @return \PayPal\StructType\TelephonyFaxHistoryStruct
+     * @return \Ovh\StructType\TelephonyFaxHistoryStruct
      */
     public function setPages($pages = null)
     {
@@ -241,7 +241,7 @@ class TelephonyFaxHistoryStruct extends AbstractStructBase
     /**
      * Set quality value
      * @param string $quality
-     * @return \PayPal\StructType\TelephonyFaxHistoryStruct
+     * @return \Ovh\StructType\TelephonyFaxHistoryStruct
      */
     public function setQuality($quality = null)
     {
@@ -263,7 +263,7 @@ class TelephonyFaxHistoryStruct extends AbstractStructBase
     /**
      * Set callTime value
      * @param string $callTime
-     * @return \PayPal\StructType\TelephonyFaxHistoryStruct
+     * @return \Ovh\StructType\TelephonyFaxHistoryStruct
      */
     public function setCallTime($callTime = null)
     {
@@ -285,7 +285,7 @@ class TelephonyFaxHistoryStruct extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\TelephonyFaxHistoryStruct
+     * @return \Ovh\StructType\TelephonyFaxHistoryStruct
      */
     public function setDate($date = null)
     {
@@ -307,7 +307,7 @@ class TelephonyFaxHistoryStruct extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \PayPal\StructType\TelephonyFaxHistoryStruct
+     * @return \Ovh\StructType\TelephonyFaxHistoryStruct
      */
     public function setState($state = null)
     {
@@ -324,7 +324,7 @@ class TelephonyFaxHistoryStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFaxHistoryStruct
+     * @return \Ovh\StructType\TelephonyFaxHistoryStruct
      */
     public static function __set_state(array $array)
     {

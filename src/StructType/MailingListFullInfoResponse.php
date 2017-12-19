@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class MailingListFullInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\MailingListFullInfoReturn
+     * @var \Ovh\StructType\MailingListFullInfoReturn
      */
     public $return;
     /**
      * Constructor method for mailingListFullInfoResponse
      * @uses MailingListFullInfoResponse::setReturn()
-     * @param \PayPal\StructType\MailingListFullInfoReturn $return
+     * @param \Ovh\StructType\MailingListFullInfoReturn $return
      */
-    public function __construct(\PayPal\StructType\MailingListFullInfoReturn $return = null)
+    public function __construct(\Ovh\StructType\MailingListFullInfoReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\MailingListFullInfoReturn|null
+     * @return \Ovh\StructType\MailingListFullInfoReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class MailingListFullInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\MailingListFullInfoReturn $return
-     * @return \PayPal\StructType\MailingListFullInfoResponse
+     * @param \Ovh\StructType\MailingListFullInfoReturn $return
+     * @return \Ovh\StructType\MailingListFullInfoResponse
      */
-    public function setReturn(\PayPal\StructType\MailingListFullInfoReturn $return = null)
+    public function setReturn(\Ovh\StructType\MailingListFullInfoReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class MailingListFullInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\MailingListFullInfoResponse
+     * @return \Ovh\StructType\MailingListFullInfoResponse
      */
     public static function __set_state(array $array)
     {

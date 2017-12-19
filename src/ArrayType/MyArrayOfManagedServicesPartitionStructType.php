@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfManagedServicesPartitionStructType extends AbstractStructArrayBas
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\ManagedServicesPartitionStruct[]
+     * @var \Ovh\StructType\ManagedServicesPartitionStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfManagedServicesPartitionStructType
      * @uses MyArrayOfManagedServicesPartitionStructType::setItem()
-     * @param \PayPal\StructType\ManagedServicesPartitionStruct[] $item
+     * @param \Ovh\StructType\ManagedServicesPartitionStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfManagedServicesPartitionStructType extends AbstractStructArrayBas
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\ManagedServicesPartitionStruct[]|null
+     * @return \Ovh\StructType\ManagedServicesPartitionStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfManagedServicesPartitionStructType extends AbstractStructArrayBas
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\ManagedServicesPartitionStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfManagedServicesPartitionStructType
+     * @param \Ovh\StructType\ManagedServicesPartitionStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfManagedServicesPartitionStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfManagedServicesPartitionStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfManagedServicesPartitionStructTypeItemItem instanceof \PayPal\StructType\ManagedServicesPartitionStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\ManagedServicesPartitionStruct, "%s" given', is_object($myArrayOfManagedServicesPartitionStructTypeItemItem) ? get_class($myArrayOfManagedServicesPartitionStructTypeItemItem) : gettype($myArrayOfManagedServicesPartitionStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfManagedServicesPartitionStructTypeItemItem instanceof \Ovh\StructType\ManagedServicesPartitionStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\ManagedServicesPartitionStruct, "%s" given', is_object($myArrayOfManagedServicesPartitionStructTypeItemItem) ? get_class($myArrayOfManagedServicesPartitionStructTypeItemItem) : gettype($myArrayOfManagedServicesPartitionStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfManagedServicesPartitionStructType extends AbstractStructArrayBas
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\ManagedServicesPartitionStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfManagedServicesPartitionStructType
+     * @param \Ovh\StructType\ManagedServicesPartitionStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfManagedServicesPartitionStructType
      */
-    public function addToItem(\PayPal\StructType\ManagedServicesPartitionStruct $item)
+    public function addToItem(\Ovh\StructType\ManagedServicesPartitionStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\ManagedServicesPartitionStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\ManagedServicesPartitionStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\ManagedServicesPartitionStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\ManagedServicesPartitionStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfManagedServicesPartitionStructType extends AbstractStructArrayBas
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\ManagedServicesPartitionStruct|null
+     * @return \Ovh\StructType\ManagedServicesPartitionStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfManagedServicesPartitionStructType extends AbstractStructArrayBas
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\ManagedServicesPartitionStruct|null
+     * @return \Ovh\StructType\ManagedServicesPartitionStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfManagedServicesPartitionStructType extends AbstractStructArrayBas
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\ManagedServicesPartitionStruct|null
+     * @return \Ovh\StructType\ManagedServicesPartitionStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfManagedServicesPartitionStructType extends AbstractStructArrayBas
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\ManagedServicesPartitionStruct|null
+     * @return \Ovh\StructType\ManagedServicesPartitionStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfManagedServicesPartitionStructType extends AbstractStructArrayBas
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\ManagedServicesPartitionStruct|null
+     * @return \Ovh\StructType\ManagedServicesPartitionStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfManagedServicesPartitionStructType extends AbstractStructArrayBas
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfManagedServicesPartitionStructType
+     * @return \Ovh\ArrayType\MyArrayOfManagedServicesPartitionStructType
      */
     public static function __set_state(array $array)
     {

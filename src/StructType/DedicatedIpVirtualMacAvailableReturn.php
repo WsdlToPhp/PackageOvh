@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedIpVirtualMacAvailableReturn extends AbstractStructBase
 {
     /**
      * The ip
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $ip;
     /**
      * The mac
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $mac;
     /**
      * Constructor method for dedicatedIpVirtualMacAvailableReturn
      * @uses DedicatedIpVirtualMacAvailableReturn::setIp()
      * @uses DedicatedIpVirtualMacAvailableReturn::setMac()
-     * @param \PayPal\ArrayType\MyArrayOfStringType $ip
-     * @param \PayPal\ArrayType\MyArrayOfStringType $mac
+     * @param \Ovh\ArrayType\MyArrayOfStringType $ip
+     * @param \Ovh\ArrayType\MyArrayOfStringType $mac
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfStringType $ip = null, \PayPal\ArrayType\MyArrayOfStringType $mac = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfStringType $ip = null, \Ovh\ArrayType\MyArrayOfStringType $mac = null)
     {
         $this
             ->setIp($ip)
@@ -36,7 +36,7 @@ class DedicatedIpVirtualMacAvailableReturn extends AbstractStructBase
     }
     /**
      * Get ip value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getIp()
     {
@@ -44,17 +44,17 @@ class DedicatedIpVirtualMacAvailableReturn extends AbstractStructBase
     }
     /**
      * Set ip value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $ip
-     * @return \PayPal\StructType\DedicatedIpVirtualMacAvailableReturn
+     * @param \Ovh\ArrayType\MyArrayOfStringType $ip
+     * @return \Ovh\StructType\DedicatedIpVirtualMacAvailableReturn
      */
-    public function setIp(\PayPal\ArrayType\MyArrayOfStringType $ip = null)
+    public function setIp(\Ovh\ArrayType\MyArrayOfStringType $ip = null)
     {
         $this->ip = $ip;
         return $this;
     }
     /**
      * Get mac value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getMac()
     {
@@ -62,10 +62,10 @@ class DedicatedIpVirtualMacAvailableReturn extends AbstractStructBase
     }
     /**
      * Set mac value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $mac
-     * @return \PayPal\StructType\DedicatedIpVirtualMacAvailableReturn
+     * @param \Ovh\ArrayType\MyArrayOfStringType $mac
+     * @return \Ovh\StructType\DedicatedIpVirtualMacAvailableReturn
      */
-    public function setMac(\PayPal\ArrayType\MyArrayOfStringType $mac = null)
+    public function setMac(\Ovh\ArrayType\MyArrayOfStringType $mac = null)
     {
         $this->mac = $mac;
         return $this;
@@ -76,7 +76,7 @@ class DedicatedIpVirtualMacAvailableReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedIpVirtualMacAvailableReturn
+     * @return \Ovh\StructType\DedicatedIpVirtualMacAvailableReturn
      */
     public static function __set_state(array $array)
     {

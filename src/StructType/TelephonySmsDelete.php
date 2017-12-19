@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -29,7 +29,7 @@ class TelephonySmsDelete extends AbstractStructBase
      * The smsIds
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfIntType
+     * @var \Ovh\ArrayType\MyArrayOfIntType
      */
     public $smsIds;
     /**
@@ -39,9 +39,9 @@ class TelephonySmsDelete extends AbstractStructBase
      * @uses TelephonySmsDelete::setSmsIds()
      * @param string $session
      * @param string $smsAccount
-     * @param \PayPal\ArrayType\MyArrayOfIntType $smsIds
+     * @param \Ovh\ArrayType\MyArrayOfIntType $smsIds
      */
-    public function __construct($session = null, $smsAccount = null, \PayPal\ArrayType\MyArrayOfIntType $smsIds = null)
+    public function __construct($session = null, $smsAccount = null, \Ovh\ArrayType\MyArrayOfIntType $smsIds = null)
     {
         $this
             ->setSession($session)
@@ -59,7 +59,7 @@ class TelephonySmsDelete extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonySmsDelete
+     * @return \Ovh\StructType\TelephonySmsDelete
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class TelephonySmsDelete extends AbstractStructBase
     /**
      * Set smsAccount value
      * @param string $smsAccount
-     * @return \PayPal\StructType\TelephonySmsDelete
+     * @return \Ovh\StructType\TelephonySmsDelete
      */
     public function setSmsAccount($smsAccount = null)
     {
@@ -94,7 +94,7 @@ class TelephonySmsDelete extends AbstractStructBase
     }
     /**
      * Get smsIds value
-     * @return \PayPal\ArrayType\MyArrayOfIntType|null
+     * @return \Ovh\ArrayType\MyArrayOfIntType|null
      */
     public function getSmsIds()
     {
@@ -102,10 +102,10 @@ class TelephonySmsDelete extends AbstractStructBase
     }
     /**
      * Set smsIds value
-     * @param \PayPal\ArrayType\MyArrayOfIntType $smsIds
-     * @return \PayPal\StructType\TelephonySmsDelete
+     * @param \Ovh\ArrayType\MyArrayOfIntType $smsIds
+     * @return \Ovh\StructType\TelephonySmsDelete
      */
-    public function setSmsIds(\PayPal\ArrayType\MyArrayOfIntType $smsIds = null)
+    public function setSmsIds(\Ovh\ArrayType\MyArrayOfIntType $smsIds = null)
     {
         $this->smsIds = $smsIds;
         return $this;
@@ -116,7 +116,7 @@ class TelephonySmsDelete extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsDelete
+     * @return \Ovh\StructType\TelephonySmsDelete
      */
     public static function __set_state(array $array)
     {

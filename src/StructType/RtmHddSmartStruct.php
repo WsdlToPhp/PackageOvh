@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class RtmHddSmartStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\RtmHddSmartStruct
+     * @return \Ovh\StructType\RtmHddSmartStruct
      */
     public function setStatus($status = null)
     {
@@ -91,7 +91,7 @@ class RtmHddSmartStruct extends AbstractStructBase
     /**
      * Set multizoneErrorRate value
      * @param int $multizoneErrorRate
-     * @return \PayPal\StructType\RtmHddSmartStruct
+     * @return \Ovh\StructType\RtmHddSmartStruct
      */
     public function setMultizoneErrorRate($multizoneErrorRate = null)
     {
@@ -113,7 +113,7 @@ class RtmHddSmartStruct extends AbstractStructBase
     /**
      * Set currentPendingSector value
      * @param int $currentPendingSector
-     * @return \PayPal\StructType\RtmHddSmartStruct
+     * @return \Ovh\StructType\RtmHddSmartStruct
      */
     public function setCurrentPendingSector($currentPendingSector = null)
     {
@@ -135,7 +135,7 @@ class RtmHddSmartStruct extends AbstractStructBase
     /**
      * Set udmaCrcError value
      * @param int $udmaCrcError
-     * @return \PayPal\StructType\RtmHddSmartStruct
+     * @return \Ovh\StructType\RtmHddSmartStruct
      */
     public function setUdmaCrcError($udmaCrcError = null)
     {
@@ -157,7 +157,7 @@ class RtmHddSmartStruct extends AbstractStructBase
     /**
      * Set offlineUncorrectable value
      * @param int $offlineUncorrectable
-     * @return \PayPal\StructType\RtmHddSmartStruct
+     * @return \Ovh\StructType\RtmHddSmartStruct
      */
     public function setOfflineUncorrectable($offlineUncorrectable = null)
     {
@@ -174,7 +174,7 @@ class RtmHddSmartStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RtmHddSmartStruct
+     * @return \Ovh\StructType\RtmHddSmartStruct
      */
     public static function __set_state(array $array)
     {

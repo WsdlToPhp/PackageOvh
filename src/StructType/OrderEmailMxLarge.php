@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class OrderEmailMxLarge extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\OrderEmailMxLarge
+     * @return \Ovh\StructType\OrderEmailMxLarge
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class OrderEmailMxLarge extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\OrderEmailMxLarge
+     * @return \Ovh\StructType\OrderEmailMxLarge
      */
     public function setDomain($domain = null)
     {
@@ -113,7 +113,7 @@ class OrderEmailMxLarge extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\OrderEmailMxLarge
+     * @return \Ovh\StructType\OrderEmailMxLarge
      */
     public function setType($type = null)
     {
@@ -135,7 +135,7 @@ class OrderEmailMxLarge extends AbstractStructBase
     /**
      * Set payWithPoints value
      * @param bool $payWithPoints
-     * @return \PayPal\StructType\OrderEmailMxLarge
+     * @return \Ovh\StructType\OrderEmailMxLarge
      */
     public function setPayWithPoints($payWithPoints = null)
     {
@@ -152,7 +152,7 @@ class OrderEmailMxLarge extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\OrderEmailMxLarge
+     * @return \Ovh\StructType\OrderEmailMxLarge
      */
     public static function __set_state(array $array)
     {

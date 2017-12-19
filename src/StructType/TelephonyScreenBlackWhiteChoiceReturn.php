@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class TelephonyScreenBlackWhiteChoiceReturn extends AbstractStructBase
     /**
      * Set incomingScreenlist value
      * @param string $incomingScreenlist
-     * @return \PayPal\StructType\TelephonyScreenBlackWhiteChoiceReturn
+     * @return \Ovh\StructType\TelephonyScreenBlackWhiteChoiceReturn
      */
     public function setIncomingScreenlist($incomingScreenlist = null)
     {
@@ -75,7 +75,7 @@ class TelephonyScreenBlackWhiteChoiceReturn extends AbstractStructBase
     /**
      * Set outgoingScreenlist value
      * @param string $outgoingScreenlist
-     * @return \PayPal\StructType\TelephonyScreenBlackWhiteChoiceReturn
+     * @return \Ovh\StructType\TelephonyScreenBlackWhiteChoiceReturn
      */
     public function setOutgoingScreenlist($outgoingScreenlist = null)
     {
@@ -97,7 +97,7 @@ class TelephonyScreenBlackWhiteChoiceReturn extends AbstractStructBase
     /**
      * Set outgoingCodeUnlock value
      * @param string $outgoingCodeUnlock
-     * @return \PayPal\StructType\TelephonyScreenBlackWhiteChoiceReturn
+     * @return \Ovh\StructType\TelephonyScreenBlackWhiteChoiceReturn
      */
     public function setOutgoingCodeUnlock($outgoingCodeUnlock = null)
     {
@@ -114,7 +114,7 @@ class TelephonyScreenBlackWhiteChoiceReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyScreenBlackWhiteChoiceReturn
+     * @return \Ovh\StructType\TelephonyScreenBlackWhiteChoiceReturn
      */
     public static function __set_state(array $array)
     {

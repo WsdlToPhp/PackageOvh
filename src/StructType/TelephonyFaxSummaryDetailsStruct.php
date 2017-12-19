@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class TelephonyFaxSummaryDetailsStruct extends AbstractStructBase
     /**
      * Set count value
      * @param int $count
-     * @return \PayPal\StructType\TelephonyFaxSummaryDetailsStruct
+     * @return \Ovh\StructType\TelephonyFaxSummaryDetailsStruct
      */
     public function setCount($count = null)
     {
@@ -75,7 +75,7 @@ class TelephonyFaxSummaryDetailsStruct extends AbstractStructBase
     /**
      * Set pages value
      * @param int $pages
-     * @return \PayPal\StructType\TelephonyFaxSummaryDetailsStruct
+     * @return \Ovh\StructType\TelephonyFaxSummaryDetailsStruct
      */
     public function setPages($pages = null)
     {
@@ -97,7 +97,7 @@ class TelephonyFaxSummaryDetailsStruct extends AbstractStructBase
     /**
      * Set priceWithoutVAT value
      * @param float $priceWithoutVAT
-     * @return \PayPal\StructType\TelephonyFaxSummaryDetailsStruct
+     * @return \Ovh\StructType\TelephonyFaxSummaryDetailsStruct
      */
     public function setPriceWithoutVAT($priceWithoutVAT = null)
     {
@@ -110,7 +110,7 @@ class TelephonyFaxSummaryDetailsStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFaxSummaryDetailsStruct
+     * @return \Ovh\StructType\TelephonyFaxSummaryDetailsStruct
      */
     public static function __set_state(array $array)
     {

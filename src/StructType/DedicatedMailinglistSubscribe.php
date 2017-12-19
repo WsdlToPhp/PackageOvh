@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class DedicatedMailinglistSubscribe extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedMailinglistSubscribe
+     * @return \Ovh\StructType\DedicatedMailinglistSubscribe
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class DedicatedMailinglistSubscribe extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\DedicatedMailinglistSubscribe
+     * @return \Ovh\StructType\DedicatedMailinglistSubscribe
      */
     public function setEmail($email = null)
     {
@@ -103,7 +103,7 @@ class DedicatedMailinglistSubscribe extends AbstractStructBase
     /**
      * Set mailingList value
      * @param string $mailingList
-     * @return \PayPal\StructType\DedicatedMailinglistSubscribe
+     * @return \Ovh\StructType\DedicatedMailinglistSubscribe
      */
     public function setMailingList($mailingList = null)
     {
@@ -120,7 +120,7 @@ class DedicatedMailinglistSubscribe extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedMailinglistSubscribe
+     * @return \Ovh\StructType\DedicatedMailinglistSubscribe
      */
     public static function __set_state(array $array)
     {

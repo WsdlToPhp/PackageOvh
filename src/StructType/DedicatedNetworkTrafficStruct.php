@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,12 +18,12 @@ class DedicatedNetworkTrafficStruct extends AbstractStructBase
     public $lastUpdate;
     /**
      * The currentQuota
-     * @var \PayPal\StructType\DedicatedNetworkTrafficDetailsStruct
+     * @var \Ovh\StructType\DedicatedNetworkTrafficDetailsStruct
      */
     public $currentQuota;
     /**
      * The monthlyTraffic
-     * @var \PayPal\StructType\DedicatedNetworkTrafficDetailsStruct
+     * @var \Ovh\StructType\DedicatedNetworkTrafficDetailsStruct
      */
     public $monthlyTraffic;
     /**
@@ -50,13 +50,13 @@ class DedicatedNetworkTrafficStruct extends AbstractStructBase
      * @uses DedicatedNetworkTrafficStruct::setMonthlyQuota()
      * @uses DedicatedNetworkTrafficStruct::setNextQuotaReset()
      * @param string $lastUpdate
-     * @param \PayPal\StructType\DedicatedNetworkTrafficDetailsStruct $currentQuota
-     * @param \PayPal\StructType\DedicatedNetworkTrafficDetailsStruct $monthlyTraffic
+     * @param \Ovh\StructType\DedicatedNetworkTrafficDetailsStruct $currentQuota
+     * @param \Ovh\StructType\DedicatedNetworkTrafficDetailsStruct $monthlyTraffic
      * @param string $nextTrafficReset
      * @param string $monthlyQuota
      * @param string $nextQuotaReset
      */
-    public function __construct($lastUpdate = null, \PayPal\StructType\DedicatedNetworkTrafficDetailsStruct $currentQuota = null, \PayPal\StructType\DedicatedNetworkTrafficDetailsStruct $monthlyTraffic = null, $nextTrafficReset = null, $monthlyQuota = null, $nextQuotaReset = null)
+    public function __construct($lastUpdate = null, \Ovh\StructType\DedicatedNetworkTrafficDetailsStruct $currentQuota = null, \Ovh\StructType\DedicatedNetworkTrafficDetailsStruct $monthlyTraffic = null, $nextTrafficReset = null, $monthlyQuota = null, $nextQuotaReset = null)
     {
         $this
             ->setLastUpdate($lastUpdate)
@@ -77,7 +77,7 @@ class DedicatedNetworkTrafficStruct extends AbstractStructBase
     /**
      * Set lastUpdate value
      * @param string $lastUpdate
-     * @return \PayPal\StructType\DedicatedNetworkTrafficStruct
+     * @return \Ovh\StructType\DedicatedNetworkTrafficStruct
      */
     public function setLastUpdate($lastUpdate = null)
     {
@@ -90,7 +90,7 @@ class DedicatedNetworkTrafficStruct extends AbstractStructBase
     }
     /**
      * Get currentQuota value
-     * @return \PayPal\StructType\DedicatedNetworkTrafficDetailsStruct|null
+     * @return \Ovh\StructType\DedicatedNetworkTrafficDetailsStruct|null
      */
     public function getCurrentQuota()
     {
@@ -98,17 +98,17 @@ class DedicatedNetworkTrafficStruct extends AbstractStructBase
     }
     /**
      * Set currentQuota value
-     * @param \PayPal\StructType\DedicatedNetworkTrafficDetailsStruct $currentQuota
-     * @return \PayPal\StructType\DedicatedNetworkTrafficStruct
+     * @param \Ovh\StructType\DedicatedNetworkTrafficDetailsStruct $currentQuota
+     * @return \Ovh\StructType\DedicatedNetworkTrafficStruct
      */
-    public function setCurrentQuota(\PayPal\StructType\DedicatedNetworkTrafficDetailsStruct $currentQuota = null)
+    public function setCurrentQuota(\Ovh\StructType\DedicatedNetworkTrafficDetailsStruct $currentQuota = null)
     {
         $this->currentQuota = $currentQuota;
         return $this;
     }
     /**
      * Get monthlyTraffic value
-     * @return \PayPal\StructType\DedicatedNetworkTrafficDetailsStruct|null
+     * @return \Ovh\StructType\DedicatedNetworkTrafficDetailsStruct|null
      */
     public function getMonthlyTraffic()
     {
@@ -116,10 +116,10 @@ class DedicatedNetworkTrafficStruct extends AbstractStructBase
     }
     /**
      * Set monthlyTraffic value
-     * @param \PayPal\StructType\DedicatedNetworkTrafficDetailsStruct $monthlyTraffic
-     * @return \PayPal\StructType\DedicatedNetworkTrafficStruct
+     * @param \Ovh\StructType\DedicatedNetworkTrafficDetailsStruct $monthlyTraffic
+     * @return \Ovh\StructType\DedicatedNetworkTrafficStruct
      */
-    public function setMonthlyTraffic(\PayPal\StructType\DedicatedNetworkTrafficDetailsStruct $monthlyTraffic = null)
+    public function setMonthlyTraffic(\Ovh\StructType\DedicatedNetworkTrafficDetailsStruct $monthlyTraffic = null)
     {
         $this->monthlyTraffic = $monthlyTraffic;
         return $this;
@@ -135,7 +135,7 @@ class DedicatedNetworkTrafficStruct extends AbstractStructBase
     /**
      * Set nextTrafficReset value
      * @param string $nextTrafficReset
-     * @return \PayPal\StructType\DedicatedNetworkTrafficStruct
+     * @return \Ovh\StructType\DedicatedNetworkTrafficStruct
      */
     public function setNextTrafficReset($nextTrafficReset = null)
     {
@@ -157,7 +157,7 @@ class DedicatedNetworkTrafficStruct extends AbstractStructBase
     /**
      * Set monthlyQuota value
      * @param string $monthlyQuota
-     * @return \PayPal\StructType\DedicatedNetworkTrafficStruct
+     * @return \Ovh\StructType\DedicatedNetworkTrafficStruct
      */
     public function setMonthlyQuota($monthlyQuota = null)
     {
@@ -179,7 +179,7 @@ class DedicatedNetworkTrafficStruct extends AbstractStructBase
     /**
      * Set nextQuotaReset value
      * @param string $nextQuotaReset
-     * @return \PayPal\StructType\DedicatedNetworkTrafficStruct
+     * @return \Ovh\StructType\DedicatedNetworkTrafficStruct
      */
     public function setNextQuotaReset($nextQuotaReset = null)
     {
@@ -196,7 +196,7 @@ class DedicatedNetworkTrafficStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedNetworkTrafficStruct
+     * @return \Ovh\StructType\DedicatedNetworkTrafficStruct
      */
     public static function __set_state(array $array)
     {

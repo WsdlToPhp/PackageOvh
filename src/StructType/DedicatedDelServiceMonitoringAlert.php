@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class DedicatedDelServiceMonitoringAlert extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedDelServiceMonitoringAlert
+     * @return \Ovh\StructType\DedicatedDelServiceMonitoringAlert
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class DedicatedDelServiceMonitoringAlert extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\DedicatedDelServiceMonitoringAlert
+     * @return \Ovh\StructType\DedicatedDelServiceMonitoringAlert
      */
     public function setIp($ip = null)
     {
@@ -133,7 +133,7 @@ class DedicatedDelServiceMonitoringAlert extends AbstractStructBase
     /**
      * Set port value
      * @param int $port
-     * @return \PayPal\StructType\DedicatedDelServiceMonitoringAlert
+     * @return \Ovh\StructType\DedicatedDelServiceMonitoringAlert
      */
     public function setPort($port = null)
     {
@@ -155,7 +155,7 @@ class DedicatedDelServiceMonitoringAlert extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \PayPal\StructType\DedicatedDelServiceMonitoringAlert
+     * @return \Ovh\StructType\DedicatedDelServiceMonitoringAlert
      */
     public function setItemId($itemId = null)
     {
@@ -177,7 +177,7 @@ class DedicatedDelServiceMonitoringAlert extends AbstractStructBase
     /**
      * Set media value
      * @param string $media
-     * @return \PayPal\StructType\DedicatedDelServiceMonitoringAlert
+     * @return \Ovh\StructType\DedicatedDelServiceMonitoringAlert
      */
     public function setMedia($media = null)
     {
@@ -199,7 +199,7 @@ class DedicatedDelServiceMonitoringAlert extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \PayPal\StructType\DedicatedDelServiceMonitoringAlert
+     * @return \Ovh\StructType\DedicatedDelServiceMonitoringAlert
      */
     public function setDestination($destination = null)
     {
@@ -216,7 +216,7 @@ class DedicatedDelServiceMonitoringAlert extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedDelServiceMonitoringAlert
+     * @return \Ovh\StructType\DedicatedDelServiceMonitoringAlert
      */
     public static function __set_state(array $array)
     {

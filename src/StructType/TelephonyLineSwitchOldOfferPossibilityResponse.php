@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyLineSwitchOldOfferPossibilityResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyLineSwitchOldOfferStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyLineSwitchOldOfferStructType
      */
     public $return;
     /**
      * Constructor method for telephonyLineSwitchOldOfferPossibilityResponse
      * @uses TelephonyLineSwitchOldOfferPossibilityResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyLineSwitchOldOfferStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyLineSwitchOldOfferStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonyLineSwitchOldOfferStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonyLineSwitchOldOfferStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyLineSwitchOldOfferStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyLineSwitchOldOfferStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyLineSwitchOldOfferPossibilityResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyLineSwitchOldOfferStructType $return
-     * @return \PayPal\StructType\TelephonyLineSwitchOldOfferPossibilityResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyLineSwitchOldOfferStructType $return
+     * @return \Ovh\StructType\TelephonyLineSwitchOldOfferPossibilityResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonyLineSwitchOldOfferStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonyLineSwitchOldOfferStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyLineSwitchOldOfferPossibilityResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyLineSwitchOldOfferPossibilityResponse
+     * @return \Ovh\StructType\TelephonyLineSwitchOldOfferPossibilityResponse
      */
     public static function __set_state(array $array)
     {

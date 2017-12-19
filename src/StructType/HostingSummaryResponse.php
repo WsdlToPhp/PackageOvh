@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class HostingSummaryResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\HostingSummaryReturn
+     * @var \Ovh\StructType\HostingSummaryReturn
      */
     public $return;
     /**
      * Constructor method for hostingSummaryResponse
      * @uses HostingSummaryResponse::setReturn()
-     * @param \PayPal\StructType\HostingSummaryReturn $return
+     * @param \Ovh\StructType\HostingSummaryReturn $return
      */
-    public function __construct(\PayPal\StructType\HostingSummaryReturn $return = null)
+    public function __construct(\Ovh\StructType\HostingSummaryReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\HostingSummaryReturn|null
+     * @return \Ovh\StructType\HostingSummaryReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class HostingSummaryResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\HostingSummaryReturn $return
-     * @return \PayPal\StructType\HostingSummaryResponse
+     * @param \Ovh\StructType\HostingSummaryReturn $return
+     * @return \Ovh\StructType\HostingSummaryResponse
      */
-    public function setReturn(\PayPal\StructType\HostingSummaryReturn $return = null)
+    public function setReturn(\Ovh\StructType\HostingSummaryReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class HostingSummaryResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\HostingSummaryResponse
+     * @return \Ovh\StructType\HostingSummaryResponse
      */
     public static function __set_state(array $array)
     {

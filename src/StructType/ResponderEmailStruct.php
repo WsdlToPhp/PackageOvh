@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class ResponderEmailStruct extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\ResponderEmailStruct
+     * @return \Ovh\StructType\ResponderEmailStruct
      */
     public function setDomain($domain = null)
     {
@@ -91,7 +91,7 @@ class ResponderEmailStruct extends AbstractStructBase
     /**
      * Set responder value
      * @param string $responder
-     * @return \PayPal\StructType\ResponderEmailStruct
+     * @return \Ovh\StructType\ResponderEmailStruct
      */
     public function setResponder($responder = null)
     {
@@ -113,7 +113,7 @@ class ResponderEmailStruct extends AbstractStructBase
     /**
      * Set content value
      * @param string $content
-     * @return \PayPal\StructType\ResponderEmailStruct
+     * @return \Ovh\StructType\ResponderEmailStruct
      */
     public function setContent($content = null)
     {
@@ -135,7 +135,7 @@ class ResponderEmailStruct extends AbstractStructBase
     /**
      * Set hasPop value
      * @param bool $hasPop
-     * @return \PayPal\StructType\ResponderEmailStruct
+     * @return \Ovh\StructType\ResponderEmailStruct
      */
     public function setHasPop($hasPop = null)
     {
@@ -157,7 +157,7 @@ class ResponderEmailStruct extends AbstractStructBase
     /**
      * Set hasAlias value
      * @param bool $hasAlias
-     * @return \PayPal\StructType\ResponderEmailStruct
+     * @return \Ovh\StructType\ResponderEmailStruct
      */
     public function setHasAlias($hasAlias = null)
     {
@@ -174,7 +174,7 @@ class ResponderEmailStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ResponderEmailStruct
+     * @return \Ovh\StructType\ResponderEmailStruct
      */
     public static function __set_state(array $array)
     {

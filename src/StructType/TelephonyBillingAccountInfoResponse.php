@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyBillingAccountInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyBillingAccountInfoReturn
+     * @var \Ovh\StructType\TelephonyBillingAccountInfoReturn
      */
     public $return;
     /**
      * Constructor method for telephonyBillingAccountInfoResponse
      * @uses TelephonyBillingAccountInfoResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyBillingAccountInfoReturn $return
+     * @param \Ovh\StructType\TelephonyBillingAccountInfoReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonyBillingAccountInfoReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonyBillingAccountInfoReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoReturn|null
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyBillingAccountInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyBillingAccountInfoReturn $return
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoResponse
+     * @param \Ovh\StructType\TelephonyBillingAccountInfoReturn $return
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyBillingAccountInfoReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyBillingAccountInfoReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyBillingAccountInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoResponse
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DatabaseListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfDatabaseStructType
+     * @var \Ovh\ArrayType\MyArrayOfDatabaseStructType
      */
     public $return;
     /**
      * Constructor method for databaseListResponse
      * @uses DatabaseListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfDatabaseStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfDatabaseStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfDatabaseStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfDatabaseStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfDatabaseStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDatabaseStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DatabaseListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfDatabaseStructType $return
-     * @return \PayPal\StructType\DatabaseListResponse
+     * @param \Ovh\ArrayType\MyArrayOfDatabaseStructType $return
+     * @return \Ovh\StructType\DatabaseListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfDatabaseStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfDatabaseStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DatabaseListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DatabaseListResponse
+     * @return \Ovh\StructType\DatabaseListResponse
      */
     public static function __set_state(array $array)
     {

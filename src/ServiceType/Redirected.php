@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Redirected extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\RedirectedEmailAdd $parameters
-     * @return \PayPal\StructType\RedirectedEmailAddResponse|bool
+     * @param \Ovh\StructType\RedirectedEmailAdd $parameters
+     * @return \Ovh\StructType\RedirectedEmailAddResponse|bool
      */
-    public function redirectedEmailAdd(\PayPal\StructType\RedirectedEmailAdd $parameters)
+    public function redirectedEmailAdd(\Ovh\StructType\RedirectedEmailAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->redirectedEmailAdd($parameters));
@@ -36,10 +36,10 @@ class Redirected extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\RedirectedEmailModify $parameters
-     * @return \PayPal\StructType\RedirectedEmailModifyResponse|bool
+     * @param \Ovh\StructType\RedirectedEmailModify $parameters
+     * @return \Ovh\StructType\RedirectedEmailModifyResponse|bool
      */
-    public function redirectedEmailModify(\PayPal\StructType\RedirectedEmailModify $parameters)
+    public function redirectedEmailModify(\Ovh\StructType\RedirectedEmailModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->redirectedEmailModify($parameters));
@@ -55,10 +55,10 @@ class Redirected extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\RedirectedEmailDel $parameters
-     * @return \PayPal\StructType\RedirectedEmailDelResponse|bool
+     * @param \Ovh\StructType\RedirectedEmailDel $parameters
+     * @return \Ovh\StructType\RedirectedEmailDelResponse|bool
      */
-    public function redirectedEmailDel(\PayPal\StructType\RedirectedEmailDel $parameters)
+    public function redirectedEmailDel(\Ovh\StructType\RedirectedEmailDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->redirectedEmailDel($parameters));
@@ -74,10 +74,10 @@ class Redirected extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\RedirectedEmailList $parameters
-     * @return \PayPal\StructType\RedirectedEmailListResponse|bool
+     * @param \Ovh\StructType\RedirectedEmailList $parameters
+     * @return \Ovh\StructType\RedirectedEmailListResponse|bool
      */
-    public function redirectedEmailList(\PayPal\StructType\RedirectedEmailList $parameters)
+    public function redirectedEmailList(\Ovh\StructType\RedirectedEmailList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->redirectedEmailList($parameters));
@@ -90,7 +90,7 @@ class Redirected extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\RedirectedEmailAddResponse|\PayPal\StructType\RedirectedEmailDelResponse|\PayPal\StructType\RedirectedEmailListResponse|\PayPal\StructType\RedirectedEmailModifyResponse
+     * @return \Ovh\StructType\RedirectedEmailAddResponse|\Ovh\StructType\RedirectedEmailDelResponse|\Ovh\StructType\RedirectedEmailListResponse|\Ovh\StructType\RedirectedEmailModifyResponse
      */
     public function getResult()
     {

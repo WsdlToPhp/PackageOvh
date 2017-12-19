@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -101,7 +101,7 @@ class TicketStruct extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\TicketStruct
+     * @return \Ovh\StructType\TicketStruct
      */
     public function setId($id = null)
     {
@@ -123,7 +123,7 @@ class TicketStruct extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \PayPal\StructType\TicketStruct
+     * @return \Ovh\StructType\TicketStruct
      */
     public function setCreationDate($creationDate = null)
     {
@@ -145,7 +145,7 @@ class TicketStruct extends AbstractStructBase
     /**
      * Set requestStatus value
      * @param string $requestStatus
-     * @return \PayPal\StructType\TicketStruct
+     * @return \Ovh\StructType\TicketStruct
      */
     public function setRequestStatus($requestStatus = null)
     {
@@ -167,7 +167,7 @@ class TicketStruct extends AbstractStructBase
     /**
      * Set subject value
      * @param string $subject
-     * @return \PayPal\StructType\TicketStruct
+     * @return \Ovh\StructType\TicketStruct
      */
     public function setSubject($subject = null)
     {
@@ -189,7 +189,7 @@ class TicketStruct extends AbstractStructBase
     /**
      * Set nic value
      * @param string $nic
-     * @return \PayPal\StructType\TicketStruct
+     * @return \Ovh\StructType\TicketStruct
      */
     public function setNic($nic = null)
     {
@@ -211,7 +211,7 @@ class TicketStruct extends AbstractStructBase
     /**
      * Set level value
      * @param string $level
-     * @return \PayPal\StructType\TicketStruct
+     * @return \Ovh\StructType\TicketStruct
      */
     public function setLevel($level = null)
     {
@@ -233,7 +233,7 @@ class TicketStruct extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\TicketStruct
+     * @return \Ovh\StructType\TicketStruct
      */
     public function setDomain($domain = null)
     {
@@ -255,7 +255,7 @@ class TicketStruct extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \PayPal\StructType\TicketStruct
+     * @return \Ovh\StructType\TicketStruct
      */
     public function setOrderId($orderId = null)
     {
@@ -277,7 +277,7 @@ class TicketStruct extends AbstractStructBase
     /**
      * Set componentType value
      * @param string $componentType
-     * @return \PayPal\StructType\TicketStruct
+     * @return \Ovh\StructType\TicketStruct
      */
     public function setComponentType($componentType = null)
     {
@@ -294,7 +294,7 @@ class TicketStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TicketStruct
+     * @return \Ovh\StructType\TicketStruct
      */
     public static function __set_state(array $array)
     {

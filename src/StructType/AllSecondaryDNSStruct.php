@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class AllSecondaryDNSStruct extends AbstractStructBase
     public $ip;
     /**
      * The secondary
-     * @var \PayPal\ArrayType\MyArrayOfSecondaryDNSStructType
+     * @var \Ovh\ArrayType\MyArrayOfSecondaryDNSStructType
      */
     public $secondary;
     /**
@@ -26,9 +26,9 @@ class AllSecondaryDNSStruct extends AbstractStructBase
      * @uses AllSecondaryDNSStruct::setIp()
      * @uses AllSecondaryDNSStruct::setSecondary()
      * @param string $ip
-     * @param \PayPal\ArrayType\MyArrayOfSecondaryDNSStructType $secondary
+     * @param \Ovh\ArrayType\MyArrayOfSecondaryDNSStructType $secondary
      */
-    public function __construct($ip = null, \PayPal\ArrayType\MyArrayOfSecondaryDNSStructType $secondary = null)
+    public function __construct($ip = null, \Ovh\ArrayType\MyArrayOfSecondaryDNSStructType $secondary = null)
     {
         $this
             ->setIp($ip)
@@ -45,7 +45,7 @@ class AllSecondaryDNSStruct extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\AllSecondaryDNSStruct
+     * @return \Ovh\StructType\AllSecondaryDNSStruct
      */
     public function setIp($ip = null)
     {
@@ -58,7 +58,7 @@ class AllSecondaryDNSStruct extends AbstractStructBase
     }
     /**
      * Get secondary value
-     * @return \PayPal\ArrayType\MyArrayOfSecondaryDNSStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfSecondaryDNSStructType|null
      */
     public function getSecondary()
     {
@@ -66,10 +66,10 @@ class AllSecondaryDNSStruct extends AbstractStructBase
     }
     /**
      * Set secondary value
-     * @param \PayPal\ArrayType\MyArrayOfSecondaryDNSStructType $secondary
-     * @return \PayPal\StructType\AllSecondaryDNSStruct
+     * @param \Ovh\ArrayType\MyArrayOfSecondaryDNSStructType $secondary
+     * @return \Ovh\StructType\AllSecondaryDNSStruct
      */
-    public function setSecondary(\PayPal\ArrayType\MyArrayOfSecondaryDNSStructType $secondary = null)
+    public function setSecondary(\Ovh\ArrayType\MyArrayOfSecondaryDNSStructType $secondary = null)
     {
         $this->secondary = $secondary;
         return $this;
@@ -80,7 +80,7 @@ class AllSecondaryDNSStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\AllSecondaryDNSStruct
+     * @return \Ovh\StructType\AllSecondaryDNSStruct
      */
     public static function __set_state(array $array)
     {

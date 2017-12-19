@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class SqlpriveMysqlProcessListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfSqlpriveMysqlProcessStructType
+     * @var \Ovh\ArrayType\MyArrayOfSqlpriveMysqlProcessStructType
      */
     public $return;
     /**
      * Constructor method for sqlpriveMysqlProcessListResponse
      * @uses SqlpriveMysqlProcessListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfSqlpriveMysqlProcessStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfSqlpriveMysqlProcessStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfSqlpriveMysqlProcessStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfSqlpriveMysqlProcessStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfSqlpriveMysqlProcessStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfSqlpriveMysqlProcessStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class SqlpriveMysqlProcessListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfSqlpriveMysqlProcessStructType $return
-     * @return \PayPal\StructType\SqlpriveMysqlProcessListResponse
+     * @param \Ovh\ArrayType\MyArrayOfSqlpriveMysqlProcessStructType $return
+     * @return \Ovh\StructType\SqlpriveMysqlProcessListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfSqlpriveMysqlProcessStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfSqlpriveMysqlProcessStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class SqlpriveMysqlProcessListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SqlpriveMysqlProcessListResponse
+     * @return \Ovh\StructType\SqlpriveMysqlProcessListResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class SqlpriveAlertInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\SqlpriveAlertInfotReturn
+     * @var \Ovh\StructType\SqlpriveAlertInfotReturn
      */
     public $return;
     /**
      * Constructor method for sqlpriveAlertInfoResponse
      * @uses SqlpriveAlertInfoResponse::setReturn()
-     * @param \PayPal\StructType\SqlpriveAlertInfotReturn $return
+     * @param \Ovh\StructType\SqlpriveAlertInfotReturn $return
      */
-    public function __construct(\PayPal\StructType\SqlpriveAlertInfotReturn $return = null)
+    public function __construct(\Ovh\StructType\SqlpriveAlertInfotReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\SqlpriveAlertInfotReturn|null
+     * @return \Ovh\StructType\SqlpriveAlertInfotReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class SqlpriveAlertInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\SqlpriveAlertInfotReturn $return
-     * @return \PayPal\StructType\SqlpriveAlertInfoResponse
+     * @param \Ovh\StructType\SqlpriveAlertInfotReturn $return
+     * @return \Ovh\StructType\SqlpriveAlertInfoResponse
      */
-    public function setReturn(\PayPal\StructType\SqlpriveAlertInfotReturn $return = null)
+    public function setReturn(\Ovh\StructType\SqlpriveAlertInfotReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class SqlpriveAlertInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SqlpriveAlertInfoResponse
+     * @return \Ovh\StructType\SqlpriveAlertInfoResponse
      */
     public static function __set_state(array $array)
     {

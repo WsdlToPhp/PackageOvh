@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfMultiFtpStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\MultiFtpStruct[]
+     * @var \Ovh\StructType\MultiFtpStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfMultiFtpStructType
      * @uses MyArrayOfMultiFtpStructType::setItem()
-     * @param \PayPal\StructType\MultiFtpStruct[] $item
+     * @param \Ovh\StructType\MultiFtpStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfMultiFtpStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\MultiFtpStruct[]|null
+     * @return \Ovh\StructType\MultiFtpStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfMultiFtpStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\MultiFtpStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfMultiFtpStructType
+     * @param \Ovh\StructType\MultiFtpStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfMultiFtpStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfMultiFtpStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfMultiFtpStructTypeItemItem instanceof \PayPal\StructType\MultiFtpStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\MultiFtpStruct, "%s" given', is_object($myArrayOfMultiFtpStructTypeItemItem) ? get_class($myArrayOfMultiFtpStructTypeItemItem) : gettype($myArrayOfMultiFtpStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfMultiFtpStructTypeItemItem instanceof \Ovh\StructType\MultiFtpStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\MultiFtpStruct, "%s" given', is_object($myArrayOfMultiFtpStructTypeItemItem) ? get_class($myArrayOfMultiFtpStructTypeItemItem) : gettype($myArrayOfMultiFtpStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfMultiFtpStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\MultiFtpStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfMultiFtpStructType
+     * @param \Ovh\StructType\MultiFtpStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfMultiFtpStructType
      */
-    public function addToItem(\PayPal\StructType\MultiFtpStruct $item)
+    public function addToItem(\Ovh\StructType\MultiFtpStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\MultiFtpStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\MultiFtpStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\MultiFtpStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\MultiFtpStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfMultiFtpStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\MultiFtpStruct|null
+     * @return \Ovh\StructType\MultiFtpStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfMultiFtpStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\MultiFtpStruct|null
+     * @return \Ovh\StructType\MultiFtpStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfMultiFtpStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\MultiFtpStruct|null
+     * @return \Ovh\StructType\MultiFtpStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfMultiFtpStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\MultiFtpStruct|null
+     * @return \Ovh\StructType\MultiFtpStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfMultiFtpStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\MultiFtpStruct|null
+     * @return \Ovh\StructType\MultiFtpStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfMultiFtpStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfMultiFtpStructType
+     * @return \Ovh\ArrayType\MyArrayOfMultiFtpStructType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class NicInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\NicInfoReturn
+     * @var \Ovh\StructType\NicInfoReturn
      */
     public $return;
     /**
      * Constructor method for nicInfoResponse
      * @uses NicInfoResponse::setReturn()
-     * @param \PayPal\StructType\NicInfoReturn $return
+     * @param \Ovh\StructType\NicInfoReturn $return
      */
-    public function __construct(\PayPal\StructType\NicInfoReturn $return = null)
+    public function __construct(\Ovh\StructType\NicInfoReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\NicInfoReturn|null
+     * @return \Ovh\StructType\NicInfoReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class NicInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\NicInfoReturn $return
-     * @return \PayPal\StructType\NicInfoResponse
+     * @param \Ovh\StructType\NicInfoReturn $return
+     * @return \Ovh\StructType\NicInfoResponse
      */
-    public function setReturn(\PayPal\StructType\NicInfoReturn $return = null)
+    public function setReturn(\Ovh\StructType\NicInfoReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class NicInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\NicInfoResponse
+     * @return \Ovh\StructType\NicInfoResponse
      */
     public static function __set_state(array $array)
     {

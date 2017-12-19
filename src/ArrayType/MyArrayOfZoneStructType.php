@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfZoneStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\ZoneStruct[]
+     * @var \Ovh\StructType\ZoneStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfZoneStructType
      * @uses MyArrayOfZoneStructType::setItem()
-     * @param \PayPal\StructType\ZoneStruct[] $item
+     * @param \Ovh\StructType\ZoneStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfZoneStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\ZoneStruct[]|null
+     * @return \Ovh\StructType\ZoneStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfZoneStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\ZoneStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfZoneStructType
+     * @param \Ovh\StructType\ZoneStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfZoneStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfZoneStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfZoneStructTypeItemItem instanceof \PayPal\StructType\ZoneStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\ZoneStruct, "%s" given', is_object($myArrayOfZoneStructTypeItemItem) ? get_class($myArrayOfZoneStructTypeItemItem) : gettype($myArrayOfZoneStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfZoneStructTypeItemItem instanceof \Ovh\StructType\ZoneStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\ZoneStruct, "%s" given', is_object($myArrayOfZoneStructTypeItemItem) ? get_class($myArrayOfZoneStructTypeItemItem) : gettype($myArrayOfZoneStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfZoneStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\ZoneStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfZoneStructType
+     * @param \Ovh\StructType\ZoneStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfZoneStructType
      */
-    public function addToItem(\PayPal\StructType\ZoneStruct $item)
+    public function addToItem(\Ovh\StructType\ZoneStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\ZoneStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\ZoneStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\ZoneStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\ZoneStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfZoneStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\ZoneStruct|null
+     * @return \Ovh\StructType\ZoneStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfZoneStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\ZoneStruct|null
+     * @return \Ovh\StructType\ZoneStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfZoneStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\ZoneStruct|null
+     * @return \Ovh\StructType\ZoneStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfZoneStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\ZoneStruct|null
+     * @return \Ovh\StructType\ZoneStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfZoneStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\ZoneStruct|null
+     * @return \Ovh\StructType\ZoneStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfZoneStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfZoneStructType
+     * @return \Ovh\ArrayType\MyArrayOfZoneStructType
      */
     public static function __set_state(array $array)
     {

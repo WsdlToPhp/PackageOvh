@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,7 +38,7 @@ class SupportThreadTreeReturn extends AbstractStructBase
     public $reportReason;
     /**
      * The messages
-     * @var \PayPal\ArrayType\MyArrayOfSupportThreadMessageDetailStructType
+     * @var \Ovh\ArrayType\MyArrayOfSupportThreadMessageDetailStructType
      */
     public $messages;
     /**
@@ -54,9 +54,9 @@ class SupportThreadTreeReturn extends AbstractStructBase
      * @param string $domain
      * @param int $closed
      * @param string $reportReason
-     * @param \PayPal\ArrayType\MyArrayOfSupportThreadMessageDetailStructType $messages
+     * @param \Ovh\ArrayType\MyArrayOfSupportThreadMessageDetailStructType $messages
      */
-    public function __construct($id = null, $subject = null, $domain = null, $closed = null, $reportReason = null, \PayPal\ArrayType\MyArrayOfSupportThreadMessageDetailStructType $messages = null)
+    public function __construct($id = null, $subject = null, $domain = null, $closed = null, $reportReason = null, \Ovh\ArrayType\MyArrayOfSupportThreadMessageDetailStructType $messages = null)
     {
         $this
             ->setId($id)
@@ -77,7 +77,7 @@ class SupportThreadTreeReturn extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\SupportThreadTreeReturn
+     * @return \Ovh\StructType\SupportThreadTreeReturn
      */
     public function setId($id = null)
     {
@@ -99,7 +99,7 @@ class SupportThreadTreeReturn extends AbstractStructBase
     /**
      * Set subject value
      * @param string $subject
-     * @return \PayPal\StructType\SupportThreadTreeReturn
+     * @return \Ovh\StructType\SupportThreadTreeReturn
      */
     public function setSubject($subject = null)
     {
@@ -121,7 +121,7 @@ class SupportThreadTreeReturn extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\SupportThreadTreeReturn
+     * @return \Ovh\StructType\SupportThreadTreeReturn
      */
     public function setDomain($domain = null)
     {
@@ -143,7 +143,7 @@ class SupportThreadTreeReturn extends AbstractStructBase
     /**
      * Set closed value
      * @param int $closed
-     * @return \PayPal\StructType\SupportThreadTreeReturn
+     * @return \Ovh\StructType\SupportThreadTreeReturn
      */
     public function setClosed($closed = null)
     {
@@ -165,7 +165,7 @@ class SupportThreadTreeReturn extends AbstractStructBase
     /**
      * Set reportReason value
      * @param string $reportReason
-     * @return \PayPal\StructType\SupportThreadTreeReturn
+     * @return \Ovh\StructType\SupportThreadTreeReturn
      */
     public function setReportReason($reportReason = null)
     {
@@ -178,7 +178,7 @@ class SupportThreadTreeReturn extends AbstractStructBase
     }
     /**
      * Get messages value
-     * @return \PayPal\ArrayType\MyArrayOfSupportThreadMessageDetailStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfSupportThreadMessageDetailStructType|null
      */
     public function getMessages()
     {
@@ -186,10 +186,10 @@ class SupportThreadTreeReturn extends AbstractStructBase
     }
     /**
      * Set messages value
-     * @param \PayPal\ArrayType\MyArrayOfSupportThreadMessageDetailStructType $messages
-     * @return \PayPal\StructType\SupportThreadTreeReturn
+     * @param \Ovh\ArrayType\MyArrayOfSupportThreadMessageDetailStructType $messages
+     * @return \Ovh\StructType\SupportThreadTreeReturn
      */
-    public function setMessages(\PayPal\ArrayType\MyArrayOfSupportThreadMessageDetailStructType $messages = null)
+    public function setMessages(\Ovh\ArrayType\MyArrayOfSupportThreadMessageDetailStructType $messages = null)
     {
         $this->messages = $messages;
         return $this;
@@ -200,7 +200,7 @@ class SupportThreadTreeReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SupportThreadTreeReturn
+     * @return \Ovh\StructType\SupportThreadTreeReturn
      */
     public static function __set_state(array $array)
     {

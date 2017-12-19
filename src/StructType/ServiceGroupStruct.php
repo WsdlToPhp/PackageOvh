@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class ServiceGroupStruct extends AbstractStructBase
     public $comment;
     /**
      * The details
-     * @var \PayPal\ArrayType\MyArrayOfServiceStructType
+     * @var \Ovh\ArrayType\MyArrayOfServiceStructType
      */
     public $details;
     /**
@@ -33,9 +33,9 @@ class ServiceGroupStruct extends AbstractStructBase
      * @uses ServiceGroupStruct::setDetails()
      * @param string $name
      * @param string $comment
-     * @param \PayPal\ArrayType\MyArrayOfServiceStructType $details
+     * @param \Ovh\ArrayType\MyArrayOfServiceStructType $details
      */
-    public function __construct($name = null, $comment = null, \PayPal\ArrayType\MyArrayOfServiceStructType $details = null)
+    public function __construct($name = null, $comment = null, \Ovh\ArrayType\MyArrayOfServiceStructType $details = null)
     {
         $this
             ->setName($name)
@@ -53,7 +53,7 @@ class ServiceGroupStruct extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\ServiceGroupStruct
+     * @return \Ovh\StructType\ServiceGroupStruct
      */
     public function setName($name = null)
     {
@@ -75,7 +75,7 @@ class ServiceGroupStruct extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \PayPal\StructType\ServiceGroupStruct
+     * @return \Ovh\StructType\ServiceGroupStruct
      */
     public function setComment($comment = null)
     {
@@ -88,7 +88,7 @@ class ServiceGroupStruct extends AbstractStructBase
     }
     /**
      * Get details value
-     * @return \PayPal\ArrayType\MyArrayOfServiceStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfServiceStructType|null
      */
     public function getDetails()
     {
@@ -96,10 +96,10 @@ class ServiceGroupStruct extends AbstractStructBase
     }
     /**
      * Set details value
-     * @param \PayPal\ArrayType\MyArrayOfServiceStructType $details
-     * @return \PayPal\StructType\ServiceGroupStruct
+     * @param \Ovh\ArrayType\MyArrayOfServiceStructType $details
+     * @return \Ovh\StructType\ServiceGroupStruct
      */
-    public function setDetails(\PayPal\ArrayType\MyArrayOfServiceStructType $details = null)
+    public function setDetails(\Ovh\ArrayType\MyArrayOfServiceStructType $details = null)
     {
         $this->details = $details;
         return $this;
@@ -110,7 +110,7 @@ class ServiceGroupStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ServiceGroupStruct
+     * @return \Ovh\StructType\ServiceGroupStruct
      */
     public static function __set_state(array $array)
     {

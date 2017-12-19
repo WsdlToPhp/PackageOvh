@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class TelephonyBillingAccountDel extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyBillingAccountDel
+     * @return \Ovh\StructType\TelephonyBillingAccountDel
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class TelephonyBillingAccountDel extends AbstractStructBase
     /**
      * Set billingAccount value
      * @param string $billingAccount
-     * @return \PayPal\StructType\TelephonyBillingAccountDel
+     * @return \Ovh\StructType\TelephonyBillingAccountDel
      */
     public function setBillingAccount($billingAccount = null)
     {
@@ -103,7 +103,7 @@ class TelephonyBillingAccountDel extends AbstractStructBase
     /**
      * Set cancelDelete value
      * @param bool $cancelDelete
-     * @return \PayPal\StructType\TelephonyBillingAccountDel
+     * @return \Ovh\StructType\TelephonyBillingAccountDel
      */
     public function setCancelDelete($cancelDelete = null)
     {
@@ -120,7 +120,7 @@ class TelephonyBillingAccountDel extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyBillingAccountDel
+     * @return \Ovh\StructType\TelephonyBillingAccountDel
      */
     public static function __set_state(array $array)
     {

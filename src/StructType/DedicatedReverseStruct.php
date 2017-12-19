@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class DedicatedReverseStruct extends AbstractStructBase
     /**
      * Set reverse value
      * @param string $reverse
-     * @return \PayPal\StructType\DedicatedReverseStruct
+     * @return \Ovh\StructType\DedicatedReverseStruct
      */
     public function setReverse($reverse = null)
     {
@@ -75,7 +75,7 @@ class DedicatedReverseStruct extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\DedicatedReverseStruct
+     * @return \Ovh\StructType\DedicatedReverseStruct
      */
     public function setIp($ip = null)
     {
@@ -97,7 +97,7 @@ class DedicatedReverseStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\DedicatedReverseStruct
+     * @return \Ovh\StructType\DedicatedReverseStruct
      */
     public function setType($type = null)
     {
@@ -114,7 +114,7 @@ class DedicatedReverseStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedReverseStruct
+     * @return \Ovh\StructType\DedicatedReverseStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class EmailFilterList extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\EmailFilterList
+     * @return \Ovh\StructType\EmailFilterList
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class EmailFilterList extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\EmailFilterList
+     * @return \Ovh\StructType\EmailFilterList
      */
     public function setDomain($domain = null)
     {
@@ -103,7 +103,7 @@ class EmailFilterList extends AbstractStructBase
     /**
      * Set pop value
      * @param string $pop
-     * @return \PayPal\StructType\EmailFilterList
+     * @return \Ovh\StructType\EmailFilterList
      */
     public function setPop($pop = null)
     {
@@ -120,7 +120,7 @@ class EmailFilterList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\EmailFilterList
+     * @return \Ovh\StructType\EmailFilterList
      */
     public static function __set_state(array $array)
     {

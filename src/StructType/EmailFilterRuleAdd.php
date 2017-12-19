@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -99,7 +99,7 @@ class EmailFilterRuleAdd extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\EmailFilterRuleAdd
+     * @return \Ovh\StructType\EmailFilterRuleAdd
      */
     public function setSession($session = null)
     {
@@ -121,7 +121,7 @@ class EmailFilterRuleAdd extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\EmailFilterRuleAdd
+     * @return \Ovh\StructType\EmailFilterRuleAdd
      */
     public function setDomain($domain = null)
     {
@@ -143,7 +143,7 @@ class EmailFilterRuleAdd extends AbstractStructBase
     /**
      * Set pop value
      * @param string $pop
-     * @return \PayPal\StructType\EmailFilterRuleAdd
+     * @return \Ovh\StructType\EmailFilterRuleAdd
      */
     public function setPop($pop = null)
     {
@@ -165,7 +165,7 @@ class EmailFilterRuleAdd extends AbstractStructBase
     /**
      * Set filter value
      * @param string $filter
-     * @return \PayPal\StructType\EmailFilterRuleAdd
+     * @return \Ovh\StructType\EmailFilterRuleAdd
      */
     public function setFilter($filter = null)
     {
@@ -187,7 +187,7 @@ class EmailFilterRuleAdd extends AbstractStructBase
     /**
      * Set header value
      * @param string $header
-     * @return \PayPal\StructType\EmailFilterRuleAdd
+     * @return \Ovh\StructType\EmailFilterRuleAdd
      */
     public function setHeader($header = null)
     {
@@ -209,7 +209,7 @@ class EmailFilterRuleAdd extends AbstractStructBase
     /**
      * Set rule value
      * @param string $rule
-     * @return \PayPal\StructType\EmailFilterRuleAdd
+     * @return \Ovh\StructType\EmailFilterRuleAdd
      */
     public function setRule($rule = null)
     {
@@ -231,7 +231,7 @@ class EmailFilterRuleAdd extends AbstractStructBase
     /**
      * Set rule_param value
      * @param string $rule_param
-     * @return \PayPal\StructType\EmailFilterRuleAdd
+     * @return \Ovh\StructType\EmailFilterRuleAdd
      */
     public function setRule_param($rule_param = null)
     {
@@ -248,7 +248,7 @@ class EmailFilterRuleAdd extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\EmailFilterRuleAdd
+     * @return \Ovh\StructType\EmailFilterRuleAdd
      */
     public static function __set_state(array $array)
     {

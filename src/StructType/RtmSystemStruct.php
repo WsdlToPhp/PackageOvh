@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,17 +38,17 @@ class RtmSystemStruct extends AbstractStructBase
     public $freshest_file_date;
     /**
      * The os
-     * @var \PayPal\StructType\RtmSystemOsStruct
+     * @var \Ovh\StructType\RtmSystemOsStruct
      */
     public $os;
     /**
      * The rtm
-     * @var \PayPal\StructType\RtmSystemRtmStruct
+     * @var \Ovh\StructType\RtmSystemRtmStruct
      */
     public $rtm;
     /**
      * The kernel
-     * @var \PayPal\StructType\RtmSystemKernelStruct
+     * @var \Ovh\StructType\RtmSystemKernelStruct
      */
     public $kernel;
     /**
@@ -66,11 +66,11 @@ class RtmSystemStruct extends AbstractStructBase
      * @param string $hostname
      * @param int $uptime
      * @param string $freshest_file_date
-     * @param \PayPal\StructType\RtmSystemOsStruct $os
-     * @param \PayPal\StructType\RtmSystemRtmStruct $rtm
-     * @param \PayPal\StructType\RtmSystemKernelStruct $kernel
+     * @param \Ovh\StructType\RtmSystemOsStruct $os
+     * @param \Ovh\StructType\RtmSystemRtmStruct $rtm
+     * @param \Ovh\StructType\RtmSystemKernelStruct $kernel
      */
-    public function __construct($last_update = null, $ip = null, $hostname = null, $uptime = null, $freshest_file_date = null, \PayPal\StructType\RtmSystemOsStruct $os = null, \PayPal\StructType\RtmSystemRtmStruct $rtm = null, \PayPal\StructType\RtmSystemKernelStruct $kernel = null)
+    public function __construct($last_update = null, $ip = null, $hostname = null, $uptime = null, $freshest_file_date = null, \Ovh\StructType\RtmSystemOsStruct $os = null, \Ovh\StructType\RtmSystemRtmStruct $rtm = null, \Ovh\StructType\RtmSystemKernelStruct $kernel = null)
     {
         $this
             ->setLast_update($last_update)
@@ -93,7 +93,7 @@ class RtmSystemStruct extends AbstractStructBase
     /**
      * Set last_update value
      * @param string $last_update
-     * @return \PayPal\StructType\RtmSystemStruct
+     * @return \Ovh\StructType\RtmSystemStruct
      */
     public function setLast_update($last_update = null)
     {
@@ -115,7 +115,7 @@ class RtmSystemStruct extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\RtmSystemStruct
+     * @return \Ovh\StructType\RtmSystemStruct
      */
     public function setIp($ip = null)
     {
@@ -137,7 +137,7 @@ class RtmSystemStruct extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\RtmSystemStruct
+     * @return \Ovh\StructType\RtmSystemStruct
      */
     public function setHostname($hostname = null)
     {
@@ -159,7 +159,7 @@ class RtmSystemStruct extends AbstractStructBase
     /**
      * Set uptime value
      * @param int $uptime
-     * @return \PayPal\StructType\RtmSystemStruct
+     * @return \Ovh\StructType\RtmSystemStruct
      */
     public function setUptime($uptime = null)
     {
@@ -181,7 +181,7 @@ class RtmSystemStruct extends AbstractStructBase
     /**
      * Set freshest_file_date value
      * @param string $freshest_file_date
-     * @return \PayPal\StructType\RtmSystemStruct
+     * @return \Ovh\StructType\RtmSystemStruct
      */
     public function setFreshest_file_date($freshest_file_date = null)
     {
@@ -194,7 +194,7 @@ class RtmSystemStruct extends AbstractStructBase
     }
     /**
      * Get os value
-     * @return \PayPal\StructType\RtmSystemOsStruct|null
+     * @return \Ovh\StructType\RtmSystemOsStruct|null
      */
     public function getOs()
     {
@@ -202,17 +202,17 @@ class RtmSystemStruct extends AbstractStructBase
     }
     /**
      * Set os value
-     * @param \PayPal\StructType\RtmSystemOsStruct $os
-     * @return \PayPal\StructType\RtmSystemStruct
+     * @param \Ovh\StructType\RtmSystemOsStruct $os
+     * @return \Ovh\StructType\RtmSystemStruct
      */
-    public function setOs(\PayPal\StructType\RtmSystemOsStruct $os = null)
+    public function setOs(\Ovh\StructType\RtmSystemOsStruct $os = null)
     {
         $this->os = $os;
         return $this;
     }
     /**
      * Get rtm value
-     * @return \PayPal\StructType\RtmSystemRtmStruct|null
+     * @return \Ovh\StructType\RtmSystemRtmStruct|null
      */
     public function getRtm()
     {
@@ -220,17 +220,17 @@ class RtmSystemStruct extends AbstractStructBase
     }
     /**
      * Set rtm value
-     * @param \PayPal\StructType\RtmSystemRtmStruct $rtm
-     * @return \PayPal\StructType\RtmSystemStruct
+     * @param \Ovh\StructType\RtmSystemRtmStruct $rtm
+     * @return \Ovh\StructType\RtmSystemStruct
      */
-    public function setRtm(\PayPal\StructType\RtmSystemRtmStruct $rtm = null)
+    public function setRtm(\Ovh\StructType\RtmSystemRtmStruct $rtm = null)
     {
         $this->rtm = $rtm;
         return $this;
     }
     /**
      * Get kernel value
-     * @return \PayPal\StructType\RtmSystemKernelStruct|null
+     * @return \Ovh\StructType\RtmSystemKernelStruct|null
      */
     public function getKernel()
     {
@@ -238,10 +238,10 @@ class RtmSystemStruct extends AbstractStructBase
     }
     /**
      * Set kernel value
-     * @param \PayPal\StructType\RtmSystemKernelStruct $kernel
-     * @return \PayPal\StructType\RtmSystemStruct
+     * @param \Ovh\StructType\RtmSystemKernelStruct $kernel
+     * @return \Ovh\StructType\RtmSystemStruct
      */
-    public function setKernel(\PayPal\StructType\RtmSystemKernelStruct $kernel = null)
+    public function setKernel(\Ovh\StructType\RtmSystemKernelStruct $kernel = null)
     {
         $this->kernel = $kernel;
         return $this;
@@ -252,7 +252,7 @@ class RtmSystemStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RtmSystemStruct
+     * @return \Ovh\StructType\RtmSystemStruct
      */
     public static function __set_state(array $array)
     {

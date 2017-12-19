@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DomainOperationListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfOperationStructType
+     * @var \Ovh\ArrayType\MyArrayOfOperationStructType
      */
     public $return;
     /**
      * Constructor method for domainOperationListResponse
      * @uses DomainOperationListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfOperationStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfOperationStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfOperationStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfOperationStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfOperationStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfOperationStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DomainOperationListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfOperationStructType $return
-     * @return \PayPal\StructType\DomainOperationListResponse
+     * @param \Ovh\ArrayType\MyArrayOfOperationStructType $return
+     * @return \Ovh\StructType\DomainOperationListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfOperationStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfOperationStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DomainOperationListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DomainOperationListResponse
+     * @return \Ovh\StructType\DomainOperationListResponse
      */
     public static function __set_state(array $array)
     {

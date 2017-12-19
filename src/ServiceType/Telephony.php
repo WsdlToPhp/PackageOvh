@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyNumberInfo $parameters
-     * @return \PayPal\StructType\TelephonyNumberInfoResponse|bool
+     * @param \Ovh\StructType\TelephonyNumberInfo $parameters
+     * @return \Ovh\StructType\TelephonyNumberInfoResponse|bool
      */
-    public function telephonyNumberInfo(\PayPal\StructType\TelephonyNumberInfo $parameters)
+    public function telephonyNumberInfo(\Ovh\StructType\TelephonyNumberInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyNumberInfo($parameters));
@@ -36,10 +36,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyVoicemailOptionsList $parameters
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsListResponse|bool
+     * @param \Ovh\StructType\TelephonyVoicemailOptionsList $parameters
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsListResponse|bool
      */
-    public function telephonyVoicemailOptionsList(\PayPal\StructType\TelephonyVoicemailOptionsList $parameters)
+    public function telephonyVoicemailOptionsList(\Ovh\StructType\TelephonyVoicemailOptionsList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyVoicemailOptionsList($parameters));
@@ -55,10 +55,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookSharePeerList $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookSharePeerListResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookSharePeerList $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookSharePeerListResponse|bool
      */
-    public function telephonyPhonebookSharePeerList(\PayPal\StructType\TelephonyPhonebookSharePeerList $parameters)
+    public function telephonyPhonebookSharePeerList(\Ovh\StructType\TelephonyPhonebookSharePeerList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookSharePeerList($parameters));
@@ -74,10 +74,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyRedirectModify $parameters
-     * @return \PayPal\StructType\TelephonyRedirectModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyRedirectModify $parameters
+     * @return \Ovh\StructType\TelephonyRedirectModifyResponse|bool
      */
-    public function telephonyRedirectModify(\PayPal\StructType\TelephonyRedirectModify $parameters)
+    public function telephonyRedirectModify(\Ovh\StructType\TelephonyRedirectModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyRedirectModify($parameters));
@@ -93,10 +93,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyNumberModify $parameters
-     * @return \PayPal\StructType\TelephonyNumberModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyNumberModify $parameters
+     * @return \Ovh\StructType\TelephonyNumberModifyResponse|bool
      */
-    public function telephonyNumberModify(\PayPal\StructType\TelephonyNumberModify $parameters)
+    public function telephonyNumberModify(\Ovh\StructType\TelephonyNumberModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyNumberModify($parameters));
@@ -112,10 +112,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyGetCitiesFromZip $parameters
-     * @return \PayPal\StructType\TelephonyGetCitiesFromZipResponse|bool
+     * @param \Ovh\StructType\TelephonyGetCitiesFromZip $parameters
+     * @return \Ovh\StructType\TelephonyGetCitiesFromZipResponse|bool
      */
-    public function telephonyGetCitiesFromZip(\PayPal\StructType\TelephonyGetCitiesFromZip $parameters)
+    public function telephonyGetCitiesFromZip(\Ovh\StructType\TelephonyGetCitiesFromZip $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyGetCitiesFromZip($parameters));
@@ -131,10 +131,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsplusSendSmsMt $parameters
-     * @return \PayPal\StructType\TelephonySmsplusSendSmsMtResponse|bool
+     * @param \Ovh\StructType\TelephonySmsplusSendSmsMt $parameters
+     * @return \Ovh\StructType\TelephonySmsplusSendSmsMtResponse|bool
      */
-    public function telephonySmsplusSendSmsMt(\PayPal\StructType\TelephonySmsplusSendSmsMt $parameters)
+    public function telephonySmsplusSendSmsMt(\Ovh\StructType\TelephonySmsplusSendSmsMt $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsplusSendSmsMt($parameters));
@@ -150,10 +150,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsUserGetCsvAttachment $parameters
-     * @return \PayPal\StructType\TelephonySmsUserGetCsvAttachmentResponse|bool
+     * @param \Ovh\StructType\TelephonySmsUserGetCsvAttachment $parameters
+     * @return \Ovh\StructType\TelephonySmsUserGetCsvAttachmentResponse|bool
      */
-    public function telephonySmsUserGetCsvAttachment(\PayPal\StructType\TelephonySmsUserGetCsvAttachment $parameters)
+    public function telephonySmsUserGetCsvAttachment(\Ovh\StructType\TelephonySmsUserGetCsvAttachment $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsUserGetCsvAttachment($parameters));
@@ -169,10 +169,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookOnSmsList $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsListResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookOnSmsList $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsListResponse|bool
      */
-    public function telephonyPhonebookOnSmsList(\PayPal\StructType\TelephonyPhonebookOnSmsList $parameters)
+    public function telephonyPhonebookOnSmsList(\Ovh\StructType\TelephonyPhonebookOnSmsList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookOnSmsList($parameters));
@@ -188,10 +188,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySetClosureEvents $parameters
-     * @return \PayPal\StructType\TelephonySetClosureEventsResponse|bool
+     * @param \Ovh\StructType\TelephonySetClosureEvents $parameters
+     * @return \Ovh\StructType\TelephonySetClosureEventsResponse|bool
      */
-    public function telephonySetClosureEvents(\PayPal\StructType\TelephonySetClosureEvents $parameters)
+    public function telephonySetClosureEvents(\Ovh\StructType\TelephonySetClosureEvents $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySetClosureEvents($parameters));
@@ -207,10 +207,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyNicSetSipDomain $parameters
-     * @return \PayPal\StructType\TelephonyNicSetSipDomainResponse|bool
+     * @param \Ovh\StructType\TelephonyNicSetSipDomain $parameters
+     * @return \Ovh\StructType\TelephonyNicSetSipDomainResponse|bool
      */
-    public function telephonyNicSetSipDomain(\PayPal\StructType\TelephonyNicSetSipDomain $parameters)
+    public function telephonyNicSetSipDomain(\Ovh\StructType\TelephonyNicSetSipDomain $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyNicSetSipDomain($parameters));
@@ -226,10 +226,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsMultiSend $parameters
-     * @return \PayPal\StructType\TelephonySmsMultiSendResponse|bool
+     * @param \Ovh\StructType\TelephonySmsMultiSend $parameters
+     * @return \Ovh\StructType\TelephonySmsMultiSendResponse|bool
      */
-    public function telephonySmsMultiSend(\PayPal\StructType\TelephonySmsMultiSend $parameters)
+    public function telephonySmsMultiSend(\Ovh\StructType\TelephonySmsMultiSend $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsMultiSend($parameters));
@@ -245,10 +245,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsUserAddCsvAttachment $parameters
-     * @return \PayPal\StructType\TelephonySmsUserAddCsvAttachmentResponse|bool
+     * @param \Ovh\StructType\TelephonySmsUserAddCsvAttachment $parameters
+     * @return \Ovh\StructType\TelephonySmsUserAddCsvAttachmentResponse|bool
      */
-    public function telephonySmsUserAddCsvAttachment(\PayPal\StructType\TelephonySmsUserAddCsvAttachment $parameters)
+    public function telephonySmsUserAddCsvAttachment(\Ovh\StructType\TelephonySmsUserAddCsvAttachment $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsUserAddCsvAttachment($parameters));
@@ -264,10 +264,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySpareDel $parameters
-     * @return \PayPal\StructType\TelephonySpareDelResponse|bool
+     * @param \Ovh\StructType\TelephonySpareDel $parameters
+     * @return \Ovh\StructType\TelephonySpareDelResponse|bool
      */
-    public function telephonySpareDel(\PayPal\StructType\TelephonySpareDel $parameters)
+    public function telephonySpareDel(\Ovh\StructType\TelephonySpareDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySpareDel($parameters));
@@ -283,10 +283,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyFaxHistory $parameters
-     * @return \PayPal\StructType\TelephonyFaxHistoryResponse|bool
+     * @param \Ovh\StructType\TelephonyFaxHistory $parameters
+     * @return \Ovh\StructType\TelephonyFaxHistoryResponse|bool
      */
-    public function telephonyFaxHistory(\PayPal\StructType\TelephonyFaxHistory $parameters)
+    public function telephonyFaxHistory(\Ovh\StructType\TelephonyFaxHistory $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyFaxHistory($parameters));
@@ -302,10 +302,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyFreefaxToVoicefax $parameters
-     * @return \PayPal\StructType\TelephonyFreefaxToVoicefaxResponse|bool
+     * @param \Ovh\StructType\TelephonyFreefaxToVoicefax $parameters
+     * @return \Ovh\StructType\TelephonyFreefaxToVoicefaxResponse|bool
      */
-    public function telephonyFreefaxToVoicefax(\PayPal\StructType\TelephonyFreefaxToVoicefax $parameters)
+    public function telephonyFreefaxToVoicefax(\Ovh\StructType\TelephonyFreefaxToVoicefax $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyFreefaxToVoicefax($parameters));
@@ -321,10 +321,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyFaxSend $parameters
-     * @return \PayPal\StructType\TelephonyFaxSendResponse|bool
+     * @param \Ovh\StructType\TelephonyFaxSend $parameters
+     * @return \Ovh\StructType\TelephonyFaxSendResponse|bool
      */
-    public function telephonyFaxSend(\PayPal\StructType\TelephonyFaxSend $parameters)
+    public function telephonyFaxSend(\Ovh\StructType\TelephonyFaxSend $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyFaxSend($parameters));
@@ -340,10 +340,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyRestrictionList $parameters
-     * @return \PayPal\StructType\TelephonyRestrictionListResponse|bool
+     * @param \Ovh\StructType\TelephonyRestrictionList $parameters
+     * @return \Ovh\StructType\TelephonyRestrictionListResponse|bool
      */
-    public function telephonyRestrictionList(\PayPal\StructType\TelephonyRestrictionList $parameters)
+    public function telephonyRestrictionList(\Ovh\StructType\TelephonyRestrictionList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyRestrictionList($parameters));
@@ -359,10 +359,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyBillList $parameters
-     * @return \PayPal\StructType\TelephonyBillListResponse|bool
+     * @param \Ovh\StructType\TelephonyBillList $parameters
+     * @return \Ovh\StructType\TelephonyBillListResponse|bool
      */
-    public function telephonyBillList(\PayPal\StructType\TelephonyBillList $parameters)
+    public function telephonyBillList(\Ovh\StructType\TelephonyBillList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyBillList($parameters));
@@ -378,10 +378,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyNumberCustomList $parameters
-     * @return \PayPal\StructType\TelephonyNumberCustomListResponse|bool
+     * @param \Ovh\StructType\TelephonyNumberCustomList $parameters
+     * @return \Ovh\StructType\TelephonyNumberCustomListResponse|bool
      */
-    public function telephonyNumberCustomList(\PayPal\StructType\TelephonyNumberCustomList $parameters)
+    public function telephonyNumberCustomList(\Ovh\StructType\TelephonyNumberCustomList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyNumberCustomList($parameters));
@@ -397,10 +397,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPlugAndPhoneSkinModify $parameters
-     * @return \PayPal\StructType\TelephonyPlugAndPhoneSkinModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyPlugAndPhoneSkinModify $parameters
+     * @return \Ovh\StructType\TelephonyPlugAndPhoneSkinModifyResponse|bool
      */
-    public function telephonyPlugAndPhoneSkinModify(\PayPal\StructType\TelephonyPlugAndPhoneSkinModify $parameters)
+    public function telephonyPlugAndPhoneSkinModify(\Ovh\StructType\TelephonyPlugAndPhoneSkinModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPlugAndPhoneSkinModify($parameters));
@@ -416,10 +416,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyFaxOptionsModify $parameters
-     * @return \PayPal\StructType\TelephonyFaxOptionsModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyFaxOptionsModify $parameters
+     * @return \Ovh\StructType\TelephonyFaxOptionsModifyResponse|bool
      */
-    public function telephonyFaxOptionsModify(\PayPal\StructType\TelephonyFaxOptionsModify $parameters)
+    public function telephonyFaxOptionsModify(\Ovh\StructType\TelephonyFaxOptionsModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyFaxOptionsModify($parameters));
@@ -435,10 +435,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyBillingAccountSummary $parameters
-     * @return \PayPal\StructType\TelephonyBillingAccountSummaryResponse|bool
+     * @param \Ovh\StructType\TelephonyBillingAccountSummary $parameters
+     * @return \Ovh\StructType\TelephonyBillingAccountSummaryResponse|bool
      */
-    public function telephonyBillingAccountSummary(\PayPal\StructType\TelephonyBillingAccountSummary $parameters)
+    public function telephonyBillingAccountSummary(\Ovh\StructType\TelephonyBillingAccountSummary $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyBillingAccountSummary($parameters));
@@ -454,10 +454,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyConferenceSetAnnounceFile $parameters
-     * @return \PayPal\StructType\TelephonyConferenceSetAnnounceFileResponse|bool
+     * @param \Ovh\StructType\TelephonyConferenceSetAnnounceFile $parameters
+     * @return \Ovh\StructType\TelephonyConferenceSetAnnounceFileResponse|bool
      */
-    public function telephonyConferenceSetAnnounceFile(\PayPal\StructType\TelephonyConferenceSetAnnounceFile $parameters)
+    public function telephonyConferenceSetAnnounceFile(\Ovh\StructType\TelephonyConferenceSetAnnounceFile $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyConferenceSetAnnounceFile($parameters));
@@ -473,10 +473,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookOnSmsAdd $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsAddResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookOnSmsAdd $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsAddResponse|bool
      */
-    public function telephonyPhonebookOnSmsAdd(\PayPal\StructType\TelephonyPhonebookOnSmsAdd $parameters)
+    public function telephonyPhonebookOnSmsAdd(\Ovh\StructType\TelephonyPhonebookOnSmsAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookOnSmsAdd($parameters));
@@ -492,10 +492,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyClick2CallUserDel $parameters
-     * @return \PayPal\StructType\TelephonyClick2CallUserDelResponse|bool
+     * @param \Ovh\StructType\TelephonyClick2CallUserDel $parameters
+     * @return \Ovh\StructType\TelephonyClick2CallUserDelResponse|bool
      */
-    public function telephonyClick2CallUserDel(\PayPal\StructType\TelephonyClick2CallUserDel $parameters)
+    public function telephonyClick2CallUserDel(\Ovh\StructType\TelephonyClick2CallUserDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyClick2CallUserDel($parameters));
@@ -511,10 +511,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsAccountList $parameters
-     * @return \PayPal\StructType\TelephonySmsAccountListResponse|bool
+     * @param \Ovh\StructType\TelephonySmsAccountList $parameters
+     * @return \Ovh\StructType\TelephonySmsAccountListResponse|bool
      */
-    public function telephonySmsAccountList(\PayPal\StructType\TelephonySmsAccountList $parameters)
+    public function telephonySmsAccountList(\Ovh\StructType\TelephonySmsAccountList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsAccountList($parameters));
@@ -531,10 +531,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyBillingAccountConsumptionCSVByMail $parameters
-     * @return \PayPal\StructType\TelephonyBillingAccountConsumptionCSVByMailResponse|bool
+     * @param \Ovh\StructType\TelephonyBillingAccountConsumptionCSVByMail $parameters
+     * @return \Ovh\StructType\TelephonyBillingAccountConsumptionCSVByMailResponse|bool
      */
-    public function telephonyBillingAccountConsumptionCSVByMail(\PayPal\StructType\TelephonyBillingAccountConsumptionCSVByMail $parameters)
+    public function telephonyBillingAccountConsumptionCSVByMail(\Ovh\StructType\TelephonyBillingAccountConsumptionCSVByMail $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyBillingAccountConsumptionCSVByMail($parameters));
@@ -551,10 +551,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyFMHuntingModificationVoicemail $parameters
-     * @return \PayPal\StructType\TelephonyFMHuntingModificationVoicemailResponse|bool
+     * @param \Ovh\StructType\TelephonyFMHuntingModificationVoicemail $parameters
+     * @return \Ovh\StructType\TelephonyFMHuntingModificationVoicemailResponse|bool
      */
-    public function telephonyFMHuntingModificationVoicemail(\PayPal\StructType\TelephonyFMHuntingModificationVoicemail $parameters)
+    public function telephonyFMHuntingModificationVoicemail(\Ovh\StructType\TelephonyFMHuntingModificationVoicemail $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyFMHuntingModificationVoicemail($parameters));
@@ -570,10 +570,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyOrdersFollowingUp $parameters
-     * @return \PayPal\StructType\TelephonyOrdersFollowingUpResponse|bool
+     * @param \Ovh\StructType\TelephonyOrdersFollowingUp $parameters
+     * @return \Ovh\StructType\TelephonyOrdersFollowingUpResponse|bool
      */
-    public function telephonyOrdersFollowingUp(\PayPal\StructType\TelephonyOrdersFollowingUp $parameters)
+    public function telephonyOrdersFollowingUp(\Ovh\StructType\TelephonyOrdersFollowingUp $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyOrdersFollowingUp($parameters));
@@ -590,10 +590,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookOnGroupContactAdd $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookOnGroupContactAddResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookOnGroupContactAdd $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookOnGroupContactAddResponse|bool
      */
-    public function telephonyPhonebookOnGroupContactAdd(\PayPal\StructType\TelephonyPhonebookOnGroupContactAdd $parameters)
+    public function telephonyPhonebookOnGroupContactAdd(\Ovh\StructType\TelephonyPhonebookOnGroupContactAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookOnGroupContactAdd($parameters));
@@ -609,10 +609,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyBillDetailsCSV $parameters
-     * @return \PayPal\StructType\TelephonyBillDetailsCSVResponse|bool
+     * @param \Ovh\StructType\TelephonyBillDetailsCSV $parameters
+     * @return \Ovh\StructType\TelephonyBillDetailsCSVResponse|bool
      */
-    public function telephonyBillDetailsCSV(\PayPal\StructType\TelephonyBillDetailsCSV $parameters)
+    public function telephonyBillDetailsCSV(\Ovh\StructType\TelephonyBillDetailsCSV $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyBillDetailsCSV($parameters));
@@ -628,10 +628,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsCreditLeft $parameters
-     * @return \PayPal\StructType\TelephonySmsCreditLeftResponse|bool
+     * @param \Ovh\StructType\TelephonySmsCreditLeft $parameters
+     * @return \Ovh\StructType\TelephonySmsCreditLeftResponse|bool
      */
-    public function telephonySmsCreditLeft(\PayPal\StructType\TelephonySmsCreditLeft $parameters)
+    public function telephonySmsCreditLeft(\Ovh\StructType\TelephonySmsCreditLeft $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsCreditLeft($parameters));
@@ -647,10 +647,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyDirectoryPJCode $parameters
-     * @return \PayPal\StructType\TelephonyDirectoryPJCodeResponse|bool
+     * @param \Ovh\StructType\TelephonyDirectoryPJCode $parameters
+     * @return \Ovh\StructType\TelephonyDirectoryPJCodeResponse|bool
      */
-    public function telephonyDirectoryPJCode(\PayPal\StructType\TelephonyDirectoryPJCode $parameters)
+    public function telephonyDirectoryPJCode(\Ovh\StructType\TelephonyDirectoryPJCode $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyDirectoryPJCode($parameters));
@@ -667,10 +667,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyListSummationCallsFromBillingAccount $parameters
-     * @return \PayPal\StructType\TelephonyListSummationCallsFromBillingAccountResponse|bool
+     * @param \Ovh\StructType\TelephonyListSummationCallsFromBillingAccount $parameters
+     * @return \Ovh\StructType\TelephonyListSummationCallsFromBillingAccountResponse|bool
      */
-    public function telephonyListSummationCallsFromBillingAccount(\PayPal\StructType\TelephonyListSummationCallsFromBillingAccount $parameters)
+    public function telephonyListSummationCallsFromBillingAccount(\Ovh\StructType\TelephonyListSummationCallsFromBillingAccount $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyListSummationCallsFromBillingAccount($parameters));
@@ -687,10 +687,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyBillingAccountDescriptionModify $parameters
-     * @return \PayPal\StructType\TelephonyBillingAccountDescriptionModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyBillingAccountDescriptionModify $parameters
+     * @return \Ovh\StructType\TelephonyBillingAccountDescriptionModifyResponse|bool
      */
-    public function telephonyBillingAccountDescriptionModify(\PayPal\StructType\TelephonyBillingAccountDescriptionModify $parameters)
+    public function telephonyBillingAccountDescriptionModify(\Ovh\StructType\TelephonyBillingAccountDescriptionModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyBillingAccountDescriptionModify($parameters));
@@ -706,10 +706,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyAbbreviatedNumberDel $parameters
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberDelResponse|bool
+     * @param \Ovh\StructType\TelephonyAbbreviatedNumberDel $parameters
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberDelResponse|bool
      */
-    public function telephonyAbbreviatedNumberDel(\PayPal\StructType\TelephonyAbbreviatedNumberDel $parameters)
+    public function telephonyAbbreviatedNumberDel(\Ovh\StructType\TelephonyAbbreviatedNumberDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyAbbreviatedNumberDel($parameters));
@@ -725,10 +725,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyFaxOptionsList $parameters
-     * @return \PayPal\StructType\TelephonyFaxOptionsListResponse|bool
+     * @param \Ovh\StructType\TelephonyFaxOptionsList $parameters
+     * @return \Ovh\StructType\TelephonyFaxOptionsListResponse|bool
      */
-    public function telephonyFaxOptionsList(\PayPal\StructType\TelephonyFaxOptionsList $parameters)
+    public function telephonyFaxOptionsList(\Ovh\StructType\TelephonyFaxOptionsList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyFaxOptionsList($parameters));
@@ -745,10 +745,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberAdd $parameters
-     * @return \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberAddResponse|bool
+     * @param \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberAdd $parameters
+     * @return \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberAddResponse|bool
      */
-    public function telephonyTrunkExternalDisplayedNumberAdd(\PayPal\StructType\TelephonyTrunkExternalDisplayedNumberAdd $parameters)
+    public function telephonyTrunkExternalDisplayedNumberAdd(\Ovh\StructType\TelephonyTrunkExternalDisplayedNumberAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyTrunkExternalDisplayedNumberAdd($parameters));
@@ -764,10 +764,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyBillingAccountSet $parameters
-     * @return \PayPal\StructType\TelephonyBillingAccountSetResponse|bool
+     * @param \Ovh\StructType\TelephonyBillingAccountSet $parameters
+     * @return \Ovh\StructType\TelephonyBillingAccountSetResponse|bool
      */
-    public function telephonyBillingAccountSet(\PayPal\StructType\TelephonyBillingAccountSet $parameters)
+    public function telephonyBillingAccountSet(\Ovh\StructType\TelephonyBillingAccountSet $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyBillingAccountSet($parameters));
@@ -783,10 +783,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyDepositMovementModify $parameters
-     * @return \PayPal\StructType\TelephonyDepositMovementModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyDepositMovementModify $parameters
+     * @return \Ovh\StructType\TelephonyDepositMovementModifyResponse|bool
      */
-    public function telephonyDepositMovementModify(\PayPal\StructType\TelephonyDepositMovementModify $parameters)
+    public function telephonyDepositMovementModify(\Ovh\StructType\TelephonyDepositMovementModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyDepositMovementModify($parameters));
@@ -802,10 +802,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyClick2CallDo $parameters
-     * @return \PayPal\StructType\TelephonyClick2CallDoResponse|bool
+     * @param \Ovh\StructType\TelephonyClick2CallDo $parameters
+     * @return \Ovh\StructType\TelephonyClick2CallDoResponse|bool
      */
-    public function telephonyClick2CallDo(\PayPal\StructType\TelephonyClick2CallDo $parameters)
+    public function telephonyClick2CallDo(\Ovh\StructType\TelephonyClick2CallDo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyClick2CallDo($parameters));
@@ -821,10 +821,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySpecialNumberOrder $parameters
-     * @return \PayPal\StructType\TelephonySpecialNumberOrderResponse|bool
+     * @param \Ovh\StructType\TelephonySpecialNumberOrder $parameters
+     * @return \Ovh\StructType\TelephonySpecialNumberOrderResponse|bool
      */
-    public function telephonySpecialNumberOrder(\PayPal\StructType\TelephonySpecialNumberOrder $parameters)
+    public function telephonySpecialNumberOrder(\Ovh\StructType\TelephonySpecialNumberOrder $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySpecialNumberOrder($parameters));
@@ -840,10 +840,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyVoicemailOptionsModify $parameters
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyVoicemailOptionsModify $parameters
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsModifyResponse|bool
      */
-    public function telephonyVoicemailOptionsModify(\PayPal\StructType\TelephonyVoicemailOptionsModify $parameters)
+    public function telephonyVoicemailOptionsModify(\Ovh\StructType\TelephonyVoicemailOptionsModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyVoicemailOptionsModify($parameters));
@@ -859,10 +859,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyLineSwitchOldOffer $parameters
-     * @return \PayPal\StructType\TelephonyLineSwitchOldOfferResponse|bool
+     * @param \Ovh\StructType\TelephonyLineSwitchOldOffer $parameters
+     * @return \Ovh\StructType\TelephonyLineSwitchOldOfferResponse|bool
      */
-    public function telephonyLineSwitchOldOffer(\PayPal\StructType\TelephonyLineSwitchOldOffer $parameters)
+    public function telephonyLineSwitchOldOffer(\Ovh\StructType\TelephonyLineSwitchOldOffer $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyLineSwitchOldOffer($parameters));
@@ -879,10 +879,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookOnGroupContactDel $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookOnGroupContactDelResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookOnGroupContactDel $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookOnGroupContactDelResponse|bool
      */
-    public function telephonyPhonebookOnGroupContactDel(\PayPal\StructType\TelephonyPhonebookOnGroupContactDel $parameters)
+    public function telephonyPhonebookOnGroupContactDel(\Ovh\StructType\TelephonyPhonebookOnGroupContactDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookOnGroupContactDel($parameters));
@@ -898,10 +898,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySpareAdd $parameters
-     * @return \PayPal\StructType\TelephonySpareAddResponse|bool
+     * @param \Ovh\StructType\TelephonySpareAdd $parameters
+     * @return \Ovh\StructType\TelephonySpareAddResponse|bool
      */
-    public function telephonySpareAdd(\PayPal\StructType\TelephonySpareAdd $parameters)
+    public function telephonySpareAdd(\Ovh\StructType\TelephonySpareAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySpareAdd($parameters));
@@ -917,10 +917,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsAddCsvAttachment $parameters
-     * @return \PayPal\StructType\TelephonySmsAddCsvAttachmentResponse|bool
+     * @param \Ovh\StructType\TelephonySmsAddCsvAttachment $parameters
+     * @return \Ovh\StructType\TelephonySmsAddCsvAttachmentResponse|bool
      */
-    public function telephonySmsAddCsvAttachment(\PayPal\StructType\TelephonySmsAddCsvAttachment $parameters)
+    public function telephonySmsAddCsvAttachment(\Ovh\StructType\TelephonySmsAddCsvAttachment $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsAddCsvAttachment($parameters));
@@ -937,10 +937,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyDefaultPrivateHolidaysEvents $parameters
-     * @return \PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsResponse|bool
+     * @param \Ovh\StructType\TelephonyDefaultPrivateHolidaysEvents $parameters
+     * @return \Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsResponse|bool
      */
-    public function telephonyDefaultPrivateHolidaysEvents(\PayPal\StructType\TelephonyDefaultPrivateHolidaysEvents $parameters)
+    public function telephonyDefaultPrivateHolidaysEvents(\Ovh\StructType\TelephonyDefaultPrivateHolidaysEvents $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyDefaultPrivateHolidaysEvents($parameters));
@@ -956,10 +956,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyToneRemoteUpload $parameters
-     * @return \PayPal\StructType\TelephonyToneRemoteUploadResponse|bool
+     * @param \Ovh\StructType\TelephonyToneRemoteUpload $parameters
+     * @return \Ovh\StructType\TelephonyToneRemoteUploadResponse|bool
      */
-    public function telephonyToneRemoteUpload(\PayPal\StructType\TelephonyToneRemoteUpload $parameters)
+    public function telephonyToneRemoteUpload(\Ovh\StructType\TelephonyToneRemoteUpload $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyToneRemoteUpload($parameters));
@@ -976,10 +976,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyNumberGetFrWayNamesFromInsee $parameters
-     * @return \PayPal\StructType\TelephonyNumberGetFrWayNamesFromInseeResponse|bool
+     * @param \Ovh\StructType\TelephonyNumberGetFrWayNamesFromInsee $parameters
+     * @return \Ovh\StructType\TelephonyNumberGetFrWayNamesFromInseeResponse|bool
      */
-    public function telephonyNumberGetFrWayNamesFromInsee(\PayPal\StructType\TelephonyNumberGetFrWayNamesFromInsee $parameters)
+    public function telephonyNumberGetFrWayNamesFromInsee(\Ovh\StructType\TelephonyNumberGetFrWayNamesFromInsee $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyNumberGetFrWayNamesFromInsee($parameters));
@@ -995,10 +995,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyFMHuntingModificationMode $parameters
-     * @return \PayPal\StructType\TelephonyFMHuntingModificationModeResponse|bool
+     * @param \Ovh\StructType\TelephonyFMHuntingModificationMode $parameters
+     * @return \Ovh\StructType\TelephonyFMHuntingModificationModeResponse|bool
      */
-    public function telephonyFMHuntingModificationMode(\PayPal\StructType\TelephonyFMHuntingModificationMode $parameters)
+    public function telephonyFMHuntingModificationMode(\Ovh\StructType\TelephonyFMHuntingModificationMode $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyFMHuntingModificationMode($parameters));
@@ -1014,10 +1014,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyAliasToSipOffer $parameters
-     * @return \PayPal\StructType\TelephonyAliasToSipOfferResponse|bool
+     * @param \Ovh\StructType\TelephonyAliasToSipOffer $parameters
+     * @return \Ovh\StructType\TelephonyAliasToSipOfferResponse|bool
      */
-    public function telephonyAliasToSipOffer(\PayPal\StructType\TelephonyAliasToSipOffer $parameters)
+    public function telephonyAliasToSipOffer(\Ovh\StructType\TelephonyAliasToSipOffer $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyAliasToSipOffer($parameters));
@@ -1033,10 +1033,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsUserMultiSend $parameters
-     * @return \PayPal\StructType\TelephonySmsUserMultiSendResponse|bool
+     * @param \Ovh\StructType\TelephonySmsUserMultiSend $parameters
+     * @return \Ovh\StructType\TelephonySmsUserMultiSendResponse|bool
      */
-    public function telephonySmsUserMultiSend(\PayPal\StructType\TelephonySmsUserMultiSend $parameters)
+    public function telephonySmsUserMultiSend(\Ovh\StructType\TelephonySmsUserMultiSend $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsUserMultiSend($parameters));
@@ -1052,10 +1052,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsGetCsvAttachment $parameters
-     * @return \PayPal\StructType\TelephonySmsGetCsvAttachmentResponse|bool
+     * @param \Ovh\StructType\TelephonySmsGetCsvAttachment $parameters
+     * @return \Ovh\StructType\TelephonySmsGetCsvAttachmentResponse|bool
      */
-    public function telephonySmsGetCsvAttachment(\PayPal\StructType\TelephonySmsGetCsvAttachment $parameters)
+    public function telephonySmsGetCsvAttachment(\Ovh\StructType\TelephonySmsGetCsvAttachment $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsGetCsvAttachment($parameters));
@@ -1071,10 +1071,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsHistory $parameters
-     * @return \PayPal\StructType\TelephonySmsHistoryResponse|bool
+     * @param \Ovh\StructType\TelephonySmsHistory $parameters
+     * @return \Ovh\StructType\TelephonySmsHistoryResponse|bool
      */
-    public function telephonySmsHistory(\PayPal\StructType\TelephonySmsHistory $parameters)
+    public function telephonySmsHistory(\Ovh\StructType\TelephonySmsHistory $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsHistory($parameters));
@@ -1091,10 +1091,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyAbbreviatedNumberOnGroupModify $parameters
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberOnGroupModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyAbbreviatedNumberOnGroupModify $parameters
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberOnGroupModifyResponse|bool
      */
-    public function telephonyAbbreviatedNumberOnGroupModify(\PayPal\StructType\TelephonyAbbreviatedNumberOnGroupModify $parameters)
+    public function telephonyAbbreviatedNumberOnGroupModify(\Ovh\StructType\TelephonyAbbreviatedNumberOnGroupModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyAbbreviatedNumberOnGroupModify($parameters));
@@ -1110,10 +1110,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyHuntingGenericScreenList $parameters
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenListResponse|bool
+     * @param \Ovh\StructType\TelephonyHuntingGenericScreenList $parameters
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenListResponse|bool
      */
-    public function telephonyHuntingGenericScreenList(\PayPal\StructType\TelephonyHuntingGenericScreenList $parameters)
+    public function telephonyHuntingGenericScreenList(\Ovh\StructType\TelephonyHuntingGenericScreenList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyHuntingGenericScreenList($parameters));
@@ -1130,10 +1130,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyHuntingGenericScreenStatus $parameters
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenStatusResponse|bool
+     * @param \Ovh\StructType\TelephonyHuntingGenericScreenStatus $parameters
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenStatusResponse|bool
      */
-    public function telephonyHuntingGenericScreenStatus(\PayPal\StructType\TelephonyHuntingGenericScreenStatus $parameters)
+    public function telephonyHuntingGenericScreenStatus(\Ovh\StructType\TelephonyHuntingGenericScreenStatus $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyHuntingGenericScreenStatus($parameters));
@@ -1150,10 +1150,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyHuntingModificationMembers $parameters
-     * @return \PayPal\StructType\TelephonyHuntingModificationMembersResponse|bool
+     * @param \Ovh\StructType\TelephonyHuntingModificationMembers $parameters
+     * @return \Ovh\StructType\TelephonyHuntingModificationMembersResponse|bool
      */
-    public function telephonyHuntingModificationMembers(\PayPal\StructType\TelephonyHuntingModificationMembers $parameters)
+    public function telephonyHuntingModificationMembers(\Ovh\StructType\TelephonyHuntingModificationMembers $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyHuntingModificationMembers($parameters));
@@ -1169,10 +1169,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyVoicemailMessagesDownload $parameters
-     * @return \PayPal\StructType\TelephonyVoicemailMessagesDownloadResponse|bool
+     * @param \Ovh\StructType\TelephonyVoicemailMessagesDownload $parameters
+     * @return \Ovh\StructType\TelephonyVoicemailMessagesDownloadResponse|bool
      */
-    public function telephonyVoicemailMessagesDownload(\PayPal\StructType\TelephonyVoicemailMessagesDownload $parameters)
+    public function telephonyVoicemailMessagesDownload(\Ovh\StructType\TelephonyVoicemailMessagesDownload $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyVoicemailMessagesDownload($parameters));
@@ -1188,10 +1188,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyFaxCampaignCreation $parameters
-     * @return \PayPal\StructType\TelephonyFaxCampaignCreationResponse|bool
+     * @param \Ovh\StructType\TelephonyFaxCampaignCreation $parameters
+     * @return \Ovh\StructType\TelephonyFaxCampaignCreationResponse|bool
      */
-    public function telephonyFaxCampaignCreation(\PayPal\StructType\TelephonyFaxCampaignCreation $parameters)
+    public function telephonyFaxCampaignCreation(\Ovh\StructType\TelephonyFaxCampaignCreation $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyFaxCampaignCreation($parameters));
@@ -1208,10 +1208,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyLineLogsNotificationOptions $parameters
-     * @return \PayPal\StructType\TelephonyLineLogsNotificationOptionsResponse|bool
+     * @param \Ovh\StructType\TelephonyLineLogsNotificationOptions $parameters
+     * @return \Ovh\StructType\TelephonyLineLogsNotificationOptionsResponse|bool
      */
-    public function telephonyLineLogsNotificationOptions(\PayPal\StructType\TelephonyLineLogsNotificationOptions $parameters)
+    public function telephonyLineLogsNotificationOptions(\Ovh\StructType\TelephonyLineLogsNotificationOptions $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyLineLogsNotificationOptions($parameters));
@@ -1227,10 +1227,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyLineGetIpRestriction $parameters
-     * @return \PayPal\StructType\TelephonyLineGetIpRestrictionResponse|bool
+     * @param \Ovh\StructType\TelephonyLineGetIpRestriction $parameters
+     * @return \Ovh\StructType\TelephonyLineGetIpRestrictionResponse|bool
      */
-    public function telephonyLineGetIpRestriction(\PayPal\StructType\TelephonyLineGetIpRestriction $parameters)
+    public function telephonyLineGetIpRestriction(\Ovh\StructType\TelephonyLineGetIpRestriction $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyLineGetIpRestriction($parameters));
@@ -1246,10 +1246,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyGetTimeZoneNumber $parameters
-     * @return \PayPal\StructType\TelephonyGetTimeZoneNumberResponse|bool
+     * @param \Ovh\StructType\TelephonyGetTimeZoneNumber $parameters
+     * @return \Ovh\StructType\TelephonyGetTimeZoneNumberResponse|bool
      */
-    public function telephonyGetTimeZoneNumber(\PayPal\StructType\TelephonyGetTimeZoneNumber $parameters)
+    public function telephonyGetTimeZoneNumber(\Ovh\StructType\TelephonyGetTimeZoneNumber $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyGetTimeZoneNumber($parameters));
@@ -1266,10 +1266,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyFMHuntingModificationMembers $parameters
-     * @return \PayPal\StructType\TelephonyFMHuntingModificationMembersResponse|bool
+     * @param \Ovh\StructType\TelephonyFMHuntingModificationMembers $parameters
+     * @return \Ovh\StructType\TelephonyFMHuntingModificationMembersResponse|bool
      */
-    public function telephonyFMHuntingModificationMembers(\PayPal\StructType\TelephonyFMHuntingModificationMembers $parameters)
+    public function telephonyFMHuntingModificationMembers(\Ovh\StructType\TelephonyFMHuntingModificationMembers $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyFMHuntingModificationMembers($parameters));
@@ -1285,10 +1285,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookAdd $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookAddResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookAdd $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookAddResponse|bool
      */
-    public function telephonyPhonebookAdd(\PayPal\StructType\TelephonyPhonebookAdd $parameters)
+    public function telephonyPhonebookAdd(\Ovh\StructType\TelephonyPhonebookAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookAdd($parameters));
@@ -1304,10 +1304,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyRestrictionModify $parameters
-     * @return \PayPal\StructType\TelephonyRestrictionModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyRestrictionModify $parameters
+     * @return \Ovh\StructType\TelephonyRestrictionModifyResponse|bool
      */
-    public function telephonyRestrictionModify(\PayPal\StructType\TelephonyRestrictionModify $parameters)
+    public function telephonyRestrictionModify(\Ovh\StructType\TelephonyRestrictionModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyRestrictionModify($parameters));
@@ -1323,10 +1323,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyRatesList $parameters
-     * @return \PayPal\StructType\TelephonyRatesListResponse|bool
+     * @param \Ovh\StructType\TelephonyRatesList $parameters
+     * @return \Ovh\StructType\TelephonyRatesListResponse|bool
      */
-    public function telephonyRatesList(\PayPal\StructType\TelephonyRatesList $parameters)
+    public function telephonyRatesList(\Ovh\StructType\TelephonyRatesList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyRatesList($parameters));
@@ -1343,10 +1343,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyHuntingGenericScreenOptions $parameters
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenOptionsResponse|bool
+     * @param \Ovh\StructType\TelephonyHuntingGenericScreenOptions $parameters
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenOptionsResponse|bool
      */
-    public function telephonyHuntingGenericScreenOptions(\PayPal\StructType\TelephonyHuntingGenericScreenOptions $parameters)
+    public function telephonyHuntingGenericScreenOptions(\Ovh\StructType\TelephonyHuntingGenericScreenOptions $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyHuntingGenericScreenOptions($parameters));
@@ -1362,10 +1362,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyBillingAccountAdd $parameters
-     * @return \PayPal\StructType\TelephonyBillingAccountAddResponse|bool
+     * @param \Ovh\StructType\TelephonyBillingAccountAdd $parameters
+     * @return \Ovh\StructType\TelephonyBillingAccountAddResponse|bool
      */
-    public function telephonyBillingAccountAdd(\PayPal\StructType\TelephonyBillingAccountAdd $parameters)
+    public function telephonyBillingAccountAdd(\Ovh\StructType\TelephonyBillingAccountAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyBillingAccountAdd($parameters));
@@ -1381,10 +1381,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsplusIsFreeKeyword $parameters
-     * @return \PayPal\StructType\TelephonySmsplusIsFreeKeywordResponse|bool
+     * @param \Ovh\StructType\TelephonySmsplusIsFreeKeyword $parameters
+     * @return \Ovh\StructType\TelephonySmsplusIsFreeKeywordResponse|bool
      */
-    public function telephonySmsplusIsFreeKeyword(\PayPal\StructType\TelephonySmsplusIsFreeKeyword $parameters)
+    public function telephonySmsplusIsFreeKeyword(\Ovh\StructType\TelephonySmsplusIsFreeKeyword $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsplusIsFreeKeyword($parameters));
@@ -1400,10 +1400,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyLineGetCodecs $parameters
-     * @return \PayPal\StructType\TelephonyLineGetCodecsResponse|bool
+     * @param \Ovh\StructType\TelephonyLineGetCodecs $parameters
+     * @return \Ovh\StructType\TelephonyLineGetCodecsResponse|bool
      */
-    public function telephonyLineGetCodecs(\PayPal\StructType\TelephonyLineGetCodecs $parameters)
+    public function telephonyLineGetCodecs(\Ovh\StructType\TelephonyLineGetCodecs $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyLineGetCodecs($parameters));
@@ -1419,10 +1419,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsSenderValidate $parameters
-     * @return \PayPal\StructType\TelephonySmsSenderValidateResponse|bool
+     * @param \Ovh\StructType\TelephonySmsSenderValidate $parameters
+     * @return \Ovh\StructType\TelephonySmsSenderValidateResponse|bool
      */
-    public function telephonySmsSenderValidate(\PayPal\StructType\TelephonySmsSenderValidate $parameters)
+    public function telephonySmsSenderValidate(\Ovh\StructType\TelephonySmsSenderValidate $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsSenderValidate($parameters));
@@ -1439,10 +1439,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyHuntingModificationSimultaneousCalls $parameters
-     * @return \PayPal\StructType\TelephonyHuntingModificationSimultaneousCallsResponse|bool
+     * @param \Ovh\StructType\TelephonyHuntingModificationSimultaneousCalls $parameters
+     * @return \Ovh\StructType\TelephonyHuntingModificationSimultaneousCallsResponse|bool
      */
-    public function telephonyHuntingModificationSimultaneousCalls(\PayPal\StructType\TelephonyHuntingModificationSimultaneousCalls $parameters)
+    public function telephonyHuntingModificationSimultaneousCalls(\Ovh\StructType\TelephonyHuntingModificationSimultaneousCalls $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyHuntingModificationSimultaneousCalls($parameters));
@@ -1458,10 +1458,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyDirectoryInfoGetSameSiret $parameters
-     * @return \PayPal\StructType\TelephonyDirectoryInfoGetSameSiretResponse|bool
+     * @param \Ovh\StructType\TelephonyDirectoryInfoGetSameSiret $parameters
+     * @return \Ovh\StructType\TelephonyDirectoryInfoGetSameSiretResponse|bool
      */
-    public function telephonyDirectoryInfoGetSameSiret(\PayPal\StructType\TelephonyDirectoryInfoGetSameSiret $parameters)
+    public function telephonyDirectoryInfoGetSameSiret(\Ovh\StructType\TelephonyDirectoryInfoGetSameSiret $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyDirectoryInfoGetSameSiret($parameters));
@@ -1477,10 +1477,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyConferenceSetParams $parameters
-     * @return \PayPal\StructType\TelephonyConferenceSetParamsResponse|bool
+     * @param \Ovh\StructType\TelephonyConferenceSetParams $parameters
+     * @return \Ovh\StructType\TelephonyConferenceSetParamsResponse|bool
      */
-    public function telephonyConferenceSetParams(\PayPal\StructType\TelephonyConferenceSetParams $parameters)
+    public function telephonyConferenceSetParams(\Ovh\StructType\TelephonyConferenceSetParams $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyConferenceSetParams($parameters));
@@ -1496,10 +1496,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySparePurchase $parameters
-     * @return \PayPal\StructType\TelephonySparePurchaseResponse|bool
+     * @param \Ovh\StructType\TelephonySparePurchase $parameters
+     * @return \Ovh\StructType\TelephonySparePurchaseResponse|bool
      */
-    public function telephonySparePurchase(\PayPal\StructType\TelephonySparePurchase $parameters)
+    public function telephonySparePurchase(\Ovh\StructType\TelephonySparePurchase $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySparePurchase($parameters));
@@ -1515,10 +1515,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyFaxCampaignList $parameters
-     * @return \PayPal\StructType\TelephonyFaxCampaignListResponse|bool
+     * @param \Ovh\StructType\TelephonyFaxCampaignList $parameters
+     * @return \Ovh\StructType\TelephonyFaxCampaignListResponse|bool
      */
-    public function telephonyFaxCampaignList(\PayPal\StructType\TelephonyFaxCampaignList $parameters)
+    public function telephonyFaxCampaignList(\Ovh\StructType\TelephonyFaxCampaignList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyFaxCampaignList($parameters));
@@ -1534,10 +1534,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyNicGetMgcpIpRestriction $parameters
-     * @return \PayPal\StructType\TelephonyNicGetMgcpIpRestrictionResponse|bool
+     * @param \Ovh\StructType\TelephonyNicGetMgcpIpRestriction $parameters
+     * @return \Ovh\StructType\TelephonyNicGetMgcpIpRestrictionResponse|bool
      */
-    public function telephonyNicGetMgcpIpRestriction(\PayPal\StructType\TelephonyNicGetMgcpIpRestriction $parameters)
+    public function telephonyNicGetMgcpIpRestriction(\Ovh\StructType\TelephonyNicGetMgcpIpRestriction $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyNicGetMgcpIpRestriction($parameters));
@@ -1553,10 +1553,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsGetUserQuotaForUser $parameters
-     * @return \PayPal\StructType\TelephonySmsGetUserQuotaForUserResponse|bool
+     * @param \Ovh\StructType\TelephonySmsGetUserQuotaForUser $parameters
+     * @return \Ovh\StructType\TelephonySmsGetUserQuotaForUserResponse|bool
      */
-    public function telephonySmsGetUserQuotaForUser(\PayPal\StructType\TelephonySmsGetUserQuotaForUser $parameters)
+    public function telephonySmsGetUserQuotaForUser(\Ovh\StructType\TelephonySmsGetUserQuotaForUser $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsGetUserQuotaForUser($parameters));
@@ -1572,10 +1572,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyDirectoryInfoGetSiret $parameters
-     * @return \PayPal\StructType\TelephonyDirectoryInfoGetSiretResponse|bool
+     * @param \Ovh\StructType\TelephonyDirectoryInfoGetSiret $parameters
+     * @return \Ovh\StructType\TelephonyDirectoryInfoGetSiretResponse|bool
      */
-    public function telephonyDirectoryInfoGetSiret(\PayPal\StructType\TelephonyDirectoryInfoGetSiret $parameters)
+    public function telephonyDirectoryInfoGetSiret(\Ovh\StructType\TelephonyDirectoryInfoGetSiret $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyDirectoryInfoGetSiret($parameters));
@@ -1591,10 +1591,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyFunctionKeyModify $parameters
-     * @return \PayPal\StructType\TelephonyFunctionKeyModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyFunctionKeyModify $parameters
+     * @return \Ovh\StructType\TelephonyFunctionKeyModifyResponse|bool
      */
-    public function telephonyFunctionKeyModify(\PayPal\StructType\TelephonyFunctionKeyModify $parameters)
+    public function telephonyFunctionKeyModify(\Ovh\StructType\TelephonyFunctionKeyModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyFunctionKeyModify($parameters));
@@ -1610,10 +1610,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyAbbreviatedNumberList $parameters
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberListResponse|bool
+     * @param \Ovh\StructType\TelephonyAbbreviatedNumberList $parameters
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberListResponse|bool
      */
-    public function telephonyAbbreviatedNumberList(\PayPal\StructType\TelephonyAbbreviatedNumberList $parameters)
+    public function telephonyAbbreviatedNumberList(\Ovh\StructType\TelephonyAbbreviatedNumberList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyAbbreviatedNumberList($parameters));
@@ -1629,10 +1629,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyFaxModifyPassword $parameters
-     * @return \PayPal\StructType\TelephonyFaxModifyPasswordResponse|bool
+     * @param \Ovh\StructType\TelephonyFaxModifyPassword $parameters
+     * @return \Ovh\StructType\TelephonyFaxModifyPasswordResponse|bool
      */
-    public function telephonyFaxModifyPassword(\PayPal\StructType\TelephonyFaxModifyPassword $parameters)
+    public function telephonyFaxModifyPassword(\Ovh\StructType\TelephonyFaxModifyPassword $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyFaxModifyPassword($parameters));
@@ -1648,10 +1648,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsDelete $parameters
-     * @return \PayPal\StructType\TelephonySmsDeleteResponse|bool
+     * @param \Ovh\StructType\TelephonySmsDelete $parameters
+     * @return \Ovh\StructType\TelephonySmsDeleteResponse|bool
      */
-    public function telephonySmsDelete(\PayPal\StructType\TelephonySmsDelete $parameters)
+    public function telephonySmsDelete(\Ovh\StructType\TelephonySmsDelete $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsDelete($parameters));
@@ -1668,10 +1668,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyDirectoryModifyPublication $parameters
-     * @return \PayPal\StructType\TelephonyDirectoryModifyPublicationResponse|bool
+     * @param \Ovh\StructType\TelephonyDirectoryModifyPublication $parameters
+     * @return \Ovh\StructType\TelephonyDirectoryModifyPublicationResponse|bool
      */
-    public function telephonyDirectoryModifyPublication(\PayPal\StructType\TelephonyDirectoryModifyPublication $parameters)
+    public function telephonyDirectoryModifyPublication(\Ovh\StructType\TelephonyDirectoryModifyPublication $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyDirectoryModifyPublication($parameters));
@@ -1687,10 +1687,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookOnGroupAdd $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookOnGroupAddResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookOnGroupAdd $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookOnGroupAddResponse|bool
      */
-    public function telephonyPhonebookOnGroupAdd(\PayPal\StructType\TelephonyPhonebookOnGroupAdd $parameters)
+    public function telephonyPhonebookOnGroupAdd(\Ovh\StructType\TelephonyPhonebookOnGroupAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookOnGroupAdd($parameters));
@@ -1707,10 +1707,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyLineSwitchOfferPossibility $parameters
-     * @return \PayPal\StructType\TelephonyLineSwitchOfferPossibilityResponse|bool
+     * @param \Ovh\StructType\TelephonyLineSwitchOfferPossibility $parameters
+     * @return \Ovh\StructType\TelephonyLineSwitchOfferPossibilityResponse|bool
      */
-    public function telephonyLineSwitchOfferPossibility(\PayPal\StructType\TelephonyLineSwitchOfferPossibility $parameters)
+    public function telephonyLineSwitchOfferPossibility(\Ovh\StructType\TelephonyLineSwitchOfferPossibility $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyLineSwitchOfferPossibility($parameters));
@@ -1726,10 +1726,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsSenderList $parameters
-     * @return \PayPal\StructType\TelephonySmsSenderListResponse|bool
+     * @param \Ovh\StructType\TelephonySmsSenderList $parameters
+     * @return \Ovh\StructType\TelephonySmsSenderListResponse|bool
      */
-    public function telephonySmsSenderList(\PayPal\StructType\TelephonySmsSenderList $parameters)
+    public function telephonySmsSenderList(\Ovh\StructType\TelephonySmsSenderList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsSenderList($parameters));
@@ -1745,10 +1745,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySipToAliasOffer $parameters
-     * @return \PayPal\StructType\TelephonySipToAliasOfferResponse|bool
+     * @param \Ovh\StructType\TelephonySipToAliasOffer $parameters
+     * @return \Ovh\StructType\TelephonySipToAliasOfferResponse|bool
      */
-    public function telephonySipToAliasOffer(\PayPal\StructType\TelephonySipToAliasOffer $parameters)
+    public function telephonySipToAliasOffer(\Ovh\StructType\TelephonySipToAliasOffer $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySipToAliasOffer($parameters));
@@ -1764,10 +1764,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyFunctionKeyList $parameters
-     * @return \PayPal\StructType\TelephonyFunctionKeyListResponse|bool
+     * @param \Ovh\StructType\TelephonyFunctionKeyList $parameters
+     * @return \Ovh\StructType\TelephonyFunctionKeyListResponse|bool
      */
-    public function telephonyFunctionKeyList(\PayPal\StructType\TelephonyFunctionKeyList $parameters)
+    public function telephonyFunctionKeyList(\Ovh\StructType\TelephonyFunctionKeyList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyFunctionKeyList($parameters));
@@ -1783,10 +1783,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsGetCallBack $parameters
-     * @return \PayPal\StructType\TelephonySmsGetCallBackResponse|bool
+     * @param \Ovh\StructType\TelephonySmsGetCallBack $parameters
+     * @return \Ovh\StructType\TelephonySmsGetCallBackResponse|bool
      */
-    public function telephonySmsGetCallBack(\PayPal\StructType\TelephonySmsGetCallBack $parameters)
+    public function telephonySmsGetCallBack(\Ovh\StructType\TelephonySmsGetCallBack $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsGetCallBack($parameters));
@@ -1802,10 +1802,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySviModify $parameters
-     * @return \PayPal\StructType\TelephonySviModifyResponse|bool
+     * @param \Ovh\StructType\TelephonySviModify $parameters
+     * @return \Ovh\StructType\TelephonySviModifyResponse|bool
      */
-    public function telephonySviModify(\PayPal\StructType\TelephonySviModify $parameters)
+    public function telephonySviModify(\Ovh\StructType\TelephonySviModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySviModify($parameters));
@@ -1821,10 +1821,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsplusServiceDelete $parameters
-     * @return \PayPal\StructType\TelephonySmsplusServiceDeleteResponse|bool
+     * @param \Ovh\StructType\TelephonySmsplusServiceDelete $parameters
+     * @return \Ovh\StructType\TelephonySmsplusServiceDeleteResponse|bool
      */
-    public function telephonySmsplusServiceDelete(\PayPal\StructType\TelephonySmsplusServiceDelete $parameters)
+    public function telephonySmsplusServiceDelete(\Ovh\StructType\TelephonySmsplusServiceDelete $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsplusServiceDelete($parameters));
@@ -1840,10 +1840,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyLineSwitchOffer $parameters
-     * @return \PayPal\StructType\TelephonyLineSwitchOfferResponse|bool
+     * @param \Ovh\StructType\TelephonyLineSwitchOffer $parameters
+     * @return \Ovh\StructType\TelephonyLineSwitchOfferResponse|bool
      */
-    public function telephonyLineSwitchOffer(\PayPal\StructType\TelephonyLineSwitchOffer $parameters)
+    public function telephonyLineSwitchOffer(\Ovh\StructType\TelephonyLineSwitchOffer $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyLineSwitchOffer($parameters));
@@ -1860,10 +1860,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberCheck $parameters
-     * @return \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberCheckResponse|bool
+     * @param \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberCheck $parameters
+     * @return \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberCheckResponse|bool
      */
-    public function telephonyTrunkExternalDisplayedNumberCheck(\PayPal\StructType\TelephonyTrunkExternalDisplayedNumberCheck $parameters)
+    public function telephonyTrunkExternalDisplayedNumberCheck(\Ovh\StructType\TelephonyTrunkExternalDisplayedNumberCheck $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyTrunkExternalDisplayedNumberCheck($parameters));
@@ -1879,10 +1879,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyDelClosureEvents $parameters
-     * @return \PayPal\StructType\TelephonyDelClosureEventsResponse|bool
+     * @param \Ovh\StructType\TelephonyDelClosureEvents $parameters
+     * @return \Ovh\StructType\TelephonyDelClosureEventsResponse|bool
      */
-    public function telephonyDelClosureEvents(\PayPal\StructType\TelephonyDelClosureEvents $parameters)
+    public function telephonyDelClosureEvents(\Ovh\StructType\TelephonyDelClosureEvents $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyDelClosureEvents($parameters));
@@ -1899,10 +1899,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyFreefaxToVoicefaxCheckList $parameters
-     * @return \PayPal\StructType\TelephonyFreefaxToVoicefaxCheckListResponse|bool
+     * @param \Ovh\StructType\TelephonyFreefaxToVoicefaxCheckList $parameters
+     * @return \Ovh\StructType\TelephonyFreefaxToVoicefaxCheckListResponse|bool
      */
-    public function telephonyFreefaxToVoicefaxCheckList(\PayPal\StructType\TelephonyFreefaxToVoicefaxCheckList $parameters)
+    public function telephonyFreefaxToVoicefaxCheckList(\Ovh\StructType\TelephonyFreefaxToVoicefaxCheckList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyFreefaxToVoicefaxCheckList($parameters));
@@ -1918,10 +1918,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyVoicemailModifyPassword $parameters
-     * @return \PayPal\StructType\TelephonyVoicemailModifyPasswordResponse|bool
+     * @param \Ovh\StructType\TelephonyVoicemailModifyPassword $parameters
+     * @return \Ovh\StructType\TelephonyVoicemailModifyPasswordResponse|bool
      */
-    public function telephonyVoicemailModifyPassword(\PayPal\StructType\TelephonyVoicemailModifyPassword $parameters)
+    public function telephonyVoicemailModifyPassword(\Ovh\StructType\TelephonyVoicemailModifyPassword $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyVoicemailModifyPassword($parameters));
@@ -1937,10 +1937,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySpareCapabilities $parameters
-     * @return \PayPal\StructType\TelephonySpareCapabilitiesResponse|bool
+     * @param \Ovh\StructType\TelephonySpareCapabilities $parameters
+     * @return \Ovh\StructType\TelephonySpareCapabilitiesResponse|bool
      */
-    public function telephonySpareCapabilities(\PayPal\StructType\TelephonySpareCapabilities $parameters)
+    public function telephonySpareCapabilities(\Ovh\StructType\TelephonySpareCapabilities $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySpareCapabilities($parameters));
@@ -1956,10 +1956,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookOnSmsDel $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsDelResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookOnSmsDel $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsDelResponse|bool
      */
-    public function telephonyPhonebookOnSmsDel(\PayPal\StructType\TelephonyPhonebookOnSmsDel $parameters)
+    public function telephonyPhonebookOnSmsDel(\Ovh\StructType\TelephonyPhonebookOnSmsDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookOnSmsDel($parameters));
@@ -1975,10 +1975,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookShare $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookShareResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookShare $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookShareResponse|bool
      */
-    public function telephonyPhonebookShare(\PayPal\StructType\TelephonyPhonebookShare $parameters)
+    public function telephonyPhonebookShare(\Ovh\StructType\TelephonyPhonebookShare $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookShare($parameters));
@@ -1994,10 +1994,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsSetUserQuota $parameters
-     * @return \PayPal\StructType\TelephonySmsSetUserQuotaResponse|bool
+     * @param \Ovh\StructType\TelephonySmsSetUserQuota $parameters
+     * @return \Ovh\StructType\TelephonySmsSetUserQuotaResponse|bool
      */
-    public function telephonySmsSetUserQuota(\PayPal\StructType\TelephonySmsSetUserQuota $parameters)
+    public function telephonySmsSetUserQuota(\Ovh\StructType\TelephonySmsSetUserQuota $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsSetUserQuota($parameters));
@@ -2013,10 +2013,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsHistoryCsv $parameters
-     * @return \PayPal\StructType\TelephonySmsHistoryCsvResponse|bool
+     * @param \Ovh\StructType\TelephonySmsHistoryCsv $parameters
+     * @return \Ovh\StructType\TelephonySmsHistoryCsvResponse|bool
      */
-    public function telephonySmsHistoryCsv(\PayPal\StructType\TelephonySmsHistoryCsv $parameters)
+    public function telephonySmsHistoryCsv(\Ovh\StructType\TelephonySmsHistoryCsv $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsHistoryCsv($parameters));
@@ -2033,10 +2033,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyAbbreviatedNumberOnGroupList $parameters
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberOnGroupListResponse|bool
+     * @param \Ovh\StructType\TelephonyAbbreviatedNumberOnGroupList $parameters
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberOnGroupListResponse|bool
      */
-    public function telephonyAbbreviatedNumberOnGroupList(\PayPal\StructType\TelephonyAbbreviatedNumberOnGroupList $parameters)
+    public function telephonyAbbreviatedNumberOnGroupList(\Ovh\StructType\TelephonyAbbreviatedNumberOnGroupList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyAbbreviatedNumberOnGroupList($parameters));
@@ -2052,10 +2052,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyLineLogs $parameters
-     * @return \PayPal\StructType\TelephonyLineLogsResponse|bool
+     * @param \Ovh\StructType\TelephonyLineLogs $parameters
+     * @return \Ovh\StructType\TelephonyLineLogsResponse|bool
      */
-    public function telephonyLineLogs(\PayPal\StructType\TelephonyLineLogs $parameters)
+    public function telephonyLineLogs(\Ovh\StructType\TelephonyLineLogs $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyLineLogs($parameters));
@@ -2071,10 +2071,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySpareReplace $parameters
-     * @return \PayPal\StructType\TelephonySpareReplaceResponse|bool
+     * @param \Ovh\StructType\TelephonySpareReplace $parameters
+     * @return \Ovh\StructType\TelephonySpareReplaceResponse|bool
      */
-    public function telephonySpareReplace(\PayPal\StructType\TelephonySpareReplace $parameters)
+    public function telephonySpareReplace(\Ovh\StructType\TelephonySpareReplace $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySpareReplace($parameters));
@@ -2090,10 +2090,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyClick2CallUserList $parameters
-     * @return \PayPal\StructType\TelephonyClick2CallUserListResponse|bool
+     * @param \Ovh\StructType\TelephonyClick2CallUserList $parameters
+     * @return \Ovh\StructType\TelephonyClick2CallUserListResponse|bool
      */
-    public function telephonyClick2CallUserList(\PayPal\StructType\TelephonyClick2CallUserList $parameters)
+    public function telephonyClick2CallUserList(\Ovh\StructType\TelephonyClick2CallUserList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyClick2CallUserList($parameters));
@@ -2109,10 +2109,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyVoicemailMailboxList $parameters
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxListResponse|bool
+     * @param \Ovh\StructType\TelephonyVoicemailMailboxList $parameters
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxListResponse|bool
      */
-    public function telephonyVoicemailMailboxList(\PayPal\StructType\TelephonyVoicemailMailboxList $parameters)
+    public function telephonyVoicemailMailboxList(\Ovh\StructType\TelephonyVoicemailMailboxList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyVoicemailMailboxList($parameters));
@@ -2128,10 +2128,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyFaxCampaignDetails $parameters
-     * @return \PayPal\StructType\TelephonyFaxCampaignDetailsResponse|bool
+     * @param \Ovh\StructType\TelephonyFaxCampaignDetails $parameters
+     * @return \Ovh\StructType\TelephonyFaxCampaignDetailsResponse|bool
      */
-    public function telephonyFaxCampaignDetails(\PayPal\StructType\TelephonyFaxCampaignDetails $parameters)
+    public function telephonyFaxCampaignDetails(\Ovh\StructType\TelephonyFaxCampaignDetails $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyFaxCampaignDetails($parameters));
@@ -2147,10 +2147,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookOnGroupDel $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookOnGroupDelResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookOnGroupDel $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookOnGroupDelResponse|bool
      */
-    public function telephonyPhonebookOnGroupDel(\PayPal\StructType\TelephonyPhonebookOnGroupDel $parameters)
+    public function telephonyPhonebookOnGroupDel(\Ovh\StructType\TelephonyPhonebookOnGroupDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookOnGroupDel($parameters));
@@ -2166,10 +2166,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookOnGroupList $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookOnGroupListResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookOnGroupList $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookOnGroupListResponse|bool
      */
-    public function telephonyPhonebookOnGroupList(\PayPal\StructType\TelephonyPhonebookOnGroupList $parameters)
+    public function telephonyPhonebookOnGroupList(\Ovh\StructType\TelephonyPhonebookOnGroupList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookOnGroupList($parameters));
@@ -2185,10 +2185,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySpecialNumberCustomList $parameters
-     * @return \PayPal\StructType\TelephonySpecialNumberCustomListResponse|bool
+     * @param \Ovh\StructType\TelephonySpecialNumberCustomList $parameters
+     * @return \Ovh\StructType\TelephonySpecialNumberCustomListResponse|bool
      */
-    public function telephonySpecialNumberCustomList(\PayPal\StructType\TelephonySpecialNumberCustomList $parameters)
+    public function telephonySpecialNumberCustomList(\Ovh\StructType\TelephonySpecialNumberCustomList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySpecialNumberCustomList($parameters));
@@ -2205,10 +2205,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyFMHuntingModificationSimultaneousCalls $parameters
-     * @return \PayPal\StructType\TelephonyFMHuntingModificationSimultaneousCallsResponse|bool
+     * @param \Ovh\StructType\TelephonyFMHuntingModificationSimultaneousCalls $parameters
+     * @return \Ovh\StructType\TelephonyFMHuntingModificationSimultaneousCallsResponse|bool
      */
-    public function telephonyFMHuntingModificationSimultaneousCalls(\PayPal\StructType\TelephonyFMHuntingModificationSimultaneousCalls $parameters)
+    public function telephonyFMHuntingModificationSimultaneousCalls(\Ovh\StructType\TelephonyFMHuntingModificationSimultaneousCalls $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyFMHuntingModificationSimultaneousCalls($parameters));
@@ -2224,10 +2224,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyVoicemailMailboxDownload $parameters
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxDownloadResponse|bool
+     * @param \Ovh\StructType\TelephonyVoicemailMailboxDownload $parameters
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxDownloadResponse|bool
      */
-    public function telephonyVoicemailMailboxDownload(\PayPal\StructType\TelephonyVoicemailMailboxDownload $parameters)
+    public function telephonyVoicemailMailboxDownload(\Ovh\StructType\TelephonyVoicemailMailboxDownload $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyVoicemailMailboxDownload($parameters));
@@ -2243,10 +2243,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyNicGetIpRestriction $parameters
-     * @return \PayPal\StructType\TelephonyNicGetIpRestrictionResponse|bool
+     * @param \Ovh\StructType\TelephonyNicGetIpRestriction $parameters
+     * @return \Ovh\StructType\TelephonyNicGetIpRestrictionResponse|bool
      */
-    public function telephonyNicGetIpRestriction(\PayPal\StructType\TelephonyNicGetIpRestriction $parameters)
+    public function telephonyNicGetIpRestriction(\Ovh\StructType\TelephonyNicGetIpRestriction $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyNicGetIpRestriction($parameters));
@@ -2262,10 +2262,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyGetClosureEventsAsArray $parameters
-     * @return \PayPal\ArrayType\TelephonyGetClosureEventsAsArrayResponse|bool
+     * @param \Ovh\StructType\TelephonyGetClosureEventsAsArray $parameters
+     * @return \Ovh\ArrayType\TelephonyGetClosureEventsAsArrayResponse|bool
      */
-    public function telephonyGetClosureEventsAsArray(\PayPal\StructType\TelephonyGetClosureEventsAsArray $parameters)
+    public function telephonyGetClosureEventsAsArray(\Ovh\StructType\TelephonyGetClosureEventsAsArray $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyGetClosureEventsAsArray($parameters));
@@ -2281,10 +2281,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookOnSmsContactDel $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactDelResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookOnSmsContactDel $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactDelResponse|bool
      */
-    public function telephonyPhonebookOnSmsContactDel(\PayPal\StructType\TelephonyPhonebookOnSmsContactDel $parameters)
+    public function telephonyPhonebookOnSmsContactDel(\Ovh\StructType\TelephonyPhonebookOnSmsContactDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookOnSmsContactDel($parameters));
@@ -2301,10 +2301,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyReversmentsRefundIsPending $parameters
-     * @return \PayPal\StructType\TelephonyReversmentsRefundIsPendingResponse|bool
+     * @param \Ovh\StructType\TelephonyReversmentsRefundIsPending $parameters
+     * @return \Ovh\StructType\TelephonyReversmentsRefundIsPendingResponse|bool
      */
-    public function telephonyReversmentsRefundIsPending(\PayPal\StructType\TelephonyReversmentsRefundIsPending $parameters)
+    public function telephonyReversmentsRefundIsPending(\Ovh\StructType\TelephonyReversmentsRefundIsPending $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyReversmentsRefundIsPending($parameters));
@@ -2320,10 +2320,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyScreenListInfoModify $parameters
-     * @return \PayPal\StructType\TelephonyScreenListInfoModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyScreenListInfoModify $parameters
+     * @return \Ovh\StructType\TelephonyScreenListInfoModifyResponse|bool
      */
-    public function telephonyScreenListInfoModify(\PayPal\StructType\TelephonyScreenListInfoModify $parameters)
+    public function telephonyScreenListInfoModify(\Ovh\StructType\TelephonyScreenListInfoModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyScreenListInfoModify($parameters));
@@ -2340,10 +2340,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsplusServiceReversableTicketsList $parameters
-     * @return \PayPal\StructType\TelephonySmsplusServiceReversableTicketsListResponse|bool
+     * @param \Ovh\StructType\TelephonySmsplusServiceReversableTicketsList $parameters
+     * @return \Ovh\StructType\TelephonySmsplusServiceReversableTicketsListResponse|bool
      */
-    public function telephonySmsplusServiceReversableTicketsList(\PayPal\StructType\TelephonySmsplusServiceReversableTicketsList $parameters)
+    public function telephonySmsplusServiceReversableTicketsList(\Ovh\StructType\TelephonySmsplusServiceReversableTicketsList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsplusServiceReversableTicketsList($parameters));
@@ -2360,10 +2360,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyHuntingGenericScreenStatusModify $parameters
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenStatusModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyHuntingGenericScreenStatusModify $parameters
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenStatusModifyResponse|bool
      */
-    public function telephonyHuntingGenericScreenStatusModify(\PayPal\StructType\TelephonyHuntingGenericScreenStatusModify $parameters)
+    public function telephonyHuntingGenericScreenStatusModify(\Ovh\StructType\TelephonyHuntingGenericScreenStatusModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyHuntingGenericScreenStatusModify($parameters));
@@ -2379,10 +2379,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsBlacklistedSendersList $parameters
-     * @return \PayPal\StructType\TelephonySmsBlacklistedSendersListResponse|bool
+     * @param \Ovh\StructType\TelephonySmsBlacklistedSendersList $parameters
+     * @return \Ovh\StructType\TelephonySmsBlacklistedSendersListResponse|bool
      */
-    public function telephonySmsBlacklistedSendersList(\PayPal\StructType\TelephonySmsBlacklistedSendersList $parameters)
+    public function telephonySmsBlacklistedSendersList(\Ovh\StructType\TelephonySmsBlacklistedSendersList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsBlacklistedSendersList($parameters));
@@ -2398,10 +2398,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookContactAdd $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookContactAddResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookContactAdd $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookContactAddResponse|bool
      */
-    public function telephonyPhonebookContactAdd(\PayPal\StructType\TelephonyPhonebookContactAdd $parameters)
+    public function telephonyPhonebookContactAdd(\Ovh\StructType\TelephonyPhonebookContactAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookContactAdd($parameters));
@@ -2418,10 +2418,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPortabilityOrderSpecialNumber $parameters
-     * @return \PayPal\StructType\TelephonyPortabilityOrderSpecialNumberResponse|bool
+     * @param \Ovh\StructType\TelephonyPortabilityOrderSpecialNumber $parameters
+     * @return \Ovh\StructType\TelephonyPortabilityOrderSpecialNumberResponse|bool
      */
-    public function telephonyPortabilityOrderSpecialNumber(\PayPal\StructType\TelephonyPortabilityOrderSpecialNumber $parameters)
+    public function telephonyPortabilityOrderSpecialNumber(\Ovh\StructType\TelephonyPortabilityOrderSpecialNumber $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPortabilityOrderSpecialNumber($parameters));
@@ -2437,10 +2437,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsUserSetCallBack $parameters
-     * @return \PayPal\StructType\TelephonySmsUserSetCallBackResponse|bool
+     * @param \Ovh\StructType\TelephonySmsUserSetCallBack $parameters
+     * @return \Ovh\StructType\TelephonySmsUserSetCallBackResponse|bool
      */
-    public function telephonySmsUserSetCallBack(\PayPal\StructType\TelephonySmsUserSetCallBack $parameters)
+    public function telephonySmsUserSetCallBack(\Ovh\StructType\TelephonySmsUserSetCallBack $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsUserSetCallBack($parameters));
@@ -2456,10 +2456,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookOnGroupModify $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookOnGroupModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookOnGroupModify $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookOnGroupModifyResponse|bool
      */
-    public function telephonyPhonebookOnGroupModify(\PayPal\StructType\TelephonyPhonebookOnGroupModify $parameters)
+    public function telephonyPhonebookOnGroupModify(\Ovh\StructType\TelephonyPhonebookOnGroupModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookOnGroupModify($parameters));
@@ -2476,10 +2476,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyLineSwitchOldOfferPossibility $parameters
-     * @return \PayPal\StructType\TelephonyLineSwitchOldOfferPossibilityResponse|bool
+     * @param \Ovh\StructType\TelephonyLineSwitchOldOfferPossibility $parameters
+     * @return \Ovh\StructType\TelephonyLineSwitchOldOfferPossibilityResponse|bool
      */
-    public function telephonyLineSwitchOldOfferPossibility(\PayPal\StructType\TelephonyLineSwitchOldOfferPossibility $parameters)
+    public function telephonyLineSwitchOldOfferPossibility(\Ovh\StructType\TelephonyLineSwitchOldOfferPossibility $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyLineSwitchOldOfferPossibility($parameters));
@@ -2495,10 +2495,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsplusServiceList $parameters
-     * @return \PayPal\StructType\TelephonySmsplusServiceListResponse|bool
+     * @param \Ovh\StructType\TelephonySmsplusServiceList $parameters
+     * @return \Ovh\StructType\TelephonySmsplusServiceListResponse|bool
      */
-    public function telephonySmsplusServiceList(\PayPal\StructType\TelephonySmsplusServiceList $parameters)
+    public function telephonySmsplusServiceList(\Ovh\StructType\TelephonySmsplusServiceList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsplusServiceList($parameters));
@@ -2515,10 +2515,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyHuntingModificationAnonymousCallRejection $parameters
-     * @return \PayPal\StructType\TelephonyHuntingModificationAnonymousCallRejectionResponse|bool
+     * @param \Ovh\StructType\TelephonyHuntingModificationAnonymousCallRejection $parameters
+     * @return \Ovh\StructType\TelephonyHuntingModificationAnonymousCallRejectionResponse|bool
      */
-    public function telephonyHuntingModificationAnonymousCallRejection(\PayPal\StructType\TelephonyHuntingModificationAnonymousCallRejection $parameters)
+    public function telephonyHuntingModificationAnonymousCallRejection(\Ovh\StructType\TelephonyHuntingModificationAnonymousCallRejection $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyHuntingModificationAnonymousCallRejection($parameters));
@@ -2534,10 +2534,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyNumberGetBillingAccount $parameters
-     * @return \PayPal\StructType\TelephonyNumberGetBillingAccountResponse|bool
+     * @param \Ovh\StructType\TelephonyNumberGetBillingAccount $parameters
+     * @return \Ovh\StructType\TelephonyNumberGetBillingAccountResponse|bool
      */
-    public function telephonyNumberGetBillingAccount(\PayPal\StructType\TelephonyNumberGetBillingAccount $parameters)
+    public function telephonyNumberGetBillingAccount(\Ovh\StructType\TelephonyNumberGetBillingAccount $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyNumberGetBillingAccount($parameters));
@@ -2553,10 +2553,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyTonesOptionsList $parameters
-     * @return \PayPal\StructType\TelephonyTonesOptionsListResponse|bool
+     * @param \Ovh\StructType\TelephonyTonesOptionsList $parameters
+     * @return \Ovh\StructType\TelephonyTonesOptionsListResponse|bool
      */
-    public function telephonyTonesOptionsList(\PayPal\StructType\TelephonyTonesOptionsList $parameters)
+    public function telephonyTonesOptionsList(\Ovh\StructType\TelephonyTonesOptionsList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyTonesOptionsList($parameters));
@@ -2572,10 +2572,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySpareList $parameters
-     * @return \PayPal\StructType\TelephonySpareListResponse|bool
+     * @param \Ovh\StructType\TelephonySpareList $parameters
+     * @return \Ovh\StructType\TelephonySpareListResponse|bool
      */
-    public function telephonySpareList(\PayPal\StructType\TelephonySpareList $parameters)
+    public function telephonySpareList(\Ovh\StructType\TelephonySpareList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySpareList($parameters));
@@ -2592,10 +2592,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyListSummationCallsFromNumber $parameters
-     * @return \PayPal\StructType\TelephonyListSummationCallsFromNumberResponse|bool
+     * @param \Ovh\StructType\TelephonyListSummationCallsFromNumber $parameters
+     * @return \Ovh\StructType\TelephonyListSummationCallsFromNumberResponse|bool
      */
-    public function telephonyListSummationCallsFromNumber(\PayPal\StructType\TelephonyListSummationCallsFromNumber $parameters)
+    public function telephonyListSummationCallsFromNumber(\Ovh\StructType\TelephonyListSummationCallsFromNumber $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyListSummationCallsFromNumber($parameters));
@@ -2611,10 +2611,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyConferenceGetParams $parameters
-     * @return \PayPal\StructType\TelephonyConferenceGetParamsResponse|bool
+     * @param \Ovh\StructType\TelephonyConferenceGetParams $parameters
+     * @return \Ovh\StructType\TelephonyConferenceGetParamsResponse|bool
      */
-    public function telephonyConferenceGetParams(\PayPal\StructType\TelephonyConferenceGetParams $parameters)
+    public function telephonyConferenceGetParams(\Ovh\StructType\TelephonyConferenceGetParams $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyConferenceGetParams($parameters));
@@ -2630,10 +2630,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookContactModify $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookContactModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookContactModify $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookContactModifyResponse|bool
      */
-    public function telephonyPhonebookContactModify(\PayPal\StructType\TelephonyPhonebookContactModify $parameters)
+    public function telephonyPhonebookContactModify(\Ovh\StructType\TelephonyPhonebookContactModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookContactModify($parameters));
@@ -2649,10 +2649,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyLineList $parameters
-     * @return \PayPal\StructType\TelephonyLineListResponse|bool
+     * @param \Ovh\StructType\TelephonyLineList $parameters
+     * @return \Ovh\StructType\TelephonyLineListResponse|bool
      */
-    public function telephonyLineList(\PayPal\StructType\TelephonyLineList $parameters)
+    public function telephonyLineList(\Ovh\StructType\TelephonyLineList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyLineList($parameters));
@@ -2668,10 +2668,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyLineOptionsModify $parameters
-     * @return \PayPal\StructType\TelephonyLineOptionsModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyLineOptionsModify $parameters
+     * @return \Ovh\StructType\TelephonyLineOptionsModifyResponse|bool
      */
-    public function telephonyLineOptionsModify(\PayPal\StructType\TelephonyLineOptionsModify $parameters)
+    public function telephonyLineOptionsModify(\Ovh\StructType\TelephonyLineOptionsModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyLineOptionsModify($parameters));
@@ -2687,10 +2687,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyHuntingGenericScreenSet $parameters
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenSetResponse|bool
+     * @param \Ovh\StructType\TelephonyHuntingGenericScreenSet $parameters
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenSetResponse|bool
      */
-    public function telephonyHuntingGenericScreenSet(\PayPal\StructType\TelephonyHuntingGenericScreenSet $parameters)
+    public function telephonyHuntingGenericScreenSet(\Ovh\StructType\TelephonyHuntingGenericScreenSet $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyHuntingGenericScreenSet($parameters));
@@ -2706,10 +2706,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyFaxCampaignStartStop $parameters
-     * @return \PayPal\StructType\TelephonyFaxCampaignStartStopResponse|bool
+     * @param \Ovh\StructType\TelephonyFaxCampaignStartStop $parameters
+     * @return \Ovh\StructType\TelephonyFaxCampaignStartStopResponse|bool
      */
-    public function telephonyFaxCampaignStartStop(\PayPal\StructType\TelephonyFaxCampaignStartStop $parameters)
+    public function telephonyFaxCampaignStartStop(\Ovh\StructType\TelephonyFaxCampaignStartStop $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyFaxCampaignStartStop($parameters));
@@ -2725,10 +2725,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyDirectoryModifyAddress $parameters
-     * @return \PayPal\StructType\TelephonyDirectoryModifyAddressResponse|bool
+     * @param \Ovh\StructType\TelephonyDirectoryModifyAddress $parameters
+     * @return \Ovh\StructType\TelephonyDirectoryModifyAddressResponse|bool
      */
-    public function telephonyDirectoryModifyAddress(\PayPal\StructType\TelephonyDirectoryModifyAddress $parameters)
+    public function telephonyDirectoryModifyAddress(\Ovh\StructType\TelephonyDirectoryModifyAddress $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyDirectoryModifyAddress($parameters));
@@ -2744,10 +2744,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyNicSetMgcpIpRestriction $parameters
-     * @return \PayPal\StructType\TelephonyNicSetMgcpIpRestrictionResponse|bool
+     * @param \Ovh\StructType\TelephonyNicSetMgcpIpRestriction $parameters
+     * @return \Ovh\StructType\TelephonyNicSetMgcpIpRestrictionResponse|bool
      */
-    public function telephonyNicSetMgcpIpRestriction(\PayPal\StructType\TelephonyNicSetMgcpIpRestriction $parameters)
+    public function telephonyNicSetMgcpIpRestriction(\Ovh\StructType\TelephonyNicSetMgcpIpRestriction $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyNicSetMgcpIpRestriction($parameters));
@@ -2763,10 +2763,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySecurityDepositCredit $parameters
-     * @return \PayPal\StructType\TelephonySecurityDepositCreditResponse|bool
+     * @param \Ovh\StructType\TelephonySecurityDepositCredit $parameters
+     * @return \Ovh\StructType\TelephonySecurityDepositCreditResponse|bool
      */
-    public function telephonySecurityDepositCredit(\PayPal\StructType\TelephonySecurityDepositCredit $parameters)
+    public function telephonySecurityDepositCredit(\Ovh\StructType\TelephonySecurityDepositCredit $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySecurityDepositCredit($parameters));
@@ -2782,10 +2782,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyLineOrder $parameters
-     * @return \PayPal\StructType\TelephonyLineOrderResponse|bool
+     * @param \Ovh\StructType\TelephonyLineOrder $parameters
+     * @return \Ovh\StructType\TelephonyLineOrderResponse|bool
      */
-    public function telephonyLineOrder(\PayPal\StructType\TelephonyLineOrder $parameters)
+    public function telephonyLineOrder(\Ovh\StructType\TelephonyLineOrder $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyLineOrder($parameters));
@@ -2801,10 +2801,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyConferenceAction $parameters
-     * @return \PayPal\StructType\TelephonyConferenceActionResponse|bool
+     * @param \Ovh\StructType\TelephonyConferenceAction $parameters
+     * @return \Ovh\StructType\TelephonyConferenceActionResponse|bool
      */
-    public function telephonyConferenceAction(\PayPal\StructType\TelephonyConferenceAction $parameters)
+    public function telephonyConferenceAction(\Ovh\StructType\TelephonyConferenceAction $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyConferenceAction($parameters));
@@ -2820,10 +2820,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyFunctionKeyDel $parameters
-     * @return \PayPal\StructType\TelephonyFunctionKeyDelResponse|bool
+     * @param \Ovh\StructType\TelephonyFunctionKeyDel $parameters
+     * @return \Ovh\StructType\TelephonyFunctionKeyDelResponse|bool
      */
-    public function telephonyFunctionKeyDel(\PayPal\StructType\TelephonyFunctionKeyDel $parameters)
+    public function telephonyFunctionKeyDel(\Ovh\StructType\TelephonyFunctionKeyDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyFunctionKeyDel($parameters));
@@ -2839,10 +2839,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyNicGetSipDomain $parameters
-     * @return \PayPal\StructType\TelephonyNicGetSipDomainResponse|bool
+     * @param \Ovh\StructType\TelephonyNicGetSipDomain $parameters
+     * @return \Ovh\StructType\TelephonyNicGetSipDomainResponse|bool
      */
-    public function telephonyNicGetSipDomain(\PayPal\StructType\TelephonyNicGetSipDomain $parameters)
+    public function telephonyNicGetSipDomain(\Ovh\StructType\TelephonyNicGetSipDomain $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyNicGetSipDomain($parameters));
@@ -2858,10 +2858,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyGetClosureEventsAsICS $parameters
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsICSResponse|bool
+     * @param \Ovh\StructType\TelephonyGetClosureEventsAsICS $parameters
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsICSResponse|bool
      */
-    public function telephonyGetClosureEventsAsICS(\PayPal\StructType\TelephonyGetClosureEventsAsICS $parameters)
+    public function telephonyGetClosureEventsAsICS(\Ovh\StructType\TelephonyGetClosureEventsAsICS $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyGetClosureEventsAsICS($parameters));
@@ -2877,10 +2877,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsUserCreditLeft $parameters
-     * @return \PayPal\StructType\TelephonySmsUserCreditLeftResponse|bool
+     * @param \Ovh\StructType\TelephonySmsUserCreditLeft $parameters
+     * @return \Ovh\StructType\TelephonySmsUserCreditLeftResponse|bool
      */
-    public function telephonySmsUserCreditLeft(\PayPal\StructType\TelephonySmsUserCreditLeft $parameters)
+    public function telephonySmsUserCreditLeft(\Ovh\StructType\TelephonySmsUserCreditLeft $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsUserCreditLeft($parameters));
@@ -2896,10 +2896,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPortabilityOrder $parameters
-     * @return \PayPal\StructType\TelephonyPortabilityOrderResponse|bool
+     * @param \Ovh\StructType\TelephonyPortabilityOrder $parameters
+     * @return \Ovh\StructType\TelephonyPortabilityOrderResponse|bool
      */
-    public function telephonyPortabilityOrder(\PayPal\StructType\TelephonyPortabilityOrder $parameters)
+    public function telephonyPortabilityOrder(\Ovh\StructType\TelephonyPortabilityOrder $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPortabilityOrder($parameters));
@@ -2915,10 +2915,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyVoicemailMailboxDelete $parameters
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxDeleteResponse|bool
+     * @param \Ovh\StructType\TelephonyVoicemailMailboxDelete $parameters
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxDeleteResponse|bool
      */
-    public function telephonyVoicemailMailboxDelete(\PayPal\StructType\TelephonyVoicemailMailboxDelete $parameters)
+    public function telephonyVoicemailMailboxDelete(\Ovh\StructType\TelephonyVoicemailMailboxDelete $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyVoicemailMailboxDelete($parameters));
@@ -2934,10 +2934,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyBillingAccountDel $parameters
-     * @return \PayPal\StructType\TelephonyBillingAccountDelResponse|bool
+     * @param \Ovh\StructType\TelephonyBillingAccountDel $parameters
+     * @return \Ovh\StructType\TelephonyBillingAccountDelResponse|bool
      */
-    public function telephonyBillingAccountDel(\PayPal\StructType\TelephonyBillingAccountDel $parameters)
+    public function telephonyBillingAccountDel(\Ovh\StructType\TelephonyBillingAccountDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyBillingAccountDel($parameters));
@@ -2953,10 +2953,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyNumberClean $parameters
-     * @return \PayPal\StructType\TelephonyNumberCleanResponse|bool
+     * @param \Ovh\StructType\TelephonyNumberClean $parameters
+     * @return \Ovh\StructType\TelephonyNumberCleanResponse|bool
      */
-    public function telephonyNumberClean(\PayPal\StructType\TelephonyNumberClean $parameters)
+    public function telephonyNumberClean(\Ovh\StructType\TelephonyNumberClean $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyNumberClean($parameters));
@@ -2972,10 +2972,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPlugAndPhoneOperation $parameters
-     * @return \PayPal\StructType\TelephonyPlugAndPhoneOperationResponse|bool
+     * @param \Ovh\StructType\TelephonyPlugAndPhoneOperation $parameters
+     * @return \Ovh\StructType\TelephonyPlugAndPhoneOperationResponse|bool
      */
-    public function telephonyPlugAndPhoneOperation(\PayPal\StructType\TelephonyPlugAndPhoneOperation $parameters)
+    public function telephonyPlugAndPhoneOperation(\Ovh\StructType\TelephonyPlugAndPhoneOperation $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPlugAndPhoneOperation($parameters));
@@ -2992,10 +2992,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookOnSmsContactModify $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookOnSmsContactModify $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactModifyResponse|bool
      */
-    public function telephonyPhonebookOnSmsContactModify(\PayPal\StructType\TelephonyPhonebookOnSmsContactModify $parameters)
+    public function telephonyPhonebookOnSmsContactModify(\Ovh\StructType\TelephonyPhonebookOnSmsContactModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookOnSmsContactModify($parameters));
@@ -3011,10 +3011,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookOnSmsModify $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookOnSmsModify $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsModifyResponse|bool
      */
-    public function telephonyPhonebookOnSmsModify(\PayPal\StructType\TelephonyPhonebookOnSmsModify $parameters)
+    public function telephonyPhonebookOnSmsModify(\Ovh\StructType\TelephonyPhonebookOnSmsModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookOnSmsModify($parameters));
@@ -3030,10 +3030,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsSetQuotaNotification $parameters
-     * @return \PayPal\StructType\TelephonySmsSetQuotaNotificationResponse|bool
+     * @param \Ovh\StructType\TelephonySmsSetQuotaNotification $parameters
+     * @return \Ovh\StructType\TelephonySmsSetQuotaNotificationResponse|bool
      */
-    public function telephonySmsSetQuotaNotification(\PayPal\StructType\TelephonySmsSetQuotaNotification $parameters)
+    public function telephonySmsSetQuotaNotification(\Ovh\StructType\TelephonySmsSetQuotaNotification $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsSetQuotaNotification($parameters));
@@ -3049,10 +3049,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsUserList $parameters
-     * @return \PayPal\StructType\TelephonySmsUserListResponse|bool
+     * @param \Ovh\StructType\TelephonySmsUserList $parameters
+     * @return \Ovh\StructType\TelephonySmsUserListResponse|bool
      */
-    public function telephonySmsUserList(\PayPal\StructType\TelephonySmsUserList $parameters)
+    public function telephonySmsUserList(\Ovh\StructType\TelephonySmsUserList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsUserList($parameters));
@@ -3068,10 +3068,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyHuntingInfo $parameters
-     * @return \PayPal\StructType\TelephonyHuntingInfoResponse|bool
+     * @param \Ovh\StructType\TelephonyHuntingInfo $parameters
+     * @return \Ovh\StructType\TelephonyHuntingInfoResponse|bool
      */
-    public function telephonyHuntingInfo(\PayPal\StructType\TelephonyHuntingInfo $parameters)
+    public function telephonyHuntingInfo(\Ovh\StructType\TelephonyHuntingInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyHuntingInfo($parameters));
@@ -3087,10 +3087,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookContactList $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookContactListResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookContactList $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookContactListResponse|bool
      */
-    public function telephonyPhonebookContactList(\PayPal\StructType\TelephonyPhonebookContactList $parameters)
+    public function telephonyPhonebookContactList(\Ovh\StructType\TelephonyPhonebookContactList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookContactList($parameters));
@@ -3106,10 +3106,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsUserPassword $parameters
-     * @return \PayPal\StructType\TelephonySmsUserPasswordResponse|bool
+     * @param \Ovh\StructType\TelephonySmsUserPassword $parameters
+     * @return \Ovh\StructType\TelephonySmsUserPasswordResponse|bool
      */
-    public function telephonySmsUserPassword(\PayPal\StructType\TelephonySmsUserPassword $parameters)
+    public function telephonySmsUserPassword(\Ovh\StructType\TelephonySmsUserPassword $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsUserPassword($parameters));
@@ -3125,10 +3125,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyLineGetOfferPrices $parameters
-     * @return \PayPal\StructType\TelephonyLineGetOfferPricesResponse|bool
+     * @param \Ovh\StructType\TelephonyLineGetOfferPrices $parameters
+     * @return \Ovh\StructType\TelephonyLineGetOfferPricesResponse|bool
      */
-    public function telephonyLineGetOfferPrices(\PayPal\StructType\TelephonyLineGetOfferPrices $parameters)
+    public function telephonyLineGetOfferPrices(\Ovh\StructType\TelephonyLineGetOfferPrices $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyLineGetOfferPrices($parameters));
@@ -3144,10 +3144,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsGetQuotaNotification $parameters
-     * @return \PayPal\StructType\TelephonySmsGetQuotaNotificationResponse|bool
+     * @param \Ovh\StructType\TelephonySmsGetQuotaNotification $parameters
+     * @return \Ovh\StructType\TelephonySmsGetQuotaNotificationResponse|bool
      */
-    public function telephonySmsGetQuotaNotification(\PayPal\StructType\TelephonySmsGetQuotaNotification $parameters)
+    public function telephonySmsGetQuotaNotification(\Ovh\StructType\TelephonySmsGetQuotaNotification $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsGetQuotaNotification($parameters));
@@ -3163,10 +3163,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyHuntingModificationMode $parameters
-     * @return \PayPal\StructType\TelephonyHuntingModificationModeResponse|bool
+     * @param \Ovh\StructType\TelephonyHuntingModificationMode $parameters
+     * @return \Ovh\StructType\TelephonyHuntingModificationModeResponse|bool
      */
-    public function telephonyHuntingModificationMode(\PayPal\StructType\TelephonyHuntingModificationMode $parameters)
+    public function telephonyHuntingModificationMode(\Ovh\StructType\TelephonyHuntingModificationMode $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyHuntingModificationMode($parameters));
@@ -3183,10 +3183,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyScreenListBlackWhiteChoice $parameters
-     * @return \PayPal\StructType\TelephonyScreenListBlackWhiteChoiceResponse|bool
+     * @param \Ovh\StructType\TelephonyScreenListBlackWhiteChoice $parameters
+     * @return \Ovh\StructType\TelephonyScreenListBlackWhiteChoiceResponse|bool
      */
-    public function telephonyScreenListBlackWhiteChoice(\PayPal\StructType\TelephonyScreenListBlackWhiteChoice $parameters)
+    public function telephonyScreenListBlackWhiteChoice(\Ovh\StructType\TelephonyScreenListBlackWhiteChoice $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyScreenListBlackWhiteChoice($parameters));
@@ -3202,10 +3202,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsDeleteCsvAttachment $parameters
-     * @return \PayPal\StructType\TelephonySmsDeleteCsvAttachmentResponse|bool
+     * @param \Ovh\StructType\TelephonySmsDeleteCsvAttachment $parameters
+     * @return \Ovh\StructType\TelephonySmsDeleteCsvAttachmentResponse|bool
      */
-    public function telephonySmsDeleteCsvAttachment(\PayPal\StructType\TelephonySmsDeleteCsvAttachment $parameters)
+    public function telephonySmsDeleteCsvAttachment(\Ovh\StructType\TelephonySmsDeleteCsvAttachment $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsDeleteCsvAttachment($parameters));
@@ -3221,10 +3221,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyNumberZoneAndPrefixList $parameters
-     * @return \PayPal\StructType\TelephonyNumberZoneAndPrefixListResponse|bool
+     * @param \Ovh\StructType\TelephonyNumberZoneAndPrefixList $parameters
+     * @return \Ovh\StructType\TelephonyNumberZoneAndPrefixListResponse|bool
      */
-    public function telephonyNumberZoneAndPrefixList(\PayPal\StructType\TelephonyNumberZoneAndPrefixList $parameters)
+    public function telephonyNumberZoneAndPrefixList(\Ovh\StructType\TelephonyNumberZoneAndPrefixList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyNumberZoneAndPrefixList($parameters));
@@ -3240,10 +3240,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyLineSetSipDomain $parameters
-     * @return \PayPal\StructType\TelephonyLineSetSipDomainResponse|bool
+     * @param \Ovh\StructType\TelephonyLineSetSipDomain $parameters
+     * @return \Ovh\StructType\TelephonyLineSetSipDomainResponse|bool
      */
-    public function telephonyLineSetSipDomain(\PayPal\StructType\TelephonyLineSetSipDomain $parameters)
+    public function telephonyLineSetSipDomain(\Ovh\StructType\TelephonyLineSetSipDomain $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyLineSetSipDomain($parameters));
@@ -3260,10 +3260,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberDel $parameters
-     * @return \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberDelResponse|bool
+     * @param \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberDel $parameters
+     * @return \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberDelResponse|bool
      */
-    public function telephonyTrunkExternalDisplayedNumberDel(\PayPal\StructType\TelephonyTrunkExternalDisplayedNumberDel $parameters)
+    public function telephonyTrunkExternalDisplayedNumberDel(\Ovh\StructType\TelephonyTrunkExternalDisplayedNumberDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyTrunkExternalDisplayedNumberDel($parameters));
@@ -3280,10 +3280,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookOnGroupContactList $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookOnGroupContactListResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookOnGroupContactList $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookOnGroupContactListResponse|bool
      */
-    public function telephonyPhonebookOnGroupContactList(\PayPal\StructType\TelephonyPhonebookOnGroupContactList $parameters)
+    public function telephonyPhonebookOnGroupContactList(\Ovh\StructType\TelephonyPhonebookOnGroupContactList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookOnGroupContactList($parameters));
@@ -3300,10 +3300,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsplusServiceReversableTicketsSummary $parameters
-     * @return \PayPal\StructType\TelephonySmsplusServiceReversableTicketsSummaryResponse|bool
+     * @param \Ovh\StructType\TelephonySmsplusServiceReversableTicketsSummary $parameters
+     * @return \Ovh\StructType\TelephonySmsplusServiceReversableTicketsSummaryResponse|bool
      */
-    public function telephonySmsplusServiceReversableTicketsSummary(\PayPal\StructType\TelephonySmsplusServiceReversableTicketsSummary $parameters)
+    public function telephonySmsplusServiceReversableTicketsSummary(\Ovh\StructType\TelephonySmsplusServiceReversableTicketsSummary $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsplusServiceReversableTicketsSummary($parameters));
@@ -3319,10 +3319,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyDeleteLine $parameters
-     * @return \PayPal\StructType\TelephonyDeleteLineResponse|bool
+     * @param \Ovh\StructType\TelephonyDeleteLine $parameters
+     * @return \Ovh\StructType\TelephonyDeleteLineResponse|bool
      */
-    public function telephonyDeleteLine(\PayPal\StructType\TelephonyDeleteLine $parameters)
+    public function telephonyDeleteLine(\Ovh\StructType\TelephonyDeleteLine $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyDeleteLine($parameters));
@@ -3338,10 +3338,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySetTimeZoneNumber $parameters
-     * @return \PayPal\StructType\TelephonySetTimeZoneNumberResponse|bool
+     * @param \Ovh\StructType\TelephonySetTimeZoneNumber $parameters
+     * @return \Ovh\StructType\TelephonySetTimeZoneNumberResponse|bool
      */
-    public function telephonySetTimeZoneNumber(\PayPal\StructType\TelephonySetTimeZoneNumber $parameters)
+    public function telephonySetTimeZoneNumber(\Ovh\StructType\TelephonySetTimeZoneNumber $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySetTimeZoneNumber($parameters));
@@ -3357,10 +3357,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyNicSetIpRestriction $parameters
-     * @return \PayPal\StructType\TelephonyNicSetIpRestrictionResponse|bool
+     * @param \Ovh\StructType\TelephonyNicSetIpRestriction $parameters
+     * @return \Ovh\StructType\TelephonyNicSetIpRestrictionResponse|bool
      */
-    public function telephonyNicSetIpRestriction(\PayPal\StructType\TelephonyNicSetIpRestriction $parameters)
+    public function telephonyNicSetIpRestriction(\Ovh\StructType\TelephonyNicSetIpRestriction $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyNicSetIpRestriction($parameters));
@@ -3376,10 +3376,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPortabilityStatus $parameters
-     * @return \PayPal\StructType\TelephonyPortabilityStatusResponse|bool
+     * @param \Ovh\StructType\TelephonyPortabilityStatus $parameters
+     * @return \Ovh\StructType\TelephonyPortabilityStatusResponse|bool
      */
-    public function telephonyPortabilityStatus(\PayPal\StructType\TelephonyPortabilityStatus $parameters)
+    public function telephonyPortabilityStatus(\Ovh\StructType\TelephonyPortabilityStatus $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPortabilityStatus($parameters));
@@ -3395,10 +3395,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySecurityDepositInfo $parameters
-     * @return \PayPal\StructType\TelephonySecurityDepositInfoResponse|bool
+     * @param \Ovh\StructType\TelephonySecurityDepositInfo $parameters
+     * @return \Ovh\StructType\TelephonySecurityDepositInfoResponse|bool
      */
-    public function telephonySecurityDepositInfo(\PayPal\StructType\TelephonySecurityDepositInfo $parameters)
+    public function telephonySecurityDepositInfo(\Ovh\StructType\TelephonySecurityDepositInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySecurityDepositInfo($parameters));
@@ -3414,10 +3414,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsListCsvAttachment $parameters
-     * @return \PayPal\StructType\TelephonySmsListCsvAttachmentResponse|bool
+     * @param \Ovh\StructType\TelephonySmsListCsvAttachment $parameters
+     * @return \Ovh\StructType\TelephonySmsListCsvAttachmentResponse|bool
      */
-    public function telephonySmsListCsvAttachment(\PayPal\StructType\TelephonySmsListCsvAttachment $parameters)
+    public function telephonySmsListCsvAttachment(\Ovh\StructType\TelephonySmsListCsvAttachment $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsListCsvAttachment($parameters));
@@ -3433,10 +3433,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsCancelSending $parameters
-     * @return \PayPal\StructType\TelephonySmsCancelSendingResponse|bool
+     * @param \Ovh\StructType\TelephonySmsCancelSending $parameters
+     * @return \Ovh\StructType\TelephonySmsCancelSendingResponse|bool
      */
-    public function telephonySmsCancelSending(\PayPal\StructType\TelephonySmsCancelSending $parameters)
+    public function telephonySmsCancelSending(\Ovh\StructType\TelephonySmsCancelSending $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsCancelSending($parameters));
@@ -3452,10 +3452,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyScreenListInfo $parameters
-     * @return \PayPal\StructType\TelephonyScreenListInfoResponse|bool
+     * @param \Ovh\StructType\TelephonyScreenListInfo $parameters
+     * @return \Ovh\StructType\TelephonyScreenListInfoResponse|bool
      */
-    public function telephonyScreenListInfo(\PayPal\StructType\TelephonyScreenListInfo $parameters)
+    public function telephonyScreenListInfo(\Ovh\StructType\TelephonyScreenListInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyScreenListInfo($parameters));
@@ -3471,10 +3471,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyLineLogsOnGroup $parameters
-     * @return \PayPal\StructType\TelephonyLineLogsOnGroupResponse|bool
+     * @param \Ovh\StructType\TelephonyLineLogsOnGroup $parameters
+     * @return \Ovh\StructType\TelephonyLineLogsOnGroupResponse|bool
      */
-    public function telephonyLineLogsOnGroup(\PayPal\StructType\TelephonyLineLogsOnGroup $parameters)
+    public function telephonyLineLogsOnGroup(\Ovh\StructType\TelephonyLineLogsOnGroup $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyLineLogsOnGroup($parameters));
@@ -3490,10 +3490,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyLineGetMgcpIpRestriction $parameters
-     * @return \PayPal\StructType\TelephonyLineGetMgcpIpRestrictionResponse|bool
+     * @param \Ovh\StructType\TelephonyLineGetMgcpIpRestriction $parameters
+     * @return \Ovh\StructType\TelephonyLineGetMgcpIpRestrictionResponse|bool
      */
-    public function telephonyLineGetMgcpIpRestriction(\PayPal\StructType\TelephonyLineGetMgcpIpRestriction $parameters)
+    public function telephonyLineGetMgcpIpRestriction(\Ovh\StructType\TelephonyLineGetMgcpIpRestriction $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyLineGetMgcpIpRestriction($parameters));
@@ -3509,10 +3509,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyLineDetails $parameters
-     * @return \PayPal\StructType\TelephonyLineDetailsResponse|bool
+     * @param \Ovh\StructType\TelephonyLineDetails $parameters
+     * @return \Ovh\StructType\TelephonyLineDetailsResponse|bool
      */
-    public function telephonyLineDetails(\PayPal\StructType\TelephonyLineDetails $parameters)
+    public function telephonyLineDetails(\Ovh\StructType\TelephonyLineDetails $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyLineDetails($parameters));
@@ -3528,10 +3528,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookContactDel $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookContactDelResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookContactDel $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookContactDelResponse|bool
      */
-    public function telephonyPhonebookContactDel(\PayPal\StructType\TelephonyPhonebookContactDel $parameters)
+    public function telephonyPhonebookContactDel(\Ovh\StructType\TelephonyPhonebookContactDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookContactDel($parameters));
@@ -3547,10 +3547,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyRatesListCsv $parameters
-     * @return \PayPal\StructType\TelephonyRatesListCsvResponse|bool
+     * @param \Ovh\StructType\TelephonyRatesListCsv $parameters
+     * @return \Ovh\StructType\TelephonyRatesListCsvResponse|bool
      */
-    public function telephonyRatesListCsv(\PayPal\StructType\TelephonyRatesListCsv $parameters)
+    public function telephonyRatesListCsv(\Ovh\StructType\TelephonyRatesListCsv $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyRatesListCsv($parameters));
@@ -3566,10 +3566,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyConferenceGetInfos $parameters
-     * @return \PayPal\StructType\TelephonyConferenceGetInfosResponse|bool
+     * @param \Ovh\StructType\TelephonyConferenceGetInfos $parameters
+     * @return \Ovh\StructType\TelephonyConferenceGetInfosResponse|bool
      */
-    public function telephonyConferenceGetInfos(\PayPal\StructType\TelephonyConferenceGetInfos $parameters)
+    public function telephonyConferenceGetInfos(\Ovh\StructType\TelephonyConferenceGetInfos $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyConferenceGetInfos($parameters));
@@ -3585,10 +3585,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookOnSmsContactList $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactListResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookOnSmsContactList $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactListResponse|bool
      */
-    public function telephonyPhonebookOnSmsContactList(\PayPal\StructType\TelephonyPhonebookOnSmsContactList $parameters)
+    public function telephonyPhonebookOnSmsContactList(\Ovh\StructType\TelephonyPhonebookOnSmsContactList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookOnSmsContactList($parameters));
@@ -3604,10 +3604,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookOnSmsContactAdd $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookOnSmsContactAddResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookOnSmsContactAdd $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookOnSmsContactAddResponse|bool
      */
-    public function telephonyPhonebookOnSmsContactAdd(\PayPal\StructType\TelephonyPhonebookOnSmsContactAdd $parameters)
+    public function telephonyPhonebookOnSmsContactAdd(\Ovh\StructType\TelephonyPhonebookOnSmsContactAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookOnSmsContactAdd($parameters));
@@ -3624,10 +3624,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyFMHuntingModificationAnonymousCallRejection $parameters
-     * @return \PayPal\StructType\TelephonyFMHuntingModificationAnonymousCallRejectionResponse|bool
+     * @param \Ovh\StructType\TelephonyFMHuntingModificationAnonymousCallRejection $parameters
+     * @return \Ovh\StructType\TelephonyFMHuntingModificationAnonymousCallRejectionResponse|bool
      */
-    public function telephonyFMHuntingModificationAnonymousCallRejection(\PayPal\StructType\TelephonyFMHuntingModificationAnonymousCallRejection $parameters)
+    public function telephonyFMHuntingModificationAnonymousCallRejection(\Ovh\StructType\TelephonyFMHuntingModificationAnonymousCallRejection $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyFMHuntingModificationAnonymousCallRejection($parameters));
@@ -3643,10 +3643,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyDdiModify $parameters
-     * @return \PayPal\StructType\TelephonyDdiModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyDdiModify $parameters
+     * @return \Ovh\StructType\TelephonyDdiModifyResponse|bool
      */
-    public function telephonyDdiModify(\PayPal\StructType\TelephonyDdiModify $parameters)
+    public function telephonyDdiModify(\Ovh\StructType\TelephonyDdiModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyDdiModify($parameters));
@@ -3662,10 +3662,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyRedirectInfo $parameters
-     * @return \PayPal\StructType\TelephonyRedirectInfoResponse|bool
+     * @param \Ovh\StructType\TelephonyRedirectInfo $parameters
+     * @return \Ovh\StructType\TelephonyRedirectInfoResponse|bool
      */
-    public function telephonyRedirectInfo(\PayPal\StructType\TelephonyRedirectInfo $parameters)
+    public function telephonyRedirectInfo(\Ovh\StructType\TelephonyRedirectInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyRedirectInfo($parameters));
@@ -3681,10 +3681,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsSend $parameters
-     * @return \PayPal\StructType\TelephonySmsSendResponse|bool
+     * @param \Ovh\StructType\TelephonySmsSend $parameters
+     * @return \Ovh\StructType\TelephonySmsSendResponse|bool
      */
-    public function telephonySmsSend(\PayPal\StructType\TelephonySmsSend $parameters)
+    public function telephonySmsSend(\Ovh\StructType\TelephonySmsSend $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsSend($parameters));
@@ -3700,10 +3700,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyLineGetSipDomain $parameters
-     * @return \PayPal\StructType\TelephonyLineGetSipDomainResponse|bool
+     * @param \Ovh\StructType\TelephonyLineGetSipDomain $parameters
+     * @return \Ovh\StructType\TelephonyLineGetSipDomainResponse|bool
      */
-    public function telephonyLineGetSipDomain(\PayPal\StructType\TelephonyLineGetSipDomain $parameters)
+    public function telephonyLineGetSipDomain(\Ovh\StructType\TelephonyLineGetSipDomain $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyLineGetSipDomain($parameters));
@@ -3719,10 +3719,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyToneDelete $parameters
-     * @return \PayPal\StructType\TelephonyToneDeleteResponse|bool
+     * @param \Ovh\StructType\TelephonyToneDelete $parameters
+     * @return \Ovh\StructType\TelephonyToneDeleteResponse|bool
      */
-    public function telephonyToneDelete(\PayPal\StructType\TelephonyToneDelete $parameters)
+    public function telephonyToneDelete(\Ovh\StructType\TelephonyToneDelete $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyToneDelete($parameters));
@@ -3738,10 +3738,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyLineSetMgcpIpRestriction $parameters
-     * @return \PayPal\StructType\TelephonyLineSetMgcpIpRestrictionResponse|bool
+     * @param \Ovh\StructType\TelephonyLineSetMgcpIpRestriction $parameters
+     * @return \Ovh\StructType\TelephonyLineSetMgcpIpRestrictionResponse|bool
      */
-    public function telephonyLineSetMgcpIpRestriction(\PayPal\StructType\TelephonyLineSetMgcpIpRestriction $parameters)
+    public function telephonyLineSetMgcpIpRestriction(\Ovh\StructType\TelephonyLineSetMgcpIpRestriction $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyLineSetMgcpIpRestriction($parameters));
@@ -3758,10 +3758,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookOnGroupContactModify $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookOnGroupContactModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookOnGroupContactModify $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookOnGroupContactModifyResponse|bool
      */
-    public function telephonyPhonebookOnGroupContactModify(\PayPal\StructType\TelephonyPhonebookOnGroupContactModify $parameters)
+    public function telephonyPhonebookOnGroupContactModify(\Ovh\StructType\TelephonyPhonebookOnGroupContactModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookOnGroupContactModify($parameters));
@@ -3778,10 +3778,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyScreenListBlackWhiteChoiceModify $parameters
-     * @return \PayPal\StructType\TelephonyScreenListBlackWhiteChoiceModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyScreenListBlackWhiteChoiceModify $parameters
+     * @return \Ovh\StructType\TelephonyScreenListBlackWhiteChoiceModifyResponse|bool
      */
-    public function telephonyScreenListBlackWhiteChoiceModify(\PayPal\StructType\TelephonyScreenListBlackWhiteChoiceModify $parameters)
+    public function telephonyScreenListBlackWhiteChoiceModify(\Ovh\StructType\TelephonyScreenListBlackWhiteChoiceModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyScreenListBlackWhiteChoiceModify($parameters));
@@ -3797,10 +3797,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsplusServiceDetails $parameters
-     * @return \PayPal\StructType\TelephonySmsplusServiceDetailsResponse|bool
+     * @param \Ovh\StructType\TelephonySmsplusServiceDetails $parameters
+     * @return \Ovh\StructType\TelephonySmsplusServiceDetailsResponse|bool
      */
-    public function telephonySmsplusServiceDetails(\PayPal\StructType\TelephonySmsplusServiceDetails $parameters)
+    public function telephonySmsplusServiceDetails(\Ovh\StructType\TelephonySmsplusServiceDetails $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsplusServiceDetails($parameters));
@@ -3817,10 +3817,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyAbbreviatedNumberOnGroupDel $parameters
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberOnGroupDelResponse|bool
+     * @param \Ovh\StructType\TelephonyAbbreviatedNumberOnGroupDel $parameters
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberOnGroupDelResponse|bool
      */
-    public function telephonyAbbreviatedNumberOnGroupDel(\PayPal\StructType\TelephonyAbbreviatedNumberOnGroupDel $parameters)
+    public function telephonyAbbreviatedNumberOnGroupDel(\Ovh\StructType\TelephonyAbbreviatedNumberOnGroupDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyAbbreviatedNumberOnGroupDel($parameters));
@@ -3836,10 +3836,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsSenderDescription $parameters
-     * @return \PayPal\StructType\TelephonySmsSenderDescriptionResponse|bool
+     * @param \Ovh\StructType\TelephonySmsSenderDescription $parameters
+     * @return \Ovh\StructType\TelephonySmsSenderDescriptionResponse|bool
      */
-    public function telephonySmsSenderDescription(\PayPal\StructType\TelephonySmsSenderDescription $parameters)
+    public function telephonySmsSenderDescription(\Ovh\StructType\TelephonySmsSenderDescription $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsSenderDescription($parameters));
@@ -3856,10 +3856,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyAbbreviatedNumberListPaginated $parameters
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberListPaginatedResponse|bool
+     * @param \Ovh\StructType\TelephonyAbbreviatedNumberListPaginated $parameters
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberListPaginatedResponse|bool
      */
-    public function telephonyAbbreviatedNumberListPaginated(\PayPal\StructType\TelephonyAbbreviatedNumberListPaginated $parameters)
+    public function telephonyAbbreviatedNumberListPaginated(\Ovh\StructType\TelephonyAbbreviatedNumberListPaginated $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyAbbreviatedNumberListPaginated($parameters));
@@ -3876,10 +3876,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySetDefaultPrivateHolidaysEvents $parameters
-     * @return \PayPal\StructType\TelephonySetDefaultPrivateHolidaysEventsResponse|bool
+     * @param \Ovh\StructType\TelephonySetDefaultPrivateHolidaysEvents $parameters
+     * @return \Ovh\StructType\TelephonySetDefaultPrivateHolidaysEventsResponse|bool
      */
-    public function telephonySetDefaultPrivateHolidaysEvents(\PayPal\StructType\TelephonySetDefaultPrivateHolidaysEvents $parameters)
+    public function telephonySetDefaultPrivateHolidaysEvents(\Ovh\StructType\TelephonySetDefaultPrivateHolidaysEvents $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySetDefaultPrivateHolidaysEvents($parameters));
@@ -3895,10 +3895,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySpareServiceList $parameters
-     * @return \PayPal\StructType\TelephonySpareServiceListResponse|bool
+     * @param \Ovh\StructType\TelephonySpareServiceList $parameters
+     * @return \Ovh\StructType\TelephonySpareServiceListResponse|bool
      */
-    public function telephonySpareServiceList(\PayPal\StructType\TelephonySpareServiceList $parameters)
+    public function telephonySpareServiceList(\Ovh\StructType\TelephonySpareServiceList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySpareServiceList($parameters));
@@ -3914,10 +3914,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsUserListCsvAttachment $parameters
-     * @return \PayPal\StructType\TelephonySmsUserListCsvAttachmentResponse|bool
+     * @param \Ovh\StructType\TelephonySmsUserListCsvAttachment $parameters
+     * @return \Ovh\StructType\TelephonySmsUserListCsvAttachmentResponse|bool
      */
-    public function telephonySmsUserListCsvAttachment(\PayPal\StructType\TelephonySmsUserListCsvAttachment $parameters)
+    public function telephonySmsUserListCsvAttachment(\Ovh\StructType\TelephonySmsUserListCsvAttachment $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsUserListCsvAttachment($parameters));
@@ -3933,10 +3933,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyFaxCallList $parameters
-     * @return \PayPal\StructType\TelephonyFaxCallListResponse|bool
+     * @param \Ovh\StructType\TelephonyFaxCallList $parameters
+     * @return \Ovh\StructType\TelephonyFaxCallListResponse|bool
      */
-    public function telephonyFaxCallList(\PayPal\StructType\TelephonyFaxCallList $parameters)
+    public function telephonyFaxCallList(\Ovh\StructType\TelephonyFaxCallList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyFaxCallList($parameters));
@@ -3952,10 +3952,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsUserSend $parameters
-     * @return \PayPal\StructType\TelephonySmsUserSendResponse|bool
+     * @param \Ovh\StructType\TelephonySmsUserSend $parameters
+     * @return \Ovh\StructType\TelephonySmsUserSendResponse|bool
      */
-    public function telephonySmsUserSend(\PayPal\StructType\TelephonySmsUserSend $parameters)
+    public function telephonySmsUserSend(\Ovh\StructType\TelephonySmsUserSend $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsUserSend($parameters));
@@ -3971,10 +3971,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookOnGroupGroupList $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookOnGroupGroupListResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookOnGroupGroupList $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookOnGroupGroupListResponse|bool
      */
-    public function telephonyPhonebookOnGroupGroupList(\PayPal\StructType\TelephonyPhonebookOnGroupGroupList $parameters)
+    public function telephonyPhonebookOnGroupGroupList(\Ovh\StructType\TelephonyPhonebookOnGroupGroupList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookOnGroupGroupList($parameters));
@@ -3990,10 +3990,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyClick2CallUserPassword $parameters
-     * @return \PayPal\StructType\TelephonyClick2CallUserPasswordResponse|bool
+     * @param \Ovh\StructType\TelephonyClick2CallUserPassword $parameters
+     * @return \Ovh\StructType\TelephonyClick2CallUserPasswordResponse|bool
      */
-    public function telephonyClick2CallUserPassword(\PayPal\StructType\TelephonyClick2CallUserPassword $parameters)
+    public function telephonyClick2CallUserPassword(\Ovh\StructType\TelephonyClick2CallUserPassword $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyClick2CallUserPassword($parameters));
@@ -4009,10 +4009,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsGetUserQuota $parameters
-     * @return \PayPal\StructType\TelephonySmsGetUserQuotaResponse|bool
+     * @param \Ovh\StructType\TelephonySmsGetUserQuota $parameters
+     * @return \Ovh\StructType\TelephonySmsGetUserQuotaResponse|bool
      */
-    public function telephonySmsGetUserQuota(\PayPal\StructType\TelephonySmsGetUserQuota $parameters)
+    public function telephonySmsGetUserQuota(\Ovh\StructType\TelephonySmsGetUserQuota $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsGetUserQuota($parameters));
@@ -4028,10 +4028,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsSenderDelete $parameters
-     * @return \PayPal\StructType\TelephonySmsSenderDeleteResponse|bool
+     * @param \Ovh\StructType\TelephonySmsSenderDelete $parameters
+     * @return \Ovh\StructType\TelephonySmsSenderDeleteResponse|bool
      */
-    public function telephonySmsSenderDelete(\PayPal\StructType\TelephonySmsSenderDelete $parameters)
+    public function telephonySmsSenderDelete(\Ovh\StructType\TelephonySmsSenderDelete $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsSenderDelete($parameters));
@@ -4047,10 +4047,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyToneStatus $parameters
-     * @return \PayPal\StructType\TelephonyToneStatusResponse|bool
+     * @param \Ovh\StructType\TelephonyToneStatus $parameters
+     * @return \Ovh\StructType\TelephonyToneStatusResponse|bool
      */
-    public function telephonyToneStatus(\PayPal\StructType\TelephonyToneStatus $parameters)
+    public function telephonyToneStatus(\Ovh\StructType\TelephonyToneStatus $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyToneStatus($parameters));
@@ -4066,10 +4066,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyDdiInfo $parameters
-     * @return \PayPal\StructType\TelephonyDdiInfoResponse|bool
+     * @param \Ovh\StructType\TelephonyDdiInfo $parameters
+     * @return \Ovh\StructType\TelephonyDdiInfoResponse|bool
      */
-    public function telephonyDdiInfo(\PayPal\StructType\TelephonyDdiInfo $parameters)
+    public function telephonyDdiInfo(\Ovh\StructType\TelephonyDdiInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyDdiInfo($parameters));
@@ -4085,10 +4085,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyHuntingGroupList $parameters
-     * @return \PayPal\StructType\TelephonyHuntingGroupListResponse|bool
+     * @param \Ovh\StructType\TelephonyHuntingGroupList $parameters
+     * @return \Ovh\StructType\TelephonyHuntingGroupListResponse|bool
      */
-    public function telephonyHuntingGroupList(\PayPal\StructType\TelephonyHuntingGroupList $parameters)
+    public function telephonyHuntingGroupList(\Ovh\StructType\TelephonyHuntingGroupList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyHuntingGroupList($parameters));
@@ -4105,10 +4105,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberList $parameters
-     * @return \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberListResponse|bool
+     * @param \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberList $parameters
+     * @return \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberListResponse|bool
      */
-    public function telephonyTrunkExternalDisplayedNumberList(\PayPal\StructType\TelephonyTrunkExternalDisplayedNumberList $parameters)
+    public function telephonyTrunkExternalDisplayedNumberList(\Ovh\StructType\TelephonyTrunkExternalDisplayedNumberList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyTrunkExternalDisplayedNumberList($parameters));
@@ -4124,10 +4124,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyDirectoryListWayType $parameters
-     * @return \PayPal\StructType\TelephonyDirectoryListWayTypeResponse|bool
+     * @param \Ovh\StructType\TelephonyDirectoryListWayType $parameters
+     * @return \Ovh\StructType\TelephonyDirectoryListWayTypeResponse|bool
      */
-    public function telephonyDirectoryListWayType(\PayPal\StructType\TelephonyDirectoryListWayType $parameters)
+    public function telephonyDirectoryListWayType(\Ovh\StructType\TelephonyDirectoryListWayType $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyDirectoryListWayType($parameters));
@@ -4143,10 +4143,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsUserHistoryCsv $parameters
-     * @return \PayPal\StructType\TelephonySmsUserHistoryCsvResponse|bool
+     * @param \Ovh\StructType\TelephonySmsUserHistoryCsv $parameters
+     * @return \Ovh\StructType\TelephonySmsUserHistoryCsvResponse|bool
      */
-    public function telephonySmsUserHistoryCsv(\PayPal\StructType\TelephonySmsUserHistoryCsv $parameters)
+    public function telephonySmsUserHistoryCsv(\Ovh\StructType\TelephonySmsUserHistoryCsv $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsUserHistoryCsv($parameters));
@@ -4162,10 +4162,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyCallList $parameters
-     * @return \PayPal\StructType\TelephonyCallListResponse|bool
+     * @param \Ovh\StructType\TelephonyCallList $parameters
+     * @return \Ovh\StructType\TelephonyCallListResponse|bool
      */
-    public function telephonyCallList(\PayPal\StructType\TelephonyCallList $parameters)
+    public function telephonyCallList(\Ovh\StructType\TelephonyCallList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyCallList($parameters));
@@ -4182,10 +4182,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyGetDefaultPrivateHolidaysEvents $parameters
-     * @return \PayPal\StructType\TelephonyGetDefaultPrivateHolidaysEventsResponse|bool
+     * @param \Ovh\StructType\TelephonyGetDefaultPrivateHolidaysEvents $parameters
+     * @return \Ovh\StructType\TelephonyGetDefaultPrivateHolidaysEventsResponse|bool
      */
-    public function telephonyGetDefaultPrivateHolidaysEvents(\PayPal\StructType\TelephonyGetDefaultPrivateHolidaysEvents $parameters)
+    public function telephonyGetDefaultPrivateHolidaysEvents(\Ovh\StructType\TelephonyGetDefaultPrivateHolidaysEvents $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyGetDefaultPrivateHolidaysEvents($parameters));
@@ -4201,10 +4201,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsplusShortCodesList $parameters
-     * @return \PayPal\StructType\TelephonySmsplusShortCodesListResponse|bool
+     * @param \Ovh\StructType\TelephonySmsplusShortCodesList $parameters
+     * @return \Ovh\StructType\TelephonySmsplusShortCodesListResponse|bool
      */
-    public function telephonySmsplusShortCodesList(\PayPal\StructType\TelephonySmsplusShortCodesList $parameters)
+    public function telephonySmsplusShortCodesList(\Ovh\StructType\TelephonySmsplusShortCodesList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsplusShortCodesList($parameters));
@@ -4220,10 +4220,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyAliasToSipPossibilities $parameters
-     * @return \PayPal\StructType\TelephonyAliasToSipPossibilitiesResponse|bool
+     * @param \Ovh\StructType\TelephonyAliasToSipPossibilities $parameters
+     * @return \Ovh\StructType\TelephonyAliasToSipPossibilitiesResponse|bool
      */
-    public function telephonyAliasToSipPossibilities(\PayPal\StructType\TelephonyAliasToSipPossibilities $parameters)
+    public function telephonyAliasToSipPossibilities(\Ovh\StructType\TelephonyAliasToSipPossibilities $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyAliasToSipPossibilities($parameters));
@@ -4240,10 +4240,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyAbbreviatedNumberOnGroupAdd $parameters
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberOnGroupAddResponse|bool
+     * @param \Ovh\StructType\TelephonyAbbreviatedNumberOnGroupAdd $parameters
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberOnGroupAddResponse|bool
      */
-    public function telephonyAbbreviatedNumberOnGroupAdd(\PayPal\StructType\TelephonyAbbreviatedNumberOnGroupAdd $parameters)
+    public function telephonyAbbreviatedNumberOnGroupAdd(\Ovh\StructType\TelephonyAbbreviatedNumberOnGroupAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyAbbreviatedNumberOnGroupAdd($parameters));
@@ -4259,10 +4259,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyHuntingModificationQueue $parameters
-     * @return \PayPal\StructType\TelephonyHuntingModificationQueueResponse|bool
+     * @param \Ovh\StructType\TelephonyHuntingModificationQueue $parameters
+     * @return \Ovh\StructType\TelephonyHuntingModificationQueueResponse|bool
      */
-    public function telephonyHuntingModificationQueue(\PayPal\StructType\TelephonyHuntingModificationQueue $parameters)
+    public function telephonyHuntingModificationQueue(\Ovh\StructType\TelephonyHuntingModificationQueue $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyHuntingModificationQueue($parameters));
@@ -4278,10 +4278,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyDirectoryInfo $parameters
-     * @return \PayPal\StructType\TelephonyDirectoryInfoResponse|bool
+     * @param \Ovh\StructType\TelephonyDirectoryInfo $parameters
+     * @return \Ovh\StructType\TelephonyDirectoryInfoResponse|bool
      */
-    public function telephonyDirectoryInfo(\PayPal\StructType\TelephonyDirectoryInfo $parameters)
+    public function telephonyDirectoryInfo(\Ovh\StructType\TelephonyDirectoryInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyDirectoryInfo($parameters));
@@ -4297,10 +4297,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyBillDetails $parameters
-     * @return \PayPal\StructType\TelephonyBillDetailsResponse|bool
+     * @param \Ovh\StructType\TelephonyBillDetails $parameters
+     * @return \Ovh\StructType\TelephonyBillDetailsResponse|bool
      */
-    public function telephonyBillDetails(\PayPal\StructType\TelephonyBillDetails $parameters)
+    public function telephonyBillDetails(\Ovh\StructType\TelephonyBillDetails $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyBillDetails($parameters));
@@ -4317,10 +4317,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyLineLogsNotificationOptionsModify $parameters
-     * @return \PayPal\StructType\TelephonyLineLogsNotificationOptionsModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyLineLogsNotificationOptionsModify $parameters
+     * @return \Ovh\StructType\TelephonyLineLogsNotificationOptionsModifyResponse|bool
      */
-    public function telephonyLineLogsNotificationOptionsModify(\PayPal\StructType\TelephonyLineLogsNotificationOptionsModify $parameters)
+    public function telephonyLineLogsNotificationOptionsModify(\Ovh\StructType\TelephonyLineLogsNotificationOptionsModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyLineLogsNotificationOptionsModify($parameters));
@@ -4336,10 +4336,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyClick2CallDoBySession $parameters
-     * @return \PayPal\StructType\TelephonyClick2CallDoBySessionResponse|bool
+     * @param \Ovh\StructType\TelephonyClick2CallDoBySession $parameters
+     * @return \Ovh\StructType\TelephonyClick2CallDoBySessionResponse|bool
      */
-    public function telephonyClick2CallDoBySession(\PayPal\StructType\TelephonyClick2CallDoBySession $parameters)
+    public function telephonyClick2CallDoBySession(\Ovh\StructType\TelephonyClick2CallDoBySession $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyClick2CallDoBySession($parameters));
@@ -4355,10 +4355,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyAbbreviatedNumberAdd $parameters
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberAddResponse|bool
+     * @param \Ovh\StructType\TelephonyAbbreviatedNumberAdd $parameters
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberAddResponse|bool
      */
-    public function telephonyAbbreviatedNumberAdd(\PayPal\StructType\TelephonyAbbreviatedNumberAdd $parameters)
+    public function telephonyAbbreviatedNumberAdd(\Ovh\StructType\TelephonyAbbreviatedNumberAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyAbbreviatedNumberAdd($parameters));
@@ -4374,10 +4374,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyNumberOrder $parameters
-     * @return \PayPal\StructType\TelephonyNumberOrderResponse|bool
+     * @param \Ovh\StructType\TelephonyNumberOrder $parameters
+     * @return \Ovh\StructType\TelephonyNumberOrderResponse|bool
      */
-    public function telephonyNumberOrder(\PayPal\StructType\TelephonyNumberOrder $parameters)
+    public function telephonyNumberOrder(\Ovh\StructType\TelephonyNumberOrder $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyNumberOrder($parameters));
@@ -4393,10 +4393,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyLineSetIpRestriction $parameters
-     * @return \PayPal\StructType\TelephonyLineSetIpRestrictionResponse|bool
+     * @param \Ovh\StructType\TelephonyLineSetIpRestriction $parameters
+     * @return \Ovh\StructType\TelephonyLineSetIpRestrictionResponse|bool
      */
-    public function telephonyLineSetIpRestriction(\PayPal\StructType\TelephonyLineSetIpRestriction $parameters)
+    public function telephonyLineSetIpRestriction(\Ovh\StructType\TelephonyLineSetIpRestriction $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyLineSetIpRestriction($parameters));
@@ -4412,10 +4412,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyLineSetCodecs $parameters
-     * @return \PayPal\StructType\TelephonyLineSetCodecsResponse|bool
+     * @param \Ovh\StructType\TelephonyLineSetCodecs $parameters
+     * @return \Ovh\StructType\TelephonyLineSetCodecsResponse|bool
      */
-    public function telephonyLineSetCodecs(\PayPal\StructType\TelephonyLineSetCodecs $parameters)
+    public function telephonyLineSetCodecs(\Ovh\StructType\TelephonyLineSetCodecs $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyLineSetCodecs($parameters));
@@ -4431,10 +4431,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyNumberCityForZoneList $parameters
-     * @return \PayPal\StructType\TelephonyNumberCityForZoneListResponse|bool
+     * @param \Ovh\StructType\TelephonyNumberCityForZoneList $parameters
+     * @return \Ovh\StructType\TelephonyNumberCityForZoneListResponse|bool
      */
-    public function telephonyNumberCityForZoneList(\PayPal\StructType\TelephonyNumberCityForZoneList $parameters)
+    public function telephonyNumberCityForZoneList(\Ovh\StructType\TelephonyNumberCityForZoneList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyNumberCityForZoneList($parameters));
@@ -4450,10 +4450,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyTonesOptionsModify $parameters
-     * @return \PayPal\StructType\TelephonyTonesOptionsModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyTonesOptionsModify $parameters
+     * @return \Ovh\StructType\TelephonyTonesOptionsModifyResponse|bool
      */
-    public function telephonyTonesOptionsModify(\PayPal\StructType\TelephonyTonesOptionsModify $parameters)
+    public function telephonyTonesOptionsModify(\Ovh\StructType\TelephonyTonesOptionsModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyTonesOptionsModify($parameters));
@@ -4470,10 +4470,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyVoicemailMessagesRemoteUpload $parameters
-     * @return \PayPal\StructType\TelephonyVoicemailMessagesRemoteUploadResponse|bool
+     * @param \Ovh\StructType\TelephonyVoicemailMessagesRemoteUpload $parameters
+     * @return \Ovh\StructType\TelephonyVoicemailMessagesRemoteUploadResponse|bool
      */
-    public function telephonyVoicemailMessagesRemoteUpload(\PayPal\StructType\TelephonyVoicemailMessagesRemoteUpload $parameters)
+    public function telephonyVoicemailMessagesRemoteUpload(\Ovh\StructType\TelephonyVoicemailMessagesRemoteUpload $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyVoicemailMessagesRemoteUpload($parameters));
@@ -4489,10 +4489,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyOfferInfo $parameters
-     * @return \PayPal\StructType\TelephonyOfferInfoResponse|bool
+     * @param \Ovh\StructType\TelephonyOfferInfo $parameters
+     * @return \Ovh\StructType\TelephonyOfferInfoResponse|bool
      */
-    public function telephonyOfferInfo(\PayPal\StructType\TelephonyOfferInfo $parameters)
+    public function telephonyOfferInfo(\Ovh\StructType\TelephonyOfferInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyOfferInfo($parameters));
@@ -4508,10 +4508,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookDel $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookDelResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookDel $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookDelResponse|bool
      */
-    public function telephonyPhonebookDel(\PayPal\StructType\TelephonyPhonebookDel $parameters)
+    public function telephonyPhonebookDel(\Ovh\StructType\TelephonyPhonebookDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookDel($parameters));
@@ -4527,10 +4527,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsUserAdd $parameters
-     * @return \PayPal\StructType\TelephonySmsUserAddResponse|bool
+     * @param \Ovh\StructType\TelephonySmsUserAdd $parameters
+     * @return \Ovh\StructType\TelephonySmsUserAddResponse|bool
      */
-    public function telephonySmsUserAdd(\PayPal\StructType\TelephonySmsUserAdd $parameters)
+    public function telephonySmsUserAdd(\Ovh\StructType\TelephonySmsUserAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsUserAdd($parameters));
@@ -4546,10 +4546,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsUserHistory $parameters
-     * @return \PayPal\StructType\TelephonySmsUserHistoryResponse|bool
+     * @param \Ovh\StructType\TelephonySmsUserHistory $parameters
+     * @return \Ovh\StructType\TelephonySmsUserHistoryResponse|bool
      */
-    public function telephonySmsUserHistory(\PayPal\StructType\TelephonySmsUserHistory $parameters)
+    public function telephonySmsUserHistory(\Ovh\StructType\TelephonySmsUserHistory $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsUserHistory($parameters));
@@ -4565,10 +4565,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsUserGetCallBack $parameters
-     * @return \PayPal\StructType\TelephonySmsUserGetCallBackResponse|bool
+     * @param \Ovh\StructType\TelephonySmsUserGetCallBack $parameters
+     * @return \Ovh\StructType\TelephonySmsUserGetCallBackResponse|bool
      */
-    public function telephonySmsUserGetCallBack(\PayPal\StructType\TelephonySmsUserGetCallBack $parameters)
+    public function telephonySmsUserGetCallBack(\Ovh\StructType\TelephonySmsUserGetCallBack $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsUserGetCallBack($parameters));
@@ -4584,10 +4584,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyOfferModifyPassword $parameters
-     * @return \PayPal\StructType\TelephonyOfferModifyPasswordResponse|bool
+     * @param \Ovh\StructType\TelephonyOfferModifyPassword $parameters
+     * @return \Ovh\StructType\TelephonyOfferModifyPasswordResponse|bool
      */
-    public function telephonyOfferModifyPassword(\PayPal\StructType\TelephonyOfferModifyPassword $parameters)
+    public function telephonyOfferModifyPassword(\Ovh\StructType\TelephonyOfferModifyPassword $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyOfferModifyPassword($parameters));
@@ -4603,10 +4603,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyFunctionKeyAdd $parameters
-     * @return \PayPal\StructType\TelephonyFunctionKeyAddResponse|bool
+     * @param \Ovh\StructType\TelephonyFunctionKeyAdd $parameters
+     * @return \Ovh\StructType\TelephonyFunctionKeyAddResponse|bool
      */
-    public function telephonyFunctionKeyAdd(\PayPal\StructType\TelephonyFunctionKeyAdd $parameters)
+    public function telephonyFunctionKeyAdd(\Ovh\StructType\TelephonyFunctionKeyAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyFunctionKeyAdd($parameters));
@@ -4622,10 +4622,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookList $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookListResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookList $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookListResponse|bool
      */
-    public function telephonyPhonebookList(\PayPal\StructType\TelephonyPhonebookList $parameters)
+    public function telephonyPhonebookList(\Ovh\StructType\TelephonyPhonebookList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookList($parameters));
@@ -4641,10 +4641,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPlugAndPhoneReset $parameters
-     * @return \PayPal\StructType\TelephonyPlugAndPhoneResetResponse|bool
+     * @param \Ovh\StructType\TelephonyPlugAndPhoneReset $parameters
+     * @return \Ovh\StructType\TelephonyPlugAndPhoneResetResponse|bool
      */
-    public function telephonyPlugAndPhoneReset(\PayPal\StructType\TelephonyPlugAndPhoneReset $parameters)
+    public function telephonyPlugAndPhoneReset(\Ovh\StructType\TelephonyPlugAndPhoneReset $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPlugAndPhoneReset($parameters));
@@ -4660,10 +4660,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySpareInfo $parameters
-     * @return \PayPal\StructType\TelephonySpareInfoResponse|bool
+     * @param \Ovh\StructType\TelephonySpareInfo $parameters
+     * @return \Ovh\StructType\TelephonySpareInfoResponse|bool
      */
-    public function telephonySpareInfo(\PayPal\StructType\TelephonySpareInfo $parameters)
+    public function telephonySpareInfo(\Ovh\StructType\TelephonySpareInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySpareInfo($parameters));
@@ -4679,10 +4679,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsUserDel $parameters
-     * @return \PayPal\StructType\TelephonySmsUserDelResponse|bool
+     * @param \Ovh\StructType\TelephonySmsUserDel $parameters
+     * @return \Ovh\StructType\TelephonySmsUserDelResponse|bool
      */
-    public function telephonySmsUserDel(\PayPal\StructType\TelephonySmsUserDel $parameters)
+    public function telephonySmsUserDel(\Ovh\StructType\TelephonySmsUserDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsUserDel($parameters));
@@ -4698,10 +4698,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyVoicemailMessagesStatus $parameters
-     * @return \PayPal\StructType\TelephonyVoicemailMessagesStatusResponse|bool
+     * @param \Ovh\StructType\TelephonyVoicemailMessagesStatus $parameters
+     * @return \Ovh\StructType\TelephonyVoicemailMessagesStatusResponse|bool
      */
-    public function telephonyVoicemailMessagesStatus(\PayPal\StructType\TelephonyVoicemailMessagesStatus $parameters)
+    public function telephonyVoicemailMessagesStatus(\Ovh\StructType\TelephonyVoicemailMessagesStatus $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyVoicemailMessagesStatus($parameters));
@@ -4717,10 +4717,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookModify $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookModify $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookModifyResponse|bool
      */
-    public function telephonyPhonebookModify(\PayPal\StructType\TelephonyPhonebookModify $parameters)
+    public function telephonyPhonebookModify(\Ovh\StructType\TelephonyPhonebookModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookModify($parameters));
@@ -4736,10 +4736,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyOfferModifyName $parameters
-     * @return \PayPal\StructType\TelephonyOfferModifyNameResponse|bool
+     * @param \Ovh\StructType\TelephonyOfferModifyName $parameters
+     * @return \Ovh\StructType\TelephonyOfferModifyNameResponse|bool
      */
-    public function telephonyOfferModifyName(\PayPal\StructType\TelephonyOfferModifyName $parameters)
+    public function telephonyOfferModifyName(\Ovh\StructType\TelephonyOfferModifyName $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyOfferModifyName($parameters));
@@ -4755,10 +4755,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsSetCallBack $parameters
-     * @return \PayPal\StructType\TelephonySmsSetCallBackResponse|bool
+     * @param \Ovh\StructType\TelephonySmsSetCallBack $parameters
+     * @return \Ovh\StructType\TelephonySmsSetCallBackResponse|bool
      */
-    public function telephonySmsSetCallBack(\PayPal\StructType\TelephonySmsSetCallBack $parameters)
+    public function telephonySmsSetCallBack(\Ovh\StructType\TelephonySmsSetCallBack $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsSetCallBack($parameters));
@@ -4774,10 +4774,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPhonebookGroupList $parameters
-     * @return \PayPal\StructType\TelephonyPhonebookGroupListResponse|bool
+     * @param \Ovh\StructType\TelephonyPhonebookGroupList $parameters
+     * @return \Ovh\StructType\TelephonyPhonebookGroupListResponse|bool
      */
-    public function telephonyPhonebookGroupList(\PayPal\StructType\TelephonyPhonebookGroupList $parameters)
+    public function telephonyPhonebookGroupList(\Ovh\StructType\TelephonyPhonebookGroupList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPhonebookGroupList($parameters));
@@ -4793,10 +4793,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyBillingAccountInfo $parameters
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoResponse|bool
+     * @param \Ovh\StructType\TelephonyBillingAccountInfo $parameters
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoResponse|bool
      */
-    public function telephonyBillingAccountInfo(\PayPal\StructType\TelephonyBillingAccountInfo $parameters)
+    public function telephonyBillingAccountInfo(\Ovh\StructType\TelephonyBillingAccountInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyBillingAccountInfo($parameters));
@@ -4812,10 +4812,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsSenderAdd $parameters
-     * @return \PayPal\StructType\TelephonySmsSenderAddResponse|bool
+     * @param \Ovh\StructType\TelephonySmsSenderAdd $parameters
+     * @return \Ovh\StructType\TelephonySmsSenderAddResponse|bool
      */
-    public function telephonySmsSenderAdd(\PayPal\StructType\TelephonySmsSenderAdd $parameters)
+    public function telephonySmsSenderAdd(\Ovh\StructType\TelephonySmsSenderAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsSenderAdd($parameters));
@@ -4831,10 +4831,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyLineConsumptionCSVByMail $parameters
-     * @return \PayPal\StructType\TelephonyLineConsumptionCSVByMailResponse|bool
+     * @param \Ovh\StructType\TelephonyLineConsumptionCSVByMail $parameters
+     * @return \Ovh\StructType\TelephonyLineConsumptionCSVByMailResponse|bool
      */
-    public function telephonyLineConsumptionCSVByMail(\PayPal\StructType\TelephonyLineConsumptionCSVByMail $parameters)
+    public function telephonyLineConsumptionCSVByMail(\Ovh\StructType\TelephonyLineConsumptionCSVByMail $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyLineConsumptionCSVByMail($parameters));
@@ -4851,10 +4851,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsUserDeleteCsvAttachment $parameters
-     * @return \PayPal\StructType\TelephonySmsUserDeleteCsvAttachmentResponse|bool
+     * @param \Ovh\StructType\TelephonySmsUserDeleteCsvAttachment $parameters
+     * @return \Ovh\StructType\TelephonySmsUserDeleteCsvAttachmentResponse|bool
      */
-    public function telephonySmsUserDeleteCsvAttachment(\PayPal\StructType\TelephonySmsUserDeleteCsvAttachment $parameters)
+    public function telephonySmsUserDeleteCsvAttachment(\Ovh\StructType\TelephonySmsUserDeleteCsvAttachment $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsUserDeleteCsvAttachment($parameters));
@@ -4871,10 +4871,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyListReversableCallsFromNumber $parameters
-     * @return \PayPal\StructType\TelephonyListReversableCallsFromNumberResponse|bool
+     * @param \Ovh\StructType\TelephonyListReversableCallsFromNumber $parameters
+     * @return \Ovh\StructType\TelephonyListReversableCallsFromNumberResponse|bool
      */
-    public function telephonyListReversableCallsFromNumber(\PayPal\StructType\TelephonyListReversableCallsFromNumber $parameters)
+    public function telephonyListReversableCallsFromNumber(\Ovh\StructType\TelephonyListReversableCallsFromNumber $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyListReversableCallsFromNumber($parameters));
@@ -4890,10 +4890,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyBillingAccountList $parameters
-     * @return \PayPal\StructType\TelephonyBillingAccountListResponse|bool
+     * @param \Ovh\StructType\TelephonyBillingAccountList $parameters
+     * @return \Ovh\StructType\TelephonyBillingAccountListResponse|bool
      */
-    public function telephonyBillingAccountList(\PayPal\StructType\TelephonyBillingAccountList $parameters)
+    public function telephonyBillingAccountList(\Ovh\StructType\TelephonyBillingAccountList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyBillingAccountList($parameters));
@@ -4910,10 +4910,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsGetQuotaNotificationForUser $parameters
-     * @return \PayPal\StructType\TelephonySmsGetQuotaNotificationForUserResponse|bool
+     * @param \Ovh\StructType\TelephonySmsGetQuotaNotificationForUser $parameters
+     * @return \Ovh\StructType\TelephonySmsGetQuotaNotificationForUserResponse|bool
      */
-    public function telephonySmsGetQuotaNotificationForUser(\PayPal\StructType\TelephonySmsGetQuotaNotificationForUser $parameters)
+    public function telephonySmsGetQuotaNotificationForUser(\Ovh\StructType\TelephonySmsGetQuotaNotificationForUser $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsGetQuotaNotificationForUser($parameters));
@@ -4929,10 +4929,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyChangeNicModify $parameters
-     * @return \PayPal\StructType\TelephonyChangeNicModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyChangeNicModify $parameters
+     * @return \Ovh\StructType\TelephonyChangeNicModifyResponse|bool
      */
-    public function telephonyChangeNicModify(\PayPal\StructType\TelephonyChangeNicModify $parameters)
+    public function telephonyChangeNicModify(\Ovh\StructType\TelephonyChangeNicModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyChangeNicModify($parameters));
@@ -4948,10 +4948,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySviInfo $parameters
-     * @return \PayPal\StructType\TelephonySviInfoResponse|bool
+     * @param \Ovh\StructType\TelephonySviInfo $parameters
+     * @return \Ovh\StructType\TelephonySviInfoResponse|bool
      */
-    public function telephonySviInfo(\PayPal\StructType\TelephonySviInfo $parameters)
+    public function telephonySviInfo(\Ovh\StructType\TelephonySviInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySviInfo($parameters));
@@ -4967,10 +4967,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyClick2CallUserAdd $parameters
-     * @return \PayPal\StructType\TelephonyClick2CallUserAddResponse|bool
+     * @param \Ovh\StructType\TelephonyClick2CallUserAdd $parameters
+     * @return \Ovh\StructType\TelephonyClick2CallUserAddResponse|bool
      */
-    public function telephonyClick2CallUserAdd(\PayPal\StructType\TelephonyClick2CallUserAdd $parameters)
+    public function telephonyClick2CallUserAdd(\Ovh\StructType\TelephonyClick2CallUserAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyClick2CallUserAdd($parameters));
@@ -4987,10 +4987,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsBlacklistedSendersDelete $parameters
-     * @return \PayPal\StructType\TelephonySmsBlacklistedSendersDeleteResponse|bool
+     * @param \Ovh\StructType\TelephonySmsBlacklistedSendersDelete $parameters
+     * @return \Ovh\StructType\TelephonySmsBlacklistedSendersDeleteResponse|bool
      */
-    public function telephonySmsBlacklistedSendersDelete(\PayPal\StructType\TelephonySmsBlacklistedSendersDelete $parameters)
+    public function telephonySmsBlacklistedSendersDelete(\Ovh\StructType\TelephonySmsBlacklistedSendersDelete $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsBlacklistedSendersDelete($parameters));
@@ -5006,10 +5006,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsplusServiceAdd $parameters
-     * @return \PayPal\StructType\TelephonySmsplusServiceAddResponse|bool
+     * @param \Ovh\StructType\TelephonySmsplusServiceAdd $parameters
+     * @return \Ovh\StructType\TelephonySmsplusServiceAddResponse|bool
      */
-    public function telephonySmsplusServiceAdd(\PayPal\StructType\TelephonySmsplusServiceAdd $parameters)
+    public function telephonySmsplusServiceAdd(\Ovh\StructType\TelephonySmsplusServiceAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsplusServiceAdd($parameters));
@@ -5025,10 +5025,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySpareCreateRMA $parameters
-     * @return \PayPal\StructType\TelephonySpareCreateRMAResponse|bool
+     * @param \Ovh\StructType\TelephonySpareCreateRMA $parameters
+     * @return \Ovh\StructType\TelephonySpareCreateRMAResponse|bool
      */
-    public function telephonySpareCreateRMA(\PayPal\StructType\TelephonySpareCreateRMA $parameters)
+    public function telephonySpareCreateRMA(\Ovh\StructType\TelephonySpareCreateRMA $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySpareCreateRMA($parameters));
@@ -5044,10 +5044,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySmsplusServiceEdit $parameters
-     * @return \PayPal\StructType\TelephonySmsplusServiceEditResponse|bool
+     * @param \Ovh\StructType\TelephonySmsplusServiceEdit $parameters
+     * @return \Ovh\StructType\TelephonySmsplusServiceEditResponse|bool
      */
-    public function telephonySmsplusServiceEdit(\PayPal\StructType\TelephonySmsplusServiceEdit $parameters)
+    public function telephonySmsplusServiceEdit(\Ovh\StructType\TelephonySmsplusServiceEdit $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySmsplusServiceEdit($parameters));
@@ -5064,10 +5064,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyHuntingGenericScreenOptionsModify $parameters
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenOptionsModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyHuntingGenericScreenOptionsModify $parameters
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenOptionsModifyResponse|bool
      */
-    public function telephonyHuntingGenericScreenOptionsModify(\PayPal\StructType\TelephonyHuntingGenericScreenOptionsModify $parameters)
+    public function telephonyHuntingGenericScreenOptionsModify(\Ovh\StructType\TelephonyHuntingGenericScreenOptionsModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyHuntingGenericScreenOptionsModify($parameters));
@@ -5083,10 +5083,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyPlugAndPhoneInfo $parameters
-     * @return \PayPal\StructType\TelephonyPlugAndPhoneInfoResponse|bool
+     * @param \Ovh\StructType\TelephonyPlugAndPhoneInfo $parameters
+     * @return \Ovh\StructType\TelephonyPlugAndPhoneInfoResponse|bool
      */
-    public function telephonyPlugAndPhoneInfo(\PayPal\StructType\TelephonyPlugAndPhoneInfo $parameters)
+    public function telephonyPlugAndPhoneInfo(\Ovh\StructType\TelephonyPlugAndPhoneInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyPlugAndPhoneInfo($parameters));
@@ -5102,10 +5102,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyFaxCampaignDelete $parameters
-     * @return \PayPal\StructType\TelephonyFaxCampaignDeleteResponse|bool
+     * @param \Ovh\StructType\TelephonyFaxCampaignDelete $parameters
+     * @return \Ovh\StructType\TelephonyFaxCampaignDeleteResponse|bool
      */
-    public function telephonyFaxCampaignDelete(\PayPal\StructType\TelephonyFaxCampaignDelete $parameters)
+    public function telephonyFaxCampaignDelete(\Ovh\StructType\TelephonyFaxCampaignDelete $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyFaxCampaignDelete($parameters));
@@ -5122,10 +5122,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyReversmentsRefundFromBillingAccount $parameters
-     * @return \PayPal\StructType\TelephonyReversmentsRefundFromBillingAccountResponse|bool
+     * @param \Ovh\StructType\TelephonyReversmentsRefundFromBillingAccount $parameters
+     * @return \Ovh\StructType\TelephonyReversmentsRefundFromBillingAccountResponse|bool
      */
-    public function telephonyReversmentsRefundFromBillingAccount(\PayPal\StructType\TelephonyReversmentsRefundFromBillingAccount $parameters)
+    public function telephonyReversmentsRefundFromBillingAccount(\Ovh\StructType\TelephonyReversmentsRefundFromBillingAccount $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyReversmentsRefundFromBillingAccount($parameters));
@@ -5141,10 +5141,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyVoicemailMessageDelete $parameters
-     * @return \PayPal\StructType\TelephonyVoicemailMessageDeleteResponse|bool
+     * @param \Ovh\StructType\TelephonyVoicemailMessageDelete $parameters
+     * @return \Ovh\StructType\TelephonyVoicemailMessageDeleteResponse|bool
      */
-    public function telephonyVoicemailMessageDelete(\PayPal\StructType\TelephonyVoicemailMessageDelete $parameters)
+    public function telephonyVoicemailMessageDelete(\Ovh\StructType\TelephonyVoicemailMessageDelete $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyVoicemailMessageDelete($parameters));
@@ -5160,10 +5160,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyLineOptionsList $parameters
-     * @return \PayPal\StructType\TelephonyLineOptionsListResponse|bool
+     * @param \Ovh\StructType\TelephonyLineOptionsList $parameters
+     * @return \Ovh\StructType\TelephonyLineOptionsListResponse|bool
      */
-    public function telephonyLineOptionsList(\PayPal\StructType\TelephonyLineOptionsList $parameters)
+    public function telephonyLineOptionsList(\Ovh\StructType\TelephonyLineOptionsList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyLineOptionsList($parameters));
@@ -5179,10 +5179,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonySpareServiceInfo $parameters
-     * @return \PayPal\StructType\TelephonySpareServiceInfoResponse|bool
+     * @param \Ovh\StructType\TelephonySpareServiceInfo $parameters
+     * @return \Ovh\StructType\TelephonySpareServiceInfoResponse|bool
      */
-    public function telephonySpareServiceInfo(\PayPal\StructType\TelephonySpareServiceInfo $parameters)
+    public function telephonySpareServiceInfo(\Ovh\StructType\TelephonySpareServiceInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonySpareServiceInfo($parameters));
@@ -5198,10 +5198,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyAbbreviatedNumberModify $parameters
-     * @return \PayPal\StructType\TelephonyAbbreviatedNumberModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyAbbreviatedNumberModify $parameters
+     * @return \Ovh\StructType\TelephonyAbbreviatedNumberModifyResponse|bool
      */
-    public function telephonyAbbreviatedNumberModify(\PayPal\StructType\TelephonyAbbreviatedNumberModify $parameters)
+    public function telephonyAbbreviatedNumberModify(\Ovh\StructType\TelephonyAbbreviatedNumberModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyAbbreviatedNumberModify($parameters));
@@ -5218,10 +5218,10 @@ class Telephony extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\TelephonyOfferSimultaneousLinesModify $parameters
-     * @return \PayPal\StructType\TelephonyOfferSimultaneousLinesModifyResponse|bool
+     * @param \Ovh\StructType\TelephonyOfferSimultaneousLinesModify $parameters
+     * @return \Ovh\StructType\TelephonyOfferSimultaneousLinesModifyResponse|bool
      */
-    public function telephonyOfferSimultaneousLinesModify(\PayPal\StructType\TelephonyOfferSimultaneousLinesModify $parameters)
+    public function telephonyOfferSimultaneousLinesModify(\Ovh\StructType\TelephonyOfferSimultaneousLinesModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->telephonyOfferSimultaneousLinesModify($parameters));
@@ -5234,7 +5234,7 @@ class Telephony extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\ArrayType\TelephonyGetClosureEventsAsArrayResponse|\PayPal\StructType\TelephonyAbbreviatedNumberAddResponse|\PayPal\StructType\TelephonyAbbreviatedNumberDelResponse|\PayPal\StructType\TelephonyAbbreviatedNumberListPaginatedResponse|\PayPal\StructType\TelephonyAbbreviatedNumberListResponse|\PayPal\StructType\TelephonyAbbreviatedNumberModifyResponse|\PayPal\StructType\TelephonyAbbreviatedNumberOnGroupAddResponse|\PayPal\StructType\TelephonyAbbreviatedNumberOnGroupDelResponse|\PayPal\StructType\TelephonyAbbreviatedNumberOnGroupListResponse|\PayPal\StructType\TelephonyAbbreviatedNumberOnGroupModifyResponse|\PayPal\StructType\TelephonyAliasToSipOfferResponse|\PayPal\StructType\TelephonyAliasToSipPossibilitiesResponse|\PayPal\StructType\TelephonyBillDetailsCSVResponse|\PayPal\StructType\TelephonyBillDetailsResponse|\PayPal\StructType\TelephonyBillingAccountAddResponse|\PayPal\StructType\TelephonyBillingAccountConsumptionCSVByMailResponse|\PayPal\StructType\TelephonyBillingAccountDelResponse|\PayPal\StructType\TelephonyBillingAccountDescriptionModifyResponse|\PayPal\StructType\TelephonyBillingAccountInfoResponse|\PayPal\StructType\TelephonyBillingAccountListResponse|\PayPal\StructType\TelephonyBillingAccountSetResponse|\PayPal\StructType\TelephonyBillingAccountSummaryResponse|\PayPal\StructType\TelephonyBillListResponse|\PayPal\StructType\TelephonyCallListResponse|\PayPal\StructType\TelephonyChangeNicModifyResponse|\PayPal\StructType\TelephonyClick2CallDoBySessionResponse|\PayPal\StructType\TelephonyClick2CallDoResponse|\PayPal\StructType\TelephonyClick2CallUserAddResponse|\PayPal\StructType\TelephonyClick2CallUserDelResponse|\PayPal\StructType\TelephonyClick2CallUserListResponse|\PayPal\StructType\TelephonyClick2CallUserPasswordResponse|\PayPal\StructType\TelephonyConferenceActionResponse|\PayPal\StructType\TelephonyConferenceGetInfosResponse|\PayPal\StructType\TelephonyConferenceGetParamsResponse|\PayPal\StructType\TelephonyConferenceSetAnnounceFileResponse|\PayPal\StructType\TelephonyConferenceSetParamsResponse|\PayPal\StructType\TelephonyDdiInfoResponse|\PayPal\StructType\TelephonyDdiModifyResponse|\PayPal\StructType\TelephonyDefaultPrivateHolidaysEventsResponse|\PayPal\StructType\TelephonyDelClosureEventsResponse|\PayPal\StructType\TelephonyDeleteLineResponse|\PayPal\StructType\TelephonyDepositMovementModifyResponse|\PayPal\StructType\TelephonyDirectoryInfoGetSameSiretResponse|\PayPal\StructType\TelephonyDirectoryInfoGetSiretResponse|\PayPal\StructType\TelephonyDirectoryInfoResponse|\PayPal\StructType\TelephonyDirectoryListWayTypeResponse|\PayPal\StructType\TelephonyDirectoryModifyAddressResponse|\PayPal\StructType\TelephonyDirectoryModifyPublicationResponse|\PayPal\StructType\TelephonyDirectoryPJCodeResponse|\PayPal\StructType\TelephonyFaxCallListResponse|\PayPal\StructType\TelephonyFaxCampaignCreationResponse|\PayPal\StructType\TelephonyFaxCampaignDeleteResponse|\PayPal\StructType\TelephonyFaxCampaignDetailsResponse|\PayPal\StructType\TelephonyFaxCampaignListResponse|\PayPal\StructType\TelephonyFaxCampaignStartStopResponse|\PayPal\StructType\TelephonyFaxHistoryResponse|\PayPal\StructType\TelephonyFaxModifyPasswordResponse|\PayPal\StructType\TelephonyFaxOptionsListResponse|\PayPal\StructType\TelephonyFaxOptionsModifyResponse|\PayPal\StructType\TelephonyFaxSendResponse|\PayPal\StructType\TelephonyFMHuntingModificationAnonymousCallRejectionResponse|\PayPal\StructType\TelephonyFMHuntingModificationMembersResponse|\PayPal\StructType\TelephonyFMHuntingModificationModeResponse|\PayPal\StructType\TelephonyFMHuntingModificationSimultaneousCallsResponse|\PayPal\StructType\TelephonyFMHuntingModificationVoicemailResponse|\PayPal\StructType\TelephonyFreefaxToVoicefaxCheckListResponse|\PayPal\StructType\TelephonyFreefaxToVoicefaxResponse|\PayPal\StructType\TelephonyFunctionKeyAddResponse|\PayPal\StructType\TelephonyFunctionKeyDelResponse|\PayPal\StructType\TelephonyFunctionKeyListResponse|\PayPal\StructType\TelephonyFunctionKeyModifyResponse|\PayPal\StructType\TelephonyGetCitiesFromZipResponse|\PayPal\StructType\TelephonyGetClosureEventsAsICSResponse|\PayPal\StructType\TelephonyGetDefaultPrivateHolidaysEventsResponse|\PayPal\StructType\TelephonyGetTimeZoneNumberResponse|\PayPal\StructType\TelephonyHuntingGenericScreenListResponse|\PayPal\StructType\TelephonyHuntingGenericScreenOptionsModifyResponse|\PayPal\StructType\TelephonyHuntingGenericScreenOptionsResponse|\PayPal\StructType\TelephonyHuntingGenericScreenSetResponse|\PayPal\StructType\TelephonyHuntingGenericScreenStatusModifyResponse|\PayPal\StructType\TelephonyHuntingGenericScreenStatusResponse|\PayPal\StructType\TelephonyHuntingGroupListResponse|\PayPal\StructType\TelephonyHuntingInfoResponse|\PayPal\StructType\TelephonyHuntingModificationAnonymousCallRejectionResponse|\PayPal\StructType\TelephonyHuntingModificationMembersResponse|\PayPal\StructType\TelephonyHuntingModificationModeResponse|\PayPal\StructType\TelephonyHuntingModificationQueueResponse|\PayPal\StructType\TelephonyHuntingModificationSimultaneousCallsResponse|\PayPal\StructType\TelephonyLineConsumptionCSVByMailResponse|\PayPal\StructType\TelephonyLineDetailsResponse|\PayPal\StructType\TelephonyLineGetCodecsResponse|\PayPal\StructType\TelephonyLineGetIpRestrictionResponse|\PayPal\StructType\TelephonyLineGetMgcpIpRestrictionResponse|\PayPal\StructType\TelephonyLineGetOfferPricesResponse|\PayPal\StructType\TelephonyLineGetSipDomainResponse|\PayPal\StructType\TelephonyLineListResponse|\PayPal\StructType\TelephonyLineLogsNotificationOptionsModifyResponse|\PayPal\StructType\TelephonyLineLogsNotificationOptionsResponse|\PayPal\StructType\TelephonyLineLogsOnGroupResponse|\PayPal\StructType\TelephonyLineLogsResponse|\PayPal\StructType\TelephonyLineOptionsListResponse|\PayPal\StructType\TelephonyLineOptionsModifyResponse|\PayPal\StructType\TelephonyLineOrderResponse|\PayPal\StructType\TelephonyLineSetCodecsResponse|\PayPal\StructType\TelephonyLineSetIpRestrictionResponse|\PayPal\StructType\TelephonyLineSetMgcpIpRestrictionResponse|\PayPal\StructType\TelephonyLineSetSipDomainResponse|\PayPal\StructType\TelephonyLineSwitchOfferPossibilityResponse|\PayPal\StructType\TelephonyLineSwitchOfferResponse|\PayPal\StructType\TelephonyLineSwitchOldOfferPossibilityResponse|\PayPal\StructType\TelephonyLineSwitchOldOfferResponse|\PayPal\StructType\TelephonyListReversableCallsFromNumberResponse|\PayPal\StructType\TelephonyListSummationCallsFromBillingAccountResponse|\PayPal\StructType\TelephonyListSummationCallsFromNumberResponse|\PayPal\StructType\TelephonyNicGetIpRestrictionResponse|\PayPal\StructType\TelephonyNicGetMgcpIpRestrictionResponse|\PayPal\StructType\TelephonyNicGetSipDomainResponse|\PayPal\StructType\TelephonyNicSetIpRestrictionResponse|\PayPal\StructType\TelephonyNicSetMgcpIpRestrictionResponse|\PayPal\StructType\TelephonyNicSetSipDomainResponse|\PayPal\StructType\TelephonyNumberCityForZoneListResponse|\PayPal\StructType\TelephonyNumberCleanResponse|\PayPal\StructType\TelephonyNumberCustomListResponse|\PayPal\StructType\TelephonyNumberGetBillingAccountResponse|\PayPal\StructType\TelephonyNumberGetFrWayNamesFromInseeResponse|\PayPal\StructType\TelephonyNumberInfoResponse|\PayPal\StructType\TelephonyNumberModifyResponse|\PayPal\StructType\TelephonyNumberOrderResponse|\PayPal\StructType\TelephonyNumberZoneAndPrefixListResponse|\PayPal\StructType\TelephonyOfferInfoResponse|\PayPal\StructType\TelephonyOfferModifyNameResponse|\PayPal\StructType\TelephonyOfferModifyPasswordResponse|\PayPal\StructType\TelephonyOfferSimultaneousLinesModifyResponse|\PayPal\StructType\TelephonyOrdersFollowingUpResponse|\PayPal\StructType\TelephonyPhonebookAddResponse|\PayPal\StructType\TelephonyPhonebookContactAddResponse|\PayPal\StructType\TelephonyPhonebookContactDelResponse|\PayPal\StructType\TelephonyPhonebookContactListResponse|\PayPal\StructType\TelephonyPhonebookContactModifyResponse|\PayPal\StructType\TelephonyPhonebookDelResponse|\PayPal\StructType\TelephonyPhonebookGroupListResponse|\PayPal\StructType\TelephonyPhonebookListResponse|\PayPal\StructType\TelephonyPhonebookModifyResponse|\PayPal\StructType\TelephonyPhonebookOnGroupAddResponse|\PayPal\StructType\TelephonyPhonebookOnGroupContactAddResponse|\PayPal\StructType\TelephonyPhonebookOnGroupContactDelResponse|\PayPal\StructType\TelephonyPhonebookOnGroupContactListResponse|\PayPal\StructType\TelephonyPhonebookOnGroupContactModifyResponse|\PayPal\StructType\TelephonyPhonebookOnGroupDelResponse|\PayPal\StructType\TelephonyPhonebookOnGroupGroupListResponse|\PayPal\StructType\TelephonyPhonebookOnGroupListResponse|\PayPal\StructType\TelephonyPhonebookOnGroupModifyResponse|\PayPal\StructType\TelephonyPhonebookOnSmsAddResponse|\PayPal\StructType\TelephonyPhonebookOnSmsContactAddResponse|\PayPal\StructType\TelephonyPhonebookOnSmsContactDelResponse|\PayPal\StructType\TelephonyPhonebookOnSmsContactListResponse|\PayPal\StructType\TelephonyPhonebookOnSmsContactModifyResponse|\PayPal\StructType\TelephonyPhonebookOnSmsDelResponse|\PayPal\StructType\TelephonyPhonebookOnSmsListResponse|\PayPal\StructType\TelephonyPhonebookOnSmsModifyResponse|\PayPal\StructType\TelephonyPhonebookSharePeerListResponse|\PayPal\StructType\TelephonyPhonebookShareResponse|\PayPal\StructType\TelephonyPlugAndPhoneInfoResponse|\PayPal\StructType\TelephonyPlugAndPhoneOperationResponse|\PayPal\StructType\TelephonyPlugAndPhoneResetResponse|\PayPal\StructType\TelephonyPlugAndPhoneSkinModifyResponse|\PayPal\StructType\TelephonyPortabilityOrderResponse|\PayPal\StructType\TelephonyPortabilityOrderSpecialNumberResponse|\PayPal\StructType\TelephonyPortabilityStatusResponse|\PayPal\StructType\TelephonyRatesListCsvResponse|\PayPal\StructType\TelephonyRatesListResponse|\PayPal\StructType\TelephonyRedirectInfoResponse|\PayPal\StructType\TelephonyRedirectModifyResponse|\PayPal\StructType\TelephonyRestrictionListResponse|\PayPal\StructType\TelephonyRestrictionModifyResponse|\PayPal\StructType\TelephonyReversmentsRefundFromBillingAccountResponse|\PayPal\StructType\TelephonyReversmentsRefundIsPendingResponse|\PayPal\StructType\TelephonyScreenListBlackWhiteChoiceModifyResponse|\PayPal\StructType\TelephonyScreenListBlackWhiteChoiceResponse|\PayPal\StructType\TelephonyScreenListInfoModifyResponse|\PayPal\StructType\TelephonyScreenListInfoResponse|\PayPal\StructType\TelephonySecurityDepositCreditResponse|\PayPal\StructType\TelephonySecurityDepositInfoResponse|\PayPal\StructType\TelephonySetClosureEventsResponse|\PayPal\StructType\TelephonySetDefaultPrivateHolidaysEventsResponse|\PayPal\StructType\TelephonySetTimeZoneNumberResponse|\PayPal\StructType\TelephonySipToAliasOfferResponse|\PayPal\StructType\TelephonySmsAccountListResponse|\PayPal\StructType\TelephonySmsAddCsvAttachmentResponse|\PayPal\StructType\TelephonySmsBlacklistedSendersDeleteResponse|\PayPal\StructType\TelephonySmsBlacklistedSendersListResponse|\PayPal\StructType\TelephonySmsCancelSendingResponse|\PayPal\StructType\TelephonySmsCreditLeftResponse|\PayPal\StructType\TelephonySmsDeleteCsvAttachmentResponse|\PayPal\StructType\TelephonySmsDeleteResponse|\PayPal\StructType\TelephonySmsGetCallBackResponse|\PayPal\StructType\TelephonySmsGetCsvAttachmentResponse|\PayPal\StructType\TelephonySmsGetQuotaNotificationForUserResponse|\PayPal\StructType\TelephonySmsGetQuotaNotificationResponse|\PayPal\StructType\TelephonySmsGetUserQuotaForUserResponse|\PayPal\StructType\TelephonySmsGetUserQuotaResponse|\PayPal\StructType\TelephonySmsHistoryCsvResponse|\PayPal\StructType\TelephonySmsHistoryResponse|\PayPal\StructType\TelephonySmsListCsvAttachmentResponse|\PayPal\StructType\TelephonySmsMultiSendResponse|\PayPal\StructType\TelephonySmsplusIsFreeKeywordResponse|\PayPal\StructType\TelephonySmsplusSendSmsMtResponse|\PayPal\StructType\TelephonySmsplusServiceAddResponse|\PayPal\StructType\TelephonySmsplusServiceDeleteResponse|\PayPal\StructType\TelephonySmsplusServiceDetailsResponse|\PayPal\StructType\TelephonySmsplusServiceEditResponse|\PayPal\StructType\TelephonySmsplusServiceListResponse|\PayPal\StructType\TelephonySmsplusServiceReversableTicketsListResponse|\PayPal\StructType\TelephonySmsplusServiceReversableTicketsSummaryResponse|\PayPal\StructType\TelephonySmsplusShortCodesListResponse|\PayPal\StructType\TelephonySmsSenderAddResponse|\PayPal\StructType\TelephonySmsSenderDeleteResponse|\PayPal\StructType\TelephonySmsSenderDescriptionResponse|\PayPal\StructType\TelephonySmsSenderListResponse|\PayPal\StructType\TelephonySmsSenderValidateResponse|\PayPal\StructType\TelephonySmsSendResponse|\PayPal\StructType\TelephonySmsSetCallBackResponse|\PayPal\StructType\TelephonySmsSetQuotaNotificationResponse|\PayPal\StructType\TelephonySmsSetUserQuotaResponse|\PayPal\StructType\TelephonySmsUserAddCsvAttachmentResponse|\PayPal\StructType\TelephonySmsUserAddResponse|\PayPal\StructType\TelephonySmsUserCreditLeftResponse|\PayPal\StructType\TelephonySmsUserDeleteCsvAttachmentResponse|\PayPal\StructType\TelephonySmsUserDelResponse|\PayPal\StructType\TelephonySmsUserGetCallBackResponse|\PayPal\StructType\TelephonySmsUserGetCsvAttachmentResponse|\PayPal\StructType\TelephonySmsUserHistoryCsvResponse|\PayPal\StructType\TelephonySmsUserHistoryResponse|\PayPal\StructType\TelephonySmsUserListCsvAttachmentResponse|\PayPal\StructType\TelephonySmsUserListResponse|\PayPal\StructType\TelephonySmsUserMultiSendResponse|\PayPal\StructType\TelephonySmsUserPasswordResponse|\PayPal\StructType\TelephonySmsUserSendResponse|\PayPal\StructType\TelephonySmsUserSetCallBackResponse|\PayPal\StructType\TelephonySpareAddResponse|\PayPal\StructType\TelephonySpareCapabilitiesResponse|\PayPal\StructType\TelephonySpareCreateRMAResponse|\PayPal\StructType\TelephonySpareDelResponse|\PayPal\StructType\TelephonySpareInfoResponse|\PayPal\StructType\TelephonySpareListResponse|\PayPal\StructType\TelephonySparePurchaseResponse|\PayPal\StructType\TelephonySpareReplaceResponse|\PayPal\StructType\TelephonySpareServiceInfoResponse|\PayPal\StructType\TelephonySpareServiceListResponse|\PayPal\StructType\TelephonySpecialNumberCustomListResponse|\PayPal\StructType\TelephonySpecialNumberOrderResponse|\PayPal\StructType\TelephonySviInfoResponse|\PayPal\StructType\TelephonySviModifyResponse|\PayPal\StructType\TelephonyToneDeleteResponse|\PayPal\StructType\TelephonyToneRemoteUploadResponse|\PayPal\StructType\TelephonyTonesOptionsListResponse|\PayPal\StructType\TelephonyTonesOptionsModifyResponse|\PayPal\StructType\TelephonyToneStatusResponse|\PayPal\StructType\TelephonyTrunkExternalDisplayedNumberAddResponse|\PayPal\StructType\TelephonyTrunkExternalDisplayedNumberCheckResponse|\PayPal\StructType\TelephonyTrunkExternalDisplayedNumberDelResponse|\PayPal\StructType\TelephonyTrunkExternalDisplayedNumberListResponse|\PayPal\StructType\TelephonyVoicemailMailboxDeleteResponse|\PayPal\StructType\TelephonyVoicemailMailboxDownloadResponse|\PayPal\StructType\TelephonyVoicemailMailboxListResponse|\PayPal\StructType\TelephonyVoicemailMessageDeleteResponse|\PayPal\StructType\TelephonyVoicemailMessagesDownloadResponse|\PayPal\StructType\TelephonyVoicemailMessagesRemoteUploadResponse|\PayPal\StructType\TelephonyVoicemailMessagesStatusResponse|\PayPal\StructType\TelephonyVoicemailModifyPasswordResponse|\PayPal\StructType\TelephonyVoicemailOptionsListResponse|\PayPal\StructType\TelephonyVoicemailOptionsModifyResponse
+     * @return \Ovh\ArrayType\TelephonyGetClosureEventsAsArrayResponse|\Ovh\StructType\TelephonyAbbreviatedNumberAddResponse|\Ovh\StructType\TelephonyAbbreviatedNumberDelResponse|\Ovh\StructType\TelephonyAbbreviatedNumberListPaginatedResponse|\Ovh\StructType\TelephonyAbbreviatedNumberListResponse|\Ovh\StructType\TelephonyAbbreviatedNumberModifyResponse|\Ovh\StructType\TelephonyAbbreviatedNumberOnGroupAddResponse|\Ovh\StructType\TelephonyAbbreviatedNumberOnGroupDelResponse|\Ovh\StructType\TelephonyAbbreviatedNumberOnGroupListResponse|\Ovh\StructType\TelephonyAbbreviatedNumberOnGroupModifyResponse|\Ovh\StructType\TelephonyAliasToSipOfferResponse|\Ovh\StructType\TelephonyAliasToSipPossibilitiesResponse|\Ovh\StructType\TelephonyBillDetailsCSVResponse|\Ovh\StructType\TelephonyBillDetailsResponse|\Ovh\StructType\TelephonyBillingAccountAddResponse|\Ovh\StructType\TelephonyBillingAccountConsumptionCSVByMailResponse|\Ovh\StructType\TelephonyBillingAccountDelResponse|\Ovh\StructType\TelephonyBillingAccountDescriptionModifyResponse|\Ovh\StructType\TelephonyBillingAccountInfoResponse|\Ovh\StructType\TelephonyBillingAccountListResponse|\Ovh\StructType\TelephonyBillingAccountSetResponse|\Ovh\StructType\TelephonyBillingAccountSummaryResponse|\Ovh\StructType\TelephonyBillListResponse|\Ovh\StructType\TelephonyCallListResponse|\Ovh\StructType\TelephonyChangeNicModifyResponse|\Ovh\StructType\TelephonyClick2CallDoBySessionResponse|\Ovh\StructType\TelephonyClick2CallDoResponse|\Ovh\StructType\TelephonyClick2CallUserAddResponse|\Ovh\StructType\TelephonyClick2CallUserDelResponse|\Ovh\StructType\TelephonyClick2CallUserListResponse|\Ovh\StructType\TelephonyClick2CallUserPasswordResponse|\Ovh\StructType\TelephonyConferenceActionResponse|\Ovh\StructType\TelephonyConferenceGetInfosResponse|\Ovh\StructType\TelephonyConferenceGetParamsResponse|\Ovh\StructType\TelephonyConferenceSetAnnounceFileResponse|\Ovh\StructType\TelephonyConferenceSetParamsResponse|\Ovh\StructType\TelephonyDdiInfoResponse|\Ovh\StructType\TelephonyDdiModifyResponse|\Ovh\StructType\TelephonyDefaultPrivateHolidaysEventsResponse|\Ovh\StructType\TelephonyDelClosureEventsResponse|\Ovh\StructType\TelephonyDeleteLineResponse|\Ovh\StructType\TelephonyDepositMovementModifyResponse|\Ovh\StructType\TelephonyDirectoryInfoGetSameSiretResponse|\Ovh\StructType\TelephonyDirectoryInfoGetSiretResponse|\Ovh\StructType\TelephonyDirectoryInfoResponse|\Ovh\StructType\TelephonyDirectoryListWayTypeResponse|\Ovh\StructType\TelephonyDirectoryModifyAddressResponse|\Ovh\StructType\TelephonyDirectoryModifyPublicationResponse|\Ovh\StructType\TelephonyDirectoryPJCodeResponse|\Ovh\StructType\TelephonyFaxCallListResponse|\Ovh\StructType\TelephonyFaxCampaignCreationResponse|\Ovh\StructType\TelephonyFaxCampaignDeleteResponse|\Ovh\StructType\TelephonyFaxCampaignDetailsResponse|\Ovh\StructType\TelephonyFaxCampaignListResponse|\Ovh\StructType\TelephonyFaxCampaignStartStopResponse|\Ovh\StructType\TelephonyFaxHistoryResponse|\Ovh\StructType\TelephonyFaxModifyPasswordResponse|\Ovh\StructType\TelephonyFaxOptionsListResponse|\Ovh\StructType\TelephonyFaxOptionsModifyResponse|\Ovh\StructType\TelephonyFaxSendResponse|\Ovh\StructType\TelephonyFMHuntingModificationAnonymousCallRejectionResponse|\Ovh\StructType\TelephonyFMHuntingModificationMembersResponse|\Ovh\StructType\TelephonyFMHuntingModificationModeResponse|\Ovh\StructType\TelephonyFMHuntingModificationSimultaneousCallsResponse|\Ovh\StructType\TelephonyFMHuntingModificationVoicemailResponse|\Ovh\StructType\TelephonyFreefaxToVoicefaxCheckListResponse|\Ovh\StructType\TelephonyFreefaxToVoicefaxResponse|\Ovh\StructType\TelephonyFunctionKeyAddResponse|\Ovh\StructType\TelephonyFunctionKeyDelResponse|\Ovh\StructType\TelephonyFunctionKeyListResponse|\Ovh\StructType\TelephonyFunctionKeyModifyResponse|\Ovh\StructType\TelephonyGetCitiesFromZipResponse|\Ovh\StructType\TelephonyGetClosureEventsAsICSResponse|\Ovh\StructType\TelephonyGetDefaultPrivateHolidaysEventsResponse|\Ovh\StructType\TelephonyGetTimeZoneNumberResponse|\Ovh\StructType\TelephonyHuntingGenericScreenListResponse|\Ovh\StructType\TelephonyHuntingGenericScreenOptionsModifyResponse|\Ovh\StructType\TelephonyHuntingGenericScreenOptionsResponse|\Ovh\StructType\TelephonyHuntingGenericScreenSetResponse|\Ovh\StructType\TelephonyHuntingGenericScreenStatusModifyResponse|\Ovh\StructType\TelephonyHuntingGenericScreenStatusResponse|\Ovh\StructType\TelephonyHuntingGroupListResponse|\Ovh\StructType\TelephonyHuntingInfoResponse|\Ovh\StructType\TelephonyHuntingModificationAnonymousCallRejectionResponse|\Ovh\StructType\TelephonyHuntingModificationMembersResponse|\Ovh\StructType\TelephonyHuntingModificationModeResponse|\Ovh\StructType\TelephonyHuntingModificationQueueResponse|\Ovh\StructType\TelephonyHuntingModificationSimultaneousCallsResponse|\Ovh\StructType\TelephonyLineConsumptionCSVByMailResponse|\Ovh\StructType\TelephonyLineDetailsResponse|\Ovh\StructType\TelephonyLineGetCodecsResponse|\Ovh\StructType\TelephonyLineGetIpRestrictionResponse|\Ovh\StructType\TelephonyLineGetMgcpIpRestrictionResponse|\Ovh\StructType\TelephonyLineGetOfferPricesResponse|\Ovh\StructType\TelephonyLineGetSipDomainResponse|\Ovh\StructType\TelephonyLineListResponse|\Ovh\StructType\TelephonyLineLogsNotificationOptionsModifyResponse|\Ovh\StructType\TelephonyLineLogsNotificationOptionsResponse|\Ovh\StructType\TelephonyLineLogsOnGroupResponse|\Ovh\StructType\TelephonyLineLogsResponse|\Ovh\StructType\TelephonyLineOptionsListResponse|\Ovh\StructType\TelephonyLineOptionsModifyResponse|\Ovh\StructType\TelephonyLineOrderResponse|\Ovh\StructType\TelephonyLineSetCodecsResponse|\Ovh\StructType\TelephonyLineSetIpRestrictionResponse|\Ovh\StructType\TelephonyLineSetMgcpIpRestrictionResponse|\Ovh\StructType\TelephonyLineSetSipDomainResponse|\Ovh\StructType\TelephonyLineSwitchOfferPossibilityResponse|\Ovh\StructType\TelephonyLineSwitchOfferResponse|\Ovh\StructType\TelephonyLineSwitchOldOfferPossibilityResponse|\Ovh\StructType\TelephonyLineSwitchOldOfferResponse|\Ovh\StructType\TelephonyListReversableCallsFromNumberResponse|\Ovh\StructType\TelephonyListSummationCallsFromBillingAccountResponse|\Ovh\StructType\TelephonyListSummationCallsFromNumberResponse|\Ovh\StructType\TelephonyNicGetIpRestrictionResponse|\Ovh\StructType\TelephonyNicGetMgcpIpRestrictionResponse|\Ovh\StructType\TelephonyNicGetSipDomainResponse|\Ovh\StructType\TelephonyNicSetIpRestrictionResponse|\Ovh\StructType\TelephonyNicSetMgcpIpRestrictionResponse|\Ovh\StructType\TelephonyNicSetSipDomainResponse|\Ovh\StructType\TelephonyNumberCityForZoneListResponse|\Ovh\StructType\TelephonyNumberCleanResponse|\Ovh\StructType\TelephonyNumberCustomListResponse|\Ovh\StructType\TelephonyNumberGetBillingAccountResponse|\Ovh\StructType\TelephonyNumberGetFrWayNamesFromInseeResponse|\Ovh\StructType\TelephonyNumberInfoResponse|\Ovh\StructType\TelephonyNumberModifyResponse|\Ovh\StructType\TelephonyNumberOrderResponse|\Ovh\StructType\TelephonyNumberZoneAndPrefixListResponse|\Ovh\StructType\TelephonyOfferInfoResponse|\Ovh\StructType\TelephonyOfferModifyNameResponse|\Ovh\StructType\TelephonyOfferModifyPasswordResponse|\Ovh\StructType\TelephonyOfferSimultaneousLinesModifyResponse|\Ovh\StructType\TelephonyOrdersFollowingUpResponse|\Ovh\StructType\TelephonyPhonebookAddResponse|\Ovh\StructType\TelephonyPhonebookContactAddResponse|\Ovh\StructType\TelephonyPhonebookContactDelResponse|\Ovh\StructType\TelephonyPhonebookContactListResponse|\Ovh\StructType\TelephonyPhonebookContactModifyResponse|\Ovh\StructType\TelephonyPhonebookDelResponse|\Ovh\StructType\TelephonyPhonebookGroupListResponse|\Ovh\StructType\TelephonyPhonebookListResponse|\Ovh\StructType\TelephonyPhonebookModifyResponse|\Ovh\StructType\TelephonyPhonebookOnGroupAddResponse|\Ovh\StructType\TelephonyPhonebookOnGroupContactAddResponse|\Ovh\StructType\TelephonyPhonebookOnGroupContactDelResponse|\Ovh\StructType\TelephonyPhonebookOnGroupContactListResponse|\Ovh\StructType\TelephonyPhonebookOnGroupContactModifyResponse|\Ovh\StructType\TelephonyPhonebookOnGroupDelResponse|\Ovh\StructType\TelephonyPhonebookOnGroupGroupListResponse|\Ovh\StructType\TelephonyPhonebookOnGroupListResponse|\Ovh\StructType\TelephonyPhonebookOnGroupModifyResponse|\Ovh\StructType\TelephonyPhonebookOnSmsAddResponse|\Ovh\StructType\TelephonyPhonebookOnSmsContactAddResponse|\Ovh\StructType\TelephonyPhonebookOnSmsContactDelResponse|\Ovh\StructType\TelephonyPhonebookOnSmsContactListResponse|\Ovh\StructType\TelephonyPhonebookOnSmsContactModifyResponse|\Ovh\StructType\TelephonyPhonebookOnSmsDelResponse|\Ovh\StructType\TelephonyPhonebookOnSmsListResponse|\Ovh\StructType\TelephonyPhonebookOnSmsModifyResponse|\Ovh\StructType\TelephonyPhonebookSharePeerListResponse|\Ovh\StructType\TelephonyPhonebookShareResponse|\Ovh\StructType\TelephonyPlugAndPhoneInfoResponse|\Ovh\StructType\TelephonyPlugAndPhoneOperationResponse|\Ovh\StructType\TelephonyPlugAndPhoneResetResponse|\Ovh\StructType\TelephonyPlugAndPhoneSkinModifyResponse|\Ovh\StructType\TelephonyPortabilityOrderResponse|\Ovh\StructType\TelephonyPortabilityOrderSpecialNumberResponse|\Ovh\StructType\TelephonyPortabilityStatusResponse|\Ovh\StructType\TelephonyRatesListCsvResponse|\Ovh\StructType\TelephonyRatesListResponse|\Ovh\StructType\TelephonyRedirectInfoResponse|\Ovh\StructType\TelephonyRedirectModifyResponse|\Ovh\StructType\TelephonyRestrictionListResponse|\Ovh\StructType\TelephonyRestrictionModifyResponse|\Ovh\StructType\TelephonyReversmentsRefundFromBillingAccountResponse|\Ovh\StructType\TelephonyReversmentsRefundIsPendingResponse|\Ovh\StructType\TelephonyScreenListBlackWhiteChoiceModifyResponse|\Ovh\StructType\TelephonyScreenListBlackWhiteChoiceResponse|\Ovh\StructType\TelephonyScreenListInfoModifyResponse|\Ovh\StructType\TelephonyScreenListInfoResponse|\Ovh\StructType\TelephonySecurityDepositCreditResponse|\Ovh\StructType\TelephonySecurityDepositInfoResponse|\Ovh\StructType\TelephonySetClosureEventsResponse|\Ovh\StructType\TelephonySetDefaultPrivateHolidaysEventsResponse|\Ovh\StructType\TelephonySetTimeZoneNumberResponse|\Ovh\StructType\TelephonySipToAliasOfferResponse|\Ovh\StructType\TelephonySmsAccountListResponse|\Ovh\StructType\TelephonySmsAddCsvAttachmentResponse|\Ovh\StructType\TelephonySmsBlacklistedSendersDeleteResponse|\Ovh\StructType\TelephonySmsBlacklistedSendersListResponse|\Ovh\StructType\TelephonySmsCancelSendingResponse|\Ovh\StructType\TelephonySmsCreditLeftResponse|\Ovh\StructType\TelephonySmsDeleteCsvAttachmentResponse|\Ovh\StructType\TelephonySmsDeleteResponse|\Ovh\StructType\TelephonySmsGetCallBackResponse|\Ovh\StructType\TelephonySmsGetCsvAttachmentResponse|\Ovh\StructType\TelephonySmsGetQuotaNotificationForUserResponse|\Ovh\StructType\TelephonySmsGetQuotaNotificationResponse|\Ovh\StructType\TelephonySmsGetUserQuotaForUserResponse|\Ovh\StructType\TelephonySmsGetUserQuotaResponse|\Ovh\StructType\TelephonySmsHistoryCsvResponse|\Ovh\StructType\TelephonySmsHistoryResponse|\Ovh\StructType\TelephonySmsListCsvAttachmentResponse|\Ovh\StructType\TelephonySmsMultiSendResponse|\Ovh\StructType\TelephonySmsplusIsFreeKeywordResponse|\Ovh\StructType\TelephonySmsplusSendSmsMtResponse|\Ovh\StructType\TelephonySmsplusServiceAddResponse|\Ovh\StructType\TelephonySmsplusServiceDeleteResponse|\Ovh\StructType\TelephonySmsplusServiceDetailsResponse|\Ovh\StructType\TelephonySmsplusServiceEditResponse|\Ovh\StructType\TelephonySmsplusServiceListResponse|\Ovh\StructType\TelephonySmsplusServiceReversableTicketsListResponse|\Ovh\StructType\TelephonySmsplusServiceReversableTicketsSummaryResponse|\Ovh\StructType\TelephonySmsplusShortCodesListResponse|\Ovh\StructType\TelephonySmsSenderAddResponse|\Ovh\StructType\TelephonySmsSenderDeleteResponse|\Ovh\StructType\TelephonySmsSenderDescriptionResponse|\Ovh\StructType\TelephonySmsSenderListResponse|\Ovh\StructType\TelephonySmsSenderValidateResponse|\Ovh\StructType\TelephonySmsSendResponse|\Ovh\StructType\TelephonySmsSetCallBackResponse|\Ovh\StructType\TelephonySmsSetQuotaNotificationResponse|\Ovh\StructType\TelephonySmsSetUserQuotaResponse|\Ovh\StructType\TelephonySmsUserAddCsvAttachmentResponse|\Ovh\StructType\TelephonySmsUserAddResponse|\Ovh\StructType\TelephonySmsUserCreditLeftResponse|\Ovh\StructType\TelephonySmsUserDeleteCsvAttachmentResponse|\Ovh\StructType\TelephonySmsUserDelResponse|\Ovh\StructType\TelephonySmsUserGetCallBackResponse|\Ovh\StructType\TelephonySmsUserGetCsvAttachmentResponse|\Ovh\StructType\TelephonySmsUserHistoryCsvResponse|\Ovh\StructType\TelephonySmsUserHistoryResponse|\Ovh\StructType\TelephonySmsUserListCsvAttachmentResponse|\Ovh\StructType\TelephonySmsUserListResponse|\Ovh\StructType\TelephonySmsUserMultiSendResponse|\Ovh\StructType\TelephonySmsUserPasswordResponse|\Ovh\StructType\TelephonySmsUserSendResponse|\Ovh\StructType\TelephonySmsUserSetCallBackResponse|\Ovh\StructType\TelephonySpareAddResponse|\Ovh\StructType\TelephonySpareCapabilitiesResponse|\Ovh\StructType\TelephonySpareCreateRMAResponse|\Ovh\StructType\TelephonySpareDelResponse|\Ovh\StructType\TelephonySpareInfoResponse|\Ovh\StructType\TelephonySpareListResponse|\Ovh\StructType\TelephonySparePurchaseResponse|\Ovh\StructType\TelephonySpareReplaceResponse|\Ovh\StructType\TelephonySpareServiceInfoResponse|\Ovh\StructType\TelephonySpareServiceListResponse|\Ovh\StructType\TelephonySpecialNumberCustomListResponse|\Ovh\StructType\TelephonySpecialNumberOrderResponse|\Ovh\StructType\TelephonySviInfoResponse|\Ovh\StructType\TelephonySviModifyResponse|\Ovh\StructType\TelephonyToneDeleteResponse|\Ovh\StructType\TelephonyToneRemoteUploadResponse|\Ovh\StructType\TelephonyTonesOptionsListResponse|\Ovh\StructType\TelephonyTonesOptionsModifyResponse|\Ovh\StructType\TelephonyToneStatusResponse|\Ovh\StructType\TelephonyTrunkExternalDisplayedNumberAddResponse|\Ovh\StructType\TelephonyTrunkExternalDisplayedNumberCheckResponse|\Ovh\StructType\TelephonyTrunkExternalDisplayedNumberDelResponse|\Ovh\StructType\TelephonyTrunkExternalDisplayedNumberListResponse|\Ovh\StructType\TelephonyVoicemailMailboxDeleteResponse|\Ovh\StructType\TelephonyVoicemailMailboxDownloadResponse|\Ovh\StructType\TelephonyVoicemailMailboxListResponse|\Ovh\StructType\TelephonyVoicemailMessageDeleteResponse|\Ovh\StructType\TelephonyVoicemailMessagesDownloadResponse|\Ovh\StructType\TelephonyVoicemailMessagesRemoteUploadResponse|\Ovh\StructType\TelephonyVoicemailMessagesStatusResponse|\Ovh\StructType\TelephonyVoicemailModifyPasswordResponse|\Ovh\StructType\TelephonyVoicemailOptionsListResponse|\Ovh\StructType\TelephonyVoicemailOptionsModifyResponse
      */
     public function getResult()
     {

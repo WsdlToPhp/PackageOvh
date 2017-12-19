@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class OrderDedicatedFailoverRipe extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\OrderDedicatedFailoverRipe
+     * @return \Ovh\StructType\OrderDedicatedFailoverRipe
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class OrderDedicatedFailoverRipe extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\OrderDedicatedFailoverRipe
+     * @return \Ovh\StructType\OrderDedicatedFailoverRipe
      */
     public function setHostname($hostname = null)
     {
@@ -123,7 +123,7 @@ class OrderDedicatedFailoverRipe extends AbstractStructBase
     /**
      * Set address value
      * @param int $address
-     * @return \PayPal\StructType\OrderDedicatedFailoverRipe
+     * @return \Ovh\StructType\OrderDedicatedFailoverRipe
      */
     public function setAddress($address = null)
     {
@@ -145,7 +145,7 @@ class OrderDedicatedFailoverRipe extends AbstractStructBase
     /**
      * Set period value
      * @param int $period
-     * @return \PayPal\StructType\OrderDedicatedFailoverRipe
+     * @return \Ovh\StructType\OrderDedicatedFailoverRipe
      */
     public function setPeriod($period = null)
     {
@@ -167,7 +167,7 @@ class OrderDedicatedFailoverRipe extends AbstractStructBase
     /**
      * Set payWithPoints value
      * @param bool $payWithPoints
-     * @return \PayPal\StructType\OrderDedicatedFailoverRipe
+     * @return \Ovh\StructType\OrderDedicatedFailoverRipe
      */
     public function setPayWithPoints($payWithPoints = null)
     {
@@ -184,7 +184,7 @@ class OrderDedicatedFailoverRipe extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\OrderDedicatedFailoverRipe
+     * @return \Ovh\StructType\OrderDedicatedFailoverRipe
      */
     public static function __set_state(array $array)
     {

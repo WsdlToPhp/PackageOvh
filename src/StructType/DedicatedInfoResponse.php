@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\DedicatedInfoReturn
+     * @var \Ovh\StructType\DedicatedInfoReturn
      */
     public $return;
     /**
      * Constructor method for dedicatedInfoResponse
      * @uses DedicatedInfoResponse::setReturn()
-     * @param \PayPal\StructType\DedicatedInfoReturn $return
+     * @param \Ovh\StructType\DedicatedInfoReturn $return
      */
-    public function __construct(\PayPal\StructType\DedicatedInfoReturn $return = null)
+    public function __construct(\Ovh\StructType\DedicatedInfoReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\DedicatedInfoReturn|null
+     * @return \Ovh\StructType\DedicatedInfoReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\DedicatedInfoReturn $return
-     * @return \PayPal\StructType\DedicatedInfoResponse
+     * @param \Ovh\StructType\DedicatedInfoReturn $return
+     * @return \Ovh\StructType\DedicatedInfoResponse
      */
-    public function setReturn(\PayPal\StructType\DedicatedInfoReturn $return = null)
+    public function setReturn(\Ovh\StructType\DedicatedInfoReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedInfoResponse
+     * @return \Ovh\StructType\DedicatedInfoResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class OrtStruct extends AbstractStructBase
     /**
      * Set subdomain value
      * @param string $subdomain
-     * @return \PayPal\StructType\OrtStruct
+     * @return \Ovh\StructType\OrtStruct
      */
     public function setSubdomain($subdomain = null)
     {
@@ -75,7 +75,7 @@ class OrtStruct extends AbstractStructBase
     /**
      * Set target value
      * @param string $target
-     * @return \PayPal\StructType\OrtStruct
+     * @return \Ovh\StructType\OrtStruct
      */
     public function setTarget($target = null)
     {
@@ -97,7 +97,7 @@ class OrtStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\OrtStruct
+     * @return \Ovh\StructType\OrtStruct
      */
     public function setType($type = null)
     {
@@ -114,7 +114,7 @@ class OrtStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\OrtStruct
+     * @return \Ovh\StructType\OrtStruct
      */
     public static function __set_state(array $array)
     {

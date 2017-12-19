@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -93,7 +93,7 @@ class TelephonyPhonebookContactStruct extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\TelephonyPhonebookContactStruct
+     * @return \Ovh\StructType\TelephonyPhonebookContactStruct
      */
     public function setId($id = null)
     {
@@ -115,7 +115,7 @@ class TelephonyPhonebookContactStruct extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\TelephonyPhonebookContactStruct
+     * @return \Ovh\StructType\TelephonyPhonebookContactStruct
      */
     public function setName($name = null)
     {
@@ -137,7 +137,7 @@ class TelephonyPhonebookContactStruct extends AbstractStructBase
     /**
      * Set surname value
      * @param string $surname
-     * @return \PayPal\StructType\TelephonyPhonebookContactStruct
+     * @return \Ovh\StructType\TelephonyPhonebookContactStruct
      */
     public function setSurname($surname = null)
     {
@@ -159,7 +159,7 @@ class TelephonyPhonebookContactStruct extends AbstractStructBase
     /**
      * Set workPhone value
      * @param string $workPhone
-     * @return \PayPal\StructType\TelephonyPhonebookContactStruct
+     * @return \Ovh\StructType\TelephonyPhonebookContactStruct
      */
     public function setWorkPhone($workPhone = null)
     {
@@ -181,7 +181,7 @@ class TelephonyPhonebookContactStruct extends AbstractStructBase
     /**
      * Set workMobile value
      * @param string $workMobile
-     * @return \PayPal\StructType\TelephonyPhonebookContactStruct
+     * @return \Ovh\StructType\TelephonyPhonebookContactStruct
      */
     public function setWorkMobile($workMobile = null)
     {
@@ -203,7 +203,7 @@ class TelephonyPhonebookContactStruct extends AbstractStructBase
     /**
      * Set homePhone value
      * @param string $homePhone
-     * @return \PayPal\StructType\TelephonyPhonebookContactStruct
+     * @return \Ovh\StructType\TelephonyPhonebookContactStruct
      */
     public function setHomePhone($homePhone = null)
     {
@@ -225,7 +225,7 @@ class TelephonyPhonebookContactStruct extends AbstractStructBase
     /**
      * Set homeMobile value
      * @param string $homeMobile
-     * @return \PayPal\StructType\TelephonyPhonebookContactStruct
+     * @return \Ovh\StructType\TelephonyPhonebookContactStruct
      */
     public function setHomeMobile($homeMobile = null)
     {
@@ -247,7 +247,7 @@ class TelephonyPhonebookContactStruct extends AbstractStructBase
     /**
      * Set group value
      * @param string $group
-     * @return \PayPal\StructType\TelephonyPhonebookContactStruct
+     * @return \Ovh\StructType\TelephonyPhonebookContactStruct
      */
     public function setGroup($group = null)
     {
@@ -264,7 +264,7 @@ class TelephonyPhonebookContactStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyPhonebookContactStruct
+     * @return \Ovh\StructType\TelephonyPhonebookContactStruct
      */
     public static function __set_state(array $array)
     {

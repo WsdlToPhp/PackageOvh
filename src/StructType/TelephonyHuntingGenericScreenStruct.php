@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class TelephonyHuntingGenericScreenStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenStruct
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenStruct
      */
     public function setStatus($status = null)
     {
@@ -91,7 +91,7 @@ class TelephonyHuntingGenericScreenStruct extends AbstractStructBase
     /**
      * Set timeEnd value
      * @param string $timeEnd
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenStruct
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenStruct
      */
     public function setTimeEnd($timeEnd = null)
     {
@@ -113,7 +113,7 @@ class TelephonyHuntingGenericScreenStruct extends AbstractStructBase
     /**
      * Set timeStart value
      * @param string $timeStart
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenStruct
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenStruct
      */
     public function setTimeStart($timeStart = null)
     {
@@ -135,7 +135,7 @@ class TelephonyHuntingGenericScreenStruct extends AbstractStructBase
     /**
      * Set dayType value
      * @param string $dayType
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenStruct
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenStruct
      */
     public function setDayType($dayType = null)
     {
@@ -157,7 +157,7 @@ class TelephonyHuntingGenericScreenStruct extends AbstractStructBase
     /**
      * Set forwardPolicyIndex value
      * @param string $forwardPolicyIndex
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenStruct
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenStruct
      */
     public function setForwardPolicyIndex($forwardPolicyIndex = null)
     {
@@ -174,7 +174,7 @@ class TelephonyHuntingGenericScreenStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenStruct
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class BillingGetReferencesToExpiredStruct extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\BillingGetReferencesToExpiredStruct
+     * @return \Ovh\StructType\BillingGetReferencesToExpiredStruct
      */
     public function setName($name = null)
     {
@@ -75,7 +75,7 @@ class BillingGetReferencesToExpiredStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\BillingGetReferencesToExpiredStruct
+     * @return \Ovh\StructType\BillingGetReferencesToExpiredStruct
      */
     public function setType($type = null)
     {
@@ -97,7 +97,7 @@ class BillingGetReferencesToExpiredStruct extends AbstractStructBase
     /**
      * Set expired value
      * @param string $expired
-     * @return \PayPal\StructType\BillingGetReferencesToExpiredStruct
+     * @return \Ovh\StructType\BillingGetReferencesToExpiredStruct
      */
     public function setExpired($expired = null)
     {
@@ -114,7 +114,7 @@ class BillingGetReferencesToExpiredStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\BillingGetReferencesToExpiredStruct
+     * @return \Ovh\StructType\BillingGetReferencesToExpiredStruct
      */
     public static function __set_state(array $array)
     {

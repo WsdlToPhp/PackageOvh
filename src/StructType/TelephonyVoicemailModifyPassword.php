@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class TelephonyVoicemailModifyPassword extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyVoicemailModifyPassword
+     * @return \Ovh\StructType\TelephonyVoicemailModifyPassword
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class TelephonyVoicemailModifyPassword extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyVoicemailModifyPassword
+     * @return \Ovh\StructType\TelephonyVoicemailModifyPassword
      */
     public function setNumber($number = null)
     {
@@ -123,7 +123,7 @@ class TelephonyVoicemailModifyPassword extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyVoicemailModifyPassword
+     * @return \Ovh\StructType\TelephonyVoicemailModifyPassword
      */
     public function setCountry($country = null)
     {
@@ -145,7 +145,7 @@ class TelephonyVoicemailModifyPassword extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \PayPal\StructType\TelephonyVoicemailModifyPassword
+     * @return \Ovh\StructType\TelephonyVoicemailModifyPassword
      */
     public function setPassword($password = null)
     {
@@ -167,7 +167,7 @@ class TelephonyVoicemailModifyPassword extends AbstractStructBase
     /**
      * Set forcePassword value
      * @param bool $forcePassword
-     * @return \PayPal\StructType\TelephonyVoicemailModifyPassword
+     * @return \Ovh\StructType\TelephonyVoicemailModifyPassword
      */
     public function setForcePassword($forcePassword = null)
     {
@@ -184,7 +184,7 @@ class TelephonyVoicemailModifyPassword extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyVoicemailModifyPassword
+     * @return \Ovh\StructType\TelephonyVoicemailModifyPassword
      */
     public static function __set_state(array $array)
     {

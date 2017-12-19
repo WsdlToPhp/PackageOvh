@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonySpareReplaceResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyPlugAndPhoneReinitConfigurationReturn
+     * @var \Ovh\StructType\TelephonyPlugAndPhoneReinitConfigurationReturn
      */
     public $return;
     /**
      * Constructor method for telephonySpareReplaceResponse
      * @uses TelephonySpareReplaceResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyPlugAndPhoneReinitConfigurationReturn $return
+     * @param \Ovh\StructType\TelephonyPlugAndPhoneReinitConfigurationReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonyPlugAndPhoneReinitConfigurationReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonyPlugAndPhoneReinitConfigurationReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyPlugAndPhoneReinitConfigurationReturn|null
+     * @return \Ovh\StructType\TelephonyPlugAndPhoneReinitConfigurationReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonySpareReplaceResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyPlugAndPhoneReinitConfigurationReturn $return
-     * @return \PayPal\StructType\TelephonySpareReplaceResponse
+     * @param \Ovh\StructType\TelephonyPlugAndPhoneReinitConfigurationReturn $return
+     * @return \Ovh\StructType\TelephonySpareReplaceResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyPlugAndPhoneReinitConfigurationReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyPlugAndPhoneReinitConfigurationReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonySpareReplaceResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySpareReplaceResponse
+     * @return \Ovh\StructType\TelephonySpareReplaceResponse
      */
     public static function __set_state(array $array)
     {

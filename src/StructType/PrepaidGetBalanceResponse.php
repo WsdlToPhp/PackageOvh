@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,7 +37,7 @@ class PrepaidGetBalanceResponse extends AbstractStructBase
     /**
      * Set return value
      * @param float $return
-     * @return \PayPal\StructType\PrepaidGetBalanceResponse
+     * @return \Ovh\StructType\PrepaidGetBalanceResponse
      */
     public function setReturn($return = null)
     {
@@ -50,7 +50,7 @@ class PrepaidGetBalanceResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\PrepaidGetBalanceResponse
+     * @return \Ovh\StructType\PrepaidGetBalanceResponse
      */
     public static function __set_state(array $array)
     {

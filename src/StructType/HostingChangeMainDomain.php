@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class HostingChangeMainDomain extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\HostingChangeMainDomain
+     * @return \Ovh\StructType\HostingChangeMainDomain
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class HostingChangeMainDomain extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\HostingChangeMainDomain
+     * @return \Ovh\StructType\HostingChangeMainDomain
      */
     public function setDomain($domain = null)
     {
@@ -123,7 +123,7 @@ class HostingChangeMainDomain extends AbstractStructBase
     /**
      * Set newDomain value
      * @param string $newDomain
-     * @return \PayPal\StructType\HostingChangeMainDomain
+     * @return \Ovh\StructType\HostingChangeMainDomain
      */
     public function setNewDomain($newDomain = null)
     {
@@ -145,7 +145,7 @@ class HostingChangeMainDomain extends AbstractStructBase
     /**
      * Set mxAction value
      * @param string $mxAction
-     * @return \PayPal\StructType\HostingChangeMainDomain
+     * @return \Ovh\StructType\HostingChangeMainDomain
      */
     public function setMxAction($mxAction = null)
     {
@@ -167,7 +167,7 @@ class HostingChangeMainDomain extends AbstractStructBase
     /**
      * Set mxOffer value
      * @param string $mxOffer
-     * @return \PayPal\StructType\HostingChangeMainDomain
+     * @return \Ovh\StructType\HostingChangeMainDomain
      */
     public function setMxOffer($mxOffer = null)
     {
@@ -184,7 +184,7 @@ class HostingChangeMainDomain extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\HostingChangeMainDomain
+     * @return \Ovh\StructType\HostingChangeMainDomain
      */
     public static function __set_state(array $array)
     {

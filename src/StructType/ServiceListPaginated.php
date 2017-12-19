@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class ServiceListPaginated extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\ServiceListPaginated
+     * @return \Ovh\StructType\ServiceListPaginated
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class ServiceListPaginated extends AbstractStructBase
     /**
      * Set start value
      * @param int $start
-     * @return \PayPal\StructType\ServiceListPaginated
+     * @return \Ovh\StructType\ServiceListPaginated
      */
     public function setStart($start = null)
     {
@@ -133,7 +133,7 @@ class ServiceListPaginated extends AbstractStructBase
     /**
      * Set limit value
      * @param int $limit
-     * @return \PayPal\StructType\ServiceListPaginated
+     * @return \Ovh\StructType\ServiceListPaginated
      */
     public function setLimit($limit = null)
     {
@@ -155,7 +155,7 @@ class ServiceListPaginated extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\ServiceListPaginated
+     * @return \Ovh\StructType\ServiceListPaginated
      */
     public function setDomain($domain = null)
     {
@@ -177,7 +177,7 @@ class ServiceListPaginated extends AbstractStructBase
     /**
      * Set component value
      * @param string $component
-     * @return \PayPal\StructType\ServiceListPaginated
+     * @return \Ovh\StructType\ServiceListPaginated
      */
     public function setComponent($component = null)
     {
@@ -199,7 +199,7 @@ class ServiceListPaginated extends AbstractStructBase
     /**
      * Set group value
      * @param string $group
-     * @return \PayPal\StructType\ServiceListPaginated
+     * @return \Ovh\StructType\ServiceListPaginated
      */
     public function setGroup($group = null)
     {
@@ -216,7 +216,7 @@ class ServiceListPaginated extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ServiceListPaginated
+     * @return \Ovh\StructType\ServiceListPaginated
      */
     public static function __set_state(array $array)
     {

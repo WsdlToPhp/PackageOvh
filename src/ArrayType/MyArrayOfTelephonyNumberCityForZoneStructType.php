@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfTelephonyNumberCityForZoneStructType extends AbstractStructArrayB
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TelephonyNumberCityForZoneStruct[]
+     * @var \Ovh\StructType\TelephonyNumberCityForZoneStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTelephonyNumberCityForZoneStructType
      * @uses MyArrayOfTelephonyNumberCityForZoneStructType::setItem()
-     * @param \PayPal\StructType\TelephonyNumberCityForZoneStruct[] $item
+     * @param \Ovh\StructType\TelephonyNumberCityForZoneStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfTelephonyNumberCityForZoneStructType extends AbstractStructArrayB
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TelephonyNumberCityForZoneStruct[]|null
+     * @return \Ovh\StructType\TelephonyNumberCityForZoneStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfTelephonyNumberCityForZoneStructType extends AbstractStructArrayB
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyNumberCityForZoneStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyNumberCityForZoneStructType
+     * @param \Ovh\StructType\TelephonyNumberCityForZoneStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyNumberCityForZoneStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTelephonyNumberCityForZoneStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTelephonyNumberCityForZoneStructTypeItemItem instanceof \PayPal\StructType\TelephonyNumberCityForZoneStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyNumberCityForZoneStruct, "%s" given', is_object($myArrayOfTelephonyNumberCityForZoneStructTypeItemItem) ? get_class($myArrayOfTelephonyNumberCityForZoneStructTypeItemItem) : gettype($myArrayOfTelephonyNumberCityForZoneStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTelephonyNumberCityForZoneStructTypeItemItem instanceof \Ovh\StructType\TelephonyNumberCityForZoneStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyNumberCityForZoneStruct, "%s" given', is_object($myArrayOfTelephonyNumberCityForZoneStructTypeItemItem) ? get_class($myArrayOfTelephonyNumberCityForZoneStructTypeItemItem) : gettype($myArrayOfTelephonyNumberCityForZoneStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfTelephonyNumberCityForZoneStructType extends AbstractStructArrayB
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyNumberCityForZoneStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyNumberCityForZoneStructType
+     * @param \Ovh\StructType\TelephonyNumberCityForZoneStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyNumberCityForZoneStructType
      */
-    public function addToItem(\PayPal\StructType\TelephonyNumberCityForZoneStruct $item)
+    public function addToItem(\Ovh\StructType\TelephonyNumberCityForZoneStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TelephonyNumberCityForZoneStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyNumberCityForZoneStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TelephonyNumberCityForZoneStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyNumberCityForZoneStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfTelephonyNumberCityForZoneStructType extends AbstractStructArrayB
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonyNumberCityForZoneStruct|null
+     * @return \Ovh\StructType\TelephonyNumberCityForZoneStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfTelephonyNumberCityForZoneStructType extends AbstractStructArrayB
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonyNumberCityForZoneStruct|null
+     * @return \Ovh\StructType\TelephonyNumberCityForZoneStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfTelephonyNumberCityForZoneStructType extends AbstractStructArrayB
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonyNumberCityForZoneStruct|null
+     * @return \Ovh\StructType\TelephonyNumberCityForZoneStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfTelephonyNumberCityForZoneStructType extends AbstractStructArrayB
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonyNumberCityForZoneStruct|null
+     * @return \Ovh\StructType\TelephonyNumberCityForZoneStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfTelephonyNumberCityForZoneStructType extends AbstractStructArrayB
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonyNumberCityForZoneStruct|null
+     * @return \Ovh\StructType\TelephonyNumberCityForZoneStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfTelephonyNumberCityForZoneStructType extends AbstractStructArrayB
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyNumberCityForZoneStructType
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyNumberCityForZoneStructType
      */
     public static function __set_state(array $array)
     {

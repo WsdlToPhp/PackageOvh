@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -58,7 +58,7 @@ class TelephonyFaxCampaignDetailsStruct extends AbstractStructBase
     public $reference;
     /**
      * The recipients
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyRecipientStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyRecipientStructType
      */
     public $recipients;
     /**
@@ -82,9 +82,9 @@ class TelephonyFaxCampaignDetailsStruct extends AbstractStructBase
      * @param int $success
      * @param int $failed
      * @param string $reference
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyRecipientStructType $recipients
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyRecipientStructType $recipients
      */
-    public function __construct($campaignName = null, $campaignStatus = null, $dateStart = null, $dateEnd = null, $total = null, $todo = null, $success = null, $failed = null, $reference = null, \PayPal\ArrayType\MyArrayOfTelephonyRecipientStructType $recipients = null)
+    public function __construct($campaignName = null, $campaignStatus = null, $dateStart = null, $dateEnd = null, $total = null, $todo = null, $success = null, $failed = null, $reference = null, \Ovh\ArrayType\MyArrayOfTelephonyRecipientStructType $recipients = null)
     {
         $this
             ->setCampaignName($campaignName)
@@ -109,7 +109,7 @@ class TelephonyFaxCampaignDetailsStruct extends AbstractStructBase
     /**
      * Set campaignName value
      * @param string $campaignName
-     * @return \PayPal\StructType\TelephonyFaxCampaignDetailsStruct
+     * @return \Ovh\StructType\TelephonyFaxCampaignDetailsStruct
      */
     public function setCampaignName($campaignName = null)
     {
@@ -131,7 +131,7 @@ class TelephonyFaxCampaignDetailsStruct extends AbstractStructBase
     /**
      * Set campaignStatus value
      * @param string $campaignStatus
-     * @return \PayPal\StructType\TelephonyFaxCampaignDetailsStruct
+     * @return \Ovh\StructType\TelephonyFaxCampaignDetailsStruct
      */
     public function setCampaignStatus($campaignStatus = null)
     {
@@ -153,7 +153,7 @@ class TelephonyFaxCampaignDetailsStruct extends AbstractStructBase
     /**
      * Set dateStart value
      * @param string $dateStart
-     * @return \PayPal\StructType\TelephonyFaxCampaignDetailsStruct
+     * @return \Ovh\StructType\TelephonyFaxCampaignDetailsStruct
      */
     public function setDateStart($dateStart = null)
     {
@@ -175,7 +175,7 @@ class TelephonyFaxCampaignDetailsStruct extends AbstractStructBase
     /**
      * Set dateEnd value
      * @param string $dateEnd
-     * @return \PayPal\StructType\TelephonyFaxCampaignDetailsStruct
+     * @return \Ovh\StructType\TelephonyFaxCampaignDetailsStruct
      */
     public function setDateEnd($dateEnd = null)
     {
@@ -197,7 +197,7 @@ class TelephonyFaxCampaignDetailsStruct extends AbstractStructBase
     /**
      * Set total value
      * @param int $total
-     * @return \PayPal\StructType\TelephonyFaxCampaignDetailsStruct
+     * @return \Ovh\StructType\TelephonyFaxCampaignDetailsStruct
      */
     public function setTotal($total = null)
     {
@@ -219,7 +219,7 @@ class TelephonyFaxCampaignDetailsStruct extends AbstractStructBase
     /**
      * Set todo value
      * @param int $todo
-     * @return \PayPal\StructType\TelephonyFaxCampaignDetailsStruct
+     * @return \Ovh\StructType\TelephonyFaxCampaignDetailsStruct
      */
     public function setTodo($todo = null)
     {
@@ -241,7 +241,7 @@ class TelephonyFaxCampaignDetailsStruct extends AbstractStructBase
     /**
      * Set success value
      * @param int $success
-     * @return \PayPal\StructType\TelephonyFaxCampaignDetailsStruct
+     * @return \Ovh\StructType\TelephonyFaxCampaignDetailsStruct
      */
     public function setSuccess($success = null)
     {
@@ -263,7 +263,7 @@ class TelephonyFaxCampaignDetailsStruct extends AbstractStructBase
     /**
      * Set failed value
      * @param int $failed
-     * @return \PayPal\StructType\TelephonyFaxCampaignDetailsStruct
+     * @return \Ovh\StructType\TelephonyFaxCampaignDetailsStruct
      */
     public function setFailed($failed = null)
     {
@@ -285,7 +285,7 @@ class TelephonyFaxCampaignDetailsStruct extends AbstractStructBase
     /**
      * Set reference value
      * @param string $reference
-     * @return \PayPal\StructType\TelephonyFaxCampaignDetailsStruct
+     * @return \Ovh\StructType\TelephonyFaxCampaignDetailsStruct
      */
     public function setReference($reference = null)
     {
@@ -298,7 +298,7 @@ class TelephonyFaxCampaignDetailsStruct extends AbstractStructBase
     }
     /**
      * Get recipients value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyRecipientStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyRecipientStructType|null
      */
     public function getRecipients()
     {
@@ -306,10 +306,10 @@ class TelephonyFaxCampaignDetailsStruct extends AbstractStructBase
     }
     /**
      * Set recipients value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyRecipientStructType $recipients
-     * @return \PayPal\StructType\TelephonyFaxCampaignDetailsStruct
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyRecipientStructType $recipients
+     * @return \Ovh\StructType\TelephonyFaxCampaignDetailsStruct
      */
-    public function setRecipients(\PayPal\ArrayType\MyArrayOfTelephonyRecipientStructType $recipients = null)
+    public function setRecipients(\Ovh\ArrayType\MyArrayOfTelephonyRecipientStructType $recipients = null)
     {
         $this->recipients = $recipients;
         return $this;
@@ -320,7 +320,7 @@ class TelephonyFaxCampaignDetailsStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFaxCampaignDetailsStruct
+     * @return \Ovh\StructType\TelephonyFaxCampaignDetailsStruct
      */
     public static function __set_state(array $array)
     {

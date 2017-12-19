@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -58,12 +58,12 @@ class TelephonyLineStruct extends AbstractStructBase
     public $setOn;
     /**
      * The aliasPool
-     * @var \PayPal\StructType\TelephonyLineAliasPoolStruct
+     * @var \Ovh\StructType\TelephonyLineAliasPoolStruct
      */
     public $aliasPool;
     /**
      * The pendingAction
-     * @var \PayPal\StructType\TelephonyPendingActionStruct
+     * @var \Ovh\StructType\TelephonyPendingActionStruct
      */
     public $pendingAction;
     /**
@@ -94,11 +94,11 @@ class TelephonyLineStruct extends AbstractStructBase
      * @param string $description
      * @param bool $betaGamaOffer
      * @param string $setOn
-     * @param \PayPal\StructType\TelephonyLineAliasPoolStruct $aliasPool
-     * @param \PayPal\StructType\TelephonyPendingActionStruct $pendingAction
+     * @param \Ovh\StructType\TelephonyLineAliasPoolStruct $aliasPool
+     * @param \Ovh\StructType\TelephonyPendingActionStruct $pendingAction
      * @param int $simultaneousLines
      */
-    public function __construct($number = null, $billingAccount = null, $offer = null, $type = null, $service = null, $expirationDate = null, $description = null, $betaGamaOffer = null, $setOn = null, \PayPal\StructType\TelephonyLineAliasPoolStruct $aliasPool = null, \PayPal\StructType\TelephonyPendingActionStruct $pendingAction = null, $simultaneousLines = null)
+    public function __construct($number = null, $billingAccount = null, $offer = null, $type = null, $service = null, $expirationDate = null, $description = null, $betaGamaOffer = null, $setOn = null, \Ovh\StructType\TelephonyLineAliasPoolStruct $aliasPool = null, \Ovh\StructType\TelephonyPendingActionStruct $pendingAction = null, $simultaneousLines = null)
     {
         $this
             ->setNumber($number)
@@ -125,7 +125,7 @@ class TelephonyLineStruct extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyLineStruct
+     * @return \Ovh\StructType\TelephonyLineStruct
      */
     public function setNumber($number = null)
     {
@@ -147,7 +147,7 @@ class TelephonyLineStruct extends AbstractStructBase
     /**
      * Set billingAccount value
      * @param string $billingAccount
-     * @return \PayPal\StructType\TelephonyLineStruct
+     * @return \Ovh\StructType\TelephonyLineStruct
      */
     public function setBillingAccount($billingAccount = null)
     {
@@ -169,7 +169,7 @@ class TelephonyLineStruct extends AbstractStructBase
     /**
      * Set offer value
      * @param string $offer
-     * @return \PayPal\StructType\TelephonyLineStruct
+     * @return \Ovh\StructType\TelephonyLineStruct
      */
     public function setOffer($offer = null)
     {
@@ -191,7 +191,7 @@ class TelephonyLineStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\TelephonyLineStruct
+     * @return \Ovh\StructType\TelephonyLineStruct
      */
     public function setType($type = null)
     {
@@ -213,7 +213,7 @@ class TelephonyLineStruct extends AbstractStructBase
     /**
      * Set service value
      * @param string $service
-     * @return \PayPal\StructType\TelephonyLineStruct
+     * @return \Ovh\StructType\TelephonyLineStruct
      */
     public function setService($service = null)
     {
@@ -235,7 +235,7 @@ class TelephonyLineStruct extends AbstractStructBase
     /**
      * Set expirationDate value
      * @param string $expirationDate
-     * @return \PayPal\StructType\TelephonyLineStruct
+     * @return \Ovh\StructType\TelephonyLineStruct
      */
     public function setExpirationDate($expirationDate = null)
     {
@@ -257,7 +257,7 @@ class TelephonyLineStruct extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \PayPal\StructType\TelephonyLineStruct
+     * @return \Ovh\StructType\TelephonyLineStruct
      */
     public function setDescription($description = null)
     {
@@ -279,7 +279,7 @@ class TelephonyLineStruct extends AbstractStructBase
     /**
      * Set betaGamaOffer value
      * @param bool $betaGamaOffer
-     * @return \PayPal\StructType\TelephonyLineStruct
+     * @return \Ovh\StructType\TelephonyLineStruct
      */
     public function setBetaGamaOffer($betaGamaOffer = null)
     {
@@ -301,7 +301,7 @@ class TelephonyLineStruct extends AbstractStructBase
     /**
      * Set setOn value
      * @param string $setOn
-     * @return \PayPal\StructType\TelephonyLineStruct
+     * @return \Ovh\StructType\TelephonyLineStruct
      */
     public function setSetOn($setOn = null)
     {
@@ -314,7 +314,7 @@ class TelephonyLineStruct extends AbstractStructBase
     }
     /**
      * Get aliasPool value
-     * @return \PayPal\StructType\TelephonyLineAliasPoolStruct|null
+     * @return \Ovh\StructType\TelephonyLineAliasPoolStruct|null
      */
     public function getAliasPool()
     {
@@ -322,17 +322,17 @@ class TelephonyLineStruct extends AbstractStructBase
     }
     /**
      * Set aliasPool value
-     * @param \PayPal\StructType\TelephonyLineAliasPoolStruct $aliasPool
-     * @return \PayPal\StructType\TelephonyLineStruct
+     * @param \Ovh\StructType\TelephonyLineAliasPoolStruct $aliasPool
+     * @return \Ovh\StructType\TelephonyLineStruct
      */
-    public function setAliasPool(\PayPal\StructType\TelephonyLineAliasPoolStruct $aliasPool = null)
+    public function setAliasPool(\Ovh\StructType\TelephonyLineAliasPoolStruct $aliasPool = null)
     {
         $this->aliasPool = $aliasPool;
         return $this;
     }
     /**
      * Get pendingAction value
-     * @return \PayPal\StructType\TelephonyPendingActionStruct|null
+     * @return \Ovh\StructType\TelephonyPendingActionStruct|null
      */
     public function getPendingAction()
     {
@@ -340,10 +340,10 @@ class TelephonyLineStruct extends AbstractStructBase
     }
     /**
      * Set pendingAction value
-     * @param \PayPal\StructType\TelephonyPendingActionStruct $pendingAction
-     * @return \PayPal\StructType\TelephonyLineStruct
+     * @param \Ovh\StructType\TelephonyPendingActionStruct $pendingAction
+     * @return \Ovh\StructType\TelephonyLineStruct
      */
-    public function setPendingAction(\PayPal\StructType\TelephonyPendingActionStruct $pendingAction = null)
+    public function setPendingAction(\Ovh\StructType\TelephonyPendingActionStruct $pendingAction = null)
     {
         $this->pendingAction = $pendingAction;
         return $this;
@@ -359,7 +359,7 @@ class TelephonyLineStruct extends AbstractStructBase
     /**
      * Set simultaneousLines value
      * @param int $simultaneousLines
-     * @return \PayPal\StructType\TelephonyLineStruct
+     * @return \Ovh\StructType\TelephonyLineStruct
      */
     public function setSimultaneousLines($simultaneousLines = null)
     {
@@ -376,7 +376,7 @@ class TelephonyLineStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyLineStruct
+     * @return \Ovh\StructType\TelephonyLineStruct
      */
     public static function __set_state(array $array)
     {

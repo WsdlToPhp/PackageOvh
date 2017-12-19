@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyGetClosureEventsAsICSResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyGetClosureEventsAsIcsStruct
+     * @var \Ovh\StructType\TelephonyGetClosureEventsAsIcsStruct
      */
     public $return;
     /**
      * Constructor method for telephonyGetClosureEventsAsICSResponse
      * @uses TelephonyGetClosureEventsAsICSResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyGetClosureEventsAsIcsStruct $return
+     * @param \Ovh\StructType\TelephonyGetClosureEventsAsIcsStruct $return
      */
-    public function __construct(\PayPal\StructType\TelephonyGetClosureEventsAsIcsStruct $return = null)
+    public function __construct(\Ovh\StructType\TelephonyGetClosureEventsAsIcsStruct $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsIcsStruct|null
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsIcsStruct|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyGetClosureEventsAsICSResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyGetClosureEventsAsIcsStruct $return
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsICSResponse
+     * @param \Ovh\StructType\TelephonyGetClosureEventsAsIcsStruct $return
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsICSResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyGetClosureEventsAsIcsStruct $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyGetClosureEventsAsIcsStruct $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyGetClosureEventsAsICSResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsICSResponse
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsICSResponse
      */
     public static function __set_state(array $array)
     {

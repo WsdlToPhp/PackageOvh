@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,7 +38,7 @@ class TelephonyTrunkExternalDisplayedNumberAddResponse extends AbstractStructBas
     /**
      * Set return value
      * @param string $return
-     * @return \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberAddResponse
+     * @return \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberAddResponse
      */
     public function setReturn($return = null)
     {
@@ -55,7 +55,7 @@ class TelephonyTrunkExternalDisplayedNumberAddResponse extends AbstractStructBas
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyTrunkExternalDisplayedNumberAddResponse
+     * @return \Ovh\StructType\TelephonyTrunkExternalDisplayedNumberAddResponse
      */
     public static function __set_state(array $array)
     {

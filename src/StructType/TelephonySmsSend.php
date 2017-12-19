@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -149,7 +149,7 @@ class TelephonySmsSend extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonySmsSend
+     * @return \Ovh\StructType\TelephonySmsSend
      */
     public function setSession($session = null)
     {
@@ -171,7 +171,7 @@ class TelephonySmsSend extends AbstractStructBase
     /**
      * Set smsAccount value
      * @param string $smsAccount
-     * @return \PayPal\StructType\TelephonySmsSend
+     * @return \Ovh\StructType\TelephonySmsSend
      */
     public function setSmsAccount($smsAccount = null)
     {
@@ -193,7 +193,7 @@ class TelephonySmsSend extends AbstractStructBase
     /**
      * Set numberFrom value
      * @param string $numberFrom
-     * @return \PayPal\StructType\TelephonySmsSend
+     * @return \Ovh\StructType\TelephonySmsSend
      */
     public function setNumberFrom($numberFrom = null)
     {
@@ -215,7 +215,7 @@ class TelephonySmsSend extends AbstractStructBase
     /**
      * Set numberTo value
      * @param string $numberTo
-     * @return \PayPal\StructType\TelephonySmsSend
+     * @return \Ovh\StructType\TelephonySmsSend
      */
     public function setNumberTo($numberTo = null)
     {
@@ -237,7 +237,7 @@ class TelephonySmsSend extends AbstractStructBase
     /**
      * Set message value
      * @param string $message
-     * @return \PayPal\StructType\TelephonySmsSend
+     * @return \Ovh\StructType\TelephonySmsSend
      */
     public function setMessage($message = null)
     {
@@ -259,7 +259,7 @@ class TelephonySmsSend extends AbstractStructBase
     /**
      * Set smsValidity value
      * @param int $smsValidity
-     * @return \PayPal\StructType\TelephonySmsSend
+     * @return \Ovh\StructType\TelephonySmsSend
      */
     public function setSmsValidity($smsValidity = null)
     {
@@ -281,7 +281,7 @@ class TelephonySmsSend extends AbstractStructBase
     /**
      * Set smsClass value
      * @param int $smsClass
-     * @return \PayPal\StructType\TelephonySmsSend
+     * @return \Ovh\StructType\TelephonySmsSend
      */
     public function setSmsClass($smsClass = null)
     {
@@ -303,7 +303,7 @@ class TelephonySmsSend extends AbstractStructBase
     /**
      * Set smsDeferred value
      * @param int $smsDeferred
-     * @return \PayPal\StructType\TelephonySmsSend
+     * @return \Ovh\StructType\TelephonySmsSend
      */
     public function setSmsDeferred($smsDeferred = null)
     {
@@ -325,7 +325,7 @@ class TelephonySmsSend extends AbstractStructBase
     /**
      * Set smsPriority value
      * @param int $smsPriority
-     * @return \PayPal\StructType\TelephonySmsSend
+     * @return \Ovh\StructType\TelephonySmsSend
      */
     public function setSmsPriority($smsPriority = null)
     {
@@ -347,7 +347,7 @@ class TelephonySmsSend extends AbstractStructBase
     /**
      * Set smsCoding value
      * @param int $smsCoding
-     * @return \PayPal\StructType\TelephonySmsSend
+     * @return \Ovh\StructType\TelephonySmsSend
      */
     public function setSmsCoding($smsCoding = null)
     {
@@ -369,7 +369,7 @@ class TelephonySmsSend extends AbstractStructBase
     /**
      * Set tag value
      * @param string $tag
-     * @return \PayPal\StructType\TelephonySmsSend
+     * @return \Ovh\StructType\TelephonySmsSend
      */
     public function setTag($tag = null)
     {
@@ -391,7 +391,7 @@ class TelephonySmsSend extends AbstractStructBase
     /**
      * Set noStop value
      * @param bool $noStop
-     * @return \PayPal\StructType\TelephonySmsSend
+     * @return \Ovh\StructType\TelephonySmsSend
      */
     public function setNoStop($noStop = null)
     {
@@ -408,7 +408,7 @@ class TelephonySmsSend extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsSend
+     * @return \Ovh\StructType\TelephonySmsSend
      */
     public static function __set_state(array $array)
     {

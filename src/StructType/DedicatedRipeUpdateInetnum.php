@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class DedicatedRipeUpdateInetnum extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedRipeUpdateInetnum
+     * @return \Ovh\StructType\DedicatedRipeUpdateInetnum
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class DedicatedRipeUpdateInetnum extends AbstractStructBase
     /**
      * Set block value
      * @param string $block
-     * @return \PayPal\StructType\DedicatedRipeUpdateInetnum
+     * @return \Ovh\StructType\DedicatedRipeUpdateInetnum
      */
     public function setBlock($block = null)
     {
@@ -123,7 +123,7 @@ class DedicatedRipeUpdateInetnum extends AbstractStructBase
     /**
      * Set netname value
      * @param string $netname
-     * @return \PayPal\StructType\DedicatedRipeUpdateInetnum
+     * @return \Ovh\StructType\DedicatedRipeUpdateInetnum
      */
     public function setNetname($netname = null)
     {
@@ -145,7 +145,7 @@ class DedicatedRipeUpdateInetnum extends AbstractStructBase
     /**
      * Set descr value
      * @param string $descr
-     * @return \PayPal\StructType\DedicatedRipeUpdateInetnum
+     * @return \Ovh\StructType\DedicatedRipeUpdateInetnum
      */
     public function setDescr($descr = null)
     {
@@ -167,7 +167,7 @@ class DedicatedRipeUpdateInetnum extends AbstractStructBase
     /**
      * Set ripeId value
      * @param string $ripeId
-     * @return \PayPal\StructType\DedicatedRipeUpdateInetnum
+     * @return \Ovh\StructType\DedicatedRipeUpdateInetnum
      */
     public function setRipeId($ripeId = null)
     {
@@ -184,7 +184,7 @@ class DedicatedRipeUpdateInetnum extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedRipeUpdateInetnum
+     * @return \Ovh\StructType\DedicatedRipeUpdateInetnum
      */
     public static function __set_state(array $array)
     {

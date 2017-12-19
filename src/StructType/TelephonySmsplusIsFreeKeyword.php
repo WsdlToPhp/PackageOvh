@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class TelephonySmsplusIsFreeKeyword extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonySmsplusIsFreeKeyword
+     * @return \Ovh\StructType\TelephonySmsplusIsFreeKeyword
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class TelephonySmsplusIsFreeKeyword extends AbstractStructBase
     /**
      * Set shortCode value
      * @param string $shortCode
-     * @return \PayPal\StructType\TelephonySmsplusIsFreeKeyword
+     * @return \Ovh\StructType\TelephonySmsplusIsFreeKeyword
      */
     public function setShortCode($shortCode = null)
     {
@@ -103,7 +103,7 @@ class TelephonySmsplusIsFreeKeyword extends AbstractStructBase
     /**
      * Set keyword value
      * @param string $keyword
-     * @return \PayPal\StructType\TelephonySmsplusIsFreeKeyword
+     * @return \Ovh\StructType\TelephonySmsplusIsFreeKeyword
      */
     public function setKeyword($keyword = null)
     {
@@ -120,7 +120,7 @@ class TelephonySmsplusIsFreeKeyword extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsplusIsFreeKeyword
+     * @return \Ovh\StructType\TelephonySmsplusIsFreeKeyword
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class DedicatedReverseAddResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedReverseAddResponse
+     * @return \Ovh\StructType\DedicatedReverseAddResponse
      */
     public static function __set_state(array $array)
     {

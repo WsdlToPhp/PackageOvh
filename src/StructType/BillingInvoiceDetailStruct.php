@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class BillingInvoiceDetailStruct extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\BillingInvoiceDetailStruct
+     * @return \Ovh\StructType\BillingInvoiceDetailStruct
      */
     public function setDomain($domain = null)
     {
@@ -75,7 +75,7 @@ class BillingInvoiceDetailStruct extends AbstractStructBase
     /**
      * Set reference value
      * @param string $reference
-     * @return \PayPal\StructType\BillingInvoiceDetailStruct
+     * @return \Ovh\StructType\BillingInvoiceDetailStruct
      */
     public function setReference($reference = null)
     {
@@ -97,7 +97,7 @@ class BillingInvoiceDetailStruct extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \PayPal\StructType\BillingInvoiceDetailStruct
+     * @return \Ovh\StructType\BillingInvoiceDetailStruct
      */
     public function setDescription($description = null)
     {
@@ -114,7 +114,7 @@ class BillingInvoiceDetailStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\BillingInvoiceDetailStruct
+     * @return \Ovh\StructType\BillingInvoiceDetailStruct
      */
     public static function __set_state(array $array)
     {

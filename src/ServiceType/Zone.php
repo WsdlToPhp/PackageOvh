@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Zone extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ZoneEntryList $parameters
-     * @return \PayPal\StructType\ZoneEntryListResponse|bool
+     * @param \Ovh\StructType\ZoneEntryList $parameters
+     * @return \Ovh\StructType\ZoneEntryListResponse|bool
      */
-    public function zoneEntryList(\PayPal\StructType\ZoneEntryList $parameters)
+    public function zoneEntryList(\Ovh\StructType\ZoneEntryList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->zoneEntryList($parameters));
@@ -36,10 +36,10 @@ class Zone extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ZoneEntryAddCustom $parameters
-     * @return \PayPal\StructType\ZoneEntryAddCustomResponse|bool
+     * @param \Ovh\StructType\ZoneEntryAddCustom $parameters
+     * @return \Ovh\StructType\ZoneEntryAddCustomResponse|bool
      */
-    public function zoneEntryAddCustom(\PayPal\StructType\ZoneEntryAddCustom $parameters)
+    public function zoneEntryAddCustom(\Ovh\StructType\ZoneEntryAddCustom $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->zoneEntryAddCustom($parameters));
@@ -55,10 +55,10 @@ class Zone extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ZoneEntryModify $parameters
-     * @return \PayPal\StructType\ZoneEntryModifyResponse|bool
+     * @param \Ovh\StructType\ZoneEntryModify $parameters
+     * @return \Ovh\StructType\ZoneEntryModifyResponse|bool
      */
-    public function zoneEntryModify(\PayPal\StructType\ZoneEntryModify $parameters)
+    public function zoneEntryModify(\Ovh\StructType\ZoneEntryModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->zoneEntryModify($parameters));
@@ -74,10 +74,10 @@ class Zone extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ZoneEntryDel $parameters
-     * @return \PayPal\StructType\ZoneEntryDelResponse|bool
+     * @param \Ovh\StructType\ZoneEntryDel $parameters
+     * @return \Ovh\StructType\ZoneEntryDelResponse|bool
      */
-    public function zoneEntryDel(\PayPal\StructType\ZoneEntryDel $parameters)
+    public function zoneEntryDel(\Ovh\StructType\ZoneEntryDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->zoneEntryDel($parameters));
@@ -93,10 +93,10 @@ class Zone extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ZoneEntryAdd $parameters
-     * @return \PayPal\StructType\ZoneEntryAddResponse|bool
+     * @param \Ovh\StructType\ZoneEntryAdd $parameters
+     * @return \Ovh\StructType\ZoneEntryAddResponse|bool
      */
-    public function zoneEntryAdd(\PayPal\StructType\ZoneEntryAdd $parameters)
+    public function zoneEntryAdd(\Ovh\StructType\ZoneEntryAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->zoneEntryAdd($parameters));
@@ -112,10 +112,10 @@ class Zone extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ZoneExport $parameters
-     * @return \PayPal\StructType\ZoneExportResponse|bool
+     * @param \Ovh\StructType\ZoneExport $parameters
+     * @return \Ovh\StructType\ZoneExportResponse|bool
      */
-    public function zoneExport(\PayPal\StructType\ZoneExport $parameters)
+    public function zoneExport(\Ovh\StructType\ZoneExport $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->zoneExport($parameters));
@@ -131,10 +131,10 @@ class Zone extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ZoneImport $parameters
-     * @return \PayPal\StructType\ZoneImportResponse|bool
+     * @param \Ovh\StructType\ZoneImport $parameters
+     * @return \Ovh\StructType\ZoneImportResponse|bool
      */
-    public function zoneImport(\PayPal\StructType\ZoneImport $parameters)
+    public function zoneImport(\Ovh\StructType\ZoneImport $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->zoneImport($parameters));
@@ -147,7 +147,7 @@ class Zone extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\ZoneEntryAddCustomResponse|\PayPal\StructType\ZoneEntryAddResponse|\PayPal\StructType\ZoneEntryDelResponse|\PayPal\StructType\ZoneEntryListResponse|\PayPal\StructType\ZoneEntryModifyResponse|\PayPal\StructType\ZoneExportResponse|\PayPal\StructType\ZoneImportResponse
+     * @return \Ovh\StructType\ZoneEntryAddCustomResponse|\Ovh\StructType\ZoneEntryAddResponse|\Ovh\StructType\ZoneEntryDelResponse|\Ovh\StructType\ZoneEntryListResponse|\Ovh\StructType\ZoneEntryModifyResponse|\Ovh\StructType\ZoneExportResponse|\Ovh\StructType\ZoneImportResponse
      */
     public function getResult()
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class DatabaseDump extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DatabaseDump
+     * @return \Ovh\StructType\DatabaseDump
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class DatabaseDump extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\DatabaseDump
+     * @return \Ovh\StructType\DatabaseDump
      */
     public function setDomain($domain = null)
     {
@@ -113,7 +113,7 @@ class DatabaseDump extends AbstractStructBase
     /**
      * Set db value
      * @param string $db
-     * @return \PayPal\StructType\DatabaseDump
+     * @return \Ovh\StructType\DatabaseDump
      */
     public function setDb($db = null)
     {
@@ -135,7 +135,7 @@ class DatabaseDump extends AbstractStructBase
     /**
      * Set backup value
      * @param string $backup
-     * @return \PayPal\StructType\DatabaseDump
+     * @return \Ovh\StructType\DatabaseDump
      */
     public function setBackup($backup = null)
     {
@@ -152,7 +152,7 @@ class DatabaseDump extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DatabaseDump
+     * @return \Ovh\StructType\DatabaseDump
      */
     public static function __set_state(array $array)
     {

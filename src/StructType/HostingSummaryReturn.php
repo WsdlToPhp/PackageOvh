@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -141,7 +141,7 @@ class HostingSummaryReturn extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\HostingSummaryReturn
+     * @return \Ovh\StructType\HostingSummaryReturn
      */
     public function setCountry($country = null)
     {
@@ -163,7 +163,7 @@ class HostingSummaryReturn extends AbstractStructBase
     /**
      * Set webspace value
      * @param string $webspace
-     * @return \PayPal\StructType\HostingSummaryReturn
+     * @return \Ovh\StructType\HostingSummaryReturn
      */
     public function setWebspace($webspace = null)
     {
@@ -185,7 +185,7 @@ class HostingSummaryReturn extends AbstractStructBase
     /**
      * Set maxWebspace value
      * @param string $maxWebspace
-     * @return \PayPal\StructType\HostingSummaryReturn
+     * @return \Ovh\StructType\HostingSummaryReturn
      */
     public function setMaxWebspace($maxWebspace = null)
     {
@@ -207,7 +207,7 @@ class HostingSummaryReturn extends AbstractStructBase
     /**
      * Set subdomains value
      * @param string $subdomains
-     * @return \PayPal\StructType\HostingSummaryReturn
+     * @return \Ovh\StructType\HostingSummaryReturn
      */
     public function setSubdomains($subdomains = null)
     {
@@ -229,7 +229,7 @@ class HostingSummaryReturn extends AbstractStructBase
     /**
      * Set multidomains value
      * @param string $multidomains
-     * @return \PayPal\StructType\HostingSummaryReturn
+     * @return \Ovh\StructType\HostingSummaryReturn
      */
     public function setMultidomains($multidomains = null)
     {
@@ -251,7 +251,7 @@ class HostingSummaryReturn extends AbstractStructBase
     /**
      * Set multiftps value
      * @param string $multiftps
-     * @return \PayPal\StructType\HostingSummaryReturn
+     * @return \Ovh\StructType\HostingSummaryReturn
      */
     public function setMultiftps($multiftps = null)
     {
@@ -273,7 +273,7 @@ class HostingSummaryReturn extends AbstractStructBase
     /**
      * Set anonymousftp value
      * @param string $anonymousftp
-     * @return \PayPal\StructType\HostingSummaryReturn
+     * @return \Ovh\StructType\HostingSummaryReturn
      */
     public function setAnonymousftp($anonymousftp = null)
     {
@@ -295,7 +295,7 @@ class HostingSummaryReturn extends AbstractStructBase
     /**
      * Set databases value
      * @param string $databases
-     * @return \PayPal\StructType\HostingSummaryReturn
+     * @return \Ovh\StructType\HostingSummaryReturn
      */
     public function setDatabases($databases = null)
     {
@@ -317,7 +317,7 @@ class HostingSummaryReturn extends AbstractStructBase
     /**
      * Set freedom_remaining value
      * @param string $freedom_remaining
-     * @return \PayPal\StructType\HostingSummaryReturn
+     * @return \Ovh\StructType\HostingSummaryReturn
      */
     public function setFreedom_remaining($freedom_remaining = null)
     {
@@ -339,7 +339,7 @@ class HostingSummaryReturn extends AbstractStructBase
     /**
      * Set freedom_assigned value
      * @param string $freedom_assigned
-     * @return \PayPal\StructType\HostingSummaryReturn
+     * @return \Ovh\StructType\HostingSummaryReturn
      */
     public function setFreedom_assigned($freedom_assigned = null)
     {
@@ -361,7 +361,7 @@ class HostingSummaryReturn extends AbstractStructBase
     /**
      * Set freedom_total value
      * @param string $freedom_total
-     * @return \PayPal\StructType\HostingSummaryReturn
+     * @return \Ovh\StructType\HostingSummaryReturn
      */
     public function setFreedom_total($freedom_total = null)
     {
@@ -383,7 +383,7 @@ class HostingSummaryReturn extends AbstractStructBase
     /**
      * Set highCapacity value
      * @param bool $highCapacity
-     * @return \PayPal\StructType\HostingSummaryReturn
+     * @return \Ovh\StructType\HostingSummaryReturn
      */
     public function setHighCapacity($highCapacity = null)
     {
@@ -405,7 +405,7 @@ class HostingSummaryReturn extends AbstractStructBase
     /**
      * Set highSecurity value
      * @param bool $highSecurity
-     * @return \PayPal\StructType\HostingSummaryReturn
+     * @return \Ovh\StructType\HostingSummaryReturn
      */
     public function setHighSecurity($highSecurity = null)
     {
@@ -427,7 +427,7 @@ class HostingSummaryReturn extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \PayPal\StructType\HostingSummaryReturn
+     * @return \Ovh\StructType\HostingSummaryReturn
      */
     public function setState($state = null)
     {
@@ -444,7 +444,7 @@ class HostingSummaryReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\HostingSummaryReturn
+     * @return \Ovh\StructType\HostingSummaryReturn
      */
     public static function __set_state(array $array)
     {

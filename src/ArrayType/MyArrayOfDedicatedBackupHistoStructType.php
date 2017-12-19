@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfDedicatedBackupHistoStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\DedicatedBackupHistoStruct[]
+     * @var \Ovh\StructType\DedicatedBackupHistoStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfDedicatedBackupHistoStructType
      * @uses MyArrayOfDedicatedBackupHistoStructType::setItem()
-     * @param \PayPal\StructType\DedicatedBackupHistoStruct[] $item
+     * @param \Ovh\StructType\DedicatedBackupHistoStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfDedicatedBackupHistoStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\DedicatedBackupHistoStruct[]|null
+     * @return \Ovh\StructType\DedicatedBackupHistoStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfDedicatedBackupHistoStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedBackupHistoStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedBackupHistoStructType
+     * @param \Ovh\StructType\DedicatedBackupHistoStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedBackupHistoStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfDedicatedBackupHistoStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfDedicatedBackupHistoStructTypeItemItem instanceof \PayPal\StructType\DedicatedBackupHistoStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedBackupHistoStruct, "%s" given', is_object($myArrayOfDedicatedBackupHistoStructTypeItemItem) ? get_class($myArrayOfDedicatedBackupHistoStructTypeItemItem) : gettype($myArrayOfDedicatedBackupHistoStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfDedicatedBackupHistoStructTypeItemItem instanceof \Ovh\StructType\DedicatedBackupHistoStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedBackupHistoStruct, "%s" given', is_object($myArrayOfDedicatedBackupHistoStructTypeItemItem) ? get_class($myArrayOfDedicatedBackupHistoStructTypeItemItem) : gettype($myArrayOfDedicatedBackupHistoStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfDedicatedBackupHistoStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedBackupHistoStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedBackupHistoStructType
+     * @param \Ovh\StructType\DedicatedBackupHistoStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedBackupHistoStructType
      */
-    public function addToItem(\PayPal\StructType\DedicatedBackupHistoStruct $item)
+    public function addToItem(\Ovh\StructType\DedicatedBackupHistoStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\DedicatedBackupHistoStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedBackupHistoStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\DedicatedBackupHistoStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedBackupHistoStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfDedicatedBackupHistoStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\DedicatedBackupHistoStruct|null
+     * @return \Ovh\StructType\DedicatedBackupHistoStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfDedicatedBackupHistoStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\DedicatedBackupHistoStruct|null
+     * @return \Ovh\StructType\DedicatedBackupHistoStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfDedicatedBackupHistoStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\DedicatedBackupHistoStruct|null
+     * @return \Ovh\StructType\DedicatedBackupHistoStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfDedicatedBackupHistoStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\DedicatedBackupHistoStruct|null
+     * @return \Ovh\StructType\DedicatedBackupHistoStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfDedicatedBackupHistoStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\DedicatedBackupHistoStruct|null
+     * @return \Ovh\StructType\DedicatedBackupHistoStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfDedicatedBackupHistoStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedBackupHistoStructType
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedBackupHistoStructType
      */
     public static function __set_state(array $array)
     {

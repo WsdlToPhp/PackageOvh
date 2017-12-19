@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyLineGetSipDomainResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonySipDomainStruct
+     * @var \Ovh\StructType\TelephonySipDomainStruct
      */
     public $return;
     /**
      * Constructor method for telephonyLineGetSipDomainResponse
      * @uses TelephonyLineGetSipDomainResponse::setReturn()
-     * @param \PayPal\StructType\TelephonySipDomainStruct $return
+     * @param \Ovh\StructType\TelephonySipDomainStruct $return
      */
-    public function __construct(\PayPal\StructType\TelephonySipDomainStruct $return = null)
+    public function __construct(\Ovh\StructType\TelephonySipDomainStruct $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonySipDomainStruct|null
+     * @return \Ovh\StructType\TelephonySipDomainStruct|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyLineGetSipDomainResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonySipDomainStruct $return
-     * @return \PayPal\StructType\TelephonyLineGetSipDomainResponse
+     * @param \Ovh\StructType\TelephonySipDomainStruct $return
+     * @return \Ovh\StructType\TelephonyLineGetSipDomainResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonySipDomainStruct $return = null)
+    public function setReturn(\Ovh\StructType\TelephonySipDomainStruct $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyLineGetSipDomainResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyLineGetSipDomainResponse
+     * @return \Ovh\StructType\TelephonyLineGetSipDomainResponse
      */
     public static function __set_state(array $array)
     {

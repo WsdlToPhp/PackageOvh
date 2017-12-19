@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class TelephonyLineLogs extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyLineLogs
+     * @return \Ovh\StructType\TelephonyLineLogs
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class TelephonyLineLogs extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyLineLogs
+     * @return \Ovh\StructType\TelephonyLineLogs
      */
     public function setNumber($number = null)
     {
@@ -123,7 +123,7 @@ class TelephonyLineLogs extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyLineLogs
+     * @return \Ovh\StructType\TelephonyLineLogs
      */
     public function setCountry($country = null)
     {
@@ -145,7 +145,7 @@ class TelephonyLineLogs extends AbstractStructBase
     /**
      * Set pagingStart value
      * @param int $pagingStart
-     * @return \PayPal\StructType\TelephonyLineLogs
+     * @return \Ovh\StructType\TelephonyLineLogs
      */
     public function setPagingStart($pagingStart = null)
     {
@@ -167,7 +167,7 @@ class TelephonyLineLogs extends AbstractStructBase
     /**
      * Set pagingLimit value
      * @param int $pagingLimit
-     * @return \PayPal\StructType\TelephonyLineLogs
+     * @return \Ovh\StructType\TelephonyLineLogs
      */
     public function setPagingLimit($pagingLimit = null)
     {
@@ -184,7 +184,7 @@ class TelephonyLineLogs extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyLineLogs
+     * @return \Ovh\StructType\TelephonyLineLogs
      */
     public static function __set_state(array $array)
     {

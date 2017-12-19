@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedRtmGetStatusResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\DedicatedRtmStatusReturn
+     * @var \Ovh\StructType\DedicatedRtmStatusReturn
      */
     public $return;
     /**
      * Constructor method for dedicatedRtmGetStatusResponse
      * @uses DedicatedRtmGetStatusResponse::setReturn()
-     * @param \PayPal\StructType\DedicatedRtmStatusReturn $return
+     * @param \Ovh\StructType\DedicatedRtmStatusReturn $return
      */
-    public function __construct(\PayPal\StructType\DedicatedRtmStatusReturn $return = null)
+    public function __construct(\Ovh\StructType\DedicatedRtmStatusReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\DedicatedRtmStatusReturn|null
+     * @return \Ovh\StructType\DedicatedRtmStatusReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedRtmGetStatusResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\DedicatedRtmStatusReturn $return
-     * @return \PayPal\StructType\DedicatedRtmGetStatusResponse
+     * @param \Ovh\StructType\DedicatedRtmStatusReturn $return
+     * @return \Ovh\StructType\DedicatedRtmGetStatusResponse
      */
-    public function setReturn(\PayPal\StructType\DedicatedRtmStatusReturn $return = null)
+    public function setReturn(\Ovh\StructType\DedicatedRtmStatusReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedRtmGetStatusResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedRtmGetStatusResponse
+     * @return \Ovh\StructType\DedicatedRtmGetStatusResponse
      */
     public static function __set_state(array $array)
     {

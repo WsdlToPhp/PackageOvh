@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -17,13 +17,13 @@ class MyArrayOfDedicatedAllowedDistributionLanguageStructType extends AbstractSt
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\DedicatedAllowedDistributionLanguageStruct[]
+     * @var \Ovh\StructType\DedicatedAllowedDistributionLanguageStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfDedicatedAllowedDistributionLanguageStructType
      * @uses MyArrayOfDedicatedAllowedDistributionLanguageStructType::setItem()
-     * @param \PayPal\StructType\DedicatedAllowedDistributionLanguageStruct[] $item
+     * @param \Ovh\StructType\DedicatedAllowedDistributionLanguageStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -32,7 +32,7 @@ class MyArrayOfDedicatedAllowedDistributionLanguageStructType extends AbstractSt
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\DedicatedAllowedDistributionLanguageStruct[]|null
+     * @return \Ovh\StructType\DedicatedAllowedDistributionLanguageStruct[]|null
      */
     public function getItem()
     {
@@ -41,15 +41,15 @@ class MyArrayOfDedicatedAllowedDistributionLanguageStructType extends AbstractSt
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedAllowedDistributionLanguageStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionLanguageStructType
+     * @param \Ovh\StructType\DedicatedAllowedDistributionLanguageStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionLanguageStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfDedicatedAllowedDistributionLanguageStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfDedicatedAllowedDistributionLanguageStructTypeItemItem instanceof \PayPal\StructType\DedicatedAllowedDistributionLanguageStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedAllowedDistributionLanguageStruct, "%s" given', is_object($myArrayOfDedicatedAllowedDistributionLanguageStructTypeItemItem) ? get_class($myArrayOfDedicatedAllowedDistributionLanguageStructTypeItemItem) : gettype($myArrayOfDedicatedAllowedDistributionLanguageStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfDedicatedAllowedDistributionLanguageStructTypeItemItem instanceof \Ovh\StructType\DedicatedAllowedDistributionLanguageStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedAllowedDistributionLanguageStruct, "%s" given', is_object($myArrayOfDedicatedAllowedDistributionLanguageStructTypeItemItem) ? get_class($myArrayOfDedicatedAllowedDistributionLanguageStructTypeItemItem) : gettype($myArrayOfDedicatedAllowedDistributionLanguageStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -58,14 +58,14 @@ class MyArrayOfDedicatedAllowedDistributionLanguageStructType extends AbstractSt
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedAllowedDistributionLanguageStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionLanguageStructType
+     * @param \Ovh\StructType\DedicatedAllowedDistributionLanguageStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionLanguageStructType
      */
-    public function addToItem(\PayPal\StructType\DedicatedAllowedDistributionLanguageStruct $item)
+    public function addToItem(\Ovh\StructType\DedicatedAllowedDistributionLanguageStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\DedicatedAllowedDistributionLanguageStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedAllowedDistributionLanguageStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\DedicatedAllowedDistributionLanguageStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedAllowedDistributionLanguageStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class MyArrayOfDedicatedAllowedDistributionLanguageStructType extends AbstractSt
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\DedicatedAllowedDistributionLanguageStruct|null
+     * @return \Ovh\StructType\DedicatedAllowedDistributionLanguageStruct|null
      */
     public function current()
     {
@@ -83,7 +83,7 @@ class MyArrayOfDedicatedAllowedDistributionLanguageStructType extends AbstractSt
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\DedicatedAllowedDistributionLanguageStruct|null
+     * @return \Ovh\StructType\DedicatedAllowedDistributionLanguageStruct|null
      */
     public function item($index)
     {
@@ -92,7 +92,7 @@ class MyArrayOfDedicatedAllowedDistributionLanguageStructType extends AbstractSt
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\DedicatedAllowedDistributionLanguageStruct|null
+     * @return \Ovh\StructType\DedicatedAllowedDistributionLanguageStruct|null
      */
     public function first()
     {
@@ -101,7 +101,7 @@ class MyArrayOfDedicatedAllowedDistributionLanguageStructType extends AbstractSt
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\DedicatedAllowedDistributionLanguageStruct|null
+     * @return \Ovh\StructType\DedicatedAllowedDistributionLanguageStruct|null
      */
     public function last()
     {
@@ -111,7 +111,7 @@ class MyArrayOfDedicatedAllowedDistributionLanguageStructType extends AbstractSt
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\DedicatedAllowedDistributionLanguageStruct|null
+     * @return \Ovh\StructType\DedicatedAllowedDistributionLanguageStruct|null
      */
     public function offsetGet($offset)
     {
@@ -132,7 +132,7 @@ class MyArrayOfDedicatedAllowedDistributionLanguageStructType extends AbstractSt
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionLanguageStructType
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionLanguageStructType
      */
     public static function __set_state(array $array)
     {

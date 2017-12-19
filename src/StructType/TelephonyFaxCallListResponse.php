@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyFaxCallListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyFaxCallListReturn
+     * @var \Ovh\StructType\TelephonyFaxCallListReturn
      */
     public $return;
     /**
      * Constructor method for telephonyFaxCallListResponse
      * @uses TelephonyFaxCallListResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyFaxCallListReturn $return
+     * @param \Ovh\StructType\TelephonyFaxCallListReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonyFaxCallListReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonyFaxCallListReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyFaxCallListReturn|null
+     * @return \Ovh\StructType\TelephonyFaxCallListReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyFaxCallListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyFaxCallListReturn $return
-     * @return \PayPal\StructType\TelephonyFaxCallListResponse
+     * @param \Ovh\StructType\TelephonyFaxCallListReturn $return
+     * @return \Ovh\StructType\TelephonyFaxCallListResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyFaxCallListReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyFaxCallListReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyFaxCallListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFaxCallListResponse
+     * @return \Ovh\StructType\TelephonyFaxCallListResponse
      */
     public static function __set_state(array $array)
     {

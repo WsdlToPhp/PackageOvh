@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -179,7 +179,7 @@ class NicUpdateIT extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\NicUpdateIT
+     * @return \Ovh\StructType\NicUpdateIT
      */
     public function setSession($session = null)
     {
@@ -201,7 +201,7 @@ class NicUpdateIT extends AbstractStructBase
     /**
      * Set nic value
      * @param string $nic
-     * @return \PayPal\StructType\NicUpdateIT
+     * @return \Ovh\StructType\NicUpdateIT
      */
     public function setNic($nic = null)
     {
@@ -223,7 +223,7 @@ class NicUpdateIT extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\NicUpdateIT
+     * @return \Ovh\StructType\NicUpdateIT
      */
     public function setName($name = null)
     {
@@ -245,7 +245,7 @@ class NicUpdateIT extends AbstractStructBase
     /**
      * Set firstname value
      * @param string $firstname
-     * @return \PayPal\StructType\NicUpdateIT
+     * @return \Ovh\StructType\NicUpdateIT
      */
     public function setFirstname($firstname = null)
     {
@@ -267,7 +267,7 @@ class NicUpdateIT extends AbstractStructBase
     /**
      * Set sex value
      * @param string $sex
-     * @return \PayPal\StructType\NicUpdateIT
+     * @return \Ovh\StructType\NicUpdateIT
      */
     public function setSex($sex = null)
     {
@@ -289,7 +289,7 @@ class NicUpdateIT extends AbstractStructBase
     /**
      * Set legalForm value
      * @param string $legalForm
-     * @return \PayPal\StructType\NicUpdateIT
+     * @return \Ovh\StructType\NicUpdateIT
      */
     public function setLegalForm($legalForm = null)
     {
@@ -311,7 +311,7 @@ class NicUpdateIT extends AbstractStructBase
     /**
      * Set organisation value
      * @param string $organisation
-     * @return \PayPal\StructType\NicUpdateIT
+     * @return \Ovh\StructType\NicUpdateIT
      */
     public function setOrganisation($organisation = null)
     {
@@ -333,7 +333,7 @@ class NicUpdateIT extends AbstractStructBase
     /**
      * Set legalName value
      * @param string $legalName
-     * @return \PayPal\StructType\NicUpdateIT
+     * @return \Ovh\StructType\NicUpdateIT
      */
     public function setLegalName($legalName = null)
     {
@@ -355,7 +355,7 @@ class NicUpdateIT extends AbstractStructBase
     /**
      * Set legalNumber value
      * @param string $legalNumber
-     * @return \PayPal\StructType\NicUpdateIT
+     * @return \Ovh\StructType\NicUpdateIT
      */
     public function setLegalNumber($legalNumber = null)
     {
@@ -377,7 +377,7 @@ class NicUpdateIT extends AbstractStructBase
     /**
      * Set vat value
      * @param string $vat
-     * @return \PayPal\StructType\NicUpdateIT
+     * @return \Ovh\StructType\NicUpdateIT
      */
     public function setVat($vat = null)
     {
@@ -399,7 +399,7 @@ class NicUpdateIT extends AbstractStructBase
     /**
      * Set birthDay value
      * @param string $birthDay
-     * @return \PayPal\StructType\NicUpdateIT
+     * @return \Ovh\StructType\NicUpdateIT
      */
     public function setBirthDay($birthDay = null)
     {
@@ -421,7 +421,7 @@ class NicUpdateIT extends AbstractStructBase
     /**
      * Set birthCity value
      * @param string $birthCity
-     * @return \PayPal\StructType\NicUpdateIT
+     * @return \Ovh\StructType\NicUpdateIT
      */
     public function setBirthCity($birthCity = null)
     {
@@ -443,7 +443,7 @@ class NicUpdateIT extends AbstractStructBase
     /**
      * Set nationalIdentificationNumber value
      * @param string $nationalIdentificationNumber
-     * @return \PayPal\StructType\NicUpdateIT
+     * @return \Ovh\StructType\NicUpdateIT
      */
     public function setNationalIdentificationNumber($nationalIdentificationNumber = null)
     {
@@ -465,7 +465,7 @@ class NicUpdateIT extends AbstractStructBase
     /**
      * Set companyNationalIdentificationNumber value
      * @param string $companyNationalIdentificationNumber
-     * @return \PayPal\StructType\NicUpdateIT
+     * @return \Ovh\StructType\NicUpdateIT
      */
     public function setCompanyNationalIdentificationNumber($companyNationalIdentificationNumber = null)
     {
@@ -487,7 +487,7 @@ class NicUpdateIT extends AbstractStructBase
     /**
      * Set corporationType value
      * @param string $corporationType
-     * @return \PayPal\StructType\NicUpdateIT
+     * @return \Ovh\StructType\NicUpdateIT
      */
     public function setCorporationType($corporationType = null)
     {
@@ -504,7 +504,7 @@ class NicUpdateIT extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\NicUpdateIT
+     * @return \Ovh\StructType\NicUpdateIT
      */
     public static function __set_state(array $array)
     {

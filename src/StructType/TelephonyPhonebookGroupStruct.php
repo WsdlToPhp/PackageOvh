@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class TelephonyPhonebookGroupStruct extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\TelephonyPhonebookGroupStruct
+     * @return \Ovh\StructType\TelephonyPhonebookGroupStruct
      */
     public function setName($name = null)
     {
@@ -67,7 +67,7 @@ class TelephonyPhonebookGroupStruct extends AbstractStructBase
     /**
      * Set count value
      * @param int $count
-     * @return \PayPal\StructType\TelephonyPhonebookGroupStruct
+     * @return \Ovh\StructType\TelephonyPhonebookGroupStruct
      */
     public function setCount($count = null)
     {
@@ -84,7 +84,7 @@ class TelephonyPhonebookGroupStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyPhonebookGroupStruct
+     * @return \Ovh\StructType\TelephonyPhonebookGroupStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class RedirectedEmailDel extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\RedirectedEmailDel
+     * @return \Ovh\StructType\RedirectedEmailDel
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class RedirectedEmailDel extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\RedirectedEmailDel
+     * @return \Ovh\StructType\RedirectedEmailDel
      */
     public function setDomain($domain = null)
     {
@@ -123,7 +123,7 @@ class RedirectedEmailDel extends AbstractStructBase
     /**
      * Set redirected value
      * @param string $redirected
-     * @return \PayPal\StructType\RedirectedEmailDel
+     * @return \Ovh\StructType\RedirectedEmailDel
      */
     public function setRedirected($redirected = null)
     {
@@ -145,7 +145,7 @@ class RedirectedEmailDel extends AbstractStructBase
     /**
      * Set target value
      * @param string $target
-     * @return \PayPal\StructType\RedirectedEmailDel
+     * @return \Ovh\StructType\RedirectedEmailDel
      */
     public function setTarget($target = null)
     {
@@ -167,7 +167,7 @@ class RedirectedEmailDel extends AbstractStructBase
     /**
      * Set subdomain value
      * @param string $subdomain
-     * @return \PayPal\StructType\RedirectedEmailDel
+     * @return \Ovh\StructType\RedirectedEmailDel
      */
     public function setSubdomain($subdomain = null)
     {
@@ -184,7 +184,7 @@ class RedirectedEmailDel extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RedirectedEmailDel
+     * @return \Ovh\StructType\RedirectedEmailDel
      */
     public static function __set_state(array $array)
     {

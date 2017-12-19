@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfRtmRaidPartitionVolumeStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\RtmRaidPartitionVolumeStruct[]
+     * @var \Ovh\StructType\RtmRaidPartitionVolumeStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfRtmRaidPartitionVolumeStructType
      * @uses MyArrayOfRtmRaidPartitionVolumeStructType::setItem()
-     * @param \PayPal\StructType\RtmRaidPartitionVolumeStruct[] $item
+     * @param \Ovh\StructType\RtmRaidPartitionVolumeStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfRtmRaidPartitionVolumeStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\RtmRaidPartitionVolumeStruct[]|null
+     * @return \Ovh\StructType\RtmRaidPartitionVolumeStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfRtmRaidPartitionVolumeStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\RtmRaidPartitionVolumeStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfRtmRaidPartitionVolumeStructType
+     * @param \Ovh\StructType\RtmRaidPartitionVolumeStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfRtmRaidPartitionVolumeStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfRtmRaidPartitionVolumeStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfRtmRaidPartitionVolumeStructTypeItemItem instanceof \PayPal\StructType\RtmRaidPartitionVolumeStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\RtmRaidPartitionVolumeStruct, "%s" given', is_object($myArrayOfRtmRaidPartitionVolumeStructTypeItemItem) ? get_class($myArrayOfRtmRaidPartitionVolumeStructTypeItemItem) : gettype($myArrayOfRtmRaidPartitionVolumeStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfRtmRaidPartitionVolumeStructTypeItemItem instanceof \Ovh\StructType\RtmRaidPartitionVolumeStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\RtmRaidPartitionVolumeStruct, "%s" given', is_object($myArrayOfRtmRaidPartitionVolumeStructTypeItemItem) ? get_class($myArrayOfRtmRaidPartitionVolumeStructTypeItemItem) : gettype($myArrayOfRtmRaidPartitionVolumeStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfRtmRaidPartitionVolumeStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\RtmRaidPartitionVolumeStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfRtmRaidPartitionVolumeStructType
+     * @param \Ovh\StructType\RtmRaidPartitionVolumeStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfRtmRaidPartitionVolumeStructType
      */
-    public function addToItem(\PayPal\StructType\RtmRaidPartitionVolumeStruct $item)
+    public function addToItem(\Ovh\StructType\RtmRaidPartitionVolumeStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\RtmRaidPartitionVolumeStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\RtmRaidPartitionVolumeStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\RtmRaidPartitionVolumeStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\RtmRaidPartitionVolumeStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfRtmRaidPartitionVolumeStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\RtmRaidPartitionVolumeStruct|null
+     * @return \Ovh\StructType\RtmRaidPartitionVolumeStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfRtmRaidPartitionVolumeStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\RtmRaidPartitionVolumeStruct|null
+     * @return \Ovh\StructType\RtmRaidPartitionVolumeStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfRtmRaidPartitionVolumeStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\RtmRaidPartitionVolumeStruct|null
+     * @return \Ovh\StructType\RtmRaidPartitionVolumeStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfRtmRaidPartitionVolumeStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\RtmRaidPartitionVolumeStruct|null
+     * @return \Ovh\StructType\RtmRaidPartitionVolumeStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfRtmRaidPartitionVolumeStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\RtmRaidPartitionVolumeStruct|null
+     * @return \Ovh\StructType\RtmRaidPartitionVolumeStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfRtmRaidPartitionVolumeStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfRtmRaidPartitionVolumeStructType
+     * @return \Ovh\ArrayType\MyArrayOfRtmRaidPartitionVolumeStructType
      */
     public static function __set_state(array $array)
     {

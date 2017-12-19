@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -43,12 +43,12 @@ class BillingInvoiceStruct extends AbstractStructBase
     public $billnum;
     /**
      * The details
-     * @var \PayPal\ArrayType\MyArrayOfBillingInvoiceDetailStructType
+     * @var \Ovh\ArrayType\MyArrayOfBillingInvoiceDetailStructType
      */
     public $details;
     /**
      * The domains
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $domains;
     /**
@@ -79,12 +79,12 @@ class BillingInvoiceStruct extends AbstractStructBase
      * @param string $date
      * @param string $nic
      * @param string $billnum
-     * @param \PayPal\ArrayType\MyArrayOfBillingInvoiceDetailStructType $details
-     * @param \PayPal\ArrayType\MyArrayOfStringType $domains
+     * @param \Ovh\ArrayType\MyArrayOfBillingInvoiceDetailStructType $details
+     * @param \Ovh\ArrayType\MyArrayOfStringType $domains
      * @param string $billingCountry
      * @param string $ordernum
      */
-    public function __construct($vat = null, $totalPrice = null, $totalPriceWithVat = null, $date = null, $nic = null, $billnum = null, \PayPal\ArrayType\MyArrayOfBillingInvoiceDetailStructType $details = null, \PayPal\ArrayType\MyArrayOfStringType $domains = null, $billingCountry = null, $ordernum = null)
+    public function __construct($vat = null, $totalPrice = null, $totalPriceWithVat = null, $date = null, $nic = null, $billnum = null, \Ovh\ArrayType\MyArrayOfBillingInvoiceDetailStructType $details = null, \Ovh\ArrayType\MyArrayOfStringType $domains = null, $billingCountry = null, $ordernum = null)
     {
         $this
             ->setVat($vat)
@@ -109,7 +109,7 @@ class BillingInvoiceStruct extends AbstractStructBase
     /**
      * Set vat value
      * @param float $vat
-     * @return \PayPal\StructType\BillingInvoiceStruct
+     * @return \Ovh\StructType\BillingInvoiceStruct
      */
     public function setVat($vat = null)
     {
@@ -127,7 +127,7 @@ class BillingInvoiceStruct extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param float $totalPrice
-     * @return \PayPal\StructType\BillingInvoiceStruct
+     * @return \Ovh\StructType\BillingInvoiceStruct
      */
     public function setTotalPrice($totalPrice = null)
     {
@@ -145,7 +145,7 @@ class BillingInvoiceStruct extends AbstractStructBase
     /**
      * Set totalPriceWithVat value
      * @param float $totalPriceWithVat
-     * @return \PayPal\StructType\BillingInvoiceStruct
+     * @return \Ovh\StructType\BillingInvoiceStruct
      */
     public function setTotalPriceWithVat($totalPriceWithVat = null)
     {
@@ -163,7 +163,7 @@ class BillingInvoiceStruct extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\BillingInvoiceStruct
+     * @return \Ovh\StructType\BillingInvoiceStruct
      */
     public function setDate($date = null)
     {
@@ -185,7 +185,7 @@ class BillingInvoiceStruct extends AbstractStructBase
     /**
      * Set nic value
      * @param string $nic
-     * @return \PayPal\StructType\BillingInvoiceStruct
+     * @return \Ovh\StructType\BillingInvoiceStruct
      */
     public function setNic($nic = null)
     {
@@ -207,7 +207,7 @@ class BillingInvoiceStruct extends AbstractStructBase
     /**
      * Set billnum value
      * @param string $billnum
-     * @return \PayPal\StructType\BillingInvoiceStruct
+     * @return \Ovh\StructType\BillingInvoiceStruct
      */
     public function setBillnum($billnum = null)
     {
@@ -220,7 +220,7 @@ class BillingInvoiceStruct extends AbstractStructBase
     }
     /**
      * Get details value
-     * @return \PayPal\ArrayType\MyArrayOfBillingInvoiceDetailStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfBillingInvoiceDetailStructType|null
      */
     public function getDetails()
     {
@@ -228,17 +228,17 @@ class BillingInvoiceStruct extends AbstractStructBase
     }
     /**
      * Set details value
-     * @param \PayPal\ArrayType\MyArrayOfBillingInvoiceDetailStructType $details
-     * @return \PayPal\StructType\BillingInvoiceStruct
+     * @param \Ovh\ArrayType\MyArrayOfBillingInvoiceDetailStructType $details
+     * @return \Ovh\StructType\BillingInvoiceStruct
      */
-    public function setDetails(\PayPal\ArrayType\MyArrayOfBillingInvoiceDetailStructType $details = null)
+    public function setDetails(\Ovh\ArrayType\MyArrayOfBillingInvoiceDetailStructType $details = null)
     {
         $this->details = $details;
         return $this;
     }
     /**
      * Get domains value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getDomains()
     {
@@ -246,10 +246,10 @@ class BillingInvoiceStruct extends AbstractStructBase
     }
     /**
      * Set domains value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $domains
-     * @return \PayPal\StructType\BillingInvoiceStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $domains
+     * @return \Ovh\StructType\BillingInvoiceStruct
      */
-    public function setDomains(\PayPal\ArrayType\MyArrayOfStringType $domains = null)
+    public function setDomains(\Ovh\ArrayType\MyArrayOfStringType $domains = null)
     {
         $this->domains = $domains;
         return $this;
@@ -265,7 +265,7 @@ class BillingInvoiceStruct extends AbstractStructBase
     /**
      * Set billingCountry value
      * @param string $billingCountry
-     * @return \PayPal\StructType\BillingInvoiceStruct
+     * @return \Ovh\StructType\BillingInvoiceStruct
      */
     public function setBillingCountry($billingCountry = null)
     {
@@ -287,7 +287,7 @@ class BillingInvoiceStruct extends AbstractStructBase
     /**
      * Set ordernum value
      * @param string $ordernum
-     * @return \PayPal\StructType\BillingInvoiceStruct
+     * @return \Ovh\StructType\BillingInvoiceStruct
      */
     public function setOrdernum($ordernum = null)
     {
@@ -304,7 +304,7 @@ class BillingInvoiceStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\BillingInvoiceStruct
+     * @return \Ovh\StructType\BillingInvoiceStruct
      */
     public static function __set_state(array $array)
     {

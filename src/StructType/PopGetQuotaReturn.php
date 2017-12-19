@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class PopGetQuotaReturn extends AbstractStructBase
     /**
      * Set emailCount value
      * @param int $emailCount
-     * @return \PayPal\StructType\PopGetQuotaReturn
+     * @return \Ovh\StructType\PopGetQuotaReturn
      */
     public function setEmailCount($emailCount = null)
     {
@@ -75,7 +75,7 @@ class PopGetQuotaReturn extends AbstractStructBase
     /**
      * Set quota value
      * @param int $quota
-     * @return \PayPal\StructType\PopGetQuotaReturn
+     * @return \Ovh\StructType\PopGetQuotaReturn
      */
     public function setQuota($quota = null)
     {
@@ -97,7 +97,7 @@ class PopGetQuotaReturn extends AbstractStructBase
     /**
      * Set maxQuota value
      * @param int $maxQuota
-     * @return \PayPal\StructType\PopGetQuotaReturn
+     * @return \Ovh\StructType\PopGetQuotaReturn
      */
     public function setMaxQuota($maxQuota = null)
     {
@@ -114,7 +114,7 @@ class PopGetQuotaReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\PopGetQuotaReturn
+     * @return \Ovh\StructType\PopGetQuotaReturn
      */
     public static function __set_state(array $array)
     {

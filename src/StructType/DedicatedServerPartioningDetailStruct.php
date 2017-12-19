@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -77,7 +77,7 @@ class DedicatedServerPartioningDetailStruct extends AbstractStructBase
     /**
      * Set partSize value
      * @param string $partSize
-     * @return \PayPal\StructType\DedicatedServerPartioningDetailStruct
+     * @return \Ovh\StructType\DedicatedServerPartioningDetailStruct
      */
     public function setPartSize($partSize = null)
     {
@@ -99,7 +99,7 @@ class DedicatedServerPartioningDetailStruct extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\DedicatedServerPartioningDetailStruct
+     * @return \Ovh\StructType\DedicatedServerPartioningDetailStruct
      */
     public function setId($id = null)
     {
@@ -121,7 +121,7 @@ class DedicatedServerPartioningDetailStruct extends AbstractStructBase
     /**
      * Set raidType value
      * @param int $raidType
-     * @return \PayPal\StructType\DedicatedServerPartioningDetailStruct
+     * @return \Ovh\StructType\DedicatedServerPartioningDetailStruct
      */
     public function setRaidType($raidType = null)
     {
@@ -143,7 +143,7 @@ class DedicatedServerPartioningDetailStruct extends AbstractStructBase
     /**
      * Set mountPoint value
      * @param string $mountPoint
-     * @return \PayPal\StructType\DedicatedServerPartioningDetailStruct
+     * @return \Ovh\StructType\DedicatedServerPartioningDetailStruct
      */
     public function setMountPoint($mountPoint = null)
     {
@@ -165,7 +165,7 @@ class DedicatedServerPartioningDetailStruct extends AbstractStructBase
     /**
      * Set partType value
      * @param string $partType
-     * @return \PayPal\StructType\DedicatedServerPartioningDetailStruct
+     * @return \Ovh\StructType\DedicatedServerPartioningDetailStruct
      */
     public function setPartType($partType = null)
     {
@@ -187,7 +187,7 @@ class DedicatedServerPartioningDetailStruct extends AbstractStructBase
     /**
      * Set fileSystem value
      * @param string $fileSystem
-     * @return \PayPal\StructType\DedicatedServerPartioningDetailStruct
+     * @return \Ovh\StructType\DedicatedServerPartioningDetailStruct
      */
     public function setFileSystem($fileSystem = null)
     {
@@ -204,7 +204,7 @@ class DedicatedServerPartioningDetailStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedServerPartioningDetailStruct
+     * @return \Ovh\StructType\DedicatedServerPartioningDetailStruct
      */
     public static function __set_state(array $array)
     {

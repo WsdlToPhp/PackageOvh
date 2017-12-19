@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -109,7 +109,7 @@ class ResellerAccountSummaryReturn extends AbstractStructBase
     /**
      * Set nic value
      * @param string $nic
-     * @return \PayPal\StructType\ResellerAccountSummaryReturn
+     * @return \Ovh\StructType\ResellerAccountSummaryReturn
      */
     public function setNic($nic = null)
     {
@@ -131,7 +131,7 @@ class ResellerAccountSummaryReturn extends AbstractStructBase
     /**
      * Set account value
      * @param string $account
-     * @return \PayPal\StructType\ResellerAccountSummaryReturn
+     * @return \Ovh\StructType\ResellerAccountSummaryReturn
      */
     public function setAccount($account = null)
     {
@@ -153,7 +153,7 @@ class ResellerAccountSummaryReturn extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\ResellerAccountSummaryReturn
+     * @return \Ovh\StructType\ResellerAccountSummaryReturn
      */
     public function setCountry($country = null)
     {
@@ -175,7 +175,7 @@ class ResellerAccountSummaryReturn extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \PayPal\StructType\ResellerAccountSummaryReturn
+     * @return \Ovh\StructType\ResellerAccountSummaryReturn
      */
     public function setDescription($description = null)
     {
@@ -197,7 +197,7 @@ class ResellerAccountSummaryReturn extends AbstractStructBase
     /**
      * Set balance value
      * @param int $balance
-     * @return \PayPal\StructType\ResellerAccountSummaryReturn
+     * @return \Ovh\StructType\ResellerAccountSummaryReturn
      */
     public function setBalance($balance = null)
     {
@@ -219,7 +219,7 @@ class ResellerAccountSummaryReturn extends AbstractStructBase
     /**
      * Set alertThreshold value
      * @param int $alertThreshold
-     * @return \PayPal\StructType\ResellerAccountSummaryReturn
+     * @return \Ovh\StructType\ResellerAccountSummaryReturn
      */
     public function setAlertThreshold($alertThreshold = null)
     {
@@ -241,7 +241,7 @@ class ResellerAccountSummaryReturn extends AbstractStructBase
     /**
      * Set limitThreshold value
      * @param int $limitThreshold
-     * @return \PayPal\StructType\ResellerAccountSummaryReturn
+     * @return \Ovh\StructType\ResellerAccountSummaryReturn
      */
     public function setLimitThreshold($limitThreshold = null)
     {
@@ -263,7 +263,7 @@ class ResellerAccountSummaryReturn extends AbstractStructBase
     /**
      * Set openDate value
      * @param string $openDate
-     * @return \PayPal\StructType\ResellerAccountSummaryReturn
+     * @return \Ovh\StructType\ResellerAccountSummaryReturn
      */
     public function setOpenDate($openDate = null)
     {
@@ -285,7 +285,7 @@ class ResellerAccountSummaryReturn extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\ResellerAccountSummaryReturn
+     * @return \Ovh\StructType\ResellerAccountSummaryReturn
      */
     public function setDate($date = null)
     {
@@ -307,7 +307,7 @@ class ResellerAccountSummaryReturn extends AbstractStructBase
     /**
      * Set closeDate value
      * @param string $closeDate
-     * @return \PayPal\StructType\ResellerAccountSummaryReturn
+     * @return \Ovh\StructType\ResellerAccountSummaryReturn
      */
     public function setCloseDate($closeDate = null)
     {
@@ -324,7 +324,7 @@ class ResellerAccountSummaryReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ResellerAccountSummaryReturn
+     * @return \Ovh\StructType\ResellerAccountSummaryReturn
      */
     public static function __set_state(array $array)
     {

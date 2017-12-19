@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -239,7 +239,7 @@ class TelephonySpecialNumberOrder extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonySpecialNumberOrder
+     * @return \Ovh\StructType\TelephonySpecialNumberOrder
      */
     public function setSession($session = null)
     {
@@ -261,7 +261,7 @@ class TelephonySpecialNumberOrder extends AbstractStructBase
     /**
      * Set billingAccount value
      * @param string $billingAccount
-     * @return \PayPal\StructType\TelephonySpecialNumberOrder
+     * @return \Ovh\StructType\TelephonySpecialNumberOrder
      */
     public function setBillingAccount($billingAccount = null)
     {
@@ -283,7 +283,7 @@ class TelephonySpecialNumberOrder extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonySpecialNumberOrder
+     * @return \Ovh\StructType\TelephonySpecialNumberOrder
      */
     public function setCountry($country = null)
     {
@@ -305,7 +305,7 @@ class TelephonySpecialNumberOrder extends AbstractStructBase
     /**
      * Set aliasNumber value
      * @param string $aliasNumber
-     * @return \PayPal\StructType\TelephonySpecialNumberOrder
+     * @return \Ovh\StructType\TelephonySpecialNumberOrder
      */
     public function setAliasNumber($aliasNumber = null)
     {
@@ -327,7 +327,7 @@ class TelephonySpecialNumberOrder extends AbstractStructBase
     /**
      * Set prefix value
      * @param string $prefix
-     * @return \PayPal\StructType\TelephonySpecialNumberOrder
+     * @return \Ovh\StructType\TelephonySpecialNumberOrder
      */
     public function setPrefix($prefix = null)
     {
@@ -349,7 +349,7 @@ class TelephonySpecialNumberOrder extends AbstractStructBase
     /**
      * Set category value
      * @param string $category
-     * @return \PayPal\StructType\TelephonySpecialNumberOrder
+     * @return \Ovh\StructType\TelephonySpecialNumberOrder
      */
     public function setCategory($category = null)
     {
@@ -371,7 +371,7 @@ class TelephonySpecialNumberOrder extends AbstractStructBase
     /**
      * Set numberToReserve value
      * @param string $numberToReserve
-     * @return \PayPal\StructType\TelephonySpecialNumberOrder
+     * @return \Ovh\StructType\TelephonySpecialNumberOrder
      */
     public function setNumberToReserve($numberToReserve = null)
     {
@@ -393,7 +393,7 @@ class TelephonySpecialNumberOrder extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\TelephonySpecialNumberOrder
+     * @return \Ovh\StructType\TelephonySpecialNumberOrder
      */
     public function setName($name = null)
     {
@@ -415,7 +415,7 @@ class TelephonySpecialNumberOrder extends AbstractStructBase
     /**
      * Set firstname value
      * @param string $firstname
-     * @return \PayPal\StructType\TelephonySpecialNumberOrder
+     * @return \Ovh\StructType\TelephonySpecialNumberOrder
      */
     public function setFirstname($firstname = null)
     {
@@ -437,7 +437,7 @@ class TelephonySpecialNumberOrder extends AbstractStructBase
     /**
      * Set streetName value
      * @param string $streetName
-     * @return \PayPal\StructType\TelephonySpecialNumberOrder
+     * @return \Ovh\StructType\TelephonySpecialNumberOrder
      */
     public function setStreetName($streetName = null)
     {
@@ -459,7 +459,7 @@ class TelephonySpecialNumberOrder extends AbstractStructBase
     /**
      * Set streetNumber value
      * @param string $streetNumber
-     * @return \PayPal\StructType\TelephonySpecialNumberOrder
+     * @return \Ovh\StructType\TelephonySpecialNumberOrder
      */
     public function setStreetNumber($streetNumber = null)
     {
@@ -481,7 +481,7 @@ class TelephonySpecialNumberOrder extends AbstractStructBase
     /**
      * Set zip value
      * @param string $zip
-     * @return \PayPal\StructType\TelephonySpecialNumberOrder
+     * @return \Ovh\StructType\TelephonySpecialNumberOrder
      */
     public function setZip($zip = null)
     {
@@ -503,7 +503,7 @@ class TelephonySpecialNumberOrder extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \PayPal\StructType\TelephonySpecialNumberOrder
+     * @return \Ovh\StructType\TelephonySpecialNumberOrder
      */
     public function setCity($city = null)
     {
@@ -525,7 +525,7 @@ class TelephonySpecialNumberOrder extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\TelephonySpecialNumberOrder
+     * @return \Ovh\StructType\TelephonySpecialNumberOrder
      */
     public function setEmail($email = null)
     {
@@ -547,7 +547,7 @@ class TelephonySpecialNumberOrder extends AbstractStructBase
     /**
      * Set procedureId value
      * @param int $procedureId
-     * @return \PayPal\StructType\TelephonySpecialNumberOrder
+     * @return \Ovh\StructType\TelephonySpecialNumberOrder
      */
     public function setProcedureId($procedureId = null)
     {
@@ -569,7 +569,7 @@ class TelephonySpecialNumberOrder extends AbstractStructBase
     /**
      * Set legalForm value
      * @param string $legalForm
-     * @return \PayPal\StructType\TelephonySpecialNumberOrder
+     * @return \Ovh\StructType\TelephonySpecialNumberOrder
      */
     public function setLegalForm($legalForm = null)
     {
@@ -591,7 +591,7 @@ class TelephonySpecialNumberOrder extends AbstractStructBase
     /**
      * Set siret value
      * @param string $siret
-     * @return \PayPal\StructType\TelephonySpecialNumberOrder
+     * @return \Ovh\StructType\TelephonySpecialNumberOrder
      */
     public function setSiret($siret = null)
     {
@@ -613,7 +613,7 @@ class TelephonySpecialNumberOrder extends AbstractStructBase
     /**
      * Set ape value
      * @param string $ape
-     * @return \PayPal\StructType\TelephonySpecialNumberOrder
+     * @return \Ovh\StructType\TelephonySpecialNumberOrder
      */
     public function setApe($ape = null)
     {
@@ -635,7 +635,7 @@ class TelephonySpecialNumberOrder extends AbstractStructBase
     /**
      * Set socialNomination value
      * @param string $socialNomination
-     * @return \PayPal\StructType\TelephonySpecialNumberOrder
+     * @return \Ovh\StructType\TelephonySpecialNumberOrder
      */
     public function setSocialNomination($socialNomination = null)
     {
@@ -657,7 +657,7 @@ class TelephonySpecialNumberOrder extends AbstractStructBase
     /**
      * Set displayUniversalDirectory value
      * @param string $displayUniversalDirectory
-     * @return \PayPal\StructType\TelephonySpecialNumberOrder
+     * @return \Ovh\StructType\TelephonySpecialNumberOrder
      */
     public function setDisplayUniversalDirectory($displayUniversalDirectory = null)
     {
@@ -679,7 +679,7 @@ class TelephonySpecialNumberOrder extends AbstractStructBase
     /**
      * Set retractation value
      * @param string $retractation
-     * @return \PayPal\StructType\TelephonySpecialNumberOrder
+     * @return \Ovh\StructType\TelephonySpecialNumberOrder
      */
     public function setRetractation($retractation = null)
     {
@@ -696,7 +696,7 @@ class TelephonySpecialNumberOrder extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySpecialNumberOrder
+     * @return \Ovh\StructType\TelephonySpecialNumberOrder
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedNetbootInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\DedicatedNetbootStruct
+     * @var \Ovh\StructType\DedicatedNetbootStruct
      */
     public $return;
     /**
      * Constructor method for dedicatedNetbootInfoResponse
      * @uses DedicatedNetbootInfoResponse::setReturn()
-     * @param \PayPal\StructType\DedicatedNetbootStruct $return
+     * @param \Ovh\StructType\DedicatedNetbootStruct $return
      */
-    public function __construct(\PayPal\StructType\DedicatedNetbootStruct $return = null)
+    public function __construct(\Ovh\StructType\DedicatedNetbootStruct $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\DedicatedNetbootStruct|null
+     * @return \Ovh\StructType\DedicatedNetbootStruct|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedNetbootInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\DedicatedNetbootStruct $return
-     * @return \PayPal\StructType\DedicatedNetbootInfoResponse
+     * @param \Ovh\StructType\DedicatedNetbootStruct $return
+     * @return \Ovh\StructType\DedicatedNetbootInfoResponse
      */
-    public function setReturn(\PayPal\StructType\DedicatedNetbootStruct $return = null)
+    public function setReturn(\Ovh\StructType\DedicatedNetbootStruct $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedNetbootInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedNetbootInfoResponse
+     * @return \Ovh\StructType\DedicatedNetbootInfoResponse
      */
     public static function __set_state(array $array)
     {

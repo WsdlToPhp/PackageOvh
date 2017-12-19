@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,35 +22,35 @@ class TelephonyChangeNicModify extends AbstractStructBase
      * The nicNames
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $nicNames;
     /**
      * The nicPasswords
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $nicPasswords;
     /**
      * The nicTypes
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $nicTypes;
     /**
      * The changeTypes
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $changeTypes;
     /**
      * The changeElts
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $changeElts;
     /**
@@ -62,13 +62,13 @@ class TelephonyChangeNicModify extends AbstractStructBase
      * @uses TelephonyChangeNicModify::setChangeTypes()
      * @uses TelephonyChangeNicModify::setChangeElts()
      * @param string $session
-     * @param \PayPal\ArrayType\MyArrayOfStringType $nicNames
-     * @param \PayPal\ArrayType\MyArrayOfStringType $nicPasswords
-     * @param \PayPal\ArrayType\MyArrayOfStringType $nicTypes
-     * @param \PayPal\ArrayType\MyArrayOfStringType $changeTypes
-     * @param \PayPal\ArrayType\MyArrayOfStringType $changeElts
+     * @param \Ovh\ArrayType\MyArrayOfStringType $nicNames
+     * @param \Ovh\ArrayType\MyArrayOfStringType $nicPasswords
+     * @param \Ovh\ArrayType\MyArrayOfStringType $nicTypes
+     * @param \Ovh\ArrayType\MyArrayOfStringType $changeTypes
+     * @param \Ovh\ArrayType\MyArrayOfStringType $changeElts
      */
-    public function __construct($session = null, \PayPal\ArrayType\MyArrayOfStringType $nicNames = null, \PayPal\ArrayType\MyArrayOfStringType $nicPasswords = null, \PayPal\ArrayType\MyArrayOfStringType $nicTypes = null, \PayPal\ArrayType\MyArrayOfStringType $changeTypes = null, \PayPal\ArrayType\MyArrayOfStringType $changeElts = null)
+    public function __construct($session = null, \Ovh\ArrayType\MyArrayOfStringType $nicNames = null, \Ovh\ArrayType\MyArrayOfStringType $nicPasswords = null, \Ovh\ArrayType\MyArrayOfStringType $nicTypes = null, \Ovh\ArrayType\MyArrayOfStringType $changeTypes = null, \Ovh\ArrayType\MyArrayOfStringType $changeElts = null)
     {
         $this
             ->setSession($session)
@@ -89,7 +89,7 @@ class TelephonyChangeNicModify extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyChangeNicModify
+     * @return \Ovh\StructType\TelephonyChangeNicModify
      */
     public function setSession($session = null)
     {
@@ -102,7 +102,7 @@ class TelephonyChangeNicModify extends AbstractStructBase
     }
     /**
      * Get nicNames value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getNicNames()
     {
@@ -110,17 +110,17 @@ class TelephonyChangeNicModify extends AbstractStructBase
     }
     /**
      * Set nicNames value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $nicNames
-     * @return \PayPal\StructType\TelephonyChangeNicModify
+     * @param \Ovh\ArrayType\MyArrayOfStringType $nicNames
+     * @return \Ovh\StructType\TelephonyChangeNicModify
      */
-    public function setNicNames(\PayPal\ArrayType\MyArrayOfStringType $nicNames = null)
+    public function setNicNames(\Ovh\ArrayType\MyArrayOfStringType $nicNames = null)
     {
         $this->nicNames = $nicNames;
         return $this;
     }
     /**
      * Get nicPasswords value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getNicPasswords()
     {
@@ -128,17 +128,17 @@ class TelephonyChangeNicModify extends AbstractStructBase
     }
     /**
      * Set nicPasswords value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $nicPasswords
-     * @return \PayPal\StructType\TelephonyChangeNicModify
+     * @param \Ovh\ArrayType\MyArrayOfStringType $nicPasswords
+     * @return \Ovh\StructType\TelephonyChangeNicModify
      */
-    public function setNicPasswords(\PayPal\ArrayType\MyArrayOfStringType $nicPasswords = null)
+    public function setNicPasswords(\Ovh\ArrayType\MyArrayOfStringType $nicPasswords = null)
     {
         $this->nicPasswords = $nicPasswords;
         return $this;
     }
     /**
      * Get nicTypes value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getNicTypes()
     {
@@ -146,17 +146,17 @@ class TelephonyChangeNicModify extends AbstractStructBase
     }
     /**
      * Set nicTypes value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $nicTypes
-     * @return \PayPal\StructType\TelephonyChangeNicModify
+     * @param \Ovh\ArrayType\MyArrayOfStringType $nicTypes
+     * @return \Ovh\StructType\TelephonyChangeNicModify
      */
-    public function setNicTypes(\PayPal\ArrayType\MyArrayOfStringType $nicTypes = null)
+    public function setNicTypes(\Ovh\ArrayType\MyArrayOfStringType $nicTypes = null)
     {
         $this->nicTypes = $nicTypes;
         return $this;
     }
     /**
      * Get changeTypes value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getChangeTypes()
     {
@@ -164,17 +164,17 @@ class TelephonyChangeNicModify extends AbstractStructBase
     }
     /**
      * Set changeTypes value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $changeTypes
-     * @return \PayPal\StructType\TelephonyChangeNicModify
+     * @param \Ovh\ArrayType\MyArrayOfStringType $changeTypes
+     * @return \Ovh\StructType\TelephonyChangeNicModify
      */
-    public function setChangeTypes(\PayPal\ArrayType\MyArrayOfStringType $changeTypes = null)
+    public function setChangeTypes(\Ovh\ArrayType\MyArrayOfStringType $changeTypes = null)
     {
         $this->changeTypes = $changeTypes;
         return $this;
     }
     /**
      * Get changeElts value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getChangeElts()
     {
@@ -182,10 +182,10 @@ class TelephonyChangeNicModify extends AbstractStructBase
     }
     /**
      * Set changeElts value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $changeElts
-     * @return \PayPal\StructType\TelephonyChangeNicModify
+     * @param \Ovh\ArrayType\MyArrayOfStringType $changeElts
+     * @return \Ovh\StructType\TelephonyChangeNicModify
      */
-    public function setChangeElts(\PayPal\ArrayType\MyArrayOfStringType $changeElts = null)
+    public function setChangeElts(\Ovh\ArrayType\MyArrayOfStringType $changeElts = null)
     {
         $this->changeElts = $changeElts;
         return $this;
@@ -196,7 +196,7 @@ class TelephonyChangeNicModify extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyChangeNicModify
+     * @return \Ovh\StructType\TelephonyChangeNicModify
      */
     public static function __set_state(array $array)
     {

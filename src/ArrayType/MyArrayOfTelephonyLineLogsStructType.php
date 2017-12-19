@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfTelephonyLineLogsStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TelephonyLineLogsStruct[]
+     * @var \Ovh\StructType\TelephonyLineLogsStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTelephonyLineLogsStructType
      * @uses MyArrayOfTelephonyLineLogsStructType::setItem()
-     * @param \PayPal\StructType\TelephonyLineLogsStruct[] $item
+     * @param \Ovh\StructType\TelephonyLineLogsStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfTelephonyLineLogsStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TelephonyLineLogsStruct[]|null
+     * @return \Ovh\StructType\TelephonyLineLogsStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfTelephonyLineLogsStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyLineLogsStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyLineLogsStructType
+     * @param \Ovh\StructType\TelephonyLineLogsStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyLineLogsStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTelephonyLineLogsStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTelephonyLineLogsStructTypeItemItem instanceof \PayPal\StructType\TelephonyLineLogsStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyLineLogsStruct, "%s" given', is_object($myArrayOfTelephonyLineLogsStructTypeItemItem) ? get_class($myArrayOfTelephonyLineLogsStructTypeItemItem) : gettype($myArrayOfTelephonyLineLogsStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTelephonyLineLogsStructTypeItemItem instanceof \Ovh\StructType\TelephonyLineLogsStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyLineLogsStruct, "%s" given', is_object($myArrayOfTelephonyLineLogsStructTypeItemItem) ? get_class($myArrayOfTelephonyLineLogsStructTypeItemItem) : gettype($myArrayOfTelephonyLineLogsStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfTelephonyLineLogsStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyLineLogsStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyLineLogsStructType
+     * @param \Ovh\StructType\TelephonyLineLogsStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyLineLogsStructType
      */
-    public function addToItem(\PayPal\StructType\TelephonyLineLogsStruct $item)
+    public function addToItem(\Ovh\StructType\TelephonyLineLogsStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TelephonyLineLogsStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyLineLogsStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TelephonyLineLogsStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyLineLogsStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfTelephonyLineLogsStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonyLineLogsStruct|null
+     * @return \Ovh\StructType\TelephonyLineLogsStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfTelephonyLineLogsStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonyLineLogsStruct|null
+     * @return \Ovh\StructType\TelephonyLineLogsStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfTelephonyLineLogsStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonyLineLogsStruct|null
+     * @return \Ovh\StructType\TelephonyLineLogsStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfTelephonyLineLogsStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonyLineLogsStruct|null
+     * @return \Ovh\StructType\TelephonyLineLogsStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfTelephonyLineLogsStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonyLineLogsStruct|null
+     * @return \Ovh\StructType\TelephonyLineLogsStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfTelephonyLineLogsStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyLineLogsStructType
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyLineLogsStructType
      */
     public static function __set_state(array $array)
     {

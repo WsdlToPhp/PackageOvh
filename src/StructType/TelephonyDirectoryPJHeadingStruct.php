@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class TelephonyDirectoryPJHeadingStruct extends AbstractStructBase
     /**
      * Set codePJ value
      * @param string $codePJ
-     * @return \PayPal\StructType\TelephonyDirectoryPJHeadingStruct
+     * @return \Ovh\StructType\TelephonyDirectoryPJHeadingStruct
      */
     public function setCodePJ($codePJ = null)
     {
@@ -83,7 +83,7 @@ class TelephonyDirectoryPJHeadingStruct extends AbstractStructBase
     /**
      * Set labelPJ value
      * @param string $labelPJ
-     * @return \PayPal\StructType\TelephonyDirectoryPJHeadingStruct
+     * @return \Ovh\StructType\TelephonyDirectoryPJHeadingStruct
      */
     public function setLabelPJ($labelPJ = null)
     {
@@ -105,7 +105,7 @@ class TelephonyDirectoryPJHeadingStruct extends AbstractStructBase
     /**
      * Set isAssociatedWithAPE value
      * @param string $isAssociatedWithAPE
-     * @return \PayPal\StructType\TelephonyDirectoryPJHeadingStruct
+     * @return \Ovh\StructType\TelephonyDirectoryPJHeadingStruct
      */
     public function setIsAssociatedWithAPE($isAssociatedWithAPE = null)
     {
@@ -127,7 +127,7 @@ class TelephonyDirectoryPJHeadingStruct extends AbstractStructBase
     /**
      * Set notification value
      * @param string $notification
-     * @return \PayPal\StructType\TelephonyDirectoryPJHeadingStruct
+     * @return \Ovh\StructType\TelephonyDirectoryPJHeadingStruct
      */
     public function setNotification($notification = null)
     {
@@ -144,7 +144,7 @@ class TelephonyDirectoryPJHeadingStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyDirectoryPJHeadingStruct
+     * @return \Ovh\StructType\TelephonyDirectoryPJHeadingStruct
      */
     public static function __set_state(array $array)
     {

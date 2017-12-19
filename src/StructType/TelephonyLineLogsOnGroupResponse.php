@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyLineLogsOnGroupResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyLineLogsStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyLineLogsStructType
      */
     public $return;
     /**
      * Constructor method for telephonyLineLogsOnGroupResponse
      * @uses TelephonyLineLogsOnGroupResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyLineLogsStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyLineLogsStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonyLineLogsStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonyLineLogsStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyLineLogsStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyLineLogsStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyLineLogsOnGroupResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyLineLogsStructType $return
-     * @return \PayPal\StructType\TelephonyLineLogsOnGroupResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyLineLogsStructType $return
+     * @return \Ovh\StructType\TelephonyLineLogsOnGroupResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonyLineLogsStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonyLineLogsStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyLineLogsOnGroupResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyLineLogsOnGroupResponse
+     * @return \Ovh\StructType\TelephonyLineLogsOnGroupResponse
      */
     public static function __set_state(array $array)
     {

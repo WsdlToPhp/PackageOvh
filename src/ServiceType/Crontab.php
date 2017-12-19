@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Crontab extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\CrontabDel $parameters
-     * @return \PayPal\StructType\CrontabDelResponse|bool
+     * @param \Ovh\StructType\CrontabDel $parameters
+     * @return \Ovh\StructType\CrontabDelResponse|bool
      */
-    public function crontabDel(\PayPal\StructType\CrontabDel $parameters)
+    public function crontabDel(\Ovh\StructType\CrontabDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->crontabDel($parameters));
@@ -36,10 +36,10 @@ class Crontab extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\CrontabList $parameters
-     * @return \PayPal\StructType\CrontabListResponse|bool
+     * @param \Ovh\StructType\CrontabList $parameters
+     * @return \Ovh\StructType\CrontabListResponse|bool
      */
-    public function crontabList(\PayPal\StructType\CrontabList $parameters)
+    public function crontabList(\Ovh\StructType\CrontabList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->crontabList($parameters));
@@ -55,10 +55,10 @@ class Crontab extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\CrontabAdd $parameters
-     * @return \PayPal\StructType\CrontabAddResponse|bool
+     * @param \Ovh\StructType\CrontabAdd $parameters
+     * @return \Ovh\StructType\CrontabAddResponse|bool
      */
-    public function crontabAdd(\PayPal\StructType\CrontabAdd $parameters)
+    public function crontabAdd(\Ovh\StructType\CrontabAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->crontabAdd($parameters));
@@ -74,10 +74,10 @@ class Crontab extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\CrontabInfo $parameters
-     * @return \PayPal\StructType\CrontabInfoResponse|bool
+     * @param \Ovh\StructType\CrontabInfo $parameters
+     * @return \Ovh\StructType\CrontabInfoResponse|bool
      */
-    public function crontabInfo(\PayPal\StructType\CrontabInfo $parameters)
+    public function crontabInfo(\Ovh\StructType\CrontabInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->crontabInfo($parameters));
@@ -93,10 +93,10 @@ class Crontab extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\CrontabModify $parameters
-     * @return \PayPal\StructType\CrontabModifyResponse|bool
+     * @param \Ovh\StructType\CrontabModify $parameters
+     * @return \Ovh\StructType\CrontabModifyResponse|bool
      */
-    public function crontabModify(\PayPal\StructType\CrontabModify $parameters)
+    public function crontabModify(\Ovh\StructType\CrontabModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->crontabModify($parameters));
@@ -109,7 +109,7 @@ class Crontab extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\CrontabAddResponse|\PayPal\StructType\CrontabDelResponse|\PayPal\StructType\CrontabInfoResponse|\PayPal\StructType\CrontabListResponse|\PayPal\StructType\CrontabModifyResponse
+     * @return \Ovh\StructType\CrontabAddResponse|\Ovh\StructType\CrontabDelResponse|\Ovh\StructType\CrontabInfoResponse|\Ovh\StructType\CrontabListResponse|\Ovh\StructType\CrontabModifyResponse
      */
     public function getResult()
     {

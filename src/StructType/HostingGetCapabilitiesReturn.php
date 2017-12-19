@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -189,7 +189,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\HostingGetCapabilitiesReturn
+     * @return \Ovh\StructType\HostingGetCapabilitiesReturn
      */
     public function setName($name = null)
     {
@@ -211,7 +211,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set webspace value
      * @param int $webspace
-     * @return \PayPal\StructType\HostingGetCapabilitiesReturn
+     * @return \Ovh\StructType\HostingGetCapabilitiesReturn
      */
     public function setWebspace($webspace = null)
     {
@@ -233,7 +233,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set traffic value
      * @param string $traffic
-     * @return \PayPal\StructType\HostingGetCapabilitiesReturn
+     * @return \Ovh\StructType\HostingGetCapabilitiesReturn
      */
     public function setTraffic($traffic = null)
     {
@@ -255,7 +255,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set databases value
      * @param int $databases
-     * @return \PayPal\StructType\HostingGetCapabilitiesReturn
+     * @return \Ovh\StructType\HostingGetCapabilitiesReturn
      */
     public function setDatabases($databases = null)
     {
@@ -277,7 +277,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set databaseSpace value
      * @param int $databaseSpace
-     * @return \PayPal\StructType\HostingGetCapabilitiesReturn
+     * @return \Ovh\StructType\HostingGetCapabilitiesReturn
      */
     public function setDatabaseSpace($databaseSpace = null)
     {
@@ -299,7 +299,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set multidomains value
      * @param int $multidomains
-     * @return \PayPal\StructType\HostingGetCapabilitiesReturn
+     * @return \Ovh\StructType\HostingGetCapabilitiesReturn
      */
     public function setMultidomains($multidomains = null)
     {
@@ -321,7 +321,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set subdomains value
      * @param int $subdomains
-     * @return \PayPal\StructType\HostingGetCapabilitiesReturn
+     * @return \Ovh\StructType\HostingGetCapabilitiesReturn
      */
     public function setSubdomains($subdomains = null)
     {
@@ -343,7 +343,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set streaming value
      * @param int $streaming
-     * @return \PayPal\StructType\HostingGetCapabilitiesReturn
+     * @return \Ovh\StructType\HostingGetCapabilitiesReturn
      */
     public function setStreaming($streaming = null)
     {
@@ -365,7 +365,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set multiftp value
      * @param int $multiftp
-     * @return \PayPal\StructType\HostingGetCapabilitiesReturn
+     * @return \Ovh\StructType\HostingGetCapabilitiesReturn
      */
     public function setMultiftp($multiftp = null)
     {
@@ -387,7 +387,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set anonymousftp value
      * @param int $anonymousftp
-     * @return \PayPal\StructType\HostingGetCapabilitiesReturn
+     * @return \Ovh\StructType\HostingGetCapabilitiesReturn
      */
     public function setAnonymousftp($anonymousftp = null)
     {
@@ -409,7 +409,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set freeDomPerYear value
      * @param int $freeDomPerYear
-     * @return \PayPal\StructType\HostingGetCapabilitiesReturn
+     * @return \Ovh\StructType\HostingGetCapabilitiesReturn
      */
     public function setFreeDomPerYear($freeDomPerYear = null)
     {
@@ -431,7 +431,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set freeDomMax value
      * @param int $freeDomMax
-     * @return \PayPal\StructType\HostingGetCapabilitiesReturn
+     * @return \Ovh\StructType\HostingGetCapabilitiesReturn
      */
     public function setFreeDomMax($freeDomMax = null)
     {
@@ -453,7 +453,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set sharedSSL value
      * @param bool $sharedSSL
-     * @return \PayPal\StructType\HostingGetCapabilitiesReturn
+     * @return \Ovh\StructType\HostingGetCapabilitiesReturn
      */
     public function setSharedSSL($sharedSSL = null)
     {
@@ -475,7 +475,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set ssh value
      * @param bool $ssh
-     * @return \PayPal\StructType\HostingGetCapabilitiesReturn
+     * @return \Ovh\StructType\HostingGetCapabilitiesReturn
      */
     public function setSsh($ssh = null)
     {
@@ -497,7 +497,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set geoloc value
      * @param bool $geoloc
-     * @return \PayPal\StructType\HostingGetCapabilitiesReturn
+     * @return \Ovh\StructType\HostingGetCapabilitiesReturn
      */
     public function setGeoloc($geoloc = null)
     {
@@ -519,7 +519,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set cgi value
      * @param bool $cgi
-     * @return \PayPal\StructType\HostingGetCapabilitiesReturn
+     * @return \Ovh\StructType\HostingGetCapabilitiesReturn
      */
     public function setCgi($cgi = null)
     {
@@ -541,7 +541,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set crontab value
      * @param bool $crontab
-     * @return \PayPal\StructType\HostingGetCapabilitiesReturn
+     * @return \Ovh\StructType\HostingGetCapabilitiesReturn
      */
     public function setCrontab($crontab = null)
     {
@@ -563,7 +563,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set sip value
      * @param bool $sip
-     * @return \PayPal\StructType\HostingGetCapabilitiesReturn
+     * @return \Ovh\StructType\HostingGetCapabilitiesReturn
      */
     public function setSip($sip = null)
     {
@@ -585,7 +585,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set vpn value
      * @param bool $vpn
-     * @return \PayPal\StructType\HostingGetCapabilitiesReturn
+     * @return \Ovh\StructType\HostingGetCapabilitiesReturn
      */
     public function setVpn($vpn = null)
     {
@@ -607,7 +607,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     /**
      * Set jabber value
      * @param bool $jabber
-     * @return \PayPal\StructType\HostingGetCapabilitiesReturn
+     * @return \Ovh\StructType\HostingGetCapabilitiesReturn
      */
     public function setJabber($jabber = null)
     {
@@ -624,7 +624,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\HostingGetCapabilitiesReturn
+     * @return \Ovh\StructType\HostingGetCapabilitiesReturn
      */
     public static function __set_state(array $array)
     {

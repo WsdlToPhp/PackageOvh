@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class RtmMotherboardStruct extends AbstractStructBase
     /**
      * Set manufacture value
      * @param string $manufacture
-     * @return \PayPal\StructType\RtmMotherboardStruct
+     * @return \Ovh\StructType\RtmMotherboardStruct
      */
     public function setManufacture($manufacture = null)
     {
@@ -67,7 +67,7 @@ class RtmMotherboardStruct extends AbstractStructBase
     /**
      * Set modelName value
      * @param string $modelName
-     * @return \PayPal\StructType\RtmMotherboardStruct
+     * @return \Ovh\StructType\RtmMotherboardStruct
      */
     public function setModelName($modelName = null)
     {
@@ -84,7 +84,7 @@ class RtmMotherboardStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RtmMotherboardStruct
+     * @return \Ovh\StructType\RtmMotherboardStruct
      */
     public static function __set_state(array $array)
     {

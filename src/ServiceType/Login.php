@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Login extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\Login $parameters
-     * @return \PayPal\StructType\LoginResponse|bool
+     * @param \Ovh\StructType\Login $parameters
+     * @return \Ovh\StructType\LoginResponse|bool
      */
-    public function login(\PayPal\StructType\Login $parameters)
+    public function login(\Ovh\StructType\Login $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->login($parameters));
@@ -33,7 +33,7 @@ class Login extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\LoginResponse
+     * @return \Ovh\StructType\LoginResponse
      */
     public function getResult()
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class SupportGetFullMessageResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\SupportMessageDetailReturn
+     * @var \Ovh\StructType\SupportMessageDetailReturn
      */
     public $return;
     /**
      * Constructor method for supportGetFullMessageResponse
      * @uses SupportGetFullMessageResponse::setReturn()
-     * @param \PayPal\StructType\SupportMessageDetailReturn $return
+     * @param \Ovh\StructType\SupportMessageDetailReturn $return
      */
-    public function __construct(\PayPal\StructType\SupportMessageDetailReturn $return = null)
+    public function __construct(\Ovh\StructType\SupportMessageDetailReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\SupportMessageDetailReturn|null
+     * @return \Ovh\StructType\SupportMessageDetailReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class SupportGetFullMessageResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\SupportMessageDetailReturn $return
-     * @return \PayPal\StructType\SupportGetFullMessageResponse
+     * @param \Ovh\StructType\SupportMessageDetailReturn $return
+     * @return \Ovh\StructType\SupportGetFullMessageResponse
      */
-    public function setReturn(\PayPal\StructType\SupportMessageDetailReturn $return = null)
+    public function setReturn(\Ovh\StructType\SupportMessageDetailReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class SupportGetFullMessageResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SupportGetFullMessageResponse
+     * @return \Ovh\StructType\SupportGetFullMessageResponse
      */
     public static function __set_state(array $array)
     {

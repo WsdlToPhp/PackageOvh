@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -77,7 +77,7 @@ class TelephonySmsUserStruct extends AbstractStructBase
     /**
      * Set login value
      * @param string $login
-     * @return \PayPal\StructType\TelephonySmsUserStruct
+     * @return \Ovh\StructType\TelephonySmsUserStruct
      */
     public function setLogin($login = null)
     {
@@ -99,7 +99,7 @@ class TelephonySmsUserStruct extends AbstractStructBase
     /**
      * Set quota value
      * @param string $quota
-     * @return \PayPal\StructType\TelephonySmsUserStruct
+     * @return \Ovh\StructType\TelephonySmsUserStruct
      */
     public function setQuota($quota = null)
     {
@@ -121,7 +121,7 @@ class TelephonySmsUserStruct extends AbstractStructBase
     /**
      * Set quotaStatus value
      * @param string $quotaStatus
-     * @return \PayPal\StructType\TelephonySmsUserStruct
+     * @return \Ovh\StructType\TelephonySmsUserStruct
      */
     public function setQuotaStatus($quotaStatus = null)
     {
@@ -143,7 +143,7 @@ class TelephonySmsUserStruct extends AbstractStructBase
     /**
      * Set alertThreshold value
      * @param string $alertThreshold
-     * @return \PayPal\StructType\TelephonySmsUserStruct
+     * @return \Ovh\StructType\TelephonySmsUserStruct
      */
     public function setAlertThreshold($alertThreshold = null)
     {
@@ -165,7 +165,7 @@ class TelephonySmsUserStruct extends AbstractStructBase
     /**
      * Set support value
      * @param string $support
-     * @return \PayPal\StructType\TelephonySmsUserStruct
+     * @return \Ovh\StructType\TelephonySmsUserStruct
      */
     public function setSupport($support = null)
     {
@@ -187,7 +187,7 @@ class TelephonySmsUserStruct extends AbstractStructBase
     /**
      * Set alertNumber value
      * @param string $alertNumber
-     * @return \PayPal\StructType\TelephonySmsUserStruct
+     * @return \Ovh\StructType\TelephonySmsUserStruct
      */
     public function setAlertNumber($alertNumber = null)
     {
@@ -204,7 +204,7 @@ class TelephonySmsUserStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsUserStruct
+     * @return \Ovh\StructType\TelephonySmsUserStruct
      */
     public static function __set_state(array $array)
     {

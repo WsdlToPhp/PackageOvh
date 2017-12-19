@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class AutomatedMailGetStateResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\AutomatedMailGetStateReturn
+     * @var \Ovh\StructType\AutomatedMailGetStateReturn
      */
     public $return;
     /**
      * Constructor method for automatedMailGetStateResponse
      * @uses AutomatedMailGetStateResponse::setReturn()
-     * @param \PayPal\StructType\AutomatedMailGetStateReturn $return
+     * @param \Ovh\StructType\AutomatedMailGetStateReturn $return
      */
-    public function __construct(\PayPal\StructType\AutomatedMailGetStateReturn $return = null)
+    public function __construct(\Ovh\StructType\AutomatedMailGetStateReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\AutomatedMailGetStateReturn|null
+     * @return \Ovh\StructType\AutomatedMailGetStateReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class AutomatedMailGetStateResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\AutomatedMailGetStateReturn $return
-     * @return \PayPal\StructType\AutomatedMailGetStateResponse
+     * @param \Ovh\StructType\AutomatedMailGetStateReturn $return
+     * @return \Ovh\StructType\AutomatedMailGetStateResponse
      */
-    public function setReturn(\PayPal\StructType\AutomatedMailGetStateReturn $return = null)
+    public function setReturn(\Ovh\StructType\AutomatedMailGetStateReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class AutomatedMailGetStateResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\AutomatedMailGetStateResponse
+     * @return \Ovh\StructType\AutomatedMailGetStateResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class TelephonyPendingActionStruct extends AbstractStructBase
     /**
      * Set dateTodo value
      * @param string $dateTodo
-     * @return \PayPal\StructType\TelephonyPendingActionStruct
+     * @return \Ovh\StructType\TelephonyPendingActionStruct
      */
     public function setDateTodo($dateTodo = null)
     {
@@ -75,7 +75,7 @@ class TelephonyPendingActionStruct extends AbstractStructBase
     /**
      * Set offer value
      * @param string $offer
-     * @return \PayPal\StructType\TelephonyPendingActionStruct
+     * @return \Ovh\StructType\TelephonyPendingActionStruct
      */
     public function setOffer($offer = null)
     {
@@ -97,7 +97,7 @@ class TelephonyPendingActionStruct extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \PayPal\StructType\TelephonyPendingActionStruct
+     * @return \Ovh\StructType\TelephonyPendingActionStruct
      */
     public function setAction($action = null)
     {
@@ -114,7 +114,7 @@ class TelephonyPendingActionStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyPendingActionStruct
+     * @return \Ovh\StructType\TelephonyPendingActionStruct
      */
     public static function __set_state(array $array)
     {

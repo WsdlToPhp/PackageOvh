@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class DedicatedMrtgInfo extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedMrtgInfo
+     * @return \Ovh\StructType\DedicatedMrtgInfo
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class DedicatedMrtgInfo extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedMrtgInfo
+     * @return \Ovh\StructType\DedicatedMrtgInfo
      */
     public function setHostname($hostname = null)
     {
@@ -123,7 +123,7 @@ class DedicatedMrtgInfo extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\DedicatedMrtgInfo
+     * @return \Ovh\StructType\DedicatedMrtgInfo
      */
     public function setType($type = null)
     {
@@ -145,7 +145,7 @@ class DedicatedMrtgInfo extends AbstractStructBase
     /**
      * Set duration value
      * @param string $duration
-     * @return \PayPal\StructType\DedicatedMrtgInfo
+     * @return \Ovh\StructType\DedicatedMrtgInfo
      */
     public function setDuration($duration = null)
     {
@@ -167,7 +167,7 @@ class DedicatedMrtgInfo extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\DedicatedMrtgInfo
+     * @return \Ovh\StructType\DedicatedMrtgInfo
      */
     public function setIp($ip = null)
     {
@@ -184,7 +184,7 @@ class DedicatedMrtgInfo extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedMrtgInfo
+     * @return \Ovh\StructType\DedicatedMrtgInfo
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class TelephonyClick2CallDoBySession extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyClick2CallDoBySession
+     * @return \Ovh\StructType\TelephonyClick2CallDoBySession
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class TelephonyClick2CallDoBySession extends AbstractStructBase
     /**
      * Set calling value
      * @param string $calling
-     * @return \PayPal\StructType\TelephonyClick2CallDoBySession
+     * @return \Ovh\StructType\TelephonyClick2CallDoBySession
      */
     public function setCalling($calling = null)
     {
@@ -113,7 +113,7 @@ class TelephonyClick2CallDoBySession extends AbstractStructBase
     /**
      * Set called value
      * @param string $called
-     * @return \PayPal\StructType\TelephonyClick2CallDoBySession
+     * @return \Ovh\StructType\TelephonyClick2CallDoBySession
      */
     public function setCalled($called = null)
     {
@@ -135,7 +135,7 @@ class TelephonyClick2CallDoBySession extends AbstractStructBase
     /**
      * Set billingNumber value
      * @param string $billingNumber
-     * @return \PayPal\StructType\TelephonyClick2CallDoBySession
+     * @return \Ovh\StructType\TelephonyClick2CallDoBySession
      */
     public function setBillingNumber($billingNumber = null)
     {
@@ -152,7 +152,7 @@ class TelephonyClick2CallDoBySession extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyClick2CallDoBySession
+     * @return \Ovh\StructType\TelephonyClick2CallDoBySession
      */
     public static function __set_state(array $array)
     {

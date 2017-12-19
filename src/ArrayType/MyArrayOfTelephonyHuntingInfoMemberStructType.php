@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfTelephonyHuntingInfoMemberStructType extends AbstractStructArrayB
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TelephonyHuntingInfoMemberStruct[]
+     * @var \Ovh\StructType\TelephonyHuntingInfoMemberStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTelephonyHuntingInfoMemberStructType
      * @uses MyArrayOfTelephonyHuntingInfoMemberStructType::setItem()
-     * @param \PayPal\StructType\TelephonyHuntingInfoMemberStruct[] $item
+     * @param \Ovh\StructType\TelephonyHuntingInfoMemberStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfTelephonyHuntingInfoMemberStructType extends AbstractStructArrayB
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TelephonyHuntingInfoMemberStruct[]|null
+     * @return \Ovh\StructType\TelephonyHuntingInfoMemberStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfTelephonyHuntingInfoMemberStructType extends AbstractStructArrayB
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyHuntingInfoMemberStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyHuntingInfoMemberStructType
+     * @param \Ovh\StructType\TelephonyHuntingInfoMemberStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyHuntingInfoMemberStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTelephonyHuntingInfoMemberStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTelephonyHuntingInfoMemberStructTypeItemItem instanceof \PayPal\StructType\TelephonyHuntingInfoMemberStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyHuntingInfoMemberStruct, "%s" given', is_object($myArrayOfTelephonyHuntingInfoMemberStructTypeItemItem) ? get_class($myArrayOfTelephonyHuntingInfoMemberStructTypeItemItem) : gettype($myArrayOfTelephonyHuntingInfoMemberStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTelephonyHuntingInfoMemberStructTypeItemItem instanceof \Ovh\StructType\TelephonyHuntingInfoMemberStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyHuntingInfoMemberStruct, "%s" given', is_object($myArrayOfTelephonyHuntingInfoMemberStructTypeItemItem) ? get_class($myArrayOfTelephonyHuntingInfoMemberStructTypeItemItem) : gettype($myArrayOfTelephonyHuntingInfoMemberStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfTelephonyHuntingInfoMemberStructType extends AbstractStructArrayB
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyHuntingInfoMemberStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyHuntingInfoMemberStructType
+     * @param \Ovh\StructType\TelephonyHuntingInfoMemberStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyHuntingInfoMemberStructType
      */
-    public function addToItem(\PayPal\StructType\TelephonyHuntingInfoMemberStruct $item)
+    public function addToItem(\Ovh\StructType\TelephonyHuntingInfoMemberStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TelephonyHuntingInfoMemberStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyHuntingInfoMemberStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TelephonyHuntingInfoMemberStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyHuntingInfoMemberStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfTelephonyHuntingInfoMemberStructType extends AbstractStructArrayB
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonyHuntingInfoMemberStruct|null
+     * @return \Ovh\StructType\TelephonyHuntingInfoMemberStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfTelephonyHuntingInfoMemberStructType extends AbstractStructArrayB
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonyHuntingInfoMemberStruct|null
+     * @return \Ovh\StructType\TelephonyHuntingInfoMemberStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfTelephonyHuntingInfoMemberStructType extends AbstractStructArrayB
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonyHuntingInfoMemberStruct|null
+     * @return \Ovh\StructType\TelephonyHuntingInfoMemberStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfTelephonyHuntingInfoMemberStructType extends AbstractStructArrayB
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonyHuntingInfoMemberStruct|null
+     * @return \Ovh\StructType\TelephonyHuntingInfoMemberStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfTelephonyHuntingInfoMemberStructType extends AbstractStructArrayB
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonyHuntingInfoMemberStruct|null
+     * @return \Ovh\StructType\TelephonyHuntingInfoMemberStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfTelephonyHuntingInfoMemberStructType extends AbstractStructArrayB
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyHuntingInfoMemberStructType
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyHuntingInfoMemberStructType
      */
     public static function __set_state(array $array)
     {

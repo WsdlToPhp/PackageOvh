@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class SupportSendMessageResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\SupportSendMessageReturn
+     * @var \Ovh\StructType\SupportSendMessageReturn
      */
     public $return;
     /**
      * Constructor method for supportSendMessageResponse
      * @uses SupportSendMessageResponse::setReturn()
-     * @param \PayPal\StructType\SupportSendMessageReturn $return
+     * @param \Ovh\StructType\SupportSendMessageReturn $return
      */
-    public function __construct(\PayPal\StructType\SupportSendMessageReturn $return = null)
+    public function __construct(\Ovh\StructType\SupportSendMessageReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\SupportSendMessageReturn|null
+     * @return \Ovh\StructType\SupportSendMessageReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class SupportSendMessageResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\SupportSendMessageReturn $return
-     * @return \PayPal\StructType\SupportSendMessageResponse
+     * @param \Ovh\StructType\SupportSendMessageReturn $return
+     * @return \Ovh\StructType\SupportSendMessageResponse
      */
-    public function setReturn(\PayPal\StructType\SupportSendMessageReturn $return = null)
+    public function setReturn(\Ovh\StructType\SupportSendMessageReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class SupportSendMessageResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SupportSendMessageResponse
+     * @return \Ovh\StructType\SupportSendMessageResponse
      */
     public static function __set_state(array $array)
     {

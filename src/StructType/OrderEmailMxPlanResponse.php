@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class OrderEmailMxPlanResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\OrderStruct
+     * @var \Ovh\StructType\OrderStruct
      */
     public $return;
     /**
      * Constructor method for orderEmailMxPlanResponse
      * @uses OrderEmailMxPlanResponse::setReturn()
-     * @param \PayPal\StructType\OrderStruct $return
+     * @param \Ovh\StructType\OrderStruct $return
      */
-    public function __construct(\PayPal\StructType\OrderStruct $return = null)
+    public function __construct(\Ovh\StructType\OrderStruct $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\OrderStruct|null
+     * @return \Ovh\StructType\OrderStruct|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class OrderEmailMxPlanResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\OrderStruct $return
-     * @return \PayPal\StructType\OrderEmailMxPlanResponse
+     * @param \Ovh\StructType\OrderStruct $return
+     * @return \Ovh\StructType\OrderEmailMxPlanResponse
      */
-    public function setReturn(\PayPal\StructType\OrderStruct $return = null)
+    public function setReturn(\Ovh\StructType\OrderStruct $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class OrderEmailMxPlanResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\OrderEmailMxPlanResponse
+     * @return \Ovh\StructType\OrderEmailMxPlanResponse
      */
     public static function __set_state(array $array)
     {

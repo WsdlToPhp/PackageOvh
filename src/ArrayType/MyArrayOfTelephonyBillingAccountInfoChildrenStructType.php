@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -17,13 +17,13 @@ class MyArrayOfTelephonyBillingAccountInfoChildrenStructType extends AbstractStr
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TelephonyBillingAccountInfoChildrenStruct[]
+     * @var \Ovh\StructType\TelephonyBillingAccountInfoChildrenStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTelephonyBillingAccountInfoChildrenStructType
      * @uses MyArrayOfTelephonyBillingAccountInfoChildrenStructType::setItem()
-     * @param \PayPal\StructType\TelephonyBillingAccountInfoChildrenStruct[] $item
+     * @param \Ovh\StructType\TelephonyBillingAccountInfoChildrenStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -32,7 +32,7 @@ class MyArrayOfTelephonyBillingAccountInfoChildrenStructType extends AbstractStr
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoChildrenStruct[]|null
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoChildrenStruct[]|null
      */
     public function getItem()
     {
@@ -41,15 +41,15 @@ class MyArrayOfTelephonyBillingAccountInfoChildrenStructType extends AbstractStr
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyBillingAccountInfoChildrenStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyBillingAccountInfoChildrenStructType
+     * @param \Ovh\StructType\TelephonyBillingAccountInfoChildrenStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyBillingAccountInfoChildrenStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTelephonyBillingAccountInfoChildrenStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTelephonyBillingAccountInfoChildrenStructTypeItemItem instanceof \PayPal\StructType\TelephonyBillingAccountInfoChildrenStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyBillingAccountInfoChildrenStruct, "%s" given', is_object($myArrayOfTelephonyBillingAccountInfoChildrenStructTypeItemItem) ? get_class($myArrayOfTelephonyBillingAccountInfoChildrenStructTypeItemItem) : gettype($myArrayOfTelephonyBillingAccountInfoChildrenStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTelephonyBillingAccountInfoChildrenStructTypeItemItem instanceof \Ovh\StructType\TelephonyBillingAccountInfoChildrenStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyBillingAccountInfoChildrenStruct, "%s" given', is_object($myArrayOfTelephonyBillingAccountInfoChildrenStructTypeItemItem) ? get_class($myArrayOfTelephonyBillingAccountInfoChildrenStructTypeItemItem) : gettype($myArrayOfTelephonyBillingAccountInfoChildrenStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -58,14 +58,14 @@ class MyArrayOfTelephonyBillingAccountInfoChildrenStructType extends AbstractStr
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyBillingAccountInfoChildrenStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyBillingAccountInfoChildrenStructType
+     * @param \Ovh\StructType\TelephonyBillingAccountInfoChildrenStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyBillingAccountInfoChildrenStructType
      */
-    public function addToItem(\PayPal\StructType\TelephonyBillingAccountInfoChildrenStruct $item)
+    public function addToItem(\Ovh\StructType\TelephonyBillingAccountInfoChildrenStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TelephonyBillingAccountInfoChildrenStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyBillingAccountInfoChildrenStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TelephonyBillingAccountInfoChildrenStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyBillingAccountInfoChildrenStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class MyArrayOfTelephonyBillingAccountInfoChildrenStructType extends AbstractStr
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoChildrenStruct|null
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoChildrenStruct|null
      */
     public function current()
     {
@@ -83,7 +83,7 @@ class MyArrayOfTelephonyBillingAccountInfoChildrenStructType extends AbstractStr
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoChildrenStruct|null
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoChildrenStruct|null
      */
     public function item($index)
     {
@@ -92,7 +92,7 @@ class MyArrayOfTelephonyBillingAccountInfoChildrenStructType extends AbstractStr
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoChildrenStruct|null
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoChildrenStruct|null
      */
     public function first()
     {
@@ -101,7 +101,7 @@ class MyArrayOfTelephonyBillingAccountInfoChildrenStructType extends AbstractStr
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoChildrenStruct|null
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoChildrenStruct|null
      */
     public function last()
     {
@@ -111,7 +111,7 @@ class MyArrayOfTelephonyBillingAccountInfoChildrenStructType extends AbstractStr
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonyBillingAccountInfoChildrenStruct|null
+     * @return \Ovh\StructType\TelephonyBillingAccountInfoChildrenStruct|null
      */
     public function offsetGet($offset)
     {
@@ -132,7 +132,7 @@ class MyArrayOfTelephonyBillingAccountInfoChildrenStructType extends AbstractStr
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyBillingAccountInfoChildrenStructType
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyBillingAccountInfoChildrenStructType
      */
     public static function __set_state(array $array)
     {

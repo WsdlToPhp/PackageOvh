@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -119,7 +119,7 @@ class ZoneEntryAddCustom extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\ZoneEntryAddCustom
+     * @return \Ovh\StructType\ZoneEntryAddCustom
      */
     public function setSession($session = null)
     {
@@ -141,7 +141,7 @@ class ZoneEntryAddCustom extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\ZoneEntryAddCustom
+     * @return \Ovh\StructType\ZoneEntryAddCustom
      */
     public function setDomain($domain = null)
     {
@@ -163,7 +163,7 @@ class ZoneEntryAddCustom extends AbstractStructBase
     /**
      * Set fieldtype value
      * @param string $fieldtype
-     * @return \PayPal\StructType\ZoneEntryAddCustom
+     * @return \Ovh\StructType\ZoneEntryAddCustom
      */
     public function setFieldtype($fieldtype = null)
     {
@@ -185,7 +185,7 @@ class ZoneEntryAddCustom extends AbstractStructBase
     /**
      * Set hostingtype value
      * @param string $hostingtype
-     * @return \PayPal\StructType\ZoneEntryAddCustom
+     * @return \Ovh\StructType\ZoneEntryAddCustom
      */
     public function setHostingtype($hostingtype = null)
     {
@@ -207,7 +207,7 @@ class ZoneEntryAddCustom extends AbstractStructBase
     /**
      * Set hosting value
      * @param string $hosting
-     * @return \PayPal\StructType\ZoneEntryAddCustom
+     * @return \Ovh\StructType\ZoneEntryAddCustom
      */
     public function setHosting($hosting = null)
     {
@@ -229,7 +229,7 @@ class ZoneEntryAddCustom extends AbstractStructBase
     /**
      * Set subdomain value
      * @param string $subdomain
-     * @return \PayPal\StructType\ZoneEntryAddCustom
+     * @return \Ovh\StructType\ZoneEntryAddCustom
      */
     public function setSubdomain($subdomain = null)
     {
@@ -251,7 +251,7 @@ class ZoneEntryAddCustom extends AbstractStructBase
     /**
      * Set priority value
      * @param string $priority
-     * @return \PayPal\StructType\ZoneEntryAddCustom
+     * @return \Ovh\StructType\ZoneEntryAddCustom
      */
     public function setPriority($priority = null)
     {
@@ -273,7 +273,7 @@ class ZoneEntryAddCustom extends AbstractStructBase
     /**
      * Set target value
      * @param string $target
-     * @return \PayPal\StructType\ZoneEntryAddCustom
+     * @return \Ovh\StructType\ZoneEntryAddCustom
      */
     public function setTarget($target = null)
     {
@@ -295,7 +295,7 @@ class ZoneEntryAddCustom extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\ZoneEntryAddCustom
+     * @return \Ovh\StructType\ZoneEntryAddCustom
      */
     public function setCountry($country = null)
     {
@@ -312,7 +312,7 @@ class ZoneEntryAddCustom extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ZoneEntryAddCustom
+     * @return \Ovh\StructType\ZoneEntryAddCustom
      */
     public static function __set_state(array $array)
     {

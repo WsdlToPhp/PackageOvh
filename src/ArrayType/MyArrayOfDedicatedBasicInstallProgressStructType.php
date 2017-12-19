@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfDedicatedBasicInstallProgressStructType extends AbstractStructArr
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\DedicatedBasicInstallProgressStruct[]
+     * @var \Ovh\StructType\DedicatedBasicInstallProgressStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfDedicatedBasicInstallProgressStructType
      * @uses MyArrayOfDedicatedBasicInstallProgressStructType::setItem()
-     * @param \PayPal\StructType\DedicatedBasicInstallProgressStruct[] $item
+     * @param \Ovh\StructType\DedicatedBasicInstallProgressStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfDedicatedBasicInstallProgressStructType extends AbstractStructArr
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\DedicatedBasicInstallProgressStruct[]|null
+     * @return \Ovh\StructType\DedicatedBasicInstallProgressStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfDedicatedBasicInstallProgressStructType extends AbstractStructArr
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedBasicInstallProgressStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedBasicInstallProgressStructType
+     * @param \Ovh\StructType\DedicatedBasicInstallProgressStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedBasicInstallProgressStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfDedicatedBasicInstallProgressStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfDedicatedBasicInstallProgressStructTypeItemItem instanceof \PayPal\StructType\DedicatedBasicInstallProgressStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedBasicInstallProgressStruct, "%s" given', is_object($myArrayOfDedicatedBasicInstallProgressStructTypeItemItem) ? get_class($myArrayOfDedicatedBasicInstallProgressStructTypeItemItem) : gettype($myArrayOfDedicatedBasicInstallProgressStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfDedicatedBasicInstallProgressStructTypeItemItem instanceof \Ovh\StructType\DedicatedBasicInstallProgressStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedBasicInstallProgressStruct, "%s" given', is_object($myArrayOfDedicatedBasicInstallProgressStructTypeItemItem) ? get_class($myArrayOfDedicatedBasicInstallProgressStructTypeItemItem) : gettype($myArrayOfDedicatedBasicInstallProgressStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfDedicatedBasicInstallProgressStructType extends AbstractStructArr
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedBasicInstallProgressStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedBasicInstallProgressStructType
+     * @param \Ovh\StructType\DedicatedBasicInstallProgressStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedBasicInstallProgressStructType
      */
-    public function addToItem(\PayPal\StructType\DedicatedBasicInstallProgressStruct $item)
+    public function addToItem(\Ovh\StructType\DedicatedBasicInstallProgressStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\DedicatedBasicInstallProgressStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedBasicInstallProgressStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\DedicatedBasicInstallProgressStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedBasicInstallProgressStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfDedicatedBasicInstallProgressStructType extends AbstractStructArr
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\DedicatedBasicInstallProgressStruct|null
+     * @return \Ovh\StructType\DedicatedBasicInstallProgressStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfDedicatedBasicInstallProgressStructType extends AbstractStructArr
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\DedicatedBasicInstallProgressStruct|null
+     * @return \Ovh\StructType\DedicatedBasicInstallProgressStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfDedicatedBasicInstallProgressStructType extends AbstractStructArr
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\DedicatedBasicInstallProgressStruct|null
+     * @return \Ovh\StructType\DedicatedBasicInstallProgressStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfDedicatedBasicInstallProgressStructType extends AbstractStructArr
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\DedicatedBasicInstallProgressStruct|null
+     * @return \Ovh\StructType\DedicatedBasicInstallProgressStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfDedicatedBasicInstallProgressStructType extends AbstractStructArr
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\DedicatedBasicInstallProgressStruct|null
+     * @return \Ovh\StructType\DedicatedBasicInstallProgressStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfDedicatedBasicInstallProgressStructType extends AbstractStructArr
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedBasicInstallProgressStructType
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedBasicInstallProgressStructType
      */
     public static function __set_state(array $array)
     {

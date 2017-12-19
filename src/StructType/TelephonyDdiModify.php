@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class TelephonyDdiModify extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyDdiModify
+     * @return \Ovh\StructType\TelephonyDdiModify
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class TelephonyDdiModify extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyDdiModify
+     * @return \Ovh\StructType\TelephonyDdiModify
      */
     public function setNumber($number = null)
     {
@@ -123,7 +123,7 @@ class TelephonyDdiModify extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyDdiModify
+     * @return \Ovh\StructType\TelephonyDdiModify
      */
     public function setCountry($country = null)
     {
@@ -145,7 +145,7 @@ class TelephonyDdiModify extends AbstractStructBase
     /**
      * Set billingAccount value
      * @param string $billingAccount
-     * @return \PayPal\StructType\TelephonyDdiModify
+     * @return \Ovh\StructType\TelephonyDdiModify
      */
     public function setBillingAccount($billingAccount = null)
     {
@@ -167,7 +167,7 @@ class TelephonyDdiModify extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \PayPal\StructType\TelephonyDdiModify
+     * @return \Ovh\StructType\TelephonyDdiModify
      */
     public function setDestination($destination = null)
     {
@@ -184,7 +184,7 @@ class TelephonyDdiModify extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyDdiModify
+     * @return \Ovh\StructType\TelephonyDdiModify
      */
     public static function __set_state(array $array)
     {

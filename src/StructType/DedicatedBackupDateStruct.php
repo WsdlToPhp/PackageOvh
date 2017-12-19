@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class DedicatedBackupDateStruct extends AbstractStructBase
     /**
      * Set hour value
      * @param string $hour
-     * @return \PayPal\StructType\DedicatedBackupDateStruct
+     * @return \Ovh\StructType\DedicatedBackupDateStruct
      */
     public function setHour($hour = null)
     {
@@ -91,7 +91,7 @@ class DedicatedBackupDateStruct extends AbstractStructBase
     /**
      * Set superBackupName value
      * @param string $superBackupName
-     * @return \PayPal\StructType\DedicatedBackupDateStruct
+     * @return \Ovh\StructType\DedicatedBackupDateStruct
      */
     public function setSuperBackupName($superBackupName = null)
     {
@@ -113,7 +113,7 @@ class DedicatedBackupDateStruct extends AbstractStructBase
     /**
      * Set day value
      * @param string $day
-     * @return \PayPal\StructType\DedicatedBackupDateStruct
+     * @return \Ovh\StructType\DedicatedBackupDateStruct
      */
     public function setDay($day = null)
     {
@@ -135,7 +135,7 @@ class DedicatedBackupDateStruct extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\DedicatedBackupDateStruct
+     * @return \Ovh\StructType\DedicatedBackupDateStruct
      */
     public function setId($id = null)
     {
@@ -157,7 +157,7 @@ class DedicatedBackupDateStruct extends AbstractStructBase
     /**
      * Set backupCount value
      * @param int $backupCount
-     * @return \PayPal\StructType\DedicatedBackupDateStruct
+     * @return \Ovh\StructType\DedicatedBackupDateStruct
      */
     public function setBackupCount($backupCount = null)
     {
@@ -174,7 +174,7 @@ class DedicatedBackupDateStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedBackupDateStruct
+     * @return \Ovh\StructType\DedicatedBackupDateStruct
      */
     public static function __set_state(array $array)
     {

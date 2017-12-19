@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedReverseDel $parameters
-     * @return \PayPal\StructType\DedicatedReverseDelResponse|bool
+     * @param \Ovh\StructType\DedicatedReverseDel $parameters
+     * @return \Ovh\StructType\DedicatedReverseDelResponse|bool
      */
-    public function dedicatedReverseDel(\PayPal\StructType\DedicatedReverseDel $parameters)
+    public function dedicatedReverseDel(\Ovh\StructType\DedicatedReverseDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedReverseDel($parameters));
@@ -36,10 +36,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedDelServiceMonitoringAlert $parameters
-     * @return \PayPal\StructType\DedicatedDelServiceMonitoringAlertResponse|bool
+     * @param \Ovh\StructType\DedicatedDelServiceMonitoringAlert $parameters
+     * @return \Ovh\StructType\DedicatedDelServiceMonitoringAlertResponse|bool
      */
-    public function dedicatedDelServiceMonitoringAlert(\PayPal\StructType\DedicatedDelServiceMonitoringAlert $parameters)
+    public function dedicatedDelServiceMonitoringAlert(\Ovh\StructType\DedicatedDelServiceMonitoringAlert $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedDelServiceMonitoringAlert($parameters));
@@ -56,10 +56,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedAddServiceMonitoringAlertSMS $parameters
-     * @return \PayPal\StructType\DedicatedAddServiceMonitoringAlertSMSResponse|bool
+     * @param \Ovh\StructType\DedicatedAddServiceMonitoringAlertSMS $parameters
+     * @return \Ovh\StructType\DedicatedAddServiceMonitoringAlertSMSResponse|bool
      */
-    public function dedicatedAddServiceMonitoringAlertSMS(\PayPal\StructType\DedicatedAddServiceMonitoringAlertSMS $parameters)
+    public function dedicatedAddServiceMonitoringAlertSMS(\Ovh\StructType\DedicatedAddServiceMonitoringAlertSMS $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedAddServiceMonitoringAlertSMS($parameters));
@@ -75,10 +75,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedIpLoadBalancingList $parameters
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingListResponse|bool
+     * @param \Ovh\StructType\DedicatedIpLoadBalancingList $parameters
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingListResponse|bool
      */
-    public function dedicatedIpLoadBalancingList(\PayPal\StructType\DedicatedIpLoadBalancingList $parameters)
+    public function dedicatedIpLoadBalancingList(\Ovh\StructType\DedicatedIpLoadBalancingList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedIpLoadBalancingList($parameters));
@@ -95,10 +95,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedBackupReinstallConfiguration $parameters
-     * @return \PayPal\StructType\DedicatedBackupReinstallConfigurationResponse|bool
+     * @param \Ovh\StructType\DedicatedBackupReinstallConfiguration $parameters
+     * @return \Ovh\StructType\DedicatedBackupReinstallConfigurationResponse|bool
      */
-    public function dedicatedBackupReinstallConfiguration(\PayPal\StructType\DedicatedBackupReinstallConfiguration $parameters)
+    public function dedicatedBackupReinstallConfiguration(\Ovh\StructType\DedicatedBackupReinstallConfiguration $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedBackupReinstallConfiguration($parameters));
@@ -114,10 +114,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedBackupGetHisto $parameters
-     * @return \PayPal\StructType\DedicatedBackupGetHistoResponse|bool
+     * @param \Ovh\StructType\DedicatedBackupGetHisto $parameters
+     * @return \Ovh\StructType\DedicatedBackupGetHistoResponse|bool
      */
-    public function dedicatedBackupGetHisto(\PayPal\StructType\DedicatedBackupGetHisto $parameters)
+    public function dedicatedBackupGetHisto(\Ovh\StructType\DedicatedBackupGetHisto $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedBackupGetHisto($parameters));
@@ -133,10 +133,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedBackupUpdate $parameters
-     * @return \PayPal\StructType\DedicatedBackupUpdateResponse|bool
+     * @param \Ovh\StructType\DedicatedBackupUpdate $parameters
+     * @return \Ovh\StructType\DedicatedBackupUpdateResponse|bool
      */
-    public function dedicatedBackupUpdate(\PayPal\StructType\DedicatedBackupUpdate $parameters)
+    public function dedicatedBackupUpdate(\Ovh\StructType\DedicatedBackupUpdate $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedBackupUpdate($parameters));
@@ -152,10 +152,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedNetbootGetRescueEmail $parameters
-     * @return \PayPal\StructType\DedicatedNetbootGetRescueEmailResponse|bool
+     * @param \Ovh\StructType\DedicatedNetbootGetRescueEmail $parameters
+     * @return \Ovh\StructType\DedicatedNetbootGetRescueEmailResponse|bool
      */
-    public function dedicatedNetbootGetRescueEmail(\PayPal\StructType\DedicatedNetbootGetRescueEmail $parameters)
+    public function dedicatedNetbootGetRescueEmail(\Ovh\StructType\DedicatedNetbootGetRescueEmail $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedNetbootGetRescueEmail($parameters));
@@ -171,10 +171,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedRtmListBackdoor $parameters
-     * @return \PayPal\StructType\DedicatedRtmListBackdoorResponse|bool
+     * @param \Ovh\StructType\DedicatedRtmListBackdoor $parameters
+     * @return \Ovh\StructType\DedicatedRtmListBackdoorResponse|bool
      */
-    public function dedicatedRtmListBackdoor(\PayPal\StructType\DedicatedRtmListBackdoor $parameters)
+    public function dedicatedRtmListBackdoor(\Ovh\StructType\DedicatedRtmListBackdoor $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedRtmListBackdoor($parameters));
@@ -191,10 +191,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedMonitoringNotificationCreate $parameters
-     * @return \PayPal\StructType\DedicatedMonitoringNotificationCreateResponse|bool
+     * @param \Ovh\StructType\DedicatedMonitoringNotificationCreate $parameters
+     * @return \Ovh\StructType\DedicatedMonitoringNotificationCreateResponse|bool
      */
-    public function dedicatedMonitoringNotificationCreate(\PayPal\StructType\DedicatedMonitoringNotificationCreate $parameters)
+    public function dedicatedMonitoringNotificationCreate(\Ovh\StructType\DedicatedMonitoringNotificationCreate $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedMonitoringNotificationCreate($parameters));
@@ -210,10 +210,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedBackupList $parameters
-     * @return \PayPal\StructType\DedicatedBackupListResponse|bool
+     * @param \Ovh\StructType\DedicatedBackupList $parameters
+     * @return \Ovh\StructType\DedicatedBackupListResponse|bool
      */
-    public function dedicatedBackupList(\PayPal\StructType\DedicatedBackupList $parameters)
+    public function dedicatedBackupList(\Ovh\StructType\DedicatedBackupList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedBackupList($parameters));
@@ -229,10 +229,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedNetbootGetAll $parameters
-     * @return \PayPal\StructType\DedicatedNetbootGetAllResponse|bool
+     * @param \Ovh\StructType\DedicatedNetbootGetAll $parameters
+     * @return \Ovh\StructType\DedicatedNetbootGetAllResponse|bool
      */
-    public function dedicatedNetbootGetAll(\PayPal\StructType\DedicatedNetbootGetAll $parameters)
+    public function dedicatedNetbootGetAll(\Ovh\StructType\DedicatedNetbootGetAll $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedNetbootGetAll($parameters));
@@ -249,10 +249,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedVirtualMacIpAvailableGetList $parameters
-     * @return \PayPal\StructType\DedicatedVirtualMacIpAvailableGetListResponse|bool
+     * @param \Ovh\StructType\DedicatedVirtualMacIpAvailableGetList $parameters
+     * @return \Ovh\StructType\DedicatedVirtualMacIpAvailableGetListResponse|bool
      */
-    public function dedicatedVirtualMacIpAvailableGetList(\PayPal\StructType\DedicatedVirtualMacIpAvailableGetList $parameters)
+    public function dedicatedVirtualMacIpAvailableGetList(\Ovh\StructType\DedicatedVirtualMacIpAvailableGetList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedVirtualMacIpAvailableGetList($parameters));
@@ -268,10 +268,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedMonitoringSMSCreate $parameters
-     * @return \PayPal\StructType\DedicatedMonitoringSMSCreateResponse|bool
+     * @param \Ovh\StructType\DedicatedMonitoringSMSCreate $parameters
+     * @return \Ovh\StructType\DedicatedMonitoringSMSCreateResponse|bool
      */
-    public function dedicatedMonitoringSMSCreate(\PayPal\StructType\DedicatedMonitoringSMSCreate $parameters)
+    public function dedicatedMonitoringSMSCreate(\Ovh\StructType\DedicatedMonitoringSMSCreate $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedMonitoringSMSCreate($parameters));
@@ -287,10 +287,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedRipeQuery $parameters
-     * @return \PayPal\StructType\DedicatedRipeQueryResponse|bool
+     * @param \Ovh\StructType\DedicatedRipeQuery $parameters
+     * @return \Ovh\StructType\DedicatedRipeQueryResponse|bool
      */
-    public function dedicatedRipeQuery(\PayPal\StructType\DedicatedRipeQuery $parameters)
+    public function dedicatedRipeQuery(\Ovh\StructType\DedicatedRipeQuery $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedRipeQuery($parameters));
@@ -306,10 +306,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedBackupFtpPassword $parameters
-     * @return \PayPal\StructType\DedicatedBackupFtpPasswordResponse|bool
+     * @param \Ovh\StructType\DedicatedBackupFtpPassword $parameters
+     * @return \Ovh\StructType\DedicatedBackupFtpPasswordResponse|bool
      */
-    public function dedicatedBackupFtpPassword(\PayPal\StructType\DedicatedBackupFtpPassword $parameters)
+    public function dedicatedBackupFtpPassword(\Ovh\StructType\DedicatedBackupFtpPassword $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedBackupFtpPassword($parameters));
@@ -325,10 +325,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedRtmBackdoorUpdateAlert $parameters
-     * @return \PayPal\StructType\DedicatedRtmBackdoorUpdateAlertResponse|bool
+     * @param \Ovh\StructType\DedicatedRtmBackdoorUpdateAlert $parameters
+     * @return \Ovh\StructType\DedicatedRtmBackdoorUpdateAlertResponse|bool
      */
-    public function dedicatedRtmBackdoorUpdateAlert(\PayPal\StructType\DedicatedRtmBackdoorUpdateAlert $parameters)
+    public function dedicatedRtmBackdoorUpdateAlert(\Ovh\StructType\DedicatedRtmBackdoorUpdateAlert $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedRtmBackdoorUpdateAlert($parameters));
@@ -344,10 +344,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedSecondaryDNSAdd $parameters
-     * @return \PayPal\StructType\DedicatedSecondaryDNSAddResponse|bool
+     * @param \Ovh\StructType\DedicatedSecondaryDNSAdd $parameters
+     * @return \Ovh\StructType\DedicatedSecondaryDNSAddResponse|bool
      */
-    public function dedicatedSecondaryDNSAdd(\PayPal\StructType\DedicatedSecondaryDNSAdd $parameters)
+    public function dedicatedSecondaryDNSAdd(\Ovh\StructType\DedicatedSecondaryDNSAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedSecondaryDNSAdd($parameters));
@@ -363,10 +363,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedRtmGetStatus $parameters
-     * @return \PayPal\StructType\DedicatedRtmGetStatusResponse|bool
+     * @param \Ovh\StructType\DedicatedRtmGetStatus $parameters
+     * @return \Ovh\StructType\DedicatedRtmGetStatusResponse|bool
      */
-    public function dedicatedRtmGetStatus(\PayPal\StructType\DedicatedRtmGetStatus $parameters)
+    public function dedicatedRtmGetStatus(\Ovh\StructType\DedicatedRtmGetStatus $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedRtmGetStatus($parameters));
@@ -382,10 +382,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedNetbootGetAvailable $parameters
-     * @return \PayPal\StructType\DedicatedNetbootGetAvailableResponse|bool
+     * @param \Ovh\StructType\DedicatedNetbootGetAvailable $parameters
+     * @return \Ovh\StructType\DedicatedNetbootGetAvailableResponse|bool
      */
-    public function dedicatedNetbootGetAvailable(\PayPal\StructType\DedicatedNetbootGetAvailable $parameters)
+    public function dedicatedNetbootGetAvailable(\Ovh\StructType\DedicatedNetbootGetAvailable $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedNetbootGetAvailable($parameters));
@@ -401,10 +401,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedMailinglistGetAllowed $parameters
-     * @return \PayPal\StructType\DedicatedMailinglistGetAllowedResponse|bool
+     * @param \Ovh\StructType\DedicatedMailinglistGetAllowed $parameters
+     * @return \Ovh\StructType\DedicatedMailinglistGetAllowedResponse|bool
      */
-    public function dedicatedMailinglistGetAllowed(\PayPal\StructType\DedicatedMailinglistGetAllowed $parameters)
+    public function dedicatedMailinglistGetAllowed(\Ovh\StructType\DedicatedMailinglistGetAllowed $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedMailinglistGetAllowed($parameters));
@@ -420,10 +420,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedBackupInfo $parameters
-     * @return \PayPal\StructType\DedicatedBackupInfoResponse|bool
+     * @param \Ovh\StructType\DedicatedBackupInfo $parameters
+     * @return \Ovh\StructType\DedicatedBackupInfoResponse|bool
      */
-    public function dedicatedBackupInfo(\PayPal\StructType\DedicatedBackupInfo $parameters)
+    public function dedicatedBackupInfo(\Ovh\StructType\DedicatedBackupInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedBackupInfo($parameters));
@@ -439,10 +439,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedFailoverRipeAdd $parameters
-     * @return \PayPal\StructType\DedicatedFailoverRipeAddResponse|bool
+     * @param \Ovh\StructType\DedicatedFailoverRipeAdd $parameters
+     * @return \Ovh\StructType\DedicatedFailoverRipeAddResponse|bool
      */
-    public function dedicatedFailoverRipeAdd(\PayPal\StructType\DedicatedFailoverRipeAdd $parameters)
+    public function dedicatedFailoverRipeAdd(\Ovh\StructType\DedicatedFailoverRipeAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedFailoverRipeAdd($parameters));
@@ -458,10 +458,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedFilterIrcClientRuleAdd $parameters
-     * @return \PayPal\StructType\DedicatedFilterIrcClientRuleAddResponse|bool
+     * @param \Ovh\StructType\DedicatedFilterIrcClientRuleAdd $parameters
+     * @return \Ovh\StructType\DedicatedFilterIrcClientRuleAddResponse|bool
      */
-    public function dedicatedFilterIrcClientRuleAdd(\PayPal\StructType\DedicatedFilterIrcClientRuleAdd $parameters)
+    public function dedicatedFilterIrcClientRuleAdd(\Ovh\StructType\DedicatedFilterIrcClientRuleAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedFilterIrcClientRuleAdd($parameters));
@@ -477,10 +477,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedInstallationTemplateList $parameters
-     * @return \PayPal\StructType\DedicatedInstallationTemplateListResponse|bool
+     * @param \Ovh\StructType\DedicatedInstallationTemplateList $parameters
+     * @return \Ovh\StructType\DedicatedInstallationTemplateListResponse|bool
      */
-    public function dedicatedInstallationTemplateList(\PayPal\StructType\DedicatedInstallationTemplateList $parameters)
+    public function dedicatedInstallationTemplateList(\Ovh\StructType\DedicatedInstallationTemplateList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedInstallationTemplateList($parameters));
@@ -496,10 +496,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedBackupGetCalendar $parameters
-     * @return \PayPal\StructType\DedicatedBackupGetCalendarResponse|bool
+     * @param \Ovh\StructType\DedicatedBackupGetCalendar $parameters
+     * @return \Ovh\StructType\DedicatedBackupGetCalendarResponse|bool
      */
-    public function dedicatedBackupGetCalendar(\PayPal\StructType\DedicatedBackupGetCalendar $parameters)
+    public function dedicatedBackupGetCalendar(\Ovh\StructType\DedicatedBackupGetCalendar $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedBackupGetCalendar($parameters));
@@ -515,10 +515,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedIpLoadBalancingServerDel $parameters
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingServerDelResponse|bool
+     * @param \Ovh\StructType\DedicatedIpLoadBalancingServerDel $parameters
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingServerDelResponse|bool
      */
-    public function dedicatedIpLoadBalancingServerDel(\PayPal\StructType\DedicatedIpLoadBalancingServerDel $parameters)
+    public function dedicatedIpLoadBalancingServerDel(\Ovh\StructType\DedicatedIpLoadBalancingServerDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedIpLoadBalancingServerDel($parameters));
@@ -534,10 +534,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedEditServiceMonitoringItem $parameters
-     * @return \PayPal\StructType\DedicatedEditServiceMonitoringItemResponse|bool
+     * @param \Ovh\StructType\DedicatedEditServiceMonitoringItem $parameters
+     * @return \Ovh\StructType\DedicatedEditServiceMonitoringItemResponse|bool
      */
-    public function dedicatedEditServiceMonitoringItem(\PayPal\StructType\DedicatedEditServiceMonitoringItem $parameters)
+    public function dedicatedEditServiceMonitoringItem(\Ovh\StructType\DedicatedEditServiceMonitoringItem $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedEditServiceMonitoringItem($parameters));
@@ -553,10 +553,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedIPForUDPServerList $parameters
-     * @return \PayPal\StructType\DedicatedIPForUDPServerListResponse|bool
+     * @param \Ovh\StructType\DedicatedIPForUDPServerList $parameters
+     * @return \Ovh\StructType\DedicatedIPForUDPServerListResponse|bool
      */
-    public function dedicatedIPForUDPServerList(\PayPal\StructType\DedicatedIPForUDPServerList $parameters)
+    public function dedicatedIPForUDPServerList(\Ovh\StructType\DedicatedIPForUDPServerList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedIPForUDPServerList($parameters));
@@ -572,10 +572,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedBackupSet $parameters
-     * @return \PayPal\StructType\DedicatedBackupSetResponse|bool
+     * @param \Ovh\StructType\DedicatedBackupSet $parameters
+     * @return \Ovh\StructType\DedicatedBackupSetResponse|bool
      */
-    public function dedicatedBackupSet(\PayPal\StructType\DedicatedBackupSet $parameters)
+    public function dedicatedBackupSet(\Ovh\StructType\DedicatedBackupSet $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedBackupSet($parameters));
@@ -591,10 +591,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedVirtualMacIpDelete $parameters
-     * @return \PayPal\StructType\DedicatedVirtualMacIpDeleteResponse|bool
+     * @param \Ovh\StructType\DedicatedVirtualMacIpDelete $parameters
+     * @return \Ovh\StructType\DedicatedVirtualMacIpDeleteResponse|bool
      */
-    public function dedicatedVirtualMacIpDelete(\PayPal\StructType\DedicatedVirtualMacIpDelete $parameters)
+    public function dedicatedVirtualMacIpDelete(\Ovh\StructType\DedicatedVirtualMacIpDelete $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedVirtualMacIpDelete($parameters));
@@ -610,10 +610,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedFailoverRipeSplit $parameters
-     * @return \PayPal\StructType\DedicatedFailoverRipeSplitResponse|bool
+     * @param \Ovh\StructType\DedicatedFailoverRipeSplit $parameters
+     * @return \Ovh\StructType\DedicatedFailoverRipeSplitResponse|bool
      */
-    public function dedicatedFailoverRipeSplit(\PayPal\StructType\DedicatedFailoverRipeSplit $parameters)
+    public function dedicatedFailoverRipeSplit(\Ovh\StructType\DedicatedFailoverRipeSplit $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedFailoverRipeSplit($parameters));
@@ -629,10 +629,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedReverseInfo $parameters
-     * @return \PayPal\StructType\DedicatedReverseInfoResponse|bool
+     * @param \Ovh\StructType\DedicatedReverseInfo $parameters
+     * @return \Ovh\StructType\DedicatedReverseInfoResponse|bool
      */
-    public function dedicatedReverseInfo(\PayPal\StructType\DedicatedReverseInfo $parameters)
+    public function dedicatedReverseInfo(\Ovh\StructType\DedicatedReverseInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedReverseInfo($parameters));
@@ -648,10 +648,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedCapabilitiesGetAll $parameters
-     * @return \PayPal\StructType\DedicatedCapabilitiesGetAllResponse|bool
+     * @param \Ovh\StructType\DedicatedCapabilitiesGetAll $parameters
+     * @return \Ovh\StructType\DedicatedCapabilitiesGetAllResponse|bool
      */
-    public function dedicatedCapabilitiesGetAll(\PayPal\StructType\DedicatedCapabilitiesGetAll $parameters)
+    public function dedicatedCapabilitiesGetAll(\Ovh\StructType\DedicatedCapabilitiesGetAll $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedCapabilitiesGetAll($parameters));
@@ -667,10 +667,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedBackupIncludeAdd $parameters
-     * @return \PayPal\StructType\DedicatedBackupIncludeAddResponse|bool
+     * @param \Ovh\StructType\DedicatedBackupIncludeAdd $parameters
+     * @return \Ovh\StructType\DedicatedBackupIncludeAddResponse|bool
      */
-    public function dedicatedBackupIncludeAdd(\PayPal\StructType\DedicatedBackupIncludeAdd $parameters)
+    public function dedicatedBackupIncludeAdd(\Ovh\StructType\DedicatedBackupIncludeAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedBackupIncludeAdd($parameters));
@@ -686,10 +686,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedFailoverRipeList $parameters
-     * @return \PayPal\StructType\DedicatedFailoverRipeListResponse|bool
+     * @param \Ovh\StructType\DedicatedFailoverRipeList $parameters
+     * @return \Ovh\StructType\DedicatedFailoverRipeListResponse|bool
      */
-    public function dedicatedFailoverRipeList(\PayPal\StructType\DedicatedFailoverRipeList $parameters)
+    public function dedicatedFailoverRipeList(\Ovh\StructType\DedicatedFailoverRipeList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedFailoverRipeList($parameters));
@@ -705,10 +705,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedMonitoringServiceAdd $parameters
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAddResponse|bool
+     * @param \Ovh\StructType\DedicatedMonitoringServiceAdd $parameters
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAddResponse|bool
      */
-    public function dedicatedMonitoringServiceAdd(\PayPal\StructType\DedicatedMonitoringServiceAdd $parameters)
+    public function dedicatedMonitoringServiceAdd(\Ovh\StructType\DedicatedMonitoringServiceAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedMonitoringServiceAdd($parameters));
@@ -724,10 +724,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedHardRebootDo $parameters
-     * @return \PayPal\StructType\DedicatedHardRebootDoResponse|bool
+     * @param \Ovh\StructType\DedicatedHardRebootDo $parameters
+     * @return \Ovh\StructType\DedicatedHardRebootDoResponse|bool
      */
-    public function dedicatedHardRebootDo(\PayPal\StructType\DedicatedHardRebootDo $parameters)
+    public function dedicatedHardRebootDo(\Ovh\StructType\DedicatedHardRebootDo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedHardRebootDo($parameters));
@@ -743,10 +743,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedReverseList $parameters
-     * @return \PayPal\StructType\DedicatedReverseListResponse|bool
+     * @param \Ovh\StructType\DedicatedReverseList $parameters
+     * @return \Ovh\StructType\DedicatedReverseListResponse|bool
      */
-    public function dedicatedReverseList(\PayPal\StructType\DedicatedReverseList $parameters)
+    public function dedicatedReverseList(\Ovh\StructType\DedicatedReverseList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedReverseList($parameters));
@@ -762,10 +762,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedBackupFtpAdd $parameters
-     * @return \PayPal\StructType\DedicatedBackupFtpAddResponse|bool
+     * @param \Ovh\StructType\DedicatedBackupFtpAdd $parameters
+     * @return \Ovh\StructType\DedicatedBackupFtpAddResponse|bool
      */
-    public function dedicatedBackupFtpAdd(\PayPal\StructType\DedicatedBackupFtpAdd $parameters)
+    public function dedicatedBackupFtpAdd(\Ovh\StructType\DedicatedBackupFtpAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedBackupFtpAdd($parameters));
@@ -781,10 +781,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedVirtualMacIpUsedGetList $parameters
-     * @return \PayPal\StructType\DedicatedVirtualMacIpUsedGetListResponse|bool
+     * @param \Ovh\StructType\DedicatedVirtualMacIpUsedGetList $parameters
+     * @return \Ovh\StructType\DedicatedVirtualMacIpUsedGetListResponse|bool
      */
-    public function dedicatedVirtualMacIpUsedGetList(\PayPal\StructType\DedicatedVirtualMacIpUsedGetList $parameters)
+    public function dedicatedVirtualMacIpUsedGetList(\Ovh\StructType\DedicatedVirtualMacIpUsedGetList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedVirtualMacIpUsedGetList($parameters));
@@ -800,10 +800,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedNetbootInfo $parameters
-     * @return \PayPal\StructType\DedicatedNetbootInfoResponse|bool
+     * @param \Ovh\StructType\DedicatedNetbootInfo $parameters
+     * @return \Ovh\StructType\DedicatedNetbootInfoResponse|bool
      */
-    public function dedicatedNetbootInfo(\PayPal\StructType\DedicatedNetbootInfo $parameters)
+    public function dedicatedNetbootInfo(\Ovh\StructType\DedicatedNetbootInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedNetbootInfo($parameters));
@@ -819,10 +819,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedIpLoadBalancingAdd $parameters
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingAddResponse|bool
+     * @param \Ovh\StructType\DedicatedIpLoadBalancingAdd $parameters
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingAddResponse|bool
      */
-    public function dedicatedIpLoadBalancingAdd(\PayPal\StructType\DedicatedIpLoadBalancingAdd $parameters)
+    public function dedicatedIpLoadBalancingAdd(\Ovh\StructType\DedicatedIpLoadBalancingAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedIpLoadBalancingAdd($parameters));
@@ -839,10 +839,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedAvailableNotificationNicsGet $parameters
-     * @return \PayPal\StructType\DedicatedAvailableNotificationNicsGetResponse|bool
+     * @param \Ovh\StructType\DedicatedAvailableNotificationNicsGet $parameters
+     * @return \Ovh\StructType\DedicatedAvailableNotificationNicsGetResponse|bool
      */
-    public function dedicatedAvailableNotificationNicsGet(\PayPal\StructType\DedicatedAvailableNotificationNicsGet $parameters)
+    public function dedicatedAvailableNotificationNicsGet(\Ovh\StructType\DedicatedAvailableNotificationNicsGet $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedAvailableNotificationNicsGet($parameters));
@@ -858,10 +858,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedMonitoringServiceDel $parameters
-     * @return \PayPal\StructType\DedicatedMonitoringServiceDelResponse|bool
+     * @param \Ovh\StructType\DedicatedMonitoringServiceDel $parameters
+     * @return \Ovh\StructType\DedicatedMonitoringServiceDelResponse|bool
      */
-    public function dedicatedMonitoringServiceDel(\PayPal\StructType\DedicatedMonitoringServiceDel $parameters)
+    public function dedicatedMonitoringServiceDel(\Ovh\StructType\DedicatedMonitoringServiceDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedMonitoringServiceDel($parameters));
@@ -878,10 +878,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedIpLoadBalancingServerStateModify $parameters
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingServerStateModifyResponse|bool
+     * @param \Ovh\StructType\DedicatedIpLoadBalancingServerStateModify $parameters
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingServerStateModifyResponse|bool
      */
-    public function dedicatedIpLoadBalancingServerStateModify(\PayPal\StructType\DedicatedIpLoadBalancingServerStateModify $parameters)
+    public function dedicatedIpLoadBalancingServerStateModify(\Ovh\StructType\DedicatedIpLoadBalancingServerStateModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedIpLoadBalancingServerStateModify($parameters));
@@ -897,10 +897,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedReverseModify $parameters
-     * @return \PayPal\StructType\DedicatedReverseModifyResponse|bool
+     * @param \Ovh\StructType\DedicatedReverseModify $parameters
+     * @return \Ovh\StructType\DedicatedReverseModifyResponse|bool
      */
-    public function dedicatedReverseModify(\PayPal\StructType\DedicatedReverseModify $parameters)
+    public function dedicatedReverseModify(\Ovh\StructType\DedicatedReverseModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedReverseModify($parameters));
@@ -916,10 +916,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedFailoverList $parameters
-     * @return \PayPal\StructType\DedicatedFailoverListResponse|bool
+     * @param \Ovh\StructType\DedicatedFailoverList $parameters
+     * @return \Ovh\StructType\DedicatedFailoverListResponse|bool
      */
-    public function dedicatedFailoverList(\PayPal\StructType\DedicatedFailoverList $parameters)
+    public function dedicatedFailoverList(\Ovh\StructType\DedicatedFailoverList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedFailoverList($parameters));
@@ -935,10 +935,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedSecondaryDNSInfo $parameters
-     * @return \PayPal\StructType\DedicatedSecondaryDNSInfoResponse|bool
+     * @param \Ovh\StructType\DedicatedSecondaryDNSInfo $parameters
+     * @return \Ovh\StructType\DedicatedSecondaryDNSInfoResponse|bool
      */
-    public function dedicatedSecondaryDNSInfo(\PayPal\StructType\DedicatedSecondaryDNSInfo $parameters)
+    public function dedicatedSecondaryDNSInfo(\Ovh\StructType\DedicatedSecondaryDNSInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedSecondaryDNSInfo($parameters));
@@ -954,10 +954,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedRipeUpdateInetnum $parameters
-     * @return \PayPal\StructType\DedicatedRipeUpdateInetnumResponse|bool
+     * @param \Ovh\StructType\DedicatedRipeUpdateInetnum $parameters
+     * @return \Ovh\StructType\DedicatedRipeUpdateInetnumResponse|bool
      */
-    public function dedicatedRipeUpdateInetnum(\PayPal\StructType\DedicatedRipeUpdateInetnum $parameters)
+    public function dedicatedRipeUpdateInetnum(\Ovh\StructType\DedicatedRipeUpdateInetnum $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedRipeUpdateInetnum($parameters));
@@ -974,10 +974,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedGetAvailableNetworkFromCountry $parameters
-     * @return \PayPal\StructType\DedicatedGetAvailableNetworkFromCountryResponse|bool
+     * @param \Ovh\StructType\DedicatedGetAvailableNetworkFromCountry $parameters
+     * @return \Ovh\StructType\DedicatedGetAvailableNetworkFromCountryResponse|bool
      */
-    public function dedicatedGetAvailableNetworkFromCountry(\PayPal\StructType\DedicatedGetAvailableNetworkFromCountry $parameters)
+    public function dedicatedGetAvailableNetworkFromCountry(\Ovh\StructType\DedicatedGetAvailableNetworkFromCountry $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedGetAvailableNetworkFromCountry($parameters));
@@ -993,10 +993,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedFailoverAdd $parameters
-     * @return \PayPal\StructType\DedicatedFailoverAddResponse|bool
+     * @param \Ovh\StructType\DedicatedFailoverAdd $parameters
+     * @return \Ovh\StructType\DedicatedFailoverAddResponse|bool
      */
-    public function dedicatedFailoverAdd(\PayPal\StructType\DedicatedFailoverAdd $parameters)
+    public function dedicatedFailoverAdd(\Ovh\StructType\DedicatedFailoverAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedFailoverAdd($parameters));
@@ -1012,10 +1012,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedFilterIrcServerRuleList $parameters
-     * @return \PayPal\StructType\DedicatedFilterIrcServerRuleListResponse|bool
+     * @param \Ovh\StructType\DedicatedFilterIrcServerRuleList $parameters
+     * @return \Ovh\StructType\DedicatedFilterIrcServerRuleListResponse|bool
      */
-    public function dedicatedFilterIrcServerRuleList(\PayPal\StructType\DedicatedFilterIrcServerRuleList $parameters)
+    public function dedicatedFilterIrcServerRuleList(\Ovh\StructType\DedicatedFilterIrcServerRuleList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedFilterIrcServerRuleList($parameters));
@@ -1031,10 +1031,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedRipeCreateOrganisation $parameters
-     * @return \PayPal\StructType\DedicatedRipeCreateOrganisationResponse|bool
+     * @param \Ovh\StructType\DedicatedRipeCreateOrganisation $parameters
+     * @return \Ovh\StructType\DedicatedRipeCreateOrganisationResponse|bool
      */
-    public function dedicatedRipeCreateOrganisation(\PayPal\StructType\DedicatedRipeCreateOrganisation $parameters)
+    public function dedicatedRipeCreateOrganisation(\Ovh\StructType\DedicatedRipeCreateOrganisation $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedRipeCreateOrganisation($parameters));
@@ -1050,10 +1050,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedBackupExcludeAdd $parameters
-     * @return \PayPal\StructType\DedicatedBackupExcludeAddResponse|bool
+     * @param \Ovh\StructType\DedicatedBackupExcludeAdd $parameters
+     * @return \Ovh\StructType\DedicatedBackupExcludeAddResponse|bool
      */
-    public function dedicatedBackupExcludeAdd(\PayPal\StructType\DedicatedBackupExcludeAdd $parameters)
+    public function dedicatedBackupExcludeAdd(\Ovh\StructType\DedicatedBackupExcludeAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedBackupExcludeAdd($parameters));
@@ -1069,10 +1069,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedFilterIrcServerRuleDel $parameters
-     * @return \PayPal\StructType\DedicatedFilterIrcServerRuleDelResponse|bool
+     * @param \Ovh\StructType\DedicatedFilterIrcServerRuleDel $parameters
+     * @return \Ovh\StructType\DedicatedFilterIrcServerRuleDelResponse|bool
      */
-    public function dedicatedFilterIrcServerRuleDel(\PayPal\StructType\DedicatedFilterIrcServerRuleDel $parameters)
+    public function dedicatedFilterIrcServerRuleDel(\Ovh\StructType\DedicatedFilterIrcServerRuleDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedFilterIrcServerRuleDel($parameters));
@@ -1088,10 +1088,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedFailoverRipeModify $parameters
-     * @return \PayPal\StructType\DedicatedFailoverRipeModifyResponse|bool
+     * @param \Ovh\StructType\DedicatedFailoverRipeModify $parameters
+     * @return \Ovh\StructType\DedicatedFailoverRipeModifyResponse|bool
      */
-    public function dedicatedFailoverRipeModify(\PayPal\StructType\DedicatedFailoverRipeModify $parameters)
+    public function dedicatedFailoverRipeModify(\Ovh\StructType\DedicatedFailoverRipeModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedFailoverRipeModify($parameters));
@@ -1107,10 +1107,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedMonitoringList $parameters
-     * @return \PayPal\StructType\DedicatedMonitoringListResponse|bool
+     * @param \Ovh\StructType\DedicatedMonitoringList $parameters
+     * @return \Ovh\StructType\DedicatedMonitoringListResponse|bool
      */
-    public function dedicatedMonitoringList(\PayPal\StructType\DedicatedMonitoringList $parameters)
+    public function dedicatedMonitoringList(\Ovh\StructType\DedicatedMonitoringList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedMonitoringList($parameters));
@@ -1126,10 +1126,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedBackupExcludeDel $parameters
-     * @return \PayPal\StructType\DedicatedBackupExcludeDelResponse|bool
+     * @param \Ovh\StructType\DedicatedBackupExcludeDel $parameters
+     * @return \Ovh\StructType\DedicatedBackupExcludeDelResponse|bool
      */
-    public function dedicatedBackupExcludeDel(\PayPal\StructType\DedicatedBackupExcludeDel $parameters)
+    public function dedicatedBackupExcludeDel(\Ovh\StructType\DedicatedBackupExcludeDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedBackupExcludeDel($parameters));
@@ -1145,10 +1145,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedHardRebootStatus $parameters
-     * @return \PayPal\StructType\DedicatedHardRebootStatusResponse|bool
+     * @param \Ovh\StructType\DedicatedHardRebootStatus $parameters
+     * @return \Ovh\StructType\DedicatedHardRebootStatusResponse|bool
      */
-    public function dedicatedHardRebootStatus(\PayPal\StructType\DedicatedHardRebootStatus $parameters)
+    public function dedicatedHardRebootStatus(\Ovh\StructType\DedicatedHardRebootStatus $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedHardRebootStatus($parameters));
@@ -1164,10 +1164,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedGetServiceMonitoringItem $parameters
-     * @return \PayPal\StructType\DedicatedGetServiceMonitoringItemResponse|bool
+     * @param \Ovh\StructType\DedicatedGetServiceMonitoringItem $parameters
+     * @return \Ovh\StructType\DedicatedGetServiceMonitoringItemResponse|bool
      */
-    public function dedicatedGetServiceMonitoringItem(\PayPal\StructType\DedicatedGetServiceMonitoringItem $parameters)
+    public function dedicatedGetServiceMonitoringItem(\Ovh\StructType\DedicatedGetServiceMonitoringItem $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedGetServiceMonitoringItem($parameters));
@@ -1183,10 +1183,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedReverseAdd $parameters
-     * @return \PayPal\StructType\DedicatedReverseAddResponse|bool
+     * @param \Ovh\StructType\DedicatedReverseAdd $parameters
+     * @return \Ovh\StructType\DedicatedReverseAddResponse|bool
      */
-    public function dedicatedReverseAdd(\PayPal\StructType\DedicatedReverseAdd $parameters)
+    public function dedicatedReverseAdd(\Ovh\StructType\DedicatedReverseAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedReverseAdd($parameters));
@@ -1202,10 +1202,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedBackupGetFreePlanning $parameters
-     * @return \PayPal\StructType\DedicatedBackupGetFreePlanningResponse|bool
+     * @param \Ovh\StructType\DedicatedBackupGetFreePlanning $parameters
+     * @return \Ovh\StructType\DedicatedBackupGetFreePlanningResponse|bool
      */
-    public function dedicatedBackupGetFreePlanning(\PayPal\StructType\DedicatedBackupGetFreePlanning $parameters)
+    public function dedicatedBackupGetFreePlanning(\Ovh\StructType\DedicatedBackupGetFreePlanning $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedBackupGetFreePlanning($parameters));
@@ -1222,10 +1222,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedInstallAllowedDistributionGet $parameters
-     * @return \PayPal\StructType\DedicatedInstallAllowedDistributionGetResponse|bool
+     * @param \Ovh\StructType\DedicatedInstallAllowedDistributionGet $parameters
+     * @return \Ovh\StructType\DedicatedInstallAllowedDistributionGetResponse|bool
      */
-    public function dedicatedInstallAllowedDistributionGet(\PayPal\StructType\DedicatedInstallAllowedDistributionGet $parameters)
+    public function dedicatedInstallAllowedDistributionGet(\Ovh\StructType\DedicatedInstallAllowedDistributionGet $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedInstallAllowedDistributionGet($parameters));
@@ -1241,10 +1241,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedCapabilitiesGet $parameters
-     * @return \PayPal\StructType\DedicatedCapabilitiesGetResponse|bool
+     * @param \Ovh\StructType\DedicatedCapabilitiesGet $parameters
+     * @return \Ovh\StructType\DedicatedCapabilitiesGetResponse|bool
      */
-    public function dedicatedCapabilitiesGet(\PayPal\StructType\DedicatedCapabilitiesGet $parameters)
+    public function dedicatedCapabilitiesGet(\Ovh\StructType\DedicatedCapabilitiesGet $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedCapabilitiesGet($parameters));
@@ -1260,10 +1260,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedMonitoringSMSDel $parameters
-     * @return \PayPal\StructType\DedicatedMonitoringSMSDelResponse|bool
+     * @param \Ovh\StructType\DedicatedMonitoringSMSDel $parameters
+     * @return \Ovh\StructType\DedicatedMonitoringSMSDelResponse|bool
      */
-    public function dedicatedMonitoringSMSDel(\PayPal\StructType\DedicatedMonitoringSMSDel $parameters)
+    public function dedicatedMonitoringSMSDel(\Ovh\StructType\DedicatedMonitoringSMSDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedMonitoringSMSDel($parameters));
@@ -1279,10 +1279,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedMonitoringAdd $parameters
-     * @return \PayPal\StructType\DedicatedMonitoringAddResponse|bool
+     * @param \Ovh\StructType\DedicatedMonitoringAdd $parameters
+     * @return \Ovh\StructType\DedicatedMonitoringAddResponse|bool
      */
-    public function dedicatedMonitoringAdd(\PayPal\StructType\DedicatedMonitoringAdd $parameters)
+    public function dedicatedMonitoringAdd(\Ovh\StructType\DedicatedMonitoringAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedMonitoringAdd($parameters));
@@ -1298,10 +1298,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedOperationList $parameters
-     * @return \PayPal\StructType\DedicatedOperationListResponse|bool
+     * @param \Ovh\StructType\DedicatedOperationList $parameters
+     * @return \Ovh\StructType\DedicatedOperationListResponse|bool
      */
-    public function dedicatedOperationList(\PayPal\StructType\DedicatedOperationList $parameters)
+    public function dedicatedOperationList(\Ovh\StructType\DedicatedOperationList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedOperationList($parameters));
@@ -1317,10 +1317,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedBackupIncludeDel $parameters
-     * @return \PayPal\StructType\DedicatedBackupIncludeDelResponse|bool
+     * @param \Ovh\StructType\DedicatedBackupIncludeDel $parameters
+     * @return \Ovh\StructType\DedicatedBackupIncludeDelResponse|bool
      */
-    public function dedicatedBackupIncludeDel(\PayPal\StructType\DedicatedBackupIncludeDel $parameters)
+    public function dedicatedBackupIncludeDel(\Ovh\StructType\DedicatedBackupIncludeDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedBackupIncludeDel($parameters));
@@ -1336,10 +1336,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedBandwidthSwitching $parameters
-     * @return \PayPal\StructType\DedicatedBandwidthSwitchingResponse|bool
+     * @param \Ovh\StructType\DedicatedBandwidthSwitching $parameters
+     * @return \Ovh\StructType\DedicatedBandwidthSwitchingResponse|bool
      */
-    public function dedicatedBandwidthSwitching(\PayPal\StructType\DedicatedBandwidthSwitching $parameters)
+    public function dedicatedBandwidthSwitching(\Ovh\StructType\DedicatedBandwidthSwitching $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedBandwidthSwitching($parameters));
@@ -1355,10 +1355,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedIpLoadBalancingDel $parameters
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingDelResponse|bool
+     * @param \Ovh\StructType\DedicatedIpLoadBalancingDel $parameters
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingDelResponse|bool
      */
-    public function dedicatedIpLoadBalancingDel(\PayPal\StructType\DedicatedIpLoadBalancingDel $parameters)
+    public function dedicatedIpLoadBalancingDel(\Ovh\StructType\DedicatedIpLoadBalancingDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedIpLoadBalancingDel($parameters));
@@ -1374,10 +1374,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedInstallationTemplateUse $parameters
-     * @return \PayPal\StructType\DedicatedInstallationTemplateUseResponse|bool
+     * @param \Ovh\StructType\DedicatedInstallationTemplateUse $parameters
+     * @return \Ovh\StructType\DedicatedInstallationTemplateUseResponse|bool
      */
-    public function dedicatedInstallationTemplateUse(\PayPal\StructType\DedicatedInstallationTemplateUse $parameters)
+    public function dedicatedInstallationTemplateUse(\Ovh\StructType\DedicatedInstallationTemplateUse $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedInstallationTemplateUse($parameters));
@@ -1393,10 +1393,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedIpLoadBalancingServerAdd $parameters
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingServerAddResponse|bool
+     * @param \Ovh\StructType\DedicatedIpLoadBalancingServerAdd $parameters
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingServerAddResponse|bool
      */
-    public function dedicatedIpLoadBalancingServerAdd(\PayPal\StructType\DedicatedIpLoadBalancingServerAdd $parameters)
+    public function dedicatedIpLoadBalancingServerAdd(\Ovh\StructType\DedicatedIpLoadBalancingServerAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedIpLoadBalancingServerAdd($parameters));
@@ -1412,10 +1412,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedRipeUpdateOrganisation $parameters
-     * @return \PayPal\StructType\DedicatedRipeUpdateOrganisationResponse|bool
+     * @param \Ovh\StructType\DedicatedRipeUpdateOrganisation $parameters
+     * @return \Ovh\StructType\DedicatedRipeUpdateOrganisationResponse|bool
      */
-    public function dedicatedRipeUpdateOrganisation(\PayPal\StructType\DedicatedRipeUpdateOrganisation $parameters)
+    public function dedicatedRipeUpdateOrganisation(\Ovh\StructType\DedicatedRipeUpdateOrganisation $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedRipeUpdateOrganisation($parameters));
@@ -1431,10 +1431,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedNetbootModifyById $parameters
-     * @return \PayPal\StructType\DedicatedNetbootModifyByIdResponse|bool
+     * @param \Ovh\StructType\DedicatedNetbootModifyById $parameters
+     * @return \Ovh\StructType\DedicatedNetbootModifyByIdResponse|bool
      */
-    public function dedicatedNetbootModifyById(\PayPal\StructType\DedicatedNetbootModifyById $parameters)
+    public function dedicatedNetbootModifyById(\Ovh\StructType\DedicatedNetbootModifyById $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedNetbootModifyById($parameters));
@@ -1450,10 +1450,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedBackupGetDate $parameters
-     * @return \PayPal\StructType\DedicatedBackupGetDateResponse|bool
+     * @param \Ovh\StructType\DedicatedBackupGetDate $parameters
+     * @return \Ovh\StructType\DedicatedBackupGetDateResponse|bool
      */
-    public function dedicatedBackupGetDate(\PayPal\StructType\DedicatedBackupGetDate $parameters)
+    public function dedicatedBackupGetDate(\Ovh\StructType\DedicatedBackupGetDate $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedBackupGetDate($parameters));
@@ -1469,10 +1469,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedSecondaryDNSDel $parameters
-     * @return \PayPal\StructType\DedicatedSecondaryDNSDelResponse|bool
+     * @param \Ovh\StructType\DedicatedSecondaryDNSDel $parameters
+     * @return \Ovh\StructType\DedicatedSecondaryDNSDelResponse|bool
      */
-    public function dedicatedSecondaryDNSDel(\PayPal\StructType\DedicatedSecondaryDNSDel $parameters)
+    public function dedicatedSecondaryDNSDel(\Ovh\StructType\DedicatedSecondaryDNSDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedSecondaryDNSDel($parameters));
@@ -1488,10 +1488,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedSecondaryDNSGetAll $parameters
-     * @return \PayPal\StructType\DedicatedSecondaryDNSGetAllResponse|bool
+     * @param \Ovh\StructType\DedicatedSecondaryDNSGetAll $parameters
+     * @return \Ovh\StructType\DedicatedSecondaryDNSGetAllResponse|bool
      */
-    public function dedicatedSecondaryDNSGetAll(\PayPal\StructType\DedicatedSecondaryDNSGetAll $parameters)
+    public function dedicatedSecondaryDNSGetAll(\Ovh\StructType\DedicatedSecondaryDNSGetAll $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedSecondaryDNSGetAll($parameters));
@@ -1507,10 +1507,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedMonitoringNotificationDel $parameters
-     * @return \PayPal\StructType\DedicatedMonitoringNotificationDelResponse|bool
+     * @param \Ovh\StructType\DedicatedMonitoringNotificationDel $parameters
+     * @return \Ovh\StructType\DedicatedMonitoringNotificationDelResponse|bool
      */
-    public function dedicatedMonitoringNotificationDel(\PayPal\StructType\DedicatedMonitoringNotificationDel $parameters)
+    public function dedicatedMonitoringNotificationDel(\Ovh\StructType\DedicatedMonitoringNotificationDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedMonitoringNotificationDel($parameters));
@@ -1526,10 +1526,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedBandwidthManagementGet $parameters
-     * @return \PayPal\StructType\DedicatedBandwidthManagementGetResponse|bool
+     * @param \Ovh\StructType\DedicatedBandwidthManagementGet $parameters
+     * @return \Ovh\StructType\DedicatedBandwidthManagementGetResponse|bool
      */
-    public function dedicatedBandwidthManagementGet(\PayPal\StructType\DedicatedBandwidthManagementGet $parameters)
+    public function dedicatedBandwidthManagementGet(\Ovh\StructType\DedicatedBandwidthManagementGet $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedBandwidthManagementGet($parameters));
@@ -1545,10 +1545,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedMonitoringStatusUpdate $parameters
-     * @return \PayPal\StructType\DedicatedMonitoringStatusUpdateResponse|bool
+     * @param \Ovh\StructType\DedicatedMonitoringStatusUpdate $parameters
+     * @return \Ovh\StructType\DedicatedMonitoringStatusUpdateResponse|bool
      */
-    public function dedicatedMonitoringStatusUpdate(\PayPal\StructType\DedicatedMonitoringStatusUpdate $parameters)
+    public function dedicatedMonitoringStatusUpdate(\Ovh\StructType\DedicatedMonitoringStatusUpdate $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedMonitoringStatusUpdate($parameters));
@@ -1564,10 +1564,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedIPForUDPMoveGetStatus $parameters
-     * @return \PayPal\StructType\DedicatedIPForUDPMoveGetStatusResponse|bool
+     * @param \Ovh\StructType\DedicatedIPForUDPMoveGetStatus $parameters
+     * @return \Ovh\StructType\DedicatedIPForUDPMoveGetStatusResponse|bool
      */
-    public function dedicatedIPForUDPMoveGetStatus(\PayPal\StructType\DedicatedIPForUDPMoveGetStatus $parameters)
+    public function dedicatedIPForUDPMoveGetStatus(\Ovh\StructType\DedicatedIPForUDPMoveGetStatus $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedIPForUDPMoveGetStatus($parameters));
@@ -1583,10 +1583,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedRipeDeleteOrganisation $parameters
-     * @return \PayPal\StructType\DedicatedRipeDeleteOrganisationResponse|bool
+     * @param \Ovh\StructType\DedicatedRipeDeleteOrganisation $parameters
+     * @return \Ovh\StructType\DedicatedRipeDeleteOrganisationResponse|bool
      */
-    public function dedicatedRipeDeleteOrganisation(\PayPal\StructType\DedicatedRipeDeleteOrganisation $parameters)
+    public function dedicatedRipeDeleteOrganisation(\Ovh\StructType\DedicatedRipeDeleteOrganisation $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedRipeDeleteOrganisation($parameters));
@@ -1602,10 +1602,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedFailoverRipeGetIp $parameters
-     * @return \PayPal\StructType\DedicatedFailoverRipeGetIpResponse|bool
+     * @param \Ovh\StructType\DedicatedFailoverRipeGetIp $parameters
+     * @return \Ovh\StructType\DedicatedFailoverRipeGetIpResponse|bool
      */
-    public function dedicatedFailoverRipeGetIp(\PayPal\StructType\DedicatedFailoverRipeGetIp $parameters)
+    public function dedicatedFailoverRipeGetIp(\Ovh\StructType\DedicatedFailoverRipeGetIp $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedFailoverRipeGetIp($parameters));
@@ -1621,10 +1621,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedInstallBasic $parameters
-     * @return \PayPal\StructType\DedicatedInstallBasicResponse|bool
+     * @param \Ovh\StructType\DedicatedInstallBasic $parameters
+     * @return \Ovh\StructType\DedicatedInstallBasicResponse|bool
      */
-    public function dedicatedInstallBasic(\PayPal\StructType\DedicatedInstallBasic $parameters)
+    public function dedicatedInstallBasic(\Ovh\StructType\DedicatedInstallBasic $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedInstallBasic($parameters));
@@ -1640,10 +1640,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedInstallReset $parameters
-     * @return \PayPal\StructType\DedicatedInstallResetResponse|bool
+     * @param \Ovh\StructType\DedicatedInstallReset $parameters
+     * @return \Ovh\StructType\DedicatedInstallResetResponse|bool
      */
-    public function dedicatedInstallReset(\PayPal\StructType\DedicatedInstallReset $parameters)
+    public function dedicatedInstallReset(\Ovh\StructType\DedicatedInstallReset $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedInstallReset($parameters));
@@ -1660,10 +1660,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedMonitoringServiceAddNotification $parameters
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAddNotificationResponse|bool
+     * @param \Ovh\StructType\DedicatedMonitoringServiceAddNotification $parameters
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAddNotificationResponse|bool
      */
-    public function dedicatedMonitoringServiceAddNotification(\PayPal\StructType\DedicatedMonitoringServiceAddNotification $parameters)
+    public function dedicatedMonitoringServiceAddNotification(\Ovh\StructType\DedicatedMonitoringServiceAddNotification $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedMonitoringServiceAddNotification($parameters));
@@ -1679,10 +1679,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedFilterIrcClientRuleDel $parameters
-     * @return \PayPal\StructType\DedicatedFilterIrcClientRuleDelResponse|bool
+     * @param \Ovh\StructType\DedicatedFilterIrcClientRuleDel $parameters
+     * @return \Ovh\StructType\DedicatedFilterIrcClientRuleDelResponse|bool
      */
-    public function dedicatedFilterIrcClientRuleDel(\PayPal\StructType\DedicatedFilterIrcClientRuleDel $parameters)
+    public function dedicatedFilterIrcClientRuleDel(\Ovh\StructType\DedicatedFilterIrcClientRuleDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedFilterIrcClientRuleDel($parameters));
@@ -1698,10 +1698,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedMrtgInfo $parameters
-     * @return \PayPal\StructType\DedicatedMrtgInfoResponse|bool
+     * @param \Ovh\StructType\DedicatedMrtgInfo $parameters
+     * @return \Ovh\StructType\DedicatedMrtgInfoResponse|bool
      */
-    public function dedicatedMrtgInfo(\PayPal\StructType\DedicatedMrtgInfo $parameters)
+    public function dedicatedMrtgInfo(\Ovh\StructType\DedicatedMrtgInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedMrtgInfo($parameters));
@@ -1717,10 +1717,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedBackupReinstallData $parameters
-     * @return \PayPal\StructType\DedicatedBackupReinstallDataResponse|bool
+     * @param \Ovh\StructType\DedicatedBackupReinstallData $parameters
+     * @return \Ovh\StructType\DedicatedBackupReinstallDataResponse|bool
      */
-    public function dedicatedBackupReinstallData(\PayPal\StructType\DedicatedBackupReinstallData $parameters)
+    public function dedicatedBackupReinstallData(\Ovh\StructType\DedicatedBackupReinstallData $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedBackupReinstallData($parameters));
@@ -1736,10 +1736,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedBackupFtpInfo $parameters
-     * @return \PayPal\StructType\DedicatedBackupFtpInfoResponse|bool
+     * @param \Ovh\StructType\DedicatedBackupFtpInfo $parameters
+     * @return \Ovh\StructType\DedicatedBackupFtpInfoResponse|bool
      */
-    public function dedicatedBackupFtpInfo(\PayPal\StructType\DedicatedBackupFtpInfo $parameters)
+    public function dedicatedBackupFtpInfo(\Ovh\StructType\DedicatedBackupFtpInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedBackupFtpInfo($parameters));
@@ -1755,10 +1755,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedMonitoringModify $parameters
-     * @return \PayPal\StructType\DedicatedMonitoringModifyResponse|bool
+     * @param \Ovh\StructType\DedicatedMonitoringModify $parameters
+     * @return \Ovh\StructType\DedicatedMonitoringModifyResponse|bool
      */
-    public function dedicatedMonitoringModify(\PayPal\StructType\DedicatedMonitoringModify $parameters)
+    public function dedicatedMonitoringModify(\Ovh\StructType\DedicatedMonitoringModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedMonitoringModify($parameters));
@@ -1775,10 +1775,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedGetRandomAvailableIpFromCountry $parameters
-     * @return \PayPal\StructType\DedicatedGetRandomAvailableIpFromCountryResponse|bool
+     * @param \Ovh\StructType\DedicatedGetRandomAvailableIpFromCountry $parameters
+     * @return \Ovh\StructType\DedicatedGetRandomAvailableIpFromCountryResponse|bool
      */
-    public function dedicatedGetRandomAvailableIpFromCountry(\PayPal\StructType\DedicatedGetRandomAvailableIpFromCountry $parameters)
+    public function dedicatedGetRandomAvailableIpFromCountry(\Ovh\StructType\DedicatedGetRandomAvailableIpFromCountry $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedGetRandomAvailableIpFromCountry($parameters));
@@ -1794,10 +1794,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedInstallBasicProgress $parameters
-     * @return \PayPal\StructType\DedicatedInstallBasicProgressResponse|bool
+     * @param \Ovh\StructType\DedicatedInstallBasicProgress $parameters
+     * @return \Ovh\StructType\DedicatedInstallBasicProgressResponse|bool
      */
-    public function dedicatedInstallBasicProgress(\PayPal\StructType\DedicatedInstallBasicProgress $parameters)
+    public function dedicatedInstallBasicProgress(\Ovh\StructType\DedicatedInstallBasicProgress $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedInstallBasicProgress($parameters));
@@ -1814,10 +1814,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedAddServiceMonitoringAlertEmail $parameters
-     * @return \PayPal\StructType\DedicatedAddServiceMonitoringAlertEmailResponse|bool
+     * @param \Ovh\StructType\DedicatedAddServiceMonitoringAlertEmail $parameters
+     * @return \Ovh\StructType\DedicatedAddServiceMonitoringAlertEmailResponse|bool
      */
-    public function dedicatedAddServiceMonitoringAlertEmail(\PayPal\StructType\DedicatedAddServiceMonitoringAlertEmail $parameters)
+    public function dedicatedAddServiceMonitoringAlertEmail(\Ovh\StructType\DedicatedAddServiceMonitoringAlertEmail $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedAddServiceMonitoringAlertEmail($parameters));
@@ -1833,10 +1833,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedFailoverUpdate $parameters
-     * @return \PayPal\StructType\DedicatedFailoverUpdateResponse|bool
+     * @param \Ovh\StructType\DedicatedFailoverUpdate $parameters
+     * @return \Ovh\StructType\DedicatedFailoverUpdateResponse|bool
      */
-    public function dedicatedFailoverUpdate(\PayPal\StructType\DedicatedFailoverUpdate $parameters)
+    public function dedicatedFailoverUpdate(\Ovh\StructType\DedicatedFailoverUpdate $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedFailoverUpdate($parameters));
@@ -1852,10 +1852,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedFilterIrcServerRuleAdd $parameters
-     * @return \PayPal\StructType\DedicatedFilterIrcServerRuleAddResponse|bool
+     * @param \Ovh\StructType\DedicatedFilterIrcServerRuleAdd $parameters
+     * @return \Ovh\StructType\DedicatedFilterIrcServerRuleAddResponse|bool
      */
-    public function dedicatedFilterIrcServerRuleAdd(\PayPal\StructType\DedicatedFilterIrcServerRuleAdd $parameters)
+    public function dedicatedFilterIrcServerRuleAdd(\Ovh\StructType\DedicatedFilterIrcServerRuleAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedFilterIrcServerRuleAdd($parameters));
@@ -1871,10 +1871,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedVirtualMacIpAdd $parameters
-     * @return \PayPal\StructType\DedicatedVirtualMacIpAddResponse|bool
+     * @param \Ovh\StructType\DedicatedVirtualMacIpAdd $parameters
+     * @return \Ovh\StructType\DedicatedVirtualMacIpAddResponse|bool
      */
-    public function dedicatedVirtualMacIpAdd(\PayPal\StructType\DedicatedVirtualMacIpAdd $parameters)
+    public function dedicatedVirtualMacIpAdd(\Ovh\StructType\DedicatedVirtualMacIpAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedVirtualMacIpAdd($parameters));
@@ -1890,10 +1890,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedRipeGetRipeIds $parameters
-     * @return \PayPal\StructType\DedicatedRipeGetRipeIdsResponse|bool
+     * @param \Ovh\StructType\DedicatedRipeGetRipeIds $parameters
+     * @return \Ovh\StructType\DedicatedRipeGetRipeIdsResponse|bool
      */
-    public function dedicatedRipeGetRipeIds(\PayPal\StructType\DedicatedRipeGetRipeIds $parameters)
+    public function dedicatedRipeGetRipeIds(\Ovh\StructType\DedicatedRipeGetRipeIds $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedRipeGetRipeIds($parameters));
@@ -1909,10 +1909,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedInfo $parameters
-     * @return \PayPal\StructType\DedicatedInfoResponse|bool
+     * @param \Ovh\StructType\DedicatedInfo $parameters
+     * @return \Ovh\StructType\DedicatedInfoResponse|bool
      */
-    public function dedicatedInfo(\PayPal\StructType\DedicatedInfo $parameters)
+    public function dedicatedInfo(\Ovh\StructType\DedicatedInfo $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedInfo($parameters));
@@ -1928,10 +1928,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedBackupUpdateDate $parameters
-     * @return \PayPal\StructType\DedicatedBackupUpdateDateResponse|bool
+     * @param \Ovh\StructType\DedicatedBackupUpdateDate $parameters
+     * @return \Ovh\StructType\DedicatedBackupUpdateDateResponse|bool
      */
-    public function dedicatedBackupUpdateDate(\PayPal\StructType\DedicatedBackupUpdateDate $parameters)
+    public function dedicatedBackupUpdateDate(\Ovh\StructType\DedicatedBackupUpdateDate $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedBackupUpdateDate($parameters));
@@ -1947,10 +1947,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedMonitoringStatusGet $parameters
-     * @return \PayPal\StructType\DedicatedMonitoringStatusGetResponse|bool
+     * @param \Ovh\StructType\DedicatedMonitoringStatusGet $parameters
+     * @return \Ovh\StructType\DedicatedMonitoringStatusGetResponse|bool
      */
-    public function dedicatedMonitoringStatusGet(\PayPal\StructType\DedicatedMonitoringStatusGet $parameters)
+    public function dedicatedMonitoringStatusGet(\Ovh\StructType\DedicatedMonitoringStatusGet $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedMonitoringStatusGet($parameters));
@@ -1966,10 +1966,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedNetbootModify $parameters
-     * @return \PayPal\StructType\DedicatedNetbootModifyResponse|bool
+     * @param \Ovh\StructType\DedicatedNetbootModify $parameters
+     * @return \Ovh\StructType\DedicatedNetbootModifyResponse|bool
      */
-    public function dedicatedNetbootModify(\PayPal\StructType\DedicatedNetbootModify $parameters)
+    public function dedicatedNetbootModify(\Ovh\StructType\DedicatedNetbootModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedNetbootModify($parameters));
@@ -1985,10 +1985,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedFilterIrcClientRuleList $parameters
-     * @return \PayPal\StructType\DedicatedFilterIrcClientRuleListResponse|bool
+     * @param \Ovh\StructType\DedicatedFilterIrcClientRuleList $parameters
+     * @return \Ovh\StructType\DedicatedFilterIrcClientRuleListResponse|bool
      */
-    public function dedicatedFilterIrcClientRuleList(\PayPal\StructType\DedicatedFilterIrcClientRuleList $parameters)
+    public function dedicatedFilterIrcClientRuleList(\Ovh\StructType\DedicatedFilterIrcClientRuleList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedFilterIrcClientRuleList($parameters));
@@ -2004,10 +2004,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedIPForUDPMove $parameters
-     * @return \PayPal\StructType\DedicatedIPForUDPMoveResponse|bool
+     * @param \Ovh\StructType\DedicatedIPForUDPMove $parameters
+     * @return \Ovh\StructType\DedicatedIPForUDPMoveResponse|bool
      */
-    public function dedicatedIPForUDPMove(\PayPal\StructType\DedicatedIPForUDPMove $parameters)
+    public function dedicatedIPForUDPMove(\Ovh\StructType\DedicatedIPForUDPMove $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedIPForUDPMove($parameters));
@@ -2023,10 +2023,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedMonitoringSMSModify $parameters
-     * @return \PayPal\StructType\DedicatedMonitoringSMSModifyResponse|bool
+     * @param \Ovh\StructType\DedicatedMonitoringSMSModify $parameters
+     * @return \Ovh\StructType\DedicatedMonitoringSMSModifyResponse|bool
      */
-    public function dedicatedMonitoringSMSModify(\PayPal\StructType\DedicatedMonitoringSMSModify $parameters)
+    public function dedicatedMonitoringSMSModify(\Ovh\StructType\DedicatedMonitoringSMSModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedMonitoringSMSModify($parameters));
@@ -2042,10 +2042,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedMonitoringDel $parameters
-     * @return \PayPal\StructType\DedicatedMonitoringDelResponse|bool
+     * @param \Ovh\StructType\DedicatedMonitoringDel $parameters
+     * @return \Ovh\StructType\DedicatedMonitoringDelResponse|bool
      */
-    public function dedicatedMonitoringDel(\PayPal\StructType\DedicatedMonitoringDel $parameters)
+    public function dedicatedMonitoringDel(\Ovh\StructType\DedicatedMonitoringDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedMonitoringDel($parameters));
@@ -2061,10 +2061,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedMonitoringServiceAddSMS $parameters
-     * @return \PayPal\StructType\DedicatedMonitoringServiceAddSMSResponse|bool
+     * @param \Ovh\StructType\DedicatedMonitoringServiceAddSMS $parameters
+     * @return \Ovh\StructType\DedicatedMonitoringServiceAddSMSResponse|bool
      */
-    public function dedicatedMonitoringServiceAddSMS(\PayPal\StructType\DedicatedMonitoringServiceAddSMS $parameters)
+    public function dedicatedMonitoringServiceAddSMS(\Ovh\StructType\DedicatedMonitoringServiceAddSMS $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedMonitoringServiceAddSMS($parameters));
@@ -2080,10 +2080,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedList $parameters
-     * @return \PayPal\StructType\DedicatedListResponse|bool
+     * @param \Ovh\StructType\DedicatedList $parameters
+     * @return \Ovh\StructType\DedicatedListResponse|bool
      */
-    public function dedicatedList(\PayPal\StructType\DedicatedList $parameters)
+    public function dedicatedList(\Ovh\StructType\DedicatedList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedList($parameters));
@@ -2099,10 +2099,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedIPForUDPGet $parameters
-     * @return \PayPal\StructType\DedicatedIPForUDPGetResponse|bool
+     * @param \Ovh\StructType\DedicatedIPForUDPGet $parameters
+     * @return \Ovh\StructType\DedicatedIPForUDPGetResponse|bool
      */
-    public function dedicatedIPForUDPGet(\PayPal\StructType\DedicatedIPForUDPGet $parameters)
+    public function dedicatedIPForUDPGet(\Ovh\StructType\DedicatedIPForUDPGet $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedIPForUDPGet($parameters));
@@ -2118,10 +2118,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedGetAvailableIpFromNetwork $parameters
-     * @return \PayPal\StructType\DedicatedGetAvailableIpFromNetworkResponse|bool
+     * @param \Ovh\StructType\DedicatedGetAvailableIpFromNetwork $parameters
+     * @return \Ovh\StructType\DedicatedGetAvailableIpFromNetworkResponse|bool
      */
-    public function dedicatedGetAvailableIpFromNetwork(\PayPal\StructType\DedicatedGetAvailableIpFromNetwork $parameters)
+    public function dedicatedGetAvailableIpFromNetwork(\Ovh\StructType\DedicatedGetAvailableIpFromNetwork $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedGetAvailableIpFromNetwork($parameters));
@@ -2137,10 +2137,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedMailinglistSubscribe $parameters
-     * @return \PayPal\StructType\DedicatedMailinglistSubscribeResponse|bool
+     * @param \Ovh\StructType\DedicatedMailinglistSubscribe $parameters
+     * @return \Ovh\StructType\DedicatedMailinglistSubscribeResponse|bool
      */
-    public function dedicatedMailinglistSubscribe(\PayPal\StructType\DedicatedMailinglistSubscribe $parameters)
+    public function dedicatedMailinglistSubscribe(\Ovh\StructType\DedicatedMailinglistSubscribe $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedMailinglistSubscribe($parameters));
@@ -2156,10 +2156,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedIpLoadBalancingNameModify $parameters
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingNameModifyResponse|bool
+     * @param \Ovh\StructType\DedicatedIpLoadBalancingNameModify $parameters
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingNameModifyResponse|bool
      */
-    public function dedicatedIpLoadBalancingNameModify(\PayPal\StructType\DedicatedIpLoadBalancingNameModify $parameters)
+    public function dedicatedIpLoadBalancingNameModify(\Ovh\StructType\DedicatedIpLoadBalancingNameModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedIpLoadBalancingNameModify($parameters));
@@ -2175,10 +2175,10 @@ class Dedicated extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\DedicatedMonitoringServiceList $parameters
-     * @return \PayPal\StructType\DedicatedMonitoringServiceListResponse|bool
+     * @param \Ovh\StructType\DedicatedMonitoringServiceList $parameters
+     * @return \Ovh\StructType\DedicatedMonitoringServiceListResponse|bool
      */
-    public function dedicatedMonitoringServiceList(\PayPal\StructType\DedicatedMonitoringServiceList $parameters)
+    public function dedicatedMonitoringServiceList(\Ovh\StructType\DedicatedMonitoringServiceList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->dedicatedMonitoringServiceList($parameters));
@@ -2191,7 +2191,7 @@ class Dedicated extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\DedicatedAddServiceMonitoringAlertEmailResponse|\PayPal\StructType\DedicatedAddServiceMonitoringAlertSMSResponse|\PayPal\StructType\DedicatedAvailableNotificationNicsGetResponse|\PayPal\StructType\DedicatedBackupExcludeAddResponse|\PayPal\StructType\DedicatedBackupExcludeDelResponse|\PayPal\StructType\DedicatedBackupFtpAddResponse|\PayPal\StructType\DedicatedBackupFtpInfoResponse|\PayPal\StructType\DedicatedBackupFtpPasswordResponse|\PayPal\StructType\DedicatedBackupGetCalendarResponse|\PayPal\StructType\DedicatedBackupGetDateResponse|\PayPal\StructType\DedicatedBackupGetFreePlanningResponse|\PayPal\StructType\DedicatedBackupGetHistoResponse|\PayPal\StructType\DedicatedBackupIncludeAddResponse|\PayPal\StructType\DedicatedBackupIncludeDelResponse|\PayPal\StructType\DedicatedBackupInfoResponse|\PayPal\StructType\DedicatedBackupListResponse|\PayPal\StructType\DedicatedBackupReinstallConfigurationResponse|\PayPal\StructType\DedicatedBackupReinstallDataResponse|\PayPal\StructType\DedicatedBackupSetResponse|\PayPal\StructType\DedicatedBackupUpdateDateResponse|\PayPal\StructType\DedicatedBackupUpdateResponse|\PayPal\StructType\DedicatedBandwidthManagementGetResponse|\PayPal\StructType\DedicatedBandwidthSwitchingResponse|\PayPal\StructType\DedicatedCapabilitiesGetAllResponse|\PayPal\StructType\DedicatedCapabilitiesGetResponse|\PayPal\StructType\DedicatedDelServiceMonitoringAlertResponse|\PayPal\StructType\DedicatedEditServiceMonitoringItemResponse|\PayPal\StructType\DedicatedFailoverAddResponse|\PayPal\StructType\DedicatedFailoverListResponse|\PayPal\StructType\DedicatedFailoverRipeAddResponse|\PayPal\StructType\DedicatedFailoverRipeGetIpResponse|\PayPal\StructType\DedicatedFailoverRipeListResponse|\PayPal\StructType\DedicatedFailoverRipeModifyResponse|\PayPal\StructType\DedicatedFailoverRipeSplitResponse|\PayPal\StructType\DedicatedFailoverUpdateResponse|\PayPal\StructType\DedicatedFilterIrcClientRuleAddResponse|\PayPal\StructType\DedicatedFilterIrcClientRuleDelResponse|\PayPal\StructType\DedicatedFilterIrcClientRuleListResponse|\PayPal\StructType\DedicatedFilterIrcServerRuleAddResponse|\PayPal\StructType\DedicatedFilterIrcServerRuleDelResponse|\PayPal\StructType\DedicatedFilterIrcServerRuleListResponse|\PayPal\StructType\DedicatedGetAvailableIpFromNetworkResponse|\PayPal\StructType\DedicatedGetAvailableNetworkFromCountryResponse|\PayPal\StructType\DedicatedGetRandomAvailableIpFromCountryResponse|\PayPal\StructType\DedicatedGetServiceMonitoringItemResponse|\PayPal\StructType\DedicatedHardRebootDoResponse|\PayPal\StructType\DedicatedHardRebootStatusResponse|\PayPal\StructType\DedicatedInfoResponse|\PayPal\StructType\DedicatedInstallAllowedDistributionGetResponse|\PayPal\StructType\DedicatedInstallationTemplateListResponse|\PayPal\StructType\DedicatedInstallationTemplateUseResponse|\PayPal\StructType\DedicatedInstallBasicProgressResponse|\PayPal\StructType\DedicatedInstallBasicResponse|\PayPal\StructType\DedicatedInstallResetResponse|\PayPal\StructType\DedicatedIPForUDPGetResponse|\PayPal\StructType\DedicatedIPForUDPMoveGetStatusResponse|\PayPal\StructType\DedicatedIPForUDPMoveResponse|\PayPal\StructType\DedicatedIPForUDPServerListResponse|\PayPal\StructType\DedicatedIpLoadBalancingAddResponse|\PayPal\StructType\DedicatedIpLoadBalancingDelResponse|\PayPal\StructType\DedicatedIpLoadBalancingListResponse|\PayPal\StructType\DedicatedIpLoadBalancingNameModifyResponse|\PayPal\StructType\DedicatedIpLoadBalancingServerAddResponse|\PayPal\StructType\DedicatedIpLoadBalancingServerDelResponse|\PayPal\StructType\DedicatedIpLoadBalancingServerStateModifyResponse|\PayPal\StructType\DedicatedListResponse|\PayPal\StructType\DedicatedMailinglistGetAllowedResponse|\PayPal\StructType\DedicatedMailinglistSubscribeResponse|\PayPal\StructType\DedicatedMonitoringAddResponse|\PayPal\StructType\DedicatedMonitoringDelResponse|\PayPal\StructType\DedicatedMonitoringListResponse|\PayPal\StructType\DedicatedMonitoringModifyResponse|\PayPal\StructType\DedicatedMonitoringNotificationCreateResponse|\PayPal\StructType\DedicatedMonitoringNotificationDelResponse|\PayPal\StructType\DedicatedMonitoringServiceAddNotificationResponse|\PayPal\StructType\DedicatedMonitoringServiceAddResponse|\PayPal\StructType\DedicatedMonitoringServiceAddSMSResponse|\PayPal\StructType\DedicatedMonitoringServiceDelResponse|\PayPal\StructType\DedicatedMonitoringServiceListResponse|\PayPal\StructType\DedicatedMonitoringSMSCreateResponse|\PayPal\StructType\DedicatedMonitoringSMSDelResponse|\PayPal\StructType\DedicatedMonitoringSMSModifyResponse|\PayPal\StructType\DedicatedMonitoringStatusGetResponse|\PayPal\StructType\DedicatedMonitoringStatusUpdateResponse|\PayPal\StructType\DedicatedMrtgInfoResponse|\PayPal\StructType\DedicatedNetbootGetAllResponse|\PayPal\StructType\DedicatedNetbootGetAvailableResponse|\PayPal\StructType\DedicatedNetbootGetRescueEmailResponse|\PayPal\StructType\DedicatedNetbootInfoResponse|\PayPal\StructType\DedicatedNetbootModifyByIdResponse|\PayPal\StructType\DedicatedNetbootModifyResponse|\PayPal\StructType\DedicatedOperationListResponse|\PayPal\StructType\DedicatedReverseAddResponse|\PayPal\StructType\DedicatedReverseDelResponse|\PayPal\StructType\DedicatedReverseInfoResponse|\PayPal\StructType\DedicatedReverseListResponse|\PayPal\StructType\DedicatedReverseModifyResponse|\PayPal\StructType\DedicatedRipeCreateOrganisationResponse|\PayPal\StructType\DedicatedRipeDeleteOrganisationResponse|\PayPal\StructType\DedicatedRipeGetRipeIdsResponse|\PayPal\StructType\DedicatedRipeQueryResponse|\PayPal\StructType\DedicatedRipeUpdateInetnumResponse|\PayPal\StructType\DedicatedRipeUpdateOrganisationResponse|\PayPal\StructType\DedicatedRtmBackdoorUpdateAlertResponse|\PayPal\StructType\DedicatedRtmGetStatusResponse|\PayPal\StructType\DedicatedRtmListBackdoorResponse|\PayPal\StructType\DedicatedSecondaryDNSAddResponse|\PayPal\StructType\DedicatedSecondaryDNSDelResponse|\PayPal\StructType\DedicatedSecondaryDNSGetAllResponse|\PayPal\StructType\DedicatedSecondaryDNSInfoResponse|\PayPal\StructType\DedicatedVirtualMacIpAddResponse|\PayPal\StructType\DedicatedVirtualMacIpAvailableGetListResponse|\PayPal\StructType\DedicatedVirtualMacIpDeleteResponse|\PayPal\StructType\DedicatedVirtualMacIpUsedGetListResponse
+     * @return \Ovh\StructType\DedicatedAddServiceMonitoringAlertEmailResponse|\Ovh\StructType\DedicatedAddServiceMonitoringAlertSMSResponse|\Ovh\StructType\DedicatedAvailableNotificationNicsGetResponse|\Ovh\StructType\DedicatedBackupExcludeAddResponse|\Ovh\StructType\DedicatedBackupExcludeDelResponse|\Ovh\StructType\DedicatedBackupFtpAddResponse|\Ovh\StructType\DedicatedBackupFtpInfoResponse|\Ovh\StructType\DedicatedBackupFtpPasswordResponse|\Ovh\StructType\DedicatedBackupGetCalendarResponse|\Ovh\StructType\DedicatedBackupGetDateResponse|\Ovh\StructType\DedicatedBackupGetFreePlanningResponse|\Ovh\StructType\DedicatedBackupGetHistoResponse|\Ovh\StructType\DedicatedBackupIncludeAddResponse|\Ovh\StructType\DedicatedBackupIncludeDelResponse|\Ovh\StructType\DedicatedBackupInfoResponse|\Ovh\StructType\DedicatedBackupListResponse|\Ovh\StructType\DedicatedBackupReinstallConfigurationResponse|\Ovh\StructType\DedicatedBackupReinstallDataResponse|\Ovh\StructType\DedicatedBackupSetResponse|\Ovh\StructType\DedicatedBackupUpdateDateResponse|\Ovh\StructType\DedicatedBackupUpdateResponse|\Ovh\StructType\DedicatedBandwidthManagementGetResponse|\Ovh\StructType\DedicatedBandwidthSwitchingResponse|\Ovh\StructType\DedicatedCapabilitiesGetAllResponse|\Ovh\StructType\DedicatedCapabilitiesGetResponse|\Ovh\StructType\DedicatedDelServiceMonitoringAlertResponse|\Ovh\StructType\DedicatedEditServiceMonitoringItemResponse|\Ovh\StructType\DedicatedFailoverAddResponse|\Ovh\StructType\DedicatedFailoverListResponse|\Ovh\StructType\DedicatedFailoverRipeAddResponse|\Ovh\StructType\DedicatedFailoverRipeGetIpResponse|\Ovh\StructType\DedicatedFailoverRipeListResponse|\Ovh\StructType\DedicatedFailoverRipeModifyResponse|\Ovh\StructType\DedicatedFailoverRipeSplitResponse|\Ovh\StructType\DedicatedFailoverUpdateResponse|\Ovh\StructType\DedicatedFilterIrcClientRuleAddResponse|\Ovh\StructType\DedicatedFilterIrcClientRuleDelResponse|\Ovh\StructType\DedicatedFilterIrcClientRuleListResponse|\Ovh\StructType\DedicatedFilterIrcServerRuleAddResponse|\Ovh\StructType\DedicatedFilterIrcServerRuleDelResponse|\Ovh\StructType\DedicatedFilterIrcServerRuleListResponse|\Ovh\StructType\DedicatedGetAvailableIpFromNetworkResponse|\Ovh\StructType\DedicatedGetAvailableNetworkFromCountryResponse|\Ovh\StructType\DedicatedGetRandomAvailableIpFromCountryResponse|\Ovh\StructType\DedicatedGetServiceMonitoringItemResponse|\Ovh\StructType\DedicatedHardRebootDoResponse|\Ovh\StructType\DedicatedHardRebootStatusResponse|\Ovh\StructType\DedicatedInfoResponse|\Ovh\StructType\DedicatedInstallAllowedDistributionGetResponse|\Ovh\StructType\DedicatedInstallationTemplateListResponse|\Ovh\StructType\DedicatedInstallationTemplateUseResponse|\Ovh\StructType\DedicatedInstallBasicProgressResponse|\Ovh\StructType\DedicatedInstallBasicResponse|\Ovh\StructType\DedicatedInstallResetResponse|\Ovh\StructType\DedicatedIPForUDPGetResponse|\Ovh\StructType\DedicatedIPForUDPMoveGetStatusResponse|\Ovh\StructType\DedicatedIPForUDPMoveResponse|\Ovh\StructType\DedicatedIPForUDPServerListResponse|\Ovh\StructType\DedicatedIpLoadBalancingAddResponse|\Ovh\StructType\DedicatedIpLoadBalancingDelResponse|\Ovh\StructType\DedicatedIpLoadBalancingListResponse|\Ovh\StructType\DedicatedIpLoadBalancingNameModifyResponse|\Ovh\StructType\DedicatedIpLoadBalancingServerAddResponse|\Ovh\StructType\DedicatedIpLoadBalancingServerDelResponse|\Ovh\StructType\DedicatedIpLoadBalancingServerStateModifyResponse|\Ovh\StructType\DedicatedListResponse|\Ovh\StructType\DedicatedMailinglistGetAllowedResponse|\Ovh\StructType\DedicatedMailinglistSubscribeResponse|\Ovh\StructType\DedicatedMonitoringAddResponse|\Ovh\StructType\DedicatedMonitoringDelResponse|\Ovh\StructType\DedicatedMonitoringListResponse|\Ovh\StructType\DedicatedMonitoringModifyResponse|\Ovh\StructType\DedicatedMonitoringNotificationCreateResponse|\Ovh\StructType\DedicatedMonitoringNotificationDelResponse|\Ovh\StructType\DedicatedMonitoringServiceAddNotificationResponse|\Ovh\StructType\DedicatedMonitoringServiceAddResponse|\Ovh\StructType\DedicatedMonitoringServiceAddSMSResponse|\Ovh\StructType\DedicatedMonitoringServiceDelResponse|\Ovh\StructType\DedicatedMonitoringServiceListResponse|\Ovh\StructType\DedicatedMonitoringSMSCreateResponse|\Ovh\StructType\DedicatedMonitoringSMSDelResponse|\Ovh\StructType\DedicatedMonitoringSMSModifyResponse|\Ovh\StructType\DedicatedMonitoringStatusGetResponse|\Ovh\StructType\DedicatedMonitoringStatusUpdateResponse|\Ovh\StructType\DedicatedMrtgInfoResponse|\Ovh\StructType\DedicatedNetbootGetAllResponse|\Ovh\StructType\DedicatedNetbootGetAvailableResponse|\Ovh\StructType\DedicatedNetbootGetRescueEmailResponse|\Ovh\StructType\DedicatedNetbootInfoResponse|\Ovh\StructType\DedicatedNetbootModifyByIdResponse|\Ovh\StructType\DedicatedNetbootModifyResponse|\Ovh\StructType\DedicatedOperationListResponse|\Ovh\StructType\DedicatedReverseAddResponse|\Ovh\StructType\DedicatedReverseDelResponse|\Ovh\StructType\DedicatedReverseInfoResponse|\Ovh\StructType\DedicatedReverseListResponse|\Ovh\StructType\DedicatedReverseModifyResponse|\Ovh\StructType\DedicatedRipeCreateOrganisationResponse|\Ovh\StructType\DedicatedRipeDeleteOrganisationResponse|\Ovh\StructType\DedicatedRipeGetRipeIdsResponse|\Ovh\StructType\DedicatedRipeQueryResponse|\Ovh\StructType\DedicatedRipeUpdateInetnumResponse|\Ovh\StructType\DedicatedRipeUpdateOrganisationResponse|\Ovh\StructType\DedicatedRtmBackdoorUpdateAlertResponse|\Ovh\StructType\DedicatedRtmGetStatusResponse|\Ovh\StructType\DedicatedRtmListBackdoorResponse|\Ovh\StructType\DedicatedSecondaryDNSAddResponse|\Ovh\StructType\DedicatedSecondaryDNSDelResponse|\Ovh\StructType\DedicatedSecondaryDNSGetAllResponse|\Ovh\StructType\DedicatedSecondaryDNSInfoResponse|\Ovh\StructType\DedicatedVirtualMacIpAddResponse|\Ovh\StructType\DedicatedVirtualMacIpAvailableGetListResponse|\Ovh\StructType\DedicatedVirtualMacIpDeleteResponse|\Ovh\StructType\DedicatedVirtualMacIpUsedGetListResponse
      */
     public function getResult()
     {

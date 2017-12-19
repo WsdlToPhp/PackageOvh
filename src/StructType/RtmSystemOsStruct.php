@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class RtmSystemOsStruct extends AbstractStructBase
     /**
      * Set current value
      * @param string $current
-     * @return \PayPal\StructType\RtmSystemOsStruct
+     * @return \Ovh\StructType\RtmSystemOsStruct
      */
     public function setCurrent($current = null)
     {
@@ -67,7 +67,7 @@ class RtmSystemOsStruct extends AbstractStructBase
     /**
      * Set os value
      * @param string $os
-     * @return \PayPal\StructType\RtmSystemOsStruct
+     * @return \Ovh\StructType\RtmSystemOsStruct
      */
     public function setOs($os = null)
     {
@@ -84,7 +84,7 @@ class RtmSystemOsStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RtmSystemOsStruct
+     * @return \Ovh\StructType\RtmSystemOsStruct
      */
     public static function __set_state(array $array)
     {

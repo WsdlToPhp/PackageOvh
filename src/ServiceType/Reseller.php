@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Reseller extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ResellerDomainTransferIT $parameters
-     * @return \PayPal\StructType\ResellerDomainTransferITResponse|bool
+     * @param \Ovh\StructType\ResellerDomainTransferIT $parameters
+     * @return \Ovh\StructType\ResellerDomainTransferITResponse|bool
      */
-    public function resellerDomainTransferIT(\PayPal\StructType\ResellerDomainTransferIT $parameters)
+    public function resellerDomainTransferIT(\Ovh\StructType\ResellerDomainTransferIT $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->resellerDomainTransferIT($parameters));
@@ -36,10 +36,10 @@ class Reseller extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ResellerDomainRestore $parameters
-     * @return \PayPal\StructType\ResellerDomainRestoreResponse|bool
+     * @param \Ovh\StructType\ResellerDomainRestore $parameters
+     * @return \Ovh\StructType\ResellerDomainRestoreResponse|bool
      */
-    public function resellerDomainRestore(\PayPal\StructType\ResellerDomainRestore $parameters)
+    public function resellerDomainRestore(\Ovh\StructType\ResellerDomainRestore $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->resellerDomainRestore($parameters));
@@ -55,10 +55,10 @@ class Reseller extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ResellerDomainRenew $parameters
-     * @return \PayPal\StructType\ResellerDomainRenewResponse|bool
+     * @param \Ovh\StructType\ResellerDomainRenew $parameters
+     * @return \Ovh\StructType\ResellerDomainRenewResponse|bool
      */
-    public function resellerDomainRenew(\PayPal\StructType\ResellerDomainRenew $parameters)
+    public function resellerDomainRenew(\Ovh\StructType\ResellerDomainRenew $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->resellerDomainRenew($parameters));
@@ -74,10 +74,10 @@ class Reseller extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ResellerDomainCreate $parameters
-     * @return \PayPal\StructType\ResellerDomainCreateResponse|bool
+     * @param \Ovh\StructType\ResellerDomainCreate $parameters
+     * @return \Ovh\StructType\ResellerDomainCreateResponse|bool
      */
-    public function resellerDomainCreate(\PayPal\StructType\ResellerDomainCreate $parameters)
+    public function resellerDomainCreate(\Ovh\StructType\ResellerDomainCreate $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->resellerDomainCreate($parameters));
@@ -93,10 +93,10 @@ class Reseller extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ResellerDomainCreateIT $parameters
-     * @return \PayPal\StructType\ResellerDomainCreateITResponse|bool
+     * @param \Ovh\StructType\ResellerDomainCreateIT $parameters
+     * @return \Ovh\StructType\ResellerDomainCreateITResponse|bool
      */
-    public function resellerDomainCreateIT(\PayPal\StructType\ResellerDomainCreateIT $parameters)
+    public function resellerDomainCreateIT(\Ovh\StructType\ResellerDomainCreateIT $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->resellerDomainCreateIT($parameters));
@@ -112,10 +112,10 @@ class Reseller extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ResellerDomainTransferASIA $parameters
-     * @return \PayPal\StructType\ResellerDomainTransferASIAResponse|bool
+     * @param \Ovh\StructType\ResellerDomainTransferASIA $parameters
+     * @return \Ovh\StructType\ResellerDomainTransferASIAResponse|bool
      */
-    public function resellerDomainTransferASIA(\PayPal\StructType\ResellerDomainTransferASIA $parameters)
+    public function resellerDomainTransferASIA(\Ovh\StructType\ResellerDomainTransferASIA $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->resellerDomainTransferASIA($parameters));
@@ -131,10 +131,10 @@ class Reseller extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ResellerDomainCreateCAT $parameters
-     * @return \PayPal\StructType\ResellerDomainCreateCATResponse|bool
+     * @param \Ovh\StructType\ResellerDomainCreateCAT $parameters
+     * @return \Ovh\StructType\ResellerDomainCreateCATResponse|bool
      */
-    public function resellerDomainCreateCAT(\PayPal\StructType\ResellerDomainCreateCAT $parameters)
+    public function resellerDomainCreateCAT(\Ovh\StructType\ResellerDomainCreateCAT $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->resellerDomainCreateCAT($parameters));
@@ -150,10 +150,10 @@ class Reseller extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ResellerDomainCreateASIA $parameters
-     * @return \PayPal\StructType\ResellerDomainCreateASIAResponse|bool
+     * @param \Ovh\StructType\ResellerDomainCreateASIA $parameters
+     * @return \Ovh\StructType\ResellerDomainCreateASIAResponse|bool
      */
-    public function resellerDomainCreateASIA(\PayPal\StructType\ResellerDomainCreateASIA $parameters)
+    public function resellerDomainCreateASIA(\Ovh\StructType\ResellerDomainCreateASIA $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->resellerDomainCreateASIA($parameters));
@@ -169,10 +169,10 @@ class Reseller extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\ResellerDomainTransfer $parameters
-     * @return \PayPal\StructType\ResellerDomainTransferResponse|bool
+     * @param \Ovh\StructType\ResellerDomainTransfer $parameters
+     * @return \Ovh\StructType\ResellerDomainTransferResponse|bool
      */
-    public function resellerDomainTransfer(\PayPal\StructType\ResellerDomainTransfer $parameters)
+    public function resellerDomainTransfer(\Ovh\StructType\ResellerDomainTransfer $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->resellerDomainTransfer($parameters));
@@ -185,7 +185,7 @@ class Reseller extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\ResellerDomainCreateASIAResponse|\PayPal\StructType\ResellerDomainCreateCATResponse|\PayPal\StructType\ResellerDomainCreateITResponse|\PayPal\StructType\ResellerDomainCreateResponse|\PayPal\StructType\ResellerDomainRenewResponse|\PayPal\StructType\ResellerDomainRestoreResponse|\PayPal\StructType\ResellerDomainTransferASIAResponse|\PayPal\StructType\ResellerDomainTransferITResponse|\PayPal\StructType\ResellerDomainTransferResponse
+     * @return \Ovh\StructType\ResellerDomainCreateASIAResponse|\Ovh\StructType\ResellerDomainCreateCATResponse|\Ovh\StructType\ResellerDomainCreateITResponse|\Ovh\StructType\ResellerDomainCreateResponse|\Ovh\StructType\ResellerDomainRenewResponse|\Ovh\StructType\ResellerDomainRestoreResponse|\Ovh\StructType\ResellerDomainTransferASIAResponse|\Ovh\StructType\ResellerDomainTransferITResponse|\Ovh\StructType\ResellerDomainTransferResponse
      */
     public function getResult()
     {

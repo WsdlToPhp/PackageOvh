@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Ripe extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\RipeGetRipeIds $parameters
-     * @return \PayPal\StructType\RipeGetRipeIdsResponse|bool
+     * @param \Ovh\StructType\RipeGetRipeIds $parameters
+     * @return \Ovh\StructType\RipeGetRipeIdsResponse|bool
      */
-    public function ripeGetRipeIds(\PayPal\StructType\RipeGetRipeIds $parameters)
+    public function ripeGetRipeIds(\Ovh\StructType\RipeGetRipeIds $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->ripeGetRipeIds($parameters));
@@ -36,10 +36,10 @@ class Ripe extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\RipeUpdateInetnum $parameters
-     * @return \PayPal\StructType\RipeUpdateInetnumResponse|bool
+     * @param \Ovh\StructType\RipeUpdateInetnum $parameters
+     * @return \Ovh\StructType\RipeUpdateInetnumResponse|bool
      */
-    public function ripeUpdateInetnum(\PayPal\StructType\RipeUpdateInetnum $parameters)
+    public function ripeUpdateInetnum(\Ovh\StructType\RipeUpdateInetnum $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->ripeUpdateInetnum($parameters));
@@ -55,10 +55,10 @@ class Ripe extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\RipeQuery $parameters
-     * @return \PayPal\StructType\RipeQueryResponse|bool
+     * @param \Ovh\StructType\RipeQuery $parameters
+     * @return \Ovh\StructType\RipeQueryResponse|bool
      */
-    public function ripeQuery(\PayPal\StructType\RipeQuery $parameters)
+    public function ripeQuery(\Ovh\StructType\RipeQuery $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->ripeQuery($parameters));
@@ -74,10 +74,10 @@ class Ripe extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\RipeDeleteOrganisation $parameters
-     * @return \PayPal\StructType\RipeDeleteOrganisationResponse|bool
+     * @param \Ovh\StructType\RipeDeleteOrganisation $parameters
+     * @return \Ovh\StructType\RipeDeleteOrganisationResponse|bool
      */
-    public function ripeDeleteOrganisation(\PayPal\StructType\RipeDeleteOrganisation $parameters)
+    public function ripeDeleteOrganisation(\Ovh\StructType\RipeDeleteOrganisation $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->ripeDeleteOrganisation($parameters));
@@ -93,10 +93,10 @@ class Ripe extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\RipeUpdateOrganisation $parameters
-     * @return \PayPal\StructType\RipeUpdateOrganisationResponse|bool
+     * @param \Ovh\StructType\RipeUpdateOrganisation $parameters
+     * @return \Ovh\StructType\RipeUpdateOrganisationResponse|bool
      */
-    public function ripeUpdateOrganisation(\PayPal\StructType\RipeUpdateOrganisation $parameters)
+    public function ripeUpdateOrganisation(\Ovh\StructType\RipeUpdateOrganisation $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->ripeUpdateOrganisation($parameters));
@@ -112,10 +112,10 @@ class Ripe extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\RipeCreateOrganisation $parameters
-     * @return \PayPal\StructType\RipeCreateOrganisationResponse|bool
+     * @param \Ovh\StructType\RipeCreateOrganisation $parameters
+     * @return \Ovh\StructType\RipeCreateOrganisationResponse|bool
      */
-    public function ripeCreateOrganisation(\PayPal\StructType\RipeCreateOrganisation $parameters)
+    public function ripeCreateOrganisation(\Ovh\StructType\RipeCreateOrganisation $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->ripeCreateOrganisation($parameters));
@@ -128,7 +128,7 @@ class Ripe extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\RipeCreateOrganisationResponse|\PayPal\StructType\RipeDeleteOrganisationResponse|\PayPal\StructType\RipeGetRipeIdsResponse|\PayPal\StructType\RipeQueryResponse|\PayPal\StructType\RipeUpdateInetnumResponse|\PayPal\StructType\RipeUpdateOrganisationResponse
+     * @return \Ovh\StructType\RipeCreateOrganisationResponse|\Ovh\StructType\RipeDeleteOrganisationResponse|\Ovh\StructType\RipeGetRipeIdsResponse|\Ovh\StructType\RipeQueryResponse|\Ovh\StructType\RipeUpdateInetnumResponse|\Ovh\StructType\RipeUpdateOrganisationResponse
      */
     public function getResult()
     {

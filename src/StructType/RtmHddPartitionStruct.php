@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class RtmHddPartitionStruct extends AbstractStructBase
     /**
      * Set device value
      * @param string $device
-     * @return \PayPal\StructType\RtmHddPartitionStruct
+     * @return \Ovh\StructType\RtmHddPartitionStruct
      */
     public function setDevice($device = null)
     {
@@ -83,7 +83,7 @@ class RtmHddPartitionStruct extends AbstractStructBase
     /**
      * Set percentUsed value
      * @param int $percentUsed
-     * @return \PayPal\StructType\RtmHddPartitionStruct
+     * @return \Ovh\StructType\RtmHddPartitionStruct
      */
     public function setPercentUsed($percentUsed = null)
     {
@@ -105,7 +105,7 @@ class RtmHddPartitionStruct extends AbstractStructBase
     /**
      * Set percentInodes value
      * @param int $percentInodes
-     * @return \PayPal\StructType\RtmHddPartitionStruct
+     * @return \Ovh\StructType\RtmHddPartitionStruct
      */
     public function setPercentInodes($percentInodes = null)
     {
@@ -127,7 +127,7 @@ class RtmHddPartitionStruct extends AbstractStructBase
     /**
      * Set mountPoint value
      * @param string $mountPoint
-     * @return \PayPal\StructType\RtmHddPartitionStruct
+     * @return \Ovh\StructType\RtmHddPartitionStruct
      */
     public function setMountPoint($mountPoint = null)
     {
@@ -144,7 +144,7 @@ class RtmHddPartitionStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RtmHddPartitionStruct
+     * @return \Ovh\StructType\RtmHddPartitionStruct
      */
     public static function __set_state(array $array)
     {

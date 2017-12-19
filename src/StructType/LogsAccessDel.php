@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class LogsAccessDel extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\LogsAccessDel
+     * @return \Ovh\StructType\LogsAccessDel
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class LogsAccessDel extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\LogsAccessDel
+     * @return \Ovh\StructType\LogsAccessDel
      */
     public function setDomain($domain = null)
     {
@@ -103,7 +103,7 @@ class LogsAccessDel extends AbstractStructBase
     /**
      * Set user value
      * @param string $user
-     * @return \PayPal\StructType\LogsAccessDel
+     * @return \Ovh\StructType\LogsAccessDel
      */
     public function setUser($user = null)
     {
@@ -120,7 +120,7 @@ class LogsAccessDel extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\LogsAccessDel
+     * @return \Ovh\StructType\LogsAccessDel
      */
     public static function __set_state(array $array)
     {

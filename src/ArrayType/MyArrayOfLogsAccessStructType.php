@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfLogsAccessStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\LogsAccessStruct[]
+     * @var \Ovh\StructType\LogsAccessStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfLogsAccessStructType
      * @uses MyArrayOfLogsAccessStructType::setItem()
-     * @param \PayPal\StructType\LogsAccessStruct[] $item
+     * @param \Ovh\StructType\LogsAccessStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfLogsAccessStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\LogsAccessStruct[]|null
+     * @return \Ovh\StructType\LogsAccessStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfLogsAccessStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\LogsAccessStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfLogsAccessStructType
+     * @param \Ovh\StructType\LogsAccessStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfLogsAccessStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfLogsAccessStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfLogsAccessStructTypeItemItem instanceof \PayPal\StructType\LogsAccessStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\LogsAccessStruct, "%s" given', is_object($myArrayOfLogsAccessStructTypeItemItem) ? get_class($myArrayOfLogsAccessStructTypeItemItem) : gettype($myArrayOfLogsAccessStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfLogsAccessStructTypeItemItem instanceof \Ovh\StructType\LogsAccessStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\LogsAccessStruct, "%s" given', is_object($myArrayOfLogsAccessStructTypeItemItem) ? get_class($myArrayOfLogsAccessStructTypeItemItem) : gettype($myArrayOfLogsAccessStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfLogsAccessStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\LogsAccessStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfLogsAccessStructType
+     * @param \Ovh\StructType\LogsAccessStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfLogsAccessStructType
      */
-    public function addToItem(\PayPal\StructType\LogsAccessStruct $item)
+    public function addToItem(\Ovh\StructType\LogsAccessStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\LogsAccessStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\LogsAccessStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\LogsAccessStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\LogsAccessStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfLogsAccessStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\LogsAccessStruct|null
+     * @return \Ovh\StructType\LogsAccessStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfLogsAccessStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\LogsAccessStruct|null
+     * @return \Ovh\StructType\LogsAccessStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfLogsAccessStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\LogsAccessStruct|null
+     * @return \Ovh\StructType\LogsAccessStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfLogsAccessStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\LogsAccessStruct|null
+     * @return \Ovh\StructType\LogsAccessStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfLogsAccessStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\LogsAccessStruct|null
+     * @return \Ovh\StructType\LogsAccessStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfLogsAccessStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfLogsAccessStructType
+     * @return \Ovh\ArrayType\MyArrayOfLogsAccessStructType
      */
     public static function __set_state(array $array)
     {

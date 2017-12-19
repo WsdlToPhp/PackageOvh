@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyPhonebookOnGroupGroupListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType
      */
     public $return;
     /**
      * Constructor method for telephonyPhonebookOnGroupGroupListResponse
      * @uses TelephonyPhonebookOnGroupGroupListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyPhonebookOnGroupGroupListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType $return
-     * @return \PayPal\StructType\TelephonyPhonebookOnGroupGroupListResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType $return
+     * @return \Ovh\StructType\TelephonyPhonebookOnGroupGroupListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonyPhonebookGroupStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyPhonebookOnGroupGroupListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyPhonebookOnGroupGroupListResponse
+     * @return \Ovh\StructType\TelephonyPhonebookOnGroupGroupListResponse
      */
     public static function __set_state(array $array)
     {

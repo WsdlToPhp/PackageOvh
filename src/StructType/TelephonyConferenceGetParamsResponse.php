@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyConferenceGetParamsResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyConferenceParamsReturn
+     * @var \Ovh\StructType\TelephonyConferenceParamsReturn
      */
     public $return;
     /**
      * Constructor method for telephonyConferenceGetParamsResponse
      * @uses TelephonyConferenceGetParamsResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyConferenceParamsReturn $return
+     * @param \Ovh\StructType\TelephonyConferenceParamsReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonyConferenceParamsReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonyConferenceParamsReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyConferenceParamsReturn|null
+     * @return \Ovh\StructType\TelephonyConferenceParamsReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyConferenceGetParamsResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyConferenceParamsReturn $return
-     * @return \PayPal\StructType\TelephonyConferenceGetParamsResponse
+     * @param \Ovh\StructType\TelephonyConferenceParamsReturn $return
+     * @return \Ovh\StructType\TelephonyConferenceGetParamsResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyConferenceParamsReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyConferenceParamsReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyConferenceGetParamsResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyConferenceGetParamsResponse
+     * @return \Ovh\StructType\TelephonyConferenceGetParamsResponse
      */
     public static function __set_state(array $array)
     {

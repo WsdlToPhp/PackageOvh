@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class DedicatedSecondaryDNSDel extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedSecondaryDNSDel
+     * @return \Ovh\StructType\DedicatedSecondaryDNSDel
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class DedicatedSecondaryDNSDel extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedSecondaryDNSDel
+     * @return \Ovh\StructType\DedicatedSecondaryDNSDel
      */
     public function setHostname($hostname = null)
     {
@@ -123,7 +123,7 @@ class DedicatedSecondaryDNSDel extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\DedicatedSecondaryDNSDel
+     * @return \Ovh\StructType\DedicatedSecondaryDNSDel
      */
     public function setIp($ip = null)
     {
@@ -145,7 +145,7 @@ class DedicatedSecondaryDNSDel extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\DedicatedSecondaryDNSDel
+     * @return \Ovh\StructType\DedicatedSecondaryDNSDel
      */
     public function setDomain($domain = null)
     {
@@ -167,7 +167,7 @@ class DedicatedSecondaryDNSDel extends AbstractStructBase
     /**
      * Set nameserver value
      * @param string $nameserver
-     * @return \PayPal\StructType\DedicatedSecondaryDNSDel
+     * @return \Ovh\StructType\DedicatedSecondaryDNSDel
      */
     public function setNameserver($nameserver = null)
     {
@@ -184,7 +184,7 @@ class DedicatedSecondaryDNSDel extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedSecondaryDNSDel
+     * @return \Ovh\StructType\DedicatedSecondaryDNSDel
      */
     public static function __set_state(array $array)
     {

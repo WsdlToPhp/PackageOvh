@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyCallsSummaryStruct extends AbstractStructBase
 {
     /**
      * The pricePlan
-     * @var \PayPal\StructType\TelephonyCallsSummaryDetailsStruct
+     * @var \Ovh\StructType\TelephonyCallsSummaryDetailsStruct
      */
     public $pricePlan;
     /**
      * The outPlan
-     * @var \PayPal\StructType\TelephonyCallsSummaryDetailsStruct
+     * @var \Ovh\StructType\TelephonyCallsSummaryDetailsStruct
      */
     public $outPlan;
     /**
      * Constructor method for telephonyCallsSummaryStruct
      * @uses TelephonyCallsSummaryStruct::setPricePlan()
      * @uses TelephonyCallsSummaryStruct::setOutPlan()
-     * @param \PayPal\StructType\TelephonyCallsSummaryDetailsStruct $pricePlan
-     * @param \PayPal\StructType\TelephonyCallsSummaryDetailsStruct $outPlan
+     * @param \Ovh\StructType\TelephonyCallsSummaryDetailsStruct $pricePlan
+     * @param \Ovh\StructType\TelephonyCallsSummaryDetailsStruct $outPlan
      */
-    public function __construct(\PayPal\StructType\TelephonyCallsSummaryDetailsStruct $pricePlan = null, \PayPal\StructType\TelephonyCallsSummaryDetailsStruct $outPlan = null)
+    public function __construct(\Ovh\StructType\TelephonyCallsSummaryDetailsStruct $pricePlan = null, \Ovh\StructType\TelephonyCallsSummaryDetailsStruct $outPlan = null)
     {
         $this
             ->setPricePlan($pricePlan)
@@ -36,7 +36,7 @@ class TelephonyCallsSummaryStruct extends AbstractStructBase
     }
     /**
      * Get pricePlan value
-     * @return \PayPal\StructType\TelephonyCallsSummaryDetailsStruct|null
+     * @return \Ovh\StructType\TelephonyCallsSummaryDetailsStruct|null
      */
     public function getPricePlan()
     {
@@ -44,17 +44,17 @@ class TelephonyCallsSummaryStruct extends AbstractStructBase
     }
     /**
      * Set pricePlan value
-     * @param \PayPal\StructType\TelephonyCallsSummaryDetailsStruct $pricePlan
-     * @return \PayPal\StructType\TelephonyCallsSummaryStruct
+     * @param \Ovh\StructType\TelephonyCallsSummaryDetailsStruct $pricePlan
+     * @return \Ovh\StructType\TelephonyCallsSummaryStruct
      */
-    public function setPricePlan(\PayPal\StructType\TelephonyCallsSummaryDetailsStruct $pricePlan = null)
+    public function setPricePlan(\Ovh\StructType\TelephonyCallsSummaryDetailsStruct $pricePlan = null)
     {
         $this->pricePlan = $pricePlan;
         return $this;
     }
     /**
      * Get outPlan value
-     * @return \PayPal\StructType\TelephonyCallsSummaryDetailsStruct|null
+     * @return \Ovh\StructType\TelephonyCallsSummaryDetailsStruct|null
      */
     public function getOutPlan()
     {
@@ -62,10 +62,10 @@ class TelephonyCallsSummaryStruct extends AbstractStructBase
     }
     /**
      * Set outPlan value
-     * @param \PayPal\StructType\TelephonyCallsSummaryDetailsStruct $outPlan
-     * @return \PayPal\StructType\TelephonyCallsSummaryStruct
+     * @param \Ovh\StructType\TelephonyCallsSummaryDetailsStruct $outPlan
+     * @return \Ovh\StructType\TelephonyCallsSummaryStruct
      */
-    public function setOutPlan(\PayPal\StructType\TelephonyCallsSummaryDetailsStruct $outPlan = null)
+    public function setOutPlan(\Ovh\StructType\TelephonyCallsSummaryDetailsStruct $outPlan = null)
     {
         $this->outPlan = $outPlan;
         return $this;
@@ -76,7 +76,7 @@ class TelephonyCallsSummaryStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyCallsSummaryStruct
+     * @return \Ovh\StructType\TelephonyCallsSummaryStruct
      */
     public static function __set_state(array $array)
     {

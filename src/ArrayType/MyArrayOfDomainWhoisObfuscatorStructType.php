@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfDomainWhoisObfuscatorStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\DomainWhoisObfuscatorStruct[]
+     * @var \Ovh\StructType\DomainWhoisObfuscatorStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfDomainWhoisObfuscatorStructType
      * @uses MyArrayOfDomainWhoisObfuscatorStructType::setItem()
-     * @param \PayPal\StructType\DomainWhoisObfuscatorStruct[] $item
+     * @param \Ovh\StructType\DomainWhoisObfuscatorStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfDomainWhoisObfuscatorStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\DomainWhoisObfuscatorStruct[]|null
+     * @return \Ovh\StructType\DomainWhoisObfuscatorStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfDomainWhoisObfuscatorStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DomainWhoisObfuscatorStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfDomainWhoisObfuscatorStructType
+     * @param \Ovh\StructType\DomainWhoisObfuscatorStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfDomainWhoisObfuscatorStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfDomainWhoisObfuscatorStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfDomainWhoisObfuscatorStructTypeItemItem instanceof \PayPal\StructType\DomainWhoisObfuscatorStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DomainWhoisObfuscatorStruct, "%s" given', is_object($myArrayOfDomainWhoisObfuscatorStructTypeItemItem) ? get_class($myArrayOfDomainWhoisObfuscatorStructTypeItemItem) : gettype($myArrayOfDomainWhoisObfuscatorStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfDomainWhoisObfuscatorStructTypeItemItem instanceof \Ovh\StructType\DomainWhoisObfuscatorStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DomainWhoisObfuscatorStruct, "%s" given', is_object($myArrayOfDomainWhoisObfuscatorStructTypeItemItem) ? get_class($myArrayOfDomainWhoisObfuscatorStructTypeItemItem) : gettype($myArrayOfDomainWhoisObfuscatorStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfDomainWhoisObfuscatorStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DomainWhoisObfuscatorStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfDomainWhoisObfuscatorStructType
+     * @param \Ovh\StructType\DomainWhoisObfuscatorStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfDomainWhoisObfuscatorStructType
      */
-    public function addToItem(\PayPal\StructType\DomainWhoisObfuscatorStruct $item)
+    public function addToItem(\Ovh\StructType\DomainWhoisObfuscatorStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\DomainWhoisObfuscatorStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DomainWhoisObfuscatorStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\DomainWhoisObfuscatorStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DomainWhoisObfuscatorStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfDomainWhoisObfuscatorStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\DomainWhoisObfuscatorStruct|null
+     * @return \Ovh\StructType\DomainWhoisObfuscatorStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfDomainWhoisObfuscatorStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\DomainWhoisObfuscatorStruct|null
+     * @return \Ovh\StructType\DomainWhoisObfuscatorStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfDomainWhoisObfuscatorStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\DomainWhoisObfuscatorStruct|null
+     * @return \Ovh\StructType\DomainWhoisObfuscatorStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfDomainWhoisObfuscatorStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\DomainWhoisObfuscatorStruct|null
+     * @return \Ovh\StructType\DomainWhoisObfuscatorStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfDomainWhoisObfuscatorStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\DomainWhoisObfuscatorStruct|null
+     * @return \Ovh\StructType\DomainWhoisObfuscatorStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfDomainWhoisObfuscatorStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfDomainWhoisObfuscatorStructType
+     * @return \Ovh\ArrayType\MyArrayOfDomainWhoisObfuscatorStructType
      */
     public static function __set_state(array $array)
     {

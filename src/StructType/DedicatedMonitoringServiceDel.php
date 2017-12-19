@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -29,7 +29,7 @@ class DedicatedMonitoringServiceDel extends AbstractStructBase
      * The itemsIdTable
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $itemsIdTable;
     /**
@@ -39,9 +39,9 @@ class DedicatedMonitoringServiceDel extends AbstractStructBase
      * @uses DedicatedMonitoringServiceDel::setItemsIdTable()
      * @param string $session
      * @param string $hostname
-     * @param \PayPal\ArrayType\MyArrayOfStringType $itemsIdTable
+     * @param \Ovh\ArrayType\MyArrayOfStringType $itemsIdTable
      */
-    public function __construct($session = null, $hostname = null, \PayPal\ArrayType\MyArrayOfStringType $itemsIdTable = null)
+    public function __construct($session = null, $hostname = null, \Ovh\ArrayType\MyArrayOfStringType $itemsIdTable = null)
     {
         $this
             ->setSession($session)
@@ -59,7 +59,7 @@ class DedicatedMonitoringServiceDel extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedMonitoringServiceDel
+     * @return \Ovh\StructType\DedicatedMonitoringServiceDel
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class DedicatedMonitoringServiceDel extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedMonitoringServiceDel
+     * @return \Ovh\StructType\DedicatedMonitoringServiceDel
      */
     public function setHostname($hostname = null)
     {
@@ -94,7 +94,7 @@ class DedicatedMonitoringServiceDel extends AbstractStructBase
     }
     /**
      * Get itemsIdTable value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getItemsIdTable()
     {
@@ -102,10 +102,10 @@ class DedicatedMonitoringServiceDel extends AbstractStructBase
     }
     /**
      * Set itemsIdTable value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $itemsIdTable
-     * @return \PayPal\StructType\DedicatedMonitoringServiceDel
+     * @param \Ovh\ArrayType\MyArrayOfStringType $itemsIdTable
+     * @return \Ovh\StructType\DedicatedMonitoringServiceDel
      */
-    public function setItemsIdTable(\PayPal\ArrayType\MyArrayOfStringType $itemsIdTable = null)
+    public function setItemsIdTable(\Ovh\ArrayType\MyArrayOfStringType $itemsIdTable = null)
     {
         $this->itemsIdTable = $itemsIdTable;
         return $this;
@@ -116,7 +116,7 @@ class DedicatedMonitoringServiceDel extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedMonitoringServiceDel
+     * @return \Ovh\StructType\DedicatedMonitoringServiceDel
      */
     public static function __set_state(array $array)
     {

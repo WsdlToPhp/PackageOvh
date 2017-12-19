@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class GlobalAccessByNicResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfGlobalAccessStructType
+     * @var \Ovh\ArrayType\MyArrayOfGlobalAccessStructType
      */
     public $return;
     /**
      * Constructor method for globalAccessByNicResponse
      * @uses GlobalAccessByNicResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfGlobalAccessStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfGlobalAccessStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfGlobalAccessStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfGlobalAccessStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfGlobalAccessStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfGlobalAccessStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class GlobalAccessByNicResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfGlobalAccessStructType $return
-     * @return \PayPal\StructType\GlobalAccessByNicResponse
+     * @param \Ovh\ArrayType\MyArrayOfGlobalAccessStructType $return
+     * @return \Ovh\StructType\GlobalAccessByNicResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfGlobalAccessStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfGlobalAccessStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class GlobalAccessByNicResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\GlobalAccessByNicResponse
+     * @return \Ovh\StructType\GlobalAccessByNicResponse
      */
     public static function __set_state(array $array)
     {

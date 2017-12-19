@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfResponderEmailStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\ResponderEmailStruct[]
+     * @var \Ovh\StructType\ResponderEmailStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfResponderEmailStructType
      * @uses MyArrayOfResponderEmailStructType::setItem()
-     * @param \PayPal\StructType\ResponderEmailStruct[] $item
+     * @param \Ovh\StructType\ResponderEmailStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfResponderEmailStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\ResponderEmailStruct[]|null
+     * @return \Ovh\StructType\ResponderEmailStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfResponderEmailStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\ResponderEmailStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfResponderEmailStructType
+     * @param \Ovh\StructType\ResponderEmailStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfResponderEmailStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfResponderEmailStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfResponderEmailStructTypeItemItem instanceof \PayPal\StructType\ResponderEmailStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\ResponderEmailStruct, "%s" given', is_object($myArrayOfResponderEmailStructTypeItemItem) ? get_class($myArrayOfResponderEmailStructTypeItemItem) : gettype($myArrayOfResponderEmailStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfResponderEmailStructTypeItemItem instanceof \Ovh\StructType\ResponderEmailStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\ResponderEmailStruct, "%s" given', is_object($myArrayOfResponderEmailStructTypeItemItem) ? get_class($myArrayOfResponderEmailStructTypeItemItem) : gettype($myArrayOfResponderEmailStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfResponderEmailStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\ResponderEmailStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfResponderEmailStructType
+     * @param \Ovh\StructType\ResponderEmailStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfResponderEmailStructType
      */
-    public function addToItem(\PayPal\StructType\ResponderEmailStruct $item)
+    public function addToItem(\Ovh\StructType\ResponderEmailStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\ResponderEmailStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\ResponderEmailStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\ResponderEmailStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\ResponderEmailStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfResponderEmailStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\ResponderEmailStruct|null
+     * @return \Ovh\StructType\ResponderEmailStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfResponderEmailStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\ResponderEmailStruct|null
+     * @return \Ovh\StructType\ResponderEmailStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfResponderEmailStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\ResponderEmailStruct|null
+     * @return \Ovh\StructType\ResponderEmailStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfResponderEmailStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\ResponderEmailStruct|null
+     * @return \Ovh\StructType\ResponderEmailStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfResponderEmailStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\ResponderEmailStruct|null
+     * @return \Ovh\StructType\ResponderEmailStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfResponderEmailStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfResponderEmailStructType
+     * @return \Ovh\ArrayType\MyArrayOfResponderEmailStructType
      */
     public static function __set_state(array $array)
     {

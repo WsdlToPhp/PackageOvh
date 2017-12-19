@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class TelephonyConferenceAction extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyConferenceAction
+     * @return \Ovh\StructType\TelephonyConferenceAction
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class TelephonyConferenceAction extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyConferenceAction
+     * @return \Ovh\StructType\TelephonyConferenceAction
      */
     public function setNumber($number = null)
     {
@@ -133,7 +133,7 @@ class TelephonyConferenceAction extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyConferenceAction
+     * @return \Ovh\StructType\TelephonyConferenceAction
      */
     public function setCountry($country = null)
     {
@@ -155,7 +155,7 @@ class TelephonyConferenceAction extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \PayPal\StructType\TelephonyConferenceAction
+     * @return \Ovh\StructType\TelephonyConferenceAction
      */
     public function setAction($action = null)
     {
@@ -177,7 +177,7 @@ class TelephonyConferenceAction extends AbstractStructBase
     /**
      * Set memberid value
      * @param string $memberid
-     * @return \PayPal\StructType\TelephonyConferenceAction
+     * @return \Ovh\StructType\TelephonyConferenceAction
      */
     public function setMemberid($memberid = null)
     {
@@ -199,7 +199,7 @@ class TelephonyConferenceAction extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \PayPal\StructType\TelephonyConferenceAction
+     * @return \Ovh\StructType\TelephonyConferenceAction
      */
     public function setValue($value = null)
     {
@@ -216,7 +216,7 @@ class TelephonyConferenceAction extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyConferenceAction
+     * @return \Ovh\StructType\TelephonyConferenceAction
      */
     public static function __set_state(array $array)
     {

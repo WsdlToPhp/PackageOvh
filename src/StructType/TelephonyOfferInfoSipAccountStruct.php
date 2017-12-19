@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -77,7 +77,7 @@ class TelephonyOfferInfoSipAccountStruct extends AbstractStructBase
     /**
      * Set username value
      * @param string $username
-     * @return \PayPal\StructType\TelephonyOfferInfoSipAccountStruct
+     * @return \Ovh\StructType\TelephonyOfferInfoSipAccountStruct
      */
     public function setUsername($username = null)
     {
@@ -99,7 +99,7 @@ class TelephonyOfferInfoSipAccountStruct extends AbstractStructBase
     /**
      * Set extension value
      * @param string $extension
-     * @return \PayPal\StructType\TelephonyOfferInfoSipAccountStruct
+     * @return \Ovh\StructType\TelephonyOfferInfoSipAccountStruct
      */
     public function setExtension($extension = null)
     {
@@ -121,7 +121,7 @@ class TelephonyOfferInfoSipAccountStruct extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\TelephonyOfferInfoSipAccountStruct
+     * @return \Ovh\StructType\TelephonyOfferInfoSipAccountStruct
      */
     public function setDomain($domain = null)
     {
@@ -143,7 +143,7 @@ class TelephonyOfferInfoSipAccountStruct extends AbstractStructBase
     /**
      * Set lastLogin value
      * @param string $lastLogin
-     * @return \PayPal\StructType\TelephonyOfferInfoSipAccountStruct
+     * @return \Ovh\StructType\TelephonyOfferInfoSipAccountStruct
      */
     public function setLastLogin($lastLogin = null)
     {
@@ -165,7 +165,7 @@ class TelephonyOfferInfoSipAccountStruct extends AbstractStructBase
     /**
      * Set localAdress value
      * @param string $localAdress
-     * @return \PayPal\StructType\TelephonyOfferInfoSipAccountStruct
+     * @return \Ovh\StructType\TelephonyOfferInfoSipAccountStruct
      */
     public function setLocalAdress($localAdress = null)
     {
@@ -187,7 +187,7 @@ class TelephonyOfferInfoSipAccountStruct extends AbstractStructBase
     /**
      * Set publicAdress value
      * @param string $publicAdress
-     * @return \PayPal\StructType\TelephonyOfferInfoSipAccountStruct
+     * @return \Ovh\StructType\TelephonyOfferInfoSipAccountStruct
      */
     public function setPublicAdress($publicAdress = null)
     {
@@ -204,7 +204,7 @@ class TelephonyOfferInfoSipAccountStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyOfferInfoSipAccountStruct
+     * @return \Ovh\StructType\TelephonyOfferInfoSipAccountStruct
      */
     public static function __set_state(array $array)
     {

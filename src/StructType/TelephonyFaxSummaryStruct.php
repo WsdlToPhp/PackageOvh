@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyFaxSummaryStruct extends AbstractStructBase
 {
     /**
      * The low
-     * @var \PayPal\StructType\TelephonyFaxSummaryDetailsStruct
+     * @var \Ovh\StructType\TelephonyFaxSummaryDetailsStruct
      */
     public $low;
     /**
      * The high
-     * @var \PayPal\StructType\TelephonyFaxSummaryDetailsStruct
+     * @var \Ovh\StructType\TelephonyFaxSummaryDetailsStruct
      */
     public $high;
     /**
      * Constructor method for telephonyFaxSummaryStruct
      * @uses TelephonyFaxSummaryStruct::setLow()
      * @uses TelephonyFaxSummaryStruct::setHigh()
-     * @param \PayPal\StructType\TelephonyFaxSummaryDetailsStruct $low
-     * @param \PayPal\StructType\TelephonyFaxSummaryDetailsStruct $high
+     * @param \Ovh\StructType\TelephonyFaxSummaryDetailsStruct $low
+     * @param \Ovh\StructType\TelephonyFaxSummaryDetailsStruct $high
      */
-    public function __construct(\PayPal\StructType\TelephonyFaxSummaryDetailsStruct $low = null, \PayPal\StructType\TelephonyFaxSummaryDetailsStruct $high = null)
+    public function __construct(\Ovh\StructType\TelephonyFaxSummaryDetailsStruct $low = null, \Ovh\StructType\TelephonyFaxSummaryDetailsStruct $high = null)
     {
         $this
             ->setLow($low)
@@ -36,7 +36,7 @@ class TelephonyFaxSummaryStruct extends AbstractStructBase
     }
     /**
      * Get low value
-     * @return \PayPal\StructType\TelephonyFaxSummaryDetailsStruct|null
+     * @return \Ovh\StructType\TelephonyFaxSummaryDetailsStruct|null
      */
     public function getLow()
     {
@@ -44,17 +44,17 @@ class TelephonyFaxSummaryStruct extends AbstractStructBase
     }
     /**
      * Set low value
-     * @param \PayPal\StructType\TelephonyFaxSummaryDetailsStruct $low
-     * @return \PayPal\StructType\TelephonyFaxSummaryStruct
+     * @param \Ovh\StructType\TelephonyFaxSummaryDetailsStruct $low
+     * @return \Ovh\StructType\TelephonyFaxSummaryStruct
      */
-    public function setLow(\PayPal\StructType\TelephonyFaxSummaryDetailsStruct $low = null)
+    public function setLow(\Ovh\StructType\TelephonyFaxSummaryDetailsStruct $low = null)
     {
         $this->low = $low;
         return $this;
     }
     /**
      * Get high value
-     * @return \PayPal\StructType\TelephonyFaxSummaryDetailsStruct|null
+     * @return \Ovh\StructType\TelephonyFaxSummaryDetailsStruct|null
      */
     public function getHigh()
     {
@@ -62,10 +62,10 @@ class TelephonyFaxSummaryStruct extends AbstractStructBase
     }
     /**
      * Set high value
-     * @param \PayPal\StructType\TelephonyFaxSummaryDetailsStruct $high
-     * @return \PayPal\StructType\TelephonyFaxSummaryStruct
+     * @param \Ovh\StructType\TelephonyFaxSummaryDetailsStruct $high
+     * @return \Ovh\StructType\TelephonyFaxSummaryStruct
      */
-    public function setHigh(\PayPal\StructType\TelephonyFaxSummaryDetailsStruct $high = null)
+    public function setHigh(\Ovh\StructType\TelephonyFaxSummaryDetailsStruct $high = null)
     {
         $this->high = $high;
         return $this;
@@ -76,7 +76,7 @@ class TelephonyFaxSummaryStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFaxSummaryStruct
+     * @return \Ovh\StructType\TelephonyFaxSummaryStruct
      */
     public static function __set_state(array $array)
     {

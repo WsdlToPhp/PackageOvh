@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class TelephonyVoicemailMessagesStatusReturn extends AbstractStructBase
     /**
      * Set unavailable value
      * @param bool $unavailable
-     * @return \PayPal\StructType\TelephonyVoicemailMessagesStatusReturn
+     * @return \Ovh\StructType\TelephonyVoicemailMessagesStatusReturn
      */
     public function setUnavailable($unavailable = null)
     {
@@ -83,7 +83,7 @@ class TelephonyVoicemailMessagesStatusReturn extends AbstractStructBase
     /**
      * Set busy value
      * @param bool $busy
-     * @return \PayPal\StructType\TelephonyVoicemailMessagesStatusReturn
+     * @return \Ovh\StructType\TelephonyVoicemailMessagesStatusReturn
      */
     public function setBusy($busy = null)
     {
@@ -105,7 +105,7 @@ class TelephonyVoicemailMessagesStatusReturn extends AbstractStructBase
     /**
      * Set temp value
      * @param bool $temp
-     * @return \PayPal\StructType\TelephonyVoicemailMessagesStatusReturn
+     * @return \Ovh\StructType\TelephonyVoicemailMessagesStatusReturn
      */
     public function setTemp($temp = null)
     {
@@ -127,7 +127,7 @@ class TelephonyVoicemailMessagesStatusReturn extends AbstractStructBase
     /**
      * Set greet value
      * @param bool $greet
-     * @return \PayPal\StructType\TelephonyVoicemailMessagesStatusReturn
+     * @return \Ovh\StructType\TelephonyVoicemailMessagesStatusReturn
      */
     public function setGreet($greet = null)
     {
@@ -144,7 +144,7 @@ class TelephonyVoicemailMessagesStatusReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyVoicemailMessagesStatusReturn
+     * @return \Ovh\StructType\TelephonyVoicemailMessagesStatusReturn
      */
     public static function __set_state(array $array)
     {

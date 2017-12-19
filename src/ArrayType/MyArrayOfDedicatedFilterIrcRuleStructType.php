@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfDedicatedFilterIrcRuleStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\DedicatedFilterIrcRuleStruct[]
+     * @var \Ovh\StructType\DedicatedFilterIrcRuleStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfDedicatedFilterIrcRuleStructType
      * @uses MyArrayOfDedicatedFilterIrcRuleStructType::setItem()
-     * @param \PayPal\StructType\DedicatedFilterIrcRuleStruct[] $item
+     * @param \Ovh\StructType\DedicatedFilterIrcRuleStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfDedicatedFilterIrcRuleStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\DedicatedFilterIrcRuleStruct[]|null
+     * @return \Ovh\StructType\DedicatedFilterIrcRuleStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfDedicatedFilterIrcRuleStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedFilterIrcRuleStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedFilterIrcRuleStructType
+     * @param \Ovh\StructType\DedicatedFilterIrcRuleStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedFilterIrcRuleStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfDedicatedFilterIrcRuleStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfDedicatedFilterIrcRuleStructTypeItemItem instanceof \PayPal\StructType\DedicatedFilterIrcRuleStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedFilterIrcRuleStruct, "%s" given', is_object($myArrayOfDedicatedFilterIrcRuleStructTypeItemItem) ? get_class($myArrayOfDedicatedFilterIrcRuleStructTypeItemItem) : gettype($myArrayOfDedicatedFilterIrcRuleStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfDedicatedFilterIrcRuleStructTypeItemItem instanceof \Ovh\StructType\DedicatedFilterIrcRuleStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedFilterIrcRuleStruct, "%s" given', is_object($myArrayOfDedicatedFilterIrcRuleStructTypeItemItem) ? get_class($myArrayOfDedicatedFilterIrcRuleStructTypeItemItem) : gettype($myArrayOfDedicatedFilterIrcRuleStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfDedicatedFilterIrcRuleStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedFilterIrcRuleStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedFilterIrcRuleStructType
+     * @param \Ovh\StructType\DedicatedFilterIrcRuleStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedFilterIrcRuleStructType
      */
-    public function addToItem(\PayPal\StructType\DedicatedFilterIrcRuleStruct $item)
+    public function addToItem(\Ovh\StructType\DedicatedFilterIrcRuleStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\DedicatedFilterIrcRuleStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedFilterIrcRuleStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\DedicatedFilterIrcRuleStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedFilterIrcRuleStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfDedicatedFilterIrcRuleStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\DedicatedFilterIrcRuleStruct|null
+     * @return \Ovh\StructType\DedicatedFilterIrcRuleStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfDedicatedFilterIrcRuleStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\DedicatedFilterIrcRuleStruct|null
+     * @return \Ovh\StructType\DedicatedFilterIrcRuleStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfDedicatedFilterIrcRuleStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\DedicatedFilterIrcRuleStruct|null
+     * @return \Ovh\StructType\DedicatedFilterIrcRuleStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfDedicatedFilterIrcRuleStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\DedicatedFilterIrcRuleStruct|null
+     * @return \Ovh\StructType\DedicatedFilterIrcRuleStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfDedicatedFilterIrcRuleStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\DedicatedFilterIrcRuleStruct|null
+     * @return \Ovh\StructType\DedicatedFilterIrcRuleStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfDedicatedFilterIrcRuleStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedFilterIrcRuleStructType
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedFilterIrcRuleStructType
      */
     public static function __set_state(array $array)
     {

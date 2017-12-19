@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -109,7 +109,7 @@ class DedicatedNetworkInterfaceStruct extends AbstractStructBase
     /**
      * Set reverse value
      * @param string $reverse
-     * @return \PayPal\StructType\DedicatedNetworkInterfaceStruct
+     * @return \Ovh\StructType\DedicatedNetworkInterfaceStruct
      */
     public function setReverse($reverse = null)
     {
@@ -131,7 +131,7 @@ class DedicatedNetworkInterfaceStruct extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\DedicatedNetworkInterfaceStruct
+     * @return \Ovh\StructType\DedicatedNetworkInterfaceStruct
      */
     public function setIp($ip = null)
     {
@@ -153,7 +153,7 @@ class DedicatedNetworkInterfaceStruct extends AbstractStructBase
     /**
      * Set ipv6 value
      * @param string $ipv6
-     * @return \PayPal\StructType\DedicatedNetworkInterfaceStruct
+     * @return \Ovh\StructType\DedicatedNetworkInterfaceStruct
      */
     public function setIpv6($ipv6 = null)
     {
@@ -175,7 +175,7 @@ class DedicatedNetworkInterfaceStruct extends AbstractStructBase
     /**
      * Set mac value
      * @param string $mac
-     * @return \PayPal\StructType\DedicatedNetworkInterfaceStruct
+     * @return \Ovh\StructType\DedicatedNetworkInterfaceStruct
      */
     public function setMac($mac = null)
     {
@@ -197,7 +197,7 @@ class DedicatedNetworkInterfaceStruct extends AbstractStructBase
     /**
      * Set switch value
      * @param string $switch
-     * @return \PayPal\StructType\DedicatedNetworkInterfaceStruct
+     * @return \Ovh\StructType\DedicatedNetworkInterfaceStruct
      */
     public function setSwitch($switch = null)
     {
@@ -219,7 +219,7 @@ class DedicatedNetworkInterfaceStruct extends AbstractStructBase
     /**
      * Set icmp_drop value
      * @param bool $icmp_drop
-     * @return \PayPal\StructType\DedicatedNetworkInterfaceStruct
+     * @return \Ovh\StructType\DedicatedNetworkInterfaceStruct
      */
     public function setIcmp_drop($icmp_drop = null)
     {
@@ -241,7 +241,7 @@ class DedicatedNetworkInterfaceStruct extends AbstractStructBase
     /**
      * Set failover value
      * @param bool $failover
-     * @return \PayPal\StructType\DedicatedNetworkInterfaceStruct
+     * @return \Ovh\StructType\DedicatedNetworkInterfaceStruct
      */
     public function setFailover($failover = null)
     {
@@ -263,7 +263,7 @@ class DedicatedNetworkInterfaceStruct extends AbstractStructBase
     /**
      * Set routedTo value
      * @param string $routedTo
-     * @return \PayPal\StructType\DedicatedNetworkInterfaceStruct
+     * @return \Ovh\StructType\DedicatedNetworkInterfaceStruct
      */
     public function setRoutedTo($routedTo = null)
     {
@@ -285,7 +285,7 @@ class DedicatedNetworkInterfaceStruct extends AbstractStructBase
     /**
      * Set ssl value
      * @param bool $ssl
-     * @return \PayPal\StructType\DedicatedNetworkInterfaceStruct
+     * @return \Ovh\StructType\DedicatedNetworkInterfaceStruct
      */
     public function setSsl($ssl = null)
     {
@@ -307,7 +307,7 @@ class DedicatedNetworkInterfaceStruct extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\DedicatedNetworkInterfaceStruct
+     * @return \Ovh\StructType\DedicatedNetworkInterfaceStruct
      */
     public function setCountry($country = null)
     {
@@ -324,7 +324,7 @@ class DedicatedNetworkInterfaceStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedNetworkInterfaceStruct
+     * @return \Ovh\StructType\DedicatedNetworkInterfaceStruct
      */
     public static function __set_state(array $array)
     {

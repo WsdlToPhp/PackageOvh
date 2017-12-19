@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class OverquotaInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\OverquotaInfoReturn
+     * @var \Ovh\StructType\OverquotaInfoReturn
      */
     public $return;
     /**
      * Constructor method for overquotaInfoResponse
      * @uses OverquotaInfoResponse::setReturn()
-     * @param \PayPal\StructType\OverquotaInfoReturn $return
+     * @param \Ovh\StructType\OverquotaInfoReturn $return
      */
-    public function __construct(\PayPal\StructType\OverquotaInfoReturn $return = null)
+    public function __construct(\Ovh\StructType\OverquotaInfoReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\OverquotaInfoReturn|null
+     * @return \Ovh\StructType\OverquotaInfoReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class OverquotaInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\OverquotaInfoReturn $return
-     * @return \PayPal\StructType\OverquotaInfoResponse
+     * @param \Ovh\StructType\OverquotaInfoReturn $return
+     * @return \Ovh\StructType\OverquotaInfoResponse
      */
-    public function setReturn(\PayPal\StructType\OverquotaInfoReturn $return = null)
+    public function setReturn(\Ovh\StructType\OverquotaInfoReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class OverquotaInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\OverquotaInfoResponse
+     * @return \Ovh\StructType\OverquotaInfoResponse
      */
     public static function __set_state(array $array)
     {

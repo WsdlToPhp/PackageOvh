@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class RtmRaidPartitionVolumeMemberStruct extends AbstractStructBase
     /**
      * Set memberName value
      * @param string $memberName
-     * @return \PayPal\StructType\RtmRaidPartitionVolumeMemberStruct
+     * @return \Ovh\StructType\RtmRaidPartitionVolumeMemberStruct
      */
     public function setMemberName($memberName = null)
     {
@@ -91,7 +91,7 @@ class RtmRaidPartitionVolumeMemberStruct extends AbstractStructBase
     /**
      * Set modelName value
      * @param string $modelName
-     * @return \PayPal\StructType\RtmRaidPartitionVolumeMemberStruct
+     * @return \Ovh\StructType\RtmRaidPartitionVolumeMemberStruct
      */
     public function setModelName($modelName = null)
     {
@@ -113,7 +113,7 @@ class RtmRaidPartitionVolumeMemberStruct extends AbstractStructBase
     /**
      * Set flags value
      * @param string $flags
-     * @return \PayPal\StructType\RtmRaidPartitionVolumeMemberStruct
+     * @return \Ovh\StructType\RtmRaidPartitionVolumeMemberStruct
      */
     public function setFlags($flags = null)
     {
@@ -135,7 +135,7 @@ class RtmRaidPartitionVolumeMemberStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\RtmRaidPartitionVolumeMemberStruct
+     * @return \Ovh\StructType\RtmRaidPartitionVolumeMemberStruct
      */
     public function setStatus($status = null)
     {
@@ -157,7 +157,7 @@ class RtmRaidPartitionVolumeMemberStruct extends AbstractStructBase
     /**
      * Set capacity value
      * @param string $capacity
-     * @return \PayPal\StructType\RtmRaidPartitionVolumeMemberStruct
+     * @return \Ovh\StructType\RtmRaidPartitionVolumeMemberStruct
      */
     public function setCapacity($capacity = null)
     {
@@ -174,7 +174,7 @@ class RtmRaidPartitionVolumeMemberStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RtmRaidPartitionVolumeMemberStruct
+     * @return \Ovh\StructType\RtmRaidPartitionVolumeMemberStruct
      */
     public static function __set_state(array $array)
     {

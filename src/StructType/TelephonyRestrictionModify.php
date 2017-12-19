@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,7 +36,7 @@ class TelephonyRestrictionModify extends AbstractStructBase
      * The restrictions
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $restrictions;
     /**
@@ -48,9 +48,9 @@ class TelephonyRestrictionModify extends AbstractStructBase
      * @param string $session
      * @param string $number
      * @param string $country
-     * @param \PayPal\ArrayType\MyArrayOfStringType $restrictions
+     * @param \Ovh\ArrayType\MyArrayOfStringType $restrictions
      */
-    public function __construct($session = null, $number = null, $country = null, \PayPal\ArrayType\MyArrayOfStringType $restrictions = null)
+    public function __construct($session = null, $number = null, $country = null, \Ovh\ArrayType\MyArrayOfStringType $restrictions = null)
     {
         $this
             ->setSession($session)
@@ -69,7 +69,7 @@ class TelephonyRestrictionModify extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyRestrictionModify
+     * @return \Ovh\StructType\TelephonyRestrictionModify
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class TelephonyRestrictionModify extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyRestrictionModify
+     * @return \Ovh\StructType\TelephonyRestrictionModify
      */
     public function setNumber($number = null)
     {
@@ -113,7 +113,7 @@ class TelephonyRestrictionModify extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyRestrictionModify
+     * @return \Ovh\StructType\TelephonyRestrictionModify
      */
     public function setCountry($country = null)
     {
@@ -126,7 +126,7 @@ class TelephonyRestrictionModify extends AbstractStructBase
     }
     /**
      * Get restrictions value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getRestrictions()
     {
@@ -134,10 +134,10 @@ class TelephonyRestrictionModify extends AbstractStructBase
     }
     /**
      * Set restrictions value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $restrictions
-     * @return \PayPal\StructType\TelephonyRestrictionModify
+     * @param \Ovh\ArrayType\MyArrayOfStringType $restrictions
+     * @return \Ovh\StructType\TelephonyRestrictionModify
      */
-    public function setRestrictions(\PayPal\ArrayType\MyArrayOfStringType $restrictions = null)
+    public function setRestrictions(\Ovh\ArrayType\MyArrayOfStringType $restrictions = null)
     {
         $this->restrictions = $restrictions;
         return $this;
@@ -148,7 +148,7 @@ class TelephonyRestrictionModify extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyRestrictionModify
+     * @return \Ovh\StructType\TelephonyRestrictionModify
      */
     public static function __set_state(array $array)
     {

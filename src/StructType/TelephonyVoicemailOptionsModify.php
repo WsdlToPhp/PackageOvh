@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -229,7 +229,7 @@ class TelephonyVoicemailOptionsModify extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsModify
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsModify
      */
     public function setSession($session = null)
     {
@@ -251,7 +251,7 @@ class TelephonyVoicemailOptionsModify extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsModify
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsModify
      */
     public function setNumber($number = null)
     {
@@ -273,7 +273,7 @@ class TelephonyVoicemailOptionsModify extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsModify
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsModify
      */
     public function setCountry($country = null)
     {
@@ -295,7 +295,7 @@ class TelephonyVoicemailOptionsModify extends AbstractStructBase
     /**
      * Set redirection1 value
      * @param string $redirection1
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsModify
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsModify
      */
     public function setRedirection1($redirection1 = null)
     {
@@ -317,7 +317,7 @@ class TelephonyVoicemailOptionsModify extends AbstractStructBase
     /**
      * Set redirection1Email value
      * @param string $redirection1Email
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsModify
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsModify
      */
     public function setRedirection1Email($redirection1Email = null)
     {
@@ -339,7 +339,7 @@ class TelephonyVoicemailOptionsModify extends AbstractStructBase
     /**
      * Set redirection2 value
      * @param string $redirection2
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsModify
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsModify
      */
     public function setRedirection2($redirection2 = null)
     {
@@ -361,7 +361,7 @@ class TelephonyVoicemailOptionsModify extends AbstractStructBase
     /**
      * Set redirection2Email value
      * @param string $redirection2Email
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsModify
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsModify
      */
     public function setRedirection2Email($redirection2Email = null)
     {
@@ -383,7 +383,7 @@ class TelephonyVoicemailOptionsModify extends AbstractStructBase
     /**
      * Set redirection3 value
      * @param string $redirection3
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsModify
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsModify
      */
     public function setRedirection3($redirection3 = null)
     {
@@ -405,7 +405,7 @@ class TelephonyVoicemailOptionsModify extends AbstractStructBase
     /**
      * Set redirection3Email value
      * @param string $redirection3Email
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsModify
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsModify
      */
     public function setRedirection3Email($redirection3Email = null)
     {
@@ -427,7 +427,7 @@ class TelephonyVoicemailOptionsModify extends AbstractStructBase
     /**
      * Set redirection4 value
      * @param string $redirection4
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsModify
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsModify
      */
     public function setRedirection4($redirection4 = null)
     {
@@ -449,7 +449,7 @@ class TelephonyVoicemailOptionsModify extends AbstractStructBase
     /**
      * Set redirection4Email value
      * @param string $redirection4Email
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsModify
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsModify
      */
     public function setRedirection4Email($redirection4Email = null)
     {
@@ -471,7 +471,7 @@ class TelephonyVoicemailOptionsModify extends AbstractStructBase
     /**
      * Set redirection5 value
      * @param string $redirection5
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsModify
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsModify
      */
     public function setRedirection5($redirection5 = null)
     {
@@ -493,7 +493,7 @@ class TelephonyVoicemailOptionsModify extends AbstractStructBase
     /**
      * Set redirection5Email value
      * @param string $redirection5Email
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsModify
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsModify
      */
     public function setRedirection5Email($redirection5Email = null)
     {
@@ -515,7 +515,7 @@ class TelephonyVoicemailOptionsModify extends AbstractStructBase
     /**
      * Set announceMessage value
      * @param string $announceMessage
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsModify
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsModify
      */
     public function setAnnounceMessage($announceMessage = null)
     {
@@ -537,7 +537,7 @@ class TelephonyVoicemailOptionsModify extends AbstractStructBase
     /**
      * Set keepMessage value
      * @param bool $keepMessage
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsModify
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsModify
      */
     public function setKeepMessage($keepMessage = null)
     {
@@ -559,7 +559,7 @@ class TelephonyVoicemailOptionsModify extends AbstractStructBase
     /**
      * Set audioformat value
      * @param string $audioformat
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsModify
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsModify
      */
     public function setAudioformat($audioformat = null)
     {
@@ -581,7 +581,7 @@ class TelephonyVoicemailOptionsModify extends AbstractStructBase
     /**
      * Set fromEmail value
      * @param string $fromEmail
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsModify
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsModify
      */
     public function setFromEmail($fromEmail = null)
     {
@@ -603,7 +603,7 @@ class TelephonyVoicemailOptionsModify extends AbstractStructBase
     /**
      * Set fromName value
      * @param string $fromName
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsModify
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsModify
      */
     public function setFromName($fromName = null)
     {
@@ -625,7 +625,7 @@ class TelephonyVoicemailOptionsModify extends AbstractStructBase
     /**
      * Set doNotRecord value
      * @param bool $doNotRecord
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsModify
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsModify
      */
     public function setDoNotRecord($doNotRecord = null)
     {
@@ -647,7 +647,7 @@ class TelephonyVoicemailOptionsModify extends AbstractStructBase
     /**
      * Set forcePassword value
      * @param bool $forcePassword
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsModify
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsModify
      */
     public function setForcePassword($forcePassword = null)
     {
@@ -664,7 +664,7 @@ class TelephonyVoicemailOptionsModify extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyVoicemailOptionsModify
+     * @return \Ovh\StructType\TelephonyVoicemailOptionsModify
      */
     public static function __set_state(array $array)
     {

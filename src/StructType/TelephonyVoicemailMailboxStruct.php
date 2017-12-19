@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -93,7 +93,7 @@ class TelephonyVoicemailMailboxStruct extends AbstractStructBase
     /**
      * Set id value
      * @param string $id
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxStruct
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxStruct
      */
     public function setId($id = null)
     {
@@ -115,7 +115,7 @@ class TelephonyVoicemailMailboxStruct extends AbstractStructBase
     /**
      * Set callerid value
      * @param string $callerid
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxStruct
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxStruct
      */
     public function setCallerid($callerid = null)
     {
@@ -137,7 +137,7 @@ class TelephonyVoicemailMailboxStruct extends AbstractStructBase
     /**
      * Set origdate value
      * @param string $origdate
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxStruct
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxStruct
      */
     public function setOrigdate($origdate = null)
     {
@@ -159,7 +159,7 @@ class TelephonyVoicemailMailboxStruct extends AbstractStructBase
     /**
      * Set origtime value
      * @param string $origtime
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxStruct
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxStruct
      */
     public function setOrigtime($origtime = null)
     {
@@ -181,7 +181,7 @@ class TelephonyVoicemailMailboxStruct extends AbstractStructBase
     /**
      * Set origmailbox value
      * @param string $origmailbox
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxStruct
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxStruct
      */
     public function setOrigmailbox($origmailbox = null)
     {
@@ -203,7 +203,7 @@ class TelephonyVoicemailMailboxStruct extends AbstractStructBase
     /**
      * Set duration value
      * @param int $duration
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxStruct
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxStruct
      */
     public function setDuration($duration = null)
     {
@@ -225,7 +225,7 @@ class TelephonyVoicemailMailboxStruct extends AbstractStructBase
     /**
      * Set folder value
      * @param string $folder
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxStruct
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxStruct
      */
     public function setFolder($folder = null)
     {
@@ -247,7 +247,7 @@ class TelephonyVoicemailMailboxStruct extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxStruct
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxStruct
      */
     public function setUrl($url = null)
     {
@@ -264,7 +264,7 @@ class TelephonyVoicemailMailboxStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyVoicemailMailboxStruct
+     * @return \Ovh\StructType\TelephonyVoicemailMailboxStruct
      */
     public static function __set_state(array $array)
     {

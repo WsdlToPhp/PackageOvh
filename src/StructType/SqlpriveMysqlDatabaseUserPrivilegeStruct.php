@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class SqlpriveMysqlDatabaseUserPrivilegeStruct extends AbstractStructBase
     /**
      * Set userName value
      * @param string $userName
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct
      */
     public function setUserName($userName = null)
     {
@@ -67,7 +67,7 @@ class SqlpriveMysqlDatabaseUserPrivilegeStruct extends AbstractStructBase
     /**
      * Set userPriv value
      * @param string $userPriv
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct
      */
     public function setUserPriv($userPriv = null)
     {
@@ -84,7 +84,7 @@ class SqlpriveMysqlDatabaseUserPrivilegeStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseUserPrivilegeStruct
      */
     public static function __set_state(array $array)
     {

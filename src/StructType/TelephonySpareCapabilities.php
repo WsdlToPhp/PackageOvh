@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class TelephonySpareCapabilities extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonySpareCapabilities
+     * @return \Ovh\StructType\TelephonySpareCapabilities
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class TelephonySpareCapabilities extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\TelephonySpareCapabilities
+     * @return \Ovh\StructType\TelephonySpareCapabilities
      */
     public function setType($type = null)
     {
@@ -113,7 +113,7 @@ class TelephonySpareCapabilities extends AbstractStructBase
     /**
      * Set family value
      * @param string $family
-     * @return \PayPal\StructType\TelephonySpareCapabilities
+     * @return \Ovh\StructType\TelephonySpareCapabilities
      */
     public function setFamily($family = null)
     {
@@ -135,7 +135,7 @@ class TelephonySpareCapabilities extends AbstractStructBase
     /**
      * Set model value
      * @param string $model
-     * @return \PayPal\StructType\TelephonySpareCapabilities
+     * @return \Ovh\StructType\TelephonySpareCapabilities
      */
     public function setModel($model = null)
     {
@@ -152,7 +152,7 @@ class TelephonySpareCapabilities extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySpareCapabilities
+     * @return \Ovh\StructType\TelephonySpareCapabilities
      */
     public static function __set_state(array $array)
     {

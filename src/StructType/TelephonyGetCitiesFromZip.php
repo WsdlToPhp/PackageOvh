@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class TelephonyGetCitiesFromZip extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyGetCitiesFromZip
+     * @return \Ovh\StructType\TelephonyGetCitiesFromZip
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class TelephonyGetCitiesFromZip extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyGetCitiesFromZip
+     * @return \Ovh\StructType\TelephonyGetCitiesFromZip
      */
     public function setCountry($country = null)
     {
@@ -103,7 +103,7 @@ class TelephonyGetCitiesFromZip extends AbstractStructBase
     /**
      * Set zip value
      * @param string $zip
-     * @return \PayPal\StructType\TelephonyGetCitiesFromZip
+     * @return \Ovh\StructType\TelephonyGetCitiesFromZip
      */
     public function setZip($zip = null)
     {
@@ -120,7 +120,7 @@ class TelephonyGetCitiesFromZip extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyGetCitiesFromZip
+     * @return \Ovh\StructType\TelephonyGetCitiesFromZip
      */
     public static function __set_state(array $array)
     {

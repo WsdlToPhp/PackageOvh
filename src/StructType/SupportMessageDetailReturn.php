@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -93,7 +93,7 @@ class SupportMessageDetailReturn extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\SupportMessageDetailReturn
+     * @return \Ovh\StructType\SupportMessageDetailReturn
      */
     public function setId($id = null)
     {
@@ -115,7 +115,7 @@ class SupportMessageDetailReturn extends AbstractStructBase
     /**
      * Set thread value
      * @param int $thread
-     * @return \PayPal\StructType\SupportMessageDetailReturn
+     * @return \Ovh\StructType\SupportMessageDetailReturn
      */
     public function setThread($thread = null)
     {
@@ -137,7 +137,7 @@ class SupportMessageDetailReturn extends AbstractStructBase
     /**
      * Set unreadThread value
      * @param bool $unreadThread
-     * @return \PayPal\StructType\SupportMessageDetailReturn
+     * @return \Ovh\StructType\SupportMessageDetailReturn
      */
     public function setUnreadThread($unreadThread = null)
     {
@@ -159,7 +159,7 @@ class SupportMessageDetailReturn extends AbstractStructBase
     /**
      * Set fromEmail value
      * @param string $fromEmail
-     * @return \PayPal\StructType\SupportMessageDetailReturn
+     * @return \Ovh\StructType\SupportMessageDetailReturn
      */
     public function setFromEmail($fromEmail = null)
     {
@@ -181,7 +181,7 @@ class SupportMessageDetailReturn extends AbstractStructBase
     /**
      * Set dateSent value
      * @param string $dateSent
-     * @return \PayPal\StructType\SupportMessageDetailReturn
+     * @return \Ovh\StructType\SupportMessageDetailReturn
      */
     public function setDateSent($dateSent = null)
     {
@@ -203,7 +203,7 @@ class SupportMessageDetailReturn extends AbstractStructBase
     /**
      * Set subject value
      * @param string $subject
-     * @return \PayPal\StructType\SupportMessageDetailReturn
+     * @return \Ovh\StructType\SupportMessageDetailReturn
      */
     public function setSubject($subject = null)
     {
@@ -225,7 +225,7 @@ class SupportMessageDetailReturn extends AbstractStructBase
     /**
      * Set body value
      * @param string $body
-     * @return \PayPal\StructType\SupportMessageDetailReturn
+     * @return \Ovh\StructType\SupportMessageDetailReturn
      */
     public function setBody($body = null)
     {
@@ -247,7 +247,7 @@ class SupportMessageDetailReturn extends AbstractStructBase
     /**
      * Set reportReason value
      * @param string $reportReason
-     * @return \PayPal\StructType\SupportMessageDetailReturn
+     * @return \Ovh\StructType\SupportMessageDetailReturn
      */
     public function setReportReason($reportReason = null)
     {
@@ -264,7 +264,7 @@ class SupportMessageDetailReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SupportMessageDetailReturn
+     * @return \Ovh\StructType\SupportMessageDetailReturn
      */
     public static function __set_state(array $array)
     {

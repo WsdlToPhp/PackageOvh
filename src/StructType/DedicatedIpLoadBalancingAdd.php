@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,7 +36,7 @@ class DedicatedIpLoadBalancingAdd extends AbstractStructBase
      * The serverList
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $serverList;
     /**
@@ -48,9 +48,9 @@ class DedicatedIpLoadBalancingAdd extends AbstractStructBase
      * @param string $session
      * @param string $name
      * @param string $ipLoadBalancing
-     * @param \PayPal\ArrayType\MyArrayOfStringType $serverList
+     * @param \Ovh\ArrayType\MyArrayOfStringType $serverList
      */
-    public function __construct($session = null, $name = null, $ipLoadBalancing = null, \PayPal\ArrayType\MyArrayOfStringType $serverList = null)
+    public function __construct($session = null, $name = null, $ipLoadBalancing = null, \Ovh\ArrayType\MyArrayOfStringType $serverList = null)
     {
         $this
             ->setSession($session)
@@ -69,7 +69,7 @@ class DedicatedIpLoadBalancingAdd extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingAdd
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingAdd
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class DedicatedIpLoadBalancingAdd extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingAdd
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingAdd
      */
     public function setName($name = null)
     {
@@ -113,7 +113,7 @@ class DedicatedIpLoadBalancingAdd extends AbstractStructBase
     /**
      * Set ipLoadBalancing value
      * @param string $ipLoadBalancing
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingAdd
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingAdd
      */
     public function setIpLoadBalancing($ipLoadBalancing = null)
     {
@@ -126,7 +126,7 @@ class DedicatedIpLoadBalancingAdd extends AbstractStructBase
     }
     /**
      * Get serverList value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getServerList()
     {
@@ -134,10 +134,10 @@ class DedicatedIpLoadBalancingAdd extends AbstractStructBase
     }
     /**
      * Set serverList value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $serverList
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingAdd
+     * @param \Ovh\ArrayType\MyArrayOfStringType $serverList
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingAdd
      */
-    public function setServerList(\PayPal\ArrayType\MyArrayOfStringType $serverList = null)
+    public function setServerList(\Ovh\ArrayType\MyArrayOfStringType $serverList = null)
     {
         $this->serverList = $serverList;
         return $this;
@@ -148,7 +148,7 @@ class DedicatedIpLoadBalancingAdd extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingAdd
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingAdd
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -77,7 +77,7 @@ class SecondaryDNSStruct extends AbstractStructBase
     /**
      * Set zone value
      * @param string $zone
-     * @return \PayPal\StructType\SecondaryDNSStruct
+     * @return \Ovh\StructType\SecondaryDNSStruct
      */
     public function setZone($zone = null)
     {
@@ -99,7 +99,7 @@ class SecondaryDNSStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\SecondaryDNSStruct
+     * @return \Ovh\StructType\SecondaryDNSStruct
      */
     public function setType($type = null)
     {
@@ -121,7 +121,7 @@ class SecondaryDNSStruct extends AbstractStructBase
     /**
      * Set nameserver value
      * @param string $nameserver
-     * @return \PayPal\StructType\SecondaryDNSStruct
+     * @return \Ovh\StructType\SecondaryDNSStruct
      */
     public function setNameserver($nameserver = null)
     {
@@ -143,7 +143,7 @@ class SecondaryDNSStruct extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \PayPal\StructType\SecondaryDNSStruct
+     * @return \Ovh\StructType\SecondaryDNSStruct
      */
     public function setState($state = null)
     {
@@ -165,7 +165,7 @@ class SecondaryDNSStruct extends AbstractStructBase
     /**
      * Set creation value
      * @param string $creation
-     * @return \PayPal\StructType\SecondaryDNSStruct
+     * @return \Ovh\StructType\SecondaryDNSStruct
      */
     public function setCreation($creation = null)
     {
@@ -187,7 +187,7 @@ class SecondaryDNSStruct extends AbstractStructBase
     /**
      * Set deactivation value
      * @param string $deactivation
-     * @return \PayPal\StructType\SecondaryDNSStruct
+     * @return \Ovh\StructType\SecondaryDNSStruct
      */
     public function setDeactivation($deactivation = null)
     {
@@ -204,7 +204,7 @@ class SecondaryDNSStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SecondaryDNSStruct
+     * @return \Ovh\StructType\SecondaryDNSStruct
      */
     public static function __set_state(array $array)
     {

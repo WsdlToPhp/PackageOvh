@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyGetCitiesFromZipResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyCitiesFromZipStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyCitiesFromZipStructType
      */
     public $return;
     /**
      * Constructor method for telephonyGetCitiesFromZipResponse
      * @uses TelephonyGetCitiesFromZipResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyCitiesFromZipStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyCitiesFromZipStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonyCitiesFromZipStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonyCitiesFromZipStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyCitiesFromZipStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyCitiesFromZipStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyGetCitiesFromZipResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyCitiesFromZipStructType $return
-     * @return \PayPal\StructType\TelephonyGetCitiesFromZipResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyCitiesFromZipStructType $return
+     * @return \Ovh\StructType\TelephonyGetCitiesFromZipResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonyCitiesFromZipStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonyCitiesFromZipStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyGetCitiesFromZipResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyGetCitiesFromZipResponse
+     * @return \Ovh\StructType\TelephonyGetCitiesFromZipResponse
      */
     public static function __set_state(array $array)
     {

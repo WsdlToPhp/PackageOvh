@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedFailoverRipeGetIpResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedRipeGetIpStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedRipeGetIpStructType
      */
     public $return;
     /**
      * Constructor method for dedicatedFailoverRipeGetIpResponse
      * @uses DedicatedFailoverRipeGetIpResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedRipeGetIpStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedRipeGetIpStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfDedicatedRipeGetIpStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfDedicatedRipeGetIpStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedRipeGetIpStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedRipeGetIpStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedFailoverRipeGetIpResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedRipeGetIpStructType $return
-     * @return \PayPal\StructType\DedicatedFailoverRipeGetIpResponse
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedRipeGetIpStructType $return
+     * @return \Ovh\StructType\DedicatedFailoverRipeGetIpResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfDedicatedRipeGetIpStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfDedicatedRipeGetIpStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedFailoverRipeGetIpResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedFailoverRipeGetIpResponse
+     * @return \Ovh\StructType\DedicatedFailoverRipeGetIpResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class TelephonyVoicemailMessagesDownload extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyVoicemailMessagesDownload
+     * @return \Ovh\StructType\TelephonyVoicemailMessagesDownload
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class TelephonyVoicemailMessagesDownload extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyVoicemailMessagesDownload
+     * @return \Ovh\StructType\TelephonyVoicemailMessagesDownload
      */
     public function setNumber($number = null)
     {
@@ -123,7 +123,7 @@ class TelephonyVoicemailMessagesDownload extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyVoicemailMessagesDownload
+     * @return \Ovh\StructType\TelephonyVoicemailMessagesDownload
      */
     public function setCountry($country = null)
     {
@@ -145,7 +145,7 @@ class TelephonyVoicemailMessagesDownload extends AbstractStructBase
     /**
      * Set messType value
      * @param string $messType
-     * @return \PayPal\StructType\TelephonyVoicemailMessagesDownload
+     * @return \Ovh\StructType\TelephonyVoicemailMessagesDownload
      */
     public function setMessType($messType = null)
     {
@@ -167,7 +167,7 @@ class TelephonyVoicemailMessagesDownload extends AbstractStructBase
     /**
      * Set format value
      * @param string $format
-     * @return \PayPal\StructType\TelephonyVoicemailMessagesDownload
+     * @return \Ovh\StructType\TelephonyVoicemailMessagesDownload
      */
     public function setFormat($format = null)
     {
@@ -184,7 +184,7 @@ class TelephonyVoicemailMessagesDownload extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyVoicemailMessagesDownload
+     * @return \Ovh\StructType\TelephonyVoicemailMessagesDownload
      */
     public static function __set_state(array $array)
     {

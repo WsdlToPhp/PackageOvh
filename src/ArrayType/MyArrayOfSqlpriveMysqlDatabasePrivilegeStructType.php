@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -17,13 +17,13 @@ class MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType extends AbstractStructAr
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\SqlpriveMysqlDatabasePrivilegeStruct[]
+     * @var \Ovh\StructType\SqlpriveMysqlDatabasePrivilegeStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType
      * @uses MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType::setItem()
-     * @param \PayPal\StructType\SqlpriveMysqlDatabasePrivilegeStruct[] $item
+     * @param \Ovh\StructType\SqlpriveMysqlDatabasePrivilegeStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -32,7 +32,7 @@ class MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType extends AbstractStructAr
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\SqlpriveMysqlDatabasePrivilegeStruct[]|null
+     * @return \Ovh\StructType\SqlpriveMysqlDatabasePrivilegeStruct[]|null
      */
     public function getItem()
     {
@@ -41,15 +41,15 @@ class MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType extends AbstractStructAr
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\SqlpriveMysqlDatabasePrivilegeStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType
+     * @param \Ovh\StructType\SqlpriveMysqlDatabasePrivilegeStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfSqlpriveMysqlDatabasePrivilegeStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfSqlpriveMysqlDatabasePrivilegeStructTypeItemItem instanceof \PayPal\StructType\SqlpriveMysqlDatabasePrivilegeStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\SqlpriveMysqlDatabasePrivilegeStruct, "%s" given', is_object($myArrayOfSqlpriveMysqlDatabasePrivilegeStructTypeItemItem) ? get_class($myArrayOfSqlpriveMysqlDatabasePrivilegeStructTypeItemItem) : gettype($myArrayOfSqlpriveMysqlDatabasePrivilegeStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfSqlpriveMysqlDatabasePrivilegeStructTypeItemItem instanceof \Ovh\StructType\SqlpriveMysqlDatabasePrivilegeStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\SqlpriveMysqlDatabasePrivilegeStruct, "%s" given', is_object($myArrayOfSqlpriveMysqlDatabasePrivilegeStructTypeItemItem) ? get_class($myArrayOfSqlpriveMysqlDatabasePrivilegeStructTypeItemItem) : gettype($myArrayOfSqlpriveMysqlDatabasePrivilegeStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -58,14 +58,14 @@ class MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType extends AbstractStructAr
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\SqlpriveMysqlDatabasePrivilegeStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType
+     * @param \Ovh\StructType\SqlpriveMysqlDatabasePrivilegeStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType
      */
-    public function addToItem(\PayPal\StructType\SqlpriveMysqlDatabasePrivilegeStruct $item)
+    public function addToItem(\Ovh\StructType\SqlpriveMysqlDatabasePrivilegeStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\SqlpriveMysqlDatabasePrivilegeStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\SqlpriveMysqlDatabasePrivilegeStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\SqlpriveMysqlDatabasePrivilegeStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\SqlpriveMysqlDatabasePrivilegeStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType extends AbstractStructAr
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\SqlpriveMysqlDatabasePrivilegeStruct|null
+     * @return \Ovh\StructType\SqlpriveMysqlDatabasePrivilegeStruct|null
      */
     public function current()
     {
@@ -83,7 +83,7 @@ class MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType extends AbstractStructAr
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\SqlpriveMysqlDatabasePrivilegeStruct|null
+     * @return \Ovh\StructType\SqlpriveMysqlDatabasePrivilegeStruct|null
      */
     public function item($index)
     {
@@ -92,7 +92,7 @@ class MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType extends AbstractStructAr
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\SqlpriveMysqlDatabasePrivilegeStruct|null
+     * @return \Ovh\StructType\SqlpriveMysqlDatabasePrivilegeStruct|null
      */
     public function first()
     {
@@ -101,7 +101,7 @@ class MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType extends AbstractStructAr
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\SqlpriveMysqlDatabasePrivilegeStruct|null
+     * @return \Ovh\StructType\SqlpriveMysqlDatabasePrivilegeStruct|null
      */
     public function last()
     {
@@ -111,7 +111,7 @@ class MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType extends AbstractStructAr
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\SqlpriveMysqlDatabasePrivilegeStruct|null
+     * @return \Ovh\StructType\SqlpriveMysqlDatabasePrivilegeStruct|null
      */
     public function offsetGet($offset)
     {
@@ -132,7 +132,7 @@ class MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType extends AbstractStructAr
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType
+     * @return \Ovh\ArrayType\MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType
      */
     public static function __set_state(array $array)
     {

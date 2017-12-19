@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class CrontabInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\CrontabInfoReturn
+     * @var \Ovh\StructType\CrontabInfoReturn
      */
     public $return;
     /**
      * Constructor method for crontabInfoResponse
      * @uses CrontabInfoResponse::setReturn()
-     * @param \PayPal\StructType\CrontabInfoReturn $return
+     * @param \Ovh\StructType\CrontabInfoReturn $return
      */
-    public function __construct(\PayPal\StructType\CrontabInfoReturn $return = null)
+    public function __construct(\Ovh\StructType\CrontabInfoReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\CrontabInfoReturn|null
+     * @return \Ovh\StructType\CrontabInfoReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class CrontabInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\CrontabInfoReturn $return
-     * @return \PayPal\StructType\CrontabInfoResponse
+     * @param \Ovh\StructType\CrontabInfoReturn $return
+     * @return \Ovh\StructType\CrontabInfoResponse
      */
-    public function setReturn(\PayPal\StructType\CrontabInfoReturn $return = null)
+    public function setReturn(\Ovh\StructType\CrontabInfoReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class CrontabInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\CrontabInfoResponse
+     * @return \Ovh\StructType\CrontabInfoResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class SqlpriveCronGetResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfSqlpriveCronStructType
+     * @var \Ovh\ArrayType\MyArrayOfSqlpriveCronStructType
      */
     public $return;
     /**
      * Constructor method for sqlpriveCronGetResponse
      * @uses SqlpriveCronGetResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfSqlpriveCronStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfSqlpriveCronStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfSqlpriveCronStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfSqlpriveCronStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfSqlpriveCronStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfSqlpriveCronStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class SqlpriveCronGetResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfSqlpriveCronStructType $return
-     * @return \PayPal\StructType\SqlpriveCronGetResponse
+     * @param \Ovh\ArrayType\MyArrayOfSqlpriveCronStructType $return
+     * @return \Ovh\StructType\SqlpriveCronGetResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfSqlpriveCronStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfSqlpriveCronStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class SqlpriveCronGetResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SqlpriveCronGetResponse
+     * @return \Ovh\StructType\SqlpriveCronGetResponse
      */
     public static function __set_state(array $array)
     {

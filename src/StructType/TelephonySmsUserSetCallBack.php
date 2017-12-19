@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class TelephonySmsUserSetCallBack extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonySmsUserSetCallBack
+     * @return \Ovh\StructType\TelephonySmsUserSetCallBack
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class TelephonySmsUserSetCallBack extends AbstractStructBase
     /**
      * Set smsAccount value
      * @param string $smsAccount
-     * @return \PayPal\StructType\TelephonySmsUserSetCallBack
+     * @return \Ovh\StructType\TelephonySmsUserSetCallBack
      */
     public function setSmsAccount($smsAccount = null)
     {
@@ -113,7 +113,7 @@ class TelephonySmsUserSetCallBack extends AbstractStructBase
     /**
      * Set login value
      * @param string $login
-     * @return \PayPal\StructType\TelephonySmsUserSetCallBack
+     * @return \Ovh\StructType\TelephonySmsUserSetCallBack
      */
     public function setLogin($login = null)
     {
@@ -135,7 +135,7 @@ class TelephonySmsUserSetCallBack extends AbstractStructBase
     /**
      * Set callBack value
      * @param string $callBack
-     * @return \PayPal\StructType\TelephonySmsUserSetCallBack
+     * @return \Ovh\StructType\TelephonySmsUserSetCallBack
      */
     public function setCallBack($callBack = null)
     {
@@ -152,7 +152,7 @@ class TelephonySmsUserSetCallBack extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsUserSetCallBack
+     * @return \Ovh\StructType\TelephonySmsUserSetCallBack
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class TelephonySpareActionsStruct extends AbstractStructBase
     /**
      * Set toSpare value
      * @param bool $toSpare
-     * @return \PayPal\StructType\TelephonySpareActionsStruct
+     * @return \Ovh\StructType\TelephonySpareActionsStruct
      */
     public function setToSpare($toSpare = null)
     {
@@ -83,7 +83,7 @@ class TelephonySpareActionsStruct extends AbstractStructBase
     /**
      * Set toRma value
      * @param bool $toRma
-     * @return \PayPal\StructType\TelephonySpareActionsStruct
+     * @return \Ovh\StructType\TelephonySpareActionsStruct
      */
     public function setToRma($toRma = null)
     {
@@ -105,7 +105,7 @@ class TelephonySpareActionsStruct extends AbstractStructBase
     /**
      * Set rmaType value
      * @param string $rmaType
-     * @return \PayPal\StructType\TelephonySpareActionsStruct
+     * @return \Ovh\StructType\TelephonySpareActionsStruct
      */
     public function setRmaType($rmaType = null)
     {
@@ -127,7 +127,7 @@ class TelephonySpareActionsStruct extends AbstractStructBase
     /**
      * Set toDelete value
      * @param bool $toDelete
-     * @return \PayPal\StructType\TelephonySpareActionsStruct
+     * @return \Ovh\StructType\TelephonySpareActionsStruct
      */
     public function setToDelete($toDelete = null)
     {
@@ -144,7 +144,7 @@ class TelephonySpareActionsStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySpareActionsStruct
+     * @return \Ovh\StructType\TelephonySpareActionsStruct
      */
     public static function __set_state(array $array)
     {

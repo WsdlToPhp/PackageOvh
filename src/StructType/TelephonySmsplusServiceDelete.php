@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class TelephonySmsplusServiceDelete extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonySmsplusServiceDelete
+     * @return \Ovh\StructType\TelephonySmsplusServiceDelete
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class TelephonySmsplusServiceDelete extends AbstractStructBase
     /**
      * Set shortCode value
      * @param string $shortCode
-     * @return \PayPal\StructType\TelephonySmsplusServiceDelete
+     * @return \Ovh\StructType\TelephonySmsplusServiceDelete
      */
     public function setShortCode($shortCode = null)
     {
@@ -113,7 +113,7 @@ class TelephonySmsplusServiceDelete extends AbstractStructBase
     /**
      * Set keyword value
      * @param string $keyword
-     * @return \PayPal\StructType\TelephonySmsplusServiceDelete
+     * @return \Ovh\StructType\TelephonySmsplusServiceDelete
      */
     public function setKeyword($keyword = null)
     {
@@ -135,7 +135,7 @@ class TelephonySmsplusServiceDelete extends AbstractStructBase
     /**
      * Set cancelDelete value
      * @param bool $cancelDelete
-     * @return \PayPal\StructType\TelephonySmsplusServiceDelete
+     * @return \Ovh\StructType\TelephonySmsplusServiceDelete
      */
     public function setCancelDelete($cancelDelete = null)
     {
@@ -152,7 +152,7 @@ class TelephonySmsplusServiceDelete extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsplusServiceDelete
+     * @return \Ovh\StructType\TelephonySmsplusServiceDelete
      */
     public static function __set_state(array $array)
     {

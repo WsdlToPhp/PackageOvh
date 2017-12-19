@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -93,7 +93,7 @@ class FtpInfoReturn extends AbstractStructBase
     /**
      * Set login value
      * @param string $login
-     * @return \PayPal\StructType\FtpInfoReturn
+     * @return \Ovh\StructType\FtpInfoReturn
      */
     public function setLogin($login = null)
     {
@@ -115,7 +115,7 @@ class FtpInfoReturn extends AbstractStructBase
     /**
      * Set quota value
      * @param int $quota
-     * @return \PayPal\StructType\FtpInfoReturn
+     * @return \Ovh\StructType\FtpInfoReturn
      */
     public function setQuota($quota = null)
     {
@@ -137,7 +137,7 @@ class FtpInfoReturn extends AbstractStructBase
     /**
      * Set maxQuota value
      * @param int $maxQuota
-     * @return \PayPal\StructType\FtpInfoReturn
+     * @return \Ovh\StructType\FtpInfoReturn
      */
     public function setMaxQuota($maxQuota = null)
     {
@@ -159,7 +159,7 @@ class FtpInfoReturn extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \PayPal\StructType\FtpInfoReturn
+     * @return \Ovh\StructType\FtpInfoReturn
      */
     public function setUrl($url = null)
     {
@@ -181,7 +181,7 @@ class FtpInfoReturn extends AbstractStructBase
     /**
      * Set hostedOn value
      * @param string $hostedOn
-     * @return \PayPal\StructType\FtpInfoReturn
+     * @return \Ovh\StructType\FtpInfoReturn
      */
     public function setHostedOn($hostedOn = null)
     {
@@ -203,7 +203,7 @@ class FtpInfoReturn extends AbstractStructBase
     /**
      * Set isTodo value
      * @param string $isTodo
-     * @return \PayPal\StructType\FtpInfoReturn
+     * @return \Ovh\StructType\FtpInfoReturn
      */
     public function setIsTodo($isTodo = null)
     {
@@ -225,7 +225,7 @@ class FtpInfoReturn extends AbstractStructBase
     /**
      * Set highCapacity value
      * @param bool $highCapacity
-     * @return \PayPal\StructType\FtpInfoReturn
+     * @return \Ovh\StructType\FtpInfoReturn
      */
     public function setHighCapacity($highCapacity = null)
     {
@@ -247,7 +247,7 @@ class FtpInfoReturn extends AbstractStructBase
     /**
      * Set highSecurity value
      * @param bool $highSecurity
-     * @return \PayPal\StructType\FtpInfoReturn
+     * @return \Ovh\StructType\FtpInfoReturn
      */
     public function setHighSecurity($highSecurity = null)
     {
@@ -264,7 +264,7 @@ class FtpInfoReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\FtpInfoReturn
+     * @return \Ovh\StructType\FtpInfoReturn
      */
     public static function __set_state(array $array)
     {

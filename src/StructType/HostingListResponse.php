@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class HostingListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfHostingListStructType
+     * @var \Ovh\ArrayType\MyArrayOfHostingListStructType
      */
     public $return;
     /**
      * Constructor method for hostingListResponse
      * @uses HostingListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfHostingListStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfHostingListStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfHostingListStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfHostingListStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfHostingListStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfHostingListStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class HostingListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfHostingListStructType $return
-     * @return \PayPal\StructType\HostingListResponse
+     * @param \Ovh\ArrayType\MyArrayOfHostingListStructType $return
+     * @return \Ovh\StructType\HostingListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfHostingListStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfHostingListStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class HostingListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\HostingListResponse
+     * @return \Ovh\StructType\HostingListResponse
      */
     public static function __set_state(array $array)
     {

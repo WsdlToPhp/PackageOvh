@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class SupportGetAllVisibleCategoriesResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfSupportCategoryStructType
+     * @var \Ovh\ArrayType\MyArrayOfSupportCategoryStructType
      */
     public $return;
     /**
      * Constructor method for supportGetAllVisibleCategoriesResponse
      * @uses SupportGetAllVisibleCategoriesResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfSupportCategoryStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfSupportCategoryStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfSupportCategoryStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfSupportCategoryStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfSupportCategoryStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfSupportCategoryStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class SupportGetAllVisibleCategoriesResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfSupportCategoryStructType $return
-     * @return \PayPal\StructType\SupportGetAllVisibleCategoriesResponse
+     * @param \Ovh\ArrayType\MyArrayOfSupportCategoryStructType $return
+     * @return \Ovh\StructType\SupportGetAllVisibleCategoriesResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfSupportCategoryStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfSupportCategoryStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class SupportGetAllVisibleCategoriesResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SupportGetAllVisibleCategoriesResponse
+     * @return \Ovh\StructType\SupportGetAllVisibleCategoriesResponse
      */
     public static function __set_state(array $array)
     {

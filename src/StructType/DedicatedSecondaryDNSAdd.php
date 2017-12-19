@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class DedicatedSecondaryDNSAdd extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedSecondaryDNSAdd
+     * @return \Ovh\StructType\DedicatedSecondaryDNSAdd
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class DedicatedSecondaryDNSAdd extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedSecondaryDNSAdd
+     * @return \Ovh\StructType\DedicatedSecondaryDNSAdd
      */
     public function setHostname($hostname = null)
     {
@@ -133,7 +133,7 @@ class DedicatedSecondaryDNSAdd extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\DedicatedSecondaryDNSAdd
+     * @return \Ovh\StructType\DedicatedSecondaryDNSAdd
      */
     public function setIp($ip = null)
     {
@@ -155,7 +155,7 @@ class DedicatedSecondaryDNSAdd extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\DedicatedSecondaryDNSAdd
+     * @return \Ovh\StructType\DedicatedSecondaryDNSAdd
      */
     public function setDomain($domain = null)
     {
@@ -177,7 +177,7 @@ class DedicatedSecondaryDNSAdd extends AbstractStructBase
     /**
      * Set nameserver value
      * @param string $nameserver
-     * @return \PayPal\StructType\DedicatedSecondaryDNSAdd
+     * @return \Ovh\StructType\DedicatedSecondaryDNSAdd
      */
     public function setNameserver($nameserver = null)
     {
@@ -199,7 +199,7 @@ class DedicatedSecondaryDNSAdd extends AbstractStructBase
     /**
      * Set nameserverIp value
      * @param string $nameserverIp
-     * @return \PayPal\StructType\DedicatedSecondaryDNSAdd
+     * @return \Ovh\StructType\DedicatedSecondaryDNSAdd
      */
     public function setNameserverIp($nameserverIp = null)
     {
@@ -216,7 +216,7 @@ class DedicatedSecondaryDNSAdd extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedSecondaryDNSAdd
+     * @return \Ovh\StructType\DedicatedSecondaryDNSAdd
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class NicPublicInfoReturn extends AbstractStructBase
     /**
      * Set nic value
      * @param string $nic
-     * @return \PayPal\StructType\NicPublicInfoReturn
+     * @return \Ovh\StructType\NicPublicInfoReturn
      */
     public function setNic($nic = null)
     {
@@ -91,7 +91,7 @@ class NicPublicInfoReturn extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\NicPublicInfoReturn
+     * @return \Ovh\StructType\NicPublicInfoReturn
      */
     public function setName($name = null)
     {
@@ -113,7 +113,7 @@ class NicPublicInfoReturn extends AbstractStructBase
     /**
      * Set firstname value
      * @param string $firstname
-     * @return \PayPal\StructType\NicPublicInfoReturn
+     * @return \Ovh\StructType\NicPublicInfoReturn
      */
     public function setFirstname($firstname = null)
     {
@@ -135,7 +135,7 @@ class NicPublicInfoReturn extends AbstractStructBase
     /**
      * Set organisation value
      * @param string $organisation
-     * @return \PayPal\StructType\NicPublicInfoReturn
+     * @return \Ovh\StructType\NicPublicInfoReturn
      */
     public function setOrganisation($organisation = null)
     {
@@ -157,7 +157,7 @@ class NicPublicInfoReturn extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \PayPal\StructType\NicPublicInfoReturn
+     * @return \Ovh\StructType\NicPublicInfoReturn
      */
     public function setCity($city = null)
     {
@@ -174,7 +174,7 @@ class NicPublicInfoReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\NicPublicInfoReturn
+     * @return \Ovh\StructType\NicPublicInfoReturn
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -43,7 +43,7 @@ class EmailFilterStruct extends AbstractStructBase
     public $nbRules;
     /**
      * The rules
-     * @var \PayPal\ArrayType\MyArrayOfEmailFilterRuleStructType
+     * @var \Ovh\ArrayType\MyArrayOfEmailFilterRuleStructType
      */
     public $rules;
     /**
@@ -61,9 +61,9 @@ class EmailFilterStruct extends AbstractStructBase
      * @param bool $active
      * @param string $priority
      * @param int $nbRules
-     * @param \PayPal\ArrayType\MyArrayOfEmailFilterRuleStructType $rules
+     * @param \Ovh\ArrayType\MyArrayOfEmailFilterRuleStructType $rules
      */
-    public function __construct($filter = null, $action = null, $action_param = null, $active = null, $priority = null, $nbRules = null, \PayPal\ArrayType\MyArrayOfEmailFilterRuleStructType $rules = null)
+    public function __construct($filter = null, $action = null, $action_param = null, $active = null, $priority = null, $nbRules = null, \Ovh\ArrayType\MyArrayOfEmailFilterRuleStructType $rules = null)
     {
         $this
             ->setFilter($filter)
@@ -85,7 +85,7 @@ class EmailFilterStruct extends AbstractStructBase
     /**
      * Set filter value
      * @param string $filter
-     * @return \PayPal\StructType\EmailFilterStruct
+     * @return \Ovh\StructType\EmailFilterStruct
      */
     public function setFilter($filter = null)
     {
@@ -107,7 +107,7 @@ class EmailFilterStruct extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \PayPal\StructType\EmailFilterStruct
+     * @return \Ovh\StructType\EmailFilterStruct
      */
     public function setAction($action = null)
     {
@@ -129,7 +129,7 @@ class EmailFilterStruct extends AbstractStructBase
     /**
      * Set action_param value
      * @param string $action_param
-     * @return \PayPal\StructType\EmailFilterStruct
+     * @return \Ovh\StructType\EmailFilterStruct
      */
     public function setAction_param($action_param = null)
     {
@@ -151,7 +151,7 @@ class EmailFilterStruct extends AbstractStructBase
     /**
      * Set active value
      * @param bool $active
-     * @return \PayPal\StructType\EmailFilterStruct
+     * @return \Ovh\StructType\EmailFilterStruct
      */
     public function setActive($active = null)
     {
@@ -173,7 +173,7 @@ class EmailFilterStruct extends AbstractStructBase
     /**
      * Set priority value
      * @param string $priority
-     * @return \PayPal\StructType\EmailFilterStruct
+     * @return \Ovh\StructType\EmailFilterStruct
      */
     public function setPriority($priority = null)
     {
@@ -195,7 +195,7 @@ class EmailFilterStruct extends AbstractStructBase
     /**
      * Set nbRules value
      * @param int $nbRules
-     * @return \PayPal\StructType\EmailFilterStruct
+     * @return \Ovh\StructType\EmailFilterStruct
      */
     public function setNbRules($nbRules = null)
     {
@@ -208,7 +208,7 @@ class EmailFilterStruct extends AbstractStructBase
     }
     /**
      * Get rules value
-     * @return \PayPal\ArrayType\MyArrayOfEmailFilterRuleStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfEmailFilterRuleStructType|null
      */
     public function getRules()
     {
@@ -216,10 +216,10 @@ class EmailFilterStruct extends AbstractStructBase
     }
     /**
      * Set rules value
-     * @param \PayPal\ArrayType\MyArrayOfEmailFilterRuleStructType $rules
-     * @return \PayPal\StructType\EmailFilterStruct
+     * @param \Ovh\ArrayType\MyArrayOfEmailFilterRuleStructType $rules
+     * @return \Ovh\StructType\EmailFilterStruct
      */
-    public function setRules(\PayPal\ArrayType\MyArrayOfEmailFilterRuleStructType $rules = null)
+    public function setRules(\Ovh\ArrayType\MyArrayOfEmailFilterRuleStructType $rules = null)
     {
         $this->rules = $rules;
         return $this;
@@ -230,7 +230,7 @@ class EmailFilterStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\EmailFilterStruct
+     * @return \Ovh\StructType\EmailFilterStruct
      */
     public static function __set_state(array $array)
     {

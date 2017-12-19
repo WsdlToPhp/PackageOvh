@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -119,7 +119,7 @@ class TelephonySmsplusServiceAdd extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonySmsplusServiceAdd
+     * @return \Ovh\StructType\TelephonySmsplusServiceAdd
      */
     public function setSession($session = null)
     {
@@ -141,7 +141,7 @@ class TelephonySmsplusServiceAdd extends AbstractStructBase
     /**
      * Set billingAccount value
      * @param string $billingAccount
-     * @return \PayPal\StructType\TelephonySmsplusServiceAdd
+     * @return \Ovh\StructType\TelephonySmsplusServiceAdd
      */
     public function setBillingAccount($billingAccount = null)
     {
@@ -163,7 +163,7 @@ class TelephonySmsplusServiceAdd extends AbstractStructBase
     /**
      * Set shortCode value
      * @param string $shortCode
-     * @return \PayPal\StructType\TelephonySmsplusServiceAdd
+     * @return \Ovh\StructType\TelephonySmsplusServiceAdd
      */
     public function setShortCode($shortCode = null)
     {
@@ -185,7 +185,7 @@ class TelephonySmsplusServiceAdd extends AbstractStructBase
     /**
      * Set keyword value
      * @param string $keyword
-     * @return \PayPal\StructType\TelephonySmsplusServiceAdd
+     * @return \Ovh\StructType\TelephonySmsplusServiceAdd
      */
     public function setKeyword($keyword = null)
     {
@@ -207,7 +207,7 @@ class TelephonySmsplusServiceAdd extends AbstractStructBase
     /**
      * Set procedureId value
      * @param int $procedureId
-     * @return \PayPal\StructType\TelephonySmsplusServiceAdd
+     * @return \Ovh\StructType\TelephonySmsplusServiceAdd
      */
     public function setProcedureId($procedureId = null)
     {
@@ -229,7 +229,7 @@ class TelephonySmsplusServiceAdd extends AbstractStructBase
     /**
      * Set applicationType value
      * @param string $applicationType
-     * @return \PayPal\StructType\TelephonySmsplusServiceAdd
+     * @return \Ovh\StructType\TelephonySmsplusServiceAdd
      */
     public function setApplicationType($applicationType = null)
     {
@@ -251,7 +251,7 @@ class TelephonySmsplusServiceAdd extends AbstractStructBase
     /**
      * Set applicationDescription value
      * @param string $applicationDescription
-     * @return \PayPal\StructType\TelephonySmsplusServiceAdd
+     * @return \Ovh\StructType\TelephonySmsplusServiceAdd
      */
     public function setApplicationDescription($applicationDescription = null)
     {
@@ -273,7 +273,7 @@ class TelephonySmsplusServiceAdd extends AbstractStructBase
     /**
      * Set company value
      * @param string $company
-     * @return \PayPal\StructType\TelephonySmsplusServiceAdd
+     * @return \Ovh\StructType\TelephonySmsplusServiceAdd
      */
     public function setCompany($company = null)
     {
@@ -295,7 +295,7 @@ class TelephonySmsplusServiceAdd extends AbstractStructBase
     /**
      * Set acceptedContract value
      * @param bool $acceptedContract
-     * @return \PayPal\StructType\TelephonySmsplusServiceAdd
+     * @return \Ovh\StructType\TelephonySmsplusServiceAdd
      */
     public function setAcceptedContract($acceptedContract = null)
     {
@@ -312,7 +312,7 @@ class TelephonySmsplusServiceAdd extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsplusServiceAdd
+     * @return \Ovh\StructType\TelephonySmsplusServiceAdd
      */
     public static function __set_state(array $array)
     {

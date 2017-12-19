@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,12 +13,12 @@ class DedicatedAllowedDistributionDetailsStruct extends AbstractStructBase
 {
     /**
      * The language
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionLanguageStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionLanguageStructType
      */
     public $language;
     /**
      * The languageList
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $languageList;
     /**
@@ -28,7 +28,7 @@ class DedicatedAllowedDistributionDetailsStruct extends AbstractStructBase
     public $defaultLanguage;
     /**
      * The bitFormat
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionBitFormatStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionBitFormatStructType
      */
     public $bitFormat;
     /**
@@ -49,14 +49,14 @@ class DedicatedAllowedDistributionDetailsStruct extends AbstractStructBase
      * @uses DedicatedAllowedDistributionDetailsStruct::setBitFormat()
      * @uses DedicatedAllowedDistributionDetailsStruct::setLongName()
      * @uses DedicatedAllowedDistributionDetailsStruct::setName()
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionLanguageStructType $language
-     * @param \PayPal\ArrayType\MyArrayOfStringType $languageList
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionLanguageStructType $language
+     * @param \Ovh\ArrayType\MyArrayOfStringType $languageList
      * @param string $defaultLanguage
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionBitFormatStructType $bitFormat
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionBitFormatStructType $bitFormat
      * @param string $longName
      * @param string $name
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionLanguageStructType $language = null, \PayPal\ArrayType\MyArrayOfStringType $languageList = null, $defaultLanguage = null, \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionBitFormatStructType $bitFormat = null, $longName = null, $name = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionLanguageStructType $language = null, \Ovh\ArrayType\MyArrayOfStringType $languageList = null, $defaultLanguage = null, \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionBitFormatStructType $bitFormat = null, $longName = null, $name = null)
     {
         $this
             ->setLanguage($language)
@@ -68,7 +68,7 @@ class DedicatedAllowedDistributionDetailsStruct extends AbstractStructBase
     }
     /**
      * Get language value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionLanguageStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionLanguageStructType|null
      */
     public function getLanguage()
     {
@@ -76,17 +76,17 @@ class DedicatedAllowedDistributionDetailsStruct extends AbstractStructBase
     }
     /**
      * Set language value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionLanguageStructType $language
-     * @return \PayPal\StructType\DedicatedAllowedDistributionDetailsStruct
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionLanguageStructType $language
+     * @return \Ovh\StructType\DedicatedAllowedDistributionDetailsStruct
      */
-    public function setLanguage(\PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionLanguageStructType $language = null)
+    public function setLanguage(\Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionLanguageStructType $language = null)
     {
         $this->language = $language;
         return $this;
     }
     /**
      * Get languageList value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getLanguageList()
     {
@@ -94,10 +94,10 @@ class DedicatedAllowedDistributionDetailsStruct extends AbstractStructBase
     }
     /**
      * Set languageList value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $languageList
-     * @return \PayPal\StructType\DedicatedAllowedDistributionDetailsStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $languageList
+     * @return \Ovh\StructType\DedicatedAllowedDistributionDetailsStruct
      */
-    public function setLanguageList(\PayPal\ArrayType\MyArrayOfStringType $languageList = null)
+    public function setLanguageList(\Ovh\ArrayType\MyArrayOfStringType $languageList = null)
     {
         $this->languageList = $languageList;
         return $this;
@@ -113,7 +113,7 @@ class DedicatedAllowedDistributionDetailsStruct extends AbstractStructBase
     /**
      * Set defaultLanguage value
      * @param string $defaultLanguage
-     * @return \PayPal\StructType\DedicatedAllowedDistributionDetailsStruct
+     * @return \Ovh\StructType\DedicatedAllowedDistributionDetailsStruct
      */
     public function setDefaultLanguage($defaultLanguage = null)
     {
@@ -126,7 +126,7 @@ class DedicatedAllowedDistributionDetailsStruct extends AbstractStructBase
     }
     /**
      * Get bitFormat value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionBitFormatStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionBitFormatStructType|null
      */
     public function getBitFormat()
     {
@@ -134,10 +134,10 @@ class DedicatedAllowedDistributionDetailsStruct extends AbstractStructBase
     }
     /**
      * Set bitFormat value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionBitFormatStructType $bitFormat
-     * @return \PayPal\StructType\DedicatedAllowedDistributionDetailsStruct
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionBitFormatStructType $bitFormat
+     * @return \Ovh\StructType\DedicatedAllowedDistributionDetailsStruct
      */
-    public function setBitFormat(\PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionBitFormatStructType $bitFormat = null)
+    public function setBitFormat(\Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionBitFormatStructType $bitFormat = null)
     {
         $this->bitFormat = $bitFormat;
         return $this;
@@ -153,7 +153,7 @@ class DedicatedAllowedDistributionDetailsStruct extends AbstractStructBase
     /**
      * Set longName value
      * @param string $longName
-     * @return \PayPal\StructType\DedicatedAllowedDistributionDetailsStruct
+     * @return \Ovh\StructType\DedicatedAllowedDistributionDetailsStruct
      */
     public function setLongName($longName = null)
     {
@@ -175,7 +175,7 @@ class DedicatedAllowedDistributionDetailsStruct extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\DedicatedAllowedDistributionDetailsStruct
+     * @return \Ovh\StructType\DedicatedAllowedDistributionDetailsStruct
      */
     public function setName($name = null)
     {
@@ -192,7 +192,7 @@ class DedicatedAllowedDistributionDetailsStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedAllowedDistributionDetailsStruct
+     * @return \Ovh\StructType\DedicatedAllowedDistributionDetailsStruct
      */
     public static function __set_state(array $array)
     {

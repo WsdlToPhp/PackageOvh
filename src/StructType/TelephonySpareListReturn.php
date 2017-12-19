@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,7 +13,7 @@ class TelephonySpareListReturn extends AbstractStructBase
 {
     /**
      * The list
-     * @var \PayPal\ArrayType\MyArrayOfTelephonySpareInfoStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonySpareInfoStructType
      */
     public $list;
     /**
@@ -23,7 +23,7 @@ class TelephonySpareListReturn extends AbstractStructBase
     public $total;
     /**
      * The serviceInfo
-     * @var \PayPal\StructType\TelephonySpareServiceInfoStruct
+     * @var \Ovh\StructType\TelephonySpareServiceInfoStruct
      */
     public $serviceInfo;
     /**
@@ -31,11 +31,11 @@ class TelephonySpareListReturn extends AbstractStructBase
      * @uses TelephonySpareListReturn::setList()
      * @uses TelephonySpareListReturn::setTotal()
      * @uses TelephonySpareListReturn::setServiceInfo()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonySpareInfoStructType $list
+     * @param \Ovh\ArrayType\MyArrayOfTelephonySpareInfoStructType $list
      * @param int $total
-     * @param \PayPal\StructType\TelephonySpareServiceInfoStruct $serviceInfo
+     * @param \Ovh\StructType\TelephonySpareServiceInfoStruct $serviceInfo
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonySpareInfoStructType $list = null, $total = null, \PayPal\StructType\TelephonySpareServiceInfoStruct $serviceInfo = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonySpareInfoStructType $list = null, $total = null, \Ovh\StructType\TelephonySpareServiceInfoStruct $serviceInfo = null)
     {
         $this
             ->setList($list)
@@ -44,7 +44,7 @@ class TelephonySpareListReturn extends AbstractStructBase
     }
     /**
      * Get list value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonySpareInfoStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonySpareInfoStructType|null
      */
     public function getList()
     {
@@ -52,10 +52,10 @@ class TelephonySpareListReturn extends AbstractStructBase
     }
     /**
      * Set list value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonySpareInfoStructType $list
-     * @return \PayPal\StructType\TelephonySpareListReturn
+     * @param \Ovh\ArrayType\MyArrayOfTelephonySpareInfoStructType $list
+     * @return \Ovh\StructType\TelephonySpareListReturn
      */
-    public function setList(\PayPal\ArrayType\MyArrayOfTelephonySpareInfoStructType $list = null)
+    public function setList(\Ovh\ArrayType\MyArrayOfTelephonySpareInfoStructType $list = null)
     {
         $this->list = $list;
         return $this;
@@ -71,7 +71,7 @@ class TelephonySpareListReturn extends AbstractStructBase
     /**
      * Set total value
      * @param int $total
-     * @return \PayPal\StructType\TelephonySpareListReturn
+     * @return \Ovh\StructType\TelephonySpareListReturn
      */
     public function setTotal($total = null)
     {
@@ -84,7 +84,7 @@ class TelephonySpareListReturn extends AbstractStructBase
     }
     /**
      * Get serviceInfo value
-     * @return \PayPal\StructType\TelephonySpareServiceInfoStruct|null
+     * @return \Ovh\StructType\TelephonySpareServiceInfoStruct|null
      */
     public function getServiceInfo()
     {
@@ -92,10 +92,10 @@ class TelephonySpareListReturn extends AbstractStructBase
     }
     /**
      * Set serviceInfo value
-     * @param \PayPal\StructType\TelephonySpareServiceInfoStruct $serviceInfo
-     * @return \PayPal\StructType\TelephonySpareListReturn
+     * @param \Ovh\StructType\TelephonySpareServiceInfoStruct $serviceInfo
+     * @return \Ovh\StructType\TelephonySpareListReturn
      */
-    public function setServiceInfo(\PayPal\StructType\TelephonySpareServiceInfoStruct $serviceInfo = null)
+    public function setServiceInfo(\Ovh\StructType\TelephonySpareServiceInfoStruct $serviceInfo = null)
     {
         $this->serviceInfo = $serviceInfo;
         return $this;
@@ -106,7 +106,7 @@ class TelephonySpareListReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySpareListReturn
+     * @return \Ovh\StructType\TelephonySpareListReturn
      */
     public static function __set_state(array $array)
     {

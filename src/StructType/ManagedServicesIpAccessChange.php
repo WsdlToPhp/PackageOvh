@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class ManagedServicesIpAccessChange extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\ManagedServicesIpAccessChange
+     * @return \Ovh\StructType\ManagedServicesIpAccessChange
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class ManagedServicesIpAccessChange extends AbstractStructBase
     /**
      * Set storage value
      * @param string $storage
-     * @return \PayPal\StructType\ManagedServicesIpAccessChange
+     * @return \Ovh\StructType\ManagedServicesIpAccessChange
      */
     public function setStorage($storage = null)
     {
@@ -123,7 +123,7 @@ class ManagedServicesIpAccessChange extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \PayPal\StructType\ManagedServicesIpAccessChange
+     * @return \Ovh\StructType\ManagedServicesIpAccessChange
      */
     public function setValue($value = null)
     {
@@ -145,7 +145,7 @@ class ManagedServicesIpAccessChange extends AbstractStructBase
     /**
      * Set server value
      * @param string $server
-     * @return \PayPal\StructType\ManagedServicesIpAccessChange
+     * @return \Ovh\StructType\ManagedServicesIpAccessChange
      */
     public function setServer($server = null)
     {
@@ -167,7 +167,7 @@ class ManagedServicesIpAccessChange extends AbstractStructBase
     /**
      * Set idZfs value
      * @param string $idZfs
-     * @return \PayPal\StructType\ManagedServicesIpAccessChange
+     * @return \Ovh\StructType\ManagedServicesIpAccessChange
      */
     public function setIdZfs($idZfs = null)
     {
@@ -184,7 +184,7 @@ class ManagedServicesIpAccessChange extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ManagedServicesIpAccessChange
+     * @return \Ovh\StructType\ManagedServicesIpAccessChange
      */
     public static function __set_state(array $array)
     {

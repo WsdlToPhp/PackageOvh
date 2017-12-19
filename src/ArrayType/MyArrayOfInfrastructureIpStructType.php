@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfInfrastructureIpStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\InfrastructureIpStruct[]
+     * @var \Ovh\StructType\InfrastructureIpStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfInfrastructureIpStructType
      * @uses MyArrayOfInfrastructureIpStructType::setItem()
-     * @param \PayPal\StructType\InfrastructureIpStruct[] $item
+     * @param \Ovh\StructType\InfrastructureIpStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfInfrastructureIpStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\InfrastructureIpStruct[]|null
+     * @return \Ovh\StructType\InfrastructureIpStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfInfrastructureIpStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\InfrastructureIpStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfInfrastructureIpStructType
+     * @param \Ovh\StructType\InfrastructureIpStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfInfrastructureIpStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfInfrastructureIpStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfInfrastructureIpStructTypeItemItem instanceof \PayPal\StructType\InfrastructureIpStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\InfrastructureIpStruct, "%s" given', is_object($myArrayOfInfrastructureIpStructTypeItemItem) ? get_class($myArrayOfInfrastructureIpStructTypeItemItem) : gettype($myArrayOfInfrastructureIpStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfInfrastructureIpStructTypeItemItem instanceof \Ovh\StructType\InfrastructureIpStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\InfrastructureIpStruct, "%s" given', is_object($myArrayOfInfrastructureIpStructTypeItemItem) ? get_class($myArrayOfInfrastructureIpStructTypeItemItem) : gettype($myArrayOfInfrastructureIpStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfInfrastructureIpStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\InfrastructureIpStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfInfrastructureIpStructType
+     * @param \Ovh\StructType\InfrastructureIpStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfInfrastructureIpStructType
      */
-    public function addToItem(\PayPal\StructType\InfrastructureIpStruct $item)
+    public function addToItem(\Ovh\StructType\InfrastructureIpStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\InfrastructureIpStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\InfrastructureIpStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\InfrastructureIpStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\InfrastructureIpStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfInfrastructureIpStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\InfrastructureIpStruct|null
+     * @return \Ovh\StructType\InfrastructureIpStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfInfrastructureIpStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\InfrastructureIpStruct|null
+     * @return \Ovh\StructType\InfrastructureIpStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfInfrastructureIpStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\InfrastructureIpStruct|null
+     * @return \Ovh\StructType\InfrastructureIpStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfInfrastructureIpStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\InfrastructureIpStruct|null
+     * @return \Ovh\StructType\InfrastructureIpStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfInfrastructureIpStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\InfrastructureIpStruct|null
+     * @return \Ovh\StructType\InfrastructureIpStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfInfrastructureIpStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfInfrastructureIpStructType
+     * @return \Ovh\ArrayType\MyArrayOfInfrastructureIpStructType
      */
     public static function __set_state(array $array)
     {

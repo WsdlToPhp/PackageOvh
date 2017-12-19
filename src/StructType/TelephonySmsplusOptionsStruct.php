@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -33,12 +33,12 @@ class TelephonySmsplusOptionsStruct extends AbstractStructBase
     public $defaultSmsAccountMtBilling;
     /**
      * The trackingMedias
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $trackingMedias;
     /**
      * The trackingTargets
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $trackingTargets;
     /**
@@ -53,10 +53,10 @@ class TelephonySmsplusOptionsStruct extends AbstractStructBase
      * @param string $defaultSmsAccount
      * @param string $defaultSmsSender
      * @param string $defaultSmsAccountMtBilling
-     * @param \PayPal\ArrayType\MyArrayOfStringType $trackingMedias
-     * @param \PayPal\ArrayType\MyArrayOfStringType $trackingTargets
+     * @param \Ovh\ArrayType\MyArrayOfStringType $trackingMedias
+     * @param \Ovh\ArrayType\MyArrayOfStringType $trackingTargets
      */
-    public function __construct($sendingNoSmsMt = null, $defaultSmsAccount = null, $defaultSmsSender = null, $defaultSmsAccountMtBilling = null, \PayPal\ArrayType\MyArrayOfStringType $trackingMedias = null, \PayPal\ArrayType\MyArrayOfStringType $trackingTargets = null)
+    public function __construct($sendingNoSmsMt = null, $defaultSmsAccount = null, $defaultSmsSender = null, $defaultSmsAccountMtBilling = null, \Ovh\ArrayType\MyArrayOfStringType $trackingMedias = null, \Ovh\ArrayType\MyArrayOfStringType $trackingTargets = null)
     {
         $this
             ->setSendingNoSmsMt($sendingNoSmsMt)
@@ -77,7 +77,7 @@ class TelephonySmsplusOptionsStruct extends AbstractStructBase
     /**
      * Set sendingNoSmsMt value
      * @param bool $sendingNoSmsMt
-     * @return \PayPal\StructType\TelephonySmsplusOptionsStruct
+     * @return \Ovh\StructType\TelephonySmsplusOptionsStruct
      */
     public function setSendingNoSmsMt($sendingNoSmsMt = null)
     {
@@ -99,7 +99,7 @@ class TelephonySmsplusOptionsStruct extends AbstractStructBase
     /**
      * Set defaultSmsAccount value
      * @param string $defaultSmsAccount
-     * @return \PayPal\StructType\TelephonySmsplusOptionsStruct
+     * @return \Ovh\StructType\TelephonySmsplusOptionsStruct
      */
     public function setDefaultSmsAccount($defaultSmsAccount = null)
     {
@@ -121,7 +121,7 @@ class TelephonySmsplusOptionsStruct extends AbstractStructBase
     /**
      * Set defaultSmsSender value
      * @param string $defaultSmsSender
-     * @return \PayPal\StructType\TelephonySmsplusOptionsStruct
+     * @return \Ovh\StructType\TelephonySmsplusOptionsStruct
      */
     public function setDefaultSmsSender($defaultSmsSender = null)
     {
@@ -143,7 +143,7 @@ class TelephonySmsplusOptionsStruct extends AbstractStructBase
     /**
      * Set defaultSmsAccountMtBilling value
      * @param string $defaultSmsAccountMtBilling
-     * @return \PayPal\StructType\TelephonySmsplusOptionsStruct
+     * @return \Ovh\StructType\TelephonySmsplusOptionsStruct
      */
     public function setDefaultSmsAccountMtBilling($defaultSmsAccountMtBilling = null)
     {
@@ -156,7 +156,7 @@ class TelephonySmsplusOptionsStruct extends AbstractStructBase
     }
     /**
      * Get trackingMedias value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getTrackingMedias()
     {
@@ -164,17 +164,17 @@ class TelephonySmsplusOptionsStruct extends AbstractStructBase
     }
     /**
      * Set trackingMedias value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $trackingMedias
-     * @return \PayPal\StructType\TelephonySmsplusOptionsStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $trackingMedias
+     * @return \Ovh\StructType\TelephonySmsplusOptionsStruct
      */
-    public function setTrackingMedias(\PayPal\ArrayType\MyArrayOfStringType $trackingMedias = null)
+    public function setTrackingMedias(\Ovh\ArrayType\MyArrayOfStringType $trackingMedias = null)
     {
         $this->trackingMedias = $trackingMedias;
         return $this;
     }
     /**
      * Get trackingTargets value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getTrackingTargets()
     {
@@ -182,10 +182,10 @@ class TelephonySmsplusOptionsStruct extends AbstractStructBase
     }
     /**
      * Set trackingTargets value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $trackingTargets
-     * @return \PayPal\StructType\TelephonySmsplusOptionsStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $trackingTargets
+     * @return \Ovh\StructType\TelephonySmsplusOptionsStruct
      */
-    public function setTrackingTargets(\PayPal\ArrayType\MyArrayOfStringType $trackingTargets = null)
+    public function setTrackingTargets(\Ovh\ArrayType\MyArrayOfStringType $trackingTargets = null)
     {
         $this->trackingTargets = $trackingTargets;
         return $this;
@@ -196,7 +196,7 @@ class TelephonySmsplusOptionsStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsplusOptionsStruct
+     * @return \Ovh\StructType\TelephonySmsplusOptionsStruct
      */
     public static function __set_state(array $array)
     {

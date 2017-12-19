@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class TelephonySmsCreditInfoReturn extends AbstractStructBase
     /**
      * Set waiting value
      * @param int $waiting
-     * @return \PayPal\StructType\TelephonySmsCreditInfoReturn
+     * @return \Ovh\StructType\TelephonySmsCreditInfoReturn
      */
     public function setWaiting($waiting = null)
     {
@@ -67,7 +67,7 @@ class TelephonySmsCreditInfoReturn extends AbstractStructBase
     /**
      * Set left value
      * @param int $left
-     * @return \PayPal\StructType\TelephonySmsCreditInfoReturn
+     * @return \Ovh\StructType\TelephonySmsCreditInfoReturn
      */
     public function setLeft($left = null)
     {
@@ -84,7 +84,7 @@ class TelephonySmsCreditInfoReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsCreditInfoReturn
+     * @return \Ovh\StructType\TelephonySmsCreditInfoReturn
      */
     public static function __set_state(array $array)
     {

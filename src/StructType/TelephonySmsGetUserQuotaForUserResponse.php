@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonySmsGetUserQuotaForUserResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonySmsUserQuotaStruct
+     * @var \Ovh\StructType\TelephonySmsUserQuotaStruct
      */
     public $return;
     /**
      * Constructor method for telephonySmsGetUserQuotaForUserResponse
      * @uses TelephonySmsGetUserQuotaForUserResponse::setReturn()
-     * @param \PayPal\StructType\TelephonySmsUserQuotaStruct $return
+     * @param \Ovh\StructType\TelephonySmsUserQuotaStruct $return
      */
-    public function __construct(\PayPal\StructType\TelephonySmsUserQuotaStruct $return = null)
+    public function __construct(\Ovh\StructType\TelephonySmsUserQuotaStruct $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonySmsUserQuotaStruct|null
+     * @return \Ovh\StructType\TelephonySmsUserQuotaStruct|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonySmsGetUserQuotaForUserResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonySmsUserQuotaStruct $return
-     * @return \PayPal\StructType\TelephonySmsGetUserQuotaForUserResponse
+     * @param \Ovh\StructType\TelephonySmsUserQuotaStruct $return
+     * @return \Ovh\StructType\TelephonySmsGetUserQuotaForUserResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonySmsUserQuotaStruct $return = null)
+    public function setReturn(\Ovh\StructType\TelephonySmsUserQuotaStruct $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonySmsGetUserQuotaForUserResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsGetUserQuotaForUserResponse
+     * @return \Ovh\StructType\TelephonySmsGetUserQuotaForUserResponse
      */
     public static function __set_state(array $array)
     {

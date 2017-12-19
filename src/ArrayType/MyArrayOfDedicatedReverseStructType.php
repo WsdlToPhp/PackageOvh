@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfDedicatedReverseStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\DedicatedReverseStruct[]
+     * @var \Ovh\StructType\DedicatedReverseStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfDedicatedReverseStructType
      * @uses MyArrayOfDedicatedReverseStructType::setItem()
-     * @param \PayPal\StructType\DedicatedReverseStruct[] $item
+     * @param \Ovh\StructType\DedicatedReverseStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfDedicatedReverseStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\DedicatedReverseStruct[]|null
+     * @return \Ovh\StructType\DedicatedReverseStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfDedicatedReverseStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedReverseStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedReverseStructType
+     * @param \Ovh\StructType\DedicatedReverseStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedReverseStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfDedicatedReverseStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfDedicatedReverseStructTypeItemItem instanceof \PayPal\StructType\DedicatedReverseStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedReverseStruct, "%s" given', is_object($myArrayOfDedicatedReverseStructTypeItemItem) ? get_class($myArrayOfDedicatedReverseStructTypeItemItem) : gettype($myArrayOfDedicatedReverseStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfDedicatedReverseStructTypeItemItem instanceof \Ovh\StructType\DedicatedReverseStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedReverseStruct, "%s" given', is_object($myArrayOfDedicatedReverseStructTypeItemItem) ? get_class($myArrayOfDedicatedReverseStructTypeItemItem) : gettype($myArrayOfDedicatedReverseStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfDedicatedReverseStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedReverseStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedReverseStructType
+     * @param \Ovh\StructType\DedicatedReverseStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedReverseStructType
      */
-    public function addToItem(\PayPal\StructType\DedicatedReverseStruct $item)
+    public function addToItem(\Ovh\StructType\DedicatedReverseStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\DedicatedReverseStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedReverseStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\DedicatedReverseStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedReverseStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfDedicatedReverseStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\DedicatedReverseStruct|null
+     * @return \Ovh\StructType\DedicatedReverseStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfDedicatedReverseStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\DedicatedReverseStruct|null
+     * @return \Ovh\StructType\DedicatedReverseStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfDedicatedReverseStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\DedicatedReverseStruct|null
+     * @return \Ovh\StructType\DedicatedReverseStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfDedicatedReverseStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\DedicatedReverseStruct|null
+     * @return \Ovh\StructType\DedicatedReverseStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfDedicatedReverseStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\DedicatedReverseStruct|null
+     * @return \Ovh\StructType\DedicatedReverseStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfDedicatedReverseStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedReverseStructType
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedReverseStructType
      */
     public static function __set_state(array $array)
     {

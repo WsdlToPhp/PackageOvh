@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -189,7 +189,7 @@ class NicInfoReturn extends AbstractStructBase
     /**
      * Set nic value
      * @param string $nic
-     * @return \PayPal\StructType\NicInfoReturn
+     * @return \Ovh\StructType\NicInfoReturn
      */
     public function setNic($nic = null)
     {
@@ -211,7 +211,7 @@ class NicInfoReturn extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\NicInfoReturn
+     * @return \Ovh\StructType\NicInfoReturn
      */
     public function setName($name = null)
     {
@@ -233,7 +233,7 @@ class NicInfoReturn extends AbstractStructBase
     /**
      * Set firstname value
      * @param string $firstname
-     * @return \PayPal\StructType\NicInfoReturn
+     * @return \Ovh\StructType\NicInfoReturn
      */
     public function setFirstname($firstname = null)
     {
@@ -255,7 +255,7 @@ class NicInfoReturn extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\NicInfoReturn
+     * @return \Ovh\StructType\NicInfoReturn
      */
     public function setEmail($email = null)
     {
@@ -277,7 +277,7 @@ class NicInfoReturn extends AbstractStructBase
     /**
      * Set spareEmail value
      * @param string $spareEmail
-     * @return \PayPal\StructType\NicInfoReturn
+     * @return \Ovh\StructType\NicInfoReturn
      */
     public function setSpareEmail($spareEmail = null)
     {
@@ -299,7 +299,7 @@ class NicInfoReturn extends AbstractStructBase
     /**
      * Set phone value
      * @param string $phone
-     * @return \PayPal\StructType\NicInfoReturn
+     * @return \Ovh\StructType\NicInfoReturn
      */
     public function setPhone($phone = null)
     {
@@ -321,7 +321,7 @@ class NicInfoReturn extends AbstractStructBase
     /**
      * Set fax value
      * @param string $fax
-     * @return \PayPal\StructType\NicInfoReturn
+     * @return \Ovh\StructType\NicInfoReturn
      */
     public function setFax($fax = null)
     {
@@ -343,7 +343,7 @@ class NicInfoReturn extends AbstractStructBase
     /**
      * Set address value
      * @param string $address
-     * @return \PayPal\StructType\NicInfoReturn
+     * @return \Ovh\StructType\NicInfoReturn
      */
     public function setAddress($address = null)
     {
@@ -365,7 +365,7 @@ class NicInfoReturn extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \PayPal\StructType\NicInfoReturn
+     * @return \Ovh\StructType\NicInfoReturn
      */
     public function setCity($city = null)
     {
@@ -387,7 +387,7 @@ class NicInfoReturn extends AbstractStructBase
     /**
      * Set area value
      * @param string $area
-     * @return \PayPal\StructType\NicInfoReturn
+     * @return \Ovh\StructType\NicInfoReturn
      */
     public function setArea($area = null)
     {
@@ -409,7 +409,7 @@ class NicInfoReturn extends AbstractStructBase
     /**
      * Set zip value
      * @param string $zip
-     * @return \PayPal\StructType\NicInfoReturn
+     * @return \Ovh\StructType\NicInfoReturn
      */
     public function setZip($zip = null)
     {
@@ -431,7 +431,7 @@ class NicInfoReturn extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\NicInfoReturn
+     * @return \Ovh\StructType\NicInfoReturn
      */
     public function setCountry($country = null)
     {
@@ -453,7 +453,7 @@ class NicInfoReturn extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \PayPal\StructType\NicInfoReturn
+     * @return \Ovh\StructType\NicInfoReturn
      */
     public function setLanguage($language = null)
     {
@@ -475,7 +475,7 @@ class NicInfoReturn extends AbstractStructBase
     /**
      * Set legalform value
      * @param string $legalform
-     * @return \PayPal\StructType\NicInfoReturn
+     * @return \Ovh\StructType\NicInfoReturn
      */
     public function setLegalform($legalform = null)
     {
@@ -497,7 +497,7 @@ class NicInfoReturn extends AbstractStructBase
     /**
      * Set organisation value
      * @param string $organisation
-     * @return \PayPal\StructType\NicInfoReturn
+     * @return \Ovh\StructType\NicInfoReturn
      */
     public function setOrganisation($organisation = null)
     {
@@ -519,7 +519,7 @@ class NicInfoReturn extends AbstractStructBase
     /**
      * Set legalName value
      * @param string $legalName
-     * @return \PayPal\StructType\NicInfoReturn
+     * @return \Ovh\StructType\NicInfoReturn
      */
     public function setLegalName($legalName = null)
     {
@@ -541,7 +541,7 @@ class NicInfoReturn extends AbstractStructBase
     /**
      * Set legalNumber value
      * @param string $legalNumber
-     * @return \PayPal\StructType\NicInfoReturn
+     * @return \Ovh\StructType\NicInfoReturn
      */
     public function setLegalNumber($legalNumber = null)
     {
@@ -563,7 +563,7 @@ class NicInfoReturn extends AbstractStructBase
     /**
      * Set vat value
      * @param string $vat
-     * @return \PayPal\StructType\NicInfoReturn
+     * @return \Ovh\StructType\NicInfoReturn
      */
     public function setVat($vat = null)
     {
@@ -585,7 +585,7 @@ class NicInfoReturn extends AbstractStructBase
     /**
      * Set isOwner value
      * @param bool $isOwner
-     * @return \PayPal\StructType\NicInfoReturn
+     * @return \Ovh\StructType\NicInfoReturn
      */
     public function setIsOwner($isOwner = null)
     {
@@ -607,7 +607,7 @@ class NicInfoReturn extends AbstractStructBase
     /**
      * Set billingCountry value
      * @param string $billingCountry
-     * @return \PayPal\StructType\NicInfoReturn
+     * @return \Ovh\StructType\NicInfoReturn
      */
     public function setBillingCountry($billingCountry = null)
     {
@@ -624,7 +624,7 @@ class NicInfoReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\NicInfoReturn
+     * @return \Ovh\StructType\NicInfoReturn
      */
     public static function __set_state(array $array)
     {

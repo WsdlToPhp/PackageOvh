@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class SqlpriveMysqlDatabaseImportFromFile extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseImportFromFile
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseImportFromFile
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class SqlpriveMysqlDatabaseImportFromFile extends AbstractStructBase
     /**
      * Set server value
      * @param string $server
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseImportFromFile
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseImportFromFile
      */
     public function setServer($server = null)
     {
@@ -113,7 +113,7 @@ class SqlpriveMysqlDatabaseImportFromFile extends AbstractStructBase
     /**
      * Set database value
      * @param string $database
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseImportFromFile
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseImportFromFile
      */
     public function setDatabase($database = null)
     {
@@ -135,7 +135,7 @@ class SqlpriveMysqlDatabaseImportFromFile extends AbstractStructBase
     /**
      * Set filename value
      * @param string $filename
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseImportFromFile
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseImportFromFile
      */
     public function setFilename($filename = null)
     {
@@ -152,7 +152,7 @@ class SqlpriveMysqlDatabaseImportFromFile extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseImportFromFile
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseImportFromFile
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,7 +49,7 @@ class SqlpriveMysqlDatabaseList extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseList
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseList
      */
     public function setSession($session = null)
     {
@@ -71,7 +71,7 @@ class SqlpriveMysqlDatabaseList extends AbstractStructBase
     /**
      * Set server value
      * @param string $server
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseList
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseList
      */
     public function setServer($server = null)
     {
@@ -88,7 +88,7 @@ class SqlpriveMysqlDatabaseList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseList
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseList
      */
     public static function __set_state(array $array)
     {

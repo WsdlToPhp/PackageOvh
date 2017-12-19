@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfDedicatedInstallationTemplateStructType extends AbstractStructArr
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\DedicatedInstallationTemplateStruct[]
+     * @var \Ovh\StructType\DedicatedInstallationTemplateStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfDedicatedInstallationTemplateStructType
      * @uses MyArrayOfDedicatedInstallationTemplateStructType::setItem()
-     * @param \PayPal\StructType\DedicatedInstallationTemplateStruct[] $item
+     * @param \Ovh\StructType\DedicatedInstallationTemplateStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfDedicatedInstallationTemplateStructType extends AbstractStructArr
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\DedicatedInstallationTemplateStruct[]|null
+     * @return \Ovh\StructType\DedicatedInstallationTemplateStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfDedicatedInstallationTemplateStructType extends AbstractStructArr
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedInstallationTemplateStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedInstallationTemplateStructType
+     * @param \Ovh\StructType\DedicatedInstallationTemplateStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedInstallationTemplateStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfDedicatedInstallationTemplateStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfDedicatedInstallationTemplateStructTypeItemItem instanceof \PayPal\StructType\DedicatedInstallationTemplateStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedInstallationTemplateStruct, "%s" given', is_object($myArrayOfDedicatedInstallationTemplateStructTypeItemItem) ? get_class($myArrayOfDedicatedInstallationTemplateStructTypeItemItem) : gettype($myArrayOfDedicatedInstallationTemplateStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfDedicatedInstallationTemplateStructTypeItemItem instanceof \Ovh\StructType\DedicatedInstallationTemplateStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedInstallationTemplateStruct, "%s" given', is_object($myArrayOfDedicatedInstallationTemplateStructTypeItemItem) ? get_class($myArrayOfDedicatedInstallationTemplateStructTypeItemItem) : gettype($myArrayOfDedicatedInstallationTemplateStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfDedicatedInstallationTemplateStructType extends AbstractStructArr
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedInstallationTemplateStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedInstallationTemplateStructType
+     * @param \Ovh\StructType\DedicatedInstallationTemplateStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedInstallationTemplateStructType
      */
-    public function addToItem(\PayPal\StructType\DedicatedInstallationTemplateStruct $item)
+    public function addToItem(\Ovh\StructType\DedicatedInstallationTemplateStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\DedicatedInstallationTemplateStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedInstallationTemplateStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\DedicatedInstallationTemplateStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedInstallationTemplateStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfDedicatedInstallationTemplateStructType extends AbstractStructArr
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\DedicatedInstallationTemplateStruct|null
+     * @return \Ovh\StructType\DedicatedInstallationTemplateStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfDedicatedInstallationTemplateStructType extends AbstractStructArr
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\DedicatedInstallationTemplateStruct|null
+     * @return \Ovh\StructType\DedicatedInstallationTemplateStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfDedicatedInstallationTemplateStructType extends AbstractStructArr
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\DedicatedInstallationTemplateStruct|null
+     * @return \Ovh\StructType\DedicatedInstallationTemplateStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfDedicatedInstallationTemplateStructType extends AbstractStructArr
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\DedicatedInstallationTemplateStruct|null
+     * @return \Ovh\StructType\DedicatedInstallationTemplateStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfDedicatedInstallationTemplateStructType extends AbstractStructArr
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\DedicatedInstallationTemplateStruct|null
+     * @return \Ovh\StructType\DedicatedInstallationTemplateStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfDedicatedInstallationTemplateStructType extends AbstractStructArr
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedInstallationTemplateStructType
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedInstallationTemplateStructType
      */
     public static function __set_state(array $array)
     {

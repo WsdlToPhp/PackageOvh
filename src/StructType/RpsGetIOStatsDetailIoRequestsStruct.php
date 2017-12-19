@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class RpsGetIOStatsDetailIoRequestsStruct extends AbstractStructBase
 {
     /**
      * The read
-     * @var \PayPal\StructType\RpsGetIOStatsDetailRawStruct
+     * @var \Ovh\StructType\RpsGetIOStatsDetailRawStruct
      */
     public $read;
     /**
      * The write
-     * @var \PayPal\StructType\RpsGetIOStatsDetailRawStruct
+     * @var \Ovh\StructType\RpsGetIOStatsDetailRawStruct
      */
     public $write;
     /**
      * Constructor method for rpsGetIOStatsDetailIoRequestsStruct
      * @uses RpsGetIOStatsDetailIoRequestsStruct::setRead()
      * @uses RpsGetIOStatsDetailIoRequestsStruct::setWrite()
-     * @param \PayPal\StructType\RpsGetIOStatsDetailRawStruct $read
-     * @param \PayPal\StructType\RpsGetIOStatsDetailRawStruct $write
+     * @param \Ovh\StructType\RpsGetIOStatsDetailRawStruct $read
+     * @param \Ovh\StructType\RpsGetIOStatsDetailRawStruct $write
      */
-    public function __construct(\PayPal\StructType\RpsGetIOStatsDetailRawStruct $read = null, \PayPal\StructType\RpsGetIOStatsDetailRawStruct $write = null)
+    public function __construct(\Ovh\StructType\RpsGetIOStatsDetailRawStruct $read = null, \Ovh\StructType\RpsGetIOStatsDetailRawStruct $write = null)
     {
         $this
             ->setRead($read)
@@ -36,7 +36,7 @@ class RpsGetIOStatsDetailIoRequestsStruct extends AbstractStructBase
     }
     /**
      * Get read value
-     * @return \PayPal\StructType\RpsGetIOStatsDetailRawStruct|null
+     * @return \Ovh\StructType\RpsGetIOStatsDetailRawStruct|null
      */
     public function getRead()
     {
@@ -44,17 +44,17 @@ class RpsGetIOStatsDetailIoRequestsStruct extends AbstractStructBase
     }
     /**
      * Set read value
-     * @param \PayPal\StructType\RpsGetIOStatsDetailRawStruct $read
-     * @return \PayPal\StructType\RpsGetIOStatsDetailIoRequestsStruct
+     * @param \Ovh\StructType\RpsGetIOStatsDetailRawStruct $read
+     * @return \Ovh\StructType\RpsGetIOStatsDetailIoRequestsStruct
      */
-    public function setRead(\PayPal\StructType\RpsGetIOStatsDetailRawStruct $read = null)
+    public function setRead(\Ovh\StructType\RpsGetIOStatsDetailRawStruct $read = null)
     {
         $this->read = $read;
         return $this;
     }
     /**
      * Get write value
-     * @return \PayPal\StructType\RpsGetIOStatsDetailRawStruct|null
+     * @return \Ovh\StructType\RpsGetIOStatsDetailRawStruct|null
      */
     public function getWrite()
     {
@@ -62,10 +62,10 @@ class RpsGetIOStatsDetailIoRequestsStruct extends AbstractStructBase
     }
     /**
      * Set write value
-     * @param \PayPal\StructType\RpsGetIOStatsDetailRawStruct $write
-     * @return \PayPal\StructType\RpsGetIOStatsDetailIoRequestsStruct
+     * @param \Ovh\StructType\RpsGetIOStatsDetailRawStruct $write
+     * @return \Ovh\StructType\RpsGetIOStatsDetailIoRequestsStruct
      */
-    public function setWrite(\PayPal\StructType\RpsGetIOStatsDetailRawStruct $write = null)
+    public function setWrite(\Ovh\StructType\RpsGetIOStatsDetailRawStruct $write = null)
     {
         $this->write = $write;
         return $this;
@@ -76,7 +76,7 @@ class RpsGetIOStatsDetailIoRequestsStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RpsGetIOStatsDetailIoRequestsStruct
+     * @return \Ovh\StructType\RpsGetIOStatsDetailIoRequestsStruct
      */
     public static function __set_state(array $array)
     {

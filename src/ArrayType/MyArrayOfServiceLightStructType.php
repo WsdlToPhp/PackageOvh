@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfServiceLightStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\ServiceLightStruct[]
+     * @var \Ovh\StructType\ServiceLightStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfServiceLightStructType
      * @uses MyArrayOfServiceLightStructType::setItem()
-     * @param \PayPal\StructType\ServiceLightStruct[] $item
+     * @param \Ovh\StructType\ServiceLightStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfServiceLightStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\ServiceLightStruct[]|null
+     * @return \Ovh\StructType\ServiceLightStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfServiceLightStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\ServiceLightStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfServiceLightStructType
+     * @param \Ovh\StructType\ServiceLightStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfServiceLightStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfServiceLightStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfServiceLightStructTypeItemItem instanceof \PayPal\StructType\ServiceLightStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\ServiceLightStruct, "%s" given', is_object($myArrayOfServiceLightStructTypeItemItem) ? get_class($myArrayOfServiceLightStructTypeItemItem) : gettype($myArrayOfServiceLightStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfServiceLightStructTypeItemItem instanceof \Ovh\StructType\ServiceLightStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\ServiceLightStruct, "%s" given', is_object($myArrayOfServiceLightStructTypeItemItem) ? get_class($myArrayOfServiceLightStructTypeItemItem) : gettype($myArrayOfServiceLightStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfServiceLightStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\ServiceLightStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfServiceLightStructType
+     * @param \Ovh\StructType\ServiceLightStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfServiceLightStructType
      */
-    public function addToItem(\PayPal\StructType\ServiceLightStruct $item)
+    public function addToItem(\Ovh\StructType\ServiceLightStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\ServiceLightStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\ServiceLightStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\ServiceLightStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\ServiceLightStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfServiceLightStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\ServiceLightStruct|null
+     * @return \Ovh\StructType\ServiceLightStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfServiceLightStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\ServiceLightStruct|null
+     * @return \Ovh\StructType\ServiceLightStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfServiceLightStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\ServiceLightStruct|null
+     * @return \Ovh\StructType\ServiceLightStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfServiceLightStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\ServiceLightStruct|null
+     * @return \Ovh\StructType\ServiceLightStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfServiceLightStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\ServiceLightStruct|null
+     * @return \Ovh\StructType\ServiceLightStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfServiceLightStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfServiceLightStructType
+     * @return \Ovh\ArrayType\MyArrayOfServiceLightStructType
      */
     public static function __set_state(array $array)
     {

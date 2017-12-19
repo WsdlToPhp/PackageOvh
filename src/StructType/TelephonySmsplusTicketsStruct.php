@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -93,7 +93,7 @@ class TelephonySmsplusTicketsStruct extends AbstractStructBase
     /**
      * Set id value
      * @param string $id
-     * @return \PayPal\StructType\TelephonySmsplusTicketsStruct
+     * @return \Ovh\StructType\TelephonySmsplusTicketsStruct
      */
     public function setId($id = null)
     {
@@ -115,7 +115,7 @@ class TelephonySmsplusTicketsStruct extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\TelephonySmsplusTicketsStruct
+     * @return \Ovh\StructType\TelephonySmsplusTicketsStruct
      */
     public function setDate($date = null)
     {
@@ -137,7 +137,7 @@ class TelephonySmsplusTicketsStruct extends AbstractStructBase
     /**
      * Set from value
      * @param string $from
-     * @return \PayPal\StructType\TelephonySmsplusTicketsStruct
+     * @return \Ovh\StructType\TelephonySmsplusTicketsStruct
      */
     public function setFrom($from = null)
     {
@@ -159,7 +159,7 @@ class TelephonySmsplusTicketsStruct extends AbstractStructBase
     /**
      * Set to value
      * @param string $to
-     * @return \PayPal\StructType\TelephonySmsplusTicketsStruct
+     * @return \Ovh\StructType\TelephonySmsplusTicketsStruct
      */
     public function setTo($to = null)
     {
@@ -181,7 +181,7 @@ class TelephonySmsplusTicketsStruct extends AbstractStructBase
     /**
      * Set operator value
      * @param string $operator
-     * @return \PayPal\StructType\TelephonySmsplusTicketsStruct
+     * @return \Ovh\StructType\TelephonySmsplusTicketsStruct
      */
     public function setOperator($operator = null)
     {
@@ -203,7 +203,7 @@ class TelephonySmsplusTicketsStruct extends AbstractStructBase
     /**
      * Set priceReversed value
      * @param float $priceReversed
-     * @return \PayPal\StructType\TelephonySmsplusTicketsStruct
+     * @return \Ovh\StructType\TelephonySmsplusTicketsStruct
      */
     public function setPriceReversed($priceReversed = null)
     {
@@ -221,7 +221,7 @@ class TelephonySmsplusTicketsStruct extends AbstractStructBase
     /**
      * Set message value
      * @param string $message
-     * @return \PayPal\StructType\TelephonySmsplusTicketsStruct
+     * @return \Ovh\StructType\TelephonySmsplusTicketsStruct
      */
     public function setMessage($message = null)
     {
@@ -243,7 +243,7 @@ class TelephonySmsplusTicketsStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\TelephonySmsplusTicketsStruct
+     * @return \Ovh\StructType\TelephonySmsplusTicketsStruct
      */
     public function setStatus($status = null)
     {
@@ -260,7 +260,7 @@ class TelephonySmsplusTicketsStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsplusTicketsStruct
+     * @return \Ovh\StructType\TelephonySmsplusTicketsStruct
      */
     public static function __set_state(array $array)
     {

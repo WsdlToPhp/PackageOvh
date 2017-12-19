@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class TelephonySecurityDepositCredit extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonySecurityDepositCredit
+     * @return \Ovh\StructType\TelephonySecurityDepositCredit
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class TelephonySecurityDepositCredit extends AbstractStructBase
     /**
      * Set billingAccount value
      * @param string $billingAccount
-     * @return \PayPal\StructType\TelephonySecurityDepositCredit
+     * @return \Ovh\StructType\TelephonySecurityDepositCredit
      */
     public function setBillingAccount($billingAccount = null)
     {
@@ -103,7 +103,7 @@ class TelephonySecurityDepositCredit extends AbstractStructBase
     /**
      * Set amount value
      * @param int $amount
-     * @return \PayPal\StructType\TelephonySecurityDepositCredit
+     * @return \Ovh\StructType\TelephonySecurityDepositCredit
      */
     public function setAmount($amount = null)
     {
@@ -120,7 +120,7 @@ class TelephonySecurityDepositCredit extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySecurityDepositCredit
+     * @return \Ovh\StructType\TelephonySecurityDepositCredit
      */
     public static function __set_state(array $array)
     {

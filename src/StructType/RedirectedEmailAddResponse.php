@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class RedirectedEmailAddResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RedirectedEmailAddResponse
+     * @return \Ovh\StructType\RedirectedEmailAddResponse
      */
     public static function __set_state(array $array)
     {

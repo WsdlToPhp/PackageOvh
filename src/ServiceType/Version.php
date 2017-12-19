@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Version extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\Version $parameters
-     * @return \PayPal\StructType\VersionResponse|bool
+     * @param \Ovh\StructType\Version $parameters
+     * @return \Ovh\StructType\VersionResponse|bool
      */
-    public function version(\PayPal\StructType\Version $parameters)
+    public function version(\Ovh\StructType\Version $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->version($parameters));
@@ -33,7 +33,7 @@ class Version extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\VersionResponse
+     * @return \Ovh\StructType\VersionResponse
      */
     public function getResult()
     {

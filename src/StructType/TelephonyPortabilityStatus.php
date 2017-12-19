@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,7 +49,7 @@ class TelephonyPortabilityStatus extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyPortabilityStatus
+     * @return \Ovh\StructType\TelephonyPortabilityStatus
      */
     public function setSession($session = null)
     {
@@ -71,7 +71,7 @@ class TelephonyPortabilityStatus extends AbstractStructBase
     /**
      * Set billingAccount value
      * @param string $billingAccount
-     * @return \PayPal\StructType\TelephonyPortabilityStatus
+     * @return \Ovh\StructType\TelephonyPortabilityStatus
      */
     public function setBillingAccount($billingAccount = null)
     {
@@ -88,7 +88,7 @@ class TelephonyPortabilityStatus extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyPortabilityStatus
+     * @return \Ovh\StructType\TelephonyPortabilityStatus
      */
     public static function __set_state(array $array)
     {

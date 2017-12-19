@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfTelephonyScreenStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TelephonyScreenStruct[]
+     * @var \Ovh\StructType\TelephonyScreenStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTelephonyScreenStructType
      * @uses MyArrayOfTelephonyScreenStructType::setItem()
-     * @param \PayPal\StructType\TelephonyScreenStruct[] $item
+     * @param \Ovh\StructType\TelephonyScreenStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfTelephonyScreenStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TelephonyScreenStruct[]|null
+     * @return \Ovh\StructType\TelephonyScreenStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfTelephonyScreenStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyScreenStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyScreenStructType
+     * @param \Ovh\StructType\TelephonyScreenStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyScreenStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTelephonyScreenStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTelephonyScreenStructTypeItemItem instanceof \PayPal\StructType\TelephonyScreenStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyScreenStruct, "%s" given', is_object($myArrayOfTelephonyScreenStructTypeItemItem) ? get_class($myArrayOfTelephonyScreenStructTypeItemItem) : gettype($myArrayOfTelephonyScreenStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTelephonyScreenStructTypeItemItem instanceof \Ovh\StructType\TelephonyScreenStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyScreenStruct, "%s" given', is_object($myArrayOfTelephonyScreenStructTypeItemItem) ? get_class($myArrayOfTelephonyScreenStructTypeItemItem) : gettype($myArrayOfTelephonyScreenStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfTelephonyScreenStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyScreenStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyScreenStructType
+     * @param \Ovh\StructType\TelephonyScreenStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyScreenStructType
      */
-    public function addToItem(\PayPal\StructType\TelephonyScreenStruct $item)
+    public function addToItem(\Ovh\StructType\TelephonyScreenStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TelephonyScreenStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyScreenStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TelephonyScreenStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyScreenStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfTelephonyScreenStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonyScreenStruct|null
+     * @return \Ovh\StructType\TelephonyScreenStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfTelephonyScreenStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonyScreenStruct|null
+     * @return \Ovh\StructType\TelephonyScreenStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfTelephonyScreenStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonyScreenStruct|null
+     * @return \Ovh\StructType\TelephonyScreenStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfTelephonyScreenStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonyScreenStruct|null
+     * @return \Ovh\StructType\TelephonyScreenStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfTelephonyScreenStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonyScreenStruct|null
+     * @return \Ovh\StructType\TelephonyScreenStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfTelephonyScreenStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyScreenStructType
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyScreenStructType
      */
     public static function __set_state(array $array)
     {

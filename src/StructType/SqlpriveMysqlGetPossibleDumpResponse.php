@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class SqlpriveMysqlGetPossibleDumpResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfSqlpriveGetPossibleDumpStructType
+     * @var \Ovh\ArrayType\MyArrayOfSqlpriveGetPossibleDumpStructType
      */
     public $return;
     /**
      * Constructor method for sqlpriveMysqlGetPossibleDumpResponse
      * @uses SqlpriveMysqlGetPossibleDumpResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfSqlpriveGetPossibleDumpStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfSqlpriveGetPossibleDumpStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfSqlpriveGetPossibleDumpStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfSqlpriveGetPossibleDumpStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfSqlpriveGetPossibleDumpStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfSqlpriveGetPossibleDumpStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class SqlpriveMysqlGetPossibleDumpResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfSqlpriveGetPossibleDumpStructType $return
-     * @return \PayPal\StructType\SqlpriveMysqlGetPossibleDumpResponse
+     * @param \Ovh\ArrayType\MyArrayOfSqlpriveGetPossibleDumpStructType $return
+     * @return \Ovh\StructType\SqlpriveMysqlGetPossibleDumpResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfSqlpriveGetPossibleDumpStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfSqlpriveGetPossibleDumpStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class SqlpriveMysqlGetPossibleDumpResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SqlpriveMysqlGetPossibleDumpResponse
+     * @return \Ovh\StructType\SqlpriveMysqlGetPossibleDumpResponse
      */
     public static function __set_state(array $array)
     {

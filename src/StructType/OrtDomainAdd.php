@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class OrtDomainAdd extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\OrtDomainAdd
+     * @return \Ovh\StructType\OrtDomainAdd
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class OrtDomainAdd extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\OrtDomainAdd
+     * @return \Ovh\StructType\OrtDomainAdd
      */
     public function setDomain($domain = null)
     {
@@ -133,7 +133,7 @@ class OrtDomainAdd extends AbstractStructBase
     /**
      * Set subdomain value
      * @param string $subdomain
-     * @return \PayPal\StructType\OrtDomainAdd
+     * @return \Ovh\StructType\OrtDomainAdd
      */
     public function setSubdomain($subdomain = null)
     {
@@ -155,7 +155,7 @@ class OrtDomainAdd extends AbstractStructBase
     /**
      * Set target value
      * @param string $target
-     * @return \PayPal\StructType\OrtDomainAdd
+     * @return \Ovh\StructType\OrtDomainAdd
      */
     public function setTarget($target = null)
     {
@@ -177,7 +177,7 @@ class OrtDomainAdd extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\OrtDomainAdd
+     * @return \Ovh\StructType\OrtDomainAdd
      */
     public function setType($type = null)
     {
@@ -199,7 +199,7 @@ class OrtDomainAdd extends AbstractStructBase
     /**
      * Set overwrite value
      * @param int $overwrite
-     * @return \PayPal\StructType\OrtDomainAdd
+     * @return \Ovh\StructType\OrtDomainAdd
      */
     public function setOverwrite($overwrite = null)
     {
@@ -216,7 +216,7 @@ class OrtDomainAdd extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\OrtDomainAdd
+     * @return \Ovh\StructType\OrtDomainAdd
      */
     public static function __set_state(array $array)
     {

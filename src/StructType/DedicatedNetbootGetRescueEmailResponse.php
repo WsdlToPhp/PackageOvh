@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,7 +37,7 @@ class DedicatedNetbootGetRescueEmailResponse extends AbstractStructBase
     /**
      * Set return value
      * @param string $return
-     * @return \PayPal\StructType\DedicatedNetbootGetRescueEmailResponse
+     * @return \Ovh\StructType\DedicatedNetbootGetRescueEmailResponse
      */
     public function setReturn($return = null)
     {
@@ -54,7 +54,7 @@ class DedicatedNetbootGetRescueEmailResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedNetbootGetRescueEmailResponse
+     * @return \Ovh\StructType\DedicatedNetbootGetRescueEmailResponse
      */
     public static function __set_state(array $array)
     {

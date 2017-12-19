@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,7 +37,7 @@ class DedicatedMonitoringStatusReturn extends AbstractStructBase
     /**
      * Set disabled value
      * @param bool $disabled
-     * @return \PayPal\StructType\DedicatedMonitoringStatusReturn
+     * @return \Ovh\StructType\DedicatedMonitoringStatusReturn
      */
     public function setDisabled($disabled = null)
     {
@@ -54,7 +54,7 @@ class DedicatedMonitoringStatusReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedMonitoringStatusReturn
+     * @return \Ovh\StructType\DedicatedMonitoringStatusReturn
      */
     public static function __set_state(array $array)
     {

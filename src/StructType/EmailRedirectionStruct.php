@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class EmailRedirectionStruct extends AbstractStructBase
     /**
      * Set target value
      * @param string $target
-     * @return \PayPal\StructType\EmailRedirectionStruct
+     * @return \Ovh\StructType\EmailRedirectionStruct
      */
     public function setTarget($target = null)
     {
@@ -83,7 +83,7 @@ class EmailRedirectionStruct extends AbstractStructBase
     /**
      * Set local value
      * @param string $local
-     * @return \PayPal\StructType\EmailRedirectionStruct
+     * @return \Ovh\StructType\EmailRedirectionStruct
      */
     public function setLocal($local = null)
     {
@@ -105,7 +105,7 @@ class EmailRedirectionStruct extends AbstractStructBase
     /**
      * Set subdomain value
      * @param string $subdomain
-     * @return \PayPal\StructType\EmailRedirectionStruct
+     * @return \Ovh\StructType\EmailRedirectionStruct
      */
     public function setSubdomain($subdomain = null)
     {
@@ -127,7 +127,7 @@ class EmailRedirectionStruct extends AbstractStructBase
     /**
      * Set dnsRedirection value
      * @param bool $dnsRedirection
-     * @return \PayPal\StructType\EmailRedirectionStruct
+     * @return \Ovh\StructType\EmailRedirectionStruct
      */
     public function setDnsRedirection($dnsRedirection = null)
     {
@@ -144,7 +144,7 @@ class EmailRedirectionStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\EmailRedirectionStruct
+     * @return \Ovh\StructType\EmailRedirectionStruct
      */
     public static function __set_state(array $array)
     {

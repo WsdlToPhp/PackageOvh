@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyNumberCustomListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonySpecialNumberCustomListReturn
+     * @var \Ovh\StructType\TelephonySpecialNumberCustomListReturn
      */
     public $return;
     /**
      * Constructor method for telephonyNumberCustomListResponse
      * @uses TelephonyNumberCustomListResponse::setReturn()
-     * @param \PayPal\StructType\TelephonySpecialNumberCustomListReturn $return
+     * @param \Ovh\StructType\TelephonySpecialNumberCustomListReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonySpecialNumberCustomListReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonySpecialNumberCustomListReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonySpecialNumberCustomListReturn|null
+     * @return \Ovh\StructType\TelephonySpecialNumberCustomListReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyNumberCustomListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonySpecialNumberCustomListReturn $return
-     * @return \PayPal\StructType\TelephonyNumberCustomListResponse
+     * @param \Ovh\StructType\TelephonySpecialNumberCustomListReturn $return
+     * @return \Ovh\StructType\TelephonyNumberCustomListResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonySpecialNumberCustomListReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonySpecialNumberCustomListReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyNumberCustomListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyNumberCustomListResponse
+     * @return \Ovh\StructType\TelephonyNumberCustomListResponse
      */
     public static function __set_state(array $array)
     {

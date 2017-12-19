@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class ManagedServicesPartitionQuotaUsed extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\ManagedServicesPartitionQuotaUsed
+     * @return \Ovh\StructType\ManagedServicesPartitionQuotaUsed
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class ManagedServicesPartitionQuotaUsed extends AbstractStructBase
     /**
      * Set storage value
      * @param string $storage
-     * @return \PayPal\StructType\ManagedServicesPartitionQuotaUsed
+     * @return \Ovh\StructType\ManagedServicesPartitionQuotaUsed
      */
     public function setStorage($storage = null)
     {
@@ -103,7 +103,7 @@ class ManagedServicesPartitionQuotaUsed extends AbstractStructBase
     /**
      * Set partitionName value
      * @param string $partitionName
-     * @return \PayPal\StructType\ManagedServicesPartitionQuotaUsed
+     * @return \Ovh\StructType\ManagedServicesPartitionQuotaUsed
      */
     public function setPartitionName($partitionName = null)
     {
@@ -120,7 +120,7 @@ class ManagedServicesPartitionQuotaUsed extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ManagedServicesPartitionQuotaUsed
+     * @return \Ovh\StructType\ManagedServicesPartitionQuotaUsed
      */
     public static function __set_state(array $array)
     {

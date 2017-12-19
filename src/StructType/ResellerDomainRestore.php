@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class ResellerDomainRestore extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\ResellerDomainRestore
+     * @return \Ovh\StructType\ResellerDomainRestore
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class ResellerDomainRestore extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\ResellerDomainRestore
+     * @return \Ovh\StructType\ResellerDomainRestore
      */
     public function setDomain($domain = null)
     {
@@ -103,7 +103,7 @@ class ResellerDomainRestore extends AbstractStructBase
     /**
      * Set dryRun value
      * @param bool $dryRun
-     * @return \PayPal\StructType\ResellerDomainRestore
+     * @return \Ovh\StructType\ResellerDomainRestore
      */
     public function setDryRun($dryRun = null)
     {
@@ -120,7 +120,7 @@ class ResellerDomainRestore extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ResellerDomainRestore
+     * @return \Ovh\StructType\ResellerDomainRestore
      */
     public static function __set_state(array $array)
     {

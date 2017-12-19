@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class TelephonyDirectoryWayTypeStruct extends AbstractStructBase
     /**
      * Set abbreviatedName value
      * @param string $abbreviatedName
-     * @return \PayPal\StructType\TelephonyDirectoryWayTypeStruct
+     * @return \Ovh\StructType\TelephonyDirectoryWayTypeStruct
      */
     public function setAbbreviatedName($abbreviatedName = null)
     {
@@ -75,7 +75,7 @@ class TelephonyDirectoryWayTypeStruct extends AbstractStructBase
     /**
      * Set wayName value
      * @param string $wayName
-     * @return \PayPal\StructType\TelephonyDirectoryWayTypeStruct
+     * @return \Ovh\StructType\TelephonyDirectoryWayTypeStruct
      */
     public function setWayName($wayName = null)
     {
@@ -97,7 +97,7 @@ class TelephonyDirectoryWayTypeStruct extends AbstractStructBase
     /**
      * Set tag value
      * @param string $tag
-     * @return \PayPal\StructType\TelephonyDirectoryWayTypeStruct
+     * @return \Ovh\StructType\TelephonyDirectoryWayTypeStruct
      */
     public function setTag($tag = null)
     {
@@ -114,7 +114,7 @@ class TelephonyDirectoryWayTypeStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyDirectoryWayTypeStruct
+     * @return \Ovh\StructType\TelephonyDirectoryWayTypeStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -77,7 +77,7 @@ class TelephonyBillStruct extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\TelephonyBillStruct
+     * @return \Ovh\StructType\TelephonyBillStruct
      */
     public function setDate($date = null)
     {
@@ -99,7 +99,7 @@ class TelephonyBillStruct extends AbstractStructBase
     /**
      * Set price value
      * @param float $price
-     * @return \PayPal\StructType\TelephonyBillStruct
+     * @return \Ovh\StructType\TelephonyBillStruct
      */
     public function setPrice($price = null)
     {
@@ -117,7 +117,7 @@ class TelephonyBillStruct extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \PayPal\StructType\TelephonyBillStruct
+     * @return \Ovh\StructType\TelephonyBillStruct
      */
     public function setOrderId($orderId = null)
     {
@@ -139,7 +139,7 @@ class TelephonyBillStruct extends AbstractStructBase
     /**
      * Set orderPaid value
      * @param bool $orderPaid
-     * @return \PayPal\StructType\TelephonyBillStruct
+     * @return \Ovh\StructType\TelephonyBillStruct
      */
     public function setOrderPaid($orderPaid = null)
     {
@@ -161,7 +161,7 @@ class TelephonyBillStruct extends AbstractStructBase
     /**
      * Set orderUrl value
      * @param string $orderUrl
-     * @return \PayPal\StructType\TelephonyBillStruct
+     * @return \Ovh\StructType\TelephonyBillStruct
      */
     public function setOrderUrl($orderUrl = null)
     {
@@ -183,7 +183,7 @@ class TelephonyBillStruct extends AbstractStructBase
     /**
      * Set billUrl value
      * @param string $billUrl
-     * @return \PayPal\StructType\TelephonyBillStruct
+     * @return \Ovh\StructType\TelephonyBillStruct
      */
     public function setBillUrl($billUrl = null)
     {
@@ -200,7 +200,7 @@ class TelephonyBillStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyBillStruct
+     * @return \Ovh\StructType\TelephonyBillStruct
      */
     public static function __set_state(array $array)
     {

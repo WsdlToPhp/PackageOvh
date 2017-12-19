@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class NsStruct extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\NsStruct
+     * @return \Ovh\StructType\NsStruct
      */
     public function setName($name = null)
     {
@@ -67,7 +67,7 @@ class NsStruct extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\NsStruct
+     * @return \Ovh\StructType\NsStruct
      */
     public function setIp($ip = null)
     {
@@ -84,7 +84,7 @@ class NsStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\NsStruct
+     * @return \Ovh\StructType\NsStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class TelephonyFreefaxToVoicefaxCheckStruct extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\TelephonyFreefaxToVoicefaxCheckStruct
+     * @return \Ovh\StructType\TelephonyFreefaxToVoicefaxCheckStruct
      */
     public function setDomain($domain = null)
     {
@@ -67,7 +67,7 @@ class TelephonyFreefaxToVoicefaxCheckStruct extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyFreefaxToVoicefaxCheckStruct
+     * @return \Ovh\StructType\TelephonyFreefaxToVoicefaxCheckStruct
      */
     public function setNumber($number = null)
     {
@@ -84,7 +84,7 @@ class TelephonyFreefaxToVoicefaxCheckStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFreefaxToVoicefaxCheckStruct
+     * @return \Ovh\StructType\TelephonyFreefaxToVoicefaxCheckStruct
      */
     public static function __set_state(array $array)
     {

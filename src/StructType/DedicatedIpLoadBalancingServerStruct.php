@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class DedicatedIpLoadBalancingServerStruct extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingServerStruct
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingServerStruct
      */
     public function setHostname($hostname = null)
     {
@@ -75,7 +75,7 @@ class DedicatedIpLoadBalancingServerStruct extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingServerStruct
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingServerStruct
      */
     public function setIp($ip = null)
     {
@@ -97,7 +97,7 @@ class DedicatedIpLoadBalancingServerStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingServerStruct
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingServerStruct
      */
     public function setStatus($status = null)
     {
@@ -114,7 +114,7 @@ class DedicatedIpLoadBalancingServerStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingServerStruct
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingServerStruct
      */
     public static function __set_state(array $array)
     {

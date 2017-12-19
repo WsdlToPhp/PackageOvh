@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class RtmRaidStruct extends AbstractStructBase
 {
     /**
      * The units
-     * @var \PayPal\ArrayType\MyArrayOfRtmRaidPartitionStructType
+     * @var \Ovh\ArrayType\MyArrayOfRtmRaidPartitionStructType
      */
     public $units;
     /**
      * Constructor method for rtmRaidStruct
      * @uses RtmRaidStruct::setUnits()
-     * @param \PayPal\ArrayType\MyArrayOfRtmRaidPartitionStructType $units
+     * @param \Ovh\ArrayType\MyArrayOfRtmRaidPartitionStructType $units
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfRtmRaidPartitionStructType $units = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfRtmRaidPartitionStructType $units = null)
     {
         $this
             ->setUnits($units);
     }
     /**
      * Get units value
-     * @return \PayPal\ArrayType\MyArrayOfRtmRaidPartitionStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfRtmRaidPartitionStructType|null
      */
     public function getUnits()
     {
@@ -36,10 +36,10 @@ class RtmRaidStruct extends AbstractStructBase
     }
     /**
      * Set units value
-     * @param \PayPal\ArrayType\MyArrayOfRtmRaidPartitionStructType $units
-     * @return \PayPal\StructType\RtmRaidStruct
+     * @param \Ovh\ArrayType\MyArrayOfRtmRaidPartitionStructType $units
+     * @return \Ovh\StructType\RtmRaidStruct
      */
-    public function setUnits(\PayPal\ArrayType\MyArrayOfRtmRaidPartitionStructType $units = null)
+    public function setUnits(\Ovh\ArrayType\MyArrayOfRtmRaidPartitionStructType $units = null)
     {
         $this->units = $units;
         return $this;
@@ -50,7 +50,7 @@ class RtmRaidStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RtmRaidStruct
+     * @return \Ovh\StructType\RtmRaidStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class RtmCpuLoadAvgStruct extends AbstractStructBase
     /**
      * Set loadavg1 value
      * @param string $loadavg1
-     * @return \PayPal\StructType\RtmCpuLoadAvgStruct
+     * @return \Ovh\StructType\RtmCpuLoadAvgStruct
      */
     public function setLoadavg1($loadavg1 = null)
     {
@@ -75,7 +75,7 @@ class RtmCpuLoadAvgStruct extends AbstractStructBase
     /**
      * Set loadavg5 value
      * @param string $loadavg5
-     * @return \PayPal\StructType\RtmCpuLoadAvgStruct
+     * @return \Ovh\StructType\RtmCpuLoadAvgStruct
      */
     public function setLoadavg5($loadavg5 = null)
     {
@@ -97,7 +97,7 @@ class RtmCpuLoadAvgStruct extends AbstractStructBase
     /**
      * Set loadavg15 value
      * @param string $loadavg15
-     * @return \PayPal\StructType\RtmCpuLoadAvgStruct
+     * @return \Ovh\StructType\RtmCpuLoadAvgStruct
      */
     public function setLoadavg15($loadavg15 = null)
     {
@@ -114,7 +114,7 @@ class RtmCpuLoadAvgStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RtmCpuLoadAvgStruct
+     * @return \Ovh\StructType\RtmCpuLoadAvgStruct
      */
     public static function __set_state(array $array)
     {

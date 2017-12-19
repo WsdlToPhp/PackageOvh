@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class HostingChangeMainDomainResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\HostingChangeMainDomainReturn
+     * @var \Ovh\StructType\HostingChangeMainDomainReturn
      */
     public $return;
     /**
      * Constructor method for hostingChangeMainDomainResponse
      * @uses HostingChangeMainDomainResponse::setReturn()
-     * @param \PayPal\StructType\HostingChangeMainDomainReturn $return
+     * @param \Ovh\StructType\HostingChangeMainDomainReturn $return
      */
-    public function __construct(\PayPal\StructType\HostingChangeMainDomainReturn $return = null)
+    public function __construct(\Ovh\StructType\HostingChangeMainDomainReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\HostingChangeMainDomainReturn|null
+     * @return \Ovh\StructType\HostingChangeMainDomainReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class HostingChangeMainDomainResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\HostingChangeMainDomainReturn $return
-     * @return \PayPal\StructType\HostingChangeMainDomainResponse
+     * @param \Ovh\StructType\HostingChangeMainDomainReturn $return
+     * @return \Ovh\StructType\HostingChangeMainDomainResponse
      */
-    public function setReturn(\PayPal\StructType\HostingChangeMainDomainReturn $return = null)
+    public function setReturn(\Ovh\StructType\HostingChangeMainDomainReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class HostingChangeMainDomainResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\HostingChangeMainDomainResponse
+     * @return \Ovh\StructType\HostingChangeMainDomainResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class TelephonySmsUserGetCsvAttachment extends AbstractStructBase
     /**
      * Set smsAccount value
      * @param string $smsAccount
-     * @return \PayPal\StructType\TelephonySmsUserGetCsvAttachment
+     * @return \Ovh\StructType\TelephonySmsUserGetCsvAttachment
      */
     public function setSmsAccount($smsAccount = null)
     {
@@ -91,7 +91,7 @@ class TelephonySmsUserGetCsvAttachment extends AbstractStructBase
     /**
      * Set login value
      * @param string $login
-     * @return \PayPal\StructType\TelephonySmsUserGetCsvAttachment
+     * @return \Ovh\StructType\TelephonySmsUserGetCsvAttachment
      */
     public function setLogin($login = null)
     {
@@ -113,7 +113,7 @@ class TelephonySmsUserGetCsvAttachment extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \PayPal\StructType\TelephonySmsUserGetCsvAttachment
+     * @return \Ovh\StructType\TelephonySmsUserGetCsvAttachment
      */
     public function setPassword($password = null)
     {
@@ -135,7 +135,7 @@ class TelephonySmsUserGetCsvAttachment extends AbstractStructBase
     /**
      * Set id value
      * @param string $id
-     * @return \PayPal\StructType\TelephonySmsUserGetCsvAttachment
+     * @return \Ovh\StructType\TelephonySmsUserGetCsvAttachment
      */
     public function setId($id = null)
     {
@@ -152,7 +152,7 @@ class TelephonySmsUserGetCsvAttachment extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsUserGetCsvAttachment
+     * @return \Ovh\StructType\TelephonySmsUserGetCsvAttachment
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class TelephonyPhonebookSharePeerStruct extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\TelephonyPhonebookSharePeerStruct
+     * @return \Ovh\StructType\TelephonyPhonebookSharePeerStruct
      */
     public function setId($id = null)
     {
@@ -83,7 +83,7 @@ class TelephonyPhonebookSharePeerStruct extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyPhonebookSharePeerStruct
+     * @return \Ovh\StructType\TelephonyPhonebookSharePeerStruct
      */
     public function setNumber($number = null)
     {
@@ -105,7 +105,7 @@ class TelephonyPhonebookSharePeerStruct extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\TelephonyPhonebookSharePeerStruct
+     * @return \Ovh\StructType\TelephonyPhonebookSharePeerStruct
      */
     public function setName($name = null)
     {
@@ -127,7 +127,7 @@ class TelephonyPhonebookSharePeerStruct extends AbstractStructBase
     /**
      * Set mode value
      * @param string $mode
-     * @return \PayPal\StructType\TelephonyPhonebookSharePeerStruct
+     * @return \Ovh\StructType\TelephonyPhonebookSharePeerStruct
      */
     public function setMode($mode = null)
     {
@@ -144,7 +144,7 @@ class TelephonyPhonebookSharePeerStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyPhonebookSharePeerStruct
+     * @return \Ovh\StructType\TelephonyPhonebookSharePeerStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class TelephonySpareDetailStruct extends AbstractStructBase
     /**
      * Set model value
      * @param string $model
-     * @return \PayPal\StructType\TelephonySpareDetailStruct
+     * @return \Ovh\StructType\TelephonySpareDetailStruct
      */
     public function setModel($model = null)
     {
@@ -67,7 +67,7 @@ class TelephonySpareDetailStruct extends AbstractStructBase
     /**
      * Set price_fr value
      * @param float $price_fr
-     * @return \PayPal\StructType\TelephonySpareDetailStruct
+     * @return \Ovh\StructType\TelephonySpareDetailStruct
      */
     public function setPrice_fr($price_fr = null)
     {
@@ -80,7 +80,7 @@ class TelephonySpareDetailStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySpareDetailStruct
+     * @return \Ovh\StructType\TelephonySpareDetailStruct
      */
     public static function __set_state(array $array)
     {

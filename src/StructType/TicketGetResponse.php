@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TicketGetResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\FullTicketReturn
+     * @var \Ovh\StructType\FullTicketReturn
      */
     public $return;
     /**
      * Constructor method for ticketGetResponse
      * @uses TicketGetResponse::setReturn()
-     * @param \PayPal\StructType\FullTicketReturn $return
+     * @param \Ovh\StructType\FullTicketReturn $return
      */
-    public function __construct(\PayPal\StructType\FullTicketReturn $return = null)
+    public function __construct(\Ovh\StructType\FullTicketReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\FullTicketReturn|null
+     * @return \Ovh\StructType\FullTicketReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TicketGetResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\FullTicketReturn $return
-     * @return \PayPal\StructType\TicketGetResponse
+     * @param \Ovh\StructType\FullTicketReturn $return
+     * @return \Ovh\StructType\TicketGetResponse
      */
-    public function setReturn(\PayPal\StructType\FullTicketReturn $return = null)
+    public function setReturn(\Ovh\StructType\FullTicketReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TicketGetResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TicketGetResponse
+     * @return \Ovh\StructType\TicketGetResponse
      */
     public static function __set_state(array $array)
     {

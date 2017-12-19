@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -279,7 +279,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setSession($session = null)
     {
@@ -301,7 +301,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setName($name = null)
     {
@@ -323,7 +323,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set firstname value
      * @param string $firstname
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setFirstname($firstname = null)
     {
@@ -345,7 +345,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set sex value
      * @param string $sex
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setSex($sex = null)
     {
@@ -367,7 +367,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setPassword($password = null)
     {
@@ -389,7 +389,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setEmail($email = null)
     {
@@ -411,7 +411,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set phone value
      * @param string $phone
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setPhone($phone = null)
     {
@@ -433,7 +433,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set fax value
      * @param string $fax
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setFax($fax = null)
     {
@@ -455,7 +455,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set address value
      * @param string $address
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setAddress($address = null)
     {
@@ -477,7 +477,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setCity($city = null)
     {
@@ -499,7 +499,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set area value
      * @param string $area
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setArea($area = null)
     {
@@ -521,7 +521,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set zip value
      * @param string $zip
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setZip($zip = null)
     {
@@ -543,7 +543,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setCountry($country = null)
     {
@@ -565,7 +565,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setLanguage($language = null)
     {
@@ -587,7 +587,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set isOwner value
      * @param bool $isOwner
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setIsOwner($isOwner = null)
     {
@@ -609,7 +609,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set legalform value
      * @param string $legalform
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setLegalform($legalform = null)
     {
@@ -631,7 +631,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set organisation value
      * @param string $organisation
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setOrganisation($organisation = null)
     {
@@ -653,7 +653,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set legalName value
      * @param string $legalName
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setLegalName($legalName = null)
     {
@@ -675,7 +675,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set legalNumber value
      * @param string $legalNumber
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setLegalNumber($legalNumber = null)
     {
@@ -697,7 +697,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set vat value
      * @param string $vat
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setVat($vat = null)
     {
@@ -719,7 +719,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set birthDay value
      * @param string $birthDay
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setBirthDay($birthDay = null)
     {
@@ -741,7 +741,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set birthCity value
      * @param string $birthCity
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setBirthCity($birthCity = null)
     {
@@ -763,7 +763,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set nationalIdentificationNumber value
      * @param string $nationalIdentificationNumber
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setNationalIdentificationNumber($nationalIdentificationNumber = null)
     {
@@ -785,7 +785,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set companyNationalIdentificationNumber value
      * @param string $companyNationalIdentificationNumber
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setCompanyNationalIdentificationNumber($companyNationalIdentificationNumber = null)
     {
@@ -807,7 +807,7 @@ class NicCreateIT extends AbstractStructBase
     /**
      * Set corporationType value
      * @param string $corporationType
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public function setCorporationType($corporationType = null)
     {
@@ -824,7 +824,7 @@ class NicCreateIT extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\NicCreateIT
+     * @return \Ovh\StructType\NicCreateIT
      */
     public static function __set_state(array $array)
     {

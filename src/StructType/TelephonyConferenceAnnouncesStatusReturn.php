@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,7 +37,7 @@ class TelephonyConferenceAnnouncesStatusReturn extends AbstractStructBase
     /**
      * Set custom value
      * @param bool $custom
-     * @return \PayPal\StructType\TelephonyConferenceAnnouncesStatusReturn
+     * @return \Ovh\StructType\TelephonyConferenceAnnouncesStatusReturn
      */
     public function setCustom($custom = null)
     {
@@ -54,7 +54,7 @@ class TelephonyConferenceAnnouncesStatusReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyConferenceAnnouncesStatusReturn
+     * @return \Ovh\StructType\TelephonyConferenceAnnouncesStatusReturn
      */
     public static function __set_state(array $array)
     {

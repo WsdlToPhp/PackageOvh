@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyNumberGetFrWayNamesFromInseeResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyNumberWayNameStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyNumberWayNameStructType
      */
     public $return;
     /**
      * Constructor method for telephonyNumberGetFrWayNamesFromInseeResponse
      * @uses TelephonyNumberGetFrWayNamesFromInseeResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyNumberWayNameStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyNumberWayNameStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonyNumberWayNameStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonyNumberWayNameStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyNumberWayNameStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyNumberWayNameStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyNumberGetFrWayNamesFromInseeResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyNumberWayNameStructType $return
-     * @return \PayPal\StructType\TelephonyNumberGetFrWayNamesFromInseeResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyNumberWayNameStructType $return
+     * @return \Ovh\StructType\TelephonyNumberGetFrWayNamesFromInseeResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonyNumberWayNameStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonyNumberWayNameStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyNumberGetFrWayNamesFromInseeResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyNumberGetFrWayNamesFromInseeResponse
+     * @return \Ovh\StructType\TelephonyNumberGetFrWayNamesFromInseeResponse
      */
     public static function __set_state(array $array)
     {

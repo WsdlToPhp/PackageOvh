@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -139,7 +139,7 @@ class ServiceModifyOwnerInfos extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\ServiceModifyOwnerInfos
+     * @return \Ovh\StructType\ServiceModifyOwnerInfos
      */
     public function setSession($session = null)
     {
@@ -161,7 +161,7 @@ class ServiceModifyOwnerInfos extends AbstractStructBase
     /**
      * Set owner value
      * @param string $owner
-     * @return \PayPal\StructType\ServiceModifyOwnerInfos
+     * @return \Ovh\StructType\ServiceModifyOwnerInfos
      */
     public function setOwner($owner = null)
     {
@@ -183,7 +183,7 @@ class ServiceModifyOwnerInfos extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\ServiceModifyOwnerInfos
+     * @return \Ovh\StructType\ServiceModifyOwnerInfos
      */
     public function setDomain($domain = null)
     {
@@ -205,7 +205,7 @@ class ServiceModifyOwnerInfos extends AbstractStructBase
     /**
      * Set component value
      * @param string $component
-     * @return \PayPal\StructType\ServiceModifyOwnerInfos
+     * @return \Ovh\StructType\ServiceModifyOwnerInfos
      */
     public function setComponent($component = null)
     {
@@ -227,7 +227,7 @@ class ServiceModifyOwnerInfos extends AbstractStructBase
     /**
      * Set address value
      * @param string $address
-     * @return \PayPal\StructType\ServiceModifyOwnerInfos
+     * @return \Ovh\StructType\ServiceModifyOwnerInfos
      */
     public function setAddress($address = null)
     {
@@ -249,7 +249,7 @@ class ServiceModifyOwnerInfos extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \PayPal\StructType\ServiceModifyOwnerInfos
+     * @return \Ovh\StructType\ServiceModifyOwnerInfos
      */
     public function setCity($city = null)
     {
@@ -271,7 +271,7 @@ class ServiceModifyOwnerInfos extends AbstractStructBase
     /**
      * Set zip value
      * @param string $zip
-     * @return \PayPal\StructType\ServiceModifyOwnerInfos
+     * @return \Ovh\StructType\ServiceModifyOwnerInfos
      */
     public function setZip($zip = null)
     {
@@ -293,7 +293,7 @@ class ServiceModifyOwnerInfos extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\ServiceModifyOwnerInfos
+     * @return \Ovh\StructType\ServiceModifyOwnerInfos
      */
     public function setCountry($country = null)
     {
@@ -315,7 +315,7 @@ class ServiceModifyOwnerInfos extends AbstractStructBase
     /**
      * Set phone value
      * @param string $phone
-     * @return \PayPal\StructType\ServiceModifyOwnerInfos
+     * @return \Ovh\StructType\ServiceModifyOwnerInfos
      */
     public function setPhone($phone = null)
     {
@@ -337,7 +337,7 @@ class ServiceModifyOwnerInfos extends AbstractStructBase
     /**
      * Set fax value
      * @param string $fax
-     * @return \PayPal\StructType\ServiceModifyOwnerInfos
+     * @return \Ovh\StructType\ServiceModifyOwnerInfos
      */
     public function setFax($fax = null)
     {
@@ -359,7 +359,7 @@ class ServiceModifyOwnerInfos extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\ServiceModifyOwnerInfos
+     * @return \Ovh\StructType\ServiceModifyOwnerInfos
      */
     public function setEmail($email = null)
     {
@@ -376,7 +376,7 @@ class ServiceModifyOwnerInfos extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ServiceModifyOwnerInfos
+     * @return \Ovh\StructType\ServiceModifyOwnerInfos
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class TelephonyPlugAndPhoneInfoReturn extends AbstractStructBase
     /**
      * Set brand value
      * @param string $brand
-     * @return \PayPal\StructType\TelephonyPlugAndPhoneInfoReturn
+     * @return \Ovh\StructType\TelephonyPlugAndPhoneInfoReturn
      */
     public function setBrand($brand = null)
     {
@@ -91,7 +91,7 @@ class TelephonyPlugAndPhoneInfoReturn extends AbstractStructBase
     /**
      * Set protocol value
      * @param string $protocol
-     * @return \PayPal\StructType\TelephonyPlugAndPhoneInfoReturn
+     * @return \Ovh\StructType\TelephonyPlugAndPhoneInfoReturn
      */
     public function setProtocol($protocol = null)
     {
@@ -113,7 +113,7 @@ class TelephonyPlugAndPhoneInfoReturn extends AbstractStructBase
     /**
      * Set mac value
      * @param string $mac
-     * @return \PayPal\StructType\TelephonyPlugAndPhoneInfoReturn
+     * @return \Ovh\StructType\TelephonyPlugAndPhoneInfoReturn
      */
     public function setMac($mac = null)
     {
@@ -135,7 +135,7 @@ class TelephonyPlugAndPhoneInfoReturn extends AbstractStructBase
     /**
      * Set gfKeyCount value
      * @param int $gfKeyCount
-     * @return \PayPal\StructType\TelephonyPlugAndPhoneInfoReturn
+     * @return \Ovh\StructType\TelephonyPlugAndPhoneInfoReturn
      */
     public function setGfKeyCount($gfKeyCount = null)
     {
@@ -157,7 +157,7 @@ class TelephonyPlugAndPhoneInfoReturn extends AbstractStructBase
     /**
      * Set skin value
      * @param string $skin
-     * @return \PayPal\StructType\TelephonyPlugAndPhoneInfoReturn
+     * @return \Ovh\StructType\TelephonyPlugAndPhoneInfoReturn
      */
     public function setSkin($skin = null)
     {
@@ -174,7 +174,7 @@ class TelephonyPlugAndPhoneInfoReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyPlugAndPhoneInfoReturn
+     * @return \Ovh\StructType\TelephonyPlugAndPhoneInfoReturn
      */
     public static function __set_state(array $array)
     {

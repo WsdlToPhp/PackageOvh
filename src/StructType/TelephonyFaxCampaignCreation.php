@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -57,7 +57,7 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
      * The recipients
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $recipients;
     /**
@@ -107,13 +107,13 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
      * @param string $campaignName
      * @param string $pdfUrl
      * @param string $pdfName
-     * @param \PayPal\ArrayType\MyArrayOfStringType $recipients
+     * @param \Ovh\ArrayType\MyArrayOfStringType $recipients
      * @param string $faxQuality
      * @param string $initialStatus
      * @param string $launchDate
      * @param bool $remoteRecipients
      */
-    public function __construct($session = null, $number = null, $country = null, $campaignName = null, $pdfUrl = null, $pdfName = null, \PayPal\ArrayType\MyArrayOfStringType $recipients = null, $faxQuality = null, $initialStatus = null, $launchDate = null, $remoteRecipients = null)
+    public function __construct($session = null, $number = null, $country = null, $campaignName = null, $pdfUrl = null, $pdfName = null, \Ovh\ArrayType\MyArrayOfStringType $recipients = null, $faxQuality = null, $initialStatus = null, $launchDate = null, $remoteRecipients = null)
     {
         $this
             ->setSession($session)
@@ -139,7 +139,7 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyFaxCampaignCreation
+     * @return \Ovh\StructType\TelephonyFaxCampaignCreation
      */
     public function setSession($session = null)
     {
@@ -161,7 +161,7 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyFaxCampaignCreation
+     * @return \Ovh\StructType\TelephonyFaxCampaignCreation
      */
     public function setNumber($number = null)
     {
@@ -183,7 +183,7 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyFaxCampaignCreation
+     * @return \Ovh\StructType\TelephonyFaxCampaignCreation
      */
     public function setCountry($country = null)
     {
@@ -205,7 +205,7 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
     /**
      * Set campaignName value
      * @param string $campaignName
-     * @return \PayPal\StructType\TelephonyFaxCampaignCreation
+     * @return \Ovh\StructType\TelephonyFaxCampaignCreation
      */
     public function setCampaignName($campaignName = null)
     {
@@ -227,7 +227,7 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
     /**
      * Set pdfUrl value
      * @param string $pdfUrl
-     * @return \PayPal\StructType\TelephonyFaxCampaignCreation
+     * @return \Ovh\StructType\TelephonyFaxCampaignCreation
      */
     public function setPdfUrl($pdfUrl = null)
     {
@@ -249,7 +249,7 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
     /**
      * Set pdfName value
      * @param string $pdfName
-     * @return \PayPal\StructType\TelephonyFaxCampaignCreation
+     * @return \Ovh\StructType\TelephonyFaxCampaignCreation
      */
     public function setPdfName($pdfName = null)
     {
@@ -262,7 +262,7 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
     }
     /**
      * Get recipients value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getRecipients()
     {
@@ -270,10 +270,10 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
     }
     /**
      * Set recipients value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $recipients
-     * @return \PayPal\StructType\TelephonyFaxCampaignCreation
+     * @param \Ovh\ArrayType\MyArrayOfStringType $recipients
+     * @return \Ovh\StructType\TelephonyFaxCampaignCreation
      */
-    public function setRecipients(\PayPal\ArrayType\MyArrayOfStringType $recipients = null)
+    public function setRecipients(\Ovh\ArrayType\MyArrayOfStringType $recipients = null)
     {
         $this->recipients = $recipients;
         return $this;
@@ -289,7 +289,7 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
     /**
      * Set faxQuality value
      * @param string $faxQuality
-     * @return \PayPal\StructType\TelephonyFaxCampaignCreation
+     * @return \Ovh\StructType\TelephonyFaxCampaignCreation
      */
     public function setFaxQuality($faxQuality = null)
     {
@@ -311,7 +311,7 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
     /**
      * Set initialStatus value
      * @param string $initialStatus
-     * @return \PayPal\StructType\TelephonyFaxCampaignCreation
+     * @return \Ovh\StructType\TelephonyFaxCampaignCreation
      */
     public function setInitialStatus($initialStatus = null)
     {
@@ -333,7 +333,7 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
     /**
      * Set launchDate value
      * @param string $launchDate
-     * @return \PayPal\StructType\TelephonyFaxCampaignCreation
+     * @return \Ovh\StructType\TelephonyFaxCampaignCreation
      */
     public function setLaunchDate($launchDate = null)
     {
@@ -355,7 +355,7 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
     /**
      * Set remoteRecipients value
      * @param bool $remoteRecipients
-     * @return \PayPal\StructType\TelephonyFaxCampaignCreation
+     * @return \Ovh\StructType\TelephonyFaxCampaignCreation
      */
     public function setRemoteRecipients($remoteRecipients = null)
     {
@@ -372,7 +372,7 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFaxCampaignCreation
+     * @return \Ovh\StructType\TelephonyFaxCampaignCreation
      */
     public static function __set_state(array $array)
     {

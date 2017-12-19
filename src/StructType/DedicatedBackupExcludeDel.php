@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class DedicatedBackupExcludeDel extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedBackupExcludeDel
+     * @return \Ovh\StructType\DedicatedBackupExcludeDel
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class DedicatedBackupExcludeDel extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedBackupExcludeDel
+     * @return \Ovh\StructType\DedicatedBackupExcludeDel
      */
     public function setHostname($hostname = null)
     {
@@ -113,7 +113,7 @@ class DedicatedBackupExcludeDel extends AbstractStructBase
     /**
      * Set backupId value
      * @param string $backupId
-     * @return \PayPal\StructType\DedicatedBackupExcludeDel
+     * @return \Ovh\StructType\DedicatedBackupExcludeDel
      */
     public function setBackupId($backupId = null)
     {
@@ -135,7 +135,7 @@ class DedicatedBackupExcludeDel extends AbstractStructBase
     /**
      * Set exclude value
      * @param string $exclude
-     * @return \PayPal\StructType\DedicatedBackupExcludeDel
+     * @return \Ovh\StructType\DedicatedBackupExcludeDel
      */
     public function setExclude($exclude = null)
     {
@@ -152,7 +152,7 @@ class DedicatedBackupExcludeDel extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedBackupExcludeDel
+     * @return \Ovh\StructType\DedicatedBackupExcludeDel
      */
     public static function __set_state(array $array)
     {

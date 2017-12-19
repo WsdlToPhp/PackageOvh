@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class SupportReportAnswerProblem extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\SupportReportAnswerProblem
+     * @return \Ovh\StructType\SupportReportAnswerProblem
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class SupportReportAnswerProblem extends AbstractStructBase
     /**
      * Set messageId value
      * @param int $messageId
-     * @return \PayPal\StructType\SupportReportAnswerProblem
+     * @return \Ovh\StructType\SupportReportAnswerProblem
      */
     public function setMessageId($messageId = null)
     {
@@ -103,7 +103,7 @@ class SupportReportAnswerProblem extends AbstractStructBase
     /**
      * Set reportReason value
      * @param string $reportReason
-     * @return \PayPal\StructType\SupportReportAnswerProblem
+     * @return \Ovh\StructType\SupportReportAnswerProblem
      */
     public function setReportReason($reportReason = null)
     {
@@ -120,7 +120,7 @@ class SupportReportAnswerProblem extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SupportReportAnswerProblem
+     * @return \Ovh\StructType\SupportReportAnswerProblem
      */
     public static function __set_state(array $array)
     {

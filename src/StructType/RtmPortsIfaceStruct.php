@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class RtmPortsIfaceStruct extends AbstractStructBase
     public $iface;
     /**
      * The ports
-     * @var \PayPal\ArrayType\MyArrayOfRtmPortsIfaceDetailStructType
+     * @var \Ovh\ArrayType\MyArrayOfRtmPortsIfaceDetailStructType
      */
     public $ports;
     /**
@@ -26,9 +26,9 @@ class RtmPortsIfaceStruct extends AbstractStructBase
      * @uses RtmPortsIfaceStruct::setIface()
      * @uses RtmPortsIfaceStruct::setPorts()
      * @param string $iface
-     * @param \PayPal\ArrayType\MyArrayOfRtmPortsIfaceDetailStructType $ports
+     * @param \Ovh\ArrayType\MyArrayOfRtmPortsIfaceDetailStructType $ports
      */
-    public function __construct($iface = null, \PayPal\ArrayType\MyArrayOfRtmPortsIfaceDetailStructType $ports = null)
+    public function __construct($iface = null, \Ovh\ArrayType\MyArrayOfRtmPortsIfaceDetailStructType $ports = null)
     {
         $this
             ->setIface($iface)
@@ -45,7 +45,7 @@ class RtmPortsIfaceStruct extends AbstractStructBase
     /**
      * Set iface value
      * @param string $iface
-     * @return \PayPal\StructType\RtmPortsIfaceStruct
+     * @return \Ovh\StructType\RtmPortsIfaceStruct
      */
     public function setIface($iface = null)
     {
@@ -58,7 +58,7 @@ class RtmPortsIfaceStruct extends AbstractStructBase
     }
     /**
      * Get ports value
-     * @return \PayPal\ArrayType\MyArrayOfRtmPortsIfaceDetailStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfRtmPortsIfaceDetailStructType|null
      */
     public function getPorts()
     {
@@ -66,10 +66,10 @@ class RtmPortsIfaceStruct extends AbstractStructBase
     }
     /**
      * Set ports value
-     * @param \PayPal\ArrayType\MyArrayOfRtmPortsIfaceDetailStructType $ports
-     * @return \PayPal\StructType\RtmPortsIfaceStruct
+     * @param \Ovh\ArrayType\MyArrayOfRtmPortsIfaceDetailStructType $ports
+     * @return \Ovh\StructType\RtmPortsIfaceStruct
      */
-    public function setPorts(\PayPal\ArrayType\MyArrayOfRtmPortsIfaceDetailStructType $ports = null)
+    public function setPorts(\Ovh\ArrayType\MyArrayOfRtmPortsIfaceDetailStructType $ports = null)
     {
         $this->ports = $ports;
         return $this;
@@ -80,7 +80,7 @@ class RtmPortsIfaceStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RtmPortsIfaceStruct
+     * @return \Ovh\StructType\RtmPortsIfaceStruct
      */
     public static function __set_state(array $array)
     {

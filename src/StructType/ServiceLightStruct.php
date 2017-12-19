@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -85,7 +85,7 @@ class ServiceLightStruct extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\ServiceLightStruct
+     * @return \Ovh\StructType\ServiceLightStruct
      */
     public function setDomain($domain = null)
     {
@@ -107,7 +107,7 @@ class ServiceLightStruct extends AbstractStructBase
     /**
      * Set expiry value
      * @param string $expiry
-     * @return \PayPal\StructType\ServiceLightStruct
+     * @return \Ovh\StructType\ServiceLightStruct
      */
     public function setExpiry($expiry = null)
     {
@@ -129,7 +129,7 @@ class ServiceLightStruct extends AbstractStructBase
     /**
      * Set nicadmin value
      * @param string $nicadmin
-     * @return \PayPal\StructType\ServiceLightStruct
+     * @return \Ovh\StructType\ServiceLightStruct
      */
     public function setNicadmin($nicadmin = null)
     {
@@ -151,7 +151,7 @@ class ServiceLightStruct extends AbstractStructBase
     /**
      * Set nictech value
      * @param string $nictech
-     * @return \PayPal\StructType\ServiceLightStruct
+     * @return \Ovh\StructType\ServiceLightStruct
      */
     public function setNictech($nictech = null)
     {
@@ -173,7 +173,7 @@ class ServiceLightStruct extends AbstractStructBase
     /**
      * Set nicbilling value
      * @param string $nicbilling
-     * @return \PayPal\StructType\ServiceLightStruct
+     * @return \Ovh\StructType\ServiceLightStruct
      */
     public function setNicbilling($nicbilling = null)
     {
@@ -195,7 +195,7 @@ class ServiceLightStruct extends AbstractStructBase
     /**
      * Set autorenew value
      * @param string $autorenew
-     * @return \PayPal\StructType\ServiceLightStruct
+     * @return \Ovh\StructType\ServiceLightStruct
      */
     public function setAutorenew($autorenew = null)
     {
@@ -217,7 +217,7 @@ class ServiceLightStruct extends AbstractStructBase
     /**
      * Set reverse value
      * @param string $reverse
-     * @return \PayPal\StructType\ServiceLightStruct
+     * @return \Ovh\StructType\ServiceLightStruct
      */
     public function setReverse($reverse = null)
     {
@@ -234,7 +234,7 @@ class ServiceLightStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ServiceLightStruct
+     * @return \Ovh\StructType\ServiceLightStruct
      */
     public static function __set_state(array $array)
     {

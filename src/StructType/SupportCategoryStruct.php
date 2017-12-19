@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class SupportCategoryStruct extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\SupportCategoryStruct
+     * @return \Ovh\StructType\SupportCategoryStruct
      */
     public function setName($name = null)
     {
@@ -67,7 +67,7 @@ class SupportCategoryStruct extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\SupportCategoryStruct
+     * @return \Ovh\StructType\SupportCategoryStruct
      */
     public function setId($id = null)
     {
@@ -84,7 +84,7 @@ class SupportCategoryStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SupportCategoryStruct
+     * @return \Ovh\StructType\SupportCategoryStruct
      */
     public static function __set_state(array $array)
     {

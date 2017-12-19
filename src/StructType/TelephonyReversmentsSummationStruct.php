@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class TelephonyReversmentsSummationStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\TelephonyReversmentsSummationStruct
+     * @return \Ovh\StructType\TelephonyReversmentsSummationStruct
      */
     public function setType($type = null)
     {
@@ -91,7 +91,7 @@ class TelephonyReversmentsSummationStruct extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \PayPal\StructType\TelephonyReversmentsSummationStruct
+     * @return \Ovh\StructType\TelephonyReversmentsSummationStruct
      */
     public function setName($name = null)
     {
@@ -113,7 +113,7 @@ class TelephonyReversmentsSummationStruct extends AbstractStructBase
     /**
      * Set seconds value
      * @param string $seconds
-     * @return \PayPal\StructType\TelephonyReversmentsSummationStruct
+     * @return \Ovh\StructType\TelephonyReversmentsSummationStruct
      */
     public function setSeconds($seconds = null)
     {
@@ -135,7 +135,7 @@ class TelephonyReversmentsSummationStruct extends AbstractStructBase
     /**
      * Set priceReversed value
      * @param string $priceReversed
-     * @return \PayPal\StructType\TelephonyReversmentsSummationStruct
+     * @return \Ovh\StructType\TelephonyReversmentsSummationStruct
      */
     public function setPriceReversed($priceReversed = null)
     {
@@ -157,7 +157,7 @@ class TelephonyReversmentsSummationStruct extends AbstractStructBase
     /**
      * Set calls value
      * @param string $calls
-     * @return \PayPal\StructType\TelephonyReversmentsSummationStruct
+     * @return \Ovh\StructType\TelephonyReversmentsSummationStruct
      */
     public function setCalls($calls = null)
     {
@@ -174,7 +174,7 @@ class TelephonyReversmentsSummationStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyReversmentsSummationStruct
+     * @return \Ovh\StructType\TelephonyReversmentsSummationStruct
      */
     public static function __set_state(array $array)
     {

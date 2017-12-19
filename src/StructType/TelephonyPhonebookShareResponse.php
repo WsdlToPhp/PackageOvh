@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,7 +37,7 @@ class TelephonyPhonebookShareResponse extends AbstractStructBase
     /**
      * Set return value
      * @param int $return
-     * @return \PayPal\StructType\TelephonyPhonebookShareResponse
+     * @return \Ovh\StructType\TelephonyPhonebookShareResponse
      */
     public function setReturn($return = null)
     {
@@ -54,7 +54,7 @@ class TelephonyPhonebookShareResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyPhonebookShareResponse
+     * @return \Ovh\StructType\TelephonyPhonebookShareResponse
      */
     public static function __set_state(array $array)
     {

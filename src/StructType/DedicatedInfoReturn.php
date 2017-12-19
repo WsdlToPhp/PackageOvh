@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -58,17 +58,17 @@ class DedicatedInfoReturn extends AbstractStructBase
     public $countryBilling;
     /**
      * The network
-     * @var \PayPal\StructType\DedicatedNetworkStruct
+     * @var \Ovh\StructType\DedicatedNetworkStruct
      */
     public $network;
     /**
      * The capability
-     * @var \PayPal\StructType\DedicatedCapabilityStruct
+     * @var \Ovh\StructType\DedicatedCapabilityStruct
      */
     public $capability;
     /**
      * The freeDom
-     * @var \PayPal\StructType\DedicatedFreedomStruct
+     * @var \Ovh\StructType\DedicatedFreedomStruct
      */
     public $freeDom;
     /**
@@ -94,11 +94,11 @@ class DedicatedInfoReturn extends AbstractStructBase
      * @param int $num
      * @param string $rack
      * @param string $countryBilling
-     * @param \PayPal\StructType\DedicatedNetworkStruct $network
-     * @param \PayPal\StructType\DedicatedCapabilityStruct $capability
-     * @param \PayPal\StructType\DedicatedFreedomStruct $freeDom
+     * @param \Ovh\StructType\DedicatedNetworkStruct $network
+     * @param \Ovh\StructType\DedicatedCapabilityStruct $capability
+     * @param \Ovh\StructType\DedicatedFreedomStruct $freeDom
      */
-    public function __construct($hostname = null, $datacenter = null, $os = null, $isKimSufi = null, $isRPS = null, $isHG = null, $num = null, $rack = null, $countryBilling = null, \PayPal\StructType\DedicatedNetworkStruct $network = null, \PayPal\StructType\DedicatedCapabilityStruct $capability = null, \PayPal\StructType\DedicatedFreedomStruct $freeDom = null)
+    public function __construct($hostname = null, $datacenter = null, $os = null, $isKimSufi = null, $isRPS = null, $isHG = null, $num = null, $rack = null, $countryBilling = null, \Ovh\StructType\DedicatedNetworkStruct $network = null, \Ovh\StructType\DedicatedCapabilityStruct $capability = null, \Ovh\StructType\DedicatedFreedomStruct $freeDom = null)
     {
         $this
             ->setHostname($hostname)
@@ -125,7 +125,7 @@ class DedicatedInfoReturn extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedInfoReturn
+     * @return \Ovh\StructType\DedicatedInfoReturn
      */
     public function setHostname($hostname = null)
     {
@@ -147,7 +147,7 @@ class DedicatedInfoReturn extends AbstractStructBase
     /**
      * Set datacenter value
      * @param string $datacenter
-     * @return \PayPal\StructType\DedicatedInfoReturn
+     * @return \Ovh\StructType\DedicatedInfoReturn
      */
     public function setDatacenter($datacenter = null)
     {
@@ -169,7 +169,7 @@ class DedicatedInfoReturn extends AbstractStructBase
     /**
      * Set os value
      * @param string $os
-     * @return \PayPal\StructType\DedicatedInfoReturn
+     * @return \Ovh\StructType\DedicatedInfoReturn
      */
     public function setOs($os = null)
     {
@@ -191,7 +191,7 @@ class DedicatedInfoReturn extends AbstractStructBase
     /**
      * Set isKimSufi value
      * @param bool $isKimSufi
-     * @return \PayPal\StructType\DedicatedInfoReturn
+     * @return \Ovh\StructType\DedicatedInfoReturn
      */
     public function setIsKimSufi($isKimSufi = null)
     {
@@ -213,7 +213,7 @@ class DedicatedInfoReturn extends AbstractStructBase
     /**
      * Set isRPS value
      * @param bool $isRPS
-     * @return \PayPal\StructType\DedicatedInfoReturn
+     * @return \Ovh\StructType\DedicatedInfoReturn
      */
     public function setIsRPS($isRPS = null)
     {
@@ -235,7 +235,7 @@ class DedicatedInfoReturn extends AbstractStructBase
     /**
      * Set isHG value
      * @param bool $isHG
-     * @return \PayPal\StructType\DedicatedInfoReturn
+     * @return \Ovh\StructType\DedicatedInfoReturn
      */
     public function setIsHG($isHG = null)
     {
@@ -257,7 +257,7 @@ class DedicatedInfoReturn extends AbstractStructBase
     /**
      * Set num value
      * @param int $num
-     * @return \PayPal\StructType\DedicatedInfoReturn
+     * @return \Ovh\StructType\DedicatedInfoReturn
      */
     public function setNum($num = null)
     {
@@ -279,7 +279,7 @@ class DedicatedInfoReturn extends AbstractStructBase
     /**
      * Set rack value
      * @param string $rack
-     * @return \PayPal\StructType\DedicatedInfoReturn
+     * @return \Ovh\StructType\DedicatedInfoReturn
      */
     public function setRack($rack = null)
     {
@@ -301,7 +301,7 @@ class DedicatedInfoReturn extends AbstractStructBase
     /**
      * Set countryBilling value
      * @param string $countryBilling
-     * @return \PayPal\StructType\DedicatedInfoReturn
+     * @return \Ovh\StructType\DedicatedInfoReturn
      */
     public function setCountryBilling($countryBilling = null)
     {
@@ -314,7 +314,7 @@ class DedicatedInfoReturn extends AbstractStructBase
     }
     /**
      * Get network value
-     * @return \PayPal\StructType\DedicatedNetworkStruct|null
+     * @return \Ovh\StructType\DedicatedNetworkStruct|null
      */
     public function getNetwork()
     {
@@ -322,17 +322,17 @@ class DedicatedInfoReturn extends AbstractStructBase
     }
     /**
      * Set network value
-     * @param \PayPal\StructType\DedicatedNetworkStruct $network
-     * @return \PayPal\StructType\DedicatedInfoReturn
+     * @param \Ovh\StructType\DedicatedNetworkStruct $network
+     * @return \Ovh\StructType\DedicatedInfoReturn
      */
-    public function setNetwork(\PayPal\StructType\DedicatedNetworkStruct $network = null)
+    public function setNetwork(\Ovh\StructType\DedicatedNetworkStruct $network = null)
     {
         $this->network = $network;
         return $this;
     }
     /**
      * Get capability value
-     * @return \PayPal\StructType\DedicatedCapabilityStruct|null
+     * @return \Ovh\StructType\DedicatedCapabilityStruct|null
      */
     public function getCapability()
     {
@@ -340,17 +340,17 @@ class DedicatedInfoReturn extends AbstractStructBase
     }
     /**
      * Set capability value
-     * @param \PayPal\StructType\DedicatedCapabilityStruct $capability
-     * @return \PayPal\StructType\DedicatedInfoReturn
+     * @param \Ovh\StructType\DedicatedCapabilityStruct $capability
+     * @return \Ovh\StructType\DedicatedInfoReturn
      */
-    public function setCapability(\PayPal\StructType\DedicatedCapabilityStruct $capability = null)
+    public function setCapability(\Ovh\StructType\DedicatedCapabilityStruct $capability = null)
     {
         $this->capability = $capability;
         return $this;
     }
     /**
      * Get freeDom value
-     * @return \PayPal\StructType\DedicatedFreedomStruct|null
+     * @return \Ovh\StructType\DedicatedFreedomStruct|null
      */
     public function getFreeDom()
     {
@@ -358,10 +358,10 @@ class DedicatedInfoReturn extends AbstractStructBase
     }
     /**
      * Set freeDom value
-     * @param \PayPal\StructType\DedicatedFreedomStruct $freeDom
-     * @return \PayPal\StructType\DedicatedInfoReturn
+     * @param \Ovh\StructType\DedicatedFreedomStruct $freeDom
+     * @return \Ovh\StructType\DedicatedInfoReturn
      */
-    public function setFreeDom(\PayPal\StructType\DedicatedFreedomStruct $freeDom = null)
+    public function setFreeDom(\Ovh\StructType\DedicatedFreedomStruct $freeDom = null)
     {
         $this->freeDom = $freeDom;
         return $this;
@@ -372,7 +372,7 @@ class DedicatedInfoReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedInfoReturn
+     * @return \Ovh\StructType\DedicatedInfoReturn
      */
     public static function __set_state(array $array)
     {

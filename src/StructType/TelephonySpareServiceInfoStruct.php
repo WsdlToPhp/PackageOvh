@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,12 +23,12 @@ class TelephonySpareServiceInfoStruct extends AbstractStructBase
     public $reference;
     /**
      * The parents
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $parents;
     /**
      * The actions
-     * @var \PayPal\StructType\TelephonySpareActionsStruct
+     * @var \Ovh\StructType\TelephonySpareActionsStruct
      */
     public $actions;
     /**
@@ -39,10 +39,10 @@ class TelephonySpareServiceInfoStruct extends AbstractStructBase
      * @uses TelephonySpareServiceInfoStruct::setActions()
      * @param string $service
      * @param string $reference
-     * @param \PayPal\ArrayType\MyArrayOfStringType $parents
-     * @param \PayPal\StructType\TelephonySpareActionsStruct $actions
+     * @param \Ovh\ArrayType\MyArrayOfStringType $parents
+     * @param \Ovh\StructType\TelephonySpareActionsStruct $actions
      */
-    public function __construct($service = null, $reference = null, \PayPal\ArrayType\MyArrayOfStringType $parents = null, \PayPal\StructType\TelephonySpareActionsStruct $actions = null)
+    public function __construct($service = null, $reference = null, \Ovh\ArrayType\MyArrayOfStringType $parents = null, \Ovh\StructType\TelephonySpareActionsStruct $actions = null)
     {
         $this
             ->setService($service)
@@ -61,7 +61,7 @@ class TelephonySpareServiceInfoStruct extends AbstractStructBase
     /**
      * Set service value
      * @param string $service
-     * @return \PayPal\StructType\TelephonySpareServiceInfoStruct
+     * @return \Ovh\StructType\TelephonySpareServiceInfoStruct
      */
     public function setService($service = null)
     {
@@ -83,7 +83,7 @@ class TelephonySpareServiceInfoStruct extends AbstractStructBase
     /**
      * Set reference value
      * @param string $reference
-     * @return \PayPal\StructType\TelephonySpareServiceInfoStruct
+     * @return \Ovh\StructType\TelephonySpareServiceInfoStruct
      */
     public function setReference($reference = null)
     {
@@ -96,7 +96,7 @@ class TelephonySpareServiceInfoStruct extends AbstractStructBase
     }
     /**
      * Get parents value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getParents()
     {
@@ -104,17 +104,17 @@ class TelephonySpareServiceInfoStruct extends AbstractStructBase
     }
     /**
      * Set parents value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $parents
-     * @return \PayPal\StructType\TelephonySpareServiceInfoStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $parents
+     * @return \Ovh\StructType\TelephonySpareServiceInfoStruct
      */
-    public function setParents(\PayPal\ArrayType\MyArrayOfStringType $parents = null)
+    public function setParents(\Ovh\ArrayType\MyArrayOfStringType $parents = null)
     {
         $this->parents = $parents;
         return $this;
     }
     /**
      * Get actions value
-     * @return \PayPal\StructType\TelephonySpareActionsStruct|null
+     * @return \Ovh\StructType\TelephonySpareActionsStruct|null
      */
     public function getActions()
     {
@@ -122,10 +122,10 @@ class TelephonySpareServiceInfoStruct extends AbstractStructBase
     }
     /**
      * Set actions value
-     * @param \PayPal\StructType\TelephonySpareActionsStruct $actions
-     * @return \PayPal\StructType\TelephonySpareServiceInfoStruct
+     * @param \Ovh\StructType\TelephonySpareActionsStruct $actions
+     * @return \Ovh\StructType\TelephonySpareServiceInfoStruct
      */
-    public function setActions(\PayPal\StructType\TelephonySpareActionsStruct $actions = null)
+    public function setActions(\Ovh\StructType\TelephonySpareActionsStruct $actions = null)
     {
         $this->actions = $actions;
         return $this;
@@ -136,7 +136,7 @@ class TelephonySpareServiceInfoStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySpareServiceInfoStruct
+     * @return \Ovh\StructType\TelephonySpareServiceInfoStruct
      */
     public static function __set_state(array $array)
     {

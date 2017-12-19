@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class DedicatedGetServiceMonitoringItem extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedGetServiceMonitoringItem
+     * @return \Ovh\StructType\DedicatedGetServiceMonitoringItem
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class DedicatedGetServiceMonitoringItem extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\DedicatedGetServiceMonitoringItem
+     * @return \Ovh\StructType\DedicatedGetServiceMonitoringItem
      */
     public function setIp($ip = null)
     {
@@ -103,7 +103,7 @@ class DedicatedGetServiceMonitoringItem extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \PayPal\StructType\DedicatedGetServiceMonitoringItem
+     * @return \Ovh\StructType\DedicatedGetServiceMonitoringItem
      */
     public function setItemId($itemId = null)
     {
@@ -120,7 +120,7 @@ class DedicatedGetServiceMonitoringItem extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedGetServiceMonitoringItem
+     * @return \Ovh\StructType\DedicatedGetServiceMonitoringItem
      */
     public static function __set_state(array $array)
     {

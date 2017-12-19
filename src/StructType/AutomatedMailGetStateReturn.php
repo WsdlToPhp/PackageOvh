@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class AutomatedMailGetStateReturn extends AbstractStructBase
     /**
      * Set bounce value
      * @param int $bounce
-     * @return \PayPal\StructType\AutomatedMailGetStateReturn
+     * @return \Ovh\StructType\AutomatedMailGetStateReturn
      */
     public function setBounce($bounce = null)
     {
@@ -83,7 +83,7 @@ class AutomatedMailGetStateReturn extends AbstractStructBase
     /**
      * Set sent value
      * @param int $sent
-     * @return \PayPal\StructType\AutomatedMailGetStateReturn
+     * @return \Ovh\StructType\AutomatedMailGetStateReturn
      */
     public function setSent($sent = null)
     {
@@ -105,7 +105,7 @@ class AutomatedMailGetStateReturn extends AbstractStructBase
     /**
      * Set return value
      * @param string $return
-     * @return \PayPal\StructType\AutomatedMailGetStateReturn
+     * @return \Ovh\StructType\AutomatedMailGetStateReturn
      */
     public function setReturn($return = null)
     {
@@ -127,7 +127,7 @@ class AutomatedMailGetStateReturn extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \PayPal\StructType\AutomatedMailGetStateReturn
+     * @return \Ovh\StructType\AutomatedMailGetStateReturn
      */
     public function setState($state = null)
     {
@@ -144,7 +144,7 @@ class AutomatedMailGetStateReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\AutomatedMailGetStateReturn
+     * @return \Ovh\StructType\AutomatedMailGetStateReturn
      */
     public static function __set_state(array $array)
     {

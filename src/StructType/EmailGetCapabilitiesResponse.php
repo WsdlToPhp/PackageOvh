@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class EmailGetCapabilitiesResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\EmailGetCapabilitiesReturn
+     * @var \Ovh\StructType\EmailGetCapabilitiesReturn
      */
     public $return;
     /**
      * Constructor method for emailGetCapabilitiesResponse
      * @uses EmailGetCapabilitiesResponse::setReturn()
-     * @param \PayPal\StructType\EmailGetCapabilitiesReturn $return
+     * @param \Ovh\StructType\EmailGetCapabilitiesReturn $return
      */
-    public function __construct(\PayPal\StructType\EmailGetCapabilitiesReturn $return = null)
+    public function __construct(\Ovh\StructType\EmailGetCapabilitiesReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\EmailGetCapabilitiesReturn|null
+     * @return \Ovh\StructType\EmailGetCapabilitiesReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class EmailGetCapabilitiesResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\EmailGetCapabilitiesReturn $return
-     * @return \PayPal\StructType\EmailGetCapabilitiesResponse
+     * @param \Ovh\StructType\EmailGetCapabilitiesReturn $return
+     * @return \Ovh\StructType\EmailGetCapabilitiesResponse
      */
-    public function setReturn(\PayPal\StructType\EmailGetCapabilitiesReturn $return = null)
+    public function setReturn(\Ovh\StructType\EmailGetCapabilitiesReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class EmailGetCapabilitiesResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\EmailGetCapabilitiesResponse
+     * @return \Ovh\StructType\EmailGetCapabilitiesResponse
      */
     public static function __set_state(array $array)
     {

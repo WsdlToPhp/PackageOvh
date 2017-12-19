@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class DedicatedOperationStruct extends AbstractStructBase
     /**
      * Set designation value
      * @param string $designation
-     * @return \PayPal\StructType\DedicatedOperationStruct
+     * @return \Ovh\StructType\DedicatedOperationStruct
      */
     public function setDesignation($designation = null)
     {
@@ -83,7 +83,7 @@ class DedicatedOperationStruct extends AbstractStructBase
     /**
      * Set id_designation value
      * @param int $id_designation
-     * @return \PayPal\StructType\DedicatedOperationStruct
+     * @return \Ovh\StructType\DedicatedOperationStruct
      */
     public function setId_designation($id_designation = null)
     {
@@ -105,7 +105,7 @@ class DedicatedOperationStruct extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\DedicatedOperationStruct
+     * @return \Ovh\StructType\DedicatedOperationStruct
      */
     public function setDate($date = null)
     {
@@ -127,7 +127,7 @@ class DedicatedOperationStruct extends AbstractStructBase
     /**
      * Set level value
      * @param int $level
-     * @return \PayPal\StructType\DedicatedOperationStruct
+     * @return \Ovh\StructType\DedicatedOperationStruct
      */
     public function setLevel($level = null)
     {
@@ -144,7 +144,7 @@ class DedicatedOperationStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedOperationStruct
+     * @return \Ovh\StructType\DedicatedOperationStruct
      */
     public static function __set_state(array $array)
     {

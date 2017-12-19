@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class RtmMemoryStruct extends AbstractStructBase
     public $swapusage;
     /**
      * The modules
-     * @var \PayPal\ArrayType\MyArrayOfRtmMemoryModuleStructType
+     * @var \Ovh\ArrayType\MyArrayOfRtmMemoryModuleStructType
      */
     public $modules;
     /**
@@ -33,9 +33,9 @@ class RtmMemoryStruct extends AbstractStructBase
      * @uses RtmMemoryStruct::setModules()
      * @param int $memusage
      * @param int $swapusage
-     * @param \PayPal\ArrayType\MyArrayOfRtmMemoryModuleStructType $modules
+     * @param \Ovh\ArrayType\MyArrayOfRtmMemoryModuleStructType $modules
      */
-    public function __construct($memusage = null, $swapusage = null, \PayPal\ArrayType\MyArrayOfRtmMemoryModuleStructType $modules = null)
+    public function __construct($memusage = null, $swapusage = null, \Ovh\ArrayType\MyArrayOfRtmMemoryModuleStructType $modules = null)
     {
         $this
             ->setMemusage($memusage)
@@ -53,7 +53,7 @@ class RtmMemoryStruct extends AbstractStructBase
     /**
      * Set memusage value
      * @param int $memusage
-     * @return \PayPal\StructType\RtmMemoryStruct
+     * @return \Ovh\StructType\RtmMemoryStruct
      */
     public function setMemusage($memusage = null)
     {
@@ -75,7 +75,7 @@ class RtmMemoryStruct extends AbstractStructBase
     /**
      * Set swapusage value
      * @param int $swapusage
-     * @return \PayPal\StructType\RtmMemoryStruct
+     * @return \Ovh\StructType\RtmMemoryStruct
      */
     public function setSwapusage($swapusage = null)
     {
@@ -88,7 +88,7 @@ class RtmMemoryStruct extends AbstractStructBase
     }
     /**
      * Get modules value
-     * @return \PayPal\ArrayType\MyArrayOfRtmMemoryModuleStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfRtmMemoryModuleStructType|null
      */
     public function getModules()
     {
@@ -96,10 +96,10 @@ class RtmMemoryStruct extends AbstractStructBase
     }
     /**
      * Set modules value
-     * @param \PayPal\ArrayType\MyArrayOfRtmMemoryModuleStructType $modules
-     * @return \PayPal\StructType\RtmMemoryStruct
+     * @param \Ovh\ArrayType\MyArrayOfRtmMemoryModuleStructType $modules
+     * @return \Ovh\StructType\RtmMemoryStruct
      */
-    public function setModules(\PayPal\ArrayType\MyArrayOfRtmMemoryModuleStructType $modules = null)
+    public function setModules(\Ovh\ArrayType\MyArrayOfRtmMemoryModuleStructType $modules = null)
     {
         $this->modules = $modules;
         return $this;
@@ -110,7 +110,7 @@ class RtmMemoryStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RtmMemoryStruct
+     * @return \Ovh\StructType\RtmMemoryStruct
      */
     public static function __set_state(array $array)
     {

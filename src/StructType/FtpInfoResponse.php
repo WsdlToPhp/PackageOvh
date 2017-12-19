@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class FtpInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\FtpInfoReturn
+     * @var \Ovh\StructType\FtpInfoReturn
      */
     public $return;
     /**
      * Constructor method for ftpInfoResponse
      * @uses FtpInfoResponse::setReturn()
-     * @param \PayPal\StructType\FtpInfoReturn $return
+     * @param \Ovh\StructType\FtpInfoReturn $return
      */
-    public function __construct(\PayPal\StructType\FtpInfoReturn $return = null)
+    public function __construct(\Ovh\StructType\FtpInfoReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\FtpInfoReturn|null
+     * @return \Ovh\StructType\FtpInfoReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class FtpInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\FtpInfoReturn $return
-     * @return \PayPal\StructType\FtpInfoResponse
+     * @param \Ovh\StructType\FtpInfoReturn $return
+     * @return \Ovh\StructType\FtpInfoResponse
      */
-    public function setReturn(\PayPal\StructType\FtpInfoReturn $return = null)
+    public function setReturn(\Ovh\StructType\FtpInfoReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class FtpInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\FtpInfoResponse
+     * @return \Ovh\StructType\FtpInfoResponse
      */
     public static function __set_state(array $array)
     {

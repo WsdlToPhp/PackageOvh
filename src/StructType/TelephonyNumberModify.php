@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class TelephonyNumberModify extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyNumberModify
+     * @return \Ovh\StructType\TelephonyNumberModify
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class TelephonyNumberModify extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyNumberModify
+     * @return \Ovh\StructType\TelephonyNumberModify
      */
     public function setNumber($number = null)
     {
@@ -123,7 +123,7 @@ class TelephonyNumberModify extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyNumberModify
+     * @return \Ovh\StructType\TelephonyNumberModify
      */
     public function setCountry($country = null)
     {
@@ -145,7 +145,7 @@ class TelephonyNumberModify extends AbstractStructBase
     /**
      * Set billingAccount value
      * @param string $billingAccount
-     * @return \PayPal\StructType\TelephonyNumberModify
+     * @return \Ovh\StructType\TelephonyNumberModify
      */
     public function setBillingAccount($billingAccount = null)
     {
@@ -167,7 +167,7 @@ class TelephonyNumberModify extends AbstractStructBase
     /**
      * Set newType value
      * @param string $newType
-     * @return \PayPal\StructType\TelephonyNumberModify
+     * @return \Ovh\StructType\TelephonyNumberModify
      */
     public function setNewType($newType = null)
     {
@@ -184,7 +184,7 @@ class TelephonyNumberModify extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyNumberModify
+     * @return \Ovh\StructType\TelephonyNumberModify
      */
     public static function __set_state(array $array)
     {

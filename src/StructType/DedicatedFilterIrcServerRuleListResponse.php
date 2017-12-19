@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedFilterIrcServerRuleListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedFilterIrcRuleStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedFilterIrcRuleStructType
      */
     public $return;
     /**
      * Constructor method for dedicatedFilterIrcServerRuleListResponse
      * @uses DedicatedFilterIrcServerRuleListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedFilterIrcRuleStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedFilterIrcRuleStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfDedicatedFilterIrcRuleStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfDedicatedFilterIrcRuleStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedFilterIrcRuleStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedFilterIrcRuleStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedFilterIrcServerRuleListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedFilterIrcRuleStructType $return
-     * @return \PayPal\StructType\DedicatedFilterIrcServerRuleListResponse
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedFilterIrcRuleStructType $return
+     * @return \Ovh\StructType\DedicatedFilterIrcServerRuleListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfDedicatedFilterIrcRuleStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfDedicatedFilterIrcRuleStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedFilterIrcServerRuleListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedFilterIrcServerRuleListResponse
+     * @return \Ovh\StructType\DedicatedFilterIrcServerRuleListResponse
      */
     public static function __set_state(array $array)
     {

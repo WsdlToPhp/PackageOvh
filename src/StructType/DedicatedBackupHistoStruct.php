@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class DedicatedBackupHistoStruct extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\DedicatedBackupHistoStruct
+     * @return \Ovh\StructType\DedicatedBackupHistoStruct
      */
     public function setId($id = null)
     {
@@ -91,7 +91,7 @@ class DedicatedBackupHistoStruct extends AbstractStructBase
     /**
      * Set backupId value
      * @param int $backupId
-     * @return \PayPal\StructType\DedicatedBackupHistoStruct
+     * @return \Ovh\StructType\DedicatedBackupHistoStruct
      */
     public function setBackupId($backupId = null)
     {
@@ -113,7 +113,7 @@ class DedicatedBackupHistoStruct extends AbstractStructBase
     /**
      * Set dateTime value
      * @param string $dateTime
-     * @return \PayPal\StructType\DedicatedBackupHistoStruct
+     * @return \Ovh\StructType\DedicatedBackupHistoStruct
      */
     public function setDateTime($dateTime = null)
     {
@@ -135,7 +135,7 @@ class DedicatedBackupHistoStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\DedicatedBackupHistoStruct
+     * @return \Ovh\StructType\DedicatedBackupHistoStruct
      */
     public function setStatus($status = null)
     {
@@ -157,7 +157,7 @@ class DedicatedBackupHistoStruct extends AbstractStructBase
     /**
      * Set error value
      * @param string $error
-     * @return \PayPal\StructType\DedicatedBackupHistoStruct
+     * @return \Ovh\StructType\DedicatedBackupHistoStruct
      */
     public function setError($error = null)
     {
@@ -174,7 +174,7 @@ class DedicatedBackupHistoStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedBackupHistoStruct
+     * @return \Ovh\StructType\DedicatedBackupHistoStruct
      */
     public static function __set_state(array $array)
     {

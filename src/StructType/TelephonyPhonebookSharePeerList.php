@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class TelephonyPhonebookSharePeerList extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyPhonebookSharePeerList
+     * @return \Ovh\StructType\TelephonyPhonebookSharePeerList
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class TelephonyPhonebookSharePeerList extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyPhonebookSharePeerList
+     * @return \Ovh\StructType\TelephonyPhonebookSharePeerList
      */
     public function setNumber($number = null)
     {
@@ -113,7 +113,7 @@ class TelephonyPhonebookSharePeerList extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyPhonebookSharePeerList
+     * @return \Ovh\StructType\TelephonyPhonebookSharePeerList
      */
     public function setCountry($country = null)
     {
@@ -135,7 +135,7 @@ class TelephonyPhonebookSharePeerList extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\TelephonyPhonebookSharePeerList
+     * @return \Ovh\StructType\TelephonyPhonebookSharePeerList
      */
     public function setId($id = null)
     {
@@ -152,7 +152,7 @@ class TelephonyPhonebookSharePeerList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyPhonebookSharePeerList
+     * @return \Ovh\StructType\TelephonyPhonebookSharePeerList
      */
     public static function __set_state(array $array)
     {

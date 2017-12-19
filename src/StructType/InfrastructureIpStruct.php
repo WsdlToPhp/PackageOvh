@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -43,7 +43,7 @@ class InfrastructureIpStruct extends AbstractStructBase
     public $networkIp;
     /**
      * The ipAddressFromBlock
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $ipAddressFromBlock;
     /**
@@ -61,9 +61,9 @@ class InfrastructureIpStruct extends AbstractStructBase
      * @param string $status
      * @param int $addressesNumber
      * @param string $networkIp
-     * @param \PayPal\ArrayType\MyArrayOfStringType $ipAddressFromBlock
+     * @param \Ovh\ArrayType\MyArrayOfStringType $ipAddressFromBlock
      */
-    public function __construct($country = null, $netname = null, $routedTo = null, $status = null, $addressesNumber = null, $networkIp = null, \PayPal\ArrayType\MyArrayOfStringType $ipAddressFromBlock = null)
+    public function __construct($country = null, $netname = null, $routedTo = null, $status = null, $addressesNumber = null, $networkIp = null, \Ovh\ArrayType\MyArrayOfStringType $ipAddressFromBlock = null)
     {
         $this
             ->setCountry($country)
@@ -85,7 +85,7 @@ class InfrastructureIpStruct extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\InfrastructureIpStruct
+     * @return \Ovh\StructType\InfrastructureIpStruct
      */
     public function setCountry($country = null)
     {
@@ -107,7 +107,7 @@ class InfrastructureIpStruct extends AbstractStructBase
     /**
      * Set netname value
      * @param string $netname
-     * @return \PayPal\StructType\InfrastructureIpStruct
+     * @return \Ovh\StructType\InfrastructureIpStruct
      */
     public function setNetname($netname = null)
     {
@@ -129,7 +129,7 @@ class InfrastructureIpStruct extends AbstractStructBase
     /**
      * Set routedTo value
      * @param string $routedTo
-     * @return \PayPal\StructType\InfrastructureIpStruct
+     * @return \Ovh\StructType\InfrastructureIpStruct
      */
     public function setRoutedTo($routedTo = null)
     {
@@ -151,7 +151,7 @@ class InfrastructureIpStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\InfrastructureIpStruct
+     * @return \Ovh\StructType\InfrastructureIpStruct
      */
     public function setStatus($status = null)
     {
@@ -173,7 +173,7 @@ class InfrastructureIpStruct extends AbstractStructBase
     /**
      * Set addressesNumber value
      * @param int $addressesNumber
-     * @return \PayPal\StructType\InfrastructureIpStruct
+     * @return \Ovh\StructType\InfrastructureIpStruct
      */
     public function setAddressesNumber($addressesNumber = null)
     {
@@ -195,7 +195,7 @@ class InfrastructureIpStruct extends AbstractStructBase
     /**
      * Set networkIp value
      * @param string $networkIp
-     * @return \PayPal\StructType\InfrastructureIpStruct
+     * @return \Ovh\StructType\InfrastructureIpStruct
      */
     public function setNetworkIp($networkIp = null)
     {
@@ -208,7 +208,7 @@ class InfrastructureIpStruct extends AbstractStructBase
     }
     /**
      * Get ipAddressFromBlock value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getIpAddressFromBlock()
     {
@@ -216,10 +216,10 @@ class InfrastructureIpStruct extends AbstractStructBase
     }
     /**
      * Set ipAddressFromBlock value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $ipAddressFromBlock
-     * @return \PayPal\StructType\InfrastructureIpStruct
+     * @param \Ovh\ArrayType\MyArrayOfStringType $ipAddressFromBlock
+     * @return \Ovh\StructType\InfrastructureIpStruct
      */
-    public function setIpAddressFromBlock(\PayPal\ArrayType\MyArrayOfStringType $ipAddressFromBlock = null)
+    public function setIpAddressFromBlock(\Ovh\ArrayType\MyArrayOfStringType $ipAddressFromBlock = null)
     {
         $this->ipAddressFromBlock = $ipAddressFromBlock;
         return $this;
@@ -230,7 +230,7 @@ class InfrastructureIpStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\InfrastructureIpStruct
+     * @return \Ovh\StructType\InfrastructureIpStruct
      */
     public static function __set_state(array $array)
     {

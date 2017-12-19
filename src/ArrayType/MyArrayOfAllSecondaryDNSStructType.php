@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfAllSecondaryDNSStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\AllSecondaryDNSStruct[]
+     * @var \Ovh\StructType\AllSecondaryDNSStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfAllSecondaryDNSStructType
      * @uses MyArrayOfAllSecondaryDNSStructType::setItem()
-     * @param \PayPal\StructType\AllSecondaryDNSStruct[] $item
+     * @param \Ovh\StructType\AllSecondaryDNSStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfAllSecondaryDNSStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\AllSecondaryDNSStruct[]|null
+     * @return \Ovh\StructType\AllSecondaryDNSStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfAllSecondaryDNSStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\AllSecondaryDNSStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfAllSecondaryDNSStructType
+     * @param \Ovh\StructType\AllSecondaryDNSStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfAllSecondaryDNSStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfAllSecondaryDNSStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfAllSecondaryDNSStructTypeItemItem instanceof \PayPal\StructType\AllSecondaryDNSStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\AllSecondaryDNSStruct, "%s" given', is_object($myArrayOfAllSecondaryDNSStructTypeItemItem) ? get_class($myArrayOfAllSecondaryDNSStructTypeItemItem) : gettype($myArrayOfAllSecondaryDNSStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfAllSecondaryDNSStructTypeItemItem instanceof \Ovh\StructType\AllSecondaryDNSStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\AllSecondaryDNSStruct, "%s" given', is_object($myArrayOfAllSecondaryDNSStructTypeItemItem) ? get_class($myArrayOfAllSecondaryDNSStructTypeItemItem) : gettype($myArrayOfAllSecondaryDNSStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfAllSecondaryDNSStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\AllSecondaryDNSStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfAllSecondaryDNSStructType
+     * @param \Ovh\StructType\AllSecondaryDNSStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfAllSecondaryDNSStructType
      */
-    public function addToItem(\PayPal\StructType\AllSecondaryDNSStruct $item)
+    public function addToItem(\Ovh\StructType\AllSecondaryDNSStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\AllSecondaryDNSStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\AllSecondaryDNSStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\AllSecondaryDNSStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\AllSecondaryDNSStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfAllSecondaryDNSStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\AllSecondaryDNSStruct|null
+     * @return \Ovh\StructType\AllSecondaryDNSStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfAllSecondaryDNSStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\AllSecondaryDNSStruct|null
+     * @return \Ovh\StructType\AllSecondaryDNSStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfAllSecondaryDNSStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\AllSecondaryDNSStruct|null
+     * @return \Ovh\StructType\AllSecondaryDNSStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfAllSecondaryDNSStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\AllSecondaryDNSStruct|null
+     * @return \Ovh\StructType\AllSecondaryDNSStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfAllSecondaryDNSStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\AllSecondaryDNSStruct|null
+     * @return \Ovh\StructType\AllSecondaryDNSStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfAllSecondaryDNSStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfAllSecondaryDNSStructType
+     * @return \Ovh\ArrayType\MyArrayOfAllSecondaryDNSStructType
      */
     public static function __set_state(array $array)
     {

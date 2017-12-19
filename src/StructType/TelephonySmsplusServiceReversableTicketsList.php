@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -109,7 +109,7 @@ class TelephonySmsplusServiceReversableTicketsList extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonySmsplusServiceReversableTicketsList
+     * @return \Ovh\StructType\TelephonySmsplusServiceReversableTicketsList
      */
     public function setSession($session = null)
     {
@@ -131,7 +131,7 @@ class TelephonySmsplusServiceReversableTicketsList extends AbstractStructBase
     /**
      * Set shortCode value
      * @param string $shortCode
-     * @return \PayPal\StructType\TelephonySmsplusServiceReversableTicketsList
+     * @return \Ovh\StructType\TelephonySmsplusServiceReversableTicketsList
      */
     public function setShortCode($shortCode = null)
     {
@@ -153,7 +153,7 @@ class TelephonySmsplusServiceReversableTicketsList extends AbstractStructBase
     /**
      * Set keyword value
      * @param string $keyword
-     * @return \PayPal\StructType\TelephonySmsplusServiceReversableTicketsList
+     * @return \Ovh\StructType\TelephonySmsplusServiceReversableTicketsList
      */
     public function setKeyword($keyword = null)
     {
@@ -175,7 +175,7 @@ class TelephonySmsplusServiceReversableTicketsList extends AbstractStructBase
     /**
      * Set reversableDelay value
      * @param string $reversableDelay
-     * @return \PayPal\StructType\TelephonySmsplusServiceReversableTicketsList
+     * @return \Ovh\StructType\TelephonySmsplusServiceReversableTicketsList
      */
     public function setReversableDelay($reversableDelay = null)
     {
@@ -197,7 +197,7 @@ class TelephonySmsplusServiceReversableTicketsList extends AbstractStructBase
     /**
      * Set limit value
      * @param int $limit
-     * @return \PayPal\StructType\TelephonySmsplusServiceReversableTicketsList
+     * @return \Ovh\StructType\TelephonySmsplusServiceReversableTicketsList
      */
     public function setLimit($limit = null)
     {
@@ -219,7 +219,7 @@ class TelephonySmsplusServiceReversableTicketsList extends AbstractStructBase
     /**
      * Set limitOffset value
      * @param int $limitOffset
-     * @return \PayPal\StructType\TelephonySmsplusServiceReversableTicketsList
+     * @return \Ovh\StructType\TelephonySmsplusServiceReversableTicketsList
      */
     public function setLimitOffset($limitOffset = null)
     {
@@ -241,7 +241,7 @@ class TelephonySmsplusServiceReversableTicketsList extends AbstractStructBase
     /**
      * Set sort value
      * @param string $sort
-     * @return \PayPal\StructType\TelephonySmsplusServiceReversableTicketsList
+     * @return \Ovh\StructType\TelephonySmsplusServiceReversableTicketsList
      */
     public function setSort($sort = null)
     {
@@ -263,7 +263,7 @@ class TelephonySmsplusServiceReversableTicketsList extends AbstractStructBase
     /**
      * Set filter value
      * @param string $filter
-     * @return \PayPal\StructType\TelephonySmsplusServiceReversableTicketsList
+     * @return \Ovh\StructType\TelephonySmsplusServiceReversableTicketsList
      */
     public function setFilter($filter = null)
     {
@@ -280,7 +280,7 @@ class TelephonySmsplusServiceReversableTicketsList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsplusServiceReversableTicketsList
+     * @return \Ovh\StructType\TelephonySmsplusServiceReversableTicketsList
      */
     public static function __set_state(array $array)
     {

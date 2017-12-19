@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyScreenListBlackWhiteChoiceResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyScreenBlackWhiteChoiceReturn
+     * @var \Ovh\StructType\TelephonyScreenBlackWhiteChoiceReturn
      */
     public $return;
     /**
      * Constructor method for telephonyScreenListBlackWhiteChoiceResponse
      * @uses TelephonyScreenListBlackWhiteChoiceResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyScreenBlackWhiteChoiceReturn $return
+     * @param \Ovh\StructType\TelephonyScreenBlackWhiteChoiceReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonyScreenBlackWhiteChoiceReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonyScreenBlackWhiteChoiceReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyScreenBlackWhiteChoiceReturn|null
+     * @return \Ovh\StructType\TelephonyScreenBlackWhiteChoiceReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyScreenListBlackWhiteChoiceResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyScreenBlackWhiteChoiceReturn $return
-     * @return \PayPal\StructType\TelephonyScreenListBlackWhiteChoiceResponse
+     * @param \Ovh\StructType\TelephonyScreenBlackWhiteChoiceReturn $return
+     * @return \Ovh\StructType\TelephonyScreenListBlackWhiteChoiceResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyScreenBlackWhiteChoiceReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyScreenBlackWhiteChoiceReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyScreenListBlackWhiteChoiceResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyScreenListBlackWhiteChoiceResponse
+     * @return \Ovh\StructType\TelephonyScreenListBlackWhiteChoiceResponse
      */
     public static function __set_state(array $array)
     {

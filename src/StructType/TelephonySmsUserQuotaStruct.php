@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class TelephonySmsUserQuotaStruct extends AbstractStructBase
     /**
      * Set quotaLeft value
      * @param string $quotaLeft
-     * @return \PayPal\StructType\TelephonySmsUserQuotaStruct
+     * @return \Ovh\StructType\TelephonySmsUserQuotaStruct
      */
     public function setQuotaLeft($quotaLeft = null)
     {
@@ -67,7 +67,7 @@ class TelephonySmsUserQuotaStruct extends AbstractStructBase
     /**
      * Set quotaStatus value
      * @param string $quotaStatus
-     * @return \PayPal\StructType\TelephonySmsUserQuotaStruct
+     * @return \Ovh\StructType\TelephonySmsUserQuotaStruct
      */
     public function setQuotaStatus($quotaStatus = null)
     {
@@ -84,7 +84,7 @@ class TelephonySmsUserQuotaStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsUserQuotaStruct
+     * @return \Ovh\StructType\TelephonySmsUserQuotaStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class SqlpriveMysqlRootPassword extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\SqlpriveMysqlRootPassword
+     * @return \Ovh\StructType\SqlpriveMysqlRootPassword
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class SqlpriveMysqlRootPassword extends AbstractStructBase
     /**
      * Set server value
      * @param string $server
-     * @return \PayPal\StructType\SqlpriveMysqlRootPassword
+     * @return \Ovh\StructType\SqlpriveMysqlRootPassword
      */
     public function setServer($server = null)
     {
@@ -103,7 +103,7 @@ class SqlpriveMysqlRootPassword extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \PayPal\StructType\SqlpriveMysqlRootPassword
+     * @return \Ovh\StructType\SqlpriveMysqlRootPassword
      */
     public function setPassword($password = null)
     {
@@ -120,7 +120,7 @@ class SqlpriveMysqlRootPassword extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SqlpriveMysqlRootPassword
+     * @return \Ovh\StructType\SqlpriveMysqlRootPassword
      */
     public static function __set_state(array $array)
     {

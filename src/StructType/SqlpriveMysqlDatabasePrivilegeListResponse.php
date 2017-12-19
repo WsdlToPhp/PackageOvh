@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class SqlpriveMysqlDatabasePrivilegeListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType
+     * @var \Ovh\ArrayType\MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType
      */
     public $return;
     /**
      * Constructor method for sqlpriveMysqlDatabasePrivilegeListResponse
      * @uses SqlpriveMysqlDatabasePrivilegeListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class SqlpriveMysqlDatabasePrivilegeListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType $return
-     * @return \PayPal\StructType\SqlpriveMysqlDatabasePrivilegeListResponse
+     * @param \Ovh\ArrayType\MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType $return
+     * @return \Ovh\StructType\SqlpriveMysqlDatabasePrivilegeListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfSqlpriveMysqlDatabasePrivilegeStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class SqlpriveMysqlDatabasePrivilegeListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SqlpriveMysqlDatabasePrivilegeListResponse
+     * @return \Ovh\StructType\SqlpriveMysqlDatabasePrivilegeListResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class RtmRaidPartitionStruct extends AbstractStructBase
     public $partition;
     /**
      * The volumes
-     * @var \PayPal\ArrayType\MyArrayOfRtmRaidPartitionVolumeStructType
+     * @var \Ovh\ArrayType\MyArrayOfRtmRaidPartitionVolumeStructType
      */
     public $volumes;
     /**
@@ -26,9 +26,9 @@ class RtmRaidPartitionStruct extends AbstractStructBase
      * @uses RtmRaidPartitionStruct::setPartition()
      * @uses RtmRaidPartitionStruct::setVolumes()
      * @param string $partition
-     * @param \PayPal\ArrayType\MyArrayOfRtmRaidPartitionVolumeStructType $volumes
+     * @param \Ovh\ArrayType\MyArrayOfRtmRaidPartitionVolumeStructType $volumes
      */
-    public function __construct($partition = null, \PayPal\ArrayType\MyArrayOfRtmRaidPartitionVolumeStructType $volumes = null)
+    public function __construct($partition = null, \Ovh\ArrayType\MyArrayOfRtmRaidPartitionVolumeStructType $volumes = null)
     {
         $this
             ->setPartition($partition)
@@ -45,7 +45,7 @@ class RtmRaidPartitionStruct extends AbstractStructBase
     /**
      * Set partition value
      * @param string $partition
-     * @return \PayPal\StructType\RtmRaidPartitionStruct
+     * @return \Ovh\StructType\RtmRaidPartitionStruct
      */
     public function setPartition($partition = null)
     {
@@ -58,7 +58,7 @@ class RtmRaidPartitionStruct extends AbstractStructBase
     }
     /**
      * Get volumes value
-     * @return \PayPal\ArrayType\MyArrayOfRtmRaidPartitionVolumeStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfRtmRaidPartitionVolumeStructType|null
      */
     public function getVolumes()
     {
@@ -66,10 +66,10 @@ class RtmRaidPartitionStruct extends AbstractStructBase
     }
     /**
      * Set volumes value
-     * @param \PayPal\ArrayType\MyArrayOfRtmRaidPartitionVolumeStructType $volumes
-     * @return \PayPal\StructType\RtmRaidPartitionStruct
+     * @param \Ovh\ArrayType\MyArrayOfRtmRaidPartitionVolumeStructType $volumes
+     * @return \Ovh\StructType\RtmRaidPartitionStruct
      */
-    public function setVolumes(\PayPal\ArrayType\MyArrayOfRtmRaidPartitionVolumeStructType $volumes = null)
+    public function setVolumes(\Ovh\ArrayType\MyArrayOfRtmRaidPartitionVolumeStructType $volumes = null)
     {
         $this->volumes = $volumes;
         return $this;
@@ -80,7 +80,7 @@ class RtmRaidPartitionStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RtmRaidPartitionStruct
+     * @return \Ovh\StructType\RtmRaidPartitionStruct
      */
     public static function __set_state(array $array)
     {

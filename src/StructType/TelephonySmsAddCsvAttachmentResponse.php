@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonySmsAddCsvAttachmentResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonySmsCsvSlotStruct
+     * @var \Ovh\StructType\TelephonySmsCsvSlotStruct
      */
     public $return;
     /**
      * Constructor method for telephonySmsAddCsvAttachmentResponse
      * @uses TelephonySmsAddCsvAttachmentResponse::setReturn()
-     * @param \PayPal\StructType\TelephonySmsCsvSlotStruct $return
+     * @param \Ovh\StructType\TelephonySmsCsvSlotStruct $return
      */
-    public function __construct(\PayPal\StructType\TelephonySmsCsvSlotStruct $return = null)
+    public function __construct(\Ovh\StructType\TelephonySmsCsvSlotStruct $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonySmsCsvSlotStruct|null
+     * @return \Ovh\StructType\TelephonySmsCsvSlotStruct|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonySmsAddCsvAttachmentResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonySmsCsvSlotStruct $return
-     * @return \PayPal\StructType\TelephonySmsAddCsvAttachmentResponse
+     * @param \Ovh\StructType\TelephonySmsCsvSlotStruct $return
+     * @return \Ovh\StructType\TelephonySmsAddCsvAttachmentResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonySmsCsvSlotStruct $return = null)
+    public function setReturn(\Ovh\StructType\TelephonySmsCsvSlotStruct $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonySmsAddCsvAttachmentResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsAddCsvAttachmentResponse
+     * @return \Ovh\StructType\TelephonySmsAddCsvAttachmentResponse
      */
     public static function __set_state(array $array)
     {

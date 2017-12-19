@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,28 +36,28 @@ class TelephonyHuntingGenericScreenSet extends AbstractStructBase
      * The timesStart
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $timesStart;
     /**
      * The timesEnd
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $timesEnd;
     /**
      * The daysType
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $daysType;
     /**
      * The forwardPolicyIndex
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $forwardPolicyIndex;
     /**
@@ -72,12 +72,12 @@ class TelephonyHuntingGenericScreenSet extends AbstractStructBase
      * @param string $session
      * @param string $number
      * @param string $country
-     * @param \PayPal\ArrayType\MyArrayOfStringType $timesStart
-     * @param \PayPal\ArrayType\MyArrayOfStringType $timesEnd
-     * @param \PayPal\ArrayType\MyArrayOfStringType $daysType
-     * @param \PayPal\ArrayType\MyArrayOfStringType $forwardPolicyIndex
+     * @param \Ovh\ArrayType\MyArrayOfStringType $timesStart
+     * @param \Ovh\ArrayType\MyArrayOfStringType $timesEnd
+     * @param \Ovh\ArrayType\MyArrayOfStringType $daysType
+     * @param \Ovh\ArrayType\MyArrayOfStringType $forwardPolicyIndex
      */
-    public function __construct($session = null, $number = null, $country = null, \PayPal\ArrayType\MyArrayOfStringType $timesStart = null, \PayPal\ArrayType\MyArrayOfStringType $timesEnd = null, \PayPal\ArrayType\MyArrayOfStringType $daysType = null, \PayPal\ArrayType\MyArrayOfStringType $forwardPolicyIndex = null)
+    public function __construct($session = null, $number = null, $country = null, \Ovh\ArrayType\MyArrayOfStringType $timesStart = null, \Ovh\ArrayType\MyArrayOfStringType $timesEnd = null, \Ovh\ArrayType\MyArrayOfStringType $daysType = null, \Ovh\ArrayType\MyArrayOfStringType $forwardPolicyIndex = null)
     {
         $this
             ->setSession($session)
@@ -99,7 +99,7 @@ class TelephonyHuntingGenericScreenSet extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenSet
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenSet
      */
     public function setSession($session = null)
     {
@@ -121,7 +121,7 @@ class TelephonyHuntingGenericScreenSet extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenSet
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenSet
      */
     public function setNumber($number = null)
     {
@@ -143,7 +143,7 @@ class TelephonyHuntingGenericScreenSet extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenSet
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenSet
      */
     public function setCountry($country = null)
     {
@@ -156,7 +156,7 @@ class TelephonyHuntingGenericScreenSet extends AbstractStructBase
     }
     /**
      * Get timesStart value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getTimesStart()
     {
@@ -164,17 +164,17 @@ class TelephonyHuntingGenericScreenSet extends AbstractStructBase
     }
     /**
      * Set timesStart value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $timesStart
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenSet
+     * @param \Ovh\ArrayType\MyArrayOfStringType $timesStart
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenSet
      */
-    public function setTimesStart(\PayPal\ArrayType\MyArrayOfStringType $timesStart = null)
+    public function setTimesStart(\Ovh\ArrayType\MyArrayOfStringType $timesStart = null)
     {
         $this->timesStart = $timesStart;
         return $this;
     }
     /**
      * Get timesEnd value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getTimesEnd()
     {
@@ -182,17 +182,17 @@ class TelephonyHuntingGenericScreenSet extends AbstractStructBase
     }
     /**
      * Set timesEnd value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $timesEnd
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenSet
+     * @param \Ovh\ArrayType\MyArrayOfStringType $timesEnd
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenSet
      */
-    public function setTimesEnd(\PayPal\ArrayType\MyArrayOfStringType $timesEnd = null)
+    public function setTimesEnd(\Ovh\ArrayType\MyArrayOfStringType $timesEnd = null)
     {
         $this->timesEnd = $timesEnd;
         return $this;
     }
     /**
      * Get daysType value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getDaysType()
     {
@@ -200,17 +200,17 @@ class TelephonyHuntingGenericScreenSet extends AbstractStructBase
     }
     /**
      * Set daysType value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $daysType
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenSet
+     * @param \Ovh\ArrayType\MyArrayOfStringType $daysType
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenSet
      */
-    public function setDaysType(\PayPal\ArrayType\MyArrayOfStringType $daysType = null)
+    public function setDaysType(\Ovh\ArrayType\MyArrayOfStringType $daysType = null)
     {
         $this->daysType = $daysType;
         return $this;
     }
     /**
      * Get forwardPolicyIndex value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getForwardPolicyIndex()
     {
@@ -218,10 +218,10 @@ class TelephonyHuntingGenericScreenSet extends AbstractStructBase
     }
     /**
      * Set forwardPolicyIndex value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $forwardPolicyIndex
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenSet
+     * @param \Ovh\ArrayType\MyArrayOfStringType $forwardPolicyIndex
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenSet
      */
-    public function setForwardPolicyIndex(\PayPal\ArrayType\MyArrayOfStringType $forwardPolicyIndex = null)
+    public function setForwardPolicyIndex(\Ovh\ArrayType\MyArrayOfStringType $forwardPolicyIndex = null)
     {
         $this->forwardPolicyIndex = $forwardPolicyIndex;
         return $this;
@@ -232,7 +232,7 @@ class TelephonyHuntingGenericScreenSet extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenSet
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenSet
      */
     public static function __set_state(array $array)
     {

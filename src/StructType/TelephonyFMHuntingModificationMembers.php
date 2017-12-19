@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -43,21 +43,21 @@ class TelephonyFMHuntingModificationMembers extends AbstractStructBase
      * The list_destinations
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfStringType
+     * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $list_destinations;
     /**
      * The list_noReplyTimer
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfIntType
+     * @var \Ovh\ArrayType\MyArrayOfIntType
      */
     public $list_noReplyTimer;
     /**
      * The list_logged
      * Meta informations extracted from the WSDL
      * - nillable: true
-     * @var \PayPal\ArrayType\MyArrayOfBooleanType
+     * @var \Ovh\ArrayType\MyArrayOfBooleanType
      */
     public $list_logged;
     /**
@@ -73,11 +73,11 @@ class TelephonyFMHuntingModificationMembers extends AbstractStructBase
      * @param string $number
      * @param string $country
      * @param string $billingAccount
-     * @param \PayPal\ArrayType\MyArrayOfStringType $list_destinations
-     * @param \PayPal\ArrayType\MyArrayOfIntType $list_noReplyTimer
-     * @param \PayPal\ArrayType\MyArrayOfBooleanType $list_logged
+     * @param \Ovh\ArrayType\MyArrayOfStringType $list_destinations
+     * @param \Ovh\ArrayType\MyArrayOfIntType $list_noReplyTimer
+     * @param \Ovh\ArrayType\MyArrayOfBooleanType $list_logged
      */
-    public function __construct($session = null, $number = null, $country = null, $billingAccount = null, \PayPal\ArrayType\MyArrayOfStringType $list_destinations = null, \PayPal\ArrayType\MyArrayOfIntType $list_noReplyTimer = null, \PayPal\ArrayType\MyArrayOfBooleanType $list_logged = null)
+    public function __construct($session = null, $number = null, $country = null, $billingAccount = null, \Ovh\ArrayType\MyArrayOfStringType $list_destinations = null, \Ovh\ArrayType\MyArrayOfIntType $list_noReplyTimer = null, \Ovh\ArrayType\MyArrayOfBooleanType $list_logged = null)
     {
         $this
             ->setSession($session)
@@ -99,7 +99,7 @@ class TelephonyFMHuntingModificationMembers extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyFMHuntingModificationMembers
+     * @return \Ovh\StructType\TelephonyFMHuntingModificationMembers
      */
     public function setSession($session = null)
     {
@@ -121,7 +121,7 @@ class TelephonyFMHuntingModificationMembers extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyFMHuntingModificationMembers
+     * @return \Ovh\StructType\TelephonyFMHuntingModificationMembers
      */
     public function setNumber($number = null)
     {
@@ -143,7 +143,7 @@ class TelephonyFMHuntingModificationMembers extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyFMHuntingModificationMembers
+     * @return \Ovh\StructType\TelephonyFMHuntingModificationMembers
      */
     public function setCountry($country = null)
     {
@@ -165,7 +165,7 @@ class TelephonyFMHuntingModificationMembers extends AbstractStructBase
     /**
      * Set billingAccount value
      * @param string $billingAccount
-     * @return \PayPal\StructType\TelephonyFMHuntingModificationMembers
+     * @return \Ovh\StructType\TelephonyFMHuntingModificationMembers
      */
     public function setBillingAccount($billingAccount = null)
     {
@@ -178,7 +178,7 @@ class TelephonyFMHuntingModificationMembers extends AbstractStructBase
     }
     /**
      * Get list_destinations value
-     * @return \PayPal\ArrayType\MyArrayOfStringType|null
+     * @return \Ovh\ArrayType\MyArrayOfStringType|null
      */
     public function getList_destinations()
     {
@@ -186,17 +186,17 @@ class TelephonyFMHuntingModificationMembers extends AbstractStructBase
     }
     /**
      * Set list_destinations value
-     * @param \PayPal\ArrayType\MyArrayOfStringType $list_destinations
-     * @return \PayPal\StructType\TelephonyFMHuntingModificationMembers
+     * @param \Ovh\ArrayType\MyArrayOfStringType $list_destinations
+     * @return \Ovh\StructType\TelephonyFMHuntingModificationMembers
      */
-    public function setList_destinations(\PayPal\ArrayType\MyArrayOfStringType $list_destinations = null)
+    public function setList_destinations(\Ovh\ArrayType\MyArrayOfStringType $list_destinations = null)
     {
         $this->list_destinations = $list_destinations;
         return $this;
     }
     /**
      * Get list_noReplyTimer value
-     * @return \PayPal\ArrayType\MyArrayOfIntType|null
+     * @return \Ovh\ArrayType\MyArrayOfIntType|null
      */
     public function getList_noReplyTimer()
     {
@@ -204,17 +204,17 @@ class TelephonyFMHuntingModificationMembers extends AbstractStructBase
     }
     /**
      * Set list_noReplyTimer value
-     * @param \PayPal\ArrayType\MyArrayOfIntType $list_noReplyTimer
-     * @return \PayPal\StructType\TelephonyFMHuntingModificationMembers
+     * @param \Ovh\ArrayType\MyArrayOfIntType $list_noReplyTimer
+     * @return \Ovh\StructType\TelephonyFMHuntingModificationMembers
      */
-    public function setList_noReplyTimer(\PayPal\ArrayType\MyArrayOfIntType $list_noReplyTimer = null)
+    public function setList_noReplyTimer(\Ovh\ArrayType\MyArrayOfIntType $list_noReplyTimer = null)
     {
         $this->list_noReplyTimer = $list_noReplyTimer;
         return $this;
     }
     /**
      * Get list_logged value
-     * @return \PayPal\ArrayType\MyArrayOfBooleanType|null
+     * @return \Ovh\ArrayType\MyArrayOfBooleanType|null
      */
     public function getList_logged()
     {
@@ -222,10 +222,10 @@ class TelephonyFMHuntingModificationMembers extends AbstractStructBase
     }
     /**
      * Set list_logged value
-     * @param \PayPal\ArrayType\MyArrayOfBooleanType $list_logged
-     * @return \PayPal\StructType\TelephonyFMHuntingModificationMembers
+     * @param \Ovh\ArrayType\MyArrayOfBooleanType $list_logged
+     * @return \Ovh\StructType\TelephonyFMHuntingModificationMembers
      */
-    public function setList_logged(\PayPal\ArrayType\MyArrayOfBooleanType $list_logged = null)
+    public function setList_logged(\Ovh\ArrayType\MyArrayOfBooleanType $list_logged = null)
     {
         $this->list_logged = $list_logged;
         return $this;
@@ -236,7 +236,7 @@ class TelephonyFMHuntingModificationMembers extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFMHuntingModificationMembers
+     * @return \Ovh\StructType\TelephonyFMHuntingModificationMembers
      */
     public static function __set_state(array $array)
     {

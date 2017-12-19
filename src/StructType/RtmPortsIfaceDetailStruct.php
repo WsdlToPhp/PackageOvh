@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -85,7 +85,7 @@ class RtmPortsIfaceDetailStruct extends AbstractStructBase
     /**
      * Set port value
      * @param string $port
-     * @return \PayPal\StructType\RtmPortsIfaceDetailStruct
+     * @return \Ovh\StructType\RtmPortsIfaceDetailStruct
      */
     public function setPort($port = null)
     {
@@ -107,7 +107,7 @@ class RtmPortsIfaceDetailStruct extends AbstractStructBase
     /**
      * Set procname value
      * @param string $procname
-     * @return \PayPal\StructType\RtmPortsIfaceDetailStruct
+     * @return \Ovh\StructType\RtmPortsIfaceDetailStruct
      */
     public function setProcname($procname = null)
     {
@@ -129,7 +129,7 @@ class RtmPortsIfaceDetailStruct extends AbstractStructBase
     /**
      * Set uid value
      * @param string $uid
-     * @return \PayPal\StructType\RtmPortsIfaceDetailStruct
+     * @return \Ovh\StructType\RtmPortsIfaceDetailStruct
      */
     public function setUid($uid = null)
     {
@@ -151,7 +151,7 @@ class RtmPortsIfaceDetailStruct extends AbstractStructBase
     /**
      * Set pid value
      * @param int $pid
-     * @return \PayPal\StructType\RtmPortsIfaceDetailStruct
+     * @return \Ovh\StructType\RtmPortsIfaceDetailStruct
      */
     public function setPid($pid = null)
     {
@@ -173,7 +173,7 @@ class RtmPortsIfaceDetailStruct extends AbstractStructBase
     /**
      * Set cmdline value
      * @param string $cmdline
-     * @return \PayPal\StructType\RtmPortsIfaceDetailStruct
+     * @return \Ovh\StructType\RtmPortsIfaceDetailStruct
      */
     public function setCmdline($cmdline = null)
     {
@@ -195,7 +195,7 @@ class RtmPortsIfaceDetailStruct extends AbstractStructBase
     /**
      * Set exe value
      * @param string $exe
-     * @return \PayPal\StructType\RtmPortsIfaceDetailStruct
+     * @return \Ovh\StructType\RtmPortsIfaceDetailStruct
      */
     public function setExe($exe = null)
     {
@@ -217,7 +217,7 @@ class RtmPortsIfaceDetailStruct extends AbstractStructBase
     /**
      * Set username value
      * @param string $username
-     * @return \PayPal\StructType\RtmPortsIfaceDetailStruct
+     * @return \Ovh\StructType\RtmPortsIfaceDetailStruct
      */
     public function setUsername($username = null)
     {
@@ -234,7 +234,7 @@ class RtmPortsIfaceDetailStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RtmPortsIfaceDetailStruct
+     * @return \Ovh\StructType\RtmPortsIfaceDetailStruct
      */
     public static function __set_state(array $array)
     {

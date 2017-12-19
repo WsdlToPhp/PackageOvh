@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class DedicatedHardRebootDo extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedHardRebootDo
+     * @return \Ovh\StructType\DedicatedHardRebootDo
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class DedicatedHardRebootDo extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedHardRebootDo
+     * @return \Ovh\StructType\DedicatedHardRebootDo
      */
     public function setHostname($hostname = null)
     {
@@ -123,7 +123,7 @@ class DedicatedHardRebootDo extends AbstractStructBase
     /**
      * Set reason value
      * @param string $reason
-     * @return \PayPal\StructType\DedicatedHardRebootDo
+     * @return \Ovh\StructType\DedicatedHardRebootDo
      */
     public function setReason($reason = null)
     {
@@ -145,7 +145,7 @@ class DedicatedHardRebootDo extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \PayPal\StructType\DedicatedHardRebootDo
+     * @return \Ovh\StructType\DedicatedHardRebootDo
      */
     public function setEmail($email = null)
     {
@@ -167,7 +167,7 @@ class DedicatedHardRebootDo extends AbstractStructBase
     /**
      * Set emailLanguage value
      * @param string $emailLanguage
-     * @return \PayPal\StructType\DedicatedHardRebootDo
+     * @return \Ovh\StructType\DedicatedHardRebootDo
      */
     public function setEmailLanguage($emailLanguage = null)
     {
@@ -184,7 +184,7 @@ class DedicatedHardRebootDo extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedHardRebootDo
+     * @return \Ovh\StructType\DedicatedHardRebootDo
      */
     public static function __set_state(array $array)
     {

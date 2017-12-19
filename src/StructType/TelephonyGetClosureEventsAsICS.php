@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class TelephonyGetClosureEventsAsICS extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsICS
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsICS
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class TelephonyGetClosureEventsAsICS extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsICS
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsICS
      */
     public function setNumber($number = null)
     {
@@ -133,7 +133,7 @@ class TelephonyGetClosureEventsAsICS extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsICS
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsICS
      */
     public function setCountry($country = null)
     {
@@ -155,7 +155,7 @@ class TelephonyGetClosureEventsAsICS extends AbstractStructBase
     /**
      * Set dateStart value
      * @param string $dateStart
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsICS
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsICS
      */
     public function setDateStart($dateStart = null)
     {
@@ -177,7 +177,7 @@ class TelephonyGetClosureEventsAsICS extends AbstractStructBase
     /**
      * Set dateEnd value
      * @param string $dateEnd
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsICS
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsICS
      */
     public function setDateEnd($dateEnd = null)
     {
@@ -199,7 +199,7 @@ class TelephonyGetClosureEventsAsICS extends AbstractStructBase
     /**
      * Set categories value
      * @param string $categories
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsICS
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsICS
      */
     public function setCategories($categories = null)
     {
@@ -216,7 +216,7 @@ class TelephonyGetClosureEventsAsICS extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyGetClosureEventsAsICS
+     * @return \Ovh\StructType\TelephonyGetClosureEventsAsICS
      */
     public static function __set_state(array $array)
     {

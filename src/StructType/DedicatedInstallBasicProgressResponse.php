@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedInstallBasicProgressResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\DedicatedBasicInstallProgressReturn
+     * @var \Ovh\StructType\DedicatedBasicInstallProgressReturn
      */
     public $return;
     /**
      * Constructor method for dedicatedInstallBasicProgressResponse
      * @uses DedicatedInstallBasicProgressResponse::setReturn()
-     * @param \PayPal\StructType\DedicatedBasicInstallProgressReturn $return
+     * @param \Ovh\StructType\DedicatedBasicInstallProgressReturn $return
      */
-    public function __construct(\PayPal\StructType\DedicatedBasicInstallProgressReturn $return = null)
+    public function __construct(\Ovh\StructType\DedicatedBasicInstallProgressReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\DedicatedBasicInstallProgressReturn|null
+     * @return \Ovh\StructType\DedicatedBasicInstallProgressReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedInstallBasicProgressResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\DedicatedBasicInstallProgressReturn $return
-     * @return \PayPal\StructType\DedicatedInstallBasicProgressResponse
+     * @param \Ovh\StructType\DedicatedBasicInstallProgressReturn $return
+     * @return \Ovh\StructType\DedicatedInstallBasicProgressResponse
      */
-    public function setReturn(\PayPal\StructType\DedicatedBasicInstallProgressReturn $return = null)
+    public function setReturn(\Ovh\StructType\DedicatedBasicInstallProgressReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedInstallBasicProgressResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedInstallBasicProgressResponse
+     * @return \Ovh\StructType\DedicatedInstallBasicProgressResponse
      */
     public static function __set_state(array $array)
     {

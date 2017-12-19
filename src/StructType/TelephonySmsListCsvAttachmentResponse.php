@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonySmsListCsvAttachmentResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonySmsCsvSlotStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonySmsCsvSlotStructType
      */
     public $return;
     /**
      * Constructor method for telephonySmsListCsvAttachmentResponse
      * @uses TelephonySmsListCsvAttachmentResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonySmsCsvSlotStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonySmsCsvSlotStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonySmsCsvSlotStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonySmsCsvSlotStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonySmsCsvSlotStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonySmsCsvSlotStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonySmsListCsvAttachmentResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonySmsCsvSlotStructType $return
-     * @return \PayPal\StructType\TelephonySmsListCsvAttachmentResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonySmsCsvSlotStructType $return
+     * @return \Ovh\StructType\TelephonySmsListCsvAttachmentResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonySmsCsvSlotStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonySmsCsvSlotStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonySmsListCsvAttachmentResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsListCsvAttachmentResponse
+     * @return \Ovh\StructType\TelephonySmsListCsvAttachmentResponse
      */
     public static function __set_state(array $array)
     {

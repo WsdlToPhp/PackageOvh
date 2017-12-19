@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class EmailFilterListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfEmailFilterStructType
+     * @var \Ovh\ArrayType\MyArrayOfEmailFilterStructType
      */
     public $return;
     /**
      * Constructor method for emailFilterListResponse
      * @uses EmailFilterListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfEmailFilterStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfEmailFilterStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfEmailFilterStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfEmailFilterStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfEmailFilterStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfEmailFilterStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class EmailFilterListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfEmailFilterStructType $return
-     * @return \PayPal\StructType\EmailFilterListResponse
+     * @param \Ovh\ArrayType\MyArrayOfEmailFilterStructType $return
+     * @return \Ovh\StructType\EmailFilterListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfEmailFilterStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfEmailFilterStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class EmailFilterListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\EmailFilterListResponse
+     * @return \Ovh\StructType\EmailFilterListResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyDirectoryInfoGetSiretResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyDirectoryInfoGetSiretReturn
+     * @var \Ovh\StructType\TelephonyDirectoryInfoGetSiretReturn
      */
     public $return;
     /**
      * Constructor method for telephonyDirectoryInfoGetSiretResponse
      * @uses TelephonyDirectoryInfoGetSiretResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyDirectoryInfoGetSiretReturn $return
+     * @param \Ovh\StructType\TelephonyDirectoryInfoGetSiretReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonyDirectoryInfoGetSiretReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonyDirectoryInfoGetSiretReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyDirectoryInfoGetSiretReturn|null
+     * @return \Ovh\StructType\TelephonyDirectoryInfoGetSiretReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyDirectoryInfoGetSiretResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyDirectoryInfoGetSiretReturn $return
-     * @return \PayPal\StructType\TelephonyDirectoryInfoGetSiretResponse
+     * @param \Ovh\StructType\TelephonyDirectoryInfoGetSiretReturn $return
+     * @return \Ovh\StructType\TelephonyDirectoryInfoGetSiretResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyDirectoryInfoGetSiretReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyDirectoryInfoGetSiretReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyDirectoryInfoGetSiretResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyDirectoryInfoGetSiretResponse
+     * @return \Ovh\StructType\TelephonyDirectoryInfoGetSiretResponse
      */
     public static function __set_state(array $array)
     {

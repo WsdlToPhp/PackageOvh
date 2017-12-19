@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class DomainCheckStruct extends AbstractStructBase
     /**
      * Set predicate value
      * @param string $predicate
-     * @return \PayPal\StructType\DomainCheckStruct
+     * @return \Ovh\StructType\DomainCheckStruct
      */
     public function setPredicate($predicate = null)
     {
@@ -75,7 +75,7 @@ class DomainCheckStruct extends AbstractStructBase
     /**
      * Set value value
      * @param bool $value
-     * @return \PayPal\StructType\DomainCheckStruct
+     * @return \Ovh\StructType\DomainCheckStruct
      */
     public function setValue($value = null)
     {
@@ -97,7 +97,7 @@ class DomainCheckStruct extends AbstractStructBase
     /**
      * Set reason value
      * @param string $reason
-     * @return \PayPal\StructType\DomainCheckStruct
+     * @return \Ovh\StructType\DomainCheckStruct
      */
     public function setReason($reason = null)
     {
@@ -114,7 +114,7 @@ class DomainCheckStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DomainCheckStruct
+     * @return \Ovh\StructType\DomainCheckStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Sub extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SubDomainDel $parameters
-     * @return \PayPal\StructType\SubDomainDelResponse|bool
+     * @param \Ovh\StructType\SubDomainDel $parameters
+     * @return \Ovh\StructType\SubDomainDelResponse|bool
      */
-    public function subDomainDel(\PayPal\StructType\SubDomainDel $parameters)
+    public function subDomainDel(\Ovh\StructType\SubDomainDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->subDomainDel($parameters));
@@ -36,10 +36,10 @@ class Sub extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SubDomainModify $parameters
-     * @return \PayPal\StructType\SubDomainModifyResponse|bool
+     * @param \Ovh\StructType\SubDomainModify $parameters
+     * @return \Ovh\StructType\SubDomainModifyResponse|bool
      */
-    public function subDomainModify(\PayPal\StructType\SubDomainModify $parameters)
+    public function subDomainModify(\Ovh\StructType\SubDomainModify $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->subDomainModify($parameters));
@@ -55,10 +55,10 @@ class Sub extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SubDomainAdd $parameters
-     * @return \PayPal\StructType\SubDomainAddResponse|bool
+     * @param \Ovh\StructType\SubDomainAdd $parameters
+     * @return \Ovh\StructType\SubDomainAddResponse|bool
      */
-    public function subDomainAdd(\PayPal\StructType\SubDomainAdd $parameters)
+    public function subDomainAdd(\Ovh\StructType\SubDomainAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->subDomainAdd($parameters));
@@ -74,10 +74,10 @@ class Sub extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\SubDomainList $parameters
-     * @return \PayPal\StructType\SubDomainListResponse|bool
+     * @param \Ovh\StructType\SubDomainList $parameters
+     * @return \Ovh\StructType\SubDomainListResponse|bool
      */
-    public function subDomainList(\PayPal\StructType\SubDomainList $parameters)
+    public function subDomainList(\Ovh\StructType\SubDomainList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->subDomainList($parameters));
@@ -90,7 +90,7 @@ class Sub extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\SubDomainAddResponse|\PayPal\StructType\SubDomainDelResponse|\PayPal\StructType\SubDomainListResponse|\PayPal\StructType\SubDomainModifyResponse
+     * @return \Ovh\StructType\SubDomainAddResponse|\Ovh\StructType\SubDomainDelResponse|\Ovh\StructType\SubDomainListResponse|\Ovh\StructType\SubDomainModifyResponse
      */
     public function getResult()
     {

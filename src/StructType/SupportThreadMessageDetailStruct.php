@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class SupportThreadMessageDetailStruct extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \PayPal\StructType\SupportThreadMessageDetailStruct
+     * @return \Ovh\StructType\SupportThreadMessageDetailStruct
      */
     public function setId($id = null)
     {
@@ -91,7 +91,7 @@ class SupportThreadMessageDetailStruct extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\SupportThreadMessageDetailStruct
+     * @return \Ovh\StructType\SupportThreadMessageDetailStruct
      */
     public function setDate($date = null)
     {
@@ -113,7 +113,7 @@ class SupportThreadMessageDetailStruct extends AbstractStructBase
     /**
      * Set unread value
      * @param int $unread
-     * @return \PayPal\StructType\SupportThreadMessageDetailStruct
+     * @return \Ovh\StructType\SupportThreadMessageDetailStruct
      */
     public function setUnread($unread = null)
     {
@@ -135,7 +135,7 @@ class SupportThreadMessageDetailStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\SupportThreadMessageDetailStruct
+     * @return \Ovh\StructType\SupportThreadMessageDetailStruct
      */
     public function setType($type = null)
     {
@@ -157,7 +157,7 @@ class SupportThreadMessageDetailStruct extends AbstractStructBase
     /**
      * Set reportReason value
      * @param string $reportReason
-     * @return \PayPal\StructType\SupportThreadMessageDetailStruct
+     * @return \Ovh\StructType\SupportThreadMessageDetailStruct
      */
     public function setReportReason($reportReason = null)
     {
@@ -174,7 +174,7 @@ class SupportThreadMessageDetailStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SupportThreadMessageDetailStruct
+     * @return \Ovh\StructType\SupportThreadMessageDetailStruct
      */
     public static function __set_state(array $array)
     {

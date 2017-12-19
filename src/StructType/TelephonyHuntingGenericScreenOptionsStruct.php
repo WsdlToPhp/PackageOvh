@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class TelephonyHuntingGenericScreenOptionsStruct extends AbstractStructBase
     /**
      * Set callForward value
      * @param string $callForward
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenOptionsStruct
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenOptionsStruct
      */
     public function setCallForward($callForward = null)
     {
@@ -83,7 +83,7 @@ class TelephonyHuntingGenericScreenOptionsStruct extends AbstractStructBase
     /**
      * Set voicemail value
      * @param string $voicemail
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenOptionsStruct
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenOptionsStruct
      */
     public function setVoicemail($voicemail = null)
     {
@@ -105,7 +105,7 @@ class TelephonyHuntingGenericScreenOptionsStruct extends AbstractStructBase
     /**
      * Set index value
      * @param string $index
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenOptionsStruct
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenOptionsStruct
      */
     public function setIndex($index = null)
     {
@@ -127,7 +127,7 @@ class TelephonyHuntingGenericScreenOptionsStruct extends AbstractStructBase
     /**
      * Set timeout value
      * @param string $timeout
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenOptionsStruct
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenOptionsStruct
      */
     public function setTimeout($timeout = null)
     {
@@ -144,7 +144,7 @@ class TelephonyHuntingGenericScreenOptionsStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyHuntingGenericScreenOptionsStruct
+     * @return \Ovh\StructType\TelephonyHuntingGenericScreenOptionsStruct
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class DedicatedIpLoadBalancingServerDel extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingServerDel
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingServerDel
      */
     public function setSession($session = null)
     {
@@ -81,7 +81,7 @@ class DedicatedIpLoadBalancingServerDel extends AbstractStructBase
     /**
      * Set ipLoadBalancing value
      * @param string $ipLoadBalancing
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingServerDel
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingServerDel
      */
     public function setIpLoadBalancing($ipLoadBalancing = null)
     {
@@ -103,7 +103,7 @@ class DedicatedIpLoadBalancingServerDel extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingServerDel
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingServerDel
      */
     public function setHostname($hostname = null)
     {
@@ -120,7 +120,7 @@ class DedicatedIpLoadBalancingServerDel extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedIpLoadBalancingServerDel
+     * @return \Ovh\StructType\DedicatedIpLoadBalancingServerDel
      */
     public static function __set_state(array $array)
     {

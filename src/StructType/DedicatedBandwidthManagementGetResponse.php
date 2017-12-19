@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedBandwidthManagementGetResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\DedicatedBandwidthManagementReturn
+     * @var \Ovh\StructType\DedicatedBandwidthManagementReturn
      */
     public $return;
     /**
      * Constructor method for dedicatedBandwidthManagementGetResponse
      * @uses DedicatedBandwidthManagementGetResponse::setReturn()
-     * @param \PayPal\StructType\DedicatedBandwidthManagementReturn $return
+     * @param \Ovh\StructType\DedicatedBandwidthManagementReturn $return
      */
-    public function __construct(\PayPal\StructType\DedicatedBandwidthManagementReturn $return = null)
+    public function __construct(\Ovh\StructType\DedicatedBandwidthManagementReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\DedicatedBandwidthManagementReturn|null
+     * @return \Ovh\StructType\DedicatedBandwidthManagementReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedBandwidthManagementGetResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\DedicatedBandwidthManagementReturn $return
-     * @return \PayPal\StructType\DedicatedBandwidthManagementGetResponse
+     * @param \Ovh\StructType\DedicatedBandwidthManagementReturn $return
+     * @return \Ovh\StructType\DedicatedBandwidthManagementGetResponse
      */
-    public function setReturn(\PayPal\StructType\DedicatedBandwidthManagementReturn $return = null)
+    public function setReturn(\Ovh\StructType\DedicatedBandwidthManagementReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedBandwidthManagementGetResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedBandwidthManagementGetResponse
+     * @return \Ovh\StructType\DedicatedBandwidthManagementGetResponse
      */
     public static function __set_state(array $array)
     {

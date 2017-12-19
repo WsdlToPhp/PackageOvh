@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfTelephonyCitiesFromZipStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TelephonyCitiesFromZipStruct[]
+     * @var \Ovh\StructType\TelephonyCitiesFromZipStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTelephonyCitiesFromZipStructType
      * @uses MyArrayOfTelephonyCitiesFromZipStructType::setItem()
-     * @param \PayPal\StructType\TelephonyCitiesFromZipStruct[] $item
+     * @param \Ovh\StructType\TelephonyCitiesFromZipStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfTelephonyCitiesFromZipStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TelephonyCitiesFromZipStruct[]|null
+     * @return \Ovh\StructType\TelephonyCitiesFromZipStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfTelephonyCitiesFromZipStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyCitiesFromZipStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyCitiesFromZipStructType
+     * @param \Ovh\StructType\TelephonyCitiesFromZipStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyCitiesFromZipStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTelephonyCitiesFromZipStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTelephonyCitiesFromZipStructTypeItemItem instanceof \PayPal\StructType\TelephonyCitiesFromZipStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyCitiesFromZipStruct, "%s" given', is_object($myArrayOfTelephonyCitiesFromZipStructTypeItemItem) ? get_class($myArrayOfTelephonyCitiesFromZipStructTypeItemItem) : gettype($myArrayOfTelephonyCitiesFromZipStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTelephonyCitiesFromZipStructTypeItemItem instanceof \Ovh\StructType\TelephonyCitiesFromZipStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyCitiesFromZipStruct, "%s" given', is_object($myArrayOfTelephonyCitiesFromZipStructTypeItemItem) ? get_class($myArrayOfTelephonyCitiesFromZipStructTypeItemItem) : gettype($myArrayOfTelephonyCitiesFromZipStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfTelephonyCitiesFromZipStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonyCitiesFromZipStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyCitiesFromZipStructType
+     * @param \Ovh\StructType\TelephonyCitiesFromZipStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyCitiesFromZipStructType
      */
-    public function addToItem(\PayPal\StructType\TelephonyCitiesFromZipStruct $item)
+    public function addToItem(\Ovh\StructType\TelephonyCitiesFromZipStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TelephonyCitiesFromZipStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonyCitiesFromZipStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TelephonyCitiesFromZipStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonyCitiesFromZipStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfTelephonyCitiesFromZipStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonyCitiesFromZipStruct|null
+     * @return \Ovh\StructType\TelephonyCitiesFromZipStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfTelephonyCitiesFromZipStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonyCitiesFromZipStruct|null
+     * @return \Ovh\StructType\TelephonyCitiesFromZipStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfTelephonyCitiesFromZipStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonyCitiesFromZipStruct|null
+     * @return \Ovh\StructType\TelephonyCitiesFromZipStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfTelephonyCitiesFromZipStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonyCitiesFromZipStruct|null
+     * @return \Ovh\StructType\TelephonyCitiesFromZipStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfTelephonyCitiesFromZipStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonyCitiesFromZipStruct|null
+     * @return \Ovh\StructType\TelephonyCitiesFromZipStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfTelephonyCitiesFromZipStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyCitiesFromZipStructType
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyCitiesFromZipStructType
      */
     public static function __set_state(array $array)
     {

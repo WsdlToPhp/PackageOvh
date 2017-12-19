@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class OverquotaInfoDayStruct extends AbstractStructBase
     /**
      * Set day value
      * @param int $day
-     * @return \PayPal\StructType\OverquotaInfoDayStruct
+     * @return \Ovh\StructType\OverquotaInfoDayStruct
      */
     public function setDay($day = null)
     {
@@ -67,7 +67,7 @@ class OverquotaInfoDayStruct extends AbstractStructBase
     /**
      * Set value value
      * @param int $value
-     * @return \PayPal\StructType\OverquotaInfoDayStruct
+     * @return \Ovh\StructType\OverquotaInfoDayStruct
      */
     public function setValue($value = null)
     {
@@ -84,7 +84,7 @@ class OverquotaInfoDayStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\OverquotaInfoDayStruct
+     * @return \Ovh\StructType\OverquotaInfoDayStruct
      */
     public static function __set_state(array $array)
     {

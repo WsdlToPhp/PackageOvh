@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyOfferInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyOfferInfoReturn
+     * @var \Ovh\StructType\TelephonyOfferInfoReturn
      */
     public $return;
     /**
      * Constructor method for telephonyOfferInfoResponse
      * @uses TelephonyOfferInfoResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyOfferInfoReturn $return
+     * @param \Ovh\StructType\TelephonyOfferInfoReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonyOfferInfoReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonyOfferInfoReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyOfferInfoReturn|null
+     * @return \Ovh\StructType\TelephonyOfferInfoReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyOfferInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyOfferInfoReturn $return
-     * @return \PayPal\StructType\TelephonyOfferInfoResponse
+     * @param \Ovh\StructType\TelephonyOfferInfoReturn $return
+     * @return \Ovh\StructType\TelephonyOfferInfoResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyOfferInfoReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyOfferInfoReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyOfferInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyOfferInfoResponse
+     * @return \Ovh\StructType\TelephonyOfferInfoResponse
      */
     public static function __set_state(array $array)
     {

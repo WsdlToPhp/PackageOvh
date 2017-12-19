@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedMonitoringListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedMonitoringStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedMonitoringStructType
      */
     public $return;
     /**
      * Constructor method for dedicatedMonitoringListResponse
      * @uses DedicatedMonitoringListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedMonitoringStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedMonitoringStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfDedicatedMonitoringStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfDedicatedMonitoringStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedMonitoringStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedMonitoringStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedMonitoringListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedMonitoringStructType $return
-     * @return \PayPal\StructType\DedicatedMonitoringListResponse
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedMonitoringStructType $return
+     * @return \Ovh\StructType\DedicatedMonitoringListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfDedicatedMonitoringStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfDedicatedMonitoringStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedMonitoringListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedMonitoringListResponse
+     * @return \Ovh\StructType\DedicatedMonitoringListResponse
      */
     public static function __set_state(array $array)
     {

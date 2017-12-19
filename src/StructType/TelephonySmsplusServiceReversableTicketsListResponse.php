@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,22 +14,22 @@ class TelephonySmsplusServiceReversableTicketsListResponse extends AbstractStruc
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonySmsplusTicketsStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonySmsplusTicketsStructType
      */
     public $return;
     /**
      * Constructor method for telephonySmsplusServiceReversableTicketsListResponse
      * @uses TelephonySmsplusServiceReversableTicketsListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonySmsplusTicketsStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonySmsplusTicketsStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonySmsplusTicketsStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonySmsplusTicketsStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonySmsplusTicketsStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonySmsplusTicketsStructType|null
      */
     public function getReturn()
     {
@@ -37,10 +37,10 @@ class TelephonySmsplusServiceReversableTicketsListResponse extends AbstractStruc
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonySmsplusTicketsStructType $return
-     * @return \PayPal\StructType\TelephonySmsplusServiceReversableTicketsListResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonySmsplusTicketsStructType $return
+     * @return \Ovh\StructType\TelephonySmsplusServiceReversableTicketsListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonySmsplusTicketsStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonySmsplusTicketsStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -51,7 +51,7 @@ class TelephonySmsplusServiceReversableTicketsListResponse extends AbstractStruc
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySmsplusServiceReversableTicketsListResponse
+     * @return \Ovh\StructType\TelephonySmsplusServiceReversableTicketsListResponse
      */
     public static function __set_state(array $array)
     {

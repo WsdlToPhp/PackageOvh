@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class ServiceListPaginatedResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\ServiceListPaginatedStruct
+     * @var \Ovh\StructType\ServiceListPaginatedStruct
      */
     public $return;
     /**
      * Constructor method for serviceListPaginatedResponse
      * @uses ServiceListPaginatedResponse::setReturn()
-     * @param \PayPal\StructType\ServiceListPaginatedStruct $return
+     * @param \Ovh\StructType\ServiceListPaginatedStruct $return
      */
-    public function __construct(\PayPal\StructType\ServiceListPaginatedStruct $return = null)
+    public function __construct(\Ovh\StructType\ServiceListPaginatedStruct $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\ServiceListPaginatedStruct|null
+     * @return \Ovh\StructType\ServiceListPaginatedStruct|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class ServiceListPaginatedResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\ServiceListPaginatedStruct $return
-     * @return \PayPal\StructType\ServiceListPaginatedResponse
+     * @param \Ovh\StructType\ServiceListPaginatedStruct $return
+     * @return \Ovh\StructType\ServiceListPaginatedResponse
      */
-    public function setReturn(\PayPal\StructType\ServiceListPaginatedStruct $return = null)
+    public function setReturn(\Ovh\StructType\ServiceListPaginatedStruct $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class ServiceListPaginatedResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ServiceListPaginatedResponse
+     * @return \Ovh\StructType\ServiceListPaginatedResponse
      */
     public static function __set_state(array $array)
     {

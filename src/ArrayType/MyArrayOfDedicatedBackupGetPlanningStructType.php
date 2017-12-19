@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfDedicatedBackupGetPlanningStructType extends AbstractStructArrayB
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\DedicatedBackupGetPlanningStruct[]
+     * @var \Ovh\StructType\DedicatedBackupGetPlanningStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfDedicatedBackupGetPlanningStructType
      * @uses MyArrayOfDedicatedBackupGetPlanningStructType::setItem()
-     * @param \PayPal\StructType\DedicatedBackupGetPlanningStruct[] $item
+     * @param \Ovh\StructType\DedicatedBackupGetPlanningStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfDedicatedBackupGetPlanningStructType extends AbstractStructArrayB
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\DedicatedBackupGetPlanningStruct[]|null
+     * @return \Ovh\StructType\DedicatedBackupGetPlanningStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfDedicatedBackupGetPlanningStructType extends AbstractStructArrayB
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedBackupGetPlanningStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedBackupGetPlanningStructType
+     * @param \Ovh\StructType\DedicatedBackupGetPlanningStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedBackupGetPlanningStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfDedicatedBackupGetPlanningStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfDedicatedBackupGetPlanningStructTypeItemItem instanceof \PayPal\StructType\DedicatedBackupGetPlanningStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedBackupGetPlanningStruct, "%s" given', is_object($myArrayOfDedicatedBackupGetPlanningStructTypeItemItem) ? get_class($myArrayOfDedicatedBackupGetPlanningStructTypeItemItem) : gettype($myArrayOfDedicatedBackupGetPlanningStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfDedicatedBackupGetPlanningStructTypeItemItem instanceof \Ovh\StructType\DedicatedBackupGetPlanningStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedBackupGetPlanningStruct, "%s" given', is_object($myArrayOfDedicatedBackupGetPlanningStructTypeItemItem) ? get_class($myArrayOfDedicatedBackupGetPlanningStructTypeItemItem) : gettype($myArrayOfDedicatedBackupGetPlanningStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfDedicatedBackupGetPlanningStructType extends AbstractStructArrayB
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedBackupGetPlanningStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedBackupGetPlanningStructType
+     * @param \Ovh\StructType\DedicatedBackupGetPlanningStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedBackupGetPlanningStructType
      */
-    public function addToItem(\PayPal\StructType\DedicatedBackupGetPlanningStruct $item)
+    public function addToItem(\Ovh\StructType\DedicatedBackupGetPlanningStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\DedicatedBackupGetPlanningStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedBackupGetPlanningStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\DedicatedBackupGetPlanningStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedBackupGetPlanningStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfDedicatedBackupGetPlanningStructType extends AbstractStructArrayB
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\DedicatedBackupGetPlanningStruct|null
+     * @return \Ovh\StructType\DedicatedBackupGetPlanningStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfDedicatedBackupGetPlanningStructType extends AbstractStructArrayB
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\DedicatedBackupGetPlanningStruct|null
+     * @return \Ovh\StructType\DedicatedBackupGetPlanningStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfDedicatedBackupGetPlanningStructType extends AbstractStructArrayB
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\DedicatedBackupGetPlanningStruct|null
+     * @return \Ovh\StructType\DedicatedBackupGetPlanningStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfDedicatedBackupGetPlanningStructType extends AbstractStructArrayB
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\DedicatedBackupGetPlanningStruct|null
+     * @return \Ovh\StructType\DedicatedBackupGetPlanningStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfDedicatedBackupGetPlanningStructType extends AbstractStructArrayB
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\DedicatedBackupGetPlanningStruct|null
+     * @return \Ovh\StructType\DedicatedBackupGetPlanningStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfDedicatedBackupGetPlanningStructType extends AbstractStructArrayB
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedBackupGetPlanningStructType
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedBackupGetPlanningStructType
      */
     public static function __set_state(array $array)
     {

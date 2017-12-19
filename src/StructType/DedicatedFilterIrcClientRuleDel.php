@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class DedicatedFilterIrcClientRuleDel extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedFilterIrcClientRuleDel
+     * @return \Ovh\StructType\DedicatedFilterIrcClientRuleDel
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class DedicatedFilterIrcClientRuleDel extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedFilterIrcClientRuleDel
+     * @return \Ovh\StructType\DedicatedFilterIrcClientRuleDel
      */
     public function setHostname($hostname = null)
     {
@@ -113,7 +113,7 @@ class DedicatedFilterIrcClientRuleDel extends AbstractStructBase
     /**
      * Set fromIp value
      * @param string $fromIp
-     * @return \PayPal\StructType\DedicatedFilterIrcClientRuleDel
+     * @return \Ovh\StructType\DedicatedFilterIrcClientRuleDel
      */
     public function setFromIp($fromIp = null)
     {
@@ -135,7 +135,7 @@ class DedicatedFilterIrcClientRuleDel extends AbstractStructBase
     /**
      * Set toIp value
      * @param string $toIp
-     * @return \PayPal\StructType\DedicatedFilterIrcClientRuleDel
+     * @return \Ovh\StructType\DedicatedFilterIrcClientRuleDel
      */
     public function setToIp($toIp = null)
     {
@@ -152,7 +152,7 @@ class DedicatedFilterIrcClientRuleDel extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedFilterIrcClientRuleDel
+     * @return \Ovh\StructType\DedicatedFilterIrcClientRuleDel
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -43,7 +43,7 @@ class RtmRaidPartitionVolumeStruct extends AbstractStructBase
     public $phys;
     /**
      * The members
-     * @var \PayPal\ArrayType\MyArrayOfRtmRaidPartitionVolumeMemberStructType
+     * @var \Ovh\ArrayType\MyArrayOfRtmRaidPartitionVolumeMemberStructType
      */
     public $members;
     /**
@@ -61,9 +61,9 @@ class RtmRaidPartitionVolumeStruct extends AbstractStructBase
      * @param string $type
      * @param string $capacity
      * @param int $phys
-     * @param \PayPal\ArrayType\MyArrayOfRtmRaidPartitionVolumeMemberStructType $members
+     * @param \Ovh\ArrayType\MyArrayOfRtmRaidPartitionVolumeMemberStructType $members
      */
-    public function __construct($volumeName = null, $flags = null, $status = null, $type = null, $capacity = null, $phys = null, \PayPal\ArrayType\MyArrayOfRtmRaidPartitionVolumeMemberStructType $members = null)
+    public function __construct($volumeName = null, $flags = null, $status = null, $type = null, $capacity = null, $phys = null, \Ovh\ArrayType\MyArrayOfRtmRaidPartitionVolumeMemberStructType $members = null)
     {
         $this
             ->setVolumeName($volumeName)
@@ -85,7 +85,7 @@ class RtmRaidPartitionVolumeStruct extends AbstractStructBase
     /**
      * Set volumeName value
      * @param string $volumeName
-     * @return \PayPal\StructType\RtmRaidPartitionVolumeStruct
+     * @return \Ovh\StructType\RtmRaidPartitionVolumeStruct
      */
     public function setVolumeName($volumeName = null)
     {
@@ -107,7 +107,7 @@ class RtmRaidPartitionVolumeStruct extends AbstractStructBase
     /**
      * Set flags value
      * @param string $flags
-     * @return \PayPal\StructType\RtmRaidPartitionVolumeStruct
+     * @return \Ovh\StructType\RtmRaidPartitionVolumeStruct
      */
     public function setFlags($flags = null)
     {
@@ -129,7 +129,7 @@ class RtmRaidPartitionVolumeStruct extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\RtmRaidPartitionVolumeStruct
+     * @return \Ovh\StructType\RtmRaidPartitionVolumeStruct
      */
     public function setStatus($status = null)
     {
@@ -151,7 +151,7 @@ class RtmRaidPartitionVolumeStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\RtmRaidPartitionVolumeStruct
+     * @return \Ovh\StructType\RtmRaidPartitionVolumeStruct
      */
     public function setType($type = null)
     {
@@ -173,7 +173,7 @@ class RtmRaidPartitionVolumeStruct extends AbstractStructBase
     /**
      * Set capacity value
      * @param string $capacity
-     * @return \PayPal\StructType\RtmRaidPartitionVolumeStruct
+     * @return \Ovh\StructType\RtmRaidPartitionVolumeStruct
      */
     public function setCapacity($capacity = null)
     {
@@ -195,7 +195,7 @@ class RtmRaidPartitionVolumeStruct extends AbstractStructBase
     /**
      * Set phys value
      * @param int $phys
-     * @return \PayPal\StructType\RtmRaidPartitionVolumeStruct
+     * @return \Ovh\StructType\RtmRaidPartitionVolumeStruct
      */
     public function setPhys($phys = null)
     {
@@ -208,7 +208,7 @@ class RtmRaidPartitionVolumeStruct extends AbstractStructBase
     }
     /**
      * Get members value
-     * @return \PayPal\ArrayType\MyArrayOfRtmRaidPartitionVolumeMemberStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfRtmRaidPartitionVolumeMemberStructType|null
      */
     public function getMembers()
     {
@@ -216,10 +216,10 @@ class RtmRaidPartitionVolumeStruct extends AbstractStructBase
     }
     /**
      * Set members value
-     * @param \PayPal\ArrayType\MyArrayOfRtmRaidPartitionVolumeMemberStructType $members
-     * @return \PayPal\StructType\RtmRaidPartitionVolumeStruct
+     * @param \Ovh\ArrayType\MyArrayOfRtmRaidPartitionVolumeMemberStructType $members
+     * @return \Ovh\StructType\RtmRaidPartitionVolumeStruct
      */
-    public function setMembers(\PayPal\ArrayType\MyArrayOfRtmRaidPartitionVolumeMemberStructType $members = null)
+    public function setMembers(\Ovh\ArrayType\MyArrayOfRtmRaidPartitionVolumeMemberStructType $members = null)
     {
         $this->members = $members;
         return $this;
@@ -230,7 +230,7 @@ class RtmRaidPartitionVolumeStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RtmRaidPartitionVolumeStruct
+     * @return \Ovh\StructType\RtmRaidPartitionVolumeStruct
      */
     public static function __set_state(array $array)
     {

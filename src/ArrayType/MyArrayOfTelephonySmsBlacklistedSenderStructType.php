@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfTelephonySmsBlacklistedSenderStructType extends AbstractStructArr
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\TelephonySmsBlacklistedSenderStruct[]
+     * @var \Ovh\StructType\TelephonySmsBlacklistedSenderStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfTelephonySmsBlacklistedSenderStructType
      * @uses MyArrayOfTelephonySmsBlacklistedSenderStructType::setItem()
-     * @param \PayPal\StructType\TelephonySmsBlacklistedSenderStruct[] $item
+     * @param \Ovh\StructType\TelephonySmsBlacklistedSenderStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfTelephonySmsBlacklistedSenderStructType extends AbstractStructArr
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\TelephonySmsBlacklistedSenderStruct[]|null
+     * @return \Ovh\StructType\TelephonySmsBlacklistedSenderStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfTelephonySmsBlacklistedSenderStructType extends AbstractStructArr
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonySmsBlacklistedSenderStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonySmsBlacklistedSenderStructType
+     * @param \Ovh\StructType\TelephonySmsBlacklistedSenderStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonySmsBlacklistedSenderStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfTelephonySmsBlacklistedSenderStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfTelephonySmsBlacklistedSenderStructTypeItemItem instanceof \PayPal\StructType\TelephonySmsBlacklistedSenderStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonySmsBlacklistedSenderStruct, "%s" given', is_object($myArrayOfTelephonySmsBlacklistedSenderStructTypeItemItem) ? get_class($myArrayOfTelephonySmsBlacklistedSenderStructTypeItemItem) : gettype($myArrayOfTelephonySmsBlacklistedSenderStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfTelephonySmsBlacklistedSenderStructTypeItemItem instanceof \Ovh\StructType\TelephonySmsBlacklistedSenderStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonySmsBlacklistedSenderStruct, "%s" given', is_object($myArrayOfTelephonySmsBlacklistedSenderStructTypeItemItem) ? get_class($myArrayOfTelephonySmsBlacklistedSenderStructTypeItemItem) : gettype($myArrayOfTelephonySmsBlacklistedSenderStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfTelephonySmsBlacklistedSenderStructType extends AbstractStructArr
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\TelephonySmsBlacklistedSenderStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfTelephonySmsBlacklistedSenderStructType
+     * @param \Ovh\StructType\TelephonySmsBlacklistedSenderStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfTelephonySmsBlacklistedSenderStructType
      */
-    public function addToItem(\PayPal\StructType\TelephonySmsBlacklistedSenderStruct $item)
+    public function addToItem(\Ovh\StructType\TelephonySmsBlacklistedSenderStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\TelephonySmsBlacklistedSenderStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\TelephonySmsBlacklistedSenderStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\TelephonySmsBlacklistedSenderStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\TelephonySmsBlacklistedSenderStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfTelephonySmsBlacklistedSenderStructType extends AbstractStructArr
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\TelephonySmsBlacklistedSenderStruct|null
+     * @return \Ovh\StructType\TelephonySmsBlacklistedSenderStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfTelephonySmsBlacklistedSenderStructType extends AbstractStructArr
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\TelephonySmsBlacklistedSenderStruct|null
+     * @return \Ovh\StructType\TelephonySmsBlacklistedSenderStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfTelephonySmsBlacklistedSenderStructType extends AbstractStructArr
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\TelephonySmsBlacklistedSenderStruct|null
+     * @return \Ovh\StructType\TelephonySmsBlacklistedSenderStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfTelephonySmsBlacklistedSenderStructType extends AbstractStructArr
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\TelephonySmsBlacklistedSenderStruct|null
+     * @return \Ovh\StructType\TelephonySmsBlacklistedSenderStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfTelephonySmsBlacklistedSenderStructType extends AbstractStructArr
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\TelephonySmsBlacklistedSenderStruct|null
+     * @return \Ovh\StructType\TelephonySmsBlacklistedSenderStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfTelephonySmsBlacklistedSenderStructType extends AbstractStructArr
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfTelephonySmsBlacklistedSenderStructType
+     * @return \Ovh\ArrayType\MyArrayOfTelephonySmsBlacklistedSenderStructType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class DedicatedHardRebootStatusReturn extends AbstractStructBase
     /**
      * Set start value
      * @param string $start
-     * @return \PayPal\StructType\DedicatedHardRebootStatusReturn
+     * @return \Ovh\StructType\DedicatedHardRebootStatusReturn
      */
     public function setStart($start = null)
     {
@@ -67,7 +67,7 @@ class DedicatedHardRebootStatusReturn extends AbstractStructBase
     /**
      * Set end value
      * @param string $end
-     * @return \PayPal\StructType\DedicatedHardRebootStatusReturn
+     * @return \Ovh\StructType\DedicatedHardRebootStatusReturn
      */
     public function setEnd($end = null)
     {
@@ -84,7 +84,7 @@ class DedicatedHardRebootStatusReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedHardRebootStatusReturn
+     * @return \Ovh\StructType\DedicatedHardRebootStatusReturn
      */
     public static function __set_state(array $array)
     {

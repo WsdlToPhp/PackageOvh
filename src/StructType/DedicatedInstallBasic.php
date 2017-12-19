@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -119,7 +119,7 @@ class DedicatedInstallBasic extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedInstallBasic
+     * @return \Ovh\StructType\DedicatedInstallBasic
      */
     public function setSession($session = null)
     {
@@ -141,7 +141,7 @@ class DedicatedInstallBasic extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedInstallBasic
+     * @return \Ovh\StructType\DedicatedInstallBasic
      */
     public function setHostname($hostname = null)
     {
@@ -163,7 +163,7 @@ class DedicatedInstallBasic extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\DedicatedInstallBasic
+     * @return \Ovh\StructType\DedicatedInstallBasic
      */
     public function setStatus($status = null)
     {
@@ -185,7 +185,7 @@ class DedicatedInstallBasic extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \PayPal\StructType\DedicatedInstallBasic
+     * @return \Ovh\StructType\DedicatedInstallBasic
      */
     public function setLanguage($language = null)
     {
@@ -207,7 +207,7 @@ class DedicatedInstallBasic extends AbstractStructBase
     /**
      * Set bitFormat value
      * @param string $bitFormat
-     * @return \PayPal\StructType\DedicatedInstallBasic
+     * @return \Ovh\StructType\DedicatedInstallBasic
      */
     public function setBitFormat($bitFormat = null)
     {
@@ -229,7 +229,7 @@ class DedicatedInstallBasic extends AbstractStructBase
     /**
      * Set os value
      * @param string $os
-     * @return \PayPal\StructType\DedicatedInstallBasic
+     * @return \Ovh\StructType\DedicatedInstallBasic
      */
     public function setOs($os = null)
     {
@@ -251,7 +251,7 @@ class DedicatedInstallBasic extends AbstractStructBase
     /**
      * Set sql value
      * @param string $sql
-     * @return \PayPal\StructType\DedicatedInstallBasic
+     * @return \Ovh\StructType\DedicatedInstallBasic
      */
     public function setSql($sql = null)
     {
@@ -273,7 +273,7 @@ class DedicatedInstallBasic extends AbstractStructBase
     /**
      * Set customerScriptLink value
      * @param string $customerScriptLink
-     * @return \PayPal\StructType\DedicatedInstallBasic
+     * @return \Ovh\StructType\DedicatedInstallBasic
      */
     public function setCustomerScriptLink($customerScriptLink = null)
     {
@@ -295,7 +295,7 @@ class DedicatedInstallBasic extends AbstractStructBase
     /**
      * Set customerScriptReturn value
      * @param string $customerScriptReturn
-     * @return \PayPal\StructType\DedicatedInstallBasic
+     * @return \Ovh\StructType\DedicatedInstallBasic
      */
     public function setCustomerScriptReturn($customerScriptReturn = null)
     {
@@ -312,7 +312,7 @@ class DedicatedInstallBasic extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedInstallBasic
+     * @return \Ovh\StructType\DedicatedInstallBasic
      */
     public static function __set_state(array $array)
     {

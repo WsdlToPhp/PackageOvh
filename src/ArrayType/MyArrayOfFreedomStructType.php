@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfFreedomStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\FreedomStruct[]
+     * @var \Ovh\StructType\FreedomStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfFreedomStructType
      * @uses MyArrayOfFreedomStructType::setItem()
-     * @param \PayPal\StructType\FreedomStruct[] $item
+     * @param \Ovh\StructType\FreedomStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfFreedomStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\FreedomStruct[]|null
+     * @return \Ovh\StructType\FreedomStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfFreedomStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\FreedomStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfFreedomStructType
+     * @param \Ovh\StructType\FreedomStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfFreedomStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfFreedomStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfFreedomStructTypeItemItem instanceof \PayPal\StructType\FreedomStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\FreedomStruct, "%s" given', is_object($myArrayOfFreedomStructTypeItemItem) ? get_class($myArrayOfFreedomStructTypeItemItem) : gettype($myArrayOfFreedomStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfFreedomStructTypeItemItem instanceof \Ovh\StructType\FreedomStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\FreedomStruct, "%s" given', is_object($myArrayOfFreedomStructTypeItemItem) ? get_class($myArrayOfFreedomStructTypeItemItem) : gettype($myArrayOfFreedomStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfFreedomStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\FreedomStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfFreedomStructType
+     * @param \Ovh\StructType\FreedomStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfFreedomStructType
      */
-    public function addToItem(\PayPal\StructType\FreedomStruct $item)
+    public function addToItem(\Ovh\StructType\FreedomStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\FreedomStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\FreedomStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\FreedomStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\FreedomStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfFreedomStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\FreedomStruct|null
+     * @return \Ovh\StructType\FreedomStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfFreedomStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\FreedomStruct|null
+     * @return \Ovh\StructType\FreedomStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfFreedomStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\FreedomStruct|null
+     * @return \Ovh\StructType\FreedomStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfFreedomStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\FreedomStruct|null
+     * @return \Ovh\StructType\FreedomStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfFreedomStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\FreedomStruct|null
+     * @return \Ovh\StructType\FreedomStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfFreedomStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfFreedomStructType
+     * @return \Ovh\ArrayType\MyArrayOfFreedomStructType
      */
     public static function __set_state(array $array)
     {

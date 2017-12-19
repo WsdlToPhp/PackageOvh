@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -199,7 +199,7 @@ class ResellerDomainCreateCAT extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\ResellerDomainCreateCAT
+     * @return \Ovh\StructType\ResellerDomainCreateCAT
      */
     public function setSession($session = null)
     {
@@ -221,7 +221,7 @@ class ResellerDomainCreateCAT extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\ResellerDomainCreateCAT
+     * @return \Ovh\StructType\ResellerDomainCreateCAT
      */
     public function setDomain($domain = null)
     {
@@ -243,7 +243,7 @@ class ResellerDomainCreateCAT extends AbstractStructBase
     /**
      * Set hosting value
      * @param string $hosting
-     * @return \PayPal\StructType\ResellerDomainCreateCAT
+     * @return \Ovh\StructType\ResellerDomainCreateCAT
      */
     public function setHosting($hosting = null)
     {
@@ -265,7 +265,7 @@ class ResellerDomainCreateCAT extends AbstractStructBase
     /**
      * Set offer value
      * @param string $offer
-     * @return \PayPal\StructType\ResellerDomainCreateCAT
+     * @return \Ovh\StructType\ResellerDomainCreateCAT
      */
     public function setOffer($offer = null)
     {
@@ -287,7 +287,7 @@ class ResellerDomainCreateCAT extends AbstractStructBase
     /**
      * Set profile value
      * @param string $profile
-     * @return \PayPal\StructType\ResellerDomainCreateCAT
+     * @return \Ovh\StructType\ResellerDomainCreateCAT
      */
     public function setProfile($profile = null)
     {
@@ -309,7 +309,7 @@ class ResellerDomainCreateCAT extends AbstractStructBase
     /**
      * Set owo value
      * @param string $owo
-     * @return \PayPal\StructType\ResellerDomainCreateCAT
+     * @return \Ovh\StructType\ResellerDomainCreateCAT
      */
     public function setOwo($owo = null)
     {
@@ -331,7 +331,7 @@ class ResellerDomainCreateCAT extends AbstractStructBase
     /**
      * Set owner value
      * @param string $owner
-     * @return \PayPal\StructType\ResellerDomainCreateCAT
+     * @return \Ovh\StructType\ResellerDomainCreateCAT
      */
     public function setOwner($owner = null)
     {
@@ -353,7 +353,7 @@ class ResellerDomainCreateCAT extends AbstractStructBase
     /**
      * Set admin value
      * @param string $admin
-     * @return \PayPal\StructType\ResellerDomainCreateCAT
+     * @return \Ovh\StructType\ResellerDomainCreateCAT
      */
     public function setAdmin($admin = null)
     {
@@ -375,7 +375,7 @@ class ResellerDomainCreateCAT extends AbstractStructBase
     /**
      * Set tech value
      * @param string $tech
-     * @return \PayPal\StructType\ResellerDomainCreateCAT
+     * @return \Ovh\StructType\ResellerDomainCreateCAT
      */
     public function setTech($tech = null)
     {
@@ -397,7 +397,7 @@ class ResellerDomainCreateCAT extends AbstractStructBase
     /**
      * Set billing value
      * @param string $billing
-     * @return \PayPal\StructType\ResellerDomainCreateCAT
+     * @return \Ovh\StructType\ResellerDomainCreateCAT
      */
     public function setBilling($billing = null)
     {
@@ -419,7 +419,7 @@ class ResellerDomainCreateCAT extends AbstractStructBase
     /**
      * Set dns1 value
      * @param string $dns1
-     * @return \PayPal\StructType\ResellerDomainCreateCAT
+     * @return \Ovh\StructType\ResellerDomainCreateCAT
      */
     public function setDns1($dns1 = null)
     {
@@ -441,7 +441,7 @@ class ResellerDomainCreateCAT extends AbstractStructBase
     /**
      * Set dns2 value
      * @param string $dns2
-     * @return \PayPal\StructType\ResellerDomainCreateCAT
+     * @return \Ovh\StructType\ResellerDomainCreateCAT
      */
     public function setDns2($dns2 = null)
     {
@@ -463,7 +463,7 @@ class ResellerDomainCreateCAT extends AbstractStructBase
     /**
      * Set dns3 value
      * @param string $dns3
-     * @return \PayPal\StructType\ResellerDomainCreateCAT
+     * @return \Ovh\StructType\ResellerDomainCreateCAT
      */
     public function setDns3($dns3 = null)
     {
@@ -485,7 +485,7 @@ class ResellerDomainCreateCAT extends AbstractStructBase
     /**
      * Set dns4 value
      * @param string $dns4
-     * @return \PayPal\StructType\ResellerDomainCreateCAT
+     * @return \Ovh\StructType\ResellerDomainCreateCAT
      */
     public function setDns4($dns4 = null)
     {
@@ -507,7 +507,7 @@ class ResellerDomainCreateCAT extends AbstractStructBase
     /**
      * Set dns5 value
      * @param string $dns5
-     * @return \PayPal\StructType\ResellerDomainCreateCAT
+     * @return \Ovh\StructType\ResellerDomainCreateCAT
      */
     public function setDns5($dns5 = null)
     {
@@ -529,7 +529,7 @@ class ResellerDomainCreateCAT extends AbstractStructBase
     /**
      * Set reason value
      * @param string $reason
-     * @return \PayPal\StructType\ResellerDomainCreateCAT
+     * @return \Ovh\StructType\ResellerDomainCreateCAT
      */
     public function setReason($reason = null)
     {
@@ -551,7 +551,7 @@ class ResellerDomainCreateCAT extends AbstractStructBase
     /**
      * Set dryRun value
      * @param bool $dryRun
-     * @return \PayPal\StructType\ResellerDomainCreateCAT
+     * @return \Ovh\StructType\ResellerDomainCreateCAT
      */
     public function setDryRun($dryRun = null)
     {
@@ -568,7 +568,7 @@ class ResellerDomainCreateCAT extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ResellerDomainCreateCAT
+     * @return \Ovh\StructType\ResellerDomainCreateCAT
      */
     public static function __set_state(array $array)
     {

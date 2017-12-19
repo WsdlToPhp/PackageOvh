@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ServiceType;
+namespace Ovh\ServiceType;
 
 use \SoapClient\SoapClientBase;
 
@@ -17,10 +17,10 @@ class Email extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\EmailGetCapabilities $parameters
-     * @return \PayPal\StructType\EmailGetCapabilitiesResponse|bool
+     * @param \Ovh\StructType\EmailGetCapabilities $parameters
+     * @return \Ovh\StructType\EmailGetCapabilitiesResponse|bool
      */
-    public function emailGetCapabilities(\PayPal\StructType\EmailGetCapabilities $parameters)
+    public function emailGetCapabilities(\Ovh\StructType\EmailGetCapabilities $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->emailGetCapabilities($parameters));
@@ -36,10 +36,10 @@ class Email extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\EmailDomainListByMasterNic $parameters
-     * @return \PayPal\StructType\EmailDomainListByMasterNicResponse|bool
+     * @param \Ovh\StructType\EmailDomainListByMasterNic $parameters
+     * @return \Ovh\StructType\EmailDomainListByMasterNicResponse|bool
      */
-    public function emailDomainListByMasterNic(\PayPal\StructType\EmailDomainListByMasterNic $parameters)
+    public function emailDomainListByMasterNic(\Ovh\StructType\EmailDomainListByMasterNic $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->emailDomainListByMasterNic($parameters));
@@ -55,10 +55,10 @@ class Email extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\EmailDomainSummary $parameters
-     * @return \PayPal\StructType\EmailDomainSummaryResponse|bool
+     * @param \Ovh\StructType\EmailDomainSummary $parameters
+     * @return \Ovh\StructType\EmailDomainSummaryResponse|bool
      */
-    public function emailDomainSummary(\PayPal\StructType\EmailDomainSummary $parameters)
+    public function emailDomainSummary(\Ovh\StructType\EmailDomainSummary $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->emailDomainSummary($parameters));
@@ -74,10 +74,10 @@ class Email extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\EmailFilterAdd $parameters
-     * @return \PayPal\StructType\EmailFilterAddResponse|bool
+     * @param \Ovh\StructType\EmailFilterAdd $parameters
+     * @return \Ovh\StructType\EmailFilterAddResponse|bool
      */
-    public function emailFilterAdd(\PayPal\StructType\EmailFilterAdd $parameters)
+    public function emailFilterAdd(\Ovh\StructType\EmailFilterAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->emailFilterAdd($parameters));
@@ -93,10 +93,10 @@ class Email extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\EmailAccessByNic $parameters
-     * @return \PayPal\StructType\EmailAccessByNicResponse|bool
+     * @param \Ovh\StructType\EmailAccessByNic $parameters
+     * @return \Ovh\StructType\EmailAccessByNicResponse|bool
      */
-    public function emailAccessByNic(\PayPal\StructType\EmailAccessByNic $parameters)
+    public function emailAccessByNic(\Ovh\StructType\EmailAccessByNic $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->emailAccessByNic($parameters));
@@ -112,10 +112,10 @@ class Email extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\EmailFilterRuleDel $parameters
-     * @return \PayPal\StructType\EmailFilterRuleDelResponse|bool
+     * @param \Ovh\StructType\EmailFilterRuleDel $parameters
+     * @return \Ovh\StructType\EmailFilterRuleDelResponse|bool
      */
-    public function emailFilterRuleDel(\PayPal\StructType\EmailFilterRuleDel $parameters)
+    public function emailFilterRuleDel(\Ovh\StructType\EmailFilterRuleDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->emailFilterRuleDel($parameters));
@@ -131,10 +131,10 @@ class Email extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\EmailFilterPriority $parameters
-     * @return \PayPal\StructType\EmailFilterPriorityResponse|bool
+     * @param \Ovh\StructType\EmailFilterPriority $parameters
+     * @return \Ovh\StructType\EmailFilterPriorityResponse|bool
      */
-    public function emailFilterPriority(\PayPal\StructType\EmailFilterPriority $parameters)
+    public function emailFilterPriority(\Ovh\StructType\EmailFilterPriority $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->emailFilterPriority($parameters));
@@ -150,10 +150,10 @@ class Email extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\EmailFilterDel $parameters
-     * @return \PayPal\StructType\EmailFilterDelResponse|bool
+     * @param \Ovh\StructType\EmailFilterDel $parameters
+     * @return \Ovh\StructType\EmailFilterDelResponse|bool
      */
-    public function emailFilterDel(\PayPal\StructType\EmailFilterDel $parameters)
+    public function emailFilterDel(\Ovh\StructType\EmailFilterDel $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->emailFilterDel($parameters));
@@ -169,10 +169,10 @@ class Email extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\EmailSetDomainCatchAll $parameters
-     * @return \PayPal\StructType\EmailSetDomainCatchAllResponse|bool
+     * @param \Ovh\StructType\EmailSetDomainCatchAll $parameters
+     * @return \Ovh\StructType\EmailSetDomainCatchAllResponse|bool
      */
-    public function emailSetDomainCatchAll(\PayPal\StructType\EmailSetDomainCatchAll $parameters)
+    public function emailSetDomainCatchAll(\Ovh\StructType\EmailSetDomainCatchAll $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->emailSetDomainCatchAll($parameters));
@@ -188,10 +188,10 @@ class Email extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\EmailDomainMxList $parameters
-     * @return \PayPal\StructType\EmailDomainMxListResponse|bool
+     * @param \Ovh\StructType\EmailDomainMxList $parameters
+     * @return \Ovh\StructType\EmailDomainMxListResponse|bool
      */
-    public function emailDomainMxList(\PayPal\StructType\EmailDomainMxList $parameters)
+    public function emailDomainMxList(\Ovh\StructType\EmailDomainMxList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->emailDomainMxList($parameters));
@@ -207,10 +207,10 @@ class Email extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\EmailFilterRuleAdd $parameters
-     * @return \PayPal\StructType\EmailFilterRuleAddResponse|bool
+     * @param \Ovh\StructType\EmailFilterRuleAdd $parameters
+     * @return \Ovh\StructType\EmailFilterRuleAddResponse|bool
      */
-    public function emailFilterRuleAdd(\PayPal\StructType\EmailFilterRuleAdd $parameters)
+    public function emailFilterRuleAdd(\Ovh\StructType\EmailFilterRuleAdd $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->emailFilterRuleAdd($parameters));
@@ -226,10 +226,10 @@ class Email extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\EmailFilterActive $parameters
-     * @return \PayPal\StructType\EmailFilterActiveResponse|bool
+     * @param \Ovh\StructType\EmailFilterActive $parameters
+     * @return \Ovh\StructType\EmailFilterActiveResponse|bool
      */
-    public function emailFilterActive(\PayPal\StructType\EmailFilterActive $parameters)
+    public function emailFilterActive(\Ovh\StructType\EmailFilterActive $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->emailFilterActive($parameters));
@@ -245,10 +245,10 @@ class Email extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\EmailFilterList $parameters
-     * @return \PayPal\StructType\EmailFilterListResponse|bool
+     * @param \Ovh\StructType\EmailFilterList $parameters
+     * @return \Ovh\StructType\EmailFilterListResponse|bool
      */
-    public function emailFilterList(\PayPal\StructType\EmailFilterList $parameters)
+    public function emailFilterList(\Ovh\StructType\EmailFilterList $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->emailFilterList($parameters));
@@ -264,10 +264,10 @@ class Email extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\EmailGetDomainMxFiltering $parameters
-     * @return \PayPal\StructType\EmailGetDomainMxFilteringResponse|bool
+     * @param \Ovh\StructType\EmailGetDomainMxFiltering $parameters
+     * @return \Ovh\StructType\EmailGetDomainMxFilteringResponse|bool
      */
-    public function emailGetDomainMxFiltering(\PayPal\StructType\EmailGetDomainMxFiltering $parameters)
+    public function emailGetDomainMxFiltering(\Ovh\StructType\EmailGetDomainMxFiltering $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->emailGetDomainMxFiltering($parameters));
@@ -283,10 +283,10 @@ class Email extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\EmailDelMasterNic $parameters
-     * @return \PayPal\StructType\EmailDelMasterNicResponse|bool
+     * @param \Ovh\StructType\EmailDelMasterNic $parameters
+     * @return \Ovh\StructType\EmailDelMasterNicResponse|bool
      */
-    public function emailDelMasterNic(\PayPal\StructType\EmailDelMasterNic $parameters)
+    public function emailDelMasterNic(\Ovh\StructType\EmailDelMasterNic $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->emailDelMasterNic($parameters));
@@ -302,10 +302,10 @@ class Email extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\EmailGetDomainCatchAll $parameters
-     * @return \PayPal\StructType\EmailGetDomainCatchAllResponse|bool
+     * @param \Ovh\StructType\EmailGetDomainCatchAll $parameters
+     * @return \Ovh\StructType\EmailGetDomainCatchAllResponse|bool
      */
-    public function emailGetDomainCatchAll(\PayPal\StructType\EmailGetDomainCatchAll $parameters)
+    public function emailGetDomainCatchAll(\Ovh\StructType\EmailGetDomainCatchAll $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->emailGetDomainCatchAll($parameters));
@@ -321,10 +321,10 @@ class Email extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\EmailSetMasterNic $parameters
-     * @return \PayPal\StructType\EmailSetMasterNicResponse|bool
+     * @param \Ovh\StructType\EmailSetMasterNic $parameters
+     * @return \Ovh\StructType\EmailSetMasterNicResponse|bool
      */
-    public function emailSetMasterNic(\PayPal\StructType\EmailSetMasterNic $parameters)
+    public function emailSetMasterNic(\Ovh\StructType\EmailSetMasterNic $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->emailSetMasterNic($parameters));
@@ -340,10 +340,10 @@ class Email extends SoapClientBase
      * @uses SoapClientBase::setResult()
      * @uses SoapClientBase::getResult()
      * @uses SoapClientBase::saveLastError()
-     * @param \PayPal\StructType\EmailSetDomainMxFiltering $parameters
-     * @return \PayPal\StructType\EmailSetDomainMxFilteringResponse|bool
+     * @param \Ovh\StructType\EmailSetDomainMxFiltering $parameters
+     * @return \Ovh\StructType\EmailSetDomainMxFilteringResponse|bool
      */
-    public function emailSetDomainMxFiltering(\PayPal\StructType\EmailSetDomainMxFiltering $parameters)
+    public function emailSetDomainMxFiltering(\Ovh\StructType\EmailSetDomainMxFiltering $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->emailSetDomainMxFiltering($parameters));
@@ -356,7 +356,7 @@ class Email extends SoapClientBase
     /**
      * Returns the result
      * @see SoapClientBase::getResult()
-     * @return \PayPal\StructType\EmailAccessByNicResponse|\PayPal\StructType\EmailDelMasterNicResponse|\PayPal\StructType\EmailDomainListByMasterNicResponse|\PayPal\StructType\EmailDomainMxListResponse|\PayPal\StructType\EmailDomainSummaryResponse|\PayPal\StructType\EmailFilterActiveResponse|\PayPal\StructType\EmailFilterAddResponse|\PayPal\StructType\EmailFilterDelResponse|\PayPal\StructType\EmailFilterListResponse|\PayPal\StructType\EmailFilterPriorityResponse|\PayPal\StructType\EmailFilterRuleAddResponse|\PayPal\StructType\EmailFilterRuleDelResponse|\PayPal\StructType\EmailGetCapabilitiesResponse|\PayPal\StructType\EmailGetDomainCatchAllResponse|\PayPal\StructType\EmailGetDomainMxFilteringResponse|\PayPal\StructType\EmailSetDomainCatchAllResponse|\PayPal\StructType\EmailSetDomainMxFilteringResponse|\PayPal\StructType\EmailSetMasterNicResponse
+     * @return \Ovh\StructType\EmailAccessByNicResponse|\Ovh\StructType\EmailDelMasterNicResponse|\Ovh\StructType\EmailDomainListByMasterNicResponse|\Ovh\StructType\EmailDomainMxListResponse|\Ovh\StructType\EmailDomainSummaryResponse|\Ovh\StructType\EmailFilterActiveResponse|\Ovh\StructType\EmailFilterAddResponse|\Ovh\StructType\EmailFilterDelResponse|\Ovh\StructType\EmailFilterListResponse|\Ovh\StructType\EmailFilterPriorityResponse|\Ovh\StructType\EmailFilterRuleAddResponse|\Ovh\StructType\EmailFilterRuleDelResponse|\Ovh\StructType\EmailGetCapabilitiesResponse|\Ovh\StructType\EmailGetDomainCatchAllResponse|\Ovh\StructType\EmailGetDomainMxFilteringResponse|\Ovh\StructType\EmailSetDomainCatchAllResponse|\Ovh\StructType\EmailSetDomainMxFilteringResponse|\Ovh\StructType\EmailSetMasterNicResponse
      */
     public function getResult()
     {

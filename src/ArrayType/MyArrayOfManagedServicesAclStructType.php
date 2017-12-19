@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfManagedServicesAclStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\ManagedServicesAclStruct[]
+     * @var \Ovh\StructType\ManagedServicesAclStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfManagedServicesAclStructType
      * @uses MyArrayOfManagedServicesAclStructType::setItem()
-     * @param \PayPal\StructType\ManagedServicesAclStruct[] $item
+     * @param \Ovh\StructType\ManagedServicesAclStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfManagedServicesAclStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\ManagedServicesAclStruct[]|null
+     * @return \Ovh\StructType\ManagedServicesAclStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfManagedServicesAclStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\ManagedServicesAclStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfManagedServicesAclStructType
+     * @param \Ovh\StructType\ManagedServicesAclStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfManagedServicesAclStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfManagedServicesAclStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfManagedServicesAclStructTypeItemItem instanceof \PayPal\StructType\ManagedServicesAclStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\ManagedServicesAclStruct, "%s" given', is_object($myArrayOfManagedServicesAclStructTypeItemItem) ? get_class($myArrayOfManagedServicesAclStructTypeItemItem) : gettype($myArrayOfManagedServicesAclStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfManagedServicesAclStructTypeItemItem instanceof \Ovh\StructType\ManagedServicesAclStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\ManagedServicesAclStruct, "%s" given', is_object($myArrayOfManagedServicesAclStructTypeItemItem) ? get_class($myArrayOfManagedServicesAclStructTypeItemItem) : gettype($myArrayOfManagedServicesAclStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfManagedServicesAclStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\ManagedServicesAclStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfManagedServicesAclStructType
+     * @param \Ovh\StructType\ManagedServicesAclStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfManagedServicesAclStructType
      */
-    public function addToItem(\PayPal\StructType\ManagedServicesAclStruct $item)
+    public function addToItem(\Ovh\StructType\ManagedServicesAclStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\ManagedServicesAclStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\ManagedServicesAclStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\ManagedServicesAclStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\ManagedServicesAclStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfManagedServicesAclStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\ManagedServicesAclStruct|null
+     * @return \Ovh\StructType\ManagedServicesAclStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfManagedServicesAclStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\ManagedServicesAclStruct|null
+     * @return \Ovh\StructType\ManagedServicesAclStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfManagedServicesAclStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\ManagedServicesAclStruct|null
+     * @return \Ovh\StructType\ManagedServicesAclStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfManagedServicesAclStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\ManagedServicesAclStruct|null
+     * @return \Ovh\StructType\ManagedServicesAclStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfManagedServicesAclStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\ManagedServicesAclStruct|null
+     * @return \Ovh\StructType\ManagedServicesAclStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfManagedServicesAclStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfManagedServicesAclStructType
+     * @return \Ovh\ArrayType\MyArrayOfManagedServicesAclStructType
      */
     public static function __set_state(array $array)
     {

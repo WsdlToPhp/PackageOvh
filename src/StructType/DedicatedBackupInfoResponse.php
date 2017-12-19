@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedBackupInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\DedicatedBackupListReturn
+     * @var \Ovh\StructType\DedicatedBackupListReturn
      */
     public $return;
     /**
      * Constructor method for dedicatedBackupInfoResponse
      * @uses DedicatedBackupInfoResponse::setReturn()
-     * @param \PayPal\StructType\DedicatedBackupListReturn $return
+     * @param \Ovh\StructType\DedicatedBackupListReturn $return
      */
-    public function __construct(\PayPal\StructType\DedicatedBackupListReturn $return = null)
+    public function __construct(\Ovh\StructType\DedicatedBackupListReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\DedicatedBackupListReturn|null
+     * @return \Ovh\StructType\DedicatedBackupListReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedBackupInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\DedicatedBackupListReturn $return
-     * @return \PayPal\StructType\DedicatedBackupInfoResponse
+     * @param \Ovh\StructType\DedicatedBackupListReturn $return
+     * @return \Ovh\StructType\DedicatedBackupInfoResponse
      */
-    public function setReturn(\PayPal\StructType\DedicatedBackupListReturn $return = null)
+    public function setReturn(\Ovh\StructType\DedicatedBackupListReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedBackupInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedBackupInfoResponse
+     * @return \Ovh\StructType\DedicatedBackupInfoResponse
      */
     public static function __set_state(array $array)
     {

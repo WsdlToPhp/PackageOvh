@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyPhonebookSharePeerListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyPhonebookSharePeerStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyPhonebookSharePeerStructType
      */
     public $return;
     /**
      * Constructor method for telephonyPhonebookSharePeerListResponse
      * @uses TelephonyPhonebookSharePeerListResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyPhonebookSharePeerStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyPhonebookSharePeerStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfTelephonyPhonebookSharePeerStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfTelephonyPhonebookSharePeerStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyPhonebookSharePeerStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyPhonebookSharePeerStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyPhonebookSharePeerListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyPhonebookSharePeerStructType $return
-     * @return \PayPal\StructType\TelephonyPhonebookSharePeerListResponse
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyPhonebookSharePeerStructType $return
+     * @return \Ovh\StructType\TelephonyPhonebookSharePeerListResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfTelephonyPhonebookSharePeerStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfTelephonyPhonebookSharePeerStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyPhonebookSharePeerListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyPhonebookSharePeerListResponse
+     * @return \Ovh\StructType\TelephonyPhonebookSharePeerListResponse
      */
     public static function __set_state(array $array)
     {

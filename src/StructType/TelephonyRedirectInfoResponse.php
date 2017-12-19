@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyRedirectInfoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyRedirectInfoReturn
+     * @var \Ovh\StructType\TelephonyRedirectInfoReturn
      */
     public $return;
     /**
      * Constructor method for telephonyRedirectInfoResponse
      * @uses TelephonyRedirectInfoResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyRedirectInfoReturn $return
+     * @param \Ovh\StructType\TelephonyRedirectInfoReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonyRedirectInfoReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonyRedirectInfoReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyRedirectInfoReturn|null
+     * @return \Ovh\StructType\TelephonyRedirectInfoReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyRedirectInfoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyRedirectInfoReturn $return
-     * @return \PayPal\StructType\TelephonyRedirectInfoResponse
+     * @param \Ovh\StructType\TelephonyRedirectInfoReturn $return
+     * @return \Ovh\StructType\TelephonyRedirectInfoResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyRedirectInfoReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyRedirectInfoReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyRedirectInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyRedirectInfoResponse
+     * @return \Ovh\StructType\TelephonyRedirectInfoResponse
      */
     public static function __set_state(array $array)
     {

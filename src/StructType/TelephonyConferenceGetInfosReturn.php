@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class TelephonyConferenceGetInfosReturn extends AbstractStructBase
     public $locked;
     /**
      * The participants
-     * @var \PayPal\ArrayType\MyArrayOfTelephonyConferenceParticipantStructType
+     * @var \Ovh\ArrayType\MyArrayOfTelephonyConferenceParticipantStructType
      */
     public $participants;
     /**
@@ -33,9 +33,9 @@ class TelephonyConferenceGetInfosReturn extends AbstractStructBase
      * @uses TelephonyConferenceGetInfosReturn::setParticipants()
      * @param int $parties
      * @param bool $locked
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyConferenceParticipantStructType $participants
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyConferenceParticipantStructType $participants
      */
-    public function __construct($parties = null, $locked = null, \PayPal\ArrayType\MyArrayOfTelephonyConferenceParticipantStructType $participants = null)
+    public function __construct($parties = null, $locked = null, \Ovh\ArrayType\MyArrayOfTelephonyConferenceParticipantStructType $participants = null)
     {
         $this
             ->setParties($parties)
@@ -53,7 +53,7 @@ class TelephonyConferenceGetInfosReturn extends AbstractStructBase
     /**
      * Set parties value
      * @param int $parties
-     * @return \PayPal\StructType\TelephonyConferenceGetInfosReturn
+     * @return \Ovh\StructType\TelephonyConferenceGetInfosReturn
      */
     public function setParties($parties = null)
     {
@@ -75,7 +75,7 @@ class TelephonyConferenceGetInfosReturn extends AbstractStructBase
     /**
      * Set locked value
      * @param bool $locked
-     * @return \PayPal\StructType\TelephonyConferenceGetInfosReturn
+     * @return \Ovh\StructType\TelephonyConferenceGetInfosReturn
      */
     public function setLocked($locked = null)
     {
@@ -88,7 +88,7 @@ class TelephonyConferenceGetInfosReturn extends AbstractStructBase
     }
     /**
      * Get participants value
-     * @return \PayPal\ArrayType\MyArrayOfTelephonyConferenceParticipantStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfTelephonyConferenceParticipantStructType|null
      */
     public function getParticipants()
     {
@@ -96,10 +96,10 @@ class TelephonyConferenceGetInfosReturn extends AbstractStructBase
     }
     /**
      * Set participants value
-     * @param \PayPal\ArrayType\MyArrayOfTelephonyConferenceParticipantStructType $participants
-     * @return \PayPal\StructType\TelephonyConferenceGetInfosReturn
+     * @param \Ovh\ArrayType\MyArrayOfTelephonyConferenceParticipantStructType $participants
+     * @return \Ovh\StructType\TelephonyConferenceGetInfosReturn
      */
-    public function setParticipants(\PayPal\ArrayType\MyArrayOfTelephonyConferenceParticipantStructType $participants = null)
+    public function setParticipants(\Ovh\ArrayType\MyArrayOfTelephonyConferenceParticipantStructType $participants = null)
     {
         $this->participants = $participants;
         return $this;
@@ -110,7 +110,7 @@ class TelephonyConferenceGetInfosReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyConferenceGetInfosReturn
+     * @return \Ovh\StructType\TelephonyConferenceGetInfosReturn
      */
     public static function __set_state(array $array)
     {

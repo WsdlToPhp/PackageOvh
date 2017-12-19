@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class DedicatedMonitoringSMSCreate extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedMonitoringSMSCreate
+     * @return \Ovh\StructType\DedicatedMonitoringSMSCreate
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class DedicatedMonitoringSMSCreate extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedMonitoringSMSCreate
+     * @return \Ovh\StructType\DedicatedMonitoringSMSCreate
      */
     public function setHostname($hostname = null)
     {
@@ -133,7 +133,7 @@ class DedicatedMonitoringSMSCreate extends AbstractStructBase
     /**
      * Set smsAccount value
      * @param string $smsAccount
-     * @return \PayPal\StructType\DedicatedMonitoringSMSCreate
+     * @return \Ovh\StructType\DedicatedMonitoringSMSCreate
      */
     public function setSmsAccount($smsAccount = null)
     {
@@ -155,7 +155,7 @@ class DedicatedMonitoringSMSCreate extends AbstractStructBase
     /**
      * Set phoneNumberTo value
      * @param string $phoneNumberTo
-     * @return \PayPal\StructType\DedicatedMonitoringSMSCreate
+     * @return \Ovh\StructType\DedicatedMonitoringSMSCreate
      */
     public function setPhoneNumberTo($phoneNumberTo = null)
     {
@@ -177,7 +177,7 @@ class DedicatedMonitoringSMSCreate extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \PayPal\StructType\DedicatedMonitoringSMSCreate
+     * @return \Ovh\StructType\DedicatedMonitoringSMSCreate
      */
     public function setLanguage($language = null)
     {
@@ -199,7 +199,7 @@ class DedicatedMonitoringSMSCreate extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \PayPal\StructType\DedicatedMonitoringSMSCreate
+     * @return \Ovh\StructType\DedicatedMonitoringSMSCreate
      */
     public function setStatus($status = null)
     {
@@ -216,7 +216,7 @@ class DedicatedMonitoringSMSCreate extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedMonitoringSMSCreate
+     * @return \Ovh\StructType\DedicatedMonitoringSMSCreate
      */
     public static function __set_state(array $array)
     {

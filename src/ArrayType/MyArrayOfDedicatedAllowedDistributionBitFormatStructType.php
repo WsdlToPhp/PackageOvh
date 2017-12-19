@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -17,13 +17,13 @@ class MyArrayOfDedicatedAllowedDistributionBitFormatStructType extends AbstractS
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\DedicatedAllowedDistributionBitFormatStruct[]
+     * @var \Ovh\StructType\DedicatedAllowedDistributionBitFormatStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfDedicatedAllowedDistributionBitFormatStructType
      * @uses MyArrayOfDedicatedAllowedDistributionBitFormatStructType::setItem()
-     * @param \PayPal\StructType\DedicatedAllowedDistributionBitFormatStruct[] $item
+     * @param \Ovh\StructType\DedicatedAllowedDistributionBitFormatStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -32,7 +32,7 @@ class MyArrayOfDedicatedAllowedDistributionBitFormatStructType extends AbstractS
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\DedicatedAllowedDistributionBitFormatStruct[]|null
+     * @return \Ovh\StructType\DedicatedAllowedDistributionBitFormatStruct[]|null
      */
     public function getItem()
     {
@@ -41,15 +41,15 @@ class MyArrayOfDedicatedAllowedDistributionBitFormatStructType extends AbstractS
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedAllowedDistributionBitFormatStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionBitFormatStructType
+     * @param \Ovh\StructType\DedicatedAllowedDistributionBitFormatStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionBitFormatStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfDedicatedAllowedDistributionBitFormatStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfDedicatedAllowedDistributionBitFormatStructTypeItemItem instanceof \PayPal\StructType\DedicatedAllowedDistributionBitFormatStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedAllowedDistributionBitFormatStruct, "%s" given', is_object($myArrayOfDedicatedAllowedDistributionBitFormatStructTypeItemItem) ? get_class($myArrayOfDedicatedAllowedDistributionBitFormatStructTypeItemItem) : gettype($myArrayOfDedicatedAllowedDistributionBitFormatStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfDedicatedAllowedDistributionBitFormatStructTypeItemItem instanceof \Ovh\StructType\DedicatedAllowedDistributionBitFormatStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedAllowedDistributionBitFormatStruct, "%s" given', is_object($myArrayOfDedicatedAllowedDistributionBitFormatStructTypeItemItem) ? get_class($myArrayOfDedicatedAllowedDistributionBitFormatStructTypeItemItem) : gettype($myArrayOfDedicatedAllowedDistributionBitFormatStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -58,14 +58,14 @@ class MyArrayOfDedicatedAllowedDistributionBitFormatStructType extends AbstractS
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\DedicatedAllowedDistributionBitFormatStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionBitFormatStructType
+     * @param \Ovh\StructType\DedicatedAllowedDistributionBitFormatStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionBitFormatStructType
      */
-    public function addToItem(\PayPal\StructType\DedicatedAllowedDistributionBitFormatStruct $item)
+    public function addToItem(\Ovh\StructType\DedicatedAllowedDistributionBitFormatStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\DedicatedAllowedDistributionBitFormatStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\DedicatedAllowedDistributionBitFormatStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\DedicatedAllowedDistributionBitFormatStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\DedicatedAllowedDistributionBitFormatStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class MyArrayOfDedicatedAllowedDistributionBitFormatStructType extends AbstractS
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\DedicatedAllowedDistributionBitFormatStruct|null
+     * @return \Ovh\StructType\DedicatedAllowedDistributionBitFormatStruct|null
      */
     public function current()
     {
@@ -83,7 +83,7 @@ class MyArrayOfDedicatedAllowedDistributionBitFormatStructType extends AbstractS
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\DedicatedAllowedDistributionBitFormatStruct|null
+     * @return \Ovh\StructType\DedicatedAllowedDistributionBitFormatStruct|null
      */
     public function item($index)
     {
@@ -92,7 +92,7 @@ class MyArrayOfDedicatedAllowedDistributionBitFormatStructType extends AbstractS
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\DedicatedAllowedDistributionBitFormatStruct|null
+     * @return \Ovh\StructType\DedicatedAllowedDistributionBitFormatStruct|null
      */
     public function first()
     {
@@ -101,7 +101,7 @@ class MyArrayOfDedicatedAllowedDistributionBitFormatStructType extends AbstractS
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\DedicatedAllowedDistributionBitFormatStruct|null
+     * @return \Ovh\StructType\DedicatedAllowedDistributionBitFormatStruct|null
      */
     public function last()
     {
@@ -111,7 +111,7 @@ class MyArrayOfDedicatedAllowedDistributionBitFormatStructType extends AbstractS
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\DedicatedAllowedDistributionBitFormatStruct|null
+     * @return \Ovh\StructType\DedicatedAllowedDistributionBitFormatStruct|null
      */
     public function offsetGet($offset)
     {
@@ -132,7 +132,7 @@ class MyArrayOfDedicatedAllowedDistributionBitFormatStructType extends AbstractS
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedAllowedDistributionBitFormatStructType
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedAllowedDistributionBitFormatStructType
      */
     public static function __set_state(array $array)
     {

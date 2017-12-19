@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -133,7 +133,7 @@ class ServiceStruct extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\ServiceStruct
+     * @return \Ovh\StructType\ServiceStruct
      */
     public function setDomain($domain = null)
     {
@@ -155,7 +155,7 @@ class ServiceStruct extends AbstractStructBase
     /**
      * Set component value
      * @param string $component
-     * @return \PayPal\StructType\ServiceStruct
+     * @return \Ovh\StructType\ServiceStruct
      */
     public function setComponent($component = null)
     {
@@ -177,7 +177,7 @@ class ServiceStruct extends AbstractStructBase
     /**
      * Set componentSubType value
      * @param string $componentSubType
-     * @return \PayPal\StructType\ServiceStruct
+     * @return \Ovh\StructType\ServiceStruct
      */
     public function setComponentSubType($componentSubType = null)
     {
@@ -199,7 +199,7 @@ class ServiceStruct extends AbstractStructBase
     /**
      * Set creation value
      * @param string $creation
-     * @return \PayPal\StructType\ServiceStruct
+     * @return \Ovh\StructType\ServiceStruct
      */
     public function setCreation($creation = null)
     {
@@ -221,7 +221,7 @@ class ServiceStruct extends AbstractStructBase
     /**
      * Set modification value
      * @param string $modification
-     * @return \PayPal\StructType\ServiceStruct
+     * @return \Ovh\StructType\ServiceStruct
      */
     public function setModification($modification = null)
     {
@@ -243,7 +243,7 @@ class ServiceStruct extends AbstractStructBase
     /**
      * Set expiry value
      * @param string $expiry
-     * @return \PayPal\StructType\ServiceStruct
+     * @return \Ovh\StructType\ServiceStruct
      */
     public function setExpiry($expiry = null)
     {
@@ -265,7 +265,7 @@ class ServiceStruct extends AbstractStructBase
     /**
      * Set nicowner value
      * @param string $nicowner
-     * @return \PayPal\StructType\ServiceStruct
+     * @return \Ovh\StructType\ServiceStruct
      */
     public function setNicowner($nicowner = null)
     {
@@ -287,7 +287,7 @@ class ServiceStruct extends AbstractStructBase
     /**
      * Set nicadmin value
      * @param string $nicadmin
-     * @return \PayPal\StructType\ServiceStruct
+     * @return \Ovh\StructType\ServiceStruct
      */
     public function setNicadmin($nicadmin = null)
     {
@@ -309,7 +309,7 @@ class ServiceStruct extends AbstractStructBase
     /**
      * Set nictech value
      * @param string $nictech
-     * @return \PayPal\StructType\ServiceStruct
+     * @return \Ovh\StructType\ServiceStruct
      */
     public function setNictech($nictech = null)
     {
@@ -331,7 +331,7 @@ class ServiceStruct extends AbstractStructBase
     /**
      * Set nicbilling value
      * @param string $nicbilling
-     * @return \PayPal\StructType\ServiceStruct
+     * @return \Ovh\StructType\ServiceStruct
      */
     public function setNicbilling($nicbilling = null)
     {
@@ -353,7 +353,7 @@ class ServiceStruct extends AbstractStructBase
     /**
      * Set nicreseller value
      * @param string $nicreseller
-     * @return \PayPal\StructType\ServiceStruct
+     * @return \Ovh\StructType\ServiceStruct
      */
     public function setNicreseller($nicreseller = null)
     {
@@ -375,7 +375,7 @@ class ServiceStruct extends AbstractStructBase
     /**
      * Set autorenew value
      * @param string $autorenew
-     * @return \PayPal\StructType\ServiceStruct
+     * @return \Ovh\StructType\ServiceStruct
      */
     public function setAutorenew($autorenew = null)
     {
@@ -397,7 +397,7 @@ class ServiceStruct extends AbstractStructBase
     /**
      * Set reverse value
      * @param string $reverse
-     * @return \PayPal\StructType\ServiceStruct
+     * @return \Ovh\StructType\ServiceStruct
      */
     public function setReverse($reverse = null)
     {
@@ -414,7 +414,7 @@ class ServiceStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ServiceStruct
+     * @return \Ovh\StructType\ServiceStruct
      */
     public static function __set_state(array $array)
     {

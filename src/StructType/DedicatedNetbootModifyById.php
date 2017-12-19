@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class DedicatedNetbootModifyById extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedNetbootModifyById
+     * @return \Ovh\StructType\DedicatedNetbootModifyById
      */
     public function setSession($session = null)
     {
@@ -101,7 +101,7 @@ class DedicatedNetbootModifyById extends AbstractStructBase
     /**
      * Set hostname value
      * @param string $hostname
-     * @return \PayPal\StructType\DedicatedNetbootModifyById
+     * @return \Ovh\StructType\DedicatedNetbootModifyById
      */
     public function setHostname($hostname = null)
     {
@@ -123,7 +123,7 @@ class DedicatedNetbootModifyById extends AbstractStructBase
     /**
      * Set id value
      * @param string $id
-     * @return \PayPal\StructType\DedicatedNetbootModifyById
+     * @return \Ovh\StructType\DedicatedNetbootModifyById
      */
     public function setId($id = null)
     {
@@ -145,7 +145,7 @@ class DedicatedNetbootModifyById extends AbstractStructBase
     /**
      * Set root value
      * @param string $root
-     * @return \PayPal\StructType\DedicatedNetbootModifyById
+     * @return \Ovh\StructType\DedicatedNetbootModifyById
      */
     public function setRoot($root = null)
     {
@@ -167,7 +167,7 @@ class DedicatedNetbootModifyById extends AbstractStructBase
     /**
      * Set rescueEmail value
      * @param string $rescueEmail
-     * @return \PayPal\StructType\DedicatedNetbootModifyById
+     * @return \Ovh\StructType\DedicatedNetbootModifyById
      */
     public function setRescueEmail($rescueEmail = null)
     {
@@ -184,7 +184,7 @@ class DedicatedNetbootModifyById extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedNetbootModifyById
+     * @return \Ovh\StructType\DedicatedNetbootModifyById
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedBackupGetHistoResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedBackupHistoStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedBackupHistoStructType
      */
     public $return;
     /**
      * Constructor method for dedicatedBackupGetHistoResponse
      * @uses DedicatedBackupGetHistoResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedBackupHistoStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedBackupHistoStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfDedicatedBackupHistoStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfDedicatedBackupHistoStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedBackupHistoStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedBackupHistoStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedBackupGetHistoResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedBackupHistoStructType $return
-     * @return \PayPal\StructType\DedicatedBackupGetHistoResponse
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedBackupHistoStructType $return
+     * @return \Ovh\StructType\DedicatedBackupGetHistoResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfDedicatedBackupHistoStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfDedicatedBackupHistoStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedBackupGetHistoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedBackupGetHistoResponse
+     * @return \Ovh\StructType\DedicatedBackupGetHistoResponse
      */
     public static function __set_state(array $array)
     {

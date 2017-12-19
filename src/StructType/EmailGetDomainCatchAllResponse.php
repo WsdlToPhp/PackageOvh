@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class EmailGetDomainCatchAllResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\CatchAllGetReturn
+     * @var \Ovh\StructType\CatchAllGetReturn
      */
     public $return;
     /**
      * Constructor method for emailGetDomainCatchAllResponse
      * @uses EmailGetDomainCatchAllResponse::setReturn()
-     * @param \PayPal\StructType\CatchAllGetReturn $return
+     * @param \Ovh\StructType\CatchAllGetReturn $return
      */
-    public function __construct(\PayPal\StructType\CatchAllGetReturn $return = null)
+    public function __construct(\Ovh\StructType\CatchAllGetReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\CatchAllGetReturn|null
+     * @return \Ovh\StructType\CatchAllGetReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class EmailGetDomainCatchAllResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\CatchAllGetReturn $return
-     * @return \PayPal\StructType\EmailGetDomainCatchAllResponse
+     * @param \Ovh\StructType\CatchAllGetReturn $return
+     * @return \Ovh\StructType\EmailGetDomainCatchAllResponse
      */
-    public function setReturn(\PayPal\StructType\CatchAllGetReturn $return = null)
+    public function setReturn(\Ovh\StructType\CatchAllGetReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class EmailGetDomainCatchAllResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\EmailGetDomainCatchAllResponse
+     * @return \Ovh\StructType\EmailGetDomainCatchAllResponse
      */
     public static function __set_state(array $array)
     {

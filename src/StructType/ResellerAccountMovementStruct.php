@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -85,7 +85,7 @@ class ResellerAccountMovementStruct extends AbstractStructBase
     /**
      * Set amount value
      * @param int $amount
-     * @return \PayPal\StructType\ResellerAccountMovementStruct
+     * @return \Ovh\StructType\ResellerAccountMovementStruct
      */
     public function setAmount($amount = null)
     {
@@ -107,7 +107,7 @@ class ResellerAccountMovementStruct extends AbstractStructBase
     /**
      * Set balance value
      * @param int $balance
-     * @return \PayPal\StructType\ResellerAccountMovementStruct
+     * @return \Ovh\StructType\ResellerAccountMovementStruct
      */
     public function setBalance($balance = null)
     {
@@ -129,7 +129,7 @@ class ResellerAccountMovementStruct extends AbstractStructBase
     /**
      * Set previousBalance value
      * @param int $previousBalance
-     * @return \PayPal\StructType\ResellerAccountMovementStruct
+     * @return \Ovh\StructType\ResellerAccountMovementStruct
      */
     public function setPreviousBalance($previousBalance = null)
     {
@@ -151,7 +151,7 @@ class ResellerAccountMovementStruct extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \PayPal\StructType\ResellerAccountMovementStruct
+     * @return \Ovh\StructType\ResellerAccountMovementStruct
      */
     public function setDate($date = null)
     {
@@ -173,7 +173,7 @@ class ResellerAccountMovementStruct extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \PayPal\StructType\ResellerAccountMovementStruct
+     * @return \Ovh\StructType\ResellerAccountMovementStruct
      */
     public function setDescription($description = null)
     {
@@ -195,7 +195,7 @@ class ResellerAccountMovementStruct extends AbstractStructBase
     /**
      * Set operation value
      * @param string $operation
-     * @return \PayPal\StructType\ResellerAccountMovementStruct
+     * @return \Ovh\StructType\ResellerAccountMovementStruct
      */
     public function setOperation($operation = null)
     {
@@ -217,7 +217,7 @@ class ResellerAccountMovementStruct extends AbstractStructBase
     /**
      * Set order value
      * @param int $order
-     * @return \PayPal\StructType\ResellerAccountMovementStruct
+     * @return \Ovh\StructType\ResellerAccountMovementStruct
      */
     public function setOrder($order = null)
     {
@@ -234,7 +234,7 @@ class ResellerAccountMovementStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ResellerAccountMovementStruct
+     * @return \Ovh\StructType\ResellerAccountMovementStruct
      */
     public static function __set_state(array $array)
     {

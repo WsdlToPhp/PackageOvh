@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class TelephonySviInfoReturn extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \PayPal\StructType\TelephonySviInfoReturn
+     * @return \Ovh\StructType\TelephonySviInfoReturn
      */
     public function setNumber($number = null)
     {
@@ -83,7 +83,7 @@ class TelephonySviInfoReturn extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\TelephonySviInfoReturn
+     * @return \Ovh\StructType\TelephonySviInfoReturn
      */
     public function setCountry($country = null)
     {
@@ -105,7 +105,7 @@ class TelephonySviInfoReturn extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \PayPal\StructType\TelephonySviInfoReturn
+     * @return \Ovh\StructType\TelephonySviInfoReturn
      */
     public function setUrl($url = null)
     {
@@ -127,7 +127,7 @@ class TelephonySviInfoReturn extends AbstractStructBase
     /**
      * Set recordinfo value
      * @param string $recordinfo
-     * @return \PayPal\StructType\TelephonySviInfoReturn
+     * @return \Ovh\StructType\TelephonySviInfoReturn
      */
     public function setRecordinfo($recordinfo = null)
     {
@@ -144,7 +144,7 @@ class TelephonySviInfoReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonySviInfoReturn
+     * @return \Ovh\StructType\TelephonySviInfoReturn
      */
     public static function __set_state(array $array)
     {

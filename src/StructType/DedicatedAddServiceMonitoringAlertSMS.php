@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class DedicatedAddServiceMonitoringAlertSMS extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DedicatedAddServiceMonitoringAlertSMS
+     * @return \Ovh\StructType\DedicatedAddServiceMonitoringAlertSMS
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class DedicatedAddServiceMonitoringAlertSMS extends AbstractStructBase
     /**
      * Set ip value
      * @param string $ip
-     * @return \PayPal\StructType\DedicatedAddServiceMonitoringAlertSMS
+     * @return \Ovh\StructType\DedicatedAddServiceMonitoringAlertSMS
      */
     public function setIp($ip = null)
     {
@@ -133,7 +133,7 @@ class DedicatedAddServiceMonitoringAlertSMS extends AbstractStructBase
     /**
      * Set port value
      * @param int $port
-     * @return \PayPal\StructType\DedicatedAddServiceMonitoringAlertSMS
+     * @return \Ovh\StructType\DedicatedAddServiceMonitoringAlertSMS
      */
     public function setPort($port = null)
     {
@@ -155,7 +155,7 @@ class DedicatedAddServiceMonitoringAlertSMS extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \PayPal\StructType\DedicatedAddServiceMonitoringAlertSMS
+     * @return \Ovh\StructType\DedicatedAddServiceMonitoringAlertSMS
      */
     public function setItemId($itemId = null)
     {
@@ -177,7 +177,7 @@ class DedicatedAddServiceMonitoringAlertSMS extends AbstractStructBase
     /**
      * Set smsAccount value
      * @param string $smsAccount
-     * @return \PayPal\StructType\DedicatedAddServiceMonitoringAlertSMS
+     * @return \Ovh\StructType\DedicatedAddServiceMonitoringAlertSMS
      */
     public function setSmsAccount($smsAccount = null)
     {
@@ -199,7 +199,7 @@ class DedicatedAddServiceMonitoringAlertSMS extends AbstractStructBase
     /**
      * Set phoneNumberTo value
      * @param string $phoneNumberTo
-     * @return \PayPal\StructType\DedicatedAddServiceMonitoringAlertSMS
+     * @return \Ovh\StructType\DedicatedAddServiceMonitoringAlertSMS
      */
     public function setPhoneNumberTo($phoneNumberTo = null)
     {
@@ -216,7 +216,7 @@ class DedicatedAddServiceMonitoringAlertSMS extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedAddServiceMonitoringAlertSMS
+     * @return \Ovh\StructType\DedicatedAddServiceMonitoringAlertSMS
      */
     public static function __set_state(array $array)
     {

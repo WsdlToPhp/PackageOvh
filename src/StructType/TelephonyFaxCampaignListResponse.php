@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyFaxCampaignListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyFaxCampaignListReturn
+     * @var \Ovh\StructType\TelephonyFaxCampaignListReturn
      */
     public $return;
     /**
      * Constructor method for telephonyFaxCampaignListResponse
      * @uses TelephonyFaxCampaignListResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyFaxCampaignListReturn $return
+     * @param \Ovh\StructType\TelephonyFaxCampaignListReturn $return
      */
-    public function __construct(\PayPal\StructType\TelephonyFaxCampaignListReturn $return = null)
+    public function __construct(\Ovh\StructType\TelephonyFaxCampaignListReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyFaxCampaignListReturn|null
+     * @return \Ovh\StructType\TelephonyFaxCampaignListReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyFaxCampaignListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyFaxCampaignListReturn $return
-     * @return \PayPal\StructType\TelephonyFaxCampaignListResponse
+     * @param \Ovh\StructType\TelephonyFaxCampaignListReturn $return
+     * @return \Ovh\StructType\TelephonyFaxCampaignListResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyFaxCampaignListReturn $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyFaxCampaignListReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyFaxCampaignListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFaxCampaignListResponse
+     * @return \Ovh\StructType\TelephonyFaxCampaignListResponse
      */
     public static function __set_state(array $array)
     {

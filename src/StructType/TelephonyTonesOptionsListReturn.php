@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class TelephonyTonesOptionsListReturn extends AbstractStructBase
     /**
      * Set toneRingback value
      * @param string $toneRingback
-     * @return \PayPal\StructType\TelephonyTonesOptionsListReturn
+     * @return \Ovh\StructType\TelephonyTonesOptionsListReturn
      */
     public function setToneRingback($toneRingback = null)
     {
@@ -83,7 +83,7 @@ class TelephonyTonesOptionsListReturn extends AbstractStructBase
     /**
      * Set toneOnHold value
      * @param string $toneOnHold
-     * @return \PayPal\StructType\TelephonyTonesOptionsListReturn
+     * @return \Ovh\StructType\TelephonyTonesOptionsListReturn
      */
     public function setToneOnHold($toneOnHold = null)
     {
@@ -105,7 +105,7 @@ class TelephonyTonesOptionsListReturn extends AbstractStructBase
     /**
      * Set toneOnClosure value
      * @param string $toneOnClosure
-     * @return \PayPal\StructType\TelephonyTonesOptionsListReturn
+     * @return \Ovh\StructType\TelephonyTonesOptionsListReturn
      */
     public function setToneOnClosure($toneOnClosure = null)
     {
@@ -127,7 +127,7 @@ class TelephonyTonesOptionsListReturn extends AbstractStructBase
     /**
      * Set toneOnCallWaiting value
      * @param string $toneOnCallWaiting
-     * @return \PayPal\StructType\TelephonyTonesOptionsListReturn
+     * @return \Ovh\StructType\TelephonyTonesOptionsListReturn
      */
     public function setToneOnCallWaiting($toneOnCallWaiting = null)
     {
@@ -144,7 +144,7 @@ class TelephonyTonesOptionsListReturn extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyTonesOptionsListReturn
+     * @return \Ovh\StructType\TelephonyTonesOptionsListReturn
      */
     public static function __set_state(array $array)
     {

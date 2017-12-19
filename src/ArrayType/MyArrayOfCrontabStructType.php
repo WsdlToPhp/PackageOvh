@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfCrontabStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\CrontabStruct[]
+     * @var \Ovh\StructType\CrontabStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfCrontabStructType
      * @uses MyArrayOfCrontabStructType::setItem()
-     * @param \PayPal\StructType\CrontabStruct[] $item
+     * @param \Ovh\StructType\CrontabStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfCrontabStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\CrontabStruct[]|null
+     * @return \Ovh\StructType\CrontabStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfCrontabStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\CrontabStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfCrontabStructType
+     * @param \Ovh\StructType\CrontabStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfCrontabStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfCrontabStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfCrontabStructTypeItemItem instanceof \PayPal\StructType\CrontabStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\CrontabStruct, "%s" given', is_object($myArrayOfCrontabStructTypeItemItem) ? get_class($myArrayOfCrontabStructTypeItemItem) : gettype($myArrayOfCrontabStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfCrontabStructTypeItemItem instanceof \Ovh\StructType\CrontabStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\CrontabStruct, "%s" given', is_object($myArrayOfCrontabStructTypeItemItem) ? get_class($myArrayOfCrontabStructTypeItemItem) : gettype($myArrayOfCrontabStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfCrontabStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\CrontabStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfCrontabStructType
+     * @param \Ovh\StructType\CrontabStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfCrontabStructType
      */
-    public function addToItem(\PayPal\StructType\CrontabStruct $item)
+    public function addToItem(\Ovh\StructType\CrontabStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\CrontabStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\CrontabStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\CrontabStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\CrontabStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfCrontabStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\CrontabStruct|null
+     * @return \Ovh\StructType\CrontabStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfCrontabStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\CrontabStruct|null
+     * @return \Ovh\StructType\CrontabStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfCrontabStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\CrontabStruct|null
+     * @return \Ovh\StructType\CrontabStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfCrontabStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\CrontabStruct|null
+     * @return \Ovh\StructType\CrontabStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfCrontabStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\CrontabStruct|null
+     * @return \Ovh\StructType\CrontabStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfCrontabStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfCrontabStructType
+     * @return \Ovh\ArrayType\MyArrayOfCrontabStructType
      */
     public static function __set_state(array $array)
     {

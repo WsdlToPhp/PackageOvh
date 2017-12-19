@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class TelephonyFaxCampaignDetailsResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\TelephonyFaxCampaignDetailsStruct
+     * @var \Ovh\StructType\TelephonyFaxCampaignDetailsStruct
      */
     public $return;
     /**
      * Constructor method for telephonyFaxCampaignDetailsResponse
      * @uses TelephonyFaxCampaignDetailsResponse::setReturn()
-     * @param \PayPal\StructType\TelephonyFaxCampaignDetailsStruct $return
+     * @param \Ovh\StructType\TelephonyFaxCampaignDetailsStruct $return
      */
-    public function __construct(\PayPal\StructType\TelephonyFaxCampaignDetailsStruct $return = null)
+    public function __construct(\Ovh\StructType\TelephonyFaxCampaignDetailsStruct $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\TelephonyFaxCampaignDetailsStruct|null
+     * @return \Ovh\StructType\TelephonyFaxCampaignDetailsStruct|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class TelephonyFaxCampaignDetailsResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\TelephonyFaxCampaignDetailsStruct $return
-     * @return \PayPal\StructType\TelephonyFaxCampaignDetailsResponse
+     * @param \Ovh\StructType\TelephonyFaxCampaignDetailsStruct $return
+     * @return \Ovh\StructType\TelephonyFaxCampaignDetailsResponse
      */
-    public function setReturn(\PayPal\StructType\TelephonyFaxCampaignDetailsStruct $return = null)
+    public function setReturn(\Ovh\StructType\TelephonyFaxCampaignDetailsStruct $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class TelephonyFaxCampaignDetailsResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\TelephonyFaxCampaignDetailsResponse
+     * @return \Ovh\StructType\TelephonyFaxCampaignDetailsResponse
      */
     public static function __set_state(array $array)
     {

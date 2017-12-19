@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class ResponderEmailAdd extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\ResponderEmailAdd
+     * @return \Ovh\StructType\ResponderEmailAdd
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class ResponderEmailAdd extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\ResponderEmailAdd
+     * @return \Ovh\StructType\ResponderEmailAdd
      */
     public function setDomain($domain = null)
     {
@@ -133,7 +133,7 @@ class ResponderEmailAdd extends AbstractStructBase
     /**
      * Set responder value
      * @param string $responder
-     * @return \PayPal\StructType\ResponderEmailAdd
+     * @return \Ovh\StructType\ResponderEmailAdd
      */
     public function setResponder($responder = null)
     {
@@ -155,7 +155,7 @@ class ResponderEmailAdd extends AbstractStructBase
     /**
      * Set content value
      * @param string $content
-     * @return \PayPal\StructType\ResponderEmailAdd
+     * @return \Ovh\StructType\ResponderEmailAdd
      */
     public function setContent($content = null)
     {
@@ -177,7 +177,7 @@ class ResponderEmailAdd extends AbstractStructBase
     /**
      * Set delivered_to value
      * @param string $delivered_to
-     * @return \PayPal\StructType\ResponderEmailAdd
+     * @return \Ovh\StructType\ResponderEmailAdd
      */
     public function setDelivered_to($delivered_to = null)
     {
@@ -199,7 +199,7 @@ class ResponderEmailAdd extends AbstractStructBase
     /**
      * Set nic value
      * @param string $nic
-     * @return \PayPal\StructType\ResponderEmailAdd
+     * @return \Ovh\StructType\ResponderEmailAdd
      */
     public function setNic($nic = null)
     {
@@ -216,7 +216,7 @@ class ResponderEmailAdd extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\ResponderEmailAdd
+     * @return \Ovh\StructType\ResponderEmailAdd
      */
     public static function __set_state(array $array)
     {

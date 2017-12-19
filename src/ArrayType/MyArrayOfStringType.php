@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -41,7 +41,7 @@ class MyArrayOfStringType extends AbstractStructArrayBase
      * Set item value
      * @throws \InvalidArgumentException
      * @param string[] $item
-     * @return \PayPal\ArrayType\MyArrayOfStringType
+     * @return \Ovh\ArrayType\MyArrayOfStringType
      */
     public function setItem(array $item = array())
     {
@@ -58,7 +58,7 @@ class MyArrayOfStringType extends AbstractStructArrayBase
      * Add item to item value
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \PayPal\ArrayType\MyArrayOfStringType
+     * @return \Ovh\ArrayType\MyArrayOfStringType
      */
     public function addToItem($item)
     {
@@ -131,7 +131,7 @@ class MyArrayOfStringType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfStringType
+     * @return \Ovh\ArrayType\MyArrayOfStringType
      */
     public static function __set_state(array $array)
     {

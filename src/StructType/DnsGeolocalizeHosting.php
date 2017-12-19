@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class DnsGeolocalizeHosting extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\DnsGeolocalizeHosting
+     * @return \Ovh\StructType\DnsGeolocalizeHosting
      */
     public function setSession($session = null)
     {
@@ -91,7 +91,7 @@ class DnsGeolocalizeHosting extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\DnsGeolocalizeHosting
+     * @return \Ovh\StructType\DnsGeolocalizeHosting
      */
     public function setDomain($domain = null)
     {
@@ -113,7 +113,7 @@ class DnsGeolocalizeHosting extends AbstractStructBase
     /**
      * Set hosting value
      * @param string $hosting
-     * @return \PayPal\StructType\DnsGeolocalizeHosting
+     * @return \Ovh\StructType\DnsGeolocalizeHosting
      */
     public function setHosting($hosting = null)
     {
@@ -135,7 +135,7 @@ class DnsGeolocalizeHosting extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \PayPal\StructType\DnsGeolocalizeHosting
+     * @return \Ovh\StructType\DnsGeolocalizeHosting
      */
     public function setCountry($country = null)
     {
@@ -152,7 +152,7 @@ class DnsGeolocalizeHosting extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DnsGeolocalizeHosting
+     * @return \Ovh\StructType\DnsGeolocalizeHosting
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\ArrayType;
+namespace Ovh\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class MyArrayOfRtmPortsIfaceStructType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \PayPal\StructType\RtmPortsIfaceStruct[]
+     * @var \Ovh\StructType\RtmPortsIfaceStruct[]
      */
     public $item;
     /**
      * Constructor method for MyArrayOfRtmPortsIfaceStructType
      * @uses MyArrayOfRtmPortsIfaceStructType::setItem()
-     * @param \PayPal\StructType\RtmPortsIfaceStruct[] $item
+     * @param \Ovh\StructType\RtmPortsIfaceStruct[] $item
      */
     public function __construct(array $item = array())
     {
@@ -31,7 +31,7 @@ class MyArrayOfRtmPortsIfaceStructType extends AbstractStructArrayBase
     }
     /**
      * Get item value
-     * @return \PayPal\StructType\RtmPortsIfaceStruct[]|null
+     * @return \Ovh\StructType\RtmPortsIfaceStruct[]|null
      */
     public function getItem()
     {
@@ -40,15 +40,15 @@ class MyArrayOfRtmPortsIfaceStructType extends AbstractStructArrayBase
     /**
      * Set item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\RtmPortsIfaceStruct[] $item
-     * @return \PayPal\ArrayType\MyArrayOfRtmPortsIfaceStructType
+     * @param \Ovh\StructType\RtmPortsIfaceStruct[] $item
+     * @return \Ovh\ArrayType\MyArrayOfRtmPortsIfaceStructType
      */
     public function setItem(array $item = array())
     {
         foreach ($item as $myArrayOfRtmPortsIfaceStructTypeItemItem) {
             // validation for constraint: itemType
-            if (!$myArrayOfRtmPortsIfaceStructTypeItemItem instanceof \PayPal\StructType\RtmPortsIfaceStruct) {
-                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\RtmPortsIfaceStruct, "%s" given', is_object($myArrayOfRtmPortsIfaceStructTypeItemItem) ? get_class($myArrayOfRtmPortsIfaceStructTypeItemItem) : gettype($myArrayOfRtmPortsIfaceStructTypeItemItem)), __LINE__);
+            if (!$myArrayOfRtmPortsIfaceStructTypeItemItem instanceof \Ovh\StructType\RtmPortsIfaceStruct) {
+                throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\RtmPortsIfaceStruct, "%s" given', is_object($myArrayOfRtmPortsIfaceStructTypeItemItem) ? get_class($myArrayOfRtmPortsIfaceStructTypeItemItem) : gettype($myArrayOfRtmPortsIfaceStructTypeItemItem)), __LINE__);
             }
         }
         $this->item = $item;
@@ -57,14 +57,14 @@ class MyArrayOfRtmPortsIfaceStructType extends AbstractStructArrayBase
     /**
      * Add item to item value
      * @throws \InvalidArgumentException
-     * @param \PayPal\StructType\RtmPortsIfaceStruct $item
-     * @return \PayPal\ArrayType\MyArrayOfRtmPortsIfaceStructType
+     * @param \Ovh\StructType\RtmPortsIfaceStruct $item
+     * @return \Ovh\ArrayType\MyArrayOfRtmPortsIfaceStructType
      */
-    public function addToItem(\PayPal\StructType\RtmPortsIfaceStruct $item)
+    public function addToItem(\Ovh\StructType\RtmPortsIfaceStruct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \PayPal\StructType\RtmPortsIfaceStruct) {
-            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \PayPal\StructType\RtmPortsIfaceStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Ovh\StructType\RtmPortsIfaceStruct) {
+            throw new \InvalidArgumentException(sprintf('The item property can only contain items of \Ovh\StructType\RtmPortsIfaceStruct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->item[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class MyArrayOfRtmPortsIfaceStructType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \PayPal\StructType\RtmPortsIfaceStruct|null
+     * @return \Ovh\StructType\RtmPortsIfaceStruct|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class MyArrayOfRtmPortsIfaceStructType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \PayPal\StructType\RtmPortsIfaceStruct|null
+     * @return \Ovh\StructType\RtmPortsIfaceStruct|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class MyArrayOfRtmPortsIfaceStructType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \PayPal\StructType\RtmPortsIfaceStruct|null
+     * @return \Ovh\StructType\RtmPortsIfaceStruct|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class MyArrayOfRtmPortsIfaceStructType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \PayPal\StructType\RtmPortsIfaceStruct|null
+     * @return \Ovh\StructType\RtmPortsIfaceStruct|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class MyArrayOfRtmPortsIfaceStructType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \PayPal\StructType\RtmPortsIfaceStruct|null
+     * @return \Ovh\StructType\RtmPortsIfaceStruct|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class MyArrayOfRtmPortsIfaceStructType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\ArrayType\MyArrayOfRtmPortsIfaceStructType
+     * @return \Ovh\ArrayType\MyArrayOfRtmPortsIfaceStructType
      */
     public static function __set_state(array $array)
     {

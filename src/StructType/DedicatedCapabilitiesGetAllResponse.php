@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedCapabilitiesGetAllResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedCapabilitiesStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedCapabilitiesStructType
      */
     public $return;
     /**
      * Constructor method for dedicatedCapabilitiesGetAllResponse
      * @uses DedicatedCapabilitiesGetAllResponse::setReturn()
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedCapabilitiesStructType $return
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedCapabilitiesStructType $return
      */
-    public function __construct(\PayPal\ArrayType\MyArrayOfDedicatedCapabilitiesStructType $return = null)
+    public function __construct(\Ovh\ArrayType\MyArrayOfDedicatedCapabilitiesStructType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedCapabilitiesStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedCapabilitiesStructType|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedCapabilitiesGetAllResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedCapabilitiesStructType $return
-     * @return \PayPal\StructType\DedicatedCapabilitiesGetAllResponse
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedCapabilitiesStructType $return
+     * @return \Ovh\StructType\DedicatedCapabilitiesGetAllResponse
      */
-    public function setReturn(\PayPal\ArrayType\MyArrayOfDedicatedCapabilitiesStructType $return = null)
+    public function setReturn(\Ovh\ArrayType\MyArrayOfDedicatedCapabilitiesStructType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedCapabilitiesGetAllResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedCapabilitiesGetAllResponse
+     * @return \Ovh\StructType\DedicatedCapabilitiesGetAllResponse
      */
     public static function __set_state(array $array)
     {

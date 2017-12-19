@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedGetServiceMonitoringItemResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\DedicatedGetServiceMonitoringItemStruct
+     * @var \Ovh\StructType\DedicatedGetServiceMonitoringItemStruct
      */
     public $return;
     /**
      * Constructor method for dedicatedGetServiceMonitoringItemResponse
      * @uses DedicatedGetServiceMonitoringItemResponse::setReturn()
-     * @param \PayPal\StructType\DedicatedGetServiceMonitoringItemStruct $return
+     * @param \Ovh\StructType\DedicatedGetServiceMonitoringItemStruct $return
      */
-    public function __construct(\PayPal\StructType\DedicatedGetServiceMonitoringItemStruct $return = null)
+    public function __construct(\Ovh\StructType\DedicatedGetServiceMonitoringItemStruct $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\DedicatedGetServiceMonitoringItemStruct|null
+     * @return \Ovh\StructType\DedicatedGetServiceMonitoringItemStruct|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedGetServiceMonitoringItemResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\DedicatedGetServiceMonitoringItemStruct $return
-     * @return \PayPal\StructType\DedicatedGetServiceMonitoringItemResponse
+     * @param \Ovh\StructType\DedicatedGetServiceMonitoringItemStruct $return
+     * @return \Ovh\StructType\DedicatedGetServiceMonitoringItemResponse
      */
-    public function setReturn(\PayPal\StructType\DedicatedGetServiceMonitoringItemStruct $return = null)
+    public function setReturn(\Ovh\StructType\DedicatedGetServiceMonitoringItemStruct $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedGetServiceMonitoringItemResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedGetServiceMonitoringItemResponse
+     * @return \Ovh\StructType\DedicatedGetServiceMonitoringItemResponse
      */
     public static function __set_state(array $array)
     {

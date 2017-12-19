@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -99,7 +99,7 @@ class SqlpriveMysqlDatabaseImportFromHost extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseImportFromHost
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseImportFromHost
      */
     public function setSession($session = null)
     {
@@ -121,7 +121,7 @@ class SqlpriveMysqlDatabaseImportFromHost extends AbstractStructBase
     /**
      * Set server value
      * @param string $server
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseImportFromHost
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseImportFromHost
      */
     public function setServer($server = null)
     {
@@ -143,7 +143,7 @@ class SqlpriveMysqlDatabaseImportFromHost extends AbstractStructBase
     /**
      * Set database value
      * @param string $database
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseImportFromHost
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseImportFromHost
      */
     public function setDatabase($database = null)
     {
@@ -165,7 +165,7 @@ class SqlpriveMysqlDatabaseImportFromHost extends AbstractStructBase
     /**
      * Set foreignHost value
      * @param string $foreignHost
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseImportFromHost
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseImportFromHost
      */
     public function setForeignHost($foreignHost = null)
     {
@@ -187,7 +187,7 @@ class SqlpriveMysqlDatabaseImportFromHost extends AbstractStructBase
     /**
      * Set foreignUser value
      * @param string $foreignUser
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseImportFromHost
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseImportFromHost
      */
     public function setForeignUser($foreignUser = null)
     {
@@ -209,7 +209,7 @@ class SqlpriveMysqlDatabaseImportFromHost extends AbstractStructBase
     /**
      * Set foreignPassword value
      * @param string $foreignPassword
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseImportFromHost
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseImportFromHost
      */
     public function setForeignPassword($foreignPassword = null)
     {
@@ -231,7 +231,7 @@ class SqlpriveMysqlDatabaseImportFromHost extends AbstractStructBase
     /**
      * Set foreignDatabase value
      * @param string $foreignDatabase
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseImportFromHost
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseImportFromHost
      */
     public function setForeignDatabase($foreignDatabase = null)
     {
@@ -248,7 +248,7 @@ class SqlpriveMysqlDatabaseImportFromHost extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\SqlpriveMysqlDatabaseImportFromHost
+     * @return \Ovh\StructType\SqlpriveMysqlDatabaseImportFromHost
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -13,22 +13,22 @@ class DedicatedVirtualMacIpAvailableGetListResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \PayPal\StructType\DedicatedIpVirtualMacAvailableReturn
+     * @var \Ovh\StructType\DedicatedIpVirtualMacAvailableReturn
      */
     public $return;
     /**
      * Constructor method for dedicatedVirtualMacIpAvailableGetListResponse
      * @uses DedicatedVirtualMacIpAvailableGetListResponse::setReturn()
-     * @param \PayPal\StructType\DedicatedIpVirtualMacAvailableReturn $return
+     * @param \Ovh\StructType\DedicatedIpVirtualMacAvailableReturn $return
      */
-    public function __construct(\PayPal\StructType\DedicatedIpVirtualMacAvailableReturn $return = null)
+    public function __construct(\Ovh\StructType\DedicatedIpVirtualMacAvailableReturn $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \PayPal\StructType\DedicatedIpVirtualMacAvailableReturn|null
+     * @return \Ovh\StructType\DedicatedIpVirtualMacAvailableReturn|null
      */
     public function getReturn()
     {
@@ -36,10 +36,10 @@ class DedicatedVirtualMacIpAvailableGetListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \PayPal\StructType\DedicatedIpVirtualMacAvailableReturn $return
-     * @return \PayPal\StructType\DedicatedVirtualMacIpAvailableGetListResponse
+     * @param \Ovh\StructType\DedicatedIpVirtualMacAvailableReturn $return
+     * @return \Ovh\StructType\DedicatedVirtualMacIpAvailableGetListResponse
      */
-    public function setReturn(\PayPal\StructType\DedicatedIpVirtualMacAvailableReturn $return = null)
+    public function setReturn(\Ovh\StructType\DedicatedIpVirtualMacAvailableReturn $return = null)
     {
         $this->return = $return;
         return $this;
@@ -50,7 +50,7 @@ class DedicatedVirtualMacIpAvailableGetListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedVirtualMacIpAvailableGetListResponse
+     * @return \Ovh\StructType\DedicatedVirtualMacIpAvailableGetListResponse
      */
     public static function __set_state(array $array)
     {

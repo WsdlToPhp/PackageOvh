@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,12 +53,12 @@ class DedicatedNetworkStruct extends AbstractStructBase
     public $over;
     /**
      * The interfaces
-     * @var \PayPal\ArrayType\MyArrayOfDedicatedNetworkInterfaceStructType
+     * @var \Ovh\ArrayType\MyArrayOfDedicatedNetworkInterfaceStructType
      */
     public $interfaces;
     /**
      * The traffic
-     * @var \PayPal\StructType\DedicatedNetworkTrafficStruct
+     * @var \Ovh\StructType\DedicatedNetworkTrafficStruct
      */
     public $traffic;
     /**
@@ -81,10 +81,10 @@ class DedicatedNetworkStruct extends AbstractStructBase
      * @param int $bandwidthOvhToInternet
      * @param int $bandwidthInternetToOvh
      * @param bool $over
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedNetworkInterfaceStructType $interfaces
-     * @param \PayPal\StructType\DedicatedNetworkTrafficStruct $traffic
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedNetworkInterfaceStructType $interfaces
+     * @param \Ovh\StructType\DedicatedNetworkTrafficStruct $traffic
      */
-    public function __construct($type = null, $priority = null, $connexion = null, $bandwidth = null, $bandwidthOvhToOvh = null, $bandwidthOvhToInternet = null, $bandwidthInternetToOvh = null, $over = null, \PayPal\ArrayType\MyArrayOfDedicatedNetworkInterfaceStructType $interfaces = null, \PayPal\StructType\DedicatedNetworkTrafficStruct $traffic = null)
+    public function __construct($type = null, $priority = null, $connexion = null, $bandwidth = null, $bandwidthOvhToOvh = null, $bandwidthOvhToInternet = null, $bandwidthInternetToOvh = null, $over = null, \Ovh\ArrayType\MyArrayOfDedicatedNetworkInterfaceStructType $interfaces = null, \Ovh\StructType\DedicatedNetworkTrafficStruct $traffic = null)
     {
         $this
             ->setType($type)
@@ -109,7 +109,7 @@ class DedicatedNetworkStruct extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \PayPal\StructType\DedicatedNetworkStruct
+     * @return \Ovh\StructType\DedicatedNetworkStruct
      */
     public function setType($type = null)
     {
@@ -131,7 +131,7 @@ class DedicatedNetworkStruct extends AbstractStructBase
     /**
      * Set priority value
      * @param string $priority
-     * @return \PayPal\StructType\DedicatedNetworkStruct
+     * @return \Ovh\StructType\DedicatedNetworkStruct
      */
     public function setPriority($priority = null)
     {
@@ -153,7 +153,7 @@ class DedicatedNetworkStruct extends AbstractStructBase
     /**
      * Set connexion value
      * @param string $connexion
-     * @return \PayPal\StructType\DedicatedNetworkStruct
+     * @return \Ovh\StructType\DedicatedNetworkStruct
      */
     public function setConnexion($connexion = null)
     {
@@ -175,7 +175,7 @@ class DedicatedNetworkStruct extends AbstractStructBase
     /**
      * Set bandwidth value
      * @param int $bandwidth
-     * @return \PayPal\StructType\DedicatedNetworkStruct
+     * @return \Ovh\StructType\DedicatedNetworkStruct
      */
     public function setBandwidth($bandwidth = null)
     {
@@ -197,7 +197,7 @@ class DedicatedNetworkStruct extends AbstractStructBase
     /**
      * Set bandwidthOvhToOvh value
      * @param int $bandwidthOvhToOvh
-     * @return \PayPal\StructType\DedicatedNetworkStruct
+     * @return \Ovh\StructType\DedicatedNetworkStruct
      */
     public function setBandwidthOvhToOvh($bandwidthOvhToOvh = null)
     {
@@ -219,7 +219,7 @@ class DedicatedNetworkStruct extends AbstractStructBase
     /**
      * Set bandwidthOvhToInternet value
      * @param int $bandwidthOvhToInternet
-     * @return \PayPal\StructType\DedicatedNetworkStruct
+     * @return \Ovh\StructType\DedicatedNetworkStruct
      */
     public function setBandwidthOvhToInternet($bandwidthOvhToInternet = null)
     {
@@ -241,7 +241,7 @@ class DedicatedNetworkStruct extends AbstractStructBase
     /**
      * Set bandwidthInternetToOvh value
      * @param int $bandwidthInternetToOvh
-     * @return \PayPal\StructType\DedicatedNetworkStruct
+     * @return \Ovh\StructType\DedicatedNetworkStruct
      */
     public function setBandwidthInternetToOvh($bandwidthInternetToOvh = null)
     {
@@ -263,7 +263,7 @@ class DedicatedNetworkStruct extends AbstractStructBase
     /**
      * Set over value
      * @param bool $over
-     * @return \PayPal\StructType\DedicatedNetworkStruct
+     * @return \Ovh\StructType\DedicatedNetworkStruct
      */
     public function setOver($over = null)
     {
@@ -276,7 +276,7 @@ class DedicatedNetworkStruct extends AbstractStructBase
     }
     /**
      * Get interfaces value
-     * @return \PayPal\ArrayType\MyArrayOfDedicatedNetworkInterfaceStructType|null
+     * @return \Ovh\ArrayType\MyArrayOfDedicatedNetworkInterfaceStructType|null
      */
     public function getInterfaces()
     {
@@ -284,17 +284,17 @@ class DedicatedNetworkStruct extends AbstractStructBase
     }
     /**
      * Set interfaces value
-     * @param \PayPal\ArrayType\MyArrayOfDedicatedNetworkInterfaceStructType $interfaces
-     * @return \PayPal\StructType\DedicatedNetworkStruct
+     * @param \Ovh\ArrayType\MyArrayOfDedicatedNetworkInterfaceStructType $interfaces
+     * @return \Ovh\StructType\DedicatedNetworkStruct
      */
-    public function setInterfaces(\PayPal\ArrayType\MyArrayOfDedicatedNetworkInterfaceStructType $interfaces = null)
+    public function setInterfaces(\Ovh\ArrayType\MyArrayOfDedicatedNetworkInterfaceStructType $interfaces = null)
     {
         $this->interfaces = $interfaces;
         return $this;
     }
     /**
      * Get traffic value
-     * @return \PayPal\StructType\DedicatedNetworkTrafficStruct|null
+     * @return \Ovh\StructType\DedicatedNetworkTrafficStruct|null
      */
     public function getTraffic()
     {
@@ -302,10 +302,10 @@ class DedicatedNetworkStruct extends AbstractStructBase
     }
     /**
      * Set traffic value
-     * @param \PayPal\StructType\DedicatedNetworkTrafficStruct $traffic
-     * @return \PayPal\StructType\DedicatedNetworkStruct
+     * @param \Ovh\StructType\DedicatedNetworkTrafficStruct $traffic
+     * @return \Ovh\StructType\DedicatedNetworkStruct
      */
-    public function setTraffic(\PayPal\StructType\DedicatedNetworkTrafficStruct $traffic = null)
+    public function setTraffic(\Ovh\StructType\DedicatedNetworkTrafficStruct $traffic = null)
     {
         $this->traffic = $traffic;
         return $this;
@@ -316,7 +316,7 @@ class DedicatedNetworkStruct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\DedicatedNetworkStruct
+     * @return \Ovh\StructType\DedicatedNetworkStruct
      */
     public static function __set_state(array $array)
     {

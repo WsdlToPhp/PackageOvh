@@ -1,6 +1,6 @@
 <?php
 
-namespace PayPal\StructType;
+namespace Ovh\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class RedirectedEmailAdd extends AbstractStructBase
     /**
      * Set session value
      * @param string $session
-     * @return \PayPal\StructType\RedirectedEmailAdd
+     * @return \Ovh\StructType\RedirectedEmailAdd
      */
     public function setSession($session = null)
     {
@@ -111,7 +111,7 @@ class RedirectedEmailAdd extends AbstractStructBase
     /**
      * Set domain value
      * @param string $domain
-     * @return \PayPal\StructType\RedirectedEmailAdd
+     * @return \Ovh\StructType\RedirectedEmailAdd
      */
     public function setDomain($domain = null)
     {
@@ -133,7 +133,7 @@ class RedirectedEmailAdd extends AbstractStructBase
     /**
      * Set redirected value
      * @param string $redirected
-     * @return \PayPal\StructType\RedirectedEmailAdd
+     * @return \Ovh\StructType\RedirectedEmailAdd
      */
     public function setRedirected($redirected = null)
     {
@@ -155,7 +155,7 @@ class RedirectedEmailAdd extends AbstractStructBase
     /**
      * Set target value
      * @param string $target
-     * @return \PayPal\StructType\RedirectedEmailAdd
+     * @return \Ovh\StructType\RedirectedEmailAdd
      */
     public function setTarget($target = null)
     {
@@ -177,7 +177,7 @@ class RedirectedEmailAdd extends AbstractStructBase
     /**
      * Set subdomain value
      * @param string $subdomain
-     * @return \PayPal\StructType\RedirectedEmailAdd
+     * @return \Ovh\StructType\RedirectedEmailAdd
      */
     public function setSubdomain($subdomain = null)
     {
@@ -199,7 +199,7 @@ class RedirectedEmailAdd extends AbstractStructBase
     /**
      * Set localCopy value
      * @param bool $localCopy
-     * @return \PayPal\StructType\RedirectedEmailAdd
+     * @return \Ovh\StructType\RedirectedEmailAdd
      */
     public function setLocalCopy($localCopy = null)
     {
@@ -216,7 +216,7 @@ class RedirectedEmailAdd extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \PayPal\StructType\RedirectedEmailAdd
+     * @return \Ovh\StructType\RedirectedEmailAdd
      */
     public static function __set_state(array $array)
     {
