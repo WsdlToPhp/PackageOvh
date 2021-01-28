@@ -13,63 +13,63 @@ class DedicatedRipeCreateOrganisation extends AbstractStructBase
 {
     /**
      * The session
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $session;
     /**
      * The name
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $name;
     /**
      * The address
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $address;
     /**
      * The email
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $email;
     /**
      * The abuse
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $abuse;
     /**
      * The descr
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $descr;
     /**
      * The phone
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $phone;
     /**
      * The fax
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $fax;
     /**
      * The remarks
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
@@ -125,7 +125,7 @@ class DedicatedRipeCreateOrganisation extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($session) && !is_string($session)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($session)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($session, true), gettype($session)), __LINE__);
         }
         $this->session = $session;
         return $this;
@@ -147,7 +147,7 @@ class DedicatedRipeCreateOrganisation extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($name) && !is_string($name)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($name)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($name, true), gettype($name)), __LINE__);
         }
         $this->name = $name;
         return $this;
@@ -169,7 +169,7 @@ class DedicatedRipeCreateOrganisation extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($address) && !is_string($address)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($address)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($address, true), gettype($address)), __LINE__);
         }
         $this->address = $address;
         return $this;
@@ -191,7 +191,7 @@ class DedicatedRipeCreateOrganisation extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($email) && !is_string($email)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($email)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($email, true), gettype($email)), __LINE__);
         }
         $this->email = $email;
         return $this;
@@ -213,7 +213,7 @@ class DedicatedRipeCreateOrganisation extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($abuse) && !is_string($abuse)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($abuse)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($abuse, true), gettype($abuse)), __LINE__);
         }
         $this->abuse = $abuse;
         return $this;
@@ -235,7 +235,7 @@ class DedicatedRipeCreateOrganisation extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($descr) && !is_string($descr)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($descr)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($descr, true), gettype($descr)), __LINE__);
         }
         $this->descr = $descr;
         return $this;
@@ -257,7 +257,7 @@ class DedicatedRipeCreateOrganisation extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($phone) && !is_string($phone)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($phone)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($phone, true), gettype($phone)), __LINE__);
         }
         $this->phone = $phone;
         return $this;
@@ -279,7 +279,7 @@ class DedicatedRipeCreateOrganisation extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($fax) && !is_string($fax)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($fax)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($fax, true), gettype($fax)), __LINE__);
         }
         $this->fax = $fax;
         return $this;
@@ -301,29 +301,9 @@ class DedicatedRipeCreateOrganisation extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($remarks) && !is_string($remarks)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($remarks)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($remarks, true), gettype($remarks)), __LINE__);
         }
         $this->remarks = $remarks;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DedicatedRipeCreateOrganisation
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

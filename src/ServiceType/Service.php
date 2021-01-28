@@ -23,7 +23,9 @@ class Service extends SoapClientBase
     public function serviceGroupGetAllInfo(\Ovh\StructType\ServiceGroupGetAllInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->serviceGroupGetAllInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('serviceGroupGetAllInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Service extends SoapClientBase
     public function serviceGroupList(\Ovh\StructType\ServiceGroupList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->serviceGroupList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('serviceGroupList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Service extends SoapClientBase
     public function serviceListPaginated(\Ovh\StructType\ServiceListPaginated $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->serviceListPaginated($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('serviceListPaginated', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Service extends SoapClientBase
     public function serviceGroupCreate(\Ovh\StructType\ServiceGroupCreate $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->serviceGroupCreate($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('serviceGroupCreate', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -99,7 +107,9 @@ class Service extends SoapClientBase
     public function serviceModifyContact(\Ovh\StructType\ServiceModifyContact $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->serviceModifyContact($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('serviceModifyContact', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -118,7 +128,9 @@ class Service extends SoapClientBase
     public function serviceModifyOwner(\Ovh\StructType\ServiceModifyOwner $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->serviceModifyOwner($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('serviceModifyOwner', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -137,7 +149,9 @@ class Service extends SoapClientBase
     public function serviceModifyOwnerInfos(\Ovh\StructType\ServiceModifyOwnerInfos $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->serviceModifyOwnerInfos($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('serviceModifyOwnerInfos', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -156,7 +170,9 @@ class Service extends SoapClientBase
     public function serviceGroupDelete(\Ovh\StructType\ServiceGroupDelete $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->serviceGroupDelete($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('serviceGroupDelete', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -175,7 +191,9 @@ class Service extends SoapClientBase
     public function serviceList(\Ovh\StructType\ServiceList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->serviceList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('serviceList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -194,7 +212,9 @@ class Service extends SoapClientBase
     public function serviceGroupSetComment(\Ovh\StructType\ServiceGroupSetComment $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->serviceGroupSetComment($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('serviceGroupSetComment', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -213,7 +233,9 @@ class Service extends SoapClientBase
     public function serviceGroupRemoveService(\Ovh\StructType\ServiceGroupRemoveService $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->serviceGroupRemoveService($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('serviceGroupRemoveService', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -232,7 +254,9 @@ class Service extends SoapClientBase
     public function serviceFreedomList(\Ovh\StructType\ServiceFreedomList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->serviceFreedomList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('serviceFreedomList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -251,7 +275,9 @@ class Service extends SoapClientBase
     public function serviceGroupSetName(\Ovh\StructType\ServiceGroupSetName $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->serviceGroupSetName($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('serviceGroupSetName', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -270,7 +296,9 @@ class Service extends SoapClientBase
     public function serviceGroupInfo(\Ovh\StructType\ServiceGroupInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->serviceGroupInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('serviceGroupInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -289,7 +317,9 @@ class Service extends SoapClientBase
     public function serviceGroupAddService(\Ovh\StructType\ServiceGroupAddService $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->serviceGroupAddService($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('serviceGroupAddService', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -304,13 +334,5 @@ class Service extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

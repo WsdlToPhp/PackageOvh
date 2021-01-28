@@ -23,7 +23,9 @@ class Login extends SoapClientBase
     public function login(\Ovh\StructType\Login $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->login($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('login', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -38,13 +40,5 @@ class Login extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

@@ -98,8 +98,8 @@ class SqlpriveMysqlProcessStruct extends AbstractStructBase
     public function setId($id = null)
     {
         // validation for constraint: int
-        if (!is_null($id) && !is_numeric($id)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($id)), __LINE__);
+        if (!is_null($id) && !(is_int($id) || ctype_digit($id))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($id, true), gettype($id)), __LINE__);
         }
         $this->id = $id;
         return $this;
@@ -121,7 +121,7 @@ class SqlpriveMysqlProcessStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($user) && !is_string($user)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($user)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($user, true), gettype($user)), __LINE__);
         }
         $this->user = $user;
         return $this;
@@ -143,7 +143,7 @@ class SqlpriveMysqlProcessStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($host) && !is_string($host)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($host)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($host, true), gettype($host)), __LINE__);
         }
         $this->host = $host;
         return $this;
@@ -165,7 +165,7 @@ class SqlpriveMysqlProcessStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($database) && !is_string($database)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($database)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($database, true), gettype($database)), __LINE__);
         }
         $this->database = $database;
         return $this;
@@ -187,7 +187,7 @@ class SqlpriveMysqlProcessStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($query) && !is_string($query)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($query)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($query, true), gettype($query)), __LINE__);
         }
         $this->query = $query;
         return $this;
@@ -209,7 +209,7 @@ class SqlpriveMysqlProcessStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($time) && !is_string($time)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($time)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($time, true), gettype($time)), __LINE__);
         }
         $this->time = $time;
         return $this;
@@ -231,7 +231,7 @@ class SqlpriveMysqlProcessStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($state) && !is_string($state)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($state)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($state, true), gettype($state)), __LINE__);
         }
         $this->state = $state;
         return $this;
@@ -253,29 +253,9 @@ class SqlpriveMysqlProcessStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($request) && !is_string($request)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($request)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($request, true), gettype($request)), __LINE__);
         }
         $this->request = $request;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\SqlpriveMysqlProcessStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

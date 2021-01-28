@@ -91,7 +91,7 @@ class BillingInvoiceInfoPayementStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($finaldate) && !is_string($finaldate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($finaldate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($finaldate, true), gettype($finaldate)), __LINE__);
         }
         $this->finaldate = $finaldate;
         return $this;
@@ -113,7 +113,7 @@ class BillingInvoiceInfoPayementStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($deposit_date) && !is_string($deposit_date)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($deposit_date)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($deposit_date, true), gettype($deposit_date)), __LINE__);
         }
         $this->deposit_date = $deposit_date;
         return $this;
@@ -135,7 +135,7 @@ class BillingInvoiceInfoPayementStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($status) && !is_string($status)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($status)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($status, true), gettype($status)), __LINE__);
         }
         $this->status = $status;
         return $this;
@@ -157,7 +157,7 @@ class BillingInvoiceInfoPayementStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($customerid) && !is_string($customerid)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($customerid)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerid, true), gettype($customerid)), __LINE__);
         }
         $this->customerid = $customerid;
         return $this;
@@ -179,7 +179,7 @@ class BillingInvoiceInfoPayementStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($paymentmean) && !is_string($paymentmean)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($paymentmean)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($paymentmean, true), gettype($paymentmean)), __LINE__);
         }
         $this->paymentmean = $paymentmean;
         return $this;
@@ -201,7 +201,7 @@ class BillingInvoiceInfoPayementStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($paymentdate) && !is_string($paymentdate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($paymentdate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($paymentdate, true), gettype($paymentdate)), __LINE__);
         }
         $this->paymentdate = $paymentdate;
         return $this;
@@ -222,30 +222,10 @@ class BillingInvoiceInfoPayementStruct extends AbstractStructBase
     public function setOrderid($orderid = null)
     {
         // validation for constraint: int
-        if (!is_null($orderid) && !is_numeric($orderid)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($orderid)), __LINE__);
+        if (!is_null($orderid) && !(is_int($orderid) || ctype_digit($orderid))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($orderid, true), gettype($orderid)), __LINE__);
         }
         $this->orderid = $orderid;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\BillingInvoiceInfoPayementStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

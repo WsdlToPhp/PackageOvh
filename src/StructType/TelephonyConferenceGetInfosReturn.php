@@ -58,8 +58,8 @@ class TelephonyConferenceGetInfosReturn extends AbstractStructBase
     public function setParties($parties = null)
     {
         // validation for constraint: int
-        if (!is_null($parties) && !is_numeric($parties)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($parties)), __LINE__);
+        if (!is_null($parties) && !(is_int($parties) || ctype_digit($parties))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($parties, true), gettype($parties)), __LINE__);
         }
         $this->parties = $parties;
         return $this;
@@ -81,7 +81,7 @@ class TelephonyConferenceGetInfosReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($locked) && !is_bool($locked)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($locked)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($locked, true), gettype($locked)), __LINE__);
         }
         $this->locked = $locked;
         return $this;
@@ -103,25 +103,5 @@ class TelephonyConferenceGetInfosReturn extends AbstractStructBase
     {
         $this->participants = $participants;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyConferenceGetInfosReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

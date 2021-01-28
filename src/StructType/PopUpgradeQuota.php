@@ -13,28 +13,28 @@ class PopUpgradeQuota extends AbstractStructBase
 {
     /**
      * The session
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $session;
     /**
      * The domain
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $domain;
     /**
      * The pop
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $pop;
     /**
      * The size
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var int
      */
@@ -75,7 +75,7 @@ class PopUpgradeQuota extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($session) && !is_string($session)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($session)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($session, true), gettype($session)), __LINE__);
         }
         $this->session = $session;
         return $this;
@@ -97,7 +97,7 @@ class PopUpgradeQuota extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($domain) && !is_string($domain)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($domain)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($domain, true), gettype($domain)), __LINE__);
         }
         $this->domain = $domain;
         return $this;
@@ -119,7 +119,7 @@ class PopUpgradeQuota extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($pop) && !is_string($pop)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($pop)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($pop, true), gettype($pop)), __LINE__);
         }
         $this->pop = $pop;
         return $this;
@@ -140,30 +140,10 @@ class PopUpgradeQuota extends AbstractStructBase
     public function setSize($size = null)
     {
         // validation for constraint: int
-        if (!is_null($size) && !is_numeric($size)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($size)), __LINE__);
+        if (!is_null($size) && !(is_int($size) || ctype_digit($size))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($size, true), gettype($size)), __LINE__);
         }
         $this->size = $size;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\PopUpgradeQuota
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

@@ -67,7 +67,7 @@ class TelephonyVoicemailMessagesStatusReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($unavailable) && !is_bool($unavailable)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($unavailable)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($unavailable, true), gettype($unavailable)), __LINE__);
         }
         $this->unavailable = $unavailable;
         return $this;
@@ -89,7 +89,7 @@ class TelephonyVoicemailMessagesStatusReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($busy) && !is_bool($busy)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($busy)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($busy, true), gettype($busy)), __LINE__);
         }
         $this->busy = $busy;
         return $this;
@@ -111,7 +111,7 @@ class TelephonyVoicemailMessagesStatusReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($temp) && !is_bool($temp)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($temp)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($temp, true), gettype($temp)), __LINE__);
         }
         $this->temp = $temp;
         return $this;
@@ -133,29 +133,9 @@ class TelephonyVoicemailMessagesStatusReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($greet) && !is_bool($greet)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($greet)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($greet, true), gettype($greet)), __LINE__);
         }
         $this->greet = $greet;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyVoicemailMessagesStatusReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

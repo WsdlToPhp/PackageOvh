@@ -67,7 +67,7 @@ class TelephonyDdiInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($number) && !is_string($number)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($number)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($number, true), gettype($number)), __LINE__);
         }
         $this->number = $number;
         return $this;
@@ -89,7 +89,7 @@ class TelephonyDdiInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($country) && !is_string($country)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($country)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($country, true), gettype($country)), __LINE__);
         }
         $this->country = $country;
         return $this;
@@ -110,8 +110,8 @@ class TelephonyDdiInfoReturn extends AbstractStructBase
     public function setNoReplyTimer($noReplyTimer = null)
     {
         // validation for constraint: int
-        if (!is_null($noReplyTimer) && !is_numeric($noReplyTimer)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($noReplyTimer)), __LINE__);
+        if (!is_null($noReplyTimer) && !(is_int($noReplyTimer) || ctype_digit($noReplyTimer))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($noReplyTimer, true), gettype($noReplyTimer)), __LINE__);
         }
         $this->noReplyTimer = $noReplyTimer;
         return $this;
@@ -133,29 +133,9 @@ class TelephonyDdiInfoReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($logged) && !is_bool($logged)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($logged)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($logged, true), gettype($logged)), __LINE__);
         }
         $this->logged = $logged;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyDdiInfoReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

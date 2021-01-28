@@ -131,7 +131,7 @@ class DedicatedInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($hostname) && !is_string($hostname)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($hostname)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($hostname, true), gettype($hostname)), __LINE__);
         }
         $this->hostname = $hostname;
         return $this;
@@ -153,7 +153,7 @@ class DedicatedInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($datacenter) && !is_string($datacenter)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($datacenter)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($datacenter, true), gettype($datacenter)), __LINE__);
         }
         $this->datacenter = $datacenter;
         return $this;
@@ -175,7 +175,7 @@ class DedicatedInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($os) && !is_string($os)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($os)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($os, true), gettype($os)), __LINE__);
         }
         $this->os = $os;
         return $this;
@@ -197,7 +197,7 @@ class DedicatedInfoReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($isKimSufi) && !is_bool($isKimSufi)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($isKimSufi)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isKimSufi, true), gettype($isKimSufi)), __LINE__);
         }
         $this->isKimSufi = $isKimSufi;
         return $this;
@@ -219,7 +219,7 @@ class DedicatedInfoReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($isRPS) && !is_bool($isRPS)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($isRPS)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isRPS, true), gettype($isRPS)), __LINE__);
         }
         $this->isRPS = $isRPS;
         return $this;
@@ -241,7 +241,7 @@ class DedicatedInfoReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($isHG) && !is_bool($isHG)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($isHG)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isHG, true), gettype($isHG)), __LINE__);
         }
         $this->isHG = $isHG;
         return $this;
@@ -262,8 +262,8 @@ class DedicatedInfoReturn extends AbstractStructBase
     public function setNum($num = null)
     {
         // validation for constraint: int
-        if (!is_null($num) && !is_numeric($num)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($num)), __LINE__);
+        if (!is_null($num) && !(is_int($num) || ctype_digit($num))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($num, true), gettype($num)), __LINE__);
         }
         $this->num = $num;
         return $this;
@@ -285,7 +285,7 @@ class DedicatedInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($rack) && !is_string($rack)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($rack)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($rack, true), gettype($rack)), __LINE__);
         }
         $this->rack = $rack;
         return $this;
@@ -307,7 +307,7 @@ class DedicatedInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($countryBilling) && !is_string($countryBilling)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($countryBilling)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($countryBilling, true), gettype($countryBilling)), __LINE__);
         }
         $this->countryBilling = $countryBilling;
         return $this;
@@ -365,25 +365,5 @@ class DedicatedInfoReturn extends AbstractStructBase
     {
         $this->freeDom = $freeDom;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DedicatedInfoReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

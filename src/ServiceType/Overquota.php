@@ -23,7 +23,9 @@ class Overquota extends SoapClientBase
     public function overquotaInfo(\Ovh\StructType\OverquotaInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->overquotaInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('overquotaInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -38,13 +40,5 @@ class Overquota extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

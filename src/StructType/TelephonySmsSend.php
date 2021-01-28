@@ -13,84 +13,84 @@ class TelephonySmsSend extends AbstractStructBase
 {
     /**
      * The session
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $session;
     /**
      * The smsAccount
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $smsAccount;
     /**
      * The numberFrom
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $numberFrom;
     /**
      * The numberTo
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $numberTo;
     /**
      * The message
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $message;
     /**
      * The smsValidity
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var int
      */
     public $smsValidity;
     /**
      * The smsClass
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var int
      */
     public $smsClass;
     /**
      * The smsDeferred
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var int
      */
     public $smsDeferred;
     /**
      * The smsPriority
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var int
      */
     public $smsPriority;
     /**
      * The smsCoding
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var int
      */
     public $smsCoding;
     /**
      * The tag
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $tag;
     /**
      * The noStop
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var bool
      */
@@ -155,7 +155,7 @@ class TelephonySmsSend extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($session) && !is_string($session)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($session)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($session, true), gettype($session)), __LINE__);
         }
         $this->session = $session;
         return $this;
@@ -177,7 +177,7 @@ class TelephonySmsSend extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($smsAccount) && !is_string($smsAccount)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($smsAccount)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($smsAccount, true), gettype($smsAccount)), __LINE__);
         }
         $this->smsAccount = $smsAccount;
         return $this;
@@ -199,7 +199,7 @@ class TelephonySmsSend extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($numberFrom) && !is_string($numberFrom)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($numberFrom)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($numberFrom, true), gettype($numberFrom)), __LINE__);
         }
         $this->numberFrom = $numberFrom;
         return $this;
@@ -221,7 +221,7 @@ class TelephonySmsSend extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($numberTo) && !is_string($numberTo)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($numberTo)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($numberTo, true), gettype($numberTo)), __LINE__);
         }
         $this->numberTo = $numberTo;
         return $this;
@@ -243,7 +243,7 @@ class TelephonySmsSend extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($message) && !is_string($message)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($message)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($message, true), gettype($message)), __LINE__);
         }
         $this->message = $message;
         return $this;
@@ -264,8 +264,8 @@ class TelephonySmsSend extends AbstractStructBase
     public function setSmsValidity($smsValidity = null)
     {
         // validation for constraint: int
-        if (!is_null($smsValidity) && !is_numeric($smsValidity)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($smsValidity)), __LINE__);
+        if (!is_null($smsValidity) && !(is_int($smsValidity) || ctype_digit($smsValidity))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($smsValidity, true), gettype($smsValidity)), __LINE__);
         }
         $this->smsValidity = $smsValidity;
         return $this;
@@ -286,8 +286,8 @@ class TelephonySmsSend extends AbstractStructBase
     public function setSmsClass($smsClass = null)
     {
         // validation for constraint: int
-        if (!is_null($smsClass) && !is_numeric($smsClass)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($smsClass)), __LINE__);
+        if (!is_null($smsClass) && !(is_int($smsClass) || ctype_digit($smsClass))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($smsClass, true), gettype($smsClass)), __LINE__);
         }
         $this->smsClass = $smsClass;
         return $this;
@@ -308,8 +308,8 @@ class TelephonySmsSend extends AbstractStructBase
     public function setSmsDeferred($smsDeferred = null)
     {
         // validation for constraint: int
-        if (!is_null($smsDeferred) && !is_numeric($smsDeferred)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($smsDeferred)), __LINE__);
+        if (!is_null($smsDeferred) && !(is_int($smsDeferred) || ctype_digit($smsDeferred))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($smsDeferred, true), gettype($smsDeferred)), __LINE__);
         }
         $this->smsDeferred = $smsDeferred;
         return $this;
@@ -330,8 +330,8 @@ class TelephonySmsSend extends AbstractStructBase
     public function setSmsPriority($smsPriority = null)
     {
         // validation for constraint: int
-        if (!is_null($smsPriority) && !is_numeric($smsPriority)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($smsPriority)), __LINE__);
+        if (!is_null($smsPriority) && !(is_int($smsPriority) || ctype_digit($smsPriority))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($smsPriority, true), gettype($smsPriority)), __LINE__);
         }
         $this->smsPriority = $smsPriority;
         return $this;
@@ -352,8 +352,8 @@ class TelephonySmsSend extends AbstractStructBase
     public function setSmsCoding($smsCoding = null)
     {
         // validation for constraint: int
-        if (!is_null($smsCoding) && !is_numeric($smsCoding)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($smsCoding)), __LINE__);
+        if (!is_null($smsCoding) && !(is_int($smsCoding) || ctype_digit($smsCoding))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($smsCoding, true), gettype($smsCoding)), __LINE__);
         }
         $this->smsCoding = $smsCoding;
         return $this;
@@ -375,7 +375,7 @@ class TelephonySmsSend extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($tag) && !is_string($tag)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($tag)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($tag, true), gettype($tag)), __LINE__);
         }
         $this->tag = $tag;
         return $this;
@@ -397,29 +397,9 @@ class TelephonySmsSend extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($noStop) && !is_bool($noStop)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($noStop)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($noStop, true), gettype($noStop)), __LINE__);
         }
         $this->noStop = $noStop;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonySmsSend
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

@@ -67,7 +67,7 @@ class RpsMigrationGetProgressStatusStepStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($comment) && !is_string($comment)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($comment)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($comment, true), gettype($comment)), __LINE__);
         }
         $this->comment = $comment;
         return $this;
@@ -88,8 +88,8 @@ class RpsMigrationGetProgressStatusStepStruct extends AbstractStructBase
     public function setTime($time = null)
     {
         // validation for constraint: int
-        if (!is_null($time) && !is_numeric($time)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($time)), __LINE__);
+        if (!is_null($time) && !(is_int($time) || ctype_digit($time))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($time, true), gettype($time)), __LINE__);
         }
         $this->time = $time;
         return $this;
@@ -111,7 +111,7 @@ class RpsMigrationGetProgressStatusStepStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($status) && !is_string($status)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($status)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($status, true), gettype($status)), __LINE__);
         }
         $this->status = $status;
         return $this;
@@ -133,29 +133,9 @@ class RpsMigrationGetProgressStatusStepStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($error) && !is_string($error)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($error)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($error, true), gettype($error)), __LINE__);
         }
         $this->error = $error;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\RpsMigrationGetProgressStatusStepStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

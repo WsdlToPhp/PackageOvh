@@ -67,7 +67,7 @@ class TelephonyHuntingGenericScreenOptionsStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($callForward) && !is_string($callForward)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($callForward)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($callForward, true), gettype($callForward)), __LINE__);
         }
         $this->callForward = $callForward;
         return $this;
@@ -89,7 +89,7 @@ class TelephonyHuntingGenericScreenOptionsStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($voicemail) && !is_string($voicemail)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($voicemail)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($voicemail, true), gettype($voicemail)), __LINE__);
         }
         $this->voicemail = $voicemail;
         return $this;
@@ -111,7 +111,7 @@ class TelephonyHuntingGenericScreenOptionsStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($index) && !is_string($index)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($index)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($index, true), gettype($index)), __LINE__);
         }
         $this->index = $index;
         return $this;
@@ -133,29 +133,9 @@ class TelephonyHuntingGenericScreenOptionsStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($timeout) && !is_string($timeout)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($timeout)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($timeout, true), gettype($timeout)), __LINE__);
         }
         $this->timeout = $timeout;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyHuntingGenericScreenOptionsStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

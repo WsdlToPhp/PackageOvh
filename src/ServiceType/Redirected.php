@@ -23,7 +23,9 @@ class Redirected extends SoapClientBase
     public function redirectedEmailAdd(\Ovh\StructType\RedirectedEmailAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->redirectedEmailAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('redirectedEmailAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Redirected extends SoapClientBase
     public function redirectedEmailModify(\Ovh\StructType\RedirectedEmailModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->redirectedEmailModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('redirectedEmailModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Redirected extends SoapClientBase
     public function redirectedEmailDel(\Ovh\StructType\RedirectedEmailDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->redirectedEmailDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('redirectedEmailDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Redirected extends SoapClientBase
     public function redirectedEmailList(\Ovh\StructType\RedirectedEmailList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->redirectedEmailList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('redirectedEmailList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -95,13 +103,5 @@ class Redirected extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

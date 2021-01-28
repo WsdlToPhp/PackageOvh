@@ -195,7 +195,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($name) && !is_string($name)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($name)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($name, true), gettype($name)), __LINE__);
         }
         $this->name = $name;
         return $this;
@@ -216,8 +216,8 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     public function setWebspace($webspace = null)
     {
         // validation for constraint: int
-        if (!is_null($webspace) && !is_numeric($webspace)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($webspace)), __LINE__);
+        if (!is_null($webspace) && !(is_int($webspace) || ctype_digit($webspace))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($webspace, true), gettype($webspace)), __LINE__);
         }
         $this->webspace = $webspace;
         return $this;
@@ -239,7 +239,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($traffic) && !is_string($traffic)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($traffic)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($traffic, true), gettype($traffic)), __LINE__);
         }
         $this->traffic = $traffic;
         return $this;
@@ -260,8 +260,8 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     public function setDatabases($databases = null)
     {
         // validation for constraint: int
-        if (!is_null($databases) && !is_numeric($databases)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($databases)), __LINE__);
+        if (!is_null($databases) && !(is_int($databases) || ctype_digit($databases))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($databases, true), gettype($databases)), __LINE__);
         }
         $this->databases = $databases;
         return $this;
@@ -282,8 +282,8 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     public function setDatabaseSpace($databaseSpace = null)
     {
         // validation for constraint: int
-        if (!is_null($databaseSpace) && !is_numeric($databaseSpace)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($databaseSpace)), __LINE__);
+        if (!is_null($databaseSpace) && !(is_int($databaseSpace) || ctype_digit($databaseSpace))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($databaseSpace, true), gettype($databaseSpace)), __LINE__);
         }
         $this->databaseSpace = $databaseSpace;
         return $this;
@@ -304,8 +304,8 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     public function setMultidomains($multidomains = null)
     {
         // validation for constraint: int
-        if (!is_null($multidomains) && !is_numeric($multidomains)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($multidomains)), __LINE__);
+        if (!is_null($multidomains) && !(is_int($multidomains) || ctype_digit($multidomains))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($multidomains, true), gettype($multidomains)), __LINE__);
         }
         $this->multidomains = $multidomains;
         return $this;
@@ -326,8 +326,8 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     public function setSubdomains($subdomains = null)
     {
         // validation for constraint: int
-        if (!is_null($subdomains) && !is_numeric($subdomains)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($subdomains)), __LINE__);
+        if (!is_null($subdomains) && !(is_int($subdomains) || ctype_digit($subdomains))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($subdomains, true), gettype($subdomains)), __LINE__);
         }
         $this->subdomains = $subdomains;
         return $this;
@@ -348,8 +348,8 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     public function setStreaming($streaming = null)
     {
         // validation for constraint: int
-        if (!is_null($streaming) && !is_numeric($streaming)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($streaming)), __LINE__);
+        if (!is_null($streaming) && !(is_int($streaming) || ctype_digit($streaming))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($streaming, true), gettype($streaming)), __LINE__);
         }
         $this->streaming = $streaming;
         return $this;
@@ -370,8 +370,8 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     public function setMultiftp($multiftp = null)
     {
         // validation for constraint: int
-        if (!is_null($multiftp) && !is_numeric($multiftp)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($multiftp)), __LINE__);
+        if (!is_null($multiftp) && !(is_int($multiftp) || ctype_digit($multiftp))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($multiftp, true), gettype($multiftp)), __LINE__);
         }
         $this->multiftp = $multiftp;
         return $this;
@@ -392,8 +392,8 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     public function setAnonymousftp($anonymousftp = null)
     {
         // validation for constraint: int
-        if (!is_null($anonymousftp) && !is_numeric($anonymousftp)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($anonymousftp)), __LINE__);
+        if (!is_null($anonymousftp) && !(is_int($anonymousftp) || ctype_digit($anonymousftp))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($anonymousftp, true), gettype($anonymousftp)), __LINE__);
         }
         $this->anonymousftp = $anonymousftp;
         return $this;
@@ -414,8 +414,8 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     public function setFreeDomPerYear($freeDomPerYear = null)
     {
         // validation for constraint: int
-        if (!is_null($freeDomPerYear) && !is_numeric($freeDomPerYear)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($freeDomPerYear)), __LINE__);
+        if (!is_null($freeDomPerYear) && !(is_int($freeDomPerYear) || ctype_digit($freeDomPerYear))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($freeDomPerYear, true), gettype($freeDomPerYear)), __LINE__);
         }
         $this->freeDomPerYear = $freeDomPerYear;
         return $this;
@@ -436,8 +436,8 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     public function setFreeDomMax($freeDomMax = null)
     {
         // validation for constraint: int
-        if (!is_null($freeDomMax) && !is_numeric($freeDomMax)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($freeDomMax)), __LINE__);
+        if (!is_null($freeDomMax) && !(is_int($freeDomMax) || ctype_digit($freeDomMax))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($freeDomMax, true), gettype($freeDomMax)), __LINE__);
         }
         $this->freeDomMax = $freeDomMax;
         return $this;
@@ -459,7 +459,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($sharedSSL) && !is_bool($sharedSSL)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($sharedSSL)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($sharedSSL, true), gettype($sharedSSL)), __LINE__);
         }
         $this->sharedSSL = $sharedSSL;
         return $this;
@@ -481,7 +481,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($ssh) && !is_bool($ssh)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($ssh)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($ssh, true), gettype($ssh)), __LINE__);
         }
         $this->ssh = $ssh;
         return $this;
@@ -503,7 +503,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($geoloc) && !is_bool($geoloc)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($geoloc)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($geoloc, true), gettype($geoloc)), __LINE__);
         }
         $this->geoloc = $geoloc;
         return $this;
@@ -525,7 +525,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($cgi) && !is_bool($cgi)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($cgi)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($cgi, true), gettype($cgi)), __LINE__);
         }
         $this->cgi = $cgi;
         return $this;
@@ -547,7 +547,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($crontab) && !is_bool($crontab)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($crontab)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($crontab, true), gettype($crontab)), __LINE__);
         }
         $this->crontab = $crontab;
         return $this;
@@ -569,7 +569,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($sip) && !is_bool($sip)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($sip)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($sip, true), gettype($sip)), __LINE__);
         }
         $this->sip = $sip;
         return $this;
@@ -591,7 +591,7 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($vpn) && !is_bool($vpn)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($vpn)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($vpn, true), gettype($vpn)), __LINE__);
         }
         $this->vpn = $vpn;
         return $this;
@@ -613,29 +613,9 @@ class HostingGetCapabilitiesReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($jabber) && !is_bool($jabber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($jabber)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($jabber, true), gettype($jabber)), __LINE__);
         }
         $this->jabber = $jabber;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\HostingGetCapabilitiesReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

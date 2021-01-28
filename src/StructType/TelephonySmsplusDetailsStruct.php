@@ -171,7 +171,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($shortCodeCategory) && !is_string($shortCodeCategory)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($shortCodeCategory)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shortCodeCategory, true), gettype($shortCodeCategory)), __LINE__);
         }
         $this->shortCodeCategory = $shortCodeCategory;
         return $this;
@@ -193,7 +193,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($shortCode) && !is_string($shortCode)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($shortCode)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shortCode, true), gettype($shortCode)), __LINE__);
         }
         $this->shortCode = $shortCode;
         return $this;
@@ -215,7 +215,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($keyword) && !is_string($keyword)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($keyword)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($keyword, true), gettype($keyword)), __LINE__);
         }
         $this->keyword = $keyword;
         return $this;
@@ -237,7 +237,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($domain) && !is_string($domain)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($domain)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($domain, true), gettype($domain)), __LINE__);
         }
         $this->domain = $domain;
         return $this;
@@ -259,7 +259,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($publicType) && !is_string($publicType)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($publicType)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($publicType, true), gettype($publicType)), __LINE__);
         }
         $this->publicType = $publicType;
         return $this;
@@ -279,6 +279,10 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
      */
     public function setPrice($price = null)
     {
+        // validation for constraint: float
+        if (!is_null($price) && !(is_float($price) || is_numeric($price))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($price, true), gettype($price)), __LINE__);
+        }
         $this->price = $price;
         return $this;
     }
@@ -297,6 +301,10 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
      */
     public function setPriceReversed($priceReversed = null)
     {
+        // validation for constraint: float
+        if (!is_null($priceReversed) && !(is_float($priceReversed) || is_numeric($priceReversed))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($priceReversed, true), gettype($priceReversed)), __LINE__);
+        }
         $this->priceReversed = $priceReversed;
         return $this;
     }
@@ -317,7 +325,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($rates) && !is_string($rates)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($rates)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($rates, true), gettype($rates)), __LINE__);
         }
         $this->rates = $rates;
         return $this;
@@ -339,7 +347,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($level) && !is_string($level)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($level)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($level, true), gettype($level)), __LINE__);
         }
         $this->level = $level;
         return $this;
@@ -361,7 +369,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($company) && !is_string($company)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($company)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($company, true), gettype($company)), __LINE__);
         }
         $this->company = $company;
         return $this;
@@ -383,7 +391,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($applicationDescription) && !is_string($applicationDescription)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($applicationDescription)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($applicationDescription, true), gettype($applicationDescription)), __LINE__);
         }
         $this->applicationDescription = $applicationDescription;
         return $this;
@@ -405,7 +413,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($applicationType) && !is_string($applicationType)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($applicationType)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($applicationType, true), gettype($applicationType)), __LINE__);
         }
         $this->applicationType = $applicationType;
         return $this;
@@ -427,7 +435,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($cgiUrl) && !is_string($cgiUrl)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($cgiUrl)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($cgiUrl, true), gettype($cgiUrl)), __LINE__);
         }
         $this->cgiUrl = $cgiUrl;
         return $this;
@@ -449,7 +457,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($text) && !is_string($text)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($text)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($text, true), gettype($text)), __LINE__);
         }
         $this->text = $text;
         return $this;
@@ -471,7 +479,7 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($cgiActivation) && !is_bool($cgiActivation)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($cgiActivation)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($cgiActivation, true), gettype($cgiActivation)), __LINE__);
         }
         $this->cgiActivation = $cgiActivation;
         return $this;
@@ -511,29 +519,9 @@ class TelephonySmsplusDetailsStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($description) && !is_string($description)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($description)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($description, true), gettype($description)), __LINE__);
         }
         $this->description = $description;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonySmsplusDetailsStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

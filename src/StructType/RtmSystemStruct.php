@@ -99,7 +99,7 @@ class RtmSystemStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($last_update) && !is_string($last_update)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($last_update)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($last_update, true), gettype($last_update)), __LINE__);
         }
         $this->last_update = $last_update;
         return $this;
@@ -121,7 +121,7 @@ class RtmSystemStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($ip) && !is_string($ip)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($ip)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ip, true), gettype($ip)), __LINE__);
         }
         $this->ip = $ip;
         return $this;
@@ -143,7 +143,7 @@ class RtmSystemStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($hostname) && !is_string($hostname)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($hostname)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($hostname, true), gettype($hostname)), __LINE__);
         }
         $this->hostname = $hostname;
         return $this;
@@ -164,8 +164,8 @@ class RtmSystemStruct extends AbstractStructBase
     public function setUptime($uptime = null)
     {
         // validation for constraint: int
-        if (!is_null($uptime) && !is_numeric($uptime)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($uptime)), __LINE__);
+        if (!is_null($uptime) && !(is_int($uptime) || ctype_digit($uptime))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($uptime, true), gettype($uptime)), __LINE__);
         }
         $this->uptime = $uptime;
         return $this;
@@ -187,7 +187,7 @@ class RtmSystemStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($freshest_file_date) && !is_string($freshest_file_date)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($freshest_file_date)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($freshest_file_date, true), gettype($freshest_file_date)), __LINE__);
         }
         $this->freshest_file_date = $freshest_file_date;
         return $this;
@@ -245,25 +245,5 @@ class RtmSystemStruct extends AbstractStructBase
     {
         $this->kernel = $kernel;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\RtmSystemStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

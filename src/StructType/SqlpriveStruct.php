@@ -83,7 +83,7 @@ class SqlpriveStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($server) && !is_string($server)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($server)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($server, true), gettype($server)), __LINE__);
         }
         $this->server = $server;
         return $this;
@@ -105,7 +105,7 @@ class SqlpriveStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($expiration) && !is_string($expiration)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($expiration)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($expiration, true), gettype($expiration)), __LINE__);
         }
         $this->expiration = $expiration;
         return $this;
@@ -127,7 +127,7 @@ class SqlpriveStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($memory) && !is_string($memory)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($memory)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($memory, true), gettype($memory)), __LINE__);
         }
         $this->memory = $memory;
         return $this;
@@ -149,7 +149,7 @@ class SqlpriveStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($ip) && !is_string($ip)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($ip)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ip, true), gettype($ip)), __LINE__);
         }
         $this->ip = $ip;
         return $this;
@@ -171,7 +171,7 @@ class SqlpriveStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($type) && !is_string($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($type)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($type, true), gettype($type)), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -193,29 +193,9 @@ class SqlpriveStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($version) && !is_string($version)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($version)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($version, true), gettype($version)), __LINE__);
         }
         $this->version = $version;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\SqlpriveStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

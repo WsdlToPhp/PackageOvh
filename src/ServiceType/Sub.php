@@ -23,7 +23,9 @@ class Sub extends SoapClientBase
     public function subDomainDel(\Ovh\StructType\SubDomainDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->subDomainDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('subDomainDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Sub extends SoapClientBase
     public function subDomainModify(\Ovh\StructType\SubDomainModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->subDomainModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('subDomainModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Sub extends SoapClientBase
     public function subDomainAdd(\Ovh\StructType\SubDomainAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->subDomainAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('subDomainAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Sub extends SoapClientBase
     public function subDomainList(\Ovh\StructType\SubDomainList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->subDomainList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('subDomainList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -95,13 +103,5 @@ class Sub extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

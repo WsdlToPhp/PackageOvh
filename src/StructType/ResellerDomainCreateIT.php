@@ -13,175 +13,175 @@ class ResellerDomainCreateIT extends AbstractStructBase
 {
     /**
      * The session
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $session;
     /**
      * The domain
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $domain;
     /**
      * The hosting
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $hosting;
     /**
      * The offer
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $offer;
     /**
      * The profile
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $profile;
     /**
      * The owo
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $owo;
     /**
      * The owner
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $owner;
     /**
      * The admin
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $admin;
     /**
      * The tech
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $tech;
     /**
      * The billing
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $billing;
     /**
      * The dns1
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $dns1;
     /**
      * The dns2
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $dns2;
     /**
      * The dns3
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $dns3;
     /**
      * The dns4
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $dns4;
     /**
      * The dns5
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $dns5;
     /**
      * The legalRepresentantFirstName
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $legalRepresentantFirstName;
     /**
      * The legalRepresentantLastName
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $legalRepresentantLastName;
     /**
      * The legalNumber
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $legalNumber;
     /**
      * The vat
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $vat;
     /**
      * The birthDate
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $birthDate;
     /**
      * The birthCity
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $birthCity;
     /**
      * The birthDepartement
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $birthDepartement;
     /**
      * The birthCountry
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $birthCountry;
     /**
      * The nationality
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $nationality;
     /**
      * The dryRun
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var bool
      */
@@ -285,7 +285,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($session) && !is_string($session)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($session)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($session, true), gettype($session)), __LINE__);
         }
         $this->session = $session;
         return $this;
@@ -307,7 +307,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($domain) && !is_string($domain)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($domain)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($domain, true), gettype($domain)), __LINE__);
         }
         $this->domain = $domain;
         return $this;
@@ -329,7 +329,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($hosting) && !is_string($hosting)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($hosting)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($hosting, true), gettype($hosting)), __LINE__);
         }
         $this->hosting = $hosting;
         return $this;
@@ -351,7 +351,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($offer) && !is_string($offer)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($offer)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($offer, true), gettype($offer)), __LINE__);
         }
         $this->offer = $offer;
         return $this;
@@ -373,7 +373,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($profile) && !is_string($profile)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($profile)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($profile, true), gettype($profile)), __LINE__);
         }
         $this->profile = $profile;
         return $this;
@@ -395,7 +395,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($owo) && !is_string($owo)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($owo)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($owo, true), gettype($owo)), __LINE__);
         }
         $this->owo = $owo;
         return $this;
@@ -417,7 +417,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($owner) && !is_string($owner)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($owner)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($owner, true), gettype($owner)), __LINE__);
         }
         $this->owner = $owner;
         return $this;
@@ -439,7 +439,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($admin) && !is_string($admin)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($admin)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($admin, true), gettype($admin)), __LINE__);
         }
         $this->admin = $admin;
         return $this;
@@ -461,7 +461,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($tech) && !is_string($tech)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($tech)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($tech, true), gettype($tech)), __LINE__);
         }
         $this->tech = $tech;
         return $this;
@@ -483,7 +483,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($billing) && !is_string($billing)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($billing)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($billing, true), gettype($billing)), __LINE__);
         }
         $this->billing = $billing;
         return $this;
@@ -505,7 +505,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dns1) && !is_string($dns1)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dns1)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dns1, true), gettype($dns1)), __LINE__);
         }
         $this->dns1 = $dns1;
         return $this;
@@ -527,7 +527,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dns2) && !is_string($dns2)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dns2)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dns2, true), gettype($dns2)), __LINE__);
         }
         $this->dns2 = $dns2;
         return $this;
@@ -549,7 +549,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dns3) && !is_string($dns3)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dns3)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dns3, true), gettype($dns3)), __LINE__);
         }
         $this->dns3 = $dns3;
         return $this;
@@ -571,7 +571,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dns4) && !is_string($dns4)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dns4)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dns4, true), gettype($dns4)), __LINE__);
         }
         $this->dns4 = $dns4;
         return $this;
@@ -593,7 +593,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dns5) && !is_string($dns5)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dns5)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dns5, true), gettype($dns5)), __LINE__);
         }
         $this->dns5 = $dns5;
         return $this;
@@ -615,7 +615,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($legalRepresentantFirstName) && !is_string($legalRepresentantFirstName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($legalRepresentantFirstName)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($legalRepresentantFirstName, true), gettype($legalRepresentantFirstName)), __LINE__);
         }
         $this->legalRepresentantFirstName = $legalRepresentantFirstName;
         return $this;
@@ -637,7 +637,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($legalRepresentantLastName) && !is_string($legalRepresentantLastName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($legalRepresentantLastName)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($legalRepresentantLastName, true), gettype($legalRepresentantLastName)), __LINE__);
         }
         $this->legalRepresentantLastName = $legalRepresentantLastName;
         return $this;
@@ -659,7 +659,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($legalNumber) && !is_string($legalNumber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($legalNumber)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($legalNumber, true), gettype($legalNumber)), __LINE__);
         }
         $this->legalNumber = $legalNumber;
         return $this;
@@ -681,7 +681,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($vat) && !is_string($vat)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($vat)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($vat, true), gettype($vat)), __LINE__);
         }
         $this->vat = $vat;
         return $this;
@@ -703,7 +703,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($birthDate) && !is_string($birthDate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($birthDate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($birthDate, true), gettype($birthDate)), __LINE__);
         }
         $this->birthDate = $birthDate;
         return $this;
@@ -725,7 +725,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($birthCity) && !is_string($birthCity)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($birthCity)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($birthCity, true), gettype($birthCity)), __LINE__);
         }
         $this->birthCity = $birthCity;
         return $this;
@@ -747,7 +747,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($birthDepartement) && !is_string($birthDepartement)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($birthDepartement)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($birthDepartement, true), gettype($birthDepartement)), __LINE__);
         }
         $this->birthDepartement = $birthDepartement;
         return $this;
@@ -769,7 +769,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($birthCountry) && !is_string($birthCountry)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($birthCountry)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($birthCountry, true), gettype($birthCountry)), __LINE__);
         }
         $this->birthCountry = $birthCountry;
         return $this;
@@ -791,7 +791,7 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($nationality) && !is_string($nationality)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($nationality)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nationality, true), gettype($nationality)), __LINE__);
         }
         $this->nationality = $nationality;
         return $this;
@@ -813,29 +813,9 @@ class ResellerDomainCreateIT extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($dryRun) && !is_bool($dryRun)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($dryRun)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($dryRun, true), gettype($dryRun)), __LINE__);
         }
         $this->dryRun = $dryRun;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\ResellerDomainCreateIT
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

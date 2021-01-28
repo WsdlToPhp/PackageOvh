@@ -83,7 +83,7 @@ class SecondaryDNSStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($zone) && !is_string($zone)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($zone)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($zone, true), gettype($zone)), __LINE__);
         }
         $this->zone = $zone;
         return $this;
@@ -105,7 +105,7 @@ class SecondaryDNSStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($type) && !is_string($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($type)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($type, true), gettype($type)), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -127,7 +127,7 @@ class SecondaryDNSStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($nameserver) && !is_string($nameserver)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($nameserver)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nameserver, true), gettype($nameserver)), __LINE__);
         }
         $this->nameserver = $nameserver;
         return $this;
@@ -149,7 +149,7 @@ class SecondaryDNSStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($state) && !is_string($state)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($state)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($state, true), gettype($state)), __LINE__);
         }
         $this->state = $state;
         return $this;
@@ -171,7 +171,7 @@ class SecondaryDNSStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($creation) && !is_string($creation)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($creation)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($creation, true), gettype($creation)), __LINE__);
         }
         $this->creation = $creation;
         return $this;
@@ -193,29 +193,9 @@ class SecondaryDNSStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($deactivation) && !is_string($deactivation)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($deactivation)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($deactivation, true), gettype($deactivation)), __LINE__);
         }
         $this->deactivation = $deactivation;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\SecondaryDNSStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

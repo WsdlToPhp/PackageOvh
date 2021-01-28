@@ -23,7 +23,9 @@ class Responder extends SoapClientBase
     public function responderEmailList(\Ovh\StructType\ResponderEmailList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->responderEmailList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('responderEmailList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Responder extends SoapClientBase
     public function responderEmailInfo(\Ovh\StructType\ResponderEmailInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->responderEmailInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('responderEmailInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Responder extends SoapClientBase
     public function responderEmailDel(\Ovh\StructType\ResponderEmailDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->responderEmailDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('responderEmailDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Responder extends SoapClientBase
     public function responderEmailModify(\Ovh\StructType\ResponderEmailModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->responderEmailModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('responderEmailModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -99,7 +107,9 @@ class Responder extends SoapClientBase
     public function responderEmailAdd(\Ovh\StructType\ResponderEmailAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->responderEmailAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('responderEmailAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -114,13 +124,5 @@ class Responder extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

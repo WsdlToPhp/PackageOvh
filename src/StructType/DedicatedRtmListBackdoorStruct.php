@@ -171,7 +171,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($date_email) && !is_string($date_email)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($date_email)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($date_email, true), gettype($date_email)), __LINE__);
         }
         $this->date_email = $date_email;
         return $this;
@@ -193,7 +193,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($date_start) && !is_string($date_start)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($date_start)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($date_start, true), gettype($date_start)), __LINE__);
         }
         $this->date_start = $date_start;
         return $this;
@@ -215,7 +215,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($date_end) && !is_string($date_end)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($date_end)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($date_end, true), gettype($date_end)), __LINE__);
         }
         $this->date_end = $date_end;
         return $this;
@@ -237,7 +237,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($date_today) && !is_string($date_today)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($date_today)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($date_today, true), gettype($date_today)), __LINE__);
         }
         $this->date_today = $date_today;
         return $this;
@@ -258,8 +258,8 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     public function setId($id = null)
     {
         // validation for constraint: int
-        if (!is_null($id) && !is_numeric($id)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($id)), __LINE__);
+        if (!is_null($id) && !(is_int($id) || ctype_digit($id))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($id, true), gettype($id)), __LINE__);
         }
         $this->id = $id;
         return $this;
@@ -281,7 +281,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($uid) && !is_string($uid)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($uid)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($uid, true), gettype($uid)), __LINE__);
         }
         $this->uid = $uid;
         return $this;
@@ -302,8 +302,8 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     public function setPid($pid = null)
     {
         // validation for constraint: int
-        if (!is_null($pid) && !is_numeric($pid)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($pid)), __LINE__);
+        if (!is_null($pid) && !(is_int($pid) || ctype_digit($pid))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($pid, true), gettype($pid)), __LINE__);
         }
         $this->pid = $pid;
         return $this;
@@ -325,7 +325,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($do_not_mail) && !is_bool($do_not_mail)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($do_not_mail)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($do_not_mail, true), gettype($do_not_mail)), __LINE__);
         }
         $this->do_not_mail = $do_not_mail;
         return $this;
@@ -347,7 +347,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($active) && !is_bool($active)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($active)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($active, true), gettype($active)), __LINE__);
         }
         $this->active = $active;
         return $this;
@@ -368,8 +368,8 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     public function setStatus($status = null)
     {
         // validation for constraint: int
-        if (!is_null($status) && !is_numeric($status)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($status)), __LINE__);
+        if (!is_null($status) && !(is_int($status) || ctype_digit($status))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($status, true), gettype($status)), __LINE__);
         }
         $this->status = $status;
         return $this;
@@ -391,7 +391,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($ip) && !is_string($ip)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($ip)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ip, true), gettype($ip)), __LINE__);
         }
         $this->ip = $ip;
         return $this;
@@ -413,7 +413,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($type) && !is_string($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($type)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($type, true), gettype($type)), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -435,7 +435,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($cmdline) && !is_string($cmdline)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($cmdline)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($cmdline, true), gettype($cmdline)), __LINE__);
         }
         $this->cmdline = $cmdline;
         return $this;
@@ -456,8 +456,8 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     public function setPort($port = null)
     {
         // validation for constraint: int
-        if (!is_null($port) && !is_numeric($port)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($port)), __LINE__);
+        if (!is_null($port) && !(is_int($port) || ctype_digit($port))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($port, true), gettype($port)), __LINE__);
         }
         $this->port = $port;
         return $this;
@@ -479,7 +479,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($ports) && !is_string($ports)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($ports)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ports, true), gettype($ports)), __LINE__);
         }
         $this->ports = $ports;
         return $this;
@@ -501,7 +501,7 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($procname) && !is_string($procname)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($procname)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($procname, true), gettype($procname)), __LINE__);
         }
         $this->procname = $procname;
         return $this;
@@ -523,29 +523,9 @@ class DedicatedRtmListBackdoorStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($exe) && !is_string($exe)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($exe)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($exe, true), gettype($exe)), __LINE__);
         }
         $this->exe = $exe;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DedicatedRtmListBackdoorStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

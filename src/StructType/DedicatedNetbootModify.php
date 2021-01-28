@@ -13,70 +13,70 @@ class DedicatedNetbootModify extends AbstractStructBase
 {
     /**
      * The session
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $session;
     /**
      * The hostname
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $hostname;
     /**
      * The kernel
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $kernel;
     /**
      * The cpufamily
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $cpufamily;
     /**
      * The grsec
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var bool
      */
     public $grsec;
     /**
      * The smp
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var bool
      */
     public $smp;
     /**
      * The ipv6
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var bool
      */
     public $ipv6;
     /**
      * The root
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $root;
     /**
      * The rescueEmail
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $rescueEmail;
     /**
      * The hz
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
@@ -135,7 +135,7 @@ class DedicatedNetbootModify extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($session) && !is_string($session)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($session)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($session, true), gettype($session)), __LINE__);
         }
         $this->session = $session;
         return $this;
@@ -157,7 +157,7 @@ class DedicatedNetbootModify extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($hostname) && !is_string($hostname)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($hostname)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($hostname, true), gettype($hostname)), __LINE__);
         }
         $this->hostname = $hostname;
         return $this;
@@ -179,7 +179,7 @@ class DedicatedNetbootModify extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($kernel) && !is_string($kernel)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($kernel)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($kernel, true), gettype($kernel)), __LINE__);
         }
         $this->kernel = $kernel;
         return $this;
@@ -201,7 +201,7 @@ class DedicatedNetbootModify extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($cpufamily) && !is_string($cpufamily)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($cpufamily)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($cpufamily, true), gettype($cpufamily)), __LINE__);
         }
         $this->cpufamily = $cpufamily;
         return $this;
@@ -223,7 +223,7 @@ class DedicatedNetbootModify extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($grsec) && !is_bool($grsec)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($grsec)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($grsec, true), gettype($grsec)), __LINE__);
         }
         $this->grsec = $grsec;
         return $this;
@@ -245,7 +245,7 @@ class DedicatedNetbootModify extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($smp) && !is_bool($smp)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($smp)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($smp, true), gettype($smp)), __LINE__);
         }
         $this->smp = $smp;
         return $this;
@@ -267,7 +267,7 @@ class DedicatedNetbootModify extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($ipv6) && !is_bool($ipv6)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($ipv6)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($ipv6, true), gettype($ipv6)), __LINE__);
         }
         $this->ipv6 = $ipv6;
         return $this;
@@ -289,7 +289,7 @@ class DedicatedNetbootModify extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($root) && !is_string($root)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($root)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($root, true), gettype($root)), __LINE__);
         }
         $this->root = $root;
         return $this;
@@ -311,7 +311,7 @@ class DedicatedNetbootModify extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($rescueEmail) && !is_string($rescueEmail)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($rescueEmail)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($rescueEmail, true), gettype($rescueEmail)), __LINE__);
         }
         $this->rescueEmail = $rescueEmail;
         return $this;
@@ -333,29 +333,9 @@ class DedicatedNetbootModify extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($hz) && !is_string($hz)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($hz)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($hz, true), gettype($hz)), __LINE__);
         }
         $this->hz = $hz;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DedicatedNetbootModify
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

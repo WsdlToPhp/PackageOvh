@@ -83,7 +83,7 @@ class TelephonyOfferInfoSipAccountStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($username) && !is_string($username)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($username)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($username, true), gettype($username)), __LINE__);
         }
         $this->username = $username;
         return $this;
@@ -105,7 +105,7 @@ class TelephonyOfferInfoSipAccountStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($extension) && !is_string($extension)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($extension)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($extension, true), gettype($extension)), __LINE__);
         }
         $this->extension = $extension;
         return $this;
@@ -127,7 +127,7 @@ class TelephonyOfferInfoSipAccountStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($domain) && !is_string($domain)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($domain)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($domain, true), gettype($domain)), __LINE__);
         }
         $this->domain = $domain;
         return $this;
@@ -149,7 +149,7 @@ class TelephonyOfferInfoSipAccountStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($lastLogin) && !is_string($lastLogin)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($lastLogin)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($lastLogin, true), gettype($lastLogin)), __LINE__);
         }
         $this->lastLogin = $lastLogin;
         return $this;
@@ -171,7 +171,7 @@ class TelephonyOfferInfoSipAccountStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($localAdress) && !is_string($localAdress)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($localAdress)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($localAdress, true), gettype($localAdress)), __LINE__);
         }
         $this->localAdress = $localAdress;
         return $this;
@@ -193,29 +193,9 @@ class TelephonyOfferInfoSipAccountStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($publicAdress) && !is_string($publicAdress)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($publicAdress)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($publicAdress, true), gettype($publicAdress)), __LINE__);
         }
         $this->publicAdress = $publicAdress;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyOfferInfoSipAccountStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

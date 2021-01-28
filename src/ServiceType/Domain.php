@@ -23,7 +23,9 @@ class Domain extends SoapClientBase
     public function domainHostUpdate(\Ovh\StructType\DomainHostUpdate $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainHostUpdate($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainHostUpdate', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Domain extends SoapClientBase
     public function domainUnlock(\Ovh\StructType\DomainUnlock $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainUnlock($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainUnlock', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Domain extends SoapClientBase
     public function domainWhoisObfuscatorSetAll(\Ovh\StructType\DomainWhoisObfuscatorSetAll $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainWhoisObfuscatorSetAll($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainWhoisObfuscatorSetAll', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Domain extends SoapClientBase
     public function domainList(\Ovh\StructType\DomainList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -99,7 +107,9 @@ class Domain extends SoapClientBase
     public function domainWhoisObfuscatorInfo(\Ovh\StructType\DomainWhoisObfuscatorInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainWhoisObfuscatorInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainWhoisObfuscatorInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -118,7 +128,9 @@ class Domain extends SoapClientBase
     public function domainCheck(\Ovh\StructType\DomainCheck $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainCheck($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainCheck', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -137,7 +149,9 @@ class Domain extends SoapClientBase
     public function domainWhoisObfuscatorSet(\Ovh\StructType\DomainWhoisObfuscatorSet $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainWhoisObfuscatorSet($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainWhoisObfuscatorSet', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -156,7 +170,9 @@ class Domain extends SoapClientBase
     public function domainResellerSet(\Ovh\StructType\DomainResellerSet $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainResellerSet($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainResellerSet', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -175,7 +191,9 @@ class Domain extends SoapClientBase
     public function domainOperationRelaunch(\Ovh\StructType\DomainOperationRelaunch $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainOperationRelaunch($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainOperationRelaunch', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -194,7 +212,9 @@ class Domain extends SoapClientBase
     public function domainCapabilities(\Ovh\StructType\DomainCapabilities $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainCapabilities($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainCapabilities', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -213,7 +233,9 @@ class Domain extends SoapClientBase
     public function domainDnsList(\Ovh\StructType\DomainDnsList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainDnsList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainDnsList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -232,7 +254,9 @@ class Domain extends SoapClientBase
     public function domainOperationInfo(\Ovh\StructType\DomainOperationInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainOperationInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainOperationInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -251,7 +275,9 @@ class Domain extends SoapClientBase
     public function domainDnsUpdate(\Ovh\StructType\DomainDnsUpdate $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainDnsUpdate($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainDnsUpdate', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -270,7 +296,9 @@ class Domain extends SoapClientBase
     public function domainResellerDel(\Ovh\StructType\DomainResellerDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainResellerDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainResellerDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -289,7 +317,9 @@ class Domain extends SoapClientBase
     public function domainDnsGetOvhDefault(\Ovh\StructType\DomainDnsGetOvhDefault $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainDnsGetOvhDefault($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainDnsGetOvhDefault', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -308,7 +338,9 @@ class Domain extends SoapClientBase
     public function domainWhoisObfuscatorUnset(\Ovh\StructType\DomainWhoisObfuscatorUnset $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainWhoisObfuscatorUnset($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainWhoisObfuscatorUnset', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -327,7 +359,9 @@ class Domain extends SoapClientBase
     public function domainHostDel(\Ovh\StructType\DomainHostDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainHostDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainHostDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -346,7 +380,9 @@ class Domain extends SoapClientBase
     public function domainInfo(\Ovh\StructType\DomainInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -365,7 +401,9 @@ class Domain extends SoapClientBase
     public function domainHostList(\Ovh\StructType\DomainHostList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainHostList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainHostList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -384,7 +422,9 @@ class Domain extends SoapClientBase
     public function domainLockStatus(\Ovh\StructType\DomainLockStatus $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainLockStatus($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainLockStatus', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -403,7 +443,9 @@ class Domain extends SoapClientBase
     public function domainLock(\Ovh\StructType\DomainLock $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainLock($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainLock', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -422,7 +464,9 @@ class Domain extends SoapClientBase
     public function domainOperationCancel(\Ovh\StructType\DomainOperationCancel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainOperationCancel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainOperationCancel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -441,7 +485,9 @@ class Domain extends SoapClientBase
     public function domainHostAdd(\Ovh\StructType\DomainHostAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainHostAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainHostAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -460,7 +506,9 @@ class Domain extends SoapClientBase
     public function domainWhoisObfuscatorUnsetAll(\Ovh\StructType\DomainWhoisObfuscatorUnsetAll $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainWhoisObfuscatorUnsetAll($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainWhoisObfuscatorUnsetAll', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -479,7 +527,9 @@ class Domain extends SoapClientBase
     public function domainOperationList(\Ovh\StructType\DomainOperationList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainOperationList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainOperationList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -498,7 +548,9 @@ class Domain extends SoapClientBase
     public function domainWhoisObfuscatorList(\Ovh\StructType\DomainWhoisObfuscatorList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainWhoisObfuscatorList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainWhoisObfuscatorList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -517,7 +569,9 @@ class Domain extends SoapClientBase
     public function domainHostInfo(\Ovh\StructType\DomainHostInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->domainHostInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('domainHostInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -532,13 +586,5 @@ class Domain extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

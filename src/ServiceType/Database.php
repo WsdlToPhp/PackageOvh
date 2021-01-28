@@ -23,7 +23,9 @@ class Database extends SoapClientBase
     public function databaseChangePassword(\Ovh\StructType\DatabaseChangePassword $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->databaseChangePassword($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('databaseChangePassword', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Database extends SoapClientBase
     public function databaseDump(\Ovh\StructType\DatabaseDump $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->databaseDump($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('databaseDump', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Database extends SoapClientBase
     public function databaseCreate(\Ovh\StructType\DatabaseCreate $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->databaseCreate($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('databaseCreate', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Database extends SoapClientBase
     public function databaseList(\Ovh\StructType\DatabaseList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->databaseList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('databaseList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -99,7 +107,9 @@ class Database extends SoapClientBase
     public function databaseDelete(\Ovh\StructType\DatabaseDelete $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->databaseDelete($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('databaseDelete', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -118,7 +128,9 @@ class Database extends SoapClientBase
     public function databaseRecreate(\Ovh\StructType\DatabaseRecreate $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->databaseRecreate($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('databaseRecreate', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -133,13 +145,5 @@ class Database extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

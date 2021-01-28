@@ -67,7 +67,7 @@ class TelephonySpareActionsStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($toSpare) && !is_bool($toSpare)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($toSpare)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($toSpare, true), gettype($toSpare)), __LINE__);
         }
         $this->toSpare = $toSpare;
         return $this;
@@ -89,7 +89,7 @@ class TelephonySpareActionsStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($toRma) && !is_bool($toRma)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($toRma)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($toRma, true), gettype($toRma)), __LINE__);
         }
         $this->toRma = $toRma;
         return $this;
@@ -111,7 +111,7 @@ class TelephonySpareActionsStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($rmaType) && !is_string($rmaType)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($rmaType)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($rmaType, true), gettype($rmaType)), __LINE__);
         }
         $this->rmaType = $rmaType;
         return $this;
@@ -133,29 +133,9 @@ class TelephonySpareActionsStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($toDelete) && !is_bool($toDelete)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($toDelete)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($toDelete, true), gettype($toDelete)), __LINE__);
         }
         $this->toDelete = $toDelete;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonySpareActionsStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

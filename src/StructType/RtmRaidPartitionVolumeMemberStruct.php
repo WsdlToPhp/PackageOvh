@@ -75,7 +75,7 @@ class RtmRaidPartitionVolumeMemberStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($memberName) && !is_string($memberName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($memberName)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($memberName, true), gettype($memberName)), __LINE__);
         }
         $this->memberName = $memberName;
         return $this;
@@ -97,7 +97,7 @@ class RtmRaidPartitionVolumeMemberStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($modelName) && !is_string($modelName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($modelName)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($modelName, true), gettype($modelName)), __LINE__);
         }
         $this->modelName = $modelName;
         return $this;
@@ -119,7 +119,7 @@ class RtmRaidPartitionVolumeMemberStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($flags) && !is_string($flags)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($flags)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($flags, true), gettype($flags)), __LINE__);
         }
         $this->flags = $flags;
         return $this;
@@ -141,7 +141,7 @@ class RtmRaidPartitionVolumeMemberStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($status) && !is_string($status)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($status)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($status, true), gettype($status)), __LINE__);
         }
         $this->status = $status;
         return $this;
@@ -163,29 +163,9 @@ class RtmRaidPartitionVolumeMemberStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($capacity) && !is_string($capacity)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($capacity)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($capacity, true), gettype($capacity)), __LINE__);
         }
         $this->capacity = $capacity;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\RtmRaidPartitionVolumeMemberStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

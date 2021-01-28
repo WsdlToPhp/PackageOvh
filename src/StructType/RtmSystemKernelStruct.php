@@ -75,7 +75,7 @@ class RtmSystemKernelStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($version) && !is_string($version)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($version)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($version, true), gettype($version)), __LINE__);
         }
         $this->version = $version;
         return $this;
@@ -97,7 +97,7 @@ class RtmSystemKernelStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($current) && !is_string($current)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($current)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($current, true), gettype($current)), __LINE__);
         }
         $this->current = $current;
         return $this;
@@ -119,7 +119,7 @@ class RtmSystemKernelStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($current_26) && !is_string($current_26)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($current_26)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($current_26, true), gettype($current_26)), __LINE__);
         }
         $this->current_26 = $current_26;
         return $this;
@@ -141,7 +141,7 @@ class RtmSystemKernelStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($current_ipv6) && !is_string($current_ipv6)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($current_ipv6)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($current_ipv6, true), gettype($current_ipv6)), __LINE__);
         }
         $this->current_ipv6 = $current_ipv6;
         return $this;
@@ -163,29 +163,9 @@ class RtmSystemKernelStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($release) && !is_string($release)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($release)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($release, true), gettype($release)), __LINE__);
         }
         $this->release = $release;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\RtmSystemKernelStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

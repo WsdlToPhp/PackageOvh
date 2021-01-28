@@ -59,7 +59,7 @@ class BillingInvoiceDetailStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($domain) && !is_string($domain)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($domain)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($domain, true), gettype($domain)), __LINE__);
         }
         $this->domain = $domain;
         return $this;
@@ -81,7 +81,7 @@ class BillingInvoiceDetailStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($reference) && !is_string($reference)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($reference)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($reference, true), gettype($reference)), __LINE__);
         }
         $this->reference = $reference;
         return $this;
@@ -103,29 +103,9 @@ class BillingInvoiceDetailStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($description) && !is_string($description)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($description)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($description, true), gettype($description)), __LINE__);
         }
         $this->description = $description;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\BillingInvoiceDetailStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

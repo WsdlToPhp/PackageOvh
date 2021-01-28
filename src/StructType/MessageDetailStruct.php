@@ -83,7 +83,7 @@ class MessageDetailStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($to) && !is_string($to)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($to)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($to, true), gettype($to)), __LINE__);
         }
         $this->to = $to;
         return $this;
@@ -105,7 +105,7 @@ class MessageDetailStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($from) && !is_string($from)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($from)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($from, true), gettype($from)), __LINE__);
         }
         $this->from = $from;
         return $this;
@@ -127,7 +127,7 @@ class MessageDetailStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($date) && !is_string($date)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($date)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($date, true), gettype($date)), __LINE__);
         }
         $this->date = $date;
         return $this;
@@ -149,7 +149,7 @@ class MessageDetailStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($ip) && !is_string($ip)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($ip)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ip, true), gettype($ip)), __LINE__);
         }
         $this->ip = $ip;
         return $this;
@@ -171,7 +171,7 @@ class MessageDetailStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($type) && !is_string($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($type)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($type, true), gettype($type)), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -193,29 +193,9 @@ class MessageDetailStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($message) && !is_string($message)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($message)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($message, true), gettype($message)), __LINE__);
         }
         $this->message = $message;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\MessageDetailStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

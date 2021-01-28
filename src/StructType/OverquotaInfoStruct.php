@@ -59,7 +59,7 @@ class OverquotaInfoStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($month) && !is_string($month)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($month)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($month, true), gettype($month)), __LINE__);
         }
         $this->month = $month;
         return $this;
@@ -80,8 +80,8 @@ class OverquotaInfoStruct extends AbstractStructBase
     public function setTraffic($traffic = null)
     {
         // validation for constraint: int
-        if (!is_null($traffic) && !is_numeric($traffic)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($traffic)), __LINE__);
+        if (!is_null($traffic) && !(is_int($traffic) || ctype_digit($traffic))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($traffic, true), gettype($traffic)), __LINE__);
         }
         $this->traffic = $traffic;
         return $this;
@@ -102,30 +102,10 @@ class OverquotaInfoStruct extends AbstractStructBase
     public function setHits($hits = null)
     {
         // validation for constraint: int
-        if (!is_null($hits) && !is_numeric($hits)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($hits)), __LINE__);
+        if (!is_null($hits) && !(is_int($hits) || ctype_digit($hits))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($hits, true), gettype($hits)), __LINE__);
         }
         $this->hits = $hits;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\OverquotaInfoStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

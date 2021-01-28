@@ -91,7 +91,7 @@ class TelephonyDirectoryInfoGetSiretReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($name) && !is_string($name)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($name)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($name, true), gettype($name)), __LINE__);
         }
         $this->name = $name;
         return $this;
@@ -112,8 +112,8 @@ class TelephonyDirectoryInfoGetSiretReturn extends AbstractStructBase
     public function setSiret($siret = null)
     {
         // validation for constraint: int
-        if (!is_null($siret) && !is_numeric($siret)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($siret)), __LINE__);
+        if (!is_null($siret) && !(is_int($siret) || ctype_digit($siret))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($siret, true), gettype($siret)), __LINE__);
         }
         $this->siret = $siret;
         return $this;
@@ -134,8 +134,8 @@ class TelephonyDirectoryInfoGetSiretReturn extends AbstractStructBase
     public function setSiren($siren = null)
     {
         // validation for constraint: int
-        if (!is_null($siren) && !is_numeric($siren)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($siren)), __LINE__);
+        if (!is_null($siren) && !(is_int($siren) || ctype_digit($siren))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($siren, true), gettype($siren)), __LINE__);
         }
         $this->siren = $siren;
         return $this;
@@ -157,7 +157,7 @@ class TelephonyDirectoryInfoGetSiretReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($ape) && !is_string($ape)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($ape)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ape, true), gettype($ape)), __LINE__);
         }
         $this->ape = $ape;
         return $this;
@@ -179,7 +179,7 @@ class TelephonyDirectoryInfoGetSiretReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($address) && !is_string($address)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($address)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($address, true), gettype($address)), __LINE__);
         }
         $this->address = $address;
         return $this;
@@ -201,7 +201,7 @@ class TelephonyDirectoryInfoGetSiretReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($juridicCategory) && !is_string($juridicCategory)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($juridicCategory)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($juridicCategory, true), gettype($juridicCategory)), __LINE__);
         }
         $this->juridicCategory = $juridicCategory;
         return $this;
@@ -223,29 +223,9 @@ class TelephonyDirectoryInfoGetSiretReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($brand) && !is_string($brand)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($brand)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($brand, true), gettype($brand)), __LINE__);
         }
         $this->brand = $brand;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyDirectoryInfoGetSiretReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

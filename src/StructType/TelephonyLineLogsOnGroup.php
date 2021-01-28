@@ -13,21 +13,21 @@ class TelephonyLineLogsOnGroup extends AbstractStructBase
 {
     /**
      * The group
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $group;
     /**
      * The pagingStart
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var int
      */
     public $pagingStart;
     /**
      * The pagingLimit
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var int
      */
@@ -65,7 +65,7 @@ class TelephonyLineLogsOnGroup extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($group) && !is_string($group)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($group)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($group, true), gettype($group)), __LINE__);
         }
         $this->group = $group;
         return $this;
@@ -86,8 +86,8 @@ class TelephonyLineLogsOnGroup extends AbstractStructBase
     public function setPagingStart($pagingStart = null)
     {
         // validation for constraint: int
-        if (!is_null($pagingStart) && !is_numeric($pagingStart)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($pagingStart)), __LINE__);
+        if (!is_null($pagingStart) && !(is_int($pagingStart) || ctype_digit($pagingStart))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($pagingStart, true), gettype($pagingStart)), __LINE__);
         }
         $this->pagingStart = $pagingStart;
         return $this;
@@ -108,30 +108,10 @@ class TelephonyLineLogsOnGroup extends AbstractStructBase
     public function setPagingLimit($pagingLimit = null)
     {
         // validation for constraint: int
-        if (!is_null($pagingLimit) && !is_numeric($pagingLimit)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($pagingLimit)), __LINE__);
+        if (!is_null($pagingLimit) && !(is_int($pagingLimit) || ctype_digit($pagingLimit))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($pagingLimit, true), gettype($pagingLimit)), __LINE__);
         }
         $this->pagingLimit = $pagingLimit;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyLineLogsOnGroup
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

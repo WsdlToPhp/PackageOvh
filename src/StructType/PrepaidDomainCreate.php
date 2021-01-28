@@ -13,112 +13,112 @@ class PrepaidDomainCreate extends AbstractStructBase
 {
     /**
      * The session
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $session;
     /**
      * The domain
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $domain;
     /**
      * The nicowner
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $nicowner;
     /**
      * The nicadmin
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $nicadmin;
     /**
      * The nictech
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $nictech;
     /**
      * The nicbilling
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $nicbilling;
     /**
      * The dns1
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $dns1;
     /**
      * The dns2
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $dns2;
     /**
      * The dns3
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $dns3;
     /**
      * The dns4
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $dns4;
     /**
      * The dns5
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $dns5;
     /**
      * The frpartBirthday
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $frpartBirthday;
     /**
      * The frpartBirthCountry
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $frpartBirthCountry;
     /**
      * The frpartBirthDepartment
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $frpartBirthDepartment;
     /**
      * The frpartBirthTown
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $frpartBirthTown;
     /**
      * The dryRun
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var bool
      */
@@ -195,7 +195,7 @@ class PrepaidDomainCreate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($session) && !is_string($session)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($session)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($session, true), gettype($session)), __LINE__);
         }
         $this->session = $session;
         return $this;
@@ -217,7 +217,7 @@ class PrepaidDomainCreate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($domain) && !is_string($domain)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($domain)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($domain, true), gettype($domain)), __LINE__);
         }
         $this->domain = $domain;
         return $this;
@@ -239,7 +239,7 @@ class PrepaidDomainCreate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($nicowner) && !is_string($nicowner)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($nicowner)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nicowner, true), gettype($nicowner)), __LINE__);
         }
         $this->nicowner = $nicowner;
         return $this;
@@ -261,7 +261,7 @@ class PrepaidDomainCreate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($nicadmin) && !is_string($nicadmin)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($nicadmin)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nicadmin, true), gettype($nicadmin)), __LINE__);
         }
         $this->nicadmin = $nicadmin;
         return $this;
@@ -283,7 +283,7 @@ class PrepaidDomainCreate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($nictech) && !is_string($nictech)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($nictech)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nictech, true), gettype($nictech)), __LINE__);
         }
         $this->nictech = $nictech;
         return $this;
@@ -305,7 +305,7 @@ class PrepaidDomainCreate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($nicbilling) && !is_string($nicbilling)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($nicbilling)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nicbilling, true), gettype($nicbilling)), __LINE__);
         }
         $this->nicbilling = $nicbilling;
         return $this;
@@ -327,7 +327,7 @@ class PrepaidDomainCreate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dns1) && !is_string($dns1)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dns1)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dns1, true), gettype($dns1)), __LINE__);
         }
         $this->dns1 = $dns1;
         return $this;
@@ -349,7 +349,7 @@ class PrepaidDomainCreate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dns2) && !is_string($dns2)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dns2)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dns2, true), gettype($dns2)), __LINE__);
         }
         $this->dns2 = $dns2;
         return $this;
@@ -371,7 +371,7 @@ class PrepaidDomainCreate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dns3) && !is_string($dns3)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dns3)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dns3, true), gettype($dns3)), __LINE__);
         }
         $this->dns3 = $dns3;
         return $this;
@@ -393,7 +393,7 @@ class PrepaidDomainCreate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dns4) && !is_string($dns4)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dns4)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dns4, true), gettype($dns4)), __LINE__);
         }
         $this->dns4 = $dns4;
         return $this;
@@ -415,7 +415,7 @@ class PrepaidDomainCreate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dns5) && !is_string($dns5)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dns5)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dns5, true), gettype($dns5)), __LINE__);
         }
         $this->dns5 = $dns5;
         return $this;
@@ -437,7 +437,7 @@ class PrepaidDomainCreate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($frpartBirthday) && !is_string($frpartBirthday)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($frpartBirthday)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($frpartBirthday, true), gettype($frpartBirthday)), __LINE__);
         }
         $this->frpartBirthday = $frpartBirthday;
         return $this;
@@ -459,7 +459,7 @@ class PrepaidDomainCreate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($frpartBirthCountry) && !is_string($frpartBirthCountry)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($frpartBirthCountry)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($frpartBirthCountry, true), gettype($frpartBirthCountry)), __LINE__);
         }
         $this->frpartBirthCountry = $frpartBirthCountry;
         return $this;
@@ -481,7 +481,7 @@ class PrepaidDomainCreate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($frpartBirthDepartment) && !is_string($frpartBirthDepartment)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($frpartBirthDepartment)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($frpartBirthDepartment, true), gettype($frpartBirthDepartment)), __LINE__);
         }
         $this->frpartBirthDepartment = $frpartBirthDepartment;
         return $this;
@@ -503,7 +503,7 @@ class PrepaidDomainCreate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($frpartBirthTown) && !is_string($frpartBirthTown)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($frpartBirthTown)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($frpartBirthTown, true), gettype($frpartBirthTown)), __LINE__);
         }
         $this->frpartBirthTown = $frpartBirthTown;
         return $this;
@@ -525,29 +525,9 @@ class PrepaidDomainCreate extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($dryRun) && !is_bool($dryRun)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($dryRun)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($dryRun, true), gettype($dryRun)), __LINE__);
         }
         $this->dryRun = $dryRun;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\PrepaidDomainCreate
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

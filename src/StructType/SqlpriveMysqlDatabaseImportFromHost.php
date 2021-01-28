@@ -13,49 +13,49 @@ class SqlpriveMysqlDatabaseImportFromHost extends AbstractStructBase
 {
     /**
      * The session
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $session;
     /**
      * The server
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $server;
     /**
      * The database
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $database;
     /**
      * The foreignHost
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $foreignHost;
     /**
      * The foreignUser
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $foreignUser;
     /**
      * The foreignPassword
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $foreignPassword;
     /**
      * The foreignDatabase
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
@@ -105,7 +105,7 @@ class SqlpriveMysqlDatabaseImportFromHost extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($session) && !is_string($session)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($session)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($session, true), gettype($session)), __LINE__);
         }
         $this->session = $session;
         return $this;
@@ -127,7 +127,7 @@ class SqlpriveMysqlDatabaseImportFromHost extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($server) && !is_string($server)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($server)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($server, true), gettype($server)), __LINE__);
         }
         $this->server = $server;
         return $this;
@@ -149,7 +149,7 @@ class SqlpriveMysqlDatabaseImportFromHost extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($database) && !is_string($database)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($database)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($database, true), gettype($database)), __LINE__);
         }
         $this->database = $database;
         return $this;
@@ -171,7 +171,7 @@ class SqlpriveMysqlDatabaseImportFromHost extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($foreignHost) && !is_string($foreignHost)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($foreignHost)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($foreignHost, true), gettype($foreignHost)), __LINE__);
         }
         $this->foreignHost = $foreignHost;
         return $this;
@@ -193,7 +193,7 @@ class SqlpriveMysqlDatabaseImportFromHost extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($foreignUser) && !is_string($foreignUser)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($foreignUser)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($foreignUser, true), gettype($foreignUser)), __LINE__);
         }
         $this->foreignUser = $foreignUser;
         return $this;
@@ -215,7 +215,7 @@ class SqlpriveMysqlDatabaseImportFromHost extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($foreignPassword) && !is_string($foreignPassword)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($foreignPassword)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($foreignPassword, true), gettype($foreignPassword)), __LINE__);
         }
         $this->foreignPassword = $foreignPassword;
         return $this;
@@ -237,29 +237,9 @@ class SqlpriveMysqlDatabaseImportFromHost extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($foreignDatabase) && !is_string($foreignDatabase)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($foreignDatabase)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($foreignDatabase, true), gettype($foreignDatabase)), __LINE__);
         }
         $this->foreignDatabase = $foreignDatabase;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\SqlpriveMysqlDatabaseImportFromHost
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

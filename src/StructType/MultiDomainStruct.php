@@ -59,7 +59,7 @@ class MultiDomainStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($multidomain) && !is_string($multidomain)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($multidomain)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($multidomain, true), gettype($multidomain)), __LINE__);
         }
         $this->multidomain = $multidomain;
         return $this;
@@ -81,7 +81,7 @@ class MultiDomainStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($target) && !is_string($target)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($target)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($target, true), gettype($target)), __LINE__);
         }
         $this->target = $target;
         return $this;
@@ -103,29 +103,9 @@ class MultiDomainStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($country) && !is_string($country)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($country)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($country, true), gettype($country)), __LINE__);
         }
         $this->country = $country;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\MultiDomainStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

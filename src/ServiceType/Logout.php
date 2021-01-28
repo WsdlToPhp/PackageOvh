@@ -23,7 +23,9 @@ class Logout extends SoapClientBase
     public function logout(\Ovh\StructType\Logout $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->logout($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('logout', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -38,13 +40,5 @@ class Logout extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

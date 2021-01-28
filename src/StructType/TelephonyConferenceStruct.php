@@ -171,7 +171,7 @@ class TelephonyConferenceStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($room) && !is_string($room)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($room)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($room, true), gettype($room)), __LINE__);
         }
         $this->room = $room;
         return $this;
@@ -193,7 +193,7 @@ class TelephonyConferenceStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($countryCode) && !is_string($countryCode)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($countryCode)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($countryCode, true), gettype($countryCode)), __LINE__);
         }
         $this->countryCode = $countryCode;
         return $this;
@@ -215,7 +215,7 @@ class TelephonyConferenceStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($callNumber) && !is_string($callNumber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($callNumber)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($callNumber, true), gettype($callNumber)), __LINE__);
         }
         $this->callNumber = $callNumber;
         return $this;
@@ -237,7 +237,7 @@ class TelephonyConferenceStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($language) && !is_string($language)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($language)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($language, true), gettype($language)), __LINE__);
         }
         $this->language = $language;
         return $this;
@@ -259,7 +259,7 @@ class TelephonyConferenceStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($customAnnounce) && !is_bool($customAnnounce)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($customAnnounce)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($customAnnounce, true), gettype($customAnnounce)), __LINE__);
         }
         $this->customAnnounce = $customAnnounce;
         return $this;
@@ -281,7 +281,7 @@ class TelephonyConferenceStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($recordAnnounce) && !is_bool($recordAnnounce)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($recordAnnounce)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($recordAnnounce, true), gettype($recordAnnounce)), __LINE__);
         }
         $this->recordAnnounce = $recordAnnounce;
         return $this;
@@ -303,7 +303,7 @@ class TelephonyConferenceStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($mailReport) && !is_bool($mailReport)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($mailReport)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($mailReport, true), gettype($mailReport)), __LINE__);
         }
         $this->mailReport = $mailReport;
         return $this;
@@ -325,7 +325,7 @@ class TelephonyConferenceStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($customMailReportAddress) && !is_string($customMailReportAddress)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($customMailReportAddress)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customMailReportAddress, true), gettype($customMailReportAddress)), __LINE__);
         }
         $this->customMailReportAddress = $customMailReportAddress;
         return $this;
@@ -347,7 +347,7 @@ class TelephonyConferenceStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($askName) && !is_bool($askName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($askName)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($askName, true), gettype($askName)), __LINE__);
         }
         $this->askName = $askName;
         return $this;
@@ -369,7 +369,7 @@ class TelephonyConferenceStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($tellMemberCount) && !is_bool($tellMemberCount)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($tellMemberCount)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($tellMemberCount, true), gettype($tellMemberCount)), __LINE__);
         }
         $this->tellMemberCount = $tellMemberCount;
         return $this;
@@ -391,7 +391,7 @@ class TelephonyConferenceStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($moderatorCountryCode) && !is_string($moderatorCountryCode)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($moderatorCountryCode)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($moderatorCountryCode, true), gettype($moderatorCountryCode)), __LINE__);
         }
         $this->moderatorCountryCode = $moderatorCountryCode;
         return $this;
@@ -413,7 +413,7 @@ class TelephonyConferenceStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($moderatorCallNumber) && !is_string($moderatorCallNumber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($moderatorCallNumber)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($moderatorCallNumber, true), gettype($moderatorCallNumber)), __LINE__);
         }
         $this->moderatorCallNumber = $moderatorCallNumber;
         return $this;
@@ -435,7 +435,7 @@ class TelephonyConferenceStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($status) && !is_string($status)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($status)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($status, true), gettype($status)), __LINE__);
         }
         $this->status = $status;
         return $this;
@@ -457,7 +457,7 @@ class TelephonyConferenceStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($dtmfmenu) && !is_bool($dtmfmenu)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($dtmfmenu)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($dtmfmenu, true), gettype($dtmfmenu)), __LINE__);
         }
         $this->dtmfmenu = $dtmfmenu;
         return $this;
@@ -479,7 +479,7 @@ class TelephonyConferenceStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($announce_rcv) && !is_bool($announce_rcv)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($announce_rcv)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($announce_rcv, true), gettype($announce_rcv)), __LINE__);
         }
         $this->announce_rcv = $announce_rcv;
         return $this;
@@ -501,7 +501,7 @@ class TelephonyConferenceStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($announce_snd) && !is_bool($announce_snd)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($announce_snd)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($announce_snd, true), gettype($announce_snd)), __LINE__);
         }
         $this->announce_snd = $announce_snd;
         return $this;
@@ -523,29 +523,9 @@ class TelephonyConferenceStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($recordConf) && !is_bool($recordConf)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($recordConf)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($recordConf, true), gettype($recordConf)), __LINE__);
         }
         $this->recordConf = $recordConf;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyConferenceStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

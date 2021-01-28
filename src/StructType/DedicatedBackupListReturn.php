@@ -170,8 +170,8 @@ class DedicatedBackupListReturn extends AbstractStructBase
     public function setBackupId($backupId = null)
     {
         // validation for constraint: int
-        if (!is_null($backupId) && !is_numeric($backupId)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($backupId)), __LINE__);
+        if (!is_null($backupId) && !(is_int($backupId) || ctype_digit($backupId))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($backupId, true), gettype($backupId)), __LINE__);
         }
         $this->backupId = $backupId;
         return $this;
@@ -193,7 +193,7 @@ class DedicatedBackupListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($backupFeature) && !is_string($backupFeature)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($backupFeature)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($backupFeature, true), gettype($backupFeature)), __LINE__);
         }
         $this->backupFeature = $backupFeature;
         return $this;
@@ -214,8 +214,8 @@ class DedicatedBackupListReturn extends AbstractStructBase
     public function setEnable($enable = null)
     {
         // validation for constraint: int
-        if (!is_null($enable) && !is_numeric($enable)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($enable)), __LINE__);
+        if (!is_null($enable) && !(is_int($enable) || ctype_digit($enable))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($enable, true), gettype($enable)), __LINE__);
         }
         $this->enable = $enable;
         return $this;
@@ -237,7 +237,7 @@ class DedicatedBackupListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($language) && !is_string($language)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($language)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($language, true), gettype($language)), __LINE__);
         }
         $this->language = $language;
         return $this;
@@ -259,7 +259,7 @@ class DedicatedBackupListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($backupSize) && !is_string($backupSize)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($backupSize)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($backupSize, true), gettype($backupSize)), __LINE__);
         }
         $this->backupSize = $backupSize;
         return $this;
@@ -280,8 +280,8 @@ class DedicatedBackupListReturn extends AbstractStructBase
     public function setSshPort($sshPort = null)
     {
         // validation for constraint: int
-        if (!is_null($sshPort) && !is_numeric($sshPort)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($sshPort)), __LINE__);
+        if (!is_null($sshPort) && !(is_int($sshPort) || ctype_digit($sshPort))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($sshPort, true), gettype($sshPort)), __LINE__);
         }
         $this->sshPort = $sshPort;
         return $this;
@@ -303,7 +303,7 @@ class DedicatedBackupListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($percentUsed) && !is_string($percentUsed)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($percentUsed)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($percentUsed, true), gettype($percentUsed)), __LINE__);
         }
         $this->percentUsed = $percentUsed;
         return $this;
@@ -325,7 +325,7 @@ class DedicatedBackupListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($hostname) && !is_string($hostname)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($hostname)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($hostname, true), gettype($hostname)), __LINE__);
         }
         $this->hostname = $hostname;
         return $this;
@@ -347,7 +347,7 @@ class DedicatedBackupListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($backupName) && !is_string($backupName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($backupName)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($backupName, true), gettype($backupName)), __LINE__);
         }
         $this->backupName = $backupName;
         return $this;
@@ -369,7 +369,7 @@ class DedicatedBackupListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($email) && !is_string($email)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($email)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($email, true), gettype($email)), __LINE__);
         }
         $this->email = $email;
         return $this;
@@ -390,8 +390,8 @@ class DedicatedBackupListReturn extends AbstractStructBase
     public function setSnapshotNumber($snapshotNumber = null)
     {
         // validation for constraint: int
-        if (!is_null($snapshotNumber) && !is_numeric($snapshotNumber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($snapshotNumber)), __LINE__);
+        if (!is_null($snapshotNumber) && !(is_int($snapshotNumber) || ctype_digit($snapshotNumber))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($snapshotNumber, true), gettype($snapshotNumber)), __LINE__);
         }
         $this->snapshotNumber = $snapshotNumber;
         return $this;
@@ -413,7 +413,7 @@ class DedicatedBackupListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($superBackupName) && !is_string($superBackupName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($superBackupName)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($superBackupName, true), gettype($superBackupName)), __LINE__);
         }
         $this->superBackupName = $superBackupName;
         return $this;
@@ -435,7 +435,7 @@ class DedicatedBackupListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($backupType) && !is_string($backupType)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($backupType)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($backupType, true), gettype($backupType)), __LINE__);
         }
         $this->backupType = $backupType;
         return $this;
@@ -511,25 +511,5 @@ class DedicatedBackupListReturn extends AbstractStructBase
     {
         $this->excludeHard = $excludeHard;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DedicatedBackupListReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

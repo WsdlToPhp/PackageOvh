@@ -13,49 +13,49 @@ class EmailFilterRuleAdd extends AbstractStructBase
 {
     /**
      * The session
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $session;
     /**
      * The domain
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $domain;
     /**
      * The pop
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $pop;
     /**
      * The filter
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $filter;
     /**
      * The header
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $header;
     /**
      * The rule
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $rule;
     /**
      * The rule_param
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
@@ -105,7 +105,7 @@ class EmailFilterRuleAdd extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($session) && !is_string($session)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($session)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($session, true), gettype($session)), __LINE__);
         }
         $this->session = $session;
         return $this;
@@ -127,7 +127,7 @@ class EmailFilterRuleAdd extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($domain) && !is_string($domain)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($domain)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($domain, true), gettype($domain)), __LINE__);
         }
         $this->domain = $domain;
         return $this;
@@ -149,7 +149,7 @@ class EmailFilterRuleAdd extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($pop) && !is_string($pop)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($pop)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($pop, true), gettype($pop)), __LINE__);
         }
         $this->pop = $pop;
         return $this;
@@ -171,7 +171,7 @@ class EmailFilterRuleAdd extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($filter) && !is_string($filter)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($filter)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($filter, true), gettype($filter)), __LINE__);
         }
         $this->filter = $filter;
         return $this;
@@ -193,7 +193,7 @@ class EmailFilterRuleAdd extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($header) && !is_string($header)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($header)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($header, true), gettype($header)), __LINE__);
         }
         $this->header = $header;
         return $this;
@@ -215,7 +215,7 @@ class EmailFilterRuleAdd extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($rule) && !is_string($rule)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($rule)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($rule, true), gettype($rule)), __LINE__);
         }
         $this->rule = $rule;
         return $this;
@@ -237,29 +237,9 @@ class EmailFilterRuleAdd extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($rule_param) && !is_string($rule_param)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($rule_param)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($rule_param, true), gettype($rule_param)), __LINE__);
         }
         $this->rule_param = $rule_param;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\EmailFilterRuleAdd
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

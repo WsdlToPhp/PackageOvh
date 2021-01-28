@@ -13,77 +13,77 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
 {
     /**
      * The session
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $session;
     /**
      * The number
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $number;
     /**
      * The country
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $country;
     /**
      * The campaignName
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $campaignName;
     /**
      * The pdfUrl
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $pdfUrl;
     /**
      * The pdfName
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $pdfName;
     /**
      * The recipients
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $recipients;
     /**
      * The faxQuality
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $faxQuality;
     /**
      * The initialStatus
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $initialStatus;
     /**
      * The launchDate
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $launchDate;
     /**
      * The remoteRecipients
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var bool
      */
@@ -145,7 +145,7 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($session) && !is_string($session)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($session)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($session, true), gettype($session)), __LINE__);
         }
         $this->session = $session;
         return $this;
@@ -167,7 +167,7 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($number) && !is_string($number)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($number)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($number, true), gettype($number)), __LINE__);
         }
         $this->number = $number;
         return $this;
@@ -189,7 +189,7 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($country) && !is_string($country)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($country)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($country, true), gettype($country)), __LINE__);
         }
         $this->country = $country;
         return $this;
@@ -211,7 +211,7 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($campaignName) && !is_string($campaignName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($campaignName)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($campaignName, true), gettype($campaignName)), __LINE__);
         }
         $this->campaignName = $campaignName;
         return $this;
@@ -233,7 +233,7 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($pdfUrl) && !is_string($pdfUrl)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($pdfUrl)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($pdfUrl, true), gettype($pdfUrl)), __LINE__);
         }
         $this->pdfUrl = $pdfUrl;
         return $this;
@@ -255,7 +255,7 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($pdfName) && !is_string($pdfName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($pdfName)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($pdfName, true), gettype($pdfName)), __LINE__);
         }
         $this->pdfName = $pdfName;
         return $this;
@@ -295,7 +295,7 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($faxQuality) && !is_string($faxQuality)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($faxQuality)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($faxQuality, true), gettype($faxQuality)), __LINE__);
         }
         $this->faxQuality = $faxQuality;
         return $this;
@@ -317,7 +317,7 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($initialStatus) && !is_string($initialStatus)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($initialStatus)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($initialStatus, true), gettype($initialStatus)), __LINE__);
         }
         $this->initialStatus = $initialStatus;
         return $this;
@@ -339,7 +339,7 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($launchDate) && !is_string($launchDate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($launchDate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($launchDate, true), gettype($launchDate)), __LINE__);
         }
         $this->launchDate = $launchDate;
         return $this;
@@ -361,29 +361,9 @@ class TelephonyFaxCampaignCreation extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($remoteRecipients) && !is_bool($remoteRecipients)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($remoteRecipients)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($remoteRecipients, true), gettype($remoteRecipients)), __LINE__);
         }
         $this->remoteRecipients = $remoteRecipients;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyFaxCampaignCreation
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

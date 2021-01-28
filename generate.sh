@@ -14,7 +14,7 @@ rm -rf  $DEST/src/ \
         $DEST/composer.lock;
 
 # package informations
-php wsdltophp.phar generate:package \
+php-7.4 wsdltophp.phar generate:package \
     --urlorpath="http://www.ovh.com/soapi/soapi-dlw-1.63.wsdl" \
     --destination=$DEST \
     --composer-name="wsdltophp/package-ovh" \
@@ -24,7 +24,7 @@ php wsdltophp.phar generate:package \
     --namespace="Ovh";
 
 # generate package
-php wsdltophp.phar generate:package \
+php-7.4 wsdltophp.phar generate:package \
     --urlorpath="http://www.ovh.com/soapi/soapi-dlw-1.63.wsdl" \
     --destination=$DEST \
     --composer-name="wsdltophp/package-ovh" \

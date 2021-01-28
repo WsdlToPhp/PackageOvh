@@ -23,7 +23,9 @@ class Pop extends SoapClientBase
     public function popDetachMasterNic(\Ovh\StructType\PopDetachMasterNic $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->popDetachMasterNic($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('popDetachMasterNic', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Pop extends SoapClientBase
     public function popList(\Ovh\StructType\PopList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->popList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('popList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Pop extends SoapClientBase
     public function popUpgradeQuota(\Ovh\StructType\PopUpgradeQuota $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->popUpgradeQuota($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('popUpgradeQuota', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Pop extends SoapClientBase
     public function popDel(\Ovh\StructType\PopDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->popDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('popDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -99,7 +107,9 @@ class Pop extends SoapClientBase
     public function popListByMasterNic(\Ovh\StructType\PopListByMasterNic $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->popListByMasterNic($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('popListByMasterNic', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -118,7 +128,9 @@ class Pop extends SoapClientBase
     public function popModifyDescription(\Ovh\StructType\PopModifyDescription $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->popModifyDescription($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('popModifyDescription', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -137,7 +149,9 @@ class Pop extends SoapClientBase
     public function popInfo(\Ovh\StructType\PopInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->popInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('popInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -156,7 +170,9 @@ class Pop extends SoapClientBase
     public function popModifyPassword(\Ovh\StructType\PopModifyPassword $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->popModifyPassword($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('popModifyPassword', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -175,7 +191,9 @@ class Pop extends SoapClientBase
     public function popAttachMasterNic(\Ovh\StructType\PopAttachMasterNic $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->popAttachMasterNic($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('popAttachMasterNic', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -194,7 +212,9 @@ class Pop extends SoapClientBase
     public function popAdd(\Ovh\StructType\PopAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->popAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('popAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -213,7 +233,9 @@ class Pop extends SoapClientBase
     public function popGetQuota(\Ovh\StructType\PopGetQuota $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->popGetQuota($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('popGetQuota', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -228,13 +250,5 @@ class Pop extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

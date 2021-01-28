@@ -23,7 +23,9 @@ class Billing extends SoapClientBase
     public function billingInvoiceList(\Ovh\StructType\BillingInvoiceList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->billingInvoiceList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('billingInvoiceList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Billing extends SoapClientBase
     public function billingGetReferencesToExpired(\Ovh\StructType\BillingGetReferencesToExpired $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->billingGetReferencesToExpired($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('billingGetReferencesToExpired', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Billing extends SoapClientBase
     public function billingGetAccessByNic(\Ovh\StructType\BillingGetAccessByNic $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->billingGetAccessByNic($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('billingGetAccessByNic', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Billing extends SoapClientBase
     public function billingInvoiceInfo(\Ovh\StructType\BillingInvoiceInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->billingInvoiceInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('billingInvoiceInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -95,13 +103,5 @@ class Billing extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

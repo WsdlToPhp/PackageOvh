@@ -13,28 +13,28 @@ class Login extends AbstractStructBase
 {
     /**
      * The nic
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $nic;
     /**
      * The password
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $password;
     /**
      * The language
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $language;
     /**
      * The multisession
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var bool
      */
@@ -75,7 +75,7 @@ class Login extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($nic) && !is_string($nic)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($nic)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nic, true), gettype($nic)), __LINE__);
         }
         $this->nic = $nic;
         return $this;
@@ -97,7 +97,7 @@ class Login extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($password) && !is_string($password)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($password)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($password, true), gettype($password)), __LINE__);
         }
         $this->password = $password;
         return $this;
@@ -119,7 +119,7 @@ class Login extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($language) && !is_string($language)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($language)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($language, true), gettype($language)), __LINE__);
         }
         $this->language = $language;
         return $this;
@@ -141,29 +141,9 @@ class Login extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($multisession) && !is_bool($multisession)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($multisession)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($multisession, true), gettype($multisession)), __LINE__);
         }
         $this->multisession = $multisession;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\Login
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

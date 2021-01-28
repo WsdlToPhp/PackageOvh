@@ -13,189 +13,189 @@ class ResellerDomainTransferASIA extends AbstractStructBase
 {
     /**
      * The session
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $session;
     /**
      * The domain
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $domain;
     /**
      * The authinfo
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $authinfo;
     /**
      * The hosting
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $hosting;
     /**
      * The offer
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $offer;
     /**
      * The profile
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $profile;
     /**
      * The owo
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $owo;
     /**
      * The owner
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $owner;
     /**
      * The admin
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $admin;
     /**
      * The tech
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $tech;
     /**
      * The billing
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $billing;
     /**
      * The dns1
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $dns1;
     /**
      * The dns2
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $dns2;
     /**
      * The dns3
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $dns3;
     /**
      * The dns4
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $dns4;
     /**
      * The dns5
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $dns5;
     /**
      * The CedCea
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $CedCea;
     /**
      * The contactCED
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $contactCED;
     /**
      * The localityCity
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $localityCity;
     /**
      * The localitySp
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $localitySp;
     /**
      * The ccLocality
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $ccLocality;
     /**
      * The legalEntityType
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $legalEntityType;
     /**
      * The otherLEType
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $otherLEType;
     /**
      * The identForm
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $identForm;
     /**
      * The otherIdentForm
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $otherIdentForm;
     /**
      * The identNumber
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $identNumber;
     /**
      * The dryRun
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var bool
      */
@@ -305,7 +305,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($session) && !is_string($session)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($session)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($session, true), gettype($session)), __LINE__);
         }
         $this->session = $session;
         return $this;
@@ -327,7 +327,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($domain) && !is_string($domain)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($domain)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($domain, true), gettype($domain)), __LINE__);
         }
         $this->domain = $domain;
         return $this;
@@ -349,7 +349,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($authinfo) && !is_string($authinfo)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($authinfo)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($authinfo, true), gettype($authinfo)), __LINE__);
         }
         $this->authinfo = $authinfo;
         return $this;
@@ -371,7 +371,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($hosting) && !is_string($hosting)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($hosting)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($hosting, true), gettype($hosting)), __LINE__);
         }
         $this->hosting = $hosting;
         return $this;
@@ -393,7 +393,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($offer) && !is_string($offer)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($offer)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($offer, true), gettype($offer)), __LINE__);
         }
         $this->offer = $offer;
         return $this;
@@ -415,7 +415,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($profile) && !is_string($profile)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($profile)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($profile, true), gettype($profile)), __LINE__);
         }
         $this->profile = $profile;
         return $this;
@@ -437,7 +437,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($owo) && !is_string($owo)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($owo)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($owo, true), gettype($owo)), __LINE__);
         }
         $this->owo = $owo;
         return $this;
@@ -459,7 +459,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($owner) && !is_string($owner)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($owner)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($owner, true), gettype($owner)), __LINE__);
         }
         $this->owner = $owner;
         return $this;
@@ -481,7 +481,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($admin) && !is_string($admin)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($admin)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($admin, true), gettype($admin)), __LINE__);
         }
         $this->admin = $admin;
         return $this;
@@ -503,7 +503,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($tech) && !is_string($tech)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($tech)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($tech, true), gettype($tech)), __LINE__);
         }
         $this->tech = $tech;
         return $this;
@@ -525,7 +525,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($billing) && !is_string($billing)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($billing)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($billing, true), gettype($billing)), __LINE__);
         }
         $this->billing = $billing;
         return $this;
@@ -547,7 +547,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dns1) && !is_string($dns1)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dns1)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dns1, true), gettype($dns1)), __LINE__);
         }
         $this->dns1 = $dns1;
         return $this;
@@ -569,7 +569,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dns2) && !is_string($dns2)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dns2)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dns2, true), gettype($dns2)), __LINE__);
         }
         $this->dns2 = $dns2;
         return $this;
@@ -591,7 +591,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dns3) && !is_string($dns3)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dns3)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dns3, true), gettype($dns3)), __LINE__);
         }
         $this->dns3 = $dns3;
         return $this;
@@ -613,7 +613,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dns4) && !is_string($dns4)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dns4)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dns4, true), gettype($dns4)), __LINE__);
         }
         $this->dns4 = $dns4;
         return $this;
@@ -635,7 +635,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dns5) && !is_string($dns5)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dns5)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dns5, true), gettype($dns5)), __LINE__);
         }
         $this->dns5 = $dns5;
         return $this;
@@ -657,7 +657,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($cedCea) && !is_string($cedCea)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($cedCea)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($cedCea, true), gettype($cedCea)), __LINE__);
         }
         $this->CedCea = $cedCea;
         return $this;
@@ -679,7 +679,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($contactCED) && !is_string($contactCED)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($contactCED)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($contactCED, true), gettype($contactCED)), __LINE__);
         }
         $this->contactCED = $contactCED;
         return $this;
@@ -701,7 +701,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($localityCity) && !is_string($localityCity)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($localityCity)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($localityCity, true), gettype($localityCity)), __LINE__);
         }
         $this->localityCity = $localityCity;
         return $this;
@@ -723,7 +723,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($localitySp) && !is_string($localitySp)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($localitySp)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($localitySp, true), gettype($localitySp)), __LINE__);
         }
         $this->localitySp = $localitySp;
         return $this;
@@ -745,7 +745,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($ccLocality) && !is_string($ccLocality)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($ccLocality)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ccLocality, true), gettype($ccLocality)), __LINE__);
         }
         $this->ccLocality = $ccLocality;
         return $this;
@@ -767,7 +767,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($legalEntityType) && !is_string($legalEntityType)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($legalEntityType)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($legalEntityType, true), gettype($legalEntityType)), __LINE__);
         }
         $this->legalEntityType = $legalEntityType;
         return $this;
@@ -789,7 +789,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($otherLEType) && !is_string($otherLEType)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($otherLEType)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($otherLEType, true), gettype($otherLEType)), __LINE__);
         }
         $this->otherLEType = $otherLEType;
         return $this;
@@ -811,7 +811,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($identForm) && !is_string($identForm)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($identForm)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($identForm, true), gettype($identForm)), __LINE__);
         }
         $this->identForm = $identForm;
         return $this;
@@ -833,7 +833,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($otherIdentForm) && !is_string($otherIdentForm)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($otherIdentForm)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($otherIdentForm, true), gettype($otherIdentForm)), __LINE__);
         }
         $this->otherIdentForm = $otherIdentForm;
         return $this;
@@ -855,7 +855,7 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($identNumber) && !is_string($identNumber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($identNumber)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($identNumber, true), gettype($identNumber)), __LINE__);
         }
         $this->identNumber = $identNumber;
         return $this;
@@ -877,29 +877,9 @@ class ResellerDomainTransferASIA extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($dryRun) && !is_bool($dryRun)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($dryRun)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($dryRun, true), gettype($dryRun)), __LINE__);
         }
         $this->dryRun = $dryRun;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\ResellerDomainTransferASIA
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

@@ -115,7 +115,7 @@ class DomainInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($domain) && !is_string($domain)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($domain)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($domain, true), gettype($domain)), __LINE__);
         }
         $this->domain = $domain;
         return $this;
@@ -137,7 +137,7 @@ class DomainInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($creation) && !is_string($creation)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($creation)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($creation, true), gettype($creation)), __LINE__);
         }
         $this->creation = $creation;
         return $this;
@@ -159,7 +159,7 @@ class DomainInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($modification) && !is_string($modification)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($modification)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($modification, true), gettype($modification)), __LINE__);
         }
         $this->modification = $modification;
         return $this;
@@ -181,7 +181,7 @@ class DomainInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($expiration) && !is_string($expiration)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($expiration)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($expiration, true), gettype($expiration)), __LINE__);
         }
         $this->expiration = $expiration;
         return $this;
@@ -203,7 +203,7 @@ class DomainInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($nicowner) && !is_string($nicowner)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($nicowner)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nicowner, true), gettype($nicowner)), __LINE__);
         }
         $this->nicowner = $nicowner;
         return $this;
@@ -225,7 +225,7 @@ class DomainInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($nicadmin) && !is_string($nicadmin)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($nicadmin)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nicadmin, true), gettype($nicadmin)), __LINE__);
         }
         $this->nicadmin = $nicadmin;
         return $this;
@@ -247,7 +247,7 @@ class DomainInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($nictech) && !is_string($nictech)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($nictech)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nictech, true), gettype($nictech)), __LINE__);
         }
         $this->nictech = $nictech;
         return $this;
@@ -269,7 +269,7 @@ class DomainInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($nicbilling) && !is_string($nicbilling)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($nicbilling)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nicbilling, true), gettype($nicbilling)), __LINE__);
         }
         $this->nicbilling = $nicbilling;
         return $this;
@@ -291,7 +291,7 @@ class DomainInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($authinfo) && !is_string($authinfo)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($authinfo)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($authinfo, true), gettype($authinfo)), __LINE__);
         }
         $this->authinfo = $authinfo;
         return $this;
@@ -313,25 +313,5 @@ class DomainInfoReturn extends AbstractStructBase
     {
         $this->dns = $dns;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DomainInfoReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

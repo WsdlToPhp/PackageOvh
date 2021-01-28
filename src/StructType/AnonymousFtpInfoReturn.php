@@ -83,7 +83,7 @@ class AnonymousFtpInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($login) && !is_string($login)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($login)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($login, true), gettype($login)), __LINE__);
         }
         $this->login = $login;
         return $this;
@@ -105,7 +105,7 @@ class AnonymousFtpInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($url) && !is_string($url)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($url)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($url, true), gettype($url)), __LINE__);
         }
         $this->url = $url;
         return $this;
@@ -126,8 +126,8 @@ class AnonymousFtpInfoReturn extends AbstractStructBase
     public function setMax($max = null)
     {
         // validation for constraint: int
-        if (!is_null($max) && !is_numeric($max)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($max)), __LINE__);
+        if (!is_null($max) && !(is_int($max) || ctype_digit($max))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($max, true), gettype($max)), __LINE__);
         }
         $this->max = $max;
         return $this;
@@ -148,8 +148,8 @@ class AnonymousFtpInfoReturn extends AbstractStructBase
     public function setQuota($quota = null)
     {
         // validation for constraint: int
-        if (!is_null($quota) && !is_numeric($quota)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($quota)), __LINE__);
+        if (!is_null($quota) && !(is_int($quota) || ctype_digit($quota))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($quota, true), gettype($quota)), __LINE__);
         }
         $this->quota = $quota;
         return $this;
@@ -171,7 +171,7 @@ class AnonymousFtpInfoReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($active) && !is_bool($active)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($active)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($active, true), gettype($active)), __LINE__);
         }
         $this->active = $active;
         return $this;
@@ -193,29 +193,9 @@ class AnonymousFtpInfoReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($todo) && !is_bool($todo)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($todo)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($todo, true), gettype($todo)), __LINE__);
         }
         $this->todo = $todo;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\AnonymousFtpInfoReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

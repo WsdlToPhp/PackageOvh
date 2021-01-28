@@ -83,7 +83,7 @@ class FreedomStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($referenceReferer) && !is_string($referenceReferer)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($referenceReferer)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($referenceReferer, true), gettype($referenceReferer)), __LINE__);
         }
         $this->referenceReferer = $referenceReferer;
         return $this;
@@ -105,7 +105,7 @@ class FreedomStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($creationDate) && !is_string($creationDate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($creationDate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($creationDate, true), gettype($creationDate)), __LINE__);
         }
         $this->creationDate = $creationDate;
         return $this;
@@ -127,7 +127,7 @@ class FreedomStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($status) && !is_string($status)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($status)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($status, true), gettype($status)), __LINE__);
         }
         $this->status = $status;
         return $this;
@@ -149,7 +149,7 @@ class FreedomStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($freeDom) && !is_string($freeDom)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($freeDom)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($freeDom, true), gettype($freeDom)), __LINE__);
         }
         $this->freeDom = $freeDom;
         return $this;
@@ -171,7 +171,7 @@ class FreedomStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($useDate) && !is_string($useDate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($useDate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($useDate, true), gettype($useDate)), __LINE__);
         }
         $this->useDate = $useDate;
         return $this;
@@ -193,29 +193,9 @@ class FreedomStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($domainReferer) && !is_string($domainReferer)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($domainReferer)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($domainReferer, true), gettype($domainReferer)), __LINE__);
         }
         $this->domainReferer = $domainReferer;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\FreedomStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

@@ -23,7 +23,9 @@ class Hosting extends SoapClientBase
     public function hostingAccessByNic(\Ovh\StructType\HostingAccessByNic $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->hostingAccessByNic($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('hostingAccessByNic', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Hosting extends SoapClientBase
     public function hostingSummary(\Ovh\StructType\HostingSummary $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->hostingSummary($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('hostingSummary', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Hosting extends SoapClientBase
     public function hostingGetCapabilities(\Ovh\StructType\HostingGetCapabilities $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->hostingGetCapabilities($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('hostingGetCapabilities', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Hosting extends SoapClientBase
     public function hostingChangeMainDomain(\Ovh\StructType\HostingChangeMainDomain $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->hostingChangeMainDomain($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('hostingChangeMainDomain', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -99,7 +107,9 @@ class Hosting extends SoapClientBase
     public function hostingList(\Ovh\StructType\HostingList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->hostingList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('hostingList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -114,13 +124,5 @@ class Hosting extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

@@ -83,7 +83,7 @@ class EmailDomainSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($masterNic) && !is_string($masterNic)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($masterNic)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($masterNic, true), gettype($masterNic)), __LINE__);
         }
         $this->masterNic = $masterNic;
         return $this;
@@ -104,8 +104,8 @@ class EmailDomainSummaryReturn extends AbstractStructBase
     public function setNbpops($nbpops = null)
     {
         // validation for constraint: int
-        if (!is_null($nbpops) && !is_numeric($nbpops)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($nbpops)), __LINE__);
+        if (!is_null($nbpops) && !(is_int($nbpops) || ctype_digit($nbpops))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($nbpops, true), gettype($nbpops)), __LINE__);
         }
         $this->nbpops = $nbpops;
         return $this;
@@ -126,8 +126,8 @@ class EmailDomainSummaryReturn extends AbstractStructBase
     public function setNbforwards($nbforwards = null)
     {
         // validation for constraint: int
-        if (!is_null($nbforwards) && !is_numeric($nbforwards)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($nbforwards)), __LINE__);
+        if (!is_null($nbforwards) && !(is_int($nbforwards) || ctype_digit($nbforwards))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($nbforwards, true), gettype($nbforwards)), __LINE__);
         }
         $this->nbforwards = $nbforwards;
         return $this;
@@ -148,8 +148,8 @@ class EmailDomainSummaryReturn extends AbstractStructBase
     public function setNbaliases($nbaliases = null)
     {
         // validation for constraint: int
-        if (!is_null($nbaliases) && !is_numeric($nbaliases)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($nbaliases)), __LINE__);
+        if (!is_null($nbaliases) && !(is_int($nbaliases) || ctype_digit($nbaliases))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($nbaliases, true), gettype($nbaliases)), __LINE__);
         }
         $this->nbaliases = $nbaliases;
         return $this;
@@ -170,8 +170,8 @@ class EmailDomainSummaryReturn extends AbstractStructBase
     public function setNbresponders($nbresponders = null)
     {
         // validation for constraint: int
-        if (!is_null($nbresponders) && !is_numeric($nbresponders)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($nbresponders)), __LINE__);
+        if (!is_null($nbresponders) && !(is_int($nbresponders) || ctype_digit($nbresponders))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($nbresponders, true), gettype($nbresponders)), __LINE__);
         }
         $this->nbresponders = $nbresponders;
         return $this;
@@ -192,30 +192,10 @@ class EmailDomainSummaryReturn extends AbstractStructBase
     public function setNbmls($nbmls = null)
     {
         // validation for constraint: int
-        if (!is_null($nbmls) && !is_numeric($nbmls)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($nbmls)), __LINE__);
+        if (!is_null($nbmls) && !(is_int($nbmls) || ctype_digit($nbmls))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($nbmls, true), gettype($nbmls)), __LINE__);
         }
         $this->nbmls = $nbmls;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\EmailDomainSummaryReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

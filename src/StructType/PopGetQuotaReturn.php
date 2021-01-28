@@ -58,8 +58,8 @@ class PopGetQuotaReturn extends AbstractStructBase
     public function setEmailCount($emailCount = null)
     {
         // validation for constraint: int
-        if (!is_null($emailCount) && !is_numeric($emailCount)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($emailCount)), __LINE__);
+        if (!is_null($emailCount) && !(is_int($emailCount) || ctype_digit($emailCount))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($emailCount, true), gettype($emailCount)), __LINE__);
         }
         $this->emailCount = $emailCount;
         return $this;
@@ -80,8 +80,8 @@ class PopGetQuotaReturn extends AbstractStructBase
     public function setQuota($quota = null)
     {
         // validation for constraint: int
-        if (!is_null($quota) && !is_numeric($quota)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($quota)), __LINE__);
+        if (!is_null($quota) && !(is_int($quota) || ctype_digit($quota))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($quota, true), gettype($quota)), __LINE__);
         }
         $this->quota = $quota;
         return $this;
@@ -102,30 +102,10 @@ class PopGetQuotaReturn extends AbstractStructBase
     public function setMaxQuota($maxQuota = null)
     {
         // validation for constraint: int
-        if (!is_null($maxQuota) && !is_numeric($maxQuota)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($maxQuota)), __LINE__);
+        if (!is_null($maxQuota) && !(is_int($maxQuota) || ctype_digit($maxQuota))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($maxQuota, true), gettype($maxQuota)), __LINE__);
         }
         $this->maxQuota = $maxQuota;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\PopGetQuotaReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

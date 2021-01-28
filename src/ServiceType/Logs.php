@@ -23,7 +23,9 @@ class Logs extends SoapClientBase
     public function logsAccessList(\Ovh\StructType\LogsAccessList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->logsAccessList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('logsAccessList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Logs extends SoapClientBase
     public function logsAccessDel(\Ovh\StructType\LogsAccessDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->logsAccessDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('logsAccessDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Logs extends SoapClientBase
     public function logsAccessAdd(\Ovh\StructType\LogsAccessAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->logsAccessAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('logsAccessAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -76,13 +82,5 @@ class Logs extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

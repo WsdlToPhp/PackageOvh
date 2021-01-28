@@ -58,8 +58,8 @@ class TelephonyFaxSummaryDetailsStruct extends AbstractStructBase
     public function setCount($count = null)
     {
         // validation for constraint: int
-        if (!is_null($count) && !is_numeric($count)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($count)), __LINE__);
+        if (!is_null($count) && !(is_int($count) || ctype_digit($count))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($count, true), gettype($count)), __LINE__);
         }
         $this->count = $count;
         return $this;
@@ -80,8 +80,8 @@ class TelephonyFaxSummaryDetailsStruct extends AbstractStructBase
     public function setPages($pages = null)
     {
         // validation for constraint: int
-        if (!is_null($pages) && !is_numeric($pages)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($pages)), __LINE__);
+        if (!is_null($pages) && !(is_int($pages) || ctype_digit($pages))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($pages, true), gettype($pages)), __LINE__);
         }
         $this->pages = $pages;
         return $this;
@@ -101,27 +101,11 @@ class TelephonyFaxSummaryDetailsStruct extends AbstractStructBase
      */
     public function setPriceWithoutVAT($priceWithoutVAT = null)
     {
+        // validation for constraint: float
+        if (!is_null($priceWithoutVAT) && !(is_float($priceWithoutVAT) || is_numeric($priceWithoutVAT))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($priceWithoutVAT, true), gettype($priceWithoutVAT)), __LINE__);
+        }
         $this->priceWithoutVAT = $priceWithoutVAT;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyFaxSummaryDetailsStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

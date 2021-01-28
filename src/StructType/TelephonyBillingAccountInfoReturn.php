@@ -91,7 +91,7 @@ class TelephonyBillingAccountInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($name) && !is_string($name)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($name)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($name, true), gettype($name)), __LINE__);
         }
         $this->name = $name;
         return $this;
@@ -113,7 +113,7 @@ class TelephonyBillingAccountInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($description) && !is_string($description)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($description)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($description, true), gettype($description)), __LINE__);
         }
         $this->description = $description;
         return $this;
@@ -135,7 +135,7 @@ class TelephonyBillingAccountInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($offer) && !is_string($offer)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($offer)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($offer, true), gettype($offer)), __LINE__);
         }
         $this->offer = $offer;
         return $this;
@@ -157,7 +157,7 @@ class TelephonyBillingAccountInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($consumtionTime) && !is_string($consumtionTime)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($consumtionTime)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($consumtionTime, true), gettype($consumtionTime)), __LINE__);
         }
         $this->consumtionTime = $consumtionTime;
         return $this;
@@ -179,7 +179,7 @@ class TelephonyBillingAccountInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($outPlan) && !is_string($outPlan)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($outPlan)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($outPlan, true), gettype($outPlan)), __LINE__);
         }
         $this->outPlan = $outPlan;
         return $this;
@@ -201,7 +201,7 @@ class TelephonyBillingAccountInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($facturationDate) && !is_string($facturationDate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($facturationDate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($facturationDate, true), gettype($facturationDate)), __LINE__);
         }
         $this->facturationDate = $facturationDate;
         return $this;
@@ -223,25 +223,5 @@ class TelephonyBillingAccountInfoReturn extends AbstractStructBase
     {
         $this->children = $children;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyBillingAccountInfoReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

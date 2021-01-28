@@ -115,7 +115,7 @@ class DedicatedNetworkInterfaceStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($reverse) && !is_string($reverse)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($reverse)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($reverse, true), gettype($reverse)), __LINE__);
         }
         $this->reverse = $reverse;
         return $this;
@@ -137,7 +137,7 @@ class DedicatedNetworkInterfaceStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($ip) && !is_string($ip)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($ip)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ip, true), gettype($ip)), __LINE__);
         }
         $this->ip = $ip;
         return $this;
@@ -159,7 +159,7 @@ class DedicatedNetworkInterfaceStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($ipv6) && !is_string($ipv6)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($ipv6)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ipv6, true), gettype($ipv6)), __LINE__);
         }
         $this->ipv6 = $ipv6;
         return $this;
@@ -181,7 +181,7 @@ class DedicatedNetworkInterfaceStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($mac) && !is_string($mac)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($mac)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($mac, true), gettype($mac)), __LINE__);
         }
         $this->mac = $mac;
         return $this;
@@ -203,7 +203,7 @@ class DedicatedNetworkInterfaceStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($switch) && !is_string($switch)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($switch)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($switch, true), gettype($switch)), __LINE__);
         }
         $this->switch = $switch;
         return $this;
@@ -225,7 +225,7 @@ class DedicatedNetworkInterfaceStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($icmp_drop) && !is_bool($icmp_drop)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($icmp_drop)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($icmp_drop, true), gettype($icmp_drop)), __LINE__);
         }
         $this->icmp_drop = $icmp_drop;
         return $this;
@@ -247,7 +247,7 @@ class DedicatedNetworkInterfaceStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($failover) && !is_bool($failover)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($failover)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($failover, true), gettype($failover)), __LINE__);
         }
         $this->failover = $failover;
         return $this;
@@ -269,7 +269,7 @@ class DedicatedNetworkInterfaceStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($routedTo) && !is_string($routedTo)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($routedTo)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($routedTo, true), gettype($routedTo)), __LINE__);
         }
         $this->routedTo = $routedTo;
         return $this;
@@ -291,7 +291,7 @@ class DedicatedNetworkInterfaceStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($ssl) && !is_bool($ssl)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($ssl)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($ssl, true), gettype($ssl)), __LINE__);
         }
         $this->ssl = $ssl;
         return $this;
@@ -313,29 +313,9 @@ class DedicatedNetworkInterfaceStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($country) && !is_string($country)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($country)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($country, true), gettype($country)), __LINE__);
         }
         $this->country = $country;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DedicatedNetworkInterfaceStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

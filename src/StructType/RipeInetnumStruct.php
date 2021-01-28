@@ -123,7 +123,7 @@ class RipeInetnumStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($inetnum) && !is_string($inetnum)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($inetnum)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($inetnum, true), gettype($inetnum)), __LINE__);
         }
         $this->inetnum = $inetnum;
         return $this;
@@ -145,7 +145,7 @@ class RipeInetnumStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($netname) && !is_string($netname)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($netname)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($netname, true), gettype($netname)), __LINE__);
         }
         $this->netname = $netname;
         return $this;
@@ -185,7 +185,7 @@ class RipeInetnumStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($org) && !is_string($org)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($org)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($org, true), gettype($org)), __LINE__);
         }
         $this->org = $org;
         return $this;
@@ -207,7 +207,7 @@ class RipeInetnumStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($country) && !is_string($country)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($country)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($country, true), gettype($country)), __LINE__);
         }
         $this->country = $country;
         return $this;
@@ -229,7 +229,7 @@ class RipeInetnumStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($adminc) && !is_string($adminc)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($adminc)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($adminc, true), gettype($adminc)), __LINE__);
         }
         $this->adminc = $adminc;
         return $this;
@@ -251,7 +251,7 @@ class RipeInetnumStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($techc) && !is_string($techc)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($techc)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($techc, true), gettype($techc)), __LINE__);
         }
         $this->techc = $techc;
         return $this;
@@ -273,7 +273,7 @@ class RipeInetnumStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($status) && !is_string($status)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($status)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($status, true), gettype($status)), __LINE__);
         }
         $this->status = $status;
         return $this;
@@ -295,7 +295,7 @@ class RipeInetnumStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($mntby) && !is_string($mntby)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($mntby)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($mntby, true), gettype($mntby)), __LINE__);
         }
         $this->mntby = $mntby;
         return $this;
@@ -317,7 +317,7 @@ class RipeInetnumStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($changed) && !is_string($changed)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($changed)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($changed, true), gettype($changed)), __LINE__);
         }
         $this->changed = $changed;
         return $this;
@@ -339,29 +339,9 @@ class RipeInetnumStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($source) && !is_string($source)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($source)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($source, true), gettype($source)), __LINE__);
         }
         $this->source = $source;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\RipeInetnumStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

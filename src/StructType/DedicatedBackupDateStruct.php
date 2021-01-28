@@ -75,7 +75,7 @@ class DedicatedBackupDateStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($hour) && !is_string($hour)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($hour)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($hour, true), gettype($hour)), __LINE__);
         }
         $this->hour = $hour;
         return $this;
@@ -97,7 +97,7 @@ class DedicatedBackupDateStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($superBackupName) && !is_string($superBackupName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($superBackupName)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($superBackupName, true), gettype($superBackupName)), __LINE__);
         }
         $this->superBackupName = $superBackupName;
         return $this;
@@ -119,7 +119,7 @@ class DedicatedBackupDateStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($day) && !is_string($day)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($day)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($day, true), gettype($day)), __LINE__);
         }
         $this->day = $day;
         return $this;
@@ -140,8 +140,8 @@ class DedicatedBackupDateStruct extends AbstractStructBase
     public function setId($id = null)
     {
         // validation for constraint: int
-        if (!is_null($id) && !is_numeric($id)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($id)), __LINE__);
+        if (!is_null($id) && !(is_int($id) || ctype_digit($id))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($id, true), gettype($id)), __LINE__);
         }
         $this->id = $id;
         return $this;
@@ -162,30 +162,10 @@ class DedicatedBackupDateStruct extends AbstractStructBase
     public function setBackupCount($backupCount = null)
     {
         // validation for constraint: int
-        if (!is_null($backupCount) && !is_numeric($backupCount)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($backupCount)), __LINE__);
+        if (!is_null($backupCount) && !(is_int($backupCount) || ctype_digit($backupCount))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($backupCount, true), gettype($backupCount)), __LINE__);
         }
         $this->backupCount = $backupCount;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DedicatedBackupDateStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

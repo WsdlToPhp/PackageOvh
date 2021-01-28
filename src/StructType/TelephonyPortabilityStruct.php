@@ -242,8 +242,8 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     public function setId($id = null)
     {
         // validation for constraint: int
-        if (!is_null($id) && !is_numeric($id)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($id)), __LINE__);
+        if (!is_null($id) && !(is_int($id) || ctype_digit($id))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($id, true), gettype($id)), __LINE__);
         }
         $this->id = $id;
         return $this;
@@ -265,7 +265,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($customerFullName) && !is_string($customerFullName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($customerFullName)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerFullName, true), gettype($customerFullName)), __LINE__);
         }
         $this->customerFullName = $customerFullName;
         return $this;
@@ -287,7 +287,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($billingAccount) && !is_string($billingAccount)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($billingAccount)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($billingAccount, true), gettype($billingAccount)), __LINE__);
         }
         $this->billingAccount = $billingAccount;
         return $this;
@@ -309,7 +309,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($callNumber) && !is_string($callNumber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($callNumber)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($callNumber, true), gettype($callNumber)), __LINE__);
         }
         $this->callNumber = $callNumber;
         return $this;
@@ -349,7 +349,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($planDate) && !is_string($planDate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($planDate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($planDate, true), gettype($planDate)), __LINE__);
         }
         $this->planDate = $planDate;
         return $this;
@@ -371,7 +371,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($resellerOrder) && !is_bool($resellerOrder)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($resellerOrder)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($resellerOrder, true), gettype($resellerOrder)), __LINE__);
         }
         $this->resellerOrder = $resellerOrder;
         return $this;
@@ -393,7 +393,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($customerMailSent) && !is_bool($customerMailSent)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($customerMailSent)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($customerMailSent, true), gettype($customerMailSent)), __LINE__);
         }
         $this->customerMailSent = $customerMailSent;
         return $this;
@@ -415,7 +415,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($customerMailSendDate) && !is_string($customerMailSendDate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($customerMailSendDate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerMailSendDate, true), gettype($customerMailSendDate)), __LINE__);
         }
         $this->customerMailSendDate = $customerMailSendDate;
         return $this;
@@ -437,7 +437,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($customerMailReturned) && !is_bool($customerMailReturned)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($customerMailReturned)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($customerMailReturned, true), gettype($customerMailReturned)), __LINE__);
         }
         $this->customerMailReturned = $customerMailReturned;
         return $this;
@@ -459,7 +459,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($customerMailReturnDate) && !is_string($customerMailReturnDate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($customerMailReturnDate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerMailReturnDate, true), gettype($customerMailReturnDate)), __LINE__);
         }
         $this->customerMailReturnDate = $customerMailReturnDate;
         return $this;
@@ -481,7 +481,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($customerMailTracking) && !is_string($customerMailTracking)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($customerMailTracking)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerMailTracking, true), gettype($customerMailTracking)), __LINE__);
         }
         $this->customerMailTracking = $customerMailTracking;
         return $this;
@@ -503,7 +503,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($rangeHolderName) && !is_string($rangeHolderName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($rangeHolderName)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($rangeHolderName, true), gettype($rangeHolderName)), __LINE__);
         }
         $this->rangeHolderName = $rangeHolderName;
         return $this;
@@ -525,7 +525,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($losingCpName) && !is_string($losingCpName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($losingCpName)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($losingCpName, true), gettype($losingCpName)), __LINE__);
         }
         $this->losingCpName = $losingCpName;
         return $this;
@@ -547,7 +547,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($rhOrderSent) && !is_bool($rhOrderSent)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($rhOrderSent)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($rhOrderSent, true), gettype($rhOrderSent)), __LINE__);
         }
         $this->rhOrderSent = $rhOrderSent;
         return $this;
@@ -569,7 +569,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($rhOrderReceived) && !is_bool($rhOrderReceived)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($rhOrderReceived)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($rhOrderReceived, true), gettype($rhOrderReceived)), __LINE__);
         }
         $this->rhOrderReceived = $rhOrderReceived;
         return $this;
@@ -591,7 +591,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($rhOrderAck) && !is_string($rhOrderAck)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($rhOrderAck)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($rhOrderAck, true), gettype($rhOrderAck)), __LINE__);
         }
         $this->rhOrderAck = $rhOrderAck;
         return $this;
@@ -613,7 +613,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($rhOrderAckComment) && !is_string($rhOrderAckComment)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($rhOrderAckComment)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($rhOrderAckComment, true), gettype($rhOrderAckComment)), __LINE__);
         }
         $this->rhOrderAckComment = $rhOrderAckComment;
         return $this;
@@ -635,7 +635,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($rhOrderPort) && !is_string($rhOrderPort)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($rhOrderPort)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($rhOrderPort, true), gettype($rhOrderPort)), __LINE__);
         }
         $this->rhOrderPort = $rhOrderPort;
         return $this;
@@ -657,7 +657,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($rhOrderPortComment) && !is_string($rhOrderPortComment)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($rhOrderPortComment)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($rhOrderPortComment, true), gettype($rhOrderPortComment)), __LINE__);
         }
         $this->rhOrderPortComment = $rhOrderPortComment;
         return $this;
@@ -679,7 +679,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($lcpOrderSent) && !is_bool($lcpOrderSent)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($lcpOrderSent)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($lcpOrderSent, true), gettype($lcpOrderSent)), __LINE__);
         }
         $this->lcpOrderSent = $lcpOrderSent;
         return $this;
@@ -701,7 +701,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($lcpOrderReceived) && !is_bool($lcpOrderReceived)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($lcpOrderReceived)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($lcpOrderReceived, true), gettype($lcpOrderReceived)), __LINE__);
         }
         $this->lcpOrderReceived = $lcpOrderReceived;
         return $this;
@@ -723,7 +723,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($lcpOrderAck) && !is_string($lcpOrderAck)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($lcpOrderAck)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($lcpOrderAck, true), gettype($lcpOrderAck)), __LINE__);
         }
         $this->lcpOrderAck = $lcpOrderAck;
         return $this;
@@ -745,7 +745,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($lcpOrderAckComment) && !is_string($lcpOrderAckComment)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($lcpOrderAckComment)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($lcpOrderAckComment, true), gettype($lcpOrderAckComment)), __LINE__);
         }
         $this->lcpOrderAckComment = $lcpOrderAckComment;
         return $this;
@@ -767,7 +767,7 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($lcpOrderPort) && !is_string($lcpOrderPort)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($lcpOrderPort)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($lcpOrderPort, true), gettype($lcpOrderPort)), __LINE__);
         }
         $this->lcpOrderPort = $lcpOrderPort;
         return $this;
@@ -789,29 +789,9 @@ class TelephonyPortabilityStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($lcpOrderPortComment) && !is_string($lcpOrderPortComment)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($lcpOrderPortComment)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($lcpOrderPortComment, true), gettype($lcpOrderPortComment)), __LINE__);
         }
         $this->lcpOrderPortComment = $lcpOrderPortComment;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyPortabilityStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

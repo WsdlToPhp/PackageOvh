@@ -147,7 +147,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($callNumber) && !is_string($callNumber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($callNumber)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($callNumber, true), gettype($callNumber)), __LINE__);
         }
         $this->callNumber = $callNumber;
         return $this;
@@ -169,7 +169,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($countryCode) && !is_string($countryCode)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($countryCode)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($countryCode, true), gettype($countryCode)), __LINE__);
         }
         $this->countryCode = $countryCode;
         return $this;
@@ -191,7 +191,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($fromName) && !is_string($fromName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($fromName)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($fromName, true), gettype($fromName)), __LINE__);
         }
         $this->fromName = $fromName;
         return $this;
@@ -213,7 +213,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($fromEmail) && !is_string($fromEmail)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($fromEmail)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($fromEmail, true), gettype($fromEmail)), __LINE__);
         }
         $this->fromEmail = $fromEmail;
         return $this;
@@ -235,7 +235,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($faxQuality) && !is_string($faxQuality)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($faxQuality)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($faxQuality, true), gettype($faxQuality)), __LINE__);
         }
         $this->faxQuality = $faxQuality;
         return $this;
@@ -257,7 +257,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($faxTagLine) && !is_string($faxTagLine)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($faxTagLine)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($faxTagLine, true), gettype($faxTagLine)), __LINE__);
         }
         $this->faxTagLine = $faxTagLine;
         return $this;
@@ -278,8 +278,8 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     public function setFaxMaxCall($faxMaxCall = null)
     {
         // validation for constraint: int
-        if (!is_null($faxMaxCall) && !is_numeric($faxMaxCall)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($faxMaxCall)), __LINE__);
+        if (!is_null($faxMaxCall) && !(is_int($faxMaxCall) || ctype_digit($faxMaxCall))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($faxMaxCall, true), gettype($faxMaxCall)), __LINE__);
         }
         $this->faxMaxCall = $faxMaxCall;
         return $this;
@@ -301,7 +301,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($receivId) && !is_string($receivId)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($receivId)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($receivId, true), gettype($receivId)), __LINE__);
         }
         $this->receivId = $receivId;
         return $this;
@@ -323,7 +323,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($senderId) && !is_string($senderId)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($senderId)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($senderId, true), gettype($senderId)), __LINE__);
         }
         $this->senderId = $senderId;
         return $this;
@@ -345,7 +345,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($redirection1Email) && !is_string($redirection1Email)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($redirection1Email)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($redirection1Email, true), gettype($redirection1Email)), __LINE__);
         }
         $this->redirection1Email = $redirection1Email;
         return $this;
@@ -367,7 +367,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($redirection2Email) && !is_string($redirection2Email)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($redirection2Email)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($redirection2Email, true), gettype($redirection2Email)), __LINE__);
         }
         $this->redirection2Email = $redirection2Email;
         return $this;
@@ -389,7 +389,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($redirection3Email) && !is_string($redirection3Email)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($redirection3Email)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($redirection3Email, true), gettype($redirection3Email)), __LINE__);
         }
         $this->redirection3Email = $redirection3Email;
         return $this;
@@ -411,7 +411,7 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($redirection4Email) && !is_string($redirection4Email)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($redirection4Email)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($redirection4Email, true), gettype($redirection4Email)), __LINE__);
         }
         $this->redirection4Email = $redirection4Email;
         return $this;
@@ -433,29 +433,9 @@ class TelephonyFaxOptionsListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($redirection5Email) && !is_string($redirection5Email)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($redirection5Email)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($redirection5Email, true), gettype($redirection5Email)), __LINE__);
         }
         $this->redirection5Email = $redirection5Email;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyFaxOptionsListReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

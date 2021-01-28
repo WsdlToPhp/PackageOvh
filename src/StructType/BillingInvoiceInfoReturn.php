@@ -147,7 +147,7 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($billnum) && !is_string($billnum)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($billnum)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($billnum, true), gettype($billnum)), __LINE__);
         }
         $this->billnum = $billnum;
         return $this;
@@ -169,7 +169,7 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($date) && !is_string($date)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($date)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($date, true), gettype($date)), __LINE__);
         }
         $this->date = $date;
         return $this;
@@ -191,7 +191,7 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($nicbilling) && !is_string($nicbilling)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($nicbilling)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nicbilling, true), gettype($nicbilling)), __LINE__);
         }
         $this->nicbilling = $nicbilling;
         return $this;
@@ -213,7 +213,7 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($baseprice) && !is_string($baseprice)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($baseprice)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($baseprice, true), gettype($baseprice)), __LINE__);
         }
         $this->baseprice = $baseprice;
         return $this;
@@ -233,6 +233,10 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
      */
     public function setFinalprice($finalprice = null)
     {
+        // validation for constraint: float
+        if (!is_null($finalprice) && !(is_float($finalprice) || is_numeric($finalprice))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($finalprice, true), gettype($finalprice)), __LINE__);
+        }
         $this->finalprice = $finalprice;
         return $this;
     }
@@ -253,7 +257,7 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($password) && !is_string($password)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($password)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($password, true), gettype($password)), __LINE__);
         }
         $this->password = $password;
         return $this;
@@ -275,7 +279,7 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($order) && !is_string($order)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($order)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($order, true), gettype($order)), __LINE__);
         }
         $this->order = $order;
         return $this;
@@ -297,7 +301,7 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($nicorder) && !is_string($nicorder)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($nicorder)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nicorder, true), gettype($nicorder)), __LINE__);
         }
         $this->nicorder = $nicorder;
         return $this;
@@ -319,7 +323,7 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($country) && !is_string($country)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($country)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($country, true), gettype($country)), __LINE__);
         }
         $this->country = $country;
         return $this;
@@ -339,6 +343,10 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
      */
     public function setTaxrate($taxrate = null)
     {
+        // validation for constraint: float
+        if (!is_null($taxrate) && !(is_float($taxrate) || is_numeric($taxrate))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($taxrate, true), gettype($taxrate)), __LINE__);
+        }
         $this->taxrate = $taxrate;
         return $this;
     }
@@ -357,6 +365,10 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
      */
     public function setTax($tax = null)
     {
+        // validation for constraint: float
+        if (!is_null($tax) && !(is_float($tax) || is_numeric($tax))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($tax, true), gettype($tax)), __LINE__);
+        }
         $this->tax = $tax;
         return $this;
     }
@@ -377,7 +389,7 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($type) && !is_string($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($type)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($type, true), gettype($type)), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -417,25 +429,5 @@ class BillingInvoiceInfoReturn extends AbstractStructBase
     {
         $this->payment = $payment;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\BillingInvoiceInfoReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

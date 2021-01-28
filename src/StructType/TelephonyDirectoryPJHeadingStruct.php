@@ -67,7 +67,7 @@ class TelephonyDirectoryPJHeadingStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($codePJ) && !is_string($codePJ)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($codePJ)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($codePJ, true), gettype($codePJ)), __LINE__);
         }
         $this->codePJ = $codePJ;
         return $this;
@@ -89,7 +89,7 @@ class TelephonyDirectoryPJHeadingStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($labelPJ) && !is_string($labelPJ)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($labelPJ)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($labelPJ, true), gettype($labelPJ)), __LINE__);
         }
         $this->labelPJ = $labelPJ;
         return $this;
@@ -111,7 +111,7 @@ class TelephonyDirectoryPJHeadingStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($isAssociatedWithAPE) && !is_string($isAssociatedWithAPE)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($isAssociatedWithAPE)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($isAssociatedWithAPE, true), gettype($isAssociatedWithAPE)), __LINE__);
         }
         $this->isAssociatedWithAPE = $isAssociatedWithAPE;
         return $this;
@@ -133,29 +133,9 @@ class TelephonyDirectoryPJHeadingStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($notification) && !is_string($notification)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($notification)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($notification, true), gettype($notification)), __LINE__);
         }
         $this->notification = $notification;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyDirectoryPJHeadingStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

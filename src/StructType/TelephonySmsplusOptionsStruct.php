@@ -83,7 +83,7 @@ class TelephonySmsplusOptionsStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($sendingNoSmsMt) && !is_bool($sendingNoSmsMt)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($sendingNoSmsMt)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($sendingNoSmsMt, true), gettype($sendingNoSmsMt)), __LINE__);
         }
         $this->sendingNoSmsMt = $sendingNoSmsMt;
         return $this;
@@ -105,7 +105,7 @@ class TelephonySmsplusOptionsStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($defaultSmsAccount) && !is_string($defaultSmsAccount)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($defaultSmsAccount)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($defaultSmsAccount, true), gettype($defaultSmsAccount)), __LINE__);
         }
         $this->defaultSmsAccount = $defaultSmsAccount;
         return $this;
@@ -127,7 +127,7 @@ class TelephonySmsplusOptionsStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($defaultSmsSender) && !is_string($defaultSmsSender)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($defaultSmsSender)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($defaultSmsSender, true), gettype($defaultSmsSender)), __LINE__);
         }
         $this->defaultSmsSender = $defaultSmsSender;
         return $this;
@@ -149,7 +149,7 @@ class TelephonySmsplusOptionsStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($defaultSmsAccountMtBilling) && !is_string($defaultSmsAccountMtBilling)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($defaultSmsAccountMtBilling)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($defaultSmsAccountMtBilling, true), gettype($defaultSmsAccountMtBilling)), __LINE__);
         }
         $this->defaultSmsAccountMtBilling = $defaultSmsAccountMtBilling;
         return $this;
@@ -189,25 +189,5 @@ class TelephonySmsplusOptionsStruct extends AbstractStructBase
     {
         $this->trackingTargets = $trackingTargets;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonySmsplusOptionsStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

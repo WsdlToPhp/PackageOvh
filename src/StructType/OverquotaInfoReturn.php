@@ -67,7 +67,7 @@ class OverquotaInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($domain) && !is_string($domain)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($domain)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($domain, true), gettype($domain)), __LINE__);
         }
         $this->domain = $domain;
         return $this;
@@ -106,8 +106,8 @@ class OverquotaInfoReturn extends AbstractStructBase
     public function setCapacities($capacities = null)
     {
         // validation for constraint: int
-        if (!is_null($capacities) && !is_numeric($capacities)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($capacities)), __LINE__);
+        if (!is_null($capacities) && !(is_int($capacities) || ctype_digit($capacities))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($capacities, true), gettype($capacities)), __LINE__);
         }
         $this->capacities = $capacities;
         return $this;
@@ -128,30 +128,10 @@ class OverquotaInfoReturn extends AbstractStructBase
     public function setOrder($order = null)
     {
         // validation for constraint: int
-        if (!is_null($order) && !is_numeric($order)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($order)), __LINE__);
+        if (!is_null($order) && !(is_int($order) || ctype_digit($order))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($order, true), gettype($order)), __LINE__);
         }
         $this->order = $order;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\OverquotaInfoReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

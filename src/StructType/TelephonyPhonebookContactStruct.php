@@ -98,8 +98,8 @@ class TelephonyPhonebookContactStruct extends AbstractStructBase
     public function setId($id = null)
     {
         // validation for constraint: int
-        if (!is_null($id) && !is_numeric($id)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($id)), __LINE__);
+        if (!is_null($id) && !(is_int($id) || ctype_digit($id))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($id, true), gettype($id)), __LINE__);
         }
         $this->id = $id;
         return $this;
@@ -121,7 +121,7 @@ class TelephonyPhonebookContactStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($name) && !is_string($name)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($name)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($name, true), gettype($name)), __LINE__);
         }
         $this->name = $name;
         return $this;
@@ -143,7 +143,7 @@ class TelephonyPhonebookContactStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($surname) && !is_string($surname)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($surname)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($surname, true), gettype($surname)), __LINE__);
         }
         $this->surname = $surname;
         return $this;
@@ -165,7 +165,7 @@ class TelephonyPhonebookContactStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($workPhone) && !is_string($workPhone)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($workPhone)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($workPhone, true), gettype($workPhone)), __LINE__);
         }
         $this->workPhone = $workPhone;
         return $this;
@@ -187,7 +187,7 @@ class TelephonyPhonebookContactStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($workMobile) && !is_string($workMobile)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($workMobile)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($workMobile, true), gettype($workMobile)), __LINE__);
         }
         $this->workMobile = $workMobile;
         return $this;
@@ -209,7 +209,7 @@ class TelephonyPhonebookContactStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($homePhone) && !is_string($homePhone)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($homePhone)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($homePhone, true), gettype($homePhone)), __LINE__);
         }
         $this->homePhone = $homePhone;
         return $this;
@@ -231,7 +231,7 @@ class TelephonyPhonebookContactStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($homeMobile) && !is_string($homeMobile)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($homeMobile)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($homeMobile, true), gettype($homeMobile)), __LINE__);
         }
         $this->homeMobile = $homeMobile;
         return $this;
@@ -253,29 +253,9 @@ class TelephonyPhonebookContactStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($group) && !is_string($group)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($group)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($group, true), gettype($group)), __LINE__);
         }
         $this->group = $group;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyPhonebookContactStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

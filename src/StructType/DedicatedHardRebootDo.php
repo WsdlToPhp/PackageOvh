@@ -13,35 +13,35 @@ class DedicatedHardRebootDo extends AbstractStructBase
 {
     /**
      * The session
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $session;
     /**
      * The hostname
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $hostname;
     /**
      * The reason
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $reason;
     /**
      * The email
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $email;
     /**
      * The emailLanguage
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
@@ -85,7 +85,7 @@ class DedicatedHardRebootDo extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($session) && !is_string($session)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($session)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($session, true), gettype($session)), __LINE__);
         }
         $this->session = $session;
         return $this;
@@ -107,7 +107,7 @@ class DedicatedHardRebootDo extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($hostname) && !is_string($hostname)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($hostname)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($hostname, true), gettype($hostname)), __LINE__);
         }
         $this->hostname = $hostname;
         return $this;
@@ -129,7 +129,7 @@ class DedicatedHardRebootDo extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($reason) && !is_string($reason)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($reason)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($reason, true), gettype($reason)), __LINE__);
         }
         $this->reason = $reason;
         return $this;
@@ -151,7 +151,7 @@ class DedicatedHardRebootDo extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($email) && !is_string($email)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($email)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($email, true), gettype($email)), __LINE__);
         }
         $this->email = $email;
         return $this;
@@ -173,29 +173,9 @@ class DedicatedHardRebootDo extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($emailLanguage) && !is_string($emailLanguage)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($emailLanguage)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($emailLanguage, true), gettype($emailLanguage)), __LINE__);
         }
         $this->emailLanguage = $emailLanguage;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DedicatedHardRebootDo
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

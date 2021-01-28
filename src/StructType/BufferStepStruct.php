@@ -67,7 +67,7 @@ class BufferStepStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($durationUnit) && !is_string($durationUnit)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($durationUnit)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($durationUnit, true), gettype($durationUnit)), __LINE__);
         }
         $this->durationUnit = $durationUnit;
         return $this;
@@ -89,7 +89,7 @@ class BufferStepStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($durationValue) && !is_string($durationValue)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($durationValue)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($durationValue, true), gettype($durationValue)), __LINE__);
         }
         $this->durationValue = $durationValue;
         return $this;
@@ -111,7 +111,7 @@ class BufferStepStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($date) && !is_string($date)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($date)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($date, true), gettype($date)), __LINE__);
         }
         $this->date = $date;
         return $this;
@@ -133,29 +133,9 @@ class BufferStepStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($extraInfo) && !is_string($extraInfo)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($extraInfo)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($extraInfo, true), gettype($extraInfo)), __LINE__);
         }
         $this->extraInfo = $extraInfo;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\BufferStepStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

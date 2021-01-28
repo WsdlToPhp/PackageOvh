@@ -115,7 +115,7 @@ class AccountSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($nic) && !is_string($nic)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($nic)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nic, true), gettype($nic)), __LINE__);
         }
         $this->nic = $nic;
         return $this;
@@ -137,7 +137,7 @@ class AccountSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($account) && !is_string($account)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($account)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($account, true), gettype($account)), __LINE__);
         }
         $this->account = $account;
         return $this;
@@ -159,7 +159,7 @@ class AccountSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($country) && !is_string($country)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($country)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($country, true), gettype($country)), __LINE__);
         }
         $this->country = $country;
         return $this;
@@ -181,7 +181,7 @@ class AccountSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($description) && !is_string($description)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($description)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($description, true), gettype($description)), __LINE__);
         }
         $this->description = $description;
         return $this;
@@ -202,8 +202,8 @@ class AccountSummaryReturn extends AbstractStructBase
     public function setBalance($balance = null)
     {
         // validation for constraint: int
-        if (!is_null($balance) && !is_numeric($balance)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($balance)), __LINE__);
+        if (!is_null($balance) && !(is_int($balance) || ctype_digit($balance))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($balance, true), gettype($balance)), __LINE__);
         }
         $this->balance = $balance;
         return $this;
@@ -224,8 +224,8 @@ class AccountSummaryReturn extends AbstractStructBase
     public function setAlertThreshold($alertThreshold = null)
     {
         // validation for constraint: int
-        if (!is_null($alertThreshold) && !is_numeric($alertThreshold)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($alertThreshold)), __LINE__);
+        if (!is_null($alertThreshold) && !(is_int($alertThreshold) || ctype_digit($alertThreshold))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($alertThreshold, true), gettype($alertThreshold)), __LINE__);
         }
         $this->alertThreshold = $alertThreshold;
         return $this;
@@ -246,8 +246,8 @@ class AccountSummaryReturn extends AbstractStructBase
     public function setLimitThreshold($limitThreshold = null)
     {
         // validation for constraint: int
-        if (!is_null($limitThreshold) && !is_numeric($limitThreshold)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($limitThreshold)), __LINE__);
+        if (!is_null($limitThreshold) && !(is_int($limitThreshold) || ctype_digit($limitThreshold))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($limitThreshold, true), gettype($limitThreshold)), __LINE__);
         }
         $this->limitThreshold = $limitThreshold;
         return $this;
@@ -269,7 +269,7 @@ class AccountSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($openDate) && !is_string($openDate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($openDate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($openDate, true), gettype($openDate)), __LINE__);
         }
         $this->openDate = $openDate;
         return $this;
@@ -291,7 +291,7 @@ class AccountSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($date) && !is_string($date)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($date)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($date, true), gettype($date)), __LINE__);
         }
         $this->date = $date;
         return $this;
@@ -313,29 +313,9 @@ class AccountSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($closeDate) && !is_string($closeDate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($closeDate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($closeDate, true), gettype($closeDate)), __LINE__);
         }
         $this->closeDate = $closeDate;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\AccountSummaryReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

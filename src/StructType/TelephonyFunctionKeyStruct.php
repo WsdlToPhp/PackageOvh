@@ -90,8 +90,8 @@ class TelephonyFunctionKeyStruct extends AbstractStructBase
     public function setKeyNum($keyNum = null)
     {
         // validation for constraint: int
-        if (!is_null($keyNum) && !is_numeric($keyNum)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($keyNum)), __LINE__);
+        if (!is_null($keyNum) && !(is_int($keyNum) || ctype_digit($keyNum))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($keyNum, true), gettype($keyNum)), __LINE__);
         }
         $this->keyNum = $keyNum;
         return $this;
@@ -113,7 +113,7 @@ class TelephonyFunctionKeyStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($function) && !is_string($function)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($function)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($function, true), gettype($function)), __LINE__);
         }
         $this->function = $function;
         return $this;
@@ -135,7 +135,7 @@ class TelephonyFunctionKeyStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($relatedNumber) && !is_string($relatedNumber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($relatedNumber)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($relatedNumber, true), gettype($relatedNumber)), __LINE__);
         }
         $this->relatedNumber = $relatedNumber;
         return $this;
@@ -157,7 +157,7 @@ class TelephonyFunctionKeyStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($label) && !is_string($label)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($label)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($label, true), gettype($label)), __LINE__);
         }
         $this->label = $label;
         return $this;
@@ -179,7 +179,7 @@ class TelephonyFunctionKeyStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($default) && !is_string($default)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($default)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($default, true), gettype($default)), __LINE__);
         }
         $this->default = $default;
         return $this;
@@ -201,7 +201,7 @@ class TelephonyFunctionKeyStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($type) && !is_string($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($type)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($type, true), gettype($type)), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -223,25 +223,5 @@ class TelephonyFunctionKeyStruct extends AbstractStructBase
     {
         $this->functionList = $functionList;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyFunctionKeyStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

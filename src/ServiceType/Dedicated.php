@@ -23,7 +23,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedReverseDel(\Ovh\StructType\DedicatedReverseDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedReverseDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedReverseDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedDelServiceMonitoringAlert(\Ovh\StructType\DedicatedDelServiceMonitoringAlert $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedDelServiceMonitoringAlert($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedDelServiceMonitoringAlert', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -62,7 +66,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedAddServiceMonitoringAlertSMS(\Ovh\StructType\DedicatedAddServiceMonitoringAlertSMS $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedAddServiceMonitoringAlertSMS($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedAddServiceMonitoringAlertSMS', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -81,7 +87,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedIpLoadBalancingList(\Ovh\StructType\DedicatedIpLoadBalancingList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedIpLoadBalancingList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedIpLoadBalancingList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -101,7 +109,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedBackupReinstallConfiguration(\Ovh\StructType\DedicatedBackupReinstallConfiguration $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedBackupReinstallConfiguration($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedBackupReinstallConfiguration', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -120,7 +130,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedBackupGetHisto(\Ovh\StructType\DedicatedBackupGetHisto $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedBackupGetHisto($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedBackupGetHisto', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -139,7 +151,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedBackupUpdate(\Ovh\StructType\DedicatedBackupUpdate $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedBackupUpdate($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedBackupUpdate', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -158,7 +172,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedNetbootGetRescueEmail(\Ovh\StructType\DedicatedNetbootGetRescueEmail $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedNetbootGetRescueEmail($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedNetbootGetRescueEmail', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -177,7 +193,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedRtmListBackdoor(\Ovh\StructType\DedicatedRtmListBackdoor $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedRtmListBackdoor($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedRtmListBackdoor', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -197,7 +215,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedMonitoringNotificationCreate(\Ovh\StructType\DedicatedMonitoringNotificationCreate $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedMonitoringNotificationCreate($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedMonitoringNotificationCreate', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -216,7 +236,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedBackupList(\Ovh\StructType\DedicatedBackupList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedBackupList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedBackupList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -235,7 +257,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedNetbootGetAll(\Ovh\StructType\DedicatedNetbootGetAll $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedNetbootGetAll($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedNetbootGetAll', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -255,7 +279,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedVirtualMacIpAvailableGetList(\Ovh\StructType\DedicatedVirtualMacIpAvailableGetList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedVirtualMacIpAvailableGetList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedVirtualMacIpAvailableGetList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -274,7 +300,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedMonitoringSMSCreate(\Ovh\StructType\DedicatedMonitoringSMSCreate $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedMonitoringSMSCreate($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedMonitoringSMSCreate', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -293,7 +321,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedRipeQuery(\Ovh\StructType\DedicatedRipeQuery $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedRipeQuery($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedRipeQuery', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -312,7 +342,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedBackupFtpPassword(\Ovh\StructType\DedicatedBackupFtpPassword $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedBackupFtpPassword($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedBackupFtpPassword', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -331,7 +363,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedRtmBackdoorUpdateAlert(\Ovh\StructType\DedicatedRtmBackdoorUpdateAlert $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedRtmBackdoorUpdateAlert($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedRtmBackdoorUpdateAlert', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -350,7 +384,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedSecondaryDNSAdd(\Ovh\StructType\DedicatedSecondaryDNSAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedSecondaryDNSAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedSecondaryDNSAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -369,7 +405,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedRtmGetStatus(\Ovh\StructType\DedicatedRtmGetStatus $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedRtmGetStatus($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedRtmGetStatus', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -388,7 +426,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedNetbootGetAvailable(\Ovh\StructType\DedicatedNetbootGetAvailable $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedNetbootGetAvailable($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedNetbootGetAvailable', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -407,7 +447,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedMailinglistGetAllowed(\Ovh\StructType\DedicatedMailinglistGetAllowed $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedMailinglistGetAllowed($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedMailinglistGetAllowed', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -426,7 +468,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedBackupInfo(\Ovh\StructType\DedicatedBackupInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedBackupInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedBackupInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -445,7 +489,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedFailoverRipeAdd(\Ovh\StructType\DedicatedFailoverRipeAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedFailoverRipeAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedFailoverRipeAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -464,7 +510,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedFilterIrcClientRuleAdd(\Ovh\StructType\DedicatedFilterIrcClientRuleAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedFilterIrcClientRuleAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedFilterIrcClientRuleAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -483,7 +531,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedInstallationTemplateList(\Ovh\StructType\DedicatedInstallationTemplateList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedInstallationTemplateList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedInstallationTemplateList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -502,7 +552,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedBackupGetCalendar(\Ovh\StructType\DedicatedBackupGetCalendar $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedBackupGetCalendar($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedBackupGetCalendar', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -521,7 +573,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedIpLoadBalancingServerDel(\Ovh\StructType\DedicatedIpLoadBalancingServerDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedIpLoadBalancingServerDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedIpLoadBalancingServerDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -540,7 +594,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedEditServiceMonitoringItem(\Ovh\StructType\DedicatedEditServiceMonitoringItem $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedEditServiceMonitoringItem($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedEditServiceMonitoringItem', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -559,7 +615,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedIPForUDPServerList(\Ovh\StructType\DedicatedIPForUDPServerList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedIPForUDPServerList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedIPForUDPServerList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -578,7 +636,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedBackupSet(\Ovh\StructType\DedicatedBackupSet $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedBackupSet($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedBackupSet', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -597,7 +657,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedVirtualMacIpDelete(\Ovh\StructType\DedicatedVirtualMacIpDelete $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedVirtualMacIpDelete($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedVirtualMacIpDelete', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -616,7 +678,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedFailoverRipeSplit(\Ovh\StructType\DedicatedFailoverRipeSplit $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedFailoverRipeSplit($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedFailoverRipeSplit', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -635,7 +699,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedReverseInfo(\Ovh\StructType\DedicatedReverseInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedReverseInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedReverseInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -654,7 +720,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedCapabilitiesGetAll(\Ovh\StructType\DedicatedCapabilitiesGetAll $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedCapabilitiesGetAll($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedCapabilitiesGetAll', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -673,7 +741,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedBackupIncludeAdd(\Ovh\StructType\DedicatedBackupIncludeAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedBackupIncludeAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedBackupIncludeAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -692,7 +762,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedFailoverRipeList(\Ovh\StructType\DedicatedFailoverRipeList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedFailoverRipeList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedFailoverRipeList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -711,7 +783,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedMonitoringServiceAdd(\Ovh\StructType\DedicatedMonitoringServiceAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedMonitoringServiceAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedMonitoringServiceAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -730,7 +804,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedHardRebootDo(\Ovh\StructType\DedicatedHardRebootDo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedHardRebootDo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedHardRebootDo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -749,7 +825,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedReverseList(\Ovh\StructType\DedicatedReverseList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedReverseList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedReverseList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -768,7 +846,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedBackupFtpAdd(\Ovh\StructType\DedicatedBackupFtpAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedBackupFtpAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedBackupFtpAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -787,7 +867,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedVirtualMacIpUsedGetList(\Ovh\StructType\DedicatedVirtualMacIpUsedGetList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedVirtualMacIpUsedGetList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedVirtualMacIpUsedGetList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -806,7 +888,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedNetbootInfo(\Ovh\StructType\DedicatedNetbootInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedNetbootInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedNetbootInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -825,7 +909,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedIpLoadBalancingAdd(\Ovh\StructType\DedicatedIpLoadBalancingAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedIpLoadBalancingAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedIpLoadBalancingAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -845,7 +931,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedAvailableNotificationNicsGet(\Ovh\StructType\DedicatedAvailableNotificationNicsGet $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedAvailableNotificationNicsGet($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedAvailableNotificationNicsGet', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -864,7 +952,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedMonitoringServiceDel(\Ovh\StructType\DedicatedMonitoringServiceDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedMonitoringServiceDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedMonitoringServiceDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -884,7 +974,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedIpLoadBalancingServerStateModify(\Ovh\StructType\DedicatedIpLoadBalancingServerStateModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedIpLoadBalancingServerStateModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedIpLoadBalancingServerStateModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -903,7 +995,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedReverseModify(\Ovh\StructType\DedicatedReverseModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedReverseModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedReverseModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -922,7 +1016,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedFailoverList(\Ovh\StructType\DedicatedFailoverList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedFailoverList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedFailoverList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -941,7 +1037,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedSecondaryDNSInfo(\Ovh\StructType\DedicatedSecondaryDNSInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedSecondaryDNSInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedSecondaryDNSInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -960,7 +1058,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedRipeUpdateInetnum(\Ovh\StructType\DedicatedRipeUpdateInetnum $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedRipeUpdateInetnum($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedRipeUpdateInetnum', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -980,7 +1080,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedGetAvailableNetworkFromCountry(\Ovh\StructType\DedicatedGetAvailableNetworkFromCountry $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedGetAvailableNetworkFromCountry($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedGetAvailableNetworkFromCountry', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -999,7 +1101,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedFailoverAdd(\Ovh\StructType\DedicatedFailoverAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedFailoverAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedFailoverAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1018,7 +1122,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedFilterIrcServerRuleList(\Ovh\StructType\DedicatedFilterIrcServerRuleList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedFilterIrcServerRuleList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedFilterIrcServerRuleList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1037,7 +1143,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedRipeCreateOrganisation(\Ovh\StructType\DedicatedRipeCreateOrganisation $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedRipeCreateOrganisation($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedRipeCreateOrganisation', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1056,7 +1164,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedBackupExcludeAdd(\Ovh\StructType\DedicatedBackupExcludeAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedBackupExcludeAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedBackupExcludeAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1075,7 +1185,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedFilterIrcServerRuleDel(\Ovh\StructType\DedicatedFilterIrcServerRuleDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedFilterIrcServerRuleDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedFilterIrcServerRuleDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1094,7 +1206,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedFailoverRipeModify(\Ovh\StructType\DedicatedFailoverRipeModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedFailoverRipeModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedFailoverRipeModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1113,7 +1227,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedMonitoringList(\Ovh\StructType\DedicatedMonitoringList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedMonitoringList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedMonitoringList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1132,7 +1248,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedBackupExcludeDel(\Ovh\StructType\DedicatedBackupExcludeDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedBackupExcludeDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedBackupExcludeDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1151,7 +1269,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedHardRebootStatus(\Ovh\StructType\DedicatedHardRebootStatus $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedHardRebootStatus($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedHardRebootStatus', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1170,7 +1290,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedGetServiceMonitoringItem(\Ovh\StructType\DedicatedGetServiceMonitoringItem $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedGetServiceMonitoringItem($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedGetServiceMonitoringItem', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1189,7 +1311,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedReverseAdd(\Ovh\StructType\DedicatedReverseAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedReverseAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedReverseAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1208,7 +1332,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedBackupGetFreePlanning(\Ovh\StructType\DedicatedBackupGetFreePlanning $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedBackupGetFreePlanning($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedBackupGetFreePlanning', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1228,7 +1354,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedInstallAllowedDistributionGet(\Ovh\StructType\DedicatedInstallAllowedDistributionGet $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedInstallAllowedDistributionGet($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedInstallAllowedDistributionGet', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1247,7 +1375,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedCapabilitiesGet(\Ovh\StructType\DedicatedCapabilitiesGet $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedCapabilitiesGet($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedCapabilitiesGet', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1266,7 +1396,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedMonitoringSMSDel(\Ovh\StructType\DedicatedMonitoringSMSDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedMonitoringSMSDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedMonitoringSMSDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1285,7 +1417,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedMonitoringAdd(\Ovh\StructType\DedicatedMonitoringAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedMonitoringAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedMonitoringAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1304,7 +1438,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedOperationList(\Ovh\StructType\DedicatedOperationList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedOperationList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedOperationList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1323,7 +1459,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedBackupIncludeDel(\Ovh\StructType\DedicatedBackupIncludeDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedBackupIncludeDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedBackupIncludeDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1342,7 +1480,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedBandwidthSwitching(\Ovh\StructType\DedicatedBandwidthSwitching $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedBandwidthSwitching($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedBandwidthSwitching', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1361,7 +1501,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedIpLoadBalancingDel(\Ovh\StructType\DedicatedIpLoadBalancingDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedIpLoadBalancingDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedIpLoadBalancingDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1380,7 +1522,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedInstallationTemplateUse(\Ovh\StructType\DedicatedInstallationTemplateUse $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedInstallationTemplateUse($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedInstallationTemplateUse', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1399,7 +1543,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedIpLoadBalancingServerAdd(\Ovh\StructType\DedicatedIpLoadBalancingServerAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedIpLoadBalancingServerAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedIpLoadBalancingServerAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1418,7 +1564,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedRipeUpdateOrganisation(\Ovh\StructType\DedicatedRipeUpdateOrganisation $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedRipeUpdateOrganisation($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedRipeUpdateOrganisation', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1437,7 +1585,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedNetbootModifyById(\Ovh\StructType\DedicatedNetbootModifyById $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedNetbootModifyById($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedNetbootModifyById', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1456,7 +1606,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedBackupGetDate(\Ovh\StructType\DedicatedBackupGetDate $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedBackupGetDate($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedBackupGetDate', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1475,7 +1627,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedSecondaryDNSDel(\Ovh\StructType\DedicatedSecondaryDNSDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedSecondaryDNSDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedSecondaryDNSDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1494,7 +1648,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedSecondaryDNSGetAll(\Ovh\StructType\DedicatedSecondaryDNSGetAll $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedSecondaryDNSGetAll($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedSecondaryDNSGetAll', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1513,7 +1669,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedMonitoringNotificationDel(\Ovh\StructType\DedicatedMonitoringNotificationDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedMonitoringNotificationDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedMonitoringNotificationDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1532,7 +1690,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedBandwidthManagementGet(\Ovh\StructType\DedicatedBandwidthManagementGet $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedBandwidthManagementGet($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedBandwidthManagementGet', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1551,7 +1711,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedMonitoringStatusUpdate(\Ovh\StructType\DedicatedMonitoringStatusUpdate $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedMonitoringStatusUpdate($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedMonitoringStatusUpdate', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1570,7 +1732,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedIPForUDPMoveGetStatus(\Ovh\StructType\DedicatedIPForUDPMoveGetStatus $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedIPForUDPMoveGetStatus($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedIPForUDPMoveGetStatus', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1589,7 +1753,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedRipeDeleteOrganisation(\Ovh\StructType\DedicatedRipeDeleteOrganisation $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedRipeDeleteOrganisation($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedRipeDeleteOrganisation', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1608,7 +1774,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedFailoverRipeGetIp(\Ovh\StructType\DedicatedFailoverRipeGetIp $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedFailoverRipeGetIp($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedFailoverRipeGetIp', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1627,7 +1795,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedInstallBasic(\Ovh\StructType\DedicatedInstallBasic $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedInstallBasic($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedInstallBasic', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1646,7 +1816,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedInstallReset(\Ovh\StructType\DedicatedInstallReset $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedInstallReset($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedInstallReset', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1666,7 +1838,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedMonitoringServiceAddNotification(\Ovh\StructType\DedicatedMonitoringServiceAddNotification $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedMonitoringServiceAddNotification($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedMonitoringServiceAddNotification', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1685,7 +1859,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedFilterIrcClientRuleDel(\Ovh\StructType\DedicatedFilterIrcClientRuleDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedFilterIrcClientRuleDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedFilterIrcClientRuleDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1704,7 +1880,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedMrtgInfo(\Ovh\StructType\DedicatedMrtgInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedMrtgInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedMrtgInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1723,7 +1901,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedBackupReinstallData(\Ovh\StructType\DedicatedBackupReinstallData $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedBackupReinstallData($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedBackupReinstallData', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1742,7 +1922,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedBackupFtpInfo(\Ovh\StructType\DedicatedBackupFtpInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedBackupFtpInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedBackupFtpInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1761,7 +1943,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedMonitoringModify(\Ovh\StructType\DedicatedMonitoringModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedMonitoringModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedMonitoringModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1781,7 +1965,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedGetRandomAvailableIpFromCountry(\Ovh\StructType\DedicatedGetRandomAvailableIpFromCountry $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedGetRandomAvailableIpFromCountry($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedGetRandomAvailableIpFromCountry', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1800,7 +1986,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedInstallBasicProgress(\Ovh\StructType\DedicatedInstallBasicProgress $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedInstallBasicProgress($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedInstallBasicProgress', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1820,7 +2008,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedAddServiceMonitoringAlertEmail(\Ovh\StructType\DedicatedAddServiceMonitoringAlertEmail $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedAddServiceMonitoringAlertEmail($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedAddServiceMonitoringAlertEmail', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1839,7 +2029,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedFailoverUpdate(\Ovh\StructType\DedicatedFailoverUpdate $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedFailoverUpdate($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedFailoverUpdate', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1858,7 +2050,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedFilterIrcServerRuleAdd(\Ovh\StructType\DedicatedFilterIrcServerRuleAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedFilterIrcServerRuleAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedFilterIrcServerRuleAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1877,7 +2071,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedVirtualMacIpAdd(\Ovh\StructType\DedicatedVirtualMacIpAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedVirtualMacIpAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedVirtualMacIpAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1896,7 +2092,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedRipeGetRipeIds(\Ovh\StructType\DedicatedRipeGetRipeIds $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedRipeGetRipeIds($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedRipeGetRipeIds', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1915,7 +2113,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedInfo(\Ovh\StructType\DedicatedInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1934,7 +2134,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedBackupUpdateDate(\Ovh\StructType\DedicatedBackupUpdateDate $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedBackupUpdateDate($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedBackupUpdateDate', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1953,7 +2155,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedMonitoringStatusGet(\Ovh\StructType\DedicatedMonitoringStatusGet $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedMonitoringStatusGet($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedMonitoringStatusGet', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1972,7 +2176,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedNetbootModify(\Ovh\StructType\DedicatedNetbootModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedNetbootModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedNetbootModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1991,7 +2197,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedFilterIrcClientRuleList(\Ovh\StructType\DedicatedFilterIrcClientRuleList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedFilterIrcClientRuleList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedFilterIrcClientRuleList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2010,7 +2218,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedIPForUDPMove(\Ovh\StructType\DedicatedIPForUDPMove $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedIPForUDPMove($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedIPForUDPMove', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2029,7 +2239,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedMonitoringSMSModify(\Ovh\StructType\DedicatedMonitoringSMSModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedMonitoringSMSModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedMonitoringSMSModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2048,7 +2260,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedMonitoringDel(\Ovh\StructType\DedicatedMonitoringDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedMonitoringDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedMonitoringDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2067,7 +2281,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedMonitoringServiceAddSMS(\Ovh\StructType\DedicatedMonitoringServiceAddSMS $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedMonitoringServiceAddSMS($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedMonitoringServiceAddSMS', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2086,7 +2302,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedList(\Ovh\StructType\DedicatedList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2105,7 +2323,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedIPForUDPGet(\Ovh\StructType\DedicatedIPForUDPGet $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedIPForUDPGet($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedIPForUDPGet', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2124,7 +2344,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedGetAvailableIpFromNetwork(\Ovh\StructType\DedicatedGetAvailableIpFromNetwork $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedGetAvailableIpFromNetwork($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedGetAvailableIpFromNetwork', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2143,7 +2365,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedMailinglistSubscribe(\Ovh\StructType\DedicatedMailinglistSubscribe $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedMailinglistSubscribe($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedMailinglistSubscribe', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2162,7 +2386,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedIpLoadBalancingNameModify(\Ovh\StructType\DedicatedIpLoadBalancingNameModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedIpLoadBalancingNameModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedIpLoadBalancingNameModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2181,7 +2407,9 @@ class Dedicated extends SoapClientBase
     public function dedicatedMonitoringServiceList(\Ovh\StructType\DedicatedMonitoringServiceList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dedicatedMonitoringServiceList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dedicatedMonitoringServiceList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2196,13 +2424,5 @@ class Dedicated extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

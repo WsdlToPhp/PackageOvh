@@ -67,7 +67,7 @@ class TelephonyRateStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($country) && !is_string($country)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($country)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($country, true), gettype($country)), __LINE__);
         }
         $this->country = $country;
         return $this;
@@ -89,7 +89,7 @@ class TelephonyRateStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($countrySuffixe) && !is_string($countrySuffixe)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($countrySuffixe)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($countrySuffixe, true), gettype($countrySuffixe)), __LINE__);
         }
         $this->countrySuffixe = $countrySuffixe;
         return $this;
@@ -109,6 +109,10 @@ class TelephonyRateStruct extends AbstractStructBase
      */
     public function setPrice($price = null)
     {
+        // validation for constraint: float
+        if (!is_null($price) && !(is_float($price) || is_numeric($price))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($price, true), gettype($price)), __LINE__);
+        }
         $this->price = $price;
         return $this;
     }
@@ -129,29 +133,9 @@ class TelephonyRateStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($type) && !is_string($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($type)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($type, true), gettype($type)), __LINE__);
         }
         $this->type = $type;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyRateStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

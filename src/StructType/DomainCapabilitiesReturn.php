@@ -99,7 +99,7 @@ class DomainCapabilitiesReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($needAuthInfo) && !is_bool($needAuthInfo)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($needAuthInfo)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($needAuthInfo, true), gettype($needAuthInfo)), __LINE__);
         }
         $this->needAuthInfo = $needAuthInfo;
         return $this;
@@ -121,7 +121,7 @@ class DomainCapabilitiesReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($needZoneCheck) && !is_bool($needZoneCheck)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($needZoneCheck)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($needZoneCheck, true), gettype($needZoneCheck)), __LINE__);
         }
         $this->needZoneCheck = $needZoneCheck;
         return $this;
@@ -143,7 +143,7 @@ class DomainCapabilitiesReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($owo) && !is_bool($owo)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($owo)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($owo, true), gettype($owo)), __LINE__);
         }
         $this->owo = $owo;
         return $this;
@@ -165,7 +165,7 @@ class DomainCapabilitiesReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($hostIPv4) && !is_bool($hostIPv4)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($hostIPv4)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($hostIPv4, true), gettype($hostIPv4)), __LINE__);
         }
         $this->hostIPv4 = $hostIPv4;
         return $this;
@@ -187,7 +187,7 @@ class DomainCapabilitiesReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($hostIPv6) && !is_bool($hostIPv6)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($hostIPv6)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($hostIPv6, true), gettype($hostIPv6)), __LINE__);
         }
         $this->hostIPv6 = $hostIPv6;
         return $this;
@@ -209,7 +209,7 @@ class DomainCapabilitiesReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($hostmultiIp) && !is_bool($hostmultiIp)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($hostmultiIp)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($hostmultiIp, true), gettype($hostmultiIp)), __LINE__);
         }
         $this->hostmultiIp = $hostmultiIp;
         return $this;
@@ -231,7 +231,7 @@ class DomainCapabilitiesReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($ownerUpdateAllowed) && !is_bool($ownerUpdateAllowed)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($ownerUpdateAllowed)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($ownerUpdateAllowed, true), gettype($ownerUpdateAllowed)), __LINE__);
         }
         $this->ownerUpdateAllowed = $ownerUpdateAllowed;
         return $this;
@@ -253,29 +253,9 @@ class DomainCapabilitiesReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($ownerTradeAllowed) && !is_bool($ownerTradeAllowed)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($ownerTradeAllowed)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($ownerTradeAllowed, true), gettype($ownerTradeAllowed)), __LINE__);
         }
         $this->ownerTradeAllowed = $ownerTradeAllowed;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DomainCapabilitiesReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

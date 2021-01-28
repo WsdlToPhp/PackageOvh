@@ -13,42 +13,42 @@ class TelephonySmsUserAddCsvAttachment extends AbstractStructBase
 {
     /**
      * The smsAccount
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $smsAccount;
     /**
      * The login
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $login;
     /**
      * The password
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $password;
     /**
      * The csvUrl
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $csvUrl;
     /**
      * The id
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $id;
     /**
      * The name
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
@@ -95,7 +95,7 @@ class TelephonySmsUserAddCsvAttachment extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($smsAccount) && !is_string($smsAccount)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($smsAccount)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($smsAccount, true), gettype($smsAccount)), __LINE__);
         }
         $this->smsAccount = $smsAccount;
         return $this;
@@ -117,7 +117,7 @@ class TelephonySmsUserAddCsvAttachment extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($login) && !is_string($login)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($login)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($login, true), gettype($login)), __LINE__);
         }
         $this->login = $login;
         return $this;
@@ -139,7 +139,7 @@ class TelephonySmsUserAddCsvAttachment extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($password) && !is_string($password)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($password)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($password, true), gettype($password)), __LINE__);
         }
         $this->password = $password;
         return $this;
@@ -161,7 +161,7 @@ class TelephonySmsUserAddCsvAttachment extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($csvUrl) && !is_string($csvUrl)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($csvUrl)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($csvUrl, true), gettype($csvUrl)), __LINE__);
         }
         $this->csvUrl = $csvUrl;
         return $this;
@@ -183,7 +183,7 @@ class TelephonySmsUserAddCsvAttachment extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($id) && !is_string($id)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($id)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($id, true), gettype($id)), __LINE__);
         }
         $this->id = $id;
         return $this;
@@ -205,29 +205,9 @@ class TelephonySmsUserAddCsvAttachment extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($name) && !is_string($name)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($name)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($name, true), gettype($name)), __LINE__);
         }
         $this->name = $name;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonySmsUserAddCsvAttachment
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

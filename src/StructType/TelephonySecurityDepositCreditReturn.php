@@ -130,8 +130,8 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
     public function setOrderId($orderId = null)
     {
         // validation for constraint: int
-        if (!is_null($orderId) && !is_numeric($orderId)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($orderId)), __LINE__);
+        if (!is_null($orderId) && !(is_int($orderId) || ctype_digit($orderId))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($orderId, true), gettype($orderId)), __LINE__);
         }
         $this->orderId = $orderId;
         return $this;
@@ -153,7 +153,7 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($orderPassword) && !is_string($orderPassword)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($orderPassword)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($orderPassword, true), gettype($orderPassword)), __LINE__);
         }
         $this->orderPassword = $orderPassword;
         return $this;
@@ -175,7 +175,7 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($orderUrl) && !is_string($orderUrl)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($orderUrl)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($orderUrl, true), gettype($orderUrl)), __LINE__);
         }
         $this->orderUrl = $orderUrl;
         return $this;
@@ -195,6 +195,10 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
      */
     public function setTotalPrice($totalPrice = null)
     {
+        // validation for constraint: float
+        if (!is_null($totalPrice) && !(is_float($totalPrice) || is_numeric($totalPrice))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($totalPrice, true), gettype($totalPrice)), __LINE__);
+        }
         $this->totalPrice = $totalPrice;
         return $this;
     }
@@ -213,6 +217,10 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
      */
     public function setVat($vat = null)
     {
+        // validation for constraint: float
+        if (!is_null($vat) && !(is_float($vat) || is_numeric($vat))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($vat, true), gettype($vat)), __LINE__);
+        }
         $this->vat = $vat;
         return $this;
     }
@@ -231,6 +239,10 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
      */
     public function setTotalPriceWithVat($totalPriceWithVat = null)
     {
+        // validation for constraint: float
+        if (!is_null($totalPriceWithVat) && !(is_float($totalPriceWithVat) || is_numeric($totalPriceWithVat))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($totalPriceWithVat, true), gettype($totalPriceWithVat)), __LINE__);
+        }
         $this->totalPriceWithVat = $totalPriceWithVat;
         return $this;
     }
@@ -251,7 +263,7 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($ribBankCode) && !is_string($ribBankCode)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($ribBankCode)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ribBankCode, true), gettype($ribBankCode)), __LINE__);
         }
         $this->ribBankCode = $ribBankCode;
         return $this;
@@ -273,7 +285,7 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($ribAgencyCode) && !is_string($ribAgencyCode)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($ribAgencyCode)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ribAgencyCode, true), gettype($ribAgencyCode)), __LINE__);
         }
         $this->ribAgencyCode = $ribAgencyCode;
         return $this;
@@ -295,7 +307,7 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($ribAccountNumber) && !is_string($ribAccountNumber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($ribAccountNumber)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ribAccountNumber, true), gettype($ribAccountNumber)), __LINE__);
         }
         $this->ribAccountNumber = $ribAccountNumber;
         return $this;
@@ -317,7 +329,7 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($ribKey) && !is_string($ribKey)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($ribKey)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ribKey, true), gettype($ribKey)), __LINE__);
         }
         $this->ribKey = $ribKey;
         return $this;
@@ -339,7 +351,7 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($iban) && !is_string($iban)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($iban)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($iban, true), gettype($iban)), __LINE__);
         }
         $this->iban = $iban;
         return $this;
@@ -361,29 +373,9 @@ class TelephonySecurityDepositCreditReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($bic) && !is_string($bic)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($bic)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($bic, true), gettype($bic)), __LINE__);
         }
         $this->bic = $bic;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonySecurityDepositCreditReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

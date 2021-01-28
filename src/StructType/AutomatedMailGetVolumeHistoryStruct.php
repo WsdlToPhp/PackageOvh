@@ -50,8 +50,8 @@ class AutomatedMailGetVolumeHistoryStruct extends AbstractStructBase
     public function setVolume($volume = null)
     {
         // validation for constraint: int
-        if (!is_null($volume) && !is_numeric($volume)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($volume)), __LINE__);
+        if (!is_null($volume) && !(is_int($volume) || ctype_digit($volume))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($volume, true), gettype($volume)), __LINE__);
         }
         $this->volume = $volume;
         return $this;
@@ -73,29 +73,9 @@ class AutomatedMailGetVolumeHistoryStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($date) && !is_string($date)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($date)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($date, true), gettype($date)), __LINE__);
         }
         $this->date = $date;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\AutomatedMailGetVolumeHistoryStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

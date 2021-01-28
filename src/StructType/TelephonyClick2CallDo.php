@@ -13,35 +13,35 @@ class TelephonyClick2CallDo extends AbstractStructBase
 {
     /**
      * The login
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $login;
     /**
      * The password
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $password;
     /**
      * The calling
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $calling;
     /**
      * The called
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $called;
     /**
      * The billingNumber
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
@@ -85,7 +85,7 @@ class TelephonyClick2CallDo extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($login) && !is_string($login)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($login)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($login, true), gettype($login)), __LINE__);
         }
         $this->login = $login;
         return $this;
@@ -107,7 +107,7 @@ class TelephonyClick2CallDo extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($password) && !is_string($password)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($password)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($password, true), gettype($password)), __LINE__);
         }
         $this->password = $password;
         return $this;
@@ -129,7 +129,7 @@ class TelephonyClick2CallDo extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($calling) && !is_string($calling)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($calling)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($calling, true), gettype($calling)), __LINE__);
         }
         $this->calling = $calling;
         return $this;
@@ -151,7 +151,7 @@ class TelephonyClick2CallDo extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($called) && !is_string($called)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($called)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($called, true), gettype($called)), __LINE__);
         }
         $this->called = $called;
         return $this;
@@ -173,29 +173,9 @@ class TelephonyClick2CallDo extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($billingNumber) && !is_string($billingNumber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($billingNumber)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($billingNumber, true), gettype($billingNumber)), __LINE__);
         }
         $this->billingNumber = $billingNumber;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyClick2CallDo
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

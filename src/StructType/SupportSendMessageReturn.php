@@ -58,8 +58,8 @@ class SupportSendMessageReturn extends AbstractStructBase
     public function setThreadId($threadId = null)
     {
         // validation for constraint: int
-        if (!is_null($threadId) && !is_numeric($threadId)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($threadId)), __LINE__);
+        if (!is_null($threadId) && !(is_int($threadId) || ctype_digit($threadId))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($threadId, true), gettype($threadId)), __LINE__);
         }
         $this->threadId = $threadId;
         return $this;
@@ -80,8 +80,8 @@ class SupportSendMessageReturn extends AbstractStructBase
     public function setMessageId($messageId = null)
     {
         // validation for constraint: int
-        if (!is_null($messageId) && !is_numeric($messageId)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($messageId)), __LINE__);
+        if (!is_null($messageId) && !(is_int($messageId) || ctype_digit($messageId))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($messageId, true), gettype($messageId)), __LINE__);
         }
         $this->messageId = $messageId;
         return $this;
@@ -103,29 +103,9 @@ class SupportSendMessageReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dateTime) && !is_string($dateTime)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dateTime)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dateTime, true), gettype($dateTime)), __LINE__);
         }
         $this->dateTime = $dateTime;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\SupportSendMessageReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

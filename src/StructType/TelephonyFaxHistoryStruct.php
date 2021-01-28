@@ -114,8 +114,8 @@ class TelephonyFaxHistoryStruct extends AbstractStructBase
     public function setId($id = null)
     {
         // validation for constraint: int
-        if (!is_null($id) && !is_numeric($id)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($id)), __LINE__);
+        if (!is_null($id) && !(is_int($id) || ctype_digit($id))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($id, true), gettype($id)), __LINE__);
         }
         $this->id = $id;
         return $this;
@@ -137,7 +137,7 @@ class TelephonyFaxHistoryStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($relatedNumber) && !is_string($relatedNumber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($relatedNumber)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($relatedNumber, true), gettype($relatedNumber)), __LINE__);
         }
         $this->relatedNumber = $relatedNumber;
         return $this;
@@ -158,8 +158,8 @@ class TelephonyFaxHistoryStruct extends AbstractStructBase
     public function setJobid($jobid = null)
     {
         // validation for constraint: int
-        if (!is_null($jobid) && !is_numeric($jobid)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($jobid)), __LINE__);
+        if (!is_null($jobid) && !(is_int($jobid) || ctype_digit($jobid))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($jobid, true), gettype($jobid)), __LINE__);
         }
         $this->jobid = $jobid;
         return $this;
@@ -181,7 +181,7 @@ class TelephonyFaxHistoryStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($jobtag) && !is_string($jobtag)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($jobtag)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($jobtag, true), gettype($jobtag)), __LINE__);
         }
         $this->jobtag = $jobtag;
         return $this;
@@ -203,7 +203,7 @@ class TelephonyFaxHistoryStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($sender) && !is_string($sender)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($sender)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($sender, true), gettype($sender)), __LINE__);
         }
         $this->sender = $sender;
         return $this;
@@ -224,8 +224,8 @@ class TelephonyFaxHistoryStruct extends AbstractStructBase
     public function setPages($pages = null)
     {
         // validation for constraint: int
-        if (!is_null($pages) && !is_numeric($pages)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($pages)), __LINE__);
+        if (!is_null($pages) && !(is_int($pages) || ctype_digit($pages))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($pages, true), gettype($pages)), __LINE__);
         }
         $this->pages = $pages;
         return $this;
@@ -247,7 +247,7 @@ class TelephonyFaxHistoryStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($quality) && !is_string($quality)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($quality)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($quality, true), gettype($quality)), __LINE__);
         }
         $this->quality = $quality;
         return $this;
@@ -269,7 +269,7 @@ class TelephonyFaxHistoryStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($callTime) && !is_string($callTime)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($callTime)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($callTime, true), gettype($callTime)), __LINE__);
         }
         $this->callTime = $callTime;
         return $this;
@@ -291,7 +291,7 @@ class TelephonyFaxHistoryStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($date) && !is_string($date)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($date)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($date, true), gettype($date)), __LINE__);
         }
         $this->date = $date;
         return $this;
@@ -313,29 +313,9 @@ class TelephonyFaxHistoryStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($state) && !is_string($state)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($state)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($state, true), gettype($state)), __LINE__);
         }
         $this->state = $state;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyFaxHistoryStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

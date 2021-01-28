@@ -99,7 +99,7 @@ class FtpInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($login) && !is_string($login)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($login)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($login, true), gettype($login)), __LINE__);
         }
         $this->login = $login;
         return $this;
@@ -120,8 +120,8 @@ class FtpInfoReturn extends AbstractStructBase
     public function setQuota($quota = null)
     {
         // validation for constraint: int
-        if (!is_null($quota) && !is_numeric($quota)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($quota)), __LINE__);
+        if (!is_null($quota) && !(is_int($quota) || ctype_digit($quota))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($quota, true), gettype($quota)), __LINE__);
         }
         $this->quota = $quota;
         return $this;
@@ -142,8 +142,8 @@ class FtpInfoReturn extends AbstractStructBase
     public function setMaxQuota($maxQuota = null)
     {
         // validation for constraint: int
-        if (!is_null($maxQuota) && !is_numeric($maxQuota)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($maxQuota)), __LINE__);
+        if (!is_null($maxQuota) && !(is_int($maxQuota) || ctype_digit($maxQuota))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($maxQuota, true), gettype($maxQuota)), __LINE__);
         }
         $this->maxQuota = $maxQuota;
         return $this;
@@ -165,7 +165,7 @@ class FtpInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($url) && !is_string($url)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($url)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($url, true), gettype($url)), __LINE__);
         }
         $this->url = $url;
         return $this;
@@ -187,7 +187,7 @@ class FtpInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($hostedOn) && !is_string($hostedOn)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($hostedOn)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($hostedOn, true), gettype($hostedOn)), __LINE__);
         }
         $this->hostedOn = $hostedOn;
         return $this;
@@ -209,7 +209,7 @@ class FtpInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($isTodo) && !is_string($isTodo)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($isTodo)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($isTodo, true), gettype($isTodo)), __LINE__);
         }
         $this->isTodo = $isTodo;
         return $this;
@@ -231,7 +231,7 @@ class FtpInfoReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($highCapacity) && !is_bool($highCapacity)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($highCapacity)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($highCapacity, true), gettype($highCapacity)), __LINE__);
         }
         $this->highCapacity = $highCapacity;
         return $this;
@@ -253,29 +253,9 @@ class FtpInfoReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($highSecurity) && !is_bool($highSecurity)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($highSecurity)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($highSecurity, true), gettype($highSecurity)), __LINE__);
         }
         $this->highSecurity = $highSecurity;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\FtpInfoReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

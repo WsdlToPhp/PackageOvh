@@ -23,7 +23,9 @@ class Infrastructure extends SoapClientBase
     public function infrastructureReverseModify(\Ovh\StructType\InfrastructureReverseModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->infrastructureReverseModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('infrastructureReverseModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Infrastructure extends SoapClientBase
     public function infrastructureIpListGet(\Ovh\StructType\InfrastructureIpListGet $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->infrastructureIpListGet($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('infrastructureIpListGet', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -57,13 +61,5 @@ class Infrastructure extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

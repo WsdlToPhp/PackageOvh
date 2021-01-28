@@ -13,91 +13,91 @@ class TelephonySmsplusServiceEdit extends AbstractStructBase
 {
     /**
      * The session
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $session;
     /**
      * The shortCode
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $shortCode;
     /**
      * The keyword
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $keyword;
     /**
      * The description
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $description;
     /**
      * The cgiActivation
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var bool
      */
     public $cgiActivation;
     /**
      * The cgiUrl
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $cgiUrl;
     /**
      * The text
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $text;
     /**
      * The trackingMedias
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $trackingMedias;
     /**
      * The trackingTargets
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $trackingTargets;
     /**
      * The trackingDefaultSmsAccount
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $trackingDefaultSmsAccount;
     /**
      * The trackingDefaultSmsSender
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $trackingDefaultSmsSender;
     /**
      * The sendingDefaultSmsAccountMtBilling
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $sendingDefaultSmsAccountMtBilling;
     /**
      * The sendingNoSmsMt
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var bool
      */
@@ -165,7 +165,7 @@ class TelephonySmsplusServiceEdit extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($session) && !is_string($session)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($session)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($session, true), gettype($session)), __LINE__);
         }
         $this->session = $session;
         return $this;
@@ -187,7 +187,7 @@ class TelephonySmsplusServiceEdit extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($shortCode) && !is_string($shortCode)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($shortCode)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shortCode, true), gettype($shortCode)), __LINE__);
         }
         $this->shortCode = $shortCode;
         return $this;
@@ -209,7 +209,7 @@ class TelephonySmsplusServiceEdit extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($keyword) && !is_string($keyword)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($keyword)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($keyword, true), gettype($keyword)), __LINE__);
         }
         $this->keyword = $keyword;
         return $this;
@@ -231,7 +231,7 @@ class TelephonySmsplusServiceEdit extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($description) && !is_string($description)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($description)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($description, true), gettype($description)), __LINE__);
         }
         $this->description = $description;
         return $this;
@@ -253,7 +253,7 @@ class TelephonySmsplusServiceEdit extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($cgiActivation) && !is_bool($cgiActivation)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($cgiActivation)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($cgiActivation, true), gettype($cgiActivation)), __LINE__);
         }
         $this->cgiActivation = $cgiActivation;
         return $this;
@@ -275,7 +275,7 @@ class TelephonySmsplusServiceEdit extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($cgiUrl) && !is_string($cgiUrl)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($cgiUrl)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($cgiUrl, true), gettype($cgiUrl)), __LINE__);
         }
         $this->cgiUrl = $cgiUrl;
         return $this;
@@ -297,7 +297,7 @@ class TelephonySmsplusServiceEdit extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($text) && !is_string($text)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($text)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($text, true), gettype($text)), __LINE__);
         }
         $this->text = $text;
         return $this;
@@ -355,7 +355,7 @@ class TelephonySmsplusServiceEdit extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($trackingDefaultSmsAccount) && !is_string($trackingDefaultSmsAccount)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($trackingDefaultSmsAccount)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($trackingDefaultSmsAccount, true), gettype($trackingDefaultSmsAccount)), __LINE__);
         }
         $this->trackingDefaultSmsAccount = $trackingDefaultSmsAccount;
         return $this;
@@ -377,7 +377,7 @@ class TelephonySmsplusServiceEdit extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($trackingDefaultSmsSender) && !is_string($trackingDefaultSmsSender)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($trackingDefaultSmsSender)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($trackingDefaultSmsSender, true), gettype($trackingDefaultSmsSender)), __LINE__);
         }
         $this->trackingDefaultSmsSender = $trackingDefaultSmsSender;
         return $this;
@@ -399,7 +399,7 @@ class TelephonySmsplusServiceEdit extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($sendingDefaultSmsAccountMtBilling) && !is_string($sendingDefaultSmsAccountMtBilling)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($sendingDefaultSmsAccountMtBilling)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($sendingDefaultSmsAccountMtBilling, true), gettype($sendingDefaultSmsAccountMtBilling)), __LINE__);
         }
         $this->sendingDefaultSmsAccountMtBilling = $sendingDefaultSmsAccountMtBilling;
         return $this;
@@ -421,29 +421,9 @@ class TelephonySmsplusServiceEdit extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($sendingNoSmsMt) && !is_bool($sendingNoSmsMt)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($sendingNoSmsMt)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($sendingNoSmsMt, true), gettype($sendingNoSmsMt)), __LINE__);
         }
         $this->sendingNoSmsMt = $sendingNoSmsMt;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonySmsplusServiceEdit
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

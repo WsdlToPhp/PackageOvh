@@ -147,7 +147,7 @@ class HostingSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($country) && !is_string($country)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($country)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($country, true), gettype($country)), __LINE__);
         }
         $this->country = $country;
         return $this;
@@ -169,7 +169,7 @@ class HostingSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($webspace) && !is_string($webspace)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($webspace)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($webspace, true), gettype($webspace)), __LINE__);
         }
         $this->webspace = $webspace;
         return $this;
@@ -191,7 +191,7 @@ class HostingSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($maxWebspace) && !is_string($maxWebspace)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($maxWebspace)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($maxWebspace, true), gettype($maxWebspace)), __LINE__);
         }
         $this->maxWebspace = $maxWebspace;
         return $this;
@@ -213,7 +213,7 @@ class HostingSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($subdomains) && !is_string($subdomains)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($subdomains)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($subdomains, true), gettype($subdomains)), __LINE__);
         }
         $this->subdomains = $subdomains;
         return $this;
@@ -235,7 +235,7 @@ class HostingSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($multidomains) && !is_string($multidomains)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($multidomains)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($multidomains, true), gettype($multidomains)), __LINE__);
         }
         $this->multidomains = $multidomains;
         return $this;
@@ -257,7 +257,7 @@ class HostingSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($multiftps) && !is_string($multiftps)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($multiftps)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($multiftps, true), gettype($multiftps)), __LINE__);
         }
         $this->multiftps = $multiftps;
         return $this;
@@ -279,7 +279,7 @@ class HostingSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($anonymousftp) && !is_string($anonymousftp)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($anonymousftp)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($anonymousftp, true), gettype($anonymousftp)), __LINE__);
         }
         $this->anonymousftp = $anonymousftp;
         return $this;
@@ -301,7 +301,7 @@ class HostingSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($databases) && !is_string($databases)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($databases)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($databases, true), gettype($databases)), __LINE__);
         }
         $this->databases = $databases;
         return $this;
@@ -323,7 +323,7 @@ class HostingSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($freedom_remaining) && !is_string($freedom_remaining)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($freedom_remaining)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($freedom_remaining, true), gettype($freedom_remaining)), __LINE__);
         }
         $this->freedom_remaining = $freedom_remaining;
         return $this;
@@ -345,7 +345,7 @@ class HostingSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($freedom_assigned) && !is_string($freedom_assigned)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($freedom_assigned)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($freedom_assigned, true), gettype($freedom_assigned)), __LINE__);
         }
         $this->freedom_assigned = $freedom_assigned;
         return $this;
@@ -367,7 +367,7 @@ class HostingSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($freedom_total) && !is_string($freedom_total)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($freedom_total)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($freedom_total, true), gettype($freedom_total)), __LINE__);
         }
         $this->freedom_total = $freedom_total;
         return $this;
@@ -389,7 +389,7 @@ class HostingSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($highCapacity) && !is_bool($highCapacity)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($highCapacity)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($highCapacity, true), gettype($highCapacity)), __LINE__);
         }
         $this->highCapacity = $highCapacity;
         return $this;
@@ -411,7 +411,7 @@ class HostingSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($highSecurity) && !is_bool($highSecurity)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($highSecurity)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($highSecurity, true), gettype($highSecurity)), __LINE__);
         }
         $this->highSecurity = $highSecurity;
         return $this;
@@ -433,29 +433,9 @@ class HostingSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($state) && !is_string($state)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($state)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($state, true), gettype($state)), __LINE__);
         }
         $this->state = $state;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\HostingSummaryReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

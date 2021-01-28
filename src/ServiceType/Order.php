@@ -23,7 +23,9 @@ class Order extends SoapClientBase
     public function orderTelephonySmsCredit(\Ovh\StructType\OrderTelephonySmsCredit $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->orderTelephonySmsCredit($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('orderTelephonySmsCredit', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Order extends SoapClientBase
     public function orderAccountCredit(\Ovh\StructType\OrderAccountCredit $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->orderAccountCredit($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('orderAccountCredit', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Order extends SoapClientBase
     public function orderEmailMxPlan(\Ovh\StructType\OrderEmailMxPlan $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->orderEmailMxPlan($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('orderEmailMxPlan', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Order extends SoapClientBase
     public function orderEmailMxLarge(\Ovh\StructType\OrderEmailMxLarge $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->orderEmailMxLarge($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('orderEmailMxLarge', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -99,7 +107,9 @@ class Order extends SoapClientBase
     public function orderDedicatedFailover(\Ovh\StructType\OrderDedicatedFailover $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->orderDedicatedFailover($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('orderDedicatedFailover', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -118,7 +128,9 @@ class Order extends SoapClientBase
     public function orderDedicatedFailoverRipe(\Ovh\StructType\OrderDedicatedFailoverRipe $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->orderDedicatedFailoverRipe($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('orderDedicatedFailoverRipe', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -133,13 +145,5 @@ class Order extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

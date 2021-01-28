@@ -13,84 +13,84 @@ class DomainDnsUpdate extends AbstractStructBase
 {
     /**
      * The session
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $session;
     /**
      * The domain
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $domain;
     /**
      * The dns1
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $dns1;
     /**
      * The ip1
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $ip1;
     /**
      * The dns2
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $dns2;
     /**
      * The ip2
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $ip2;
     /**
      * The dns3
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $dns3;
     /**
      * The ip3
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $ip3;
     /**
      * The dns4
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $dns4;
     /**
      * The ip4
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $ip4;
     /**
      * The dns5
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $dns5;
     /**
      * The ip5
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
@@ -155,7 +155,7 @@ class DomainDnsUpdate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($session) && !is_string($session)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($session)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($session, true), gettype($session)), __LINE__);
         }
         $this->session = $session;
         return $this;
@@ -177,7 +177,7 @@ class DomainDnsUpdate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($domain) && !is_string($domain)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($domain)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($domain, true), gettype($domain)), __LINE__);
         }
         $this->domain = $domain;
         return $this;
@@ -199,7 +199,7 @@ class DomainDnsUpdate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dns1) && !is_string($dns1)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dns1)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dns1, true), gettype($dns1)), __LINE__);
         }
         $this->dns1 = $dns1;
         return $this;
@@ -221,7 +221,7 @@ class DomainDnsUpdate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($ip1) && !is_string($ip1)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($ip1)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ip1, true), gettype($ip1)), __LINE__);
         }
         $this->ip1 = $ip1;
         return $this;
@@ -243,7 +243,7 @@ class DomainDnsUpdate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dns2) && !is_string($dns2)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dns2)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dns2, true), gettype($dns2)), __LINE__);
         }
         $this->dns2 = $dns2;
         return $this;
@@ -265,7 +265,7 @@ class DomainDnsUpdate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($ip2) && !is_string($ip2)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($ip2)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ip2, true), gettype($ip2)), __LINE__);
         }
         $this->ip2 = $ip2;
         return $this;
@@ -287,7 +287,7 @@ class DomainDnsUpdate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dns3) && !is_string($dns3)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dns3)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dns3, true), gettype($dns3)), __LINE__);
         }
         $this->dns3 = $dns3;
         return $this;
@@ -309,7 +309,7 @@ class DomainDnsUpdate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($ip3) && !is_string($ip3)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($ip3)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ip3, true), gettype($ip3)), __LINE__);
         }
         $this->ip3 = $ip3;
         return $this;
@@ -331,7 +331,7 @@ class DomainDnsUpdate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dns4) && !is_string($dns4)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dns4)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dns4, true), gettype($dns4)), __LINE__);
         }
         $this->dns4 = $dns4;
         return $this;
@@ -353,7 +353,7 @@ class DomainDnsUpdate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($ip4) && !is_string($ip4)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($ip4)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ip4, true), gettype($ip4)), __LINE__);
         }
         $this->ip4 = $ip4;
         return $this;
@@ -375,7 +375,7 @@ class DomainDnsUpdate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dns5) && !is_string($dns5)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dns5)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dns5, true), gettype($dns5)), __LINE__);
         }
         $this->dns5 = $dns5;
         return $this;
@@ -397,29 +397,9 @@ class DomainDnsUpdate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($ip5) && !is_string($ip5)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($ip5)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ip5, true), gettype($ip5)), __LINE__);
         }
         $this->ip5 = $ip5;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DomainDnsUpdate
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

@@ -67,7 +67,7 @@ class DedicatedOperationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($designation) && !is_string($designation)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($designation)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($designation, true), gettype($designation)), __LINE__);
         }
         $this->designation = $designation;
         return $this;
@@ -88,8 +88,8 @@ class DedicatedOperationStruct extends AbstractStructBase
     public function setId_designation($id_designation = null)
     {
         // validation for constraint: int
-        if (!is_null($id_designation) && !is_numeric($id_designation)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($id_designation)), __LINE__);
+        if (!is_null($id_designation) && !(is_int($id_designation) || ctype_digit($id_designation))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($id_designation, true), gettype($id_designation)), __LINE__);
         }
         $this->id_designation = $id_designation;
         return $this;
@@ -111,7 +111,7 @@ class DedicatedOperationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($date) && !is_string($date)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($date)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($date, true), gettype($date)), __LINE__);
         }
         $this->date = $date;
         return $this;
@@ -132,30 +132,10 @@ class DedicatedOperationStruct extends AbstractStructBase
     public function setLevel($level = null)
     {
         // validation for constraint: int
-        if (!is_null($level) && !is_numeric($level)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($level)), __LINE__);
+        if (!is_null($level) && !(is_int($level) || ctype_digit($level))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($level, true), gettype($level)), __LINE__);
         }
         $this->level = $level;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DedicatedOperationStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

@@ -67,7 +67,7 @@ class RtmHddPartitionStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($device) && !is_string($device)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($device)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($device, true), gettype($device)), __LINE__);
         }
         $this->device = $device;
         return $this;
@@ -88,8 +88,8 @@ class RtmHddPartitionStruct extends AbstractStructBase
     public function setPercentUsed($percentUsed = null)
     {
         // validation for constraint: int
-        if (!is_null($percentUsed) && !is_numeric($percentUsed)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($percentUsed)), __LINE__);
+        if (!is_null($percentUsed) && !(is_int($percentUsed) || ctype_digit($percentUsed))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($percentUsed, true), gettype($percentUsed)), __LINE__);
         }
         $this->percentUsed = $percentUsed;
         return $this;
@@ -110,8 +110,8 @@ class RtmHddPartitionStruct extends AbstractStructBase
     public function setPercentInodes($percentInodes = null)
     {
         // validation for constraint: int
-        if (!is_null($percentInodes) && !is_numeric($percentInodes)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($percentInodes)), __LINE__);
+        if (!is_null($percentInodes) && !(is_int($percentInodes) || ctype_digit($percentInodes))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($percentInodes, true), gettype($percentInodes)), __LINE__);
         }
         $this->percentInodes = $percentInodes;
         return $this;
@@ -133,29 +133,9 @@ class RtmHddPartitionStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($mountPoint) && !is_string($mountPoint)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($mountPoint)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($mountPoint, true), gettype($mountPoint)), __LINE__);
         }
         $this->mountPoint = $mountPoint;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\RtmHddPartitionStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

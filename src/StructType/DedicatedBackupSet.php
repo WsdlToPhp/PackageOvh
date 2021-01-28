@@ -13,70 +13,70 @@ class DedicatedBackupSet extends AbstractStructBase
 {
     /**
      * The session
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $session;
     /**
      * The hostname
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $hostname;
     /**
      * The backupId
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $backupId;
     /**
      * The email
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $email;
     /**
      * The backupType
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $backupType;
     /**
      * The snapshot
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var int
      */
     public $snapshot;
     /**
      * The sshPort
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var int
      */
     public $sshPort;
     /**
      * The status
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var int
      */
     public $status;
     /**
      * The language
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $language;
     /**
      * The src
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
@@ -135,7 +135,7 @@ class DedicatedBackupSet extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($session) && !is_string($session)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($session)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($session, true), gettype($session)), __LINE__);
         }
         $this->session = $session;
         return $this;
@@ -157,7 +157,7 @@ class DedicatedBackupSet extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($hostname) && !is_string($hostname)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($hostname)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($hostname, true), gettype($hostname)), __LINE__);
         }
         $this->hostname = $hostname;
         return $this;
@@ -179,7 +179,7 @@ class DedicatedBackupSet extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($backupId) && !is_string($backupId)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($backupId)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($backupId, true), gettype($backupId)), __LINE__);
         }
         $this->backupId = $backupId;
         return $this;
@@ -201,7 +201,7 @@ class DedicatedBackupSet extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($email) && !is_string($email)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($email)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($email, true), gettype($email)), __LINE__);
         }
         $this->email = $email;
         return $this;
@@ -223,7 +223,7 @@ class DedicatedBackupSet extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($backupType) && !is_string($backupType)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($backupType)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($backupType, true), gettype($backupType)), __LINE__);
         }
         $this->backupType = $backupType;
         return $this;
@@ -244,8 +244,8 @@ class DedicatedBackupSet extends AbstractStructBase
     public function setSnapshot($snapshot = null)
     {
         // validation for constraint: int
-        if (!is_null($snapshot) && !is_numeric($snapshot)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($snapshot)), __LINE__);
+        if (!is_null($snapshot) && !(is_int($snapshot) || ctype_digit($snapshot))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($snapshot, true), gettype($snapshot)), __LINE__);
         }
         $this->snapshot = $snapshot;
         return $this;
@@ -266,8 +266,8 @@ class DedicatedBackupSet extends AbstractStructBase
     public function setSshPort($sshPort = null)
     {
         // validation for constraint: int
-        if (!is_null($sshPort) && !is_numeric($sshPort)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($sshPort)), __LINE__);
+        if (!is_null($sshPort) && !(is_int($sshPort) || ctype_digit($sshPort))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($sshPort, true), gettype($sshPort)), __LINE__);
         }
         $this->sshPort = $sshPort;
         return $this;
@@ -288,8 +288,8 @@ class DedicatedBackupSet extends AbstractStructBase
     public function setStatus($status = null)
     {
         // validation for constraint: int
-        if (!is_null($status) && !is_numeric($status)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($status)), __LINE__);
+        if (!is_null($status) && !(is_int($status) || ctype_digit($status))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($status, true), gettype($status)), __LINE__);
         }
         $this->status = $status;
         return $this;
@@ -311,7 +311,7 @@ class DedicatedBackupSet extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($language) && !is_string($language)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($language)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($language, true), gettype($language)), __LINE__);
         }
         $this->language = $language;
         return $this;
@@ -333,29 +333,9 @@ class DedicatedBackupSet extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($src) && !is_string($src)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($src)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($src, true), gettype($src)), __LINE__);
         }
         $this->src = $src;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DedicatedBackupSet
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }
