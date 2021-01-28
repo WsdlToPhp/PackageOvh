@@ -23,7 +23,9 @@ class Ticket extends SoapClientBase
     public function ticketListIncidentsByDomain(\Ovh\StructType\TicketListIncidentsByDomain $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->ticketListIncidentsByDomain($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('ticketListIncidentsByDomain', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Ticket extends SoapClientBase
     public function ticketListIncidents(\Ovh\StructType\TicketListIncidents $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->ticketListIncidents($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('ticketListIncidents', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Ticket extends SoapClientBase
     public function ticketReopen(\Ovh\StructType\TicketReopen $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->ticketReopen($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('ticketReopen', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Ticket extends SoapClientBase
     public function ticketListContact(\Ovh\StructType\TicketListContact $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->ticketListContact($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('ticketListContact', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -99,7 +107,9 @@ class Ticket extends SoapClientBase
     public function ticketGet(\Ovh\StructType\TicketGet $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->ticketGet($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('ticketGet', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -118,7 +128,9 @@ class Ticket extends SoapClientBase
     public function ticketAnswer(\Ovh\StructType\TicketAnswer $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->ticketAnswer($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('ticketAnswer', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -137,7 +149,9 @@ class Ticket extends SoapClientBase
     public function ticketClose(\Ovh\StructType\TicketClose $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->ticketClose($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('ticketClose', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -156,7 +170,9 @@ class Ticket extends SoapClientBase
     public function ticketCreate(\Ovh\StructType\TicketCreate $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->ticketCreate($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('ticketCreate', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -171,13 +187,5 @@ class Ticket extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

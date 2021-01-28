@@ -154,8 +154,8 @@ class OperationStruct extends AbstractStructBase
     public function setId($id = null)
     {
         // validation for constraint: int
-        if (!is_null($id) && !is_numeric($id)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($id)), __LINE__);
+        if (!is_null($id) && !(is_int($id) || ctype_digit($id))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($id, true), gettype($id)), __LINE__);
         }
         $this->id = $id;
         return $this;
@@ -177,7 +177,7 @@ class OperationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($domain) && !is_string($domain)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($domain)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($domain, true), gettype($domain)), __LINE__);
         }
         $this->domain = $domain;
         return $this;
@@ -199,7 +199,7 @@ class OperationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($function) && !is_string($function)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($function)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($function, true), gettype($function)), __LINE__);
         }
         $this->function = $function;
         return $this;
@@ -221,7 +221,7 @@ class OperationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($status) && !is_string($status)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($status)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($status, true), gettype($status)), __LINE__);
         }
         $this->status = $status;
         return $this;
@@ -243,7 +243,7 @@ class OperationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($internalStatus) && !is_string($internalStatus)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($internalStatus)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($internalStatus, true), gettype($internalStatus)), __LINE__);
         }
         $this->internalStatus = $internalStatus;
         return $this;
@@ -265,7 +265,7 @@ class OperationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($comment) && !is_string($comment)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($comment)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($comment, true), gettype($comment)), __LINE__);
         }
         $this->comment = $comment;
         return $this;
@@ -304,8 +304,8 @@ class OperationStruct extends AbstractStructBase
     public function setRetry($retry = null)
     {
         // validation for constraint: int
-        if (!is_null($retry) && !is_numeric($retry)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($retry)), __LINE__);
+        if (!is_null($retry) && !(is_int($retry) || ctype_digit($retry))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($retry, true), gettype($retry)), __LINE__);
         }
         $this->retry = $retry;
         return $this;
@@ -327,7 +327,7 @@ class OperationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($todoDate) && !is_string($todoDate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($todoDate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($todoDate, true), gettype($todoDate)), __LINE__);
         }
         $this->todoDate = $todoDate;
         return $this;
@@ -349,7 +349,7 @@ class OperationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($lastUpdate) && !is_string($lastUpdate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($lastUpdate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($lastUpdate, true), gettype($lastUpdate)), __LINE__);
         }
         $this->lastUpdate = $lastUpdate;
         return $this;
@@ -371,7 +371,7 @@ class OperationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($doneDate) && !is_string($doneDate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($doneDate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($doneDate, true), gettype($doneDate)), __LINE__);
         }
         $this->doneDate = $doneDate;
         return $this;
@@ -393,7 +393,7 @@ class OperationStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($canCancel) && !is_bool($canCancel)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($canCancel)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($canCancel, true), gettype($canCancel)), __LINE__);
         }
         $this->canCancel = $canCancel;
         return $this;
@@ -415,7 +415,7 @@ class OperationStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($canCorrect) && !is_bool($canCorrect)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($canCorrect)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($canCorrect, true), gettype($canCorrect)), __LINE__);
         }
         $this->canCorrect = $canCorrect;
         return $this;
@@ -437,7 +437,7 @@ class OperationStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($canRelaunch) && !is_bool($canRelaunch)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($canRelaunch)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($canRelaunch, true), gettype($canRelaunch)), __LINE__);
         }
         $this->canRelaunch = $canRelaunch;
         return $this;
@@ -459,29 +459,9 @@ class OperationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($restartStep) && !is_string($restartStep)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($restartStep)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($restartStep, true), gettype($restartStep)), __LINE__);
         }
         $this->restartStep = $restartStep;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\OperationStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

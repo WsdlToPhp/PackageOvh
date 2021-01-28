@@ -115,7 +115,7 @@ class TelephonyConferenceParamsReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($number) && !is_string($number)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($number)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($number, true), gettype($number)), __LINE__);
         }
         $this->number = $number;
         return $this;
@@ -137,7 +137,7 @@ class TelephonyConferenceParamsReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($lang) && !is_string($lang)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($lang)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($lang, true), gettype($lang)), __LINE__);
         }
         $this->lang = $lang;
         return $this;
@@ -158,8 +158,8 @@ class TelephonyConferenceParamsReturn extends AbstractStructBase
     public function setPin($pin = null)
     {
         // validation for constraint: int
-        if (!is_null($pin) && !is_numeric($pin)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($pin)), __LINE__);
+        if (!is_null($pin) && !(is_int($pin) || ctype_digit($pin))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($pin, true), gettype($pin)), __LINE__);
         }
         $this->pin = $pin;
         return $this;
@@ -181,7 +181,7 @@ class TelephonyConferenceParamsReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($enterMuted) && !is_bool($enterMuted)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($enterMuted)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($enterMuted, true), gettype($enterMuted)), __LINE__);
         }
         $this->enterMuted = $enterMuted;
         return $this;
@@ -203,7 +203,7 @@ class TelephonyConferenceParamsReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($announceStatus) && !is_bool($announceStatus)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($announceStatus)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($announceStatus, true), gettype($announceStatus)), __LINE__);
         }
         $this->announceStatus = $announceStatus;
         return $this;
@@ -225,7 +225,7 @@ class TelephonyConferenceParamsReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($announceFilename) && !is_string($announceFilename)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($announceFilename)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($announceFilename, true), gettype($announceFilename)), __LINE__);
         }
         $this->announceFilename = $announceFilename;
         return $this;
@@ -247,7 +247,7 @@ class TelephonyConferenceParamsReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($recordStatus) && !is_bool($recordStatus)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($recordStatus)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($recordStatus, true), gettype($recordStatus)), __LINE__);
         }
         $this->recordStatus = $recordStatus;
         return $this;
@@ -269,7 +269,7 @@ class TelephonyConferenceParamsReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($reportStatus) && !is_string($reportStatus)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($reportStatus)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($reportStatus, true), gettype($reportStatus)), __LINE__);
         }
         $this->reportStatus = $reportStatus;
         return $this;
@@ -291,7 +291,7 @@ class TelephonyConferenceParamsReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($reportMail) && !is_string($reportMail)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($reportMail)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($reportMail, true), gettype($reportMail)), __LINE__);
         }
         $this->reportMail = $reportMail;
         return $this;
@@ -313,29 +313,9 @@ class TelephonyConferenceParamsReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($eventsHash) && !is_string($eventsHash)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($eventsHash)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($eventsHash, true), gettype($eventsHash)), __LINE__);
         }
         $this->eventsHash = $eventsHash;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyConferenceParamsReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

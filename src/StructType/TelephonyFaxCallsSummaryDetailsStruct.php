@@ -58,8 +58,8 @@ class TelephonyFaxCallsSummaryDetailsStruct extends AbstractStructBase
     public function setFaxNumber($faxNumber = null)
     {
         // validation for constraint: int
-        if (!is_null($faxNumber) && !is_numeric($faxNumber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($faxNumber)), __LINE__);
+        if (!is_null($faxNumber) && !(is_int($faxNumber) || ctype_digit($faxNumber))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($faxNumber, true), gettype($faxNumber)), __LINE__);
         }
         $this->faxNumber = $faxNumber;
         return $this;
@@ -80,8 +80,8 @@ class TelephonyFaxCallsSummaryDetailsStruct extends AbstractStructBase
     public function setPages($pages = null)
     {
         // validation for constraint: int
-        if (!is_null($pages) && !is_numeric($pages)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($pages)), __LINE__);
+        if (!is_null($pages) && !(is_int($pages) || ctype_digit($pages))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($pages, true), gettype($pages)), __LINE__);
         }
         $this->pages = $pages;
         return $this;
@@ -101,27 +101,11 @@ class TelephonyFaxCallsSummaryDetailsStruct extends AbstractStructBase
      */
     public function setPriceWithoutVAT($priceWithoutVAT = null)
     {
+        // validation for constraint: float
+        if (!is_null($priceWithoutVAT) && !(is_float($priceWithoutVAT) || is_numeric($priceWithoutVAT))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($priceWithoutVAT, true), gettype($priceWithoutVAT)), __LINE__);
+        }
         $this->priceWithoutVAT = $priceWithoutVAT;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyFaxCallsSummaryDetailsStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

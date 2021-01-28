@@ -23,7 +23,9 @@ class Managed extends SoapClientBase
     public function managedServicesPartitionQuotaUsed(\Ovh\StructType\ManagedServicesPartitionQuotaUsed $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->managedServicesPartitionQuotaUsed($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('managedServicesPartitionQuotaUsed', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Managed extends SoapClientBase
     public function managedServicesIpAccessChange(\Ovh\StructType\ManagedServicesIpAccessChange $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->managedServicesIpAccessChange($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('managedServicesIpAccessChange', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Managed extends SoapClientBase
     public function managedServicesSnapshotUpdate(\Ovh\StructType\ManagedServicesSnapshotUpdate $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->managedServicesSnapshotUpdate($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('managedServicesSnapshotUpdate', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Managed extends SoapClientBase
     public function managedServicesHostMasterIpGet(\Ovh\StructType\ManagedServicesHostMasterIpGet $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->managedServicesHostMasterIpGet($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('managedServicesHostMasterIpGet', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -99,7 +107,9 @@ class Managed extends SoapClientBase
     public function managedServicesPartitionDelete(\Ovh\StructType\ManagedServicesPartitionDelete $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->managedServicesPartitionDelete($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('managedServicesPartitionDelete', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -119,7 +129,9 @@ class Managed extends SoapClientBase
     public function managedServicesPartitionStatusCheck(\Ovh\StructType\ManagedServicesPartitionStatusCheck $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->managedServicesPartitionStatusCheck($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('managedServicesPartitionStatusCheck', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -138,7 +150,9 @@ class Managed extends SoapClientBase
     public function managedServicesPartitionCreate(\Ovh\StructType\ManagedServicesPartitionCreate $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->managedServicesPartitionCreate($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('managedServicesPartitionCreate', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -157,7 +171,9 @@ class Managed extends SoapClientBase
     public function managedServicesPartitionGet(\Ovh\StructType\ManagedServicesPartitionGet $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->managedServicesPartitionGet($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('managedServicesPartitionGet', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -176,7 +192,9 @@ class Managed extends SoapClientBase
     public function managedServicesPartitionUpdate(\Ovh\StructType\ManagedServicesPartitionUpdate $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->managedServicesPartitionUpdate($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('managedServicesPartitionUpdate', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -195,7 +213,9 @@ class Managed extends SoapClientBase
     public function managedServicesNameUpdate(\Ovh\StructType\ManagedServicesNameUpdate $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->managedServicesNameUpdate($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('managedServicesNameUpdate', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -210,13 +230,5 @@ class Managed extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

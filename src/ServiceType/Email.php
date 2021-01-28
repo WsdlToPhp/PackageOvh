@@ -23,7 +23,9 @@ class Email extends SoapClientBase
     public function emailGetCapabilities(\Ovh\StructType\EmailGetCapabilities $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->emailGetCapabilities($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('emailGetCapabilities', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Email extends SoapClientBase
     public function emailDomainListByMasterNic(\Ovh\StructType\EmailDomainListByMasterNic $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->emailDomainListByMasterNic($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('emailDomainListByMasterNic', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Email extends SoapClientBase
     public function emailDomainSummary(\Ovh\StructType\EmailDomainSummary $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->emailDomainSummary($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('emailDomainSummary', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Email extends SoapClientBase
     public function emailFilterAdd(\Ovh\StructType\EmailFilterAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->emailFilterAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('emailFilterAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -99,7 +107,9 @@ class Email extends SoapClientBase
     public function emailAccessByNic(\Ovh\StructType\EmailAccessByNic $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->emailAccessByNic($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('emailAccessByNic', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -118,7 +128,9 @@ class Email extends SoapClientBase
     public function emailFilterRuleDel(\Ovh\StructType\EmailFilterRuleDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->emailFilterRuleDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('emailFilterRuleDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -137,7 +149,9 @@ class Email extends SoapClientBase
     public function emailFilterPriority(\Ovh\StructType\EmailFilterPriority $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->emailFilterPriority($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('emailFilterPriority', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -156,7 +170,9 @@ class Email extends SoapClientBase
     public function emailFilterDel(\Ovh\StructType\EmailFilterDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->emailFilterDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('emailFilterDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -175,7 +191,9 @@ class Email extends SoapClientBase
     public function emailSetDomainCatchAll(\Ovh\StructType\EmailSetDomainCatchAll $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->emailSetDomainCatchAll($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('emailSetDomainCatchAll', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -194,7 +212,9 @@ class Email extends SoapClientBase
     public function emailDomainMxList(\Ovh\StructType\EmailDomainMxList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->emailDomainMxList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('emailDomainMxList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -213,7 +233,9 @@ class Email extends SoapClientBase
     public function emailFilterRuleAdd(\Ovh\StructType\EmailFilterRuleAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->emailFilterRuleAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('emailFilterRuleAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -232,7 +254,9 @@ class Email extends SoapClientBase
     public function emailFilterActive(\Ovh\StructType\EmailFilterActive $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->emailFilterActive($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('emailFilterActive', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -251,7 +275,9 @@ class Email extends SoapClientBase
     public function emailFilterList(\Ovh\StructType\EmailFilterList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->emailFilterList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('emailFilterList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -270,7 +296,9 @@ class Email extends SoapClientBase
     public function emailGetDomainMxFiltering(\Ovh\StructType\EmailGetDomainMxFiltering $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->emailGetDomainMxFiltering($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('emailGetDomainMxFiltering', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -289,7 +317,9 @@ class Email extends SoapClientBase
     public function emailDelMasterNic(\Ovh\StructType\EmailDelMasterNic $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->emailDelMasterNic($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('emailDelMasterNic', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -308,7 +338,9 @@ class Email extends SoapClientBase
     public function emailGetDomainCatchAll(\Ovh\StructType\EmailGetDomainCatchAll $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->emailGetDomainCatchAll($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('emailGetDomainCatchAll', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -327,7 +359,9 @@ class Email extends SoapClientBase
     public function emailSetMasterNic(\Ovh\StructType\EmailSetMasterNic $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->emailSetMasterNic($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('emailSetMasterNic', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -346,7 +380,9 @@ class Email extends SoapClientBase
     public function emailSetDomainMxFiltering(\Ovh\StructType\EmailSetDomainMxFiltering $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->emailSetDomainMxFiltering($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('emailSetDomainMxFiltering', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -361,13 +397,5 @@ class Email extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

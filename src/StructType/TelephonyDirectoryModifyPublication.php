@@ -13,70 +13,70 @@ class TelephonyDirectoryModifyPublication extends AbstractStructBase
 {
     /**
      * The session
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $session;
     /**
      * The callNumber
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $callNumber;
     /**
      * The countryCode
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $countryCode;
     /**
      * The lineDescription
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $lineDescription;
     /**
      * The displayFirstName
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $displayFirstName;
     /**
      * The displayOnlyCity
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $displayOnlyCity;
     /**
      * The displayUniversalDirectory
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $displayUniversalDirectory;
     /**
      * The displayMarketingDirectory
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $displayMarketingDirectory;
     /**
      * The displaySearchReverse
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $displaySearchReverse;
     /**
      * The receivePJDirectory
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
@@ -135,7 +135,7 @@ class TelephonyDirectoryModifyPublication extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($session) && !is_string($session)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($session)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($session, true), gettype($session)), __LINE__);
         }
         $this->session = $session;
         return $this;
@@ -157,7 +157,7 @@ class TelephonyDirectoryModifyPublication extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($callNumber) && !is_string($callNumber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($callNumber)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($callNumber, true), gettype($callNumber)), __LINE__);
         }
         $this->callNumber = $callNumber;
         return $this;
@@ -179,7 +179,7 @@ class TelephonyDirectoryModifyPublication extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($countryCode) && !is_string($countryCode)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($countryCode)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($countryCode, true), gettype($countryCode)), __LINE__);
         }
         $this->countryCode = $countryCode;
         return $this;
@@ -201,7 +201,7 @@ class TelephonyDirectoryModifyPublication extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($lineDescription) && !is_string($lineDescription)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($lineDescription)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($lineDescription, true), gettype($lineDescription)), __LINE__);
         }
         $this->lineDescription = $lineDescription;
         return $this;
@@ -223,7 +223,7 @@ class TelephonyDirectoryModifyPublication extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($displayFirstName) && !is_string($displayFirstName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($displayFirstName)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($displayFirstName, true), gettype($displayFirstName)), __LINE__);
         }
         $this->displayFirstName = $displayFirstName;
         return $this;
@@ -245,7 +245,7 @@ class TelephonyDirectoryModifyPublication extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($displayOnlyCity) && !is_string($displayOnlyCity)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($displayOnlyCity)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($displayOnlyCity, true), gettype($displayOnlyCity)), __LINE__);
         }
         $this->displayOnlyCity = $displayOnlyCity;
         return $this;
@@ -267,7 +267,7 @@ class TelephonyDirectoryModifyPublication extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($displayUniversalDirectory) && !is_string($displayUniversalDirectory)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($displayUniversalDirectory)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($displayUniversalDirectory, true), gettype($displayUniversalDirectory)), __LINE__);
         }
         $this->displayUniversalDirectory = $displayUniversalDirectory;
         return $this;
@@ -289,7 +289,7 @@ class TelephonyDirectoryModifyPublication extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($displayMarketingDirectory) && !is_string($displayMarketingDirectory)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($displayMarketingDirectory)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($displayMarketingDirectory, true), gettype($displayMarketingDirectory)), __LINE__);
         }
         $this->displayMarketingDirectory = $displayMarketingDirectory;
         return $this;
@@ -311,7 +311,7 @@ class TelephonyDirectoryModifyPublication extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($displaySearchReverse) && !is_string($displaySearchReverse)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($displaySearchReverse)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($displaySearchReverse, true), gettype($displaySearchReverse)), __LINE__);
         }
         $this->displaySearchReverse = $displaySearchReverse;
         return $this;
@@ -333,29 +333,9 @@ class TelephonyDirectoryModifyPublication extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($receivePJDirectory) && !is_string($receivePJDirectory)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($receivePJDirectory)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($receivePJDirectory, true), gettype($receivePJDirectory)), __LINE__);
         }
         $this->receivePJDirectory = $receivePJDirectory;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyDirectoryModifyPublication
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

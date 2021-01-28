@@ -90,8 +90,8 @@ class SqlpriveCronStruct extends AbstractStructBase
     public function setId($id = null)
     {
         // validation for constraint: int
-        if (!is_null($id) && !is_numeric($id)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($id)), __LINE__);
+        if (!is_null($id) && !(is_int($id) || ctype_digit($id))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($id, true), gettype($id)), __LINE__);
         }
         $this->id = $id;
         return $this;
@@ -113,7 +113,7 @@ class SqlpriveCronStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($active) && !is_string($active)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($active)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($active, true), gettype($active)), __LINE__);
         }
         $this->active = $active;
         return $this;
@@ -135,7 +135,7 @@ class SqlpriveCronStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($days) && !is_string($days)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($days)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($days, true), gettype($days)), __LINE__);
         }
         $this->days = $days;
         return $this;
@@ -157,7 +157,7 @@ class SqlpriveCronStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($hours) && !is_string($hours)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($hours)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($hours, true), gettype($hours)), __LINE__);
         }
         $this->hours = $hours;
         return $this;
@@ -179,7 +179,7 @@ class SqlpriveCronStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($operation) && !is_string($operation)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($operation)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($operation, true), gettype($operation)), __LINE__);
         }
         $this->operation = $operation;
         return $this;
@@ -201,7 +201,7 @@ class SqlpriveCronStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($endDate) && !is_string($endDate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($endDate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($endDate, true), gettype($endDate)), __LINE__);
         }
         $this->endDate = $endDate;
         return $this;
@@ -223,29 +223,9 @@ class SqlpriveCronStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($comment) && !is_string($comment)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($comment)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($comment, true), gettype($comment)), __LINE__);
         }
         $this->comment = $comment;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\SqlpriveCronStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

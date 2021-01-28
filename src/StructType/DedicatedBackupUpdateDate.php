@@ -13,70 +13,70 @@ class DedicatedBackupUpdateDate extends AbstractStructBase
 {
     /**
      * The session
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $session;
     /**
      * The hostname
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $hostname;
     /**
      * The backupId
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $backupId;
     /**
      * The monday
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $monday;
     /**
      * The tuesday
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $tuesday;
     /**
      * The wednesday
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $wednesday;
     /**
      * The thursday
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $thursday;
     /**
      * The friday
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $friday;
     /**
      * The saturday
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $saturday;
     /**
      * The sunday
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
@@ -135,7 +135,7 @@ class DedicatedBackupUpdateDate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($session) && !is_string($session)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($session)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($session, true), gettype($session)), __LINE__);
         }
         $this->session = $session;
         return $this;
@@ -157,7 +157,7 @@ class DedicatedBackupUpdateDate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($hostname) && !is_string($hostname)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($hostname)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($hostname, true), gettype($hostname)), __LINE__);
         }
         $this->hostname = $hostname;
         return $this;
@@ -179,7 +179,7 @@ class DedicatedBackupUpdateDate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($backupId) && !is_string($backupId)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($backupId)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($backupId, true), gettype($backupId)), __LINE__);
         }
         $this->backupId = $backupId;
         return $this;
@@ -201,7 +201,7 @@ class DedicatedBackupUpdateDate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($monday) && !is_string($monday)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($monday)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($monday, true), gettype($monday)), __LINE__);
         }
         $this->monday = $monday;
         return $this;
@@ -223,7 +223,7 @@ class DedicatedBackupUpdateDate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($tuesday) && !is_string($tuesday)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($tuesday)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($tuesday, true), gettype($tuesday)), __LINE__);
         }
         $this->tuesday = $tuesday;
         return $this;
@@ -245,7 +245,7 @@ class DedicatedBackupUpdateDate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($wednesday) && !is_string($wednesday)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($wednesday)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($wednesday, true), gettype($wednesday)), __LINE__);
         }
         $this->wednesday = $wednesday;
         return $this;
@@ -267,7 +267,7 @@ class DedicatedBackupUpdateDate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($thursday) && !is_string($thursday)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($thursday)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($thursday, true), gettype($thursday)), __LINE__);
         }
         $this->thursday = $thursday;
         return $this;
@@ -289,7 +289,7 @@ class DedicatedBackupUpdateDate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($friday) && !is_string($friday)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($friday)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($friday, true), gettype($friday)), __LINE__);
         }
         $this->friday = $friday;
         return $this;
@@ -311,7 +311,7 @@ class DedicatedBackupUpdateDate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($saturday) && !is_string($saturday)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($saturday)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($saturday, true), gettype($saturday)), __LINE__);
         }
         $this->saturday = $saturday;
         return $this;
@@ -333,29 +333,9 @@ class DedicatedBackupUpdateDate extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($sunday) && !is_string($sunday)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($sunday)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($sunday, true), gettype($sunday)), __LINE__);
         }
         $this->sunday = $sunday;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DedicatedBackupUpdateDate
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

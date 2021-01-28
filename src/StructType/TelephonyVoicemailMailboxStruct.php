@@ -99,7 +99,7 @@ class TelephonyVoicemailMailboxStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($id) && !is_string($id)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($id)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($id, true), gettype($id)), __LINE__);
         }
         $this->id = $id;
         return $this;
@@ -121,7 +121,7 @@ class TelephonyVoicemailMailboxStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($callerid) && !is_string($callerid)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($callerid)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($callerid, true), gettype($callerid)), __LINE__);
         }
         $this->callerid = $callerid;
         return $this;
@@ -143,7 +143,7 @@ class TelephonyVoicemailMailboxStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($origdate) && !is_string($origdate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($origdate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($origdate, true), gettype($origdate)), __LINE__);
         }
         $this->origdate = $origdate;
         return $this;
@@ -165,7 +165,7 @@ class TelephonyVoicemailMailboxStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($origtime) && !is_string($origtime)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($origtime)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($origtime, true), gettype($origtime)), __LINE__);
         }
         $this->origtime = $origtime;
         return $this;
@@ -187,7 +187,7 @@ class TelephonyVoicemailMailboxStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($origmailbox) && !is_string($origmailbox)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($origmailbox)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($origmailbox, true), gettype($origmailbox)), __LINE__);
         }
         $this->origmailbox = $origmailbox;
         return $this;
@@ -208,8 +208,8 @@ class TelephonyVoicemailMailboxStruct extends AbstractStructBase
     public function setDuration($duration = null)
     {
         // validation for constraint: int
-        if (!is_null($duration) && !is_numeric($duration)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($duration)), __LINE__);
+        if (!is_null($duration) && !(is_int($duration) || ctype_digit($duration))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($duration, true), gettype($duration)), __LINE__);
         }
         $this->duration = $duration;
         return $this;
@@ -231,7 +231,7 @@ class TelephonyVoicemailMailboxStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($folder) && !is_string($folder)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($folder)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($folder, true), gettype($folder)), __LINE__);
         }
         $this->folder = $folder;
         return $this;
@@ -253,29 +253,9 @@ class TelephonyVoicemailMailboxStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($url) && !is_string($url)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($url)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($url, true), gettype($url)), __LINE__);
         }
         $this->url = $url;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyVoicemailMailboxStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

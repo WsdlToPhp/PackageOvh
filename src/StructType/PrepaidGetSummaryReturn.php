@@ -67,7 +67,7 @@ class PrepaidGetSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($contract) && !is_string($contract)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($contract)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($contract, true), gettype($contract)), __LINE__);
         }
         $this->contract = $contract;
         return $this;
@@ -88,8 +88,8 @@ class PrepaidGetSummaryReturn extends AbstractStructBase
     public function setThreshold($threshold = null)
     {
         // validation for constraint: int
-        if (!is_null($threshold) && !is_numeric($threshold)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($threshold)), __LINE__);
+        if (!is_null($threshold) && !(is_int($threshold) || ctype_digit($threshold))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($threshold, true), gettype($threshold)), __LINE__);
         }
         $this->threshold = $threshold;
         return $this;
@@ -109,6 +109,10 @@ class PrepaidGetSummaryReturn extends AbstractStructBase
      */
     public function setBalance($balance = null)
     {
+        // validation for constraint: float
+        if (!is_null($balance) && !(is_float($balance) || is_numeric($balance))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($balance, true), gettype($balance)), __LINE__);
+        }
         $this->balance = $balance;
         return $this;
     }
@@ -129,29 +133,9 @@ class PrepaidGetSummaryReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($md5) && !is_string($md5)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($md5)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($md5, true), gettype($md5)), __LINE__);
         }
         $this->md5 = $md5;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\PrepaidGetSummaryReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

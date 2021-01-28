@@ -74,8 +74,8 @@ class PrepaidGetHistoryReturn extends AbstractStructBase
     public function setPage($page = null)
     {
         // validation for constraint: int
-        if (!is_null($page) && !is_numeric($page)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($page)), __LINE__);
+        if (!is_null($page) && !(is_int($page) || ctype_digit($page))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($page, true), gettype($page)), __LINE__);
         }
         $this->page = $page;
         return $this;
@@ -96,8 +96,8 @@ class PrepaidGetHistoryReturn extends AbstractStructBase
     public function setTotal($total = null)
     {
         // validation for constraint: int
-        if (!is_null($total) && !is_numeric($total)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($total)), __LINE__);
+        if (!is_null($total) && !(is_int($total) || ctype_digit($total))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($total, true), gettype($total)), __LINE__);
         }
         $this->total = $total;
         return $this;
@@ -118,8 +118,8 @@ class PrepaidGetHistoryReturn extends AbstractStructBase
     public function setStart($start = null)
     {
         // validation for constraint: int
-        if (!is_null($start) && !is_numeric($start)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($start)), __LINE__);
+        if (!is_null($start) && !(is_int($start) || ctype_digit($start))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($start, true), gettype($start)), __LINE__);
         }
         $this->start = $start;
         return $this;
@@ -140,8 +140,8 @@ class PrepaidGetHistoryReturn extends AbstractStructBase
     public function setEnd($end = null)
     {
         // validation for constraint: int
-        if (!is_null($end) && !is_numeric($end)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($end)), __LINE__);
+        if (!is_null($end) && !(is_int($end) || ctype_digit($end))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($end, true), gettype($end)), __LINE__);
         }
         $this->end = $end;
         return $this;
@@ -163,25 +163,5 @@ class PrepaidGetHistoryReturn extends AbstractStructBase
     {
         $this->operations = $operations;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\PrepaidGetHistoryReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

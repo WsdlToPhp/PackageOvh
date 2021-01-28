@@ -75,7 +75,7 @@ class RtmHddSmartStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($status) && !is_string($status)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($status)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($status, true), gettype($status)), __LINE__);
         }
         $this->status = $status;
         return $this;
@@ -96,8 +96,8 @@ class RtmHddSmartStruct extends AbstractStructBase
     public function setMultizoneErrorRate($multizoneErrorRate = null)
     {
         // validation for constraint: int
-        if (!is_null($multizoneErrorRate) && !is_numeric($multizoneErrorRate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($multizoneErrorRate)), __LINE__);
+        if (!is_null($multizoneErrorRate) && !(is_int($multizoneErrorRate) || ctype_digit($multizoneErrorRate))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($multizoneErrorRate, true), gettype($multizoneErrorRate)), __LINE__);
         }
         $this->multizoneErrorRate = $multizoneErrorRate;
         return $this;
@@ -118,8 +118,8 @@ class RtmHddSmartStruct extends AbstractStructBase
     public function setCurrentPendingSector($currentPendingSector = null)
     {
         // validation for constraint: int
-        if (!is_null($currentPendingSector) && !is_numeric($currentPendingSector)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($currentPendingSector)), __LINE__);
+        if (!is_null($currentPendingSector) && !(is_int($currentPendingSector) || ctype_digit($currentPendingSector))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($currentPendingSector, true), gettype($currentPendingSector)), __LINE__);
         }
         $this->currentPendingSector = $currentPendingSector;
         return $this;
@@ -140,8 +140,8 @@ class RtmHddSmartStruct extends AbstractStructBase
     public function setUdmaCrcError($udmaCrcError = null)
     {
         // validation for constraint: int
-        if (!is_null($udmaCrcError) && !is_numeric($udmaCrcError)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($udmaCrcError)), __LINE__);
+        if (!is_null($udmaCrcError) && !(is_int($udmaCrcError) || ctype_digit($udmaCrcError))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($udmaCrcError, true), gettype($udmaCrcError)), __LINE__);
         }
         $this->udmaCrcError = $udmaCrcError;
         return $this;
@@ -162,30 +162,10 @@ class RtmHddSmartStruct extends AbstractStructBase
     public function setOfflineUncorrectable($offlineUncorrectable = null)
     {
         // validation for constraint: int
-        if (!is_null($offlineUncorrectable) && !is_numeric($offlineUncorrectable)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($offlineUncorrectable)), __LINE__);
+        if (!is_null($offlineUncorrectable) && !(is_int($offlineUncorrectable) || ctype_digit($offlineUncorrectable))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($offlineUncorrectable, true), gettype($offlineUncorrectable)), __LINE__);
         }
         $this->offlineUncorrectable = $offlineUncorrectable;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\RtmHddSmartStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

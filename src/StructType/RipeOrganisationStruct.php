@@ -115,7 +115,7 @@ class RipeOrganisationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($organisation) && !is_string($organisation)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($organisation)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($organisation, true), gettype($organisation)), __LINE__);
         }
         $this->organisation = $organisation;
         return $this;
@@ -137,7 +137,7 @@ class RipeOrganisationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($orgname) && !is_string($orgname)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($orgname)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($orgname, true), gettype($orgname)), __LINE__);
         }
         $this->orgname = $orgname;
         return $this;
@@ -159,7 +159,7 @@ class RipeOrganisationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($orgtype) && !is_string($orgtype)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($orgtype)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($orgtype, true), gettype($orgtype)), __LINE__);
         }
         $this->orgtype = $orgtype;
         return $this;
@@ -199,7 +199,7 @@ class RipeOrganisationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($email) && !is_string($email)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($email)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($email, true), gettype($email)), __LINE__);
         }
         $this->email = $email;
         return $this;
@@ -221,7 +221,7 @@ class RipeOrganisationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($abusemailbox) && !is_string($abusemailbox)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($abusemailbox)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($abusemailbox, true), gettype($abusemailbox)), __LINE__);
         }
         $this->abusemailbox = $abusemailbox;
         return $this;
@@ -243,7 +243,7 @@ class RipeOrganisationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($mntref) && !is_string($mntref)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($mntref)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($mntref, true), gettype($mntref)), __LINE__);
         }
         $this->mntref = $mntref;
         return $this;
@@ -265,7 +265,7 @@ class RipeOrganisationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($mntby) && !is_string($mntby)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($mntby)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($mntby, true), gettype($mntby)), __LINE__);
         }
         $this->mntby = $mntby;
         return $this;
@@ -287,7 +287,7 @@ class RipeOrganisationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($changed) && !is_string($changed)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($changed)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($changed, true), gettype($changed)), __LINE__);
         }
         $this->changed = $changed;
         return $this;
@@ -309,29 +309,9 @@ class RipeOrganisationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($source) && !is_string($source)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($source)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($source, true), gettype($source)), __LINE__);
         }
         $this->source = $source;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\RipeOrganisationStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

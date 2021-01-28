@@ -13,168 +13,168 @@ class TelephonyPortabilityOrder extends AbstractStructBase
 {
     /**
      * The session
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $session;
     /**
      * The billingAccount
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $billingAccount;
     /**
      * The offer
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $offer;
     /**
      * The desireDate
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $desireDate;
     /**
      * The callNumber
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $callNumber;
     /**
      * The extraNumbers
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var \Ovh\ArrayType\MyArrayOfStringType
      */
     public $extraNumbers;
     /**
      * The legalForm
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $legalForm;
     /**
      * The name
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $name;
     /**
      * The firstName
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $firstName;
     /**
      * The siret
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $siret;
     /**
      * The streetNumber
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $streetNumber;
     /**
      * The streetNumberExtra
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $streetNumberExtra;
     /**
      * The streetType
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $streetType;
     /**
      * The streetName
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $streetName;
     /**
      * The building
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $building;
     /**
      * The stair
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $stair;
     /**
      * The floor
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $floor;
     /**
      * The door
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $door;
     /**
      * The zip
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $zip;
     /**
      * The city
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $city;
     /**
      * The country
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $country;
     /**
      * The displayUniversalDirectory
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $displayUniversalDirectory;
     /**
      * The contactName
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $contactName;
     /**
      * The contactNumber
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
@@ -275,7 +275,7 @@ class TelephonyPortabilityOrder extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($session) && !is_string($session)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($session)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($session, true), gettype($session)), __LINE__);
         }
         $this->session = $session;
         return $this;
@@ -297,7 +297,7 @@ class TelephonyPortabilityOrder extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($billingAccount) && !is_string($billingAccount)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($billingAccount)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($billingAccount, true), gettype($billingAccount)), __LINE__);
         }
         $this->billingAccount = $billingAccount;
         return $this;
@@ -319,7 +319,7 @@ class TelephonyPortabilityOrder extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($offer) && !is_string($offer)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($offer)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($offer, true), gettype($offer)), __LINE__);
         }
         $this->offer = $offer;
         return $this;
@@ -341,7 +341,7 @@ class TelephonyPortabilityOrder extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($desireDate) && !is_string($desireDate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($desireDate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($desireDate, true), gettype($desireDate)), __LINE__);
         }
         $this->desireDate = $desireDate;
         return $this;
@@ -363,7 +363,7 @@ class TelephonyPortabilityOrder extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($callNumber) && !is_string($callNumber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($callNumber)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($callNumber, true), gettype($callNumber)), __LINE__);
         }
         $this->callNumber = $callNumber;
         return $this;
@@ -403,7 +403,7 @@ class TelephonyPortabilityOrder extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($legalForm) && !is_string($legalForm)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($legalForm)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($legalForm, true), gettype($legalForm)), __LINE__);
         }
         $this->legalForm = $legalForm;
         return $this;
@@ -425,7 +425,7 @@ class TelephonyPortabilityOrder extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($name) && !is_string($name)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($name)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($name, true), gettype($name)), __LINE__);
         }
         $this->name = $name;
         return $this;
@@ -447,7 +447,7 @@ class TelephonyPortabilityOrder extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($firstName) && !is_string($firstName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($firstName)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($firstName, true), gettype($firstName)), __LINE__);
         }
         $this->firstName = $firstName;
         return $this;
@@ -469,7 +469,7 @@ class TelephonyPortabilityOrder extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($siret) && !is_string($siret)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($siret)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($siret, true), gettype($siret)), __LINE__);
         }
         $this->siret = $siret;
         return $this;
@@ -491,7 +491,7 @@ class TelephonyPortabilityOrder extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($streetNumber) && !is_string($streetNumber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($streetNumber)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($streetNumber, true), gettype($streetNumber)), __LINE__);
         }
         $this->streetNumber = $streetNumber;
         return $this;
@@ -513,7 +513,7 @@ class TelephonyPortabilityOrder extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($streetNumberExtra) && !is_string($streetNumberExtra)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($streetNumberExtra)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($streetNumberExtra, true), gettype($streetNumberExtra)), __LINE__);
         }
         $this->streetNumberExtra = $streetNumberExtra;
         return $this;
@@ -535,7 +535,7 @@ class TelephonyPortabilityOrder extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($streetType) && !is_string($streetType)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($streetType)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($streetType, true), gettype($streetType)), __LINE__);
         }
         $this->streetType = $streetType;
         return $this;
@@ -557,7 +557,7 @@ class TelephonyPortabilityOrder extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($streetName) && !is_string($streetName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($streetName)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($streetName, true), gettype($streetName)), __LINE__);
         }
         $this->streetName = $streetName;
         return $this;
@@ -579,7 +579,7 @@ class TelephonyPortabilityOrder extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($building) && !is_string($building)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($building)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($building, true), gettype($building)), __LINE__);
         }
         $this->building = $building;
         return $this;
@@ -601,7 +601,7 @@ class TelephonyPortabilityOrder extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($stair) && !is_string($stair)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($stair)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($stair, true), gettype($stair)), __LINE__);
         }
         $this->stair = $stair;
         return $this;
@@ -623,7 +623,7 @@ class TelephonyPortabilityOrder extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($floor) && !is_string($floor)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($floor)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($floor, true), gettype($floor)), __LINE__);
         }
         $this->floor = $floor;
         return $this;
@@ -645,7 +645,7 @@ class TelephonyPortabilityOrder extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($door) && !is_string($door)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($door)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($door, true), gettype($door)), __LINE__);
         }
         $this->door = $door;
         return $this;
@@ -667,7 +667,7 @@ class TelephonyPortabilityOrder extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($zip) && !is_string($zip)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($zip)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($zip, true), gettype($zip)), __LINE__);
         }
         $this->zip = $zip;
         return $this;
@@ -689,7 +689,7 @@ class TelephonyPortabilityOrder extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($city) && !is_string($city)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($city)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($city, true), gettype($city)), __LINE__);
         }
         $this->city = $city;
         return $this;
@@ -711,7 +711,7 @@ class TelephonyPortabilityOrder extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($country) && !is_string($country)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($country)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($country, true), gettype($country)), __LINE__);
         }
         $this->country = $country;
         return $this;
@@ -733,7 +733,7 @@ class TelephonyPortabilityOrder extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($displayUniversalDirectory) && !is_string($displayUniversalDirectory)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($displayUniversalDirectory)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($displayUniversalDirectory, true), gettype($displayUniversalDirectory)), __LINE__);
         }
         $this->displayUniversalDirectory = $displayUniversalDirectory;
         return $this;
@@ -755,7 +755,7 @@ class TelephonyPortabilityOrder extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($contactName) && !is_string($contactName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($contactName)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($contactName, true), gettype($contactName)), __LINE__);
         }
         $this->contactName = $contactName;
         return $this;
@@ -777,29 +777,9 @@ class TelephonyPortabilityOrder extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($contactNumber) && !is_string($contactNumber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($contactNumber)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($contactNumber, true), gettype($contactNumber)), __LINE__);
         }
         $this->contactNumber = $contactNumber;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyPortabilityOrder
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

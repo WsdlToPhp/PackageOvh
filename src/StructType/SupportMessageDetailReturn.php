@@ -98,8 +98,8 @@ class SupportMessageDetailReturn extends AbstractStructBase
     public function setId($id = null)
     {
         // validation for constraint: int
-        if (!is_null($id) && !is_numeric($id)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($id)), __LINE__);
+        if (!is_null($id) && !(is_int($id) || ctype_digit($id))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($id, true), gettype($id)), __LINE__);
         }
         $this->id = $id;
         return $this;
@@ -120,8 +120,8 @@ class SupportMessageDetailReturn extends AbstractStructBase
     public function setThread($thread = null)
     {
         // validation for constraint: int
-        if (!is_null($thread) && !is_numeric($thread)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($thread)), __LINE__);
+        if (!is_null($thread) && !(is_int($thread) || ctype_digit($thread))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($thread, true), gettype($thread)), __LINE__);
         }
         $this->thread = $thread;
         return $this;
@@ -143,7 +143,7 @@ class SupportMessageDetailReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($unreadThread) && !is_bool($unreadThread)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($unreadThread)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($unreadThread, true), gettype($unreadThread)), __LINE__);
         }
         $this->unreadThread = $unreadThread;
         return $this;
@@ -165,7 +165,7 @@ class SupportMessageDetailReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($fromEmail) && !is_string($fromEmail)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($fromEmail)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($fromEmail, true), gettype($fromEmail)), __LINE__);
         }
         $this->fromEmail = $fromEmail;
         return $this;
@@ -187,7 +187,7 @@ class SupportMessageDetailReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dateSent) && !is_string($dateSent)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dateSent)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dateSent, true), gettype($dateSent)), __LINE__);
         }
         $this->dateSent = $dateSent;
         return $this;
@@ -209,7 +209,7 @@ class SupportMessageDetailReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($subject) && !is_string($subject)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($subject)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($subject, true), gettype($subject)), __LINE__);
         }
         $this->subject = $subject;
         return $this;
@@ -231,7 +231,7 @@ class SupportMessageDetailReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($body) && !is_string($body)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($body)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($body, true), gettype($body)), __LINE__);
         }
         $this->body = $body;
         return $this;
@@ -253,29 +253,9 @@ class SupportMessageDetailReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($reportReason) && !is_string($reportReason)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($reportReason)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($reportReason, true), gettype($reportReason)), __LINE__);
         }
         $this->reportReason = $reportReason;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\SupportMessageDetailReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

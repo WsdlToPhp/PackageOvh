@@ -13,49 +13,49 @@ class SupportGetThreads extends AbstractStructBase
 {
     /**
      * The session
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $session;
     /**
      * The page
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var int
      */
     public $page;
     /**
      * The view
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $view;
     /**
      * The unread
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var bool
      */
     public $unread;
     /**
      * The sortDir
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $sortDir;
     /**
      * The sortBy
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $sortBy;
     /**
      * The limit
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var int
      */
@@ -105,7 +105,7 @@ class SupportGetThreads extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($session) && !is_string($session)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($session)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($session, true), gettype($session)), __LINE__);
         }
         $this->session = $session;
         return $this;
@@ -126,8 +126,8 @@ class SupportGetThreads extends AbstractStructBase
     public function setPage($page = null)
     {
         // validation for constraint: int
-        if (!is_null($page) && !is_numeric($page)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($page)), __LINE__);
+        if (!is_null($page) && !(is_int($page) || ctype_digit($page))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($page, true), gettype($page)), __LINE__);
         }
         $this->page = $page;
         return $this;
@@ -149,7 +149,7 @@ class SupportGetThreads extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($view) && !is_string($view)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($view)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($view, true), gettype($view)), __LINE__);
         }
         $this->view = $view;
         return $this;
@@ -171,7 +171,7 @@ class SupportGetThreads extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($unread) && !is_bool($unread)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($unread)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($unread, true), gettype($unread)), __LINE__);
         }
         $this->unread = $unread;
         return $this;
@@ -193,7 +193,7 @@ class SupportGetThreads extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($sortDir) && !is_string($sortDir)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($sortDir)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($sortDir, true), gettype($sortDir)), __LINE__);
         }
         $this->sortDir = $sortDir;
         return $this;
@@ -215,7 +215,7 @@ class SupportGetThreads extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($sortBy) && !is_string($sortBy)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($sortBy)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($sortBy, true), gettype($sortBy)), __LINE__);
         }
         $this->sortBy = $sortBy;
         return $this;
@@ -236,30 +236,10 @@ class SupportGetThreads extends AbstractStructBase
     public function setLimit($limit = null)
     {
         // validation for constraint: int
-        if (!is_null($limit) && !is_numeric($limit)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($limit)), __LINE__);
+        if (!is_null($limit) && !(is_int($limit) || ctype_digit($limit))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($limit, true), gettype($limit)), __LINE__);
         }
         $this->limit = $limit;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\SupportGetThreads
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

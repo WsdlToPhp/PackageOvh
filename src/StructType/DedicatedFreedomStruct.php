@@ -66,8 +66,8 @@ class DedicatedFreedomStruct extends AbstractStructBase
     public function setRemaining($remaining = null)
     {
         // validation for constraint: int
-        if (!is_null($remaining) && !is_numeric($remaining)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($remaining)), __LINE__);
+        if (!is_null($remaining) && !(is_int($remaining) || ctype_digit($remaining))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($remaining, true), gettype($remaining)), __LINE__);
         }
         $this->remaining = $remaining;
         return $this;
@@ -88,8 +88,8 @@ class DedicatedFreedomStruct extends AbstractStructBase
     public function setAssigned($assigned = null)
     {
         // validation for constraint: int
-        if (!is_null($assigned) && !is_numeric($assigned)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($assigned)), __LINE__);
+        if (!is_null($assigned) && !(is_int($assigned) || ctype_digit($assigned))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($assigned, true), gettype($assigned)), __LINE__);
         }
         $this->assigned = $assigned;
         return $this;
@@ -110,8 +110,8 @@ class DedicatedFreedomStruct extends AbstractStructBase
     public function setTotal($total = null)
     {
         // validation for constraint: int
-        if (!is_null($total) && !is_numeric($total)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($total)), __LINE__);
+        if (!is_null($total) && !(is_int($total) || ctype_digit($total))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($total, true), gettype($total)), __LINE__);
         }
         $this->total = $total;
         return $this;
@@ -132,30 +132,10 @@ class DedicatedFreedomStruct extends AbstractStructBase
     public function setPreset($preset = null)
     {
         // validation for constraint: int
-        if (!is_null($preset) && !is_numeric($preset)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($preset)), __LINE__);
+        if (!is_null($preset) && !(is_int($preset) || ctype_digit($preset))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($preset, true), gettype($preset)), __LINE__);
         }
         $this->preset = $preset;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DedicatedFreedomStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

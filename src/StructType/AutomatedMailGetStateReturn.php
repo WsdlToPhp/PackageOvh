@@ -66,8 +66,8 @@ class AutomatedMailGetStateReturn extends AbstractStructBase
     public function setBounce($bounce = null)
     {
         // validation for constraint: int
-        if (!is_null($bounce) && !is_numeric($bounce)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($bounce)), __LINE__);
+        if (!is_null($bounce) && !(is_int($bounce) || ctype_digit($bounce))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($bounce, true), gettype($bounce)), __LINE__);
         }
         $this->bounce = $bounce;
         return $this;
@@ -88,8 +88,8 @@ class AutomatedMailGetStateReturn extends AbstractStructBase
     public function setSent($sent = null)
     {
         // validation for constraint: int
-        if (!is_null($sent) && !is_numeric($sent)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($sent)), __LINE__);
+        if (!is_null($sent) && !(is_int($sent) || ctype_digit($sent))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($sent, true), gettype($sent)), __LINE__);
         }
         $this->sent = $sent;
         return $this;
@@ -111,7 +111,7 @@ class AutomatedMailGetStateReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($return) && !is_string($return)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($return)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($return, true), gettype($return)), __LINE__);
         }
         $this->return = $return;
         return $this;
@@ -133,29 +133,9 @@ class AutomatedMailGetStateReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($state) && !is_string($state)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($state)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($state, true), gettype($state)), __LINE__);
         }
         $this->state = $state;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\AutomatedMailGetStateReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

@@ -23,7 +23,9 @@ class Ort extends SoapClientBase
     public function ortDomainDel(\Ovh\StructType\OrtDomainDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->ortDomainDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('ortDomainDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Ort extends SoapClientBase
     public function ortDomainList(\Ovh\StructType\OrtDomainList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->ortDomainList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('ortDomainList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Ort extends SoapClientBase
     public function ortDomainAdd(\Ovh\StructType\OrtDomainAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->ortDomainAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('ortDomainAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -76,13 +82,5 @@ class Ort extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

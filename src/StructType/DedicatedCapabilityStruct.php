@@ -90,8 +90,8 @@ class DedicatedCapabilityStruct extends AbstractStructBase
     public function setBackupFtp($backupFtp = null)
     {
         // validation for constraint: int
-        if (!is_null($backupFtp) && !is_numeric($backupFtp)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($backupFtp)), __LINE__);
+        if (!is_null($backupFtp) && !(is_int($backupFtp) || ctype_digit($backupFtp))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($backupFtp, true), gettype($backupFtp)), __LINE__);
         }
         $this->backupFtp = $backupFtp;
         return $this;
@@ -113,7 +113,7 @@ class DedicatedCapabilityStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($backupFtpServer) && !is_string($backupFtpServer)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($backupFtpServer)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($backupFtpServer, true), gettype($backupFtpServer)), __LINE__);
         }
         $this->backupFtpServer = $backupFtpServer;
         return $this;
@@ -134,8 +134,8 @@ class DedicatedCapabilityStruct extends AbstractStructBase
     public function setAllocationBlockIp($allocationBlockIp = null)
     {
         // validation for constraint: int
-        if (!is_null($allocationBlockIp) && !is_numeric($allocationBlockIp)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($allocationBlockIp)), __LINE__);
+        if (!is_null($allocationBlockIp) && !(is_int($allocationBlockIp) || ctype_digit($allocationBlockIp))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($allocationBlockIp, true), gettype($allocationBlockIp)), __LINE__);
         }
         $this->allocationBlockIp = $allocationBlockIp;
         return $this;
@@ -156,8 +156,8 @@ class DedicatedCapabilityStruct extends AbstractStructBase
     public function setAdditionalIp($additionalIp = null)
     {
         // validation for constraint: int
-        if (!is_null($additionalIp) && !is_numeric($additionalIp)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($additionalIp)), __LINE__);
+        if (!is_null($additionalIp) && !(is_int($additionalIp) || ctype_digit($additionalIp))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($additionalIp, true), gettype($additionalIp)), __LINE__);
         }
         $this->additionalIp = $additionalIp;
         return $this;
@@ -179,7 +179,7 @@ class DedicatedCapabilityStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($rootDevice) && !is_string($rootDevice)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($rootDevice)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($rootDevice, true), gettype($rootDevice)), __LINE__);
         }
         $this->rootDevice = $rootDevice;
         return $this;
@@ -200,8 +200,8 @@ class DedicatedCapabilityStruct extends AbstractStructBase
     public function setDiskSize($diskSize = null)
     {
         // validation for constraint: int
-        if (!is_null($diskSize) && !is_numeric($diskSize)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($diskSize)), __LINE__);
+        if (!is_null($diskSize) && !(is_int($diskSize) || ctype_digit($diskSize))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($diskSize, true), gettype($diskSize)), __LINE__);
         }
         $this->diskSize = $diskSize;
         return $this;
@@ -222,30 +222,10 @@ class DedicatedCapabilityStruct extends AbstractStructBase
     public function setTuning($tuning = null)
     {
         // validation for constraint: int
-        if (!is_null($tuning) && !is_numeric($tuning)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($tuning)), __LINE__);
+        if (!is_null($tuning) && !(is_int($tuning) || ctype_digit($tuning))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($tuning, true), gettype($tuning)), __LINE__);
         }
         $this->tuning = $tuning;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DedicatedCapabilityStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

@@ -91,7 +91,7 @@ class RtmRaidPartitionVolumeStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($volumeName) && !is_string($volumeName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($volumeName)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($volumeName, true), gettype($volumeName)), __LINE__);
         }
         $this->volumeName = $volumeName;
         return $this;
@@ -113,7 +113,7 @@ class RtmRaidPartitionVolumeStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($flags) && !is_string($flags)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($flags)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($flags, true), gettype($flags)), __LINE__);
         }
         $this->flags = $flags;
         return $this;
@@ -135,7 +135,7 @@ class RtmRaidPartitionVolumeStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($status) && !is_string($status)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($status)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($status, true), gettype($status)), __LINE__);
         }
         $this->status = $status;
         return $this;
@@ -157,7 +157,7 @@ class RtmRaidPartitionVolumeStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($type) && !is_string($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($type)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($type, true), gettype($type)), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -179,7 +179,7 @@ class RtmRaidPartitionVolumeStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($capacity) && !is_string($capacity)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($capacity)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($capacity, true), gettype($capacity)), __LINE__);
         }
         $this->capacity = $capacity;
         return $this;
@@ -200,8 +200,8 @@ class RtmRaidPartitionVolumeStruct extends AbstractStructBase
     public function setPhys($phys = null)
     {
         // validation for constraint: int
-        if (!is_null($phys) && !is_numeric($phys)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($phys)), __LINE__);
+        if (!is_null($phys) && !(is_int($phys) || ctype_digit($phys))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($phys, true), gettype($phys)), __LINE__);
         }
         $this->phys = $phys;
         return $this;
@@ -223,25 +223,5 @@ class RtmRaidPartitionVolumeStruct extends AbstractStructBase
     {
         $this->members = $members;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\RtmRaidPartitionVolumeStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

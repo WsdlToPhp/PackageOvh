@@ -23,7 +23,9 @@ class Dns extends SoapClientBase
     public function dnsDefaultInstallCustom(\Ovh\StructType\DnsDefaultInstallCustom $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dnsDefaultInstallCustom($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dnsDefaultInstallCustom', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Dns extends SoapClientBase
     public function dnsInstall(\Ovh\StructType\DnsInstall $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dnsInstall($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dnsInstall', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Dns extends SoapClientBase
     public function dnsReset(\Ovh\StructType\DnsReset $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dnsReset($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dnsReset', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Dns extends SoapClientBase
     public function dnsSoaModify(\Ovh\StructType\DnsSoaModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dnsSoaModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dnsSoaModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -99,7 +107,9 @@ class Dns extends SoapClientBase
     public function dnsInstallCustom(\Ovh\StructType\DnsInstallCustom $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dnsInstallCustom($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dnsInstallCustom', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -118,7 +128,9 @@ class Dns extends SoapClientBase
     public function dnsUninstall(\Ovh\StructType\DnsUninstall $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dnsUninstall($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dnsUninstall', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -137,7 +149,9 @@ class Dns extends SoapClientBase
     public function dnsGeolocalizeHosting(\Ovh\StructType\DnsGeolocalizeHosting $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->dnsGeolocalizeHosting($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('dnsGeolocalizeHosting', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -152,13 +166,5 @@ class Dns extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

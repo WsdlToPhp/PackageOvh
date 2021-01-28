@@ -67,7 +67,7 @@ class TelephonyNotificationSmsUserStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($support) && !is_string($support)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($support)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($support, true), gettype($support)), __LINE__);
         }
         $this->support = $support;
         return $this;
@@ -88,8 +88,8 @@ class TelephonyNotificationSmsUserStruct extends AbstractStructBase
     public function setAlertThreshold($alertThreshold = null)
     {
         // validation for constraint: int
-        if (!is_null($alertThreshold) && !is_numeric($alertThreshold)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($alertThreshold)), __LINE__);
+        if (!is_null($alertThreshold) && !(is_int($alertThreshold) || ctype_digit($alertThreshold))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($alertThreshold, true), gettype($alertThreshold)), __LINE__);
         }
         $this->alertThreshold = $alertThreshold;
         return $this;
@@ -111,7 +111,7 @@ class TelephonyNotificationSmsUserStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($alertNumber) && !is_string($alertNumber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($alertNumber)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($alertNumber, true), gettype($alertNumber)), __LINE__);
         }
         $this->alertNumber = $alertNumber;
         return $this;
@@ -133,29 +133,9 @@ class TelephonyNotificationSmsUserStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($alertEmail) && !is_string($alertEmail)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($alertEmail)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($alertEmail, true), gettype($alertEmail)), __LINE__);
         }
         $this->alertEmail = $alertEmail;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyNotificationSmsUserStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

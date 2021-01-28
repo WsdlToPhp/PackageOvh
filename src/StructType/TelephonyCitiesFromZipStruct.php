@@ -67,7 +67,7 @@ class TelephonyCitiesFromZipStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($insee) && !is_string($insee)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($insee)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($insee, true), gettype($insee)), __LINE__);
         }
         $this->insee = $insee;
         return $this;
@@ -89,7 +89,7 @@ class TelephonyCitiesFromZipStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($city) && !is_string($city)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($city)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($city, true), gettype($city)), __LINE__);
         }
         $this->city = $city;
         return $this;
@@ -111,7 +111,7 @@ class TelephonyCitiesFromZipStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($zip) && !is_string($zip)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($zip)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($zip, true), gettype($zip)), __LINE__);
         }
         $this->zip = $zip;
         return $this;
@@ -133,29 +133,9 @@ class TelephonyCitiesFromZipStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($zne) && !is_string($zne)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($zne)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($zne, true), gettype($zne)), __LINE__);
         }
         $this->zne = $zne;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyCitiesFromZipStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

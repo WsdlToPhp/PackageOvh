@@ -106,8 +106,8 @@ class TicketStruct extends AbstractStructBase
     public function setId($id = null)
     {
         // validation for constraint: int
-        if (!is_null($id) && !is_numeric($id)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($id)), __LINE__);
+        if (!is_null($id) && !(is_int($id) || ctype_digit($id))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($id, true), gettype($id)), __LINE__);
         }
         $this->id = $id;
         return $this;
@@ -129,7 +129,7 @@ class TicketStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($creationDate) && !is_string($creationDate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($creationDate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($creationDate, true), gettype($creationDate)), __LINE__);
         }
         $this->creationDate = $creationDate;
         return $this;
@@ -151,7 +151,7 @@ class TicketStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($requestStatus) && !is_string($requestStatus)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($requestStatus)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($requestStatus, true), gettype($requestStatus)), __LINE__);
         }
         $this->requestStatus = $requestStatus;
         return $this;
@@ -173,7 +173,7 @@ class TicketStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($subject) && !is_string($subject)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($subject)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($subject, true), gettype($subject)), __LINE__);
         }
         $this->subject = $subject;
         return $this;
@@ -195,7 +195,7 @@ class TicketStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($nic) && !is_string($nic)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($nic)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nic, true), gettype($nic)), __LINE__);
         }
         $this->nic = $nic;
         return $this;
@@ -217,7 +217,7 @@ class TicketStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($level) && !is_string($level)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($level)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($level, true), gettype($level)), __LINE__);
         }
         $this->level = $level;
         return $this;
@@ -239,7 +239,7 @@ class TicketStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($domain) && !is_string($domain)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($domain)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($domain, true), gettype($domain)), __LINE__);
         }
         $this->domain = $domain;
         return $this;
@@ -260,8 +260,8 @@ class TicketStruct extends AbstractStructBase
     public function setOrderId($orderId = null)
     {
         // validation for constraint: int
-        if (!is_null($orderId) && !is_numeric($orderId)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($orderId)), __LINE__);
+        if (!is_null($orderId) && !(is_int($orderId) || ctype_digit($orderId))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($orderId, true), gettype($orderId)), __LINE__);
         }
         $this->orderId = $orderId;
         return $this;
@@ -283,29 +283,9 @@ class TicketStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($componentType) && !is_string($componentType)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($componentType)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($componentType, true), gettype($componentType)), __LINE__);
         }
         $this->componentType = $componentType;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TicketStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

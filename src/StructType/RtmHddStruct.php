@@ -91,7 +91,7 @@ class RtmHddStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($device) && !is_string($device)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($device)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($device, true), gettype($device)), __LINE__);
         }
         $this->device = $device;
         return $this;
@@ -113,7 +113,7 @@ class RtmHddStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($model) && !is_string($model)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($model)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($model, true), gettype($model)), __LINE__);
         }
         $this->model = $model;
         return $this;
@@ -135,7 +135,7 @@ class RtmHddStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($capacity) && !is_string($capacity)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($capacity)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($capacity, true), gettype($capacity)), __LINE__);
         }
         $this->capacity = $capacity;
         return $this;
@@ -157,7 +157,7 @@ class RtmHddStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($status) && !is_string($status)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($status)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($status, true), gettype($status)), __LINE__);
         }
         $this->status = $status;
         return $this;
@@ -214,30 +214,10 @@ class RtmHddStruct extends AbstractStructBase
     public function setTemperature($temperature = null)
     {
         // validation for constraint: int
-        if (!is_null($temperature) && !is_numeric($temperature)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($temperature)), __LINE__);
+        if (!is_null($temperature) && !(is_int($temperature) || ctype_digit($temperature))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($temperature, true), gettype($temperature)), __LINE__);
         }
         $this->temperature = $temperature;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\RtmHddStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

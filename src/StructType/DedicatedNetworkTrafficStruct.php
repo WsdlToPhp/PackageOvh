@@ -83,7 +83,7 @@ class DedicatedNetworkTrafficStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($lastUpdate) && !is_string($lastUpdate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($lastUpdate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($lastUpdate, true), gettype($lastUpdate)), __LINE__);
         }
         $this->lastUpdate = $lastUpdate;
         return $this;
@@ -141,7 +141,7 @@ class DedicatedNetworkTrafficStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($nextTrafficReset) && !is_string($nextTrafficReset)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($nextTrafficReset)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nextTrafficReset, true), gettype($nextTrafficReset)), __LINE__);
         }
         $this->nextTrafficReset = $nextTrafficReset;
         return $this;
@@ -163,7 +163,7 @@ class DedicatedNetworkTrafficStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($monthlyQuota) && !is_string($monthlyQuota)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($monthlyQuota)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($monthlyQuota, true), gettype($monthlyQuota)), __LINE__);
         }
         $this->monthlyQuota = $monthlyQuota;
         return $this;
@@ -185,29 +185,9 @@ class DedicatedNetworkTrafficStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($nextQuotaReset) && !is_string($nextQuotaReset)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($nextQuotaReset)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nextQuotaReset, true), gettype($nextQuotaReset)), __LINE__);
         }
         $this->nextQuotaReset = $nextQuotaReset;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DedicatedNetworkTrafficStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

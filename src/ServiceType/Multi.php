@@ -23,7 +23,9 @@ class Multi extends SoapClientBase
     public function multiFtpChangeDirectory(\Ovh\StructType\MultiFtpChangeDirectory $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->multiFtpChangeDirectory($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('multiFtpChangeDirectory', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Multi extends SoapClientBase
     public function multiFtpChangePassword(\Ovh\StructType\MultiFtpChangePassword $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->multiFtpChangePassword($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('multiFtpChangePassword', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Multi extends SoapClientBase
     public function multiFtpList(\Ovh\StructType\MultiFtpList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->multiFtpList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('multiFtpList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Multi extends SoapClientBase
     public function multiFtpAdd(\Ovh\StructType\MultiFtpAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->multiFtpAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('multiFtpAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -99,7 +107,9 @@ class Multi extends SoapClientBase
     public function multiDomainList(\Ovh\StructType\MultiDomainList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->multiDomainList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('multiDomainList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -118,7 +128,9 @@ class Multi extends SoapClientBase
     public function multiFtpDel(\Ovh\StructType\MultiFtpDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->multiFtpDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('multiFtpDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -137,7 +149,9 @@ class Multi extends SoapClientBase
     public function multiDomainAdd(\Ovh\StructType\MultiDomainAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->multiDomainAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('multiDomainAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -156,7 +170,9 @@ class Multi extends SoapClientBase
     public function multiDomainModify(\Ovh\StructType\MultiDomainModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->multiDomainModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('multiDomainModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -175,7 +191,9 @@ class Multi extends SoapClientBase
     public function multiDomainInfo(\Ovh\StructType\MultiDomainInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->multiDomainInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('multiDomainInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -194,7 +212,9 @@ class Multi extends SoapClientBase
     public function multiDomainDel(\Ovh\StructType\MultiDomainDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->multiDomainDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('multiDomainDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -209,13 +229,5 @@ class Multi extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

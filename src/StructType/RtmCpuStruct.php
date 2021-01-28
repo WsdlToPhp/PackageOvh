@@ -83,7 +83,7 @@ class RtmCpuStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($frequency) && !is_string($frequency)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($frequency)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($frequency, true), gettype($frequency)), __LINE__);
         }
         $this->frequency = $frequency;
         return $this;
@@ -104,8 +104,8 @@ class RtmCpuStruct extends AbstractStructBase
     public function setCore($core = null)
     {
         // validation for constraint: int
-        if (!is_null($core) && !is_numeric($core)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($core)), __LINE__);
+        if (!is_null($core) && !(is_int($core) || ctype_digit($core))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($core, true), gettype($core)), __LINE__);
         }
         $this->core = $core;
         return $this;
@@ -127,7 +127,7 @@ class RtmCpuStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($name) && !is_string($name)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($name)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($name, true), gettype($name)), __LINE__);
         }
         $this->name = $name;
         return $this;
@@ -149,7 +149,7 @@ class RtmCpuStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($cache) && !is_string($cache)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($cache)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($cache, true), gettype($cache)), __LINE__);
         }
         $this->cache = $cache;
         return $this;
@@ -170,8 +170,8 @@ class RtmCpuStruct extends AbstractStructBase
     public function setPercentLoad($percentLoad = null)
     {
         // validation for constraint: int
-        if (!is_null($percentLoad) && !is_numeric($percentLoad)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($percentLoad)), __LINE__);
+        if (!is_null($percentLoad) && !(is_int($percentLoad) || ctype_digit($percentLoad))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($percentLoad, true), gettype($percentLoad)), __LINE__);
         }
         $this->percentLoad = $percentLoad;
         return $this;
@@ -193,25 +193,5 @@ class RtmCpuStruct extends AbstractStructBase
     {
         $this->loadAvg = $loadAvg;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\RtmCpuStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

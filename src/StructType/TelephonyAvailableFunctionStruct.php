@@ -67,7 +67,7 @@ class TelephonyAvailableFunctionStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($function) && !is_string($function)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($function)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($function, true), gettype($function)), __LINE__);
         }
         $this->function = $function;
         return $this;
@@ -89,7 +89,7 @@ class TelephonyAvailableFunctionStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($relatedValue) && !is_string($relatedValue)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($relatedValue)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($relatedValue, true), gettype($relatedValue)), __LINE__);
         }
         $this->relatedValue = $relatedValue;
         return $this;
@@ -111,7 +111,7 @@ class TelephonyAvailableFunctionStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($defaultValue) && !is_string($defaultValue)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($defaultValue)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($defaultValue, true), gettype($defaultValue)), __LINE__);
         }
         $this->defaultValue = $defaultValue;
         return $this;
@@ -133,25 +133,5 @@ class TelephonyAvailableFunctionStruct extends AbstractStructBase
     {
         $this->possibilities = $possibilities;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyAvailableFunctionStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

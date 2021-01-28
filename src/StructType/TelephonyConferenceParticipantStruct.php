@@ -99,7 +99,7 @@ class TelephonyConferenceParticipantStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($callerid) && !is_string($callerid)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($callerid)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($callerid, true), gettype($callerid)), __LINE__);
         }
         $this->callerid = $callerid;
         return $this;
@@ -121,7 +121,7 @@ class TelephonyConferenceParticipantStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($callername) && !is_string($callername)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($callername)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($callername, true), gettype($callername)), __LINE__);
         }
         $this->callername = $callername;
         return $this;
@@ -143,7 +143,7 @@ class TelephonyConferenceParticipantStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($talking) && !is_bool($talking)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($talking)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($talking, true), gettype($talking)), __LINE__);
         }
         $this->talking = $talking;
         return $this;
@@ -165,7 +165,7 @@ class TelephonyConferenceParticipantStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($deaf) && !is_bool($deaf)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($deaf)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($deaf, true), gettype($deaf)), __LINE__);
         }
         $this->deaf = $deaf;
         return $this;
@@ -187,7 +187,7 @@ class TelephonyConferenceParticipantStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($muted) && !is_bool($muted)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($muted)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($muted, true), gettype($muted)), __LINE__);
         }
         $this->muted = $muted;
         return $this;
@@ -208,8 +208,8 @@ class TelephonyConferenceParticipantStruct extends AbstractStructBase
     public function setJoinsince($joinsince = null)
     {
         // validation for constraint: int
-        if (!is_null($joinsince) && !is_numeric($joinsince)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($joinsince)), __LINE__);
+        if (!is_null($joinsince) && !(is_int($joinsince) || ctype_digit($joinsince))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($joinsince, true), gettype($joinsince)), __LINE__);
         }
         $this->joinsince = $joinsince;
         return $this;
@@ -230,8 +230,8 @@ class TelephonyConferenceParticipantStruct extends AbstractStructBase
     public function setMemberid($memberid = null)
     {
         // validation for constraint: int
-        if (!is_null($memberid) && !is_numeric($memberid)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($memberid)), __LINE__);
+        if (!is_null($memberid) && !(is_int($memberid) || ctype_digit($memberid))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($memberid, true), gettype($memberid)), __LINE__);
         }
         $this->memberid = $memberid;
         return $this;
@@ -252,30 +252,10 @@ class TelephonyConferenceParticipantStruct extends AbstractStructBase
     public function setEnergy($energy = null)
     {
         // validation for constraint: int
-        if (!is_null($energy) && !is_numeric($energy)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($energy)), __LINE__);
+        if (!is_null($energy) && !(is_int($energy) || ctype_digit($energy))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($energy, true), gettype($energy)), __LINE__);
         }
         $this->energy = $energy;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyConferenceParticipantStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

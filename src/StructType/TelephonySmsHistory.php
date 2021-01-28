@@ -13,70 +13,70 @@ class TelephonySmsHistory extends AbstractStructBase
 {
     /**
      * The session
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $session;
     /**
      * The smsAccount
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $smsAccount;
     /**
      * The smsId
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var int
      */
     public $smsId;
     /**
      * The user
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $user;
     /**
      * The pagingStart
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var int
      */
     public $pagingStart;
     /**
      * The pagingLimit
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var int
      */
     public $pagingLimit;
     /**
      * The sortField
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $sortField;
     /**
      * The sortOrder
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $sortOrder;
     /**
      * The tag
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $tag;
     /**
      * The filter
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
@@ -135,7 +135,7 @@ class TelephonySmsHistory extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($session) && !is_string($session)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($session)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($session, true), gettype($session)), __LINE__);
         }
         $this->session = $session;
         return $this;
@@ -157,7 +157,7 @@ class TelephonySmsHistory extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($smsAccount) && !is_string($smsAccount)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($smsAccount)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($smsAccount, true), gettype($smsAccount)), __LINE__);
         }
         $this->smsAccount = $smsAccount;
         return $this;
@@ -178,8 +178,8 @@ class TelephonySmsHistory extends AbstractStructBase
     public function setSmsId($smsId = null)
     {
         // validation for constraint: int
-        if (!is_null($smsId) && !is_numeric($smsId)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($smsId)), __LINE__);
+        if (!is_null($smsId) && !(is_int($smsId) || ctype_digit($smsId))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($smsId, true), gettype($smsId)), __LINE__);
         }
         $this->smsId = $smsId;
         return $this;
@@ -201,7 +201,7 @@ class TelephonySmsHistory extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($user) && !is_string($user)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($user)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($user, true), gettype($user)), __LINE__);
         }
         $this->user = $user;
         return $this;
@@ -222,8 +222,8 @@ class TelephonySmsHistory extends AbstractStructBase
     public function setPagingStart($pagingStart = null)
     {
         // validation for constraint: int
-        if (!is_null($pagingStart) && !is_numeric($pagingStart)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($pagingStart)), __LINE__);
+        if (!is_null($pagingStart) && !(is_int($pagingStart) || ctype_digit($pagingStart))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($pagingStart, true), gettype($pagingStart)), __LINE__);
         }
         $this->pagingStart = $pagingStart;
         return $this;
@@ -244,8 +244,8 @@ class TelephonySmsHistory extends AbstractStructBase
     public function setPagingLimit($pagingLimit = null)
     {
         // validation for constraint: int
-        if (!is_null($pagingLimit) && !is_numeric($pagingLimit)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($pagingLimit)), __LINE__);
+        if (!is_null($pagingLimit) && !(is_int($pagingLimit) || ctype_digit($pagingLimit))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($pagingLimit, true), gettype($pagingLimit)), __LINE__);
         }
         $this->pagingLimit = $pagingLimit;
         return $this;
@@ -267,7 +267,7 @@ class TelephonySmsHistory extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($sortField) && !is_string($sortField)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($sortField)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($sortField, true), gettype($sortField)), __LINE__);
         }
         $this->sortField = $sortField;
         return $this;
@@ -289,7 +289,7 @@ class TelephonySmsHistory extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($sortOrder) && !is_string($sortOrder)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($sortOrder)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($sortOrder, true), gettype($sortOrder)), __LINE__);
         }
         $this->sortOrder = $sortOrder;
         return $this;
@@ -311,7 +311,7 @@ class TelephonySmsHistory extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($tag) && !is_string($tag)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($tag)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($tag, true), gettype($tag)), __LINE__);
         }
         $this->tag = $tag;
         return $this;
@@ -333,29 +333,9 @@ class TelephonySmsHistory extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($filter) && !is_string($filter)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($filter)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($filter, true), gettype($filter)), __LINE__);
         }
         $this->filter = $filter;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonySmsHistory
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

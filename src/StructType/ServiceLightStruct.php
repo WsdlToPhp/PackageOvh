@@ -91,7 +91,7 @@ class ServiceLightStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($domain) && !is_string($domain)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($domain)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($domain, true), gettype($domain)), __LINE__);
         }
         $this->domain = $domain;
         return $this;
@@ -113,7 +113,7 @@ class ServiceLightStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($expiry) && !is_string($expiry)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($expiry)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($expiry, true), gettype($expiry)), __LINE__);
         }
         $this->expiry = $expiry;
         return $this;
@@ -135,7 +135,7 @@ class ServiceLightStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($nicadmin) && !is_string($nicadmin)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($nicadmin)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nicadmin, true), gettype($nicadmin)), __LINE__);
         }
         $this->nicadmin = $nicadmin;
         return $this;
@@ -157,7 +157,7 @@ class ServiceLightStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($nictech) && !is_string($nictech)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($nictech)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nictech, true), gettype($nictech)), __LINE__);
         }
         $this->nictech = $nictech;
         return $this;
@@ -179,7 +179,7 @@ class ServiceLightStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($nicbilling) && !is_string($nicbilling)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($nicbilling)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nicbilling, true), gettype($nicbilling)), __LINE__);
         }
         $this->nicbilling = $nicbilling;
         return $this;
@@ -201,7 +201,7 @@ class ServiceLightStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($autorenew) && !is_string($autorenew)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($autorenew)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($autorenew, true), gettype($autorenew)), __LINE__);
         }
         $this->autorenew = $autorenew;
         return $this;
@@ -223,29 +223,9 @@ class ServiceLightStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($reverse) && !is_string($reverse)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($reverse)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($reverse, true), gettype($reverse)), __LINE__);
         }
         $this->reverse = $reverse;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\ServiceLightStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

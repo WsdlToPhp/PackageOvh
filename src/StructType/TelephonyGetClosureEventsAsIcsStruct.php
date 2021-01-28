@@ -50,8 +50,8 @@ class TelephonyGetClosureEventsAsIcsStruct extends AbstractStructBase
     public function setNumberOfEvents($numberOfEvents = null)
     {
         // validation for constraint: int
-        if (!is_null($numberOfEvents) && !is_numeric($numberOfEvents)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($numberOfEvents)), __LINE__);
+        if (!is_null($numberOfEvents) && !(is_int($numberOfEvents) || ctype_digit($numberOfEvents))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($numberOfEvents, true), gettype($numberOfEvents)), __LINE__);
         }
         $this->numberOfEvents = $numberOfEvents;
         return $this;
@@ -73,29 +73,9 @@ class TelephonyGetClosureEventsAsIcsStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($datas) && !is_string($datas)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($datas)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($datas, true), gettype($datas)), __LINE__);
         }
         $this->datas = $datas;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyGetClosureEventsAsIcsStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

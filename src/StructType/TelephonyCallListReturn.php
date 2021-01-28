@@ -59,7 +59,7 @@ class TelephonyCallListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($fromDate) && !is_string($fromDate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($fromDate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($fromDate, true), gettype($fromDate)), __LINE__);
         }
         $this->fromDate = $fromDate;
         return $this;
@@ -81,7 +81,7 @@ class TelephonyCallListReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($toDate) && !is_string($toDate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($toDate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($toDate, true), gettype($toDate)), __LINE__);
         }
         $this->toDate = $toDate;
         return $this;
@@ -103,25 +103,5 @@ class TelephonyCallListReturn extends AbstractStructBase
     {
         $this->list = $list;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyCallListReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

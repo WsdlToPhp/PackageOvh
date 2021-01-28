@@ -59,7 +59,7 @@ class TelephonyVoicemailMessagesDownloadReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($fileName) && !is_string($fileName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($fileName)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($fileName, true), gettype($fileName)), __LINE__);
         }
         $this->fileName = $fileName;
         return $this;
@@ -81,7 +81,7 @@ class TelephonyVoicemailMessagesDownloadReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($fileData) && !is_string($fileData)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($fileData)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($fileData, true), gettype($fileData)), __LINE__);
         }
         $this->fileData = $fileData;
         return $this;
@@ -103,29 +103,9 @@ class TelephonyVoicemailMessagesDownloadReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($md5sum) && !is_string($md5sum)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($md5sum)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($md5sum, true), gettype($md5sum)), __LINE__);
         }
         $this->md5sum = $md5sum;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyVoicemailMessagesDownloadReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

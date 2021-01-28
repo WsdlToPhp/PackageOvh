@@ -83,7 +83,7 @@ class ManagedServicesPartitionStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($idZfs) && !is_string($idZfs)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($idZfs)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($idZfs, true), gettype($idZfs)), __LINE__);
         }
         $this->idZfs = $idZfs;
         return $this;
@@ -105,7 +105,7 @@ class ManagedServicesPartitionStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($name) && !is_string($name)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($name)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($name, true), gettype($name)), __LINE__);
         }
         $this->name = $name;
         return $this;
@@ -127,7 +127,7 @@ class ManagedServicesPartitionStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($size) && !is_string($size)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($size)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($size, true), gettype($size)), __LINE__);
         }
         $this->size = $size;
         return $this;
@@ -149,7 +149,7 @@ class ManagedServicesPartitionStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($used) && !is_string($used)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($used)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($used, true), gettype($used)), __LINE__);
         }
         $this->used = $used;
         return $this;
@@ -171,7 +171,7 @@ class ManagedServicesPartitionStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($state) && !is_string($state)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($state)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($state, true), gettype($state)), __LINE__);
         }
         $this->state = $state;
         return $this;
@@ -193,25 +193,5 @@ class ManagedServicesPartitionStruct extends AbstractStructBase
     {
         $this->accessList = $accessList;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\ManagedServicesPartitionStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

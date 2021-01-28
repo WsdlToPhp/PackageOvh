@@ -59,7 +59,7 @@ class TelephonySmsplusSummaryInfosStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($quantity) && !is_string($quantity)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($quantity)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($quantity, true), gettype($quantity)), __LINE__);
         }
         $this->quantity = $quantity;
         return $this;
@@ -79,6 +79,10 @@ class TelephonySmsplusSummaryInfosStruct extends AbstractStructBase
      */
     public function setPriceReversed($priceReversed = null)
     {
+        // validation for constraint: float
+        if (!is_null($priceReversed) && !(is_float($priceReversed) || is_numeric($priceReversed))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($priceReversed, true), gettype($priceReversed)), __LINE__);
+        }
         $this->priceReversed = $priceReversed;
         return $this;
     }
@@ -97,27 +101,11 @@ class TelephonySmsplusSummaryInfosStruct extends AbstractStructBase
      */
     public function setPrice($price = null)
     {
+        // validation for constraint: float
+        if (!is_null($price) && !(is_float($price) || is_numeric($price))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($price, true), gettype($price)), __LINE__);
+        }
         $this->price = $price;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonySmsplusSummaryInfosStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

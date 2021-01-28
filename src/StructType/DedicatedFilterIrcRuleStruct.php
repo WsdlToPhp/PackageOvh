@@ -67,7 +67,7 @@ class DedicatedFilterIrcRuleStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($fromIp) && !is_string($fromIp)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($fromIp)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($fromIp, true), gettype($fromIp)), __LINE__);
         }
         $this->fromIp = $fromIp;
         return $this;
@@ -89,7 +89,7 @@ class DedicatedFilterIrcRuleStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($fromPort) && !is_string($fromPort)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($fromPort)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($fromPort, true), gettype($fromPort)), __LINE__);
         }
         $this->fromPort = $fromPort;
         return $this;
@@ -111,7 +111,7 @@ class DedicatedFilterIrcRuleStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($toIp) && !is_string($toIp)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($toIp)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($toIp, true), gettype($toIp)), __LINE__);
         }
         $this->toIp = $toIp;
         return $this;
@@ -133,29 +133,9 @@ class DedicatedFilterIrcRuleStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($toPort) && !is_string($toPort)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($toPort)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($toPort, true), gettype($toPort)), __LINE__);
         }
         $this->toPort = $toPort;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DedicatedFilterIrcRuleStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

@@ -99,7 +99,7 @@ class TelephonyNumberDecodeStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($numberDisplay) && !is_string($numberDisplay)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($numberDisplay)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($numberDisplay, true), gettype($numberDisplay)), __LINE__);
         }
         $this->numberDisplay = $numberDisplay;
         return $this;
@@ -121,7 +121,7 @@ class TelephonyNumberDecodeStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($numberInternal) && !is_string($numberInternal)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($numberInternal)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($numberInternal, true), gettype($numberInternal)), __LINE__);
         }
         $this->numberInternal = $numberInternal;
         return $this;
@@ -143,7 +143,7 @@ class TelephonyNumberDecodeStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($numberInternational) && !is_string($numberInternational)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($numberInternational)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($numberInternational, true), gettype($numberInternational)), __LINE__);
         }
         $this->numberInternational = $numberInternational;
         return $this;
@@ -165,7 +165,7 @@ class TelephonyNumberDecodeStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($numberNational) && !is_string($numberNational)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($numberNational)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($numberNational, true), gettype($numberNational)), __LINE__);
         }
         $this->numberNational = $numberNational;
         return $this;
@@ -187,7 +187,7 @@ class TelephonyNumberDecodeStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($countryCode) && !is_string($countryCode)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($countryCode)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($countryCode, true), gettype($countryCode)), __LINE__);
         }
         $this->countryCode = $countryCode;
         return $this;
@@ -209,7 +209,7 @@ class TelephonyNumberDecodeStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($language) && !is_string($language)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($language)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($language, true), gettype($language)), __LINE__);
         }
         $this->language = $language;
         return $this;
@@ -231,7 +231,7 @@ class TelephonyNumberDecodeStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($cirpackNature) && !is_string($cirpackNature)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($cirpackNature)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($cirpackNature, true), gettype($cirpackNature)), __LINE__);
         }
         $this->cirpackNature = $cirpackNature;
         return $this;
@@ -253,29 +253,9 @@ class TelephonyNumberDecodeStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($cirpackNumber) && !is_string($cirpackNumber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($cirpackNumber)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($cirpackNumber, true), gettype($cirpackNumber)), __LINE__);
         }
         $this->cirpackNumber = $cirpackNumber;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyNumberDecodeStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

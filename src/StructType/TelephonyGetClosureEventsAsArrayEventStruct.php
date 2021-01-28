@@ -147,7 +147,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($uid) && !is_string($uid)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($uid)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($uid, true), gettype($uid)), __LINE__);
         }
         $this->uid = $uid;
         return $this;
@@ -169,7 +169,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($summary) && !is_string($summary)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($summary)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($summary, true), gettype($summary)), __LINE__);
         }
         $this->summary = $summary;
         return $this;
@@ -191,7 +191,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($description) && !is_string($description)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($description)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($description, true), gettype($description)), __LINE__);
         }
         $this->description = $description;
         return $this;
@@ -213,7 +213,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($categories) && !is_string($categories)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($categories)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($categories, true), gettype($categories)), __LINE__);
         }
         $this->categories = $categories;
         return $this;
@@ -235,7 +235,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($created) && !is_string($created)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($created)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($created, true), gettype($created)), __LINE__);
         }
         $this->created = $created;
         return $this;
@@ -257,7 +257,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($lastModified) && !is_string($lastModified)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($lastModified)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($lastModified, true), gettype($lastModified)), __LINE__);
         }
         $this->lastModified = $lastModified;
         return $this;
@@ -279,7 +279,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dtStart) && !is_string($dtStart)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dtStart)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dtStart, true), gettype($dtStart)), __LINE__);
         }
         $this->dtStart = $dtStart;
         return $this;
@@ -301,7 +301,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dtStartValue) && !is_string($dtStartValue)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dtStartValue)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dtStartValue, true), gettype($dtStartValue)), __LINE__);
         }
         $this->dtStartValue = $dtStartValue;
         return $this;
@@ -323,7 +323,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dtStartTzid) && !is_string($dtStartTzid)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dtStartTzid)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dtStartTzid, true), gettype($dtStartTzid)), __LINE__);
         }
         $this->dtStartTzid = $dtStartTzid;
         return $this;
@@ -345,7 +345,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dtStartUserValue) && !is_string($dtStartUserValue)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dtStartUserValue)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dtStartUserValue, true), gettype($dtStartUserValue)), __LINE__);
         }
         $this->dtStartUserValue = $dtStartUserValue;
         return $this;
@@ -367,7 +367,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dtEnd) && !is_string($dtEnd)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dtEnd)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dtEnd, true), gettype($dtEnd)), __LINE__);
         }
         $this->dtEnd = $dtEnd;
         return $this;
@@ -389,7 +389,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dtEndValue) && !is_string($dtEndValue)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dtEndValue)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dtEndValue, true), gettype($dtEndValue)), __LINE__);
         }
         $this->dtEndValue = $dtEndValue;
         return $this;
@@ -411,7 +411,7 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dtEndTzid) && !is_string($dtEndTzid)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dtEndTzid)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dtEndTzid, true), gettype($dtEndTzid)), __LINE__);
         }
         $this->dtEndTzid = $dtEndTzid;
         return $this;
@@ -433,29 +433,9 @@ class TelephonyGetClosureEventsAsArrayEventStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($dtEndUserValue) && !is_string($dtEndUserValue)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($dtEndUserValue)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dtEndUserValue, true), gettype($dtEndUserValue)), __LINE__);
         }
         $this->dtEndUserValue = $dtEndUserValue;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyGetClosureEventsAsArrayEventStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

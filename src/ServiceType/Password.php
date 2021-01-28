@@ -23,7 +23,9 @@ class Password extends SoapClientBase
     public function passwordSoapi(\Ovh\StructType\PasswordSoapi $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->passwordSoapi($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('passwordSoapi', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Password extends SoapClientBase
     public function passwordManager(\Ovh\StructType\PasswordManager $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->passwordManager($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('passwordManager', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -57,13 +61,5 @@ class Password extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

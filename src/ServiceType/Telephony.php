@@ -23,7 +23,9 @@ class Telephony extends SoapClientBase
     public function telephonyNumberInfo(\Ovh\StructType\TelephonyNumberInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyNumberInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyNumberInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Telephony extends SoapClientBase
     public function telephonyVoicemailOptionsList(\Ovh\StructType\TelephonyVoicemailOptionsList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyVoicemailOptionsList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyVoicemailOptionsList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookSharePeerList(\Ovh\StructType\TelephonyPhonebookSharePeerList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookSharePeerList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookSharePeerList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Telephony extends SoapClientBase
     public function telephonyRedirectModify(\Ovh\StructType\TelephonyRedirectModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyRedirectModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyRedirectModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -99,7 +107,9 @@ class Telephony extends SoapClientBase
     public function telephonyNumberModify(\Ovh\StructType\TelephonyNumberModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyNumberModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyNumberModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -118,7 +128,9 @@ class Telephony extends SoapClientBase
     public function telephonyGetCitiesFromZip(\Ovh\StructType\TelephonyGetCitiesFromZip $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyGetCitiesFromZip($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyGetCitiesFromZip', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -137,7 +149,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsplusSendSmsMt(\Ovh\StructType\TelephonySmsplusSendSmsMt $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsplusSendSmsMt($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsplusSendSmsMt', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -156,7 +170,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsUserGetCsvAttachment(\Ovh\StructType\TelephonySmsUserGetCsvAttachment $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsUserGetCsvAttachment($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsUserGetCsvAttachment', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -175,7 +191,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookOnSmsList(\Ovh\StructType\TelephonyPhonebookOnSmsList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookOnSmsList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookOnSmsList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -194,7 +212,9 @@ class Telephony extends SoapClientBase
     public function telephonySetClosureEvents(\Ovh\StructType\TelephonySetClosureEvents $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySetClosureEvents($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySetClosureEvents', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -213,7 +233,9 @@ class Telephony extends SoapClientBase
     public function telephonyNicSetSipDomain(\Ovh\StructType\TelephonyNicSetSipDomain $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyNicSetSipDomain($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyNicSetSipDomain', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -232,7 +254,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsMultiSend(\Ovh\StructType\TelephonySmsMultiSend $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsMultiSend($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsMultiSend', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -251,7 +275,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsUserAddCsvAttachment(\Ovh\StructType\TelephonySmsUserAddCsvAttachment $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsUserAddCsvAttachment($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsUserAddCsvAttachment', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -270,7 +296,9 @@ class Telephony extends SoapClientBase
     public function telephonySpareDel(\Ovh\StructType\TelephonySpareDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySpareDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySpareDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -289,7 +317,9 @@ class Telephony extends SoapClientBase
     public function telephonyFaxHistory(\Ovh\StructType\TelephonyFaxHistory $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyFaxHistory($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyFaxHistory', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -308,7 +338,9 @@ class Telephony extends SoapClientBase
     public function telephonyFreefaxToVoicefax(\Ovh\StructType\TelephonyFreefaxToVoicefax $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyFreefaxToVoicefax($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyFreefaxToVoicefax', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -327,7 +359,9 @@ class Telephony extends SoapClientBase
     public function telephonyFaxSend(\Ovh\StructType\TelephonyFaxSend $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyFaxSend($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyFaxSend', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -346,7 +380,9 @@ class Telephony extends SoapClientBase
     public function telephonyRestrictionList(\Ovh\StructType\TelephonyRestrictionList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyRestrictionList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyRestrictionList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -365,7 +401,9 @@ class Telephony extends SoapClientBase
     public function telephonyBillList(\Ovh\StructType\TelephonyBillList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyBillList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyBillList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -384,7 +422,9 @@ class Telephony extends SoapClientBase
     public function telephonyNumberCustomList(\Ovh\StructType\TelephonyNumberCustomList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyNumberCustomList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyNumberCustomList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -403,7 +443,9 @@ class Telephony extends SoapClientBase
     public function telephonyPlugAndPhoneSkinModify(\Ovh\StructType\TelephonyPlugAndPhoneSkinModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPlugAndPhoneSkinModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPlugAndPhoneSkinModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -422,7 +464,9 @@ class Telephony extends SoapClientBase
     public function telephonyFaxOptionsModify(\Ovh\StructType\TelephonyFaxOptionsModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyFaxOptionsModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyFaxOptionsModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -441,7 +485,9 @@ class Telephony extends SoapClientBase
     public function telephonyBillingAccountSummary(\Ovh\StructType\TelephonyBillingAccountSummary $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyBillingAccountSummary($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyBillingAccountSummary', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -460,7 +506,9 @@ class Telephony extends SoapClientBase
     public function telephonyConferenceSetAnnounceFile(\Ovh\StructType\TelephonyConferenceSetAnnounceFile $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyConferenceSetAnnounceFile($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyConferenceSetAnnounceFile', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -479,7 +527,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookOnSmsAdd(\Ovh\StructType\TelephonyPhonebookOnSmsAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookOnSmsAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookOnSmsAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -498,7 +548,9 @@ class Telephony extends SoapClientBase
     public function telephonyClick2CallUserDel(\Ovh\StructType\TelephonyClick2CallUserDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyClick2CallUserDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyClick2CallUserDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -517,7 +569,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsAccountList(\Ovh\StructType\TelephonySmsAccountList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsAccountList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsAccountList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -537,7 +591,9 @@ class Telephony extends SoapClientBase
     public function telephonyBillingAccountConsumptionCSVByMail(\Ovh\StructType\TelephonyBillingAccountConsumptionCSVByMail $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyBillingAccountConsumptionCSVByMail($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyBillingAccountConsumptionCSVByMail', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -557,7 +613,9 @@ class Telephony extends SoapClientBase
     public function telephonyFMHuntingModificationVoicemail(\Ovh\StructType\TelephonyFMHuntingModificationVoicemail $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyFMHuntingModificationVoicemail($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyFMHuntingModificationVoicemail', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -576,7 +634,9 @@ class Telephony extends SoapClientBase
     public function telephonyOrdersFollowingUp(\Ovh\StructType\TelephonyOrdersFollowingUp $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyOrdersFollowingUp($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyOrdersFollowingUp', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -596,7 +656,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookOnGroupContactAdd(\Ovh\StructType\TelephonyPhonebookOnGroupContactAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookOnGroupContactAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookOnGroupContactAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -615,7 +677,9 @@ class Telephony extends SoapClientBase
     public function telephonyBillDetailsCSV(\Ovh\StructType\TelephonyBillDetailsCSV $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyBillDetailsCSV($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyBillDetailsCSV', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -634,7 +698,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsCreditLeft(\Ovh\StructType\TelephonySmsCreditLeft $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsCreditLeft($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsCreditLeft', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -653,7 +719,9 @@ class Telephony extends SoapClientBase
     public function telephonyDirectoryPJCode(\Ovh\StructType\TelephonyDirectoryPJCode $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyDirectoryPJCode($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyDirectoryPJCode', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -673,7 +741,9 @@ class Telephony extends SoapClientBase
     public function telephonyListSummationCallsFromBillingAccount(\Ovh\StructType\TelephonyListSummationCallsFromBillingAccount $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyListSummationCallsFromBillingAccount($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyListSummationCallsFromBillingAccount', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -693,7 +763,9 @@ class Telephony extends SoapClientBase
     public function telephonyBillingAccountDescriptionModify(\Ovh\StructType\TelephonyBillingAccountDescriptionModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyBillingAccountDescriptionModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyBillingAccountDescriptionModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -712,7 +784,9 @@ class Telephony extends SoapClientBase
     public function telephonyAbbreviatedNumberDel(\Ovh\StructType\TelephonyAbbreviatedNumberDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyAbbreviatedNumberDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyAbbreviatedNumberDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -731,7 +805,9 @@ class Telephony extends SoapClientBase
     public function telephonyFaxOptionsList(\Ovh\StructType\TelephonyFaxOptionsList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyFaxOptionsList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyFaxOptionsList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -751,7 +827,9 @@ class Telephony extends SoapClientBase
     public function telephonyTrunkExternalDisplayedNumberAdd(\Ovh\StructType\TelephonyTrunkExternalDisplayedNumberAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyTrunkExternalDisplayedNumberAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyTrunkExternalDisplayedNumberAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -770,7 +848,9 @@ class Telephony extends SoapClientBase
     public function telephonyBillingAccountSet(\Ovh\StructType\TelephonyBillingAccountSet $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyBillingAccountSet($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyBillingAccountSet', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -789,7 +869,9 @@ class Telephony extends SoapClientBase
     public function telephonyDepositMovementModify(\Ovh\StructType\TelephonyDepositMovementModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyDepositMovementModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyDepositMovementModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -808,7 +890,9 @@ class Telephony extends SoapClientBase
     public function telephonyClick2CallDo(\Ovh\StructType\TelephonyClick2CallDo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyClick2CallDo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyClick2CallDo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -827,7 +911,9 @@ class Telephony extends SoapClientBase
     public function telephonySpecialNumberOrder(\Ovh\StructType\TelephonySpecialNumberOrder $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySpecialNumberOrder($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySpecialNumberOrder', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -846,7 +932,9 @@ class Telephony extends SoapClientBase
     public function telephonyVoicemailOptionsModify(\Ovh\StructType\TelephonyVoicemailOptionsModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyVoicemailOptionsModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyVoicemailOptionsModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -865,7 +953,9 @@ class Telephony extends SoapClientBase
     public function telephonyLineSwitchOldOffer(\Ovh\StructType\TelephonyLineSwitchOldOffer $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyLineSwitchOldOffer($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyLineSwitchOldOffer', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -885,7 +975,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookOnGroupContactDel(\Ovh\StructType\TelephonyPhonebookOnGroupContactDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookOnGroupContactDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookOnGroupContactDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -904,7 +996,9 @@ class Telephony extends SoapClientBase
     public function telephonySpareAdd(\Ovh\StructType\TelephonySpareAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySpareAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySpareAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -923,7 +1017,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsAddCsvAttachment(\Ovh\StructType\TelephonySmsAddCsvAttachment $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsAddCsvAttachment($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsAddCsvAttachment', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -943,7 +1039,9 @@ class Telephony extends SoapClientBase
     public function telephonyDefaultPrivateHolidaysEvents(\Ovh\StructType\TelephonyDefaultPrivateHolidaysEvents $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyDefaultPrivateHolidaysEvents($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyDefaultPrivateHolidaysEvents', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -962,7 +1060,9 @@ class Telephony extends SoapClientBase
     public function telephonyToneRemoteUpload(\Ovh\StructType\TelephonyToneRemoteUpload $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyToneRemoteUpload($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyToneRemoteUpload', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -982,7 +1082,9 @@ class Telephony extends SoapClientBase
     public function telephonyNumberGetFrWayNamesFromInsee(\Ovh\StructType\TelephonyNumberGetFrWayNamesFromInsee $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyNumberGetFrWayNamesFromInsee($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyNumberGetFrWayNamesFromInsee', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1001,7 +1103,9 @@ class Telephony extends SoapClientBase
     public function telephonyFMHuntingModificationMode(\Ovh\StructType\TelephonyFMHuntingModificationMode $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyFMHuntingModificationMode($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyFMHuntingModificationMode', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1020,7 +1124,9 @@ class Telephony extends SoapClientBase
     public function telephonyAliasToSipOffer(\Ovh\StructType\TelephonyAliasToSipOffer $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyAliasToSipOffer($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyAliasToSipOffer', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1039,7 +1145,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsUserMultiSend(\Ovh\StructType\TelephonySmsUserMultiSend $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsUserMultiSend($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsUserMultiSend', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1058,7 +1166,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsGetCsvAttachment(\Ovh\StructType\TelephonySmsGetCsvAttachment $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsGetCsvAttachment($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsGetCsvAttachment', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1077,7 +1187,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsHistory(\Ovh\StructType\TelephonySmsHistory $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsHistory($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsHistory', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1097,7 +1209,9 @@ class Telephony extends SoapClientBase
     public function telephonyAbbreviatedNumberOnGroupModify(\Ovh\StructType\TelephonyAbbreviatedNumberOnGroupModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyAbbreviatedNumberOnGroupModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyAbbreviatedNumberOnGroupModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1116,7 +1230,9 @@ class Telephony extends SoapClientBase
     public function telephonyHuntingGenericScreenList(\Ovh\StructType\TelephonyHuntingGenericScreenList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyHuntingGenericScreenList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyHuntingGenericScreenList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1136,7 +1252,9 @@ class Telephony extends SoapClientBase
     public function telephonyHuntingGenericScreenStatus(\Ovh\StructType\TelephonyHuntingGenericScreenStatus $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyHuntingGenericScreenStatus($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyHuntingGenericScreenStatus', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1156,7 +1274,9 @@ class Telephony extends SoapClientBase
     public function telephonyHuntingModificationMembers(\Ovh\StructType\TelephonyHuntingModificationMembers $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyHuntingModificationMembers($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyHuntingModificationMembers', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1175,7 +1295,9 @@ class Telephony extends SoapClientBase
     public function telephonyVoicemailMessagesDownload(\Ovh\StructType\TelephonyVoicemailMessagesDownload $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyVoicemailMessagesDownload($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyVoicemailMessagesDownload', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1194,7 +1316,9 @@ class Telephony extends SoapClientBase
     public function telephonyFaxCampaignCreation(\Ovh\StructType\TelephonyFaxCampaignCreation $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyFaxCampaignCreation($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyFaxCampaignCreation', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1214,7 +1338,9 @@ class Telephony extends SoapClientBase
     public function telephonyLineLogsNotificationOptions(\Ovh\StructType\TelephonyLineLogsNotificationOptions $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyLineLogsNotificationOptions($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyLineLogsNotificationOptions', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1233,7 +1359,9 @@ class Telephony extends SoapClientBase
     public function telephonyLineGetIpRestriction(\Ovh\StructType\TelephonyLineGetIpRestriction $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyLineGetIpRestriction($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyLineGetIpRestriction', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1252,7 +1380,9 @@ class Telephony extends SoapClientBase
     public function telephonyGetTimeZoneNumber(\Ovh\StructType\TelephonyGetTimeZoneNumber $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyGetTimeZoneNumber($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyGetTimeZoneNumber', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1272,7 +1402,9 @@ class Telephony extends SoapClientBase
     public function telephonyFMHuntingModificationMembers(\Ovh\StructType\TelephonyFMHuntingModificationMembers $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyFMHuntingModificationMembers($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyFMHuntingModificationMembers', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1291,7 +1423,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookAdd(\Ovh\StructType\TelephonyPhonebookAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1310,7 +1444,9 @@ class Telephony extends SoapClientBase
     public function telephonyRestrictionModify(\Ovh\StructType\TelephonyRestrictionModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyRestrictionModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyRestrictionModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1329,7 +1465,9 @@ class Telephony extends SoapClientBase
     public function telephonyRatesList(\Ovh\StructType\TelephonyRatesList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyRatesList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyRatesList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1349,7 +1487,9 @@ class Telephony extends SoapClientBase
     public function telephonyHuntingGenericScreenOptions(\Ovh\StructType\TelephonyHuntingGenericScreenOptions $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyHuntingGenericScreenOptions($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyHuntingGenericScreenOptions', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1368,7 +1508,9 @@ class Telephony extends SoapClientBase
     public function telephonyBillingAccountAdd(\Ovh\StructType\TelephonyBillingAccountAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyBillingAccountAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyBillingAccountAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1387,7 +1529,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsplusIsFreeKeyword(\Ovh\StructType\TelephonySmsplusIsFreeKeyword $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsplusIsFreeKeyword($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsplusIsFreeKeyword', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1406,7 +1550,9 @@ class Telephony extends SoapClientBase
     public function telephonyLineGetCodecs(\Ovh\StructType\TelephonyLineGetCodecs $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyLineGetCodecs($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyLineGetCodecs', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1425,7 +1571,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsSenderValidate(\Ovh\StructType\TelephonySmsSenderValidate $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsSenderValidate($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsSenderValidate', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1445,7 +1593,9 @@ class Telephony extends SoapClientBase
     public function telephonyHuntingModificationSimultaneousCalls(\Ovh\StructType\TelephonyHuntingModificationSimultaneousCalls $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyHuntingModificationSimultaneousCalls($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyHuntingModificationSimultaneousCalls', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1464,7 +1614,9 @@ class Telephony extends SoapClientBase
     public function telephonyDirectoryInfoGetSameSiret(\Ovh\StructType\TelephonyDirectoryInfoGetSameSiret $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyDirectoryInfoGetSameSiret($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyDirectoryInfoGetSameSiret', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1483,7 +1635,9 @@ class Telephony extends SoapClientBase
     public function telephonyConferenceSetParams(\Ovh\StructType\TelephonyConferenceSetParams $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyConferenceSetParams($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyConferenceSetParams', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1502,7 +1656,9 @@ class Telephony extends SoapClientBase
     public function telephonySparePurchase(\Ovh\StructType\TelephonySparePurchase $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySparePurchase($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySparePurchase', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1521,7 +1677,9 @@ class Telephony extends SoapClientBase
     public function telephonyFaxCampaignList(\Ovh\StructType\TelephonyFaxCampaignList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyFaxCampaignList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyFaxCampaignList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1540,7 +1698,9 @@ class Telephony extends SoapClientBase
     public function telephonyNicGetMgcpIpRestriction(\Ovh\StructType\TelephonyNicGetMgcpIpRestriction $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyNicGetMgcpIpRestriction($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyNicGetMgcpIpRestriction', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1559,7 +1719,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsGetUserQuotaForUser(\Ovh\StructType\TelephonySmsGetUserQuotaForUser $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsGetUserQuotaForUser($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsGetUserQuotaForUser', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1578,7 +1740,9 @@ class Telephony extends SoapClientBase
     public function telephonyDirectoryInfoGetSiret(\Ovh\StructType\TelephonyDirectoryInfoGetSiret $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyDirectoryInfoGetSiret($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyDirectoryInfoGetSiret', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1597,7 +1761,9 @@ class Telephony extends SoapClientBase
     public function telephonyFunctionKeyModify(\Ovh\StructType\TelephonyFunctionKeyModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyFunctionKeyModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyFunctionKeyModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1616,7 +1782,9 @@ class Telephony extends SoapClientBase
     public function telephonyAbbreviatedNumberList(\Ovh\StructType\TelephonyAbbreviatedNumberList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyAbbreviatedNumberList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyAbbreviatedNumberList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1635,7 +1803,9 @@ class Telephony extends SoapClientBase
     public function telephonyFaxModifyPassword(\Ovh\StructType\TelephonyFaxModifyPassword $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyFaxModifyPassword($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyFaxModifyPassword', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1654,7 +1824,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsDelete(\Ovh\StructType\TelephonySmsDelete $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsDelete($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsDelete', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1674,7 +1846,9 @@ class Telephony extends SoapClientBase
     public function telephonyDirectoryModifyPublication(\Ovh\StructType\TelephonyDirectoryModifyPublication $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyDirectoryModifyPublication($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyDirectoryModifyPublication', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1693,7 +1867,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookOnGroupAdd(\Ovh\StructType\TelephonyPhonebookOnGroupAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookOnGroupAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookOnGroupAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1713,7 +1889,9 @@ class Telephony extends SoapClientBase
     public function telephonyLineSwitchOfferPossibility(\Ovh\StructType\TelephonyLineSwitchOfferPossibility $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyLineSwitchOfferPossibility($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyLineSwitchOfferPossibility', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1732,7 +1910,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsSenderList(\Ovh\StructType\TelephonySmsSenderList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsSenderList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsSenderList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1751,7 +1931,9 @@ class Telephony extends SoapClientBase
     public function telephonySipToAliasOffer(\Ovh\StructType\TelephonySipToAliasOffer $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySipToAliasOffer($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySipToAliasOffer', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1770,7 +1952,9 @@ class Telephony extends SoapClientBase
     public function telephonyFunctionKeyList(\Ovh\StructType\TelephonyFunctionKeyList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyFunctionKeyList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyFunctionKeyList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1789,7 +1973,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsGetCallBack(\Ovh\StructType\TelephonySmsGetCallBack $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsGetCallBack($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsGetCallBack', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1808,7 +1994,9 @@ class Telephony extends SoapClientBase
     public function telephonySviModify(\Ovh\StructType\TelephonySviModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySviModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySviModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1827,7 +2015,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsplusServiceDelete(\Ovh\StructType\TelephonySmsplusServiceDelete $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsplusServiceDelete($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsplusServiceDelete', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1846,7 +2036,9 @@ class Telephony extends SoapClientBase
     public function telephonyLineSwitchOffer(\Ovh\StructType\TelephonyLineSwitchOffer $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyLineSwitchOffer($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyLineSwitchOffer', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1866,7 +2058,9 @@ class Telephony extends SoapClientBase
     public function telephonyTrunkExternalDisplayedNumberCheck(\Ovh\StructType\TelephonyTrunkExternalDisplayedNumberCheck $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyTrunkExternalDisplayedNumberCheck($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyTrunkExternalDisplayedNumberCheck', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1885,7 +2079,9 @@ class Telephony extends SoapClientBase
     public function telephonyDelClosureEvents(\Ovh\StructType\TelephonyDelClosureEvents $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyDelClosureEvents($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyDelClosureEvents', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1905,7 +2101,9 @@ class Telephony extends SoapClientBase
     public function telephonyFreefaxToVoicefaxCheckList(\Ovh\StructType\TelephonyFreefaxToVoicefaxCheckList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyFreefaxToVoicefaxCheckList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyFreefaxToVoicefaxCheckList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1924,7 +2122,9 @@ class Telephony extends SoapClientBase
     public function telephonyVoicemailModifyPassword(\Ovh\StructType\TelephonyVoicemailModifyPassword $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyVoicemailModifyPassword($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyVoicemailModifyPassword', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1943,7 +2143,9 @@ class Telephony extends SoapClientBase
     public function telephonySpareCapabilities(\Ovh\StructType\TelephonySpareCapabilities $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySpareCapabilities($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySpareCapabilities', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1962,7 +2164,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookOnSmsDel(\Ovh\StructType\TelephonyPhonebookOnSmsDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookOnSmsDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookOnSmsDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -1981,7 +2185,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookShare(\Ovh\StructType\TelephonyPhonebookShare $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookShare($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookShare', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2000,7 +2206,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsSetUserQuota(\Ovh\StructType\TelephonySmsSetUserQuota $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsSetUserQuota($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsSetUserQuota', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2019,7 +2227,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsHistoryCsv(\Ovh\StructType\TelephonySmsHistoryCsv $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsHistoryCsv($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsHistoryCsv', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2039,7 +2249,9 @@ class Telephony extends SoapClientBase
     public function telephonyAbbreviatedNumberOnGroupList(\Ovh\StructType\TelephonyAbbreviatedNumberOnGroupList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyAbbreviatedNumberOnGroupList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyAbbreviatedNumberOnGroupList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2058,7 +2270,9 @@ class Telephony extends SoapClientBase
     public function telephonyLineLogs(\Ovh\StructType\TelephonyLineLogs $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyLineLogs($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyLineLogs', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2077,7 +2291,9 @@ class Telephony extends SoapClientBase
     public function telephonySpareReplace(\Ovh\StructType\TelephonySpareReplace $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySpareReplace($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySpareReplace', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2096,7 +2312,9 @@ class Telephony extends SoapClientBase
     public function telephonyClick2CallUserList(\Ovh\StructType\TelephonyClick2CallUserList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyClick2CallUserList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyClick2CallUserList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2115,7 +2333,9 @@ class Telephony extends SoapClientBase
     public function telephonyVoicemailMailboxList(\Ovh\StructType\TelephonyVoicemailMailboxList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyVoicemailMailboxList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyVoicemailMailboxList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2134,7 +2354,9 @@ class Telephony extends SoapClientBase
     public function telephonyFaxCampaignDetails(\Ovh\StructType\TelephonyFaxCampaignDetails $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyFaxCampaignDetails($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyFaxCampaignDetails', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2153,7 +2375,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookOnGroupDel(\Ovh\StructType\TelephonyPhonebookOnGroupDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookOnGroupDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookOnGroupDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2172,7 +2396,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookOnGroupList(\Ovh\StructType\TelephonyPhonebookOnGroupList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookOnGroupList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookOnGroupList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2191,7 +2417,9 @@ class Telephony extends SoapClientBase
     public function telephonySpecialNumberCustomList(\Ovh\StructType\TelephonySpecialNumberCustomList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySpecialNumberCustomList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySpecialNumberCustomList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2211,7 +2439,9 @@ class Telephony extends SoapClientBase
     public function telephonyFMHuntingModificationSimultaneousCalls(\Ovh\StructType\TelephonyFMHuntingModificationSimultaneousCalls $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyFMHuntingModificationSimultaneousCalls($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyFMHuntingModificationSimultaneousCalls', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2230,7 +2460,9 @@ class Telephony extends SoapClientBase
     public function telephonyVoicemailMailboxDownload(\Ovh\StructType\TelephonyVoicemailMailboxDownload $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyVoicemailMailboxDownload($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyVoicemailMailboxDownload', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2249,7 +2481,9 @@ class Telephony extends SoapClientBase
     public function telephonyNicGetIpRestriction(\Ovh\StructType\TelephonyNicGetIpRestriction $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyNicGetIpRestriction($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyNicGetIpRestriction', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2268,7 +2502,9 @@ class Telephony extends SoapClientBase
     public function telephonyGetClosureEventsAsArray(\Ovh\StructType\TelephonyGetClosureEventsAsArray $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyGetClosureEventsAsArray($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyGetClosureEventsAsArray', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2287,7 +2523,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookOnSmsContactDel(\Ovh\StructType\TelephonyPhonebookOnSmsContactDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookOnSmsContactDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookOnSmsContactDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2307,7 +2545,9 @@ class Telephony extends SoapClientBase
     public function telephonyReversmentsRefundIsPending(\Ovh\StructType\TelephonyReversmentsRefundIsPending $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyReversmentsRefundIsPending($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyReversmentsRefundIsPending', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2326,7 +2566,9 @@ class Telephony extends SoapClientBase
     public function telephonyScreenListInfoModify(\Ovh\StructType\TelephonyScreenListInfoModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyScreenListInfoModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyScreenListInfoModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2346,7 +2588,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsplusServiceReversableTicketsList(\Ovh\StructType\TelephonySmsplusServiceReversableTicketsList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsplusServiceReversableTicketsList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsplusServiceReversableTicketsList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2366,7 +2610,9 @@ class Telephony extends SoapClientBase
     public function telephonyHuntingGenericScreenStatusModify(\Ovh\StructType\TelephonyHuntingGenericScreenStatusModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyHuntingGenericScreenStatusModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyHuntingGenericScreenStatusModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2385,7 +2631,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsBlacklistedSendersList(\Ovh\StructType\TelephonySmsBlacklistedSendersList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsBlacklistedSendersList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsBlacklistedSendersList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2404,7 +2652,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookContactAdd(\Ovh\StructType\TelephonyPhonebookContactAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookContactAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookContactAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2424,7 +2674,9 @@ class Telephony extends SoapClientBase
     public function telephonyPortabilityOrderSpecialNumber(\Ovh\StructType\TelephonyPortabilityOrderSpecialNumber $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPortabilityOrderSpecialNumber($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPortabilityOrderSpecialNumber', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2443,7 +2695,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsUserSetCallBack(\Ovh\StructType\TelephonySmsUserSetCallBack $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsUserSetCallBack($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsUserSetCallBack', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2462,7 +2716,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookOnGroupModify(\Ovh\StructType\TelephonyPhonebookOnGroupModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookOnGroupModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookOnGroupModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2482,7 +2738,9 @@ class Telephony extends SoapClientBase
     public function telephonyLineSwitchOldOfferPossibility(\Ovh\StructType\TelephonyLineSwitchOldOfferPossibility $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyLineSwitchOldOfferPossibility($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyLineSwitchOldOfferPossibility', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2501,7 +2759,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsplusServiceList(\Ovh\StructType\TelephonySmsplusServiceList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsplusServiceList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsplusServiceList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2521,7 +2781,9 @@ class Telephony extends SoapClientBase
     public function telephonyHuntingModificationAnonymousCallRejection(\Ovh\StructType\TelephonyHuntingModificationAnonymousCallRejection $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyHuntingModificationAnonymousCallRejection($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyHuntingModificationAnonymousCallRejection', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2540,7 +2802,9 @@ class Telephony extends SoapClientBase
     public function telephonyNumberGetBillingAccount(\Ovh\StructType\TelephonyNumberGetBillingAccount $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyNumberGetBillingAccount($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyNumberGetBillingAccount', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2559,7 +2823,9 @@ class Telephony extends SoapClientBase
     public function telephonyTonesOptionsList(\Ovh\StructType\TelephonyTonesOptionsList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyTonesOptionsList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyTonesOptionsList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2578,7 +2844,9 @@ class Telephony extends SoapClientBase
     public function telephonySpareList(\Ovh\StructType\TelephonySpareList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySpareList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySpareList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2598,7 +2866,9 @@ class Telephony extends SoapClientBase
     public function telephonyListSummationCallsFromNumber(\Ovh\StructType\TelephonyListSummationCallsFromNumber $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyListSummationCallsFromNumber($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyListSummationCallsFromNumber', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2617,7 +2887,9 @@ class Telephony extends SoapClientBase
     public function telephonyConferenceGetParams(\Ovh\StructType\TelephonyConferenceGetParams $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyConferenceGetParams($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyConferenceGetParams', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2636,7 +2908,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookContactModify(\Ovh\StructType\TelephonyPhonebookContactModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookContactModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookContactModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2655,7 +2929,9 @@ class Telephony extends SoapClientBase
     public function telephonyLineList(\Ovh\StructType\TelephonyLineList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyLineList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyLineList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2674,7 +2950,9 @@ class Telephony extends SoapClientBase
     public function telephonyLineOptionsModify(\Ovh\StructType\TelephonyLineOptionsModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyLineOptionsModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyLineOptionsModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2693,7 +2971,9 @@ class Telephony extends SoapClientBase
     public function telephonyHuntingGenericScreenSet(\Ovh\StructType\TelephonyHuntingGenericScreenSet $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyHuntingGenericScreenSet($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyHuntingGenericScreenSet', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2712,7 +2992,9 @@ class Telephony extends SoapClientBase
     public function telephonyFaxCampaignStartStop(\Ovh\StructType\TelephonyFaxCampaignStartStop $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyFaxCampaignStartStop($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyFaxCampaignStartStop', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2731,7 +3013,9 @@ class Telephony extends SoapClientBase
     public function telephonyDirectoryModifyAddress(\Ovh\StructType\TelephonyDirectoryModifyAddress $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyDirectoryModifyAddress($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyDirectoryModifyAddress', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2750,7 +3034,9 @@ class Telephony extends SoapClientBase
     public function telephonyNicSetMgcpIpRestriction(\Ovh\StructType\TelephonyNicSetMgcpIpRestriction $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyNicSetMgcpIpRestriction($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyNicSetMgcpIpRestriction', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2769,7 +3055,9 @@ class Telephony extends SoapClientBase
     public function telephonySecurityDepositCredit(\Ovh\StructType\TelephonySecurityDepositCredit $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySecurityDepositCredit($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySecurityDepositCredit', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2788,7 +3076,9 @@ class Telephony extends SoapClientBase
     public function telephonyLineOrder(\Ovh\StructType\TelephonyLineOrder $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyLineOrder($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyLineOrder', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2807,7 +3097,9 @@ class Telephony extends SoapClientBase
     public function telephonyConferenceAction(\Ovh\StructType\TelephonyConferenceAction $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyConferenceAction($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyConferenceAction', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2826,7 +3118,9 @@ class Telephony extends SoapClientBase
     public function telephonyFunctionKeyDel(\Ovh\StructType\TelephonyFunctionKeyDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyFunctionKeyDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyFunctionKeyDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2845,7 +3139,9 @@ class Telephony extends SoapClientBase
     public function telephonyNicGetSipDomain(\Ovh\StructType\TelephonyNicGetSipDomain $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyNicGetSipDomain($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyNicGetSipDomain', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2864,7 +3160,9 @@ class Telephony extends SoapClientBase
     public function telephonyGetClosureEventsAsICS(\Ovh\StructType\TelephonyGetClosureEventsAsICS $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyGetClosureEventsAsICS($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyGetClosureEventsAsICS', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2883,7 +3181,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsUserCreditLeft(\Ovh\StructType\TelephonySmsUserCreditLeft $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsUserCreditLeft($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsUserCreditLeft', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2902,7 +3202,9 @@ class Telephony extends SoapClientBase
     public function telephonyPortabilityOrder(\Ovh\StructType\TelephonyPortabilityOrder $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPortabilityOrder($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPortabilityOrder', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2921,7 +3223,9 @@ class Telephony extends SoapClientBase
     public function telephonyVoicemailMailboxDelete(\Ovh\StructType\TelephonyVoicemailMailboxDelete $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyVoicemailMailboxDelete($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyVoicemailMailboxDelete', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2940,7 +3244,9 @@ class Telephony extends SoapClientBase
     public function telephonyBillingAccountDel(\Ovh\StructType\TelephonyBillingAccountDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyBillingAccountDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyBillingAccountDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2959,7 +3265,9 @@ class Telephony extends SoapClientBase
     public function telephonyNumberClean(\Ovh\StructType\TelephonyNumberClean $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyNumberClean($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyNumberClean', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2978,7 +3286,9 @@ class Telephony extends SoapClientBase
     public function telephonyPlugAndPhoneOperation(\Ovh\StructType\TelephonyPlugAndPhoneOperation $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPlugAndPhoneOperation($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPlugAndPhoneOperation', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -2998,7 +3308,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookOnSmsContactModify(\Ovh\StructType\TelephonyPhonebookOnSmsContactModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookOnSmsContactModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookOnSmsContactModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3017,7 +3329,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookOnSmsModify(\Ovh\StructType\TelephonyPhonebookOnSmsModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookOnSmsModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookOnSmsModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3036,7 +3350,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsSetQuotaNotification(\Ovh\StructType\TelephonySmsSetQuotaNotification $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsSetQuotaNotification($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsSetQuotaNotification', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3055,7 +3371,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsUserList(\Ovh\StructType\TelephonySmsUserList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsUserList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsUserList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3074,7 +3392,9 @@ class Telephony extends SoapClientBase
     public function telephonyHuntingInfo(\Ovh\StructType\TelephonyHuntingInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyHuntingInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyHuntingInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3093,7 +3413,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookContactList(\Ovh\StructType\TelephonyPhonebookContactList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookContactList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookContactList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3112,7 +3434,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsUserPassword(\Ovh\StructType\TelephonySmsUserPassword $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsUserPassword($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsUserPassword', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3131,7 +3455,9 @@ class Telephony extends SoapClientBase
     public function telephonyLineGetOfferPrices(\Ovh\StructType\TelephonyLineGetOfferPrices $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyLineGetOfferPrices($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyLineGetOfferPrices', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3150,7 +3476,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsGetQuotaNotification(\Ovh\StructType\TelephonySmsGetQuotaNotification $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsGetQuotaNotification($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsGetQuotaNotification', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3169,7 +3497,9 @@ class Telephony extends SoapClientBase
     public function telephonyHuntingModificationMode(\Ovh\StructType\TelephonyHuntingModificationMode $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyHuntingModificationMode($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyHuntingModificationMode', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3189,7 +3519,9 @@ class Telephony extends SoapClientBase
     public function telephonyScreenListBlackWhiteChoice(\Ovh\StructType\TelephonyScreenListBlackWhiteChoice $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyScreenListBlackWhiteChoice($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyScreenListBlackWhiteChoice', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3208,7 +3540,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsDeleteCsvAttachment(\Ovh\StructType\TelephonySmsDeleteCsvAttachment $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsDeleteCsvAttachment($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsDeleteCsvAttachment', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3227,7 +3561,9 @@ class Telephony extends SoapClientBase
     public function telephonyNumberZoneAndPrefixList(\Ovh\StructType\TelephonyNumberZoneAndPrefixList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyNumberZoneAndPrefixList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyNumberZoneAndPrefixList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3246,7 +3582,9 @@ class Telephony extends SoapClientBase
     public function telephonyLineSetSipDomain(\Ovh\StructType\TelephonyLineSetSipDomain $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyLineSetSipDomain($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyLineSetSipDomain', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3266,7 +3604,9 @@ class Telephony extends SoapClientBase
     public function telephonyTrunkExternalDisplayedNumberDel(\Ovh\StructType\TelephonyTrunkExternalDisplayedNumberDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyTrunkExternalDisplayedNumberDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyTrunkExternalDisplayedNumberDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3286,7 +3626,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookOnGroupContactList(\Ovh\StructType\TelephonyPhonebookOnGroupContactList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookOnGroupContactList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookOnGroupContactList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3306,7 +3648,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsplusServiceReversableTicketsSummary(\Ovh\StructType\TelephonySmsplusServiceReversableTicketsSummary $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsplusServiceReversableTicketsSummary($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsplusServiceReversableTicketsSummary', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3325,7 +3669,9 @@ class Telephony extends SoapClientBase
     public function telephonyDeleteLine(\Ovh\StructType\TelephonyDeleteLine $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyDeleteLine($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyDeleteLine', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3344,7 +3690,9 @@ class Telephony extends SoapClientBase
     public function telephonySetTimeZoneNumber(\Ovh\StructType\TelephonySetTimeZoneNumber $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySetTimeZoneNumber($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySetTimeZoneNumber', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3363,7 +3711,9 @@ class Telephony extends SoapClientBase
     public function telephonyNicSetIpRestriction(\Ovh\StructType\TelephonyNicSetIpRestriction $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyNicSetIpRestriction($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyNicSetIpRestriction', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3382,7 +3732,9 @@ class Telephony extends SoapClientBase
     public function telephonyPortabilityStatus(\Ovh\StructType\TelephonyPortabilityStatus $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPortabilityStatus($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPortabilityStatus', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3401,7 +3753,9 @@ class Telephony extends SoapClientBase
     public function telephonySecurityDepositInfo(\Ovh\StructType\TelephonySecurityDepositInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySecurityDepositInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySecurityDepositInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3420,7 +3774,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsListCsvAttachment(\Ovh\StructType\TelephonySmsListCsvAttachment $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsListCsvAttachment($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsListCsvAttachment', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3439,7 +3795,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsCancelSending(\Ovh\StructType\TelephonySmsCancelSending $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsCancelSending($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsCancelSending', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3458,7 +3816,9 @@ class Telephony extends SoapClientBase
     public function telephonyScreenListInfo(\Ovh\StructType\TelephonyScreenListInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyScreenListInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyScreenListInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3477,7 +3837,9 @@ class Telephony extends SoapClientBase
     public function telephonyLineLogsOnGroup(\Ovh\StructType\TelephonyLineLogsOnGroup $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyLineLogsOnGroup($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyLineLogsOnGroup', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3496,7 +3858,9 @@ class Telephony extends SoapClientBase
     public function telephonyLineGetMgcpIpRestriction(\Ovh\StructType\TelephonyLineGetMgcpIpRestriction $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyLineGetMgcpIpRestriction($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyLineGetMgcpIpRestriction', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3515,7 +3879,9 @@ class Telephony extends SoapClientBase
     public function telephonyLineDetails(\Ovh\StructType\TelephonyLineDetails $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyLineDetails($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyLineDetails', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3534,7 +3900,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookContactDel(\Ovh\StructType\TelephonyPhonebookContactDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookContactDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookContactDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3553,7 +3921,9 @@ class Telephony extends SoapClientBase
     public function telephonyRatesListCsv(\Ovh\StructType\TelephonyRatesListCsv $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyRatesListCsv($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyRatesListCsv', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3572,7 +3942,9 @@ class Telephony extends SoapClientBase
     public function telephonyConferenceGetInfos(\Ovh\StructType\TelephonyConferenceGetInfos $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyConferenceGetInfos($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyConferenceGetInfos', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3591,7 +3963,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookOnSmsContactList(\Ovh\StructType\TelephonyPhonebookOnSmsContactList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookOnSmsContactList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookOnSmsContactList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3610,7 +3984,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookOnSmsContactAdd(\Ovh\StructType\TelephonyPhonebookOnSmsContactAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookOnSmsContactAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookOnSmsContactAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3630,7 +4006,9 @@ class Telephony extends SoapClientBase
     public function telephonyFMHuntingModificationAnonymousCallRejection(\Ovh\StructType\TelephonyFMHuntingModificationAnonymousCallRejection $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyFMHuntingModificationAnonymousCallRejection($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyFMHuntingModificationAnonymousCallRejection', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3649,7 +4027,9 @@ class Telephony extends SoapClientBase
     public function telephonyDdiModify(\Ovh\StructType\TelephonyDdiModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyDdiModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyDdiModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3668,7 +4048,9 @@ class Telephony extends SoapClientBase
     public function telephonyRedirectInfo(\Ovh\StructType\TelephonyRedirectInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyRedirectInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyRedirectInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3687,7 +4069,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsSend(\Ovh\StructType\TelephonySmsSend $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsSend($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsSend', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3706,7 +4090,9 @@ class Telephony extends SoapClientBase
     public function telephonyLineGetSipDomain(\Ovh\StructType\TelephonyLineGetSipDomain $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyLineGetSipDomain($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyLineGetSipDomain', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3725,7 +4111,9 @@ class Telephony extends SoapClientBase
     public function telephonyToneDelete(\Ovh\StructType\TelephonyToneDelete $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyToneDelete($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyToneDelete', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3744,7 +4132,9 @@ class Telephony extends SoapClientBase
     public function telephonyLineSetMgcpIpRestriction(\Ovh\StructType\TelephonyLineSetMgcpIpRestriction $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyLineSetMgcpIpRestriction($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyLineSetMgcpIpRestriction', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3764,7 +4154,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookOnGroupContactModify(\Ovh\StructType\TelephonyPhonebookOnGroupContactModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookOnGroupContactModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookOnGroupContactModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3784,7 +4176,9 @@ class Telephony extends SoapClientBase
     public function telephonyScreenListBlackWhiteChoiceModify(\Ovh\StructType\TelephonyScreenListBlackWhiteChoiceModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyScreenListBlackWhiteChoiceModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyScreenListBlackWhiteChoiceModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3803,7 +4197,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsplusServiceDetails(\Ovh\StructType\TelephonySmsplusServiceDetails $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsplusServiceDetails($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsplusServiceDetails', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3823,7 +4219,9 @@ class Telephony extends SoapClientBase
     public function telephonyAbbreviatedNumberOnGroupDel(\Ovh\StructType\TelephonyAbbreviatedNumberOnGroupDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyAbbreviatedNumberOnGroupDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyAbbreviatedNumberOnGroupDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3842,7 +4240,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsSenderDescription(\Ovh\StructType\TelephonySmsSenderDescription $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsSenderDescription($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsSenderDescription', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3862,7 +4262,9 @@ class Telephony extends SoapClientBase
     public function telephonyAbbreviatedNumberListPaginated(\Ovh\StructType\TelephonyAbbreviatedNumberListPaginated $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyAbbreviatedNumberListPaginated($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyAbbreviatedNumberListPaginated', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3882,7 +4284,9 @@ class Telephony extends SoapClientBase
     public function telephonySetDefaultPrivateHolidaysEvents(\Ovh\StructType\TelephonySetDefaultPrivateHolidaysEvents $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySetDefaultPrivateHolidaysEvents($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySetDefaultPrivateHolidaysEvents', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3901,7 +4305,9 @@ class Telephony extends SoapClientBase
     public function telephonySpareServiceList(\Ovh\StructType\TelephonySpareServiceList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySpareServiceList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySpareServiceList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3920,7 +4326,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsUserListCsvAttachment(\Ovh\StructType\TelephonySmsUserListCsvAttachment $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsUserListCsvAttachment($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsUserListCsvAttachment', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3939,7 +4347,9 @@ class Telephony extends SoapClientBase
     public function telephonyFaxCallList(\Ovh\StructType\TelephonyFaxCallList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyFaxCallList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyFaxCallList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3958,7 +4368,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsUserSend(\Ovh\StructType\TelephonySmsUserSend $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsUserSend($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsUserSend', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3977,7 +4389,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookOnGroupGroupList(\Ovh\StructType\TelephonyPhonebookOnGroupGroupList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookOnGroupGroupList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookOnGroupGroupList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -3996,7 +4410,9 @@ class Telephony extends SoapClientBase
     public function telephonyClick2CallUserPassword(\Ovh\StructType\TelephonyClick2CallUserPassword $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyClick2CallUserPassword($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyClick2CallUserPassword', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4015,7 +4431,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsGetUserQuota(\Ovh\StructType\TelephonySmsGetUserQuota $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsGetUserQuota($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsGetUserQuota', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4034,7 +4452,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsSenderDelete(\Ovh\StructType\TelephonySmsSenderDelete $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsSenderDelete($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsSenderDelete', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4053,7 +4473,9 @@ class Telephony extends SoapClientBase
     public function telephonyToneStatus(\Ovh\StructType\TelephonyToneStatus $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyToneStatus($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyToneStatus', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4072,7 +4494,9 @@ class Telephony extends SoapClientBase
     public function telephonyDdiInfo(\Ovh\StructType\TelephonyDdiInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyDdiInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyDdiInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4091,7 +4515,9 @@ class Telephony extends SoapClientBase
     public function telephonyHuntingGroupList(\Ovh\StructType\TelephonyHuntingGroupList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyHuntingGroupList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyHuntingGroupList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4111,7 +4537,9 @@ class Telephony extends SoapClientBase
     public function telephonyTrunkExternalDisplayedNumberList(\Ovh\StructType\TelephonyTrunkExternalDisplayedNumberList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyTrunkExternalDisplayedNumberList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyTrunkExternalDisplayedNumberList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4130,7 +4558,9 @@ class Telephony extends SoapClientBase
     public function telephonyDirectoryListWayType(\Ovh\StructType\TelephonyDirectoryListWayType $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyDirectoryListWayType($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyDirectoryListWayType', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4149,7 +4579,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsUserHistoryCsv(\Ovh\StructType\TelephonySmsUserHistoryCsv $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsUserHistoryCsv($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsUserHistoryCsv', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4168,7 +4600,9 @@ class Telephony extends SoapClientBase
     public function telephonyCallList(\Ovh\StructType\TelephonyCallList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyCallList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyCallList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4188,7 +4622,9 @@ class Telephony extends SoapClientBase
     public function telephonyGetDefaultPrivateHolidaysEvents(\Ovh\StructType\TelephonyGetDefaultPrivateHolidaysEvents $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyGetDefaultPrivateHolidaysEvents($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyGetDefaultPrivateHolidaysEvents', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4207,7 +4643,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsplusShortCodesList(\Ovh\StructType\TelephonySmsplusShortCodesList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsplusShortCodesList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsplusShortCodesList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4226,7 +4664,9 @@ class Telephony extends SoapClientBase
     public function telephonyAliasToSipPossibilities(\Ovh\StructType\TelephonyAliasToSipPossibilities $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyAliasToSipPossibilities($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyAliasToSipPossibilities', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4246,7 +4686,9 @@ class Telephony extends SoapClientBase
     public function telephonyAbbreviatedNumberOnGroupAdd(\Ovh\StructType\TelephonyAbbreviatedNumberOnGroupAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyAbbreviatedNumberOnGroupAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyAbbreviatedNumberOnGroupAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4265,7 +4707,9 @@ class Telephony extends SoapClientBase
     public function telephonyHuntingModificationQueue(\Ovh\StructType\TelephonyHuntingModificationQueue $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyHuntingModificationQueue($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyHuntingModificationQueue', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4284,7 +4728,9 @@ class Telephony extends SoapClientBase
     public function telephonyDirectoryInfo(\Ovh\StructType\TelephonyDirectoryInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyDirectoryInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyDirectoryInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4303,7 +4749,9 @@ class Telephony extends SoapClientBase
     public function telephonyBillDetails(\Ovh\StructType\TelephonyBillDetails $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyBillDetails($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyBillDetails', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4323,7 +4771,9 @@ class Telephony extends SoapClientBase
     public function telephonyLineLogsNotificationOptionsModify(\Ovh\StructType\TelephonyLineLogsNotificationOptionsModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyLineLogsNotificationOptionsModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyLineLogsNotificationOptionsModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4342,7 +4792,9 @@ class Telephony extends SoapClientBase
     public function telephonyClick2CallDoBySession(\Ovh\StructType\TelephonyClick2CallDoBySession $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyClick2CallDoBySession($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyClick2CallDoBySession', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4361,7 +4813,9 @@ class Telephony extends SoapClientBase
     public function telephonyAbbreviatedNumberAdd(\Ovh\StructType\TelephonyAbbreviatedNumberAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyAbbreviatedNumberAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyAbbreviatedNumberAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4380,7 +4834,9 @@ class Telephony extends SoapClientBase
     public function telephonyNumberOrder(\Ovh\StructType\TelephonyNumberOrder $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyNumberOrder($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyNumberOrder', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4399,7 +4855,9 @@ class Telephony extends SoapClientBase
     public function telephonyLineSetIpRestriction(\Ovh\StructType\TelephonyLineSetIpRestriction $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyLineSetIpRestriction($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyLineSetIpRestriction', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4418,7 +4876,9 @@ class Telephony extends SoapClientBase
     public function telephonyLineSetCodecs(\Ovh\StructType\TelephonyLineSetCodecs $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyLineSetCodecs($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyLineSetCodecs', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4437,7 +4897,9 @@ class Telephony extends SoapClientBase
     public function telephonyNumberCityForZoneList(\Ovh\StructType\TelephonyNumberCityForZoneList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyNumberCityForZoneList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyNumberCityForZoneList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4456,7 +4918,9 @@ class Telephony extends SoapClientBase
     public function telephonyTonesOptionsModify(\Ovh\StructType\TelephonyTonesOptionsModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyTonesOptionsModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyTonesOptionsModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4476,7 +4940,9 @@ class Telephony extends SoapClientBase
     public function telephonyVoicemailMessagesRemoteUpload(\Ovh\StructType\TelephonyVoicemailMessagesRemoteUpload $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyVoicemailMessagesRemoteUpload($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyVoicemailMessagesRemoteUpload', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4495,7 +4961,9 @@ class Telephony extends SoapClientBase
     public function telephonyOfferInfo(\Ovh\StructType\TelephonyOfferInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyOfferInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyOfferInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4514,7 +4982,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookDel(\Ovh\StructType\TelephonyPhonebookDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4533,7 +5003,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsUserAdd(\Ovh\StructType\TelephonySmsUserAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsUserAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsUserAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4552,7 +5024,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsUserHistory(\Ovh\StructType\TelephonySmsUserHistory $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsUserHistory($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsUserHistory', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4571,7 +5045,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsUserGetCallBack(\Ovh\StructType\TelephonySmsUserGetCallBack $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsUserGetCallBack($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsUserGetCallBack', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4590,7 +5066,9 @@ class Telephony extends SoapClientBase
     public function telephonyOfferModifyPassword(\Ovh\StructType\TelephonyOfferModifyPassword $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyOfferModifyPassword($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyOfferModifyPassword', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4609,7 +5087,9 @@ class Telephony extends SoapClientBase
     public function telephonyFunctionKeyAdd(\Ovh\StructType\TelephonyFunctionKeyAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyFunctionKeyAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyFunctionKeyAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4628,7 +5108,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookList(\Ovh\StructType\TelephonyPhonebookList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4647,7 +5129,9 @@ class Telephony extends SoapClientBase
     public function telephonyPlugAndPhoneReset(\Ovh\StructType\TelephonyPlugAndPhoneReset $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPlugAndPhoneReset($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPlugAndPhoneReset', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4666,7 +5150,9 @@ class Telephony extends SoapClientBase
     public function telephonySpareInfo(\Ovh\StructType\TelephonySpareInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySpareInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySpareInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4685,7 +5171,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsUserDel(\Ovh\StructType\TelephonySmsUserDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsUserDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsUserDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4704,7 +5192,9 @@ class Telephony extends SoapClientBase
     public function telephonyVoicemailMessagesStatus(\Ovh\StructType\TelephonyVoicemailMessagesStatus $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyVoicemailMessagesStatus($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyVoicemailMessagesStatus', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4723,7 +5213,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookModify(\Ovh\StructType\TelephonyPhonebookModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4742,7 +5234,9 @@ class Telephony extends SoapClientBase
     public function telephonyOfferModifyName(\Ovh\StructType\TelephonyOfferModifyName $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyOfferModifyName($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyOfferModifyName', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4761,7 +5255,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsSetCallBack(\Ovh\StructType\TelephonySmsSetCallBack $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsSetCallBack($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsSetCallBack', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4780,7 +5276,9 @@ class Telephony extends SoapClientBase
     public function telephonyPhonebookGroupList(\Ovh\StructType\TelephonyPhonebookGroupList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPhonebookGroupList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPhonebookGroupList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4799,7 +5297,9 @@ class Telephony extends SoapClientBase
     public function telephonyBillingAccountInfo(\Ovh\StructType\TelephonyBillingAccountInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyBillingAccountInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyBillingAccountInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4818,7 +5318,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsSenderAdd(\Ovh\StructType\TelephonySmsSenderAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsSenderAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsSenderAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4837,7 +5339,9 @@ class Telephony extends SoapClientBase
     public function telephonyLineConsumptionCSVByMail(\Ovh\StructType\TelephonyLineConsumptionCSVByMail $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyLineConsumptionCSVByMail($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyLineConsumptionCSVByMail', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4857,7 +5361,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsUserDeleteCsvAttachment(\Ovh\StructType\TelephonySmsUserDeleteCsvAttachment $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsUserDeleteCsvAttachment($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsUserDeleteCsvAttachment', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4877,7 +5383,9 @@ class Telephony extends SoapClientBase
     public function telephonyListReversableCallsFromNumber(\Ovh\StructType\TelephonyListReversableCallsFromNumber $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyListReversableCallsFromNumber($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyListReversableCallsFromNumber', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4896,7 +5404,9 @@ class Telephony extends SoapClientBase
     public function telephonyBillingAccountList(\Ovh\StructType\TelephonyBillingAccountList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyBillingAccountList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyBillingAccountList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4916,7 +5426,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsGetQuotaNotificationForUser(\Ovh\StructType\TelephonySmsGetQuotaNotificationForUser $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsGetQuotaNotificationForUser($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsGetQuotaNotificationForUser', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4935,7 +5447,9 @@ class Telephony extends SoapClientBase
     public function telephonyChangeNicModify(\Ovh\StructType\TelephonyChangeNicModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyChangeNicModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyChangeNicModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4954,7 +5468,9 @@ class Telephony extends SoapClientBase
     public function telephonySviInfo(\Ovh\StructType\TelephonySviInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySviInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySviInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4973,7 +5489,9 @@ class Telephony extends SoapClientBase
     public function telephonyClick2CallUserAdd(\Ovh\StructType\TelephonyClick2CallUserAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyClick2CallUserAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyClick2CallUserAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -4993,7 +5511,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsBlacklistedSendersDelete(\Ovh\StructType\TelephonySmsBlacklistedSendersDelete $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsBlacklistedSendersDelete($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsBlacklistedSendersDelete', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -5012,7 +5532,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsplusServiceAdd(\Ovh\StructType\TelephonySmsplusServiceAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsplusServiceAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsplusServiceAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -5031,7 +5553,9 @@ class Telephony extends SoapClientBase
     public function telephonySpareCreateRMA(\Ovh\StructType\TelephonySpareCreateRMA $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySpareCreateRMA($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySpareCreateRMA', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -5050,7 +5574,9 @@ class Telephony extends SoapClientBase
     public function telephonySmsplusServiceEdit(\Ovh\StructType\TelephonySmsplusServiceEdit $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySmsplusServiceEdit($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySmsplusServiceEdit', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -5070,7 +5596,9 @@ class Telephony extends SoapClientBase
     public function telephonyHuntingGenericScreenOptionsModify(\Ovh\StructType\TelephonyHuntingGenericScreenOptionsModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyHuntingGenericScreenOptionsModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyHuntingGenericScreenOptionsModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -5089,7 +5617,9 @@ class Telephony extends SoapClientBase
     public function telephonyPlugAndPhoneInfo(\Ovh\StructType\TelephonyPlugAndPhoneInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyPlugAndPhoneInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyPlugAndPhoneInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -5108,7 +5638,9 @@ class Telephony extends SoapClientBase
     public function telephonyFaxCampaignDelete(\Ovh\StructType\TelephonyFaxCampaignDelete $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyFaxCampaignDelete($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyFaxCampaignDelete', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -5128,7 +5660,9 @@ class Telephony extends SoapClientBase
     public function telephonyReversmentsRefundFromBillingAccount(\Ovh\StructType\TelephonyReversmentsRefundFromBillingAccount $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyReversmentsRefundFromBillingAccount($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyReversmentsRefundFromBillingAccount', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -5147,7 +5681,9 @@ class Telephony extends SoapClientBase
     public function telephonyVoicemailMessageDelete(\Ovh\StructType\TelephonyVoicemailMessageDelete $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyVoicemailMessageDelete($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyVoicemailMessageDelete', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -5166,7 +5702,9 @@ class Telephony extends SoapClientBase
     public function telephonyLineOptionsList(\Ovh\StructType\TelephonyLineOptionsList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyLineOptionsList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyLineOptionsList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -5185,7 +5723,9 @@ class Telephony extends SoapClientBase
     public function telephonySpareServiceInfo(\Ovh\StructType\TelephonySpareServiceInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonySpareServiceInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonySpareServiceInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -5204,7 +5744,9 @@ class Telephony extends SoapClientBase
     public function telephonyAbbreviatedNumberModify(\Ovh\StructType\TelephonyAbbreviatedNumberModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyAbbreviatedNumberModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyAbbreviatedNumberModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -5224,7 +5766,9 @@ class Telephony extends SoapClientBase
     public function telephonyOfferSimultaneousLinesModify(\Ovh\StructType\TelephonyOfferSimultaneousLinesModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->telephonyOfferSimultaneousLinesModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('telephonyOfferSimultaneousLinesModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -5239,13 +5783,5 @@ class Telephony extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

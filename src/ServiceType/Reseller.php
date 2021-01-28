@@ -23,7 +23,9 @@ class Reseller extends SoapClientBase
     public function resellerDomainTransferIT(\Ovh\StructType\ResellerDomainTransferIT $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->resellerDomainTransferIT($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('resellerDomainTransferIT', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Reseller extends SoapClientBase
     public function resellerDomainRestore(\Ovh\StructType\ResellerDomainRestore $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->resellerDomainRestore($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('resellerDomainRestore', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Reseller extends SoapClientBase
     public function resellerDomainRenew(\Ovh\StructType\ResellerDomainRenew $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->resellerDomainRenew($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('resellerDomainRenew', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Reseller extends SoapClientBase
     public function resellerDomainCreate(\Ovh\StructType\ResellerDomainCreate $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->resellerDomainCreate($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('resellerDomainCreate', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -99,7 +107,9 @@ class Reseller extends SoapClientBase
     public function resellerDomainCreateIT(\Ovh\StructType\ResellerDomainCreateIT $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->resellerDomainCreateIT($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('resellerDomainCreateIT', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -118,7 +128,9 @@ class Reseller extends SoapClientBase
     public function resellerDomainTransferASIA(\Ovh\StructType\ResellerDomainTransferASIA $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->resellerDomainTransferASIA($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('resellerDomainTransferASIA', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -137,7 +149,9 @@ class Reseller extends SoapClientBase
     public function resellerDomainCreateCAT(\Ovh\StructType\ResellerDomainCreateCAT $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->resellerDomainCreateCAT($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('resellerDomainCreateCAT', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -156,7 +170,9 @@ class Reseller extends SoapClientBase
     public function resellerDomainCreateASIA(\Ovh\StructType\ResellerDomainCreateASIA $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->resellerDomainCreateASIA($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('resellerDomainCreateASIA', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -175,7 +191,9 @@ class Reseller extends SoapClientBase
     public function resellerDomainTransfer(\Ovh\StructType\ResellerDomainTransfer $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->resellerDomainTransfer($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('resellerDomainTransfer', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -190,13 +208,5 @@ class Reseller extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

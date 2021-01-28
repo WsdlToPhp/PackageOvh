@@ -23,7 +23,9 @@ class Ripe extends SoapClientBase
     public function ripeGetRipeIds(\Ovh\StructType\RipeGetRipeIds $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->ripeGetRipeIds($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('ripeGetRipeIds', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Ripe extends SoapClientBase
     public function ripeUpdateInetnum(\Ovh\StructType\RipeUpdateInetnum $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->ripeUpdateInetnum($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('ripeUpdateInetnum', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Ripe extends SoapClientBase
     public function ripeQuery(\Ovh\StructType\RipeQuery $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->ripeQuery($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('ripeQuery', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Ripe extends SoapClientBase
     public function ripeDeleteOrganisation(\Ovh\StructType\RipeDeleteOrganisation $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->ripeDeleteOrganisation($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('ripeDeleteOrganisation', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -99,7 +107,9 @@ class Ripe extends SoapClientBase
     public function ripeUpdateOrganisation(\Ovh\StructType\RipeUpdateOrganisation $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->ripeUpdateOrganisation($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('ripeUpdateOrganisation', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -118,7 +128,9 @@ class Ripe extends SoapClientBase
     public function ripeCreateOrganisation(\Ovh\StructType\RipeCreateOrganisation $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->ripeCreateOrganisation($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('ripeCreateOrganisation', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -133,13 +145,5 @@ class Ripe extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

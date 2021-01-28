@@ -13,70 +13,70 @@ class TelephonyConferenceSetParams extends AbstractStructBase
 {
     /**
      * The session
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $session;
     /**
      * The number
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $number;
     /**
      * The country
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $country;
     /**
      * The lang
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $lang;
     /**
      * The pin
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $pin;
     /**
      * The enterMuted
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var bool
      */
     public $enterMuted;
     /**
      * The announceStatus
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var bool
      */
     public $announceStatus;
     /**
      * The recordStatus
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var bool
      */
     public $recordStatus;
     /**
      * The reportStatus
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $reportStatus;
     /**
      * The reportMail
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
@@ -135,7 +135,7 @@ class TelephonyConferenceSetParams extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($session) && !is_string($session)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($session)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($session, true), gettype($session)), __LINE__);
         }
         $this->session = $session;
         return $this;
@@ -157,7 +157,7 @@ class TelephonyConferenceSetParams extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($number) && !is_string($number)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($number)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($number, true), gettype($number)), __LINE__);
         }
         $this->number = $number;
         return $this;
@@ -179,7 +179,7 @@ class TelephonyConferenceSetParams extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($country) && !is_string($country)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($country)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($country, true), gettype($country)), __LINE__);
         }
         $this->country = $country;
         return $this;
@@ -201,7 +201,7 @@ class TelephonyConferenceSetParams extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($lang) && !is_string($lang)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($lang)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($lang, true), gettype($lang)), __LINE__);
         }
         $this->lang = $lang;
         return $this;
@@ -223,7 +223,7 @@ class TelephonyConferenceSetParams extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($pin) && !is_string($pin)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($pin)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($pin, true), gettype($pin)), __LINE__);
         }
         $this->pin = $pin;
         return $this;
@@ -245,7 +245,7 @@ class TelephonyConferenceSetParams extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($enterMuted) && !is_bool($enterMuted)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($enterMuted)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($enterMuted, true), gettype($enterMuted)), __LINE__);
         }
         $this->enterMuted = $enterMuted;
         return $this;
@@ -267,7 +267,7 @@ class TelephonyConferenceSetParams extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($announceStatus) && !is_bool($announceStatus)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($announceStatus)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($announceStatus, true), gettype($announceStatus)), __LINE__);
         }
         $this->announceStatus = $announceStatus;
         return $this;
@@ -289,7 +289,7 @@ class TelephonyConferenceSetParams extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($recordStatus) && !is_bool($recordStatus)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($recordStatus)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($recordStatus, true), gettype($recordStatus)), __LINE__);
         }
         $this->recordStatus = $recordStatus;
         return $this;
@@ -311,7 +311,7 @@ class TelephonyConferenceSetParams extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($reportStatus) && !is_string($reportStatus)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($reportStatus)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($reportStatus, true), gettype($reportStatus)), __LINE__);
         }
         $this->reportStatus = $reportStatus;
         return $this;
@@ -333,29 +333,9 @@ class TelephonyConferenceSetParams extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($reportMail) && !is_string($reportMail)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($reportMail)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($reportMail, true), gettype($reportMail)), __LINE__);
         }
         $this->reportMail = $reportMail;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyConferenceSetParams
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

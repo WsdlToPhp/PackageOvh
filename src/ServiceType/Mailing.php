@@ -23,7 +23,9 @@ class Mailing extends SoapClientBase
     public function mailingListModeratorDel(\Ovh\StructType\MailingListModeratorDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->mailingListModeratorDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('mailingListModeratorDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Mailing extends SoapClientBase
     public function mailingListModeratorList(\Ovh\StructType\MailingListModeratorList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->mailingListModeratorList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('mailingListModeratorList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Mailing extends SoapClientBase
     public function mailingListFullInfo(\Ovh\StructType\MailingListFullInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->mailingListFullInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('mailingListFullInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Mailing extends SoapClientBase
     public function mailingListDel(\Ovh\StructType\MailingListDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->mailingListDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('mailingListDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -99,7 +107,9 @@ class Mailing extends SoapClientBase
     public function mailingListSubscriberAdd(\Ovh\StructType\MailingListSubscriberAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->mailingListSubscriberAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('mailingListSubscriberAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -118,7 +128,9 @@ class Mailing extends SoapClientBase
     public function mailingListModeratorAdd(\Ovh\StructType\MailingListModeratorAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->mailingListModeratorAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('mailingListModeratorAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -137,7 +149,9 @@ class Mailing extends SoapClientBase
     public function mailingListSubscriberList(\Ovh\StructType\MailingListSubscriberList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->mailingListSubscriberList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('mailingListSubscriberList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -156,7 +170,9 @@ class Mailing extends SoapClientBase
     public function mailingListSubscriberDel(\Ovh\StructType\MailingListSubscriberDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->mailingListSubscriberDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('mailingListSubscriberDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -175,7 +191,9 @@ class Mailing extends SoapClientBase
     public function mailingListInfo(\Ovh\StructType\MailingListInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->mailingListInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('mailingListInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -194,7 +212,9 @@ class Mailing extends SoapClientBase
     public function mailingListModify(\Ovh\StructType\MailingListModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->mailingListModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('mailingListModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -213,7 +233,9 @@ class Mailing extends SoapClientBase
     public function mailingListAdd(\Ovh\StructType\MailingListAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->mailingListAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('mailingListAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -232,7 +254,9 @@ class Mailing extends SoapClientBase
     public function mailingListList(\Ovh\StructType\MailingListList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->mailingListList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('mailingListList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -251,7 +275,9 @@ class Mailing extends SoapClientBase
     public function mailingListSubscriberListByEmail(\Ovh\StructType\MailingListSubscriberListByEmail $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->mailingListSubscriberListByEmail($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('mailingListSubscriberListByEmail', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -266,13 +292,5 @@ class Mailing extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

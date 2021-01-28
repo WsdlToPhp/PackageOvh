@@ -23,7 +23,9 @@ class Account extends SoapClientBase
     public function accountSummary(\Ovh\StructType\AccountSummary $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->accountSummary($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('accountSummary', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Account extends SoapClientBase
     public function accountHistory(\Ovh\StructType\AccountHistory $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->accountHistory($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('accountHistory', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Account extends SoapClientBase
     public function accountAlertThresholdSet(\Ovh\StructType\AccountAlertThresholdSet $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->accountAlertThresholdSet($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('accountAlertThresholdSet', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -76,13 +82,5 @@ class Account extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

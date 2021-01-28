@@ -50,8 +50,8 @@ class ServiceListPaginatedStruct extends AbstractStructBase
     public function setTotal($total = null)
     {
         // validation for constraint: int
-        if (!is_null($total) && !is_numeric($total)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($total)), __LINE__);
+        if (!is_null($total) && !(is_int($total) || ctype_digit($total))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($total, true), gettype($total)), __LINE__);
         }
         $this->total = $total;
         return $this;
@@ -73,25 +73,5 @@ class ServiceListPaginatedStruct extends AbstractStructBase
     {
         $this->results = $results;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\ServiceListPaginatedStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

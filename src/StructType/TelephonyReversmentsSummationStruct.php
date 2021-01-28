@@ -75,7 +75,7 @@ class TelephonyReversmentsSummationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($type) && !is_string($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($type)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($type, true), gettype($type)), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -97,7 +97,7 @@ class TelephonyReversmentsSummationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($name) && !is_string($name)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($name)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($name, true), gettype($name)), __LINE__);
         }
         $this->name = $name;
         return $this;
@@ -119,7 +119,7 @@ class TelephonyReversmentsSummationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($seconds) && !is_string($seconds)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($seconds)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($seconds, true), gettype($seconds)), __LINE__);
         }
         $this->seconds = $seconds;
         return $this;
@@ -141,7 +141,7 @@ class TelephonyReversmentsSummationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($priceReversed) && !is_string($priceReversed)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($priceReversed)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($priceReversed, true), gettype($priceReversed)), __LINE__);
         }
         $this->priceReversed = $priceReversed;
         return $this;
@@ -163,29 +163,9 @@ class TelephonyReversmentsSummationStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($calls) && !is_string($calls)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($calls)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($calls, true), gettype($calls)), __LINE__);
         }
         $this->calls = $calls;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyReversmentsSummationStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

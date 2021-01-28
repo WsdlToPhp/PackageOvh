@@ -23,7 +23,9 @@ class Zone extends SoapClientBase
     public function zoneEntryList(\Ovh\StructType\ZoneEntryList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->zoneEntryList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('zoneEntryList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Zone extends SoapClientBase
     public function zoneEntryAddCustom(\Ovh\StructType\ZoneEntryAddCustom $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->zoneEntryAddCustom($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('zoneEntryAddCustom', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Zone extends SoapClientBase
     public function zoneEntryModify(\Ovh\StructType\ZoneEntryModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->zoneEntryModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('zoneEntryModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Zone extends SoapClientBase
     public function zoneEntryDel(\Ovh\StructType\ZoneEntryDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->zoneEntryDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('zoneEntryDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -99,7 +107,9 @@ class Zone extends SoapClientBase
     public function zoneEntryAdd(\Ovh\StructType\ZoneEntryAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->zoneEntryAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('zoneEntryAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -118,7 +128,9 @@ class Zone extends SoapClientBase
     public function zoneExport(\Ovh\StructType\ZoneExport $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->zoneExport($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('zoneExport', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -137,7 +149,9 @@ class Zone extends SoapClientBase
     public function zoneImport(\Ovh\StructType\ZoneImport $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->zoneImport($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('zoneImport', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -152,13 +166,5 @@ class Zone extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

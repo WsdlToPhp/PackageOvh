@@ -23,7 +23,9 @@ class Anonymous extends SoapClientBase
     public function anonymousFtpInfo(\Ovh\StructType\AnonymousFtpInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->anonymousFtpInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('anonymousFtpInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Anonymous extends SoapClientBase
     public function anonymousFtpActivate(\Ovh\StructType\AnonymousFtpActivate $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->anonymousFtpActivate($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('anonymousFtpActivate', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Anonymous extends SoapClientBase
     public function anonymousFtpChangePassword(\Ovh\StructType\AnonymousFtpChangePassword $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->anonymousFtpChangePassword($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('anonymousFtpChangePassword', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -76,13 +82,5 @@ class Anonymous extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

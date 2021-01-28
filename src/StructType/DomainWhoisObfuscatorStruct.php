@@ -67,7 +67,7 @@ class DomainWhoisObfuscatorStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($domain) && !is_string($domain)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($domain)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($domain, true), gettype($domain)), __LINE__);
         }
         $this->domain = $domain;
         return $this;
@@ -89,7 +89,7 @@ class DomainWhoisObfuscatorStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($email) && !is_bool($email)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($email)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($email, true), gettype($email)), __LINE__);
         }
         $this->email = $email;
         return $this;
@@ -111,7 +111,7 @@ class DomainWhoisObfuscatorStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($address) && !is_bool($address)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($address)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($address, true), gettype($address)), __LINE__);
         }
         $this->address = $address;
         return $this;
@@ -133,29 +133,9 @@ class DomainWhoisObfuscatorStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($phone) && !is_bool($phone)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($phone)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($phone, true), gettype($phone)), __LINE__);
         }
         $this->phone = $phone;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DomainWhoisObfuscatorStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

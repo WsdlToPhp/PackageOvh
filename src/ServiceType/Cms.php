@@ -23,7 +23,9 @@ class Cms extends SoapClientBase
     public function cmsInstall(\Ovh\StructType\CmsInstall $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->cmsInstall($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('cmsInstall', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Cms extends SoapClientBase
     public function cmsAvailableList(\Ovh\StructType\CmsAvailableList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->cmsAvailableList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('cmsAvailableList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Cms extends SoapClientBase
     public function cmsRemove(\Ovh\StructType\CmsRemove $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->cmsRemove($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('cmsRemove', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Cms extends SoapClientBase
     public function cmsList(\Ovh\StructType\CmsList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->cmsList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('cmsList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -99,7 +107,9 @@ class Cms extends SoapClientBase
     public function cmsRenewAdminPassword(\Ovh\StructType\CmsRenewAdminPassword $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->cmsRenewAdminPassword($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('cmsRenewAdminPassword', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -114,13 +124,5 @@ class Cms extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

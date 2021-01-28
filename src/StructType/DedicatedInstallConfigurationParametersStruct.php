@@ -91,7 +91,7 @@ class DedicatedInstallConfigurationParametersStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($language) && !is_string($language)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($language)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($language, true), gettype($language)), __LINE__);
         }
         $this->language = $language;
         return $this;
@@ -113,7 +113,7 @@ class DedicatedInstallConfigurationParametersStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($bitFormat) && !is_string($bitFormat)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($bitFormat)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($bitFormat, true), gettype($bitFormat)), __LINE__);
         }
         $this->bitFormat = $bitFormat;
         return $this;
@@ -134,8 +134,8 @@ class DedicatedInstallConfigurationParametersStruct extends AbstractStructBase
     public function setSoftRaidDevices($softRaidDevices = null)
     {
         // validation for constraint: int
-        if (!is_null($softRaidDevices) && !is_numeric($softRaidDevices)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($softRaidDevices)), __LINE__);
+        if (!is_null($softRaidDevices) && !(is_int($softRaidDevices) || ctype_digit($softRaidDevices))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($softRaidDevices, true), gettype($softRaidDevices)), __LINE__);
         }
         $this->softRaidDevices = $softRaidDevices;
         return $this;
@@ -157,7 +157,7 @@ class DedicatedInstallConfigurationParametersStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($serverName) && !is_string($serverName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($serverName)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($serverName, true), gettype($serverName)), __LINE__);
         }
         $this->serverName = $serverName;
         return $this;
@@ -179,7 +179,7 @@ class DedicatedInstallConfigurationParametersStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($softRaid) && !is_string($softRaid)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($softRaid)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($softRaid, true), gettype($softRaid)), __LINE__);
         }
         $this->softRaid = $softRaid;
         return $this;
@@ -201,7 +201,7 @@ class DedicatedInstallConfigurationParametersStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($distribution) && !is_string($distribution)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($distribution)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($distribution, true), gettype($distribution)), __LINE__);
         }
         $this->distribution = $distribution;
         return $this;
@@ -222,30 +222,10 @@ class DedicatedInstallConfigurationParametersStruct extends AbstractStructBase
     public function setResinstallTodoId($resinstallTodoId = null)
     {
         // validation for constraint: int
-        if (!is_null($resinstallTodoId) && !is_numeric($resinstallTodoId)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($resinstallTodoId)), __LINE__);
+        if (!is_null($resinstallTodoId) && !(is_int($resinstallTodoId) || ctype_digit($resinstallTodoId))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($resinstallTodoId, true), gettype($resinstallTodoId)), __LINE__);
         }
         $this->resinstallTodoId = $resinstallTodoId;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DedicatedInstallConfigurationParametersStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

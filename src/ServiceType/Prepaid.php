@@ -23,7 +23,9 @@ class Prepaid extends SoapClientBase
     public function prepaidDomainCreate(\Ovh\StructType\PrepaidDomainCreate $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->prepaidDomainCreate($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('prepaidDomainCreate', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Prepaid extends SoapClientBase
     public function prepaidDomainTransfer(\Ovh\StructType\PrepaidDomainTransfer $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->prepaidDomainTransfer($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('prepaidDomainTransfer', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Prepaid extends SoapClientBase
     public function prepaidSetThreshold(\Ovh\StructType\PrepaidSetThreshold $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->prepaidSetThreshold($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('prepaidSetThreshold', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Prepaid extends SoapClientBase
     public function prepaidGetSummary(\Ovh\StructType\PrepaidGetSummary $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->prepaidGetSummary($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('prepaidGetSummary', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -99,7 +107,9 @@ class Prepaid extends SoapClientBase
     public function prepaidDomainRenew(\Ovh\StructType\PrepaidDomainRenew $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->prepaidDomainRenew($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('prepaidDomainRenew', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -118,7 +128,9 @@ class Prepaid extends SoapClientBase
     public function prepaidGetThreshold(\Ovh\StructType\PrepaidGetThreshold $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->prepaidGetThreshold($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('prepaidGetThreshold', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -137,7 +149,9 @@ class Prepaid extends SoapClientBase
     public function prepaidGetHistory(\Ovh\StructType\PrepaidGetHistory $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->prepaidGetHistory($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('prepaidGetHistory', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -156,7 +170,9 @@ class Prepaid extends SoapClientBase
     public function prepaidGetBalance(\Ovh\StructType\PrepaidGetBalance $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->prepaidGetBalance($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('prepaidGetBalance', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -171,13 +187,5 @@ class Prepaid extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

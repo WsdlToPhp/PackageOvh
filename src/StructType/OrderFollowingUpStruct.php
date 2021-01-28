@@ -155,7 +155,7 @@ class OrderFollowingUpStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($id) && !is_string($id)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($id)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($id, true), gettype($id)), __LINE__);
         }
         $this->id = $id;
         return $this;
@@ -177,7 +177,7 @@ class OrderFollowingUpStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($urlId) && !is_string($urlId)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($urlId)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($urlId, true), gettype($urlId)), __LINE__);
         }
         $this->urlId = $urlId;
         return $this;
@@ -199,7 +199,7 @@ class OrderFollowingUpStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($type) && !is_string($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($type)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($type, true), gettype($type)), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -221,7 +221,7 @@ class OrderFollowingUpStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($creationDate) && !is_string($creationDate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($creationDate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($creationDate, true), gettype($creationDate)), __LINE__);
         }
         $this->creationDate = $creationDate;
         return $this;
@@ -243,7 +243,7 @@ class OrderFollowingUpStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($payment) && !is_string($payment)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($payment)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($payment, true), gettype($payment)), __LINE__);
         }
         $this->payment = $payment;
         return $this;
@@ -265,7 +265,7 @@ class OrderFollowingUpStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($procedure) && !is_string($procedure)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($procedure)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($procedure, true), gettype($procedure)), __LINE__);
         }
         $this->procedure = $procedure;
         return $this;
@@ -287,7 +287,7 @@ class OrderFollowingUpStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($install) && !is_string($install)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($install)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($install, true), gettype($install)), __LINE__);
         }
         $this->install = $install;
         return $this;
@@ -309,7 +309,7 @@ class OrderFollowingUpStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($shipping) && !is_string($shipping)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($shipping)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipping, true), gettype($shipping)), __LINE__);
         }
         $this->shipping = $shipping;
         return $this;
@@ -331,7 +331,7 @@ class OrderFollowingUpStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($cloture) && !is_string($cloture)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($cloture)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($cloture, true), gettype($cloture)), __LINE__);
         }
         $this->cloture = $cloture;
         return $this;
@@ -443,29 +443,9 @@ class OrderFollowingUpStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($avancement) && !is_string($avancement)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($avancement)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($avancement, true), gettype($avancement)), __LINE__);
         }
         $this->avancement = $avancement;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\OrderFollowingUpStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

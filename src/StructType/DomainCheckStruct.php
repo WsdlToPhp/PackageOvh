@@ -59,7 +59,7 @@ class DomainCheckStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($predicate) && !is_string($predicate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($predicate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($predicate, true), gettype($predicate)), __LINE__);
         }
         $this->predicate = $predicate;
         return $this;
@@ -81,7 +81,7 @@ class DomainCheckStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($value) && !is_bool($value)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($value)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($value, true), gettype($value)), __LINE__);
         }
         $this->value = $value;
         return $this;
@@ -103,29 +103,9 @@ class DomainCheckStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($reason) && !is_string($reason)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($reason)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($reason, true), gettype($reason)), __LINE__);
         }
         $this->reason = $reason;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DomainCheckStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

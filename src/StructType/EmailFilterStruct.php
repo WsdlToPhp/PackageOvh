@@ -91,7 +91,7 @@ class EmailFilterStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($filter) && !is_string($filter)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($filter)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($filter, true), gettype($filter)), __LINE__);
         }
         $this->filter = $filter;
         return $this;
@@ -113,7 +113,7 @@ class EmailFilterStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($action) && !is_string($action)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($action)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($action, true), gettype($action)), __LINE__);
         }
         $this->action = $action;
         return $this;
@@ -135,7 +135,7 @@ class EmailFilterStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($action_param) && !is_string($action_param)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($action_param)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($action_param, true), gettype($action_param)), __LINE__);
         }
         $this->action_param = $action_param;
         return $this;
@@ -157,7 +157,7 @@ class EmailFilterStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($active) && !is_bool($active)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($active)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($active, true), gettype($active)), __LINE__);
         }
         $this->active = $active;
         return $this;
@@ -179,7 +179,7 @@ class EmailFilterStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($priority) && !is_string($priority)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($priority)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($priority, true), gettype($priority)), __LINE__);
         }
         $this->priority = $priority;
         return $this;
@@ -200,8 +200,8 @@ class EmailFilterStruct extends AbstractStructBase
     public function setNbRules($nbRules = null)
     {
         // validation for constraint: int
-        if (!is_null($nbRules) && !is_numeric($nbRules)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($nbRules)), __LINE__);
+        if (!is_null($nbRules) && !(is_int($nbRules) || ctype_digit($nbRules))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($nbRules, true), gettype($nbRules)), __LINE__);
         }
         $this->nbRules = $nbRules;
         return $this;
@@ -223,25 +223,5 @@ class EmailFilterStruct extends AbstractStructBase
     {
         $this->rules = $rules;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\EmailFilterStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

@@ -58,8 +58,8 @@ class TelephonyLineAliasPoolStruct extends AbstractStructBase
     public function setPoolNumber($poolNumber = null)
     {
         // validation for constraint: int
-        if (!is_null($poolNumber) && !is_numeric($poolNumber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($poolNumber)), __LINE__);
+        if (!is_null($poolNumber) && !(is_int($poolNumber) || ctype_digit($poolNumber))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($poolNumber, true), gettype($poolNumber)), __LINE__);
         }
         $this->poolNumber = $poolNumber;
         return $this;
@@ -81,7 +81,7 @@ class TelephonyLineAliasPoolStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($service) && !is_string($service)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($service)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($service, true), gettype($service)), __LINE__);
         }
         $this->service = $service;
         return $this;
@@ -103,29 +103,9 @@ class TelephonyLineAliasPoolStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($display) && !is_string($display)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($display)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($display, true), gettype($display)), __LINE__);
         }
         $this->display = $display;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyLineAliasPoolStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

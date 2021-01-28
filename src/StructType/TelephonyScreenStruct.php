@@ -59,7 +59,7 @@ class TelephonyScreenStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($status) && !is_string($status)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($status)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($status, true), gettype($status)), __LINE__);
         }
         $this->status = $status;
         return $this;
@@ -81,7 +81,7 @@ class TelephonyScreenStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($numberScreen) && !is_string($numberScreen)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($numberScreen)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($numberScreen, true), gettype($numberScreen)), __LINE__);
         }
         $this->numberScreen = $numberScreen;
         return $this;
@@ -103,29 +103,9 @@ class TelephonyScreenStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($natureScreen) && !is_string($natureScreen)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($natureScreen)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($natureScreen, true), gettype($natureScreen)), __LINE__);
         }
         $this->natureScreen = $natureScreen;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyScreenStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

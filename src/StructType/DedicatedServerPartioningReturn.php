@@ -67,7 +67,7 @@ class DedicatedServerPartioningReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($os) && !is_string($os)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($os)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($os, true), gettype($os)), __LINE__);
         }
         $this->os = $os;
         return $this;
@@ -89,7 +89,7 @@ class DedicatedServerPartioningReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($langaue) && !is_string($langaue)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($langaue)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($langaue, true), gettype($langaue)), __LINE__);
         }
         $this->langaue = $langaue;
         return $this;
@@ -128,30 +128,10 @@ class DedicatedServerPartioningReturn extends AbstractStructBase
     public function setWarn($warn = null)
     {
         // validation for constraint: int
-        if (!is_null($warn) && !is_numeric($warn)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($warn)), __LINE__);
+        if (!is_null($warn) && !(is_int($warn) || ctype_digit($warn))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($warn, true), gettype($warn)), __LINE__);
         }
         $this->warn = $warn;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DedicatedServerPartioningReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

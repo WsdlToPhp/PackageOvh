@@ -23,7 +23,9 @@ class Sqlprive extends SoapClientBase
     public function sqlpriveMysqlRestart(\Ovh\StructType\SqlpriveMysqlRestart $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->sqlpriveMysqlRestart($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('sqlpriveMysqlRestart', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Sqlprive extends SoapClientBase
     public function sqlpriveMysqlVersion(\Ovh\StructType\SqlpriveMysqlVersion $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->sqlpriveMysqlVersion($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('sqlpriveMysqlVersion', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -62,7 +66,9 @@ class Sqlprive extends SoapClientBase
     public function sqlpriveMysqlDatabaseImportFromFile(\Ovh\StructType\SqlpriveMysqlDatabaseImportFromFile $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->sqlpriveMysqlDatabaseImportFromFile($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('sqlpriveMysqlDatabaseImportFromFile', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -81,7 +87,9 @@ class Sqlprive extends SoapClientBase
     public function sqlpriveMysqlUserList(\Ovh\StructType\SqlpriveMysqlUserList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->sqlpriveMysqlUserList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('sqlpriveMysqlUserList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -100,7 +108,9 @@ class Sqlprive extends SoapClientBase
     public function sqlpriveMysqlRamUsed(\Ovh\StructType\SqlpriveMysqlRamUsed $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->sqlpriveMysqlRamUsed($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('sqlpriveMysqlRamUsed', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -119,7 +129,9 @@ class Sqlprive extends SoapClientBase
     public function sqlpriveAlertInfo(\Ovh\StructType\SqlpriveAlertInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->sqlpriveAlertInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('sqlpriveAlertInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -138,7 +150,9 @@ class Sqlprive extends SoapClientBase
     public function sqlpriveList(\Ovh\StructType\SqlpriveList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->sqlpriveList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('sqlpriveList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -157,7 +171,9 @@ class Sqlprive extends SoapClientBase
     public function sqlpriveMysqlLogs(\Ovh\StructType\SqlpriveMysqlLogs $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->sqlpriveMysqlLogs($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('sqlpriveMysqlLogs', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -176,7 +192,9 @@ class Sqlprive extends SoapClientBase
     public function sqlpriveCronSet(\Ovh\StructType\SqlpriveCronSet $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->sqlpriveCronSet($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('sqlpriveCronSet', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -195,7 +213,9 @@ class Sqlprive extends SoapClientBase
     public function sqlpriveMysqlDatabasePrivilegeList(\Ovh\StructType\SqlpriveMysqlDatabasePrivilegeList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->sqlpriveMysqlDatabasePrivilegeList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('sqlpriveMysqlDatabasePrivilegeList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -214,7 +234,9 @@ class Sqlprive extends SoapClientBase
     public function sqlpriveCronDel(\Ovh\StructType\SqlpriveCronDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->sqlpriveCronDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('sqlpriveCronDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -234,7 +256,9 @@ class Sqlprive extends SoapClientBase
     public function sqlpriveMysqlDatabaseImportFromHost(\Ovh\StructType\SqlpriveMysqlDatabaseImportFromHost $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->sqlpriveMysqlDatabaseImportFromHost($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('sqlpriveMysqlDatabaseImportFromHost', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -253,7 +277,9 @@ class Sqlprive extends SoapClientBase
     public function sqlpriveAlertSet(\Ovh\StructType\SqlpriveAlertSet $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->sqlpriveAlertSet($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('sqlpriveAlertSet', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -272,7 +298,9 @@ class Sqlprive extends SoapClientBase
     public function sqlpriveMysqlOvhMyAdmin(\Ovh\StructType\SqlpriveMysqlOvhMyAdmin $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->sqlpriveMysqlOvhMyAdmin($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('sqlpriveMysqlOvhMyAdmin', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -291,7 +319,9 @@ class Sqlprive extends SoapClientBase
     public function sqlpriveMysqlDatabaseList(\Ovh\StructType\SqlpriveMysqlDatabaseList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->sqlpriveMysqlDatabaseList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('sqlpriveMysqlDatabaseList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -310,7 +340,9 @@ class Sqlprive extends SoapClientBase
     public function sqlpriveMysqlProcessList(\Ovh\StructType\SqlpriveMysqlProcessList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->sqlpriveMysqlProcessList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('sqlpriveMysqlProcessList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -329,7 +361,9 @@ class Sqlprive extends SoapClientBase
     public function sqlpriveMysqlActivateOvhManagement(\Ovh\StructType\SqlpriveMysqlActivateOvhManagement $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->sqlpriveMysqlActivateOvhManagement($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('sqlpriveMysqlActivateOvhManagement', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -348,7 +382,9 @@ class Sqlprive extends SoapClientBase
     public function sqlpriveMysqlGetPossibleDump(\Ovh\StructType\SqlpriveMysqlGetPossibleDump $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->sqlpriveMysqlGetPossibleDump($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('sqlpriveMysqlGetPossibleDump', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -367,7 +403,9 @@ class Sqlprive extends SoapClientBase
     public function sqlpriveFtpPassword(\Ovh\StructType\SqlpriveFtpPassword $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->sqlpriveFtpPassword($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('sqlpriveFtpPassword', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -386,7 +424,9 @@ class Sqlprive extends SoapClientBase
     public function sqlpriveMysqlRootPassword(\Ovh\StructType\SqlpriveMysqlRootPassword $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->sqlpriveMysqlRootPassword($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('sqlpriveMysqlRootPassword', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -405,7 +445,9 @@ class Sqlprive extends SoapClientBase
     public function sqlpriveMysqlProcessKill(\Ovh\StructType\SqlpriveMysqlProcessKill $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->sqlpriveMysqlProcessKill($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('sqlpriveMysqlProcessKill', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -424,7 +466,9 @@ class Sqlprive extends SoapClientBase
     public function sqlpriveMysqlDatabaseSave(\Ovh\StructType\SqlpriveMysqlDatabaseSave $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->sqlpriveMysqlDatabaseSave($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('sqlpriveMysqlDatabaseSave', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -443,7 +487,9 @@ class Sqlprive extends SoapClientBase
     public function sqlpriveCronGet(\Ovh\StructType\SqlpriveCronGet $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->sqlpriveCronGet($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('sqlpriveCronGet', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -458,13 +504,5 @@ class Sqlprive extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

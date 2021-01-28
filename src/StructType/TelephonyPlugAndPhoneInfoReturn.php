@@ -75,7 +75,7 @@ class TelephonyPlugAndPhoneInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($brand) && !is_string($brand)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($brand)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($brand, true), gettype($brand)), __LINE__);
         }
         $this->brand = $brand;
         return $this;
@@ -97,7 +97,7 @@ class TelephonyPlugAndPhoneInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($protocol) && !is_string($protocol)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($protocol)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($protocol, true), gettype($protocol)), __LINE__);
         }
         $this->protocol = $protocol;
         return $this;
@@ -119,7 +119,7 @@ class TelephonyPlugAndPhoneInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($mac) && !is_string($mac)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($mac)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($mac, true), gettype($mac)), __LINE__);
         }
         $this->mac = $mac;
         return $this;
@@ -140,8 +140,8 @@ class TelephonyPlugAndPhoneInfoReturn extends AbstractStructBase
     public function setGfKeyCount($gfKeyCount = null)
     {
         // validation for constraint: int
-        if (!is_null($gfKeyCount) && !is_numeric($gfKeyCount)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($gfKeyCount)), __LINE__);
+        if (!is_null($gfKeyCount) && !(is_int($gfKeyCount) || ctype_digit($gfKeyCount))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($gfKeyCount, true), gettype($gfKeyCount)), __LINE__);
         }
         $this->gfKeyCount = $gfKeyCount;
         return $this;
@@ -163,29 +163,9 @@ class TelephonyPlugAndPhoneInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($skin) && !is_string($skin)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($skin)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($skin, true), gettype($skin)), __LINE__);
         }
         $this->skin = $skin;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyPlugAndPhoneInfoReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

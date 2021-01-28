@@ -23,7 +23,9 @@ class Automated extends SoapClientBase
     public function automatedMailGetVolumeHistory(\Ovh\StructType\AutomatedMailGetVolumeHistory $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->automatedMailGetVolumeHistory($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('automatedMailGetVolumeHistory', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Automated extends SoapClientBase
     public function automatedMailGetTodo(\Ovh\StructType\AutomatedMailGetTodo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->automatedMailGetTodo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('automatedMailGetTodo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Automated extends SoapClientBase
     public function automatedMailGetErrors(\Ovh\StructType\AutomatedMailGetErrors $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->automatedMailGetErrors($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('automatedMailGetErrors', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Automated extends SoapClientBase
     public function automatedMailGetState(\Ovh\StructType\AutomatedMailGetState $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->automatedMailGetState($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('automatedMailGetState', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -99,7 +107,9 @@ class Automated extends SoapClientBase
     public function automatedMailUnlock(\Ovh\StructType\AutomatedMailUnlock $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->automatedMailUnlock($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('automatedMailUnlock', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -118,7 +128,9 @@ class Automated extends SoapClientBase
     public function automatedMailLock(\Ovh\StructType\AutomatedMailLock $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->automatedMailLock($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('automatedMailLock', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -137,7 +149,9 @@ class Automated extends SoapClientBase
     public function automatedMailReturnSet(\Ovh\StructType\AutomatedMailReturnSet $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->automatedMailReturnSet($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('automatedMailReturnSet', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -156,7 +170,9 @@ class Automated extends SoapClientBase
     public function automatedMailFlush(\Ovh\StructType\AutomatedMailFlush $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->automatedMailFlush($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('automatedMailFlush', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -171,13 +187,5 @@ class Automated extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

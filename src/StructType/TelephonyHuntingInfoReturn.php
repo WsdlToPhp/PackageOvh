@@ -149,7 +149,7 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($strategy) && !is_string($strategy)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($strategy)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($strategy, true), gettype($strategy)), __LINE__);
         }
         $this->strategy = $strategy;
         return $this;
@@ -171,7 +171,7 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($pattern) && !is_string($pattern)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($pattern)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($pattern, true), gettype($pattern)), __LINE__);
         }
         $this->pattern = $pattern;
         return $this;
@@ -192,8 +192,8 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     public function setOnHoldTimer($onHoldTimer = null)
     {
         // validation for constraint: int
-        if (!is_null($onHoldTimer) && !is_numeric($onHoldTimer)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($onHoldTimer)), __LINE__);
+        if (!is_null($onHoldTimer) && !(is_int($onHoldTimer) || ctype_digit($onHoldTimer))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($onHoldTimer, true), gettype($onHoldTimer)), __LINE__);
         }
         $this->onHoldTimer = $onHoldTimer;
         return $this;
@@ -214,8 +214,8 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     public function setQueueSize($queueSize = null)
     {
         // validation for constraint: int
-        if (!is_null($queueSize) && !is_numeric($queueSize)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($queueSize)), __LINE__);
+        if (!is_null($queueSize) && !(is_int($queueSize) || ctype_digit($queueSize))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($queueSize, true), gettype($queueSize)), __LINE__);
         }
         $this->queueSize = $queueSize;
         return $this;
@@ -236,8 +236,8 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     public function setNumberOfCalls($numberOfCalls = null)
     {
         // validation for constraint: int
-        if (!is_null($numberOfCalls) && !is_numeric($numberOfCalls)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($numberOfCalls)), __LINE__);
+        if (!is_null($numberOfCalls) && !(is_int($numberOfCalls) || ctype_digit($numberOfCalls))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($numberOfCalls, true), gettype($numberOfCalls)), __LINE__);
         }
         $this->numberOfCalls = $numberOfCalls;
         return $this;
@@ -258,8 +258,8 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     public function setNoReplyTimer($noReplyTimer = null)
     {
         // validation for constraint: int
-        if (!is_null($noReplyTimer) && !is_numeric($noReplyTimer)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($noReplyTimer)), __LINE__);
+        if (!is_null($noReplyTimer) && !(is_int($noReplyTimer) || ctype_digit($noReplyTimer))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($noReplyTimer, true), gettype($noReplyTimer)), __LINE__);
         }
         $this->noReplyTimer = $noReplyTimer;
         return $this;
@@ -281,7 +281,7 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($mainVoicemail) && !is_string($mainVoicemail)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($mainVoicemail)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($mainVoicemail, true), gettype($mainVoicemail)), __LINE__);
         }
         $this->mainVoicemail = $mainVoicemail;
         return $this;
@@ -303,7 +303,7 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($toneOnHold) && !is_bool($toneOnHold)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($toneOnHold)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($toneOnHold, true), gettype($toneOnHold)), __LINE__);
         }
         $this->toneOnHold = $toneOnHold;
         return $this;
@@ -325,7 +325,7 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($toneRingback) && !is_bool($toneRingback)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($toneRingback)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($toneRingback, true), gettype($toneRingback)), __LINE__);
         }
         $this->toneRingback = $toneRingback;
         return $this;
@@ -347,7 +347,7 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($toneOnClosure) && !is_bool($toneOnClosure)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($toneOnClosure)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($toneOnClosure, true), gettype($toneOnClosure)), __LINE__);
         }
         $this->toneOnClosure = $toneOnClosure;
         return $this;
@@ -369,29 +369,9 @@ class TelephonyHuntingInfoReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($anonymousCallRejection) && !is_bool($anonymousCallRejection)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($anonymousCallRejection)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($anonymousCallRejection, true), gettype($anonymousCallRejection)), __LINE__);
         }
         $this->anonymousCallRejection = $anonymousCallRejection;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyHuntingInfoReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

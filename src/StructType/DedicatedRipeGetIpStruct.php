@@ -67,7 +67,7 @@ class DedicatedRipeGetIpStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($exclusion) && !is_string($exclusion)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($exclusion)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($exclusion, true), gettype($exclusion)), __LINE__);
         }
         $this->exclusion = $exclusion;
         return $this;
@@ -89,7 +89,7 @@ class DedicatedRipeGetIpStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($routedTo) && !is_string($routedTo)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($routedTo)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($routedTo, true), gettype($routedTo)), __LINE__);
         }
         $this->routedTo = $routedTo;
         return $this;
@@ -111,7 +111,7 @@ class DedicatedRipeGetIpStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($ip) && !is_string($ip)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($ip)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ip, true), gettype($ip)), __LINE__);
         }
         $this->ip = $ip;
         return $this;
@@ -133,29 +133,9 @@ class DedicatedRipeGetIpStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($netname) && !is_string($netname)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($netname)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($netname, true), gettype($netname)), __LINE__);
         }
         $this->netname = $netname;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DedicatedRipeGetIpStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

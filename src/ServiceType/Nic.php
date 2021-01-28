@@ -23,7 +23,9 @@ class Nic extends SoapClientBase
     public function nicModifyInfos(\Ovh\StructType\NicModifyInfos $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->nicModifyInfos($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('nicModifyInfos', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Nic extends SoapClientBase
     public function nic(\Ovh\StructType\Nic $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->nic($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('nic', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Nic extends SoapClientBase
     public function nicTldEligibility(\Ovh\StructType\NicTldEligibility $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->nicTldEligibility($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('nicTldEligibility', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Nic extends SoapClientBase
     public function nicModifyLanguage(\Ovh\StructType\NicModifyLanguage $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->nicModifyLanguage($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('nicModifyLanguage', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -99,7 +107,9 @@ class Nic extends SoapClientBase
     public function nicCreate(\Ovh\StructType\NicCreate $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->nicCreate($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('nicCreate', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -118,7 +128,9 @@ class Nic extends SoapClientBase
     public function nicInfo(\Ovh\StructType\NicInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->nicInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('nicInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -137,7 +149,9 @@ class Nic extends SoapClientBase
     public function nicModifyInfosIT(\Ovh\StructType\NicModifyInfosIT $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->nicModifyInfosIT($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('nicModifyInfosIT', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -156,7 +170,9 @@ class Nic extends SoapClientBase
     public function nicPublicInfo(\Ovh\StructType\NicPublicInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->nicPublicInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('nicPublicInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -175,7 +191,9 @@ class Nic extends SoapClientBase
     public function nicCreateIT(\Ovh\StructType\NicCreateIT $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->nicCreateIT($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('nicCreateIT', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -194,7 +212,9 @@ class Nic extends SoapClientBase
     public function nicModifyEmail(\Ovh\StructType\NicModifyEmail $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->nicModifyEmail($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('nicModifyEmail', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -213,7 +233,9 @@ class Nic extends SoapClientBase
     public function nicUpdateIT(\Ovh\StructType\NicUpdateIT $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->nicUpdateIT($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('nicUpdateIT', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -232,7 +254,9 @@ class Nic extends SoapClientBase
     public function nicUpdate(\Ovh\StructType\NicUpdate $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->nicUpdate($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('nicUpdate', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -247,13 +271,5 @@ class Nic extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

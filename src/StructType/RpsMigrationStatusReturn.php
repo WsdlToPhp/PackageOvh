@@ -106,8 +106,8 @@ class RpsMigrationStatusReturn extends AbstractStructBase
     public function setId($id = null)
     {
         // validation for constraint: int
-        if (!is_null($id) && !is_numeric($id)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($id)), __LINE__);
+        if (!is_null($id) && !(is_int($id) || ctype_digit($id))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($id, true), gettype($id)), __LINE__);
         }
         $this->id = $id;
         return $this;
@@ -128,8 +128,8 @@ class RpsMigrationStatusReturn extends AbstractStructBase
     public function setProgressStatus($progressStatus = null)
     {
         // validation for constraint: int
-        if (!is_null($progressStatus) && !is_numeric($progressStatus)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($progressStatus)), __LINE__);
+        if (!is_null($progressStatus) && !(is_int($progressStatus) || ctype_digit($progressStatus))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($progressStatus, true), gettype($progressStatus)), __LINE__);
         }
         $this->progressStatus = $progressStatus;
         return $this;
@@ -151,7 +151,7 @@ class RpsMigrationStatusReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($status) && !is_string($status)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($status)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($status, true), gettype($status)), __LINE__);
         }
         $this->status = $status;
         return $this;
@@ -173,7 +173,7 @@ class RpsMigrationStatusReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($logicalRpsName) && !is_string($logicalRpsName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($logicalRpsName)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($logicalRpsName, true), gettype($logicalRpsName)), __LINE__);
         }
         $this->logicalRpsName = $logicalRpsName;
         return $this;
@@ -195,7 +195,7 @@ class RpsMigrationStatusReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($physicalRpsTo) && !is_string($physicalRpsTo)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($physicalRpsTo)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($physicalRpsTo, true), gettype($physicalRpsTo)), __LINE__);
         }
         $this->physicalRpsTo = $physicalRpsTo;
         return $this;
@@ -217,7 +217,7 @@ class RpsMigrationStatusReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($todoDate) && !is_string($todoDate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($todoDate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($todoDate, true), gettype($todoDate)), __LINE__);
         }
         $this->todoDate = $todoDate;
         return $this;
@@ -239,7 +239,7 @@ class RpsMigrationStatusReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($doingDate) && !is_string($doingDate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($doingDate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($doingDate, true), gettype($doingDate)), __LINE__);
         }
         $this->doingDate = $doingDate;
         return $this;
@@ -261,7 +261,7 @@ class RpsMigrationStatusReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($doneDate) && !is_string($doneDate)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($doneDate)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($doneDate, true), gettype($doneDate)), __LINE__);
         }
         $this->doneDate = $doneDate;
         return $this;
@@ -283,29 +283,9 @@ class RpsMigrationStatusReturn extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($errorMessage) && !is_string($errorMessage)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($errorMessage)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($errorMessage, true), gettype($errorMessage)), __LINE__);
         }
         $this->errorMessage = $errorMessage;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\RpsMigrationStatusReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

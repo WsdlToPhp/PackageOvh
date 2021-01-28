@@ -155,7 +155,7 @@ class GlobalAccessStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($name) && !is_string($name)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($name)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($name, true), gettype($name)), __LINE__);
         }
         $this->name = $name;
         return $this;
@@ -177,7 +177,7 @@ class GlobalAccessStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($domain) && !is_bool($domain)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($domain)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($domain, true), gettype($domain)), __LINE__);
         }
         $this->domain = $domain;
         return $this;
@@ -199,7 +199,7 @@ class GlobalAccessStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($hosting) && !is_bool($hosting)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($hosting)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($hosting, true), gettype($hosting)), __LINE__);
         }
         $this->hosting = $hosting;
         return $this;
@@ -221,7 +221,7 @@ class GlobalAccessStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($email) && !is_bool($email)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($email)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($email, true), gettype($email)), __LINE__);
         }
         $this->email = $email;
         return $this;
@@ -243,7 +243,7 @@ class GlobalAccessStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($pop) && !is_bool($pop)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($pop)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($pop, true), gettype($pop)), __LINE__);
         }
         $this->pop = $pop;
         return $this;
@@ -265,7 +265,7 @@ class GlobalAccessStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($dedicated) && !is_bool($dedicated)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($dedicated)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($dedicated, true), gettype($dedicated)), __LINE__);
         }
         $this->dedicated = $dedicated;
         return $this;
@@ -287,7 +287,7 @@ class GlobalAccessStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($reverse) && !is_string($reverse)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($reverse)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($reverse, true), gettype($reverse)), __LINE__);
         }
         $this->reverse = $reverse;
         return $this;
@@ -309,7 +309,7 @@ class GlobalAccessStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($alldom) && !is_bool($alldom)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($alldom)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($alldom, true), gettype($alldom)), __LINE__);
         }
         $this->alldom = $alldom;
         return $this;
@@ -331,7 +331,7 @@ class GlobalAccessStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($ssl) && !is_bool($ssl)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($ssl)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($ssl, true), gettype($ssl)), __LINE__);
         }
         $this->ssl = $ssl;
         return $this;
@@ -353,7 +353,7 @@ class GlobalAccessStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($rps) && !is_bool($rps)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($rps)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($rps, true), gettype($rps)), __LINE__);
         }
         $this->rps = $rps;
         return $this;
@@ -375,7 +375,7 @@ class GlobalAccessStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($rpsOrphan) && !is_bool($rpsOrphan)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($rpsOrphan)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($rpsOrphan, true), gettype($rpsOrphan)), __LINE__);
         }
         $this->rpsOrphan = $rpsOrphan;
         return $this;
@@ -397,7 +397,7 @@ class GlobalAccessStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($vs) && !is_bool($vs)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($vs)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($vs, true), gettype($vs)), __LINE__);
         }
         $this->vs = $vs;
         return $this;
@@ -419,7 +419,7 @@ class GlobalAccessStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($voip) && !is_bool($voip)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($voip)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($voip, true), gettype($voip)), __LINE__);
         }
         $this->voip = $voip;
         return $this;
@@ -441,7 +441,7 @@ class GlobalAccessStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($housing) && !is_bool($housing)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($housing)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($housing, true), gettype($housing)), __LINE__);
         }
         $this->housing = $housing;
         return $this;
@@ -463,29 +463,9 @@ class GlobalAccessStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($sqlpriv) && !is_bool($sqlpriv)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($sqlpriv)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($sqlpriv, true), gettype($sqlpriv)), __LINE__);
         }
         $this->sqlpriv = $sqlpriv;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\GlobalAccessStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

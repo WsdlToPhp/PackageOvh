@@ -67,7 +67,7 @@ class TelephonyToneStatusReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($ringback) && !is_bool($ringback)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($ringback)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($ringback, true), gettype($ringback)), __LINE__);
         }
         $this->ringback = $ringback;
         return $this;
@@ -89,7 +89,7 @@ class TelephonyToneStatusReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($onhold) && !is_bool($onhold)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($onhold)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($onhold, true), gettype($onhold)), __LINE__);
         }
         $this->onhold = $onhold;
         return $this;
@@ -111,7 +111,7 @@ class TelephonyToneStatusReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($onclosure) && !is_bool($onclosure)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($onclosure)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($onclosure, true), gettype($onclosure)), __LINE__);
         }
         $this->onclosure = $onclosure;
         return $this;
@@ -133,29 +133,9 @@ class TelephonyToneStatusReturn extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($callwaiting) && !is_bool($callwaiting)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($callwaiting)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($callwaiting, true), gettype($callwaiting)), __LINE__);
         }
         $this->callwaiting = $callwaiting;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyToneStatusReturn
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

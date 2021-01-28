@@ -115,7 +115,7 @@ class DedicatedNetworkStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($type) && !is_string($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($type)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($type, true), gettype($type)), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -137,7 +137,7 @@ class DedicatedNetworkStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($priority) && !is_string($priority)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($priority)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($priority, true), gettype($priority)), __LINE__);
         }
         $this->priority = $priority;
         return $this;
@@ -159,7 +159,7 @@ class DedicatedNetworkStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($connexion) && !is_string($connexion)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($connexion)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($connexion, true), gettype($connexion)), __LINE__);
         }
         $this->connexion = $connexion;
         return $this;
@@ -180,8 +180,8 @@ class DedicatedNetworkStruct extends AbstractStructBase
     public function setBandwidth($bandwidth = null)
     {
         // validation for constraint: int
-        if (!is_null($bandwidth) && !is_numeric($bandwidth)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($bandwidth)), __LINE__);
+        if (!is_null($bandwidth) && !(is_int($bandwidth) || ctype_digit($bandwidth))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($bandwidth, true), gettype($bandwidth)), __LINE__);
         }
         $this->bandwidth = $bandwidth;
         return $this;
@@ -202,8 +202,8 @@ class DedicatedNetworkStruct extends AbstractStructBase
     public function setBandwidthOvhToOvh($bandwidthOvhToOvh = null)
     {
         // validation for constraint: int
-        if (!is_null($bandwidthOvhToOvh) && !is_numeric($bandwidthOvhToOvh)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($bandwidthOvhToOvh)), __LINE__);
+        if (!is_null($bandwidthOvhToOvh) && !(is_int($bandwidthOvhToOvh) || ctype_digit($bandwidthOvhToOvh))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($bandwidthOvhToOvh, true), gettype($bandwidthOvhToOvh)), __LINE__);
         }
         $this->bandwidthOvhToOvh = $bandwidthOvhToOvh;
         return $this;
@@ -224,8 +224,8 @@ class DedicatedNetworkStruct extends AbstractStructBase
     public function setBandwidthOvhToInternet($bandwidthOvhToInternet = null)
     {
         // validation for constraint: int
-        if (!is_null($bandwidthOvhToInternet) && !is_numeric($bandwidthOvhToInternet)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($bandwidthOvhToInternet)), __LINE__);
+        if (!is_null($bandwidthOvhToInternet) && !(is_int($bandwidthOvhToInternet) || ctype_digit($bandwidthOvhToInternet))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($bandwidthOvhToInternet, true), gettype($bandwidthOvhToInternet)), __LINE__);
         }
         $this->bandwidthOvhToInternet = $bandwidthOvhToInternet;
         return $this;
@@ -246,8 +246,8 @@ class DedicatedNetworkStruct extends AbstractStructBase
     public function setBandwidthInternetToOvh($bandwidthInternetToOvh = null)
     {
         // validation for constraint: int
-        if (!is_null($bandwidthInternetToOvh) && !is_numeric($bandwidthInternetToOvh)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($bandwidthInternetToOvh)), __LINE__);
+        if (!is_null($bandwidthInternetToOvh) && !(is_int($bandwidthInternetToOvh) || ctype_digit($bandwidthInternetToOvh))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($bandwidthInternetToOvh, true), gettype($bandwidthInternetToOvh)), __LINE__);
         }
         $this->bandwidthInternetToOvh = $bandwidthInternetToOvh;
         return $this;
@@ -269,7 +269,7 @@ class DedicatedNetworkStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($over) && !is_bool($over)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($over)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($over, true), gettype($over)), __LINE__);
         }
         $this->over = $over;
         return $this;
@@ -309,25 +309,5 @@ class DedicatedNetworkStruct extends AbstractStructBase
     {
         $this->traffic = $traffic;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DedicatedNetworkStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

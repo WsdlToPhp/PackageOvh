@@ -23,7 +23,9 @@ class Crontab extends SoapClientBase
     public function crontabDel(\Ovh\StructType\CrontabDel $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->crontabDel($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('crontabDel', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Crontab extends SoapClientBase
     public function crontabList(\Ovh\StructType\CrontabList $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->crontabList($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('crontabList', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Crontab extends SoapClientBase
     public function crontabAdd(\Ovh\StructType\CrontabAdd $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->crontabAdd($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('crontabAdd', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Crontab extends SoapClientBase
     public function crontabInfo(\Ovh\StructType\CrontabInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->crontabInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('crontabInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -99,7 +107,9 @@ class Crontab extends SoapClientBase
     public function crontabModify(\Ovh\StructType\CrontabModify $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->crontabModify($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('crontabModify', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -114,13 +124,5 @@ class Crontab extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

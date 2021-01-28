@@ -13,105 +13,105 @@ class NicUpdateIT extends AbstractStructBase
 {
     /**
      * The session
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $session;
     /**
      * The nic
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $nic;
     /**
      * The name
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $name;
     /**
      * The firstname
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $firstname;
     /**
      * The sex
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $sex;
     /**
      * The legalForm
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $legalForm;
     /**
      * The organisation
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $organisation;
     /**
      * The legalName
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $legalName;
     /**
      * The legalNumber
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $legalNumber;
     /**
      * The vat
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $vat;
     /**
      * The birthDay
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $birthDay;
     /**
      * The birthCity
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $birthCity;
     /**
      * The nationalIdentificationNumber
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $nationalIdentificationNumber;
     /**
      * The companyNationalIdentificationNumber
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $companyNationalIdentificationNumber;
     /**
      * The corporationType
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
@@ -185,7 +185,7 @@ class NicUpdateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($session) && !is_string($session)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($session)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($session, true), gettype($session)), __LINE__);
         }
         $this->session = $session;
         return $this;
@@ -207,7 +207,7 @@ class NicUpdateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($nic) && !is_string($nic)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($nic)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nic, true), gettype($nic)), __LINE__);
         }
         $this->nic = $nic;
         return $this;
@@ -229,7 +229,7 @@ class NicUpdateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($name) && !is_string($name)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($name)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($name, true), gettype($name)), __LINE__);
         }
         $this->name = $name;
         return $this;
@@ -251,7 +251,7 @@ class NicUpdateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($firstname) && !is_string($firstname)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($firstname)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($firstname, true), gettype($firstname)), __LINE__);
         }
         $this->firstname = $firstname;
         return $this;
@@ -273,7 +273,7 @@ class NicUpdateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($sex) && !is_string($sex)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($sex)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($sex, true), gettype($sex)), __LINE__);
         }
         $this->sex = $sex;
         return $this;
@@ -295,7 +295,7 @@ class NicUpdateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($legalForm) && !is_string($legalForm)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($legalForm)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($legalForm, true), gettype($legalForm)), __LINE__);
         }
         $this->legalForm = $legalForm;
         return $this;
@@ -317,7 +317,7 @@ class NicUpdateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($organisation) && !is_string($organisation)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($organisation)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($organisation, true), gettype($organisation)), __LINE__);
         }
         $this->organisation = $organisation;
         return $this;
@@ -339,7 +339,7 @@ class NicUpdateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($legalName) && !is_string($legalName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($legalName)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($legalName, true), gettype($legalName)), __LINE__);
         }
         $this->legalName = $legalName;
         return $this;
@@ -361,7 +361,7 @@ class NicUpdateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($legalNumber) && !is_string($legalNumber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($legalNumber)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($legalNumber, true), gettype($legalNumber)), __LINE__);
         }
         $this->legalNumber = $legalNumber;
         return $this;
@@ -383,7 +383,7 @@ class NicUpdateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($vat) && !is_string($vat)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($vat)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($vat, true), gettype($vat)), __LINE__);
         }
         $this->vat = $vat;
         return $this;
@@ -405,7 +405,7 @@ class NicUpdateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($birthDay) && !is_string($birthDay)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($birthDay)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($birthDay, true), gettype($birthDay)), __LINE__);
         }
         $this->birthDay = $birthDay;
         return $this;
@@ -427,7 +427,7 @@ class NicUpdateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($birthCity) && !is_string($birthCity)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($birthCity)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($birthCity, true), gettype($birthCity)), __LINE__);
         }
         $this->birthCity = $birthCity;
         return $this;
@@ -449,7 +449,7 @@ class NicUpdateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($nationalIdentificationNumber) && !is_string($nationalIdentificationNumber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($nationalIdentificationNumber)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nationalIdentificationNumber, true), gettype($nationalIdentificationNumber)), __LINE__);
         }
         $this->nationalIdentificationNumber = $nationalIdentificationNumber;
         return $this;
@@ -471,7 +471,7 @@ class NicUpdateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($companyNationalIdentificationNumber) && !is_string($companyNationalIdentificationNumber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($companyNationalIdentificationNumber)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($companyNationalIdentificationNumber, true), gettype($companyNationalIdentificationNumber)), __LINE__);
         }
         $this->companyNationalIdentificationNumber = $companyNationalIdentificationNumber;
         return $this;
@@ -493,29 +493,9 @@ class NicUpdateIT extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($corporationType) && !is_string($corporationType)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($corporationType)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($corporationType, true), gettype($corporationType)), __LINE__);
         }
         $this->corporationType = $corporationType;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\NicUpdateIT
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

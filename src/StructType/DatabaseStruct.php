@@ -115,7 +115,7 @@ class DatabaseStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($db) && !is_string($db)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($db)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($db, true), gettype($db)), __LINE__);
         }
         $this->db = $db;
         return $this;
@@ -135,6 +135,10 @@ class DatabaseStruct extends AbstractStructBase
      */
     public function setQuota($quota = null)
     {
+        // validation for constraint: float
+        if (!is_null($quota) && !(is_float($quota) || is_numeric($quota))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($quota, true), gettype($quota)), __LINE__);
+        }
         $this->quota = $quota;
         return $this;
     }
@@ -153,6 +157,10 @@ class DatabaseStruct extends AbstractStructBase
      */
     public function setLimit($limit = null)
     {
+        // validation for constraint: float
+        if (!is_null($limit) && !(is_float($limit) || is_numeric($limit))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($limit, true), gettype($limit)), __LINE__);
+        }
         $this->limit = $limit;
         return $this;
     }
@@ -173,7 +181,7 @@ class DatabaseStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($version) && !is_string($version)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($version)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($version, true), gettype($version)), __LINE__);
         }
         $this->version = $version;
         return $this;
@@ -195,7 +203,7 @@ class DatabaseStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($date) && !is_string($date)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($date)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($date, true), gettype($date)), __LINE__);
         }
         $this->date = $date;
         return $this;
@@ -217,7 +225,7 @@ class DatabaseStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($state) && !is_string($state)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($state)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($state, true), gettype($state)), __LINE__);
         }
         $this->state = $state;
         return $this;
@@ -239,7 +247,7 @@ class DatabaseStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($type) && !is_string($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($type)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($type, true), gettype($type)), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -261,7 +269,7 @@ class DatabaseStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($server) && !is_string($server)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($server)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($server, true), gettype($server)), __LINE__);
         }
         $this->server = $server;
         return $this;
@@ -283,7 +291,7 @@ class DatabaseStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($todo) && !is_bool($todo)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($todo)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($todo, true), gettype($todo)), __LINE__);
         }
         $this->todo = $todo;
         return $this;
@@ -305,29 +313,9 @@ class DatabaseStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($quota_warning) && !is_bool($quota_warning)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($quota_warning)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($quota_warning, true), gettype($quota_warning)), __LINE__);
         }
         $this->quota_warning = $quota_warning;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DatabaseStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

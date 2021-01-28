@@ -23,7 +23,9 @@ class Support extends SoapClientBase
     public function supportGetNicDomains(\Ovh\StructType\SupportGetNicDomains $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->supportGetNicDomains($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('supportGetNicDomains', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Support extends SoapClientBase
     public function supportGetThreads(\Ovh\StructType\SupportGetThreads $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->supportGetThreads($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('supportGetThreads', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -61,7 +65,9 @@ class Support extends SoapClientBase
     public function supportSendMessage(\Ovh\StructType\SupportSendMessage $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->supportSendMessage($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('supportSendMessage', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -80,7 +86,9 @@ class Support extends SoapClientBase
     public function supportGetAllVisibleCategories(\Ovh\StructType\SupportGetAllVisibleCategories $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->supportGetAllVisibleCategories($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('supportGetAllVisibleCategories', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -99,7 +107,9 @@ class Support extends SoapClientBase
     public function supportGetThreadTree(\Ovh\StructType\SupportGetThreadTree $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->supportGetThreadTree($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('supportGetThreadTree', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -118,7 +128,9 @@ class Support extends SoapClientBase
     public function supportReportAnswerProblem(\Ovh\StructType\SupportReportAnswerProblem $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->supportReportAnswerProblem($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('supportReportAnswerProblem', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -137,7 +149,9 @@ class Support extends SoapClientBase
     public function supportGetFullMessage(\Ovh\StructType\SupportGetFullMessage $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->supportGetFullMessage($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('supportGetFullMessage', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -156,7 +170,9 @@ class Support extends SoapClientBase
     public function supportCloseThreads(\Ovh\StructType\SupportCloseThreads $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->supportCloseThreads($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('supportCloseThreads', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -175,7 +191,9 @@ class Support extends SoapClientBase
     public function supportReactivateThread(\Ovh\StructType\SupportReactivateThread $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->supportReactivateThread($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('supportReactivateThread', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -190,13 +208,5 @@ class Support extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

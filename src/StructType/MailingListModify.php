@@ -13,63 +13,63 @@ class MailingListModify extends AbstractStructBase
 {
     /**
      * The session
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $session;
     /**
      * The domain
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $domain;
     /**
      * The ml
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $ml;
     /**
      * The owner
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $owner;
     /**
      * The lang
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $lang;
     /**
      * The replyto
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $replyto;
     /**
      * The message_moderation
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var bool
      */
     public $message_moderation;
     /**
      * The users_post_only
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var bool
      */
     public $users_post_only;
     /**
      * The subscription_moderation
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var bool
      */
@@ -125,7 +125,7 @@ class MailingListModify extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($session) && !is_string($session)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($session)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($session, true), gettype($session)), __LINE__);
         }
         $this->session = $session;
         return $this;
@@ -147,7 +147,7 @@ class MailingListModify extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($domain) && !is_string($domain)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($domain)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($domain, true), gettype($domain)), __LINE__);
         }
         $this->domain = $domain;
         return $this;
@@ -169,7 +169,7 @@ class MailingListModify extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($ml) && !is_string($ml)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($ml)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ml, true), gettype($ml)), __LINE__);
         }
         $this->ml = $ml;
         return $this;
@@ -191,7 +191,7 @@ class MailingListModify extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($owner) && !is_string($owner)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($owner)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($owner, true), gettype($owner)), __LINE__);
         }
         $this->owner = $owner;
         return $this;
@@ -213,7 +213,7 @@ class MailingListModify extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($lang) && !is_string($lang)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($lang)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($lang, true), gettype($lang)), __LINE__);
         }
         $this->lang = $lang;
         return $this;
@@ -235,7 +235,7 @@ class MailingListModify extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($replyto) && !is_string($replyto)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($replyto)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($replyto, true), gettype($replyto)), __LINE__);
         }
         $this->replyto = $replyto;
         return $this;
@@ -257,7 +257,7 @@ class MailingListModify extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($message_moderation) && !is_bool($message_moderation)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($message_moderation)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($message_moderation, true), gettype($message_moderation)), __LINE__);
         }
         $this->message_moderation = $message_moderation;
         return $this;
@@ -279,7 +279,7 @@ class MailingListModify extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($users_post_only) && !is_bool($users_post_only)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($users_post_only)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($users_post_only, true), gettype($users_post_only)), __LINE__);
         }
         $this->users_post_only = $users_post_only;
         return $this;
@@ -301,29 +301,9 @@ class MailingListModify extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($subscription_moderation) && !is_bool($subscription_moderation)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($subscription_moderation)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($subscription_moderation, true), gettype($subscription_moderation)), __LINE__);
         }
         $this->subscription_moderation = $subscription_moderation;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\MailingListModify
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

@@ -13,49 +13,49 @@ class TelephonyTonesOptionsModify extends AbstractStructBase
 {
     /**
      * The session
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $session;
     /**
      * The number
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $number;
     /**
      * The country
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $country;
     /**
      * The toneRingback
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $toneRingback;
     /**
      * The toneOnHold
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $toneOnHold;
     /**
      * The toneOnClosure
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
     public $toneOnClosure;
     /**
      * The toneOnCallWaiting
-     * Meta informations extracted from the WSDL
+     * Meta information extracted from the WSDL
      * - nillable: true
      * @var string
      */
@@ -105,7 +105,7 @@ class TelephonyTonesOptionsModify extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($session) && !is_string($session)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($session)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($session, true), gettype($session)), __LINE__);
         }
         $this->session = $session;
         return $this;
@@ -127,7 +127,7 @@ class TelephonyTonesOptionsModify extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($number) && !is_string($number)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($number)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($number, true), gettype($number)), __LINE__);
         }
         $this->number = $number;
         return $this;
@@ -149,7 +149,7 @@ class TelephonyTonesOptionsModify extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($country) && !is_string($country)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($country)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($country, true), gettype($country)), __LINE__);
         }
         $this->country = $country;
         return $this;
@@ -171,7 +171,7 @@ class TelephonyTonesOptionsModify extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($toneRingback) && !is_string($toneRingback)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($toneRingback)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($toneRingback, true), gettype($toneRingback)), __LINE__);
         }
         $this->toneRingback = $toneRingback;
         return $this;
@@ -193,7 +193,7 @@ class TelephonyTonesOptionsModify extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($toneOnHold) && !is_string($toneOnHold)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($toneOnHold)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($toneOnHold, true), gettype($toneOnHold)), __LINE__);
         }
         $this->toneOnHold = $toneOnHold;
         return $this;
@@ -215,7 +215,7 @@ class TelephonyTonesOptionsModify extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($toneOnClosure) && !is_string($toneOnClosure)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($toneOnClosure)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($toneOnClosure, true), gettype($toneOnClosure)), __LINE__);
         }
         $this->toneOnClosure = $toneOnClosure;
         return $this;
@@ -237,29 +237,9 @@ class TelephonyTonesOptionsModify extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($toneOnCallWaiting) && !is_string($toneOnCallWaiting)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($toneOnCallWaiting)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($toneOnCallWaiting, true), gettype($toneOnCallWaiting)), __LINE__);
         }
         $this->toneOnCallWaiting = $toneOnCallWaiting;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\TelephonyTonesOptionsModify
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

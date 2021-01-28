@@ -107,7 +107,7 @@ class DedicatedNetbootStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($kernel) && !is_string($kernel)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($kernel)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($kernel, true), gettype($kernel)), __LINE__);
         }
         $this->kernel = $kernel;
         return $this;
@@ -129,7 +129,7 @@ class DedicatedNetbootStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($cpufamily) && !is_string($cpufamily)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($cpufamily)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($cpufamily, true), gettype($cpufamily)), __LINE__);
         }
         $this->cpufamily = $cpufamily;
         return $this;
@@ -151,7 +151,7 @@ class DedicatedNetbootStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($root) && !is_string($root)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($root)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($root, true), gettype($root)), __LINE__);
         }
         $this->root = $root;
         return $this;
@@ -173,7 +173,7 @@ class DedicatedNetbootStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($smp) && !is_bool($smp)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($smp)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($smp, true), gettype($smp)), __LINE__);
         }
         $this->smp = $smp;
         return $this;
@@ -195,7 +195,7 @@ class DedicatedNetbootStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($ipv6) && !is_bool($ipv6)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($ipv6)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($ipv6, true), gettype($ipv6)), __LINE__);
         }
         $this->ipv6 = $ipv6;
         return $this;
@@ -217,7 +217,7 @@ class DedicatedNetbootStruct extends AbstractStructBase
     {
         // validation for constraint: boolean
         if (!is_null($grsec) && !is_bool($grsec)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($grsec)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($grsec, true), gettype($grsec)), __LINE__);
         }
         $this->grsec = $grsec;
         return $this;
@@ -239,7 +239,7 @@ class DedicatedNetbootStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($hz) && !is_string($hz)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($hz)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($hz, true), gettype($hz)), __LINE__);
         }
         $this->hz = $hz;
         return $this;
@@ -260,8 +260,8 @@ class DedicatedNetbootStruct extends AbstractStructBase
     public function setId($id = null)
     {
         // validation for constraint: int
-        if (!is_null($id) && !is_numeric($id)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($id)), __LINE__);
+        if (!is_null($id) && !(is_int($id) || ctype_digit($id))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($id, true), gettype($id)), __LINE__);
         }
         $this->id = $id;
         return $this;
@@ -283,29 +283,9 @@ class DedicatedNetbootStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($state) && !is_string($state)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($state)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($state, true), gettype($state)), __LINE__);
         }
         $this->state = $state;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DedicatedNetbootStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

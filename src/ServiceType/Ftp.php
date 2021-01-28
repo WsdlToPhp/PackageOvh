@@ -23,7 +23,9 @@ class Ftp extends SoapClientBase
     public function ftpInfo(\Ovh\StructType\FtpInfo $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->ftpInfo($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('ftpInfo', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -42,7 +44,9 @@ class Ftp extends SoapClientBase
     public function ftpChangePassword(\Ovh\StructType\FtpChangePassword $parameters)
     {
         try {
-            $this->setResult(self::getSoapClient()->ftpChangePassword($parameters));
+            $this->setResult($this->getSoapClient()->__soapCall('ftpChangePassword', array(
+                $parameters,
+            ), array(), array(), $this->outputHeaders));
             return $this->getResult();
         } catch (\SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
@@ -57,13 +61,5 @@ class Ftp extends SoapClientBase
     public function getResult()
     {
         return parent::getResult();
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

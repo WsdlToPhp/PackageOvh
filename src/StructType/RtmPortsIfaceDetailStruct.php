@@ -91,7 +91,7 @@ class RtmPortsIfaceDetailStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($port) && !is_string($port)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($port)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($port, true), gettype($port)), __LINE__);
         }
         $this->port = $port;
         return $this;
@@ -113,7 +113,7 @@ class RtmPortsIfaceDetailStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($procname) && !is_string($procname)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($procname)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($procname, true), gettype($procname)), __LINE__);
         }
         $this->procname = $procname;
         return $this;
@@ -135,7 +135,7 @@ class RtmPortsIfaceDetailStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($uid) && !is_string($uid)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($uid)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($uid, true), gettype($uid)), __LINE__);
         }
         $this->uid = $uid;
         return $this;
@@ -156,8 +156,8 @@ class RtmPortsIfaceDetailStruct extends AbstractStructBase
     public function setPid($pid = null)
     {
         // validation for constraint: int
-        if (!is_null($pid) && !is_numeric($pid)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($pid)), __LINE__);
+        if (!is_null($pid) && !(is_int($pid) || ctype_digit($pid))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($pid, true), gettype($pid)), __LINE__);
         }
         $this->pid = $pid;
         return $this;
@@ -179,7 +179,7 @@ class RtmPortsIfaceDetailStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($cmdline) && !is_string($cmdline)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($cmdline)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($cmdline, true), gettype($cmdline)), __LINE__);
         }
         $this->cmdline = $cmdline;
         return $this;
@@ -201,7 +201,7 @@ class RtmPortsIfaceDetailStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($exe) && !is_string($exe)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($exe)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($exe, true), gettype($exe)), __LINE__);
         }
         $this->exe = $exe;
         return $this;
@@ -223,29 +223,9 @@ class RtmPortsIfaceDetailStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($username) && !is_string($username)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($username)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($username, true), gettype($username)), __LINE__);
         }
         $this->username = $username;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\RtmPortsIfaceDetailStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }

@@ -99,7 +99,7 @@ class DedicatedCapabilitiesStruct extends AbstractStructBase
     {
         // validation for constraint: string
         if (!is_null($hostname) && !is_string($hostname)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($hostname)), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($hostname, true), gettype($hostname)), __LINE__);
         }
         $this->hostname = $hostname;
         return $this;
@@ -120,8 +120,8 @@ class DedicatedCapabilitiesStruct extends AbstractStructBase
     public function setOriginalClassicFailover($originalClassicFailover = null)
     {
         // validation for constraint: int
-        if (!is_null($originalClassicFailover) && !is_numeric($originalClassicFailover)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($originalClassicFailover)), __LINE__);
+        if (!is_null($originalClassicFailover) && !(is_int($originalClassicFailover) || ctype_digit($originalClassicFailover))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($originalClassicFailover, true), gettype($originalClassicFailover)), __LINE__);
         }
         $this->originalClassicFailover = $originalClassicFailover;
         return $this;
@@ -142,8 +142,8 @@ class DedicatedCapabilitiesStruct extends AbstractStructBase
     public function setOriginalFailoverRipe($originalFailoverRipe = null)
     {
         // validation for constraint: int
-        if (!is_null($originalFailoverRipe) && !is_numeric($originalFailoverRipe)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($originalFailoverRipe)), __LINE__);
+        if (!is_null($originalFailoverRipe) && !(is_int($originalFailoverRipe) || ctype_digit($originalFailoverRipe))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($originalFailoverRipe, true), gettype($originalFailoverRipe)), __LINE__);
         }
         $this->originalFailoverRipe = $originalFailoverRipe;
         return $this;
@@ -164,8 +164,8 @@ class DedicatedCapabilitiesStruct extends AbstractStructBase
     public function setOriginalLoadBalancingSlot($originalLoadBalancingSlot = null)
     {
         // validation for constraint: int
-        if (!is_null($originalLoadBalancingSlot) && !is_numeric($originalLoadBalancingSlot)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($originalLoadBalancingSlot)), __LINE__);
+        if (!is_null($originalLoadBalancingSlot) && !(is_int($originalLoadBalancingSlot) || ctype_digit($originalLoadBalancingSlot))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($originalLoadBalancingSlot, true), gettype($originalLoadBalancingSlot)), __LINE__);
         }
         $this->originalLoadBalancingSlot = $originalLoadBalancingSlot;
         return $this;
@@ -186,8 +186,8 @@ class DedicatedCapabilitiesStruct extends AbstractStructBase
     public function setAdditionalClassicFailover($additionalClassicFailover = null)
     {
         // validation for constraint: int
-        if (!is_null($additionalClassicFailover) && !is_numeric($additionalClassicFailover)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($additionalClassicFailover)), __LINE__);
+        if (!is_null($additionalClassicFailover) && !(is_int($additionalClassicFailover) || ctype_digit($additionalClassicFailover))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($additionalClassicFailover, true), gettype($additionalClassicFailover)), __LINE__);
         }
         $this->additionalClassicFailover = $additionalClassicFailover;
         return $this;
@@ -208,8 +208,8 @@ class DedicatedCapabilitiesStruct extends AbstractStructBase
     public function setAdditionalFailoverRipe($additionalFailoverRipe = null)
     {
         // validation for constraint: int
-        if (!is_null($additionalFailoverRipe) && !is_numeric($additionalFailoverRipe)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($additionalFailoverRipe)), __LINE__);
+        if (!is_null($additionalFailoverRipe) && !(is_int($additionalFailoverRipe) || ctype_digit($additionalFailoverRipe))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($additionalFailoverRipe, true), gettype($additionalFailoverRipe)), __LINE__);
         }
         $this->additionalFailoverRipe = $additionalFailoverRipe;
         return $this;
@@ -230,8 +230,8 @@ class DedicatedCapabilitiesStruct extends AbstractStructBase
     public function setUsedClassicFailover($usedClassicFailover = null)
     {
         // validation for constraint: int
-        if (!is_null($usedClassicFailover) && !is_numeric($usedClassicFailover)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($usedClassicFailover)), __LINE__);
+        if (!is_null($usedClassicFailover) && !(is_int($usedClassicFailover) || ctype_digit($usedClassicFailover))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($usedClassicFailover, true), gettype($usedClassicFailover)), __LINE__);
         }
         $this->usedClassicFailover = $usedClassicFailover;
         return $this;
@@ -252,30 +252,10 @@ class DedicatedCapabilitiesStruct extends AbstractStructBase
     public function setUsedFailoverRipe($usedFailoverRipe = null)
     {
         // validation for constraint: int
-        if (!is_null($usedFailoverRipe) && !is_numeric($usedFailoverRipe)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($usedFailoverRipe)), __LINE__);
+        if (!is_null($usedFailoverRipe) && !(is_int($usedFailoverRipe) || ctype_digit($usedFailoverRipe))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($usedFailoverRipe, true), gettype($usedFailoverRipe)), __LINE__);
         }
         $this->usedFailoverRipe = $usedFailoverRipe;
         return $this;
-    }
-    /**
-     * Method called when an object has been exported with var_export() functions
-     * It allows to return an object instantiated with the values
-     * @see AbstractStructBase::__set_state()
-     * @uses AbstractStructBase::__set_state()
-     * @param array $array the exported values
-     * @return \Ovh\StructType\DedicatedCapabilitiesStruct
-     */
-    public static function __set_state(array $array)
-    {
-        return parent::__set_state($array);
-    }
-    /**
-     * Method returning the class name
-     * @return string __CLASS__
-     */
-    public function __toString()
-    {
-        return __CLASS__;
     }
 }
